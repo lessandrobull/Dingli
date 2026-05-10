@@ -5,6 +5,43 @@ import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
 import { calcularProximoRank } from '../useSRSLogic';
 
+const ExercicioSelecao = ({
+  idiomaEstudo, frase, exercicioNivel, fontSizeEx3, styles, temas,
+  slotsEx3, removerPalavraSlot, resultadoFeedback, frasesFiltradas, indice,
+  palavrasOpcoes, selecionarPalavra
+}) => {
+  const getCorSlotEx3 = (slot) => (temas[idiomaEstudo]?.bg || '#6366f1') + '10';
+
+  const getCorTextoSlotEx3 = (slot, index) => {
+    if (!slot) return 'transparent';
+    if (!resultadoFeedback) return '#000';
+    const fraseOriginal = frasesFiltradas[indice][idiomaEstudo];
+    const palavrasCorretas = fraseOriginal.split(" ");
+    const limpar = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+    const estaCorreta = limpar(slot.texto) === limpar(palavrasCorretas[index]);
+    const corCorreta = temas[idiomaEstudo].corTextoL1;
+    if (resultadoFeedback === 'acerto') return corCorreta;
+    if (estaCorreta) return resultadoFeedback === 'erro_limpo' ? '#000' : corCorreta;
+    return '#ef4444';
+  };
+
+  return (
+    <div style={styles.gameContainerEx3}>
+      {idiomaEstudo === 'pi' && frase?.zh && ![4, 11, 18].includes(exercicioNivel) && <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: '0.9rem', padding: '0px 0' }}>{frase.zh}</div>}
+      <div style={styles.gavetaSelecionadasFlex}>
+        {slotsEx3.map((slot, i) => (
+          <div key={i} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: getCorSlotEx3(slot), color: getCorTextoSlotEx3(slot, i), border: (resultadoFeedback && slot) ? (resultadoFeedback === 'acerto' ? `2px solid ${temas[idiomaEstudo].corTextoL1}` : (slot.texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") === frasesFiltradas[indice][idiomaEstudo].split(" ")[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") ? (resultadoFeedback === 'erro_limpo' ? '1px solid #cbd5e1' : `2px solid ${temas[idiomaEstudo].corTextoL1}`) : '2px solid #ef4444')) : ('1px solid #cbd5e1'), display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => resultadoFeedback !== 'acerto' && removerPalavraSlot(i)}>{slot?.texto}</div>))}
+      </div>
+      <div style={styles.divisorEx3} />
+      <div style={styles.gavetaOpcoesFlex}>
+        {palavrasOpcoes.map((p) => (
+          <button key={p.id} onClick={() => !p.usado && resultadoFeedback !== 'acerto' && selecionarPalavra(p)} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: p.usado ? '#f8fafc' : '#f1f5f9', color: p.usado ? 'transparent' : '#000', border: '1px solid #cbd5e1', visibility: p.usado ? 'hidden' : 'visible' }}>{p.texto}</button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default function TelaEstudo({
   frasesFiltradas, indice, nivelAtivo, topicoAtivo,
   modoExercicio, exercicioNivel, styles,
@@ -36,12 +73,10 @@ export default function TelaEstudo({
   useEffect(() => {
     if (modoExercicio && exercicioNivel > 0 && frase) {
       setResultadoFeedback(null); setTentativaFinalizada(false); setValorInput("");
-      if (editableRef.current) editableRef.current.innerText = "";
-      
+
       const fraseOriginal = frase[idiomaEstudo];
       const percentual = (exercicioNivel <= 9) ? 0.3 : (exercicioNivel <= 18) ? 0.7 : 1.0;
       const palavras = fraseOriginal.split(" ");
-      
       if (RANKS_WRITE.includes(exercicioNivel)) {
         const qtdPalavrasOcultas = Math.max(([2, 11, 20].includes(exercicioNivel) ? 1 : 2), Math.round(palavras.length * percentual));
         const inicioIdx = (percentual === 1.0) ? 0 : Math.floor(Math.random() * (palavras.length - qtdPalavrasOcultas + 1));
@@ -66,7 +101,7 @@ export default function TelaEstudo({
         if (![4, 13, 22].includes(exercicioNivel)) falar(fraseOriginal, false);
       } else if (RANKS_VOICE.includes(exercicioNivel)) {
         const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
-        setIndicesOcultosVoz(Array.from({length: Math.min(finalQtdVoz, palavras.length)}, (_, i) => i));
+        setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
         if (![8, 17, 26].includes(exercicioNivel)) falar(fraseOriginal, false);
       }
     } else {
@@ -109,7 +144,7 @@ export default function TelaEstudo({
     } else if (RANKS_WRITE.includes(exercicioNivel)) {
       tentativaLimpa = (limpar(valorInput) === limpar(configLacuna.resposta)) ? corretaLimpa : "erro_total";
     }
-    
+
     if (tentativaLimpa === corretaLimpa) {
       setResultadoFeedback('acerto'); processandoAcertoRef.current = true;
       const estavaNaFilaErro = filaErros.some(item => item.indice === indice);
@@ -143,8 +178,8 @@ export default function TelaEstudo({
       falar((idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal, false);
       setTimeout(() => {
         setTentativaFinalizada(false);
-        if (RANKS_SELECT.includes(exercicioNivel)) { setResultadoFeedback('erro_limpo'); } 
-        else if (RANKS_WRITE.includes(exercicioNivel)) { setValorInput(""); if (editableRef.current) editableRef.current.innerText = ""; setResultadoFeedback(null); }
+        if (RANKS_SELECT.includes(exercicioNivel)) { setResultadoFeedback('erro_limpo'); }
+        else if (RANKS_WRITE.includes(exercicioNivel)) { setValorInput(""); setResultadoFeedback(null); }
       }, Math.max(fraseOriginal.split(" ").length * 600, 1000));
     }
   }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, sessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, jogarDominiumInteligente, setModoExercicio]);
@@ -262,18 +297,13 @@ export default function TelaEstudo({
 
           {modoExercicio ? (
             isEx3 ? (
-              <div style={styles.gameContainerEx3}>
-                {idiomaEstudo === 'pi' && frase?.zh && ![4, 11, 18].includes(exercicioNivel) && <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: '0.9rem', padding: '0px 0' }}>{frase.zh}</div>}
-                <div style={styles.gavetaSelecionadasFlex}>
-                  {slotsEx3.map((slot, i) => (
-                    <div key={i} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: getCorSlotEx3(slot), color: getCorTextoSlotEx3(slot, i), border: (resultadoFeedback && slot) ? (resultadoFeedback === 'acerto' ? `2px solid ${temas[idiomaEstudo].corTextoL1}` : (slot.texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "") === frasesFiltradas[indice][idiomaEstudo].split(" ")[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "") ? (resultadoFeedback === 'erro_limpo' ? '1px solid #cbd5e1' : `2px solid ${temas[idiomaEstudo].corTextoL1}`) : '2px solid #ef4444')) : ('1px solid #cbd5e1'), display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => resultadoFeedback !== 'acerto' && removerPalavraSlot(i)}>{slot?.texto}</div>))}                  </div>
-                <div style={styles.divisorEx3} />
-                <div style={styles.gavetaOpcoesFlex}>
-                  {palavrasOpcoes.map((p) => (
-                    <button key={p.id} onClick={() => !p.usado && resultadoFeedback !== 'acerto' && selecionarPalavra(p)} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: p.usado ? '#f8fafc' : '#f1f5f9', color: p.usado ? 'transparent' : '#000', border: '1px solid #cbd5e1', visibility: p.usado ? 'hidden' : 'visible' }}>{p.texto}</button>
-                  ))}
-                </div>
-              </div>
+              <ExercicioSelecao
+                idiomaEstudo={idiomaEstudo} frase={frase} exercicioNivel={exercicioNivel}
+                fontSizeEx3={fontSizeEx3} styles={styles} temas={temas} slotsEx3={slotsEx3}
+                removerPalavraSlot={removerPalavraSlot} resultadoFeedback={resultadoFeedback}
+                frasesFiltradas={frasesFiltradas} indice={indice} palavrasOpcoes={palavrasOpcoes}
+                selecionarPalavra={selecionarPalavra}
+              />
             ) : (
               RANKS_WRITE.includes(exercicioNivel) ? (
                 <div style={{ width: '100%', textAlign: 'center' }}>
@@ -281,11 +311,17 @@ export default function TelaEstudo({
                     {configLacuna.prefixo}
                     <div style={styles.wrapperInputRelativo}>
                       <span style={styles.placeholderInvisivel}>{configLacuna.resposta}</span>
-                      <div ref={editableRef} contentEditable={resultadoFeedback !== 'acerto'} suppressContentEditableWarning={true} inputMode="text" autoCapitalize={!configLacuna.prefixo.trim() ? "sentences" : "none"} autoCorrect="off" spellCheck="false"
+                      <input
+                        ref={editableRef}
+                        type="text"
+                        value={valorInput}
+                        disabled={resultadoFeedback === 'acerto'}
+                        autoCapitalize={!configLacuna.prefixo.trim() ? "sentences" : "none"}
+                        autoCorrect="off"
+                        spellCheck="false"
                         onFocus={(e) => {
                           if (resultadoFeedback === 'erro') {
                             setValorInput("");
-                            if (editableRef.current) editableRef.current.innerText = "";
                             setResultadoFeedback(null);
                           }
                           setTimeout(() => {
@@ -293,24 +329,16 @@ export default function TelaEstudo({
                             if (botoes) botoes.scrollIntoView({ behavior: 'smooth', block: 'end' });
                           }, 300);
                         }}
-                        onInput={(e) => {
-                          let texto = e.currentTarget.innerText;
+                        onChange={(e) => {
+                          let texto = e.target.value;
                           if (!configLacuna.prefixo.trim() && texto.length === 1 && texto[0] >= 'a' && texto[0] <= 'z') {
-                            e.currentTarget.innerText = texto.toUpperCase();
-                            texto = e.currentTarget.innerText;
-                            const sel = window.getSelection();
-                            if (sel) {
-                              const range = document.createRange();
-                              range.selectNodeContents(e.currentTarget);
-                              range.collapse(false);
-                              sel.removeAllRanges();
-                              sel.addRange(range);
-                            }
+                            texto = texto.toUpperCase();
                           }
                           setValorInput(texto);
                         }}
                         onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
-                        style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}></div>
+                        style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
+                      />
                       {resultadoFeedback && (
                         <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
                           {resultadoFeedback === 'acerto' ? <span style={{ color: temas[idiomaEstudo].corTextoL1 }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
