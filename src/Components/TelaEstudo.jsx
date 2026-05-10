@@ -33,11 +33,102 @@ const ExercicioSelecao = ({
           <div key={i} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: getCorSlotEx3(slot), color: getCorTextoSlotEx3(slot, i), border: (resultadoFeedback && slot) ? (resultadoFeedback === 'acerto' ? `2px solid ${temas[idiomaEstudo].corTextoL1}` : (slot.texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") === frasesFiltradas[indice][idiomaEstudo].split(" ")[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") ? (resultadoFeedback === 'erro_limpo' ? '1px solid #cbd5e1' : `2px solid ${temas[idiomaEstudo].corTextoL1}`) : '2px solid #ef4444')) : ('1px solid #cbd5e1'), display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => resultadoFeedback !== 'acerto' && removerPalavraSlot(i)}>{slot?.texto}</div>))}
       </div>
       <div style={styles.divisorEx3} />
+
+
+
+
+
       <div style={styles.gavetaOpcoesFlex}>
         {palavrasOpcoes.map((p) => (
           <button key={p.id} onClick={() => !p.usado && resultadoFeedback !== 'acerto' && selecionarPalavra(p)} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: p.usado ? '#f8fafc' : '#f1f5f9', color: p.usado ? 'transparent' : '#000', border: '1px solid #cbd5e1', visibility: p.usado ? 'hidden' : 'visible' }}>{p.texto}</button>
         ))}
       </div>
+    </div>
+  );
+};
+
+const ExercicioEscrita = ({
+  configLacuna, valorInput, setValorInput, resultadoFeedback, setResultadoFeedback,
+  verificarResposta, editableRef, temas, idiomaEstudo, styles
+}) => {
+  return (
+    <div style={{ width: '100%', textAlign: 'center' }}>
+      <div style={styles.containerLacuna}>
+        {configLacuna.prefixo}
+        <div style={styles.wrapperInputRelativo}>
+          <span style={styles.placeholderInvisivel}>{configLacuna.resposta}</span>
+          <input
+            ref={editableRef}
+            type="text"
+            value={valorInput}
+            disabled={resultadoFeedback === 'acerto'}
+            autoCapitalize={!configLacuna.prefixo.trim() ? "sentences" : "none"}
+            autoCorrect="off"
+            spellCheck="false"
+            onFocus={(e) => {
+              if (resultadoFeedback === 'erro') {
+                setValorInput("");
+                setResultadoFeedback(null);
+              }
+              setTimeout(() => {
+                const botoes = document.getElementById('area-botoes-card');
+                if (botoes) botoes.scrollIntoView({ behavior: 'smooth', block: 'end' });
+              }, 300);
+            }}
+            onChange={(e) => {
+              let texto = e.target.value;
+              if (!configLacuna.prefixo.trim() && texto.length === 1 && texto[0] >= 'a' && texto[0] <= 'z') {
+                texto = texto.toUpperCase();
+              }
+              setValorInput(texto);
+            }}
+            onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
+            style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
+          />
+          {resultadoFeedback && (
+            <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
+              {resultadoFeedback === 'acerto' ? <span style={{ color: temas[idiomaEstudo].corTextoL1 }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
+                const userWords = valorInput.trim().split(/\s+/);
+                const clean = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+                const isCorrect = clean(word) === clean(userWords[i]);
+                return <span key={i} style={{ color: isCorrect ? temas[idiomaEstudo].corTextoL1 : '#ef4444' }}>{i > 0 ? ' ' : ''}{word}</span>
+              })}
+            </div>
+          )}
+        </div>
+        {configLacuna.sufixo}
+      </div>
+    </div>
+  );
+};
+
+const ExercicioVoz = ({
+  textoEstudo, resultadoFeedback, idiomaEstudo, temas, frase,
+  transcricaoAoVivo, indicesOcultosVoz, styles
+}) => {
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <p style={styles.textoFrasePrincipal}>
+        {resultadoFeedback === 'acerto' ? <span style={{ color: temas[idiomaEstudo].corTextoL1 }}>{textoEstudo}</span> : (() => {
+          let currentZhIndex = 0;
+          const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
+          return textoEstudo.split(" ").map((word, i) => {
+            const normalizarPalavra = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+            let pLimpa = normalizarPalavra(word);
+            if (idiomaEstudo === 'pi') {
+              const numSyllables = (word.match(/[aeiouüáéíóúàèìòùǎěǐǒǔāēīōū]+/gi) || [1]).length;
+              pLimpa = zhLimpo.substring(currentZhIndex, currentZhIndex + numSyllables);
+              currentZhIndex += numSyllables;
+            }
+            const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+            const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
+            const oculto = indicesOcultosVoz.includes(i);
+            let cor = oculto ? 'transparent' : '#000'; let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
+            if (estaNaFala) { cor = temas[idiomaEstudo].corTextoL1; borderB = '2px solid transparent'; } else if (resultadoFeedback === 'erro') { cor = '#ef4444'; }
+            return <span key={i} style={{ color: cor, borderBottom: borderB, paddingBottom: '2px', display: 'inline-block', marginRight: '4px' }}>{word}</span>
+          });
+        })()}
+      </p>
     </div>
   );
 };
@@ -289,12 +380,16 @@ export default function TelaEstudo({
 
 
 
+
+
+
+
+
           {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
             <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', textAlign: 'center', width: '100%' }}>
               {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
             </div>
           )}
-
           {modoExercicio ? (
             isEx3 ? (
               <ExercicioSelecao
