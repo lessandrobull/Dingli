@@ -1,14 +1,14 @@
 import React from 'react';
-// Caminho corrigido para referenciar o ficheiro de constantes na raiz do projeto
-import { NOMES_RANKS } from '../constant';
 
+// Caminho corrigido para referenciar o ficheiro de constantes na raiz do projeto
+import { NOMES_RANKS, ESTRUTURA_NIVEIS } from '../constant';
 import { useDingli } from '../DingliContext';
 
 export function EscolherNivel({
-  styles, selecionarNivel, sessaoDominium, frasesMaestria
+  styles, selecionarNivel, sessaoDominium, frasesMaestria
 }) {
 
-  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, idiomaOrigem, mudarTela } = useDingli();
+  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, idiomaOrigem, mudarTela } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   return (
@@ -16,8 +16,7 @@ export function EscolherNivel({
       <div style={styles.mobileContainer}>
         <button onClick={() => mudarTela('menuCartoes')} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.back}</button>
         <div className="scroll-container" style={styles.areaScrollMenu}>
-          {['A1', 'A2', 'B1', 'B2'].map(n => {
-
+          {(ESTRUTURA_NIVEIS[idiomaEstudo] || ESTRUTURA_NIVEIS.default).map(n => {
             const desativado = false;
             return (
               <button
@@ -44,7 +43,7 @@ export function EscolherNivel({
 
 export function EscolherTopic({ styles, listaTopicos, selecionarTopico }) {
 
-  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, mudarTela } = useDingli();
+  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, mudarTela } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   return (
@@ -63,7 +62,7 @@ export function EscolherTopic({ styles, listaTopicos, selecionarTopico }) {
 
 export function SelecaoExercicio({ styles, iniciarExercicio }) {
 
-  const { temas, t, navStyle, idiomaEstudo, mudarTela } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, mudarTela } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   return (
@@ -84,7 +83,7 @@ export function SelecaoExercicio({ styles, iniciarExercicio }) {
 }
 export function Adm({ styles }) {
 
-  const { temas, t, navStyle, idiomaEstudo, mudarTela } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, mudarTela } = useDingli();
 
   const ns = navStyle(idiomaEstudo || 'en');
 

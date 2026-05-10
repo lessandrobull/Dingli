@@ -139,7 +139,7 @@ export default function TelaEstudo({
   carregandoDados, mostrarTraducao, setMostrarTraducao, falar, explicarFraseIA,
   frasesMaestria, setFrasesMaestria, setModoJogo, setSessaoIniciada,
   limparEstadoExercicio, statusVoz, volume, iniciarReconhecimentoVoz,
-  handleRever, setIndice, transcricaoAoVivo, iniciarExercicio,
+  setIndice, transcricaoAoVivo, iniciarExercicio,
   aiExplanation, aiLoading,
   // Novas Props recebidas do App
   setModoExercicio, filaErros, setFilaErros, filaAcertos, setFilaAcertos,
@@ -159,6 +159,11 @@ export default function TelaEstudo({
   const [tentativaFinalizada, setTentativaFinalizada] = useState(false);
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
+
+  const jogarDominiumRef = useRef(jogarDominiumInteligente);
+  useEffect(() => {
+    jogarDominiumRef.current = jogarDominiumInteligente;
+  }, [jogarDominiumInteligente]);
 
   // --- CÉREBRO GERADOR DE EXERCÍCIOS ---
   useEffect(() => {
@@ -254,7 +259,7 @@ export default function TelaEstudo({
       falar((idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal, false);
       setTimeout(() => {
         setResultadoFeedback(null); setModoExercicio(false); processandoAcertoRef.current = false;
-        if (jogarDominiumInteligente) jogarDominiumInteligente();
+        if (jogarDominiumRef.current) jogarDominiumRef.current();
       }, Math.max(fraseOriginal.split(" ").length * 600, 2000));
     } else {
       setResultadoFeedback('erro');
@@ -274,6 +279,48 @@ export default function TelaEstudo({
       }, Math.max(fraseOriginal.split(" ").length * 600, 1000));
     }
   }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, sessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, jogarDominiumInteligente, setModoExercicio]);
+
+  const handleRever = useCallback(() => {
+    const fraseOriginal = frase[idiomaEstudo];
+    
+    // 1. Desliga o modo exercício para voltar ao card inicial passivo
+    setModoExercicio(false);
+    setSessaoIniciada(false);
+    setResultadoFeedback(null);
+    setValorInput("");
+    if (window.recognitionInstance) {
+      try { window.recognitionInstance.abort(); } catch (e) { }
+    }
+
+    // 2. Reseta o Rank para 0 e a data
+    setFrasesMaestria(prev => ({
+      ...prev,
+      [frase.id]: {
+        rank: 0,
+        status: 'inedita',
+        next_review: Date.now(),
+        last_review: Date.now(),
+        last_attempt_at: Date.now(),
+        highest_rank: 0,
+        texto: fraseOriginal,
+        texto_zh: frase?.zh || "",
+        nivel: nivelAtivo,
+        topico: topicoAtivo
+      }
+    }));
+
+    // 3. Remove a frase das filas de erro/acerto temporárias
+    setFilaErros(prev => prev.filter(item => item.indice !== indice));
+    setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
+    setSessaoDominium(prev => ({
+      ...prev,
+      primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal),
+      recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal),
+      acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal),
+      falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal)
+    }));
+  }, [frase, idiomaEstudo, indice, nivelAtivo, topicoAtivo, setModoExercicio, setSessaoIniciada, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium]);
+
   const textoEstudo = frase?.[idiomaEstudo] || "";
 
   if (carregandoDados || !frase || !textoEstudo) {
@@ -377,14 +424,6 @@ export default function TelaEstudo({
         </div>
 
         <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: isEx3 ? 0 : '10px 0', overflow: isEx3 ? 'hidden' : 'auto' }}>
-
-
-
-
-
-
-
-
           {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
             <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', textAlign: 'center', width: '100%' }}>
               {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
@@ -401,80 +440,24 @@ export default function TelaEstudo({
               />
             ) : (
               RANKS_WRITE.includes(exercicioNivel) ? (
-                <div style={{ width: '100%', textAlign: 'center' }}>
-                  <div style={styles.containerLacuna}>
-                    {configLacuna.prefixo}
-                    <div style={styles.wrapperInputRelativo}>
-                      <span style={styles.placeholderInvisivel}>{configLacuna.resposta}</span>
-                      <input
-                        ref={editableRef}
-                        type="text"
-                        value={valorInput}
-                        disabled={resultadoFeedback === 'acerto'}
-                        autoCapitalize={!configLacuna.prefixo.trim() ? "sentences" : "none"}
-                        autoCorrect="off"
-                        spellCheck="false"
-                        onFocus={(e) => {
-                          if (resultadoFeedback === 'erro') {
-                            setValorInput("");
-                            setResultadoFeedback(null);
-                          }
-                          setTimeout(() => {
-                            const botoes = document.getElementById('area-botoes-card');
-                            if (botoes) botoes.scrollIntoView({ behavior: 'smooth', block: 'end' });
-                          }, 300);
-                        }}
-                        onChange={(e) => {
-                          let texto = e.target.value;
-                          if (!configLacuna.prefixo.trim() && texto.length === 1 && texto[0] >= 'a' && texto[0] <= 'z') {
-                            texto = texto.toUpperCase();
-                          }
-                          setValorInput(texto);
-                        }}
-                        onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
-                        style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
-                      />
-                      {resultadoFeedback && (
-                        <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
-                          {resultadoFeedback === 'acerto' ? <span style={{ color: temas[idiomaEstudo].corTextoL1 }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
-                            const userWords = valorInput.trim().split(/\s+/);
-                            const clean = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "").trim();
-                            const isCorrect = clean(word) === clean(userWords[i]);
-                            return <span key={i} style={{ color: isCorrect ? temas[idiomaEstudo].corTextoL1 : '#ef4444' }}>{i > 0 ? ' ' : ''}{word}</span>
-                          })}
-                        </div>
-                      )}
-                    </div>
-                    {configLacuna.sufixo}
-                  </div>
-                </div>
+                <ExercicioEscrita
+                  configLacuna={configLacuna} valorInput={valorInput} setValorInput={setValorInput}
+                  resultadoFeedback={resultadoFeedback} setResultadoFeedback={setResultadoFeedback}
+                  verificarResposta={verificarResposta} editableRef={editableRef} temas={temas}
+                  idiomaEstudo={idiomaEstudo} styles={styles}
+                />
               ) : (
-                <div style={{ textAlign: 'center' }}>
-                  <p style={styles.textoFrasePrincipal}>
-                    {RANKS_VOICE.includes(exercicioNivel) ? (
-
-                      resultadoFeedback === 'acerto' ? <span style={{ color: temas[idiomaEstudo].corTextoL1 }}>{textoEstudo}</span> : (() => {
-                        let currentZhIndex = 0;
-                        const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
-                        return textoEstudo.split(" ").map((word, i) => {
-                          const normalizarPalavra = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "").trim();
-                          let pLimpa = normalizarPalavra(word);
-                          if (idiomaEstudo === 'pi') {
-                            const numSyllables = (word.match(/[aeiouüáéíóúàèìòùǎěǐǒǔāēīōū]+/gi) || [1]).length;
-                            pLimpa = zhLimpo.substring(currentZhIndex, currentZhIndex + numSyllables);
-                            currentZhIndex += numSyllables;
-                          }
-                          const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "").trim();
-                          const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
-                          const oculto = indicesOcultosVoz.includes(i);
-                          let cor = oculto ? 'transparent' : '#000'; let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
-                          if (estaNaFala) { cor = temas[idiomaEstudo].corTextoL1; borderB = '2px solid transparent'; } else if (resultadoFeedback === 'erro') { cor = '#ef4444'; }
-                          return <span key={i} style={{ color: cor, borderBottom: borderB, paddingBottom: '2px', display: 'inline-block', marginRight: '4px' }}>{word}</span>
-                        });
-                      })()
-                    ) : textoEstudo}
-                  </p>
-                </div>
+                RANKS_VOICE.includes(exercicioNivel) ? (
+                  <ExercicioVoz
+                    textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
+                    temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
+                    indicesOcultosVoz={indicesOcultosVoz} styles={styles}
+                  />
+                ) : (
+                  <div style={{ textAlign: 'center' }}>
+                    <p style={styles.textoFrasePrincipal}>{textoEstudo}</p>
+                  </div>
+                )
               )
             )
           ) : (
