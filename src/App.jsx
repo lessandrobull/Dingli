@@ -35,6 +35,10 @@ function App() {
   const [modoExercicio, setModoExercicio] = useState(false);
   const [resultadoFeedback, setResultadoFeedback] = useState(null);
   const [exercicioNivel, setExercicioNivel] = useState(0);
+
+  // Novo estado para segurar a Revisão Global do "Saque Rápido"
+  const [fraseAtivaGlobal, setFraseAtivaGlobal] = useState(null);
+
   // Estados voláteis migrados para TelaEstudo
   const processandoAcertoRef = useRef(false);
   const [cursosInscritos, setCursosInscritos] = useState(() => {
@@ -69,8 +73,13 @@ function App() {
   const falarRef = useRef(null);
 
   const processarResultadoVoz = useCallback(({ resultado, tentativas, fraseOriginal }) => {
-    const idAtual = frasesFiltradas[indice]?.id;
+    // Puxa os dados da Revisão (se existir) ou do Tópico (se for inédita)
+    const idAtual = fraseAtivaGlobal ? fraseAtivaGlobal.id : frasesFiltradas[indice]?.id;
     if (!idAtual) return;
+const zhSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.texto_zh : (frasesFiltradas[indice]?.zh || "");
+    const nivelSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.nivel : nivelAtivo;
+    const topicoSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.topico : topicoAtivo;
+    const traducaoSalvar = fraseAtivaGlobal ? (fraseAtivaGlobal.traducao || "") : (frasesFiltradas[indice]?.[idiomaOrigem] || "");
     const rankObj = frasesMaestria[idAtual];
     const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
     const cursoKey = `${idiomaOrigem}_${idiomaEstudo}`;
@@ -78,6 +87,7 @@ function App() {
     if (resultado === 'acerto') {
       setResultadoFeedback('acerto');
       processandoAcertoRef.current = true;
+
       if (tentativas === 0) {
         const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
         const inRecuperacao = typeof rankObj === 'object' && rankObj.status === 'recuperacao';
@@ -90,9 +100,10 @@ function App() {
           last_attempt_at: Date.now(),
           highest_rank: Math.max(highestRank, calc.novoRank),
           texto: fraseOriginal,
-          texto_zh: frasesFiltradas[indice]?.zh || "",
-          nivel: nivelAtivo,
-          topico: topicoAtivo
+          traducao: traducaoSalvar,
+          texto_zh: zhSalvar,
+          nivel: nivelSalvar,
+          topico: topicoSalvar
         };
         setFrasesMaestria(prev => ({ ...prev, [idAtual]: novoObjeto }));
         setSessaoDominium(prev => ({
@@ -118,24 +129,18 @@ function App() {
         const existe = prev.some(item => item.indice === indice);
         return existe ? prev : [...prev, { indice }];
       });
-
-      const textoFinal = (idiomaEstudo === 'pi' && frasesFiltradas[indice].zh)
-        ? frasesFiltradas[indice].zh
-        : frasesFiltradas[indice][idiomaEstudo];
-
+const textoFinal = (idiomaEstudo === 'pi' && zhSalvar)
+        ? zhSalvar
+        : fraseOriginal;
       const tempoAudio = Math.max(fraseOriginal.split(" ").length * 600, 1500);
-
       if (falarRef.current) falarRef.current(textoFinal, false);
-
       setTimeout(() => {
         setResultadoFeedback(null);
         processandoAcertoRef.current = false;
-
         if (jogarDominiumInteligenteRef.current) {
           jogarDominiumInteligenteRef.current();
         }
       }, tempoAudio);
-
     } else if (resultado === 'erro') {
       setResultadoFeedback('erro');
       processandoAcertoRef.current = true;
@@ -150,12 +155,12 @@ function App() {
         last_attempt_at: Date.now(),
         highest_rank: Math.max(highestRank, calc.novoRank),
         texto: fraseOriginal,
-        texto_zh: frasesFiltradas[indice]?.zh || "",
-        nivel: nivelAtivo,
-        topico: topicoAtivo
+        traducao: traducaoSalvar,
+        texto_zh: zhSalvar,
+        nivel: nivelSalvar,
+        topico: topicoSalvar
       };
       setFrasesMaestria(prev => ({ ...prev, [idAtual]: novoObjeto }));
-
       setSessaoDominium(prev => ({
         ...prev,
         falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: idAtual, curso: cursoKey }],
@@ -167,8 +172,8 @@ function App() {
         if (existe) return prev;
         return [...prev, { indice, rank: calc.novoRank }];
       });
-      const textoFinalErro = (idiomaEstudo === 'pi' && frasesFiltradas[indice].zh)
-        ? frasesFiltradas[indice].zh
+      const textoFinalErro = (idiomaEstudo === 'pi' && zhSalvar)
+        ? zhSalvar
         : fraseOriginal;
       const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 600, 1000);
 
@@ -179,60 +184,42 @@ function App() {
         processandoAcertoRef.current = false;
       }, tempoAudioErro);
     }
-  }, [indice, frasesFiltradas, idiomaEstudo, idiomaOrigem, frasesMaestria, nivelAtivo, topicoAtivo, modoJogo, setResultadoFeedback, setSessaoDominium, setFrasesMaestria, setFilaErros, setFilaAcertos, setIndice]);
+  }, [indice, frasesFiltradas, idiomaEstudo, idiomaOrigem, frasesMaestria, nivelAtivo, topicoAtivo, modoJogo, setResultadoFeedback, setSessaoDominium, setFrasesMaestria, setFilaErros, setFilaAcertos, setIndice, fraseAtivaGlobal]);
+
   const jogarDominiumInteligente = useCallback(async () => {
     let proximo = avaliarProximoAlvo(frasesFiltradas);
-    let dadosAtuais = frasesFiltradas;
-    let nivelAlvo = (proximo && proximo.nivel) ? proximo.nivel : nivelAtivo;
-    let topicoAlvo = (proximo && proximo.topico) ? proximo.topico : topicoAtivo;
-    if (!proximo && (!nivelAlvo || !topicoAlvo)) {
-      limparEstadoExercicio();
-      mudarTela('escolherTopic');
-      return;
-    }
-    if (nivelAtivo !== nivelAlvo || topicoAtivo !== topicoAlvo || frasesFiltradas.length === 0) {
-      setCarregandoDados(true);
-      try {
-        const colTopicOrigem = `topic_${idiomaOrigem}`;
-        const { data } = await dataService.getSentencesByTopic(nivelAlvo, idiomaEstudo, colTopicOrigem, topicoAlvo);
-        if (data) {
-          setFrasesFiltradas(data);
-          setNivelAtivo(nivelAlvo);
-          setTopicoAtivo(topicoAlvo);
-          dadosAtuais = data;
-          if (!proximo) proximo = avaliarProximoAlvo(data);
-        }
-      } catch (erro) {
-        console.error("Erro no carregamento silencioso do tópico:", erro);
-      } finally {
-        setCarregandoDados(false);
-      }
-    }
 
+    // Prioridade Mínima (Fim da Linha): Nada no cache global, nada inédito no tópico.
     if (!proximo) {
       limparEstadoExercicio();
       mudarTela('escolherTopic');
       return;
     }
 
-    let novoIndice = proximo.indice !== -1 ? proximo.indice : dadosAtuais.findIndex(f => f.id === proximo.id);
-    if (novoIndice !== -1 && novoIndice !== undefined) {
-      setIndice(novoIndice);
-      if (proximo.tipo === 'inedita') {
-        setModoJogo(false);
-        setModoExercicio(false);
-        setSessaoIniciada(false);
-        mudarTela('estudo');
-      } else {
-        setModoJogo(true);
-        setSessaoIniciada(true);
-        iniciarExercicio(proximo.rank || 1, novoIndice, dadosAtuais);
-      }
-    } else {
-      limparEstadoExercicio();
-      mudarTela('escolherTopic');
+    // Prioridade Máxima (Saque Rápido): Tem revisão engatilhada no cache!
+    if (proximo.tipo === 'revisao') {
+      setFraseAtivaGlobal(proximo.dados);
+      setModoJogo(true);
+      setSessaoIniciada(true);
+      iniciarExercicio(proximo.dados.rank || 1);
+      return;
     }
-  }, [idiomaOrigem, idiomaEstudo, sessaoDominium, frasesFiltradas, nivelAtivo, topicoAtivo, avaliarProximoAlvo, setIndice, setModoJogo, setModoExercicio, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio]);
+
+    // Prioridade Média (Tópico Atual): É inédita. Pega pelo menor ID.
+    if (proximo.tipo === 'inedita') {
+      setFraseAtivaGlobal(null); // Limpa o cache global para usar o tópico
+      if (proximo.indice !== -1 && proximo.indice !== undefined) {
+        setIndice(proximo.indice);
+        setModoJogo(false);
+        setSessaoIniciada(false);
+        setModoExercicio(false);
+      } else {
+        limparEstadoExercicio();
+        mudarTela('escolherTopic');
+      }
+    }
+  }, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio]);
+
   useEffect(() => {
     jogarDominiumInteligenteRef.current = jogarDominiumInteligente;
   }, [jogarDominiumInteligente]);
@@ -278,7 +265,7 @@ function App() {
           return;
         }
       }
-      if (tela === 'estudo' && frasesFiltradas.length === 0) {
+      if (tela === 'estudo' && frasesFiltradas.length === 0 && !fraseAtivaGlobal) {
         limparEstadoExercicioRef.current();
         mudarTela('escolherTopic');
       } else if (tela === 'selecaoExercicio' && frasesFiltradas.length === 0) {
@@ -389,6 +376,7 @@ function App() {
   }
 
   function limparEstadoExercicio() {
+    setFraseAtivaGlobal(null); // Mata o card global da tela
     setModoExercicio(false);
     setSessaoIniciada(false);
     setExercicioNivel(0);
@@ -648,6 +636,7 @@ function App() {
     );
     if (tela === 'estudo') return (
       <TelaEstudo
+        fraseAtivaGlobal={fraseAtivaGlobal}
         frasesFiltradas={frasesFiltradas} indice={indice} nivelAtivo={nivelAtivo} topicoAtivo={topicoAtivo}
         modoExercicio={modoExercicio} exercicioNivel={exercicioNivel} styles={styles}
         carregandoDados={carregandoDados} mostrarTraducao={mostrarTraducao}

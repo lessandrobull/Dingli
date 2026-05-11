@@ -30,14 +30,9 @@ const ExercicioSelecao = ({
       {idiomaEstudo === 'pi' && frase?.zh && ![4, 11, 18].includes(exercicioNivel) && <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: '0.9rem', padding: '0px 0' }}>{frase.zh}</div>}
       <div style={styles.gavetaSelecionadasFlex}>
         {slotsEx3.map((slot, i) => (
-          <div key={i} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: getCorSlotEx3(slot), color: getCorTextoSlotEx3(slot, i), border: (resultadoFeedback && slot) ? (resultadoFeedback === 'acerto' ? `2px solid ${temas[idiomaEstudo].corTextoL1}` : (slot.texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") === frasesFiltradas[indice][idiomaEstudo].split(" ")[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") ? (resultadoFeedback === 'erro_limpo' ? '1px solid #cbd5e1' : `2px solid ${temas[idiomaEstudo].corTextoL1}`) : '2px solid #ef4444')) : ('1px solid #cbd5e1'), display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => resultadoFeedback !== 'acerto' && removerPalavraSlot(i)}>{slot?.texto}</div>))}
+          <div key={i} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: getCorSlotEx3(slot), color: getCorTextoSlotEx3(slot, i), border: (resultadoFeedback && slot) ? (resultadoFeedback === 'acerto' ? `2px solid ${temas[idiomaEstudo].corTextoL1}` : (slot.texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") === frase[idiomaEstudo].split(" ")[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") ? (resultadoFeedback === 'erro_limpo' ? '1px solid #cbd5e1' : `2px solid ${temas[idiomaEstudo].corTextoL1}`) : '2px solid #ef4444')) : ('1px solid #cbd5e1'), display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => resultadoFeedback !== 'acerto' && removerPalavraSlot(i)}>{slot?.texto}</div>))}
       </div>
       <div style={styles.divisorEx3} />
-
-
-
-
-
       <div style={styles.gavetaOpcoesFlex}>
         {palavrasOpcoes.map((p) => (
           <button key={p.id} onClick={() => !p.usado && resultadoFeedback !== 'acerto' && selecionarPalavra(p)} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: p.usado ? '#f8fafc' : '#f1f5f9', color: p.usado ? 'transparent' : '#000', border: '1px solid #cbd5e1', visibility: p.usado ? 'hidden' : 'visible' }}>{p.texto}</button>
@@ -134,19 +129,27 @@ const ExercicioVoz = ({
 };
 
 export default function TelaEstudo({
+  fraseAtivaGlobal,
   frasesFiltradas, indice, nivelAtivo, topicoAtivo,
   modoExercicio, exercicioNivel, styles,
-  carregandoDados, mostrarTraducao, setMostrarTraducao, falar, explicarFraseIA,
-  frasesMaestria, setFrasesMaestria, setModoJogo, setSessaoIniciada,
-  limparEstadoExercicio, statusVoz, volume, iniciarReconhecimentoVoz,
-  setIndice, transcricaoAoVivo, iniciarExercicio,
-  aiExplanation, aiLoading,
-  // Novas Props recebidas do App
-  setModoExercicio, filaErros, setFilaErros, filaAcertos, setFilaAcertos,
+  carregandoDados, mostrarTraducao, setMostrarTraducao, falar,
+  explicarFraseIA, frasesMaestria, setFrasesMaestria, setModoJogo,
+  setSessaoIniciada, limparEstadoExercicio, statusVoz, volume,
+  iniciarReconhecimentoVoz, setIndice, transcricaoAoVivo,
+  iniciarExercicio, aiExplanation, aiLoading, setModoExercicio,
+  filaErros, setFilaErros, filaAcertos, setFilaAcertos,
   sessaoDominium, setSessaoDominium, jogarDominiumInteligente
 }) {
   const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole } = useDingli();
-  const frase = frasesFiltradas[indice];
+
+
+  // A Mágica com useMemo para evitar Loop Infinito de Renderização
+  const frase = React.useMemo(() => {
+    return fraseAtivaGlobal
+      ? { id: fraseAtivaGlobal.id, [idiomaEstudo]: fraseAtivaGlobal.texto, [idiomaOrigem]: fraseAtivaGlobal.traducao || "", zh: fraseAtivaGlobal.texto_zh, nivel: fraseAtivaGlobal.nivel, topico: fraseAtivaGlobal.topico }
+      : frasesFiltradas[indice];
+  }, [fraseAtivaGlobal, frasesFiltradas, indice, idiomaEstudo, idiomaOrigem]);
+
   const ns = navStyle(idiomaEstudo);
 
   // --- ESTADOS E REFERÊNCIAS INTERNALIZADAS ---
@@ -249,7 +252,7 @@ export default function TelaEstudo({
       const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
       const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
       const calc = calcularProximoRank(rankAtual, true, highestRank, estavaNaFilaErro || (typeof rankObj === 'object' && rankObj.status === 'recuperacao'));
-      setFrasesMaestria(prev => ({ ...prev, [frase.id]: { rank: calc.novoRank, status: calc.lista, next_review: Date.now() + calc.espera, last_review: Date.now(), last_attempt_at: Date.now(), highest_rank: Math.max(highestRank, calc.novoRank), texto: fraseOriginal, texto_zh: frase?.zh || "", nivel: nivelAtivo, topico: topicoAtivo } }));
+      setFrasesMaestria(prev => ({ ...prev, [frase.id]: { rank: calc.novoRank, status: calc.lista, next_review: Date.now() + calc.espera, last_review: Date.now(), last_attempt_at: Date.now(), highest_rank: Math.max(highestRank, calc.novoRank), texto: fraseOriginal, traducao: frase[idiomaOrigem] || "", texto_zh: frase?.zh || "", nivel: frase.nivel || nivelAtivo, topico: frase.topico || topicoAtivo } }));
       if (estavaNaFilaErro) {
         setSessaoDominium(prev => ({ ...prev, primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal), recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal), falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal) }));
         setTimeout(() => setSessaoDominium(prev => ({ ...prev, recuperadas: [...(prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}`, nivel: nivelAtivo, topico: topicoAtivo }] })), 30000);
@@ -267,7 +270,7 @@ export default function TelaEstudo({
       const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
       const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
       const calc = calcularProximoRank(rankAtual, false, highestRank, filaErros.some(item => item.indice === indice) || (typeof rankObj === 'object' && rankObj.status === 'recuperacao'));
-      setFrasesMaestria(prev => ({ ...prev, [frase.id]: { rank: calc.novoRank, status: calc.lista, next_review: Date.now() + calc.espera, last_review: Date.now(), last_attempt_at: Date.now(), highest_rank: Math.max(highestRank, calc.novoRank), texto: fraseOriginal, texto_zh: frase?.zh || "", nivel: nivelAtivo, topico: topicoAtivo } }));
+      setFrasesMaestria(prev => ({ ...prev, [frase.id]: { rank: calc.novoRank, status: calc.lista, next_review: Date.now() + calc.espera, last_review: Date.now(), last_attempt_at: Date.now(), highest_rank: Math.max(highestRank, calc.novoRank), texto: fraseOriginal, traducao: frase[idiomaOrigem] || "", texto_zh: frase?.zh || "", nivel: frase.nivel || nivelAtivo, topico: frase.topico || topicoAtivo } }));
       setSessaoDominium(prev => ({ ...prev, falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}` }], primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal) }));
       setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
       setFilaErros(prev => prev.some(item => item.indice === indice) ? prev : [...prev, { indice, rank: calc.novoRank }]);
@@ -282,7 +285,7 @@ export default function TelaEstudo({
 
   const handleRever = useCallback(() => {
     const fraseOriginal = frase[idiomaEstudo];
-    
+
     // 1. Desliga o modo exercício para voltar ao card inicial passivo
     setModoExercicio(false);
     setSessaoIniciada(false);
@@ -303,9 +306,10 @@ export default function TelaEstudo({
         last_attempt_at: Date.now(),
         highest_rank: 0,
         texto: fraseOriginal,
+        traducao: frase[idiomaOrigem] || "",
         texto_zh: frase?.zh || "",
-        nivel: nivelAtivo,
-        topico: topicoAtivo
+        nivel: frase.nivel || nivelAtivo,
+        topico: frase.topico || topicoAtivo
       }
     }));
 
@@ -390,12 +394,11 @@ export default function TelaEstudo({
   const getCorTextoSlotEx3 = (slot, index) => {
     if (!slot) return 'transparent';
     if (!resultadoFeedback) return '#000';
-    const fraseOriginal = frasesFiltradas[indice][idiomaEstudo];
+    const fraseOriginal = frase[idiomaEstudo];
     const palavrasCorretas = fraseOriginal.split(" ");
-    const limpar = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "").trim();
+    const limpar = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
     const estaCorreta = limpar(slot.texto) === limpar(palavrasCorretas[index]);
     const corCorreta = temas[idiomaEstudo].corTextoL1;
-
     if (resultadoFeedback === 'acerto') return corCorreta;
     if (estaCorreta) return resultadoFeedback === 'erro_limpo' ? '#000' : corCorreta;
     return '#ef4444';
@@ -488,7 +491,7 @@ export default function TelaEstudo({
                 <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.askAi}</button>
                 {userRole === 'aluno' ? (
                   (() => {
-                    const idAtual = frasesFiltradas[indice]?.id;
+                    const idAtual = frase?.id;
                     const maestriaData = frasesMaestria[idAtual];
                     const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
                     return (

@@ -87,7 +87,7 @@ export function useGameEngine({
 
   const avaliarProximoAlvo = useCallback((frasesAtuais = frasesFiltradas) => {
     const agora = Date.now();
-    
+
     // Subetapas 1 e 2: Varredura Global e Identificação de Urgência
     let recuperacao = [];
     let progresso30s = [];
@@ -96,7 +96,7 @@ export function useGameEngine({
     Object.keys(frasesMaestria).forEach(idStr => {
       const id = Number(idStr);
       const maestria = frasesMaestria[idStr];
-      
+
       if (typeof maestria === 'object' && maestria.rank > 0 && maestria.next_review <= agora) {
         if (maestria.status === 'recuperacao') {
           recuperacao.push({ ...maestria, id, tipo: 'recuperacao' });
@@ -119,9 +119,8 @@ export function useGameEngine({
     else if (progressoDias.length > 0) escolhido = progressoDias[0];
 
     if (escolhido) {
-      // Subetapa 3: O alvo pode não estar carregado. Passamos a resposta com nível e tópico para o App baixar os dados
-      const indiceLocal = frasesAtuais ? frasesAtuais.findIndex(f => f.id === escolhido.id) : -1;
-      return { ...escolhido, indice: indiceLocal };
+      // Prioridade Máxima: Retorna a revisão global engatilhada, sem precisar de índice
+      return { tipo: 'revisao', dados: escolhido };
     }
 
     // Preparação para Subetapa 4: Resgate de Inéditas no tópico atual (se houver algum carregado)
@@ -134,7 +133,7 @@ export function useGameEngine({
           ineditas.push({ id: f.id, rank: 0, tipo: 'inedita', indice: index, nivel: f.nivel, topico: f.topico });
         }
       });
-      
+
       if (ineditas.length > 0) {
         ineditas.sort((a, b) => a.id - b.id);
         return ineditas[0];
