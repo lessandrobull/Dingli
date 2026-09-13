@@ -8,9 +8,9 @@ export function EscolherOrigem({ styles }) {
 
   if (!styles || !temas) return null;
   return (
-    <div style={{ ...styles.viewport, backgroundColor: '#121212' }}>
+    <div style={{ ...styles.viewport, backgroundColor: '#e4eafa' }}>
       <div style={styles.mobileContainer}>
-        <button onClick={() => mudarTela('perfil')} style={{ ...styles.btnNavTopo, backgroundColor: '#333', color: '#fff' }}>← {t.back}</button>
+        <button onClick={() => mudarTela('perfil')} style={{ ...styles.btnNavTopo, backgroundColor: '#fbf2e7', color: '#296bc2' }}>← {t.back}</button>
         <div className="scroll-container" style={styles.areaScrollMenu}>
           {Object.keys(temas).map(sigla => (
             <button key={sigla} onClick={() => { setIdiomaOrigem(sigla); mudarTela('escolherIdioma'); }} style={{ ...styles.btnPadrao, backgroundColor: temas[sigla].bg, color: temas[sigla].btn }}>
@@ -29,9 +29,9 @@ export function EscolherEstudo({ styles, setFilaErros, setFilaAcertos }) {
 
   if (!styles || !temas) return null;
   return (
-    <div style={{ ...styles.viewport, backgroundColor: '#121212' }}>
+    <div style={{ ...styles.viewport, backgroundColor: '#e4eafa' }}>
       <div style={styles.mobileContainer}>
-        <button onClick={() => (userRole === 'adm' ? mudarTela('escolherOrigem') : mudarTela('perfil'))} style={{ ...styles.btnNavTopo, backgroundColor: '#333', color: '#fff' }}>← {t.back}</button>
+        <button onClick={() => (userRole === 'adm' ? mudarTela('escolherOrigem') : mudarTela('perfil'))} style={{ ...styles.btnNavTopo, backgroundColor: '#fbf2e7', color: '#296bc2' }}>← {t.back}</button>
         <div className="scroll-container" style={styles.areaScrollMenu}>
           {Object.keys(temas).filter(s => s !== idiomaOrigem).map(sigla => (
             <button key={sigla} onClick={() => { setIdiomaEstudo(sigla); setFilaErros([]); setFilaAcertos([]); mudarTela('menuCurso'); }} style={{ ...styles.btnPadrao, backgroundColor: temas[sigla].bg, color: temas[sigla].btn }}>

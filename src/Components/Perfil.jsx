@@ -24,21 +24,31 @@ export default function Perfil({
   }
 
   return (
-    <div style={styles.viewport}>
+    <div style={{ ...styles.viewport, backgroundColor: '#e4eafa' }}>
       <div style={styles.mobileContainer}>
         {/* Cabeçalho do Perfil */}
-        <div style={styles.topoPerfil}>
-          <h1 style={styles.tituloApp}>DìNGLì</h1>
-          <h2 style={styles.nomeAluno}>Olá, {nomeAluno || 'Estudante'}</h2>
+        <div style={{ ...styles.topoPerfil, flexDirection: 'column', alignItems: 'center' }}>
+          <img src="/assets/logos/dingli_logo_perfil.png
+          " alt="DìNGLì Logo" style={{ width: '100%', height: '140px', objectFit: 'contain', marginBottom: '5px', marginTop: '5px' }} />
+          <h2 style={{ ...styles.nomeAluno, color: '#2a537f', margin: '0' }}>Olá, {nomeAluno || 'Estudante'}</h2>
         </div>
+
         {/* Quadro de Frase Motivacional */}
-        <div style={styles.quadroFrase}>
-          <p style={styles.textoFrase}>{fraseTeorica || 'A carregar inspiração...'}</p>
+        <div style={{ ...styles.quadroFrase, backgroundColor: '#e4eafa', border: 'none', boxShadow: 'none', marginBottom: '-20px', marginTop: '-10px' }}>
+          <p style={{ ...styles.textoFrase, color: '#296bc2' }}>{fraseTeorica || 'A carregar inspiração...'}</p>
         </div>
         {/* Secção de Cursos */}
         <div style={styles.secaoCursos}>
-          <h3 style={styles.labelCentral}>Cursos em andamento</h3>
-          <div className="scroll-container" style={{ flex: 1, overflowY: 'auto', width: '100%', marginBottom: '10px' }}>
+          <button
+            style={{ ...styles.btnAdicionarMinimal, backgroundColor: '#e4eafa', color: '#296bc2' }}
+            onClick={() => {
+              setUserRole('aluno');
+              mudarTela('escolherOrigem');
+            }}
+          >
+            + Adicionar novo idioma
+          </button>
+          <div className="scroll-container" style={{ flex: 1, overflowY: 'auto', width: '100%', marginBottom: '0px' }}>
             <div style={styles.gridCursos}>
               {/* Mapeamento dinâmico dos cursos ativos */}
               {cursosInscritos && cursosInscritos.map((curso, index) => {
@@ -67,26 +77,17 @@ export default function Perfil({
             </div>
           </div>
         </div>
-        {/* Botões Fixos no Rodapé */}
-        <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', flexShrink: 0, paddingBottom: '20px' }}>
-          <button
-            style={styles.btnAdicionarMinimal}
-            onClick={() => {
-              setUserRole('aluno');
-              mudarTela('escolherOrigem');
-            }}
-          >
-            + Adicionar novo idioma
-          </button>
+
+        <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', flexShrink: 0, paddingBottom: '0px' }}>
           {/* Botões de Controlo e Administração */}
           <button
-            style={{ ...styles.btnLabHome, margin: '0 auto', display: 'block', width: '100%' }}
+            style={{ ...styles.btnLabHome, margin: '0 auto', display: 'block', width: '100%', backgroundColor: '#e4eafa' }}
             onClick={() => {
               setUserRole('adm');
               mudarTela('adm');
             }}
           >
-            <span style={styles.labDestaque}>Adm</span>
+            <span style={{ ...styles.labDestaque, color: '#296bc2' }}>Adm</span>
           </button>
         </div>
       </div>

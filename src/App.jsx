@@ -76,7 +76,7 @@ function App() {
     // Puxa os dados da Revisão (se existir) ou do Tópico (se for inédita)
     const idAtual = fraseAtivaGlobal ? fraseAtivaGlobal.id : frasesFiltradas[indice]?.id;
     if (!idAtual) return;
-const zhSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.texto_zh : (frasesFiltradas[indice]?.zh || "");
+    const zhSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.texto_zh : (frasesFiltradas[indice]?.zh || "");
     const nivelSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.nivel : nivelAtivo;
     const topicoSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.topico : topicoAtivo;
     const traducaoSalvar = fraseAtivaGlobal ? (fraseAtivaGlobal.traducao || "") : (frasesFiltradas[indice]?.[idiomaOrigem] || "");
@@ -129,7 +129,7 @@ const zhSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.texto_zh : (frasesFiltradas
         const existe = prev.some(item => item.indice === indice);
         return existe ? prev : [...prev, { indice }];
       });
-const textoFinal = (idiomaEstudo === 'pi' && zhSalvar)
+      const textoFinal = (idiomaEstudo === 'pi' && zhSalvar)
         ? zhSalvar
         : fraseOriginal;
       const tempoAudio = Math.max(fraseOriginal.split(" ").length * 600, 1500);
