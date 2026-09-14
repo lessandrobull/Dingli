@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useMemo } from 'react';
-import { temas, interfaceTraducoes } from './constant';
+import { temas, interfaceTraducoes } from './constant'; 
 
 const DingliContext = createContext();
 
