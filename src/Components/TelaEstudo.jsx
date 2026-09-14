@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
-import { calcularProximoRank } from '../useSRSLogic';
+import { calcularProximoRank } from '../useSRSLogic'; 
 
 const ExercicioSelecao = ({
   idiomaEstudo, frase, exercicioNivel, fontSizeEx3, styles, temas,
