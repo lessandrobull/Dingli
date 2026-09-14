@@ -14,17 +14,21 @@ export function DingliProvider({
   const getCorFonteDinamica = (idioma) => {
     switch (idioma) {
       case 'pt': return '#002776';
-      case 'en': case 'fr': case 'it': case 'ge': case 'pi': case 'es': return '#dc2626';
-      default: return '#1e293b';
+      case 'en': return '#1e3a8a';
+      case 'es': return '#c2410c';
+      case 'fr': return '#0055a4';
+      case 'it': return '#009246';
+      case 'ge': return '#18181b';
+      case 'pi': return '#991b1b';
+      default:   return '#1e293b';
     }
   };
 
   const navStyle = (idioma) => {
-    if (idioma === 'es') return { bg: '#dc2626', txt: '#fff' };
-    if (idioma === 'pt') return { bg: '#ffdf00', txt: '#1e3a8a' };
-    if (idioma === 'ge') return { bg: '#fbbf24', txt: '#1e293b' };
-    if (idioma === 'pi') return { bg: '#ffdf00', txt: '#CD212A' };
-    return { bg: temas[idioma]?.btn || '#333', txt: '#fff' };
+    return {
+      bg: getCorFonteDinamica(idioma),
+      txt: '#ffffff'
+    };
   };
 
   const t = useMemo(() => ({

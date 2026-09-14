@@ -10,18 +10,16 @@ export const NOMES_RANKS = [
 
 export const ESTRUTURA_NIVEIS = {
   default: ['A1', 'A2', 'B1', 'B2'],
-  pi: ['HSK 1', 'HSK 2', 'HSK 3', 'HSK 4', 'HSK 5', 'HSK 6'], // Exemplo para Mandarim
-  ja: ['N5', 'N4', 'N3', 'N2', 'N1'] // Exemplo futuro para Japonês
 };
 
 export const temas = {
-  pt: { label: "Eu falo Português", bg: "#47c38d", btn: "#fbf2e7", corTextoL1: "#009c3b", langCode: "pt-BR", nomes: { pt: "Português", en: "Inglês", es: "Espanhol", fr: "Francês", it: "Italiano", ge: "Alemão", pi: "Pinyin" } },
-  en: { label: "I speak English", bg: "#2a537f", btn: "#fbf2e7", corTextoL1: "#1e3a8a", langCode: "en-US", nomes: { pt: "Portuguese", en: "English", es: "Spanish", fr: "French", it: "Italian", ge: "German", pi: "Pinyin" } },
-  es: { label: "Hablo Español", bg: "#ff9f00", btn: "#fbf2e7", corTextoL1: "#facc15", langCode: "es-ES", fundo: '/assets/backgrounds/bg_espanol.webp', nomes: { pt: "Portugués", en: "Inglés", es: "Español", fr: "Francés", it: "Italiano", ge: "Alemán", pi: "Pinyin" } },
-  fr: { label: "Je parle Français", bg: "#2955f4", btn: "#fbf2e7", corTextoL1: "#0055A4", langCode: "fr-FR", nomes: { pt: "Portugais", en: "Anglais", es: "Espagnol", fr: "Français", it: "Italien", ge: "Allemand", pi: "Pinyin" } },
-  it: { label: "Parlo Italiano", bg: "#47c38d", btn: "#fbf2e7", corTextoL1: "#009246", langCode: "it-IT", nomes: { pt: "Portoghese", en: "Inglese", es: "Spagnolo", fr: "Francese", it: "Italiano", ge: "Tedesco", pi: "Pinyin" } },
-  ge: { label: "Ich spreche Deutsch", bg: "#000000", btn: "#fbf2e7", corTextoL1: "#e2c460", langCode: "de-DE", nomes: { pt: "Portugiesisch", en: "Englisch", es: "Spanisch", fr: "Französisch", it: "Italienisch", ge: "Deutsch", pi: "Pinyin" } },
-  pi: { label: "我说中文", bg: "#f23f51", btn: "#fbf2e7", corTextoL1: "#FFD700", langCode: "zh-CN", nomes: { pt: "葡萄牙语", en: "英语", es: "西班牙语", fr: "法语", it: "意大利语", ge: "德语", pi: "中文" } },
+  pt: { label: "Eu falo Português", bg: "#34d399", btn: "#ffffff", corTextoL1: "#002776", langCode: "pt-BR", nomes: { pt: "Português", en: "Inglês", es: "Espanhol", fr: "Francês", it: "Italiano", ge: "Alemão", pi: "Pinyin" } },
+  en: { label: "I speak English",   bg: "#4a7299", btn: "#ffffff", corTextoL1: "#1e3a8a", langCode: "en-US", nomes: { pt: "Portuguese", en: "English", es: "Spanish", fr: "French", it: "Italian", ge: "German", pi: "Pinyin" } },
+  es: { label: "Hablo Español",     bg: "#fb923c", btn: "#ffffff", corTextoL1: "#c2410c", langCode: "es-ES", fundo: '/assets/backgrounds/bg_espanol.webp', nomes: { pt: "Portugués", en: "Inglés", es: "Español", fr: "Francés", it: "Italiano", ge: "Alemán", pi: "Pinyin" } },
+  fr: { label: "Je parle Français", bg: "#5b82f6", btn: "#ffffff", corTextoL1: "#0055a4", langCode: "fr-FR", nomes: { pt: "Portugais", en: "Anglais", es: "Espagnol", fr: "Français", it: "Italien", ge: "Allemand", pi: "Pinyin" } },
+  it: { label: "Parlo Italiano",    bg: "#47c38d", btn: "#ffffff", corTextoL1: "#009246", langCode: "it-IT", nomes: { pt: "Portoghese", en: "Inglese", es: "Spagnolo", fr: "Francese", it: "Italiano", ge: "Tedesco", pi: "Pinyin" } },
+  ge: { label: "Ich spreche Deutsch", bg: "#71717a", btn: "#ffffff", corTextoL1: "#18181b", langCode: "de-DE", nomes: { pt: "Portugiesisch", en: "Englisch", es: "Spanisch", fr: "Französisch", it: "Italienisch", ge: "Deutsch", pi: "Pinyin" } },
+  pi: { label: "我说中文",          bg: "#f87171", btn: "#ffffff", corTextoL1: "#991b1b", langCode: "zh-CN", nomes: { pt: "葡萄牙语", en: "英语", es: "西班牙语", fr: "法语", it: "Italiano", ge: "德语", pi: "中文" } },
 };
 
 export const interfaceTraducoes = {

@@ -1,5 +1,4 @@
 import React from 'react';
-// Ajuste do caminho: assumindo que o componente está em src/components/ e constant.js está na raiz ou em src/
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
@@ -15,7 +14,7 @@ const ExercicioSelecao = ({
   const getCorTextoSlotEx3 = (slot, index) => {
     if (!slot) return 'transparent';
     if (!resultadoFeedback) return '#000';
-    const fraseOriginal = frasesFiltradas[indice][idiomaEstudo];
+    const fraseOriginal = frase ? frase[idiomaEstudo] : (frasesFiltradas[indice]?.[idiomaEstudo] || "");
     const palavrasCorretas = fraseOriginal.split(" ");
     const limpar = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
     const estaCorreta = limpar(slot.texto) === limpar(palavrasCorretas[index]);
@@ -60,7 +59,7 @@ const ExercicioEscrita = ({
             autoCapitalize={!configLacuna.prefixo.trim() ? "sentences" : "none"}
             autoCorrect="off"
             spellCheck="false"
-            onFocus={(e) => {
+            onFocus={() => {
               if (resultadoFeedback === 'erro') {
                 setValorInput("");
                 setResultadoFeedback(null);
@@ -118,7 +117,8 @@ const ExercicioVoz = ({
             const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
             const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
             const oculto = indicesOcultosVoz.includes(i);
-            let cor = oculto ? 'transparent' : '#000'; let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
+            let cor = oculto ? 'transparent' : '#000';
+            let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
             if (estaNaFala) { cor = temas[idiomaEstudo].corTextoL1; borderB = '2px solid transparent'; } else if (resultadoFeedback === 'erro') { cor = '#ef4444'; }
             return <span key={i} style={{ color: cor, borderBottom: borderB, paddingBottom: '2px', display: 'inline-block', marginRight: '4px' }}>{word}</span>
           });
@@ -142,8 +142,6 @@ export default function TelaEstudo({
 }) {
   const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole } = useDingli();
 
-
-  // A Mágica com useMemo para evitar Loop Infinito de Renderização
   const frase = React.useMemo(() => {
     return fraseAtivaGlobal
       ? { id: fraseAtivaGlobal.id, [idiomaEstudo]: fraseAtivaGlobal.texto, [idiomaOrigem]: fraseAtivaGlobal.traducao || "", zh: fraseAtivaGlobal.texto_zh, nivel: fraseAtivaGlobal.nivel, topico: fraseAtivaGlobal.topico }
@@ -152,14 +150,13 @@ export default function TelaEstudo({
 
   const ns = navStyle(idiomaEstudo);
 
-  // --- ESTADOS E REFERÊNCIAS INTERNALIZADAS ---
   const [resultadoFeedback, setResultadoFeedback] = useState(null);
   const [valorInput, setValorInput] = useState("");
   const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "" });
   const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
   const [slotsEx3, setSlotsEx3] = useState([]);
   const [indicesOcultosVoz, setIndicesOcultosVoz] = useState([]);
-  const [tentativaFinalizada, setTentativaFinalizada] = useState(false);
+  const [, setTentativaFinalizada] = useState(false);
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
 
@@ -168,7 +165,6 @@ export default function TelaEstudo({
     jogarDominiumRef.current = jogarDominiumInteligente;
   }, [jogarDominiumInteligente]);
 
-  // --- CÉREBRO GERADOR DE EXERCÍCIOS ---
   useEffect(() => {
     if (modoExercicio && exercicioNivel > 0 && frase) {
       setResultadoFeedback(null); setTentativaFinalizada(false); setValorInput("");
@@ -181,7 +177,6 @@ export default function TelaEstudo({
         const inicioIdx = (percentual === 1.0) ? 0 : Math.floor(Math.random() * (palavras.length - qtdPalavrasOcultas + 1));
         const prefixo = palavras.slice(0, inicioIdx).join(" ") + (inicioIdx > 0 ? " " : "");
         const seqResposta = palavras.slice(inicioIdx, inicioIdx + qtdPalavrasOcultas).join(" ");
-        // Regex corrigida: não escapar chaves ou colchetes desnaturais que quebrem o compilador
         const prefixoAdicionalMatch = seqResposta.match(/^[¿¡"'(]+/);
         const prefixoAdicional = prefixoAdicionalMatch ? prefixoAdicionalMatch[0] : "";
         const pontuacaoFinalMatch = seqResposta.match(/[.,!?;:]+$/);
@@ -207,9 +202,8 @@ export default function TelaEstudo({
       setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]); setIndicesOcultosVoz([]);
       if (editableRef.current) editableRef.current.innerText = "";
     }
-  }, [modoExercicio, exercicioNivel, indice, frase, idiomaEstudo]);
+  }, [modoExercicio, exercicioNivel, indice, frase, idiomaEstudo, falar]);
 
-  // --- LÓGICA DE INTERAÇÃO E VALIDAÇÃO ---
   const selecionarPalavra = useCallback((palavraObj) => {
     setResultadoFeedback(null);
     const primeiroSlotVazio = slotsEx3.findIndex(s => s === null);
@@ -281,12 +275,10 @@ export default function TelaEstudo({
         else if (RANKS_WRITE.includes(exercicioNivel)) { setValorInput(""); setResultadoFeedback(null); }
       }, Math.max(fraseOriginal.split(" ").length * 600, 1000));
     }
-  }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, sessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, jogarDominiumInteligente, setModoExercicio]);
+  }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo]);
 
   const handleRever = useCallback(() => {
     const fraseOriginal = frase[idiomaEstudo];
-
-    // 1. Desliga o modo exercício para voltar ao card inicial passivo
     setModoExercicio(false);
     setSessaoIniciada(false);
     setResultadoFeedback(null);
@@ -295,7 +287,6 @@ export default function TelaEstudo({
       try { window.recognitionInstance.abort(); } catch (e) { }
     }
 
-    // 2. Reseta o Rank para 0 e a data
     setFrasesMaestria(prev => ({
       ...prev,
       [frase.id]: {
@@ -313,7 +304,6 @@ export default function TelaEstudo({
       }
     }));
 
-    // 3. Remove a frase das filas de erro/acerto temporárias
     setFilaErros(prev => prev.filter(item => item.indice !== indice));
     setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
     setSessaoDominium(prev => ({
@@ -342,7 +332,6 @@ export default function TelaEstudo({
 
   const corFonteBotoesCard = getCorFonteDinamica(idiomaEstudo);
   const isEx3 = modoExercicio && RANKS_SELECT.includes(exercicioNivel);
-  const isSpecialCard = idiomaEstudo === 'pi' && indice === 26 && topicoAtivo === 'Conceitos abstratos' && exercicioNivel === 22;
   const fontSizeEx3 = '1.5rem';
   const [alturaTela, setAlturaTela] = React.useState(window.innerHeight);
 
@@ -355,6 +344,7 @@ export default function TelaEstudo({
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
   React.useEffect(() => {
     const ranksComSom = [1, 10, 19, 2, 11, 20, 3, 12, 21, 5, 14, 23, 7, 16, 25, 9, 18, 27];
     if (modoExercicio && ranksComSom.includes(Number(exercicioNivel))) {
@@ -363,7 +353,8 @@ export default function TelaEstudo({
       }, 50);
       return () => clearTimeout(timer);
     }
-  }, [indice, exercicioNivel, modoExercicio, idiomaEstudo, textoEstudo, falar]);
+  }, [indice, exercicioNivel, modoExercicio, idiomaEstudo, textoEstudo, frase, falar]);
+
   React.useEffect(() => {
     const ranksEsconderTrad = [5, 14, 23, 7, 16, 25, 9, 18, 27];
     if (modoExercicio && ranksEsconderTrad.includes(Number(exercicioNivel))) {
@@ -374,6 +365,7 @@ export default function TelaEstudo({
       setMostrarTraducao(false);
     }
   }, [exercicioNivel, modoExercicio, setMostrarTraducao]);
+
   React.useEffect(() => {
     if (modoExercicio && RANKS_WRITE.includes(exercicioNivel) && editableRef.current) {
       const el = editableRef.current;
@@ -390,151 +382,141 @@ export default function TelaEstudo({
       };
     }
   }, [exercicioNivel, modoExercicio, indice, resultadoFeedback]);
-  const getCorSlotEx3 = (slot) => (temas[idiomaEstudo]?.bg || '#6366f1') + '10';
-  const getCorTextoSlotEx3 = (slot, index) => {
-    if (!slot) return 'transparent';
-    if (!resultadoFeedback) return '#000';
-    const fraseOriginal = frase[idiomaEstudo];
-    const palavrasCorretas = fraseOriginal.split(" ");
-    const limpar = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
-    const estaCorreta = limpar(slot.texto) === limpar(palavrasCorretas[index]);
-    const corCorreta = temas[idiomaEstudo].corTextoL1;
-    if (resultadoFeedback === 'acerto') return corCorreta;
-    if (estaCorreta) return resultadoFeedback === 'erro_limpo' ? '#000' : corCorreta;
-    return '#ef4444';
-  };
+
   const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
+
   return (
-    <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg, height: alturaTela, position: 'absolute', top: 0, left: 0, width: '100%' }}>      <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
-      <button onClick={() => { limparEstadoExercicio(); mudarTela('menuCartoes'); }} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.quit}</button>
-      {!modoExercicio && (
-        <div style={styles.headerEstudoMinimo}><span style={styles.contadorCompacto}>{indice + 1} / {frasesFiltradas.length}</span></div>
-      )}
-      <div style={{ ...styles.cardFixoRelativo, margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? temas[idiomaEstudo]?.corTextoL1 : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent'), outline: 'none' }}
-        onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}>
+    <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg, height: alturaTela, position: 'absolute', top: 0, left: 0, width: '100%' }}>
+      <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
+        <button onClick={() => { limparEstadoExercicio(); mudarTela('menuCartoes'); }} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.quit}</button>
+        {!modoExercicio && (
+          <div style={styles.headerEstudoMinimo}><span style={styles.contadorCompacto}>{indice + 1} / {frasesFiltradas.length}</span></div>
+        )}
+        <div style={{ ...styles.cardFixoRelativo, margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? temas[idiomaEstudo]?.corTextoL1 : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent'), outline: 'none' }}
+          onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}>
 
-        <div style={styles.topCardAreaFixed}>
-          {!modoExercicio && <p style={{ ...styles.labelTopico, color: ['es', 'ge', 'pi'].includes(idiomaEstudo) ? '#dc2626' : temas[idiomaEstudo].bg }}>{topicoAtivo}</p>}
-          {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
-          {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
-            <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginTop: '10px', textAlign: 'center', width: '100%' }}>
-              {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
-            </div>
-          )}
-          {modoExercicio && !isEx3 && idiomaEstudo === 'pi' && frase?.zh && (
-            <div style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '5px' }}>{frase.zh}</div>
-          )}
-        </div>
+          <div style={styles.topCardAreaFixed}>
+            {!modoExercicio && <p style={{ ...styles.labelTopico, color: ['es', 'ge', 'pi'].includes(idiomaEstudo) ? '#dc2626' : temas[idiomaEstudo].bg }}>{topicoAtivo}</p>}
+            {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
+            {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
+              <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginTop: '10px', textAlign: 'center', width: '100%' }}>
+                {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
+              </div>
+            )}
+            {modoExercicio && !isEx3 && idiomaEstudo === 'pi' && frase?.zh && (
+              <div style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '5px' }}>{frase.zh}</div>
+            )}
+          </div>
 
-        <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: isEx3 ? 0 : '10px 0', overflow: isEx3 ? 'hidden' : 'auto' }}>
-          {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
-            <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', textAlign: 'center', width: '100%' }}>
-              {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
-            </div>
-          )}
-          {modoExercicio ? (
-            isEx3 ? (
-              <ExercicioSelecao
-                idiomaEstudo={idiomaEstudo} frase={frase} exercicioNivel={exercicioNivel}
-                fontSizeEx3={fontSizeEx3} styles={styles} temas={temas} slotsEx3={slotsEx3}
-                removerPalavraSlot={removerPalavraSlot} resultadoFeedback={resultadoFeedback}
-                frasesFiltradas={frasesFiltradas} indice={indice} palavrasOpcoes={palavrasOpcoes}
-                selecionarPalavra={selecionarPalavra}
-              />
-            ) : (
-              RANKS_WRITE.includes(exercicioNivel) ? (
-                <ExercicioEscrita
-                  configLacuna={configLacuna} valorInput={valorInput} setValorInput={setValorInput}
-                  resultadoFeedback={resultadoFeedback} setResultadoFeedback={setResultadoFeedback}
-                  verificarResposta={verificarResposta} editableRef={editableRef} temas={temas}
-                  idiomaEstudo={idiomaEstudo} styles={styles}
+          <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: isEx3 ? 0 : '10px 0', overflow: isEx3 ? 'hidden' : 'auto' }}>
+            {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
+              <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', textAlign: 'center', width: '100%' }}>
+                {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
+              </div>
+            )}
+            {modoExercicio ? (
+              isEx3 ? (
+                <ExercicioSelecao
+                  idiomaEstudo={idiomaEstudo} frase={frase} exercicioNivel={exercicioNivel}
+                  fontSizeEx3={fontSizeEx3} styles={styles} temas={temas} slotsEx3={slotsEx3}
+                  removerPalavraSlot={removerPalavraSlot} resultadoFeedback={resultadoFeedback}
+                  frasesFiltradas={frasesFiltradas} indice={indice} palavrasOpcoes={palavrasOpcoes}
+                  selecionarPalavra={selecionarPalavra}
                 />
               ) : (
-                RANKS_VOICE.includes(exercicioNivel) ? (
-                  <ExercicioVoz
-                    textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
-                    temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
-                    indicesOcultosVoz={indicesOcultosVoz} styles={styles}
+                RANKS_WRITE.includes(exercicioNivel) ? (
+                  <ExercicioEscrita
+                    configLacuna={configLacuna} valorInput={valorInput} setValorInput={setValorInput}
+                    resultadoFeedback={resultadoFeedback} setResultadoFeedback={setResultadoFeedback}
+                    verificarResposta={verificarResposta} editableRef={editableRef} temas={temas}
+                    idiomaEstudo={idiomaEstudo} styles={styles}
                   />
                 ) : (
-                  <div style={{ textAlign: 'center' }}>
-                    <p style={styles.textoFrasePrincipal}>{textoEstudo}</p>
-                  </div>
+                  RANKS_VOICE.includes(exercicioNivel) ? (
+                    <ExercicioVoz
+                      textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
+                      temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
+                      indicesOcultosVoz={indicesOcultosVoz} styles={styles}
+                    />
+                  ) : (
+                    <div style={{ textAlign: 'center' }}>
+                      <p style={styles.textoFrasePrincipal}>{textoEstudo}</p>
+                    </div>
+                  )
                 )
               )
-            )
-          ) : (
-            <div style={{ textAlign: 'center' }}>
-              <p style={styles.textoFrasePrincipal}>{textoEstudo}</p>
-              {idiomaEstudo === 'pi' && frase?.zh && <div style={{ color: '#64748b', fontSize: '0.98rem', marginTop: '2px' }}>{frase.zh}</div>}
-            </div>
-          )}
-        </div>
-
-        <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, gap: '10px' }}>            {!modoExercicio && (
-          <>
-            {mostrarTraducao && <div style={{ marginTop: '-10px', marginBottom: '-20px', textAlign: 'center', width: '100%' }}><p style={styles.textoTraducaoInterno}>{idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}</p></div>}
-            <button onClick={() => setMostrarTraducao(!mostrarTraducao)} style={{ ...styles.btnToggleTrad, marginBottom: 0 }}>{mostrarTraducao ? t.hide : t.show}</button>
-          </>
-        )}
-
-          {![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
-            <div style={styles.rowAudio}>
-              <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
-              <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.normal}</button>
-            </div>
-          )}
-
-          <div style={styles.blocoSuporteIA}>
-            {!modoExercicio ? (
-              <div style={styles.rowBotoesIA}>
-                <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.askAi}</button>
-                {userRole === 'aluno' ? (
-                  (() => {
-                    const idAtual = frase?.id;
-                    const maestriaData = frasesMaestria[idAtual];
-                    const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
-                    return (
-                      <button onClick={() => { setModoJogo(true); setSessaoIniciada(true); iniciarExercicio(rankAtual > 0 ? rankAtual : 1); }} disabled={rankAtual > 0} style={{ ...styles.btnAcaoExtra, backgroundColor: rankAtual > 0 ? '#f1f5f9' : ns.bg, color: rankAtual > 0 ? '#94a3b8' : ns.txt }}>
-                        {rankAtual > 0 ? `${(rankAtual * 3.703).toFixed(2)}%` : t.practice}
-                      </button>
-                    );
-                  })()
-                ) : <button onClick={() => mudarTela('selecaoExercicio')} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt }}>{t.practice}</button>}
-              </div>
             ) : (
-              <div style={styles.rowBotoesIA}>
-                {RANKS_VOICE.includes(exercicioNivel) ? (
-                  <>
-                    <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
-                    <button onClick={iniciarReconhecimentoVoz} disabled={statusVoz !== 'IDLE' || resultadoFeedback !== null} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: resultadoFeedback ? 0.5 : 1 }}>
-                      {statusVoz !== 'IDLE' ? (
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3px', height: '24px' }}>
-                          {statusVoz === 'EVALUATING' ? <span style={{ color: ns.txt, fontSize: '0.9rem', fontWeight: 'bold' }}>...</span> : [0, 1, 2, 3, 4, 5, 6].map((i) => <div key={i} style={{ width: '4px', backgroundColor: '#fff', borderRadius: '10px', height: (statusVoz === 'RECORDING') ? `${15 + Math.min(85, (volume * (0.3 + (i % 4) * 0.2)))}%` : '30%', transition: 'height 0.05s linear' }} />)}
-                        </div>
-                      ) : t.speakNow}
-                    </button>
-                  </>
-                ) : (
-                  <>
-                    <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
-
-                    <button onMouseDown={(e) => e.preventDefault()} onClick={verificarResposta} disabled={isCheckDisabled} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: isCheckDisabled ? 0.5 : 1, cursor: isCheckDisabled ? 'not-allowed' : 'pointer' }}>{t.check}</button>
-                  </>
-                )}
+              <div style={{ textAlign: 'center' }}>
+                <p style={styles.textoFrasePrincipal}>{textoEstudo}</p>
+                {idiomaEstudo === 'pi' && frase?.zh && <div style={{ color: '#64748b', fontSize: '0.98rem', marginTop: '2px' }}>{frase.zh}</div>}
               </div>
             )}
           </div>
-        </div>
-      </div>
 
-      {!modoExercicio && (
-        <div style={styles.controlesNavInferior}>
-          <button style={{ ...styles.btnNavFinal, backgroundColor: ns.bg, color: ns.txt }} onClick={() => setIndice((indice - 1 + frasesFiltradas.length) % frasesFiltradas.length)}>{t.prev}</button>
-          <button style={{ ...styles.btnNavFinal, backgroundColor: ns.bg, color: ns.txt }} onClick={() => setIndice((indice + 1) % frasesFiltradas.length)}>{t.next}</button>
+          <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, gap: '10px' }}>
+            {!modoExercicio && (
+              <>
+                {mostrarTraducao && <div style={{ marginTop: '-10px', marginBottom: '-20px', textAlign: 'center', width: '100%' }}><p style={styles.textoTraducaoInterno}>{idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}</p></div>}
+                <button onClick={() => setMostrarTraducao(!mostrarTraducao)} style={{ ...styles.btnToggleTrad, marginBottom: 0 }}>{mostrarTraducao ? t.hide : t.show}</button>
+              </>
+            )}
+
+            {![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
+              <div style={styles.rowAudio}>
+                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
+                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.normal}</button>
+              </div>
+            )}
+
+            <div style={styles.blocoSuporteIA}>
+              {!modoExercicio ? (
+                <div style={styles.rowBotoesIA}>
+                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.askAi}</button>
+                  {userRole === 'aluno' ? (
+                    (() => {
+                      const idAtual = frase?.id;
+                      const maestriaData = frasesMaestria[idAtual];
+                      const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
+                      return (
+                        <button onClick={() => { setModoJogo(true); setSessaoIniciada(true); iniciarExercicio(rankAtual > 0 ? rankAtual : 1); }} disabled={rankAtual > 0} style={{ ...styles.btnAcaoExtra, backgroundColor: rankAtual > 0 ? '#f1f5f9' : ns.bg, color: rankAtual > 0 ? '#94a3b8' : ns.txt }}>
+                          {rankAtual > 0 ? `${(rankAtual * 3.703).toFixed(2)}%` : t.practice}
+                        </button>
+                      );
+                    })()
+                  ) : <button onClick={() => mudarTela('selecaoExercicio')} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt }}>{t.practice}</button>}
+                </div>
+              ) : (
+                <div style={styles.rowBotoesIA}>
+                  {RANKS_VOICE.includes(exercicioNivel) ? (
+                    <>
+                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
+                      <button onClick={() => iniciarReconhecimentoVoz(frase)} disabled={statusVoz !== 'IDLE' || resultadoFeedback !== null} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: resultadoFeedback ? 0.5 : 1 }}>
+                        {statusVoz !== 'IDLE' ? (
+                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3px', height: '24px' }}>
+                            {statusVoz === 'EVALUATING' ? <span style={{ color: ns.txt, fontSize: '0.9rem', fontWeight: 'bold' }}>...</span> : [0, 1, 2, 3, 4, 5, 6].map((i) => <div key={i} style={{ width: '4px', backgroundColor: '#fff', borderRadius: '10px', height: (statusVoz === 'RECORDING') ? `${15 + Math.min(85, (volume * (0.3 + (i % 4) * 0.2)))}%` : '30%', transition: 'height 0.05s linear' }} />)}
+                          </div>
+                        ) : t.speakNow}
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={verificarResposta} disabled={isCheckDisabled} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: isCheckDisabled ? 0.5 : 1, cursor: isCheckDisabled ? 'not-allowed' : 'pointer' }}>{t.check}</button>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
-      )}
-    </div>
+
+        {!modoExercicio && (
+          <div style={styles.controlesNavInferior}>
+            <button style={{ ...styles.btnNavFinal, backgroundColor: ns.bg, color: ns.txt }} onClick={() => setIndice((indice - 1 + frasesFiltradas.length) % frasesFiltradas.length)}>{t.prev}</button>
+            <button style={{ ...styles.btnNavFinal, backgroundColor: ns.bg, color: ns.txt }} onClick={() => setIndice((indice + 1) % frasesFiltradas.length)}>{t.next}</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

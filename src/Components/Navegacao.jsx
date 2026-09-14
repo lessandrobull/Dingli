@@ -82,8 +82,7 @@ export function SelecaoExercicio({ styles, iniciarExercicio }) {
   );
 }
 export function Adm({ styles }) {
-
-  const { temas, t, navStyle, idiomaEstudo, mudarTela } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, mudarTela, setUserRole } = useDingli();
 
   const ns = navStyle(idiomaEstudo || 'en');
 
@@ -114,12 +113,12 @@ export function Adm({ styles }) {
           </button>
 
           <button
-
-            onClick={() => mudarTela('perfil')}
-
-            style={{ padding: '16px', borderRadius: '12px', border: 'none', backgroundColor: '#1e293b', color: '#fff', fontWeight: '900', fontSize: '1.1rem', cursor: 'pointer' }}
-
-          >
+  onClick={() => {
+    setUserRole('aluno');
+    mudarTela('perfil');
+  }}
+  style={{ padding: '16px', borderRadius: '12px', border: 'none', backgroundColor: '#1e293b', color: '#fff', fontWeight: '900', fontSize: '1.1rem', cursor: 'pointer' }}
+>
 
             Profile
 

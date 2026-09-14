@@ -17,6 +17,7 @@ import { useAI } from './hooks/useAI'
 import { dataService } from './dataService'
 import { calcularProximoRank } from './useSRSLogic'
 import { DingliProvider } from './DingliContext'
+
 function App() {
   const [tela, setTela] = useState(() => sessionStorage.getItem('app_tela') || 'perfil');
   const [mensagemOrientacao, setMensagemOrientacao] = useState("");
@@ -24,12 +25,14 @@ function App() {
   const [idiomaEstudo, setIdiomaEstudo] = useState(() => sessionStorage.getItem('app_estudo') || '');
   const [nivelAtivo, setNivelAtivo] = useState(() => sessionStorage.getItem('app_nivel') || '');
   const [topicoAtivo, setTopicoAtivo] = useState(() => sessionStorage.getItem('app_topico') || '');
-  const [frasesFiltradas, setFrasesFiltradas] = useState([])
-  const [listaTopicos, setListaTopicos] = useState([])
-  const [fraseTeorica, setFraseTeorica] = useState("Carregando inspiração...")
-  const [nomeAluno, setNomeAluno] = useState("Estudante")
+  const [frasesFiltradas, setFrasesFiltradas] = useState([]);
+  const [listaTopicos, setListaTopicos] = useState([]);
+  const [fraseTeorica, setFraseTeorica] = useState("Carregando inspiração...");
+  const [nomeAluno, setNomeAluno] = useState("Estudante");
   const apiKey = "AIzaSyAv_65bjZGGtUDJugC_GtTQoMmXrFw1XtY";
-  const [userRole, setUserRole] = useState(() => localStorage.getItem('app_role') || null); const [sessaoIniciada, setSessaoIniciada] = useState(false); const [carregandoDados, setCarregandoDados] = useState(false);
+  const [userRole, setUserRole] = useState(() => localStorage.getItem('app_role') || null);
+  const [sessaoIniciada, setSessaoIniciada] = useState(false);
+  const [carregandoDados, setCarregandoDados] = useState(false);
   const [user, setUser] = useState(null);
   const [modoJogo, setModoJogo] = useState(false);
   const [modoExercicio, setModoExercicio] = useState(false);
@@ -46,10 +49,12 @@ function App() {
     return salvo ? JSON.parse(salvo) : [];
   });
   const ultimoAudioID = useRef("");
+
   const mudarTela = useCallback((novaTela) => {
     window.history.pushState({ tela: novaTela }, "");
     setTela(novaTela);
   }, []);
+
   const {
     indice, setIndice,
     mostrarTraducao, setMostrarTraducao,
@@ -67,13 +72,14 @@ function App() {
 
   const limparEstadoExercicioRef = useRef(limparEstadoExercicio);
   const jogarDominiumInteligenteRef = useRef(null);
+
   useEffect(() => {
     limparEstadoExercicioRef.current = limparEstadoExercicio;
   }, [limparEstadoExercicio]);
+
   const falarRef = useRef(null);
 
   const processarResultadoVoz = useCallback(({ resultado, tentativas, fraseOriginal }) => {
-    // Puxa os dados da Revisão (se existir) ou do Tópico (se for inédita)
     const idAtual = fraseAtivaGlobal ? fraseAtivaGlobal.id : frasesFiltradas[indice]?.id;
     if (!idAtual) return;
     const zhSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.texto_zh : (frasesFiltradas[indice]?.zh || "");
@@ -189,14 +195,12 @@ function App() {
   const jogarDominiumInteligente = useCallback(async () => {
     let proximo = avaliarProximoAlvo(frasesFiltradas);
 
-    // Prioridade Mínima (Fim da Linha): Nada no cache global, nada inédito no tópico.
     if (!proximo) {
       limparEstadoExercicio();
       mudarTela('escolherTopic');
       return;
     }
 
-    // Prioridade Máxima (Saque Rápido): Tem revisão engatilhada no cache!
     if (proximo.tipo === 'revisao') {
       setFraseAtivaGlobal(proximo.dados);
       setModoJogo(true);
@@ -205,9 +209,8 @@ function App() {
       return;
     }
 
-    // Prioridade Média (Tópico Atual): É inédita. Pega pelo menor ID.
     if (proximo.tipo === 'inedita') {
-      setFraseAtivaGlobal(null); // Limpa o cache global para usar o tópico
+      setFraseAtivaGlobal(null);
       if (proximo.indice !== -1 && proximo.indice !== undefined) {
         setIndice(proximo.indice);
         setModoJogo(false);
@@ -223,6 +226,7 @@ function App() {
   useEffect(() => {
     jogarDominiumInteligenteRef.current = jogarDominiumInteligente;
   }, [jogarDominiumInteligente]);
+
   const {
     estaOuvindo, statusVoz, transcricaoAoVivo, volume,
     falar, iniciarReconhecimentoVoz, pararMonitoramentoAudio,
@@ -244,6 +248,7 @@ function App() {
     apiKey,
     mudarTela
   });
+
   const isFirstRun = useRef(true);
   useEffect(() => {
     if (isFirstRun.current) {
@@ -295,6 +300,7 @@ function App() {
       document.body.style.backgroundColor = '#000';
     }
   }, [idiomaEstudo, temas]);
+
   useEffect(() => {
     sessionStorage.setItem('app_tela', tela);
     sessionStorage.setItem('app_origem', idiomaOrigem);
@@ -303,8 +309,9 @@ function App() {
     sessionStorage.setItem('app_topico', topicoAtivo);
     if (userRole) localStorage.setItem('app_role', userRole);
   }, [tela, idiomaOrigem, idiomaEstudo, nivelAtivo, topicoAtivo, userRole]);
+
   useEffect(() => {
-    if (tela === 'menuCurso' && idiomaEstudo && idiomaOrigem) {
+    if (tela === 'menuCurso' && idiomaEstudo && idiomaOrigem && userRole !== 'adm') {
       setCursosInscritos(prev => {
         const listaSemAtual = prev.filter(c => !(c.origem === idiomaOrigem && c.estudo === idiomaEstudo));
         const cursoAtual = { origem: idiomaOrigem, estudo: idiomaEstudo, nomeEstudo: temas[idiomaOrigem]?.nomes?.[idiomaEstudo] || idiomaEstudo };
@@ -313,7 +320,8 @@ function App() {
         return novaLista;
       });
     }
-  }, [tela, idiomaEstudo, idiomaOrigem, temas]);
+  }, [tela, idiomaEstudo, idiomaOrigem, temas, userRole]);
+
   const selecionarNivel = useCallback(async (n) => {
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
     setNivelAtivo(n);
@@ -329,6 +337,7 @@ function App() {
       setCarregandoDados(false);
     }
   }, [idiomaOrigem, idiomaEstudo, mudarTela]);
+
   const selecionarTopico = useCallback(async (nomeTopico) => {
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
     const colTopicOrigem = `topic_${idiomaOrigem}`;
@@ -368,6 +377,7 @@ function App() {
       setCarregandoDados(false);
     }
   }, [idiomaOrigem, idiomaEstudo, nivelAtivo, mudarTela, frasesMaestria]);
+
   function iniciarExercicio(numNivel, indiceForcado, arrayFornecido) {
     setExercicioNivel(numNivel);
     if (indiceForcado !== undefined) setIndice(indiceForcado);
@@ -376,7 +386,7 @@ function App() {
   }
 
   function limparEstadoExercicio() {
-    setFraseAtivaGlobal(null); // Mata o card global da tela
+    setFraseAtivaGlobal(null);
     setModoExercicio(false);
     setSessaoIniciada(false);
     setExercicioNivel(0);
@@ -390,8 +400,8 @@ function App() {
     }
     pararMonitoramentoAudio();
   }
+
   const resetarProgressoIdioma = useCallback(async () => {
-    // Limpa a maestria em memória e na nuvem para o idioma atual
     setFrasesMaestria({});
 
     setSessaoDominium(prev => ({
@@ -402,7 +412,6 @@ function App() {
       falhas: (prev.falhas || []).filter(f => f.curso !== `${idiomaOrigem}_${idiomaEstudo}`)
     }));
 
-    // Limpa o cache local de progresso de navegação deste idioma
     Object.keys(localStorage).forEach(key => {
       if (key.startsWith(`progresso_${idiomaOrigem}_${idiomaEstudo}_`)) {
         localStorage.removeItem(key);
@@ -416,6 +425,7 @@ function App() {
 
     mudarTela('perfil');
   }, [idiomaOrigem, idiomaEstudo, user, mudarTela, setFrasesMaestria, setSessaoDominium]);
+
   const removerCursoIdioma = useCallback(async () => {
     setCursosInscritos(prev => {
       const novaLista = prev.filter(c => !(c.origem === idiomaOrigem && c.estudo === idiomaEstudo));
@@ -424,7 +434,7 @@ function App() {
     });
     resetarProgressoIdioma();
   }, [idiomaOrigem, idiomaEstudo, resetarProgressoIdioma]);
-  // Funções visuais movidas para o DingliContext
+
   useEffect(() => {
     let montado = true;
     let sub = null;
@@ -441,9 +451,7 @@ function App() {
       }
     };
 
-
     inicializarAuth();
-
 
     return () => {
       montado = false;
@@ -452,6 +460,7 @@ function App() {
       }
     };
   }, []);
+
   useEffect(() => {
     if (!user || !idiomaOrigem || !idiomaEstudo) return;
     const carregarProgressoNuvem = async () => {
@@ -503,6 +512,7 @@ function App() {
     };
     carregarProgressoNuvem();
   }, [user, idiomaOrigem, idiomaEstudo, setFrasesMaestria]);
+
   useEffect(() => {
     if (!user || !idiomaOrigem || !idiomaEstudo || Object.keys(frasesMaestria).length === 0) return;
     const sincronizarComNuvem = async () => {
@@ -516,6 +526,7 @@ function App() {
     const timer = setTimeout(sincronizarComNuvem, 2000);
     return () => clearTimeout(timer);
   }, [frasesMaestria, user, idiomaOrigem, idiomaEstudo]);
+
   useEffect(() => {
     if (tela !== 'estudo' || !modoExercicio) {
       processandoAcertoRef.current = false;
@@ -528,6 +539,7 @@ function App() {
       setStatusVoz('IDLE');
     }
   }, [tela, modoExercicio, indice, exercicioNivel]);
+
   useEffect(() => {
     const styleTag = document.createElement("style");
     styleTag.innerHTML = `
@@ -556,7 +568,6 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-
   useEffect(() => {
     if (tela === 'estudo' && frasesFiltradas[indice]) {
       const progressoChave = `progresso_${idiomaOrigem}_${idiomaEstudo}_${nivelAtivo}_${topicoAtivo}`;
@@ -575,14 +586,8 @@ function App() {
       }
     }
   }, [indice, tela, frasesFiltradas]);
-  // Funções de verificação e interação migradas para TelaEstudo
 
   const renderTela = () => {
-
-
-
-
-
     if (tela === 'perfil') return (
       <Perfil
         styles={styles} nomeAluno={nomeAluno} fraseTeorica={fraseTeorica}
@@ -651,7 +656,6 @@ function App() {
       />
     );
     return null;
-
   };
 
   return (
@@ -668,10 +672,6 @@ function App() {
       {renderTela()}
     </DingliProvider>
   );
-
 }
-// navStyle movida para DingliContext
+
 export default App;
-
-
-
