@@ -184,7 +184,7 @@ export default function TelaEstudo({
         const pontuacaoFinal = pontuacaoFinalMatch ? pontuacaoFinalMatch[0] : "";
         const resposta = seqResposta.replace(/^[¿¡"'(]+/, "").replace(/[.,!?;:]+$/, "");
         setConfigLacuna({ prefixo: prefixo + prefixoAdicional, sufixo: pontuacaoFinal + ((inicioIdx + qtdPalavrasOcultas < palavras.length ? " " : "") + palavras.slice(inicioIdx + qtdPalavrasOcultas).join(" ")), resposta });
-        if (![6, 15, 24].includes(exercicioNivel)) falar({ id: frase?.id, texto: fraseOriginal }, false);
+        // audio tratado no efeito ranksComSom
       } else if (RANKS_SELECT.includes(exercicioNivel)) {
         const minInterativo = (exercicioNivel <= 9) ? Math.min(2, palavras.length) : 1;
         const qtdInterativa = Math.max(minInterativo, Math.round(palavras.length * percentual));
@@ -193,11 +193,11 @@ export default function TelaEstudo({
         for (let i = 0; i < qtdInterativa; i++) indicesInterativos.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
         setSlotsEx3(palavras.map((w, i) => indicesInterativos.includes(i) ? null : { id: `f-${i}`, texto: w, fixed: true }));
         setPalavrasOpcoes(indicesInterativos.map(idx => ({ id: idx, texto: palavras[idx], usado: false })).sort(() => Math.random() - 0.5));
-        if (![4, 13, 22].includes(exercicioNivel)) falar({ id: frase?.id, texto: fraseOriginal }, false);
+        // audio tratado no efeito ranksComSom
       } else if (RANKS_VOICE.includes(exercicioNivel)) {
         const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
         setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
-        if (![8, 17, 26].includes(exercicioNivel)) falar({ id: frase?.id, texto: fraseOriginal }, false);
+        // audio tratado no efeito ranksComSom
       }
     } else {
       setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]); setIndicesOcultosVoz([]);

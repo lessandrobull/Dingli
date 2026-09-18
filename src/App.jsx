@@ -222,10 +222,12 @@ function App() {
     if (proximo.tipo === 'inedita') {
       setFraseAtivaGlobal(null);
       if (proximo.indice !== -1 && proximo.indice !== undefined) {
+        limparEstadoExercicio();
         setIndice(proximo.indice);
         setModoJogo(false);
         setSessaoIniciada(false);
         setModoExercicio(false);
+        mudarTela('estudo');
       } else {
         limparEstadoExercicio();
         mudarTela('escolherTopic');

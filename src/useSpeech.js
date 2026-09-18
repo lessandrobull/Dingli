@@ -22,16 +22,19 @@ export const useSpeech = ({
     const processandoAcertoRef = useRef(false);
     const estaGravandoRef = useRef(false);
     const fraseAlvoRef = useRef(null);
+    const playRequestIdRef = useRef(0);
 
     useEffect(() => {
         tentativasVozRef.current = 0;
     }, [indice]);
 
     const pararAudiosEmExecucao = useCallback(() => {
+        playRequestIdRef.current += 1;
         if (audioRef.current) {
             audioRef.current.pause();
             audioRef.current.onended = null;
             audioRef.current.onerror = null;
+            audioRef.current.src = "";
             audioRef.current = null;
         }
         if (window.speechSynthesis) {
@@ -100,6 +103,7 @@ export const useSpeech = ({
     const falar = useCallback(async (alvo, lento = false, callback) => {
         if (!alvo) return;
         pararAudiosEmExecucao();
+        const currentRequestId = playRequestIdRef.current;
 
         let id = null;
         let texto = "";
@@ -141,9 +145,13 @@ export const useSpeech = ({
                     falarTTS(texto, lento, callback);
                 };
 
+                // Se uma nova chamada entrou enquanto baixava o audio, descarta
+                if (currentRequestId !== playRequestIdRef.current) return;
+
                 const playPromise = audio.play();
                 if (playPromise !== undefined) {
                     playPromise.catch((e) => {
+                        if (e.name === "AbortError" || currentRequestId !== playRequestIdRef.current) return;
                         console.warn("[useSpeech] Autoplay bloqueado ou falha de play, usando TTS:", e);
                         audioRef.current = null;
                         falarTTS(texto, lento, callback);
