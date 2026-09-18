@@ -16,6 +16,7 @@ import MenuCartoes from './Components/MenuCartoes'
 import { useAI } from './hooks/useAI'
 import { dataService } from './dataService'
 import { calcularProximoRank } from './useSRSLogic'
+import { precarregarAudios } from './services/audioCacheService'
 import { DingliProvider } from './DingliContext'
 
 function App() {
@@ -193,7 +194,16 @@ function App() {
   }, [indice, frasesFiltradas, idiomaEstudo, idiomaOrigem, frasesMaestria, nivelAtivo, topicoAtivo, modoJogo, setResultadoFeedback, setSessaoDominium, setFrasesMaestria, setFilaErros, setFilaAcertos, setIndice, fraseAtivaGlobal]);
 
   const jogarDominiumInteligente = useCallback(async () => {
+    // Pre-carrega frases ativas da sessao Dominium em segundo plano
+    const filaDominium = [
+      ...(sessaoDominium?.recuperadas || []),
+      ...(sessaoDominium?.primeira || []),
+      ...(sessaoDominium?.acertosTempo || [])
+    ];
+    if (filaDominium.length > 0) precarregarAudios(filaDominium, idiomaEstudo);
+
     let proximo = avaliarProximoAlvo(frasesFiltradas);
+    if (proximo?.dados) precarregarAudios([proximo.dados], idiomaEstudo);
 
     if (!proximo) {
       limparEstadoExercicio();
@@ -233,6 +243,7 @@ function App() {
     setEstaOuvindo, setStatusVoz, setTranscricaoAoVivo
   } = useSpeech({
     idiomaEstudo, temas, frasesFiltradas, indice,
+    fraseAtiva: fraseAtivaGlobal,
     onAvaliacaoConcluida: processarResultadoVoz
   });
 
@@ -346,6 +357,7 @@ function App() {
     setIndice(0);
     const { data } = await dataService.getSentencesByTopic(nivelAtivo, idiomaEstudo, colTopicOrigem, nomeTopico);
     if (data) {
+      precarregarAudios(data, idiomaEstudo);
       setFrasesFiltradas(data);
       setTopicoAtivo(nomeTopico);
       let indexAlvo = 0;
