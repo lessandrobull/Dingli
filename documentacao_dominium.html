@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dìnglì — Especificação do Módulo Dominium (SRS)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: #0f172a;
+      border-bottom: 3px solid #3b82f6;
+      padding-bottom: 12px;
+      font-size: 26px;
+    }
+
+    h2 {
+      color: #1e40af;
+      margin-top: 32px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
+      font-size: 20px;
+    }
+
+    h3 {
+      color: #334155;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    p,
+    li {
+      font-size: 14px;
+      color: #334155;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13px;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+    }
+
+    td {
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .badge-portal {
+      background-color: #dbeafe;
+      color: #1e40af;
+    }
+
+    .badge-micro {
+      background-color: #fef3c7;
+      color: #92400e;
+    }
+
+    .badge-max {
+      background-color: #dcfce7;
+      color: #166534;
+    }
+
+    .card-fluxo {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #3b82f6;
+      padding: 14px 18px;
+      margin: 12px 0;
+      border-radius: 4px;
+    }
+
+    .card-acerto {
+      border-left-color: #22c55e;
+      background-color: #f0fdf4;
+    }
+
+    .card-erro {
+      border-left-color: #ef4444;
+      background-color: #fef2f2;
+    }
+
+    .passo-titulo {
+      font-weight: bold;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>DÌNGLÌ — ESPECIFICAÇÃO DE PRODUTO & ARQUITETURA</h1>
+  <p><strong>Módulo Dominium: Sistema de Repetição Espaçada Inteligente (SRS)</strong><br>
+    Documento Oficial de Engenharia e Experiência do Usuário</p>
+
+  <h2>1. Visão Geral e Propósito</h2>
+  <p>O <strong>Dominium</strong> é o motor de consolidação e retenção de longo prazo do Dìnglì. Enquanto o modo de
+    estudo tradicional segue uma trilha linear por tópicos, o Dominium atua como um sistema adaptativo dinâmico que
+    contraria a curva do esquecimento de Ebbinghaus através de:</p>
+  <ul>
+    <li><strong>Microrrepetições (Intra-sessão):</strong> Intervalos rápidos em segundos para fixação na memória de
+      trabalho imediata.</li>
+    <li><strong>Macrorrepetições (Inter-dias):</strong> Intervalos exponenciais em dias para transferência do conteúdo
+      para a memória permanente.</li>
+    <li><strong>Escala de Maestria:</strong> 27 Ranks de progressão contínua por frase.</li>
+  </ul>
+
+  <h2>2. A Experiência do Aluno</h2>
+  <h3>2.1. Entrada e Desbloqueio da Frase (Rank 1)</h3>
+  <p>Quando o aluno aprende uma nova frase no curso, ela é registrada no histórico com <strong>Rank 1</strong> e entra
+    na fila ativa de consolidação.</p>
+
+  <h3>2.2. A Memória Ativa e o Intervalo de 30 Segundos</h3>
+  <p>Durante a sessão no Dominium, ao acertar uma frase em rank de microrrevisão, ela não desaparece: o sistema coloca a
+    frase em uma janela de espera de <strong>30 segundos</strong>.</p>
+  <p>Enquanto esse tempo corre, o Dominium apresenta <strong>outras frases pendentes</strong> da fila para provocar
+    alternância cognitiva no cérebro do aluno. Ao zerar os 30 segundos, a frase volta ao topo das prioridades.</p>
+
+  <h3>2.3. Gestão de Erros e Recuperação</h3>
+  <p>O Dominium não utiliza punições severas que desmotivem o estudante:</p>
+  <ul>
+    <li><strong>Penalidade Suave:</strong> Se a frase estiver acima do Rank 2, ela recua apenas 1 Rank (ex: R4 recua
+      para R3). Se estiver no Rank 1 ou 2, fixa-se no Rank 1.</li>
+    <li><strong>Fila de Recuperação:</strong> A frase entra na lista de recuperação com descanso de 30 segundos.</li>
+    <li><strong>Retorno Seguro:</strong> Ao reaparecer e ser acertada, ela consolida o nível atual antes de voltar à
+      trilha de evolução normal.</li>
+  </ul>
+
+  <h2>3. A Escala Estrutural de 27 Ranks</h2>
+  <p>A tabela abaixo detalha os tempos de retenção e os <strong>Portais de Saída (Checkpoints)</strong> definidos em
+    código:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nível / Rank</th>
+        <th>Classificação</th>
+        <th>Tempo de Espera</th>
+        <th>Comportamento do Sistema</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>R1 ao R5</strong></td>
+        <td><span class="badge badge-micro">Microrrevisão</span></td>
+        <td>30 segundos</td>
+        <td>Permanece na sessão ativa de treino rápido.</td>
+      </tr>
+      <tr>
+        <td><strong>Portal R5 &rarr; R6</strong></td>
+        <td><span class="badge badge-portal">Checkpoint 1</span></td>
+        <td><strong>1 dia (24 horas)</strong></td>
+        <td>Frase sai da sessão; retorna após 24 horas.</td>
+      </tr>
+      <tr>
+        <td><strong>R6 ao R9</strong></td>
+        <td><span class="badge badge-micro">Microrrevisão</span></td>
+        <td>30 segundos</td>
+        <td>Treino de consolidação intra-sessão.</td>
+      </tr>
+      <tr>
+        <td><strong>Portal R9 &rarr; R10</strong></td>
+        <td><span class="badge badge-portal">Checkpoint 2</span></td>
+        <td><strong>2 dias (48 horas)</strong></td>
+        <td>Frase sai da sessão; retorna após 48 horas.</td>
+      </tr>
+      <tr>
+        <td><strong>R10 ao R14</strong></td>
+        <td><span class="badge badge-micro">Microrrevisão</span></td>
+        <td>30 segundos</td>
+        <td>Fixação intermediária na sessão.</td>
+      </tr>
+      <tr>
+        <td><strong>Portal R14 &rarr; R15</strong></td>
+        <td><span class="badge badge-portal">Checkpoint 3</span></td>
+        <td><strong>4 dias (96 horas)</strong></td>
+        <td>Frase sai da sessão; retorna após 4 dias.</td>
+      </tr>
+      <tr>
+        <td><strong>R15 ao R18</strong></td>
+        <td><span class="badge badge-micro">Microrrevisão</span></td>
+        <td>30 segundos</td>
+        <td>Treino avançado intra-sessão.</td>
+      </tr>
+      <tr>
+        <td><strong>Portal R18 &rarr; R19</strong></td>
+        <td><span class="badge badge-portal">Checkpoint 4</span></td>
+        <td><strong>8 dias (192 horas)</strong></td>
+        <td>Frase sai da sessão; retorna após 8 dias.</td>
+      </tr>
+      <tr>
+        <td><strong>R19 ao R23</strong></td>
+        <td><span class="badge badge-micro">Microrrevisão</span></td>
+        <td>30 segundos</td>
+        <td>Estabilização de alto nível.</td>
+      </tr>
+      <tr>
+        <td><strong>Portal R23 &rarr; R24</strong></td>
+        <td><span class="badge badge-portal">Checkpoint 5</span></td>
+        <td><strong>16 dias (384 horas)</strong></td>
+        <td>Frase sai da sessão; retorna após 16 dias.</td>
+      </tr>
+      <tr>
+        <td><strong>R24 ao R27</strong></td>
+        <td><span class="badge badge-micro">Microrrevisão</span></td>
+        <td>30 segundos</td>
+        <td>Testes finais de prontidão imediata.</td>
+      </tr>
+      <tr>
+        <td><strong>Loop R27 &rarr; R24</strong></td>
+        <td><span class="badge badge-max">Maestria Permanente</span></td>
+        <td><strong>32 dias (768 horas)</strong></td>
+        <td>Retorna a cada 32 dias no Rank 24 para manutenção contínua.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><em>Regra de Aceleração (highestRank): Se o aluno já superou um portal no passado e está apenas reforçando o
+      conteúdo, o sistema não impõe novamente a espera em dias, promovendo a frase imediatamente a cada 30
+      segundos.</em></p>
+
+  <h2>4. Fluxo Operacional da Sessão</h2>
+
+  <div class="card-fluxo">
+    <div class="passo-titulo">Passo 1: Seleção da Frase (avaliarProximoAlvo)</div>
+    O motor verifica a prioridade de exibição:<br>
+    1º &rarr; Frases prontas na lista de <strong>recuperadas</strong> (frases que erraram e cumpriram 30s).<br>
+    2º &rarr; Novas frases carregadas na lista <strong>primeira</strong>.<br>
+    3º &rarr; Frases em <strong>acertosTempo</strong> cujo cronômetro já expirou.
+  </div>
+
+  <div class="card-fluxo">
+    <div class="passo-titulo">Passo 2: Apresentação na Tela (TelaEstudo)</div>
+    O sistema injeta a frase sorteada no estado <code>fraseAtivaGlobal</code> contendo:
+    <code>{ id, texto, nivel, topico }</code>. A interface renderiza o card correspondente com prioridade sobre a
+    sequência linear.
+  </div>
+
+  <div class="card-fluxo card-acerto">
+    <div class="passo-titulo">Passo 3A: Resposta Correta (calcularProximoRank)</div>
+    &bull; A frase sobe +1 Rank.<br>
+    &bull; Se atingir um Portal (R5, R9, R14, R18, R23), é agendada para dias futuros e liberada da sessão atual.<br>
+    &bull; Se for rank intermediário, entra em descanso de 30 segundos antes de reaparecer.
+  </div>
+
+  <div class="card-fluxo card-erro">
+    <div class="passo-titulo">Passo 3B: Resposta Incorreta</div>
+    &bull; A frase recua 1 Rank (limite mínimo R1).<br>
+    &bull; É transferida para a fila de <strong>recuperação</strong> com intervalo de 30 segundos para novo teste.
+  </div>
+
+  <div class="card-fluxo">
+    <div class="passo-titulo">Passo 4: Sincronização e Persistência</div>
+    Os dados de maestria são gravados com o <strong>ID único da frase</strong> no armazenamento local e remoto.
+  </div>
+
+  <h2>5. Requisito Arquitetural para o Reprodutor de Áudio</h2>
+  <p>Como o Dominium salta dinamicamente entre frases de tópicos, níveis e tempos diferentes, <strong>o índice linear
+      (indice 0, 1, 2...) não tem relação com o card em exibição</strong>.</p>
+  <p>O reprodutor de áudio precisa receber diretamente o <code>frase.id</code> contido no objeto da tela para executar o
+    arquivo MP3 correto sem qualquer risco de dessincronia.</p>
+
+</body>
+
+</html>
