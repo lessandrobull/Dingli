@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
 import { calcularProximoRank } from '../useSRSLogic'; 
@@ -7,9 +7,9 @@ import { calcularProximoRank } from '../useSRSLogic';
 const ExercicioSelecao = ({
   idiomaEstudo, frase, exercicioNivel, fontSizeEx3, styles, temas,
   slotsEx3, removerPalavraSlot, resultadoFeedback, frasesFiltradas, indice,
-  palavrasOpcoes, selecionarPalavra
+  palavrasOpcoes, selecionarPalavra, corAcerto, corErro, corBgSecundarios
 }) => {
-  const getCorSlotEx3 = (slot) => (temas[idiomaEstudo]?.bg || '#6366f1') + '10';
+  const getCorSlotEx3 = (slot) => (temas[idiomaEstudo]?.bg || '#6366f1') + '26';
 
   const getCorTextoSlotEx3 = (slot, index) => {
     if (!slot) return 'transparent';
@@ -18,10 +18,9 @@ const ExercicioSelecao = ({
     const palavrasCorretas = fraseOriginal.split(" ");
     const limpar = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
     const estaCorreta = limpar(slot.texto) === limpar(palavrasCorretas[index]);
-    const corCorreta = temas[idiomaEstudo].corTextoL1;
-    if (resultadoFeedback === 'acerto') return corCorreta;
-    if (estaCorreta) return resultadoFeedback === 'erro_limpo' ? '#000' : corCorreta;
-    return '#ef4444';
+    if (resultadoFeedback === 'acerto') return corAcerto;
+    if (estaCorreta) return resultadoFeedback === 'erro_limpo' ? '#000' : corAcerto;
+    return corErro;
   };
 
   return (
@@ -29,12 +28,47 @@ const ExercicioSelecao = ({
       {idiomaEstudo === 'pi' && frase?.zh && ![4, 11, 18].includes(exercicioNivel) && <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: '0.9rem', padding: '0px 0' }}>{frase.zh}</div>}
       <div style={styles.gavetaSelecionadasFlex}>
         {slotsEx3.map((slot, i) => (
-          <div key={i} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: getCorSlotEx3(slot), color: getCorTextoSlotEx3(slot, i), border: (resultadoFeedback && slot) ? (resultadoFeedback === 'acerto' ? `2px solid ${temas[idiomaEstudo].corTextoL1}` : (slot.texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") === frase[idiomaEstudo].split(" ")[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") ? (resultadoFeedback === 'erro_limpo' ? '1px solid #cbd5e1' : `2px solid ${temas[idiomaEstudo].corTextoL1}`) : '2px solid #ef4444')) : ('1px solid #cbd5e1'), display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => resultadoFeedback !== 'acerto' && removerPalavraSlot(i)}>{slot?.texto}</div>))}
+          <div
+            key={i}
+            style={{
+              ...styles.btnPalavraEx3,
+              fontSize: fontSizeEx3,
+              backgroundColor: getCorSlotEx3(slot),
+              color: getCorTextoSlotEx3(slot, i),
+              border: (resultadoFeedback && slot)
+                ? (resultadoFeedback === 'acerto'
+                  ? `2px solid ${corAcerto}`
+                  : (slot.texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "") === frase[idiomaEstudo].split(" ")[i].normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "")
+                    ? (resultadoFeedback === 'erro_limpo' ? '1px solid #cbd5e1' : `2px solid ${corAcerto}`)
+                    : `2px solid ${corErro}`))
+                : ('1px solid #cbd5e1'),
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+            onClick={() => resultadoFeedback !== 'acerto' && removerPalavraSlot(i)}
+          >
+            {slot?.texto}
+          </div>
+        ))}
       </div>
       <div style={styles.divisorEx3} />
       <div style={styles.gavetaOpcoesFlex}>
         {palavrasOpcoes.map((p) => (
-          <button key={p.id} onClick={() => !p.usado && resultadoFeedback !== 'acerto' && selecionarPalavra(p)} style={{ ...styles.btnPalavraEx3, fontSize: fontSizeEx3, backgroundColor: p.usado ? '#f8fafc' : '#f1f5f9', color: p.usado ? 'transparent' : '#000', border: '1px solid #cbd5e1', visibility: p.usado ? 'hidden' : 'visible' }}>{p.texto}</button>
+          <button
+            key={p.id}
+            onClick={() => !p.usado && resultadoFeedback !== 'acerto' && selecionarPalavra(p)}
+            style={{
+              ...styles.btnPalavraEx3,
+              fontSize: fontSizeEx3,
+              backgroundColor: p.usado ? '#f8fafc' : corBgSecundarios,
+              color: p.usado ? 'transparent' : '#000',
+              border: '1px solid #cbd5e1',
+              visibility: p.usado ? 'hidden' : 'visible'
+            }}
+          >
+            {p.texto}
+          </button>
         ))}
       </div>
     </div>
@@ -43,7 +77,7 @@ const ExercicioSelecao = ({
 
 const ExercicioEscrita = ({
   configLacuna, valorInput, setValorInput, resultadoFeedback, setResultadoFeedback,
-  verificarResposta, editableRef, temas, idiomaEstudo, styles
+  verificarResposta, editableRef, styles, corAcerto, corErro
 }) => {
   return (
     <div style={{ width: '100%', textAlign: 'center' }}>
@@ -81,11 +115,11 @@ const ExercicioEscrita = ({
           />
           {resultadoFeedback && (
             <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
-              {resultadoFeedback === 'acerto' ? <span style={{ color: temas[idiomaEstudo].corTextoL1 }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
+              {resultadoFeedback === 'acerto' ? <span style={{ color: corAcerto }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
                 const userWords = valorInput.trim().split(/\s+/);
                 const clean = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
                 const isCorrect = clean(word) === clean(userWords[i]);
-                return <span key={i} style={{ color: isCorrect ? temas[idiomaEstudo].corTextoL1 : '#ef4444' }}>{i > 0 ? ' ' : ''}{word}</span>
+                return <span key={i} style={{ color: isCorrect ? corAcerto : corErro }}>{i > 0 ? ' ' : ''}{word}</span>
               })}
             </div>
           )}
@@ -97,13 +131,13 @@ const ExercicioEscrita = ({
 };
 
 const ExercicioVoz = ({
-  textoEstudo, resultadoFeedback, idiomaEstudo, temas, frase,
-  transcricaoAoVivo, indicesOcultosVoz, styles
+  textoEstudo, resultadoFeedback, idiomaEstudo, frase,
+  transcricaoAoVivo, indicesOcultosVoz, styles, corAcerto, corErro
 }) => {
   return (
     <div style={{ textAlign: 'center' }}>
       <p style={styles.textoFrasePrincipal}>
-        {resultadoFeedback === 'acerto' ? <span style={{ color: temas[idiomaEstudo].corTextoL1 }}>{textoEstudo}</span> : (() => {
+        {resultadoFeedback === 'acerto' ? <span style={{ color: corAcerto }}>{textoEstudo}</span> : (() => {
           let currentZhIndex = 0;
           const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
           return textoEstudo.split(" ").map((word, i) => {
@@ -119,7 +153,7 @@ const ExercicioVoz = ({
             const oculto = indicesOcultosVoz.includes(i);
             let cor = oculto ? 'transparent' : '#000';
             let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
-            if (estaNaFala) { cor = temas[idiomaEstudo].corTextoL1; borderB = '2px solid transparent'; } else if (resultadoFeedback === 'erro') { cor = '#ef4444'; }
+            if (estaNaFala) { cor = corAcerto; borderB = '2px solid transparent'; } else if (resultadoFeedback === 'erro') { cor = corErro; }
             return <span key={i} style={{ color: cor, borderBottom: borderB, paddingBottom: '2px', display: 'inline-block', marginRight: '4px' }}>{word}</span>
           });
         })()}
@@ -140,15 +174,16 @@ export default function TelaEstudo({
   filaErros, setFilaErros, filaAcertos, setFilaAcertos,
   sessaoDominium, setSessaoDominium, jogarDominiumInteligente
 }) {
-  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole } = useDingli();
+  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole, COR_ACERTO, COR_ERRO, COR_BG_SECUNDARIOS } = useDingli();
 
-  const frase = React.useMemo(() => {
+  const frase = useMemo(() => {
     return fraseAtivaGlobal
       ? { id: fraseAtivaGlobal.id, [idiomaEstudo]: fraseAtivaGlobal.texto, [idiomaOrigem]: fraseAtivaGlobal.traducao || "", zh: fraseAtivaGlobal.texto_zh, nivel: fraseAtivaGlobal.nivel, topico: fraseAtivaGlobal.topico }
-      : frasesFiltradas[indice];
+      : (frasesFiltradas && frasesFiltradas[indice]) ? frasesFiltradas[indice] : null;
   }, [fraseAtivaGlobal, frasesFiltradas, indice, idiomaEstudo, idiomaOrigem]);
 
   const ns = navStyle(idiomaEstudo);
+  const textoEstudo = frase?.[idiomaEstudo] || "";
 
   const [resultadoFeedback, setResultadoFeedback] = useState(null);
   const [valorInput, setValorInput] = useState("");
@@ -157,19 +192,69 @@ export default function TelaEstudo({
   const [slotsEx3, setSlotsEx3] = useState([]);
   const [indicesOcultosVoz, setIndicesOcultosVoz] = useState([]);
   const [, setTentativaFinalizada] = useState(false);
+  const [alturaTela, setAlturaTela] = useState(window.innerHeight);
+
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
-
   const jogarDominiumRef = useRef(jogarDominiumInteligente);
+
   useEffect(() => {
     jogarDominiumRef.current = jogarDominiumInteligente;
   }, [jogarDominiumInteligente]);
 
   useEffect(() => {
-    if (modoExercicio && exercicioNivel > 0 && frase) {
+    const handleResize = () => setAlturaTela(window.visualViewport?.height || window.innerHeight);
+    window.visualViewport?.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.visualViewport?.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const ranksComSom = [1, 10, 19, 2, 11, 20, 3, 12, 21, 5, 14, 23, 7, 16, 25, 9, 18, 27];
+    if (modoExercicio && ranksComSom.includes(Number(exercicioNivel)) && textoEstudo) {
+      const timer = setTimeout(() => {
+        falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [indice, exercicioNivel, modoExercicio, idiomaEstudo, textoEstudo, frase, falar]);
+
+  useEffect(() => {
+    const ranksEsconderTrad = [5, 14, 23, 7, 16, 25, 9, 18, 27];
+    if (modoExercicio && ranksEsconderTrad.includes(Number(exercicioNivel))) {
+      setMostrarTraducao(false);
+    } else if (modoExercicio) {
+      setMostrarTraducao(true);
+    } else {
+      setMostrarTraducao(false);
+    }
+  }, [exercicioNivel, modoExercicio, setMostrarTraducao]);
+
+  useEffect(() => {
+    if (modoExercicio && RANKS_WRITE.includes(exercicioNivel) && editableRef.current) {
+      const el = editableRef.current;
+      const manterFoco = () => {
+        if (modoExercicio && !resultadoFeedback) {
+          setTimeout(() => el.focus(), 0);
+        }
+      };
+      const timer = setTimeout(() => el.focus(), 300);
+      el.addEventListener('blur', manterFoco);
+      return () => {
+        clearTimeout(timer);
+        el.removeEventListener('blur', manterFoco);
+      };
+    }
+  }, [exercicioNivel, modoExercicio, indice, resultadoFeedback]);
+
+  useEffect(() => {
+    if (modoExercicio && exercicioNivel > 0 && frase && textoEstudo) {
       setResultadoFeedback(null); setTentativaFinalizada(false); setValorInput("");
 
-      const fraseOriginal = frase[idiomaEstudo];
+      const fraseOriginal = textoEstudo;
       const percentual = (exercicioNivel <= 9) ? 0.3 : (exercicioNivel <= 18) ? 0.7 : 1.0;
       const palavras = fraseOriginal.split(" ");
       if (RANKS_WRITE.includes(exercicioNivel)) {
@@ -183,7 +268,7 @@ export default function TelaEstudo({
         const pontuacaoFinal = pontuacaoFinalMatch ? pontuacaoFinalMatch[0] : "";
         const resposta = seqResposta.replace(/^[¿¡"'(]+/, "").replace(/[.,!?;:]+$/, "");
         setConfigLacuna({ prefixo: prefixo + prefixoAdicional, sufixo: pontuacaoFinal + ((inicioIdx + qtdPalavrasOcultas < palavras.length ? " " : "") + palavras.slice(inicioIdx + qtdPalavrasOcultas).join(" ")), resposta });
-        if (![6, 15, 24].includes(exercicioNivel)) falar(fraseOriginal, false);
+        // audio gerenciado pelo efeito de rank
       } else if (RANKS_SELECT.includes(exercicioNivel)) {
         const minInterativo = (exercicioNivel <= 9) ? Math.min(2, palavras.length) : 1;
         const qtdInterativa = Math.max(minInterativo, Math.round(palavras.length * percentual));
@@ -192,17 +277,17 @@ export default function TelaEstudo({
         for (let i = 0; i < qtdInterativa; i++) indicesInterativos.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
         setSlotsEx3(palavras.map((w, i) => indicesInterativos.includes(i) ? null : { id: `f-${i}`, texto: w, fixed: true }));
         setPalavrasOpcoes(indicesInterativos.map(idx => ({ id: idx, texto: palavras[idx], usado: false })).sort(() => Math.random() - 0.5));
-        if (![4, 13, 22].includes(exercicioNivel)) falar(fraseOriginal, false);
+        // audio gerenciado pelo efeito de rank
       } else if (RANKS_VOICE.includes(exercicioNivel)) {
         const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
         setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
-        if (![8, 17, 26].includes(exercicioNivel)) falar(fraseOriginal, false);
+        // audio gerenciado pelo efeito de rank
       }
     } else {
       setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]); setIndicesOcultosVoz([]);
       if (editableRef.current) editableRef.current.innerText = "";
     }
-  }, [modoExercicio, exercicioNivel, indice, frase, idiomaEstudo, falar]);
+  }, [modoExercicio, exercicioNivel, indice, frase, textoEstudo, idiomaEstudo, falar]);
 
   const selecionarPalavra = useCallback((palavraObj) => {
     setResultadoFeedback(null);
@@ -225,7 +310,7 @@ export default function TelaEstudo({
   }, [slotsEx3, palavrasOpcoes]);
 
   const verificarResposta = useCallback(() => {
-    if (resultadoFeedback === 'acerto') return;
+    if (resultadoFeedback === 'acerto' || !frase) return;
     if (resultadoFeedback === 'erro' || resultadoFeedback === 'erro_limpo') setResultadoFeedback(null);
     const fraseOriginal = frase[idiomaEstudo];
     const limpar = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").trim().toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "");
@@ -238,11 +323,13 @@ export default function TelaEstudo({
       tentativaLimpa = (limpar(valorInput) === limpar(configLacuna.resposta)) ? corretaLimpa : "erro_total";
     }
 
+    const maestriaSegura = frasesMaestria || {};
+
     if (tentativaLimpa === corretaLimpa) {
       setResultadoFeedback('acerto'); processandoAcertoRef.current = true;
       const estavaNaFilaErro = filaErros.some(item => item.indice === indice);
       setFilaErros(prev => prev.filter(item => item.indice !== indice));
-      const rankObj = frasesMaestria[frase.id];
+      const rankObj = maestriaSegura[frase.id];
       const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
       const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
       const calc = calcularProximoRank(rankAtual, true, highestRank, estavaNaFilaErro || (typeof rankObj === 'object' && rankObj.status === 'recuperacao'));
@@ -255,12 +342,12 @@ export default function TelaEstudo({
       }
       falar((idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal, false);
       setTimeout(() => {
-        setResultadoFeedback(null); setModoExercicio(false); processandoAcertoRef.current = false;
+        setResultadoFeedback(null); if (setModoExercicio) setModoExercicio(false); processandoAcertoRef.current = false;
         if (jogarDominiumRef.current) jogarDominiumRef.current();
       }, Math.max(fraseOriginal.split(" ").length * 600, 2000));
     } else {
       setResultadoFeedback('erro');
-      const rankObj = frasesMaestria[frase.id];
+      const rankObj = maestriaSegura[frase.id];
       const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
       const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
       const calc = calcularProximoRank(rankAtual, false, highestRank, filaErros.some(item => item.indice === indice) || (typeof rankObj === 'object' && rankObj.status === 'recuperacao'));
@@ -275,11 +362,12 @@ export default function TelaEstudo({
         else if (RANKS_WRITE.includes(exercicioNivel)) { setValorInput(""); setResultadoFeedback(null); }
       }, Math.max(fraseOriginal.split(" ").length * 600, 1000));
     }
-  }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo]);
+  }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, setModoExercicio, COR_ACERTO, COR_ERRO]);
 
   const handleRever = useCallback(() => {
+    if (!frase) return;
     const fraseOriginal = frase[idiomaEstudo];
-    setModoExercicio(false);
+    if (setModoExercicio) setModoExercicio(false);
     setSessaoIniciada(false);
     setResultadoFeedback(null);
     setValorInput("");
@@ -315,8 +403,6 @@ export default function TelaEstudo({
     }));
   }, [frase, idiomaEstudo, indice, nivelAtivo, topicoAtivo, setModoExercicio, setSessaoIniciada, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium]);
 
-  const textoEstudo = frase?.[idiomaEstudo] || "";
-
   if (carregandoDados || !frase || !textoEstudo) {
     return (
       <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo]?.bg || '#000' }}>
@@ -333,56 +419,6 @@ export default function TelaEstudo({
   const corFonteBotoesCard = getCorFonteDinamica(idiomaEstudo);
   const isEx3 = modoExercicio && RANKS_SELECT.includes(exercicioNivel);
   const fontSizeEx3 = '1.5rem';
-  const [alturaTela, setAlturaTela] = React.useState(window.innerHeight);
-
-  React.useEffect(() => {
-    const handleResize = () => setAlturaTela(window.visualViewport?.height || window.innerHeight);
-    window.visualViewport?.addEventListener('resize', handleResize);
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.visualViewport?.removeEventListener('resize', handleResize);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  React.useEffect(() => {
-    const ranksComSom = [1, 10, 19, 2, 11, 20, 3, 12, 21, 5, 14, 23, 7, 16, 25, 9, 18, 27];
-    if (modoExercicio && ranksComSom.includes(Number(exercicioNivel))) {
-      const timer = setTimeout(() => {
-        falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false);
-      }, 50);
-      return () => clearTimeout(timer);
-    }
-  }, [indice, exercicioNivel, modoExercicio, idiomaEstudo, textoEstudo, frase, falar]);
-
-  React.useEffect(() => {
-    const ranksEsconderTrad = [5, 14, 23, 7, 16, 25, 9, 18, 27];
-    if (modoExercicio && ranksEsconderTrad.includes(Number(exercicioNivel))) {
-      setMostrarTraducao(false);
-    } else if (modoExercicio) {
-      setMostrarTraducao(true);
-    } else {
-      setMostrarTraducao(false);
-    }
-  }, [exercicioNivel, modoExercicio, setMostrarTraducao]);
-
-  React.useEffect(() => {
-    if (modoExercicio && RANKS_WRITE.includes(exercicioNivel) && editableRef.current) {
-      const el = editableRef.current;
-      const manterFoco = () => {
-        if (modoExercicio && !resultadoFeedback) {
-          setTimeout(() => el.focus(), 0);
-        }
-      };
-      const timer = setTimeout(() => el.focus(), 300);
-      el.addEventListener('blur', manterFoco);
-      return () => {
-        clearTimeout(timer);
-        el.removeEventListener('blur', manterFoco);
-      };
-    }
-  }, [exercicioNivel, modoExercicio, indice, resultadoFeedback]);
-
   const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
 
   return (
@@ -392,7 +428,7 @@ export default function TelaEstudo({
         {!modoExercicio && (
           <div style={styles.headerEstudoMinimo}><span style={styles.contadorCompacto}>{indice + 1} / {frasesFiltradas.length}</span></div>
         )}
-        <div style={{ ...styles.cardFixoRelativo, margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? temas[idiomaEstudo]?.corTextoL1 : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent'), outline: 'none' }}
+        <div style={{ ...styles.cardFixoRelativo, margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? COR_ACERTO : (resultadoFeedback === 'erro' ? COR_ERRO : 'transparent'), outline: 'none' }}
           onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}>
 
           <div style={styles.topCardAreaFixed}>
@@ -421,22 +457,22 @@ export default function TelaEstudo({
                   fontSizeEx3={fontSizeEx3} styles={styles} temas={temas} slotsEx3={slotsEx3}
                   removerPalavraSlot={removerPalavraSlot} resultadoFeedback={resultadoFeedback}
                   frasesFiltradas={frasesFiltradas} indice={indice} palavrasOpcoes={palavrasOpcoes}
-                  selecionarPalavra={selecionarPalavra}
+                  selecionarPalavra={selecionarPalavra} corAcerto={COR_ACERTO} corErro={COR_ERRO} corBgSecundarios={COR_BG_SECUNDARIOS}
                 />
               ) : (
                 RANKS_WRITE.includes(exercicioNivel) ? (
                   <ExercicioEscrita
                     configLacuna={configLacuna} valorInput={valorInput} setValorInput={setValorInput}
                     resultadoFeedback={resultadoFeedback} setResultadoFeedback={setResultadoFeedback}
-                    verificarResposta={verificarResposta} editableRef={editableRef} temas={temas}
-                    idiomaEstudo={idiomaEstudo} styles={styles}
+                    verificarResposta={verificarResposta} editableRef={editableRef}
+                    styles={styles} corAcerto={COR_ACERTO} corErro={COR_ERRO}
                   />
                 ) : (
                   RANKS_VOICE.includes(exercicioNivel) ? (
                     <ExercicioVoz
                       textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
-                      temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
-                      indicesOcultosVoz={indicesOcultosVoz} styles={styles}
+                      frase={frase} transcricaoAoVivo={transcricaoAoVivo}
+                      indicesOcultosVoz={indicesOcultosVoz} styles={styles} corAcerto={COR_ACERTO} corErro={COR_ERRO}
                     />
                   ) : (
                     <div style={{ textAlign: 'center' }}>
@@ -463,22 +499,22 @@ export default function TelaEstudo({
 
             {![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
               <div style={styles.rowAudio}>
-                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
-                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.normal}</button>
+                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, true)} style={{ ...styles.btnAudioRound, backgroundColor: COR_BG_SECUNDARIOS, color: corFonteBotoesCard }}>{t.slow}</button>
+                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false)} style={{ ...styles.btnAudioRound, backgroundColor: COR_BG_SECUNDARIOS, color: corFonteBotoesCard }}>{t.normal}</button>
               </div>
             )}
 
             <div style={styles.blocoSuporteIA}>
               {!modoExercicio ? (
                 <div style={styles.rowBotoesIA}>
-                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.askAi}</button>
+                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_BG_SECUNDARIOS, color: corFonteBotoesCard }}>{t.askAi}</button>
                   {userRole === 'aluno' ? (
                     (() => {
                       const idAtual = frase?.id;
-                      const maestriaData = frasesMaestria[idAtual];
+                      const maestriaData = (frasesMaestria || {})[idAtual];
                       const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
                       return (
-                        <button onClick={() => { setModoJogo(true); setSessaoIniciada(true); iniciarExercicio(rankAtual > 0 ? rankAtual : 1); }} disabled={rankAtual > 0} style={{ ...styles.btnAcaoExtra, backgroundColor: rankAtual > 0 ? '#f1f5f9' : ns.bg, color: rankAtual > 0 ? '#94a3b8' : ns.txt }}>
+                        <button onClick={() => { setModoJogo(true); setSessaoIniciada(true); iniciarExercicio(rankAtual > 0 ? rankAtual : 1); }} disabled={rankAtual > 0} style={{ ...styles.btnAcaoExtra, backgroundColor: rankAtual > 0 ? COR_BG_SECUNDARIOS : ns.bg, color: rankAtual > 0 ? '#94a3b8' : ns.txt }}>
                           {rankAtual > 0 ? `${(rankAtual * 3.703).toFixed(2)}%` : t.practice}
                         </button>
                       );
@@ -489,7 +525,7 @@ export default function TelaEstudo({
                 <div style={styles.rowBotoesIA}>
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>
-                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
+                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_BG_SECUNDARIOS, color: corFonteBotoesCard }}>{t.review}</button>
                       <button onClick={() => iniciarReconhecimentoVoz(frase)} disabled={statusVoz !== 'IDLE' || resultadoFeedback !== null} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: resultadoFeedback ? 0.5 : 1 }}>
                         {statusVoz !== 'IDLE' ? (
                           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3px', height: '24px' }}>
@@ -500,7 +536,7 @@ export default function TelaEstudo({
                     </>
                   ) : (
                     <>
-                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_BG_SECUNDARIOS, color: corFonteBotoesCard }}>{t.review}</button>
                       <button onMouseDown={(e) => e.preventDefault()} onClick={verificarResposta} disabled={isCheckDisabled} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: isCheckDisabled ? 0.5 : 1, cursor: isCheckDisabled ? 'not-allowed' : 'pointer' }}>{t.check}</button>
                     </>
                   )}

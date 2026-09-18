@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useMemo } from 'react';
-import { temas, interfaceTraducoes } from './constant'; 
+import { temas, interfaceTraducoes } from './constant';
+import { CORES_POR_IDIOMA, COR_BASE_CARDS, COR_ACERTO, COR_ERRO, COR_BG_SECUNDARIOS, getTemaVisual } from './themeColors';
 
 const DingliContext = createContext();
 
@@ -10,24 +11,14 @@ export function DingliProvider({
   userRole, setUserRole,
   mudarTela, tela
 }) {
-
   const getCorFonteDinamica = (idioma) => {
-    switch (idioma) {
-      case 'pt': return '#002776';
-      case 'en': return '#1e3a8a';
-      case 'es': return '#c2410c';
-      case 'fr': return '#0055a4';
-      case 'it': return '#009246';
-      case 'ge': return '#18181b';
-      case 'pi': return '#991b1b';
-      default:   return '#1e293b';
-    }
+    return (CORES_POR_IDIOMA[idioma] || CORES_POR_IDIOMA.en).acaoEscura;
   };
 
   const navStyle = (idioma) => {
     return {
-      bg: getCorFonteDinamica(idioma),
-      txt: '#ffffff'
+      bg: (CORES_POR_IDIOMA[idioma] || CORES_POR_IDIOMA.en).acaoEscura,
+      txt: COR_BASE_CARDS
     };
   };
 
@@ -40,7 +31,12 @@ export function DingliProvider({
     temas,
     t,
     getCorFonteDinamica,
-    navStyle
+    navStyle,
+    COR_BASE_CARDS,
+    COR_ACERTO,
+    COR_ERRO,
+    COR_BG_SECUNDARIOS,
+    getTemaVisual
   }), [t, idiomaOrigem, idiomaEstudo, userRole, tela]);
 
   const extendedValue = useMemo(() => ({
@@ -50,6 +46,7 @@ export function DingliProvider({
     userRole, setUserRole,
     mudarTela, tela
   }), [contextValue, idiomaOrigem, setIdiomaOrigem, idiomaEstudo, setIdiomaEstudo, userRole, setUserRole, mudarTela, tela]);
+
   return (
     <DingliContext.Provider value={extendedValue}>
       {children}

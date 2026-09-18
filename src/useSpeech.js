@@ -1,5 +1,11 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 
+const SUPABASE_AUDIO_BASE = "https://lxdmfaxxxfyzbpzvniyi.supabase.co/storage/v1/object/public/audios";
+
+let globalAudioPlayer = null;
+let globalShuffleBags = {};
+let globalVoiceIndexLegacy = 0;
+
 export const useSpeech = ({
     idiomaEstudo,
     temas,
@@ -12,9 +18,9 @@ export const useSpeech = ({
     const [statusVoz, setStatusVoz] = useState('IDLE');
     const [transcricaoAoVivo, setTranscricaoAoVivo] = useState("");
     const [volume, setVolume] = useState(0);
+
     const animationFrameRef = useRef(null);
     const timerSilencioRef = useRef(null);
-    const voiceIndex = useRef(0);
     const tentativasVozRef = useRef(0);
     const processandoAcertoRef = useRef(false);
     const estaGravandoRef = useRef(false);
@@ -22,10 +28,26 @@ export const useSpeech = ({
 
     useEffect(() => {
         tentativasVozRef.current = 0;
+        if (globalAudioPlayer) {
+            globalAudioPlayer.pause();
+            globalAudioPlayer.src = "";
+            globalAudioPlayer = null;
+        }
     }, [indice]);
 
-    const falar = useCallback((texto, lento, callback) => {
-        if (!texto) return;
+    const obterProximaVozShuffleBag = useCallback((fraseId, totalVozes = 6) => {
+        if (!globalShuffleBags[fraseId] || globalShuffleBags[fraseId].length === 0) {
+            const vozes = Array.from({ length: totalVozes }, (_, i) => i + 1);
+            for (let i = vozes.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [vozes[i], vozes[j]] = [vozes[j], vozes[i]];
+            }
+            globalShuffleBags[fraseId] = vozes;
+        }
+        return globalShuffleBags[fraseId].pop();
+    }, []);
+
+    const executarSpeechSynthesisFallback = useCallback((texto, lento, callback) => {
         const synth = window.speechSynthesis;
         synth.cancel();
 
@@ -36,45 +58,75 @@ export const useSpeech = ({
                 const isQuality = name.includes('natural') || name.includes('neural') || name.includes('premium') || name.includes('online');
                 return v.lang.toLowerCase().includes(lang) && (!name.includes('google') || isQuality) && (!name.includes('microsoft') || isQuality);
             });
-            const selectedVoice = voices.length > 0 ? voices[voiceIndex.current % voices.length] : null;
-            if (voices.length > 0) voiceIndex.current += 1;
+            const selectedVoice = voices.length > 0 ? voices[globalVoiceIndexLegacy % voices.length] : null;
+            if (voices.length > 0) globalVoiceIndexLegacy += 1;
 
-            if (lento) {
-                const palavrasBrutas = idiomaEstudo === 'pi' && !texto.includes(" ") ? texto.split("") : texto.split(" ");
-                const palavras = palavrasBrutas.filter(p => !/^[.,!?;:，。！？；：]+$/.test(p.trim()) && p.trim() !== "");
-                const falarPalavra = (index) => {
-                    if (index >= palavras.length) {
-                        if (callback) callback();
-                        window.utterance = null;
-                        return;
-                    }
-                    const msg = new SpeechSynthesisUtterance(palavras[index]);
-                    window.utterance = msg;
-                    if (selectedVoice) msg.voice = selectedVoice;
-                    msg.rate = 0.8;
-                    msg.lang = temas[idiomaEstudo]?.langCode || 'en-US';
-                    msg.onend = () => {
-                        setTimeout(() => falarPalavra(index + 1), 100);
-                    };
-                    synth.speak(msg);
-                };
-                synth.resume();
-                falarPalavra(0);
-            } else {
-                const msg = new SpeechSynthesisUtterance(texto);
-                window.utterance = msg;
-                if (selectedVoice) msg.voice = selectedVoice;
-                msg.rate = 0.9;
-                msg.lang = temas[idiomaEstudo]?.langCode || 'en-US';
-                msg.onend = () => {
-                    if (callback) callback();
-                    window.utterance = null;
-                };
-                synth.resume();
-                synth.speak(msg);
-            }
+            const msg = new SpeechSynthesisUtterance(texto);
+            window.utterance = msg;
+            if (selectedVoice) msg.voice = selectedVoice;
+            msg.rate = lento ? 0.75 : 0.9;
+            msg.lang = temas[idiomaEstudo]?.langCode || 'en-US';
+            msg.onend = () => {
+                if (callback) callback();
+                window.utterance = null;
+            };
+            synth.resume();
+            synth.speak(msg);
         }, 50);
     }, [idiomaEstudo, temas]);
+
+    const falar = useCallback((texto, lento = false, callback) => {
+        if (!texto) return;
+
+        // Silencia qualquer reprodução ativa antes de iniciar a nova
+        if (globalAudioPlayer) {
+            globalAudioPlayer.pause();
+            globalAudioPlayer.src = "";
+            globalAudioPlayer = null;
+        }
+        if (window.speechSynthesis) {
+            window.speechSynthesis.cancel();
+        }
+
+        const fraseAtual = fraseAlvoRef.current || fraseAtiva || (frasesFiltradas && frasesFiltradas[indice]);
+        const fraseId = fraseAtual?.id;
+
+        if (idiomaEstudo === 'en' && fraseId) {
+            const vIndex = obterProximaVozShuffleBag(fraseId, 6);
+            const audioUrl = `${SUPABASE_AUDIO_BASE}/en/${fraseId}_v${vIndex}.mp3`;
+
+            const audio = new Audio(audioUrl);
+            globalAudioPlayer = audio;
+            audio.playbackRate = lento ? 0.75 : 1.0;
+
+            audio.onended = () => {
+                if (globalAudioPlayer === audio) globalAudioPlayer = null;
+                if (callback) callback();
+            };
+
+            audio.onerror = () => {
+                if (globalAudioPlayer === audio) {
+                    globalAudioPlayer = null;
+                    executarSpeechSynthesisFallback(texto, lento, callback);
+                }
+            };
+
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch((err) => {
+                    // Ignora interrupções normais causadas por troca rápida de tela/card
+                    if (err.name === 'AbortError') return;
+                    if (globalAudioPlayer === audio) {
+                        globalAudioPlayer = null;
+                        executarSpeechSynthesisFallback(texto, lento, callback);
+                    }
+                });
+            }
+            return;
+        }
+
+        executarSpeechSynthesisFallback(texto, lento, callback);
+    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, obterProximaVozShuffleBag, executarSpeechSynthesisFallback]);
 
     const pararMonitoramentoAudio = useCallback(() => {
         estaGravandoRef.current = false;
@@ -98,10 +150,15 @@ export const useSpeech = ({
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         if (!SpeechRecognition) return;
 
-        // Garante que o TTS pare imediatamente para não falar no microfone
-        if (window.speechSynthesis) window.speechSynthesis.cancel();
+        if (globalAudioPlayer) {
+            globalAudioPlayer.pause();
+            globalAudioPlayer.src = "";
+            globalAudioPlayer = null;
+        }
+        if (window.speechSynthesis) {
+            window.speechSynthesis.cancel();
+        }
 
-        // Vincula a frase exata em foco
         const fraseAtual = fraseParam || fraseAtiva || (frasesFiltradas && frasesFiltradas[indice]);
         fraseAlvoRef.current = fraseAtual;
 
@@ -140,7 +197,6 @@ export const useSpeech = ({
             const acertos = palavrasCorretas.filter(p => falaComparacao.includes(normalizar(p))).length;
             const percentualAcerto = acertos / Math.max(1, palavrasCorretas.length);
 
-            // Tolerância dinâmica calibrada por tamanho de frase
             const limiar = palavrasCorretas.length <= 2 ? 0.5 : palavrasCorretas.length <= 4 ? 0.65 : 0.75;
 
             if (percentualAcerto >= limiar || falaComparacao.includes(fraseCorreta)) {

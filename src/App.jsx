@@ -86,7 +86,7 @@ function App() {
     const nivelSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.nivel : nivelAtivo;
     const topicoSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.topico : topicoAtivo;
     const traducaoSalvar = fraseAtivaGlobal ? (fraseAtivaGlobal.traducao || "") : (frasesFiltradas[indice]?.[idiomaOrigem] || "");
-    const rankObj = frasesMaestria[idAtual];
+    const rankObj = (frasesMaestria || {})[idAtual];
     const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
     const cursoKey = `${idiomaOrigem}_${idiomaEstudo}`;
 
@@ -264,7 +264,7 @@ function App() {
 
   useEffect(() => {
     const bootRecuperacao = async () => {
-      if (tela !== 'perfil' && tela !== 'escolherOrigem' && tela !== 'escolherIdioma') {
+      if (tela !== 'perfil' && tela !== 'escolherOrigem' && tela !== 'escolherIdioma' && tela !== 'adm') {
         if (!idiomaOrigem || !idiomaEstudo) {
           mudarTela('perfil');
           return;
@@ -355,7 +355,7 @@ function App() {
 
       for (let i = 0; i < data.length; i++) {
         const fId = data[i].id;
-        const rankObj = frasesMaestria[fId];
+        const rankObj = (frasesMaestria || {})[fId];
         const rank = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
 
         if (fId < menorIdAbsoluto) {
@@ -574,7 +574,7 @@ function App() {
       localStorage.setItem(progressoChave, indice.toString());
       const currentId = `${indice}_${topicoAtivo}_${idiomaOrigem}_${idiomaEstudo}`;
       if (!modoExercicio && !processandoAcertoRef.current && ultimoAudioID.current !== currentId) {
-        const rankObj = frasesMaestria[frasesFiltradas[indice]?.id];
+        const rankObj = (frasesMaestria || {})[frasesFiltradas[indice]?.id];
         const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
         if (rankAtual > 0) {
           const textoParaFalar = (idiomaEstudo === 'pi' && frasesFiltradas[indice].zh)
