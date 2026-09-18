@@ -184,7 +184,7 @@ export default function TelaEstudo({
         const pontuacaoFinal = pontuacaoFinalMatch ? pontuacaoFinalMatch[0] : "";
         const resposta = seqResposta.replace(/^[¿¡"'(]+/, "").replace(/[.,!?;:]+$/, "");
         setConfigLacuna({ prefixo: prefixo + prefixoAdicional, sufixo: pontuacaoFinal + ((inicioIdx + qtdPalavrasOcultas < palavras.length ? " " : "") + palavras.slice(inicioIdx + qtdPalavrasOcultas).join(" ")), resposta });
-        if (![6, 15, 24].includes(exercicioNivel)) falar(fraseOriginal, false);
+        if (![6, 15, 24].includes(exercicioNivel)) falar({ id: frase?.id, texto: fraseOriginal }, false);
       } else if (RANKS_SELECT.includes(exercicioNivel)) {
         const minInterativo = (exercicioNivel <= 9) ? Math.min(2, palavras.length) : 1;
         const qtdInterativa = Math.max(minInterativo, Math.round(palavras.length * percentual));
@@ -193,11 +193,11 @@ export default function TelaEstudo({
         for (let i = 0; i < qtdInterativa; i++) indicesInterativos.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
         setSlotsEx3(palavras.map((w, i) => indicesInterativos.includes(i) ? null : { id: `f-${i}`, texto: w, fixed: true }));
         setPalavrasOpcoes(indicesInterativos.map(idx => ({ id: idx, texto: palavras[idx], usado: false })).sort(() => Math.random() - 0.5));
-        if (![4, 13, 22].includes(exercicioNivel)) falar(fraseOriginal, false);
+        if (![4, 13, 22].includes(exercicioNivel)) falar({ id: frase?.id, texto: fraseOriginal }, false);
       } else if (RANKS_VOICE.includes(exercicioNivel)) {
         const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
         setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
-        if (![8, 17, 26].includes(exercicioNivel)) falar(fraseOriginal, false);
+        if (![8, 17, 26].includes(exercicioNivel)) falar({ id: frase?.id, texto: fraseOriginal }, false);
       }
     } else {
       setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]); setIndicesOcultosVoz([]);
@@ -254,7 +254,7 @@ export default function TelaEstudo({
       } else {
         setSessaoDominium(prev => ({ ...prev, recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), acertosTempo: [...(prev.acertosTempo || []).filter(a => a.frase !== fraseOriginal), { frase: fraseOriginal, id: frase.id, time: Date.now(), curso: `${idiomaOrigem}_${idiomaEstudo}`, nivel: nivelAtivo, topico: topicoAtivo }] }));
       }
-      falar((idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal, false);
+      falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal }, false);
       setTimeout(() => {
         setResultadoFeedback(null); setModoExercicio(false); processandoAcertoRef.current = false;
         if (jogarDominiumRef.current) jogarDominiumRef.current();
@@ -269,7 +269,7 @@ export default function TelaEstudo({
       setSessaoDominium(prev => ({ ...prev, falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}` }], primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal) }));
       setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
       setFilaErros(prev => prev.some(item => item.indice === indice) ? prev : [...prev, { indice, rank: calc.novoRank }]);
-      falar((idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal, false);
+      falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal }, false);
       setTimeout(() => {
         setTentativaFinalizada(false);
         if (RANKS_SELECT.includes(exercicioNivel)) { setResultadoFeedback('erro_limpo'); }
@@ -350,7 +350,7 @@ export default function TelaEstudo({
     const ranksComSom = [1, 10, 19, 2, 11, 20, 3, 12, 21, 5, 14, 23, 7, 16, 25, 9, 18, 27];
     if (modoExercicio && ranksComSom.includes(Number(exercicioNivel))) {
       const timer = setTimeout(() => {
-        falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false);
+        falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, false);
       }, 50);
       return () => clearTimeout(timer);
     }
@@ -464,8 +464,8 @@ export default function TelaEstudo({
 
             {![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
               <div style={styles.rowAudio}>
-                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
-                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar((idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo, false)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.normal}</button>
+                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
+                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, false)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.normal}</button>
               </div>
             )}
 
