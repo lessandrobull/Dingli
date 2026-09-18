@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { obterAudioUrl, VOZES_EN } from './services/audioCacheService';
+import { obterAudioUrl, VOZES_EN, VOZES_ES } from './services/audioCacheService';
 
 export const useSpeech = ({
     idiomaEstudo,
@@ -120,12 +120,13 @@ export const useSpeech = ({
             }
         }
 
-        // Se for inglês e tiver ID, reproduz o MP3 pré-gerado
-        if (idiomaEstudo === 'en' && id) {
+        // Se for inglês ou espanhol e tiver ID, reproduz o MP3 pré-gerado
+        if ((idiomaEstudo === 'en' || idiomaEstudo === 'es') && id) {
             try {
-                const voz = VOZES_EN[voiceNumIndex.current % VOZES_EN.length];
+                const listaVozes = idiomaEstudo === 'es' ? VOZES_ES : VOZES_EN;
+                const voz = listaVozes[voiceNumIndex.current % listaVozes.length];
                 voiceNumIndex.current += 1;
-                const url = await obterAudioUrl(id, voz, 'en');
+                const url = await obterAudioUrl(id, voz, idiomaEstudo);
 
                 const audio = new Audio(url);
                 audioRef.current = audio;

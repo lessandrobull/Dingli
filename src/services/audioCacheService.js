@@ -1,6 +1,7 @@
 const SUPABASE_AUDIO_BASE = "https://lxdmfaxxxfyzbpzvniyi.supabase.co/storage/v1/object/public/audios";
 const CACHE_NAME = "dingli-audios-v1";
 export const VOZES_EN = ["v1", "v2", "v3", "v4", "v5", "v6"];
+export const VOZES_ES = ["v1", "v2", "v3", "v4", "v5", "v6"];
 
 /**
  * Monta a URL pública exata do arquivo no Supabase
