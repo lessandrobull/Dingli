@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
+import { obterAudioUrl, VOZES_EN } from './services/audioCacheService';
 
 export const useSpeech = ({
     idiomaEstudo,
@@ -15,6 +16,8 @@ export const useSpeech = ({
     const animationFrameRef = useRef(null);
     const timerSilencioRef = useRef(null);
     const voiceIndex = useRef(0);
+    const voiceNumIndex = useRef(0);
+    const audioRef = useRef(null);
     const tentativasVozRef = useRef(0);
     const processandoAcertoRef = useRef(false);
     const estaGravandoRef = useRef(false);
@@ -24,7 +27,25 @@ export const useSpeech = ({
         tentativasVozRef.current = 0;
     }, [indice]);
 
-    const falar = useCallback((texto, lento, callback) => {
+    const pararAudiosEmExecucao = useCallback(() => {
+        if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.onended = null;
+            audioRef.current.onerror = null;
+            audioRef.current = null;
+        }
+        if (window.speechSynthesis) {
+            window.speechSynthesis.cancel();
+        }
+    }, []);
+
+    useEffect(() => {
+        return () => {
+            pararAudiosEmExecucao();
+        };
+    }, [pararAudiosEmExecucao]);
+
+    const falarTTS = useCallback((texto, lento, callback) => {
         if (!texto) return;
         const synth = window.speechSynthesis;
         synth.cancel();
@@ -76,6 +97,69 @@ export const useSpeech = ({
         }, 50);
     }, [idiomaEstudo, temas]);
 
+    const falar = useCallback(async (alvo, lento = false, callback) => {
+        if (!alvo) return;
+        pararAudiosEmExecucao();
+
+        let id = null;
+        let texto = "";
+
+        if (typeof alvo === 'object' && alvo !== null) {
+            id = alvo.id;
+            texto = alvo.texto || alvo[idiomaEstudo] || alvo.en || "";
+        } else if (typeof alvo === 'string') {
+            texto = alvo;
+            if (fraseAtiva && fraseAtiva.id) {
+                id = fraseAtiva.id;
+            } else if (frasesFiltradas && frasesFiltradas[indice] && frasesFiltradas[indice].id) {
+                id = frasesFiltradas[indice].id;
+            }
+        }
+
+        // Se for inglês e tiver ID, reproduz o MP3 pré-gerado
+        if (idiomaEstudo === 'en' && id) {
+            try {
+                const voz = VOZES_EN[voiceNumIndex.current % VOZES_EN.length];
+                voiceNumIndex.current += 1;
+                const url = await obterAudioUrl(id, voz, 'en');
+
+                const audio = new Audio(url);
+                audioRef.current = audio;
+
+                if (lento) {
+                    audio.playbackRate = 0.75;
+                }
+
+                audio.onended = () => {
+                    audioRef.current = null;
+                    if (callback) callback();
+                };
+
+                audio.onerror = (err) => {
+                    console.warn(`[useSpeech] Falha ao reproduzir MP3 (${id}_${voz}), usando TTS:`, err);
+                    audioRef.current = null;
+                    falarTTS(texto, lento, callback);
+                };
+
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch((e) => {
+                        console.warn("[useSpeech] Autoplay bloqueado ou falha de play, usando TTS:", e);
+                        audioRef.current = null;
+                        falarTTS(texto, lento, callback);
+                    });
+                }
+                return;
+            } catch (err) {
+                console.warn("[useSpeech] Exceção ao abrir MP3, usando TTS:", err);
+                audioRef.current = null;
+            }
+        }
+
+        // Fallback nativo para outros idiomas ou ausência de ID
+        falarTTS(texto, lento, callback);
+    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, falarTTS]);
+
     const pararMonitoramentoAudio = useCallback(() => {
         estaGravandoRef.current = false;
         if (animationFrameRef.current) cancelAnimationFrame(animationFrameRef.current);
@@ -98,8 +182,8 @@ export const useSpeech = ({
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         if (!SpeechRecognition) return;
 
-        // Garante que o TTS pare imediatamente para não falar no microfone
-        if (window.speechSynthesis) window.speechSynthesis.cancel();
+        // Garante que qualquer áudio em reprodução pare imediatamente para não vazar no microfone
+        pararAudiosEmExecucao();
 
         // Vincula a frase exata em foco
         const fraseAtual = fraseParam || fraseAtiva || (frasesFiltradas && frasesFiltradas[indice]);
