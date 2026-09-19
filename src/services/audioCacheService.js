@@ -2,12 +2,19 @@ const SUPABASE_AUDIO_BASE = "https://lxdmfaxxxfyzbpzvniyi.supabase.co/storage/v1
 const CACHE_NAME = "dingli-audios-v1";
 export const VOZES_EN = ["v1", "v2", "v3", "v4", "v5", "v6"];
 export const VOZES_ES = ["v1", "v2", "v3", "v4", "v5", "v6"];
+export const VOZES_FR = ["v1", "v2", "v3", "v4"];
+export const VOZES_IT = ["v1", "v2", "v3", "v4"];
+export const VOZES_GE = ["v1", "v2", "v3", "v4"];
+export const VOZES_PT = ["v1", "v2", "v3", "v4"];
+export const VOZES_ZH = ["v1", "v2", "v3", "v4"];
+export const VOZES_PI = VOZES_ZH;
 
 /**
  * Monta a URL pública exata do arquivo no Supabase
  */
 export function montarAudioUrl(id, voz = "v1", idioma = "en") {
-  return `${SUPABASE_AUDIO_BASE}/${idioma}/${id}_${voz}.mp3`;
+  const pastaIdioma = idioma === "pi" ? "zh" : idioma;
+  return `${SUPABASE_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3`;
 }
 
 /**

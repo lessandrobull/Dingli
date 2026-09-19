@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { obterAudioUrl, VOZES_EN, VOZES_ES } from './services/audioCacheService';
+import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService';
 
 export const useSpeech = ({
     idiomaEstudo,
@@ -121,9 +121,9 @@ export const useSpeech = ({
         }
 
         // Se for inglês ou espanhol e tiver ID, reproduz o MP3 pré-gerado
-        if ((idiomaEstudo === 'en' || idiomaEstudo === 'es') && id) {
+        if ((idiomaEstudo === 'en' || idiomaEstudo === 'es' || idiomaEstudo === 'fr' || idiomaEstudo === 'it' || idiomaEstudo === 'ge' || idiomaEstudo === 'pt' || idiomaEstudo === 'pi') && id) {
             try {
-                const listaVozes = idiomaEstudo === 'es' ? VOZES_ES : VOZES_EN;
+                const listaVozes = (idiomaEstudo === 'pi' || idiomaEstudo === 'zh') ? VOZES_ZH : (idiomaEstudo === 'pt' ? VOZES_PT : (idiomaEstudo === 'ge' ? VOZES_GE : (idiomaEstudo === 'it' ? VOZES_IT : (idiomaEstudo === 'fr' ? VOZES_FR : (idiomaEstudo === 'es' ? VOZES_ES : VOZES_EN)))));
                 const voz = listaVozes[voiceNumIndex.current % listaVozes.length];
                 voiceNumIndex.current += 1;
                 const url = await obterAudioUrl(id, voz, idiomaEstudo);
@@ -215,7 +215,7 @@ export const useSpeech = ({
             if (processandoAcertoRef.current) return;
             let transcriptAcumulada = "";
             for (let i = 0; i < event.results.length; i++) {
-                transcriptAcumulada += event.results[i][0].transcript;
+                transcriptAcumulada += (event.results[i][0].transcript || "") + " ";
             }
 
             const falaAtual = transcriptAcumulada.toLowerCase().trim();
@@ -230,7 +230,18 @@ export const useSpeech = ({
 
             const falaComparacao = normalizar(falaAtual);
             const palavrasCorretas = idiomaEstudo === 'pi' ? textoAlvo.split("") : fraseCorreta.split(" ");
-            const acertos = palavrasCorretas.filter(p => falaComparacao.includes(normalizar(p))).length;
+
+            const digitosAlvo = extrairDigitos(textoAlvo);
+            const digitosFala = extrairDigitos(falaAtual);
+            const numerosBateram = digitosAlvo.length >= 2 && digitosFala.includes(digitosAlvo);
+
+            const acertos = palavrasCorretas.filter(p => {
+                const pNorm = normalizar(p);
+                if (!pNorm) return false;
+                if (MAPA_NUMEROS[pNorm] !== undefined && numerosBateram) return true;
+                if (/^\d+$/.test(pNorm) && numerosBateram) return true;
+                return falaComparacao.includes(pNorm);
+            }).length;
             const percentualAcerto = acertos / Math.max(1, palavrasCorretas.length);
 
             // Tolerância dinâmica calibrada por tamanho de frase
@@ -241,13 +252,13 @@ export const useSpeech = ({
                 if (processandoAcertoRef.current) return;
                 processandoAcertoRef.current = true;
 
-                try { recognition.stop(); } catch (e) { }
+                setStatusVoz('EVALUATING');
+                setEstaOuvindo(false);
+                pararMonitoramentoAudio();
+                try { recognition.abort(); } catch (e) { }
 
                 setTimeout(() => {
                     setStatusVoz('IDLE');
-                    setEstaOuvindo(false);
-                    pararMonitoramentoAudio();
-
                     if (onAvaliacaoConcluida) {
                         onAvaliacaoConcluida({
                             resultado: 'acerto',
@@ -256,7 +267,7 @@ export const useSpeech = ({
                             fraseObj: fraseAlvo
                         });
                     }
-                }, 800);
+                }, 250);
             } else {
                 if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
                 timerSilencioRef.current = setTimeout(() => {

@@ -95,7 +95,7 @@ function App() {
       setResultadoFeedback('acerto');
       processandoAcertoRef.current = true;
 
-      if (tentativas === 0) {
+      if (true) {
         const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
         const inRecuperacao = typeof rankObj === 'object' && rankObj.status === 'recuperacao';
         const calc = calcularProximoRank(rankAtual, true, highestRank, inRecuperacao);
@@ -143,6 +143,8 @@ function App() {
       if (falarRef.current) falarRef.current(textoFinal, false);
       setTimeout(() => {
         setResultadoFeedback(null);
+        setTranscricaoAoVivo("");
+        setModoExercicio(false);
         processandoAcertoRef.current = false;
         if (jogarDominiumInteligenteRef.current) {
           jogarDominiumInteligenteRef.current();
