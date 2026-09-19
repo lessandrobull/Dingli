@@ -186,7 +186,7 @@ function App() {
         : fraseOriginal;
       const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 600, 1000);
 
-      if (falarRef.current) falarRef.current(textoFinalErro, false);
+      if (falarRef.current) falarRef.current({ id: idAtual, texto: textoFinalErro }, false);
       setTimeout(() => {
         setResultadoFeedback(null);
         setTranscricaoAoVivo("");
@@ -208,8 +208,15 @@ function App() {
     if (proximo?.dados) precarregarAudios([proximo.dados], idiomaEstudo);
 
     if (!proximo) {
-      limparEstadoExercicio();
-      mudarTela('escolherTopic');
+      if (frasesFiltradas && frasesFiltradas.length > 0) {
+        setIndice(prev => (prev + 1) % frasesFiltradas.length);
+        limparEstadoExercicio();
+        setModoExercicio(false);
+        mudarTela('estudo');
+      } else {
+        limparEstadoExercicio();
+        mudarTela('escolherTopic');
+      }
       return;
     }
 
@@ -243,7 +250,7 @@ function App() {
 
   const {
     estaOuvindo, statusVoz, transcricaoAoVivo, volume,
-    falar, iniciarReconhecimentoVoz, pararMonitoramentoAudio,
+    falar, iniciarReconhecimentoVoz, pararEAvaliarVoz, pararMonitoramentoAudio,
     setEstaOuvindo, setStatusVoz, setTranscricaoAoVivo
   } = useSpeech({
     idiomaEstudo, temas, frasesFiltradas, indice,
@@ -635,7 +642,7 @@ function App() {
       />
     );
     if (tela === 'escolherTopic') return (
-      <EscolherTopic styles={styles} listaTopicos={listaTopicos} selecionarTopico={selecionarTopico} />
+      <EscolherTopic styles={styles} listaTopicos={listaTopicos} selecionarTopico={selecionarTopico} nivelAtivo={nivelAtivo} idiomaOrigem={idiomaOrigem} frasesMaestria={frasesMaestria} />
     );
     if (tela === 'selecaoExercicio') return (
       <SelecaoExercicio styles={styles} iniciarExercicio={iniciarExercicio} />
@@ -659,12 +666,12 @@ function App() {
       <TelaEstudo
         fraseAtivaGlobal={fraseAtivaGlobal}
         frasesFiltradas={frasesFiltradas} indice={indice} nivelAtivo={nivelAtivo} topicoAtivo={topicoAtivo}
-        modoExercicio={modoExercicio} exercicioNivel={exercicioNivel} styles={styles}
+        modoExercicio={modoExercicio} exercicioNivel={exercicioNivel} resultadoFeedbackProp={resultadoFeedback} styles={styles}
         carregandoDados={carregandoDados} mostrarTraducao={mostrarTraducao}
         setMostrarTraducao={setMostrarTraducao} falar={falar} explicarFraseIA={explicarFraseIA}
         frasesMaestria={frasesMaestria} setFrasesMaestria={setFrasesMaestria} setModoJogo={setModoJogo}
         setSessaoIniciada={setSessaoIniciada} limparEstadoExercicio={limparEstadoExercicio} statusVoz={statusVoz}
-        volume={volume} iniciarReconhecimentoVoz={iniciarReconhecimentoVoz}
+        volume={volume} iniciarReconhecimentoVoz={iniciarReconhecimentoVoz} pararEAvaliarVoz={pararEAvaliarVoz}
         setIndice={setIndice} transcricaoAoVivo={transcricaoAoVivo} iniciarExercicio={iniciarExercicio}
         aiExplanation={aiExplanation} aiLoading={aiLoading} setModoExercicio={setModoExercicio}
         filaErros={filaErros} setFilaErros={setFilaErros} filaAcertos={filaAcertos} setFilaAcertos={setFilaAcertos}

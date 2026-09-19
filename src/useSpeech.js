@@ -1,6 +1,18 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService';
 
+// TABELA CENTRAL DE VELOCIDADES DE ÁUDIO (Ajuste manual por idioma)
+export const VELOCIDADES_AUDIO = {
+    pi: { normal: 0.85, lento: 0.55 }, // Mandarim
+    zh: { normal: 0.85, lento: 0.55 },
+    en: { normal: 1.00, lento: 0.70 }, // Inglês
+    es: { normal: 1.00, lento: 0.70 }, // Espanhol
+    fr: { normal: 1.00, lento: 0.70 }, // Francês
+    it: { normal: 1.00, lento: 0.70 }, // Italiano
+    ge: { normal: 1.00, lento: 0.70 }, // Alemão
+    pt: { normal: 1.00, lento: 0.70 }  // Português
+};
+
 export const useSpeech = ({
     idiomaEstudo,
     temas,
@@ -21,6 +33,7 @@ export const useSpeech = ({
     const tentativasVozRef = useRef(0);
     const processandoAcertoRef = useRef(false);
     const estaGravandoRef = useRef(false);
+    const falaRef = useRef("");
     const fraseAlvoRef = useRef(null);
     const playRequestIdRef = useRef(0);
 
@@ -131,9 +144,8 @@ export const useSpeech = ({
                 const audio = new Audio(url);
                 audioRef.current = audio;
 
-                if (lento) {
-                    audio.playbackRate = 0.75;
-                }
+                const cfgVel = VELOCIDADES_AUDIO[idiomaEstudo] || { normal: 1.0, lento: 0.75 };
+                audio.playbackRate = lento ? cfgVel.lento : cfgVel.normal;
 
                 audio.onended = () => {
                     audioRef.current = null;
@@ -175,6 +187,17 @@ export const useSpeech = ({
         setVolume(0);
     }, []);
 
+        const normalizar = useCallback((t) => {
+        return (t || "")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/ß/g, "ss")
+            .toLowerCase()
+            .replace(/[.,!?;:¿¡"'{}()[\]\\-—…，。！？；：、]/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+    }, []);
+
     const animarVolumeOnda = useCallback(() => {
         if (!estaGravandoRef.current) {
             setVolume(0);
@@ -185,31 +208,87 @@ export const useSpeech = ({
         animationFrameRef.current = requestAnimationFrame(animarVolumeOnda);
     }, []);
 
-    const iniciarReconhecimentoVoz = (fraseParam) => {
+        const iniciarReconhecimentoVoz = (fraseParam) => {
         if (statusVoz !== 'IDLE') return;
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        if (!SpeechRecognition) return;
+        if (!SpeechRecognition) {
+            console.warn("[useSpeech] Reconhecimento de voz não suportado neste navegador.");
+            return;
+        }
 
-        // Garante que qualquer áudio em reprodução pare imediatamente para não vazar no microfone
-        pararAudiosEmExecucao();
+        if (fraseParam) {
+            fraseAlvoRef.current = fraseParam;
+        }
 
-        // Vincula a frase exata em foco
-        const fraseAtual = fraseParam || fraseAtiva || (frasesFiltradas && frasesFiltradas[indice]);
-        fraseAlvoRef.current = fraseAtual;
-
-        setStatusVoz('RECORDING');
+        tentativasVozRef.current = 0;
         setEstaOuvindo(true);
+        setStatusVoz('RECORDING');
         estaGravandoRef.current = true;
         animarVolumeOnda();
         processandoAcertoRef.current = false;
         setTranscricaoAoVivo("");
+        falaRef.current = "";
+
+        if (window.recognitionInstance) {
+            try { window.recognitionInstance.abort(); } catch (e) { }
+        }
 
         const recognition = new SpeechRecognition();
         window.recognitionInstance = recognition;
         recognition.lang = temas[idiomaEstudo]?.langCode || 'en-US';
         recognition.interimResults = true;
         recognition.continuous = true;
+
+        const dispararConclusao = (resultado, falaTexto, fraseAlvo, fraseOriginal) => {
+            if (processandoAcertoRef.current) return;
+            processandoAcertoRef.current = true;
+            if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
+
+            setStatusVoz('EVALUATING');
+            setEstaOuvindo(false);
+            pararMonitoramentoAudio();
+            try { recognition.abort(); } catch (e) {}
+
+            setTimeout(() => {
+                setStatusVoz('IDLE');
+                if (onAvaliacaoConcluida) {
+                    onAvaliacaoConcluida({
+                        resultado: resultado,
+                        tentativas: tentativasVozRef.current,
+                        fraseOriginal: fraseOriginal,
+                        fraseObj: fraseAlvo
+                    });
+                }
+            }, 250);
+        };
+
+        const avaliarAgora = () => {
+            if (processandoAcertoRef.current) return;
+            const fraseAlvo = fraseAlvoRef.current || fraseAtual;
+            const fraseOriginal = fraseAlvo ? fraseAlvo[idiomaEstudo] : "";
+            const textoAlvo = (idiomaEstudo === 'pi' && fraseAlvo?.zh) ? fraseAlvo.zh : fraseOriginal;
+            const fraseCorreta = normalizar(textoAlvo);
+            const falaComparacao = normalizar(falaRef.current || "");
+            const palavrasCorretas = idiomaEstudo === 'pi' ? textoAlvo.split("") : fraseCorreta.split(" ");
+
+            const acertos = palavrasCorretas.filter(p => {
+                const pNorm = normalizar(p);
+                return pNorm && falaComparacao.includes(pNorm);
+            }).length;
+
+            const percentual = acertos / Math.max(1, palavrasCorretas.length);
+            const limiar = palavrasCorretas.length <= 2 ? 0.5 : 0.75;
+
+            if (percentual >= limiar || (fraseCorreta && falaComparacao.includes(fraseCorreta))) {
+                dispararConclusao('acerto', falaRef.current, fraseAlvo, fraseOriginal);
+            } else {
+                tentativasVozRef.current += 1;
+                dispararConclusao('erro', falaRef.current, fraseAlvo, fraseOriginal);
+            }
+        };
+
+        window.dingliPararEAvaliarVoz = avaliarAgora;
 
         recognition.onresult = (event) => {
             if (processandoAcertoRef.current) return;
@@ -219,94 +298,69 @@ export const useSpeech = ({
             }
 
             const falaAtual = transcriptAcumulada.toLowerCase().trim();
+            falaRef.current = falaAtual;
             setTranscricaoAoVivo(falaAtual);
-
-            const normalizar = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()[\]\\-—…，。！？；：、]/g, "").replace(/\s+/g, " ").trim();
 
             const fraseAlvo = fraseAlvoRef.current || fraseAtual;
             const fraseOriginal = fraseAlvo ? fraseAlvo[idiomaEstudo] : "";
             const textoAlvo = (idiomaEstudo === 'pi' && fraseAlvo?.zh) ? fraseAlvo.zh : fraseOriginal;
             const fraseCorreta = normalizar(textoAlvo);
-
             const falaComparacao = normalizar(falaAtual);
             const palavrasCorretas = idiomaEstudo === 'pi' ? textoAlvo.split("") : fraseCorreta.split(" ");
 
-            const digitosAlvo = extrairDigitos(textoAlvo);
-            const digitosFala = extrairDigitos(falaAtual);
-            const numerosBateram = digitosAlvo.length >= 2 && digitosFala.includes(digitosAlvo);
-
             const acertos = palavrasCorretas.filter(p => {
                 const pNorm = normalizar(p);
-                if (!pNorm) return false;
-                if (MAPA_NUMEROS[pNorm] !== undefined && numerosBateram) return true;
-                if (/^\d+$/.test(pNorm) && numerosBateram) return true;
-                return falaComparacao.includes(pNorm);
+                return pNorm && falaComparacao.includes(pNorm);
             }).length;
-            const percentualAcerto = acertos / Math.max(1, palavrasCorretas.length);
 
-            // Tolerância dinâmica calibrada por tamanho de frase
-            const limiar = palavrasCorretas.length <= 2 ? 0.5 : palavrasCorretas.length <= 4 ? 0.65 : 0.75;
+            const percentual = acertos / Math.max(1, palavrasCorretas.length);
+            const limiar = palavrasCorretas.length <= 2 ? 0.5 : 0.75;
 
-            if (percentualAcerto >= limiar || falaComparacao.includes(fraseCorreta)) {
-                if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
-                if (processandoAcertoRef.current) return;
-                processandoAcertoRef.current = true;
+            if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
 
-                setStatusVoz('EVALUATING');
-                setEstaOuvindo(false);
-                pararMonitoramentoAudio();
-                try { recognition.abort(); } catch (e) { }
-
-                setTimeout(() => {
-                    setStatusVoz('IDLE');
-                    if (onAvaliacaoConcluida) {
-                        onAvaliacaoConcluida({
-                            resultado: 'acerto',
-                            tentativas: tentativasVozRef.current,
-                            fraseOriginal: fraseOriginal,
-                            fraseObj: fraseAlvo
-                        });
-                    }
-                }, 250);
-            } else {
-                if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
+            // Se atingiu >= 75%, aguarda 0.75s para não cortar o final da fala
+            if (percentual >= limiar || (fraseCorreta && falaComparacao.includes(fraseCorreta))) {
                 timerSilencioRef.current = setTimeout(() => {
-                    if (!processandoAcertoRef.current && falaAtual.length > 0) {
-                        processandoAcertoRef.current = true;
-                        tentativasVozRef.current += 1;
-                        try { recognition.stop(); } catch (e) { }
-                        setStatusVoz('IDLE');
-                        setEstaOuvindo(false);
-                        pararMonitoramentoAudio();
-
-                        if (onAvaliacaoConcluida) {
-                            onAvaliacaoConcluida({
-                                resultado: 'erro',
-                                tentativas: tentativasVozRef.current,
-                                fraseOriginal: fraseOriginal,
-                                fraseObj: fraseAlvo
-                            });
-                        }
+                    avaliarAgora();
+                }, 750);
+            } else {
+                // Se ainda está abaixo, aguarda 1.3s de silêncio contínuo para erro
+                timerSilencioRef.current = setTimeout(() => {
+                    if (!processandoAcertoRef.current && falaRef.current) {
+                        avaliarAgora();
                     }
-                }, 2200);
+                }, 1300);
             }
         };
 
-        recognition.onerror = () => {
+        recognition.onerror = (e) => {
+            console.warn('[useSpeech] Erro microfone:', e.error);
+            if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
             setStatusVoz('IDLE');
             setEstaOuvindo(false);
             pararMonitoramentoAudio();
         };
 
         recognition.onend = () => {
+            if (statusVoz === 'RECORDING' && !processandoAcertoRef.current) {
+                if (falaRef.current) {
+                    avaliarAgora();
+                } else {
+                    setStatusVoz('IDLE');
+                    setEstaOuvindo(false);
+                    pararMonitoramentoAudio();
+                }
+            }
+        };
+
+        try {
+            recognition.start();
+        } catch (e) {
+            console.warn('[useSpeech] Falha ao iniciar recognition:', e);
             setStatusVoz('IDLE');
             setEstaOuvindo(false);
             pararMonitoramentoAudio();
-        };
-
-        setTimeout(() => {
-            try { recognition.start(); } catch (e) { }
-        }, 100);
+        }
     };
 
     return {
@@ -317,6 +371,7 @@ export const useSpeech = ({
         falar,
         iniciarReconhecimentoVoz,
         pararMonitoramentoAudio,
+        pararEAvaliarVoz: () => { if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz(); },
         setEstaOuvindo,
         setStatusVoz,
         setTranscricaoAoVivo

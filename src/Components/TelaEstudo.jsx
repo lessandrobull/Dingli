@@ -132,11 +132,11 @@ const ExercicioVoz = ({
 export default function TelaEstudo({
   fraseAtivaGlobal,
   frasesFiltradas, indice, nivelAtivo, topicoAtivo,
-  modoExercicio, exercicioNivel, styles,
+  modoExercicio, exercicioNivel, resultadoFeedbackProp, styles,
   carregandoDados, mostrarTraducao, setMostrarTraducao, falar,
   explicarFraseIA, frasesMaestria, setFrasesMaestria, setModoJogo,
   setSessaoIniciada, limparEstadoExercicio, statusVoz, volume,
-  iniciarReconhecimentoVoz, setIndice, transcricaoAoVivo,
+  iniciarReconhecimentoVoz, pararEAvaliarVoz, setIndice, transcricaoAoVivo,
   iniciarExercicio, aiExplanation, aiLoading, setModoExercicio,
   filaErros, setFilaErros, filaAcertos, setFilaAcertos,
   sessaoDominium, setSessaoDominium, jogarDominiumInteligente
@@ -151,7 +151,9 @@ export default function TelaEstudo({
 
   const ns = navStyle(idiomaEstudo);
 
-  const [resultadoFeedback, setResultadoFeedback] = useState(null);
+  const [feedbackLocal, setFeedbackLocal] = useState(null);
+  const resultadoFeedback = (resultadoFeedbackProp !== undefined && resultadoFeedbackProp !== null) ? resultadoFeedbackProp : feedbackLocal;
+  const setResultadoFeedback = setFeedbackLocal;
   const [valorInput, setValorInput] = useState("");
   const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "" });
   const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
@@ -491,12 +493,25 @@ export default function TelaEstudo({
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>
                       <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
-                      <button onClick={() => iniciarReconhecimentoVoz(frase)} disabled={statusVoz !== 'IDLE' || resultadoFeedback !== null} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: resultadoFeedback ? 0.5 : 1 }}>
-                        {statusVoz !== 'IDLE' ? (
-                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3px', height: '24px' }}>
-                            {statusVoz === 'EVALUATING' ? <span style={{ color: ns.txt, fontSize: '0.9rem', fontWeight: 'bold' }}>...</span> : [0, 1, 2, 3, 4, 5, 6].map((i) => <div key={i} style={{ width: '4px', backgroundColor: '#fff', borderRadius: '10px', height: (statusVoz === 'RECORDING') ? `${15 + Math.min(85, (volume * (0.3 + (i % 4) * 0.2)))}%` : '30%', transition: 'height 0.05s linear' }} />)}
-                          </div>
-                        ) : t.speakNow}
+                      <button
+                        onClick={() => {
+                          if (statusVoz === 'RECORDING') {
+                            if (pararEAvaliarVoz) pararEAvaliarVoz();
+                            else if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz();
+                          } else if (statusVoz === 'IDLE' && !resultadoFeedback) {
+                            iniciarReconhecimentoVoz(frase);
+                          }
+                        }}
+                        disabled={statusVoz === 'EVALUATING' || resultadoFeedback !== null}
+                        style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: resultadoFeedback ? 0.5 : 1 }}
+                      >
+                        {statusVoz === 'RECORDING' ? (
+                          t.check || 'Verificar'
+                        ) : statusVoz === 'EVALUATING' ? (
+                          '...'
+                        ) : (
+                          t.speakNow
+                        )}
                       </button>
                     </>
                   ) : (
