@@ -292,7 +292,9 @@ function App() {
         });
 
         if (primeiroInedito && primeiroInedito[colTopicOrigem]) {
-          if (selecionarTopicoRef.current) await selecionarTopicoRef.current(primeiroInedito[colTopicOrigem]);
+          const nivelDestino = primeiroInedito.nivel || nivelBusca;
+          setNivelAtivo(nivelDestino);
+          if (selecionarTopicoRef.current) await selecionarTopicoRef.current(primeiroInedito[colTopicOrigem], nivelDestino);
           return;
         }
       }
@@ -374,7 +376,7 @@ function App() {
 
   useEffect(() => {
     const bootRecuperacao = async () => {
-      if (tela !== 'perfil' && tela !== 'escolherOrigem' && tela !== 'escolherIdioma') {
+      if (tela !== 'perfil' && tela !== 'escolherOrigem' && tela !== 'escolherIdioma' && tela !== 'adm') {
         if (!idiomaOrigem || !idiomaEstudo) {
           mudarTela('perfil');
           return;
@@ -466,13 +468,15 @@ function App() {
     }
   }, [idiomaOrigem, idiomaEstudo, mudarTela]);
 
-  const selecionarTopico = useCallback(async (nomeTopico) => {
+  const selecionarTopico = useCallback(async (nomeTopico, nivelForcado = null) => {
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
     const colTopicOrigem = `topic_${idiomaOrigem}`;
     setCarregandoDados(true);
     setFrasesFiltradas([]);
     setIndice(0);
-    const { data } = await dataService.getSentencesByTopic(nivelAtivo, idiomaEstudo, colTopicOrigem, nomeTopico);
+    const nivelEfetivo = nivelForcado || nivelAtivo || "A1";
+    if (nivelEfetivo !== nivelAtivo) setNivelAtivo(nivelEfetivo);
+    const { data } = await dataService.getSentencesByTopic(nivelEfetivo, idiomaEstudo, colTopicOrigem, nomeTopico);
     if (data) {
       const vozes = (idiomaEstudo === "pi" || idiomaEstudo === "zh") ? VOZES_ZH : (idiomaEstudo === "pt" ? VOZES_PT : (idiomaEstudo === "ge" ? VOZES_GE : (idiomaEstudo === "it" ? VOZES_IT : (idiomaEstudo === "fr" ? VOZES_FR : (idiomaEstudo === "es" ? VOZES_ES : VOZES_EN)))));
       precarregarAudios(data, idiomaEstudo, vozes);

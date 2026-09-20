@@ -1,9 +1,10 @@
+const normalizarFrase = (str) => (str || "").replace(/\s+([?!:;.,，。！？；：、])/g, "$1").trim();
 import React from 'react';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
-import { COR_ACERTO } from '../themeColors';
-import { calcularProximoRank } from '../useSRSLogic'; 
+import { COR_ACERTO, COR_BASE_CARDS } from '../themeColors';
+import { calcularProximoRank } from '../useSRSLogic';
 
 const ExercicioSelecao = ({
   idiomaEstudo, frase, exercicioNivel, fontSizeEx3, styles, temas,
@@ -78,7 +79,7 @@ const ExercicioEscrita = ({
               setValorInput(texto);
             }}
             onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
-            style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
+            style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth:'100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
           />
           {resultadoFeedback && (
             <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
@@ -172,7 +173,7 @@ export default function TelaEstudo({
     if (modoExercicio && exercicioNivel > 0 && frase) {
       setResultadoFeedback(null); setTentativaFinalizada(false); setValorInput("");
 
-      const fraseOriginal = frase[idiomaEstudo];
+      const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
       const percentual = (exercicioNivel <= 9) ? 0.3 : (exercicioNivel <= 18) ? 0.7 : 1.0;
       const palavras = fraseOriginal.split(" ");
       if (RANKS_WRITE.includes(exercicioNivel)) {
@@ -186,7 +187,6 @@ export default function TelaEstudo({
         const pontuacaoFinal = pontuacaoFinalMatch ? pontuacaoFinalMatch[0] : "";
         const resposta = seqResposta.replace(/^[¿¡"'(]+/, "").replace(/[.,!?;:]+$/, "");
         setConfigLacuna({ prefixo: prefixo + prefixoAdicional, sufixo: pontuacaoFinal + ((inicioIdx + qtdPalavrasOcultas < palavras.length ? " " : "") + palavras.slice(inicioIdx + qtdPalavrasOcultas).join(" ")), resposta });
-        // audio tratado no efeito ranksComSom
       } else if (RANKS_SELECT.includes(exercicioNivel)) {
         const minInterativo = (exercicioNivel <= 9) ? Math.min(2, palavras.length) : 1;
         const qtdInterativa = Math.max(minInterativo, Math.round(palavras.length * percentual));
@@ -195,11 +195,9 @@ export default function TelaEstudo({
         for (let i = 0; i < qtdInterativa; i++) indicesInterativos.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
         setSlotsEx3(palavras.map((w, i) => indicesInterativos.includes(i) ? null : { id: `f-${i}`, texto: w, fixed: true }));
         setPalavrasOpcoes(indicesInterativos.map(idx => ({ id: idx, texto: palavras[idx], usado: false })).sort(() => Math.random() - 0.5));
-        // audio tratado no efeito ranksComSom
       } else if (RANKS_VOICE.includes(exercicioNivel)) {
         const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
         setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
-        // audio tratado no efeito ranksComSom
       }
     } else {
       setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]); setIndicesOcultosVoz([]);
@@ -230,7 +228,7 @@ export default function TelaEstudo({
   const verificarResposta = useCallback(() => {
     if (resultadoFeedback === 'acerto') return;
     if (resultadoFeedback === 'erro' || resultadoFeedback === 'erro_limpo') setResultadoFeedback(null);
-    const fraseOriginal = frase[idiomaEstudo];
+    const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
     const limpar = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").trim().toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "");
     const corretaLimpa = limpar(fraseOriginal);
     let tentativaLimpa = "";
@@ -281,7 +279,7 @@ export default function TelaEstudo({
   }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo]);
 
   const handleRever = useCallback(() => {
-    const fraseOriginal = frase[idiomaEstudo];
+    const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
     setModoExercicio(false);
     setSessaoIniciada(false);
     setResultadoFeedback(null);
@@ -318,7 +316,7 @@ export default function TelaEstudo({
     }));
   }, [frase, idiomaEstudo, indice, nivelAtivo, topicoAtivo, setModoExercicio, setSessaoIniciada, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium]);
 
-  const textoEstudo = frase?.[idiomaEstudo] || "";
+  const textoEstudo = normalizarFrase(frase?.[idiomaEstudo] || "");
 
   if (carregandoDados || !frase || !textoEstudo) {
     return (
@@ -452,18 +450,12 @@ export default function TelaEstudo({
               <div style={{ textAlign: 'center' }}>
                 <p style={styles.textoFrasePrincipal}>{textoEstudo}</p>
                 {idiomaEstudo === 'pi' && frase?.zh && <div style={{ color: '#64748b', fontSize: '0.98rem', marginTop: '2px' }}>{frase.zh}</div>}
+                <p style={styles.textoTraducaoInterno}>{idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}</p>
               </div>
             )}
           </div>
 
           <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, gap: '10px' }}>
-            {!modoExercicio && (
-              <>
-                {mostrarTraducao && <div style={{ marginTop: '-10px', marginBottom: '-20px', textAlign: 'center', width: '100%' }}><p style={styles.textoTraducaoInterno}>{idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}</p></div>}
-                <button onClick={() => setMostrarTraducao(!mostrarTraducao)} style={{ ...styles.btnToggleTrad, marginBottom: 0 }}>{mostrarTraducao ? t.hide : t.show}</button>
-              </>
-            )}
-
             {![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
               <div style={styles.rowAudio}>
                 <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
@@ -474,7 +466,7 @@ export default function TelaEstudo({
             <div style={styles.blocoSuporteIA}>
               {!modoExercicio ? (
                 <div style={styles.rowBotoesIA}>
-                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.askAi}</button>
+                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>Explicação</button>
                   {userRole === 'aluno' ? (
                     (() => {
                       const idAtual = frase?.id;
@@ -492,7 +484,7 @@ export default function TelaEstudo({
                 <div style={styles.rowBotoesIA}>
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>
-                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
+                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>{t.review}</button>
                       <button
                         onClick={() => {
                           if (statusVoz === 'RECORDING') {
@@ -516,7 +508,7 @@ export default function TelaEstudo({
                     </>
                   ) : (
                     <>
-                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>{t.review}</button>
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>{t.review}</button>
                       <button onMouseDown={(e) => e.preventDefault()} onClick={verificarResposta} disabled={isCheckDisabled} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: isCheckDisabled ? 0.5 : 1, cursor: isCheckDisabled ? 'not-allowed' : 'pointer' }}>{t.check}</button>
                     </>
                   )}

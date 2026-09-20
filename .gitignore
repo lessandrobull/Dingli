@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 audios_dingli/
+
+*.bak
+esqueleto_dingli.txt
+mapear.py
+recuperados/
