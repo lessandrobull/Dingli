@@ -84,3 +84,33 @@ export async function listarTopicosSalvos(nivel, idiomaEstudo) {
 }
 
 export { STORES };
+export async function buscarSentencaPorIdNoIndexedDB(id) {
+  try {
+    const db = await abrirDB();
+    if (!db) return null;
+    return new Promise((resolve) => {
+      const tx = db.transaction(STORES.SENTENCES, "readonly");
+      const store = tx.objectStore(STORES.SENTENCES);
+      const req = store.openCursor();
+      req.onsuccess = (e) => {
+        const cursor = e.target.result;
+        if (cursor) {
+          const lista = cursor.value?.dados;
+          if (Array.isArray(lista)) {
+            const achou = lista.find(s => s.id === id);
+            if (achou) {
+              resolve(achou);
+              return;
+            }
+          }
+          cursor.continue();
+        } else {
+          resolve(null);
+        }
+      };
+      req.onerror = () => resolve(null);
+    });
+  } catch (e) {
+    return null;
+  }
+}

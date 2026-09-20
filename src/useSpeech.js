@@ -187,13 +187,13 @@ export const useSpeech = ({
         setVolume(0);
     }, []);
 
-        const normalizar = useCallback((t) => {
+    const normalizar = useCallback((t) => {
         return (t || "")
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .replace(/ß/g, "ss")
             .toLowerCase()
-            .replace(/[.,!?;:¿¡"'{}()[\]\\-—…，。！？；：、]/g, "")
+            .replace(/[.,!?;:¿¡"'{}()[\]\\—…，。！？；：、-]/g, "")
             .replace(/\s+/g, " ")
             .trim();
     }, []);
@@ -208,7 +208,7 @@ export const useSpeech = ({
         animationFrameRef.current = requestAnimationFrame(animarVolumeOnda);
     }, []);
 
-        const iniciarReconhecimentoVoz = (fraseParam) => {
+    const iniciarReconhecimentoVoz = (fraseParam) => {
         if (statusVoz !== 'IDLE') return;
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -248,7 +248,7 @@ export const useSpeech = ({
             setStatusVoz('EVALUATING');
             setEstaOuvindo(false);
             pararMonitoramentoAudio();
-            try { recognition.abort(); } catch (e) {}
+            try { recognition.abort(); } catch (e) { }
 
             setTimeout(() => {
                 setStatusVoz('IDLE');
