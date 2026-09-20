@@ -10,13 +10,15 @@ import Perfil from './Components/Perfil'
 import { EscolherOrigem, EscolherEstudo } from './Components/EscolhaIdiomas'
 import Hub from './Components/Hub'
 import TelaEstudo from './Components/TelaEstudo' 
-import { EscolherNivel, EscolherTopic, SelecaoExercicio, Adm } from './Components/Navegacao'
+import { EscolherNivel, EscolherTopic, SelecaoExercicio, Adm, TelaNivelConcluido } from './Components/Navegacao'
+import { ESTRUTURA_NIVEIS } from './constant'
 import { ExplicacaoIA, DominiumStats } from './Components/Relatorios'
 import MenuCartoes from './Components/MenuCartoes'
 import { useAI } from './hooks/useAI'
 import { dataService } from './dataService'
 import { calcularProximoRank } from './useSRSLogic'
-import { precarregarAudios } from './services/audioCacheService'
+import { precarregarAudios, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService'
+import { listarTopicosSalvos } from './services/offlineStorage'
 import { DingliProvider } from './DingliContext'
 
 function App() {
@@ -28,6 +30,37 @@ function App() {
   const [topicoAtivo, setTopicoAtivo] = useState(() => sessionStorage.getItem('app_topico') || '');
   const [frasesFiltradas, setFrasesFiltradas] = useState([]);
   const [listaTopicos, setListaTopicos] = useState([]);
+  const [topicosBaixados, setTopicosBaixados] = useState([]);
+  const [baixandoTopico, setBaixandoTopico] = useState(null);
+  const [mapaTopicosIds, setMapaTopicosIds] = useState({});
+
+  useEffect(() => {
+    if (!nivelAtivo || !idiomaEstudo) return;
+    let ativo = true;
+    listarTopicosSalvos(nivelAtivo, idiomaEstudo).then(salvos => {
+      if (ativo && salvos) setTopicosBaixados(salvos);
+    });
+    return () => { ativo = false; };
+  }, [nivelAtivo, idiomaEstudo]);
+
+  const baixarTopicoOffline = useCallback(async (nomeTopico, nivel = nivelAtivo) => {
+    if (!nomeTopico || !nivel) return;
+    setBaixandoTopico(nomeTopico);
+    try {
+      await dataService.getTopicsByLevel(nivel, idiomaOrigem, idiomaEstudo);
+      const colTopicOrigem = `topic_${idiomaOrigem}`;
+      const { data } = await dataService.getSentencesByTopic(nivel, idiomaEstudo, colTopicOrigem, nomeTopico);
+      if (data && data.length > 0) {
+        const vozes = (idiomaEstudo === "pi" || idiomaEstudo === "zh") ? VOZES_ZH : (idiomaEstudo === "pt" ? VOZES_PT : (idiomaEstudo === "ge" ? VOZES_GE : (idiomaEstudo === "it" ? VOZES_IT : (idiomaEstudo === "fr" ? VOZES_FR : (idiomaEstudo === "es" ? VOZES_ES : VOZES_EN)))));
+        await precarregarAudios(data, idiomaEstudo, vozes);
+        setTopicosBaixados(prev => prev.includes(nomeTopico) ? prev : [...prev, nomeTopico]);
+      }
+    } catch (e) {
+      console.warn("[App] Falha no download offline do topico:", e);
+    } finally {
+      setBaixandoTopico(null);
+    }
+  }, [nivelAtivo, idiomaOrigem, idiomaEstudo]);
   const [fraseTeorica, setFraseTeorica] = useState("Carregando inspiração...");
   const [nomeAluno, setNomeAluno] = useState("Estudante");
   const apiKey = "AIzaSyAv_65bjZGGtUDJugC_GtTQoMmXrFw1XtY";
@@ -71,8 +104,31 @@ function App() {
     setModoJogo, setSessaoIniciada, setModoExercicio
   });
 
+  const obterProximoNivel = useCallback((nivelAtual) => {
+    const lista = (ESTRUTURA_NIVEIS && (ESTRUTURA_NIVEIS[idiomaEstudo] || ESTRUTURA_NIVEIS.default)) || ["A1", "A2", "B1", "B2"];
+    const idx = lista.indexOf(nivelAtual);
+    if (idx !== -1 && idx < lista.length - 1) {
+      return lista[idx + 1];
+    }
+    return null;
+  }, [idiomaEstudo]);
+
+  const verificarNivelConcluido = useCallback((mapa = mapaTopicosIds) => {
+    const topicos = Object.keys(mapa);
+    if (topicos.length === 0) return false;
+    return topicos.every(tp => {
+      const ids = mapa[tp] || [];
+      if (ids.length === 0) return false;
+      return ids.every(id => {
+        const r = frasesMaestria[id];
+        return typeof r === "object" ? (r && r.rank > 0) : (r > 0);
+      });
+    });
+  }, [mapaTopicosIds, frasesMaestria]);
+
   const limparEstadoExercicioRef = useRef(limparEstadoExercicio);
   const jogarDominiumInteligenteRef = useRef(null);
+  const selecionarTopicoRef = useRef(null);
 
   useEffect(() => {
     limparEstadoExercicioRef.current = limparEstadoExercicio;
@@ -208,14 +264,46 @@ function App() {
     if (proximo?.dados) precarregarAudios([proximo.dados], idiomaEstudo);
 
     if (!proximo) {
-      if (frasesFiltradas && frasesFiltradas.length > 0) {
-        setIndice(prev => (prev + 1) % frasesFiltradas.length);
+      // Regra 2 e 3: Se estava estudando um tópico e as frases acabaram
+      if (topicoAtivo) {
         limparEstadoExercicio();
-        setModoExercicio(false);
-        mudarTela('estudo');
+        if (verificarNivelConcluido()) {
+          mudarTela("nivelConcluido");
+        } else {
+          mudarTela("escolherTopic");
+        }
+        return;
+      }
+
+      // Regra 4: Sem tópico aberto no dia (Game direto) -> menor ID geral sem inicialização
+      const nivelBusca = nivelAtivo || "A1";
+      const colTopicOrigem = `topic_${idiomaOrigem}`;
+      let dadosNivel = null;
+      try {
+        const resp = await dataService.getTopicsByLevel(nivelBusca, idiomaOrigem, idiomaEstudo);
+        dadosNivel = resp?.data;
+      } catch (e) {}
+
+      if (dadosNivel && dadosNivel.length > 0) {
+        const primeiroInedito = dadosNivel.find(f => {
+          const r = frasesMaestria[f.id];
+          const rank = typeof r === "object" ? (r && r.rank) : (r || 0);
+          return rank === 0;
+        });
+
+        if (primeiroInedito && primeiroInedito[colTopicOrigem]) {
+          if (selecionarTopicoRef.current) await selecionarTopicoRef.current(primeiroInedito[colTopicOrigem]);
+          return;
+        }
+      }
+
+      // Se todas as frases do nível já foram praticadas
+      if (verificarNivelConcluido()) {
+        limparEstadoExercicio();
+        mudarTela("nivelConcluido");
       } else {
         limparEstadoExercicio();
-        mudarTela('escolherTopic');
+        mudarTela("escolherTopic");
       }
       return;
     }
@@ -242,7 +330,7 @@ function App() {
         mudarTela('escolherTopic');
       }
     }
-  }, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio]);
+  }, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio, topicoAtivo, nivelAtivo, idiomaOrigem, idiomaEstudo, frasesMaestria, verificarNivelConcluido]);
 
   useEffect(() => {
     jogarDominiumInteligenteRef.current = jogarDominiumInteligente;
@@ -307,6 +395,15 @@ function App() {
             const colTopicOrigem = `topic_${idiomaOrigem}`;
             const topicosUnicos = [...new Set(data.map(f => f[colTopicOrigem]))].filter(Boolean);
             setListaTopicos(topicosUnicos);
+            const mapa = {};
+            data.forEach(f => {
+              const tp = f[colTopicOrigem];
+              if (tp) {
+                if (!mapa[tp]) mapa[tp] = [];
+                mapa[tp].push(f.id);
+              }
+            });
+            setMapaTopicosIds(mapa);
           }
           setCarregandoDados(false);
         }
@@ -353,6 +450,15 @@ function App() {
     if (data) {
       const topicosUnicos = [...new Set(data.map(f => f[colTopicOrigem]))].filter(Boolean);
       setListaTopicos(topicosUnicos);
+      const mapa = {};
+      data.forEach(f => {
+        const tp = f[colTopicOrigem];
+        if (tp) {
+          if (!mapa[tp]) mapa[tp] = [];
+          mapa[tp].push(f.id);
+        }
+      });
+      setMapaTopicosIds(mapa);
       setCarregandoDados(false);
       mudarTela('escolherTopic');
     } else {
@@ -368,7 +474,11 @@ function App() {
     setIndice(0);
     const { data } = await dataService.getSentencesByTopic(nivelAtivo, idiomaEstudo, colTopicOrigem, nomeTopico);
     if (data) {
-      precarregarAudios(data, idiomaEstudo);
+      const vozes = (idiomaEstudo === "pi" || idiomaEstudo === "zh") ? VOZES_ZH : (idiomaEstudo === "pt" ? VOZES_PT : (idiomaEstudo === "ge" ? VOZES_GE : (idiomaEstudo === "it" ? VOZES_IT : (idiomaEstudo === "fr" ? VOZES_FR : (idiomaEstudo === "es" ? VOZES_ES : VOZES_EN)))));
+      precarregarAudios(data, idiomaEstudo, vozes);
+      if (!topicosBaixados.includes(nomeTopico)) {
+        baixarTopicoOffline(nomeTopico, nivelAtivo);
+      }
       setFrasesFiltradas(data);
       setTopicoAtivo(nomeTopico);
       let indexAlvo = 0;
@@ -400,6 +510,10 @@ function App() {
       setCarregandoDados(false);
     }
   }, [idiomaOrigem, idiomaEstudo, nivelAtivo, mudarTela, frasesMaestria]);
+
+  useEffect(() => {
+    selecionarTopicoRef.current = selecionarTopico;
+  }, [selecionarTopico]);
 
   function iniciarExercicio(numNivel, indiceForcado, arrayFornecido) {
     setExercicioNivel(numNivel);
@@ -641,8 +755,17 @@ function App() {
         sessaoDominium={sessaoDominium} frasesMaestria={frasesMaestria}
       />
     );
+    if (tela === "nivelConcluido") return (
+      <TelaNivelConcluido
+        styles={styles}
+        nivelAtivo={nivelAtivo}
+        proximoNivel={obterProximoNivel(nivelAtivo)}
+        selecionarNivel={selecionarNivel}
+        mudarTela={mudarTela}
+      />
+    );
     if (tela === 'escolherTopic') return (
-      <EscolherTopic styles={styles} listaTopicos={listaTopicos} selecionarTopico={selecionarTopico} nivelAtivo={nivelAtivo} idiomaOrigem={idiomaOrigem} frasesMaestria={frasesMaestria} />
+      <EscolherTopic styles={styles} listaTopicos={listaTopicos} selecionarTopico={selecionarTopico} nivelAtivo={nivelAtivo} idiomaOrigem={idiomaOrigem} frasesMaestria={frasesMaestria} mapaTopicosIds={mapaTopicosIds} topicosBaixados={topicosBaixados} baixandoTopico={baixandoTopico} baixarTopicoOffline={baixarTopicoOffline} />
     );
     if (tela === 'selecaoExercicio') return (
       <SelecaoExercicio styles={styles} iniciarExercicio={iniciarExercicio} />

@@ -46,15 +46,22 @@ import { precarregarAudios, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VO
 
 export function EscolherTopic({
   styles, listaTopicos, selecionarTopico,
-  mapaTopicosIds = {}, frasesMaestria = {}, nivelAtivo = "", idiomaOrigem = "pt"
+  mapaTopicosIds = {}, frasesMaestria = {}, nivelAtivo = "", idiomaOrigem = "pt",
+  topicosBaixados: topicosBaixadosProp,
+  baixandoTopico: baixandoTopicoProp,
+  baixarTopicoOffline: baixarTopicoOfflineProp
 }) {
   const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, mudarTela, COR_BASE_CARDS, COR_ACERTO } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   const corFonte = getCorFonteDinamica(idiomaEstudo);
 
-  const [topicosBaixados, setTopicosBaixados] = React.useState([]);
-  const [baixandoTopico, setBaixandoTopico] = React.useState(null);
+  const [topicosBaixadosLocal, setTopicosBaixadosLocal] = React.useState([]);
+  const [baixandoTopicoLocal, setBaixandoTopicoLocal] = React.useState(null);
+  const topicosBaixados = topicosBaixadosProp !== undefined ? topicosBaixadosProp : topicosBaixadosLocal;
+  const baixandoTopico = baixandoTopicoProp !== undefined ? baixandoTopicoProp : baixandoTopicoLocal;
+  const setTopicosBaixados = setTopicosBaixadosLocal;
+  const setBaixandoTopico = setBaixandoTopicoLocal;
 
   React.useEffect(() => {
     let ativo = true;
@@ -65,6 +72,9 @@ export function EscolherTopic({
   }, [nivelAtivo, idiomaEstudo]);
 
   const baixarTopicoOffline = async (nomeTopico) => {
+    if (baixarTopicoOfflineProp) {
+      return await baixarTopicoOfflineProp(nomeTopico);
+    }
     if (baixandoTopico) return;
     setBaixandoTopico(nomeTopico);
     try {
@@ -109,89 +119,69 @@ export function EscolherTopic({
                   ...styles.btnPadrao,
                   backgroundColor: COR_BASE_CARDS,
                   color: corFonte,
-                  position: 'relative',
-                  overflow: 'hidden'
+                  position: "relative",
+                  overflow: "hidden"
                 }}
               >
-                {/* 1. Indicador Dominium Concluido (Tick na Esquerda) */}
-                {tudoIniciado && (
-                  <span
-                    style={{
-                      position: 'absolute',
-                      left: '14px',
-                      top: '50%',
-                      transform: 'translateY(-50%)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: corFonte,
-                      opacity: 0.85
-                    }}
-                  >
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </span>
-                )}
-
-                {/* Texto do Topico (Centralizado) */}
+                {/* Texto do Topico Centralizado */}
                 <span>{tp}</span>
 
-                {/* 2. Botao / Indicador de Download Offline (Ponta Direita) */}
+                {/* Indicador Unificado (Direita): Download -> Spinner -> % Progresso -> Tick Concluido */}
                 <span
                   onClick={(e) => {
-                    e.stopPropagation();
-                    if (!estaBaixado && !estaBaixando) baixarTopicoOffline(tp);
+                    if (!estaBaixado && !estaBaixando) {
+                      e.stopPropagation();
+                      baixarTopicoOffline(tp);
+                    }
                   }}
                   style={{
-                    position: 'absolute',
-                    right: '14px',
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    width: '20px',
-                    height: '20px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    cursor: (!estaBaixado && !estaBaixando) ? 'pointer' : 'default',
-                    opacity: estaBaixando ? 0.9 : (estaBaixado ? 0 : 0.45),
-                    transition: 'opacity 0.2s ease'
+                    position: "absolute",
+                    right: "14px",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    cursor: (!estaBaixado && !estaBaixando) ? "pointer" : "default",
+                    color: tudoIniciado ? (COR_ACERTO || corFonte) : corFonte,
+                    pointerEvents: (!estaBaixado && !estaBaixando) ? "auto" : "none"
                   }}
                 >
                   {estaBaixando ? (
                     <span
                       style={{
-                        width: '13px',
-                        height: '13px',
-                        border: '2px solid currentColor',
-                        borderTopColor: 'transparent',
-                        borderRadius: '50%',
-                        display: 'inline-block',
-                        animation: 'spinOffline 0.8s linear infinite'
+                        width: "13px",
+                        height: "13px",
+                        border: "2px solid currentColor",
+                        borderTopColor: "transparent",
+                        borderRadius: "50%",
+                        display: "inline-block",
+                        animation: "spinOffline 0.8s linear infinite",
+                        opacity: 0.9
                       }}
                     />
+                  ) : tudoIniciado ? (
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.85 }}>
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
                   ) : !estaBaixado ? (
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.45 }}>
                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                       <polyline points="7 10 12 15 17 10" />
                       <line x1="12" y1="15" x2="12" y2="3" />
                     </svg>
+                  ) : pctIniciadas > 0 ? (
+                    <span
+                      style={{
+                        fontSize: "0.78rem",
+                        fontWeight: "600",
+                        opacity: 0.45
+                      }}
+                    >
+                      {Math.round(pctIniciadas * 100)}%
+                    </span>
                   ) : null}
                 </span>
-
-                {/* 3. Micro Barra de Progresso do Dominium (Underline de 3px) */}
-                <div
-                  style={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    height: '3px',
-                    width: `${pctIniciadas * 100}%`,
-                    backgroundColor: tudoIniciado ? (COR_ACERTO || corFonte) : corFonte,
-                    opacity: tudoIniciado ? 0.9 : 0.4,
-                    transition: 'width 0.3s ease'
-                  }}
-                />
               </button>
             );
           })}
@@ -250,6 +240,64 @@ export function Adm({ styles }) {
             Profile
           </button>
         </div>
+      </div>
+    </div>
+  );
+}
+
+
+export function TelaNivelConcluido({ styles, nivelAtivo, proximoNivel, selecionarNivel, mudarTela }) {
+  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, COR_BASE_CARDS } = useDingli();
+  const ns = navStyle(idiomaEstudo);
+  const corFonte = getCorFonteDinamica(idiomaEstudo);
+
+  return (
+    <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo]?.bg || "#0f172a" }}>
+      <div style={{ ...styles.mobileContainer, justifyContent: "center", alignItems: "center", textAlign: "center", padding: "28px" }}>
+        <div style={{ fontSize: "4.5rem", marginBottom: "16px", filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.2))" }}>🏆</div>
+        <h2 style={{ color: corFonte, fontSize: "1.7rem", marginBottom: "12px", fontWeight: "bold" }}>
+          Nível {nivelAtivo} Concluído!
+        </h2>
+        <p style={{ color: corFonte, opacity: 0.85, fontSize: "1.05rem", marginBottom: "36px", maxWidth: "320px", lineHeight: 1.5 }}>
+          Todas as frases deste nível foram praticadas com sucesso.
+        </p>
+
+        {proximoNivel ? (
+          <button
+            onClick={() => selecionarNivel(proximoNivel)}
+            style={{
+              ...styles.btnPadrao,
+              backgroundColor: COR_BASE_CARDS,
+              color: corFonte,
+              fontWeight: "bold",
+              fontSize: "1.1rem",
+              minHeight: "55px",
+              width: "100%",
+              marginBottom: "14px",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+            }}
+          >
+            Avançar para {proximoNivel} →
+          </button>
+        ) : (
+          <p style={{ color: corFonte, fontWeight: "bold", marginBottom: "24px" }}>
+            Parabéns! Você concluiu todos os níveis do curso!
+          </p>
+        )}
+
+        <button
+          onClick={() => mudarTela("escolherNivel")}
+          style={{
+            ...styles.btnNavTopo,
+            backgroundColor: ns.bg,
+            color: ns.txt,
+            position: "static",
+            width: "100%",
+            marginTop: "6px"
+          }}
+        >
+          ← Voltar para Níveis
+        </button>
       </div>
     </div>
   );
