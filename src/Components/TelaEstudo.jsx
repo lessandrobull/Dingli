@@ -164,6 +164,13 @@ export default function TelaEstudo({
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
 
+  // Etapa 3: Estado local de alternância do botão Ouvir / Lento
+  const [audioLento, setAudioLento] = useState(false);
+
+  useEffect(() => {
+    setAudioLento(false);
+  }, [indice, frase?.id]);
+
   const jogarDominiumRef = useRef(jogarDominiumInteligente);
   useEffect(() => {
     jogarDominiumRef.current = jogarDominiumInteligente;
@@ -318,6 +325,21 @@ export default function TelaEstudo({
 
   const textoEstudo = normalizarFrase(frase?.[idiomaEstudo] || "");
 
+  // Etapa 3.2: Handler de alternância Ouvir (Normal) <-> Lento (Mesma Voz)
+  const handleOuvirClick = useCallback(() => {
+    const alvo = {
+      id: frase?.id,
+      texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo
+    };
+    if (!audioLento) {
+      falar(alvo, false);
+      setAudioLento(true);
+    } else {
+      falar(alvo, true);
+      setAudioLento(false);
+    }
+  }, [audioLento, frase, idiomaEstudo, textoEstudo, falar]);
+
   if (carregandoDados || !frase || !textoEstudo) {
     return (
       <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo]?.bg || '#000' }}>
@@ -456,7 +478,8 @@ export default function TelaEstudo({
           </div>
 
           <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, gap: '10px' }}>
-            {![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
+            {/* Linha dupla de áudio exclusiva para os modos de exercício */}
+            {modoExercicio && ![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
               <div style={styles.rowAudio}>
                 <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
                 <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, false)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.normal}</button>
@@ -465,22 +488,44 @@ export default function TelaEstudo({
 
             <div style={styles.blocoSuporteIA}>
               {!modoExercicio ? (
+                /* Card inicial: 3 botões em linha horizontal */
                 <div style={styles.rowBotoesIA}>
-                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>Explicação</button>
+                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>
+                    Explicação
+                  </button>
+
+                  <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>
+                    {audioLento ? "Lento" : "Ouvir"}
+                  </button>
+
                   {userRole === 'aluno' ? (
                     (() => {
                       const idAtual = frase?.id;
                       const maestriaData = frasesMaestria[idAtual];
                       const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
                       return (
-                        <button onClick={() => { setModoJogo(true); setSessaoIniciada(true); iniciarExercicio(rankAtual > 0 ? rankAtual : 1); }} disabled={rankAtual > 0} style={{ ...styles.btnAcaoExtra, backgroundColor: rankAtual > 0 ? '#f1f5f9' : ns.bg, color: rankAtual > 0 ? '#94a3b8' : ns.txt }}>
+                        <button
+                          onClick={() => { setModoJogo(true); setSessaoIniciada(true); iniciarExercicio(rankAtual > 0 ? rankAtual : 1); }}
+                          disabled={rankAtual > 0}
+                          style={{
+                            ...styles.btnAcaoExtra,
+                            backgroundColor: ns.bg,
+                            color: ns.txt,
+                            cursor: rankAtual > 0 ? 'default' : 'pointer'
+                          }}
+                        >
                           {rankAtual > 0 ? `${(rankAtual * 3.703).toFixed(2)}%` : t.practice}
                         </button>
                       );
                     })()
-                  ) : <button onClick={() => mudarTela('selecaoExercicio')} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt }}>{t.practice}</button>}
+                  ) : (
+                    <button onClick={() => mudarTela('selecaoExercicio')} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt }}>
+                      {t.practice}
+                    </button>
+                  )}
                 </div>
               ) : (
+                /* Cards de exercício mantidos intactos */
                 <div style={styles.rowBotoesIA}>
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>

@@ -25,10 +25,16 @@ export const useSpeech = ({
     const [statusVoz, setStatusVoz] = useState('IDLE');
     const [transcricaoAoVivo, setTranscricaoAoVivo] = useState("");
     const [volume, setVolume] = useState(0);
+    const [vozAtiva, setVozAtiva] = useState(null);
+
     const animationFrameRef = useRef(null);
     const timerSilencioRef = useRef(null);
     const voiceIndex = useRef(0);
-    const voiceNumIndex = useRef(0);
+
+    // Controle do sorteio sem repetição e retenção de voz
+    const filaVozesRef = useRef([]);
+    const vozAtualRef = useRef(null);
+
     const audioRef = useRef(null);
     const tentativasVozRef = useRef(0);
     const processandoAcertoRef = useRef(false);
@@ -37,9 +43,57 @@ export const useSpeech = ({
     const fraseAlvoRef = useRef(null);
     const playRequestIdRef = useRef(0);
 
+    // Mapeamento das listas de vozes por idioma
+    const obterListaVozesIdioma = useCallback((lang) => {
+        if (lang === 'pi' || lang === 'zh') return VOZES_ZH;
+        if (lang === 'pt') return VOZES_PT;
+        if (lang === 'ge') return VOZES_GE;
+        if (lang === 'it') return VOZES_IT;
+        if (lang === 'fr') return VOZES_FR;
+        if (lang === 'es') return VOZES_ES;
+        return VOZES_EN;
+    }, []);
+
+    // Algoritmo Fisher-Yates para embaralhamento puro
+    const embaralharArray = (array) => {
+        const arr = [...array];
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    };
+
+    // Sorteador sem repetição que reembaralha ao esgotar o ciclo
+    const obterProximaVoz = useCallback((lang) => {
+        const listaBase = obterListaVozesIdioma(lang);
+        if (!filaVozesRef.current || filaVozesRef.current.length === 0) {
+            let novoSorteio = embaralharArray(listaBase);
+            // Evita repetir a mesma voz imediatamente na virada de ciclo (se houver mais de 1)
+            if (novoSorteio.length > 1 && novoSorteio[0] === vozAtualRef.current) {
+                const swapIdx = Math.floor(Math.random() * (novoSorteio.length - 1)) + 1;
+                [novoSorteio[0], novoSorteio[swapIdx]] = [novoSorteio[swapIdx], novoSorteio[0]];
+            }
+            filaVozesRef.current = novoSorteio;
+        }
+        const vozSorteada = filaVozesRef.current.shift();
+        vozAtualRef.current = vozSorteada;
+        setVozAtiva(vozSorteada);
+        return vozSorteada;
+    }, [obterListaVozesIdioma]);
+
+    // Reseta estado transitório na mudança de frase ou idioma
     useEffect(() => {
         tentativasVozRef.current = 0;
+        vozAtualRef.current = null;
+        setVozAtiva(null);
     }, [indice]);
+
+    useEffect(() => {
+        filaVozesRef.current = [];
+        vozAtualRef.current = null;
+        setVozAtiva(null);
+    }, [idiomaEstudo]);
 
     const pararAudiosEmExecucao = useCallback(() => {
         playRequestIdRef.current += 1;
@@ -74,7 +128,8 @@ export const useSpeech = ({
                 return v.lang.toLowerCase().includes(lang) && (!name.includes('google') || isQuality) && (!name.includes('microsoft') || isQuality);
             });
             const selectedVoice = voices.length > 0 ? voices[voiceIndex.current % voices.length] : null;
-            if (voices.length > 0) voiceIndex.current += 1;
+            // Só avança a voz de síntese se não for repetição lenta
+            if (!lento && voices.length > 0) voiceIndex.current += 1;
 
             if (lento) {
                 const palavrasBrutas = idiomaEstudo === 'pi' && !texto.includes(" ") ? texto.split("") : texto.split(" ");
@@ -133,12 +188,24 @@ export const useSpeech = ({
             }
         }
 
-        // Se for inglês ou espanhol e tiver ID, reproduz o MP3 pré-gerado
-        if ((idiomaEstudo === 'en' || idiomaEstudo === 'es' || idiomaEstudo === 'fr' || idiomaEstudo === 'it' || idiomaEstudo === 'ge' || idiomaEstudo === 'pt' || idiomaEstudo === 'pi') && id) {
+        // Se for idioma com storage de áudio e tiver ID, reproduz o MP3 pré-gerado
+        if (['en', 'es', 'fr', 'it', 'ge', 'pt', 'pi'].includes(idiomaEstudo) && id) {
             try {
-                const listaVozes = (idiomaEstudo === 'pi' || idiomaEstudo === 'zh') ? VOZES_ZH : (idiomaEstudo === 'pt' ? VOZES_PT : (idiomaEstudo === 'ge' ? VOZES_GE : (idiomaEstudo === 'it' ? VOZES_IT : (idiomaEstudo === 'fr' ? VOZES_FR : (idiomaEstudo === 'es' ? VOZES_ES : VOZES_EN)))));
-                const voz = listaVozes[voiceNumIndex.current % listaVozes.length];
-                voiceNumIndex.current += 1;
+                let voz = null;
+
+                if (typeof alvo === 'object' && alvo !== null && alvo.voz) {
+                    // Voz explicitamente indicada
+                    voz = alvo.voz;
+                    vozAtualRef.current = voz;
+                    setVozAtiva(voz);
+                } else if (lento && vozAtualRef.current) {
+                    // 1.1: Repetição lenta reutiliza exatamente a mesma voz
+                    voz = vozAtualRef.current;
+                } else {
+                    // 1.2: Reprodução normal consome do sorteio sem repetição
+                    voz = obterProximaVoz(idiomaEstudo);
+                }
+
                 const url = await obterAudioUrl(id, voz, idiomaEstudo);
 
                 const audio = new Audio(url);
@@ -158,7 +225,6 @@ export const useSpeech = ({
                     falarTTS(texto, lento, callback);
                 };
 
-                // Se uma nova chamada entrou enquanto baixava o audio, descarta
                 if (currentRequestId !== playRequestIdRef.current) return;
 
                 const playPromise = audio.play();
@@ -177,9 +243,9 @@ export const useSpeech = ({
             }
         }
 
-        // Fallback nativo para outros idiomas ou ausência de ID
+        // Fallback nativo
         falarTTS(texto, lento, callback);
-    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, falarTTS]);
+    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, falarTTS, obterProximaVoz]);
 
     const pararMonitoramentoAudio = useCallback(() => {
         estaGravandoRef.current = false;
@@ -265,7 +331,7 @@ export const useSpeech = ({
 
         const avaliarAgora = () => {
             if (processandoAcertoRef.current) return;
-            const fraseAlvo = fraseAlvoRef.current || fraseAtual;
+            const fraseAlvo = fraseAlvoRef.current || frasesFiltradas[indice];
             const fraseOriginal = fraseAlvo ? fraseAlvo[idiomaEstudo] : "";
             const textoAlvo = (idiomaEstudo === 'pi' && fraseAlvo?.zh) ? fraseAlvo.zh : fraseOriginal;
             const fraseCorreta = normalizar(textoAlvo);
@@ -301,7 +367,7 @@ export const useSpeech = ({
             falaRef.current = falaAtual;
             setTranscricaoAoVivo(falaAtual);
 
-            const fraseAlvo = fraseAlvoRef.current || fraseAtual;
+            const fraseAlvo = fraseAlvoRef.current || frasesFiltradas[indice];
             const fraseOriginal = fraseAlvo ? fraseAlvo[idiomaEstudo] : "";
             const textoAlvo = (idiomaEstudo === 'pi' && fraseAlvo?.zh) ? fraseAlvo.zh : fraseOriginal;
             const fraseCorreta = normalizar(textoAlvo);
@@ -318,13 +384,13 @@ export const useSpeech = ({
 
             if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
 
-            // Se atingiu >= 75%, aguarda 0.75s para não cortar o final da fala
+            // Acerto automático se atingiu limiar
             if (percentual >= limiar || (fraseCorreta && falaComparacao.includes(fraseCorreta))) {
                 timerSilencioRef.current = setTimeout(() => {
                     avaliarAgora();
                 }, 750);
             } else {
-                // Se ainda está abaixo, aguarda 1.3s de silêncio contínuo para erro
+                // Silêncio de 1.3s para encerrar com erro
                 timerSilencioRef.current = setTimeout(() => {
                     if (!processandoAcertoRef.current && falaRef.current) {
                         avaliarAgora();
@@ -368,9 +434,15 @@ export const useSpeech = ({
         statusVoz,
         transcricaoAoVivo,
         volume,
+        vozAtiva,
         falar,
         iniciarReconhecimentoVoz,
         pararMonitoramentoAudio,
+        pararAudiosEmExecucao,
+        resetarVozAtual: () => {
+            vozAtualRef.current = null;
+            setVozAtiva(null);
+        },
         pararEAvaliarVoz: () => { if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz(); },
         setEstaOuvindo,
         setStatusVoz,
