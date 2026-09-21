@@ -9,12 +9,11 @@ import { useSpeech } from './useSpeech'
 import Perfil from './Components/Perfil'
 import { EscolherOrigem, EscolherEstudo } from './Components/EscolhaIdiomas'
 import Hub from './Components/Hub'
-import TelaEstudo from './Components/TelaEstudo' 
+import TelaEstudo from './Components/TelaEstudo'
 import { EscolherNivel, EscolherTopic, SelecaoExercicio, Adm, TelaNivelConcluido } from './Components/Navegacao'
 import { ESTRUTURA_NIVEIS } from './constant'
 import { ExplicacaoIA, DominiumStats } from './Components/Relatorios'
 import MenuCartoes from './Components/MenuCartoes'
-import { useAI } from './hooks/useAI'
 import { dataService } from './dataService'
 import { calcularProximoRank } from './useSRSLogic'
 import { precarregarAudios, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService'
@@ -83,7 +82,7 @@ function App() {
     return salvo ? JSON.parse(salvo) : [];
   });
   const ultimoAudioID = useRef("");
-
+  const cacheExplicacoesTopico = useRef({});
   const mudarTela = useCallback((novaTela) => {
     window.history.pushState({ tela: novaTela }, "");
     setTela(novaTela);
@@ -282,7 +281,7 @@ function App() {
       try {
         const resp = await dataService.getTopicsByLevel(nivelBusca, idiomaOrigem, idiomaEstudo);
         dadosNivel = resp?.data;
-      } catch (e) {}
+      } catch (e) { }
 
       if (dadosNivel && dadosNivel.length > 0) {
         const primeiroInedito = dadosNivel.find(f => {
@@ -352,14 +351,47 @@ function App() {
     falarRef.current = falar;
   }, [falar]);
 
-  const { aiLoading, aiExplanation, explicarFraseIA } = useAI({
-    idiomaOrigem,
-    idiomaEstudo,
-    nivelAtivo,
-    temas,
-    apiKey,
-    mudarTela
-  });
+  const [aiLoading, setAiLoading] = useState(false);
+const [aiExplanation, setAiExplanation] = useState(null);
+
+const explicarFraseIA = useCallback(async (idFornecido) => {
+  // Identifica o ID da frase ativa com segurança (via argumento ou via índice da tela)
+  const idAlvo = idFornecido || fraseAtivaGlobal?.id || frasesFiltradas[indice]?.id;
+  if (!idAlvo) return;
+
+  const chaveTopico = `${nivelAtivo}_${topicoAtivo}`;
+  const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+
+  // 1. Se o JSON deste tópico já foi baixado na sessão, lê direto da memória (0ms)
+  if (cacheExplicacoesTopico.current[chaveTopico]) {
+    const dados = cacheExplicacoesTopico.current[chaveTopico][String(idAlvo)];
+    setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
+    mudarTela('explicacaoIA');
+    return;
+  }
+
+  // 2. Se for a primeira vez no tópico, carrega o arquivo JSON local
+  setAiLoading(true);
+  try {
+    const nomeArquivo = encodeURIComponent(`${chaveTopico}.json`);
+    const resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+    
+    if (resposta.ok) {
+      const mapa = await resposta.json();
+      cacheExplicacoesTopico.current[chaveTopico] = mapa;
+      const dados = mapa[String(idAlvo)];
+      setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
+    } else {
+      setAiExplanation({ explanation: "Arquivo de explicações do tópico não localizado.", breakdown: [] });
+    }
+  } catch (err) {
+    console.warn("[App] Falha ao carregar explicação local:", err);
+    setAiExplanation({ explanation: "Erro ao abrir explicação local.", breakdown: [] });
+  } finally {
+    setAiLoading(false);
+    mudarTela('explicacaoIA');
+  }
+}, [nivelAtivo, topicoAtivo, idiomaEstudo, idiomaOrigem, mudarTela, fraseAtivaGlobal, frasesFiltradas, indice]);
 
   const isFirstRun = useRef(true);
   useEffect(() => {

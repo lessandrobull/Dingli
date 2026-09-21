@@ -482,7 +482,7 @@ export default function TelaEstudo({
               {!modoExercicio ? (
                 /* Card inicial: 3 botões em linha horizontal */
                 <div style={styles.rowBotoesIA}>
-                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
+                  <button onClick={() => explicarFraseIA(frase?.id)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
                     Explicação
                   </button>
 

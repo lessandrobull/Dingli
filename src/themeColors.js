@@ -22,12 +22,12 @@ export const COR_SUPERFICIE_DIGITACAO = "#f1f5f9";
 
 // 5. IDENTIDADES POR IDIOMA
 export const CORES_POR_IDIOMA = {
-  pt: { bgPrincipal: "#2a925c", acaoEscura: "#002776" },
+  pt: { bgPrincipal: "#2a925c", acaoEscura: "#6fa4c0" },
   en: { bgPrincipal: "#4d6395", acaoEscura: "#d1596c" },
-  es: { bgPrincipal: "#f3c229", acaoEscura: "#c2410c" },
+  es: { bgPrincipal: "#e2c460", acaoEscura: "#c2410c" },
   fr: { bgPrincipal: "#6fa4c0", acaoEscura: "#0055a4" },
   it: { bgPrincipal: "#4cb975", acaoEscura: "#009246" },
-  ge: { bgPrincipal: "#212020", acaoEscura: "#18181b" },
+  ge: { bgPrincipal: "#212020", acaoEscura: "#e2c460" },
   pi: { bgPrincipal: "#d94960", acaoEscura: "#991b1b" }
 };
 
