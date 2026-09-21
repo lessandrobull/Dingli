@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useMemo } from 'react';
 import { temas, interfaceTraducoes } from './constant';
-import { CORES_POR_IDIOMA, COR_BASE_CARDS, COR_ACERTO, COR_ERRO, COR_BG_SECUNDARIOS, getTemaVisual } from './themeColors';
+import { CORES_POR_IDIOMA, COR_TOM_CLARO, COR_BASE_CARDS, COR_ACERTO, COR_ERRO, getTemaVisual } from './themeColors';
 
 const DingliContext = createContext();
 
@@ -18,7 +18,7 @@ export function DingliProvider({
   const navStyle = (idioma) => {
     return {
       bg: (CORES_POR_IDIOMA[idioma] || CORES_POR_IDIOMA.en).acaoEscura,
-      txt: COR_BASE_CARDS
+      txt: COR_TOM_CLARO
     };
   };
 
@@ -32,10 +32,10 @@ export function DingliProvider({
     t,
     getCorFonteDinamica,
     navStyle,
+    COR_TOM_CLARO,
     COR_BASE_CARDS,
     COR_ACERTO,
     COR_ERRO,
-    COR_BG_SECUNDARIOS,
     getTemaVisual
   }), [t, idiomaOrigem, idiomaEstudo, userRole, tela]);
 

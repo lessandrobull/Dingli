@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
-import { COR_ACERTO, COR_BASE_CARDS } from '../themeColors';
+import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
 import { calcularProximoRank } from '../useSRSLogic';
 
 const ExercicioSelecao = ({
@@ -142,7 +142,7 @@ export default function TelaEstudo({
   filaErros, setFilaErros, filaAcertos, setFilaAcertos,
   sessaoDominium, setSessaoDominium, jogarDominiumInteligente
 }) {
-  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole } = useDingli();
 
   const frase = React.useMemo(() => {
     return fraseAtivaGlobal
@@ -351,7 +351,6 @@ export default function TelaEstudo({
     );
   }
 
-  const corFonteBotoesCard = getCorFonteDinamica(idiomaEstudo);
   const isEx3 = modoExercicio && RANKS_SELECT.includes(exercicioNivel);
   const fontSizeEx3 = '1.5rem';
   const [alturaTela, setAlturaTela] = React.useState(window.innerHeight);
@@ -483,11 +482,11 @@ export default function TelaEstudo({
               {!modoExercicio ? (
                 /* Card inicial: 3 botões em linha horizontal */
                 <div style={styles.rowBotoesIA}>
-                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>
+                  <button onClick={() => explicarFraseIA(textoEstudo)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
                     Explicação
                   </button>
 
-                  <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>
+                  <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
                     {audioLento ? "Lento" : "Ouvir"}
                   </button>
 
@@ -523,17 +522,17 @@ export default function TelaEstudo({
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>
                       {/* 1. Botão Rever (mesma aparência de Explicação) */}
-                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>
+                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
                         {t.review}
                       </button>
 
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
                       {temAudioExercicio ? (
-                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>
+                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
                           {audioLento ? "Lento" : "Ouvir"}
                         </button>
                       ) : (
-                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', opacity: 0.2, cursor: 'default' }}>
+                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
                           &nbsp;
                         </button>
                       )}
@@ -568,17 +567,17 @@ export default function TelaEstudo({
                   ) : (
                     <>
                       {/* 1. Botão Rever (mesma aparência de Explicação) */}
-                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
                         {t.review}
                       </button>
 
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
                       {temAudioExercicio ? (
-                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>
+                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
                           {audioLento ? "Lento" : "Ouvir"}
                         </button>
                       ) : (
-                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', opacity: 0.2, cursor: 'default' }}>
+                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
                           &nbsp;
                         </button>
                       )}

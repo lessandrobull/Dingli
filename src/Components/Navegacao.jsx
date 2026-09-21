@@ -1,6 +1,7 @@
 import React from 'react';
 import { NOMES_RANKS, ESTRUTURA_NIVEIS } from '../constant';
 import { useDingli } from '../DingliContext';
+import { COR_TOM_CLARO, COR_INSTITUCIONAL_TITULO, COR_INSTITUCIONAL_ACAO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
 
 export function EscolherNivel({
   styles, selecionarNivel, sessaoDominium, frasesMaestria
@@ -123,10 +124,8 @@ export function EscolherTopic({
                   overflow: "hidden"
                 }}
               >
-                {/* Texto do Topico Centralizado */}
                 <span>{tp}</span>
 
-                {/* Indicador Unificado (Direita): Download -> Spinner -> % Progresso -> Tick Concluido */}
                 <span
                   onClick={(e) => {
                     if (!estaBaixado && !estaBaixando) {
@@ -205,7 +204,7 @@ export function SelecaoExercicio({ styles, iniciarExercicio }) {
           {NOMES_RANKS.map((nome, i) => {
             const n = i + 1;
             return (
-              <button key={n} onClick={() => iniciarExercicio(n)} style={{ ...styles.btnPadrao, backgroundColor: '#fff', color: corFonte, minHeight: '55px', fontSize: '1rem', padding: '10px' }}>Rank {n} ({nome})</button>
+              <button key={n} onClick={() => iniciarExercicio(n)} style={{ ...styles.btnPadrao, backgroundColor: COR_TOM_CLARO, color: corFonte, minHeight: '55px', fontSize: '1rem', padding: '10px' }}>Rank {n} ({nome})</button>
             );
           })}
         </div>
@@ -218,33 +217,32 @@ export function Adm({ styles }) {
   const { mudarTela, setUserRole } = useDingli();
 
   return (
-    <div style={{ ...styles.viewport, backgroundColor: '#000' }}>
+    <div style={{ ...styles.viewport, backgroundColor: COR_TOM_CLARO }}>
       <div style={styles.mobileContainer}>
         <div style={{ textAlign: 'center', marginBottom: '30px', marginTop: '20px' }}>
-          <h2 style={{ color: '#fff', fontSize: '2rem', fontWeight: '900', margin: 0 }}>Adm</h2>
+          <h2 style={{ color: COR_INSTITUCIONAL_TITULO, fontSize: '2rem', fontWeight: '900', margin: 0 }}>Adm</h2>
         </div>
         <div className="scroll-container" style={{ ...styles.areaScrollMenu, justifyContent: 'flex-start', gap: '12px' }}>
-          <button
-            onClick={() => mudarTela('escolherOrigem')}
-            style={{ padding: '16px', borderRadius: '12px', border: 'none', backgroundColor: '#1e293b', color: '#fff', fontWeight: '900', fontSize: '1.1rem', cursor: 'pointer' }}
-          >
-            Phrase Cards
-          </button>
           <button
             onClick={() => {
               setUserRole('aluno');
               mudarTela('perfil');
             }}
-            style={{ padding: '16px', borderRadius: '12px', border: 'none', backgroundColor: '#1e293b', color: '#fff', fontWeight: '900', fontSize: '1.1rem', cursor: 'pointer' }}
+            style={{ padding: '16px', borderRadius: '12px', border: 'none', backgroundColor: COR_SUPERFICIE_DIGITACAO, color: COR_INSTITUCIONAL_ACAO, fontWeight: '900', fontSize: '1.1rem', cursor: 'pointer' }}
           >
             Profile
+          </button>
+          <button
+            onClick={() => mudarTela('escolherOrigem')}
+            style={{ padding: '16px', borderRadius: '12px', border: 'none', backgroundColor: COR_SUPERFICIE_DIGITACAO, color: COR_INSTITUCIONAL_ACAO, fontWeight: '900', fontSize: '1.1rem', cursor: 'pointer' }}
+          >
+            Phrase Cards
           </button>
         </div>
       </div>
     </div>
   );
 }
-
 
 export function TelaNivelConcluido({ styles, nivelAtivo, proximoNivel, selecionarNivel, mudarTela }) {
   const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, COR_BASE_CARDS } = useDingli();
