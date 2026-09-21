@@ -164,12 +164,11 @@ export default function TelaEstudo({
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
 
-  // Etapa 3: Estado local de alternância do botão Ouvir / Lento
   const [audioLento, setAudioLento] = useState(false);
 
   useEffect(() => {
     setAudioLento(false);
-  }, [indice, frase?.id]);
+  }, [indice, frase?.id, exercicioNivel]);
 
   const jogarDominiumRef = useRef(jogarDominiumInteligente);
   useEffect(() => {
@@ -261,7 +260,7 @@ export default function TelaEstudo({
       } else {
         setSessaoDominium(prev => ({ ...prev, recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), acertosTempo: [...(prev.acertosTempo || []).filter(a => a.frase !== fraseOriginal), { frase: fraseOriginal, id: frase.id, time: Date.now(), curso: `${idiomaOrigem}_${idiomaEstudo}`, nivel: nivelAtivo, topico: topicoAtivo }] }));
       }
-      falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal }, false);
+      falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : textoEstudo }, false);
       setTimeout(() => {
         setResultadoFeedback(null); setModoExercicio(false); processandoAcertoRef.current = false;
         if (jogarDominiumRef.current) jogarDominiumRef.current();
@@ -276,7 +275,7 @@ export default function TelaEstudo({
       setSessaoDominium(prev => ({ ...prev, falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}` }], primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal) }));
       setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
       setFilaErros(prev => prev.some(item => item.indice === indice) ? prev : [...prev, { indice, rank: calc.novoRank }]);
-      falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : fraseOriginal }, false);
+      falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : textoEstudo }, false);
       setTimeout(() => {
         setTentativaFinalizada(false);
         if (RANKS_SELECT.includes(exercicioNivel)) { setResultadoFeedback('erro_limpo'); }
@@ -325,7 +324,6 @@ export default function TelaEstudo({
 
   const textoEstudo = normalizarFrase(frase?.[idiomaEstudo] || "");
 
-  // Etapa 3.2: Handler de alternância Ouvir (Normal) <-> Lento (Mesma Voz)
   const handleOuvirClick = useCallback(() => {
     const alvo = {
       id: frase?.id,
@@ -408,6 +406,9 @@ export default function TelaEstudo({
 
   const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
 
+  // Determina se o rank do exercício permite ouvir áudio
+  const temAudioExercicio = !modoExercicio || ![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel));
+
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg, height: alturaTela, position: 'absolute', top: 0, left: 0, width: '100%' }}>
       <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
@@ -478,14 +479,6 @@ export default function TelaEstudo({
           </div>
 
           <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, gap: '10px' }}>
-            {/* Linha dupla de áudio exclusiva para os modos de exercício */}
-            {modoExercicio && ![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel)) && (
-              <div style={styles.rowAudio}>
-                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, true)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.slow}</button>
-                <button onMouseDown={(e) => e.preventDefault()} onClick={() => falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo }, false)} style={{ ...styles.btnAudioRound, color: corFonteBotoesCard }}>{t.normal}</button>
-              </div>
-            )}
-
             <div style={styles.blocoSuporteIA}>
               {!modoExercicio ? (
                 /* Card inicial: 3 botões em linha horizontal */
@@ -525,11 +518,27 @@ export default function TelaEstudo({
                   )}
                 </div>
               ) : (
-                /* Cards de exercício mantidos intactos */
+                /* Cards de exercício: exatamente 3 botões em linha horizontal */
                 <div style={styles.rowBotoesIA}>
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>
-                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>{t.review}</button>
+                      {/* 1. Botão Rever (mesma aparência de Explicação) */}
+                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>
+                        {t.review}
+                      </button>
+
+                      {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
+                      {temAudioExercicio ? (
+                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>
+                          {audioLento ? "Lento" : "Ouvir"}
+                        </button>
+                      ) : (
+                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', opacity: 0.2, cursor: 'default' }}>
+                          &nbsp;
+                        </button>
+                      )}
+
+                      {/* 3. Botão Falar agora / Verificar (mesma aparência de Praticar) */}
                       <button
                         onClick={() => {
                           if (statusVoz === 'RECORDING') {
@@ -540,7 +549,12 @@ export default function TelaEstudo({
                           }
                         }}
                         disabled={statusVoz === 'EVALUATING' || resultadoFeedback !== null}
-                        style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: resultadoFeedback ? 0.5 : 1 }}
+                        style={{
+                          ...styles.btnAcaoExtra,
+                          backgroundColor: ns.bg,
+                          color: ns.txt,
+                          opacity: resultadoFeedback ? 0.5 : 1
+                        }}
                       >
                         {statusVoz === 'RECORDING' ? (
                           t.check || 'Verificar'
@@ -553,8 +567,37 @@ export default function TelaEstudo({
                     </>
                   ) : (
                     <>
-                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>{t.review}</button>
-                      <button onMouseDown={(e) => e.preventDefault()} onClick={verificarResposta} disabled={isCheckDisabled} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt, opacity: isCheckDisabled ? 0.5 : 1, cursor: isCheckDisabled ? 'not-allowed' : 'pointer' }}>{t.check}</button>
+                      {/* 1. Botão Rever (mesma aparência de Explicação) */}
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_BASE_CARDS }}>
+                        {t.review}
+                      </button>
+
+                      {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
+                      {temAudioExercicio ? (
+                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', color: corFonteBotoesCard }}>
+                          {audioLento ? "Lento" : "Ouvir"}
+                        </button>
+                      ) : (
+                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: '#f1f5f9', opacity: 0.2, cursor: 'default' }}>
+                          &nbsp;
+                        </button>
+                      )}
+
+                      {/* 3. Botão Verificar (mesma aparência de Praticar) */}
+                      <button
+                        onMouseDown={(e) => e.preventDefault()}
+                        onClick={verificarResposta}
+                        disabled={isCheckDisabled}
+                        style={{
+                          ...styles.btnAcaoExtra,
+                          backgroundColor: ns.bg,
+                          color: ns.txt,
+                          opacity: isCheckDisabled ? 0.5 : 1,
+                          cursor: isCheckDisabled ? 'not-allowed' : 'pointer'
+                        }}
+                      >
+                        {t.check}
+                      </button>
                     </>
                   )}
                 </div>
