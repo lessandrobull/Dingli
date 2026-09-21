@@ -79,7 +79,7 @@ const ExercicioEscrita = ({
               setValorInput(texto);
             }}
             onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
-            style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth:'100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
+            style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
           />
           {resultadoFeedback && (
             <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
@@ -427,7 +427,7 @@ export default function TelaEstudo({
                 {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
               </div>
             )}
-            {modoExercicio && !isEx3 && idiomaEstudo === 'pi' && frase?.zh && (
+            {modoExercicio && !isEx3 && !RANKS_WRITE.includes(exercicioNivel) && idiomaEstudo === 'pi' && frase?.zh && (
               <div style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '5px' }}>{frase.zh}</div>
             )}
           </div>
