@@ -1,0 +1,527 @@
+{
+  "1021": {
+    "explanation": "Expressão idiomática excelente para proatividade: 'prendre les devants' significa literalmente 'tomar a dianteira' ou 'adiantar-se'. 'J'ai déjà pris les devants' é 'já me adiantei'. A segunda parte 'et j'ai réservé une table' significa 'e reservei uma mesa'. 'Pour six' é para seis pessoas, e 'ce soir' significa 'esta noite'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "pris", "meaning": "tomado / peguei (passado do verbo prendre)" },
+      { "word": "les", "meaning": "as / a" },
+      { "word": "devants", "meaning": "frentes / dianteira (prendre les devants = adiantar-se / tomar a iniciativa)" },
+      { "word": "et", "meaning": "e" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "réservé", "meaning": "reservado / reservei (do verbo réserver)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "table", "meaning": "mesa" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "six", "meaning": "seis" },
+      { "word": "ce", "meaning": "esta" },
+      { "word": "soir", "meaning": "noite (ce soir = esta noite / hoje à noite)" }
+    ]
+  },
+  "1022": {
+    "explanation": "'C'est sans aucun doute' significa 'é sem dúvida alguma'. 'Le meilleur repas' é a melhor refeição. 'Que j'ai mangé' significa 'que comi' (passado de manger com avoir). 'Dans cette ville' é 'nesta cidade'. A expressão temporal 'jusqu'à présent' significa 'até o presente momento / até agora'.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Esta / Isto (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "sans", "meaning": "sem" },
+      { "word": "aucun", "meaning": "nenhuma / qualquer" },
+      { "word": "doute", "meaning": "dúvida (sans aucun doute = sem dúvida alguma)" },
+      { "word": "le", "meaning": "o / a" },
+      { "word": "meilleur", "meaning": "melhor" },
+      { "word": "repas", "meaning": "refeição" },
+      { "word": "que", "meaning": "que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "mangé", "meaning": "comido / comi (do verbo manger)" },
+      { "word": "dans", "meaning": "em / nesta" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "ville", "meaning": "cidade" },
+      { "word": "jusqu'", "meaning": "até (encurtado antes de vogal)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "présent", "meaning": "presente (jusqu'à présent = até agora)" }
+    ]
+  },
+  "1023": {
+    "explanation": "Pergunta ao restaurante sobre restrições alimentares: 'Savez-vous s'ils proposent' é 'o senhor sabe se eles oferecem?'. 'Des plats' são pratos. 'Pour les personnes ayant' significa 'para pessoas que têm' (onde ayant indica posse). A expressão 'besoins alimentaires particuliers' significa 'necessidades dietéticas especiais / restrições alimentares específicas'.",
+    "breakdown": [
+      { "word": "Savez", "meaning": "Sabe / Sabem (do verbo savoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "s'", "meaning": "se (encurtado antes de vogal)" },
+      { "word": "ils", "meaning": "eles (referindo-se ao restaurante)" },
+      { "word": "proposent", "meaning": "propõem / oferecem (do verbo proposer no plural)" },
+      { "word": "des", "meaning": "pratos em geral / alguns (marcador de plural)" },
+      { "word": "plats", "meaning": "pratos" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "les", "meaning": "as" },
+      { "word": "personnes", "meaning": "pessoas" },
+      { "word": "ayant", "meaning": "tendo / que têm (do verbo avoir)" },
+      { "word": "des", "meaning": "algumas / (marcador de plural)" },
+      { "word": "besoins", "meaning": "necessidades" },
+      { "word": "alimentaires", "meaning": "alimentares / dietéticas (no plural)" },
+      { "word": "particuliers", "meaning": "especiais / específicos (no plural)" }
+    ]
+  },
+  "1024": {
+    "explanation": "'Je recommanderais vivement' significa 'eu recomendaria fortemente / enfaticamente' (onde vivement expressa convicção). Em restaurantes, o prato chefe ou especialidade da casa é chamado de 'plat signature'. A expressão 'il est absolument superbe' significa 'ele é absolutamente soberbo / magnífico'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "recommanderais", "meaning": "recomendaria (forma suave do verbo recommander)" },
+      { "word": "vivement", "meaning": "fortemente / vivamente / com entusiasmo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plat", "meaning": "prato" },
+      { "word": "signature", "meaning": "assinatura (plat signature = prato principal da casa / especialidade)" },
+      { "word": "il", "meaning": "ele" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "absolument", "meaning": "absolutamente" },
+      { "word": "superbe", "meaning": "soberbo / magnífico / espetacular" }
+    ]
+  },
+  "1025": {
+    "explanation": "'Le service était impeccable' significa 'o atendimento foi impecável'. A expressão concessiva 'bien que' significa 'embora / ainda que'. O verbo mettre no passado indica o tempo levado: 'ait mis un peu de temps' (tenha levado um tempinho). A preposição 'à' liga com o verbo chegar: 'à arriver'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "service", "meaning": "serviço / atendimento" },
+      { "word": "était", "meaning": "era / foi (passado do verbo être)" },
+      { "word": "impeccable", "meaning": "impecável / perfeito" },
+      { "word": "bien", "meaning": "bem" },
+      { "word": "que", "meaning": "que (bien que = embora / ainda que)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "nourriture", "meaning": "comida" },
+      { "word": "ait", "meaning": "tenha feito a ação (auxiliar avoir no modo de concessão)" },
+      { "word": "mis", "meaning": "posto / levado (passado de mettre; mettre du temps = demorar)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco (un peu de temps = um pouco de tempo)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "arriver", "meaning": "chegar" }
+    ]
+  },
+  "1026": {
+    "explanation": "'Je ne suis pas particulièrement fan de' significa 'não sou particularmente fã de'. 'La cuisine' refere-se à comida ou culinária. A expressão 'trop riche ou lourde' refere-se a comidas pesadas, muito gordurosas ou com molhos densos (com lourde no feminino combinando com cuisine).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "particulièrement", "meaning": "particularmente" },
+      { "word": "fan", "meaning": "fã" },
+      { "word": "de", "meaning": "de" },
+      { "word": "la", "meaning": "a" },
+      { "word": "cuisine", "meaning": "cozinha / culinária" },
+      { "word": "trop", "meaning": "demais / muito" },
+      { "word": "riche", "meaning": "rica / gordurosa (para alimentos)" },
+      { "word": "ou", "meaning": "ou" },
+      { "word": "lourde", "meaning": "pesada (no feminino)" }
+    ]
+  },
+  "1027": {
+    "explanation": "Pergunta sobre culinária regional: 'Avez-vous déjà goûté à' significa 'o senhor já provou / experimentou?' (com o verbo goûter pedindo a preposição 'à'). 'La cuisine traditionnelle' é a culinária tradicional. 'De cette région' significa 'desta região'.",
+    "breakdown": [
+      { "word": "Avez", "meaning": "Tem / Fez a ação no passado (auxiliar avoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "goûté", "meaning": "provado / experimentado (do verbo goûter)" },
+      { "word": "à", "meaning": "a / de (goûter à = provar de)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "cuisine", "meaning": "culinária / cozinha" },
+      { "word": "traditionnelle", "meaning": "tradicional (no feminino)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "région", "meaning": "região" }
+    ]
+  },
+  "1028": {
+    "explanation": "Como fazer um pedido detalhado ao garçom: 'Je vais prendre' significa 'eu vou querer / vou pegar'. 'Le saumon grillé' é o salmão grelhado. Em cardápios, acompanhamento ou guarnição é chamado de 'un accompagnement'. A expressão 'de légumes à la vapeur' significa 'de legumes ao vapor'. Encerra com 's'il vous plaît'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vais", "meaning": "vou (do verbo aller)" },
+      { "word": "prendre", "meaning": "pegar / escolher (je vais prendre = vou querer)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "saumon", "meaning": "salmão" },
+      { "word": "grillé", "meaning": "grelhado" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "accompagnement", "meaning": "acompanhamento / guarnição" },
+      { "word": "de", "meaning": "de" },
+      { "word": "légumes", "meaning": "legumes / verduras" },
+      { "word": "à", "meaning": "ao / a" },
+      { "word": "la", "meaning": "o / a" },
+      { "word": "vapeur", "meaning": "vapor (à la vapeur = no vapor / ao vapor)" },
+      { "word": "s'il vous plaît", "meaning": "por favor (formal e educado)" }
+    ]
+  },
+  "1029": {
+    "explanation": "Pedido muito cortês para conseguir mesa externa: 'Nous nous demandions' significa 'estávamos nos perguntando' (passado de se demander). A conjunção 'si' encurta para 's'' antes de 'il', formando 's'il serait possible de' (se seria possível). O verbo sentar-se é 's'asseoir'. A expressão 'en terrasse' significa 'na varanda / mesa externa do restaurante'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "nous", "meaning": "nos" },
+      { "word": "demandions", "meaning": "perguntávamos (passado do verbo se demander)" },
+      { "word": "s'", "meaning": "se (encurtado antes de vogal)" },
+      { "word": "il", "meaning": "ele / isso (sujeito neutro)" },
+      { "word": "serait", "meaning": "seria (forma suave do verbo être)" },
+      { "word": "possible", "meaning": "possível" },
+      { "word": "de", "meaning": "de" },
+      { "word": "s'", "meaning": "se (encurtado antes de vogal)" },
+      { "word": "asseoir", "meaning": "sentar (s'asseoir = sentar-se)" },
+      { "word": "en", "meaning": "na / em" },
+      { "word": "terrasse", "meaning": "terraço / varanda externa (en terrasse = ao ar livre / na calçada)" }
+    ]
+  },
+  "1030": {
+    "explanation": "'Je ne pense pas avoir déjà goûté' significa 'acho que nunca experimentei / nunca provei'. 'Une combinaison de saveurs' é uma combinação de sabores. A estrutura 'aussi unique' significa 'tão singular / tão única'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "avoir", "meaning": "ter (auxiliar de ação passada)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "goûté", "meaning": "provado / experimentado (do verbo goûter)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "combinaison", "meaning": "combinação" },
+      { "word": "de", "meaning": "de" },
+      { "word": "saveurs", "meaning": "sabores" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "unique", "meaning": "única / singular" }
+    ]
+  },
+  "1031": {
+    "explanation": "'Pourriez-vous nous apporter' significa 'o senhor poderia nos trazer?'. 'Une bouteille' é uma garrafa. A contração 'du' (de + le) conecta com o vinho tinto: 'du vin rouge'. A expressão 'de la maison' significa 'da casa' (o vinho da casa / especialidade do local). Encerra com 's'il vous plaît'.",
+    "breakdown": [
+      { "word": "Pourriez", "meaning": "Poderia (forma polida do verbo pouvoir)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "nous", "meaning": "nos / para nós" },
+      { "word": "apporter", "meaning": "trazer" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bouteille", "meaning": "garrafa" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "vin", "meaning": "vinho" },
+      { "word": "rouge", "meaning": "tinto / vermelho" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "la", "meaning": "a" },
+      { "word": "maison", "meaning": "casa (de la maison = da casa)" },
+      { "word": "s'il vous plaît", "meaning": "por favor (formal e educado)" }
+    ]
+  },
+  "1032": {
+    "explanation": "Alerta de alergia severa no restaurante: 'J'ai une grave allergie aux noix' significa 'tenho uma alergia severa a nozes/oleaginosas' (com aux = à + les). A palavra 'donc' significa 'portanto / então'. A expressão 'faire extrêmement attention' significa 'tomar extremo cuidado / prestar extrema atenção'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "grave", "meaning": "grave / severa" },
+      { "word": "allergie", "meaning": "alergia" },
+      { "word": "aux", "meaning": "a / às (junção de à + les)" },
+      { "word": "noix", "meaning": "nozes / castanhas / oleaginosas" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
+      { "word": "donc", "meaning": "portanto / por isso / então" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "extrêmement", "meaning": "extremamente" },
+      { "word": "attention", "meaning": "atenção / cuidado (faire attention = ter cuidado)" }
+    ]
+  },
+  "1033": {
+    "explanation": "O verbo s'avérer significa revelar-se ou acabar se mostrando ('s'est avéré' = revelou-se / acabou sendo). A expressão 'bien plus sophistiqué que' significa 'muito mais sofisticado do que'. A construção formal 'ce à quoi je m'attendais' significa 'aquilo que eu esperava' (do verbo s'attendre à).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "restaurant", "meaning": "restaurante" },
+      { "word": "s'", "meaning": "se (encurtado antes de vogal)" },
+      { "word": "est", "meaning": "fez a ação no passado (auxiliar être)" },
+      { "word": "avéré", "meaning": "mostrado / revelou-se (do verbo s'avérer)" },
+      { "word": "bien", "meaning": "bem / muito" },
+      { "word": "plus", "meaning": "mais (bien plus = muito mais)" },
+      { "word": "sophistiqué", "meaning": "sofisticado" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "ce", "meaning": "aquilo / o" },
+      { "word": "à", "meaning": "a" },
+      { "word": "quoi", "meaning": "que (ce à quoi = aquilo ao qual / o que)" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "attendais", "meaning": "esperava (passado de s'attendre à = esperar / ter expectativa de)" }
+    ]
+  },
+  "1034": {
+    "explanation": "Pergunta com inversão formal: 'Préférez-vous généralement' é 'o senhor geralmente prefere?'. 'Un déjeuner léger' é um almoço leve. A palavra 'ou' é 'ou'. A expressão 'quelque chose de plus consistant' significa 'algo mais substancial / mais reforçado' (com 'de' obrigatório após quelque chose antes de adjetivo).",
+    "breakdown": [
+      { "word": "Préférez", "meaning": "Prefere / Preferem (do verbo préférer com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "généralement", "meaning": "geralmente" },
+      { "word": "un", "meaning": "um" },
+      { "word": "déjeuner", "meaning": "almoço" },
+      { "word": "léger", "meaning": "leve" },
+      { "word": "ou", "meaning": "ou" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
+      { "word": "de", "meaning": "de (usado após quelque chose antes de adjetivos)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "consistant", "meaning": "consistente / substancial / reforçado" }
+    ]
+  },
+  "1035": {
+    "explanation": "'J'ai entendu dire que' significa 'ouvi dizer que / ouvi falar que'. 'La pâtisserie du coin' é a confeitaria da esquina / confeitaria do bairro. A expressão idiomática 'sans égale' significa literalmente 'sem igual / incomparável / insuperável' (com égale no feminino concordando com pâtisserie).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "entendu", "meaning": "ouvido (do verbo entendre)" },
+      { "word": "dire", "meaning": "dizer (entendu dire = ouvi falar / ouvi dizer)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "la", "meaning": "a" },
+      { "word": "pâtisserie", "meaning": "confeitaria / doceria" },
+      { "word": "du", "meaning": "da (junção de de + le)" },
+      { "word": "coin", "meaning": "esquina / canto (du coin = da esquina / do bairro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "sans", "meaning": "sem" },
+      { "word": "égale", "meaning": "igual (sans égale = sem igual / insuperável; no feminino)" }
+    ]
+  },
+  "1036": {
+    "explanation": "Pergunta polida com expressão idiomática: 'Pourrions-nous' é 'poderíamos nós?'. A expressão 'jeter un œil à' significa 'dar uma olhada em / bater o olho'. 'La carte des vins' é a carta de vinhos (com des = de + les). A expressão 'avant de nous décider' significa 'antes de decidirmos / antes de bater o martelo'.",
+    "breakdown": [
+      { "word": "Pourrions", "meaning": "Poderíamos (forma suave do verbo pouvoir)" },
+      { "word": "-nous", "meaning": "nós (invertido para a pergunta)" },
+      { "word": "jeter", "meaning": "jogar / lançar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "œil", "meaning": "olho (jeter un œil = dar uma olhada)" },
+      { "word": "à", "meaning": "a / em" },
+      { "word": "la", "meaning": "a" },
+      { "word": "carte", "meaning": "carta / cardápio" },
+      { "word": "des", "meaning": "dos (junção de de + les)" },
+      { "word": "vins", "meaning": "vinhos (carte des vins = carta de vinhos)" },
+      { "word": "avant", "meaning": "antes" },
+      { "word": "de", "meaning": "de (avant de = antes de)" },
+      { "word": "nous", "meaning": "nos" },
+      { "word": "décider", "meaning": "decidir (se décider = decidir-se)" }
+    ]
+  },
+  "1037": {
+    "explanation": "'J'essaie d'être' significa 'estou tentando ser' (com 'de' encurtado para 'd'' antes de vogal). A expressão 'plus attentif à' significa 'mais atento a / mais consciente sobre'. 'La provenance' é a procedência ou origem. 'De ma nourriture' significa 'da minha comida / dos meus alimentos'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "être", "meaning": "ser / estar" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "attentif", "meaning": "atento / consciente" },
+      { "word": "à", "meaning": "a / com" },
+      { "word": "la", "meaning": "a" },
+      { "word": "provenance", "meaning": "procedência / origem" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "nourriture", "meaning": "comida / alimentação" }
+    ]
+  },
+  "1038": {
+    "explanation": "'Le steak était cuit' significa 'o bife estava cozido / no ponto'. A expressão culinária 'à la perfection' significa 'com perfeição / no ponto perfeito'. A palavra 'exactement' é exatamente. 'Comme je l'avais demandé' significa 'como eu havia pedido' (passado de demander com o pronome 'l'' referindo-se ao bife).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "steak", "meaning": "bife / filé" },
+      { "word": "était", "meaning": "estava (passado do verbo être)" },
+      { "word": "cuit", "meaning": "cozido / grelhado / no ponto" },
+      { "word": "à", "meaning": "à / na" },
+      { "word": "la", "meaning": "a" },
+      { "word": "perfection", "meaning": "perfeição (à la perfection = com perfeição)" },
+      { "word": "exactement", "meaning": "exatamente" },
+      { "word": "comme", "meaning": "como" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "l'", "meaning": "o (pronome que retoma o ponto do bife)" },
+      { "word": "avais", "meaning": "havia / tinha (passado do verbo avoir)" },
+      { "word": "demandé", "meaning": "pedido / solicitado (do verbo demander)" }
+    ]
+  },
+  "1039": {
+    "explanation": "Pedido personalizado ao garçom: 'Est-il possible d'avoir' significa 'é possível vir com / receber?'. 'La sauce' é o molho. A expressão 'servie à part' significa 'servida à parte / separadamente em um potinho' (com servie no feminino concordando com sauce).",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "possible", "meaning": "possível" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "avoir", "meaning": "ter / vir com" },
+      { "word": "la", "meaning": "o / a" },
+      { "word": "sauce", "meaning": "molho (palavra feminina em francês)" },
+      { "word": "servie", "meaning": "servida (no feminino)" },
+      { "word": "à", "meaning": "à" },
+      { "word": "part", "meaning": "parte (à part = à parte / separado ao lado)" }
+    ]
+  },
+  "1040": {
+    "explanation": "'J'ai expérimenté' significa 'tenho experimentado / testado' (passado de expérimenter com avoir). Em francês, receitas à base de plantas ou vegetarianas são chamadas de 'recettes végétales'. A expressão 'ces derniers temps' significa 'ultimamente / nestes últimos tempos'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "expérimenté", "meaning": "experimentado / testado (do verbo expérimenter)" },
+      { "word": "des", "meaning": "receitas em geral / algumas (marcador de plural)" },
+      { "word": "recettes", "meaning": "receitas" },
+      { "word": "végétales", "meaning": "vegetais / à base de plantas (no feminino plural)" },
+      { "word": "ces", "meaning": "nestes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "1041": {
+    "explanation": "Pergunta sobre restaurantes badalados que decepcionam: 'Quel est' é 'qual é'. A expressão 'le restaurant le plus surcoté' significa 'o restaurante mais superestimado / com fama exagerada' (do verbo surcoter). A palavra 'où' significa 'onde / no qual'. 'Vous soyez jamais allé' significa 'o senhor já foi em toda a vida'.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "restaurant", "meaning": "restaurante" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "surcoté", "meaning": "superestimado / com fama excessiva" },
+      { "word": "où", "meaning": "onde / no qual" },
+      { "word": "vous", "meaning": "o senhor / você" },
+      { "word": "soyez", "meaning": "tenha feito a ação (auxiliar être no modo de experiência)" },
+      { "word": "jamais", "meaning": "já / alguma vez (em frases de superlativo)" },
+      { "word": "allé", "meaning": "ido (do verbo aller)" }
+    ]
+  },
+  "1042": {
+    "explanation": "O verbo s'accorder significa dar-se de presente ou permitir-se um capricho ('je ne m'accorde pas souvent' = eu não costumo me permitir com frequência). 'Un dessert' é uma sobremesa. A palavra 'gourmand' descreve algo irresistível, farto e doce, e 'aussi gourmand' significa 'tão caprichada / tão decadente e deliciosa'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "accorde", "meaning": "concedo / permito (do verbo s'accorder)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "souvent", "meaning": "com frequência / frequentemente" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "dessert", "meaning": "sobremesa" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "gourmand", "meaning": "generoso / caprichado / rico em sabor (para comida)" }
+    ]
+  },
+  "1043": {
+    "explanation": "'L'ambiance du bistro' significa 'o ambiente do bistrô' (com 'l'' antes da vogal e 'du' = de + le). A expressão 'à la fois... et' significa 'ao mesmo tempo... e / tanto... quanto'. 'Élégante et chaleureuse' significa 'elegante e acolhedora / convidativa' (ambos adjetivos no feminino para concordar com ambiance).",
+    "breakdown": [
+      { "word": "L'", "meaning": "O / A (encurtado antes de vogal)" },
+      { "word": "ambiance", "meaning": "ambiente / clima (feminino em francês)" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "bistro", "meaning": "bistrô" },
+      { "word": "était", "meaning": "era / estava (passado do verbo être)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "la", "meaning": "a" },
+      { "word": "fois", "meaning": "vez (à la fois = ao mesmo tempo / tanto quanto)" },
+      { "word": "élégante", "meaning": "elegante (no feminino)" },
+      { "word": "et", "meaning": "e" },
+      { "word": "chaleureuse", "meaning": "acolhedora / aconchegante (no feminino)" }
+    ]
+  },
+  "1044": {
+    "explanation": "Frase por telefone para pedir refeição: 'J'aimerais passer une commande' significa 'eu gostaria de fazer um pedido' (onde passer une commande é o termo padrão para encomendar). A expressão 'à emporter' significa 'para viagem / para levar'. 'Dans environ vingt minutes' significa 'em cerca de vinte minutos'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
+      { "word": "passer", "meaning": "passar / fazer" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "commande", "meaning": "pedido / encomenda (passer une commande = fazer um pedido)" },
+      { "word": "à", "meaning": "para / a" },
+      { "word": "emporter", "meaning": "levar (à emporter = para viagem / retirada)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "environ", "meaning": "cerca de / aproximadamente" },
+      { "word": "vingt", "meaning": "vinte" },
+      { "word": "minutes", "meaning": "minutos" }
+    ]
+  },
+  "1045": {
+    "explanation": "Pergunta para reservas de eventos: 'Proposez-vous' é 'vocês oferecem?'. 'Un menu fixe' é um cardápio fechado com preço pré-definido. A preposição 'pour' significa 'para', e 'les grands groupes' são grandes grupos de pessoas.",
+    "breakdown": [
+      { "word": "Proposez", "meaning": "Propõe / Oferecem (do verbo proposer com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / vocês (invertido para a pergunta)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "menu", "meaning": "menu / cardápio" },
+      { "word": "fixe", "meaning": "fixo (menu fixe = menu fechado de preço único)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "les", "meaning": "os" },
+      { "word": "grands", "meaning": "grandes (no plural)" },
+      { "word": "groupes", "meaning": "grupos" }
+    ]
+  },
+  "1046": {
+    "explanation": "'Je ne sais pas trop' significa 'não sei muito bem / não tenho muita certeza'. A conjunção 'se' (grafada aqui como variante coloquial de 'si') significa 'se'. 'J'aime la texture' é 'gosto da textura'. 'De ce plat' significa 'deste prato'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "sais", "meaning": "sei (do verbo savoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "trop", "meaning": "muito (ne pas trop savoir = não saber muito bem)" },
+      { "word": "se", "meaning": "se (variante de si)" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "texture", "meaning": "textura" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "plat", "meaning": "prato" }
+    ]
+  },
+  "1047": {
+    "explanation": "'Nous avons eu' significa 'nós tivemos' (passado de avoir). 'Un dîner vraiment mémorable' é um jantar verdadeiramente memorável. A preposição 'pour' significa 'para', o verbo comemorar ou celebrar é 'célébrer', e 'notre anniversaire' é o nosso aniversário.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "avons", "meaning": "fizemos a ação no passado (auxiliar avoir)" },
+      { "word": "eu", "meaning": "tido / tivemos (passado do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "dîner", "meaning": "jantar" },
+      { "word": "vraiment", "meaning": "verdadeiramente / realmente" },
+      { "word": "mémorable", "meaning": "memorável / inesquecível" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "célébrer", "meaning": "celebrar / comemorar" },
+      { "word": "notre", "meaning": "nosso" },
+      { "word": "anniversaire", "meaning": "aniversário" }
+    ]
+  },
+  "1048": {
+    "explanation": "Pergunta sobre gorjetas no fechamento da conta: 'Le pourboire' é a gorjeta (literalmente 'para beber'). A forma invertida de pergunta é 'est-il déjà inclus' (já está ele incluído / incluso?). A expressão 'dans l'addition finale' significa 'na conta final / na nota final' (com 'l'' antes da vogal).",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O" },
+      { "word": "pourboire", "meaning": "gorjeta" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para reforçar a pergunta)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "inclus", "meaning": "incluído / incluso" },
+      { "word": "dans", "meaning": "em / na" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "addition", "meaning": "conta do restaurante" },
+      { "word": "finale", "meaning": "final (no feminino)" }
+    ]
+  },
+  "1049": {
+    "explanation": "Gesto generoso de pagar o jantar: o verbo s'occuper significa encarregar-se ou cuidar de algo ('je m'occupe de l'addition' = eu cuido da conta / eu pago a conta). 'Cette fois' significa 'desta vez'. A expressão francesa 'c'est pour moi' significa 'é por minha conta / eu convido'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "occupe", "meaning": "ocupo / encarrego (s'occuper de = cuidar de / encarregar-se de)" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "addition", "meaning": "conta (do restaurante)" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "fois", "meaning": "vez" },
+      { "word": "c'", "meaning": "isto / é (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "pour", "meaning": "para / por conta de" },
+      { "word": "moi", "meaning": "mim (c'est pour moi = é por minha conta)" }
+    ]
+  },
+  "1050": {
+    "explanation": "'Je n'ai jamais été du genre à' significa 'nunca fui do tipo de pessoa que / nunca fui de fazer algo'. O verbo jantar é 'dîner'. O advérbio 'régulièrement' significa regularmente. A expressão 'dans des restaurants chics' significa 'em restaurantes chiques / refinados'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "jamais", "meaning": "nunca" },
+      { "word": "été", "meaning": "sido / fui (passado do verbo être)" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "genre", "meaning": "tipo / estilo (du genre à = do tipo de)" },
+      { "word": "à", "meaning": "a / de" },
+      { "word": "dîner", "meaning": "jantar" },
+      { "word": "régulièrement", "meaning": "regularmente" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "des", "meaning": "restaurantes em geral / (marcador de plural)" },
+      { "word": "restaurants", "meaning": "restaurantes" },
+      { "word": "chics", "meaning": "chiques / elegantes (no plural)" }
+    ]
+  }
+}

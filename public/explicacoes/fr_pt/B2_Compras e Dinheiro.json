@@ -1,0 +1,525 @@
+{
+  "1051": {
+    "explanation": "'Je cherche un manteau d'hiver' significa 'estou procurando um casaco de inverno' (com 'd'' antes de vogal). A palavra 'soit' é a forma de ser exigida em buscas de algo ideal ('seja'). A expressão 'à la fois... et' significa 'ao mesmo tempo... e / tanto... quanto'. 'Élégant et pratique' significa 'elegante e prático'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "manteau", "meaning": "casaco / sobretudo" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal ou h mudo)" },
+      { "word": "hiver", "meaning": "inverno (manteau d'hiver = casaco de inverno)" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "soit", "meaning": "seja (forma do verbo être)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "la", "meaning": "a" },
+      { "word": "fois", "meaning": "vez (à la fois = ao mesmo tempo / tanto quanto)" },
+      { "word": "élégant", "meaning": "elegante" },
+      { "word": "et", "meaning": "e" },
+      { "word": "pratique", "meaning": "prático" }
+    ]
+  },
+  "1052": {
+    "explanation": "Pergunta com modelo invertido na loja: 'Ce modèle particulier' é 'este modelo específico'. O verbo bénéficie pede a letra 't' para ligar com 'il' na pergunta ('bénéficie-t-il de' = ele conta com / é contemplado com). 'Une garantie mondiale' é uma garantia mundial.",
+    "breakdown": [
+      { "word": "Ce", "meaning": "Este" },
+      { "word": "modèle", "meaning": "modelo" },
+      { "word": "particulier", "meaning": "específico / particular" },
+      { "word": "bénéficie", "meaning": "beneficia-se / usufrui / conta com (do verbo bénéficier)" },
+      { "word": "-t-", "meaning": "letrinha de ligação usada para suavizar a pronúncia" },
+      { "word": "-il", "meaning": "ele (invertido para a pergunta)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "garantie", "meaning": "garantia" },
+      { "word": "mondiale", "meaning": "mundial / global (no feminino)" }
+    ]
+  },
+  "1053": {
+    "explanation": "Expressão consagrada para tomada de decisões: 'peser le pour et le contre' significa literalmente 'pesar o pró e o contra / avaliar prós e contras'. 'J'ai pesé' significa 'avaliei / pesei' (passado de peser com avoir). 'De l'achat' significa 'da compra' (com 'l'' antes da vogal). Em francês, carro usado é chamado de 'voiture d'occasion'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "pesé", "meaning": "pesado / avaliei (do verbo peser)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "pour", "meaning": "pró / a favor (le pour et le contre = prós e contras)" },
+      { "word": "et", "meaning": "e" },
+      { "word": "le", "meaning": "o" },
+      { "word": "contre", "meaning": "contra" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "achat", "meaning": "compra (palavra masculina em francês)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "voiture", "meaning": "carro" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "occasion", "meaning": "ocasião (voiture d'occasion = carro usado / seminovo)" }
+    ]
+  },
+  "1054": {
+    "explanation": "'Je ne pense pas pouvoir' significa 'não acho que eu possa / não creio ser capaz de'. O verbo justifier pede 'de' antes da ação seguinte ('justifier de dépenser' = justificar gastar). A palavra 'autant' significa 'tanto'. A preposição 'pour' significa 'por / em', e 'un seul article' é 'um único item / uma única peça'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "pouvoir", "meaning": "poder / ter condições de" },
+      { "word": "justifier", "meaning": "justificar" },
+      { "word": "de", "meaning": "de" },
+      { "word": "dépenser", "meaning": "gastar" },
+      { "word": "autant", "meaning": "tanto" },
+      { "word": "pour", "meaning": "por / em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "seul", "meaning": "único / só" },
+      { "word": "article", "meaning": "artigo / item / produto" }
+    ]
+  },
+  "1055": {
+    "explanation": "Pergunta sobre troca de presente: 'Est-il possible d'échanger ceci' significa 'é possível trocar isto?'. 'Si cela ne va pas à la personne' significa 'se isso não servir na pessoa' (onde aller bien/aller à alguém significa servir ou cair bem). 'Pour qui' é 'para quem'. 'Je l'ai acheté' significa 'eu o comprei' (com o pronome 'l'' referindo-se ao presente).",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "possible", "meaning": "possível" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "échanger", "meaning": "trocar" },
+      { "word": "ceci", "meaning": "isto" },
+      { "word": "si", "meaning": "se" },
+      { "word": "cela", "meaning": "isto / isso" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "va", "meaning": "vai / serve (do verbo aller; aller à = servir em alguém)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "à", "meaning": "a / em" },
+      { "word": "la", "meaning": "a" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "qui", "meaning": "quem" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "l'", "meaning": "o (pronome que retoma o item comprado)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "acheté", "meaning": "comprado / comprei (do verbo acheter)" }
+    ]
+  },
+  "1056": {
+    "explanation": "'J'essaie d'être plus discipliné' significa 'estou tentando ser mais disciplinado'. A expressão 'dans mes dépenses' significa 'nos meus gastos / nas minhas despesas'. A expressão 'cette année' significa 'este ano'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "être", "meaning": "ser / estar" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "discipliné", "meaning": "disciplinado" },
+      { "word": "dans", "meaning": "em / com" },
+      { "word": "mes", "meaning": "meus / minhas" },
+      { "word": "dépenses", "meaning": "gastos / despesas" },
+      { "word": "cette", "meaning": "este / esta (feminino)" },
+      { "word": "année", "meaning": "ano" }
+    ]
+  },
+  "1057": {
+    "explanation": "Em francês, loja de departamentos é chamada de 'grand magasin'. 'Était si bondé que' significa 'estava tão cheia/lotada que'. A negação no passado 'je n'ai pas pu' significa 'não pude / não consegui' (do verbo pouvoir). 'Trouver ce que je voulais' significa 'encontrar o que eu queria' (passado de vouloir).",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O" },
+      { "word": "grand", "meaning": "grande" },
+      { "word": "magasin", "meaning": "loja (grand magasin = loja de departamentos)" },
+      { "word": "était", "meaning": "estava (passado do verbo être)" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "bondé", "meaning": "lotado / cheio" },
+      { "word": "que", "meaning": "que" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não'" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "pu", "meaning": "pude / consegui (passado do verbo pouvoir)" },
+      { "word": "trouver", "meaning": "encontrar" },
+      { "word": "ce", "meaning": "aquilo / o" },
+      { "word": "que", "meaning": "que" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "voulais", "meaning": "queria (passado do verbo vouloir)" }
+    ]
+  },
+  "1058": {
+    "explanation": "'J'ai déjà atteint' significa 'eu já atingi / alcancei' (passado de atteindre com avoir). Em finanças, o limite máximo do cartão é chamado de 'plafond' (literalmente teto). 'Plafond de carte de crédit' significa 'limite do cartão de crédito'. 'Pour cette période' é 'para este período'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "atteint", "meaning": "atingido / alcancei (do verbo atteindre)" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "plafond", "meaning": "teto / limite máximo (de cartão bancário)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "carte", "meaning": "cartão" },
+      { "word": "de", "meaning": "de" },
+      { "word": "crédit", "meaning": "crédito (carte de crédit = cartão de crédito)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "cette", "meaning": "este / esta (feminino)" },
+      { "word": "période", "meaning": "período" }
+    ]
+  },
+  "1059": {
+    "explanation": "Pergunta útil em viagens: 'Savez-vous' é 'o senhor sabe?'. 'Où se trouve' significa 'onde fica localizado'. Em francês, casa de câmbio é chamada de 'le bureau de change'. A expressão 'le plus proche' significa 'o mais próximo'.",
+    "breakdown": [
+      { "word": "Savez", "meaning": "Sabe / Sabem (do verbo savoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "où", "meaning": "onde" },
+      { "word": "se", "meaning": "se" },
+      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
+      { "word": "le", "meaning": "o / a" },
+      { "word": "bureau", "meaning": "posto / agência" },
+      { "word": "de", "meaning": "de" },
+      { "word": "change", "meaning": "câmbio (bureau de change = casa de câmbio)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "proche", "meaning": "próximo" }
+    ]
+  },
+  "1060": {
+    "explanation": "Frase para devolução no SAC: 'J'aimerais retourner' significa 'gostaria de devolver'. 'Cet article défectueux' é 'este item com defeito / estragado' (com cet antes de vogal). 'Et obtenir' é 'e obter/receber'. 'Un remboursement complet' significa 'um reembolso integral / reembolso total'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
+      { "word": "retourner", "meaning": "devolver" },
+      { "word": "cet", "meaning": "este (usado antes de palavra masculina com vogal)" },
+      { "word": "article", "meaning": "artigo / item / produto" },
+      { "word": "défectueux", "meaning": "defeituoso / com defeito" },
+      { "word": "et", "meaning": "e" },
+      { "word": "obtenir", "meaning": "obter / conseguir" },
+      { "word": "un", "meaning": "um" },
+      { "word": "remboursement", "meaning": "reembolso / estorno" },
+      { "word": "complet", "meaning": "completo / integral" }
+    ]
+  },
+  "1061": {
+    "explanation": "'Le prix était' significa 'o preço estava / era'. O advérbio 'considérablement' significa consideravelmente. A expressão 'plus élevé que' significa 'mais alto do que / mais elevado que'. A expressão 'ce qui était annoncé en ligne' significa 'aquilo que estava anunciado na internet / online'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "prix", "meaning": "preço" },
+      { "word": "était", "meaning": "estava / era (passado do verbo être)" },
+      { "word": "considérablement", "meaning": "consideravelmente" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "élevé", "meaning": "elevado / alto" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "ce", "meaning": "aquilo / o" },
+      { "word": "qui", "meaning": "que (ce qui = o que / aquilo que)" },
+      { "word": "était", "meaning": "era / estava (passado do verbo être)" },
+      { "word": "annoncé", "meaning": "anunciado (do verbo annoncer)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "ligne", "meaning": "linha (en ligne = online / na internet)" }
+    ]
+  },
+  "1062": {
+    "explanation": "A expressão idiomática 'se faire un point d'honneur de' significa 'fazer questão absoluta de / fazer questão de honra de'. O verbo ler é 'lire'. Em compras, avaliações dos compradores são chamadas de 'les avis clients'. A expressão 'avant de faire un achat' significa 'antes de fazer uma compra'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "fais", "meaning": "faço (do verbo se faire)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "un", "meaning": "um" },
+      { "word": "point", "meaning": "ponto" },
+      { "word": "d'", "meaning": "de (encurtado antes de h mudo)" },
+      { "word": "honneur", "meaning": "honra (se faire un point d'honneur = fazer questão absoluta)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "lire", "meaning": "ler" },
+      { "word": "les", "meaning": "as" },
+      { "word": "avis", "meaning": "avaliações / opiniões" },
+      { "word": "clients", "meaning": "clientes (avis clients = avaliações dos clientes)" },
+      { "word": "avant", "meaning": "antes" },
+      { "word": "de", "meaning": "de (avant de = antes de)" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "achat", "meaning": "compra (palavra masculina em francês)" }
+    ]
+  },
+  "1063": {
+    "explanation": "'Y a-t-il' é a pergunta 'tem?' ou 'existe?'. 'Une remise supplémentaire' significa 'um desconto adicional / abatimento extra'. A preposição 'pour' significa 'para', e 'les membres' são os membros. A expressão 'du programme de fidélité' significa 'do programa de fidelidade' (com 'du' = de + le).",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há / Existe (forma de pergunta)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "remise", "meaning": "desconto / abatimento comercial" },
+      { "word": "supplémentaire", "meaning": "adicional / extra" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "les", "meaning": "os" },
+      { "word": "membres", "meaning": "membros" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "programme", "meaning": "programa" },
+      { "word": "de", "meaning": "de" },
+      { "word": "fidélité", "meaning": "fidelidade (programme de fidélité = programa de fidelidade)" }
+    ]
+  },
+  "1064": {
+    "explanation": "O verbo égarer significa perder de vista ou extraviar momentaneamente ('j'ai égaré' = perdi). Em francês, nota fiscal ou comprovante de compra é chamado de 'ticket de caisse'. A pergunta 'y a-t-il un autre moyen de' significa 'tem outro jeito de'. O verbo comprovar ou provar é 'prouver', e 'mon achat' é minha compra.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "égaré", "meaning": "extraviado / perdi (do verbo égarer)" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "ticket", "meaning": "comprovante / cupom" },
+      { "word": "de", "meaning": "de" },
+      { "word": "caisse", "meaning": "caixa (ticket de caisse = nota fiscal / recibo de compra)" },
+      { "word": "y a-t-il", "meaning": "há / tem (forma de pergunta)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "autre", "meaning": "outro" },
+      { "word": "moyen", "meaning": "meio / maneira" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prouver", "meaning": "provar / comprovar" },
+      { "word": "mon", "meaning": "minha / meu" },
+      { "word": "achat", "meaning": "compra" }
+    ]
+  },
+  "1065": {
+    "explanation": "'Je ne suis pas convaincu que' significa 'não estou convencido de que'. 'Ce style particulier' é este estilo específico. Em francês, o verbo convenir com o pronome 'me' ('me convienne') significa 'me agradar / servir para mim / combinar comigo' (usado aqui no modo de dúvida após ne pas être convaincu). A palavra 'vraiment' significa realmente.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "convaincu", "meaning": "convencido" },
+      { "word": "que", "meaning": "que" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "style", "meaning": "estilo" },
+      { "word": "particulier", "meaning": "específico / particular" },
+      { "word": "me", "meaning": "me / comigo" },
+      { "word": "convienne", "meaning": "convenha / combine / sirva (forma do verbo convenir)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" }
+    ]
+  },
+  "1066": {
+    "explanation": "Pergunta polida ao vendedor: 'Auriez-vous' é 'o senhor teria?'. A expressão 'par hasard' significa 'por acaso'. A palavra 'encore' significa 'ainda / sobrando'. 'Cet article' é este item (com cet antes de vogal). A expressão comercial 'en stock' significa 'em estoque'.",
+    "breakdown": [
+      { "word": "Auriez", "meaning": "Teria / Teriam (forma suave do verbo avoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "par", "meaning": "por" },
+      { "word": "hasard", "meaning": "acaso (par hasard = por acaso)" },
+      { "word": "encore", "meaning": "ainda / sobrando" },
+      { "word": "cet", "meaning": "este (usado antes de palavra masculina com vogal)" },
+      { "word": "article", "meaning": "artigo / item / produto" },
+      { "word": "en", "meaning": "em" },
+      { "word": "stock", "meaning": "estoque (en stock = em estoque)" }
+    ]
+  },
+  "1067": {
+    "explanation": "'J'utilise' significa 'uso / utilizo' (ação no presente contínuo). 'Cette application bancaire' é este aplicativo bancário (application é feminina em francês). A preposição 'pour' significa 'para', e o verbo suivre aqui significa acompanhar ou monitorar ('suivre mes dépenses' = acompanhar meus gastos).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "utilise", "meaning": "uso / utilizo (do verbo utiliser)" },
+      { "word": "cette", "meaning": "este / esta (feminino)" },
+      { "word": "application", "meaning": "aplicativo / app" },
+      { "word": "bancaire", "meaning": "bancário / bancária" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "suivre", "meaning": "seguir / acompanhar / monitorar" },
+      { "word": "mes", "meaning": "meus / minhas" },
+      { "word": "dépenses", "meaning": "despesas / gastos" }
+    ]
+  },
+  "1068": {
+    "explanation": "Frase formal para reclamação: 'J'aimerais déposer une plainte officielle' significa 'gostaria de abrir/registrar uma queixa formal' (onde déposer une plainte é o termo oficial para prestar reclamação). A expressão 'concernant' significa 'a respeito de / referente a'. 'Le service que j'ai reçu' significa 'o atendimento/serviço que recebi'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
+      { "word": "déposer", "meaning": "depositar / registrar / abrir" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "plainte", "meaning": "queixa / reclamação (déposer une plainte = registrar queixa)" },
+      { "word": "officielle", "meaning": "oficial / formal (no feminino)" },
+      { "word": "concernant", "meaning": "concernente / sobre / referente a" },
+      { "word": "le", "meaning": "o" },
+      { "word": "service", "meaning": "serviço / atendimento" },
+      { "word": "que", "meaning": "que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "reçu", "meaning": "recebido / recebi (passado do verbo recevoir)" }
+    ]
+  },
+  "1069": {
+    "explanation": "'La qualité de la fabrication' significa 'a qualidade de fabricação / do acabamento'. A negação 'n'est pas tout à fait' significa 'não é exatamente / não é de todo'. O pronome 'celle' significa 'aquela' (no feminino para concordar com qualidade). 'Que j'attendais' significa 'que eu esperava' (passado de attendre).",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "qualité", "meaning": "qualidade" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "la", "meaning": "a" },
+      { "word": "fabrication", "meaning": "fabricação / confecção / acabamento" },
+      { "word": "n'", "meaning": "primeira parte do 'não'" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "à", "meaning": "a" },
+      { "word": "fait", "meaning": "feito (tout à fait = exatamente / completamente)" },
+      { "word": "celle", "meaning": "aquela (pronome feminino referente à qualidade)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "attendais", "meaning": "esperava (passado do verbo attendre)" }
+    ]
+  },
+  "1070": {
+    "explanation": "'Je cherche un cadeau' significa 'estou procurando um presente'. A expressão 'qui ait du sens' significa 'que tenha significado / que faça sentido' (usando 'ait' após a busca de algo ideal). 'Et qui rentre dans mon budget' significa 'e que caiba no meu orçamento' (com rentrer significando caber/entrar).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "cadeau", "meaning": "presente" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "ait", "meaning": "tenha (forma do verbo avoir no modo de busca)" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "sens", "meaning": "sentido / significado (avoir du sens = ter significado)" },
+      { "word": "et", "meaning": "e" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "rentre", "meaning": "entre / caiba (do verbo rentrer)" },
+      { "word": "dans", "meaning": "em / no" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "budget", "meaning": "orçamento" }
+    ]
+  },
+  "1071": {
+    "explanation": "Pergunta sobre custo-benefício: 'Est-il plus rentable de' significa 'é mais vantajoso / mais rentável/econômico?'. 'Acheter cela en gros' é comprar isso por atacado / em grande quantidade. A expressão 'plutôt que' significa 'em vez de / do que'. A locução 'à l'unité' significa 'por unidade / avulso'.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "rentable", "meaning": "rentável / vantajoso / econômico" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "acheter", "meaning": "comprar" },
+      { "word": "cela", "meaning": "isto / isso" },
+      { "word": "en", "meaning": "em" },
+      { "word": "gros", "meaning": "grande (en gros = por atacado / em grande escala)" },
+      { "word": "plutôt", "meaning": "antes / preferível" },
+      { "word": "qu'", "meaning": "do que (plutôt que = em vez de / ao invés de; encurtado antes de vogal)" },
+      { "word": "à", "meaning": "a / por" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "unité", "meaning": "unidade (à l'unité = individualmente / por unidade)" }
+    ]
+  },
+  "1072": {
+    "explanation": "'J'ai décidé de limiter' significa 'decidi limitar / reduzir' (passado de décider com avoir). Em francês, compras feitas por impulso são chamadas de 'achats impulsifs' (onde achats é masculino plural).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "décidé", "meaning": "decidido / decidi (do verbo décider)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "limiter", "meaning": "limitar / conter / frear" },
+      { "word": "mes", "meaning": "meus" },
+      { "word": "achats", "meaning": "compras (palavra masculina em francês)" },
+      { "word": "impulsifs", "meaning": "impulsivos (no plural)" }
+    ]
+  },
+  "1073": {
+    "explanation": "Pergunta moderna no caixa: 'Acceptez-vous' é 'o senhor aceita / vocês aceitam?'. 'Les paiements' são os pagamentos. A expressão francesa oficial para pagamento por aproximação no cartão ou celular é 'paiement sans contact' (literalmente sem contato).",
+    "breakdown": [
+      { "word": "Acceptez", "meaning": "Aceita / Aceitam (do verbo accepter com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / vocês (invertido para a pergunta)" },
+      { "word": "les", "meaning": "os" },
+      { "word": "paiements", "meaning": "pagamentos" },
+      { "word": "sans", "meaning": "sem" },
+      { "word": "contact", "meaning": "contato (sans contact = por aproximação / contactless)" }
+    ]
+  },
+  "1074": {
+    "explanation": "'J'attends les soldes de janvier' significa 'estou esperando as liquidações de janeiro' (na França, as liquidações oficiais acontecem em janeiro e julho). A preposição 'pour' significa 'para', o verbo comprar é 'acheter', e 'une nouvelle télévision' é uma televisão nova.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "attends", "meaning": "espero / aguardo (do verbo attendre)" },
+      { "word": "les", "meaning": "as" },
+      { "word": "soldes", "meaning": "liquidações / promoções sazonais" },
+      { "word": "de", "meaning": "de" },
+      { "word": "janvier", "meaning": "janeiro" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "acheter", "meaning": "comprar" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "nouvelle", "meaning": "nova (feminino)" },
+      { "word": "télévision", "meaning": "televisão" }
+    ]
+  },
+  "1075": {
+    "explanation": "'Le magasin est idéalement situé' significa 'a loja está idealmente / convenientemente localizada'. A palavra 'juste' significa 'logo / bem'. A expressão 'à côté de' significa 'ao lado de', e 'la gare' é a estação de trem.",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O" },
+      { "word": "magasin", "meaning": "loja" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "idéalement", "meaning": "idealmente / convenientemente" },
+      { "word": "situé", "meaning": "situado / localizado" },
+      { "word": "juste", "meaning": "bem / exatamente / logo" },
+      { "word": "à", "meaning": "ao" },
+      { "word": "côté", "meaning": "lado (à côté de = ao lado de)" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "la", "meaning": "a" },
+      { "word": "gare", "meaning": "estação de trem" }
+    ]
+  },
+  "1076": {
+    "explanation": "'Je cherche cette marque particulière' significa 'estou procurando esta marca específica' (marque é feminina em francês). A palavra 'depuis' indica a duração contínua até o presente, e a expressão 'une éternité' significa 'uma eternidade / faz eras'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "marque", "meaning": "marca" },
+      { "word": "particulière", "meaning": "específica / particular (no feminino)" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "éternité", "meaning": "eternidade (depuis une éternité = há séculos / há eras)" }
+    ]
+  },
+  "1077": {
+    "explanation": "'Je n'ai pas assez de monnaie' significa 'não tenho moedas/trocado suficiente' (em francês, monnaie refere-se especificamente a dinheiro trocado ou moedas). A preposição 'pour' significa 'para', o verbo pagar é 'payer', e 'le parcmètre' é o parquímetro de estacionamento.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "assez", "meaning": "bastante / suficiente" },
+      { "word": "de", "meaning": "de (usado após palavras de quantidade)" },
+      { "word": "monnaie", "meaning": "moedas / dinheiro trocado" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "payer", "meaning": "pagar" },
+      { "word": "le", "meaning": "o" },
+      { "word": "parcmètre", "meaning": "parquímetro" }
+    ]
+  },
+  "1078": {
+    "explanation": "Pergunta sofisticada na cidade: 'Pouvez-vous m'indiquer' significa 'o senhor pode me indicar?'. Em francês, shopping center é 'centre commercial'. A expressão 'haut de gamme' é o termo francês padrão para produtos e locais 'de alto padrão / de luxo'. 'Le plus proche' significa 'o mais próximo'.",
+    "breakdown": [
+      { "word": "Pouvez", "meaning": "Pode / Podem (do verbo pouvoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "indiquer", "meaning": "indicar / apontar o caminho" },
+      { "word": "le", "meaning": "o" },
+      { "word": "centre", "meaning": "centro" },
+      { "word": "commercial", "meaning": "comercial (centre commercial = shopping center)" },
+      { "word": "haut", "meaning": "alto" },
+      { "word": "de", "meaning": "de" },
+      { "word": "gamme", "meaning": "gama / linha (haut de gamme = de luxo / alto padrão)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "proche", "meaning": "próximo" }
+    ]
+  },
+  "1079": {
+    "explanation": "A expressão 'être doué pour' significa 'ter jeito ou talento para'. 'Je ne suis pas très doué pour' significa 'não sou muito bom em'. O verbo surveiller significa vigiar, controlar ou ficar de olho em ('surveiller mes dépenses'). 'Quotidiennes' significa diárias (no feminino plural para combinar com despesas).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "doué", "meaning": "talentoso / bom de jeito (être doué pour = ter talento / jeito para)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "surveiller", "meaning": "vigiar / monitorar / ficar de olho em" },
+      { "word": "mes", "meaning": "minhas" },
+      { "word": "dépenses", "meaning": "despesas / gastos" },
+      { "word": "quotidiennes", "meaning": "cotidianas / diárias (no feminino plural)" }
+    ]
+  },
+  "1080": {
+    "explanation": "Frase formal em instituição financeira: o verbo se renseigner sur significa informar-se sobre ou consultar a respeito de ('j'aimerais me renseigner sur'). Em finanças, taxa de juros é dita 'taux d'intérêt' (com 'd'' antes da vogal). 'De vos comptes d'épargne' significa 'das suas contas poupança' (onde épargne significa poupança).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
+      { "word": "me", "meaning": "me" },
+      { "word": "renseigner", "meaning": "informar / instruir (se renseigner sur = informar-se a respeito de)" },
+      { "word": "sur", "meaning": "sobre" },
+      { "word": "les", "meaning": "as / os" },
+      { "word": "taux", "meaning": "taxas (palavra masculina em francês)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "intérêt", "meaning": "juros / rendimento (taux d'intérêt = taxas de juros)" },
+      { "word": "de", "meaning": "de / das" },
+      { "word": "vos", "meaning": "suas (possessivo plural com vous)" },
+      { "word": "comptes", "meaning": "contas" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "épargne", "meaning": "poupança (comptes d'épargne = contas poupança)" }
+    ]
+  }
+}

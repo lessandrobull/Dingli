@@ -1,0 +1,545 @@
+{
+  "961": {
+    "explanation": "'Je commence généralement ma journée' significa 'normalmente começo meu dia'. A expressão 'en passant en revue' significa 'passando em revista / revisando'. 'Ma liste de choses à faire' é a expressão francesa para lista de afazeres ou tarefas. 'Pour l'après-midi' significa 'para a tarde'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "commence", "meaning": "começo (do verbo commencer)" },
+      { "word": "généralement", "meaning": "geralmente / normalmente" },
+      { "word": "ma", "meaning": "minha / meu" },
+      { "word": "journée", "meaning": "dia / jornada" },
+      { "word": "en", "meaning": "ao / em" },
+      { "word": "passant", "meaning": "passando" },
+      { "word": "en", "meaning": "em" },
+      { "word": "revue", "meaning": "revista (passer en revue = revisar / repassar)" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "liste", "meaning": "lista" },
+      { "word": "de", "meaning": "de" },
+      { "word": "choses", "meaning": "coisas" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "faire", "meaning": "fazer (choses à faire = tarefas / afazeres)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "après-midi", "meaning": "tarde" }
+    ]
+  },
+  "962": {
+    "explanation": "A expressão 's'habituer à' significa 'acostumar-se com algo'. 'Elle s'est enfin habituée' significa 'ela finalmente se acostumou' (no passado com être). A contração 'au' (à + le) conecta com 'rythme effréné' (ritmo frenético/acelerado). 'De la vie citadine' significa 'da vida na cidade'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "s'", "meaning": "se (encurtado antes de vogal)" },
+      { "word": "est", "meaning": "fez a ação no passado (auxiliar être para verbos reflexivos)" },
+      { "word": "enfin", "meaning": "finalmente / por fim" },
+      { "word": "habituée", "meaning": "acostumada (do verbo s'habituer, no feminino)" },
+      { "word": "au", "meaning": "ao / com o (junção de à + le)" },
+      { "word": "rythme", "meaning": "ritmo" },
+      { "word": "effréné", "meaning": "frenético / acelerado / desenfreado" },
+      { "word": "de", "meaning": "de" },
+      { "word": "la", "meaning": "a" },
+      { "word": "vie", "meaning": "vida" },
+      { "word": "citadine", "meaning": "urbana / citadina / da cidade (no feminino)" }
+    ]
+  },
+  "963": {
+    "explanation": "'J'essaie de' significa 'estou tentando' (do verbo essayer). O verbo reduzir é 'réduire'. 'Ma consommation quotidienne' é meu consumo diário (com quotidienne no feminino concordando com consommation). A preposição 'de' liga com 'caféine' (cafeína).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
+      { "word": "de", "meaning": "de (essayer de = tentar fazer algo)" },
+      { "word": "réduire", "meaning": "reduzir / diminuir" },
+      { "word": "ma", "meaning": "minha / meu" },
+      { "word": "consommation", "meaning": "consumo (palavra feminina em francês)" },
+      { "word": "quotidienne", "meaning": "diária / cotidiana (no feminino)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "caféine", "meaning": "cafeína" }
+    ]
+  },
+  "964": {
+    "explanation": "'Il va régulièrement' significa 'ele vai com frequência / regularmente' (do verbo aller). 'À la salle de sport' é na academia. A palavra 'depuis' indica que a ação começou no passado e ainda continua firme no presente: 'depuis six mois' (há seis meses / nos últimos seis meses).",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "va", "meaning": "vai (do verbo aller)" },
+      { "word": "régulièrement", "meaning": "regularmente / consistentemente" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "la", "meaning": "a" },
+      { "word": "salle", "meaning": "sala" },
+      { "word": "de", "meaning": "de" },
+      { "word": "sport", "meaning": "esporte (salle de sport = academia)" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "six", "meaning": "seis" },
+      { "word": "mois", "meaning": "meses" }
+    ]
+  },
+  "965": {
+    "explanation": "Pergunta sobre equilíbrio mental: 'Trouvez-vous parfois' significa 'o senhor às vezes acha / considera?'. 'Difficile de' é 'difícil'. O verbo 'déconnecter' significa desligar a mente ou desconectar do trabalho. 'Après une longue journée de travail' significa 'depois de um longo dia de trabalho'.",
+    "breakdown": [
+      { "word": "Trouvez", "meaning": "Acha / Considera (do verbo trouver com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "parfois", "meaning": "às vezes / por vezes" },
+      { "word": "difficile", "meaning": "difícil" },
+      { "word": "de", "meaning": "de" },
+      { "word": "déconnecter", "meaning": "desconectar / desligar a mente" },
+      { "word": "après", "meaning": "após / depois de" },
+      { "word": "une", "meaning": "uma / um" },
+      { "word": "longue", "meaning": "longa / comprida (feminino de long)" },
+      { "word": "journée", "meaning": "dia / jornada" },
+      { "word": "de", "meaning": "de" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "966": {
+    "explanation": "A expressão 'rester debout tard' significa 'ficar acordado até tarde / ficar de pé até tarde'. 'D'habitude' significa habitualmente. A expressão 'à moins de' significa 'a menos que / salvo se'. A preposição 'de' encurta para 'd'' antes do verbo avoir. 'Une date limite à respecter' significa 'um prazo a cumprir'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "reste", "meaning": "fico / permaneço (do verbo rester)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "debout", "meaning": "de pé / acordado" },
+      { "word": "tard", "meaning": "tarde (rester debout tard = ficar acordado até tarde)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "habitude", "meaning": "costume / hábito (d'habitude = de costume / habitualmente)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "moins", "meaning": "menos (à moins de = a menos que / salvo)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "avoir", "meaning": "ter" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "date", "meaning": "data" },
+      { "word": "limite", "meaning": "limite (date limite = prazo)" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "respecter", "meaning": "respeitar / cumprir" }
+    ]
+  },
+  "967": {
+    "explanation": "'Elle est responsable de' significa 'ela é responsável por'. 'La supervision' é a supervisão. A contração 'des' (de + les) conecta com 'opérations quotidiennes' (operações diárias). A contração 'du' (de + le) conecta com o departamento: 'du département'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "responsable", "meaning": "responsável" },
+      { "word": "de", "meaning": "de / por" },
+      { "word": "la", "meaning": "a" },
+      { "word": "supervision", "meaning": "supervisão" },
+      { "word": "des", "meaning": "das (junção de de + les)" },
+      { "word": "opérations", "meaning": "operações" },
+      { "word": "quotidiennes", "meaning": "diárias / cotidianas (no feminino plural)" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "département", "meaning": "departamento / setor" }
+    ]
+  },
+  "968": {
+    "explanation": "'J'ai fait un effort conscient' significa 'fiz um esforço consciente' (passado de faire com avoir). A preposição 'pour' significa 'para', e 'commencer à' é 'começar a'. O verbo preparar é 'préparer'. 'Mes repas' são minhas refeições. A expressão 'à l'avance' significa 'com antecedência'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "fait", "meaning": "feito / fiz (do verbo faire)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "effort", "meaning": "esforço" },
+      { "word": "conscient", "meaning": "consciente" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "commencer", "meaning": "começar" },
+      { "word": "à", "meaning": "a" },
+      { "word": "préparer", "meaning": "preparar" },
+      { "word": "mes", "meaning": "minhas" },
+      { "word": "repas", "meaning": "refeições" },
+      { "word": "à", "meaning": "com / a" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "avance", "meaning": "antecedência (à l'avance = com antecedência)" }
+    ]
+  },
+  "969": {
+    "explanation": "Pergunta elegante sobre foco: 'Comment parvenez-vous à' significa 'como o senhor consegue / como atinge o resultado de' (do verbo parvenir). O verbo permanecer ou ficar é 'rester'. 'Si concentré' significa 'tão focado / concentrado'. A preposição 'malgré' significa 'apesar de', e 'toutes les distractions' são todas as distrações.",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "parvenez", "meaning": "consegue / alcança (do verbo parvenir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "à", "meaning": "a (parvenir à = conseguir fazer algo)" },
+      { "word": "rester", "meaning": "ficar / permanecer / manter-se" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "concentré", "meaning": "concentrado / focado" },
+      { "word": "malgré", "meaning": "apesar de" },
+      { "word": "toutes", "meaning": "todas" },
+      { "word": "les", "meaning": "as" },
+      { "word": "distractions", "meaning": "distrações" }
+    ]
+  },
+  "970": {
+    "explanation": "Expressão idiomática francesa sofisticada: 'se faire un point d'honneur de' significa literalmente 'fazer uma questão de honra / fazer questão absoluta de'. O verbo dormir é 'dormir'. A expressão 'au moins' significa 'ao menos / pelo menos', e 'sept heures' são sete horas.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "fais", "meaning": "faço (do verbo se faire)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "un", "meaning": "um" },
+      { "word": "point", "meaning": "ponto" },
+      { "word": "d'", "meaning": "de (encurtado antes de h mudo)" },
+      { "word": "honneur", "meaning": "honra (se faire un point d'honneur = fazer questão absoluta)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "dormir", "meaning": "dormir" },
+      { "word": "au", "meaning": "ao" },
+      { "word": "moins", "meaning": "menos (au moins = pelo menos / ao menos)" },
+      { "word": "sept", "meaning": "sete" },
+      { "word": "heures", "meaning": "horas" }
+    ]
+  },
+  "971": {
+    "explanation": "'Il consacre' significa 'ele dedica / consagra' (do verbo consacrer). A expressão 'une partie importante de' significa 'uma parte significativa / importante de'. 'Son temps libre' é o tempo livre dele. A contração 'au' (à + le) conecta com o trabalho voluntário: 'au bénévolat'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "consacre", "meaning": "consagra / dedica (do verbo consacrer)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "partie", "meaning": "parte" },
+      { "word": "importante", "meaning": "importante / significativa" },
+      { "word": "de", "meaning": "de" },
+      { "word": "son", "meaning": "seu / dele" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "libre", "meaning": "livre" },
+      { "word": "au", "meaning": "ao (junção de à + le)" },
+      { "word": "bénévolat", "meaning": "trabalho voluntário / voluntariado" }
+    ]
+  },
+  "972": {
+    "explanation": "'Nous envisageons de' significa 'estamos considerando / temos em mente'. O verbo revoir aqui tem o sentido de reformular, revisar ou repensar do zero. O advérbio 'complètement' significa completamente. 'Notre routine matinale' é nossa rotina matinal (com matinale no feminino concordando com routine).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "envisageons", "meaning": "consideramos / planejamos / pensamos em (do verbo envisager)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "revoir", "meaning": "rever / reformular / repensar" },
+      { "word": "complètement", "meaning": "completamente / totalmente" },
+      { "word": "notre", "meaning": "nossa" },
+      { "word": "routine", "meaning": "rotina" },
+      { "word": "matinale", "meaning": "matinal (no feminino)" }
+    ]
+  },
+  "973": {
+    "explanation": "'J'ai déjà réussi à' significa 'eu já consegui / obtive sucesso em' (passado de réussir com avoir). O verbo rayer significa riscar ou tachar da lista ('rayer de ma liste'). A palavra 'plusieurs tâches' significa 'várias tarefas'. 'Aujourd'hui' significa hoje.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "réussi", "meaning": "conseguido / obtive sucesso (do verbo réussir)" },
+      { "word": "à", "meaning": "a (réussir à = conseguir)" },
+      { "word": "rayer", "meaning": "riscar / tachar / eliminar" },
+      { "word": "plusieurs", "meaning": "várias" },
+      { "word": "tâches", "meaning": "tarefas" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "liste", "meaning": "lista" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "974": {
+    "explanation": "Pergunta com duas opções: 'Préfères-tu' é a pergunta 'você prefere?'. Em francês, fazer compras é 'faire tes courses'. A expressão 'en personne' significa 'pessoalmente / presencialmente'. A palavra 'ou' é 'ou'. 'Fais-tu tout en ligne ?' significa 'você faz tudo pela internet / online?'.",
+    "breakdown": [
+      { "word": "Préfères", "meaning": "Preferes / Prefere (do verbo préférer)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "tes", "meaning": "tuas / suas" },
+      { "word": "courses", "meaning": "compras (faire les courses = fazer compras de supermercado)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "personne", "meaning": "pessoa (en personne = pessoalmente / presencialmente)" },
+      { "word": "ou", "meaning": "ou" },
+      { "word": "fais", "meaning": "fazes / faz (do verbo faire)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "tout", "meaning": "tudo" },
+      { "word": "en", "meaning": "em" },
+      { "word": "ligne", "meaning": "linha (en ligne = online / pela internet)" }
+    ]
+  },
+  "975": {
+    "explanation": "'J'ai l'habitude de' significa 'eu costumo / tenho o hábito de'. O verbo consultar ou checar é 'consulter'. 'Mes e-mails' são meus e-mails. A expressão 'dès mon réveil' significa 'assim que acordo / logo ao despertar' (onde réveil é o despertar).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume (avoir l'habitude de = costumar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "consulter", "meaning": "consultar / checar" },
+      { "word": "mes", "meaning": "meus" },
+      { "word": "e-mails", "meaning": "e-mails" },
+      { "word": "dès", "meaning": "desde / logo a partir de" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "réveil", "meaning": "despertar / acordar (dès mon réveil = assim que acordo)" }
+    ]
+  },
+  "976": {
+    "explanation": "'Elle ne prend pas' significa 'ela não tira / não faz'. Em francês, intervalo de almoço é chamado de 'pause déjeuner' (com 'de' usado após a negação). 'D'habitude' significa habitualmente. A expressão 'ce qui est une erreur à mon avis' significa 'o que é um erro na minha opinião'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "prend", "meaning": "toma / faz (do verbo prendre)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "de", "meaning": "de (usado no lugar de artigos após negação)" },
+      { "word": "pause", "meaning": "pausa / intervalo" },
+      { "word": "déjeuner", "meaning": "almoço (pause déjeuner = intervalo para almoço)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal ou h mudo)" },
+      { "word": "habitude", "meaning": "costume / hábito (d'habitude = de costume / habitualmente)" },
+      { "word": "ce", "meaning": "o / isto" },
+      { "word": "qui", "meaning": "que (ce qui = o que / coisa que)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "erreur", "meaning": "erro (palavra feminina em francês)" },
+      { "word": "à", "meaning": "a / em" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "avis", "meaning": "opinião (à mon avis = na minha opinião)" }
+    ]
+  },
+  "977": {
+    "explanation": "A expressão francesa 'être en train de' indica uma ação que está acontecendo exatamente agora ('estar fazendo algo'). 'Je suis actuellement en train d'apprendre' significa 'atualmente estou no processo de aprender'. 'Une troisième langue' significa 'uma terceira língua / um terceiro idioma'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "actuellement", "meaning": "atualmente / no presente momento" },
+      { "word": "en", "meaning": "em" },
+      { "word": "train", "meaning": "processo / andamento (être en train de = estar fazendo agora)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "apprendre", "meaning": "aprender" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "troisième", "meaning": "terceira" },
+      { "word": "langue", "meaning": "língua / idioma" }
+    ]
+  },
+  "978": {
+    "explanation": "'Qu'est-ce que' é o jeito comum de perguntar 'o que'. 'Vous trouvez le plus gratifiant' significa 'o senhor acha o mais gratificante / compensador'. A expressão 'dans votre journée' significa 'no seu dia / na sua jornada'.",
+    "breakdown": [
+      { "word": "Qu'", "meaning": "O que (encurtado antes de vogal)" },
+      { "word": "est-ce que", "meaning": "expressão interrogativa que inicia perguntas" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "trouvez", "meaning": "acha / considera (do verbo trouver com vous)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "gratifiant", "meaning": "gratificante / recompensador" },
+      { "word": "dans", "meaning": "em / no" },
+      { "word": "votre", "meaning": "seu / sua" },
+      { "word": "journée", "meaning": "dia / jornada" }
+    ]
+  },
+  "979": {
+    "explanation": "A expressão 'avoir du mal avec' significa 'ter dificuldade com / lutar contra'. 'J'avais du mal' significa 'eu tinha dificuldade' (passado de avoir). 'La procrastination' é a procrastinação. A conjunção 'mais' é 'mas'. 'J'ai trouvé des moyens de' significa 'encontrei maneiras de'. O pronome 'la' retoma a procrastinação antes do verbo superar: 'la surmonter'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "avais", "meaning": "tinha (passado contínuo do verbo avoir)" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "mal", "meaning": "mal / dificuldade (avoir du mal = ter dificuldade)" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "la", "meaning": "a" },
+      { "word": "procrastination", "meaning": "procrastinação" },
+      { "word": "mais", "meaning": "mas" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "trouvé", "meaning": "encontrado / achei (do verbo trouver)" },
+      { "word": "des", "meaning": "alguns / (marcador de plural)" },
+      { "word": "moyens", "meaning": "meios / maneiras" },
+      { "word": "de", "meaning": "de" },
+      { "word": "la", "meaning": "a (pronome que retoma a procrastinação)" },
+      { "word": "surmonter", "meaning": "superar / vencer" }
+    ]
+  },
+  "980": {
+    "explanation": "A expressão 'arriver à' significa 'conseguir / dar um jeito de fazer algo'. 'Il arrive toujours à retrouver' significa 'ele sempre consegue achar de volta / reencontrar'. 'Ses clés' são as chaves dele. A expressão 'à la dernière seconde' significa 'no último segundo'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "arrive", "meaning": "chega / consegue (arriver à = conseguir fazer algo)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "à", "meaning": "a" },
+      { "word": "retrouver", "meaning": "reencontrar / achar de novo" },
+      { "word": "ses", "meaning": "suas / dele" },
+      { "word": "clés", "meaning": "chaves" },
+      { "word": "à", "meaning": "no / na" },
+      { "word": "la", "meaning": "a" },
+      { "word": "dernière", "meaning": "última (no feminino)" },
+      { "word": "seconde", "meaning": "segundo" }
+    ]
+  },
+  "981": {
+    "explanation": "'J'essaie de consacrer' significa 'tento dedicar / procuro reservar'. A expressão 'au plus' significa 'no máximo'. 'Trente minutes par jour' significa 'trinta minutos por dia'. A contração 'à la' conecta com a prática: 'à la pleine conscience' (à atenção plena / mindfulness).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento (do verbo essayer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "consacrer", "meaning": "consagrar / dedicar / reservar" },
+      { "word": "au", "meaning": "ao" },
+      { "word": "plus", "meaning": "mais (au plus = no máximo)" },
+      { "word": "trente", "meaning": "trinta" },
+      { "word": "minutes", "meaning": "minutos" },
+      { "word": "par", "meaning": "por" },
+      { "word": "jour", "meaning": "dia" },
+      { "word": "à", "meaning": "a / à" },
+      { "word": "la", "meaning": "a" },
+      { "word": "pleine", "meaning": "plena (no feminino)" },
+      { "word": "conscience", "meaning": "consciência (pleine conscience = atenção plena / mindfulness)" }
+    ]
+  },
+  "982": {
+    "explanation": "Pergunta com inversão: 'Trouves-tu facile de' significa 'você acha fácil?'. O verbo manter ou guardar é 'garder'. 'Une routine' é uma rotina. A palavra 'quand' significa 'quando'. A expressão 'en vacances' significa 'de férias'.",
+    "breakdown": [
+      { "word": "Trouves", "meaning": "Achas / Consideras (do verbo trouver)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "facile", "meaning": "fácil" },
+      { "word": "de", "meaning": "de" },
+      { "word": "garder", "meaning": "manter / guardar" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "routine", "meaning": "rotina" },
+      { "word": "quand", "meaning": "quando" },
+      { "word": "tu", "meaning": "você" },
+      { "word": "es", "meaning": "estás / está (do verbo être com tu)" },
+      { "word": "en", "meaning": "em / de" },
+      { "word": "vacances", "meaning": "férias (en vacances = de férias)" }
+    ]
+  },
+  "983": {
+    "explanation": "'Je me sens beaucoup plus productif' significa 'estou me sentindo muito mais produtivo'. A expressão 'depuis que' significa 'desde que'. Em francês, mudar de algo usa a preposição 'de': 'j'ai changé d'espace de travail' (mudei de ambiente/espaço de trabalho, com 'd'' antes da vogal).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "plus", "meaning": "mais (beaucoup plus = muito mais)" },
+      { "word": "productif", "meaning": "produtivo" },
+      { "word": "depuis", "meaning": "desde" },
+      { "word": "que", "meaning": "que (depuis que = desde que)" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "changé", "meaning": "mudado / troquei (do verbo changer)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal; changer de = mudar de)" },
+      { "word": "espace", "meaning": "espaço" },
+      { "word": "de", "meaning": "de" },
+      { "word": "travail", "meaning": "trabalho (espace de travail = local de trabalho)" }
+    ]
+  },
+  "984": {
+    "explanation": "'Elle passe' significa 'ela passa / gasta'. 'Environ deux heures par jour' significa 'cerca de duas horas por dia'. A expressão 'dans les transports' é o jeito comum dos franceses falarem do trajeto no trânsito e transporte público. A frase 'ce qui est assez épuisant' significa 'o que é bastante exaustivo / cansativo'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "passe", "meaning": "passa / gasta (do verbo passer)" },
+      { "word": "environ", "meaning": "cerca de / aproximadamente" },
+      { "word": "deux", "meaning": "duas" },
+      { "word": "heures", "meaning": "horas" },
+      { "word": "par", "meaning": "por" },
+      { "word": "jour", "meaning": "dia" },
+      { "word": "dans", "meaning": "em / nos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "transports", "meaning": "transportes (dans les transports = em deslocamento / no trânsito)" },
+      { "word": "ce", "meaning": "o / isto" },
+      { "word": "qui", "meaning": "que (ce qui = o que / coisa que)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "assez", "meaning": "bastante" },
+      { "word": "épuisant", "meaning": "exaustivo / cansativo" }
+    ]
+  },
+  "985": {
+    "explanation": "'Je ne regarde pas beaucoup la télévision' significa 'não assisto muita televisão'. 'D'habitude' é habitualmente. A palavra 'car' significa 'pois / porque'. 'Je trouve que' significa 'acho que / considero que'. A expressão 'une perte de temps' significa 'uma perda de tempo'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "regarde", "meaning": "assisto / vejo (do verbo regarder)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "beaucoup", "meaning": "muito / muita" },
+      { "word": "la", "meaning": "a" },
+      { "word": "télévision", "meaning": "televisão" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal ou h mudo)" },
+      { "word": "habitude", "meaning": "costume / hábito (d'habitude = de costume / habitualmente)" },
+      { "word": "car", "meaning": "pois / porque / já que" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "trouve", "meaning": "acho / considero (do verbo trouver)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "c'", "meaning": "isto / é (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco (un peu = um pouco)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "perte", "meaning": "perda" },
+      { "word": "de", "meaning": "de" },
+      { "word": "temps", "meaning": "tempo (perte de temps = perda de tempo)" }
+    ]
+  },
+  "986": {
+    "explanation": "'À quelle heure' significa 'a que horas'. 'As-tu l'habitude de' significa 'você costuma / tem o hábito de'. O verbo descontrair, relaxar ou aliviar o estresse acumulado é 'décompresser'. A expressão 'le soir' significa 'à noite'.",
+    "breakdown": [
+      { "word": "À", "meaning": "A" },
+      { "word": "quelle", "meaning": "qual / que (feminino de quel)" },
+      { "word": "heure", "meaning": "hora" },
+      { "word": "as", "meaning": "tens / tem (do verbo avoir com tu)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume (avoir l'habitude de = costumar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "décompresser", "meaning": "descontrair / relaxar / desestressar" },
+      { "word": "le", "meaning": "o / à" },
+      { "word": "soir", "meaning": "noite (le soir = à noite)" }
+    ]
+  },
+  "987": {
+    "explanation": "'J'écoute toujours' significa 'sempre escuto / ouço'. 'Un podcast éducatif' é um podcast educativo. A expressão 'pendant que' significa 'enquanto'. Em francês, fazer a limpeza da casa é 'faire le ménage'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "écoute", "meaning": "escuto / ouço (do verbo écouter)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "un", "meaning": "um" },
+      { "word": "podcast", "meaning": "podcast" },
+      { "word": "éducatif", "meaning": "educativo" },
+      { "word": "pendant", "meaning": "durante" },
+      { "word": "que", "meaning": "que (pendant que = enquanto)" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "fais", "meaning": "faço (do verbo faire)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "ménage", "meaning": "tarefas de casa / faxina (faire le ménage = fazer faxina / limpar a casa)" }
+    ]
+  },
+  "988": {
+    "explanation": "Frase sobre pessoas distraídas com o relógio: 'Il est connu pour' significa 'ele é conhecido por / famoso por'. A negação 'ne pas avoir' significa 'não ter'. A expressão francesa 'avoir la notion du temps' significa 'ter noção do tempo / controlar os horários'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "connu", "meaning": "conhecido / famoso (do verbo connaître)" },
+      { "word": "pour", "meaning": "por / para" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pas", "meaning": "segunda parte do 'não' (juntos antes do infinitivo)" },
+      { "word": "avoir", "meaning": "ter" },
+      { "word": "la", "meaning": "a" },
+      { "word": "notion", "meaning": "noção / consciência" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "temps", "meaning": "tempo (notion du temps = noção do tempo)" }
+    ]
+  },
+  "989": {
+    "explanation": "'J'ai fait des efforts pour' significa 'fiz esforços / tenho me esforçado para' (passado de faire com avoir). O verbo mener significa conduzir ou levar adiante ('mener un mode de vie' = levar um estilo de vida). 'Plus durable' significa 'mais sustentável'. A expressão 'ces derniers temps' significa ultimamente.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "fait", "meaning": "feito / fiz (do verbo faire)" },
+      { "word": "des", "meaning": "alguns / (marcador de plural)" },
+      { "word": "efforts", "meaning": "esforços" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "mener", "meaning": "levar / conduzir (mener un mode de vie = levar um estilo de vida)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "mode", "meaning": "modo / estilo" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vie", "meaning": "vida (mode de vie = estilo de vida)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "durable", "meaning": "sustentável / durável" },
+      { "word": "ces", "meaning": "nestes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "990": {
+    "explanation": "Pergunta sobre rituais criativos: 'As-tu un rituel particulier' significa 'você tem um ritual específico?'. 'Qui t'aide à' significa 'que o ajuda a' (com o pronome 'te' encurtado para 't''). Em francês, entrar em uma sintonia ou estado mental é 'se mettre dans un état d'esprit'. 'Créatif' significa criativo.",
+    "breakdown": [
+      { "word": "As", "meaning": "Tens / Tem (do verbo avoir com tu)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "rituel", "meaning": "ritual" },
+      { "word": "particulier", "meaning": "específico / particular" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "t'", "meaning": "te / você (encurtado antes de vogal)" },
+      { "word": "aide", "meaning": "ajuda (do verbo aider)" },
+      { "word": "à", "meaning": "a (aider à = ajudar a)" },
+      { "word": "te", "meaning": "te" },
+      { "word": "mettre", "meaning": "colocar / pôr (se mettre dans = entrar em)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "état", "meaning": "estado" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "esprit", "meaning": "espírito / mente (état d'esprit = estado mental / mentalidade)" },
+      { "word": "créatif", "meaning": "criativo" }
+    ]
+  }
+}

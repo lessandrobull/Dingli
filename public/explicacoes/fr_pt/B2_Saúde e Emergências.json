@@ -1,0 +1,553 @@
+{
+  "1111": {
+    "explanation": "'Je me suis senti' significa 'eu me senti / tenho me sentido' (passado reflexivo de se sentir com o auxiliar être). A palavra 'épuisé' significa esgotado ou exausto. A gíria cotidiana 'patraque' descreve aquele estado de indisposição ou mal-estar sem gravidade. A expressão 'ces derniers temps' significa 'ultimamente'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "suis", "meaning": "fiz a ação no passado (auxiliar être para verbos reflexivos)" },
+      { "word": "senti", "meaning": "sentido / senti-me (do verbo se sentir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco (un peu = um pouco)" },
+      { "word": "épuisé", "meaning": "esgotado / exausto" },
+      { "word": "et", "meaning": "e" },
+      { "word": "patraque", "meaning": "indisposto / jururu / borocoxô (termo coloquial)" },
+      { "word": "ces", "meaning": "nestes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "1112": {
+    "explanation": "'Vous devriez vraiment' significa 'o senhor realmente deveria / você deveria mesmo' (conselho do verbo devoir). 'Voir un spécialiste' é consultar um médico especialista. A conjunção 'si' é 'se'. 'Les symptômes' são os sintomas. O verbo persister significa continuar ou persistir ('persistent').",
+    "breakdown": [
+      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
+      { "word": "devriez", "meaning": "deveria (conselho do verbo devoir com vous)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "voir", "meaning": "ver / consultar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "spécialiste", "meaning": "especialista / médico especialista" },
+      { "word": "si", "meaning": "se" },
+      { "word": "les", "meaning": "os" },
+      { "word": "symptômes", "meaning": "sintomas" },
+      { "word": "persistent", "meaning": "persistem / continuam (do verbo persister no plural)" }
+    ]
+  },
+  "1113": {
+    "explanation": "'J'ai un rendez-vous régulier' significa 'tenho uma consulta regular / compromisso fixo'. A preposição 'avec' é 'com'. Em francês, fisioterapeuta é comumente chamado de 'kinésithérapeute' (ou de forma abreviada 'kiné'). A expressão 'tous les mardis' significa 'todas as terças-feiras'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "rendez-vous", "meaning": "consulta / compromisso agendado" },
+      { "word": "régulier", "meaning": "regular / recorrente" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "kinésithérapeute", "meaning": "fisioterapeuta" },
+      { "word": "tous", "meaning": "todas" },
+      { "word": "les", "meaning": "as" },
+      { "word": "mardis", "meaning": "terças-feiras (tous les mardis = toda terça-feira)" }
+    ]
+  },
+  "1114": {
+    "explanation": "'Quelles sont' é 'quais são' (no feminino plural). A expressão 'les étapes à suivre' significa literalmente 'as etapas a seguir / os passos necessários'. A palavra 'si' significa 'se'. 'Vous perdez' é 'você perder / o senhor perde'. 'Vos cartes de crédit' são seus cartões de crédito. A expressão 'à l'étranger' significa 'no exterior'.",
+    "breakdown": [
+      { "word": "Quelles", "meaning": "Quais (feminino plural de quel)" },
+      { "word": "sont", "meaning": "são (do verbo être no plural)" },
+      { "word": "les", "meaning": "as / os" },
+      { "word": "étapes", "meaning": "etapas / passos (palavra feminina em francês)" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "suivre", "meaning": "seguir (étapes à suivre = passos a seguir)" },
+      { "word": "si", "meaning": "se" },
+      { "word": "vous", "meaning": "o senhor / você" },
+      { "word": "perdez", "meaning": "perde / perder (do verbo perdre com vous)" },
+      { "word": "vos", "meaning": "seus" },
+      { "word": "cartes", "meaning": "cartões" },
+      { "word": "de", "meaning": "de" },
+      { "word": "crédit", "meaning": "crédito (cartes de crédit = cartões de crédito)" },
+      { "word": "à", "meaning": "no" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "étranger", "meaning": "exterior / estrangeiro (à l'étranger = no exterior)" }
+    ]
+  },
+  "1115": {
+    "explanation": "Alerta médico formal de segurança: 'Je suis gravement allergique à' significa 'sou gravemente alérgico a'. 'Certains types d'antibiotiques' significa 'certos tipos de antibióticos' (com 'd'' antes da vogal). A expressão polida 'soyez-en conscient' significa 'esteja ciente disso / tenha ciência disso' (com o pronome 'en' referindo-se à alergia). Encerra com 's'il vous plaît'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "gravement", "meaning": "gravemente" },
+      { "word": "allergique", "meaning": "alérgico / alérgica" },
+      { "word": "à", "meaning": "a" },
+      { "word": "certains", "meaning": "certos / alguns" },
+      { "word": "types", "meaning": "tipos" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "antibiotiques", "meaning": "antibióticos" },
+      { "word": "soyez", "meaning": "esteja / sede (ordem polida do verbo être com vous)" },
+      { "word": "-en", "meaning": "disso / disto (ligado por hífen)" },
+      { "word": "conscient", "meaning": "ciente / consciente (être conscient de = estar ciente de)" },
+      { "word": "s'il vous plaît", "meaning": "por favor (formal e educado)" }
+    ]
+  },
+  "1116": {
+    "explanation": "A expressão 'se battre contre' significa 'lutar contra / combater' ('elle se bat contre' = ela tem lutado contra). 'Une toux persistante' é uma tosse persistente (toux é feminina). A palavra 'depuis' indica duração até o presente, e 'plusieurs semaines déjà' significa 'já há várias semanas'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "se", "meaning": "se" },
+      { "word": "bat", "meaning": "bate / luta (do verbo se battre; se battre contre = lutar contra)" },
+      { "word": "contre", "meaning": "contra" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "toux", "meaning": "tosse" },
+      { "word": "persistante", "meaning": "persistente (no feminino)" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "plusieurs", "meaning": "várias" },
+      { "word": "semaines", "meaning": "semanas" },
+      { "word": "déjà", "meaning": "já" }
+    ]
+  },
+  "1117": {
+    "explanation": "Pergunta de emergência: 'Savez-vous par hasard' significa 'o senhor por acaso sabe?'. 'Où se trouve' significa 'onde fica localizada'. 'La clinique ouverte 24h/24' é a clínica aberta 24 horas por dia (onde 24h/24 lê-se 'vingt-quatre heures sur vingt-quatre'). 'La plus proche' significa 'a mais próxima'.",
+    "breakdown": [
+      { "word": "Savez", "meaning": "Sabe / Sabem (do verbo savoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "par", "meaning": "por" },
+      { "word": "hasard", "meaning": "acaso (par hasard = por acaso)" },
+      { "word": "où", "meaning": "onde" },
+      { "word": "se", "meaning": "se" },
+      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "clinique", "meaning": "clínica / posto de saúde" },
+      { "word": "ouverte", "meaning": "aberta (no feminino)" },
+      { "word": "24h/24", "meaning": "24 horas por dia (vingt-quatre heures sur vingt-quatre)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "proche", "meaning": "próxima" }
+    ]
+  },
+  "1118": {
+    "explanation": "O verbo s'engager à significa comprometer-se com ou assumir o compromisso de ('je me suis engagé à' = comprometi-me a, com être no passado). O verbo mener significa conduzir ou levar adiante ('mener un mode de vie' = levar um estilo de vida). A expressão 'bien plus actif' significa 'muito mais ativo'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "suis", "meaning": "fiz a ação no passado (auxiliar être para verbos reflexivos)" },
+      { "word": "engagé", "meaning": "comprometido / assumi o compromisso (do verbo s'engager)" },
+      { "word": "à", "meaning": "a (s'engager à = comprometer-se a)" },
+      { "word": "mener", "meaning": "levar / conduzir" },
+      { "word": "un", "meaning": "um" },
+      { "word": "mode", "meaning": "modo / estilo" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vie", "meaning": "vida (mode de vie = estilo de vida)" },
+      { "word": "bien", "meaning": "bem / muito" },
+      { "word": "plus", "meaning": "mais (bien plus = muito mais)" },
+      { "word": "actif", "meaning": "ativo" }
+    ]
+  },
+  "1119": {
+    "explanation": "'J'étais si épuisé que' significa 'eu estava tão exausto que' (passado de être). A expressão 'j'ai dû m'endormir' significa 'eu devo ter pegado no sono / acabei adormecendo' (passado de devoir com o reflexivo s'endormir). 'À mon bureau' significa 'na minha escrivaninha / na minha mesa de trabalho'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "étais", "meaning": "estava (passado do verbo être)" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "épuisé", "meaning": "exausto / esgotado" },
+      { "word": "que", "meaning": "que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "dû", "meaning": "devido / devo ter (passado do verbo devoir; ai dû = acabei / devo ter)" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "endormir", "meaning": "adormecer / pegar no sono (s'endormir = adormecer)" },
+      { "word": "à", "meaning": "em / na" },
+      { "word": "mon", "meaning": "minha / meu" },
+      { "word": "bureau", "meaning": "mesa de trabalho / escrivaninha" }
+    ]
+  },
+  "1120": {
+    "explanation": "Aviso formal de ausência: 'Je crains de ne pas pouvoir venir' significa 'receio não poder comparecer/vir'. 'Aujourd'hui' é hoje. A conjunção 'car' significa 'pois / porque'. Em francês coloquial, pegar uma virose ou resfriado é dito como 'attraper un microbe' (literalmente apanhar um micróbio).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "crains", "meaning": "receio / temo (do verbo craindre)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pas", "meaning": "segunda parte do 'não' (juntos antes do infinitivo)" },
+      { "word": "pouvoir", "meaning": "poder / conseguir" },
+      { "word": "venir", "meaning": "vir / comparecer" },
+      { "word": "aujourd'hui", "meaning": "hoje" },
+      { "word": "car", "meaning": "pois / porque / já que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "attrapé", "meaning": "apanhado / peguei (do verbo attraper)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "microbe", "meaning": "micróbio / virose / resfriado (attraper un microbe = pegar uma virose)" }
+    ]
+  },
+  "1121": {
+    "explanation": "Orientação médica essencial: 'Vous devez suivre' significa 'você deve seguir / o senhor deve cumprir'. Em saúde, ciclo ou dosagem prescrita de remédio é chamado de 'tout le traitement' (todo o tratamento). A expressão 'même si' significa 'mesmo se / mesmo que'. 'Vous vous sentez mieux' significa 'você se sinta melhor'.",
+    "breakdown": [
+      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
+      { "word": "devez", "meaning": "deve / precisa (do verbo devoir com vous)" },
+      { "word": "suivre", "meaning": "seguir / cumprir" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "traitement", "meaning": "tratamento / ciclo medicamentoso" },
+      { "word": "même", "meaning": "mesmo" },
+      { "word": "si", "meaning": "se (même si = mesmo que / ainda que)" },
+      { "word": "vous", "meaning": "o senhor / você" },
+      { "word": "vous", "meaning": "se" },
+      { "word": "sentez", "meaning": "sente (do verbo se sentir com vous)" },
+      { "word": "mieux", "meaning": "melhor" }
+    ]
+  },
+  "1122": {
+    "explanation": "'J'ai essayé d'intégrer' significa 'tentei / tenho tentado incorporar/integrar' (com 'de' encurtado para 'd'' antes de vogal). 'Des habitudes alimentaires plus conscientes' significa 'hábitos alimentares mais conscientes' (com os adjetivos no feminino plural para combinar com habitudes). 'Dans ma vie' é 'na minha vida'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "essayé", "meaning": "tentado / busquei (do verbo essayer)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal; essayer de = tentar fazer algo)" },
+      { "word": "intégrer", "meaning": "integrar / incorporar" },
+      { "word": "des", "meaning": "alguns / (marcador de plural)" },
+      { "word": "habitudes", "meaning": "hábitos / costumes (palavra feminina em francês)" },
+      { "word": "alimentaires", "meaning": "alimentares (no feminino plural)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "conscientes", "meaning": "conscientes (no feminino plural)" },
+      { "word": "dans", "meaning": "em / na" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "vie", "meaning": "vida" }
+    ]
+  },
+  "1123": {
+    "explanation": "Frase de solidariedade e empatia: 'Y a-t-il quelque chose que' significa 'há algo que / tem alguma coisa que'. 'Je puisse faire' significa 'eu possa fazer' (usando 'puisse' após pergunta aberta). A preposição 'pour' significa 'para', e o verbo aliviar é 'soulager'. 'La douleur que vous ressentez' significa 'a dor que o senhor está sentindo' (do verbo ressentir).",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há / Existe (forma de pergunta)" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "puisse", "meaning": "possa (forma do verbo pouvoir)" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "soulager", "meaning": "aliviar / atenuar" },
+      { "word": "la", "meaning": "a" },
+      { "word": "douleur", "meaning": "dor (palavra feminina em francês)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "ressentez", "meaning": "sente / experimenta (do verbo ressentir com vous)" }
+    ]
+  },
+  "1124": {
+    "explanation": "'J'ai eu un léger accident' significa 'tive um leve acidente / um pequeno incidente' (passado de avoir). A expressão 'alors que' significa 'enquanto / no momento em que'. Em francês, fazer trilha ou caminhada na natureza é 'faire de la randonnée'. 'En forêt' significa 'na floresta / na mata', e 'hier' é ontem.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "eu", "meaning": "tido / tive (passado do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "léger", "meaning": "leve / pequeno" },
+      { "word": "accident", "meaning": "acidente" },
+      { "word": "alors", "meaning": "então" },
+      { "word": "que", "meaning": "que (alors que = enquanto / no momento em que)" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "faisais", "meaning": "fazia (passado contínuo do verbo faire)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "la", "meaning": "a" },
+      { "word": "randonnée", "meaning": "caminhada / trilha (faire de la randonnée = fazer trilha)" },
+      { "word": "en", "meaning": "na / em" },
+      { "word": "forêt", "meaning": "floresta / mata" },
+      { "word": "hier", "meaning": "ontem" }
+    ]
+  },
+  "1125": {
+    "explanation": "'Le médecin m'a suggéré de' significa 'o médico me sugeriu' (passado de suggérer com o pronome 'me'). A expressão 'prendre un peu de repos' significa 'tirar um pouco de descanso / repousar'. A preposição 'pour' significa 'para', e o verbo reflexivo se rétablir significa recuperar-se de uma doença ('bien me rétablir' = me recuperar bem).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "médecin", "meaning": "médico" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "suggéré", "meaning": "sugerido / recomendou (do verbo suggérer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prendre", "meaning": "tomar / tirar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco (un peu = um pouco)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "repos", "meaning": "repouso / descanso" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "bien", "meaning": "bem / adequadamente" },
+      { "word": "me", "meaning": "me" },
+      { "word": "rétablir", "meaning": "recuperar / restabelecer (se rétablir = recuperar a saúde)" }
+    ]
+  },
+  "1126": {
+    "explanation": "'Je me suis senti' significa 'eu me senti / tenho me sentido' (passado reflexivo de se sentir com être). A expressão 'beaucoup plus stressé que d'habitude' significa 'muito mais estressado do que de costume'. A expressão 'à cause de' significa 'por causa de / devido a', e 'la charge de travail' significa 'a carga de trabalho'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "suis", "meaning": "fiz a ação no passado (auxiliar être para verbos reflexivos)" },
+      { "word": "senti", "meaning": "sentido / senti-me (do verbo se sentir)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "plus", "meaning": "mais (beaucoup plus = muito mais)" },
+      { "word": "stressé", "meaning": "estressado" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "habitude", "meaning": "costume / hábito (d'habitude = de costume / o normal)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "cause", "meaning": "causa (à cause de = por causa de / devido a)" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "la", "meaning": "a" },
+      { "word": "charge", "meaning": "carga / peso" },
+      { "word": "de", "meaning": "de" },
+      { "word": "travail", "meaning": "trabalho (charge de travail = carga de trabalho)" }
+    ]
+  },
+  "1127": {
+    "explanation": "Pergunta de emergência: 'Savez-vous où se trouve' significa 'o senhor sabe onde fica localizado?'. Em francês, kit ou estojo de primeiros socorros é chamado de 'trousse de premiers secours' (aqui com 'a' como variante no texto da frase). 'Dans ce bâtiment' significa 'neste edifício / neste prédio'.",
+    "breakdown": [
+      { "word": "Savez", "meaning": "Sabe / Sabem (do verbo savoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "où", "meaning": "onde" },
+      { "word": "se", "meaning": "se" },
+      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
+      { "word": "a", "meaning": "a (artigo feminino variante de 'la')" },
+      { "word": "trousse", "meaning": "estojo / kit" },
+      { "word": "de", "meaning": "de" },
+      { "word": "premiers", "meaning": "primeiros" },
+      { "word": "secours", "meaning": "socorros (trousse de premiers secours = kit de primeiros socorros)" },
+      { "word": "dans", "meaning": "em / neste" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "bâtiment", "meaning": "prédio / edifício" }
+    ]
+  },
+  "1128": {
+    "explanation": "'Je dois trouver' significa 'eu preciso encontrar / tenho que achar'. 'Un dentiste d'urgence' é um dentista de plantão / de emergência. A palavra 'qui' significa 'que'. A palavra 'puisse' é a forma de poder exigida após a busca ('possa'). O pronome 'me' vem antes de 'recevoir' (me receber/atender). A palavra 'immédiatement' significa imediatamente.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
+      { "word": "trouver", "meaning": "encontrar / achar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "dentiste", "meaning": "dentista" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "urgence", "meaning": "urgência / emergência (dentiste d'urgence = dentista de plantão)" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "puisse", "meaning": "possa (forma do verbo pouvoir no modo de busca)" },
+      { "word": "me", "meaning": "me" },
+      { "word": "recevoir", "meaning": "receber / atender em consulta" },
+      { "word": "immédiatement", "meaning": "imediatamente / agora mesmo" }
+    ]
+  },
+  "1129": {
+    "explanation": "O verbo se remettre significa restabelecer-se ou recuperar a saúde ('elle se remet' = ela está se recuperando). A expressão idiomática 'lentement mais sûrement' significa 'devagar e sempre / lenta mas seguramente'. A preposição 'de' conecta com a cirurgia ('l'opération'). A expressão 'qu'elle a subie' significa 'que ela fez / à qual ela foi submetida' (do verbo subir com avoir). 'Le mois dernier' é 'no mês passado'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "se", "meaning": "se" },
+      { "word": "remet", "meaning": "recupera / restabelece (do verbo se remettre)" },
+      { "word": "lentement", "meaning": "lentamente / devagar" },
+      { "word": "mais", "meaning": "mas" },
+      { "word": "sûrement", "meaning": "seguramente / firmemente (lentement mais sûrement = devagar e com firmeza)" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "opération", "meaning": "operação / cirurgia" },
+      { "word": "qu'", "meaning": "que (encurtado antes de vogal)" },
+      { "word": "elle", "meaning": "ela" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "subie", "meaning": "passado por / submetida (passado de subir, no feminino)" },
+      { "word": "le", "meaning": "o / no" },
+      { "word": "mois", "meaning": "mês" },
+      { "word": "dernier", "meaning": "passado / anterior" }
+    ]
+  },
+  "1130": {
+    "explanation": "Frase de alívio: a palavra 'heureusement' significa 'felizmente'. A negação 'je n'ai jamais eu à' significa 'eu nunca precisei / nunca tive que' (passado com ne... jamais). O verbo passar tempo é 'passer'. 'Une nuit' é uma noite. A contração 'à l'' conecta com o hospital: 'à l'hôpital'. A palavra 'auparavant' significa 'antes / anteriormente'.",
+    "breakdown": [
+      { "word": "Heureusement", "meaning": "Felizmente" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "n'", "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "jamais", "meaning": "nunca" },
+      { "word": "eu", "meaning": "tido (passado do verbo avoir; avoir à = ter que / precisar)" },
+      { "word": "à", "meaning": "a / de" },
+      { "word": "passer", "meaning": "passar" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "nuit", "meaning": "noite" },
+      { "word": "à", "meaning": "em / no" },
+      { "word": "l'", "meaning": "o (encurtado antes de h mudo)" },
+      { "word": "hôpital", "meaning": "hospital" },
+      { "word": "auparavant", "meaning": "antes / anteriormente" }
+    ]
+  },
+  "1131": {
+    "explanation": "Conselho médico essencial: o verbo veiller à significa cuidar para, atentar para ou certificar-se de ('vous devez veiller à'). A expressão 'rester hydraté' significa 'manter-se hidratado / ficar hidratado'. A palavra 'surtout' significa 'especialmente / sobretudo'. A expressão 'avec cette chaleur' significa 'com este calor'.",
+    "breakdown": [
+      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
+      { "word": "devez", "meaning": "deve / precisa (do verbo devoir com vous)" },
+      { "word": "veiller", "meaning": "velar / cuidar / certificar-se (veiller à = cuidar para que)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "rester", "meaning": "ficar / permanecer / manter-se" },
+      { "word": "hydraté", "meaning": "hidratado" },
+      { "word": "surtout", "meaning": "especialmente / sobretudo" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "cette", "meaning": "este / esta (feminino)" },
+      { "word": "chaleur", "meaning": "calor (palavra feminina em francês)" }
+    ]
+  },
+  "1132": {
+    "explanation": "A expressão 'être à la recherche de' significa 'estar à procura de / estar em busca de' ('je suis à la recherche d''). 'Une salle de sport' é uma academia. A palavra 'qui' é 'que'. O verbo proposer significa oferecer ou disponibilizar ('propose'). A expressão 'une grande variété de cours' significa 'uma grande variedade de aulas/cursos'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "à", "meaning": "à" },
+      { "word": "la", "meaning": "a" },
+      { "word": "recherche", "meaning": "procura / busca (être à la recherche de = estar à procura de)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "salle", "meaning": "sala" },
+      { "word": "de", "meaning": "de" },
+      { "word": "sport", "meaning": "esporte (salle de sport = academia)" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "propose", "meaning": "propõe / oferece (do verbo proposer)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "grande", "meaning": "grande" },
+      { "word": "variété", "meaning": "variedade" },
+      { "word": "de", "meaning": "de" },
+      { "word": "cours", "meaning": "aulas / cursos" }
+    ]
+  },
+  "1133": {
+    "explanation": "'Le personnel médical' é a equipe médica ou corpo de saúde (tratado no singular). A expressão 'a été incroyablement professionnel' significa 'foi incrivelmente profissional'. A segunda parte 'et m'a rassuré' significa 'e me tranquilizou / me acalmou' (passado de rassurer com o pronome 'me').",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O" },
+      { "word": "personnel", "meaning": "pessoal / equipe de funcionários" },
+      { "word": "médical", "meaning": "médico (personnel médical = equipe médica)" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
+      { "word": "incroyablement", "meaning": "incrivelmente" },
+      { "word": "professionnel", "meaning": "profissional" },
+      { "word": "et", "meaning": "e" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "rassuré", "meaning": "tranquilizado / acalmou (do verbo rassurer)" }
+    ]
+  },
+  "1134": {
+    "explanation": "A expressão 'avoir du mal à' significa 'ter dificuldade em / ter problemas para'. 'J'ai eu un peu de mal à' significa 'tive um pouco de dificuldade para'. O verbo dormir bem é 'bien dormir'. A expressão 'ces derniers temps' significa 'ultimamente / nestes últimos tempos'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "eu", "meaning": "tido / tive (passado do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco (un peu = um pouco)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "mal", "meaning": "dificuldade / mal (avoir du mal à = ter dificuldade em)" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "bien", "meaning": "bem" },
+      { "word": "dormir", "meaning": "dormir" },
+      { "word": "ces", "meaning": "nestes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "1135": {
+    "explanation": "'Quel est' é 'qual é'. A expressão superlativa 'le moyen le plus efficace de' significa 'a maneira mais eficaz de / o meio mais eficaz de'. Em francês informal e médico moderno, fortalecer ou turbinar é dito com 'booster'. 'Son système immunitaire' é o sistema imunológico. O advérbio 'naturellement' significa naturalmente.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o / a" },
+      { "word": "moyen", "meaning": "meio / maneira" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "efficace", "meaning": "eficaz" },
+      { "word": "de", "meaning": "de" },
+      { "word": "booster", "meaning": "estimular / fortalecer / turbinar" },
+      { "word": "son", "meaning": "seu / o" },
+      { "word": "système", "meaning": "sistema (palavra masculina em francês)" },
+      { "word": "immunitaire", "meaning": "imunológico" },
+      { "word": "naturellement", "meaning": "naturalmente" }
+    ]
+  },
+  "1136": {
+    "explanation": "'Je dois' é 'eu preciso / devo'. A expressão 'mettre à jour' significa 'atualizar'. Em francês, plano de saúde ou seguro de saúde é chamado de 'assurance maladie'. A preposição 'pour' significa 'para', o verbo incluir é 'inclure', e 'une couverture internationale' significa 'uma cobertura internacional'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
+      { "word": "mettre", "meaning": "pôr / colocar" },
+      { "word": "à", "meaning": "a" },
+      { "word": "jour", "meaning": "dia (mettre à jour = atualizar)" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "assurance", "meaning": "seguro" },
+      { "word": "maladie", "meaning": "doença / saúde (assurance maladie = plano de saúde / seguro saúde)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "inclure", "meaning": "incluir" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "couverture", "meaning": "cobertura" },
+      { "word": "internationale", "meaning": "internacional (no feminino)" }
+    ]
+  },
+  "1137": {
+    "explanation": "Frase de grande alívio: 'J'ai été immensément soulagé' significa 'fiquei imensamente aliviado' (passado de être com avoir). A palavra 'quand' é 'quando'. 'J'ai appris que' significa 'soube que / recebi a notícia de que' (passado de apprendre). A expressão 'tout allait bien' significa 'estava tudo bem / corria tudo bem' (passado contínuo do verbo aller).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / fiquei (passado do verbo être)" },
+      { "word": "immensément", "meaning": "imensamente" },
+      { "word": "soulagé", "meaning": "aliviado" },
+      { "word": "quand", "meaning": "quando" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "appris", "meaning": "aprendido / soube (passado do verbo apprendre)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "tout", "meaning": "tudo" },
+      { "word": "allait", "meaning": "ia / andava (passado do verbo aller; aller bien = ir bem / estar bem)" },
+      { "word": "bien", "meaning": "bem" }
+    ]
+  },
+  "1138": {
+    "explanation": "Pergunta sobre saúde integrativa: 'Pensez-vous' significa 'o senhor acha / você pensa?'. A expressão 'qu'il soit utile de' significa 'que seja útil / que valha a pena' (usando 'soit' após a dúvida). Em saúde, suplementos vitamínicos ou nutricionais são chamados de 'compléments'. A preposição 'pour' significa 'para', o verbo melhorar é 'améliorer', e 'sa santé globale' é 'sua saúde geral / saúde global'.",
+    "breakdown": [
+      { "word": "Pensez", "meaning": "Pensa / Acha (do verbo penser com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "qu'", "meaning": "que (encurtado antes de vogal)" },
+      { "word": "il", "meaning": "ele / isso (sujeito neutro)" },
+      { "word": "soit", "meaning": "seja (forma do verbo être)" },
+      { "word": "utile", "meaning": "útil / vantajoso" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prendre", "meaning": "tomar" },
+      { "word": "des", "meaning": "suplementos em geral / alguns (marcador de plural)" },
+      { "word": "compléments", "meaning": "suplementos (compléments alimentaires = suplementos alimentares)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "améliorer", "meaning": "melhorar" },
+      { "word": "sa", "meaning": "sua" },
+      { "word": "santé", "meaning": "saúde (palavra feminina em francês)" },
+      { "word": "globale", "meaning": "global / geral (no feminino)" }
+    ]
+  },
+  "1139": {
+    "explanation": "'J'ai remarqué' significa 'notei / reparei' (passado de remarquer com avoir). 'Une amélioration significative de' significa 'uma melhora significativa em/de'. Em francês, condicionamento ou forma física é chamado de 'condition physique'. A expressão 'depuis que je cours' significa 'desde que comecei a correr / desde que corro' (com courir no presente indicando continuidade).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "remarqué", "meaning": "notado / percebi (do verbo remarquer)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "amélioration", "meaning": "melhora / aprimoramento" },
+      { "word": "significative", "meaning": "significativa (no feminino)" },
+      { "word": "de", "meaning": "de / em" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "condition", "meaning": "condição" },
+      { "word": "physique", "meaning": "física (condition physique = preparo físico / forma física)" },
+      { "word": "depuis", "meaning": "desde" },
+      { "word": "que", "meaning": "que (depuis que = desde que)" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "cours", "meaning": "corro (do verbo courir)" }
+    ]
+  },
+  "1140": {
+    "explanation": "Procedimento legal em acidentes: 'Vous devez avertir' significa 'você deve avisar / notificar'. 'Les autorités' são as autoridades. A palavra 'immédiatement' significa imediatamente. A conjunção 'si' é 'se'. A expressão 'être témoin de' significa 'presenciar / ser testemunha de' (com 'd'' antes da vogal de un). 'Un accident' é um acidente.",
+    "breakdown": [
+      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
+      { "word": "devez", "meaning": "deve / precisa (do verbo devoir com vous)" },
+      { "word": "avertir", "meaning": "avisar / notificar / alertar" },
+      { "word": "les", "meaning": "as" },
+      { "word": "autorités", "meaning": "autoridades" },
+      { "word": "immédiatement", "meaning": "imediatamente" },
+      { "word": "si", "meaning": "se" },
+      { "word": "vous", "meaning": "o senhor / você" },
+      { "word": "êtes", "meaning": "é / está (do verbo être com vous)" },
+      { "word": "témoin", "meaning": "testemunha (être témoin de = presenciar / ser testemunha de)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "accident", "meaning": "acidente" }
+    ]
+  }
+}

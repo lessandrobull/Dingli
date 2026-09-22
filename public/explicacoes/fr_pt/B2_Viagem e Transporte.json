@@ -1,0 +1,535 @@
+{
+  "991": {
+    "explanation": "'Je n'ai jamais été' significa 'nunca estive / nunca fui' (negação com ne... jamais no passado). 'Dans un endroit' é 'em um lugar'. A expressão 'qui me semblait' significa 'que me parecia'. A estrutura 'aussi différent de' significa 'tão diferente de', e 'chez moi' é a expressão para 'minha casa / minha terra'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "jamais", "meaning": "nunca" },
+      { "word": "été", "meaning": "estado / estive (passado do verbo être)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "endroit", "meaning": "lugar" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "me", "meaning": "me" },
+      { "word": "semblait", "meaning": "parecia (do verbo sembler)" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "différent", "meaning": "diferente" },
+      { "word": "de", "meaning": "de" },
+      { "word": "chez", "meaning": "na casa de" },
+      { "word": "moi", "meaning": "mim (chez moi = minha casa / minha terra)" }
+    ]
+  },
+  "992": {
+    "explanation": "Frase sobre uma hipótese no passado: 'Si je n'avais pas raté' significa 'se eu não tivesse perdido' (onde o verbo rater é muito usado para perder transporte). 'Le train' é o trem. A consequência vem com 'je serais arrivé' (eu teria chegado, com être). 'Il y a des heures' significa 'horas atrás / há horas'.",
+    "breakdown": [
+      { "word": "Si", "meaning": "Se" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "avais", "meaning": "tinha (auxiliar do passado)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "raté", "meaning": "perdido (do verbo rater)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "train", "meaning": "trem" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "serais", "meaning": "teria (auxiliar être para verbos de movimento)" },
+      { "word": "arrivé", "meaning": "chegado (do verbo arriver)" },
+      { "word": "il", "meaning": "ele" },
+      { "word": "y", "meaning": "lá" },
+      { "word": "a", "meaning": "tem (il y a = há / faz tempo)" },
+      { "word": "des", "meaning": "algumas (marcador de plural)" },
+      { "word": "heures", "meaning": "horas" }
+    ]
+  },
+  "993": {
+    "explanation": "'Le vol a été annulé' significa 'o voo foi cancelado' (passado de être). A expressão 'au dernier moment' significa 'no último momento / no último minuto'. A locução 'en raison de' significa 'por motivo de / devido a', e 'circonstances imprévues' são circunstâncias imprevistas.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "vol", "meaning": "voo" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
+      { "word": "annulé", "meaning": "cancelado (do verbo annuler)" },
+      { "word": "au", "meaning": "no (junção de à + le)" },
+      { "word": "dernier", "meaning": "último" },
+      { "word": "moment", "meaning": "momento / minuto" },
+      { "word": "en", "meaning": "em" },
+      { "word": "raison", "meaning": "razão (en raison de = devido a / por motivo de)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "circonstances", "meaning": "circunstâncias" },
+      { "word": "imprévues", "meaning": "imprevistas (no feminino plural)" }
+    ]
+  },
+  "994": {
+    "explanation": "'Pourriez-vous me dire' significa 'o senhor poderia me dizer?'. 'Quel est' é 'qual é'. A expressão superlativa 'le moyen le plus efficace' significa 'o meio mais eficiente / a maneira mais eficiente'. A expressão 'se rendre en banlieue' significa 'ir / deslocar-se até o subúrbio ou periferia'.",
+    "breakdown": [
+      { "word": "Pourriez", "meaning": "Poderia (forma polida do verbo pouvoir)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "me", "meaning": "me" },
+      { "word": "dire", "meaning": "dizer" },
+      { "word": "quel", "meaning": "qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "moyen", "meaning": "meio / maneira" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus efficace = o mais eficiente)" },
+      { "word": "efficace", "meaning": "eficiente" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "se", "meaning": "se" },
+      { "word": "rendre", "meaning": "dirigir / ir (se rendre = deslocar-se até um lugar)" },
+      { "word": "en", "meaning": "em / na" },
+      { "word": "banlieue", "meaning": "subúrbio / periferia" }
+    ]
+  },
+  "995": {
+    "explanation": "'Je cherche' significa 'estou procurando'. Em francês, um hotel boutique ou pousada charmosa é chamado de 'hôtel de charme'. A palavra 'qui' é 'que'. O verbo offrir significa oferecer ('offre'). A expressão 'une touche plus personnelle' significa 'um toque mais pessoal'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "hôtel", "meaning": "hotel" },
+      { "word": "de", "meaning": "de" },
+      { "word": "charme", "meaning": "charme (hôtel de charme = hotel boutique / hotel charmoso)" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "offre", "meaning": "oferece (do verbo offrir)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "touche", "meaning": "toque" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "personnelle", "meaning": "pessoal (no feminino)" }
+    ]
+  },
+  "996": {
+    "explanation": "'Nous attendons' significa 'estamos esperando / aguardamos'. 'La correspondance' é a conexão ou baldeação entre transportes. A palavra 'depuis' indica duração. A expressão poética 'ce qui semble être une éternité' significa 'aquilo que parece ser uma eternidade'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "attendons", "meaning": "esperamos / aguardamos (do verbo attendre)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "correspondance", "meaning": "conexão / baldeação" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "ce", "meaning": "aquilo / o" },
+      { "word": "qui", "meaning": "que (ce qui = o que / aquilo que)" },
+      { "word": "semble", "meaning": "parece (do verbo sembler)" },
+      { "word": "être", "meaning": "ser" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "éternité", "meaning": "eternidade" }
+    ]
+  },
+  "997": {
+    "explanation": "'Je préférerais de loin' significa 'eu preferiria de longe / preferiria muito mais'. 'Prendre la route panoramique' é pegar a rota cênica/panorâmica. A expressão 'plutôt que' significa 'em vez de / do que' (com 'qu'' antes da vogal). 'L'autoroute' é a rodovia ou autoestrada.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "préférerais", "meaning": "preferiria (forma suave do verbo préférer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "loin", "meaning": "longe (de loin = de longe / muito mais)" },
+      { "word": "prendre", "meaning": "pegar / tomar" },
+      { "word": "la", "meaning": "a" },
+      { "word": "route", "meaning": "estrada / rota" },
+      { "word": "panoramique", "meaning": "panorâmica / cênica" },
+      { "word": "plutôt", "meaning": "mais / antes" },
+      { "word": "que", "meaning": "do que (plutôt que = em vez de / em lugar de; encurtado para qu')" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "autoroute", "meaning": "rodovia / autoestrada (feminino em francês)" }
+    ]
+  },
+  "998": {
+    "explanation": "Pergunta formal: 'Est-il' é 'é ele/isso?'. A palavra 'absolument' significa 'absolutamente', e 'nécessaire' é 'necessário'. A preposição 'de' encurta para 'd'' antes do verbo avoir. Em francês, carteira de habilitação é chamada de 'permis de conduire'. 'International' significa internacional.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "absolument", "meaning": "absolutamente" },
+      { "word": "nécessaire", "meaning": "necessário" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "avoir", "meaning": "ter" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "permis", "meaning": "permissão / carteira" },
+      { "word": "de", "meaning": "de" },
+      { "word": "conduire", "meaning": "dirigir (permis de conduire = carteira de motorista)" },
+      { "word": "international", "meaning": "internacional" }
+    ]
+  },
+  "999": {
+    "explanation": "'Je ne suis pas encore' significa 'ainda não estou'. A expressão 'tout à fait habitué à' significa 'totalmente acostumado a'. O verbo se déplacer significa locomover-se ou deslocar-se ('me déplacer'). A expressão 'transports en commun' significa transporte público. 'D'ici' significa 'daqui / desta cidade'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "encore", "meaning": "ainda (ne... pas encore = ainda não)" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "à", "meaning": "a" },
+      { "word": "fait", "meaning": "feito (tout à fait = completamente / totalmente)" },
+      { "word": "habitué", "meaning": "acostumado" },
+      { "word": "à", "meaning": "a" },
+      { "word": "me", "meaning": "me" },
+      { "word": "déplacer", "meaning": "deslocar / locomover (se déplacer = deslocar-se / navegar na cidade)" },
+      { "word": "dans", "meaning": "em / nos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "transports", "meaning": "transportes" },
+      { "word": "en", "meaning": "em" },
+      { "word": "commun", "meaning": "comum (transports en commun = transporte público)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "ici", "meaning": "aqui (d'ici = daqui)" }
+    ]
+  },
+  "1000": {
+    "explanation": "'Les bagages' são as malas ou bagagem. A palavra 'malheureusement' significa 'infelizmente'. A expressão 'ont été endommagés' significa 'foram danificadas' (passado de être no plural com o verbo endommager). 'Pendant le trajet' significa 'durante o trajeto / percurso'.",
+    "breakdown": [
+      { "word": "Les", "meaning": "As" },
+      { "word": "bagages", "meaning": "bagagens / malas" },
+      { "word": "ont", "meaning": "fizeram a ação no passado (auxiliar avoir no plural)" },
+      { "word": "malheureusement", "meaning": "infelizmente" },
+      { "word": "été", "meaning": "sido / foram (passado do verbo être)" },
+      { "word": "endommagés", "meaning": "danificados / avariados (do verbo endommager no plural)" },
+      { "word": "pendant", "meaning": "durante" },
+      { "word": "le", "meaning": "o" },
+      { "word": "trajet", "meaning": "trajeto / percurso / viagem" }
+    ]
+  },
+  "1001": {
+    "explanation": "Pergunta sobre viagens: 'Avez-vous déjà eu à' significa 'o senhor já teve que?'. A expressão 'faire face à' significa 'enfrentar / lidar com'. 'Un vol retardé' é um voo atrasado. A expressão 'alors que' significa 'enquanto / no momento em que'. 'Vous voyagiez seul' significa 'o senhor viajava sozinho'.",
+    "breakdown": [
+      { "word": "Avez", "meaning": "Tem / Teve no passado (auxiliar avoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "eu", "meaning": "tido (passado do verbo avoir; avoir à = ter que)" },
+      { "word": "à", "meaning": "a / de" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "face", "meaning": "frente / cara (faire face à = encarar / lidar com)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "un", "meaning": "um" },
+      { "word": "vol", "meaning": "voo" },
+      { "word": "retardé", "meaning": "atrasado" },
+      { "word": "alors", "meaning": "então" },
+      { "word": "que", "meaning": "que (alors que = enquanto)" },
+      { "word": "vous", "meaning": "o senhor / você" },
+      { "word": "voyagiez", "meaning": "viajava (passado contínuo do verbo voyager)" },
+      { "word": "seul", "meaning": "sozinho" }
+    ]
+  },
+  "1002": {
+    "explanation": "O verbo envisager significa considerar ou planejar ('j'envisage de' = estou pensando em). O verbo contratar funcionários ou serviços é 'embaucher'. 'Un guide local' é um guia local. A preposição 'pour' significa 'para', o pronome 'nous' é 'nos', e o verbo mostrar é 'montrer'. A expressão 'les trésors cachés' significa 'os tesouros escondidos / joias escondidas'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "envisage", "meaning": "considero / planejo (do verbo envisager)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "embaucher", "meaning": "contratar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "guide", "meaning": "guia" },
+      { "word": "local", "meaning": "local" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "nous", "meaning": "nos" },
+      { "word": "montrer", "meaning": "mostrar" },
+      { "word": "les", "meaning": "os" },
+      { "word": "trésors", "meaning": "tesouros" },
+      { "word": "cachés", "meaning": "escondidos (trésors cachés = joias escondidas)" }
+    ]
+  },
+  "1003": {
+    "explanation": "Superlativo sobre viagens memoráveis: 'Quel est' é 'qual é'. A expressão 'le paysage le plus époustouflant' significa 'a paisagem mais deslumbrante / de tirar o fôlego' (onde paysage é masculino em francês). A expressão 'que vous ayez jamais vu' significa 'que o senhor já viu em toda a vida'.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "a / o" },
+      { "word": "paysage", "meaning": "paisagem (masculino em francês)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "époustouflant", "meaning": "deslumbrante / impressionante / de tirar o fôlego" },
+      { "word": "que", "meaning": "que" },
+      { "word": "vous", "meaning": "o senhor / você" },
+      { "word": "ayez", "meaning": "tenha feito a ação (auxiliar avoir no modo de experiência)" },
+      { "word": "jamais", "meaning": "já / alguma vez" },
+      { "word": "vu", "meaning": "visto / viu (do verbo voir)" }
+    ]
+  },
+  "1004": {
+    "explanation": "Crítica sobre hospedagem: 'L'hébergement' é a acomodação ou hospedagem (com 'l'' antes de h mudo). A expressão 'n'était pas du tout' significa 'não era nem de longe / de modo algum'. 'Aussi luxueux que' significa 'tão luxuoso quanto'. A expressão 'les photos le suggéraient' significa 'as fotos sugeriam' (com o pronome 'le' retomando o luxo).",
+    "breakdown": [
+      { "word": "L'", "meaning": "A / O (encurtado antes de h mudo)" },
+      { "word": "hébergement", "meaning": "hospedagem / acomodação" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "était", "meaning": "era (passado do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "du", "meaning": "de (parte da expressão)" },
+      { "word": "tout", "meaning": "tudo (pas du tout = nem um pouco / de modo algum)" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "luxueux", "meaning": "luxuoso" },
+      { "word": "que", "meaning": "quanto" },
+      { "word": "les", "meaning": "as" },
+      { "word": "photos", "meaning": "fotos" },
+      { "word": "le", "meaning": "o / isso (pronome que retoma a ideia sugerida)" },
+      { "word": "suggéraient", "meaning": "sugeriam (passado do verbo suggérer no plural)" }
+    ]
+  },
+  "1005": {
+    "explanation": "'Je vous préviendrai' significa 'eu vou avisar o senhor / te avisarei' (futuro do verbo prévenir). A expressão 'dès que' significa 'assim que / no momento em que'. Em francês, usa-se futuro após dès que: 'j'aurai fait' (eu tiver feito). A expressão 'faire le check-in' é amplamente usada em hotéis. 'À l'hôtel' é no hotel.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vous", "meaning": "ao senhor / a você" },
+      { "word": "préviendrai", "meaning": "avisarei (futuro do verbo prévenir)" },
+      { "word": "dès", "meaning": "desde" },
+      { "word": "que", "meaning": "que (dès que = assim que / no momento em que)" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "aurai", "meaning": "tiver feito a ação (futuro do verbo avoir)" },
+      { "word": "fait", "meaning": "feito (faire le check-in = fazer o check-in)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "check-in", "meaning": "check-in / entrada no hotel" },
+      { "word": "à", "meaning": "em / no" },
+      { "word": "l'", "meaning": "o (encurtado antes de h mudo)" },
+      { "word": "hôtel", "meaning": "hotel" }
+    ]
+  },
+  "1006": {
+    "explanation": "Pergunta ao chegar: 'Savez-vous' é 'o senhor sabe?'. A conjunção 'si' encurta para 's'' antes de 'il', formando 's'il existe' (se existe). Em francês, van ou ônibus de traslado é chamado de 'une navette'. O adjetivo 'fiable' significa confiável ou pontual. A palavra 'depuis' tem sentido de ponto de origem no espaço ('a partir de / de'). 'L'aéroport' é o aeroporto.",
+    "breakdown": [
+      { "word": "Savez", "meaning": "Sabe / Sabem (do verbo savoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "s'", "meaning": "se (encurtado antes de vogal)" },
+      { "word": "il", "meaning": "ele / isso (sujeito neutro)" },
+      { "word": "existe", "meaning": "existe (do verbo exister)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "navette", "meaning": "traslado / ônibus de transporte / van" },
+      { "word": "fiable", "meaning": "confiável / seguro" },
+      { "word": "depuis", "meaning": "a partir de / desde" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "aéroport", "meaning": "aeroporto" }
+    ]
+  },
+  "1007": {
+    "explanation": "Sonho de aventura: 'J'ai toujours rêvé de' significa 'sempre sonhei em' (passado de rêver com avoir). A expressão 'faire un road trip' é adotada no francês para viagem de carro na estrada. A locução 'à travers' significa 'através de / por todo'. 'Tout le continent' é todo o continente.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "rêvé", "meaning": "sonhado / sonhei (do verbo rêver)" },
+      { "word": "de", "meaning": "de / em" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "road trip", "meaning": "viagem de carro pela estrada" },
+      { "word": "à", "meaning": "a" },
+      { "word": "travers", "meaning": "través (à travers = através de / por todo)" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "continent", "meaning": "continente" }
+    ]
+  },
+  "1008": {
+    "explanation": "'La circulation en centre-ville' significa 'o trânsito no centro da cidade'. A expressão 'est absolument infernale' significa 'é absolutamente infernal / terrível' (com infernale no feminino concordando com circulation). A palavra 'pendant' significa 'durante'. Em francês, hora do rush ou horário de pico é chamado de 'les heures de pointe'.",
+    "breakdown": [
+      { "word": "La", "meaning": "O / A" },
+      { "word": "circulation", "meaning": "trânsito / fluxo de veículos" },
+      { "word": "en", "meaning": "no" },
+      { "word": "centre-ville", "meaning": "centro da cidade" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "absolument", "meaning": "absolutamente" },
+      { "word": "infernale", "meaning": "infernal / terrível (no feminino)" },
+      { "word": "pendant", "meaning": "durante" },
+      { "word": "les", "meaning": "as" },
+      { "word": "heures", "meaning": "horas" },
+      { "word": "de", "meaning": "de" },
+      { "word": "pointe", "meaning": "pico (heures de pointe = hora do rush / horário de pico)" }
+    ]
+  },
+  "1009": {
+    "explanation": "'J'aimerais trouver un endroit' significa 'eu gostaria de encontrar um lugar'. A expressão 'qui n'ait pas été complètement envahi' significa 'que não tenha sido completamente invadido' (usando 'ait été' para expressar o desejo). A preposição 'par' significa 'por', e 'les touristes' são os turistas.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
+      { "word": "trouver", "meaning": "encontrar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "endroit", "meaning": "lugar" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ait", "meaning": "tenha feito a ação (auxiliar avoir no modo de desejo)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "été", "meaning": "sido (passado do verbo être)" },
+      { "word": "complètement", "meaning": "completamente" },
+      { "word": "envahi", "meaning": "invadido / tomado (do verbo envahir)" },
+      { "word": "par", "meaning": "por / pelos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "touristes", "meaning": "turistas" }
+    ]
+  },
+  "1010": {
+    "explanation": "Pergunta ao recepcionista: 'Le quartier historique' é o bairro histórico ou centro histórico. A forma de pergunta é 'est-il' (é ele / fica ele?). O advérbio 'facilement' é 'facilmente'. A expressão 'accessible depuis' significa 'acessível a partir de / que dá para ir facilmente de'. 'La gare principale' é a estação central de trem.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "quartier", "meaning": "bairro / centro" },
+      { "word": "historique", "meaning": "histórico" },
+      { "word": "est", "meaning": "é / fica (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para reforçar a pergunta)" },
+      { "word": "facilement", "meaning": "facilmente" },
+      { "word": "accessible", "meaning": "acessível / de fácil acesso" },
+      { "word": "depuis", "meaning": "a partir de / desde" },
+      { "word": "la", "meaning": "a" },
+      { "word": "gare", "meaning": "estação de trem" },
+      { "word": "principale", "meaning": "principal / central (no feminino)" }
+    ]
+  },
+  "1011": {
+    "explanation": "'J'ai complètement oublié de' significa 'esqueci completamente de' (passado de oublier com avoir). O verbo revérifier significa checar de novo ou conferir novamente. Em aeroportos, portão de embarque é chamado de 'la porte d'embarquement' (com 'd'' antes da vogal). A expressão 'sur le panneau' significa 'no painel informativo'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "complètement", "meaning": "completamente" },
+      { "word": "oublié", "meaning": "esquecido / esqueci (do verbo oublier)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "revérifier", "meaning": "conferir novamente / rechecar" },
+      { "word": "la", "meaning": "a / o" },
+      { "word": "porte", "meaning": "porta / portão" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "embarquement", "meaning": "embarque (porte d'embarquement = portão de embarque)" },
+      { "word": "sur", "meaning": "em / no" },
+      { "word": "le", "meaning": "o" },
+      { "word": "panneau", "meaning": "painel / telão" }
+    ]
+  },
+  "1012": {
+    "explanation": "'Nous devrions vraiment envisager de' significa 'nós realmente deveríamos considerar'. O verbo pegar ou comprar é 'prendre'. Em francês, passe de trem ilimitado para viagens turísticas é chamado de 'un pass ferroviaire'. 'Pour le voyage' significa 'para a viagem'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "devrions", "meaning": "deveríamos (do verbo devoir)" },
+      { "word": "vraiment", "meaning": "realmente / definitivamente" },
+      { "word": "envisager", "meaning": "considerar / planejar" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prendre", "meaning": "pegar / comprar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "pass", "meaning": "passe / bilhete especial" },
+      { "word": "ferroviaire", "meaning": "ferroviário / de trem" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "le", "meaning": "a / o" },
+      { "word": "voyage", "meaning": "viagem (masculino em francês)" }
+    ]
+  },
+  "1013": {
+    "explanation": "'J'ai vraiment hâte de découvrir' significa 'estou realmente ansioso para descobrir / vivenciar'. 'La culture locale' é a cultura local. A expressão idiomática 'de première main' significa 'em primeira mão / de forma direta e pessoal'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "hâte", "meaning": "pressa (avoir hâte de = estar ansioso / mal poder esperar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "découvrir", "meaning": "descobrir / conhecer / vivenciar" },
+      { "word": "la", "meaning": "a" },
+      { "word": "culture", "meaning": "cultura" },
+      { "word": "locale", "meaning": "local (no feminino)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "première", "meaning": "primeira" },
+      { "word": "main", "meaning": "mão (de première main = em primeira mão)" }
+    ]
+  },
+  "1014": {
+    "explanation": "Pergunta reflexiva de viagem: 'Le voyage a-t-il été' significa 'a viagem foi?' (com a-t-il fazendo a pergunta no passado). A estrutura 'aussi épuisant que' significa 'tão exaustivo/cansativo quanto'. 'Vous l'aviez prévu' significa 'o senhor havia previsto' (com o pronome 'l'' referindo-se à previsão).",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O" },
+      { "word": "voyage", "meaning": "viagem (masculino em francês)" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "-t-", "meaning": "letrinha de ligação usada para suavizar o som" },
+      { "word": "-il", "meaning": "ele (invertido para a pergunta)" },
+      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "épuisant", "meaning": "exaustivo / cansativo" },
+      { "word": "que", "meaning": "quanto" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "l'", "meaning": "o / isso (pronome de referência ao que foi previsto)" },
+      { "word": "aviez", "meaning": "havia (passado do verbo avoir com vous)" },
+      { "word": "prévu", "meaning": "previsto (do verbo prévoir)" }
+    ]
+  },
+  "1015": {
+    "explanation": "'Je n'ai jamais séjourné' significa 'eu nunca me hospedei / nunca fiquei' (negação com ne... jamais no passado de séjourner). 'Dans un endroit' é 'em um lugar'. A expressão 'aussi reculé' significa 'tão remoto / tão isolado / afastado'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "jamais", "meaning": "nunca" },
+      { "word": "séjourné", "meaning": "hospedado / fiquei (do verbo séjourner)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "endroit", "meaning": "lugar / local" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "reculé", "meaning": "remoto / isolado / afastado" }
+    ]
+  },
+  "1016": {
+    "explanation": "Pergunta sobre custo de estacionamento: 'Combien coûte' é 'quanto custa'. 'Généralement' é geralmente. Em francês, o ato de estacionar ou a vaga de estacionamento é chamada de 'le stationnement'. 'Dans ce quartier' significa 'neste bairro / nesta parte da cidade'.",
+    "breakdown": [
+      { "word": "Combien", "meaning": "Quanto" },
+      { "word": "coûte", "meaning": "custa (do verbo coûter)" },
+      { "word": "généralement", "meaning": "geralmente" },
+      { "word": "le", "meaning": "o" },
+      { "word": "stationnement", "meaning": "estacionamento" },
+      { "word": "dans", "meaning": "em / neste" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "quartier", "meaning": "bairro / região da cidade" }
+    ]
+  },
+  "1017": {
+    "explanation": "Oferta calorosa de ajuda: 'Je viendrai te chercher' significa 'eu virei te buscar / vou te buscar' (futuro de venir com te chercher). 'À la gare' é na estação de trem. A expressão 'si ça peut t'aider' significa 'se isso puder te ajudar / se isso facilitar para você'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "viendrai", "meaning": "virei (futuro do verbo venir)" },
+      { "word": "te", "meaning": "te / você" },
+      { "word": "chercher", "meaning": "buscar (venir chercher = vir buscar / apanhar)" },
+      { "word": "à", "meaning": "em / na" },
+      { "word": "la", "meaning": "a" },
+      { "word": "gare", "meaning": "estação de trem" },
+      { "word": "si", "meaning": "se" },
+      { "word": "ça", "meaning": "isto / isso" },
+      { "word": "peut", "meaning": "pode (do verbo pouvoir)" },
+      { "word": "t'", "meaning": "te / a você (encurtado antes de vogal)" },
+      { "word": "aider", "meaning": "ajudar" }
+    ]
+  },
+  "1018": {
+    "explanation": "Pergunta amigável: 'As-tu des astuces pour' significa 'você tem truques / dicas práticas para?'. O verbo evitar é 'éviter'. 'La foule' é a multidão ou o aglomerado de pessoas. A contração 'au' (à + le) conecta com o museu: 'au musée'.",
+    "breakdown": [
+      { "word": "As", "meaning": "Tens / Tem (do verbo avoir com tu)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "des", "meaning": "algumas / (marcador de plural)" },
+      { "word": "astuces", "meaning": "dicas / truques inteligentes / macetes" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "éviter", "meaning": "evitar" },
+      { "word": "la", "meaning": "a" },
+      { "word": "foule", "meaning": "multidão / aglomeração" },
+      { "word": "au", "meaning": "no (junção de à + le)" },
+      { "word": "musée", "meaning": "museu" }
+    ]
+  },
+  "1019": {
+    "explanation": "'L'aéroport était si désorganisé que' significa 'o aeroporto estava tão desorganizado que'. A expressão francesa 'il a fallu' é o passado de falloir e significa 'foi preciso / demorou'. 'Une éternité' é uma eternidade. A preposição 'pour' significa 'para', e 'passer la sécurité' é 'passar pelo controle de segurança / raio-X'.",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "aéroport", "meaning": "aeroporto" },
+      { "word": "était", "meaning": "estava (passado do verbo être)" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "désorganisé", "meaning": "desorganizado" },
+      { "word": "que", "meaning": "que" },
+      { "word": "il", "meaning": "ele / isso (sujeito neutro)" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "fallu", "meaning": "precisado / foi necessário (passado de falloir; il a fallu = demorou / foi preciso)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "éternité", "meaning": "eternidade" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "passer", "meaning": "passar" },
+      { "word": "la", "meaning": "a" },
+      { "word": "sécurité", "meaning": "segurança / controle de segurança" }
+    ]
+  },
+  "1020": {
+    "explanation": "'J'espère que' significa 'espero que'. O verbo se maintenir significa manter-se estável ou firme ('le temps se maintiendra' = o tempo vai se manter bom / vai colaborar). 'Pour notre randonnée en montagne' significa 'para nossa caminhada na montanha / trilha nas montanhas'. 'Demain' é amanhã.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "espère", "meaning": "espero (do verbo espérer)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "le", "meaning": "o" },
+      { "word": "temps", "meaning": "tempo / clima" },
+      { "word": "se", "meaning": "se" },
+      { "word": "maintiendra", "meaning": "manterá / continuará firme e bom (futuro do verbo se maintenir)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "notre", "meaning": "nossa" },
+      { "word": "randonnée", "meaning": "caminhada / trilha na natureza" },
+      { "word": "en", "meaning": "na" },
+      { "word": "montagne", "meaning": "montanha" },
+      { "word": "demain", "meaning": "amanhã" }
+    ]
+  }
+}

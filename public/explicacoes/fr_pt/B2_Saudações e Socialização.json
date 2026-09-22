@@ -1,0 +1,529 @@
+{
+  "901": {
+    "explanation": "Frase elegante e formal para reencontros calorosos. 'C'est un plaisir de' significa 'é um prazer'. O pronome 'vous' (você / o senhor) vem antes do verbo rever ('revoir'). A expressão 'après tout ce temps' significa 'depois de tanto tempo' ou 'após todo esse tempo'.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / É (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "plaisir", "meaning": "prazer" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "revoir", "meaning": "rever / ver novamente" },
+      { "word": "après", "meaning": "depois de / após" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "ce", "meaning": "este / esse" },
+      { "word": "temps", "meaning": "tempo" }
+    ]
+  },
+  "902": {
+    "explanation": "Abordagem corporativa e polida para networking: 'Je me demandais si' significa 'eu estava me perguntando se'. 'Vous pourriez' é 'o senhor poderia'. A expressão 'mettre en relation avec' é a forma padrão de dizer 'colocar em contato com / apresentar a'. 'Votre responsable' é seu gerente ou superior.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "demandais", "meaning": "perguntava (passado do verbo se demander)" },
+      { "word": "si", "meaning": "se" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "pourriez", "meaning": "poderia (forma suave do verbo pouvoir)" },
+      { "word": "me", "meaning": "me" },
+      { "word": "mettre", "meaning": "colocar / pôr" },
+      { "word": "en", "meaning": "em" },
+      { "word": "relation", "meaning": "relação / contato (mettre en relation = colocar em contato)" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "votre", "meaning": "seu / sua" },
+      { "word": "responsable", "meaning": "responsável / gerente / supervisor" }
+    ]
+  },
+  "903": {
+    "explanation": "'Je m'excuse de vous déranger' significa 'peço desculpas por incomodá-lo'. 'Mais' é mas. A expressão francesa 'ne pas pouvoir s'empêcher de' significa 'não conseguir evitar / não poder deixar de fazer algo'. 'D'entendre' é de ouvir, e 'votre conversation' é a conversa de vocês.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "excuse", "meaning": "desculpo (do verbo s'excuser; je m'excuse = peço desculpas)" },
+      { "word": "de", "meaning": "de / por" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "déranger", "meaning": "incomodar / atrapalhar" },
+      { "word": "mais", "meaning": "mas" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "pu", "meaning": "pude / consegui (passado do verbo pouvoir)" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "empêcher", "meaning": "impedir (s'empêcher de = conter-se / deixar de)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "entendre", "meaning": "ouvir / escutar" },
+      { "word": "votre", "meaning": "sua / de vocês" },
+      { "word": "conversation", "meaning": "conversa" }
+    ]
+  },
+  "904": {
+    "explanation": "Fórmula cerimoniosa para e-mails profissionais: a expressão 'je vous prie d'accepter' significa 'peço-lhe que aceite / por favor aceite'. 'Mes sincères excuses' são minhas sinceras desculpas. A preposição 'pour' significa 'por', e 'le retard de ma réponse' significa 'a demora na minha resposta'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vous", "meaning": "ao senhor / a você" },
+      { "word": "prie", "meaning": "rogo / peço (do verbo prier; je vous prie = por favor / peço-lhe)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "accepter", "meaning": "aceitar" },
+      { "word": "mes", "meaning": "minhas" },
+      { "word": "sincères", "meaning": "sinceras" },
+      { "word": "excuses", "meaning": "desculpas" },
+      { "word": "pour", "meaning": "por / pelo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "retard", "meaning": "atraso / demora" },
+      { "word": "de", "meaning": "de / em" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "réponse", "meaning": "resposta" }
+    ]
+  },
+  "905": {
+    "explanation": "Gíria clássica e expressiva do francês falado: a expressão 'ça fait un bail' significa 'faz séculos / já faz um tempão'. A pergunta 'qu'as-tu fait de beau ?' significa literalmente 'o que você fez de bonito / de bom?'. 'Ces derniers temps' significa ultimamente.",
+    "breakdown": [
+      { "word": "Ça", "meaning": "Isto / Isso" },
+      { "word": "fait", "meaning": "faz (do verbo faire)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "bail", "meaning": "tempo longo / séculos (termo coloquial: ça fait un bail = faz um tempão)" },
+      { "word": "qu'", "meaning": "o que (encurtado antes de vogal)" },
+      { "word": "as", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "fait", "meaning": "feito / fez (do verbo faire)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "beau", "meaning": "bom / interessante / bonito (faire de beau = fazer de bom)" },
+      { "word": "ces", "meaning": "nestes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "906": {
+    "explanation": "'J'aimerais vous exprimer' significa 'gostaria de expressar ao senhor / a você'. 'Ma gratitude' é minha gratidão. A preposição 'pour' significa 'por'. A expressão 'tout ce que vous avez fait' significa 'tudo aquilo que o senhor fez' (no passado com avoir). 'Pour nous' é 'por nós'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
+      { "word": "vous", "meaning": "ao senhor / a você / lhes" },
+      { "word": "exprimer", "meaning": "expressar / manifestar" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "gratitude", "meaning": "gratidão" },
+      { "word": "pour", "meaning": "por" },
+      { "word": "tout", "meaning": "tudo" },
+      { "word": "ce", "meaning": "aquilo / o" },
+      { "word": "que", "meaning": "que" },
+      { "word": "vous", "meaning": "o senhor / vocês" },
+      { "word": "avez", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "fait", "meaning": "feito (do verbo faire)" },
+      { "word": "pour", "meaning": "por / para" },
+      { "word": "nous", "meaning": "nós" }
+    ]
+  },
+  "907": {
+    "explanation": "Pergunta suave para sentar-se junto: 'Cela te dérangerait-il' significa 'você se importaria?' (com a pergunta feita com hífen). A conjunção 'que' conecta com a ação reflexiva 'je me joigne à toi' (eu me juntar a você). 'Un instant' significa 'por um instante / um momento'.",
+    "breakdown": [
+      { "word": "Cela", "meaning": "Isto / Isso" },
+      { "word": "te", "meaning": "te" },
+      { "word": "dérangerait", "meaning": "incomodaria / atrapalharia (do verbo déranger)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "que", "meaning": "que / se" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "joigne", "meaning": "junte (do verbo se joindre)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "toi", "meaning": "você / ti (se joindre à toi = juntar-se a você)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "instant", "meaning": "instante / momento" }
+    ]
+  },
+  "908": {
+    "explanation": "'Je ne pense pas que nous nous soyons déjà rencontrés' significa 'acho que ainda não nos conhecemos / não fomos apresentados' (usando 'soyons' após a incerteza). O advérbio 'officiellement' significa oficialmente. A confirmação final 'n'est-ce pas ?' significa 'não é?'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "nous", "meaning": "nos" },
+      { "word": "soyons", "meaning": "tenhamos feito a ação (auxiliar être no modo de incerteza)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "rencontrés", "meaning": "encontrado / conhecido (do verbo se rencontrer)" },
+      { "word": "officiellement", "meaning": "oficialmente" },
+      { "word": "n'", "meaning": "não (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "-ce", "meaning": "isso" },
+      { "word": "pas", "meaning": "não (n'est-ce pas = não é?)" }
+    ]
+  },
+  "909": {
+    "explanation": "'J'ai vraiment hâte de voir' significa 'estou realmente ansioso para ver / mal posso esperar para ver'. A palavra 'comment' significa 'como'. 'Ce projet' é este projeto. O verbo évoluer significa desenvolver-se, progredir ou avançar ('évolue' = se desenvolve).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "hâte", "meaning": "pressa (avoir hâte de = estar ansioso / mal poder esperar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "voir", "meaning": "ver" },
+      { "word": "comment", "meaning": "como" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "projet", "meaning": "projeto" },
+      { "word": "évolue", "meaning": "evolui / se desenvolve / progride (do verbo évoluer)" }
+    ]
+  },
+  "910": {
+    "explanation": "'Pourriez-vous transmettre' significa 'o senhor poderia transmitir / repassar?'. Em francês, mandar abraços ou cumprimentos calorosos a colegas é 'transmettre mes amitiés'. A contração 'au' (à + le) conecta com o restante da equipe: 'au reste de l'équipe'.",
+    "breakdown": [
+      { "word": "Pourriez", "meaning": "Poderia (forma polida do verbo pouvoir)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "transmettre", "meaning": "transmitir / repassar / mandar" },
+      { "word": "mes", "meaning": "minhas / meus" },
+      { "word": "amitiés", "meaning": "amizades / cumprimentos afetuosos / lembranças" },
+      { "word": "au", "meaning": "ao (junção de à + le)" },
+      { "word": "reste", "meaning": "resto / restante" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "équipe", "meaning": "equipe / time" }
+    ]
+  },
+  "911": {
+    "explanation": "Elogio refinado ao anfitrião: 'C'était très gentil de votre part de' significa 'foi muita gentileza da sua parte'. O verbo organizar ou oferecer é 'organiser'. A palavra 'un si' significa 'um tão' (intensificador de qualidade). 'Merveilleux dîner' é um jantar maravilhoso.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / Foi (encurtado antes de vogal)" },
+      { "word": "était", "meaning": "era / foi (passado do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "gentil", "meaning": "gentil / cortês" },
+      { "word": "de", "meaning": "de" },
+      { "word": "votre", "meaning": "sua" },
+      { "word": "part", "meaning": "parte (de votre part = da sua parte)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "organiser", "meaning": "organizar / oferecer" },
+      { "word": "un", "meaning": "um" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "merveilleux", "meaning": "maravilhoso" },
+      { "word": "dîner", "meaning": "jantar" }
+    ]
+  },
+  "912": {
+    "explanation": "'J'espère que cela ne vous dérange pas que' significa 'espero que isso não o incomode / espero que não se importe que'. O verbo passer significa dar uma passada rápida. A expressão idiomática 'à l'improviste' significa 'de surpresa / sem aviso prévio / sem marcar hora'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "espère", "meaning": "espero (do verbo espérer)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "cela", "meaning": "isto / isso" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "dérange", "meaning": "incomoda / atrapalha (do verbo déranger)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "que", "meaning": "que" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "passe", "meaning": "passe / dê uma passada (do verbo passer)" },
+      { "word": "à", "meaning": "a / de" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "improviste", "meaning": "improviso (à l'improviste = sem avisar / de surpresa)" }
+    ]
+  },
+  "913": {
+    "explanation": "Maneira impecável de pedir licença para sair: 'Je crains de devoir partir' significa 'receio ter que ir embora'. 'Maintenant' é agora. A conjunção 'car' significa 'pois / porque', e 'j'ai un autre engagement' significa 'tenho outro compromisso'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "crains", "meaning": "receio / temo (do verbo craindre)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "devoir", "meaning": "dever / ter que" },
+      { "word": "partir", "meaning": "partir / ir embora" },
+      { "word": "maintenant", "meaning": "agora" },
+      { "word": "car", "meaning": "pois / porque / já que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "autre", "meaning": "outro" },
+      { "word": "engagement", "meaning": "compromisso / obrigação marcada" }
+    ]
+  },
+  "914": {
+    "explanation": "Convite afetuoso na despedida: o verbo s'assurer está no modo de convite mútuo ('assurons-nous de' = vamos nos certificar de / tratemos de). A expressão 'rester en contact' significa 'manter contato'. 'Plus souvent' é 'mais frequentemente', e 'à l'avenir' significa 'no futuro / daqui para frente'.",
+    "breakdown": [
+      { "word": "Assurons", "meaning": "Asseguremos / Vamos garantir (convite direto do verbo s'assurer)" },
+      { "word": "-nous", "meaning": "nos" },
+      { "word": "de", "meaning": "de" },
+      { "word": "rester", "meaning": "ficar / permanecer / manter-se" },
+      { "word": "en", "meaning": "em" },
+      { "word": "contact", "meaning": "contato" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "souvent", "meaning": "frequentemente" },
+      { "word": "à", "meaning": "a / no" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "avenir", "meaning": "futuro / porvir (à l'avenir = no futuro / doravante)" }
+    ]
+  },
+  "915": {
+    "explanation": "Abordagem rápida e gentil: 'Aurais-tu' é a pergunta 'você teria?' (do verbo avoir). 'Une minute' é um minuto. A preposição 'pour' significa 'para', o verbo conversar/tratar é 'discuter de', e 'quelque chose' significa 'alguma coisa / algo'.",
+    "breakdown": [
+      { "word": "Aurais", "meaning": "Terias / Teria (forma polida do verbo avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "minute", "meaning": "minuto" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "discuter", "meaning": "conversar / debater / tratar (discuter de = falar sobre)" },
+      { "word": "de", "meaning": "de / sobre" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo)" }
+    ]
+  },
+  "916": {
+    "explanation": "'Je vous remercie vraiment d'' significa 'eu realmente agradeço ao senhor por'. A expressão 'avoir pris le temps de' significa 'ter reservado um tempo para'. O pronome 'me' vem antes de 'voir' (me ver / me receber). A expressão 'si vite' significa 'tão rápido / com tão pouca antecedência'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vous", "meaning": "ao senhor / a você" },
+      { "word": "remercie", "meaning": "agradeço (do verbo remercier)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "d'", "meaning": "de / por (encurtado antes de vogal)" },
+      { "word": "avoir", "meaning": "ter (auxiliar do passado)" },
+      { "word": "pris", "meaning": "tomado / tirado (passado do verbo prendre)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "temps", "meaning": "tempo (prendre le temps = dedicar tempo)" },
+      { "word": "de", "meaning": "de / para" },
+      { "word": "me", "meaning": "me" },
+      { "word": "voir", "meaning": "ver / receber em reunião" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "vite", "meaning": "rápido / em cima da hora" }
+    ]
+  },
+  "917": {
+    "explanation": "'Désolé' é 'desculpe'. O par 'n'... pas' envolve o passado 'ai saisi' (entendi/captei, do verbo saisir). A expressão 'tout à fait' significa 'completamente / muito bem'. 'La dernière partie' é a última parte, e 'de ce que vous avez dit' significa 'do que o senhor disse'.",
+    "breakdown": [
+      { "word": "Désolé", "meaning": "Desculpe / Sinto muito" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "à", "meaning": "a" },
+      { "word": "fait", "meaning": "feito (tout à fait = completamente / exatamente)" },
+      { "word": "saisi", "meaning": "captado / compreendido (do verbo saisir)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "dernière", "meaning": "última (no feminino)" },
+      { "word": "partie", "meaning": "parte" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ce", "meaning": "aquilo / o" },
+      { "word": "que", "meaning": "que" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "avez", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "dit", "meaning": "dito / disse (passado do verbo dire)" }
+    ]
+  },
+  "918": {
+    "explanation": "Frase para quando você finalmente conhece alguém após trocar muitos e-mails ou mensagens: 'C'est un plaisir de vous rencontrer' significa 'é um prazer conhecê-lo'. A palavra 'enfin' significa 'finalmente', e a expressão 'en personne' significa 'em pessoa / pessoalmente'.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / É (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "plaisir", "meaning": "prazer" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "rencontrer", "meaning": "conhecer / encontrar" },
+      { "word": "enfin", "meaning": "finalmente / por fim" },
+      { "word": "en", "meaning": "em" },
+      { "word": "personne", "meaning": "pessoa (en personne = pessoalmente / cara a cara)" }
+    ]
+  },
+  "919": {
+    "explanation": "'Je serais ravi de' significa 'eu ficaria muito feliz em / seria um prazer'. O pronome 'vous' (ao senhor / a você) vem antes da expressão 'faire visiter', que significa 'mostrar / guiar uma visita'. 'Le bureau' é o escritório.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "serais", "meaning": "seria / ficaria (forma suave do verbo être)" },
+      { "word": "ravi", "meaning": "encantado / muito contente" },
+      { "word": "de", "meaning": "de / em" },
+      { "word": "vous", "meaning": "ao senhor / a você / lhes" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "visiter", "meaning": "visitar (faire visiter = mostrar o local / fazer um tour)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "bureau", "meaning": "escritório" }
+    ]
+  },
+  "920": {
+    "explanation": "Pedido formal de desculpas em atendimento ao cliente: 'Je suis désolé pour' significa 'peço desculpas por / sinto muito por'. 'Tout désagrément' significa 'qualquer transtorno / qualquer inconveniente'. A expressão 'que cela a pu causer' significa 'que isso possa ter causado' (passado de pouvoir com causer).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "désolé", "meaning": "desolado / sinto muito" },
+      { "word": "pour", "meaning": "por" },
+      { "word": "tout", "meaning": "todo / qualquer" },
+      { "word": "désagrément", "meaning": "desagrado / inconveniente / transtorno" },
+      { "word": "que", "meaning": "que" },
+      { "word": "cela", "meaning": "isto / isso" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "pu", "meaning": "podido / pôde (passado do verbo pouvoir)" },
+      { "word": "causer", "meaning": "causar / provocar" }
+    ]
+  },
+  "921": {
+    "explanation": "Pergunta sobre adaptação profissional: 'Comment trouves-tu' significa 'o que você está achando de / como avalia'. 'Ton nouveau rôle' é seu novo papel ou sua nova função na empresa. A expressão 'jusqu'à présent' significa 'até o presente momento / até agora'.",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "trouves", "meaning": "achas / avalias (do verbo trouver)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "nouveau", "meaning": "novo" },
+      { "word": "rôle", "meaning": "papel / cargo / função profissional" },
+      { "word": "jusqu'", "meaning": "até (encurtado antes de vogal)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "présent", "meaning": "presente (jusqu'à présent = até agora / até o momento)" }
+    ]
+  },
+  "922": {
+    "explanation": "'J'ai été ravi de vous rencontrer' significa 'foi um imenso prazer conhecê-lo' (passado de être). A conjunção 'et' é 'e'. 'J'espère que' é 'espero que'. A expressão no futuro 'nous nous reverrons' significa 'nós nos reveremos / nos veremos de novo'. A palavra 'bientôt' significa 'em breve'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / fiquei (passado do verbo être)" },
+      { "word": "ravi", "meaning": "encantado / muito feliz" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "rencontrer", "meaning": "conhecer / encontrar" },
+      { "word": "et", "meaning": "e" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "espère", "meaning": "espero (do verbo espérer)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "nous", "meaning": "nos" },
+      { "word": "reverrons", "meaning": "reveremos / veremos de novo (futuro do verbo revoir)" },
+      { "word": "bientôt", "meaning": "em breve / logo" }
+    ]
+  },
+  "923": {
+    "explanation": "Solicitação formal para adiar compromisso: 'Serait-il possible de' significa 'seria possível?'. O verbo adiar ou remarcar é 'reporter'. 'Notre réunion' é nossa reunião. A preposição 'à' indica a nova data: 'à la semaine prochaine' (para a próxima semana).",
+    "breakdown": [
+      { "word": "Serait", "meaning": "Seria (forma suave do verbo être)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "possible", "meaning": "possível" },
+      { "word": "de", "meaning": "de" },
+      { "word": "reporter", "meaning": "adiar / remarcar / postergar" },
+      { "word": "notre", "meaning": "nossa" },
+      { "word": "réunion", "meaning": "reunião" },
+      { "word": "à", "meaning": "para / a" },
+      { "word": "la", "meaning": "a" },
+      { "word": "semaine", "meaning": "semana" },
+      { "word": "prochaine", "meaning": "próxima (no feminino)" }
+    ]
+  },
+  "924": {
+    "explanation": "A expressão 'ne pas manquer de' significa 'com certeza fazer algo / não deixar de fazer'. 'Je ne manquerai pas de transmettre' significa 'com certeza vou repassar / não deixarei de transmitir'. 'Cette information' é esta informação. Em francês, o termo profissional para a pessoa certa ou encarregada é 'la personne concernée'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "manquerai", "meaning": "faltarei / deixarei (futuro do verbo manquer; ne pas manquer de = não deixar de)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "de", "meaning": "de" },
+      { "word": "transmettre", "meaning": "transmitir / repassar" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "information", "meaning": "informação" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "la", "meaning": "a" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "concernée", "meaning": "envolvida / responsável / competente (no feminino)" }
+    ]
+  },
+  "925": {
+    "explanation": "Desejo caloroso a um visitante ou cliente: 'J'espère que vous passerez' significa 'espero que o senhor passe / tenha' (futuro de passer com vous). 'Un séjour productif et agréable' significa 'uma estadia produtiva e agradável' (onde séjour é masculino em francês). A palavra 'ici' significa 'aqui'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "espère", "meaning": "espero (do verbo espérer)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "vous", "meaning": "o senhor / a senhora / vocês" },
+      { "word": "passerez", "meaning": "passará / passarão / terá (futuro do verbo passer com vous)" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "séjour", "meaning": "estadia / estada (masculino em francês)" },
+      { "word": "productif", "meaning": "produtivo" },
+      { "word": "et", "meaning": "e" },
+      { "word": "agréable", "meaning": "agradável" },
+      { "word": "ici", "meaning": "aqui" }
+    ]
+  },
+  "926": {
+    "explanation": "'Merci d'avoir été' significa 'obrigado por ter sido / por ter estado' (passado de être). A expressão 'si patient avec moi' significa 'tão paciente comigo'. A palavra 'pendant' significa 'durante' e 'ce processus' é este processo.",
+    "breakdown": [
+      { "word": "Merci", "meaning": "Obrigado / Agradeço" },
+      { "word": "d'", "meaning": "de / por (encurtado antes de vogal)" },
+      { "word": "avoir", "meaning": "ter (auxiliar do passado)" },
+      { "word": "été", "meaning": "sido / estado (passado do verbo être)" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "patient", "meaning": "paciente" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "moi", "meaning": "mim" },
+      { "word": "pendant", "meaning": "durante" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "processus", "meaning": "processo" }
+    ]
+  },
+  "927": {
+    "explanation": "A expressão idiomática 'être sur le point de' significa 'estar a ponto de / prestes a'. 'J'étais sur le point de t'appeler' significa 'eu estava prestes a te ligar'. 'Quand' é quando. 'J'ai vu ton message' significa 'vi sua mensagem' (passado de voir com avoir).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "étais", "meaning": "estava (passado do verbo être)" },
+      { "word": "sur", "meaning": "em / sobre" },
+      { "word": "le", "meaning": "o" },
+      { "word": "point", "meaning": "ponto (être sur le point de = estar a ponto de / prestes a)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "t'", "meaning": "te / a você (encurtado antes de vogal)" },
+      { "word": "appeler", "meaning": "ligar / telefonar" },
+      { "word": "quand", "meaning": "quando" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "vu", "meaning": "visto / vi (passado do verbo voir)" },
+      { "word": "ton", "meaning": "sua / tua" },
+      { "word": "message", "meaning": "mensagem (palavra masculina em francês)" }
+    ]
+  },
+  "928": {
+    "explanation": "'Je suis vraiment content que' significa 'estou muito feliz que'. A expressão 'nous ayons eu la chance de' significa 'nós tenhamos tido a oportunidade/chance de'. O verbo conversar é 'discuter de', e a expressão 'tout ça' significa 'tudo isso / todas essas coisas'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "content", "meaning": "contente / feliz" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "ayons", "meaning": "tenhamos feito a ação (auxiliar avoir no modo de sentimento)" },
+      { "word": "eu", "meaning": "tido (passado do verbo avoir)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "chance", "meaning": "chance / oportunidade" },
+      { "word": "de", "meaning": "de" },
+      { "word": "discuter", "meaning": "conversar / debater" },
+      { "word": "de", "meaning": "de / sobre" },
+      { "word": "tout", "meaning": "tudo" },
+      { "word": "ça", "meaning": "isso (tout ça = tudo isso)" }
+    ]
+  },
+  "929": {
+    "explanation": "Frase clássica de suporte ou despedida prestativa: 'N'hésitez pas à' significa 'não hesite em'. A expressão 'me faire savoir' significa literalmente 'me fazer saber / me avisar'. A palavra 'si' significa 'se' (grafada 'se' na frase original). 'Je peux vous aider' é 'eu posso ajudá-lo'. E a expressão 'pour quoi que ce soit d'autre' significa 'com qualquer outra coisa que seja'.",
+    "breakdown": [
+      { "word": "N'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "hésitez", "meaning": "hesite / hesiteis (ordem do verbo hésiter)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "à", "meaning": "em" },
+      { "word": "me", "meaning": "me" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "savoir", "meaning": "saber (faire savoir = avisar / informar)" },
+      { "word": "se", "meaning": "se (variante de 'si')" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "peux", "meaning": "posso (do verbo pouvoir)" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "aider", "meaning": "ajudar" },
+      { "word": "pour", "meaning": "para / com" },
+      { "word": "quoi", "meaning": "o que" },
+      { "word": "que", "meaning": "que" },
+      { "word": "ce", "meaning": "isto" },
+      { "word": "soit", "meaning": "seja (quoi que ce soit = qualquer coisa)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "autre", "meaning": "outro / outra" }
+    ]
+  },
+  "930": {
+    "explanation": "Despedida animada entre colegas combinando um evento futuro: o pronome 'on' é usado no sentido coloquial de 'a gente' ('on se voit' = a gente se vê). 'À la conférence' é na conferência. 'Jeudi' é quinta-feira. A palavra 'alors' funciona como arremate final de confirmação ('então / combinados!').",
+    "breakdown": [
+      { "word": "On", "meaning": "A gente / Nós" },
+      { "word": "se", "meaning": "se" },
+      { "word": "voit", "meaning": "vê (do verbo se voir; on se voit = a gente se vê)" },
+      { "word": "à", "meaning": "na / em" },
+      { "word": "la", "meaning": "a" },
+      { "word": "conférence", "meaning": "conferência / palestra" },
+      { "word": "jeudi", "meaning": "quinta-feira" },
+      { "word": "alors", "meaning": "então / até lá" }
+    ]
+  }
+}
