@@ -419,7 +419,7 @@ export default function TelaEstudo({
           onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}>
 
           <div style={styles.topCardAreaFixed}>
-            {!modoExercicio && <p style={{ ...styles.labelTopico, color: ['es', 'ge', 'pi'].includes(idiomaEstudo) ? '#dc2626' : temas[idiomaEstudo].bg }}>{topicoAtivo}</p>}
+            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{topicoAtivo}</p>}
             {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
             {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
               <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginTop: '10px', textAlign: 'center', width: '100%' }}>
