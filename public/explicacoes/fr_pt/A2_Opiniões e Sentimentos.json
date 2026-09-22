@@ -1,0 +1,377 @@
+{
+  "541": {
+    "explanation": "A expressão perfeita e madura para introduzir seu ponto de vista: 'À mon avis' significa 'na minha opinião' ou 'a meu ver'. 'C'est' é 'esta é' ou 'é'. A palavra 'meilleure' é o feminino de melhor, combinando com 'option' (opção).",
+    "breakdown": [
+      { "word": "À", "meaning": "A / Em" },
+      { "word": "mon", "meaning": "meu / minha" },
+      { "word": "avis", "meaning": "opinião / parecer (à mon avis = na minha opinião)" },
+      { "word": "c'", "meaning": "isto / esta (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "meilleure", "meaning": "melhor (no feminino)" },
+      { "word": "option", "meaning": "opção" }
+    ]
+  },
+  "542": {
+    "explanation": "'Je pense que' significa 'eu acho que' ou 'penso que'. 'C'est' significa 'ele é' ou 'ela é'. Em francês, a palavra 'personne' (pessoa) é sempre feminina, por isso usa 'une'. A palavra 'gentille' ganha 'le' no final concordando com pessoa.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "c'", "meaning": "ele / isto (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "gentille", "meaning": "gentil / simpática (no feminino)" }
+    ]
+  },
+  "543": {
+    "explanation": "A fórmula padrão para discordar com educação em francês é 'ne pas être d'accord' (literalmente não estar de acordo). 'Avec ce que' significa 'com aquilo que' ou 'com o que'. 'Tu as dit' significa 'você disse' (no passado com avoir).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "estou / sou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "accord", "meaning": "acordo (être d'accord = concordar)" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "ce", "meaning": "aquilo / o" },
+      { "word": "que", "meaning": "que" },
+      { "word": "tu", "meaning": "você" },
+      { "word": "as", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "dit", "meaning": "dito / disse (do verbo dire)" }
+    ]
+  },
+  "544": {
+    "explanation": "Pergunta para saber a visão de alguém sobre mudanças: 'Que penses-tu' é a forma de pergunta de 'o que você acha?'. A contração 'des' (de + les) conecta com 'nouvelles règles' (novas regras, com nouvelles antes do substantivo).",
+    "breakdown": [
+      { "word": "Que", "meaning": "O que" },
+      { "word": "penses", "meaning": "pensa / achas (do verbo penser)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "des", "meaning": "das / sobre as (junção de de + les)" },
+      { "word": "nouvelles", "meaning": "novas (feminino plural de nouveau)" },
+      { "word": "règles", "meaning": "regras" }
+    ]
+  },
+  "545": {
+    "explanation": "Para dizer que está muito entediado: 'Je m'ennuie' vem do verbo reflexivo s'ennuyer (com o 'me' encurtado para 'm'' antes de vogal). 'Beaucoup' significa muito. 'Avec ce film' significa 'com este filme'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "ennuie", "meaning": "entedio (do verbo s'ennuyer; je m'ennuie = estou entediado)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "film", "meaning": "filme" }
+    ]
+  },
+  "546": {
+    "explanation": "'Elle a été' significa 'ela foi' ou 'ela ficou' (passado de être usando avoir + été). 'Très surprise' significa 'muito surpresa' (com surprise no feminino). 'Par la nouvelle' significa 'pela notícia / com a novidade'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "estado / ficado (passado do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "surprise", "meaning": "surpresa (no feminino)" },
+      { "word": "par", "meaning": "pela / por" },
+      { "word": "la", "meaning": "a" },
+      { "word": "nouvelle", "meaning": "notícia / novidade" }
+    ]
+  },
+  "547": {
+    "explanation": "O verbo s'inquiéter significa preocupar-se. 'Je m'inquiète' é 'eu me preocupo' ou 'estou preocupado'. A preposição 'pour' significa 'por' ou 'com', e 'mes examens finaux' são minhas provas finais (com o plural finaux).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "inquiète", "meaning": "preocupo (do verbo s'inquiéter)" },
+      { "word": "pour", "meaning": "com / por" },
+      { "word": "mes", "meaning": "meus" },
+      { "word": "examens", "meaning": "exames / provas" },
+      { "word": "finaux", "meaning": "finais (plural masculino de final)" }
+    ]
+  },
+  "548": {
+    "explanation": "Pergunta com inversão: 'Penses-tu' significa 'você acha?'. A palavrinha 'que' encurta para 'qu'' antes de 'il'. A expressão 'il va pleuvoir' significa 'vai chover' (com o verbo pleuvoir no infinitivo).",
+    "breakdown": [
+      { "word": "Penses", "meaning": "Pensa / Achas (do verbo penser)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "qu'", "meaning": "que (encurtado antes de vogal)" },
+      { "word": "il", "meaning": "ele / isso (sujeito neutro do clima)" },
+      { "word": "va", "meaning": "vai (do verbo aller)" },
+      { "word": "pleuvoir", "meaning": "chover" }
+    ]
+  },
+  "549": {
+    "explanation": "'Je suis intéressé' significa 'estou interessado'. O 'en' refere-se ao assunto em questão ('disso / sobre isso'). 'Savoir plus' é saber mais. A expressão consagrada 'à ce sujet' significa literalmente 'a este respeito' ou 'sobre este assunto'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "intéressé", "meaning": "interessado" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "en", "meaning": "disso / sobre isso" },
+      { "word": "savoir", "meaning": "saber / aprender" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "à", "meaning": "a" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "sujet", "meaning": "assunto / tema (à ce sujet = sobre isso)" }
+    ]
+  },
+  "550": {
+    "explanation": "'Il n'est pas très content' significa 'ele não está muito feliz / satisfeito'. Em francês, quem está contente com algo, está 'content de'. Como 'voiture' (carro) é feminina, usa-se 'sa' (seu/dele) e 'nouvelle' (nova) antes do substantivo.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "content", "meaning": "contente / feliz / satisfeito" },
+      { "word": "de", "meaning": "com / de" },
+      { "word": "sa", "meaning": "sua / dele (feminino)" },
+      { "word": "nouvelle", "meaning": "nova (no feminino)" },
+      { "word": "voiture", "meaning": "carro (feminino em francês)" }
+    ]
+  },
+  "551": {
+    "explanation": "Estrutura clássica de preferência entre cores: 'Je préfère' é 'eu prefiro'. Em francês, antes das cores coloca-se o artigo definido masculino: 'le rouge' (o vermelho) e 'au bleu' (ao azul, junção de à + le).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "préfère", "meaning": "prefiro (do verbo préférer)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "rouge", "meaning": "vermelho" },
+      { "word": "au", "meaning": "ao / em vez do (junção de à + le)" },
+      { "word": "bleu", "meaning": "azul" }
+    ]
+  },
+  "552": {
+    "explanation": "'C'était' significa 'foi' ou 'era'. 'Un match' é uma partida esportiva ou jogo. 'Très' é muito, e a palavra 'excitant' em contextos esportivos e culturais significa emocionante, empolgante ou eletrizante.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / Foi (encurtado antes de vogal)" },
+      { "word": "était", "meaning": "foi / era (passado do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "match", "meaning": "jogo / partida (esportiva)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "excitant", "meaning": "emocionante / empolgante" }
+    ]
+  },
+  "553": {
+    "explanation": "Expressão idiomática consagrada: em francês, para dizer que você tem medo de altura ou sensação de tontura em lugares altos, usa-se 'avoir le vertige' (literalmente 'ter a vertigem').",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "le", "meaning": "a / o" },
+      { "word": "vertige", "meaning": "vertigem (avoir le vertige = ter medo de altura / tontura de altura)" }
+    ]
+  },
+  "554": {
+    "explanation": "'Quel est' é 'qual é'. A palavra 'avis' significa opinião ou parecer técnico. A preposição 'sur' significa 'sobre', e 'ce livre' significa 'este livro'.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "avis", "meaning": "opinião / parecer" },
+      { "word": "sur", "meaning": "sobre" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "livre", "meaning": "livro" }
+    ]
+  },
+  "555": {
+    "explanation": "'Je pense que' significa 'eu acho que'. A expressão francesa exata para 'perda de tempo' é 'une perte de temps' (onde perte é a perda e temps é o tempo).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "c'", "meaning": "isto / é (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "perte", "meaning": "perda" },
+      { "word": "de", "meaning": "de" },
+      { "word": "temps", "meaning": "tempo (perte de temps = perda de tempo)" }
+    ]
+  },
+  "556": {
+    "explanation": "Em francês, para dizer que alguém tem orgulho de algo, usa-se 'être fier de' (no feminino, fière). 'Elle est très fière de' significa 'ela tem muito orgulho de'. 'Ses enfants' são os filhos dela.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "fière", "meaning": "orgulhosa (feminino de fier)" },
+      { "word": "de", "meaning": "de (être fier de = ter orgulho de)" },
+      { "word": "ses", "meaning": "seus / dela" },
+      { "word": "enfants", "meaning": "filhos / crianças" }
+    ]
+  },
+  "557": {
+    "explanation": "Expressão francesa fantástica e ultra usada: 'avoir hâte de' significa 'mal poder esperar' ou 'estar super ansioso para'. 'J'ai hâte d'être à' significa 'mal posso esperar para estar em'. 'Nos vacances' são nossas férias (palavra feminina plural em francês).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "hâte", "meaning": "pressa (avoir hâte = mal poder esperar / estar ansioso)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "être", "meaning": "estar" },
+      { "word": "à", "meaning": "em / nas" },
+      { "word": "nos", "meaning": "nossas" },
+      { "word": "vacances", "meaning": "férias (sempre no plural)" }
+    ]
+  },
+  "558": {
+    "explanation": "Pergunta com inversão: o verbo trouver (achar / considerar) vem antes de 'tu': 'Trouves-tu' significa 'você acha?'. 'Ce sujet' é este assunto ou tópico. O adjetivo 'intéressant' significa interessante.",
+    "breakdown": [
+      { "word": "Trouves", "meaning": "Achas / Consideras (do verbo trouver)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "sujet", "meaning": "assunto / tema / tópico" },
+      { "word": "intéressant", "meaning": "interessante" }
+    ]
+  },
+  "559": {
+    "explanation": "'Je suis désolé' significa 'sinto muito / peço desculpas'. A palavra 'mais' significa 'mas'. A negação 'ne... pas' abraça o verbo gostar ('aime'). Como 'musique' é feminina, usa-se 'cette musique' (esta música).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "désolé", "meaning": "desolado / sinto muito" },
+      { "word": "mais", "meaning": "mas" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "musique", "meaning": "música" }
+    ]
+  },
+  "560": {
+    "explanation": "Em francês, para dizer que algo deixa você feliz ou causa uma emoção, usa-se o verbo rendre (tornar/deixar). 'Ça me rend' significa literalmente 'isso me torna / me deixa'. 'Très heureux' é 'muito feliz'.",
+    "breakdown": [
+      { "word": "Ça", "meaning": "Isto / Isso" },
+      { "word": "me", "meaning": "me" },
+      { "word": "rend", "meaning": "torna / faz ficar / deixa (do verbo rendre)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "heureux", "meaning": "feliz" }
+    ]
+  },
+  "561": {
+    "explanation": "'Je suis confus' significa 'estou confuso' (do verbo être). A preposição 'par' significa 'por' ou 'com', e 'ces instructions' são estas instruções (com ces marcando o plural).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "confus", "meaning": "confuso" },
+      { "word": "par", "meaning": "por / com" },
+      { "word": "ces", "meaning": "estas" },
+      { "word": "instructions", "meaning": "instruções" }
+    ]
+  },
+  "562": {
+    "explanation": "A expressão 'avoir l'air' significa 'parecer' ou 'ter o aspecto de'. 'Il a l'air d'un' significa 'ele parece um / aparenta ser um'. A palavra 'honnête' (honesto) tem o 'h' silencioso e serve para masculino e feminino.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "a", "meaning": "tem (do verbo avoir)" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "air", "meaning": "ar / aparência (avoir l'air de = parecer)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "homme", "meaning": "homem" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "honnête", "meaning": "honesto" }
+    ]
+  },
+  "563": {
+    "explanation": "'Je ne suis pas sûr' significa 'não tenho certeza'. A conjunção 'que' conecta à ideia seguinte. A palavra 'soit' é a forma de ser exigida após dúvida pessoal ('seja'). 'Une bonne idée' é uma boa ideia.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "sûr", "meaning": "certo / seguro (ne pas être sûr = não ter certeza)" },
+      { "word": "que", "meaning": "que / se" },
+      { "word": "ce", "meaning": "isto / isso" },
+      { "word": "soit", "meaning": "seja (forma do verbo être usada após incerteza)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bonne", "meaning": "boa" },
+      { "word": "idée", "meaning": "ideia" }
+    ]
+  },
+  "564": {
+    "explanation": "'Cela ressemble à' significa 'isso se parece com' ou 'isso soa como'. 'Un plan merveilleux' significa 'um plano maravilhoso' (com o adjetivo maravilhoso após o substantivo plano).",
+    "breakdown": [
+      { "word": "Cela", "meaning": "Isto / Isso (termo elegante para ça)" },
+      { "word": "ressemble", "meaning": "parece (do verbo ressembler)" },
+      { "word": "à", "meaning": "com / a (ressembler à = parecer-se com)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "plan", "meaning": "plano" },
+      { "word": "merveilleux", "meaning": "maravilhoso" }
+    ]
+  },
+  "565": {
+    "explanation": "'J'ai été déçu' significa 'eu fiquei desapontado' ou 'decepcionado' (no passado com avoir + été). A preposição 'par' significa 'por' ou 'com', e 'les résultats' são os resultados.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / ficado (passado do verbo être)" },
+      { "word": "déçu", "meaning": "decepcionado / desapontado" },
+      { "word": "par", "meaning": "pelos / com" },
+      { "word": "les", "meaning": "os" },
+      { "word": "résultats", "meaning": "resultados" }
+    ]
+  },
+  "566": {
+    "explanation": "Pergunta sobre opinião: 'Que penses-tu' é a forma de pergunta de 'o que você acha?'. A contração 'du' (de + le) conecta com o novo professor: 'du nouveau professeur' (com o adjetivo nouveau vindo antes do substantivo).",
+    "breakdown": [
+      { "word": "Que", "meaning": "O que" },
+      { "word": "penses", "meaning": "pensa / achas (do verbo penser)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "nouveau", "meaning": "novo" },
+      { "word": "professeur", "meaning": "professor" }
+    ]
+  },
+  "567": {
+    "explanation": "'Je suis' é 'estou'. A palavra 'assez' aqui funciona como 'bastante' ou 'razoavelmente'. 'Nerveux' significa nervoso (com o 'x' final mudo). A preposição 'pour' significa 'para' ou 'com relação a', e 'la présentation' é a apresentação.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "assez", "meaning": "bastante" },
+      { "word": "nerveux", "meaning": "nervoso" },
+      { "word": "pour", "meaning": "para / com" },
+      { "word": "la", "meaning": "a" },
+      { "word": "présentation", "meaning": "apresentação" }
+    ]
+  },
+  "568": {
+    "explanation": "Frase sobre boa convivência: 'Il est important de' significa 'é importante'. O verbo ser no infinitivo é 'être'. A palavra 'poli' significa educado ou cortês. A expressão 'avec les autres' significa 'com os outros'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "être", "meaning": "ser" },
+      { "word": "poli", "meaning": "educado / polido" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "les", "meaning": "os" },
+      { "word": "autres", "meaning": "outros" }
+    ]
+  },
+  "569": {
+    "explanation": "Declaração de carinho e amizade: 'J'aime vraiment' significa 'eu realmente gosto de'. A expressão 'passer du temps' significa 'passar tempo' ou 'passar momentos'. E 'avec toi' significa 'com você'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "passer", "meaning": "passar" },
+      { "word": "du", "meaning": "um pouco de / tempo em geral (junção de de + le)" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "toi", "meaning": "você / ti" }
+    ]
+  },
+  "570": {
+    "explanation": "Frase de otimismo: o verbo croire significa acreditar/crer ('je crois que' = eu acredito que). A palavra 'tout' significa 'tudo' ou 'qualquer coisa', 'est' é o verbo ser, e 'possible' significa possível.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "crois", "meaning": "acredito / creio (do verbo croire)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "tout", "meaning": "tudo / qualquer coisa" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "possible", "meaning": "possível" }
+    ]
+  }
+}

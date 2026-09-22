@@ -1,0 +1,300 @@
+{
+  "241": {
+    "explanation": "Frase que expressa alegria pessoal. 'Je suis' é 'eu estou'. 'Très' significa muito, e 'heureux' é feliz. A palavra 'aujourd'hui' parece longa, mas é a forma padrão de dizer 'hoje'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou / sou (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "heureux", "meaning": "feliz" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "242": {
+    "explanation": "Pergunta com inversão: o verbo gostar ('aimes') vem antes de 'tu' (você) com tracinho. Como 'film' é uma palavra masculina em francês, usa-se 'ce' para dizer 'este filme'.",
+    "breakdown": [
+      { "word": "Aimes", "meaning": "Gosta / Gostas (do verbo aimer)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "ce", "meaning": "este / esse" },
+      { "word": "film", "meaning": "filme" }
+    ]
+  },
+  "243": {
+    "explanation": "Com verbos de gosto ou desgosto, o francês sempre usa o artigo na frente do substantivo geral. Então, para dizer que não gosta de frio em geral, usa-se 'le froid' (o frio). O par 'n'... pas' envolve o verbo aimer.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "le", "meaning": "o" },
+      { "word": "froid", "meaning": "frio / tempo frio" }
+    ]
+  },
+  "244": {
+    "explanation": "'Ce livre' é 'este livro'. 'Est' é o verbo ser/estar. A palavra 'très' significa muito, e 'intéressant' significa interessante (com pronúncia nasal clássica no final).",
+    "breakdown": [
+      { "word": "Ce", "meaning": "Este / Esse" },
+      { "word": "livre", "meaning": "livro" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "intéressant", "meaning": "interessante" }
+    ]
+  },
+  "245": {
+    "explanation": "'C'est' significa 'ela é' ou 'esta é'. Em francês, adjetivos de beleza como 'belle' (bonita) costumam vir antes do substantivo 'femme' (mulher), em vez de virem depois como costumamos fazer em português.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Ela / Esta (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "belle", "meaning": "bela / bonita" },
+      { "word": "femme", "meaning": "mulher" }
+    ]
+  },
+  "246": {
+    "explanation": "A expressão perfeita para dar sua opinião com naturalidade: 'Je pense que' significa 'eu acho que' ou 'eu penso que'. O adjetivo 'bonne' (boa) vem posicionado antes da palavra 'idée' (ideia).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "c'", "meaning": "isto / é" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bonne", "meaning": "boa" },
+      { "word": "idée", "meaning": "ideia" }
+    ]
+  },
+  "247": {
+    "explanation": "Pergunta com inversão: o verbo 'es' (é/está) vem antes de 'tu' (você) com tracinho. A palavra 'triste' tem o mesmo significado e grafia do português, apenas com a pronúncia francesa mais fechada.",
+    "breakdown": [
+      { "word": "Es", "meaning": "Está / És (do verbo être)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "triste", "meaning": "triste" }
+    ]
+  },
+  "248": {
+    "explanation": "Para dizer que está entediado ou sem ter o que fazer, os franceses usam o verbo reflexivo s'ennuyer. A expressão 'je m'ennuie' significa literalmente 'eu me entedio' (estou entediado), com o 'me' encurtado para 'm'' antes de vogal.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "ennuie", "meaning": "entedio / fico entediado (do verbo s'ennuyer)" }
+    ]
+  },
+  "249": {
+    "explanation": "'La musique' é a música. A palavra 'trop' é usada sempre que uma característica passa dos limites (alta demais / excessivamente). A palavra 'forte' ganha som marcado no final porque música é feminina.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "musique", "meaning": "música" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "trop", "meaning": "demais / em excesso" },
+      { "word": "forte", "meaning": "alta / forte (para som e volume, no feminino)" }
+    ]
+  },
+  "250": {
+    "explanation": "Com pessoas queridas e familiares, o verbo aimer significa amar de verdade. 'J'aime' é 'eu amo'. 'Ma' é 'minha', combinando com a palavra 'famille' (família), que é feminina.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "aime", "meaning": "amo / gosto de (do verbo aimer)" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "famille", "meaning": "família" }
+    ]
+  },
+  "251": {
+    "explanation": "'C'est' significa 'é'. A palavra 'journée' é usada para destacar o desenrolar das horas e o clima do dia. 'Ensoleillée' vem de soleil (sol) e significa ensolarada, com terminação feminina para combinar com journée.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / É" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma / um" },
+      { "word": "journée", "meaning": "dia / jornada" },
+      { "word": "ensoleillée", "meaning": "ensolarada (no feminino)" }
+    ]
+  },
+  "252": {
+    "explanation": "A resposta curta clássica para discordar ou dizer 'acho que não'. A negação 'ne... pas' abraça o verbo achar/pensar ('pense'). Em francês, não precisa de nenhuma palavra extra: 'je ne pense pas' fecha a ideia perfeitamente.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" }
+    ]
+  },
+  "253": {
+    "explanation": "Pergunta com inversão: 'Est-ce' (é isso?). 'Une question' é uma pergunta. O adjetivo 'difficile' (difícil) vem posicionado depois do substantivo, exatamente como fazemos em português.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-ce", "meaning": "isto / isso (invertido para pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "question", "meaning": "pergunta" },
+      { "word": "difficile", "meaning": "difícil" }
+    ]
+  },
+  "254": {
+    "explanation": "Para expressar medo em francês, a estrutura fixa é 'avoir peur de' (literalmente ter medo de). 'J'ai peur' é 'eu tenho medo'. A junção de 'de' com 'les araignées' (as aranhas) vira 'des araignées'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "peur", "meaning": "medo (avoir peur de = ter medo de)" },
+      { "word": "des", "meaning": "de / das (junção de de + les)" },
+      { "word": "araignées", "meaning": "aranhas" }
+    ]
+  },
+  "255": {
+    "explanation": "'Elle est' significa 'ela é'. 'Très' é muito. O adjetivo 'intelligente' ganha a letra 'e' final na escrita para combinar com ela, fazendo a consoante 't' final soe claramente na fala.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "intelligente", "meaning": "inteligente (no feminino)" }
+    ]
+  },
+  "256": {
+    "explanation": "Elogio na hora da sobremesa. 'Le gâteau' é o bolo (com som final de 'ô'). 'Délicieux' significa delicioso (com a letra 'x' final silenciosa na pronúncia).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "gâteau", "meaning": "bolo" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "délicieux", "meaning": "delicioso / muito gostoso" }
+    ]
+  },
+  "257": {
+    "explanation": "Para dizer que está empolgado ou ansioso de forma positiva para fazer algo, os franceses dizem 'être impatient de' (literalmente impaciente para). 'Aller' é ir e 'à la fête' é à festa.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "impatient", "meaning": "animado / ansioso (literalmente impaciente para algo bom)" },
+      { "word": "d'", "meaning": "de / para (encurtado antes de vogal)" },
+      { "word": "aller", "meaning": "ir" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "la", "meaning": "a" },
+      { "word": "fête", "meaning": "festa" }
+    ]
+  },
+  "258": {
+    "explanation": "Em francês, para perguntar se alguém está bravo ou com raiva, usa-se a expressão fixa 'être en colère' (literalmente estar em raiva). O verbo 'es' e 'tu' vêm invertidos para a pergunta.",
+    "breakdown": [
+      { "word": "Es", "meaning": "Está / És (do verbo être)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "colère", "meaning": "raiva (être en colère = estar com raiva / bravo)" }
+    ]
+  },
+  "259": {
+    "explanation": "'Le film' é o filme, 'est' é é/está e 'très' significa muito. O adjetivo 'long' significa longo ou comprido (no masculino, com a letra 'g' final silenciosa).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "film", "meaning": "filme" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "long", "meaning": "longo / comprido" }
+    ]
+  },
+  "260": {
+    "explanation": "A expressão cotidiana mais usada para dizer que não tem certeza: 'ne... pas' envolve o verbo ser/estar ('suis'). A palavra 'sûr' significa certo ou seguro de algo.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "estou / sou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "sûr", "meaning": "certo / seguro (je ne suis pas sûr = não tenho certeza)" }
+    ]
+  },
+  "261": {
+    "explanation": "'C'est' significa 'é'. O adjetivo de tamanho 'petit' (pequeno) vem posicionado antes do substantivo 'problème' (problema, que é uma palavra masculina em francês, por isso usa 'un').",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / É" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "petit", "meaning": "pequeno" },
+      { "word": "problème", "meaning": "problema" }
+    ]
+  },
+  "262": {
+    "explanation": "'J'aime' é 'eu gosto'. Como 'voiture' (carro) é uma palavra feminina em francês, usa-se 'ta' (seu/tua) e o adjetivo 'nouvelle' (nova), que vem posicionado antes de voiture.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "ta", "meaning": "seu / tua (para palavra feminina)" },
+      { "word": "nouvelle", "meaning": "nova (no feminino)" },
+      { "word": "voiture", "meaning": "carro (feminino em francês)" }
+    ]
+  },
+  "263": {
+    "explanation": "A palavra 'eau' (água) começa com som de vogal, por isso o artigo 'la' encurta para 'l''. A palavra 'tiède' significa morna ou tépida, usada tanto para líquidos quanto para a temperatura ambiente.",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (encurtado antes de vogal)" },
+      { "word": "eau", "meaning": "água" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "tiède", "meaning": "morna" }
+    ]
+  },
+  "264": {
+    "explanation": "'C'est un' significa 'ele é um'. A palavra 'drôle' significa engraçado, cômico ou divertido, servindo tanto para homens quanto para mulheres sem mudar de escrita.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Ele / Este (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "homme", "meaning": "homem" },
+      { "word": "drôle", "meaning": "engraçado / divertido" }
+    ]
+  },
+  "265": {
+    "explanation": "Mais uma frase com verbo de gosto: 'ne... pas' abraça 'aime'. Em francês, para falar que você não gosta de pizza em geral, mantém-se o artigo feminino: 'la pizza'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não'" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "la", "meaning": "a" },
+      { "word": "pizza", "meaning": "pizza" }
+    ]
+  },
+  "266": {
+    "explanation": "Pergunta com inversão: 'Est-elle' (é ela?). Como 'chanteuse' (cantora) é feminina, usa-se 'ta' (sua/tua) e 'préférée' ganha um 'e' a mais na escrita para concordar com ela.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-elle", "meaning": "ela (invertido para pergunta)" },
+      { "word": "ta", "meaning": "sua / tua (feminino)" },
+      { "word": "chanteuse", "meaning": "cantora" },
+      { "word": "préférée", "meaning": "favorita / preferida (no feminino)" }
+    ]
+  },
+  "267": {
+    "explanation": "'La ville' é a cidade. 'Très' significa muito. O adjetivo 'bruyante' (barulhenta) vem da palavra bruit (barulho) e termina com a letra 'e' para concordar com a cidade feminina.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "ville", "meaning": "cidade" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "bruyante", "meaning": "barulhenta (no feminino)" }
+    ]
+  },
+  "268": {
+    "explanation": "Expressão idiomática riquíssima e ultra usada na França: 'en avoir marre de' significa 'estar de saco cheio de' ou 'fartar-se de'. 'J'en ai marre' significa 'estou farto/cansado' e 'de ce jeu' é 'deste jogo'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "en", "meaning": "disso (parte da expressão fixa)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "marre", "meaning": "farto / cansado (en avoir marre = estar de saco cheio / cansado)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ce", "meaning": "este / esse" },
+      { "word": "jeu", "meaning": "jogo" }
+    ]
+  },
+  "269": {
+    "explanation": "'C'est' significa 'é'. A expressão 'une belle journée' significa 'um belo dia' ou 'um dia lindo', onde o adjetivo de beleza 'belle' vem antes de 'journée' (que é feminina).",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / É" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "belle", "meaning": "bela / linda" },
+      { "word": "journée", "meaning": "dia / jornada" }
+    ]
+  },
+  "270": {
+    "explanation": "A pergunta mais natural do dia a dia para pedir a opinião de um amigo sobre um assunto. 'Qu'' é 'o que' (encurtado antes de vogal), 'en' refere-se ao assunto em pauta ('disso') e 'penses-tu' é 'acha você?'.",
+    "breakdown": [
+      { "word": "Qu'", "meaning": "O que (encurtado antes de vogal)" },
+      { "word": "en", "meaning": "disso / sobre isso" },
+      { "word": "penses", "meaning": "pensa / achas (do verbo penser)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" }
+    ]
+  }
+}

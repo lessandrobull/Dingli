@@ -1,0 +1,299 @@
+{
+  "31": {
+    "explanation": "Em francês, para falar a idade, você diz literalmente 'eu tenho X anos', usando o verbo ter (avoir), exatamente como fazemos em português. 'J'ai' é a junção de 'je' (eu) com 'ai' (tenho), 'vingt' é vinte e 'ans' são anos.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "vingt", "meaning": "vinte" },
+      { "word": "ans", "meaning": "anos" }
+    ]
+  },
+  "32": {
+    "explanation": "O verbo 'vivre' significa tanto viver quanto morar, então 'vit' aqui significa 'mora'. Para dizer 'em um', usa-se 'dans un' (literalmente dentro de um). Repare que adjetivos comuns de tamanho como 'petit' (pequeno) costumam vir antes do substantivo em francês.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "vit", "meaning": "mora / vive (do verbo vivre)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "un", "meaning": "um" },
+      { "word": "petit", "meaning": "pequeno" },
+      { "word": "appartement", "meaning": "apartamento" }
+    ]
+  },
+  "33": {
+    "explanation": "Para fazer uma pergunta direta com 'você', o francês inverte a ordem: 'As-tu' (tem você?). A palavra 'des' é usada sempre que falamos de coisas no plural sem definir um número exato, funcionando como o nosso 'alguns' ou simplesmente marcando o plural de irmãos.",
+    "breakdown": [
+      { "word": "As", "meaning": "tem / tens (do verbo avoir com 'tu')" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "des", "meaning": "irmãos em geral / alguns (marcador de plural indefinido)" },
+      { "word": "frères", "meaning": "irmãos" }
+    ]
+  },
+  "34": {
+    "explanation": "Aqui vemos uma regra de ouro do francês: a negação 'ne... pas' abraça o verbo 'ai' (tenho). E sempre que você nega a posse de alguma coisa, as palavras 'un', 'une' ou 'des' viram simplesmente 'de' (ou 'd''). Por isso fica 'pas de sœur' em vez de 'pas uma sœur'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "de", "meaning": "nenhuma / de (substitui 'uma' em frases negativas)" },
+      { "word": "sœur", "meaning": "irmã" }
+    ]
+  },
+  "35": {
+    "explanation": "Para falar sobre contatos, 'mon' é 'meu'. Em francês, 'número de telefone' é 'numéro de téléphone'. Antes de ditar números de telefone, os franceses costumam colocar o artigo 'le' (o), como se dissessem 'o meu número é o 555...'.",
+    "breakdown": [
+      { "word": "Mon", "meaning": "Meu" },
+      { "word": "numéro", "meaning": "número" },
+      { "word": "de", "meaning": "de" },
+      { "word": "téléphone", "meaning": "telefone" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o (usado antes do número de telefone)" },
+      { "word": "555-0192", "meaning": "555-0192" }
+    ]
+  },
+  "36": {
+    "explanation": "Pergunta muito usada para pedir o endereço. Como a palavra 'adresse' é feminina em francês, usa-se 'Quelle' (qual) com dois 'l' e 'e'. Um detalhe curioso: usa-se 'ton' em vez de 'ta' porque 'adresse' começa com vogal, facilitando a fala.",
+    "breakdown": [
+      { "word": "Quelle", "meaning": "Qual (forma feminina de quel)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ton", "meaning": "seu / teu (usado aqui antes de vogal feminina)" },
+      { "word": "adresse", "meaning": "endereço" }
+    ]
+  },
+  "37": {
+    "explanation": "Frase simples e direta sobre estado civil. 'Il' é ele, 'est' é é (do verbo être) e 'marié' significa casado. Se fosse mulher, na escrita ganharia mais um 'e' no final (mariée), mas o som falado seria idêntico.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "marié", "meaning": "casado" }
+    ]
+  },
+  "38": {
+    "explanation": "Aqui temos a negação no plural: 'Ils' (eles) e 'sont' (são), envolvidos pelo par 'ne... pas'. Como estamos falando de mais de uma pessoa, a palavra 'mariés' ganha um 's' no final para acompanhar o plural.",
+    "breakdown": [
+      { "word": "Ils", "meaning": "Eles" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "sont", "meaning": "são (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "mariés", "meaning": "casados (no plural)" }
+    ]
+  },
+  "39": {
+    "explanation": "Pergunta clássica sobre profissão. O verbo 'est' vem na frente de 'elle' (ela) com hífen para formar a pergunta. Em francês, você não usa 'uma médica' após o verbo ser, vai direto o nome da profissão: 'est-elle médecin?'.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-elle", "meaning": "ela (invertido para a pergunta)" },
+      { "word": "médecin", "meaning": "médica / médico" }
+    ]
+  },
+  "40": {
+    "explanation": "Dizer sua profissão em francês é muito simples: basta colocar 'je suis' (eu sou) seguido direto da profissão, sem colocar 'um' ou 'uma' no meio. A palavra 'professeur' serve tanto para homens quanto para mulheres.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "professeur", "meaning": "professor / professora" }
+    ]
+  },
+  "41": {
+    "explanation": "Para falar a data do aniversário, 'mon aniversário' é 'meu aniversário'. Para indicar o mês em que algo acontece, o francês usa a palavrinha 'en' antes do nome do mês ('en mai' = em maio).",
+    "breakdown": [
+      { "word": "Mon", "meaning": "Meu" },
+      { "word": "anniversaire", "meaning": "aniversário" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "en", "meaning": "em (usado antes de meses)" },
+      { "word": "mai", "meaning": "maio" }
+    ]
+  },
+  "42": {
+    "explanation": "Um jeito super natural de perguntar o aniversário de alguém no dia a dia. A expressão 'C'est' significa 'é', 'quand' é 'quando' e 'ton anniversaire' é 'seu aniversário'. A ordem das palavras é idêntica à conversa solta em português.",
+    "breakdown": [
+      { "word": "C'", "meaning": "É / Isto (encurtado antes de som de vogal)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "quand", "meaning": "quando" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "anniversaire", "meaning": "aniversário" }
+    ]
+  },
+  "43": {
+    "explanation": "'J'ai' é a fusão de 'je' com 'ai' para dizer 'eu tenho'. A palavra 'grande' (grande) vem antes do substantivo 'famille' (família), seguindo a regra geral dos franceses de colocar palavras de tamanho antes do que estão qualificando.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "grande", "meaning": "grande" },
+      { "word": "famille", "meaning": "família" }
+    ]
+  },
+  "44": {
+    "explanation": "Pergunta para saber onde alguém mora. 'Où' é 'onde'. Para fazer a pergunta invertida com 'vit' (mora) e 'il' (ele), o francês insere uma letrinha '-t-' entre hífens apenas para ligar a fala e deixar a pronúncia suave ('vit-il').",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "vit", "meaning": "mora / vive (do verbo vivre)" },
+      { "word": "-t-", "meaning": "letrinha de ligação usada para a pronúncia soar bem" },
+      { "word": "il", "meaning": "ele (invertido para pergunta)" }
+    ]
+  },
+  "45": {
+    "explanation": "Para dizer que ela não tem carro, o par 'n'... pas' abraça o verbo 'a' (tem). Assim como vimos antes, em frases negativas a palavra 'de' entra no lugar de 'um/uma', ficando 'pas de voiture' (literalmente nada de carro).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "a", "meaning": "tem (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "de", "meaning": "de / nenhum (usado na negação)" },
+      { "word": "voiture", "meaning": "carro" }
+    ]
+  },
+  "46": {
+    "explanation": "Pergunta sobre a cidade de onde a pessoa veio. O verbo 'viens' (vir) e 'tu' (você) estão invertidos com hífen. O 'd'' é a preposição 'de' encurtada antes da palavra 'une' (uma). Como 'ville' (cidade) é feminina, usa-se 'grande ville'.",
+    "breakdown": [
+      { "word": "Viens", "meaning": "Vem / Vens (do verbo venir com 'tu')" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "grande", "meaning": "grande" },
+      { "word": "ville", "meaning": "cidade" }
+    ]
+  },
+  "47": {
+    "explanation": "Para falar sobre preferências, 'ma' é 'minha' (usado porque 'couleur', cor, é uma palavra feminina em francês). A palavra 'préférée' ganha um 'e' a mais para combinar com a cor. Ao citar uma cor em geral como sujeito ou complemento, o francês sempre coloca o artigo 'le' antes ('le bleu').",
+    "breakdown": [
+      { "word": "Ma", "meaning": "Minha" },
+      { "word": "couleur", "meaning": "cor (palavra feminina em francês)" },
+      { "word": "préférée", "meaning": "favorita / preferida" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o (artigo usado antes de cores)" },
+      { "word": "bleu", "meaning": "azul" }
+    ]
+  },
+  "48": {
+    "explanation": "Pergunta direta para saber a profissão de alguém. 'Quel' significa 'qual' no masculino, combinando com a palavra 'travail' (trabalho). 'Ton' é o jeito informal de falar 'seu/teu' para pessoas conhecidas ou da mesma idade.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "49": {
+    "explanation": "Frase bem simples para indicar o local de trabalho. 'Il travaille' significa 'ele trabalha'. Para dizer que trabalha 'em um banco', os franceses usam 'dans une banque', que passa a ideia de estar dentro do local.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "travaille", "meaning": "trabalha (do verbo travailler)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "banque", "meaning": "banco (instituição bancária)" }
+    ]
+  },
+  "50": {
+    "explanation": "Em francês, para dizer que alguém é alto de forma bem descritiva ou formal, é comum usar a expressão 'de grande taille' (literalmente de grande estatura/tamanho). 'Je suis' é 'eu sou' e 'personne' significa pessoa (sempre tratada como palavra feminina).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "de", "meaning": "de" },
+      { "word": "grande", "meaning": "grande" },
+      { "word": "taille", "meaning": "estatura / tamanho" }
+    ]
+  },
+  "51": {
+    "explanation": "Essa é uma forma comum de fazer perguntas em francês quando você quer ser bem claro e educado. Primeiro você cita a pessoa ('ton père' = seu pai) e logo em seguida usa a pergunta invertida 'est-il' (está ele?). A expressão 'à la maison' é a fórmula padrão para dizer 'em casa'.",
+    "breakdown": [
+      { "word": "Ton", "meaning": "Seu / Teu" },
+      { "word": "père", "meaning": "pai" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para reforçar a pergunta)" },
+      { "word": "à", "meaning": "em / na" },
+      { "word": "la", "meaning": "a" },
+      { "word": "maison", "meaning": "casa" }
+    ]
+  },
+  "52": {
+    "explanation": "Frase sobre moradia muito direta: 'Nous' significa 'nós' e 'vivons' é a forma de 'moramos/vivemos'. Para dizer 'em um apartamento', usa-se 'dans un appartement' (literalmente dentro de um apartamento).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "vivons", "meaning": "moramos / vivemos (do verbo vivre)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "un", "meaning": "um" },
+      { "word": "appartement", "meaning": "apartamento" }
+    ]
+  },
+  "53": {
+    "explanation": "Para dizer 'a casa deles', o francês usa a palavra 'leur' antes do substantivo ('leur maison'). A palavra 'très' significa muito, e 'vieille' é a forma feminina de velha/antiga, combinando com a palavra casa.",
+    "breakdown": [
+      { "word": "Leur", "meaning": "Deles / Delas" },
+      { "word": "maison", "meaning": "casa" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "vieille", "meaning": "antiga / velha (no feminino)" }
+    ]
+  },
+  "54": {
+    "explanation": "Para perguntar o sobrenome de alguém, os franceses dizem literalmente 'nome de família' (nom de famille). A palavra 'son' significa 'o dele' ou 'o dela', e combina com 'nom', que é uma palavra masculina.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "son", "meaning": "o dele / o dela / seu" },
+      { "word": "nom", "meaning": "nome" },
+      { "word": "de", "meaning": "de" },
+      { "word": "famille", "meaning": "família (nom de famille = sobrenome)" }
+    ]
+  },
+  "55": {
+    "explanation": "Para dizer 'eu não sou', o par 'ne... pas' abraça o verbo 'suis'. Como em todas as profissões em francês, não se usa a palavra 'um' depois do verbo ser: vai direto a profissão 'infirmier' (enfermeiro).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "infirmier", "meaning": "enfermeiro" }
+    ]
+  },
+  "56": {
+    "explanation": "Pergunta sobre estado civil. A ordem do verbo e do pronome vem invertida: 'Es-tu' significa 'você é?'. A palavra 'célibataire' serve tanto para solteiro quanto para solteira, e 'marié' significa casado.",
+    "breakdown": [
+      { "word": "Es", "meaning": "É / És (do verbo être)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "célibataire", "meaning": "solteiro / solteira" },
+      { "word": "ou", "meaning": "ou" },
+      { "word": "marié", "meaning": "casado" }
+    ]
+  },
+  "57": {
+    "explanation": "Para dizer de qual país alguém é ou vem, usa-se 'vient' (vem, do verbo venir) seguido da preposição 'de'. Como 'Italie' começa com vogal, a preposição encurta para 'd''. Países femininos que começam com vogal dispensam artigo nessa frase.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "vient", "meaning": "vem / é (do verbo venir)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "Italie", "meaning": "Itália" }
+    ]
+  },
+  "58": {
+    "explanation": "Frase familiar bem direta: 'ma mère' é 'minha mãe' e 'est' é 'é'. No mundo da culinária, a palavra 'chef' é usada sem artigo após o verbo ser, exatamente como qualquer outra profissão em francês.",
+    "breakdown": [
+      { "word": "Ma", "meaning": "Minha" },
+      { "word": "mère", "meaning": "mãe" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "chef", "meaning": "chef (de cozinha)" }
+    ]
+  },
+  "59": {
+    "explanation": "Pergunta direta para saber se eles têm algo. O verbo ter no plural ('ont') vem antes de 'ils' (eles) ligado por um tracinho ('ont-ils'). 'Un chien' significa 'um cachorro'.",
+    "breakdown": [
+      { "word": "Ont", "meaning": "Têm (do verbo avoir no plural)" },
+      { "word": "-ils", "meaning": "eles (invertido para pergunta)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "chien", "meaning": "cachorro" }
+    ]
+  },
+  "60": {
+    "explanation": "O jeito comum de falar sobre filhos. 'J'ai' é 'eu tenho' (com o 'je' encurtado antes da vogal). 'Deux' é o número dois e a palavra 'enfants' significa tanto crianças em geral quanto filhos.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "deux", "meaning": "dois" },
+      { "word": "enfants", "meaning": "filhos / crianças" }
+    ]
+  }
+}

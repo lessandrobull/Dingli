@@ -1,0 +1,374 @@
+{
+  "571": {
+    "explanation": "'Je pense que' significa 'eu acho que'. 'La technologie' é a tecnologia. O verbo 'change' (muda / está mudando) é usado no presente para expressar uma transformação contínua. 'Nos vies' significa 'nossas vidas' (com 'nos' marcando o plural de vie).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "la", "meaning": "a" },
+      { "word": "technologie", "meaning": "tecnologia" },
+      { "word": "change", "meaning": "muda / está mudando (do verbo changer)" },
+      { "word": "nos", "meaning": "nossas" },
+      { "word": "vies", "meaning": "vidas" }
+    ]
+  },
+  "572": {
+    "explanation": "'Est-ce' é a pergunta 'é isso?'. A palavra 'possible' significa possível. A preposição 'de' liga com a ação de viver ('vivre'). A palavra 'sans' significa 'sem', e 'téléphone' é telefone.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-ce", "meaning": "isto / isso (invertido para a pergunta)" },
+      { "word": "possible", "meaning": "possível" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vivre", "meaning": "viver" },
+      { "word": "sans", "meaning": "sem" },
+      { "word": "téléphone", "meaning": "telefone" }
+    ]
+  },
+  "573": {
+    "explanation": "Em francês, meio ambiente é chamado de 'l'environnement' (com 'l'' antes de vogal). 'Est' é o verbo ser, e 'très important' significa 'muito importante'. A preposição 'pour' significa 'para', e 'notre avenir' significa 'nosso futuro' (onde avenir é um sinônimo muito comum de futur).",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "environnement", "meaning": "meio ambiente / ambiente" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "notre", "meaning": "nosso / nossa" },
+      { "word": "avenir", "meaning": "futuro / porvir" }
+    ]
+  },
+  "574": {
+    "explanation": "'Nous devrions' significa 'nós deveríamos' (do verbo devoir, dando um conselho coletivo). A expressão 'essayer de' significa 'tentar'. O verbo proteger no infinitivo é 'protéger', e 'la nature' é a natureza.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "devrions", "meaning": "deveríamos / devemos (conselho do verbo devoir)" },
+      { "word": "essayer", "meaning": "tentar / experimentar" },
+      { "word": "de", "meaning": "de (essayer de = tentar fazer algo)" },
+      { "word": "protéger", "meaning": "proteger" },
+      { "word": "la", "meaning": "a" },
+      { "word": "nature", "meaning": "natureza" }
+    ]
+  },
+  "575": {
+    "explanation": "'Quel est' significa 'qual é'. Em francês, a palavra 'sens' tem vários sentidos ricos: pode ser sentido, direção ou significado de uma palavra. 'De ce mot' significa 'desta palavra' (mot é uma palavra masculina).",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "sens", "meaning": "sentido / significado" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ce", "meaning": "esta / este" },
+      { "word": "mot", "meaning": "palavra" }
+    ]
+  },
+  "576": {
+    "explanation": "'Je ne pense pas que' significa 'não acho que'. 'L'argent' é o dinheiro (com 'l'' antes de vogal). A palavra 'puisse' é a forma do verbo pouvoir usada após dúvida ('possa'). 'Acheter' é comprar e 'le bonheur' é a felicidade.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "que", "meaning": "que" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "argent", "meaning": "dinheiro" },
+      { "word": "puisse", "meaning": "possa (forma do verbo pouvoir após dúvida)" },
+      { "word": "acheter", "meaning": "comprar" },
+      { "word": "le", "meaning": "a / o" },
+      { "word": "bonheur", "meaning": "felicidade" }
+    ]
+  },
+  "577": {
+    "explanation": "'L'éducation' é a educação (com 'l'' antes da vogal). 'Est' é é. 'La clé' é a chave (palavra feminina). A contração 'du' (de + le) conecta com o sucesso: 'du succès'.",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (encurtado antes de vogal)" },
+      { "word": "éducation", "meaning": "educação" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "clé", "meaning": "chave" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "succès", "meaning": "sucesso" }
+    ]
+  },
+  "578": {
+    "explanation": "'Le temps' significa o tempo ou o clima. O verbo devenir significa tornar-se ou ficar ('devient' = fica). A expressão indispensável 'de plus en plus' significa 'cada vez mais'. 'Chaud' é quente e 'chaque année' significa 'a cada ano / todo ano'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "temps", "meaning": "tempo / clima" },
+      { "word": "devient", "meaning": "fica / torna-se (do verbo devenir)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "en", "meaning": "em" },
+      { "word": "plus", "meaning": "mais (de plus en plus = cada vez mais)" },
+      { "word": "chaud", "meaning": "quente" },
+      { "word": "chaque", "meaning": "cada" },
+      { "word": "année", "meaning": "ano (chaque année = a cada ano)" }
+    ]
+  },
+  "579": {
+    "explanation": "'Est-ce' é a pergunta 'é isso?'. 'Difficile' é difícil. A preposição 'de' encurta para 'd'' antes do verbo aprender ('apprendre'). Como 'langue' (língua/idioma) é feminina, usa-se 'nouvelle' antes dela.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-ce", "meaning": "isto / isso (invertido para a pergunta)" },
+      { "word": "difficile", "meaning": "difícil" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "apprendre", "meaning": "aprender" },
+      { "word": "une", "meaning": "uma / um" },
+      { "word": "nouvelle", "meaning": "nova (feminino)" },
+      { "word": "langue", "meaning": "língua / idioma" }
+    ]
+  },
+  "580": {
+    "explanation": "'Le temps passe' significa 'o tempo passa'. 'Très vite' é 'muito rápido'. A palavra 'quand' significa 'quando'. O pronome 'on' é muito comum na França e funciona como 'a gente' ou 'se' em geral ('quand on est' = quando a gente está / quando se está). 'Occupé' significa ocupado.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "passe", "meaning": "passa (do verbo passer)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "vite", "meaning": "rápido / depressa" },
+      { "word": "quand", "meaning": "quando" },
+      { "word": "on", "meaning": "a gente / se (pronome geral)" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "occupé", "meaning": "ocupado" }
+    ]
+  },
+  "581": {
+    "explanation": "'J'ai' é 'eu tenho'. A expressão para ponto de vista em francês é idêntica: 'un point de vue'. O adjetivo 'différent' vem posicionado depois do substantivo, significando diferente.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "point", "meaning": "ponto" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vue", "meaning": "vista (point de vue = ponto de vista)" },
+      { "word": "différent", "meaning": "diferente" }
+    ]
+  },
+  "582": {
+    "explanation": "'Il est important de' é a expressão para 'é importante'. O verbo seguir ou obedecer é 'suivre'. 'Les règles' são as regras ou normas.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "de", "meaning": "de" },
+      { "word": "suivre", "meaning": "seguir / obedecer" },
+      { "word": "les", "meaning": "as" },
+      { "word": "règles", "meaning": "regras" }
+    ]
+  },
+  "583": {
+    "explanation": "'Nous devons' vem do verbo devoir e significa 'nós devemos' ou 'precisamos'. O verbo achar ou encontrar é 'trouver'. Em francês, uma solução é uma solução 'à' algo ('solution à ce problème' = solução para este problema).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "devons", "meaning": "devemos / precisamos (do verbo devoir)" },
+      { "word": "trouver", "meaning": "encontrar / achar" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "solution", "meaning": "solução" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "problème", "meaning": "problema (palavra masculina em francês)" }
+    ]
+  },
+  "584": {
+    "explanation": "'Quelle est' é 'qual é' (no feminino). 'La différence' é a diferença. A preposição 'entre' significa 'entre'. A expressão 'ces deux-là' significa literalmente 'estes dois aí' ou 'aqueles dois', com o sufixo '-là' enfatizando a distinção entre os itens.",
+    "breakdown": [
+      { "word": "Quelle", "meaning": "Qual (feminino de quel)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "différence", "meaning": "diferença" },
+      { "word": "entre", "meaning": "entre" },
+      { "word": "ces", "meaning": "estes / esses" },
+      { "word": "deux", "meaning": "dois" },
+      { "word": "-là", "meaning": "aí / lá (ces deux-là = esses dois aí / aqueles dois)" }
+    ]
+  },
+  "585": {
+    "explanation": "'Je crois que' significa 'eu acredito que'. A expressão consagrada em francês para 'todo mundo / todos' é 'tout le monde' (literalmente 'todo o mundo'). 'Devrait être' significa 'deveria ser', e 'égal' significa igual.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "crois", "meaning": "acredito / creio (do verbo croire)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "monde", "meaning": "mundo (tout le monde = todo mundo / todos)" },
+      { "word": "devrait", "meaning": "deveria (do verbo devoir)" },
+      { "word": "être", "meaning": "ser" },
+      { "word": "égal", "meaning": "igual" }
+    ]
+  },
+  "586": {
+    "explanation": "'L'avenir' significa o futuro ou o porvir (com 'l'' antes de vogal). 'Est' é o verbo ser. 'Incertain' significa incerto ou imprevisível. A palavra 'mais' é 'mas', e 'passionnant' significa apaixonante, fascinante ou muito empolgante.",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "avenir", "meaning": "futuro / porvir" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "incertain", "meaning": "incerto" },
+      { "word": "mais", "meaning": "mas" },
+      { "word": "passionnant", "meaning": "apaixonante / fascinante / excitante" }
+    ]
+  },
+  "587": {
+    "explanation": "'Y a-t-il' é a pergunta 'existe?' ou 'tem?'. 'Une raison' é uma razão ou motivo. Em francês, o motivo de uma decisão é ligado com a preposição 'à'. 'Votre décision' significa 'sua decisão' em tratamento educado e formal.",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há / Existe (forma de pergunta)" },
+      { "word": "une", "meaning": "uma / um" },
+      { "word": "raison", "meaning": "razão / motivo" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "votre", "meaning": "sua / de vocês (formal)" },
+      { "word": "décision", "meaning": "decisão" }
+    ]
+  },
+  "588": {
+    "explanation": "O verbo réfléchir significa refletir ou pensar profundamente e pede a preposição 'à' ('je réfléchis à'). A contração 'au' (à + le) conecta com o sentido: 'au sens'. 'De la vie' é 'da vida'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "réfléchis", "meaning": "reflito / penso (do verbo réfléchir)" },
+      { "word": "au", "meaning": "no / ao (junção de à + le)" },
+      { "word": "sens", "meaning": "sentido / significado" },
+      { "word": "de", "meaning": "de" },
+      { "word": "la", "meaning": "a" },
+      { "word": "vie", "meaning": "vida" }
+    ]
+  },
+  "589": {
+    "explanation": "Ditado filosófico: 'La connaissance' é o conhecimento (feminino em francês). 'Est plus puissante que' significa 'é mais poderosa que' (com puissante no feminino). 'La force' é a força física.",
+    "breakdown": [
+      { "word": "La", "meaning": "O / A (connaissance é feminina em francês)" },
+      { "word": "connaissance", "meaning": "conhecimento" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "puissante", "meaning": "poderosa / forte (no feminino)" },
+      { "word": "que", "meaning": "do que / que" },
+      { "word": "la", "meaning": "a" },
+      { "word": "force", "meaning": "força" }
+    ]
+  },
+  "590": {
+    "explanation": "A expressão 'C'est bien de' significa 'é bom' ou 'faz bem'. O verbo ter é 'avoir'. Como vimos antes, a palavra 'beaucoup' (muito) pede sempre 'de' logo depois: 'beaucoup de rêves' (muitos sonhos).",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / É (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "bien", "meaning": "bom / bem (c'est bien = é bom)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "avoir", "meaning": "ter" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "de", "meaning": "de (usado após palavras de quantidade)" },
+      { "word": "rêves", "meaning": "sonhos" }
+    ]
+  },
+  "591": {
+    "explanation": "Pergunta de reflexão coletiva: 'Comment' é como. 'Pouvons-nous' é a forma interrogativa de 'podemos nós', com verbo e pessoa ligados por hífen. O verbo melhorar é 'améliorer'. 'Notre société' é 'nossa sociedade'.",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "pouvons", "meaning": "podemos (do verbo pouvoir)" },
+      { "word": "-nous", "meaning": "nós (invertido para a pergunta)" },
+      { "word": "améliorer", "meaning": "melhorar / aprimorar" },
+      { "word": "notre", "meaning": "nossa" },
+      { "word": "société", "meaning": "sociedade" }
+    ]
+  },
+  "592": {
+    "explanation": "'Le respect' significa o respeito (com som final mudo da letra t). 'Est très important' é 'é muito importante'. 'Dans une amitié' significa 'em uma amizade' (palavra feminina que começa com vogal).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "respect", "meaning": "respeito" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "amitié", "meaning": "amizade" }
+    ]
+  },
+  "593": {
+    "explanation": "A negação 'ne... pas' abraça o verbo entender ('comprends'). A palavra 'but' significa objetivo, meta ou propósito (com a consoante 't' soando na pronúncia). 'De cela' significa 'disso' de forma formal e elegante.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "comprends", "meaning": "entendo / compreendo (do verbo comprendre)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "le", "meaning": "o" },
+      { "word": "but", "meaning": "objetivo / propósito / meta" },
+      { "word": "de", "meaning": "de" },
+      { "word": "cela", "meaning": "isto / isso" }
+    ]
+  },
+  "594": {
+    "explanation": "'Est-ce' é a pergunta 'é isso?'. A palavra 'mal' significa errado, incorreto ou ruim. O verbo contar histórias ou mentiras é 'raconter'. Em francês, mentirinha inocente é dita 'un petit mensonge' (com o adjetivo de tamanho petit antes de mensonge, que é masculino).",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-ce", "meaning": "isto / isso (invertido para a pergunta)" },
+      { "word": "mal", "meaning": "errado / mal" },
+      { "word": "de", "meaning": "de" },
+      { "word": "raconter", "meaning": "contar / narrar" },
+      { "word": "un", "meaning": "um / uma" },
+      { "word": "petit", "meaning": "pequeno (petit mensonge = mentirinha)" },
+      { "word": "mensonge", "meaning": "mentira (palavra masculina em francês)" }
+    ]
+  },
+  "595": {
+    "explanation": "'Le monde' é o mundo. 'Est' é o verbo ser. 'Un endroit' é um lugar ou local (palavra masculina que começa com som de vogal). 'Très intéressant' é 'muito interessante'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "monde", "meaning": "mundo" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "endroit", "meaning": "lugar / local" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "intéressant", "meaning": "interessante" }
+    ]
+  },
+  "596": {
+    "explanation": "Lição clássica de vida: 'Nous pouvons' significa 'nós podemos' (do verbo pouvoir). O verbo aprender no infinitivo é 'apprendre'. A expressão 'de nos erreurs' significa 'com nossos erros' (onde em francês se aprende 'de' alguma experiência).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "pouvons", "meaning": "podemos (do verbo pouvoir)" },
+      { "word": "apprendre", "meaning": "aprender" },
+      { "word": "de", "meaning": "de / com" },
+      { "word": "nos", "meaning": "nossos" },
+      { "word": "erreurs", "meaning": "erros (palavra feminina em francês)" }
+    ]
+  },
+  "597": {
+    "explanation": "Provérbio clássico: como 'honnêteté' (honestidade) começa com 'h' mudo, o artigo 'la' encurta para 'l''. 'Est' é o verbo ser. A palavra 'meilleure' é o feminino de melhor, concordando com 'politique' (política / conduta).",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (encurtado antes de h mudo)" },
+      { "word": "honnêteté", "meaning": "honestidade" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "meilleure", "meaning": "melhor (no feminino)" },
+      { "word": "politique", "meaning": "política / conduta" }
+    ]
+  },
+  "598": {
+    "explanation": "Pergunta filosófica: 'Qu'est-ce qui' pergunta o sujeito ou causa da ação ('o que é que'). O verbo rendre significa tornar ou deixar ('rend' = torna). 'Vraiment' é verdadeiramente ou realmente. A palavra 'heureuse' é a forma feminina de feliz, combinando com pessoa (personne).",
+    "breakdown": [
+      { "word": "Qu'", "meaning": "O que (encurtado antes de vogal)" },
+      { "word": "est-ce qui", "meaning": "expressão interrogativa que pergunta o que causa a ação" },
+      { "word": "rend", "meaning": "torna / faz ficar (do verbo rendre)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "vraiment", "meaning": "verdadeiramente / realmente" },
+      { "word": "heureuse", "meaning": "feliz (no feminino)" }
+    ]
+  },
+  "599": {
+    "explanation": "A expressão francesa 'il faut' é super comum: significa 'é preciso', 'é necessário' ou 'temos que'. O verbo trabalhar é 'travailler'. A palavra 'dur' funciona aqui como 'duro / com afinco'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "faut", "meaning": "é preciso / é necessário (do verbo falloir)" },
+      { "word": "travailler", "meaning": "trabalhar" },
+      { "word": "dur", "meaning": "duro / com afinco" }
+    ]
+  },
+  "600": {
+    "explanation": "Frase dourada para fechar o Nível A2 com chave de ouro! 'La vie' é a vida. 'Est' é o verbo ser. A palavra 'pleine' significa cheia (feminino de plein, concordando com a vida). A preposição 'de' conecta com 'surprises' (surpresas).",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "vie", "meaning": "vida" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "pleine", "meaning": "cheia (no feminino)" },
+      { "word": "de", "meaning": "de (plein de = cheio de)" },
+      { "word": "surprises", "meaning": "surpresas" }
+    ]
+  }
+}

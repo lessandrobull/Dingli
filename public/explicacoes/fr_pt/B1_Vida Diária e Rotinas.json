@@ -1,0 +1,469 @@
+{
+  "661": {
+    "explanation": "'Je vérifie généralement' significa 'eu geralmente verifico / checo'. Em francês, agenda de horários ou cronograma é chamado de 'emploi du temps' (literalmente 'uso do tempo'). A expressão 'dès que' significa 'assim que' ou 'logo que', e 'au bureau' é 'ao escritório' (junção de à + le).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vérifie", "meaning": "verifico / checo (do verbo vérifier)" },
+      { "word": "généralement", "meaning": "geralmente" },
+      { "word": "mon", "meaning": "meu / minha" },
+      { "word": "emploi", "meaning": "uso / emprego" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "temps", "meaning": "tempo (emploi du temps = agenda / grade de horários)" },
+      { "word": "dès", "meaning": "desde" },
+      { "word": "que", "meaning": "que (dès que = assim que / logo que)" },
+      { "word": "j'", "meaning": "eu (encurtado antes de som de vogal)" },
+      { "word": "arrive", "meaning": "chego (do verbo arriver)" },
+      { "word": "au", "meaning": "ao (junção de à + le)" },
+      { "word": "bureau", "meaning": "escritório" }
+    ]
+  },
+  "662": {
+    "explanation": "'Elle a l'habitude de' significa 'ela costuma' ou 'ela tem o hábito de'. O verbo levantar-se é 'se lever'. A palavra 'tôt' significa 'cedo'. A expressão 'à cause de' significa 'por causa de', e 'trajet' refere-se ao percurso ou trajeto de deslocamento diário.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "a", "meaning": "tem (do verbo avoir)" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume (avoir l'habitude de = costumar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "se", "meaning": "se" },
+      { "word": "lever", "meaning": "levantar (se lever = levantar-se)" },
+      { "word": "tôt", "meaning": "cedo" },
+      { "word": "à", "meaning": "a" },
+      { "word": "cause", "meaning": "causa (à cause de = por causa de)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "son", "meaning": "seu / dela" },
+      { "word": "trajet", "meaning": "trajeto / trajeto diário até o trabalho" }
+    ]
+  },
+  "663": {
+    "explanation": "'J'essaie de' significa 'estou tentando' (do verbo essayer). O verbo passar tempo é 'passer'. A expressão 'moins de temps' significa 'menos tempo' (com 'de' obrigatório após palavras de quantidade). Em francês, redes sociais são chamadas de 'les réseaux sociaux' (plural de réseau social).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "passer", "meaning": "passar" },
+      { "word": "moins", "meaning": "menos" },
+      { "word": "de", "meaning": "de (usado após palavras de quantidade)" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "sur", "meaning": "em / nas" },
+      { "word": "les", "meaning": "as" },
+      { "word": "réseaux", "meaning": "redes (plural de réseau)" },
+      { "word": "sociaux", "meaning": "sociais (plural masculino de social; réseaux sociaux = redes sociais)" }
+    ]
+  },
+  "664": {
+    "explanation": "'Il pratique' significa 'ele pratica' ou 'tem praticado' (o francês usa o presente para ações contínuas que ainda estão em andamento). 'La guitare' é o violão ou guitarra. 'Tous les jours' significa 'todos os dias', e 'depuis un mois' significa 'há um mês / desde um mês atrás'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "pratique", "meaning": "pratica / treina (do verbo pratiquer)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "guitare", "meaning": "violão / guitarra" },
+      { "word": "tous", "meaning": "todos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "jours", "meaning": "dias (tous les jours = todos os dias)" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "un", "meaning": "um" },
+      { "word": "mois", "meaning": "mês" }
+    ]
+  },
+  "665": {
+    "explanation": "Pergunta sobre equilíbrio de vida: 'Trouvez-vous' é 'o senhor acha / você acha?'. 'Parfois' significa às vezes e 'difficile' é difícil. O verbo 'concilier' significa harmonizar ou conciliar. 'Travail et vie privée' significa 'trabalho e vida privada/pessoal'.",
+    "breakdown": [
+      { "word": "Trouvez", "meaning": "Acha / Encontra (do verbo trouver com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "parfois", "meaning": "às vezes" },
+      { "word": "difficile", "meaning": "difícil" },
+      { "word": "de", "meaning": "de" },
+      { "word": "concilier", "meaning": "conciliar / equilibrar" },
+      { "word": "travail", "meaning": "trabalho" },
+      { "word": "et", "meaning": "e" },
+      { "word": "vie", "meaning": "vida" },
+      { "word": "privée", "meaning": "privada / pessoal (no feminino)" }
+    ]
+  },
+  "666": {
+    "explanation": "Para dizer que não costuma sair: o par 'ne... pas' abraça 'sors' (saio, do verbo sortir). 'Généralement' é geralmente. 'Les soirs de semaine' significa 'nas noites de dias úteis / noites de semana'. 'Car' significa 'pois / porque', 'je suis' é 'eu estou' e 'trop fatigué' é 'cansado demais'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "sors", "meaning": "saio (do verbo sortir)" },
+      { "word": "généralement", "meaning": "geralmente" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "les", "meaning": "as / nas" },
+      { "word": "soirs", "meaning": "noites" },
+      { "word": "de", "meaning": "de" },
+      { "word": "semaine", "meaning": "semana (soirs de semaine = noites de dias úteis)" },
+      { "word": "car", "meaning": "pois / porque / já que" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "trop", "meaning": "demais / em excesso" },
+      { "word": "fatigué", "meaning": "cansado" }
+    ]
+  },
+  "667": {
+    "explanation": "'Elle est responsable de' significa 'ela é responsável por' (com 'de' encurtado para 'd'' antes de vogal). O verbo levar alguém consigo é 'emmener'. 'Les enfants' são as crianças ou filhos. A contração 'à l'' conecta com 'école' (escola).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "responsable", "meaning": "responsável" },
+      { "word": "d'", "meaning": "de / por (encurtado antes de vogal)" },
+      { "word": "emmener", "meaning": "levar (pessoas ou animais consigo)" },
+      { "word": "les", "meaning": "as / os" },
+      { "word": "enfants", "meaning": "crianças / filhos" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "école", "meaning": "escola" }
+    ]
+  },
+  "668": {
+    "explanation": "'J'ai décidé de' significa 'eu decidi' (passado de décider). A expressão 'commencer à' significa 'começar a'. O verbo ir é 'aller'. Em francês, academia é 'la salle de sport'. 'Trois fois par semaine' significa 'três vezes por semana'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "décidé", "meaning": "decidido / decidi (do verbo décider)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "commencer", "meaning": "começar" },
+      { "word": "à", "meaning": "a" },
+      { "word": "aller", "meaning": "ir" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "la", "meaning": "a" },
+      { "word": "salle", "meaning": "sala" },
+      { "word": "de", "meaning": "de" },
+      { "word": "sport", "meaning": "esporte (salle de sport = academia)" },
+      { "word": "trois", "meaning": "três" },
+      { "word": "fois", "meaning": "vezes" },
+      { "word": "par", "meaning": "por" },
+      { "word": "semaine", "meaning": "semana" }
+    ]
+  },
+  "669": {
+    "explanation": "Pergunta elegante sobre alta performance: 'Comment' é como. O verbo parvenir significa conseguir ou atingir um objetivo ('parvenez-vous' = o senhor consegue?). A preposição 'à' liga com o verbo ficar/manter-se ('rester'). 'Si productif' significa 'tão produtivo'.",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "parvenez", "meaning": "consegue / alcança (do verbo parvenir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "rester", "meaning": "ficar / permanecer / manter-se" },
+      { "word": "si", "meaning": "tão" },
+      { "word": "productif", "meaning": "produtivo" }
+    ]
+  },
+  "670": {
+    "explanation": "O verbo s'assurer significa certificar-se ou garantir. 'Je m'assure' é 'eu me certifico / eu garanto'. 'Toujours' significa sempre. A palavra 'de' liga ao verbo dormir no infinitivo ('dormir'). A palavra 'suffisamment' é o advérbio que significa 'o suficiente' ou 'suficientemente'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "assure", "meaning": "asseguro / certifico (do verbo s'assurer)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "de", "meaning": "de" },
+      { "word": "dormir", "meaning": "dormir" },
+      { "word": "suffisamment", "meaning": "suficientemente / o suficiente" }
+    ]
+  },
+  "671": {
+    "explanation": "'Il passe' é 'ele passa'. A expressão 'la majeure partie de' significa 'a maior parte de'. 'Ses week-ends' são os fins de semana dele. A preposição 'à' liga ao verbo trabalhar no infinitivo ('à travailler'), e 'dans le jardin' significa 'no jardim'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "passe", "meaning": "passa (do verbo passer)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "majeure", "meaning": "maior (no feminino)" },
+      { "word": "partie", "meaning": "parte (la majeure partie = a maior parte)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ses", "meaning": "seus / dele" },
+      { "word": "week-ends", "meaning": "fins de semana" },
+      { "word": "à", "meaning": "a / em" },
+      { "word": "travailler", "meaning": "trabalhar" },
+      { "word": "dans", "meaning": "em / no" },
+      { "word": "le", "meaning": "o" },
+      { "word": "jardin", "meaning": "jardim" }
+    ]
+  },
+  "672": {
+    "explanation": "O verbo envisager significa considerar, planejar ou ter em mente ('nous envisageons de' = estamos pensando em / planejamos). O verbo mudar é 'changer'. 'Notre routine matinale' é nossa rotina matinal (com matinale no feminino para concordar com routine).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "envisageons", "meaning": "consideramos / planejamos / pensamos em (do verbo envisager)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "changer", "meaning": "mudar / alterar" },
+      { "word": "notre", "meaning": "nossa" },
+      { "word": "routine", "meaning": "rotina" },
+      { "word": "matinale", "meaning": "matinal (no feminino)" }
+    ]
+  },
+  "673": {
+    "explanation": "'J'ai déjà terminé' significa 'eu já terminei' (passado com avoir). A expressão 'la plupart de' significa 'a maioria de' ou 'a maior parte de'. 'Mes corvées' são minhas tarefas domésticas ou obrigações chatas. 'Pour aujourd'hui' significa 'para hoje'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "terminé", "meaning": "terminado / terminei (do verbo terminer)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plupart", "meaning": "maioria (la plupart de = a maior parte de)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "mes", "meaning": "minhas" },
+      { "word": "corvées", "meaning": "tarefas / obrigações domésticas" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "674": {
+    "explanation": "Pergunta com verbo na frente: 'Préférez-vous' significa 'o senhor prefere / você prefere?'. Em francês, fazer compras de mantimentos ou feira é 'faire les courses' ou 'faire vos courses' (fazer suas compras). A expressão 'en ligne' significa pela internet / online.",
+    "breakdown": [
+      { "word": "Préférez", "meaning": "Prefere / Preferem (do verbo préférer com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "vos", "meaning": "suas (possessivo com vous)" },
+      { "word": "courses", "meaning": "compras (faire les courses = fazer compras de supermercado)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "ligne", "meaning": "linha (en ligne = online / pela internet)" }
+    ]
+  },
+  "675": {
+    "explanation": "'J'ai l'habitude de' é a expressão consagrada para 'eu costumo' ou 'tenho o hábito de'. O verbo beber é 'boire'. 'Un verre d'eau' significa 'um copo de água' (com 'de' encurtado para 'd'' antes de eau). 'Tous les matins' é 'todas as manhãs'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume (avoir l'habitude de = costumar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "boire", "meaning": "beber" },
+      { "word": "un", "meaning": "um" },
+      { "word": "verre", "meaning": "copo" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "eau", "meaning": "água" },
+      { "word": "tous", "meaning": "todos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "matins", "meaning": "manhãs (tous les matins = todas as manhãs)" }
+    ]
+  },
+  "676": {
+    "explanation": "O verbo déjeuner significa almoçar. A negação 'ne... pas' abraça o verbo almoçar: 'elle ne déjeune généralement pas' (ela geralmente não almoça). A expressão 'à son bureau' significa 'na sua mesa de trabalho / no seu escritório'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "déjeune", "meaning": "almoça (do verbo déjeuner)" },
+      { "word": "généralement", "meaning": "geralmente" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "à", "meaning": "em / na" },
+      { "word": "son", "meaning": "sua / dela" },
+      { "word": "bureau", "meaning": "escrivaninha / mesa de trabalho" }
+    ]
+  },
+  "677": {
+    "explanation": "'J'essaie actuellement' significa 'atualmente estou tentando' (lembrando que actuellement quer dizer 'no momento presente'). A preposição 'd'' liga ao verbo aprender ('apprendre'). 'Une nouvelle recette' é uma nova receita (feminina), e 'chaque semaine' significa 'cada semana / toda semana'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
+      { "word": "actuellement", "meaning": "atualmente / no momento presente" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "apprendre", "meaning": "aprender" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "nouvelle", "meaning": "nova (feminino)" },
+      { "word": "recette", "meaning": "receita (culinária)" },
+      { "word": "chaque", "meaning": "cada" },
+      { "word": "semaine", "meaning": "semana (chaque semaine = toda semana)" }
+    ]
+  },
+  "678": {
+    "explanation": "'Quelle est' é 'qual é' (no feminino). 'La partie la plus relaxante' significa 'a parte mais relaxante' (com superlativo la plus e relaxante no feminino concordando com partie). 'De votre journée' significa 'do seu dia'.",
+    "breakdown": [
+      { "word": "Quelle", "meaning": "Qual (feminino de quel)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "partie", "meaning": "parte" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "relaxante", "meaning": "relaxante (no feminino)" },
+      { "word": "de", "meaning": "de / do" },
+      { "word": "votre", "meaning": "seu / sua" },
+      { "word": "journée", "meaning": "dia / jornada" }
+    ]
+  },
+  "679": {
+    "explanation": "'J'avais l'habitude de' significa 'eu costumava / tinha o hábito de'. 'Boire du café' é tomar café em quantidade geral. A palavra 'mais' é 'mas' e 'maintenant' é 'agora'. A estrutura 'je préfère le thé vert' significa 'prefiro o chá verde' (com o adjetivo de cor vert vindo depois do chá).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "avais", "meaning": "tinha (passado do verbo avoir)" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume" },
+      { "word": "de", "meaning": "de" },
+      { "word": "boire", "meaning": "beber / tomar" },
+      { "word": "du", "meaning": "café em geral / um pouco de (junção de de + le)" },
+      { "word": "café", "meaning": "café" },
+      { "word": "mais", "meaning": "mas" },
+      { "word": "maintenant", "meaning": "agora" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "préfère", "meaning": "prefiro (do verbo préférer)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "thé", "meaning": "chá" },
+      { "word": "vert", "meaning": "verde" }
+    ]
+  },
+  "680": {
+    "explanation": "Frase sobre esquecimento corriqueiro: 'Il oublie toujours' significa 'ele sempre esquece'. A palavra 'où' significa 'onde'. 'Il a mis' significa 'ele colocou / pôs' (passado do verbo mettre com avoir). 'Ses clés' são as chaves dele.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "oublie", "meaning": "esquece (do verbo oublier)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "où", "meaning": "onde" },
+      { "word": "il", "meaning": "ele" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "mis", "meaning": "posto / colocado (passado do verbo mettre)" },
+      { "word": "ses", "meaning": "suas / dele" },
+      { "word": "clés", "meaning": "chaves" }
+    ]
+  },
+  "681": {
+    "explanation": "'J'essaie de' significa 'eu tento / estou tentando'. O verbo reservar ou guardar é 'réserver'. 'Du temps' é tempo em geral (um pouco de tempo). A preposição 'pour' significa 'para', o verbo ler é 'lire', e 'chaque soir' significa 'toda noite'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / busco (do verbo essayer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "réserver", "meaning": "reservar / guardar" },
+      { "word": "du", "meaning": "um pouco de / tempo em geral (junção de de + le)" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "lire", "meaning": "ler" },
+      { "word": "chaque", "meaning": "cada" },
+      { "word": "soir", "meaning": "noite (chaque soir = toda noite / a cada noite)" }
+    ]
+  },
+  "682": {
+    "explanation": "Pergunta com verbo na frente: 'Trouvez-vous' significa 'o senhor acha / você acha?'. A palavra 'facile' é fácil. A preposição 'de' liga à ação de levantar-se com vous: 'vous lever'. A expressão 'le matin' significa 'de manhã'.",
+    "breakdown": [
+      { "word": "Trouvez", "meaning": "Acha / Encontra (do verbo trouver com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "facile", "meaning": "fácil" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vous", "meaning": "se" },
+      { "word": "lever", "meaning": "levantar (vous lever = levantar-se)" },
+      { "word": "le", "meaning": "o / de" },
+      { "word": "matin", "meaning": "manhã (le matin = de manhã)" }
+    ]
+  },
+  "683": {
+    "explanation": "Frase sobre bem-estar e vitalidade: 'Je me sens' significa 'eu me sinto'. A expressão 'beaucoup plus' significa 'muito mais'. 'Énergique' é enérgico ou com disposição. E a expressão nativa 'ces derniers temps' significa 'ultimamente / nestes últimos tempos'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "plus", "meaning": "mais (beaucoup plus = muito mais)" },
+      { "word": "énergique", "meaning": "enérgico / cheio de energia" },
+      { "word": "ces", "meaning": "nestes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "684": {
+    "explanation": "'Elle passe' significa 'ela passa / ela gasta' tempo. 'Environ une heure par jour' significa 'cerca de uma hora por dia'. A preposição 'à' liga com a expressão 'faire le trajet' (fazer o percurso/trajeto). 'Pour aller au travail' significa 'para ir ao trabalho'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "passe", "meaning": "passa / gasta (do verbo passer)" },
+      { "word": "environ", "meaning": "cerca de / aproximadamente" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "heure", "meaning": "hora" },
+      { "word": "par", "meaning": "por" },
+      { "word": "jour", "meaning": "dia" },
+      { "word": "à", "meaning": "a / em" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "le", "meaning": "o" },
+      { "word": "trajet", "meaning": "trajeto / percurso" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "aller", "meaning": "ir" },
+      { "word": "au", "meaning": "ao (junção de à + le)" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "685": {
+    "explanation": "'Je ne regarde généralement pas' significa 'eu geralmente não assisto'. 'La télé' é a televisão. A palavra 'sauf' significa 'exceto' ou 'a menos'. A conjunção 'si' encurta para 's'' antes de 'il y a' (há/tem), formando 's'il y a un bon film' (a menos que passe um bom filme).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "regarde", "meaning": "assisto / olho (do verbo regarder)" },
+      { "word": "généralement", "meaning": "geralmente" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "la", "meaning": "a" },
+      { "word": "télé", "meaning": "TV / televisão" },
+      { "word": "sauf", "meaning": "salvo / exceto / a menos" },
+      { "word": "s'", "meaning": "se (encurtado antes de il)" },
+      { "word": "il", "meaning": "ele" },
+      { "word": "y", "meaning": "lá" },
+      { "word": "a", "meaning": "tem (il y a = tem / há)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "bon", "meaning": "bom" },
+      { "word": "film", "meaning": "filme" }
+    ]
+  },
+  "686": {
+    "explanation": "'À quelle heure' significa 'a que horas'. O verbo rentrer significa retornar, voltar para casa ('rentrez-vous' = o senhor volta para casa?). 'Habituellement' é habitualmente ou normalmente. A contração 'du' (de + le) conecta com o trabalho: 'du travail' (do trabalho).",
+    "breakdown": [
+      { "word": "À", "meaning": "A" },
+      { "word": "quelle", "meaning": "qual / que (feminino de quel)" },
+      { "word": "heure", "meaning": "hora" },
+      { "word": "rentrez", "meaning": "volta para casa / regressa (do verbo rentrer com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "habituellement", "meaning": "habitualmente / de costume" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "687": {
+    "explanation": "'J'écoute toujours' significa 'eu sempre escuto' (do verbo écouter). 'Un podcast' é um podcast. A expressão 'pendant que' significa 'enquanto'. Em francês, fazer a faxina ou arrumar a casa é 'faire le ménage'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "écoute", "meaning": "escuto / ouço (do verbo écouter)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "un", "meaning": "um" },
+      { "word": "podcast", "meaning": "podcast" },
+      { "word": "pendant", "meaning": "durante" },
+      { "word": "que", "meaning": "que (pendant que = enquanto)" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "fais", "meaning": "faço (do verbo faire)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "ménage", "meaning": "limpeza doméstica / faxina (faire le ménage = fazer faxina)" }
+    ]
+  },
+  "688": {
+    "explanation": "'Il est toujours' significa 'ele é sempre'. A palavra 'le dernier' significa 'o último'. A preposição 'à' liga com o verbo deixar ou sair de um local ('quitter'). 'Le bureau' é o escritório.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "le", "meaning": "o" },
+      { "word": "dernier", "meaning": "último" },
+      { "word": "à", "meaning": "a / em" },
+      { "word": "quitter", "meaning": "deixar / sair de" },
+      { "word": "le", "meaning": "o" },
+      { "word": "bureau", "meaning": "escritório" }
+    ]
+  },
+  "689": {
+    "explanation": "'J'essaie de' significa 'eu tento / estou tentando'. O verbo comer é 'manger'. Com a palavra 'plus' (mais), usa-se sempre 'de' logo depois: 'plus de fruits et légumes' (mais frutas e verduras/legumes).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / experimento (do verbo essayer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "manger", "meaning": "comer" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "de", "meaning": "de (usado após palavras de quantidade)" },
+      { "word": "fruits", "meaning": "frutas" },
+      { "word": "et", "meaning": "e" },
+      { "word": "légumes", "meaning": "legumes / verduras" }
+    ]
+  },
+  "690": {
+    "explanation": "Pergunta sobre rituais de final de semana: 'Avez-vous' é 'o senhor tem?'. 'Une routine spécifique' significa 'uma rotina específica' (com o adjetivo no feminino). A preposição 'pour' significa 'para', e 'vos dimanches matin' significa 'suas manhãs de domingo' (onde matin fica no singular após o dia da semana).",
+    "breakdown": [
+      { "word": "Avez", "meaning": "Tem / Têm (do verbo avoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "routine", "meaning": "rotina" },
+      { "word": "spécifique", "meaning": "específica" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "vos", "meaning": "seus / suas (possessivo plural com vous)" },
+      { "word": "dimanches", "meaning": "domingos" },
+      { "word": "matin", "meaning": "manhã (dimanches matin = manhãs de domingo)" }
+    ]
+  }
+}

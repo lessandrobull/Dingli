@@ -1,0 +1,298 @@
+{
+  "271": {
+    "explanation": "'Le temps' significa 'o tempo' (a letra 's' final não é falada). 'Est' é o verbo ser/estar, 'très' significa muito e 'important' é importante.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "important", "meaning": "importante" }
+    ]
+  },
+  "272": {
+    "explanation": "Uma frase inspiradora: 'J'ai' é 'eu tenho' (com o 'je' encurtado antes da vogal). 'Un rêve' significa 'um sonho', com aquele som clássico de 'r' francês bem suave na garganta.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "rêve", "meaning": "sonho" }
+    ]
+  },
+  "273": {
+    "explanation": "O famoso provérbio francês conhecido no mundo todo! 'La vie' é a vida. O adjetivo 'belle' significa bela ou bonita, combinando no feminino com vida.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "vie", "meaning": "vida" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "belle", "meaning": "bela / linda / boa (no feminino)" }
+    ]
+  },
+  "274": {
+    "explanation": "'Le monde' significa o mundo ou as pessoas. 'Est' é o verbo ser, e 'grand' significa grande (com a consoante 'd' final silenciosa na pronúncia masculina).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "monde", "meaning": "mundo" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "grand", "meaning": "grande" }
+    ]
+  },
+  "275": {
+    "explanation": "'Aujourd'hui' significa hoje. Em francês, o adjetivo 'nouveau' (novo) costuma vir antes da palavra 'jour' (dia), formando a expressão 'un nouveau jour' (um novo dia).",
+    "breakdown": [
+      { "word": "Aujourd'hui", "meaning": "Hoje" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "nouveau", "meaning": "novo" },
+      { "word": "jour", "meaning": "dia" }
+    ]
+  },
+  "276": {
+    "explanation": "Pergunta reflexiva com inversão: como 'amour' (amor) começa com vogal, o artigo 'le' encurta para 'l''. Para a pergunta soar elegante e clara, usa-se 'est-il' (é ele?) com hífen.",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "amour", "meaning": "amor" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para reforçar a pergunta)" },
+      { "word": "important", "meaning": "importante" }
+    ]
+  },
+  "277": {
+    "explanation": "A desculpa clássica do dia a dia: 'n'... pas' envolve o verbo ter ('ai'). Aqui, como estamos falando do tempo em si e não de uma quantidade de produto, mantém-se 'le temps' (o tempo), significando 'não tenho tempo'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "le", "meaning": "o" },
+      { "word": "temps", "meaning": "tempo" }
+    ]
+  },
+  "278": {
+    "explanation": "'La connaissance' significa o conhecimento ou o saber. Para dizer que algo é bom no sentido de ser algo positivo, o francês costuma usar a expressão 'une bonne chose' (literalmente uma boa coisa).",
+    "breakdown": [
+      { "word": "La", "meaning": "O / A (connaissance é feminina em francês)" },
+      { "word": "connaissance", "meaning": "conhecimento" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bonne", "meaning": "boa" },
+      { "word": "chose", "meaning": "coisa (une bonne chose = algo bom)" }
+    ]
+  },
+  "279": {
+    "explanation": "'Le futur' é o futuro. 'Est' é o verbo ser/estar. A palavra 'loin' significa 'longe' ou 'distante', indicando que o futuro ainda vai demorar para chegar.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "futur", "meaning": "futuro" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "loin", "meaning": "longe / distante" }
+    ]
+  },
+  "280": {
+    "explanation": "Frase científica simples e direta. 'Le soleil' é o sol. A palavra estrela em francês é 'une étoile' (palavra feminina que começa com vogal).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "soleil", "meaning": "sol" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "étoile", "meaning": "estrela" }
+    ]
+  },
+  "281": {
+    "explanation": "'La nature' significa a natureza. 'Belle' é o feminino de belo/bonito, concordando perfeitamente com a natureza.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "nature", "meaning": "natureza" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "belle", "meaning": "bela / linda" }
+    ]
+  },
+  "282": {
+    "explanation": "Provérbio popular francês que equivale ao nosso 'dinheiro não traz felicidade' ou 'dinheiro não é tudo'. 'L'argent' é o dinheiro (com 'l'' antes da vogal). A negação 'ne... pas' abraça o verbo fazer ('fait'), e 'tout' significa tudo.",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "argent", "meaning": "dinheiro" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "fait", "meaning": "faz (do verbo faire)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "tout", "meaning": "tudo (ne fait pas tout = não é tudo / não resolve tudo)" }
+    ]
+  },
+  "283": {
+    "explanation": "'La paix' significa a paz (com o 'x' final silencioso). Assim como vimos antes, para dizer que algo é positivo e bom de modo geral, usa-se a expressão 'une bonne chose' (uma boa coisa).",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "paix", "meaning": "paz" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bonne", "meaning": "boa" },
+      { "word": "chose", "meaning": "coisa" }
+    ]
+  },
+  "284": {
+    "explanation": "Pergunta iniciada pela expressão clássica 'Est-ce que'. 'La vérité' é a verdade (palavra feminina). A palavra 'importante' ganha um 'e' no final para combinar com a verdade.",
+    "breakdown": [
+      { "word": "Est-ce que", "meaning": "expressão usada para iniciar perguntas" },
+      { "word": "la", "meaning": "a" },
+      { "word": "vérité", "meaning": "verdade" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "importante", "meaning": "importante (no feminino)" }
+    ]
+  },
+  "285": {
+    "explanation": "'J'ai une question' significa 'eu tenho uma pergunta'. A preposição 'sur' significa 'sobre' ou 'a respeito de', e 'la vie' é 'a vida'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "question", "meaning": "pergunta / dúvida" },
+      { "word": "sur", "meaning": "sobre / a respeito de" },
+      { "word": "la", "meaning": "a" },
+      { "word": "vie", "meaning": "vida" }
+    ]
+  },
+  "286": {
+    "explanation": "Frase descritiva básica e poética. 'Le ciel' é o céu. 'Est' é o verbo ser/estar, e 'bleu' significa azul no masculino singular.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "ciel", "meaning": "céu" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "bleu", "meaning": "azul" }
+    ]
+  },
+  "287": {
+    "explanation": "Em francês, para falar das pessoas em geral, usa-se a expressão 'les gens' (as pessoas / a gente, sempre tratada no plural). O verbo ser no plural é 'sont' e 'différents' ganha 's' para concordar com o plural.",
+    "breakdown": [
+      { "word": "Les", "meaning": "As / Os" },
+      { "word": "gens", "meaning": "pessoas / gente (sempre no plural)" },
+      { "word": "sont", "meaning": "são (do verbo être no plural)" },
+      { "word": "différents", "meaning": "diferentes (no plural)" }
+    ]
+  },
+  "288": {
+    "explanation": "Para falar sobre amigos em geral, usa-se o artigo plural 'les' antes de 'amis'. Como é plural, o verbo ser é 'sont' e o adjetivo 'importants' ganha 's' no final da escrita.",
+    "breakdown": [
+      { "word": "Les", "meaning": "Os" },
+      { "word": "amis", "meaning": "amigos" },
+      { "word": "sont", "meaning": "são (do verbo être no plural)" },
+      { "word": "importants", "meaning": "importantes (no plural)" }
+    ]
+  },
+  "289": {
+    "explanation": "'Le travail' é o trabalho. 'Est' é o verbo ser, e a palavra 'nécessaire' significa necessário ou indispensável, com a mesma forma tanto no masculino quanto no feminino.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "travail", "meaning": "trabalho" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "nécessaire", "meaning": "necessário / indispensável" }
+    ]
+  },
+  "290": {
+    "explanation": "Como a palavra 'histoire' (história) começa com 'h' mudo, o artigo 'la' encurta para 'l''. O adjetivo 'intéressante' ganha um 'e' no final para combinar com a história feminina, fazendo soar o som da letra 't'.",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (encurtado antes de h mudo)" },
+      { "word": "histoire", "meaning": "história" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "intéressante", "meaning": "interessante (no feminino)" }
+    ]
+  },
+  "291": {
+    "explanation": "Uma construção super comum e expressiva em conversas informais. Primeiro você cita o tema com ênfase ('La musique') e logo em seguida arremata com 'c'est ma vie' (isso é a minha vida).",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "musique", "meaning": "música" },
+      { "word": "c'", "meaning": "isto / é (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "vie", "meaning": "vida" }
+    ]
+  },
+  "292": {
+    "explanation": "Expressão idiomática bonita para prioridades: 'passer avant tout' significa literalmente 'passar antes de tudo' (ou seja, vir em primeiro lugar). 'La famille' é a família e 'passe' é passa/vem.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "famille", "meaning": "família" },
+      { "word": "passe", "meaning": "passa / vem (do verbo passer)" },
+      { "word": "avant", "meaning": "antes de" },
+      { "word": "tout", "meaning": "tudo (passer avant tout = estar em primeiro lugar)" }
+    ]
+  },
+  "293": {
+    "explanation": "Pergunta com inversão: cita-se o tema ('la réponse' = a resposta) e em seguida coloca-se 'est-elle' (está ela?). Em francês, a palavra 'juste' significa correta, certa ou justa.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "réponse", "meaning": "resposta" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "-elle", "meaning": "ela (invertido para a pergunta)" },
+      { "word": "juste", "meaning": "certa / correta / justa" }
+    ]
+  },
+  "294": {
+    "explanation": "'Je pense' significa 'eu penso' (do verbo penser). Quem pensa, em francês, pensa 'à' alguma coisa. A junção de 'à' com 'le futur' vira 'au futur', significando 'penso no futuro'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso (do verbo penser)" },
+      { "word": "au", "meaning": "no / ao (junção de à + le)" },
+      { "word": "futur", "meaning": "futuro" }
+    ]
+  },
+  "295": {
+    "explanation": "'Le passé' é o passado. A palavra 'révolu' vem do francês antigo e significa algo que se encerrou completamente, que terminou e ficou para trás (ou seja, 'o passado já passou').",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "passé", "meaning": "passado" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "révolu", "meaning": "encerrado / passado / terminado" }
+    ]
+  },
+  "296": {
+    "explanation": "Uma das frases mais reconfortantes e usadas no dia a dia francês. 'Tout' é tudo, 'va' é vai (do verbo aller) e 'bien' é bem. Significa literalmente 'tudo vai bem' (está tudo bem).",
+    "breakdown": [
+      { "word": "Tout", "meaning": "Tudo" },
+      { "word": "va", "meaning": "vai (do verbo aller)" },
+      { "word": "bien", "meaning": "bem" }
+    ]
+  },
+  "297": {
+    "explanation": "Pergunta reflexiva: 'Le changement' é a mudança (palavra masculina em francês, com o sufixo -ment). Em seguida vem a pergunta invertida 'est-il' (é ela/ele?) e a expressão 'une bonne chose' (algo bom).",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O (changement é masculino em francês)" },
+      { "word": "changement", "meaning": "mudança" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para a pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bonne", "meaning": "boa" },
+      { "word": "chose", "meaning": "coisa (une bonne chose = algo bom)" }
+    ]
+  },
+  "298": {
+    "explanation": "'Les idées' são as ideias. 'Sont' é são (verbo être no plural). A palavra 'puissantes' significa poderosas ou fortes, ganhando terminação feminina no plural para combinar com as ideias.",
+    "breakdown": [
+      { "word": "Les", "meaning": "As" },
+      { "word": "idées", "meaning": "ideias" },
+      { "word": "sont", "meaning": "são (do verbo être no plural)" },
+      { "word": "puissantes", "meaning": "poderosas / fortes (no feminino plural)" }
+    ]
+  },
+  "299": {
+    "explanation": "Metáfora comum sobre esforço e dedicação. 'Le succès' é o sucesso. 'Est le fruit' significa 'é o fruto' e 'du travail' significa 'do trabalho' (junção de de + le).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "succès", "meaning": "sucesso" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "fruit", "meaning": "fruto / resultado" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "300": {
+    "explanation": "Uma frase perfeita para encerrar o nível A1! 'Je veux' é 'eu quero'. O 'en' refere-se ao assunto ou idioma aprendido, 'apprendre' é o verbo aprender no infinitivo, e 'davantage' é uma palavra elegante e prática que significa 'mais' ou 'além'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "veux", "meaning": "quero (do verbo vouloir)" },
+      { "word": "en", "meaning": "disso / sobre isso (pronome de referência)" },
+      { "word": "apprendre", "meaning": "aprender" },
+      { "word": "davantage", "meaning": "mais / além (sinônimo refinado de plus)" }
+    ]
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "451": {
+    "explanation": "A resposta perfeita e educada para quando o vendedor se aproxima na loja: 'Je regarde' significa 'eu olho / estou olhando'. A palavra 'juste' aqui funciona como 'só / apenas', e 'merci' é o agradecimento simpático.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "regarde", "meaning": "olho / estou olhando (do verbo regarder)" },
+      { "word": "juste", "meaning": "apenas / só" },
+      { "word": "merci", "meaning": "obrigado / agradeço" }
+    ]
+  },
+  "452": {
+    "explanation": "'Cette veste' é esta jaqueta. A forma de pergunta 'existe-t-elle' (existe ela?) usa o '-t-' de ligação para a fala fluir bem. 'Dans une autre couleur' significa 'em uma outra cor', com couleur sendo feminina em francês.",
+    "breakdown": [
+      { "word": "Cette", "meaning": "Esta (feminino de ce)" },
+      { "word": "veste", "meaning": "jaqueta / casaco" },
+      { "word": "existe", "meaning": "existe / tem (do verbo exister)" },
+      { "word": "-t-", "meaning": "letrinha de ligação usada para suavizar o som" },
+      { "word": "-elle", "meaning": "ela (invertido para reforçar a pergunta)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "autre", "meaning": "outra" },
+      { "word": "couleur", "meaning": "cor" }
+    ]
+  },
+  "453": {
+    "explanation": "'Où se trouve' significa 'onde fica' ou 'onde se localiza'. Em lojas de departamentos e supermercados na França, cada seção ou corredor temático é chamado de 'rayon'. 'Le rayon hommes' é a seção masculina.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "se", "meaning": "se" },
+      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "rayon", "meaning": "seção / departamento / corredor da loja" },
+      { "word": "hommes", "meaning": "homens (rayon hommes = seção masculina)" }
+    ]
+  },
+  "454": {
+    "explanation": "'Ce jean' é esta calça jeans (palavra tratada no masculino singular em francês). 'Est' é está. A palavra 'trop' significa em excesso (demais) e 'serré' significa apertado. 'Pour moi' significa 'para mim'.",
+    "breakdown": [
+      { "word": "Ce", "meaning": "Este" },
+      { "word": "jean", "meaning": "jeans / calça jeans (masculino singular)" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "trop", "meaning": "demais / em excesso" },
+      { "word": "serré", "meaning": "apertado / justo" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "moi", "meaning": "mim" }
+    ]
+  },
+  "455": {
+    "explanation": "Frase essencial para trocas e devoluções: 'Je voudrais' significa 'eu gostaria' (modo educado). O verbo retourner aqui significa 'devolver'. 'Cet article' é 'este item/produto' (usando 'cet' antes da palavra masculina iniciada por vogal).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "voudrais", "meaning": "gostaria (forma polida do verbo vouloir)" },
+      { "word": "retourner", "meaning": "devolver (retornar o produto à loja)" },
+      { "word": "cet", "meaning": "este (usado antes de palavra masculina iniciada por vogal)" },
+      { "word": "article", "meaning": "artigo / item / produto" }
+    ]
+  },
+  "456": {
+    "explanation": "Pergunta ao atendente no caixa: 'Puis-je avoir' é 'posso eu ter?'. 'Un sac' é uma sacola. 'Pour ces choses' significa 'para estas coisas', com 'ces' marcando o plural de coisas.",
+    "breakdown": [
+      { "word": "Puis", "meaning": "Posso (forma polida do verbo pouvoir)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
+      { "word": "avoir", "meaning": "ter / receber" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "sac", "meaning": "sacola / saco" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "ces", "meaning": "estas / estes" },
+      { "word": "choses", "meaning": "coisas" }
+    ]
+  },
+  "457": {
+    "explanation": "Em francês, liquidação oficial é chamada de 'les soldes'. A expressão 'faire de grosses soldes' significa 'fazer grandes promoções / queima de estoque'. 'Cette semaine' é 'esta semana'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O" },
+      { "word": "magasin", "meaning": "loja" },
+      { "word": "fait", "meaning": "faz (do verbo faire)" },
+      { "word": "de", "meaning": "de (usado antes de adjetivos no plural)" },
+      { "word": "grosses", "meaning": "grandes (feminino plural de gros)" },
+      { "word": "soldes", "meaning": "liquidações / promoções oficiais" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "semaine", "meaning": "semana" }
+    ]
+  },
+  "458": {
+    "explanation": "'Y a-t-il' significa 'tem?' ou 'existe?'. 'Une pharmacie' é uma farmácia. A expressão 'à l'intérieur de' significa 'no interior de' ou 'dentro de' (com 'l'' encurtado antes de intérieur). 'Le centre commercial' é o shopping center.",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "pharmacie", "meaning": "farmácia" },
+      { "word": "à", "meaning": "em / ao" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "intérieur", "meaning": "interior (à l'intérieur de = dentro de)" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "centre", "meaning": "centro" },
+      { "word": "commercial", "meaning": "comercial (centre commercial = shopping)" }
+    ]
+  },
+  "459": {
+    "explanation": "'J'ai dépensé' significa 'eu gastei' (no passado com avoir). A palavra 'trop' (demais) pede 'de' logo em seguida: 'trop d'argent' (dinheiro demais, com o 'de' encurtado antes da vogal de argent). 'Hier' significa ontem.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "dépensé", "meaning": "gastado / gastei (do verbo dépenser)" },
+      { "word": "trop", "meaning": "demais / em excesso" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "argent", "meaning": "dinheiro" },
+      { "word": "hier", "meaning": "ontem" }
+    ]
+  },
+  "460": {
+    "explanation": "Pergunta ao fazer compras online: 'Combien coûtent' é 'quanto custam' (no plural). Em francês, taxa de frete ou custo de entrega é chamada de 'les frais de livraison' (onde frais significa despesas/custos e livraison é entrega).",
+    "breakdown": [
+      { "word": "Combien", "meaning": "Quanto" },
+      { "word": "coûtent", "meaning": "custam (do verbo coûter no plural)" },
+      { "word": "les", "meaning": "as / os" },
+      { "word": "frais", "meaning": "despesas / custos / taxas" },
+      { "word": "de", "meaning": "de" },
+      { "word": "livraison", "meaning": "entrega (frais de livraison = frete / taxa de entrega)" }
+    ]
+  },
+  "461": {
+    "explanation": "Pergunta direta na arara de roupas: 'Avez-vous' é 'você tem?'. 'Cette chemise' é esta camisa (feminina). Para indicar o tamanho, usa-se a preposição 'en' acompanhada de 'taille M' (no tamanho médio).",
+    "breakdown": [
+      { "word": "Avez", "meaning": "Tem / Têm (do verbo avoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "chemise", "meaning": "camisa" },
+      { "word": "en", "meaning": "em / no" },
+      { "word": "taille", "meaning": "tamanho" },
+      { "word": "M", "meaning": "M (médio)" }
+    ]
+  },
+  "462": {
+    "explanation": "'Je cherche' significa 'estou procurando' ou 'busco'. 'Un cadeau' é um presente (com a clássica terminação -eau com som de 'ô'). 'Pour ma mère' significa 'para minha mãe'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "cadeau", "meaning": "presente" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "mère", "meaning": "mãe" }
+    ]
+  },
+  "463": {
+    "explanation": "'Puis-je essayer' significa 'posso experimentar?' (do verbo essayer). 'Ces chaussures' são estes sapatos. Para a numeração de calçados na França, usa-se 'en taille 38' (no número 38).",
+    "breakdown": [
+      { "word": "Puis", "meaning": "Posso (forma polida do verbo pouvoir)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
+      { "word": "essayer", "meaning": "provar / experimentar (roupas ou calçados)" },
+      { "word": "ces", "meaning": "estes" },
+      { "word": "chaussures", "meaning": "sapatos" },
+      { "word": "en", "meaning": "em / no" },
+      { "word": "taille", "meaning": "tamanho / número" },
+      { "word": "38", "meaning": "38" }
+    ]
+  },
+  "464": {
+    "explanation": "Em francês, laptop ou notebook é chamado de 'ordinateur portable' (computador portátil). A expressão 'moins cher que' significa 'menos caro que' (ou seja, mais barato que). 'L'autre' significa o outro.",
+    "breakdown": [
+      { "word": "Cet", "meaning": "Este (usado antes de palavra masculina com som de vogal)" },
+      { "word": "ordinateur", "meaning": "computador" },
+      { "word": "portable", "meaning": "portátil (ordinateur portable = notebook / laptop)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "moins", "meaning": "menos" },
+      { "word": "cher", "meaning": "caro (moins cher = mais barato)" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "autre", "meaning": "outro" }
+    ]
+  },
+  "465": {
+    "explanation": "Pergunta indispensável quando se precisa sacar dinheiro na rua. 'Où se trouve' significa 'onde fica'. Em francês, caixa eletrônico é chamado literalmente de 'distributeur de billets' (distribuidor de cédulas). A expressão 'le plus proche' significa 'o mais próximo'.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "se", "meaning": "se" },
+      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "distributeur", "meaning": "distribuidor / caixa eletrônico" },
+      { "word": "de", "meaning": "de" },
+      { "word": "billets", "meaning": "notas / cédulas (distributeur de billets = caixa eletrônico)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "proche", "meaning": "próximo" }
+    ]
+  },
+  "466": {
+    "explanation": "'Je n'ai pas' significa 'eu não tenho'. A palavra 'assez' significa 'suficiente' e pede 'de' logo depois: 'assez d'argent' (dinheiro suficiente, com 'd'' antes da vogal de argent). A expressão 'sur moi' significa 'comigo' ou 'no meu bolso' neste momento.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "assez", "meaning": "bastante / suficiente" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "argent", "meaning": "dinheiro" },
+      { "word": "sur", "meaning": "em / sobre" },
+      { "word": "moi", "meaning": "mim (sur moi = comigo / nos meus bolsos)" }
+    ]
+  },
+  "467": {
+    "explanation": "Pergunta sobre ofertas: 'Ces produits' são estes produtos. A forma de pergunta é 'sont-ils' (estão eles?). A expressão 'en promotion' significa 'em promoção' ou com desconto.",
+    "breakdown": [
+      { "word": "Ces", "meaning": "Estes" },
+      { "word": "produits", "meaning": "produtos" },
+      { "word": "sont", "meaning": "estão / são (do verbo être no plural)" },
+      { "word": "-ils", "meaning": "eles (invertido para a pergunta)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "promotion", "meaning": "promoção / oferta" }
+    ]
+  },
+  "468": {
+    "explanation": "'Je voudrais' é 'eu gostaria' (modo educado). O verbo comprar é 'acheter'. Em francês, selos postais de correspondência são chamados de 'timbres', com a palavrinha 'des' marcando selos no plural.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "voudrais", "meaning": "gostaria (forma polida do verbo vouloir)" },
+      { "word": "acheter", "meaning": "comprar" },
+      { "word": "des", "meaning": "selos em geral / alguns (marcador de plural)" },
+      { "word": "timbres", "meaning": "selos (postais)" }
+    ]
+  },
+  "469": {
+    "explanation": "Frase dita pelo atendente da loja apontando onde você pode experimentar as peças: 'Les cabines d'essayage' são os provadores. 'Sont' é estão, e 'là-bas' indica 'logo ali' ou 'adiante'.",
+    "breakdown": [
+      { "word": "Les", "meaning": "Os / As" },
+      { "word": "cabines", "meaning": "cabines" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "essayage", "meaning": "prova (cabines d'essayage = provadores de roupa)" },
+      { "word": "sont", "meaning": "estão (do verbo être no plural)" },
+      { "word": "là-bas", "meaning": "logo ali / lá" }
+    ]
+  },
+  "470": {
+    "explanation": "Maneira muito polida e elegante de pedir um desconto: 'Pourriez-vous' significa 'o senhor poderia?'. A expressão 'faire une remise' é o termo comercial tradicional francês para conceder um abatimento ou desconto no valor final.",
+    "breakdown": [
+      { "word": "Pourriez", "meaning": "Poderia (forma polida do verbo pouvoir)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para pergunta)" },
+      { "word": "me", "meaning": "me / a mim" },
+      { "word": "faire", "meaning": "fazer / conceder" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "remise", "meaning": "desconto / abatimento (faire une remise = dar um desconto)" }
+    ]
+  },
+  "471": {
+    "explanation": "'J'ai besoin d'acheter' significa 'preciso comprar'. Em francês, assim como em inglês, óculos é uma palavra que sempre vem no plural ('des lunettes'). Para falar de uma unidade de óculos, usa-se a expressão 'une nouvelle paire de lunettes' (literalmente um novo par de óculos).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "besoin", "meaning": "necessidade (avoir besoin de = precisar de)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "acheter", "meaning": "comprar" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "nouvelle", "meaning": "novo / nova (no feminino)" },
+      { "word": "paire", "meaning": "par" },
+      { "word": "de", "meaning": "de" },
+      { "word": "lunettes", "meaning": "óculos (paire de lunettes = óculos / par de óculos)" }
+    ]
+  },
+  "472": {
+    "explanation": "Pergunta em casas de câmbio ou lojas turísticas: 'Acceptez-vous' é 'vocês aceitam?'. Em francês, moedas estrangeiras (dólares, reais, etc.) são chamadas formalmente de 'les devises étrangères' (onde devises significa moedas de câmbio).",
+    "breakdown": [
+      { "word": "Acceptez", "meaning": "Aceita / Aceitam (do verbo accepter com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / vocês (invertido para a pergunta)" },
+      { "word": "les", "meaning": "as" },
+      { "word": "devises", "meaning": "moedas (de câmbio internacional)" },
+      { "word": "étrangères", "meaning": "estrangeiras (no feminino plural)" }
+    ]
+  },
+  "473": {
+    "explanation": "Frase para relatar defeito: 'Cette montre' é este relógio de pulso (que é uma palavra feminina em francês). A negação 'ne... pas' envolve o verbo funcionar ('fonctionne'). A palavra 'correctement' significa 'corretamente' ou 'direito'.",
+    "breakdown": [
+      { "word": "Cette", "meaning": "Este / Esta (feminino)" },
+      { "word": "montre", "meaning": "relógio (de pulso, palavra feminina em francês)" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "fonctionne", "meaning": "funciona (do verbo fonctionner)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "correctement", "meaning": "corretamente / direito" }
+    ]
+  },
+  "474": {
+    "explanation": "'J'ai perdu' significa 'eu perdi' (no passado com avoir). Em francês, carteira de dinheiro e documentos é chamada de 'portefeuille' (literalmente 'porta-folhas'). A contração 'au' (à + le) significa 'no supermercado'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "perdu", "meaning": "perdido / perdi (do verbo perdre)" },
+      { "word": "mon", "meaning": "meu / minha" },
+      { "word": "portefeuille", "meaning": "carteira (de dinheiro e documentos)" },
+      { "word": "au", "meaning": "no (junção de à + le)" },
+      { "word": "supermarché", "meaning": "supermercado" }
+    ]
+  },
+  "475": {
+    "explanation": "Pergunta clara no caixa para saber o valor final da compra: 'Quel est' é 'qual é'. A palavra 'montant' significa valor ou quantia financeira. 'Le montant total' é o valor total a ser pago.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "montant", "meaning": "montante / valor / quantia" },
+      { "word": "total", "meaning": "total (montant total = valor total)" }
+    ]
+  },
+  "476": {
+    "explanation": "Pedido essencial no caixa: 'Je voudrais' é 'eu gostaria' (modo educado). 'Un reçu' é o recibo ou comprovante de pagamento, seguido pelo clássico 's'il vous plaît' (por favor).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "voudrais", "meaning": "gostaria (forma polida do verbo vouloir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "reçu", "meaning": "recibo / comprovante" },
+      { "word": "s'il vous plaît", "meaning": "por favor (formal e educado)" }
+    ]
+  },
+  "477": {
+    "explanation": "'La qualité' é a qualidade. 'De ce tissu' significa 'deste tecido' (palavra masculina). 'Est' é o verbo ser, e 'très bonne' significa 'muito boa' (com bonne no feminino para combinar com a qualidade).",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "qualité", "meaning": "qualidade" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "tissu", "meaning": "tecido / pano" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "bonne", "meaning": "boa (no feminino)" }
+    ]
+  },
+  "478": {
+    "explanation": "Pergunta sobre a proteção do produto: 'Y a-t-il' significa 'tem?' ou 'existe?'. 'Une garantie' é uma garantia. A preposição 'sur' significa 'sobre' ou 'para', e em francês a câmera fotográfica é chamada de 'appareil photo' (literalmente aparelho fotográfico, usando 'cet' antes da vogal).",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "garantie", "meaning": "garantia" },
+      { "word": "sur", "meaning": "sobre / em" },
+      { "word": "cet", "meaning": "este (usado antes de palavra masculina iniciada por vogal)" },
+      { "word": "appareil", "meaning": "aparelho" },
+      { "word": "photo", "meaning": "fotográfico (appareil photo = câmera fotográfica)" }
+    ]
+  },
+  "479": {
+    "explanation": "Frase sobre planejamento financeiro: 'Je vais économiser' significa 'eu vou economizar / vou guardar' (com o verbo aller no presente indicando futuro). 'De l'argent' é dinheiro em geral. 'Pour une nouvelle voiture' significa 'para um carro novo' (com voiture e nouvelle no feminino).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vais", "meaning": "vou (do verbo aller)" },
+      { "word": "économiser", "meaning": "economizar / poupar" },
+      { "word": "de l'", "meaning": "dinheiro em geral (marcador de quantidade antes de vogal)" },
+      { "word": "argent", "meaning": "dinheiro" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "nouvelle", "meaning": "novo / nova (no feminino)" },
+      { "word": "voiture", "meaning": "carro (feminino em francês)" }
+    ]
+  },
+  "480": {
+    "explanation": "Informação sobre o horário de funcionamento: 'Le magasin' significa a loja. O verbo ouvrir (abrir) é conjugado como 'ouvre'. 'À dix heures' significa 'às dez horas'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O (magasin é masculino em francês)" },
+      { "word": "magasin", "meaning": "loja" },
+      { "word": "ouvre", "meaning": "abre (do verbo ouvrir)" },
+      { "word": "à", "meaning": "às" },
+      { "word": "dix", "meaning": "dez" },
+      { "word": "heures", "meaning": "horas" }
+    ]
+  }
+}

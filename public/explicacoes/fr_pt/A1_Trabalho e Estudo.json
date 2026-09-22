@@ -1,0 +1,299 @@
+{
+  "181": {
+    "explanation": "Dizer sua ocupação em francês é muito direto: 'Je suis' (eu sou) seguido direto da palavra 'étudiant' (estudante). Uma regra clássica do francês é nunca colocar 'um' ou 'uma' antes de profissões e ocupações depois do verbo ser.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "étudiant", "meaning": "estudante" }
+    ]
+  },
+  "182": {
+    "explanation": "Pergunta comum de conversa profissional. 'Où' significa 'onde'. O verbo trabalhar ('travailles') e a pessoa ('tu') vêm invertidos e ligados por hífen para formar a pergunta.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "travailles", "meaning": "trabalha / trabalhas (do verbo travailler)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" }
+    ]
+  },
+  "183": {
+    "explanation": "'Je travaille' significa 'eu trabalho'. A expressão 'dans un bureau' é o jeito padrão de dizer 'em um escritório', passando a ideia de estar dentro do ambiente de trabalho.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "travaille", "meaning": "trabalho (do verbo travailler)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "un", "meaning": "um" },
+      { "word": "bureau", "meaning": "escritório" }
+    ]
+  },
+  "184": {
+    "explanation": "Aqui temos a negação abraçando o verbo ter ('a'): 'n'... pas'. Sempre que você nega ter algo, a palavra vira apenas 'de', ficando 'pas de travail' (nada de trabalho / nenhum emprego).",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "a", "meaning": "tem (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "de", "meaning": "de / nenhum (usado na negação)" },
+      { "word": "travail", "meaning": "trabalho / emprego" }
+    ]
+  },
+  "185": {
+    "explanation": "Pergunta com inversão: o verbo gostar ('aimes') vem na frente de 'tu' (você). 'Ton' é 'seu/teu' para palavras masculinas, e 'patron' é a palavra comum usada para chefe ou patrão.",
+    "breakdown": [
+      { "word": "Aimes", "meaning": "Gosta / Gostas (do verbo aimer)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "patron", "meaning": "chefe / patrão" }
+    ]
+  },
+  "186": {
+    "explanation": "'Elle étudie' significa 'ela estuda' (do verbo étudier). A expressão 'tous les jours' significa literalmente 'todos os dias', uma rotina de estudos bem dedicada.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "étudie", "meaning": "estuda (do verbo étudier)" },
+      { "word": "tous", "meaning": "todos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "jours", "meaning": "dias" }
+    ]
+  },
+  "187": {
+    "explanation": "Como a palavra 'école' (escola) começa com som de vogal, o artigo 'la' encurta para 'l''. 'Très' significa 'muito' e o adjetivo 'grande' ganha a pronúncia feminina marcada para concordar com a escola.",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (artigo feminino encurtado antes de vogal)" },
+      { "word": "école", "meaning": "escola" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "grande", "meaning": "grande" }
+    ]
+  },
+  "188": {
+    "explanation": "'J'ai' é 'eu tenho'. 'Un stylo' é uma caneta (que se conta por unidades). Já para o papel, como é um material contínuo e não contado como objeto único aqui, o francês usa 'du papier' (um pouco de papel / papel em geral).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "un", "meaning": "um / uma" },
+      { "word": "stylo", "meaning": "caneta" },
+      { "word": "et", "meaning": "e" },
+      { "word": "du", "meaning": "papel em geral / um pouco de" },
+      { "word": "papier", "meaning": "papel" }
+    ]
+  },
+  "189": {
+    "explanation": "Em francês, a lição de casa é sempre tratada no plural: 'les devoirs' (literalmente os deveres). Para perguntar se eles são difíceis de forma educada, coloca-se o verbo invertido com hífen: 'sont-ils' (são eles?).",
+    "breakdown": [
+      { "word": "Les", "meaning": "Os / As" },
+      { "word": "devoirs", "meaning": "lição de casa / deveres escolares (sempre no plural)" },
+      { "word": "sont", "meaning": "são (do verbo être no plural)" },
+      { "word": "-ils", "meaning": "eles (invertido para a pergunta)" },
+      { "word": "difficiles", "meaning": "difíceis (no plural)" }
+    ]
+  },
+  "190": {
+    "explanation": "A clássica frase de sala de aula. O par 'ne... pas' abraça o verbo entender ('comprends'). 'La leçon' é a lição ou a matéria explicada pelo professor.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "comprends", "meaning": "entendo / compreendo (do verbo comprendre)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "la", "meaning": "a" },
+      { "word": "leçon", "meaning": "lição / matéria da aula" }
+    ]
+  },
+  "191": {
+    "explanation": "Como a palavra 'profession' (profissão) é feminina em francês, usa-se 'Quelle' (qual no feminino) e 'ta' (sua/tua no feminino). É uma pergunta muito comum e elegante para conhecer a carreira de alguém.",
+    "breakdown": [
+      { "word": "Quelle", "meaning": "Qual (no feminino)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ta", "meaning": "sua / tua (para palavra feminina)" },
+      { "word": "profession", "meaning": "profissão" }
+    ]
+  },
+  "192": {
+    "explanation": "'C'est' significa 'este é' ou 'ele é'. Quando você adiciona um adjetivo para qualificar a profissão (como 'célèbre' = famoso), o francês passa a usar o artigo: 'un médecin célèbre' (um médico famoso).",
+    "breakdown": [
+      { "word": "C'", "meaning": "Ele / Este (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "médecin", "meaning": "médico" },
+      { "word": "célèbre", "meaning": "famoso / renomado" }
+    ]
+  },
+  "193": {
+    "explanation": "'Nous étudions' significa 'nós estudamos'. Antes de nomes de idiomas estudados, o francês costuma usar o artigo definido: 'l'anglais' (com 'l'' encurtado antes da vogal de anglais). A palavra 'ensemble' significa 'juntos'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "étudions", "meaning": "estudamos (do verbo étudier)" },
+      { "word": "l'", "meaning": "o (artigo encurtado antes de vogal)" },
+      { "word": "anglais", "meaning": "inglês" },
+      { "word": "ensemble", "meaning": "juntos" }
+    ]
+  },
+  "194": {
+    "explanation": "Pergunta com inversão: o verbo trabalhar ('travailles') vem na frente de 'tu' (você). Em francês, para falar 'aos fins de semana' de forma rotineira, basta colocar o artigo no singular: 'le week-end'.",
+    "breakdown": [
+      { "word": "Travailles", "meaning": "Trabalha / Trabalhas (do verbo travailler)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "le", "meaning": "o (usado para indicar hábito/rotina)" },
+      { "word": "week-end", "meaning": "fim de semana" }
+    ]
+  },
+  "195": {
+    "explanation": "Frase indispensável para o trabalho de escritório. 'J'ai une réunion' é 'eu tenho uma reunião'. Para indicar o horário, usa-se 'à dix heures' (às dez horas).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "réunion", "meaning": "reunião" },
+      { "word": "à", "meaning": "às / em" },
+      { "word": "dix", "meaning": "dez" },
+      { "word": "heures", "meaning": "horas" }
+    ]
+  },
+  "196": {
+    "explanation": "'Le professeur' é o professor. 'Est' é o verbo ser/estar. A palavra 'très' significa muito, e 'gentil' significa simpático, atencioso ou educado com os alunos.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "professeur", "meaning": "professor" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "gentil", "meaning": "gentil / simpático" }
+    ]
+  },
+  "197": {
+    "explanation": "'J'écris' vem do verbo escrever (écrire), com 'je' encurtado antes da vogal. 'Dans mon cahier' significa literalmente 'no meu caderno', com 'mon' acompanhando 'cahier', que é uma palavra masculina.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "écris", "meaning": "escrevo (do verbo écrire)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "cahier", "meaning": "caderno" }
+    ]
+  },
+  "198": {
+    "explanation": "'Elle parle' significa 'ela fala'. 'Trois' é o número três e 'langues' são as línguas ou idiomas que a pessoa domina.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "parle", "meaning": "fala (do verbo parler)" },
+      { "word": "trois", "meaning": "três" },
+      { "word": "langues", "meaning": "idiomas / línguas" }
+    ]
+  },
+  "199": {
+    "explanation": "A negação 'ne... pas' abraça o verbo ir ('vais'). Para dizer 'à universidade', usa-se a preposição 'à' seguida do artigo encurtado 'l'' antes da vogal de 'université'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "vais", "meaning": "vou (do verbo aller)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "l'", "meaning": "a (artigo encurtado antes de vogal)" },
+      { "word": "université", "meaning": "universidade" }
+    ]
+  },
+  "200": {
+    "explanation": "Pergunta para encontrar um local de estudo. 'Y a-t-il' significa 'tem?' ou 'há?'. 'Une bibliothèque' é uma biblioteca, e 'ici' significa 'aqui'.",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bibliothèque", "meaning": "biblioteca" },
+      { "word": "ici", "meaning": "aqui" }
+    ]
+  },
+  "201": {
+    "explanation": "'J'utilise' significa 'eu uso' (com 'je' encurtado antes da vogal). 'Un stylo' é uma caneta. A preposição 'pour' significa 'para' e 'mon examen' é 'meu exame/minha prova'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "utilise", "meaning": "uso (do verbo utiliser)" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "stylo", "meaning": "caneta" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "mon", "meaning": "meu / minha" },
+      { "word": "examen", "meaning": "exame / prova" }
+    ]
+  },
+  "202": {
+    "explanation": "Pergunta super rápida e comum entre estudantes. A palavra 'que' (o que) perde a letra 'e' e vira 'Qu'' antes do verbo 'étudies' (estuda), que vem ligado com tracinho ao pronome 'tu' (você).",
+    "breakdown": [
+      { "word": "Qu'", "meaning": "O que (encurtado antes de som de vogal)" },
+      { "word": "étudies", "meaning": "estuda / estudas (do verbo étudier)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" }
+    ]
+  },
+  "203": {
+    "explanation": "Em francês, sala de aula é dita 'la salle de classe' (literalmente a sala de turma/aula). 'Froide' significa fria e ganha 'e' no final para combinar com a sala feminina.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "salle", "meaning": "sala" },
+      { "word": "de", "meaning": "de" },
+      { "word": "classe", "meaning": "turma / aula (salle de classe = sala de aula)" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "froide", "meaning": "fria (no feminino)" }
+    ]
+  },
+  "204": {
+    "explanation": "'Je dois' vem do verbo devoir e expressa compromisso ou obrigação ('eu tenho que' ou 'eu preciso'). Em seguida vem o verbo terminar no infinitivo ('finir') e 'mon travail' (meu trabalho/minha tarefa).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso / tenho que (do verbo devoir)" },
+      { "word": "finir", "meaning": "terminar / finalizar" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "205": {
+    "explanation": "Pergunta direta: 'As-tu' (tem você?). 'Un ordinateur' é um computador (com som final masculino bem marcado). Uma pergunta básica nos dias de hoje para trabalho e estudos remotos.",
+    "breakdown": [
+      { "word": "As", "meaning": "Tem / Tens (do verbo avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "ordinateur", "meaning": "computador" }
+    ]
+  },
+  "206": {
+    "explanation": "'Je lis' vem do verbo ler (lire). 'Le journal' significa o jornal impresso ou de notícias. É uma frase simples e direta para expressar um hábito diário de leitura.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "lis", "meaning": "leio (do verbo lire)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "journal", "meaning": "jornal" }
+    ]
+  },
+  "207": {
+    "explanation": "Expressão francesa muito forte e respeitada no trabalho: 'travailleur acharné' significa alguém incansável, extremamente dedicado e focado no serviço. 'C'est un' significa 'ele é um'.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Ele / Este (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "travailleur", "meaning": "trabalhador" },
+      { "word": "acharné", "meaning": "esforçado / incansável / muito dedicado" }
+    ]
+  },
+  "208": {
+    "explanation": "O par 'n'... pas' envolve o verbo gostar ('aime'). A palavra 'bureau' em francês tem dois sentidos principais: pode ser a sala do escritório ou a própria mesa de trabalho/escrivaninha.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "mon", "meaning": "meu / minha" },
+      { "word": "bureau", "meaning": "escrivaninha / mesa de trabalho / escritório" }
+    ]
+  },
+  "209": {
+    "explanation": "Pergunta para saber a sala de trabalho de alguém: 'Où' é onde, 'est' é fica ou está, e 'ton bureau' é seu escritório ou sua mesa.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "est", "meaning": "fica / é / está (do verbo être)" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "bureau", "meaning": "escritório / sala de trabalho" }
+    ]
+  },
+  "210": {
+    "explanation": "'La leçon' é a lição ou aula. 'Commence' vem do verbo começar (commencer) e 'maintenant' significa 'agora'. A frase avisa que o conteúdo da aula já vai começar.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "leçon", "meaning": "lição / aula" },
+      { "word": "commence", "meaning": "começa (do verbo commencer)" },
+      { "word": "maintenant", "meaning": "agora" }
+    ]
+  }
+}

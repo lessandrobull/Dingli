@@ -1,0 +1,488 @@
+{
+  "871": {
+    "explanation": "Frase inspiradora sobre transformação pessoal: 'Je crois que' significa 'eu acredito que'. 'L'éducation' é a educação (com 'l'' antes da vogal). A expressão superlativa 'l'outil le plus puissant' significa 'a ferramenta mais poderosa' (onde outil é ferramenta e puissant é poderoso). A expressão 'que nous ayons' significa 'que temos à nossa disposição'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "crois", "meaning": "acredito / creio (do verbo croire)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "éducation", "meaning": "educação" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "outil", "meaning": "ferramenta / instrumento" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus puissant = o mais poderoso)" },
+      { "word": "puissant", "meaning": "poderoso" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "ayons", "meaning": "temos / tenhamos (forma do verbo avoir)" }
+    ]
+  },
+  "872": {
+    "explanation": "'Il est important de' significa 'é importante'. O verbo achar ou encontrar é 'trouver'. 'Un équilibre' é um equilíbrio. A preposição 'entre' significa 'entre', e a expressão 'travail et loisirs' significa 'trabalho e lazer/passatempos'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "de", "meaning": "de" },
+      { "word": "trouver", "meaning": "encontrar / achar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "équilibre", "meaning": "equilíbrio" },
+      { "word": "entre", "meaning": "entre" },
+      { "word": "travail", "meaning": "trabalho" },
+      { "word": "et", "meaning": "e" },
+      { "word": "loisirs", "meaning": "lazer / passatempos" }
+    ]
+  },
+  "873": {
+    "explanation": "'La technologie a changé' significa 'a tecnologia mudou' (passado de changer com avoir). A expressão 'la façon dont' significa 'a maneira como / o modo como'. 'Nous communiquons' significa 'nós nos comunicamos'. E a expressão 'les uns avec les autres' é a fórmula clássica em francês para 'uns com os outros'.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "technologie", "meaning": "tecnologia" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "changé", "meaning": "mudado / alterou (do verbo changer)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "façon", "meaning": "maneira / forma" },
+      { "word": "dont", "meaning": "pela qual / como (la façon dont = o jeito como)" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "communiquons", "meaning": "comunicamos (do verbo communiquer)" },
+      { "word": "les", "meaning": "os" },
+      { "word": "uns", "meaning": "uns" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "les", "meaning": "os" },
+      { "word": "autres", "meaning": "outros (les uns avec les autres = uns com os outros)" }
+    ]
+  },
+  "874": {
+    "explanation": "'Je pense que' significa 'eu acho que'. 'Tout le monde' é 'todo mundo / todos'. 'Devrait avoir droit à' significa 'deveria ter direito a'. Em francês, serviços de saúde são chamados no plural de 'soins de santé' (cuidados de saúde), e 'gratuits' significa gratuitos.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "monde", "meaning": "mundo (tout le monde = todo mundo / todos)" },
+      { "word": "devrait", "meaning": "deveria (do verbo devoir)" },
+      { "word": "avoir", "meaning": "ter" },
+      { "word": "droit", "meaning": "direito (avoir droit à = ter direito a)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "des", "meaning": "serviços em geral / (marcador de plural)" },
+      { "word": "soins", "meaning": "cuidados / assistência médica" },
+      { "word": "de", "meaning": "de" },
+      { "word": "santé", "meaning": "saúde (soins de santé = saúde pública / cuidados de saúde)" },
+      { "word": "gratuits", "meaning": "gratuitos (no plural)" }
+    ]
+  },
+  "875": {
+    "explanation": "'L'environnement' é o meio ambiente (com 'l'' antes da vogal). A expressão 'quelque chose que' significa 'algo que / alguma coisa que'. 'Nous devons protéger' significa 'nós devemos proteger'. 'Pour l'avenir' significa 'para o futuro'.",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "environnement", "meaning": "meio ambiente / ambiente" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "devons", "meaning": "devemos / precisamos (do verbo devoir)" },
+      { "word": "protéger", "meaning": "proteger" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "avenir", "meaning": "futuro / porvir" }
+    ]
+  },
+  "876": {
+    "explanation": "Pergunta filosófica: 'Pensez-vous' é 'o senhor acha / você pensa?'. 'L'argent' é o dinheiro. A palavra 'puisse' é a forma de poder exigida após dúvida ('possa'). A palavra 'vraiment' é 'realmente'. O verbo rendre significa tornar ou fazer ficar: 'rendre les gens heureux' (fazer as pessoas felizes).",
+    "breakdown": [
+      { "word": "Pensez", "meaning": "Pensa / Acha (do verbo penser com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "argent", "meaning": "dinheiro" },
+      { "word": "puisse", "meaning": "possa (forma do verbo pouvoir)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "rendre", "meaning": "tornar / fazer ficar (do verbo rendre)" },
+      { "word": "les", "meaning": "as" },
+      { "word": "gens", "meaning": "pessoas / gente" },
+      { "word": "heureux", "meaning": "felizes (no plural)" }
+    ]
+  },
+  "877": {
+    "explanation": "'Il est souvent difficile de' significa 'muitas vezes é difícil / frequentemente é difícil'. O verbo tomar decisões em francês usa 'prendre' (literalmente pegar/tomar). A expressão 'la bonne décision' significa 'a decisão certa / a boa decisão' (com bonne antes de décision).",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "souvent", "meaning": "frequentemente / muitas vezes" },
+      { "word": "difficile", "meaning": "difícil" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prendre", "meaning": "tomar (prendre une décision = tomar uma decisão)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "bonne", "meaning": "boa / certa (no feminino)" },
+      { "word": "décision", "meaning": "decisão" }
+    ]
+  },
+  "878": {
+    "explanation": "'J'ai toujours été fasciné par' significa 'eu sempre fui fascinado por' (passado de être com avoir). 'L'histoire du monde' significa 'a história do mundo' (com 'l'' antes de h mudo e 'du' = de + le).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "été", "meaning": "sido / estado (passado do verbo être)" },
+      { "word": "fasciné", "meaning": "fascinado / encantado" },
+      { "word": "par", "meaning": "pela / por" },
+      { "word": "l'", "meaning": "a (encurtado antes de h mudo)" },
+      { "word": "histoire", "meaning": "história" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "monde", "meaning": "mundo" }
+    ]
+  },
+  "879": {
+    "explanation": "'Nous devons trouver' significa 'nós precisamos encontrar / devemos achar'. A expressão 'un meilleur moyen de' significa 'uma maneira melhor de / um meio melhor de'. O verbo resolver é 'résoudre', e 'nos problèmes' são nossos problemas.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "devons", "meaning": "devemos / precisamos (do verbo devoir)" },
+      { "word": "trouver", "meaning": "encontrar / achar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "meilleur", "meaning": "melhor" },
+      { "word": "moyen", "meaning": "meio / maneira" },
+      { "word": "de", "meaning": "de" },
+      { "word": "résoudre", "meaning": "resolver / solucionar" },
+      { "word": "nos", "meaning": "nossos" },
+      { "word": "problèmes", "meaning": "problemas" }
+    ]
+  },
+  "880": {
+    "explanation": "'Quel est' é 'qual é'. A expressão 'selon vous' significa 'na sua visão / na sua opinião'. 'Le sens du vrai succès' significa 'o significado do verdadeiro sucesso' (com vrai vindo antes de succès, e 'du' = de + le).",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "selon", "meaning": "segundo / de acordo com" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você (selon vous = na sua opinião)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "sens", "meaning": "sentido / significado" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "vrai", "meaning": "verdadeiro / real" },
+      { "word": "succès", "meaning": "sucesso" }
+    ]
+  },
+  "881": {
+    "explanation": "'Il est important de' significa 'é importante'. O verbo respeitar é 'respecter'. 'Les opinions' são as opiniões (feminino plural). A contração 'des' (de + les) conecta com os outros: 'des autres' (dos outros / das outras pessoas).",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "de", "meaning": "de" },
+      { "word": "respecter", "meaning": "respeitar" },
+      { "word": "les", "meaning": "as" },
+      { "word": "opinions", "meaning": "opiniões" },
+      { "word": "des", "meaning": "dos / das (junção de de + les)" },
+      { "word": "autres", "meaning": "outros / outras pessoas" }
+    ]
+  },
+  "882": {
+    "explanation": "Frase sobre generosidade no saber: 'La connaissance' é o conhecimento. 'Est quelque chose qui grandit' significa 'é algo que cresce' (do verbo grandir). A expressão 'plus on la partage' significa 'quanto mais a compartilhamos' (com o pronome 'la' referindo-se ao conhecimento feminino).",
+    "breakdown": [
+      { "word": "La", "meaning": "O / A" },
+      { "word": "connaissance", "meaning": "conhecimento (palavra feminina em francês)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "grandit", "meaning": "cresce (do verbo grandir)" },
+      { "word": "plus", "meaning": "mais (plus on = quanto mais a gente)" },
+      { "word": "on", "meaning": "a gente / se" },
+      { "word": "la", "meaning": "a / o (pronome que se refere ao conhecimento)" },
+      { "word": "partage", "meaning": "compartilha / divide (do verbo partager)" }
+    ]
+  },
+  "883": {
+    "explanation": "'Je pense que' significa 'eu acho que'. 'Le voyage' é a viagem ou o viajar. A expressão 'un excellent moyen de' significa 'uma ótima maneira de / um excelente meio de'. O verbo élargir significa ampliar ou alargar ('élargir l'esprit' = abrir a mente / expandir o espírito).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "le", "meaning": "a / o" },
+      { "word": "voyage", "meaning": "viagem / o ato de viajar (masculino em francês)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um / uma" },
+      { "word": "excellent", "meaning": "excelente / ótimo" },
+      { "word": "moyen", "meaning": "meio / maneira" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "élargir", "meaning": "ampliar / expandir / alargar" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de vogal)" },
+      { "word": "esprit", "meaning": "mente / espírito" }
+    ]
+  },
+  "884": {
+    "explanation": "'L'avenir' significa o futuro ou porvir (com 'l'' antes da vogal). 'Est quelque chose que' significa 'é algo que'. 'Nous créons' significa 'nós criamos' (do verbo créer). A palavra 'nous-mêmes' significa 'nós mesmos' (com hífen e 's' no plural).",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "avenir", "meaning": "futuro / porvir" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "créons", "meaning": "criamos (do verbo créer)" },
+      { "word": "nous-mêmes", "meaning": "nós mesmos" }
+    ]
+  },
+  "885": {
+    "explanation": "Pergunta com inversão: 'Est-il possible de' significa 'é possível?'. O verbo viver é 'vivre'. 'Dans un monde' é 'em um mundo'. A expressão 'sans aucun conflit' significa 'sem nenhum conflito' (onde aucun reforça a ausência total).",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "possible", "meaning": "possível" },
+      { "word": "de", "meaning": "de" },
+      { "word": "vivre", "meaning": "viver" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "monde", "meaning": "mundo" },
+      { "word": "sans", "meaning": "sem" },
+      { "word": "aucun", "meaning": "nenhum" },
+      { "word": "conflit", "meaning": "conflito" }
+    ]
+  },
+  "886": {
+    "explanation": "'Nous devrions tous' significa 'todos nós deveríamos' (do verbo devoir com tous). A expressão 'essayer d'être' significa 'tentar ser' (com 'de' encurtado para 'd'' antes de vogal). 'Plus conscients de' significa 'mais conscientes de' (com 's' no plural). 'Nos actions' são nossas ações.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "devrions", "meaning": "deveríamos (do verbo devoir)" },
+      { "word": "tous", "meaning": "todos" },
+      { "word": "essayer", "meaning": "tentar" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "être", "meaning": "ser / estar" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "conscients", "meaning": "conscientes (no plural)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "nos", "meaning": "nossas" },
+      { "word": "actions", "meaning": "ações" }
+    ]
+  },
+  "887": {
+    "explanation": "'Je crois que' significa 'eu acredito que'. 'Tout le monde a' é 'todo mundo tem / todos têm' (sempre tratado no singular). A expressão 'un talent particulier' significa 'um talento especial / um talento particular' (com o adjetivo vindo após o substantivo).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "crois", "meaning": "acredito / creio (do verbo croire)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "monde", "meaning": "mundo (tout le monde = todo mundo / todos)" },
+      { "word": "a", "meaning": "tem (do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "talent", "meaning": "talento" },
+      { "word": "particulier", "meaning": "particular / especial / próprio" }
+    ]
+  },
+  "888": {
+    "explanation": "'Il est important d'' significa 'é importante' (com 'de' encurtado para 'd'' antes de vogal). O verbo aprender é 'apprendre'. A contração 'des' (de + les) conecta com os erros: 'des erreurs'. A contração 'du' (de + le) conecta com o passado: 'du passé'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "apprendre", "meaning": "aprender" },
+      { "word": "des", "meaning": "dos / com os (junção de de + les)" },
+      { "word": "erreurs", "meaning": "erros" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "passé", "meaning": "passado" }
+    ]
+  },
+  "889": {
+    "explanation": "'Quel est' é 'qual é'. A expressão 'selon vous' significa 'na sua visão / na sua opinião'. 'Le rôle de l'art' significa 'o papel da arte' (com 'l'' antes da vogal de art). 'Dans notre société' significa 'na nossa sociedade'.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "selon", "meaning": "segundo / de acordo com" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você (selon vous = na sua opinião)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "rôle", "meaning": "papel / função" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "art", "meaning": "arte" },
+      { "word": "dans", "meaning": "em / na" },
+      { "word": "notre", "meaning": "nossa" },
+      { "word": "société", "meaning": "sociedade" }
+    ]
+  },
+  "890": {
+    "explanation": "'Le bonheur' é a felicidade (palavra masculina em francês). 'Est quelque chose qui vient' significa 'é algo que vem' (do verbo venir). A expressão 'de l'intérieur de soi' significa 'de dentro de si mesmo / do íntimo da pessoa' (com 'soi' indicando a própria pessoa).",
+    "breakdown": [
+      { "word": "Le", "meaning": "A / O" },
+      { "word": "bonheur", "meaning": "felicidade (palavra masculina em francês)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "vient", "meaning": "vem (do verbo venir)" },
+      { "word": "de", "meaning": "de / do" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "intérieur", "meaning": "interior" },
+      { "word": "de", "meaning": "de" },
+      { "word": "soi", "meaning": "si / si mesmo (de l'intérieur de soi = de dentro de si)" }
+    ]
+  },
+  "891": {
+    "explanation": "'Nous vivons dans' significa 'nós vivemos em' (do verbo vivre). 'Un monde' é um mundo. A expressão elegante 'en constante évolution' significa 'em constante evolução / em contínua transformação' (com o adjetivo constante antes do substantivo évolution).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "vivons", "meaning": "vivemos (do verbo vivre)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "monde", "meaning": "mundo" },
+      { "word": "en", "meaning": "em" },
+      { "word": "constante", "meaning": "constante / contínua (no feminino)" },
+      { "word": "évolution", "meaning": "evolução / transformação" }
+    ]
+  },
+  "892": {
+    "explanation": "'Je pense que' significa 'eu acho que'. 'L'amitié' é a amizade (com 'l'' antes da vogal). A expressão 'est plus importante que' significa 'é mais importante do que' (com importante no feminino concordando com amitié). 'L'argent' é o dinheiro.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "amitié", "meaning": "amizade" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "importante", "meaning": "importante (no feminino)" },
+      { "word": "que", "meaning": "do que / que" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "argent", "meaning": "dinheiro" }
+    ]
+  },
+  "893": {
+    "explanation": "'Il est nécessaire de' significa 'é necessário'. Em francês, a expressão para correr riscos é 'prendre des risques'. A construção 'si l'on veut' usa o artigo 'l'' antes de 'on' apenas para deixar o som mais agradável na fala ('se a gente quiser / se quisermos'). O verbo conseguir ou ter sucesso é 'réussir'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "nécessaire", "meaning": "necessário" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prendre", "meaning": "tomar / assumir" },
+      { "word": "des", "meaning": "de (marcador de plural)" },
+      { "word": "risques", "meaning": "riscos (prendre des risques = correr riscos)" },
+      { "word": "si", "meaning": "se" },
+      { "word": "l'", "meaning": "partícula de apoio usada para suavizar o som antes de on" },
+      { "word": "on", "meaning": "a gente / se" },
+      { "word": "veut", "meaning": "quer (do verbo vouloir)" },
+      { "word": "réussir", "meaning": "ter sucesso / vencer / triunfar" }
+    ]
+  },
+  "894": {
+    "explanation": "'Quel est' é 'qual é'. A expressão 'selon vous' significa 'na sua visão / segundo o senhor'. Em francês, direitos humanos é dito 'droits de l'homme' (com homem no singular representando a humanidade). A expressão superlativa 'le plus important' significa 'o mais importante'.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "selon", "meaning": "segundo / de acordo com" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você (selon vous = na sua opinião)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "droit", "meaning": "direito" },
+      { "word": "de", "meaning": "de / do" },
+      { "word": "l'", "meaning": "o (encurtado antes de h mudo)" },
+      { "word": "homme", "meaning": "homem (droit de l'homme = direito humano)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais)" },
+      { "word": "important", "meaning": "importante" }
+    ]
+  },
+  "895": {
+    "explanation": "'J'ai toujours pensé que' significa 'eu sempre pensei / achei que' (passado de penser com avoir). 'La nature' é a natureza. A expressão 'le meilleur professeur' significa 'o melhor professor' (onde o adjetivo meilleur vem antes de professeur).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "pensé", "meaning": "pensado / achei (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "la", "meaning": "a" },
+      { "word": "nature", "meaning": "natureza" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "meilleur", "meaning": "melhor" },
+      { "word": "professeur", "meaning": "professor" }
+    ]
+  },
+  "896": {
+    "explanation": "'Il est important d'être honnête' significa 'é importante ser honesto' (com 'de' encurtado para 'd'' antes de vogal). A expressão 'avec soi-même' significa 'consigo mesmo' (com soi indicando a pessoa interior). A expressão 'et avec les autres' significa 'e com os outros'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "important", "meaning": "importante" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "être", "meaning": "ser" },
+      { "word": "honnête", "meaning": "honesto / sincero" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "soi-même", "meaning": "si mesmo / consigo mesmo" },
+      { "word": "et", "meaning": "e" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "les", "meaning": "os" },
+      { "word": "autres", "meaning": "outros" }
+    ]
+  },
+  "897": {
+    "explanation": "'Nous devrions essayer d'' significa 'deveríamos tentar' (com 'de' encurtado para 'd'' antes de vogal). O verbo ajudar é 'aider'. A palavra 'ceux' é o pronome que significa 'aqueles'. A expressão 'qui ont moins de chance que nous' significa literalmente 'que têm menos sorte do que nós' (o nosso 'menos afortunados').",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "devrions", "meaning": "deveríamos (do verbo devoir)" },
+      { "word": "essayer", "meaning": "tentar" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "aider", "meaning": "ajudar" },
+      { "word": "ceux", "meaning": "aqueles" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "ont", "meaning": "têm (do verbo avoir no plural)" },
+      { "word": "moins", "meaning": "menos" },
+      { "word": "de", "meaning": "de (usado após palavras de quantidade)" },
+      { "word": "chance", "meaning": "sorte (avoir de la chance = ter sorte / ser afortunado)" },
+      { "word": "que", "meaning": "do que / que" },
+      { "word": "nous", "meaning": "nós" }
+    ]
+  },
+  "898": {
+    "explanation": "'Je pense que le temps est' significa 'eu acho que o tempo é'. A expressão superlativa 'la chose la plus précieuse' significa 'a coisa mais preciosa' (com précieuse no feminino concordando com chose). A expressão 'que nous ayons' significa 'que temos em nossas mãos / que possuímos'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "le", "meaning": "o" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "chose", "meaning": "coisa" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "précieuse", "meaning": "preciosa / valiosa (no feminino)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "ayons", "meaning": "temos / tenhamos (forma do verbo avoir)" }
+    ]
+  },
+  "899": {
+    "explanation": "Pergunta sobre o impacto digital: 'Pensez-vous' é 'o senhor acha / você pensa?'. 'Qu'Internet a amélioré' significa 'que a internet melhorou' (com 'qu'' antes da vogal e o passado de améliorer com avoir). 'Nos vies' significa 'nossas vidas'.",
+    "breakdown": [
+      { "word": "Pensez", "meaning": "Pensa / Acha (do verbo penser com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "qu'", "meaning": "que (encurtado antes de vogal)" },
+      { "word": "Internet", "meaning": "internet" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "amélioré", "meaning": "melhorado / aprimorou (do verbo améliorer)" },
+      { "word": "nos", "meaning": "nossas" },
+      { "word": "vies", "meaning": "vidas" }
+    ]
+  },
+  "900": {
+    "explanation": "Frase de ouro que conclui 100% do Nível B1: 'Le monde serait' significa 'o mundo seria' (forma do verbo être). 'Un meilleur endroit' significa 'um lugar melhor'. A palavra 'si' significa 'se'. 'Tout le monde était' significa 'todo mundo fosse / era'. A expressão 'plus gentil' significa 'mais gentil / mais amável'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "monde", "meaning": "mundo" },
+      { "word": "serait", "meaning": "seria (forma do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "meilleur", "meaning": "melhor" },
+      { "word": "endroit", "meaning": "lugar / local" },
+      { "word": "si", "meaning": "se" },
+      { "word": "tout", "meaning": "todo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "monde", "meaning": "mundo (tout le monde = todos / todo mundo)" },
+      { "word": "était", "meaning": "fosse / era (passado do verbo être)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "gentil", "meaning": "gentil / amável" }
+    ]
+  }
+}

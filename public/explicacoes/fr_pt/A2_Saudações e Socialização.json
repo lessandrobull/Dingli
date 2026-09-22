@@ -1,0 +1,352 @@
+{
+  "301": {
+    "explanation": "Um jeito muito natural e elegante de perguntar como alguém tem passado nos últimos dias ou semanas. 'Comment vas-tu' é a forma de pergunta de 'como você vai', e a expressão 'ces derniers temps' significa ao pé da letra 'nestes últimos tempos' (ultimamente).",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "vas", "meaning": "vai / vais (do verbo aller)" },
+      { "word": "-tu", "meaning": "você (ligado ao verbo para fazer a pergunta)" },
+      { "word": "ces", "meaning": "nestes / estes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "302": {
+    "explanation": "A expressão 'Je voudrais' significa 'eu gostaria' e é a forma mais educada de pedir ou anunciar algo. Em seguida vem o verbo apresentar ('présenter') no infinitivo, seguido de 'mon collègue' (meu colega de trabalho).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "voudrais", "meaning": "gostaria (forma educada do verbo vouloir)" },
+      { "word": "présenter", "meaning": "apresentar" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "collègue", "meaning": "colega (de trabalho ou estudo)" }
+    ]
+  },
+  "303": {
+    "explanation": "Ótima frase para puxar papo e conhecer melhor uma pessoa. 'Peux-tu' é 'você pode?'. O 'm'' é o 'me' encurtado, 'en' significa 'sobre isso/disso', 'dire' é dizer, 'plus' é mais e 'sur toi' significa 'sobre você'.",
+    "breakdown": [
+      { "word": "Peux", "meaning": "Pode / Podes (do verbo pouvoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "m'", "meaning": "me (encurtado antes de som de vogal)" },
+      { "word": "en", "meaning": "disso / sobre isso" },
+      { "word": "dire", "meaning": "dizer / contar" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "sur", "meaning": "sobre" },
+      { "word": "toi", "meaning": "você / ti" }
+    ]
+  },
+  "304": {
+    "explanation": "Expressão carinhosa para retomar contato após uma conversa anterior. 'C'était' significa 'foi' ou 'era'. A palavra 'agréable' significa agradável ou bom. A preposição 'de' conecta à ação seguinte, com 'te' (você/te) vindo colado antes do verbo 'parler' (conversar/falar), e 'hier' significa 'ontem'.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / Foi (encurtado antes de vogal)" },
+      { "word": "était", "meaning": "foi / era (passado do verbo être)" },
+      { "word": "agréable", "meaning": "agradável / muito bom" },
+      { "word": "de", "meaning": "de" },
+      { "word": "te", "meaning": "te / com você" },
+      { "word": "parler", "meaning": "conversar / falar" },
+      { "word": "hier", "meaning": "ontem" }
+    ]
+  },
+  "305": {
+    "explanation": "A pergunta que todo mundo faz na segunda-feira de manhã. 'As-tu passé' significa 'você passou?' (usando o verbo avoir + a ação no passado). 'Un bon week-end' significa 'um bom fim de semana'.",
+    "breakdown": [
+      { "word": "As", "meaning": "fez a ação no passado (auxiliar avoir com tu)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "passé", "meaning": "passou / tido (passado do verbo passer)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "bon", "meaning": "bom" },
+      { "word": "week-end", "meaning": "fim de semana" }
+    ]
+  },
+  "306": {
+    "explanation": "Frase educada para quando você não ouviu direito o nome de alguém. 'Désolé' é 'desculpe/sinto muito'. O par 'n'... pas' abraça o verbo 'ai'. A palavra 'saisi' vem do verbo saisir, que no dia a dia significa pegar, captar ou entender algo. 'Votre nom' é 'seu nome' de forma polida.",
+    "breakdown": [
+      { "word": "Désolé", "meaning": "Desculpe / Sinto muito" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "saisi", "meaning": "entendido / captado / pegado (do verbo saisir)" },
+      { "word": "votre", "meaning": "seu / do senhor / da senhora (tratamento formal)" },
+      { "word": "nom", "meaning": "nome" }
+    ]
+  },
+  "307": {
+    "explanation": "Pedido extremamente educado para pedir que repitam algo. 'Pourriez-vous' significa 'o senhor poderia?' ou 'vocês poderiam?'. 'Répéter' é o verbo repetir no infinitivo, e 'plus lentement' significa 'mais devagar' (com o sufixo -ment formando o advérbio).",
+    "breakdown": [
+      { "word": "Pourriez", "meaning": "Poderia / Poderiam (forma muito polida de pedir algo)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "répéter", "meaning": "repetir" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "lentement", "meaning": "devagar / lentamente" }
+    ]
+  },
+  "308": {
+    "explanation": "Frase para quando você tem a impressão de conhecer alguém. 'Nous ne nous sommes pas' é a negação no passado de 'nós nos encontramos'. 'Encore' significa ainda. No final, a expressão fixa 'n'est-ce pas ?' funciona exatamente como a nossa confirmação informal 'não é?' ou 'né?'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "nous", "meaning": "nos (indica ação mútua entre nós)" },
+      { "word": "sommes", "meaning": "fizemos a ação (verbo être usado no passado)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "encore", "meaning": "ainda" },
+      { "word": "rencontrés", "meaning": "encontrado / conhecido (do verbo se rencontrer)" },
+      { "word": "n'", "meaning": "não (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "-ce", "meaning": "isso" },
+      { "word": "pas", "meaning": "não (n'est-ce pas = não é? / né?)" }
+    ]
+  },
+  "309": {
+    "explanation": "'J'espère' significa 'eu espero' (com o 'je' encurtado antes da vogal). O 'te' (você/te) vem colado antes do verbo 'revoir' (rever / ver de novo). A palavra 'bientôt' significa 'em breve' ou 'logo'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "espère", "meaning": "espero (do verbo espérer)" },
+      { "word": "te", "meaning": "te / você" },
+      { "word": "revoir", "meaning": "rever / ver novamente" },
+      { "word": "bientôt", "meaning": "em breve / logo" }
+    ]
+  },
+  "310": {
+    "explanation": "Convite elegante e simpático. 'Aimerais-tu' significa 'você gostaria?'. 'Te joindre à nous' é a forma de dizer 'juntar-se a nós'. A expressão 'pour un café' significa 'para tomar um café' juntos.",
+    "breakdown": [
+      { "word": "Aimerais", "meaning": "Gostaria / Gostarias (forma suave e convidativa do verbo aimer)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "te", "meaning": "te / se" },
+      { "word": "joindre", "meaning": "juntar (se joindre = juntar-se)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "un", "meaning": "um" },
+      { "word": "café", "meaning": "café" }
+    ]
+  },
+  "311": {
+    "explanation": "A pergunta mais clássica para saber dos hobbies de alguém. 'Qu'est-ce que' é o jeito comum de perguntar 'o que'. 'Tu aimes faire' é 'você gosta de fazer'. 'Pendant' significa 'durante' e 'ton temps libre' é 'seu tempo livre'.",
+    "breakdown": [
+      { "word": "Qu'", "meaning": "O que (encurtado antes de vogal)" },
+      { "word": "est-ce que", "meaning": "expressão usada para iniciar perguntas" },
+      { "word": "tu", "meaning": "você" },
+      { "word": "aimes", "meaning": "gosta (do verbo aimer)" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "pendant", "meaning": "durante" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "libre", "meaning": "livre" }
+    ]
+  },
+  "312": {
+    "explanation": "'Je suis ravi' significa 'estou encantado' ou 'estou muito feliz'. A palavra 'de' liga a frase à ação seguinte, com 'te' (você/te) posicionado antes de 'revoir' (rever / ver de novo).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "ravi", "meaning": "encantado / muito contente / feliz" },
+      { "word": "de", "meaning": "de / em" },
+      { "word": "te", "meaning": "te / você" },
+      { "word": "revoir", "meaning": "rever / ver de novo" }
+    ]
+  },
+  "313": {
+    "explanation": "'S'il te plaît' é o 'por favor' informal. Em seguida vem a expressão acolhedora 'fais comme chez toi', que significa ao pé da letra 'faça como na sua casa' (o nosso 'sinta-se em casa' ou 'fique à vontade').",
+    "breakdown": [
+      { "word": "S'il te plaît", "meaning": "por favor (jeito informal)" },
+      { "word": "fais", "meaning": "faça (pedido do verbo faire)" },
+      { "word": "comme", "meaning": "como" },
+      { "word": "chez", "meaning": "na casa de" },
+      { "word": "toi", "meaning": "você / ti (chez toi = na sua casa / chez toi = à vontade)" }
+    ]
+  },
+  "314": {
+    "explanation": "Oferecimento hospitaleiro: 'Puis-je' é a inversão polida de 'posso eu'. O 't'' é o 'te' encurtado antes da vogal do verbo oferecer ('offrir'). 'Quelque chose' significa 'alguma coisa' ou 'algo', e 'à boire' significa 'para beber'.",
+    "breakdown": [
+      { "word": "Puis", "meaning": "Posso (forma polida do verbo pouvoir)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
+      { "word": "t'", "meaning": "te / a você (encurtado antes de vogal)" },
+      { "word": "offrir", "meaning": "oferecer" },
+      { "word": "quelque", "meaning": "alguma" },
+      { "word": "chose", "meaning": "coisa (quelque chose = algo / alguma coisa)" },
+      { "word": "à", "meaning": "para / de" },
+      { "word": "boire", "meaning": "beber" }
+    ]
+  },
+  "315": {
+    "explanation": "Pergunta amigável sobre os parentes de alguém. 'Comment' é como. O verbo ir ('va') concorda com 'ta famille' (sua família, tratada no singular). 'Ta' é 'sua' no feminino.",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "va", "meaning": "vai (do verbo aller)" },
+      { "word": "ta", "meaning": "sua / tua (feminino)" },
+      { "word": "famille", "meaning": "família" }
+    ]
+  },
+  "316": {
+    "explanation": "Frase polida para dizer que acha que ainda não se conhecem. 'Je ne pense pas que' significa 'não acho que / não penso que'. 'Nous nous soyons' é a forma de nós nos conhecermos no modo de possibilidade, e 'déjà' significa 'já'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "que", "meaning": "que" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "nous", "meaning": "nos (ação mútua)" },
+      { "word": "soyons", "meaning": "tenhamos feito a ação (verbo être no modo de incerteza)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "rencontrés", "meaning": "encontrado / conhecido (do verbo se rencontrer)" }
+    ]
+  },
+  "317": {
+    "explanation": "Agradecimento educado por um convite. 'Merci de' significa 'obrigado por'. O 'm'' é o 'me' encurtado antes do auxiliar 'avoir' (ter feito a ação no passado). 'Invité' é convidado, e 'à ta fête' é 'para a sua festa'.",
+    "breakdown": [
+      { "word": "Merci", "meaning": "Obrigado" },
+      { "word": "de", "meaning": "de / por" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "avoir", "meaning": "ter feito a ação no passado (auxiliar avoir)" },
+      { "word": "invité", "meaning": "convidado (do verbo inviter)" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "ta", "meaning": "sua / tua (feminino)" },
+      { "word": "fête", "meaning": "festa" }
+    ]
+  },
+  "318": {
+    "explanation": "Elogio refinado para agradecer a ajuda de alguém. 'C'est très gentil à vous' significa literalmente 'é muito gentil da sua parte'. A palavra 'de' liga ao verbo ajudar no infinitivo ('aider').",
+    "breakdown": [
+      { "word": "C'", "meaning": "Isto / É (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "gentil", "meaning": "gentil / simpático / atencioso" },
+      { "word": "à", "meaning": "da parte de / a" },
+      { "word": "vous", "meaning": "o senhor / a senhora / vocês" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "aider", "meaning": "ajudar" }
+    ]
+  },
+  "319": {
+    "explanation": "Pergunta bem nativa para saber o motivo da visita de alguém: 'Qu'est-ce qui' significa 'o que é que' quando se refere à causa. 'T'amène' é 'te traz' (com o pronome 'te' encurtado antes do verbo amener). 'Ici' é aqui e 'aujourd'hui' é hoje.",
+    "breakdown": [
+      { "word": "Qu'", "meaning": "O que (encurtado antes de vogal)" },
+      { "word": "est-ce qui", "meaning": "expressão interrogativa que pergunta o sujeito ou causa da ação" },
+      { "word": "t'", "meaning": "te / a você (encurtado antes de vogal)" },
+      { "word": "amène", "meaning": "traz / conduz (do verbo amener)" },
+      { "word": "ici", "meaning": "aqui" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "320": {
+    "explanation": "Para perguntar se alguém está curtindo a festa ou evento. 'Est-ce que' abre a pergunta. 'L'événement' é o evento (com 'l'' antes da vogal). O verbo plaire com 'te' ('te plaît') significa 'te agrada' ou 'você gosta'. A expressão 'jusqu'à présent' significa 'até o presente momento' ou 'até agora'.",
+    "breakdown": [
+      { "word": "Est-ce que", "meaning": "expressão usada para iniciar perguntas" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "événement", "meaning": "evento" },
+      { "word": "te", "meaning": "te / a você" },
+      { "word": "plaît", "meaning": "agrada (do verbo plaire; te plaît = você está gostando)" },
+      { "word": "jusqu'", "meaning": "até (encurtado antes de vogal)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "présent", "meaning": "presente (jusqu'à présent = até agora)" }
+    ]
+  },
+  "321": {
+    "explanation": "Maneira educada e suave de avisar que precisa ir embora. 'Je crains de' significa 'receio que' ou 'temo ter que'. 'Devoir' é o verbo dever/ter que no infinitivo. A palavrinha 'y' refere-se ao lugar para onde você vai, e 'maintenant' é 'agora'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "crains", "meaning": "receio / temo (do verbo craindre)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "devoir", "meaning": "dever / ter que" },
+      { "word": "y", "meaning": "lá / para lá (pronome de lugar)" },
+      { "word": "aller", "meaning": "ir (y aller = ir embora / partir)" },
+      { "word": "maintenant", "meaning": "agora" }
+    ]
+  },
+  "322": {
+    "explanation": "Frase de despedida amigável para não perder o contato. O verbo ficar ('restons') está conjugado na forma de convite coletivo ('fiquemos' ou 'vamos ficar'). A expressão 'en contact' significa 'em contato'.",
+    "breakdown": [
+      { "word": "Restons", "meaning": "Fiquemos / Vamos ficar (convite direto do verbo rester)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "contact", "meaning": "contato" }
+    ]
+  },
+  "323": {
+    "explanation": "Pergunta profissional para networking. 'Avez-vous' é 'o senhor tem?' ou 'vocês têm?'. Em francês, cartão de visitas é chamado de 'une carte de visite' (palavra feminina).",
+    "breakdown": [
+      { "word": "Avez", "meaning": "Tem / Têm (do verbo avoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / vocês (invertido para pergunta)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "carte", "meaning": "cartão" },
+      { "word": "de", "meaning": "de" },
+      { "word": "visite", "meaning": "visita (carte de visite = cartão de visita)" }
+    ]
+  },
+  "324": {
+    "explanation": "Fórmula tradicional de mandar lembranças a alguém. 'Salue' é 'cumprimente' ou 'mande um abraço'. 'Tes parents' são seus pais (pai e mãe). A expressão 'de ma part' significa literalmente 'da minha parte'.",
+    "breakdown": [
+      { "word": "Salue", "meaning": "Cumprimente / Dê lembranças a (pedido do verbo saluer)" },
+      { "word": "tes", "meaning": "seus / teus (para palavras no plural)" },
+      { "word": "parents", "meaning": "pais (pai e mãe)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "part", "meaning": "parte (de ma part = da minha parte / em meu nome)" }
+    ]
+  },
+  "325": {
+    "explanation": "'J'apprécie' significa 'eu aprecio' ou 'eu valorizo muito' (com o 'je' encurtado antes da vogal). A palavra 'vraiment' significa 'realmente' ou 'de verdade', e 'tes conseils' são seus conselhos.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "apprécie", "meaning": "aprecio / valorizo / agradeço (do verbo apprécier)" },
+      { "word": "vraiment", "meaning": "realmente / de verdade" },
+      { "word": "tes", "meaning": "seus / teus" },
+      { "word": "conseils", "meaning": "conselhos" }
+    ]
+  },
+  "326": {
+    "explanation": "Pergunta ao receber alguém que acabou de chegar. 'Était-ce' é a inversão no passado de 'c'était' (foi isso?). 'Difficile' é difícil, o verbo encontrar ('trouver') vem no infinitivo, e 'l'endroit' significa o local ou lugar (com 'l'' antes da vogal).",
+    "breakdown": [
+      { "word": "Était", "meaning": "Foi / Era (passado do verbo être)" },
+      { "word": "-ce", "meaning": "isto / isso (invertido para a pergunta)" },
+      { "word": "difficile", "meaning": "difícil" },
+      { "word": "de", "meaning": "de" },
+      { "word": "trouver", "meaning": "encontrar / achar" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "endroit", "meaning": "lugar / local" }
+    ]
+  },
+  "327": {
+    "explanation": "Elogio caloroso e entusiasmado sobre a aparência de alguém. 'Tu es' é 'você está'. A palavra 'superbe' significa excelente, magnífico, deslumbrante ou muito elegante. 'Aujourd'hui' significa hoje.",
+    "breakdown": [
+      { "word": "Tu", "meaning": "Você" },
+      { "word": "es", "meaning": "está / és (do verbo être)" },
+      { "word": "superbe", "meaning": "ótimo(a) / incrível / magnífico(a) / muito bonito(a)" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "328": {
+    "explanation": "Frase perfeita para desfazer qualquer tensão ou erro de comunicação. 'Je suis désolé' significa 'sinto muito' ou 'peço desculpas'. A preposição 'pour' significa 'por' e 'le malentendu' é a palavra exata para mal-entendido.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "désolé", "meaning": "desolado / sinto muito" },
+      { "word": "pour", "meaning": "por / pelo" },
+      { "word": "le", "meaning": "o" },
+      { "word": "malentendu", "meaning": "mal-entendido" }
+    ]
+  },
+  "329": {
+    "explanation": "Oferecimento prestativo em viagens ou recepções. 'Puis-je' é 'posso eu'. O 't'' é o 'te' encurtado antes do verbo ajudar ('aider'). 'Avec' significa 'com' e 'tes bagages' são suas malas ou bagagens.",
+    "breakdown": [
+      { "word": "Puis", "meaning": "Posso (forma polida do verbo pouvoir)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
+      { "word": "t'", "meaning": "te / a você (encurtado antes de vogal)" },
+      { "word": "aider", "meaning": "ajudar" },
+      { "word": "avec", "meaning": "com" },
+      { "word": "tes", "meaning": "suas / tuas (para palavras no plural)" },
+      { "word": "bagages", "meaning": "bagagens / malas" }
+    ]
+  },
+  "330": {
+    "explanation": "Voto caloroso de despedida para quem está partindo de volta para o seu lar. 'Fais bon voyage' significa literalmente 'faça boa viagem'. 'Pour' é 'para', 'rentrer' é o verbo retornar/voltar e 'chez toi' significa 'para a sua casa'.",
+    "breakdown": [
+      { "word": "Fais", "meaning": "Faça (pedido do verbo faire)" },
+      { "word": "bon", "meaning": "boa / bom" },
+      { "word": "voyage", "meaning": "viagem (palavra masculina em francês)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "rentrer", "meaning": "voltar / regressar" },
+      { "word": "chez", "meaning": "na casa de / para a casa de" },
+      { "word": "toi", "meaning": "você / ti (chez toi = para a sua casa)" }
+    ]
+  }
+}

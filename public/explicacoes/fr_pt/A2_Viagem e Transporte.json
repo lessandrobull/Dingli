@@ -1,0 +1,406 @@
+{
+  "391": {
+    "explanation": "Pergunta crucial em estações de trem. 'De quel quai' significa 'de qual plataforma'. O verbo partir ('part') vem posicionado antes do trem ('le train'), que é quem está realizando a ação.",
+    "breakdown": [
+      { "word": "De", "meaning": "De" },
+      { "word": "quel", "meaning": "qual (no masculino)" },
+      { "word": "quai", "meaning": "plataforma (de trem ou metrô)" },
+      { "word": "part", "meaning": "parte / sai (do verbo partir)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "train", "meaning": "trem" }
+    ]
+  },
+  "392": {
+    "explanation": "Em francês, para dizer que perdeu um ônibus, trem ou voo por atraso, usa-se o verbo rater ('j'ai raté' = eu perdi / deixei passar). 'Parce que' significa 'porque', 'j'étais' é 'eu estava' e 'en retard' é 'atrasado'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "raté", "meaning": "perdi / deixei passar (do verbo rater)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "bus", "meaning": "ônibus" },
+      { "word": "parce", "meaning": "por" },
+      { "word": "que", "meaning": "que (parce que = porque / já que)" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "étais", "meaning": "estava (passado do verbo être)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "retard", "meaning": "atraso (en retard = atrasado)" }
+    ]
+  },
+  "393": {
+    "explanation": "Pergunta sobre planos futuros com tratamento formal ou para mais de uma pessoa: 'Allez-vous' (você vai / vocês vão?). O verbo reservar ('réserver') vem em seguida no infinitivo. 'Les billets' são as passagens, e 'en ligne' significa pela internet / online.",
+    "breakdown": [
+      { "word": "Allez", "meaning": "Vai / Vão (do verbo aller com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / vocês (invertido para a pergunta)" },
+      { "word": "réserver", "meaning": "reservar" },
+      { "word": "les", "meaning": "as" },
+      { "word": "billets", "meaning": "passagens / bilhetes" },
+      { "word": "en", "meaning": "em" },
+      { "word": "ligne", "meaning": "linha (en ligne = online / pela internet)" }
+    ]
+  },
+  "394": {
+    "explanation": "Estrutura comparativa refinada: 'Le vol était plus cher' significa 'o voo era mais caro'. A expressão 'que je ne le pensais' significa 'do que eu pensava', onde os franceses acrescentam esse 'ne' e 'le' para deixar a comparação mais elegante e fluida.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "vol", "meaning": "voo" },
+      { "word": "était", "meaning": "era / estava / foi (passado do verbo être)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "cher", "meaning": "caro" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "ne", "meaning": "partícula de ligação usada em comparações refinadas" },
+      { "word": "le", "meaning": "isso (referindo-se ao pensamento anterior)" },
+      { "word": "pensais", "meaning": "pensava (passado do verbo penser)" }
+    ]
+  },
+  "395": {
+    "explanation": "'Nous séjournons' significa 'estamos hospedados' ou 'ficamos hospedados'. Em francês, uma pousada familiar ou de charme é chamada de 'maison d'hôtes' (literalmente casa de hóspedes). 'Près de la plage' significa 'perto da praia'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "séjournons", "meaning": "ficamos hospedados / nos hospedamos (do verbo séjourner)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "maison", "meaning": "casa" },
+      { "word": "d'", "meaning": "de (encurtado antes de som de vogal ou h)" },
+      { "word": "hôtes", "meaning": "hóspedes (maison d'hôtes = pousada)" },
+      { "word": "près", "meaning": "perto" },
+      { "word": "de", "meaning": "de" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plage", "meaning": "praia" }
+    ]
+  },
+  "396": {
+    "explanation": "Pergunta indispensável de deslocamento: 'Combien de temps' é 'quanto tempo'. A expressão 'faut-il' é a forma de pergunta de 'il faut' (é necessário / leva tempo). 'Pour aller' significa 'para ir', e 'au centre-ville' significa 'ao centro da cidade'.",
+    "breakdown": [
+      { "word": "Combien", "meaning": "Quanto" },
+      { "word": "de", "meaning": "de" },
+      { "word": "temps", "meaning": "tempo (combien de temps = quanto tempo)" },
+      { "word": "faut", "meaning": "é preciso / leva (do verbo falloir)" },
+      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "aller", "meaning": "ir / chegar" },
+      { "word": "au", "meaning": "ao (junção de à + le)" },
+      { "word": "centre-ville", "meaning": "centro da cidade" }
+    ]
+  },
+  "397": {
+    "explanation": "A estrutura 'ne... jamais' significa 'nunca', abraçando o passado 'ai été' (estive). Para países que começam com vogal como Itália, usa-se 'en Italie'. A palavra 'auparavant' é uma forma bonita e comum de dizer 'anteriormente' ou 'antes'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "jamais", "meaning": "nunca (ne... jamais = nunca)" },
+      { "word": "été", "meaning": "estado / estive (passado do verbo être)" },
+      { "word": "en", "meaning": "na (usado para países que começam com vogal)" },
+      { "word": "Italie", "meaning": "Itália" },
+      { "word": "auparavant", "meaning": "antes / anteriormente" }
+    ]
+  },
+  "398": {
+    "explanation": "'Y a-t-il' significa 'tem?' ou 'há?'. Em francês, agência de aluguel de carros é chamada de 'agence de location de voitures' (onde location significa locação/aluguel). 'Près de l'aéroport' significa 'perto do aeroporto' (com 'l'' antes da vogal).",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há / Existe (forma de pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "agence", "meaning": "agência" },
+      { "word": "de", "meaning": "de" },
+      { "word": "location", "meaning": "aluguel / locação" },
+      { "word": "de", "meaning": "de" },
+      { "word": "voitures", "meaning": "carros (agence de location de voitures = locadora de veículos)" },
+      { "word": "près", "meaning": "perto" },
+      { "word": "de", "meaning": "de" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "aéroport", "meaning": "aeroporto" }
+    ]
+  },
+  "399": {
+    "explanation": "'Tu devrais' significa 'você deveria' (dando um conselho amigável). Em francês, o verbo técnico e comum usado para contratar ou assinar um seguro ou plano é souscrire. 'Une assurance voyage' significa 'um seguro de viagem'.",
+    "breakdown": [
+      { "word": "Tu", "meaning": "Você" },
+      { "word": "devrais", "meaning": "deveria (conselho do verbo devoir)" },
+      { "word": "souscrire", "meaning": "contratar / assinar (apólices e planos)" },
+      { "word": "une", "meaning": "um / uma" },
+      { "word": "assurance", "meaning": "seguro (palavra feminina em francês)" },
+      { "word": "voyage", "meaning": "viagem (assurance voyage = seguro de viagem)" }
+    ]
+  },
+  "400": {
+    "explanation": "Pergunta salvadora nas capitais: a expressão 'se trouve' significa 'se encontra' ou 'fica localizada'. 'La station de métro' é a estação de metrô. A expressão 'la plus proche' significa 'a mais próxima'.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "se", "meaning": "se" },
+      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "station", "meaning": "estação (de metrô)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "métro", "meaning": "metrô" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "proche", "meaning": "próxima / perto" }
+    ]
+  },
+  "401": {
+    "explanation": "Frase de aeroporto: 'Je cherche' significa 'estou procurando' ou 'busco'. Em francês, a sala de embarque é chamada de 'salle d'embarquement' (com o 'de' encurtado para 'd'' antes da vogal de embarquement).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "salle", "meaning": "sala" },
+      { "word": "d'", "meaning": "de (encurtado antes de som de vogal)" },
+      { "word": "embarquement", "meaning": "embarque (salle d'embarquement = sala de embarque / portão)" }
+    ]
+  },
+  "402": {
+    "explanation": "A expressão 'penser à' significa 'lembrar-se de' ou 'pensar em fazer algo'. 'As-tu pensé à prendre' significa 'você se lembrou de levar?'. Em francês, escova de dentes é 'brosse à dents' (com a preposição 'à' indicando a função da escova).",
+    "breakdown": [
+      { "word": "As", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "pensé", "meaning": "pensou / lembrou-se (do verbo penser)" },
+      { "word": "à", "meaning": "em / de (penser à = lembrar-se de)" },
+      { "word": "prendre", "meaning": "pegar / levar" },
+      { "word": "ta", "meaning": "sua / tua (feminino)" },
+      { "word": "brosse", "meaning": "escova" },
+      { "word": "à", "meaning": "de / para (indica a finalidade do objeto)" },
+      { "word": "dents", "meaning": "dentes (brosse à dents = escova de dentes)" }
+    ]
+  },
+  "403": {
+    "explanation": "Comparação de hospedagem no passado: 'L'hôtel n'était pas' significa 'o hotel não era'. A estrutura 'aussi... que' significa 'tão... quanto'. 'Confortable' é confortável, e 'le précédent' significa 'o anterior' ou 'o último'.",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de h mudo)" },
+      { "word": "hôtel", "meaning": "hotel" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "était", "meaning": "era / estava (passado do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "confortable", "meaning": "confortável" },
+      { "word": "que", "meaning": "quanto" },
+      { "word": "le", "meaning": "o" },
+      { "word": "précédent", "meaning": "anterior / último" }
+    ]
+  },
+  "404": {
+    "explanation": "Pedido de ajuda na rua: 'Peux-tu' significa 'você pode?'. O pronome 'me' vem colado antes de 'montrer' (mostrar). 'Le chemin' é o caminho. Em francês, o mapa de papel ou geográfico é chamado de 'cette carte' (esta carta/mapa).",
+    "breakdown": [
+      { "word": "Peux", "meaning": "Pode / Podes (do verbo pouvoir)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "me", "meaning": "me" },
+      { "word": "montrer", "meaning": "mostrar" },
+      { "word": "le", "meaning": "o" },
+      { "word": "chemin", "meaning": "caminho" },
+      { "word": "sur", "meaning": "em / sobre" },
+      { "word": "cette", "meaning": "este / esta (feminino)" },
+      { "word": "carte", "meaning": "mapa (carte routière ou mapa de papel)" }
+    ]
+  },
+  "405": {
+    "explanation": "'Nous avons décidé de' significa 'nós decidimos'. O verbo pegar ('prendre') é usado para meios de transporte ('prendre le train' = pegar o trem). A expressão 'plutôt que de' significa 'em vez de' ou 'ao invés de', seguida de 'conduire' (dirigir).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "avons", "meaning": "fizemos a ação no passado (auxiliar avoir)" },
+      { "word": "décidé", "meaning": "decidido (do verbo décider)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prendre", "meaning": "pegar" },
+      { "word": "le", "meaning": "o" },
+      { "word": "train", "meaning": "trem" },
+      { "word": "plutôt", "meaning": "mais / de preferência" },
+      { "word": "que", "meaning": "do que (plutôt que = em vez de)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "conduire", "meaning": "dirigir" }
+    ]
+  },
+  "406": {
+    "explanation": "Pergunta sobre economia na viagem: 'Est-ce' significa 'é?'. A expressão 'moins cher' significa 'menos caro' (ou seja, mais barato). O verbo viajar é 'voyager'. Em francês, 'un car' (ou autocar) é o ônibus intermunicipal de viagem, diferente de 'bus' que circula dentro da cidade.",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-ce", "meaning": "isto / isso (invertido para a pergunta)" },
+      { "word": "moins", "meaning": "menos" },
+      { "word": "cher", "meaning": "caro (moins cher = mais barato)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "voyager", "meaning": "viajar" },
+      { "word": "en", "meaning": "de (preposição de transporte)" },
+      { "word": "car", "meaning": "ônibus de viagem / rodoviário (autocar)" }
+    ]
+  },
+  "407": {
+    "explanation": "O maior pavor de quem viaja! 'J'ai oublié' significa 'eu esqueci' (com avoir + a ação no passado). 'Mon passeport' é meu passaporte, e 'à la maison' é a fórmula padrão para 'em casa'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "oublié", "meaning": "esquecido / esqueci (do verbo oublier)" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "passeport", "meaning": "passaporte" },
+      { "word": "à", "meaning": "em / na" },
+      { "word": "la", "meaning": "a" },
+      { "word": "maison", "meaning": "casa (à la maison = em casa)" }
+    ]
+  },
+  "408": {
+    "explanation": "'Quel est' é 'qual é'. A expressão 'le meilleur moyen de' significa 'a melhor maneira de' ou 'o melhor meio de'. O verbo reflexivo se déplacer significa 'locomover-se / deslocar-se', e 'en ville' significa 'pela cidade'.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "meilleur", "meaning": "melhor" },
+      { "word": "moyen", "meaning": "meio / maneira" },
+      { "word": "de", "meaning": "de" },
+      { "word": "se", "meaning": "se" },
+      { "word": "déplacer", "meaning": "deslocar / locomover (se déplacer = locomover-se)" },
+      { "word": "en", "meaning": "na / pela" },
+      { "word": "ville", "meaning": "cidade (en ville = na cidade)" }
+    ]
+  },
+  "409": {
+    "explanation": "Em francês, trânsito de veículos é chamado de 'la circulation' (palavra feminina). 'Était' significa 'estava' (passado de être). A palavra 'terrible' significa terrível ou horrível, e 'ce matin' significa 'esta manhã / hoje de manhã'.",
+    "breakdown": [
+      { "word": "La", "meaning": "A / O (circulation é feminina em francês)" },
+      { "word": "circulation", "meaning": "trânsito / circulação de veículos" },
+      { "word": "était", "meaning": "estava / era (passado do verbo être)" },
+      { "word": "terrible", "meaning": "terrível / péssimo(a)" },
+      { "word": "ce", "meaning": "esta / este" },
+      { "word": "matin", "meaning": "manhã (ce matin = esta manhã)" }
+    ]
+  },
+  "410": {
+    "explanation": "'Y a-t-il' significa 'tem?' ou 'há?'. 'Des vols directs' significa 'voos diretos' (com o marcador de plural 'des' e o adjetivo 'directs' concordando no plural). A preposição 'pour' indica o destino ('para Nova York').",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "des", "meaning": "voos em geral / alguns (marcador de plural)" },
+      { "word": "vols", "meaning": "voos" },
+      { "word": "directs", "meaning": "diretos (no plural)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "New York", "meaning": "Nova York" }
+    ]
+  },
+  "411": {
+    "explanation": "Frase perfeita para atendimento em companhias aéreas ou hotéis. 'Je voudrais' é 'eu gostaria' (modo educado). O verbo alterar ou mudar é modifier, e 'ma réservation' é minha reserva.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "voudrais", "meaning": "gostaria (forma polida do verbo vouloir)" },
+      { "word": "modifier", "meaning": "modificar / alterar" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "réservation", "meaning": "reserva" }
+    ]
+  },
+  "412": {
+    "explanation": "'Le bateau' é o barco (com a terminação -eau que tem som de 'ô'). 'Part' significa 'sai' ou 'parte'. Para dizer horas e meia em francês, diz-se 'neuf heures et demie' (nove horas e meia), com 'demie' no feminino para concordar com horas.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "bateau", "meaning": "barco" },
+      { "word": "part", "meaning": "sai / parte (do verbo partir)" },
+      { "word": "à", "meaning": "às" },
+      { "word": "neuf", "meaning": "nove" },
+      { "word": "heures", "meaning": "horas" },
+      { "word": "et", "meaning": "e" },
+      { "word": "demie", "meaning": "meia (et demie = e meia)" }
+    ]
+  },
+  "413": {
+    "explanation": "Pergunta formal na embaixada ou aeroporto: 'Ai-je' é a pergunta 'tenho eu?'. A expressão 'avoir besoin de' significa 'precisar de'. 'Un visa' é um visto de entrada. 'Pour visiter' significa 'para visitar', e 'votre pays' significa 'o seu país' de forma respeitosa.",
+    "breakdown": [
+      { "word": "Ai", "meaning": "Tenho (do verbo avoir)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo para a pergunta)" },
+      { "word": "besoin", "meaning": "necessidade (ai-je besoin de = eu preciso de?)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "visa", "meaning": "visto (de viagem)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "visiter", "meaning": "visitar" },
+      { "word": "votre", "meaning": "seu / vosso (tratamento formal)" },
+      { "word": "pays", "meaning": "país" }
+    ]
+  },
+  "414": {
+    "explanation": "Relato de um dia intenso de turismo: 'Nous avons marché' significa 'nós caminhamos' (no passado). A expressão 'toute la journée' significa 'o dia todo'. Em seguida, 'nous étions' significa 'nós estávamos', e 'très fatigués' significa 'muito cansados' (com 's' no plural).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "avons", "meaning": "fizemos a ação no passado (auxiliar avoir)" },
+      { "word": "marché", "meaning": "caminhado / andamos (do verbo marcher)" },
+      { "word": "toute", "meaning": "toda / todo" },
+      { "word": "la", "meaning": "a" },
+      { "word": "journée", "meaning": "jornada / dia (toute la journée = o dia todo)" },
+      { "word": "et", "meaning": "e" },
+      { "word": "nous", "meaning": "nós" },
+      { "word": "étions", "meaning": "estávamos (passado do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "fatigués", "meaning": "cansados (no plural)" }
+    ]
+  },
+  "415": {
+    "explanation": "Pergunta para saber se dá para ir caminhando: cita-se o local ('Le musée') e usa-se a forma de pergunta 'est-il' (é ele?). A palavra 'accessible' significa acessível, e 'à pied' é a expressão consagrada para 'a pé' ou 'caminhando'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "musée", "meaning": "museu" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para reforçar a pergunta)" },
+      { "word": "accessible", "meaning": "acessível / alcançável" },
+      { "word": "à", "meaning": "a" },
+      { "word": "pied", "meaning": "pé (accessible à pied = acessível a pé)" }
+    ]
+  },
+  "416": {
+    "explanation": "Frase avançada de preferência no avião ou trem! Em francês, a expressão 'côté fenêtre' significa 'do lado da janela', e 'côté couloir' significa 'do lado do corredor'. A contração 'aux' (à + les) conecta a comparação 'preferir X a Y'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "préfère", "meaning": "prefiro (do verbo préférer)" },
+      { "word": "les", "meaning": "os" },
+      { "word": "sièges", "meaning": "assentos / poltronas" },
+      { "word": "côté", "meaning": "lado" },
+      { "word": "fenêtre", "meaning": "janela (côté fenêtre = do lado da janela)" },
+      { "word": "aux", "meaning": "aos (junção de à + les usada na comparação)" },
+      { "word": "sièges", "meaning": "assentos" },
+      { "word": "côté", "meaning": "lado" },
+      { "word": "couloir", "meaning": "corredor (côté couloir = do lado do corredor)" }
+    ]
+  },
+  "417": {
+    "explanation": "Pergunta feita pelo atendente no balcão de check-in: 'Combien de' significa 'quantas'. 'Bagages' são as malas ou bagagens. O verbo registrar ou despachar bagagens em francês é enregistrer ('enregistrez-vous' = o senhor está despachando?).",
+    "breakdown": [
+      { "word": "Combien", "meaning": "Quantas / Quanto" },
+      { "word": "de", "meaning": "de (combien de = quantas)" },
+      { "word": "bagages", "meaning": "bagagens / malas" },
+      { "word": "enregistrez", "meaning": "despacha / registra (do verbo enregistrer)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / vocês (invertido para pergunta)" }
+    ]
+  },
+  "418": {
+    "explanation": "'Le chauffeur de taxi' é o motorista de táxi. A expressão 'a été' significa 'foi' no passado (usando o verbo avoir + été). 'Très' significa muito, e 'serviable' é um adjetivo bonito que significa prestativo, atencioso e pronto a ajudar.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "chauffeur", "meaning": "motorista" },
+      { "word": "de", "meaning": "de" },
+      { "word": "taxi", "meaning": "táxi (chauffeur de taxi = motorista de táxi / taxista)" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "serviable", "meaning": "prestativo / atencioso / prestativa" }
+    ]
+  },
+  "419": {
+    "explanation": "Pergunta para economizar no transporte urbano: 'Où' é onde e 'puis-je' é a forma educada de 'posso eu'. O verbo comprar ('acheter') vem no infinitivo. 'Un pass pour la ville' é um passe turístico para andar à vontade pelos transportes da cidade.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "puis", "meaning": "posso (forma polida do verbo pouvoir)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
+      { "word": "acheter", "meaning": "comprar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "pass", "meaning": "passe / bilhete múltiplo" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "la", "meaning": "a" },
+      { "word": "ville", "meaning": "cidade" }
+    ]
+  },
+  "420": {
+    "explanation": "Frase de alívio na viagem: 'Nous sommes arrivés' significa 'nós chegamos' (verbos de movimento como arriver usam o verbo être no passado e ganham 's' no plural). 'À la gare' é na estação de trem. E a expressão francesa para 'bem a tempo' ou 'na hora certa' é 'juste à temps'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "sommes", "meaning": "fizemos a ação (verbo être usado como auxiliar de movimento)" },
+      { "word": "arrivés", "meaning": "chegados / chegamos (do verbo arriver no plural)" },
+      { "word": "à", "meaning": "a / na" },
+      { "word": "la", "meaning": "a" },
+      { "word": "gare", "meaning": "estação de trem" },
+      { "word": "juste", "meaning": "justamente / exatamente" },
+      { "word": "à", "meaning": "a" },
+      { "word": "temps", "meaning": "tempo (juste à temps = bem a tempo / na hora H)" }
+    ]
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "361": {
+    "explanation": "'D'habitude' é a expressão comum para 'geralmente' ou 'de costume'. 'Je me réveille' significa 'eu acordo' (uma ação que você faz em si mesmo). A expressão 'avant que' (antes que) pede esse 'ne' elegante antes do verbo 'sonne' (tocar), mesmo sem ideia negativa de 'não'.",
+    "breakdown": [
+      { "word": "D'", "meaning": "De (encurtado antes de som de vogal ou h)" },
+      { "word": "habitude", "meaning": "hábito / costume (d'habitude = geralmente / de costume)" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "réveille", "meaning": "acordo (do verbo se réveiller)" },
+      { "word": "avant", "meaning": "antes" },
+      { "word": "que", "meaning": "que" },
+      { "word": "le", "meaning": "o" },
+      { "word": "réveil", "meaning": "despertador" },
+      { "word": "ne", "meaning": "partícula de estilo que acompanha certas expressões de tempo" },
+      { "word": "sonne", "meaning": "toque / soe (do verbo sonner)" }
+    ]
+  },
+  "362": {
+    "explanation": "Pergunta sobre a rotina de tarefas de casa. 'À quelle heure' é 'a que horas'. 'Termines-tu' é a forma de pergunta de 'você termina'. A palavra 'habituellement' é formada com -ment e significa 'habitualmente/normalmente', e 'corvées' são as tarefas domésticas chatas ou obrigações do dia a dia.",
+    "breakdown": [
+      { "word": "À", "meaning": "A" },
+      { "word": "quelle", "meaning": "qual / que (feminino de quel)" },
+      { "word": "heure", "meaning": "hora" },
+      { "word": "termines", "meaning": "termina / terminas (do verbo terminer)" },
+      { "word": "-tu", "meaning": "você (ligado ao verbo para pergunta)" },
+      { "word": "habituellement", "meaning": "habitualmente / normalmente" },
+      { "word": "tes", "meaning": "suas / tuas (para palavras no plural)" },
+      { "word": "corvées", "meaning": "tarefas / obrigações domésticas" }
+    ]
+  },
+  "363": {
+    "explanation": "'Elle cherche' significa 'ela busca' ou 'ela está procurando' (o francês usa o presente comum para ações que estão acontecendo). 'Actuellement' é um falso amigo clássico: significa 'atualmente/no momento' (e não 'realmente'). A forma 'nouvel' é usada antes de palavras masculinas que começam com vogal como 'emploi' (emprego).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "cherche", "meaning": "procura / busca (do verbo chercher)" },
+      { "word": "actuellement", "meaning": "atualmente / no momento presente" },
+      { "word": "un", "meaning": "um" },
+      { "word": "nouvel", "meaning": "novo (forma especial usada antes de palavra masculina com vogal)" },
+      { "word": "emploi", "meaning": "emprego / trabalho" }
+    ]
+  },
+  "364": {
+    "explanation": "Para dizer 'não tive tempo': 'n'... pas' envolve o passado 'ai eu' (tive, do verbo avoir). A palavra 'de' liga ao verbo tomar ('prendre'). Em francês, café da manhã é chamado de 'petit-déjeuner' (literalmente pequeno almoço) e 'aujourd'hui' significa hoje.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "eu", "meaning": "tido / tive (passado do verbo avoir; n'ai pas eu = não tive)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "de", "meaning": "de" },
+      { "word": "prendre", "meaning": "tomar / pegar" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "petit-déjeuner", "meaning": "café da manhã" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "365": {
+    "explanation": "Pergunta sobre academia e saúde. 'Vas-tu' é a forma de pergunta de 'você vai'. 'Toujours' significa sempre. Em francês, academia de ginástica é chamada de 'salle de sport' (literalmente sala de esporte). 'Après le travail' significa 'depois do trabalho'.",
+    "breakdown": [
+      { "word": "Vas", "meaning": "Vai / Vais (do verbo aller)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "la", "meaning": "a" },
+      { "word": "salle", "meaning": "sala" },
+      { "word": "de", "meaning": "de" },
+      { "word": "sport", "meaning": "esporte (salle de sport = academia)" },
+      { "word": "après", "meaning": "depois de / após" },
+      { "word": "le", "meaning": "o" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "366": {
+    "explanation": "'Parfois' significa às vezes. 'Il oublie de' significa 'ele esquece de'. Em francês, a expressão para 'trancar a porta' é 'fermer la porte à clé' (literalmente fechar a porta à chave).",
+    "breakdown": [
+      { "word": "Parfois", "meaning": "Às vezes" },
+      { "word": "il", "meaning": "ele" },
+      { "word": "oublie", "meaning": "esquece (do verbo oublier)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "fermer", "meaning": "fechar" },
+      { "word": "la", "meaning": "a" },
+      { "word": "porte", "meaning": "porta" },
+      { "word": "à", "meaning": "à / com" },
+      { "word": "clé", "meaning": "chave (fermer à clé = trancar com chave)" }
+    ]
+  },
+  "367": {
+    "explanation": "'Nous retrouvons' vem do verbo retrouver (encontrar-se com alguém com quem já combinou). 'Nos amis' são nossos amigos. Para marcar horário marcado, usa-se 'à huit heures' (às oito horas).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "retrouvons", "meaning": "encontramos (do verbo retrouver)" },
+      { "word": "nos", "meaning": "nossos" },
+      { "word": "amis", "meaning": "amigos" },
+      { "word": "à", "meaning": "às" },
+      { "word": "huit", "meaning": "oito" },
+      { "word": "heures", "meaning": "horas" }
+    ]
+  },
+  "368": {
+    "explanation": "'Je nettoie' vem do verbo nettoyer (limpar). 'La maison' é a casa. A expressão muito comum 'en ce moment' significa 'no momento' ou 'neste instante', indicando o que você está fazendo agora.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "nettoie", "meaning": "limpo (do verbo nettoyer)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "maison", "meaning": "casa" },
+      { "word": "en", "meaning": "em" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "moment", "meaning": "momento (en ce moment = no momento / agora)" }
+    ]
+  },
+  "369": {
+    "explanation": "'À quelle fréquence' é o jeito padrão de perguntar 'com que frequência'. 'Laves-tu' é 'você lava' em formato de pergunta com hífen. Como 'voiture' (carro) é feminina em francês, usa-se 'ta' para 'seu/sua'.",
+    "breakdown": [
+      { "word": "À", "meaning": "A / Com" },
+      { "word": "quelle", "meaning": "qual / que (feminino de quel)" },
+      { "word": "fréquence", "meaning": "frequência (à quelle fréquence = com que frequência)" },
+      { "word": "laves", "meaning": "lava / lavas (do verbo laver)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "ta", "meaning": "sua / tua (feminino)" },
+      { "word": "voiture", "meaning": "carro (palavra feminina em francês)" }
+    ]
+  },
+  "370": {
+    "explanation": "Frase sobre preferências no dia a dia. 'Je préfère cuisiner' significa 'prefiro cozinhar'. 'À la maison' é em casa. O 'que' faz a comparação ('do que'), seguido de 'manger dehors' (literalmente comer do lado de fora / comer fora).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "préfère", "meaning": "prefiro (do verbo préférer)" },
+      { "word": "cuisiner", "meaning": "cozinhar" },
+      { "word": "à", "meaning": "em / na" },
+      { "word": "la", "meaning": "a" },
+      { "word": "maison", "meaning": "casa (à la maison = em casa)" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "manger", "meaning": "comer" },
+      { "word": "dehors", "meaning": "fora / do lado de fora (manger dehors = comer fora)" }
+    ]
+  },
+  "371": {
+    "explanation": "Ação de cuidado pessoal: 'se brosse' significa 'escova' a si mesma. Para partes do corpo, o francês usa o artigo 'les' (os) em vez de possessivo. 'Cheveux' significa cabelos, e 'tous les matins' é a expressão para 'todas as manhãs'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "se", "meaning": "se" },
+      { "word": "brosse", "meaning": "escova (do verbo se brosser)" },
+      { "word": "les", "meaning": "os (usado com partes do corpo)" },
+      { "word": "cheveux", "meaning": "cabelos" },
+      { "word": "tous", "meaning": "todos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "matins", "meaning": "manhãs (tous les matins = todas as manhãs)" }
+    ]
+  },
+  "372": {
+    "explanation": "Pergunta com o verbo na frente: 'Écoutes-tu' significa 'você escuta?'. Em francês, o noticiário ou notícias do dia é chamado no plural de 'les nouvelles'. Para falar no rádio, usa-se 'à la radio'.",
+    "breakdown": [
+      { "word": "Écoutes", "meaning": "Escuta / Escutas (do verbo écouter)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "les", "meaning": "as" },
+      { "word": "nouvelles", "meaning": "notícias / novidades (termo usado para o noticiário)" },
+      { "word": "à", "meaning": "em / no" },
+      { "word": "la", "meaning": "a" },
+      { "word": "radio", "meaning": "rádio" }
+    ]
+  },
+  "373": {
+    "explanation": "'Je n'ai pas l'habitude de' é a forma de dizer 'não tenho o costume de' ou 'não costumo'. A expressão 'rester debout' significa ficar de pé ou acordado. 'Tard' é tarde, e 'en semaine' é a expressão exata para 'em dias de semana' (de segunda a sexta).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume" },
+      { "word": "de", "meaning": "de" },
+      { "word": "rester", "meaning": "ficar / permanecer" },
+      { "word": "debout", "meaning": "em pé / acordado (rester debout = ficar acordado)" },
+      { "word": "tard", "meaning": "tarde" },
+      { "word": "en", "meaning": "em / nos dias de" },
+      { "word": "semaine", "meaning": "semana (en semaine = durante a semana / dias úteis)" }
+    ]
+  },
+  "374": {
+    "explanation": "'Il prend' significa 'ele toma' (do verbo prendre). 'Une douche' é um banho de chuveiro. A expressão 'en ce moment' significa 'neste momento' ou 'agora'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "prend", "meaning": "toma / pega (do verbo prendre)" },
+      { "word": "une", "meaning": "uma / um" },
+      { "word": "douche", "meaning": "banho (de chuveiro)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "moment", "meaning": "momento (en ce moment = agora / no momento)" }
+    ]
+  },
+  "375": {
+    "explanation": "'Nous allons' é 'nós vamos'. A palavra 'rarement' é o advérbio que significa 'raramente'. 'Au cinéma' é ao cinema (à + le). A expressão nativa 'ces jours-ci' significa 'hoje em dia' ou 'ultimamente'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "allons", "meaning": "vamos (do verbo aller)" },
+      { "word": "rarement", "meaning": "raramente" },
+      { "word": "au", "meaning": "ao (junção de à + le)" },
+      { "word": "cinéma", "meaning": "cinema" },
+      { "word": "ces", "meaning": "estes" },
+      { "word": "jours", "meaning": "dias" },
+      { "word": "-ci", "meaning": "aqui (ces jours-ci = hoje em dia / ultimamente)" }
+    ]
+  },
+  "376": {
+    "explanation": "Pergunta muito comum na sexta-feira à tarde. 'Que' significa 'o que'. 'Fais-tu' é a forma de pergunta de 'você faz', com o verbo e a pessoa invertidos e ligados por hífen. 'Ce week-end' significa 'neste fim de semana'.",
+    "breakdown": [
+      { "word": "Que", "meaning": "O que" },
+      { "word": "fais", "meaning": "faz / fazes (do verbo faire)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "ce", "meaning": "este / nesse" },
+      { "word": "week-end", "meaning": "fim de semana" }
+    ]
+  },
+  "377": {
+    "explanation": "'Je dois' vem do verbo devoir e expressa necessidade ('eu preciso' ou 'eu tenho que'). A expressão francesa para lavar a roupa na máquina ou tanque é 'faire la lessive'. 'Cet après-midi' significa 'esta tarde' (com 'cet' usado antes da palavra masculina que começa com vogal).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso / tenho que (do verbo devoir)" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "la", "meaning": "a" },
+      { "word": "lessive", "meaning": "roupa suja / lavagem de roupa (faire la lessive = lavar roupa)" },
+      { "word": "cet", "meaning": "esta / este (usado antes de palavra masculina iniciada por vogal)" },
+      { "word": "après-midi", "meaning": "tarde (cet après-midi = esta tarde / hoje à tarde)" }
+    ]
+  },
+  "378": {
+    "explanation": "'Elle porte' significa 'ela carrega' ou 'ela leva consigo' (do verbo porter). 'Toujours' é sempre. 'Un parapluie' é um guarda-chuva (com som final de 'i'). 'Dans son sac' significa 'na bolsa dela'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "porte", "meaning": "carrega / leva / usa (do verbo porter)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "un", "meaning": "um" },
+      { "word": "parapluie", "meaning": "guarda-chuva" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "son", "meaning": "sua / dele / dela (para palavra masculina)" },
+      { "word": "sac", "meaning": "bolsa / sacola" }
+    ]
+  },
+  "379": {
+    "explanation": "Pergunta sobre deslocamento rotineiro. 'Vas-tu' é 'você vai?'. 'Parfois' significa às vezes. 'Au travail' é para o trabalho. E a expressão francesa para ir caminhando é 'à pied' (literalmente a pé).",
+    "breakdown": [
+      { "word": "Vas", "meaning": "Vai / Vais (do verbo aller)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "parfois", "meaning": "às vezes / alguma vez" },
+      { "word": "au", "meaning": "ao / para o (junção de à + le)" },
+      { "word": "travail", "meaning": "trabalho" },
+      { "word": "à", "meaning": "a" },
+      { "word": "pied", "meaning": "pé (à pied = a pé / caminhando)" }
+    ]
+  },
+  "380": {
+    "explanation": "'J'essaie de' significa 'eu tento' ou 'estou tentando' (do verbo essayer). O verbo comer ('manger') vem no infinitivo. Com a palavra 'plus' (mais), usa-se sempre 'de' para alimentos: 'plus de légumes' (mais vegetais).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / experimento (do verbo essayer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "manger", "meaning": "comer" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "de", "meaning": "de" },
+      { "word": "légumes", "meaning": "legumes / vegetais" }
+    ]
+  },
+  "381": {
+    "explanation": "'Il passe' significa 'ele passa' tempo. A palavra 'trop' significa em excesso (demais) e exige 'de' logo em seguida: 'trop de temps' (tempo demais). 'Sur son téléphone' significa 'no celular dele'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "passe", "meaning": "passa (do verbo passer)" },
+      { "word": "trop", "meaning": "demais / em excesso" },
+      { "word": "de", "meaning": "de" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "sur", "meaning": "em / sobre" },
+      { "word": "son", "meaning": "seu / dele" },
+      { "word": "téléphone", "meaning": "telefone / celular" }
+    ]
+  },
+  "382": {
+    "explanation": "'Nous emmenons' vem do verbo emmener (levar alguém ou animal consigo). 'Le chien' é o cachorro. A expressão 'en promenade' significa 'para passear' ou 'em passeio'. 'Deux fois par jour' significa 'duas vezes por dia'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "emmenons", "meaning": "levamos (do verbo emmener)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "chien", "meaning": "cachorro" },
+      { "word": "en", "meaning": "em" },
+      { "word": "promenade", "meaning": "passeio (en promenade = para passear)" },
+      { "word": "deux", "meaning": "duas" },
+      { "word": "fois", "meaning": "vezes" },
+      { "word": "par", "meaning": "por" },
+      { "word": "jour", "meaning": "dia" }
+    ]
+  },
+  "383": {
+    "explanation": "Pergunta sobre os momentos de lazer no domingo. 'Comment passes-tu' é 'como você passa'. 'Tes après-midis' são suas tardes. A expressão 'du dimanche' significa 'de domingo' (junção de de + le).",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "passes", "meaning": "passa / passas (do verbo passer)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "tes", "meaning": "suas / tuas (para palavras no plural)" },
+      { "word": "après-midis", "meaning": "tardes" },
+      { "word": "du", "meaning": "do / de (junção de de + le)" },
+      { "word": "dimanche", "meaning": "domingo" }
+    ]
+  },
+  "384": {
+    "explanation": "A frase que todo mundo se identifica! 'Je n'aime pas' significa 'eu não gosto de'. Em francês, a expressão fixa para lavar a louça suja é 'faire la vaisselle' (literalmente fazer a louça).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "la", "meaning": "a" },
+      { "word": "vaisselle", "meaning": "louça (faire la vaisselle = lavar louça)" }
+    ]
+  },
+  "385": {
+    "explanation": "'Elle étudie' significa 'ela estuda' ou 'ela está estudando'. A preposição 'pour' significa 'para' e 'ses examens' são as provas dela. 'Cette semaine' é 'esta semana' (com 'cette' no feminino).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "étudie", "meaning": "estuda / está estudando (do verbo étudier)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "ses", "meaning": "suas / dela" },
+      { "word": "examens", "meaning": "exames / provas" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "semaine", "meaning": "semana" }
+    ]
+  },
+  "386": {
+    "explanation": "'As-tu l'habitude de' é a forma de perguntar 'você costuma?'. Em francês, tirar um cochilo ou soneca é 'faire une sieste'. 'Après le déjeuner' significa 'depois do almoço'.",
+    "breakdown": [
+      { "word": "As", "meaning": "Tem / Tens (do verbo avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume (avoir l'habitude de = costumar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "faire", "meaning": "fazer" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "sieste", "meaning": "soneca / cochilo (faire une sieste = tirar uma soneca)" },
+      { "word": "après", "meaning": "depois de / após" },
+      { "word": "le", "meaning": "o" },
+      { "word": "déjeuner", "meaning": "almoço" }
+    ]
+  },
+  "387": {
+    "explanation": "'J'apprends' vem do verbo apprendre (aprender), com 'je' encurtado antes de vogal. Quem aprende a fazer algo, em francês, aprende 'à' fazer. O verbo dirigir é 'conduire'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "apprends", "meaning": "aprendo / estou aprendendo (do verbo apprendre)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "conduire", "meaning": "dirigir" }
+    ]
+  },
+  "388": {
+    "explanation": "A estrutura de negação 'ne... jamais' significa 'nunca'. O verbo ajudar ('aider') pede a preposição 'à'. A junção de 'à' com 'les tâches' vira 'aux tâches'. E 'tâches ménagères' é o termo oficial para tarefas domésticas de casa.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "n'", "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)" },
+      { "word": "aide", "meaning": "ajuda (do verbo aider)" },
+      { "word": "jamais", "meaning": "nunca (ne... jamais = nunca)" },
+      { "word": "aux", "meaning": "nas / às (junção de à + les)" },
+      { "word": "tâches", "meaning": "tarefas" },
+      { "word": "ménagères", "meaning": "domésticas (tâches ménagères = afazeres domésticos)" }
+    ]
+  },
+  "389": {
+    "explanation": "'Quelle est' é 'qual é' (com quelle no feminino). 'La première chose' significa 'a primeira coisa'. 'Que tu fais' é 'que você faz', e a expressão 'le matin' é o jeito comum de dizer 'de manhã'.",
+    "breakdown": [
+      { "word": "Quelle", "meaning": "Qual (feminino de quel)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "première", "meaning": "primeira (feminino de premier)" },
+      { "word": "chose", "meaning": "coisa" },
+      { "word": "que", "meaning": "que" },
+      { "word": "tu", "meaning": "você" },
+      { "word": "fais", "meaning": "faz (do verbo faire)" },
+      { "word": "le", "meaning": "o / de" },
+      { "word": "matin", "meaning": "manhã (le matin = de manhã)" }
+    ]
+  },
+  "390": {
+    "explanation": "'Je vérifie' vem do verbo vérifier (checar, conferir ou verificar). 'Toujours' significa sempre. 'Mes e-mails' são meus e-mails. A expressão 'avant de' (antes de) conecta com a ação de começar a trabalhar ('commencer à travailler').",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vérifie", "meaning": "verifico / checo (do verbo vérifier)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "mes", "meaning": "meus" },
+      { "word": "e-mails", "meaning": "e-mails" },
+      { "word": "avant", "meaning": "antes" },
+      { "word": "de", "meaning": "de (avant de = antes de)" },
+      { "word": "commencer", "meaning": "começar" },
+      { "word": "à", "meaning": "a" },
+      { "word": "travailler", "meaning": "trabalhar" }
+    ]
+  }
+}

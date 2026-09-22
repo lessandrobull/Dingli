@@ -1,0 +1,884 @@
+{
+  "61": {
+    "explanation": "Para dizer que você 'se levanta', o francês usa o 'me' antes do verbo, assim como no português. O verbo 'lever' significa levantar, e 'lève' é a forma para 'eu'. Para indicar a hora, usamos a preposição 'à', que aqui vira 'às' por causa das horas.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu"
+      },
+      {
+        "word": "me",
+        "meaning": "me (indica que a ação recai sobre a própria pessoa)"
+      },
+      {
+        "word": "lève",
+        "meaning": "levanto (do verbo 'lever')"
+      },
+      {
+        "word": "à",
+        "meaning": "às / em (para indicar hora)"
+      },
+      {
+        "word": "sept",
+        "meaning": "sete"
+      },
+      {
+        "word": "heures",
+        "meaning": "horas"
+      }
+    ]
+  },
+  "62": {
+    "explanation": "Para fazer uma pergunta de forma mais formal ou clara, o francês coloca o verbo antes da pessoa ('bois-tu'). O 'du' é como 'um pouco de' ou 'do', usado para coisas que você não conta exatamente, como café. 'Le matin' é a forma padrão de dizer 'de manhã'.",
+    "breakdown": [
+      {
+        "word": "Bois",
+        "meaning": "Bebe (do verbo 'boire')"
+      },
+      {
+        "word": "tu",
+        "meaning": "você"
+      },
+      {
+        "word": "du",
+        "meaning": "um pouco de / do (para indicar uma quantidade não específica de algo)"
+      },
+      {
+        "word": "café",
+        "meaning": "café"
+      },
+      {
+        "word": "le",
+        "meaning": "o (aqui, parte da expressão 'le matin')"
+      },
+      {
+        "word": "matin",
+        "meaning": "manhã"
+      },
+      {
+        "word": "?",
+        "meaning": "(indica pergunta)"
+      }
+    ]
+  },
+  "63": {
+    "explanation": "Para dizer 'não' em francês, a gente usa uma estrutura em duas partes: o 'ne' vem antes do verbo e o 'pas' vem depois. O verbo 'prendre' significa 'pegar' ou 'tomar', e é usado para refeições. Depois de uma negação, quando falamos de algo em geral ou não contável, o 'de' substitui 'um' ou 'algum'.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele"
+      },
+      {
+        "word": "ne",
+        "meaning": "primeira parte do 'não'"
+      },
+      {
+        "word": "prend",
+        "meaning": "toma / pega (do verbo 'prendre')"
+      },
+      {
+        "word": "pas",
+        "meaning": "segunda parte que fecha a negação"
+      },
+      {
+        "word": "de",
+        "meaning": "de / nenhum (usado depois da negação com coisas não contáveis ou em geral)"
+      },
+      {
+        "word": "petit-déjeuner",
+        "meaning": "café da manhã"
+      }
+    ]
+  },
+  "64": {
+    "explanation": "O verbo 'aller' significa 'ir', e 'va' é a forma para 'ela'. 'Au' é a junção de 'à' (para) e 'le' (o), formando 'para o'. Para falar do meio de transporte, como 'de ônibus', usamos a preposição 'en'.",
+    "breakdown": [
+      {
+        "word": "Elle",
+        "meaning": "Ela"
+      },
+      {
+        "word": "va",
+        "meaning": "vai (do verbo 'aller')"
+      },
+      {
+        "word": "au",
+        "meaning": "para o (junção de 'à' e 'le')"
+      },
+      {
+        "word": "travail",
+        "meaning": "trabalho"
+      },
+      {
+        "word": "en",
+        "meaning": "de / em (para meios de transporte)"
+      },
+      {
+        "word": "bus",
+        "meaning": "ônibus"
+      }
+    ]
+  },
+  "65": {
+    "explanation": "Para perguntar 'o que', usamos 'que'. A forma 'fais-tu' é como se faz a pergunta 'você faz' em francês, trocando a ordem. 'Tous les jours' é a expressão para 'todos os dias', onde 'tous' significa 'todos' e 'les jours' são 'os dias'.",
+    "breakdown": [
+      {
+        "word": "Que",
+        "meaning": "O que"
+      },
+      {
+        "word": "fais",
+        "meaning": "faz (do verbo 'faire')"
+      },
+      {
+        "word": "tu",
+        "meaning": "você"
+      },
+      {
+        "word": "tous",
+        "meaning": "todos"
+      },
+      {
+        "word": "les",
+        "meaning": "os"
+      },
+      {
+        "word": "jours",
+        "meaning": "dias"
+      },
+      {
+        "word": "?",
+        "meaning": "(indica pergunta)"
+      }
+    ]
+  },
+  "66": {
+    "explanation": "Para dizer 'eu estudo', o 'Je' (eu) perde o 'e' e vira 'J'' antes de uma vogal. O 'l'' antes de 'anglais' é o nosso 'o' ou 'a', que também encurta antes de vogal. E para falar 'à noite' ou 'aos domingos', o francês usa o artigo 'le' (o) antes do período do dia, como se dissesse 'a noite' ou 'o domingo'.",
+    "breakdown": [
+      {
+        "word": "J'",
+        "meaning": "Eu (encurtado antes de vogal)"
+      },
+      {
+        "word": "étudie",
+        "meaning": "estudo (do verbo étudier)"
+      },
+      {
+        "word": "l'",
+        "meaning": "o / a (artigo definido, encurtado antes de vogal)"
+      },
+      {
+        "word": "anglais",
+        "meaning": "inglês"
+      },
+      {
+        "word": "le",
+        "meaning": "o / a (artigo definido)"
+      },
+      {
+        "word": "soir",
+        "meaning": "noite"
+      }
+    ]
+  },
+  "67": {
+    "explanation": "Aqui, 'Nous' é 'nós' e 'regardons' é 'assistimos'. 'La télé' é a forma abreviada e comum de dizer 'a televisão'. Assim como na frase anterior, para indicar 'à noite', o francês usa o artigo 'le' antes de 'soir', como se fosse 'a noite'.",
+    "breakdown": [
+      {
+        "word": "Nous",
+        "meaning": "Nós"
+      },
+      {
+        "word": "regardons",
+        "meaning": "assistimos (do verbo regarder)"
+      },
+      {
+        "word": "la",
+        "meaning": "a (artigo definido)"
+      },
+      {
+        "word": "télé",
+        "meaning": "TV / televisão (abreviação de télévision)"
+      },
+      {
+        "word": "le",
+        "meaning": "o / a (artigo definido)"
+      },
+      {
+        "word": "soir",
+        "meaning": "noite"
+      }
+    ]
+  },
+  "68": {
+    "explanation": "Para fazer uma pergunta com 'ele' ou 'ela', o francês muitas vezes coloca o verbo antes do 'ele/ela'. O 't' no meio é só para ligar o som, para não ficar estranho. 'Au' é a junção de 'à' e 'le', que em português vira 'ao'. 'Le dimanche' significa 'aos domingos', usando o artigo para falar de algo que acontece regularmente.",
+    "breakdown": [
+      {
+        "word": "Joue",
+        "meaning": "Joga (do verbo jouer)"
+      },
+      {
+        "word": "-t-",
+        "meaning": "som de ligação (não tem significado próprio)"
+      },
+      {
+        "word": "il",
+        "meaning": "ele"
+      },
+      {
+        "word": "au",
+        "meaning": "ao (junção de 'à' + 'le')"
+      },
+      {
+        "word": "football",
+        "meaning": "futebol"
+      },
+      {
+        "word": "le",
+        "meaning": "o / a (artigo definido)"
+      },
+      {
+        "word": "dimanche",
+        "meaning": "domingo"
+      },
+      {
+        "word": "?",
+        "meaning": "sinal de pergunta"
+      }
+    ]
+  },
+  "69": {
+    "explanation": "Para dizer 'não' em francês, a língua usa uma estrutura em duas partes que abraça a ação: o 'n'' vem antes do verbo (encurtado porque 'aime' começa com vogal) e o 'pas' vem logo depois. 'Le lundi' significa 'a segunda-feira', mas quando falamos de gostar ou não gostar de dias da semana, o francês usa o artigo 'le', que em português pode virar 'de segundas-feiras' ou 'as segundas-feiras'.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu"
+      },
+      {
+        "word": "n'",
+        "meaning": "primeira parte do 'não' (encurtada antes de vogal)"
+      },
+      {
+        "word": "aime",
+        "meaning": "gosto (do verbo aimer)"
+      },
+      {
+        "word": "pas",
+        "meaning": "segunda parte que fecha a negação"
+      },
+      {
+        "word": "le",
+        "meaning": "o / a (artigo definido)"
+      },
+      {
+        "word": "lundi",
+        "meaning": "segunda-feira"
+      }
+    ]
+  },
+  "70": {
+    "explanation": "Aqui, 'Ils' é 'eles'. 'Se couchent' é uma ação que a pessoa faz em si mesma, como 'se deitar' ou 'ir para a cama'. O 'se' mostra que a ação de 'deitar' recai sobre 'eles' mesmos. 'Tôt' é uma palavra simples que significa 'cedo'.",
+    "breakdown": [
+      {
+        "word": "Ils",
+        "meaning": "Eles"
+      },
+      {
+        "word": "se",
+        "meaning": "se (partícula que indica que a ação é feita em si mesmo)"
+      },
+      {
+        "word": "couchent",
+        "meaning": "deitam / vão para a cama (do verbo se coucher)"
+      },
+      {
+        "word": "tôt",
+        "meaning": "cedo"
+      }
+    ]
+  },
+  "71": {
+    "explanation": "Para perguntar 'quando você faz algo' em francês, é comum colocar o verbo antes do 'tu' (você), ligando-os com um hífen. 'Prends' é o verbo 'pegar' ou 'tomar', e 'ta douche' significa 'seu banho', usando 'ta' porque 'douche' é uma palavra feminina.",
+    "breakdown": [
+      {
+        "word": "Quand",
+        "meaning": "Quando"
+      },
+      {
+        "word": "prends",
+        "meaning": "toma / pega (do verbo prendre)"
+      },
+      {
+        "word": "-tu",
+        "meaning": "você (ligado ao verbo para fazer a pergunta)"
+      },
+      {
+        "word": "ta",
+        "meaning": "sua (para algo feminino)"
+      },
+      {
+        "word": "douche",
+        "meaning": "banho"
+      }
+    ]
+  },
+  "72": {
+    "explanation": "Esta frase segue uma estrutura bem parecida com a do português: 'Eu preparo o jantar para minha família'. 'Je' é 'eu', 'prépare' é 'preparo' ou 'cozinho'. 'Le dîner' é 'o jantar' e 'pour ma famille' é 'para minha família', usando 'ma' porque 'famille' é feminino.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu"
+      },
+      {
+        "word": "prépare",
+        "meaning": "preparo / cozinho (do verbo préparer)"
+      },
+      {
+        "word": "le",
+        "meaning": "o (artigo masculino)"
+      },
+      {
+        "word": "dîner",
+        "meaning": "jantar"
+      },
+      {
+        "word": "pour",
+        "meaning": "para"
+      },
+      {
+        "word": "ma",
+        "meaning": "minha (para algo feminino)"
+      },
+      {
+        "word": "famille",
+        "meaning": "família"
+      }
+    ]
+  },
+  "73": {
+    "explanation": "Aqui, 'Elle lit' significa 'Ela lê'. 'Un livre' é 'um livro'. A expressão 'avant de' é a forma padrão de dizer 'antes de' quando você vai falar de uma ação, e 'dormir' é o verbo 'dormir' no seu formato original.",
+    "breakdown": [
+      {
+        "word": "Elle",
+        "meaning": "Ela"
+      },
+      {
+        "word": "lit",
+        "meaning": "lê (do verbo lire)"
+      },
+      {
+        "word": "un",
+        "meaning": "um (artigo masculino)"
+      },
+      {
+        "word": "livre",
+        "meaning": "livro"
+      },
+      {
+        "word": "avant",
+        "meaning": "antes"
+      },
+      {
+        "word": "de",
+        "meaning": "de (liga 'antes' à ação seguinte)"
+      },
+      {
+        "word": "dormir",
+        "meaning": "dormir"
+      }
+    ]
+  },
+  "74": {
+    "explanation": "Para perguntar 'eles fazem algo', o francês muitas vezes coloca o verbo primeiro e depois o 'ils' (eles), ligados por um hífen. 'Écoutent' é 'ouvem'. 'De la musique' é a forma de dizer 'música' quando não se especifica uma quantidade, como 'um pouco de música' ou 'alguma música'.",
+    "breakdown": [
+      {
+        "word": "Écoutent",
+        "meaning": "ouvem (do verbo écouter)"
+      },
+      {
+        "word": "-ils",
+        "meaning": "eles (ligado ao verbo para fazer a pergunta)"
+      },
+      {
+        "word": "de",
+        "meaning": "de / um pouco de (parte da expressão 'de la')"
+      },
+      {
+        "word": "la",
+        "meaning": "a (artigo feminino, parte da expressão 'de la')"
+      },
+      {
+        "word": "musique",
+        "meaning": "música"
+      }
+    ]
+  },
+  "75": {
+    "explanation": "Para falar sobre o tempo, como 'chover', o francês usa 'il' (ele) mesmo que não se refira a uma pessoa, então 'il pleut' significa 'chove'. 'Beaucoup' quer dizer 'muito'. 'En hiver' é a forma de dizer 'no inverno', usando 'en' para as estações do ano.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele / Isso (usado para falar do tempo, sem um 'ele' específico)"
+      },
+      {
+        "word": "pleut",
+        "meaning": "chove (do verbo pleuvoir)"
+      },
+      {
+        "word": "beaucoup",
+        "meaning": "muito"
+      },
+      {
+        "word": "en",
+        "meaning": "em / no (usado para estações do ano)"
+      },
+      {
+        "word": "hiver",
+        "meaning": "inverno"
+      }
+    ]
+  },
+  "76": {
+    "explanation": "No francês, quando você faz uma ação em si mesmo, como 'lavar-se', você precisa usar uma palavrinha extra ('me') antes do verbo. É como se você dissesse 'eu me lavo'. Para partes do corpo, eles usam 'o' ou 'a' (le/la) em vez de 'meu' ou 'minha', porque já está claro que é o seu próprio rosto. 'Tous les matins' é a forma de dizer 'todas as manhãs'.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu"
+      },
+      {
+        "word": "me",
+        "meaning": "me (indica que a ação é feita em si mesmo)"
+      },
+      {
+        "word": "lave",
+        "meaning": "lavo (do verbo 'laver' - lavar)"
+      },
+      {
+        "word": "le",
+        "meaning": "o (artigo definido, usado aqui para 'o rosto')"
+      },
+      {
+        "word": "visage",
+        "meaning": "rosto"
+      },
+      {
+        "word": "tous",
+        "meaning": "todos"
+      },
+      {
+        "word": "les",
+        "meaning": "os (artigo definido plural)"
+      },
+      {
+        "word": "matins",
+        "meaning": "manhãs"
+      }
+    ]
+  },
+  "77": {
+    "explanation": "Para dizer 'não' em francês, você sempre usa duas partes: o 'ne' antes do verbo e o 'pas' depois. É como um sanduíche que envolve a ação. Quando se fala de dias da semana, como 'aos sábados', o francês usa o artigo 'le' (o) antes do dia, como se dissesse 'o sábado'.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele"
+      },
+      {
+        "word": "ne",
+        "meaning": "primeira parte do 'não'"
+      },
+      {
+        "word": "travaille",
+        "meaning": "trabalha (do verbo 'travailler' - trabalhar)"
+      },
+      {
+        "word": "pas",
+        "meaning": "segunda parte que fecha a negação"
+      },
+      {
+        "word": "le",
+        "meaning": "o (usado aqui para indicar 'aos' ou 'no' sábado)"
+      },
+      {
+        "word": "samedi",
+        "meaning": "sábado"
+      }
+    ]
+  },
+  "78": {
+    "explanation": "Para perguntar 'a que horas', o francês usa 'à quelle heure'. A ordem das palavras na pergunta pode parecer um pouco diferente: o verbo ('finis') vem antes do 'você' ('tu'). É um jeito comum de fazer perguntas mais diretas. 'Le travail' significa 'o trabalho'.",
+    "breakdown": [
+      {
+        "word": "À",
+        "meaning": "A (preposição)"
+      },
+      {
+        "word": "quelle",
+        "meaning": "que / qual (feminino singular, concordando com 'heure')"
+      },
+      {
+        "word": "heure",
+        "meaning": "hora"
+      },
+      {
+        "word": "finis",
+        "meaning": "termina (do verbo 'finir' - terminar)"
+      },
+      {
+        "word": "tu",
+        "meaning": "você (informal)"
+      },
+      {
+        "word": "le",
+        "meaning": "o (artigo definido)"
+      },
+      {
+        "word": "travail",
+        "meaning": "trabalho"
+      },
+      {
+        "word": "?",
+        "meaning": "sinal de interrogação"
+      }
+    ]
+  },
+  "79": {
+    "explanation": "A expressão 'fazer as compras' em francês é 'faire les courses'. É uma frase fixa, como se fosse uma coisa só. Para dizer 'uma vez', eles usam 'une fois', e 'por semana' é 'par semaine'. É bem parecido com o português, só muda a forma de falar 'compras'.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu"
+      },
+      {
+        "word": "fais",
+        "meaning": "faço (do verbo 'faire' - fazer)"
+      },
+      {
+        "word": "les",
+        "meaning": "as (artigo definido plural)"
+      },
+      {
+        "word": "courses",
+        "meaning": "compras (aqui no sentido de ir ao supermercado)"
+      },
+      {
+        "word": "une",
+        "meaning": "uma"
+      },
+      {
+        "word": "fois",
+        "meaning": "vez"
+      },
+      {
+        "word": "par",
+        "meaning": "por"
+      },
+      {
+        "word": "semaine",
+        "meaning": "semana"
+      }
+    ]
+  },
+  "80": {
+    "explanation": "O verbo 'déjeuner' significa 'almoçar'. É um verbo que já inclui a ideia de 'nós' quando conjugado com 'nous'. Para dizer 'ao meio-dia', o francês usa a preposição 'à' (a) seguida de 'midi' (meio-dia). É uma forma direta e comum de indicar a hora.",
+    "breakdown": [
+      {
+        "word": "Nous",
+        "meaning": "Nós"
+      },
+      {
+        "word": "déjeunons",
+        "meaning": "almoçamos (do verbo 'déjeuner' - almoçar)"
+      },
+      {
+        "word": "à",
+        "meaning": "a / em (preposição)"
+      },
+      {
+        "word": "midi",
+        "meaning": "meio-dia"
+      }
+    ]
+  },
+  "81": {
+    "explanation": "Para fazer uma pergunta em francês, uma das formas é \"trocar\" o verbo e a pessoa de lugar, colocando o verbo primeiro, como em \"Fait-elle\". O \"de l'exercice\" é como dizer \"de exercício\", uma quantidade não específica. \"Le matin\" significa \"de manhã\", mesmo que literalmente seja \"a manhã\".",
+    "breakdown": [
+      {
+        "word": "Fait",
+        "meaning": "faz (do verbo faire)"
+      },
+      {
+        "word": "-elle",
+        "meaning": "ela (ligado ao verbo para fazer a pergunta)"
+      },
+      {
+        "word": "de l'",
+        "meaning": "de (parte de 'de l'exercice', encurtado antes de vogal)"
+      },
+      {
+        "word": "exercice",
+        "meaning": "exercício"
+      },
+      {
+        "word": "le",
+        "meaning": "o (parte de 'le matin')"
+      },
+      {
+        "word": "matin",
+        "meaning": "manhã"
+      }
+    ]
+  },
+  "82": {
+    "explanation": "O \"toujours\" é o nosso \"sempre\". Para falar de coisas que não são contáveis ou que não têm uma quantidade definida, como \"água\", o francês usa \"de l'\" (encurtado antes de vogal), que é como o nosso \"de\" ou \"um pouco de\".",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu"
+      },
+      {
+        "word": "bois",
+        "meaning": "bebo (do verbo boire)"
+      },
+      {
+        "word": "toujours",
+        "meaning": "sempre"
+      },
+      {
+        "word": "de l'",
+        "meaning": "de (parte de 'de l'eau', encurtado antes de vogal)"
+      },
+      {
+        "word": "eau",
+        "meaning": "água"
+      }
+    ]
+  },
+  "83": {
+    "explanation": "Para dizer \"nunca\" em francês, a gente usa uma estrutura em duas partes que abraça o verbo: o \"n'\" vem antes do verbo e o \"jamais\" vem depois. \"En retard\" é uma expressão fixa que significa \"atrasado\" ou \"com atraso\".",
+    "breakdown": [
+      {
+        "word": "Ils",
+        "meaning": "Eles"
+      },
+      {
+        "word": "n'",
+        "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)"
+      },
+      {
+        "word": "arrivent",
+        "meaning": "chegam (do verbo arriver)"
+      },
+      {
+        "word": "jamais",
+        "meaning": "segunda parte que fecha o 'nunca'"
+      },
+      {
+        "word": "en",
+        "meaning": "em / com (parte da expressão 'en retard')"
+      },
+      {
+        "word": "retard",
+        "meaning": "atraso"
+      }
+    ]
+  },
+  "84": {
+    "explanation": "Outra forma de fazer uma pergunta em francês é \"trocando\" o verbo e a pessoa de lugar, como em \"Nettoies-tu\". O \"ta\" funciona como o nosso \"sua\" quando a coisa é feminina, como \"chambre\" (quarto).",
+    "breakdown": [
+      {
+        "word": "Nettoies",
+        "meaning": "limpa (do verbo nettoyer)"
+      },
+      {
+        "word": "-tu",
+        "meaning": "você (ligado ao verbo para fazer a pergunta)"
+      },
+      {
+        "word": "ta",
+        "meaning": "sua (para coisas femininas)"
+      },
+      {
+        "word": "chambre",
+        "meaning": "quarto"
+      }
+    ]
+  },
+  "85": {
+    "explanation": "A estrutura do \"não\" é o \"n'\" antes do verbo e o \"pas\" depois. Quando a gente nega algo que seria \"um\" ou \"uns\", o \"un/une/des\" vira \"de\" (ou \"d'\" antes de vogal). \"À la maison\" é a forma de dizer \"em casa\".",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu"
+      },
+      {
+        "word": "n'",
+        "meaning": "primeira parte do 'não' (encurtada antes de vogal)"
+      },
+      {
+        "word": "utilise",
+        "meaning": "uso (do verbo utiliser)"
+      },
+      {
+        "word": "pas",
+        "meaning": "segunda parte que fecha a negação"
+      },
+      {
+        "word": "d'",
+        "meaning": "de (usado para negar 'um' ou 'uns', encurtado antes de vogal)"
+      },
+      {
+        "word": "ordinateur",
+        "meaning": "computador"
+      },
+      {
+        "word": "à",
+        "meaning": "em / a (parte de 'à la maison')"
+      },
+      {
+        "word": "la",
+        "meaning": "a (parte de 'à la maison')"
+      },
+      {
+        "word": "maison",
+        "meaning": "casa"
+      }
+    ]
+  },
+  "86": {
+    "explanation": "Quando a gente faz uma ação para si mesmo, o francês usa um pronome extra, o 'se', que mostra que a ação volta para a pessoa. Então, 'se brosse' significa 'escova a si mesma'. 'Les dents' é o nosso 'os dentes', com 'les' sendo o artigo para coisas no plural.",
+    "breakdown": [
+      {
+        "word": "Elle",
+        "meaning": "Ela"
+      },
+      {
+        "word": "se",
+        "meaning": "se / a si mesma (mostra que a ação volta para ela)"
+      },
+      {
+        "word": "brosse",
+        "meaning": "escova (do verbo brosser)"
+      },
+      {
+        "word": "les",
+        "meaning": "os (artigo para coisas no plural)"
+      },
+      {
+        "word": "dents",
+        "meaning": "dentes"
+      }
+    ]
+  },
+  "87": {
+    "explanation": "O verbo 'marcher' é caminhar. A expressão 'jusqu'au' é a forma de dizer 'até o' em francês, juntando 'jusqu'à' (até) com 'le' (o), que vira 'au' quando a palavra seguinte é masculina e singular. É bem parecido com o nosso 'até o parque'.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele"
+      },
+      {
+        "word": "marche",
+        "meaning": "caminha (do verbo marcher)"
+      },
+      {
+        "word": "jusqu'",
+        "meaning": "até (encurtado antes de vogal)"
+      },
+      {
+        "word": "au",
+        "meaning": "ao / o (junção de 'à' + 'le', usado antes de palavra masculina singular)"
+      },
+      {
+        "word": "parc",
+        "meaning": "parque"
+      }
+    ]
+  },
+  "88": {
+    "explanation": "Para perguntar 'o quê', o francês usa 'Que'. Na pergunta, a ordem das palavras muda um pouco: o verbo ('manges') vem antes da pessoa ('tu'). 'Pour' aqui significa 'para' ou 'no caso de', e 'le déjeuner' é a forma de falar 'o almoço'.",
+    "breakdown": [
+      {
+        "word": "Que",
+        "meaning": "O que"
+      },
+      {
+        "word": "manges",
+        "meaning": "come (do verbo manger)"
+      },
+      {
+        "word": "tu",
+        "meaning": "você"
+      },
+      {
+        "word": "pour",
+        "meaning": "para / no (neste contexto, para a refeição)"
+      },
+      {
+        "word": "le",
+        "meaning": "o (artigo para coisa masculina singular)"
+      },
+      {
+        "word": "déjeuner",
+        "meaning": "almoço"
+      }
+    ]
+  },
+  "89": {
+    "explanation": "Aqui, 'Nous allons' é 'nós vamos'. A palavra 'parfois' é o jeito de dizer 'às vezes'. E 'au cinéma' segue a mesma lógica de 'até o parque': 'à' (a) mais 'le' (o) se juntam e viram 'au' antes de uma palavra masculina como 'cinéma'.",
+    "breakdown": [
+      {
+        "word": "Nous",
+        "meaning": "Nós"
+      },
+      {
+        "word": "allons",
+        "meaning": "vamos (do verbo aller)"
+      },
+      {
+        "word": "parfois",
+        "meaning": "às vezes"
+      },
+      {
+        "word": "au",
+        "meaning": "ao (junção de 'à' + 'le', usado antes de palavra masculina singular)"
+      },
+      {
+        "word": "cinéma",
+        "meaning": "cinema"
+      }
+    ]
+  },
+  "90": {
+    "explanation": "A expressão 'D'habitude' é uma forma fixa de dizer 'geralmente' ou 'normalmente', como se fosse 'de hábito'. 'Je reste' é 'eu fico'. E 'à la maison' é a maneira de dizer 'em casa' em francês, usando 'à' (em) e 'la' (a) antes de 'maison' (casa).",
+    "breakdown": [
+      {
+        "word": "D'",
+        "meaning": "de (encurtado antes de vogal/h mudo)"
+      },
+      {
+        "word": "habitude",
+        "meaning": "hábito / costume (a expressão 'd'habitude' significa 'geralmente')"
+      },
+      {
+        "word": "je",
+        "meaning": "eu"
+      },
+      {
+        "word": "reste",
+        "meaning": "fico (do verbo rester)"
+      },
+      {
+        "word": "à",
+        "meaning": "em (preposição)"
+      },
+      {
+        "word": "la",
+        "meaning": "a (artigo para coisa feminina singular)"
+      },
+      {
+        "word": "maison",
+        "meaning": "casa"
+      }
+    ]
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "631": {
+    "explanation": "'J'habite' significa 'eu moro'. 'Dans cette ville' é 'nesta cidade'. A palavra 'depuis' indica uma ação que começou no passado e ainda continua no presente ('há' ou 'desde'). A palavra 'environ' significa 'cerca de' ou 'aproximadamente', e 'trois ans' são três anos.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal ou h mudo)" },
+      { "word": "habite", "meaning": "moro / habito (do verbo habiter)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "ville", "meaning": "cidade" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "environ", "meaning": "cerca de / aproximadamente" },
+      { "word": "trois", "meaning": "três" },
+      { "word": "ans", "meaning": "anos" }
+    ]
+  },
+  "632": {
+    "explanation": "'Elle a toujours voulu' significa 'ela sempre quis' (com avoir + o particípio voulu, do verbo vouloir). O verbo tornar-se é 'devenir'. Em francês, a profissão vem direto sem artigo após o verbo: 'musicienne professionnelle' (no feminino, com -ienne e -elle).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "voulu", "meaning": "querido / quis (do verbo vouloir)" },
+      { "word": "devenir", "meaning": "tornar-se / virar" },
+      { "word": "musicienne", "meaning": "musicista (no feminino)" },
+      { "word": "professionnelle", "meaning": "profissional (no feminino)" }
+    ]
+  },
+  "633": {
+    "explanation": "'Je suis né' significa 'eu nasci' (literalmente 'sou nascido', usando o verbo être). 'Dans une ville' é 'em uma cidade'. O adjetivo 'célèbre' significa famosa. A expressão 'pour son histoire' significa 'por sua história' (com son usado porque histoire é tratada com son para evitar choque de vogais).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "sou / estou (auxiliar do verbo être para expressar nascimento)" },
+      { "word": "né", "meaning": "nascido (je suis né = eu nasci)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "ville", "meaning": "cidade" },
+      { "word": "célèbre", "meaning": "famosa / célebre" },
+      { "word": "pour", "meaning": "por / devido a" },
+      { "word": "son", "meaning": "sua (usado antes de palavra feminina iniciada por vogal ou h mudo)" },
+      { "word": "histoire", "meaning": "história" }
+    ]
+  },
+  "634": {
+    "explanation": "'Mon frère' é meu irmão. 'Est' é o verbo ser. A expressão 'beaucoup plus... que' significa 'muito mais... do que'. A palavra 'extraverti' significa extrovertido ou comunicativo, e 'moi' significa 'eu / mim'.",
+    "breakdown": [
+      { "word": "Mon", "meaning": "Meu" },
+      { "word": "frère", "meaning": "irmão" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "plus", "meaning": "mais (beaucoup plus = muito mais)" },
+      { "word": "extraverti", "meaning": "extrovertido" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "moi", "meaning": "eu / mim" }
+    ]
+  },
+  "635": {
+    "explanation": "'J'avais l'habitude de' significa 'eu tinha o costume de' ou 'eu costumava' (passado de avoir). O verbo passar é 'passer'. 'Mes étés' são meus verões (plural de été). A palavra 'chez' significa 'na casa de', e 'ma grand-mère' é minha avó.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "avais", "meaning": "tinha (passado do verbo avoir)" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume (avoir l'habitude de = costumar)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "passer", "meaning": "passar" },
+      { "word": "mes", "meaning": "meus" },
+      { "word": "étés", "meaning": "verões" },
+      { "word": "chez", "meaning": "na casa de" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "grand-mère", "meaning": "avó" }
+    ]
+  },
+  "636": {
+    "explanation": "Pergunta com verbo na frente: 'Connaissez-vous' significa 'o senhor conhece?' ou 'vocês conhecem?'. A palavra 'quelqu'un' significa 'alguém'. 'Qui parle' é 'que fala / que fale', e 'plus de quatre langues' significa 'mais de quatro idiomas'.",
+    "breakdown": [
+      { "word": "Connaissez", "meaning": "Conhece / Conhecem (do verbo connaître com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / vocês (invertido para a pergunta)" },
+      { "word": "quelqu'un", "meaning": "alguém" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "parle", "meaning": "fala / fale (do verbo parler)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "de", "meaning": "de (plus de = mais de)" },
+      { "word": "quatre", "meaning": "quatro" },
+      { "word": "langues", "meaning": "línguas / idiomas" }
+    ]
+  },
+  "637": {
+    "explanation": "'Je travaille actuellement' significa 'atualmente trabalho / estou trabalhando no momento' (lembrando que actuellement não é realmente, mas sim atualmente). A expressão 'en tant que' é o jeito formal de dizer 'na condição de / como'. 'Designer indépendant' significa designer autônomo ou freelancer.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "travaille", "meaning": "trabalho / estou trabalhando (do verbo travailler)" },
+      { "word": "actuellement", "meaning": "atualmente / no momento" },
+      { "word": "en", "meaning": "em" },
+      { "word": "tant", "meaning": "tanto" },
+      { "word": "que", "meaning": "que (en tant que = na condição de / na qualidade de / como)" },
+      { "word": "designer", "meaning": "designer" },
+      { "word": "indépendant", "meaning": "independente / autônomo / freelancer" }
+    ]
+  },
+  "638": {
+    "explanation": "Negação no passado com jamais: 'ne s'est jamais' envolve o verbo reflexivo s'intéresser no passado com être. Quem se interessa por algo, em francês, se interessa 'à' alguma coisa. 'La politique' é a política.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "ne", "meaning": "primeira parte do 'nunca'" },
+      { "word": "s'", "meaning": "se (encurtado antes de vogal)" },
+      { "word": "est", "meaning": "fez a ação no passado (auxiliar être para verbos reflexivos)" },
+      { "word": "jamais", "meaning": "nunca (ne... jamais = nunca)" },
+      { "word": "intéressée", "meaning": "interessada (do verbo s'intéresser, no feminino)" },
+      { "word": "à", "meaning": "por / a (s'intéresser à = interessar-se por)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "politique", "meaning": "política" }
+    ]
+  },
+  "639": {
+    "explanation": "Comparação de estatura com o passado: 'Je ne suis pas aussi grand que' significa 'não sou tão alto quanto'. A construção 'l'était mon père' coloca o pronome 'l'' (o/assim) antes do verbo no passado 'était', significando 'quanto meu pai era no passado'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "aussi", "meaning": "tão" },
+      { "word": "grand", "meaning": "alto / grande" },
+      { "word": "que", "meaning": "quanto" },
+      { "word": "l'", "meaning": "o / isso (pronome que retoma a ideia de ser alto)" },
+      { "word": "était", "meaning": "era (passado do verbo être)" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "père", "meaning": "pai" }
+    ]
+  },
+  "640": {
+    "explanation": "'Mes parents' são meus pais (pai e mãe). 'Sont mariés' significa 'estão casados' (com 's' no plural). A palavra 'depuis' indica a duração contínua de um estado até o presente ('há' ou 'desde'). 'Plus de trente ans' significa 'mais de trinta anos'.",
+    "breakdown": [
+      { "word": "Mes", "meaning": "Meus (para plural)" },
+      { "word": "parents", "meaning": "pais (pai e mãe)" },
+      { "word": "sont", "meaning": "estão / são (do verbo être no plural)" },
+      { "word": "mariés", "meaning": "casados (no plural)" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "de", "meaning": "de (plus de = mais de)" },
+      { "word": "trente", "meaning": "trinta" },
+      { "word": "ans", "meaning": "anos" }
+    ]
+  },
+  "641": {
+    "explanation": "Pergunta reflexiva de entrevista de personalidade: 'Quel genre de personne' significa 'que tipo de pessoa'. 'Diriez-vous' é 'o senhor diria?'. 'Que vous êtes' significa 'que você é'.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual / Que" },
+      { "word": "genre", "meaning": "tipo / gênero" },
+      { "word": "de", "meaning": "de" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "diriez", "meaning": "diria (forma polida do verbo dire)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para pergunta)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "vous", "meaning": "o senhor / você" },
+      { "word": "êtes", "meaning": "é / está (do verbo être com vous)" }
+    ]
+  },
+  "642": {
+    "explanation": "'Je prévois d'' significa 'eu planejo' ou 'tenho planos de' (com 'de' encurtado antes de vogal). O verbo mudar-se para um novo lar é 'emménager'. 'Dans un appartement plus grand' significa 'em um apartamento maior'. 'L'année prochaine' significa 'no próximo ano'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "prévois", "meaning": "planejo / prevejo (do verbo prévoir)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "emménager", "meaning": "mudar-se / instalar-se em nova casa" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "appartement", "meaning": "apartamento" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "grand", "meaning": "grande (plus grand = maior)" },
+      { "word": "l'", "meaning": "o / no (encurtado antes de vogal)" },
+      { "word": "année", "meaning": "ano" },
+      { "word": "prochaine", "meaning": "próximo / que vem (no feminino)" }
+    ]
+  },
+  "643": {
+    "explanation": "Superlativo comovente: 'C'est la personne la plus talentueuse' significa 'ela é a pessoa mais talentosa' (com o adjetivo no feminino concordando com pessoa). A expressão 'que j'aie jamais rencontrée' significa 'que já conheci na minha vida'.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Ela / Ele / Esta (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "talentueuse", "meaning": "talentosa (feminino de talentueux)" },
+      { "word": "que", "meaning": "que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "aie", "meaning": "tenha feito a ação (auxiliar avoir no modo de experiência)" },
+      { "word": "jamais", "meaning": "alguma vez / já (em frases superlativas)" },
+      { "word": "rencontrée", "meaning": "conhecida / encontrada (no feminino)" }
+    ]
+  },
+  "644": {
+    "explanation": "A palavra 'dont' em francês é o nosso 'cujo/cuja': ela expressa posse ligada a uma pessoa ('um amigo cujo irmão'). 'Un acteur célèbre' é um ator famoso.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "ami", "meaning": "amigo" },
+      { "word": "dont", "meaning": "cujo / de quem" },
+      { "word": "le", "meaning": "o" },
+      { "word": "frère", "meaning": "irmão (dont le frère = cujo irmão)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "acteur", "meaning": "ator" },
+      { "word": "célèbre", "meaning": "famoso / célebre" }
+    ]
+  },
+  "645": {
+    "explanation": "'Je n'ai plus' significa 'eu não tenho mais' (com ne... plus). A palavra 'autant de' significa 'tanto / tanta quantidade de'. 'Temps libre' é tempo livre. A comparação se fecha com 'qu'avant' (do que antes).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte da negação (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "plus", "meaning": "mais (ne... plus = não mais)" },
+      { "word": "autant", "meaning": "tanto" },
+      { "word": "de", "meaning": "de (autant de = tanto)" },
+      { "word": "temps", "meaning": "tempo" },
+      { "word": "libre", "meaning": "livre" },
+      { "word": "qu'", "meaning": "do que / quanto (encurtado antes de vogal)" },
+      { "word": "avant", "meaning": "antes" }
+    ]
+  },
+  "646": {
+    "explanation": "'Quels sont' é 'quais são' (no masculino plural). 'Vos principaux objectifs' significa 'seus principais objetivos' (com o adjetivo no plural antes do substantivo). A expressão 'pour les cinq prochaines années' significa 'para os próximos cinco anos'.",
+    "breakdown": [
+      { "word": "Quels", "meaning": "Quais (masculino plural de quel)" },
+      { "word": "sont", "meaning": "são (do verbo être no plural)" },
+      { "word": "vos", "meaning": "seus / suas (possessivo formal com vous)" },
+      { "word": "principaux", "meaning": "principais (plural masculino de principal)" },
+      { "word": "objectifs", "meaning": "objetivos / metas" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "les", "meaning": "os" },
+      { "word": "cinq", "meaning": "cinco" },
+      { "word": "prochaines", "meaning": "próximos / seguintes (no feminino plural para années)" },
+      { "word": "années", "meaning": "anos" }
+    ]
+  },
+  "647": {
+    "explanation": "'J'ai grandi' significa 'eu cresci' (passado de grandir com avoir). 'Dans un quartier' significa 'em um bairro'. 'Qui était' significa 'que era' (passado de être). A palavra 'calme' significa sossegado ou tranquilo.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "grandi", "meaning": "crescido / cresci (do verbo grandir)" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "quartier", "meaning": "bairro / vizinhança" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "était", "meaning": "era (passado do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "calme", "meaning": "calmo / tranquilo" }
+    ]
+  },
+  "648": {
+    "explanation": "Frase de homenagem cheia de carinho: 'C'est elle qui' significa 'foi ela quem / é ela que'. O pronome 'm'' (me/a mim) vem antes do verbo ensinar no passado ('a appris', do verbo apprendre). Quem ensina, ensina 'à' fazer: 'à cuisiner' (a cozinhar).",
+    "breakdown": [
+      { "word": "C'", "meaning": "Foi / É (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "elle", "meaning": "ela" },
+      { "word": "qui", "meaning": "quem / que" },
+      { "word": "m'", "meaning": "me / a mim (encurtado antes de vogal)" },
+      { "word": "a", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "appris", "meaning": "ensinado / ensinou (passado do verbo apprendre)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "cuisiner", "meaning": "cozinhar" }
+    ]
+  },
+  "649": {
+    "explanation": "'J'ai toujours préféré' significa 'eu sempre preferi' (com avoir + préféré). O verbo viver ou morar é 'vivre'. A expressão para viver em ambiente urbano em francês é 'vivre en ville'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "toujours", "meaning": "sempre" },
+      { "word": "préféré", "meaning": "preferido / preferi (do verbo préférer)" },
+      { "word": "vivre", "meaning": "viver / morar" },
+      { "word": "en", "meaning": "na" },
+      { "word": "ville", "meaning": "cidade (en ville = na cidade)" }
+    ]
+  },
+  "650": {
+    "explanation": "'Ma famille a déménagé' significa 'minha família se mudou' (o verbo déménager usa avoir no passado). A palavra 'plusieurs fois' significa 'várias vezes'. 'Quand j'étais enfant' significa 'quando eu era criança'.",
+    "breakdown": [
+      { "word": "Ma", "meaning": "Minha" },
+      { "word": "famille", "meaning": "família" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "déménagé", "meaning": "mudado / mudou-se de casa (do verbo déménager)" },
+      { "word": "plusieurs", "meaning": "várias / vários" },
+      { "word": "fois", "meaning": "vezes" },
+      { "word": "quand", "meaning": "quando" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "étais", "meaning": "era (passado do verbo être)" },
+      { "word": "enfant", "meaning": "criança" }
+    ]
+  },
+  "651": {
+    "explanation": "Pergunta de personalidade: 'Êtes-vous' é 'o senhor é?' ou 'você é?'. 'Le genre de personne' significa 'o tipo de pessoa'. 'Qui aime' é 'que gosta de'. Em francês, a expressão para correr riscos é 'prendre des risques' (literalmente tomar riscos).",
+    "breakdown": [
+      { "word": "Êtes", "meaning": "É / São (do verbo être com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para pergunta)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "genre", "meaning": "tipo / gênero" },
+      { "word": "de", "meaning": "de" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "aime", "meaning": "gosta (do verbo aimer)" },
+      { "word": "prendre", "meaning": "tomar / assumir" },
+      { "word": "des", "meaning": "de (marcador de plural)" },
+      { "word": "risques", "meaning": "riscos (prendre des risques = correr riscos)" }
+    ]
+  },
+  "652": {
+    "explanation": "'Je connais' significa 'eu conheço' (do verbo connaître). 'Mon meilleur ami' é meu melhor amigo. A palavra 'depuis' indica desde quando dura a amizade. Em francês, o ensino fundamental I (infância) é chamado de 'l'école primaire' (com 'l'' antes da vogal).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "connais", "meaning": "conheço (do verbo connaître)" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "meilleur", "meaning": "melhor" },
+      { "word": "ami", "meaning": "amigo" },
+      { "word": "depuis", "meaning": "desde" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "école", "meaning": "escola" },
+      { "word": "primaire", "meaning": "primária (école primaire = escola primária / ensino fundamental I)" }
+    ]
+  },
+  "653": {
+    "explanation": "'Il cherche' significa 'ele procura' ou 'está buscando' (do verbo chercher). 'Une partenaire' é uma companheira ou parceira de vida. O verbo partager significa compartilhar/dividir, e 'ses intérêts' são os interesses dele.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "cherche", "meaning": "procura / busca (do verbo chercher)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "partenaire", "meaning": "parceira / companheira" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "partage", "meaning": "compartilha / divide (do verbo partager)" },
+      { "word": "ses", "meaning": "seus / dele" },
+      { "word": "intérêts", "meaning": "interesses" }
+    ]
+  },
+  "654": {
+    "explanation": "'Je ne sais pas si' significa 'eu não sei se'. 'Je veux' é 'eu quero'. O verbo ficar ou permanecer é 'rester'. A palavra 'ici' significa 'aqui', e a expressão consagrada 'pour toujours' significa 'para sempre'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "sais", "meaning": "sei (do verbo savoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "si", "meaning": "se" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "veux", "meaning": "quero (do verbo vouloir)" },
+      { "word": "rester", "meaning": "ficar / permanecer" },
+      { "word": "ici", "meaning": "aqui" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "toujours", "meaning": "sempre (pour toujours = para sempre)" }
+    ]
+  },
+  "655": {
+    "explanation": "'Quelle est' é 'qual é' (no feminino). A expressão 'la chose la plus intéressante' significa 'a coisa mais interessante' (com superlativo la plus e intéressante no feminino). 'Dans votre culture' significa 'na sua cultura'.",
+    "breakdown": [
+      { "word": "Quelle", "meaning": "Qual (feminino de quel)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "chose", "meaning": "coisa" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "intéressante", "meaning": "interessante (no feminino)" },
+      { "word": "dans", "meaning": "em / na" },
+      { "word": "votre", "meaning": "sua / de vocês" },
+      { "word": "culture", "meaning": "cultura" }
+    ]
+  },
+  "656": {
+    "explanation": "'Je n'ai jamais aimé' significa 'eu nunca gostei' (negação com ne... jamais no passado). O verbo falar é 'parler'. A expressão francesa para falar em público para uma plateia é 'parler en public'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'nunca' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "jamais", "meaning": "nunca (ne... jamais = nunca)" },
+      { "word": "aimé", "meaning": "gostado / gostei (do verbo aimer)" },
+      { "word": "parler", "meaning": "falar" },
+      { "word": "en", "meaning": "em" },
+      { "word": "public", "meaning": "público" }
+    ]
+  },
+  "657": {
+    "explanation": "Frase de comparação dupla: 'Elle est plus grande que sa sœur' significa 'ela é mais alta que a irmã dela' (com grande no feminino). 'Mais plus petite que' significa 'mas mais baixa que' (com petite no feminino). 'Son frère' é o irmão dela.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "grande", "meaning": "alta / grande (no feminino)" },
+      { "word": "que", "meaning": "do que / que" },
+      { "word": "sa", "meaning": "sua / dela (para palavra feminina)" },
+      { "word": "sœur", "meaning": "irmã" },
+      { "word": "mais", "meaning": "mas" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "petite", "meaning": "baixa / pequena (no feminino)" },
+      { "word": "que", "meaning": "do que / que" },
+      { "word": "son", "meaning": "seu / dele / dela (para palavra masculina)" },
+      { "word": "frère", "meaning": "irmão" }
+    ]
+  },
+  "658": {
+    "explanation": "'Je suis fier de' significa 'estou orgulhoso de'. A contração 'des' (de + les) conecta com 'progrès' (progressos/evolução). A expressão 'que j'ai accomplis' significa 'que alcancei / que realizei' (do verbo accomplir). 'En anglais' é 'em inglês'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "fier", "meaning": "orgulhoso" },
+      { "word": "des", "meaning": "dos / de (junção de de + les)" },
+      { "word": "progrès", "meaning": "progressos / avanços" },
+      { "word": "que", "meaning": "que" },
+      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "accomplis", "meaning": "realizado / alcancei (do verbo accomplir no plural)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "anglais", "meaning": "inglês" }
+    ]
+  },
+  "659": {
+    "explanation": "Pergunta sobre paixões e hobbies: 'Avez-vous' é 'você tem?'. A palavra 'loisirs' significa passatempos ou hobbies em francês (sempre tratada no plural). 'Qui vous passionnent' significa 'que te apaixonam / que te fascinam' (do verbo passionner).",
+    "breakdown": [
+      { "word": "Avez", "meaning": "Tem / Têm (do verbo avoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "des", "meaning": "hobbies em geral / alguns (marcador de plural)" },
+      { "word": "loisirs", "meaning": "passatempos / hobbies" },
+      { "word": "qui", "meaning": "que" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "passionnent", "meaning": "apaixonam / fascinam (do verbo passionner)" }
+    ]
+  },
+  "660": {
+    "explanation": "'J'essaie de' significa 'estou tentando' (do verbo essayer). O verbo tornar-se é 'devenir'. 'Plus organisé' é 'mais organizado'. A expressão 'dans ma vie quotidienne' significa 'na minha vida cotidiana / no meu dia a dia' (com quotidienne no feminino).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
+      { "word": "de", "meaning": "de (essayer de = tentar fazer algo)" },
+      { "word": "devenir", "meaning": "tornar-se / ficar" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "organisé", "meaning": "organizado" },
+      { "word": "dans", "meaning": "em / na" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "vie", "meaning": "vida" },
+      { "word": "quotidienne", "meaning": "cotidiana / diária (feminino de quotidien)" }
+    ]
+  }
+}

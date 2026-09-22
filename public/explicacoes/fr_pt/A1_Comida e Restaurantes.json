@@ -1,0 +1,302 @@
+{
+  "121": {
+    "explanation": "Em francês, para falar que está com fome, você diz literalmente 'eu tenho fome', usando o verbo ter (avoir). 'J'ai' é a junção de 'je' (eu) com 'ai' (tenho), e 'faim' significa fome.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "faim", "meaning": "fome" }
+    ]
+  },
+  "122": {
+    "explanation": "Pergunta com inversão: o verbo gostar ('aimes') vem antes de 'tu' (você) com tracinho. Em francês, quando falamos de preferências gerais com verbos de gostar ou detestar, sempre usamos o artigo antes do alimento: 'la pizza' (a pizza).",
+    "breakdown": [
+      { "word": "Aimes", "meaning": "Gosta / Gostas (do verbo aimer)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "la", "meaning": "a (artigo feminino)" },
+      { "word": "pizza", "meaning": "pizza" }
+    ]
+  },
+  "123": {
+    "explanation": "Aqui vemos a negação abraçando o verbo comer: 'ne mange pas'. Repare que, em frases negativas com comida e bebida, qualquer artigo vira apenas 'de', significando 'nada de carne' ou 'nenhuma carne'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "mange", "meaning": "como (do verbo manger)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "de", "meaning": "nenhuma / de (usado na negação)" },
+      { "word": "viande", "meaning": "carne" }
+    ]
+  },
+  "124": {
+    "explanation": "A frase mais importante ao chegar a um restaurante. 'Une table' é uma mesa, 'pour deux' é para duas pessoas, e 's'il vous plaît' é o 'por favor' formal e educado usado com os atendentes.",
+    "breakdown": [
+      { "word": "Une", "meaning": "Uma" },
+      { "word": "table", "meaning": "mesa" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "deux", "meaning": "dois / duas pessoas" },
+      { "word": "s'il vous plaît", "meaning": "por favor (formal e educado)" }
+    ]
+  },
+  "125": {
+    "explanation": "'Puis-je' é a forma elegante de dizer 'posso eu' ao fazer um pedido educado. O verbo ver ('voir') fica no infinitivo e 'le menu' refere-se ao cardápio do estabelecimento.",
+    "breakdown": [
+      { "word": "Puis", "meaning": "Posso (forma polida do verbo pouvoir em perguntas)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
+      { "word": "voir", "meaning": "ver" },
+      { "word": "le", "meaning": "o" },
+      { "word": "menu", "meaning": "cardápio / menu" }
+    ]
+  },
+  "126": {
+    "explanation": "Para pedir uma bebida, 'je veux' é 'eu quero'. Em francês, o sabor do suco é ligado com a preposição 'de' (que encurta para 'd'' antes da vogal de 'orange'), ficando literalmente 'suco de laranja'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "veux", "meaning": "quero (do verbo vouloir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "jus", "meaning": "suco" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "orange", "meaning": "laranja" }
+    ]
+  },
+  "127": {
+    "explanation": "Para fazer a pergunta com 'aime' (gosta) e 'il' (ele), o francês coloca o '-t-' no meio só para a fala deslizar suavemente. 'La nourriture' é a comida e 'épicée' significa temperada ou apimentada.",
+    "breakdown": [
+      { "word": "Aime", "meaning": "Gosta (do verbo aimer)" },
+      { "word": "-t-", "meaning": "letrinha de ligação usada para suavizar o som" },
+      { "word": "il", "meaning": "ele (invertido para a pergunta)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "nourriture", "meaning": "comida / alimento" },
+      { "word": "épicée", "meaning": "apimentada / temperada" }
+    ]
+  },
+  "128": {
+    "explanation": "Em francês, quando você come ou bebe algo não quantificado (não é um arroz específico, mas sim um pouco de arroz), usa-se 'du' antes de palavras masculinas. 'Tous les jours' é a expressão para 'todos os dias'.",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "mangeons", "meaning": "comemos (do verbo manger)" },
+      { "word": "du", "meaning": "um pouco de / arroz em geral (usado para quantidade indefinida)" },
+      { "word": "riz", "meaning": "arroz" },
+      { "word": "tous", "meaning": "todos" },
+      { "word": "les", "meaning": "os" },
+      { "word": "jours", "meaning": "dias" }
+    ]
+  },
+  "129": {
+    "explanation": "Como a palavra 'eau' (água) começa com som de vogal, o artigo 'la' encurta para 'l''. O adjetivo 'froide' termina com 'e' porque concorda com água, que é uma palavra feminina em francês.",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (artigo feminino encurtado antes de vogal)" },
+      { "word": "eau", "meaning": "água" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "froide", "meaning": "fria / gelada (no feminino)" }
+    ]
+  },
+  "130": {
+    "explanation": "Com verbos de gostar ou desgostar, usa-se o artigo definido mesmo na negação: 'le lait' (o leite). A negação 'n'... pas' envolve o verbo 'aime', marcando a rejeição geral ao leite.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "le", "meaning": "o" },
+      { "word": "lait", "meaning": "leite" }
+    ]
+  },
+  "131": {
+    "explanation": "A pergunta 'Y a-t-il' significa 'tem?' ou 'há?'. Como o açúcar é algo que não se conta por unidades inteiras na conversa, usa-se 'du sucre' (um pouco de açúcar).",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "du", "meaning": "um pouco de / açúcar em geral" },
+      { "word": "sucre", "meaning": "açúcar" }
+    ]
+  },
+  "132": {
+    "explanation": "'J'ai' é 'eu tenho'. Como a maçã é um alimento contável e feminino, diz-se 'une pomme'. 'Dans mon sac' significa 'dentro da minha bolsa' ou mochila.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "pomme", "meaning": "maçã" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "mon", "meaning": "minha / meu" },
+      { "word": "sac", "meaning": "bolsa / sacola / mochila" }
+    ]
+  },
+  "133": {
+    "explanation": "Para saber o prato favorito de alguém: 'Quel' é qual (masculino), combinando com 'plat' (prato). A palavra 'préféré' qualifica o prato como o preferido.",
+    "breakdown": [
+      { "word": "Quel", "meaning": "Qual (no masculino)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "plat", "meaning": "prato / comida" },
+      { "word": "préféré", "meaning": "favorito / preferido" }
+    ]
+  },
+  "134": {
+    "explanation": "'La soupe' é a sopa. O adjetivo 'chaude' significa quente e ganha um 'e' no final porque sopa é uma palavra feminina em francês, exatamente como em português.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "soupe", "meaning": "sopa" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "chaude", "meaning": "quente (no feminino)" }
+    ]
+  },
+  "135": {
+    "explanation": "A frase mágica para pedir a conta ao garçom no restaurante. 'Addition' significa literalmente a soma/conta. Como começa com vogal, usa-se 'l'' na frente, seguido da cortesia formal 's'il vous plaît'.",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (artigo encurtado antes de vogal)" },
+      { "word": "addition", "meaning": "conta (do restaurante)" },
+      { "word": "s'il vous plaît", "meaning": "por favor (formal e educado)" }
+    ]
+  },
+  "136": {
+    "explanation": "Pergunta direta com inversão: 'As-tu' (tem você?). Como o pão aqui é visto como quantidade geral de alimento, usa-se a combinação 'du' antes de 'pain' ('du pain' = um pouco de pão).",
+    "breakdown": [
+      { "word": "As", "meaning": "Tem / Tens (do verbo avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "du", "meaning": "um pouco de / pão em geral" },
+      { "word": "pain", "meaning": "pão" }
+    ]
+  },
+  "137": {
+    "explanation": "'Elle boit' significa 'ela bebe'. 'Du thé' é o chá em quantidade geral. Quando um sabor ou ingrediente é adicionado a uma bebida ou prato, o francês usa 'au' (à + le), ficando 'au citron' (com limão).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "boit", "meaning": "bebe (do verbo boire)" },
+      { "word": "du", "meaning": "chá em geral / um pouco de" },
+      { "word": "thé", "meaning": "chá" },
+      { "word": "au", "meaning": "com / ao (junção de à + le para indicar sabor)" },
+      { "word": "citron", "meaning": "limão" }
+    ]
+  },
+  "138": {
+    "explanation": "Para recusar a sobremesa educadamente: 'ne veux pas' é 'não quero'. Na negativa, o artigo de quantidade vira apenas 'de', ficando 'pas de dessert' (nada de sobremesa).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "veux", "meaning": "quero (do verbo vouloir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "de", "meaning": "nenhuma / de (usado na negação)" },
+      { "word": "dessert", "meaning": "sobremesa" }
+    ]
+  },
+  "139": {
+    "explanation": "Pergunta muito educada para saber se a refeição está agradável. Cita-se o sujeito ('la nourriture' = a comida) e em seguida coloca-se o verbo invertido com hífen ('est-elle' = está ela?). 'Bonne' é boa, no feminino.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "nourriture", "meaning": "comida" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "-elle", "meaning": "ela (invertido para a pergunta)" },
+      { "word": "bonne", "meaning": "boa / gostosa (no feminino)" }
+    ]
+  },
+  "140": {
+    "explanation": "Com o verbo gostar ('j'aime'), usamos o artigo plural 'les' para indicar que você gosta do grupo de alimentos como um todo. A palavra 'légumes' significa legumes e verduras em geral.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "les", "meaning": "os / dos" },
+      { "word": "légumes", "meaning": "vegetais / legumes" }
+    ]
+  },
+  "141": {
+    "explanation": "'Ils mangent' significa 'eles comem'. Usa-se 'du poisson' para indicar que comem peixe como refeição. A expressão 'pour le dîner' é a forma padrão de dizer 'para o jantar' ou 'no jantar'.",
+    "breakdown": [
+      { "word": "Ils", "meaning": "Eles" },
+      { "word": "mangent", "meaning": "comem (do verbo manger no plural)" },
+      { "word": "du", "meaning": "peixe em geral / um pouco de" },
+      { "word": "poisson", "meaning": "peixe" },
+      { "word": "pour", "meaning": "para / no" },
+      { "word": "le", "meaning": "o" },
+      { "word": "dîner", "meaning": "jantar" }
+    ]
+  },
+  "142": {
+    "explanation": "Um jeito polido de pedir algo à mesa. 'Puis-je avoir' significa literalmente 'posso eu ter'. 'Du sel' é um pouco de sal (com 'du' usado antes da palavra masculina sal).",
+    "breakdown": [
+      { "word": "Puis", "meaning": "Posso (forma polida do verbo pouvoir)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
+      { "word": "avoir", "meaning": "ter / receber" },
+      { "word": "du", "meaning": "um pouco de" },
+      { "word": "sel", "meaning": "sal" }
+    ]
+  },
+  "143": {
+    "explanation": "Em francês, para dizer que um restaurante ou café está cheio de clientes ou é muito movimentado, usa-se a expressão 'très fréquenté' (literalmente muito frequentado).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "restaurant", "meaning": "restaurante" },
+      { "word": "est", "meaning": "está / é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "fréquenté", "meaning": "frequentado / movimentado / cheio de gente" }
+    ]
+  },
+  "144": {
+    "explanation": "Aqui temos o par 'ne... pas' abraçando o verbo beber ('bois'). Como a frase é negativa e a palavra álcool começa com vogal, a palavrinha de quantidade vira 'd'', ficando 'pas d'alcool'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "bois", "meaning": "bebo (do verbo boire)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "d'", "meaning": "de / nenhum (usado na negação antes de vogal)" },
+      { "word": "alcool", "meaning": "álcool" }
+    ]
+  },
+  "145": {
+    "explanation": "Pergunta para oferecer algo: 'Veux-tu' (quer você?). Para coisas no plural como frutas, usa-se a palavrinha 'des' na frente de 'fruits', indicando uma porção não contada de frutas.",
+    "breakdown": [
+      { "word": "Veux", "meaning": "Quer / Queres (do verbo vouloir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "des", "meaning": "frutas em geral / algumas (marcador de porção no plural)" },
+      { "word": "fruits", "meaning": "frutas" }
+    ]
+  },
+  "146": {
+    "explanation": "Para falar sobre habilidades na cozinha: 'J'aime' (eu gosto) seguido direto do verbo no infinitivo 'cuisiner' (cozinhar). Em francês, macarrão ou massa é sempre dito no plural: 'des pâtes'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "cuisiner", "meaning": "cozinhar" },
+      { "word": "des", "meaning": "massa em geral / porção de massas" },
+      { "word": "pâtes", "meaning": "massas / macarrão (sempre no plural)" }
+    ]
+  },
+  "147": {
+    "explanation": "A palavra 'trop' é usada sempre que algo passa do ponto (demais / excessivamente). A palavra 'sucré' vem de sucre (açúcar) e significa adoçado ou doce.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "café", "meaning": "café" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "trop", "meaning": "demais / em excesso" },
+      { "word": "sucré", "meaning": "açucarado / doce" }
+    ]
+  },
+  "148": {
+    "explanation": "A clássica pergunta na hora da refeição. 'Que' significa 'o que'. A ordem vem invertida com 'veux-tu' (quer você), seguida da ação no infinitivo 'manger' (comer).",
+    "breakdown": [
+      { "word": "Que", "meaning": "O que" },
+      { "word": "veux", "meaning": "quer (do verbo vouloir)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "manger", "meaning": "comer" }
+    ]
+  },
+  "149": {
+    "explanation": "'Nous avons' significa 'nós temos' (do verbo avoir). Como o queijo é masculino e não está sendo contado em unidades exatas, usa-se 'du fromage' (um pouco de queijo / queijo em geral).",
+    "breakdown": [
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "avons", "meaning": "temos (do verbo avoir)" },
+      { "word": "du", "meaning": "um pouco de / queijo em geral" },
+      { "word": "fromage", "meaning": "queijo" }
+    ]
+  },
+  "150": {
+    "explanation": "'Je mange' é 'eu como'. A palavra para ovos ('œufs') usa 'des' antes para marcar o plural. Para indicar a refeição em que você come isso, usa-se 'au petit-déjeuner' (no café da manhã).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "mange", "meaning": "como (do verbo manger)" },
+      { "word": "des", "meaning": "ovos em geral / alguns (marcador de plural)" },
+      { "word": "œufs", "meaning": "ovos" },
+      { "word": "au", "meaning": "no / ao (junção de à + le)" },
+      { "word": "petit-déjeuner", "meaning": "café da manhã" }
+    ]
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "781": {
+    "explanation": "'Je travaille pour' significa 'trabalho para'. 'Cette entreprise' é 'esta empresa' (palavra feminina). A palavra 'depuis' indica que você começou há cinco anos e ainda continua trabalhando lá até hoje. 'Cinq ans' são cinco anos.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "travaille", "meaning": "trabalho (do verbo travailler)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "entreprise", "meaning": "empresa" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "cinq", "meaning": "cinco" },
+      { "word": "ans", "meaning": "anos" }
+    ]
+  },
+  "782": {
+    "explanation": "'Elle étudie pour' significa 'ela estuda para'. A expressão 'obtenir un diplôme' significa literalmente 'obter um diploma / formar-se'. A preposição 'en' conecta à área acadêmica: 'en relations internationales' (em relações internacionais).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "étudie", "meaning": "estuda / está estudando (do verbo étudier)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "obtenir", "meaning": "obter / conseguir" },
+      { "word": "un", "meaning": "um" },
+      { "word": "diplôme", "meaning": "diploma" },
+      { "word": "en", "meaning": "em" },
+      { "word": "relations", "meaning": "relações" },
+      { "word": "internationales", "meaning": "internacionais (no feminino plural)" }
+    ]
+  },
+  "783": {
+    "explanation": "Pedido muito cortês no ambiente de trabalho: 'Je me demandais si' significa 'eu estava me perguntando se'. 'Vous pouviez' é 'o senhor poderia / você podia'. O 'm'' é o 'me' antes de 'aider' (ajudar). 'Pour ce rapport' significa 'com este relatório'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "demandais", "meaning": "perguntava (passado do verbo se demander)" },
+      { "word": "si", "meaning": "se" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "pouviez", "meaning": "podia / poderia (passado do verbo pouvoir com vous)" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "aider", "meaning": "ajudar" },
+      { "word": "pour", "meaning": "para / com" },
+      { "word": "ce", "meaning": "este" },
+      { "word": "rapport", "meaning": "relatório" }
+    ]
+  },
+  "784": {
+    "explanation": "'La réunion' é a reunião. A expressão 'a été reportée' significa 'foi adiada / remarcada' (passado de être no feminino). A preposição 'à' indica a nova data: 'à demain matin' (para amanhã de manhã).",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "réunion", "meaning": "reunião" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
+      { "word": "reportée", "meaning": "adiada / postergada (do verbo reporter, no feminino)" },
+      { "word": "à", "meaning": "para / a" },
+      { "word": "demain", "meaning": "amanhã" },
+      { "word": "matin", "meaning": "manhã (demain matin = amanhã de manhã)" }
+    ]
+  },
+  "785": {
+    "explanation": "'Je ne suis pas très satisfait de' significa 'não estou muito satisfeito com' (quem está satisfeito em francês está 'satisfait de'). 'Mon travail actuel' significa 'meu trabalho atual' (onde actuel refere-se ao momento presente).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "satisfait", "meaning": "satisfeito" },
+      { "word": "de", "meaning": "com / de" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "travail", "meaning": "trabalho" },
+      { "word": "actuel", "meaning": "atual / do presente momento" }
+    ]
+  },
+  "786": {
+    "explanation": "O pronome 'on' é usado aqui para indicar uma ação feita pela empresa ('ofereceram-lhe / ele recebeu uma oferta'). O pronome 'lui' significa 'a ele / a ela'. 'A proposé' é ofereceu. 'Une promotion' é uma promoção de cargo. A contração 'au' (à + le) conecta com 'bureau de Londres' (escritório de Londres).",
+    "breakdown": [
+      { "word": "On", "meaning": "A gente / Eles (sujeito genérico que indica a empresa)" },
+      { "word": "lui", "meaning": "a ele / lhe" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "proposé", "meaning": "proposto / ofereceu (do verbo proposer)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "promotion", "meaning": "promoção (de cargo)" },
+      { "word": "au", "meaning": "no (junção de à + le)" },
+      { "word": "bureau", "meaning": "escritório" },
+      { "word": "de", "meaning": "de" },
+      { "word": "Londres", "meaning": "Londres" }
+    ]
+  },
+  "787": {
+    "explanation": "Pergunta reflexiva: 'Pensez-vous' significa 'o senhor acha / você pensa?'. A expressão 'qu'il soit possible' significa 'que seja possível' (usando 'soit' após a dúvida). A preposição 'd'' encurta antes do verbo aprender ('apprendre'). 'Une langue' é uma língua, e 'en un an' significa 'em um ano'.",
+    "breakdown": [
+      { "word": "Pensez", "meaning": "Pensa / Pensam / Acha (do verbo penser com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "qu'", "meaning": "que (encurtado antes de vogal)" },
+      { "word": "il", "meaning": "ele / isso (sujeito neutro)" },
+      { "word": "soit", "meaning": "seja (forma do verbo être)" },
+      { "word": "possible", "meaning": "possível" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "apprendre", "meaning": "aprender" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "langue", "meaning": "língua / idioma" },
+      { "word": "en", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "an", "meaning": "ano" }
+    ]
+  },
+  "788": {
+    "explanation": "'Je prévois de' significa 'eu planejo / tenho planos de'. O verbo suivre aqui significa cursar ou assistir a aulas ('suivre un cours' = fazer um curso). 'De développement web' significa 'de desenvolvimento web'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "prévois", "meaning": "planejo / prevejo (do verbo prévoir)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "suivre", "meaning": "seguir / cursar / fazer (suivre un cours = fazer um curso)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "cours", "meaning": "curso / aula" },
+      { "word": "de", "meaning": "de" },
+      { "word": "développement", "meaning": "desenvolvimento" },
+      { "word": "web", "meaning": "web" }
+    ]
+  },
+  "789": {
+    "explanation": "'Le projet a été terminé' significa 'o projeto foi concluído' (passado de être). A expressão 'à temps' significa 'a tempo / no prazo'. A expressão 'en respectant le budget' significa literalmente 'respeitando o orçamento' (ou seja, dentro do orçamento estipulado).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "projet", "meaning": "projeto" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
+      { "word": "terminé", "meaning": "terminado / concluído (do verbo terminer)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "temps", "meaning": "tempo (à temps = no prazo / a tempo)" },
+      { "word": "et", "meaning": "e" },
+      { "word": "en", "meaning": "em" },
+      { "word": "respectant", "meaning": "respeitando (do verbo respecter)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "budget", "meaning": "orçamento" }
+    ]
+  },
+  "790": {
+    "explanation": "'Je cherche' significa 'estou procurando' ou 'busco'. A forma 'nouvel' é usada antes de substantivos masculinos iniciados por som de vogal como 'emploi' (emprego). 'Depuis' indica duração que segue até o presente, e 'plusieurs mois' significa 'vários meses'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "nouvel", "meaning": "novo (usado antes de palavra masculina iniciada por vogal)" },
+      { "word": "emploi", "meaning": "emprego / trabalho" },
+      { "word": "depuis", "meaning": "há / desde" },
+      { "word": "plusieurs", "meaning": "vários" },
+      { "word": "mois", "meaning": "meses" }
+    ]
+  },
+  "791": {
+    "explanation": "'C'est la personne' significa 'ela é a pessoa / ele é a pessoa'. O superlativo 'la plus expérimentée' significa 'a mais experiente' (com -ée no feminino concordando com pessoa). 'De notre équipe' significa 'da nossa equipe'.",
+    "breakdown": [
+      { "word": "C'", "meaning": "Ela / Ele (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "personne", "meaning": "pessoa" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "expérimentée", "meaning": "experiente (no feminino)" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "notre", "meaning": "nossa" },
+      { "word": "équipe", "meaning": "equipe / time" }
+    ]
+  },
+  "792": {
+    "explanation": "'Je dois finir' significa 'eu tenho que terminar / preciso finalizar'. 'Cette présentation' é esta apresentação (feminina). A expressão temporal 'd'ici' significa 'até / no prazo de'. 'La fin de la journée' significa 'o final do dia'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso / tenho que (do verbo devoir)" },
+      { "word": "finir", "meaning": "terminar / finalizar" },
+      { "word": "cette", "meaning": "esta (feminino)" },
+      { "word": "présentation", "meaning": "apresentação" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "ici", "meaning": "aqui (d'ici = até / daqui a)" },
+      { "word": "la", "meaning": "o / a" },
+      { "word": "fin", "meaning": "fim / final" },
+      { "word": "de", "meaning": "de / do" },
+      { "word": "la", "meaning": "a" },
+      { "word": "journée", "meaning": "jornada / dia (fin de la journée = fim do dia)" }
+    ]
+  },
+  "793": {
+    "explanation": "Pergunta sobre a rotina corporativa: 'Devez-vous' é 'o senhor deve / você tem que?'. O verbo assister em francês significa presenciar ou participar de algo (e não prestar socorro). Ele pede a preposição 'à'. A expressão 'de nombreuses réunions' significa 'muitas reuniões' (com nombreuses no feminino plural). 'Dans votre travail' é 'no seu trabalho'.",
+    "breakdown": [
+      { "word": "Devez", "meaning": "Deve / Devem / Tem que (do verbo devoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "assister", "meaning": "assistir / comparecer / participar (assister à = comparecer a)" },
+      { "word": "à", "meaning": "a" },
+      { "word": "de", "meaning": "de (marcador usado antes de adjetivos plurais)" },
+      { "word": "nombreuses", "meaning": "muitas / numerosas (feminino plural de nombreux)" },
+      { "word": "réunions", "meaning": "reuniões" },
+      { "word": "dans", "meaning": "em / no" },
+      { "word": "votre", "meaning": "seu / de vocês" },
+      { "word": "travail", "meaning": "trabalho" }
+    ]
+  },
+  "794": {
+    "explanation": "'Je n'ai pas l'habitude de' significa 'não estou acostumado a / não tenho o costume de'. O verbo trabalhar é 'travailler'. A expressão 'autant d'heures' significa 'tantas horas' (com 'de' encurtado para 'd'' antes de h mudo).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não'" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "l'", "meaning": "o / a (encurtado antes de h mudo)" },
+      { "word": "habitude", "meaning": "hábito / costume (avoir l'habitude de = estar acostumado a)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "travailler", "meaning": "trabalhar" },
+      { "word": "autant", "meaning": "tanto / tantas" },
+      { "word": "d'", "meaning": "de (encurtado antes de h mudo)" },
+      { "word": "heures", "meaning": "horas" }
+    ]
+  },
+  "795": {
+    "explanation": "Em francês, fazer estágio é 'faire un stage'. 'Il fait actuellement' significa 'ele está fazendo no momento'. Em francês, escritório de advocacia é chamado de 'un cabinet d'avocats' (com 'd'' antes da vogal de avocats).",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "fait", "meaning": "faz / está fazendo (do verbo faire)" },
+      { "word": "actuellement", "meaning": "atualmente / no momento presente" },
+      { "word": "un", "meaning": "um" },
+      { "word": "stage", "meaning": "estágio" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "cabinet", "meaning": "escritório / gabinete" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "avocats", "meaning": "advogados (cabinet d'avocats = escritório de advocacia)" }
+    ]
+  },
+  "796": {
+    "explanation": "'J'ai beaucoup appris' significa 'aprendi muito' (passado de apprendre com avoir). A preposição 'de' conecta com a lição aprendida: 'de mes erreurs passées' (com meus erros passados / com meus erros no passado, onde passées é feminino plural combinando com erreurs).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "appris", "meaning": "aprendido / aprendi (passado do verbo apprendre)" },
+      { "word": "de", "meaning": "de / com" },
+      { "word": "mes", "meaning": "meus" },
+      { "word": "erreurs", "meaning": "erros (palavra feminina em francês)" },
+      { "word": "passées", "meaning": "passados (no feminino plural)" }
+    ]
+  },
+  "797": {
+    "explanation": "'Quelle est' é 'qual é' (no feminino). A expressão 'la partie la plus difficile' significa 'a parte mais difícil' (com superlativo la plus e difficile concordando com partie). 'De vos études' significa 'dos seus estudos' (com études no plural).",
+    "breakdown": [
+      { "word": "Quelle", "meaning": "Qual (feminino de quel)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "partie", "meaning": "parte" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "difficile", "meaning": "difícil" },
+      { "word": "de", "meaning": "de / dos" },
+      { "word": "vos", "meaning": "seus (possessivo plural com vous)" },
+      { "word": "études", "meaning": "estudos" }
+    ]
+  },
+  "798": {
+    "explanation": "A expressão 'penser à' significa 'pensar em fazer algo' ('je pense à' = estou pensando em). O verbo candidatar-se ou concorrer a uma vaga é postuler ('postuler pour' = candidatar-se a). Em francês, bolsa de estudos é chamada de 'une bourse' (palavra feminina).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "pense", "meaning": "penso / estou pensando (do verbo penser)" },
+      { "word": "à", "meaning": "em (penser à = pensar em)" },
+      { "word": "postuler", "meaning": "candidatar-se / concorrer a vaga" },
+      { "word": "pour", "meaning": "para / a" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "bourse", "meaning": "bolsa (bourse d'études = bolsa de estudos)" }
+    ]
+  },
+  "799": {
+    "explanation": "'Le bureau est' significa 'o escritório é / está'. A expressão 'beaucoup plus moderne que' significa 'muito mais moderno do que'. A palavra 'l'ancien' significa 'o antigo' (com 'l'' antes da vogal de ancien).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "bureau", "meaning": "escritório" },
+      { "word": "est", "meaning": "é / está (do verbo être)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "plus", "meaning": "mais (beaucoup plus = muito mais)" },
+      { "word": "moderne", "meaning": "moderno" },
+      { "word": "que", "meaning": "do que" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "ancien", "meaning": "antigo" }
+    ]
+  },
+  "800": {
+    "explanation": "'J'ai déjà envoyé' significa 'eu já enviei' (passado de envoyer com avoir). 'L'e-mail' é o e-mail (com 'l'' antes da vogal). A contração 'au' (à + le) conecta com o cliente: 'au client' (para o cliente).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "déjà", "meaning": "já" },
+      { "word": "envoyé", "meaning": "enviado / enviei (do verbo envoyer)" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "e-mail", "meaning": "e-mail" },
+      { "word": "au", "meaning": "ao / para o (junção de à + le)" },
+      { "word": "client", "meaning": "cliente" }
+    ]
+  },
+  "801": {
+    "explanation": "Pergunta sobre modelos de trabalho: 'Préférez-vous' é 'o senhor prefere / você prefere?'. O verbo trabalhar é 'travailler'. Em francês, trabalhar de casa ou home office é chamado formalmente de 'travailler à domicile'. 'Ou dans un bureau' significa 'ou em um escritório'.",
+    "breakdown": [
+      { "word": "Préférez", "meaning": "Prefere / Preferem (do verbo préférer com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
+      { "word": "travailler", "meaning": "trabalhar" },
+      { "word": "à", "meaning": "em" },
+      { "word": "domicile", "meaning": "domicílio / casa (à domicile = em casa / home office)" },
+      { "word": "ou", "meaning": "ou" },
+      { "word": "dans", "meaning": "em" },
+      { "word": "un", "meaning": "um" },
+      { "word": "bureau", "meaning": "escritório" }
+    ]
+  },
+  "802": {
+    "explanation": "A expressão 'être doué pour' significa 'ter facilidade / ter muito talento para' ('elle est très douée pour' = ela tem muito jeito para, no feminino). O verbo gerenciar ou lidar com situações é 'gérer'. 'Les clients difficiles' são os clientes difíceis.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "douée", "meaning": "talentosa / com jeito para (no feminino)" },
+      { "word": "pour", "meaning": "para (doué pour = bom em / com jeito para)" },
+      { "word": "gérer", "meaning": "gerenciar / lidar com / contornar" },
+      { "word": "les", "meaning": "os" },
+      { "word": "clients", "meaning": "clientes" },
+      { "word": "difficiles", "meaning": "difíceis (no plural)" }
+    ]
+  },
+  "803": {
+    "explanation": "'Je dois' é 'eu preciso' ou 'eu devo'. O verbo aprimorar ou melhorar é 'améliorer'. 'Mes compétences' são minhas competências ou habilidades. A preposição 'en' conecta à área: 'en communication' (em comunicação).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
+      { "word": "améliorer", "meaning": "melhorar / aprimorar" },
+      { "word": "mes", "meaning": "minhas" },
+      { "word": "compétences", "meaning": "habilidades / competências" },
+      { "word": "en", "meaning": "em" },
+      { "word": "communication", "meaning": "comunicação" }
+    ]
+  },
+  "804": {
+    "explanation": "Em francês, prazo final ou data limite é chamada de 'la date limite'. A preposição 'pour' conecta ao dever ou tarefa escolar ('le devoir'). A expressão 'vendredi prochain' significa 'na próxima sexta-feira'.",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "date", "meaning": "data" },
+      { "word": "limite", "meaning": "limite (date limite = prazo final / prazo de entrega)" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "le", "meaning": "o" },
+      { "word": "devoir", "meaning": "dever / tarefa / lição" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "vendredi", "meaning": "sexta-feira" },
+      { "word": "prochain", "meaning": "próxima / que vem" }
+    ]
+  },
+  "805": {
+    "explanation": "'J'essaie de trouver' significa 'estou tentando encontrar'. 'Un meilleur équilibre' é um equilíbrio melhor. A preposição 'entre' significa 'entre'. A expressão consagrada 'travail et vie privée' significa 'trabalho e vida privada/pessoal'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "trouver", "meaning": "encontrar / achar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "meilleur", "meaning": "melhor" },
+      { "word": "équilibre", "meaning": "equilíbrio" },
+      { "word": "entre", "meaning": "entre" },
+      { "word": "travail", "meaning": "trabalho" },
+      { "word": "et", "meaning": "e" },
+      { "word": "vie", "meaning": "vida" },
+      { "word": "privée", "meaning": "privada / pessoal (no feminino)" }
+    ]
+  },
+  "806": {
+    "explanation": "Pergunta em entrevista profissional: 'Qu'est-ce que' é o jeito comum de perguntar 'o que'. 'Vous aimez le plus' significa 'o senhor mais gosta / você mais ama'. 'Dans votre profession' significa 'na sua profissão'.",
+    "breakdown": [
+      { "word": "Qu'", "meaning": "O que (encurtado antes de vogal)" },
+      { "word": "est-ce que", "meaning": "expressão usada para iniciar perguntas" },
+      { "word": "vous", "meaning": "o senhor / a senhora / você" },
+      { "word": "aimez", "meaning": "gosta / ama (do verbo aimer com vous)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "plus", "meaning": "mais (le plus = o mais / mais de tudo)" },
+      { "word": "dans", "meaning": "em / na" },
+      { "word": "votre", "meaning": "sua" },
+      { "word": "profession", "meaning": "profissão" }
+    ]
+  },
+  "807": {
+    "explanation": "'Je ne sais pas si' significa 'eu não sei se'. 'Je veux' é 'eu quero'. O verbo poursuivre significa seguir adiante ou dar prosseguimento ('poursuivre une carrière' = seguir uma carreira). 'Dans l'enseignement' significa 'no ensino / na área da educação' (com 'l'' antes da vogal).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "sais", "meaning": "sei (do verbo savoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "si", "meaning": "se" },
+      { "word": "je", "meaning": "eu" },
+      { "word": "veux", "meaning": "quero (do verbo vouloir)" },
+      { "word": "poursuivre", "meaning": "seguir / prosseguir / trilhar" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "carrière", "meaning": "carreira" },
+      { "word": "dans", "meaning": "em / no" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "enseignement", "meaning": "ensino / magistério" }
+    ]
+  },
+  "808": {
+    "explanation": "'Il est responsable de' significa 'ele é responsável por'. 'La gestion' é o gerenciamento ou administração. A contração 'du' (de + le) conecta com o orçamento: 'du budget'. A expressão 'de l'entreprise' significa 'da empresa' (com 'l'' antes da vogal).",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "responsable", "meaning": "responsável" },
+      { "word": "de", "meaning": "de / por" },
+      { "word": "la", "meaning": "a" },
+      { "word": "gestion", "meaning": "gestão / gerenciamento" },
+      { "word": "du", "meaning": "do (junção de de + le)" },
+      { "word": "budget", "meaning": "orçamento" },
+      { "word": "de", "meaning": "de / da" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "entreprise", "meaning": "empresa" }
+    ]
+  },
+  "809": {
+    "explanation": "Ótima notícia de carreira: 'J'ai été invité' significa 'fui convidado' (passado de être usando avoir + été + invité). A preposição 'à' liga com a entrevista: 'à un entretien'. A expressão 'la semaine prochaine' significa 'na próxima semana'.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / fui (passado do verbo être)" },
+      { "word": "invité", "meaning": "convidado (do verbo inviter)" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "un", "meaning": "uma / um" },
+      { "word": "entretien", "meaning": "entrevista (de emprego)" },
+      { "word": "la", "meaning": "a / na" },
+      { "word": "semaine", "meaning": "semana" },
+      { "word": "prochaine", "meaning": "próxima (no feminino)" }
+    ]
+  },
+  "810": {
+    "explanation": "Em empresas, treinamento é chamado de 'séance de formation' (sessão de formação/treinamento). 'A été très utile' significa 'foi muito útil'. A preposição 'pour' significa 'para'. Em francês, a equipe ou conjunto de funcionários é chamado formalmente de 'le personnel' ('le nouveau personnel' = a nova equipe de funcionários).",
+    "breakdown": [
+      { "word": "La", "meaning": "A" },
+      { "word": "séance", "meaning": "sessão" },
+      { "word": "de", "meaning": "de" },
+      { "word": "formation", "meaning": "treinamento / capacitação (séance de formation = sessão de treinamento)" },
+      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "utile", "meaning": "útil / proveitosa" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "le", "meaning": "o" },
+      { "word": "nouveau", "meaning": "novo" },
+      { "word": "personnel", "meaning": "quadro de funcionários / equipe / pessoal" }
+    ]
+  }
+}

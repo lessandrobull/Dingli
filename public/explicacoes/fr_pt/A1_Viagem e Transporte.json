@@ -1,0 +1,312 @@
+{
+  "91": {
+    "explanation": "Para perguntar onde fica qualquer lugar, o francês usa 'Où est' (onde é/está). A palavra 'gare' significa estação, e 'routière' (relativa a rotas/estradas) especifica que é a rodoviária, ou seja, para ônibus e não para trens.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "est", "meaning": "é / fica / está (do verbo être)" },
+      { "word": "la", "meaning": "a (artigo feminino)" },
+      { "word": "gare", "meaning": "estação" },
+      { "word": "routière", "meaning": "rodoviária (estação de rotas/ônibus)" }
+    ]
+  },
+  "92": {
+    "explanation": "A forma mais direta de pedir uma passagem na bilheteria. 'Je veux' significa 'eu quero', 'un billet' é 'uma passagem' ou bilhete, e 'pour' funciona exatamente como o nosso 'para', indicando o destino da viagem.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "veux", "meaning": "quero (do verbo vouloir)" },
+      { "word": "un", "meaning": "um / uma" },
+      { "word": "billet", "meaning": "passagem / bilhete" },
+      { "word": "pour", "meaning": "para" },
+      { "word": "Londres", "meaning": "Londres" }
+    ]
+  },
+  "93": {
+    "explanation": "A expressão 'Est-ce que' é a coringa do francês para fazer perguntas: ela vem no começo da frase apenas para avisar que vem uma pergunta por aí. 'Ce train' é 'este trem', e 'à l'' é a junção de 'para o', encurtada antes de vogal.",
+    "breakdown": [
+      { "word": "Est-ce que", "meaning": "expressão usada para iniciar uma pergunta no dia a dia" },
+      { "word": "ce", "meaning": "este / esse" },
+      { "word": "train", "meaning": "trem" },
+      { "word": "va", "meaning": "vai (do verbo aller)" },
+      { "word": "à", "meaning": "para / a" },
+      { "word": "l'", "meaning": "o (encurtado antes de som de vogal)" },
+      { "word": "aéroport", "meaning": "aeroporto" }
+    ]
+  },
+  "94": {
+    "explanation": "Aqui vemos o par 'n'... pas' abraçando o verbo 'est' (está). A palavra 'là' é muito usada pelos franceses no dia a dia para indicar que alguém ou algo está presente no local (ou ausente, quando negada).",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "taxi", "meaning": "táxi" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "là", "meaning": "aqui / lá (indicando presença no local)" }
+    ]
+  },
+  "95": {
+    "explanation": "A pergunta clássica para saber o preço de algo. 'Combien' significa 'quanto' e 'coûte' é a forma do verbo 'custar'. A ordem das palavras é bem intuitiva e direta: 'quanto custa um bilhete?'.",
+    "breakdown": [
+      { "word": "Combien", "meaning": "Quanto" },
+      { "word": "coûte", "meaning": "custa (do verbo coûter)" },
+      { "word": "un", "meaning": "um / uma" },
+      { "word": "billet", "meaning": "passagem / bilhete" }
+    ]
+  },
+  "96": {
+    "explanation": "Para falar sobre meios de transporte fechados (em que você entra dentro dele, como avião, trem, carro ou barco), o francês usa a preposição 'en'. Então, 'de avião' é sempre 'en avion'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "voyage", "meaning": "viajo (do verbo voyager)" },
+      { "word": "en", "meaning": "de (usado para meios de transporte em que você entra dentro)" },
+      { "word": "avion", "meaning": "avião" }
+    ]
+  },
+  "97": {
+    "explanation": "Uma forma muito educada de perguntar se um local está aberto. Primeiro cita-se o local ('le musée') e depois vem o verbo e o pronome invertidos ('est-il' = está ele?). 'Ouvert' significa 'aberto'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "musée", "meaning": "museu" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para reforçar a pergunta)" },
+      { "word": "ouvert", "meaning": "aberto" }
+    ]
+  },
+  "98": {
+    "explanation": "Pergunta muito polida para pedir ajuda turística. O 'puis-je' é uma forma refinada de 'posso eu' (do verbo pouvoir). Em francês, 'un plan' refere-se ao mapa da cidade ou linhas de metrô, enquanto 'une carte' costuma ser o mapa geográfico de um país inteiro.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "puis", "meaning": "posso (forma formal do verbo pouvoir usada em perguntas)" },
+      { "word": "-je", "meaning": "eu (ligado ao verbo para pergunta)" },
+      { "word": "trouver", "meaning": "encontrar / achar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "plan", "meaning": "mapa (planta da cidade ou do metrô)" }
+    ]
+  },
+  "99": {
+    "explanation": "Frase indispensável para localização. A expressão 'près de' significa 'perto de'. Como 'hôtel' começa com h mudo, o artigo 'le' encurta para 'l''. 'La gare' é a estação ferroviária.",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de som de vogal ou h mudo)" },
+      { "word": "hôtel", "meaning": "hotel" },
+      { "word": "est", "meaning": "é / fica / está (do verbo être)" },
+      { "word": "près", "meaning": "perto" },
+      { "word": "de", "meaning": "de" },
+      { "word": "la", "meaning": "a" },
+      { "word": "gare", "meaning": "estação de trem" }
+    ]
+  },
+  "100": {
+    "explanation": "Regra clássica de negação: 'n'... pas' envolve o verbo ter ('ai'). E na negativa, qualquer artigo vira apenas 'de', ficando 'pas de passeport' (literalmente nada de passaporte).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "de", "meaning": "nenhum / de (usado na negação)" },
+      { "word": "passeport", "meaning": "passaporte" }
+    ]
+  },
+  "101": {
+    "explanation": "Pergunta com inversão: o verbo ter ('as') vem antes da pessoa ('tu') ligado com tracinho. A palavra 'valise' (mala) é feminina em francês, por isso usa 'une valise'.",
+    "breakdown": [
+      { "word": "As", "meaning": "Tem / Tens (do verbo avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "valise", "meaning": "mala" }
+    ]
+  },
+  "102": {
+    "explanation": "Atenção a um gênero diferente: enquanto em português dizemos 'o carro' (masculino), em francês a palavra é feminina: 'la voiture'. 'Très' significa muito e 'rapide' significa rápido ou rápida.",
+    "breakdown": [
+      { "word": "La", "meaning": "A (artigo feminino)" },
+      { "word": "voiture", "meaning": "carro (palavra feminina em francês)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "rapide", "meaning": "rápido / veloz" }
+    ]
+  },
+  "103": {
+    "explanation": "A pergunta que salva vidas no exterior! Em francês, a palavra para banheiro público ('toilettes') é sempre usada no plural, por isso o verbo também vai para o plural: 'Où sont' (onde estão) e não 'onde é'.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "sont", "meaning": "estão / são (do verbo être no plural)" },
+      { "word": "les", "meaning": "os / as" },
+      { "word": "toilettes", "meaning": "banheiros / toaletes (sempre no plural)" }
+    ]
+  },
+  "104": {
+    "explanation": "Forma super curta e prática para saber se algo é longe. 'Est-ce' é a pergunta 'é / isso é?'. A palavra 'loin' significa 'longe', e 'd'ici' é a contração de 'de' com 'ici' (daqui).",
+    "breakdown": [
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-ce", "meaning": "isto / isso (invertido para pergunta)" },
+      { "word": "loin", "meaning": "longe" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "ici", "meaning": "aqui (d'ici = daqui)" }
+    ]
+  },
+  "105": {
+    "explanation": "Instrução de direção no trânsito ou a pé. 'Tourne' é 'vire' (pedido direto). 'À gauche' significa 'à esquerda'. A palavra 'au' é a contração de 'à' (em) com 'le' (o), formando 'na esquina' ('au coin').",
+    "breakdown": [
+      { "word": "Tourne", "meaning": "Vire (do verbo tourner)" },
+      { "word": "à", "meaning": "à / para a" },
+      { "word": "gauche", "meaning": "esquerda" },
+      { "word": "au", "meaning": "no / na (junção de à + le)" },
+      { "word": "coin", "meaning": "canto / esquina" }
+    ]
+  },
+  "106": {
+    "explanation": "A orientação mais comum para quem pede informações na rua. O verbo ir ('va') entra no modo de instrução. A expressão fixa 'tout droit' significa 'em linha reta' ou 'sempre em frente' (cuidado para não confundir com 'à droite', que é para a direita).",
+    "breakdown": [
+      { "word": "Va", "meaning": "Vá / Siga (do verbo aller)" },
+      { "word": "tout", "meaning": "todo / totalmente" },
+      { "word": "droit", "meaning": "reto / em frente (tout droit = direto/em frente)" }
+    ]
+  },
+  "107": {
+    "explanation": "Frase de referência espacial. 'Le parc' é o parque, 'est' é fica/está. A palavra 'derrière' significa 'atrás de'. Como 'école' (escola) começa com som de vogal, o artigo 'la' encurta para 'l''.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "parc", "meaning": "parque" },
+      { "word": "est", "meaning": "é / fica (do verbo être)" },
+      { "word": "derrière", "meaning": "atrás de" },
+      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
+      { "word": "école", "meaning": "escola" }
+    ]
+  },
+  "108": {
+    "explanation": "Para avisar onde você está no momento. 'Je suis' é 'eu estou'. Usa-se 'dans le bus' para dizer 'dentro do ônibus'. A palavra 'maintenant' significa 'agora'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou (do verbo être)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "le", "meaning": "o" },
+      { "word": "bus", "meaning": "ônibus" },
+      { "word": "maintenant", "meaning": "agora" }
+    ]
+  },
+  "109": {
+    "explanation": "Pergunta indispensável no aeroporto. 'Quand' é 'quando' e 'le vol' é 'o voo'. Para a pergunta soar natural, o verbo partir ('part') vem ligado ao pronome 'il' com hífen ('part-il').",
+    "breakdown": [
+      { "word": "Quand", "meaning": "Quando" },
+      { "word": "le", "meaning": "o" },
+      { "word": "vol", "meaning": "voo" },
+      { "word": "part", "meaning": "parte / sai (do verbo partir)" },
+      { "word": "-il", "meaning": "ele (invertido para a pergunta)" }
+    ]
+  },
+  "110": {
+    "explanation": "Para dizer que não gosta de algo, o 'n'... pas' abraça o verbo 'aime' (gosto). O segundo verbo ('voyager' = viajar) fica no formato natural de infinitivo. Para barco, como você vai dentro do meio de transporte, usa-se 'en bateau'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "voyager", "meaning": "viajar" },
+      { "word": "en", "meaning": "de (para transporte)" },
+      { "word": "bateau", "meaning": "barco" }
+    ]
+  },
+  "111": {
+    "explanation": "Para perguntar se 'tem' ou 'há' algo em francês, usa-se a expressão 'Y a-t-il', que é a versão interrogativa de 'il y a' (há/tem). O '-t-' entre hífens serve apenas para ligar a pronúncia. 'Dans l'hôtel' significa 'no hotel'.",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "restaurant", "meaning": "restaurante" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "l'", "meaning": "o (encurtado antes de som de vogal ou h mudo)" },
+      { "word": "hôtel", "meaning": "hotel" }
+    ]
+  },
+  "112": {
+    "explanation": "A maneira mais direta de perguntar 'onde fica?' no turismo. 'Où' é onde e 'est' é fica/está. A expressão oficial em cidades francesas para o centro de atendimento ao turista é 'l'office de tourisme'.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "est", "meaning": "é / fica / está (do verbo être)" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "office", "meaning": "posto / escritório" },
+      { "word": "de", "meaning": "de" },
+      { "word": "tourisme", "meaning": "turismo" }
+    ]
+  },
+  "113": {
+    "explanation": "Para dizer 'eu preciso de' em francês, a expressão correta é 'avoir besoin de' (literalmente ter necessidade de). 'J'ai碎片besoin d'' é 'eu preciso de'. O 's'il vous plaît' é a forma educada e formal de dizer 'por favor', ideal para falar com motoristas ou funcionários.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "besoin", "meaning": "necessidade (avoir besoin de = precisar de)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "taxi", "meaning": "táxi" },
+      { "word": "s'il vous plaît", "meaning": "por favor (formal e polido)" }
+    ]
+  },
+  "114": {
+    "explanation": "Aviso muito comum em viagens. 'Le train' é o trem. Em francês, para dizer que algo está 'atrasado', eles usam 'être en retard' (literalmente estar em atraso). 'Aujourd'hui' significa 'hoje'.",
+    "breakdown": [
+      { "word": "Le", "meaning": "O" },
+      { "word": "train", "meaning": "trem" },
+      { "word": "est", "meaning": "está (do verbo être)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "retard", "meaning": "atraso (en retard = atrasado)" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "115": {
+    "explanation": "Pergunta direta sobre hobbies. O verbo gostar ('aimes') vem antes do pronome ('tu') com hífen para formar a pergunta. O verbo viajar ('voyager') vem logo em seguida na sua forma natural de infinitivo.",
+    "breakdown": [
+      { "word": "Aimes", "meaning": "Gosta / Gostas (do verbo aimer)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "voyager", "meaning": "viajar" }
+    ]
+  },
+  "116": {
+    "explanation": "Para falar sobre hospedagem, os franceses têm um verbo próprio muito bonito: 'séjourner' (ficar / hospedar-se). 'Dans un' significa 'em um', e o adjetivo 'petit' (pequeno) costuma vir antes da palavra hotel.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "séjourne", "meaning": "hospedo-me / fico hospedado (do verbo séjourner)" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "un", "meaning": "um" },
+      { "word": "petit", "meaning": "pequeno" },
+      { "word": "hôtel", "meaning": "hotel" }
+    ]
+  },
+  "117": {
+    "explanation": "O jeito mais prático de pedir direções: 'Comment' (como) seguido direto do verbo ir no infinitivo ('aller'). 'À la plage' é 'à praia', com a preposição 'à' acompanhando o artigo feminino 'la'.",
+    "breakdown": [
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "aller", "meaning": "ir / chegar (como fazer para ir)" },
+      { "word": "à", "meaning": "a / para a" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plage", "meaning": "praia" }
+    ]
+  },
+  "118": {
+    "explanation": "'L'arrêt de bus' é a expressão padrão para ponto de ônibus, com 'l'' encurtado antes de 'arrêt'. Para indicar algo que está à vista a uma certa distância, os franceses usam 'là-bas' (lá / logo adiante).",
+    "breakdown": [
+      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
+      { "word": "arrêt", "meaning": "ponto / parada" },
+      { "word": "de", "meaning": "de" },
+      { "word": "bus", "meaning": "ônibus" },
+      { "word": "est", "meaning": "é / fica (do verbo être)" },
+      { "word": "là-bas", "meaning": "lá / logo ali adiante" }
+    ]
+  },
+  "119": {
+    "explanation": "Pergunta em grupo: o verbo estamos ('sommes') e o sujeito nós ('nous') vêm invertidos com tracinho ('sommes-nous'). A expressão 'à l'' significa 'no/na', encurtada antes do som de 'aéroport'.",
+    "breakdown": [
+      { "word": "Sommes", "meaning": "Estamos (do verbo être)" },
+      { "word": "-nous", "meaning": "nós (invertido para a pergunta)" },
+      { "word": "à", "meaning": "em / no" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "aéroport", "meaning": "aeroporto" }
+    ]
+  },
+  "120": {
+    "explanation": "Frase clássica de qualquer turista na França. A estrutura é idêntica ao português: 'Je veux' (eu quero) seguido diretamente da ação no infinitivo 'visiter' (visitar), sem nenhuma preposição no meio.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "veux", "meaning": "quero (do verbo vouloir)" },
+      { "word": "visiter", "meaning": "visitar" },
+      { "word": "Paris", "meaning": "Paris" }
+    ]
+  }
+}

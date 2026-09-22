@@ -1,672 +1,279 @@
 {
   "1": {
-    "explanation": "Frase canônica de apresentação pessoal. O francês emprega obrigatoriamente o pronome pessoal sujeito ('je') junto ao verbo pronominal reflexivo 's'appeler' (chamar-se), elidindo a partícula reflexiva para 'm'' antes de vogal.",
+    "explanation": "O jeito mais clássico de se apresentar em francês. Repare que você é obrigado a usar o 'je' (eu), porque no francês nunca se omite quem está falando. O 'm'' é o nosso 'me' encurtado antes de som de vogal, e 'appelle' significa 'chamo'.",
     "breakdown": [
-      {
-        "word": "Bonjour",
-        "meaning": "Bom dia / Olá (saudação polida durante o dia)"
-      },
-      {
-        "word": "je",
-        "meaning": "eu (pronome sujeito obrigatório)"
-      },
-      {
-        "word": "m'",
-        "meaning": "me (pronome oblíquo reflexivo elidido de 'me')"
-      },
-      {
-        "word": "appelle",
-        "meaning": "chamo (verbo s'appeler conjugado na 1ª pessoa)"
-      },
-      {
-        "word": "Jean",
-        "meaning": "João (nome próprio masculino)"
-      }
+      { "word": "Bonjour", "meaning": "Bom dia / Olá" },
+      { "word": "je", "meaning": "eu (sempre obrigatório na frase)" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "appelle", "meaning": "chamo (do verbo s'appeler)" },
+      { "word": "Jean", "meaning": "João (nome próprio)" }
     ]
   },
   "2": {
-    "explanation": "Pergunta direta de registro culto/formal. A sintaxe inverte a posição do verbo e do pronome sujeito conectando-os por hífen ('vas-tu', em vez de 'tu vas'). O advérbio 'comment' encabeça a pergunta.",
+    "explanation": "Pergunta muito comum no dia a dia. Para fazer perguntas, os franceses costumam inverter a ordem e colocar o verbo antes da pessoa, ligando os dois com um tracinho ('vas-tu' em vez de 'tu vas'). A palavra 'aujourd'hui' parece comprida, mas é apenas o jeito deles dizerem 'hoje'.",
     "breakdown": [
-      {
-        "word": "Comment",
-        "meaning": "Como (advérbio interrogativo)"
-      },
-      {
-        "word": "vas",
-        "meaning": "vais / vai (presente do verbo aller)"
-      },
-      {
-        "word": "-tu",
-        "meaning": "tu / você (pronome sujeito invertido na interrogação)"
-      },
-      {
-        "word": "aujourd'hui",
-        "meaning": "hoje (advérbio temporal)"
-      }
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "vas", "meaning": "vai / vais (do verbo aller)" },
+      { "word": "-tu", "meaning": "você / tu (invertido para formar a pergunta)" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
     ]
   },
   "3": {
-    "explanation": "Em francês não se usa o verbo 'estar' para responder sobre saúde ou bem-estar; emprega-se o verbo 'aller' (ir) na 1ª pessoa ('je vais bien', literalmente 'eu vou bem'), seguido pela fórmula de cortesia 'merci'.",
+    "explanation": "Em francês, para responder como você está, usa-se o verbo 'ir' (aller) em vez de 'estar'. A lógica deles é literalmente 'eu vou bem' (je vais bien). 'Merci' é o clássico 'obrigado' de educação.",
     "breakdown": [
-      {
-        "word": "Je",
-        "meaning": "Eu (pronome sujeito)"
-      },
-      {
-        "word": "vais",
-        "meaning": "vou / estou (verbo aller no presente)"
-      },
-      {
-        "word": "bien",
-        "meaning": "bem (advérbio de modo)"
-      },
-      {
-        "word": "merci",
-        "meaning": "obrigado (fórmula de polidez e agradecimento)"
-      }
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "vais", "meaning": "vou / estou (do verbo aller)" },
+      { "word": "bien", "meaning": "bem" },
+      { "word": "merci", "meaning": "obrigado" }
     ]
   },
   "4": {
-    "explanation": "Particípio passado adjetivado do verbo 'enchanter' (encantar). Atua como elipse da expressão formal 'Je suis enchanté de faire votre connaissance'. Se dita por uma mulher, escreve-se 'Enchantée'.",
+    "explanation": "Forma direta e muito usada para dizer 'prazer em te conhecer'. É como se a pessoa dissesse 'encantado'. Se quem estiver falando for mulher, na escrita acrescenta-se um 'e' no final (Enchantée), mas o som continua exatamente o mesmo.",
     "breakdown": [
-      {
-        "word": "Enchanté",
-        "meaning": "Encantado / Muito prazer em conhecê-lo (particípio masculino singular)"
-      }
+      { "word": "Enchanté", "meaning": "Encantado / Muito prazer" }
     ]
   },
   "5": {
-    "explanation": "Saudação coletiva que une a palavra de cumprimento 'Bonjour' à preposição de direção 'à' e ao pronome indefinido coletivo plural 'tous'. Na pronúncia isolada como pronome, a consoante 's' final de 'tous' é obrigatoriamente articulada.",
+    "explanation": "Cumprimento perfeito para quando você chega em um grupo ou entra em uma sala. 'Bonjour' é o 'olá/bom dia', o 'à' é 'a/para', e 'tous' significa 'todos'. Uma curiosidade: quando 'tous' significa 'todos' sozinho assim, a letra 's' no final é pronunciada com som de 'ss'.",
     "breakdown": [
-      {
-        "word": "Bonjour",
-        "meaning": "Bom dia / Olá"
-      },
-      {
-        "word": "à",
-        "meaning": "a / para (preposição)"
-      },
-      {
-        "word": "tous",
-        "meaning": "todos (pronome indefinido plural com 's' sonoro)"
-      }
+      { "word": "Bonjour", "meaning": "Bom dia / Olá" },
+      { "word": "à", "meaning": "a / para" },
+      { "word": "tous", "meaning": "todos (com som do 's' final)" }
     ]
   },
   "6": {
-    "explanation": "Pergunta sobre nacionalidade ou procedência geográfica. A preposição de origem 'de' sofre elisão diante do advérbio 'où' que inicia por vogal ('d'où'). O verbo irregular 'venir' sofre inversão hifenizada com o sujeito 'tu'.",
+    "explanation": "Pergunta para saber de onde alguém é. O 'd'' é a preposição 'de' que perdeu a vogal porque 'où' (onde) começa com som de vogal. O verbo 'viens' (vir) e a pessoa 'tu' vêm invertidos com tracinho por se tratar de uma pergunta.",
     "breakdown": [
-      {
-        "word": "D'",
-        "meaning": "de (preposição de proveniência elidida diante de vogal)"
-      },
-      {
-        "word": "où",
-        "meaning": "onde (advérbio interrogativo de lugar)"
-      },
-      {
-        "word": "viens",
-        "meaning": "vens / vem (verbo irregular venir no presente)"
-      },
-      {
-        "word": "-tu",
-        "meaning": "tu / você (pronome sujeito invertido)"
-      }
+      { "word": "D'", "meaning": "De (encurtado antes de vogal)" },
+      { "word": "où", "meaning": "onde" },
+      { "word": "viens", "meaning": "vem / vens (do verbo venir)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" }
     ]
   },
   "7": {
-    "explanation": "Declaração de proveniência com o verbo 'venir' conjugado na 1ª pessoa ('je viens'). Países femininos que começam por vogal como 'Espagne' dispensam o artigo definido ao indicar procedência com a preposição elidida 'd''.",
+    "explanation": "Para dizer seu país de origem, usa-se o verbo vir ('je viens' = eu venho). Quando o país começa com vogal, como Espanha (Espagne), o 'de' encurta para 'd''. Em francês, países femininos que começam com vogal não precisam de artigo nessa resposta.",
     "breakdown": [
-      {
-        "word": "Je",
-        "meaning": "Eu (pronome sujeito)"
-      },
-      {
-        "word": "viens",
-        "meaning": "venho / sou (verbo irregular venir)"
-      },
-      {
-        "word": "d'",
-        "meaning": "de (preposição de procedência contraída)"
-      },
-      {
-        "word": "Espagne",
-        "meaning": "Espanha (substantivo próprio de país feminino)"
-      }
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "viens", "meaning": "venho / sou (do verbo venir)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "Espagne", "meaning": "Espanha" }
     ]
   },
   "8": {
-    "explanation": "Pergunta com inversão verbal do verbo 'être' ('es-tu'). Em francês, substantivos que indicam ocupação ou profissão não admitem artigo indefinido após o verbo être ('es-tu étudiant?' e nunca 'es-tu un étudiant?').",
+    "explanation": "Aqui temos uma pergunta invertida: 'Es-tu' significa 'você é' em formato de pergunta. Repare em um detalhe muito importante do francês: profissões e ocupações não usam 'um/uma' depois do verbo ser ('es-tu étudiant?' e nunca 'es-tu un étudiant?').",
     "breakdown": [
-      {
-        "word": "Es",
-        "meaning": "És / É (verbo être no presente)"
-      },
-      {
-        "word": "-tu",
-        "meaning": "você / tu (pronome sujeito hifenizado)"
-      },
-      {
-        "word": "étudiant",
-        "meaning": "estudante (ocupação masculina singular sem artigo)"
-      }
+      { "word": "Es", "meaning": "É / És (do verbo être - ser/estar)" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "étudiant", "meaning": "estudante" }
     ]
   },
   "9": {
-    "explanation": "Construção de negação descontínua em dois termos: a partícula 'ne' (elidida em 'n'' antes de vogal) antecede o verbo conjugado 'est', enquanto a partícula 'pas' vem imediatamente após. O possessivo 'mon' concorda com 'frère'.",
+    "explanation": "Para dizer 'não' em francês com verbos, a língua usa uma estrutura em duas partes que abraça a ação: o 'n'' vem antes do verbo (encurtado porque 'est' começa com vogal) e o 'pas' vem logo depois. O 'mon' funciona exatamente como o nosso 'meu'.",
     "breakdown": [
-      {
-        "word": "Il",
-        "meaning": "Ele (pronome sujeito masculino da 3ª pessoa)"
-      },
-      {
-        "word": "n'",
-        "meaning": "não (primeira parte da negação ne ... pas)"
-      },
-      {
-        "word": "est",
-        "meaning": "é (3ª pessoa do singular do verbo être)"
-      },
-      {
-        "word": "pas",
-        "meaning": "não (segunda parte que fecha a negação verbal)"
-      },
-      {
-        "word": "mon",
-        "meaning": "meu (determinante possessivo masculino singular)"
-      },
-      {
-        "word": "frère",
-        "meaning": "irmão (substantivo masculino singular)"
-      }
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "frère", "meaning": "irmão" }
     ]
   },
   "10": {
-    "explanation": "Sentença afirmativa atributiva. 'Meilleure' é a forma feminina irregular do comparativo/superlativo de superioridade de 'bon' ('melhor'), concordando em gênero feminino com o substantivo 'amie'.",
+    "explanation": "Frase direta de apresentação de amizade. 'Elle est' é 'ela é'. A palavra 'meilleure' é a forma feminina de 'melhor' (adiciona um 'e' no final), combinando direitinho com 'amie' (amiga).",
     "breakdown": [
-      {
-        "word": "Elle",
-        "meaning": "Ela (pronome sujeito feminino)"
-      },
-      {
-        "word": "est",
-        "meaning": "é (verbo être)"
-      },
-      {
-        "word": "ma",
-        "meaning": "minha (adjetivo possessivo feminino singular)"
-      },
-      {
-        "word": "meilleure",
-        "meaning": "melhor (adjetivo superlativo irregular feminino)"
-      },
-      {
-        "word": "amie",
-        "meaning": "amiga (substantivo feminino singular)"
-      }
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ma", "meaning": "minha" },
+      { "word": "meilleure", "meaning": "melhor (no feminino)" },
+      { "word": "amie", "meaning": "amiga" }
     ]
   },
   "11": {
-    "explanation": "Interrogação sobre identidade pessoal. O adjetivo interrogativo 'Quel' é grafado no masculino singular para concordar diretamente com o substantivo 'nom'. 'Ton' é o possessivo informal para a 2ª pessoa do singular.",
+    "explanation": "O jeito comum de perguntar o nome de alguém. 'Quel' significa 'qual'. O 'ton' é o 'seu' informal, usado quando você está conversando com alguém da sua idade, amigos ou familiares.",
     "breakdown": [
-      {
-        "word": "Quel",
-        "meaning": "Qual (adjetivo interrogativo masculino singular)"
-      },
-      {
-        "word": "est",
-        "meaning": "é (verbo être)"
-      },
-      {
-        "word": "ton",
-        "meaning": "teu / seu (possessivo masculino singular para 'tu')"
-      },
-      {
-        "word": "nom",
-        "meaning": "nome (substantivo masculino)"
-      }
+      { "word": "Quel", "meaning": "Qual" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "ton", "meaning": "seu / teu (informal)" },
+      { "word": "nom", "meaning": "nome" }
     ]
   },
   "12": {
-    "explanation": "Declaração de competência em idioma. 'Je parle' é o presente do indicativo do verbo regular do primeiro grupo 'parler'. A locução adverbial de quantidade 'un peu' qualifica o grau de domínio da língua.",
+    "explanation": "Frase muito útil para quem está aprendendo. 'Je parle' é 'eu falo'. A expressão 'un peu' significa literalmente 'um pouco' e serve para amenizar o nível de fluência no idioma.",
     "breakdown": [
-      {
-        "word": "Je",
-        "meaning": "Eu (pronome sujeito)"
-      },
-      {
-        "word": "parle",
-        "meaning": "falo (verbo regular parler na 1ª pessoa)"
-      },
-      {
-        "word": "un",
-        "meaning": "um (artigo indefinido masculino)"
-      },
-      {
-        "word": "peu",
-        "meaning": "pouco (advérbio de quantidade que junto forma 'un peu')"
-      },
-      {
-        "word": "anglais",
-        "meaning": "inglês (nome do idioma sem artigo)"
-      }
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "parle", "meaning": "falo (do verbo parler)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco" },
+      { "word": "anglais", "meaning": "inglês (idioma)" }
     ]
   },
   "13": {
-    "explanation": "Interrogação direta com o verbo no início ('Parles-tu'). Observe a presença da terminação '-es' regular da 2ª pessoa do singular dos verbos em '-er' seguida obrigatoriamente de hífen antes do pronome.",
+    "explanation": "Pergunta direta sobre idiomas. O verbo falar ('parles') vem na frente com 'tu' ligado por hífen. Repare que no presente com 'tu', os verbos regulares recebem um 's' no final da escrita.",
     "breakdown": [
-      {
-        "word": "Parles",
-        "meaning": "Falas / Fala (verbo parler conjugado para 'tu')"
-      },
-      {
-        "word": "-tu",
-        "meaning": "tu / você (pronome invertido com hífen)"
-      },
-      {
-        "word": "anglais",
-        "meaning": "inglês (idioma)"
-      }
+      { "word": "Parles", "meaning": "Fala / Falas (do verbo parler com 'tu')" },
+      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
+      { "word": "anglais", "meaning": "inglês" }
     ]
   },
   "14": {
-    "explanation": "Expressão basilar de não entendimento. O verbo da 3ª conjugação irregular 'comprendre' (compreender) fica envelopado pela dupla negação 'ne ... pas'. Em linguagem falada informal o 'ne' costuma ser omitido, mas na norma culta é indispensável.",
+    "explanation": "A frase de socorro para qualquer situação no exterior! O verbo 'comprendre' (entender) fica no meio do sanduíche de negação: 'ne' antes e 'pas' depois. Na fala rápida do dia a dia nas ruas, é comum os nativos engolirem o 'ne' e falarem só 'je comprends pas'.",
     "breakdown": [
-      {
-        "word": "Je",
-        "meaning": "Eu (pronome sujeito)"
-      },
-      {
-        "word": "ne",
-        "meaning": "não (primeira partícula da negação descontínua)"
-      },
-      {
-        "word": "comprends",
-        "meaning": "compreendo / entendo (verbo comprendre na 1ª pessoa)"
-      },
-      {
-        "word": "pas",
-        "meaning": "não (segunda partícula de negação)"
-      }
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "comprends", "meaning": "entendo / compreendo (do verbo comprendre)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" }
     ]
   },
   "15": {
-    "explanation": "Pedido imperativo informal. 'S'il te plaît' é a fórmula consagrada construída pela conjunção condicional 'si' elidida em 's'' diante de 'il'. O imperativo de verbos em '-er' perde o '-s' final na 2ª pessoa ('parle' e não 'parles').",
+    "explanation": "O clássico 'por favor' do francês (s'il te plaît) significa ao pé da letra 'se isso te agrada'. Como a conversa é informal, o verbo falar (parle) entra no modo de pedido. Um detalhe importante: enquanto no presente comum se escreve 'tu parles' com S, na hora de fazer um pedido ou dar uma instrução o S cai fora. A palavra 'lentement' é a junção de lente (lenta) com o sufixo -ment (o nosso '-mente').",
     "breakdown": [
-      {
-        "word": "S'",
-        "meaning": "Se (conjunção condicional si elidida antes de vogal)"
-      },
-      {
-        "word": "il",
-        "meaning": "ele / isso (pronome impessoal neutro)"
-      },
-      {
-        "word": "te",
-        "meaning": "te / a ti (pronome objeto da 2ª pessoa)"
-      },
-      {
-        "word": "plaît",
-        "meaning": "agrada (verbo plaire no presente indicativo)"
-      },
-      {
-        "word": "parle",
-        "meaning": "fala / fale (modo imperativo afirmativo sem '-s')"
-      },
-      {
-        "word": "lentement",
-        "meaning": "lentamente / devagar (advérbio formado com o sufixo -ment)"
-      }
+      { "word": "S'il te plaît", "meaning": "por favor (jeito informal usado com amigos e conhecidos)" },
+      { "word": "parle", "meaning": "fale / fala (pedido direto, sem o 's' no final)" },
+      { "word": "lentement", "meaning": "devagar / lentamente" }
     ]
   },
   "16": {
-    "explanation": "Pergunta sobre ortografia. 'Comment' inicia a oração interrogativa. 'Ça' é o pronome demonstrativo informal que atua como sujeito. 'S'écrit' é o verbo 'écrire' na voz passiva pronominal reflexiva.",
+    "explanation": "Pergunta salvadora quando você ouve uma palavra e precisa saber as letras. 'Comment' é 'como', 'ça' significa 'isso' e 's'écrit' significa literalmente 'se escreve' (da mesma família de escrever).",
     "breakdown": [
-      {
-        "word": "Comment",
-        "meaning": "Como (advérbio interrogativo de modo)"
-      },
-      {
-        "word": "ça",
-        "meaning": "isso / esta palavra (demonstrativo contraído de 'cela')"
-      },
-      {
-        "word": "s'",
-        "meaning": "se (partícula pronominal reflexiva com valor passivo)"
-      },
-      {
-        "word": "écrit",
-        "meaning": "escreve (verbo irrégulier écrire na 3ª pessoa)"
-      }
+      { "word": "Comment", "meaning": "Como" },
+      { "word": "ça", "meaning": "isso" },
+      { "word": "s'", "meaning": "se (mostra que a palavra é escrita)" },
+      { "word": "écrit", "meaning": "escreve (do verbo écrire)" }
     ]
   },
   "17": {
-    "explanation": "Despedida tradicional dupla. 'Au revoir' é a fusão da preposição contraída 'au' (à + le) com o substantivo verbal 'revoir' (rever). 'À plus tard' é a fórmula adverbial que projeta o reencontro para mais tarde no mesmo dia.",
+    "explanation": "Duas formas clássicas de despedida juntas. 'Au revoir' significa literalmente 'ao rever' (até nos vermos de novo). E 'à plus tard' é o nosso 'até mais tarde', perfeito para quando você sabe que vai ver a pessoa ainda no mesmo dia.",
     "breakdown": [
-      {
-        "word": "Au",
-        "meaning": "Ao / Até o (contração prepositiva de à + le)"
-      },
-      {
-        "word": "revoir",
-        "meaning": "rever / reencontro (substantivo masculino)"
-      },
-      {
-        "word": "à",
-        "meaning": "até (preposição temporal)"
-      },
-      {
-        "word": "plus",
-        "meaning": "mais (advérbio comparativo)"
-      },
-      {
-        "word": "tard",
-        "meaning": "tarde (advérbio temporal de posteridade)"
-      }
+      { "word": "Au", "meaning": "Ao / Até o" },
+      { "word": "revoir", "meaning": "rever / reencontro" },
+      { "word": "à", "meaning": "até" },
+      { "word": "plus", "meaning": "mais" },
+      { "word": "tard", "meaning": "tarde" }
     ]
   },
   "18": {
-    "explanation": "Voto cordial emitido ao se despedir. Distingue-se de 'bonjour' porque 'journée' designa a extensão, duração e vivência das horas do dia. Sendo substantivo feminino, exige o adjetivo flexionado 'Bonne'.",
+    "explanation": "Expressão usada para desejar que o restante do dia da pessoa seja ótimo. Diferente de 'bonjour' (que você usa para cumprimentar na chegada), 'bonne journée' é dita na hora de ir embora. 'Journée' é feminina, por isso usa 'bonne'.",
     "breakdown": [
-      {
-        "word": "Bonne",
-        "meaning": "Boa (adjetivo feminino singular de 'bon')"
-      },
-      {
-        "word": "journée",
-        "meaning": "jornada / o passar do dia (substantivo feminino singular)"
-      }
+      { "word": "Bonne", "meaning": "Boa (feminino de bon)" },
+      { "word": "journée", "meaning": "jornada / dia (o período todo do dia)" }
     ]
   },
   "19": {
-    "explanation": "Estrutura apresentativa canônica. O pronome demonstrativo neutro 'ce' elide-se perante o verbo 'est' formando 'C'est' ('Este é / É'). O determinante possessivo 'mon' qualifica o substantivo masculino 'professeur'.",
+    "explanation": "A expressão 'C'est' é a mais usada no francês para apontar ou apresentar algo ou alguém: significa 'este é', 'esta é' ou simplesmente 'é'. 'Mon' é o possessivo 'meu', e 'professeur' serve tanto para professor quanto para professora.",
     "breakdown": [
-      {
-        "word": "C'",
-        "meaning": "Isto / Este (pronome demonstrativo neutro ce elidido)"
-      },
-      {
-        "word": "est",
-        "meaning": "é (verbo être)"
-      },
-      {
-        "word": "mon",
-        "meaning": "meu (adjetivo possessivo masculino singular)"
-      },
-      {
-        "word": "professeur",
-        "meaning": "professor (substantivo masculino singular)"
-      }
+      { "word": "C'", "meaning": "Este / Isto (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "mon", "meaning": "meu" },
+      { "word": "professeur", "meaning": "professor / professora" }
     ]
   },
   "20": {
-    "explanation": "Sentença negativa no plural. O pronome sujeito 'Ils' concorda com a 3ª pessoa do plural do verbo être ('sont'), envolvido pela negação 'ne ... pas'. A preposição 'de' indica procedência urbana sem artigo antes do nome próprio de cidade.",
+    "explanation": "Negação no plural. 'Ils' significa 'eles' e 'sont' é 'são'. O 'ne... pas' abraça o verbo 'sont'. A preposição 'de' indica de onde eles vêm, e antes de nomes de cidades (como Londres) não se usa nenhum artigo.",
     "breakdown": [
-      {
-        "word": "Ils",
-        "meaning": "Eles (pronome sujeito masculino plural)"
-      },
-      {
-        "word": "ne",
-        "meaning": "não (primeira partícula negativa)"
-      },
-      {
-        "word": "sont",
-        "meaning": "são (3ª pessoa do plural do verbo être)"
-      },
-      {
-        "word": "pas",
-        "meaning": "não (segunda partícula negativa)"
-      },
-      {
-        "word": "de",
-        "meaning": "de (preposição de procedência / origem)"
-      },
-      {
-        "word": "Londres",
-        "meaning": "Londres (nome próprio de cidade)"
-      }
+      { "word": "Ils", "meaning": "Eles" },
+      { "word": "ne", "meaning": "primeira parte do 'não'" },
+      { "word": "sont", "meaning": "são (do verbo être)" },
+      { "word": "pas", "meaning": "segunda parte que fecha o 'não'" },
+      { "word": "de", "meaning": "de (indica procedência)" },
+      { "word": "Londres", "meaning": "Londres" }
     ]
   },
   "21": {
-    "explanation": "Pergunta com inversão verbal: o verbo 'est' e o pronome 'il' unem-se por hífen com pronúncia enlaçada [ɛ.til]. O possessivo 'ton' é o masculino singular da 2ª pessoa que acompanha 'ami'.",
+    "explanation": "Pergunta com inversão: o verbo 'est' (é) vem na frente do pronome 'il' (ele), ligados pelo tracinho. Na pronúncia falada, o som do 't' se junta com o 'i', soando quase como 'étil'. 'Ton ami' é 'seu amigo'.",
     "breakdown": [
-      {
-        "word": "Est",
-        "meaning": "É (verbo être)"
-      },
-      {
-        "word": "-il",
-        "meaning": "ele (pronome sujeito da 3ª pessoa)"
-      },
-      {
-        "word": "ton",
-        "meaning": "teu / seu (adjetivo possessivo masculino singular)"
-      },
-      {
-        "word": "ami",
-        "meaning": "amigo (substantivo masculino singular)"
-      }
+      { "word": "Est", "meaning": "É (do verbo être)" },
+      { "word": "-il", "meaning": "ele (invertido para fazer a pergunta)" },
+      { "word": "ton", "meaning": "seu / teu" },
+      { "word": "ami", "meaning": "amigo" }
     ]
   },
   "22": {
-    "explanation": "Saudação de hospitalidade. 'Bienvenue' é seguido da preposição locativa 'dans', que expressa a entrada no interior de um espaço fechado ou habitacional, antecedendo o possessivo coletivo 'notre'.",
+    "explanation": "Forma calorosa de acolher alguém. 'Bienvenue' significa 'bem-vindo(a)'. A palavra 'dans' significa literalmente 'dentro de', e 'notre maison' é 'nossa casa'. 'Notre' serve tanto para palavras masculinas quanto femininas.",
     "breakdown": [
-      {
-        "word": "Bienvenue",
-        "meaning": "Bem-vindo / Bem-vinda (fórmula de acolhimento)"
-      },
-      {
-        "word": "dans",
-        "meaning": "em / no interior de (preposição de espaço)"
-      },
-      {
-        "word": "notre",
-        "meaning": "nossa (adjetivo possessivo comum para masculino e feminino)"
-      },
-      {
-        "word": "maison",
-        "meaning": "casa (substantivo feminino singular)"
-      }
+      { "word": "Bienvenue", "meaning": "Bem-vindo / Bem-vinda" },
+      { "word": "dans", "meaning": "em / dentro de" },
+      { "word": "notre", "meaning": "nossa / nosso" },
+      { "word": "maison", "meaning": "casa" }
     ]
   },
   "23": {
-    "explanation": "Abordagem cerimoniosa de polidez. 'Excusez-moi' usa o imperativo formal da 2ª pessoa do plural ('vous'). Para perguntar as horas, o francês emprega a fórmula impessoal fixa com o sujeito neutro 'il': 'quelle heure est-il?'.",
+    "explanation": "Frase educada para pedir informação na rua. 'Excusez-moi' é a forma respeitosa de dizer 'com licença' ou 'desculpe'. Para perguntar as horas, os franceses têm essa fórmula fixa: 'quelle heure est-il?' (literalmente 'que hora é ela?').",
     "breakdown": [
-      {
-        "word": "Excusez",
-        "meaning": "Desculpe / Desculpem (modo imperativo formal do verbo excuser)"
-      },
-      {
-        "word": "-moi",
-        "meaning": "me / a mim (pronome oblíquo tônico posposto ao imperativo)"
-      },
-      {
-        "word": "quelle",
-        "meaning": "que / qual (adjetivo interrogativo feminino singular)"
-      },
-      {
-        "word": "heure",
-        "meaning": "hora (substantivo feminino singular)"
-      },
-      {
-        "word": "est",
-        "meaning": "é (verbo être)"
-      },
-      {
-        "word": "-il",
-        "meaning": "ele (pronome impessoal obrigatório na construção temporal)"
-      }
+      { "word": "Excusez", "meaning": "Desculpe / Com licença (jeito educado e formal)" },
+      { "word": "-moi", "meaning": "me / a mim" },
+      { "word": "quelle", "meaning": "qual / que (feminino de quel)" },
+      { "word": "heure", "meaning": "hora" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "-il", "meaning": "ele (peça fixa obrigatória para perguntar as horas)" }
     ]
   },
   "24": {
-    "explanation": "Expressão de pesar e desculpas por atraso. O adjetivo 'désolé' rege a preposição 'de' (elidida em 'd'') para se conectar ao verbo no infinitivo 'être'. A locução adverbial 'en retard' expressa a condição temporal de impontualidade.",
+    "explanation": "O jeito perfeito de se desculpar por um atraso. 'Je suis désolé' significa 'sinto muito' ou 'peço desculpas'. Para dizer 'por estar atrasado', liga-se com 'd'' antes de 'être' (estar). A expressão 'en retard' significa literalmente 'em atraso'.",
     "breakdown": [
-      {
-        "word": "Je",
-        "meaning": "Eu (pronome sujeito)"
-      },
-      {
-        "word": "suis",
-        "meaning": "estou / sou (verbo être na 1ª pessoa)"
-      },
-      {
-        "word": "désolé",
-        "meaning": "desolado / arrependido / sinto muito (adjetivo)"
-      },
-      {
-        "word": "d'",
-        "meaning": "de / por (preposição conectora elidida antes de vogal)"
-      },
-      {
-        "word": "être",
-        "meaning": "estar (verbo auxiliar no modo infinitivo)"
-      },
-      {
-        "word": "en",
-        "meaning": "em (preposição formadora de locução)"
-      },
-      {
-        "word": "retard",
-        "meaning": "atraso (formando a locução 'en retard' = atrasado)"
-      }
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "estou / sou (do verbo être)" },
+      { "word": "désolé", "meaning": "desolado / sinto muito" },
+      { "word": "d'", "meaning": "de / por (encurtado antes de vogal)" },
+      { "word": "être", "meaning": "estar" },
+      { "word": "en", "meaning": "em" },
+      { "word": "retard", "meaning": "atraso (junto com 'en' significa atrasado)" }
     ]
   },
   "25": {
-    "explanation": "Pedido direto de auxílio. Emprega a inversão do verbo modal de capacidade 'pouvoir' ('peux-tu') regendo o pronome objeto direto 'me' (elidido em 'm'') antes do infinitivo 'aider'.",
+    "explanation": "Pedido amigável de socorro. 'Peux-tu' é a inversão de 'você pode'. O 'm'' é o 'me' encurtado antes do verbo ajudar ('aider'). No final, fecha com a fórmula carinhosa 's'il te plaît' (por favor).",
     "breakdown": [
-      {
-        "word": "Peux",
-        "meaning": "Podes / Pode (verbo modal pouvoir no presente)"
-      },
-      {
-        "word": "-tu",
-        "meaning": "tu / você (pronome sujeito invertido com hífen)"
-      },
-      {
-        "word": "m'",
-        "meaning": "me (pronome oblíquo elidido diante do verbo que começa com vogal)"
-      },
-      {
-        "word": "aider",
-        "meaning": "ajudar (verbo de ação no modo infinitivo)"
-      },
-      {
-        "word": "s'il te plaît",
-        "meaning": "por favor (fórmula fixa de cortesia informal)"
-      }
+      { "word": "Peux", "meaning": "Pode / Podes (do verbo pouvoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
+      { "word": "aider", "meaning": "ajudar" },
+      { "word": "s'il te plaît", "meaning": "por favor (informal)" }
     ]
   },
   "26": {
-    "explanation": "Frase de cortesia ao ser apresentado a alguém. O apresentativo impessoal 'C'est' sustenta o substantivo 'plaisir', conectando-se pela preposição 'de' à oração infinitiva onde o pronome 'te' antecede 'rencontrer'.",
+    "explanation": "Uma forma muito simpática e acolhedora de dizer que gostou de conhecer a pessoa. 'C'est un plaisir' significa 'é um prazer'. A palavra 'de' liga a frase à ação seguinte, onde o 'te' (te/você) vem colado antes do verbo 'rencontrer' (conhecer/encontrar).",
     "breakdown": [
-      {
-        "word": "C'",
-        "meaning": "Isto (pronome demonstrativo neutro ce elidido)"
-      },
-      {
-        "word": "est",
-        "meaning": "é (verbo être)"
-      },
-      {
-        "word": "un",
-        "meaning": "um (artigo indefinido masculino)"
-      },
-      {
-        "word": "plaisir",
-        "meaning": "prazer (substantivo masculino singular)"
-      },
-      {
-        "word": "de",
-        "meaning": "de (preposição conectiva obrigatória perante o infinitivo)"
-      },
-      {
-        "word": "te",
-        "meaning": "te / você (pronome objeto direto da 2ª pessoa)"
-      },
-      {
-        "word": "rencontrer",
-        "meaning": "encontrar / conhecer pela primeira vez (verbo no infinitivo)"
-      }
+      { "word": "C'", "meaning": "Isto / É" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "plaisir", "meaning": "prazer" },
+      { "word": "de", "meaning": "de" },
+      { "word": "te", "meaning": "te / você" },
+      { "word": "rencontrer", "meaning": "conhecer / encontrar" }
     ]
   },
   "27": {
-    "explanation": "Interrogação sobre a identidade de uma pessoa através do pronome 'Qui'. A palavra 'cet' é a variante eufônica especial do adjetivo demonstrativo masculino 'ce', adotada obrigatoriamente quando o substantivo inicia por 'h' mudo ou vogal.",
+    "explanation": "Pergunta para identificar alguém. 'Qui' significa 'quem'. A palavra 'cet' é uma forma especial da palavra 'ce' (este/aquele), usada obrigatoriamente antes de palavras masculinas que começam com vogal ou som mudo (como 'homme'), só para a pronúncia soar bonita e sem tropeço.",
     "breakdown": [
-      {
-        "word": "Qui",
-        "meaning": "Quem (pronome interrogativo de pessoa)"
-      },
-      {
-        "word": "est",
-        "meaning": "é (3ª pessoa do singular do verbo être)"
-      },
-      {
-        "word": "cet",
-        "meaning": "este / aquele (adjetivo demonstrativo masculino eufônico diante de h mudo)"
-      },
-      {
-        "word": "homme",
-        "meaning": "homem (substantivo masculino que inicia com h mudo)"
-      }
+      { "word": "Qui", "meaning": "Quem" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "cet", "meaning": "este / aquele (usado antes de palavra masculina com som de vogal)" },
+      { "word": "homme", "meaning": "homem (o 'h' não tem som)" }
     ]
   },
   "28": {
-    "explanation": "Sentença de estado emocional coletivo. O adjetivo 'heureux' termina na consoante '-x' e permanece formalmente invariável quando pluralizado no masculino. O advérbio 'très' intensifica o sentimento.",
+    "explanation": "Frase que expressa alegria em grupo. 'Nous sommes' é 'nós estamos' ou 'nós somos'. A palavra 'très' significa 'muito'. O adjetivo 'heureux' (felizes) termina com 'x' tanto no singular quanto no plural masculino, então a escrita não muda nada.",
     "breakdown": [
-      {
-        "word": "Nous",
-        "meaning": "Nós (pronome sujeito da 1ª pessoa do plural)"
-      },
-      {
-        "word": "sommes",
-        "meaning": "estamos / somos (verbo être conjugado no presente)"
-      },
-      {
-        "word": "très",
-        "meaning": "muito (advérbio invariável de intensidade)"
-      },
-      {
-        "word": "heureux",
-        "meaning": "felizes (adjetivo masculino plural que mantém o -x final)"
-      },
-      {
-        "word": "aujourd'hui",
-        "meaning": "hoje (advérbio de tempo presente)"
-      }
+      { "word": "Nous", "meaning": "Nós" },
+      { "word": "sommes", "meaning": "estamos / somos (do verbo être)" },
+      { "word": "très", "meaning": "muito" },
+      { "word": "heureux", "meaning": "felizes / contentes" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
     ]
   },
   "29": {
-    "explanation": "Pergunta com inversão verbal no plural ('Sont-ils'). Atenção para o substantivo plural 'parents': em francês ele designa estritamente o pai e a mãe (pais), não devendo ser confundido com outros familiares consanguíneos.",
+    "explanation": "Pergunta com inversão: 'Sont-ils' significa 'eles são?'. Atenção para a palavra 'parents': em francês ela significa especificamente 'pai e mãe' (pais), e não parentes em geral (que seriam 'proches' ou 'famille').",
     "breakdown": [
-      {
-        "word": "Sont",
-        "meaning": "São (3ª pessoa do plural do verbo être)"
-      },
-      {
-        "word": "-ils",
-        "meaning": "eles (pronome sujeito invertido na pergunta)"
-      },
-      {
-        "word": "tes",
-        "meaning": "teus / seus (adjetivo possessivo plural da 2ª pessoa)"
-      },
-      {
-        "word": "parents",
-        "meaning": "pais (substantivo masculino plural que designa pai e mãe)"
-      }
+      { "word": "Sont", "meaning": "São (do verbo être)" },
+      { "word": "-ils", "meaning": "eles (invertido para a pergunta)" },
+      { "word": "tes", "meaning": "seus / teus (para palavras no plural)" },
+      { "word": "parents", "meaning": "pais (pai e mãe)" }
     ]
   },
   "30": {
-    "explanation": "Agradecimento enfático de cortesia universal. Combina o termo fundamental de polidez 'merci' com o advérbio quantitativo de intensidade 'beaucoup', que nunca se pluraliza nem aceita preposição direta.",
+    "explanation": "O agradecimento mais comum da língua francesa. Junta 'merci' (obrigado) com 'beaucoup' (muito). Um detalhe curioso: os franceses nunca dizem 'muito obrigado' com 'très', a combinação correta é sempre 'merci beaucoup'.",
     "breakdown": [
-      {
-        "word": "Merci",
-        "meaning": "Obrigado / Agradeço (interjeição de gratidão)"
-      },
-      {
-        "word": "beaucoup",
-        "meaning": "muito (advérbio de intensidade)"
-      }
+      { "word": "Merci", "meaning": "Obrigado" },
+      { "word": "beaucoup", "meaning": "muito" }
     ]
   }
 }

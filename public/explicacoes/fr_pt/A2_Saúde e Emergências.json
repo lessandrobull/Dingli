@@ -1,0 +1,356 @@
+{
+  "511": {
+    "explanation": "Para falar de dor de cabeça forte, usa-se 'un mal de tête' (literalmente 'um mal de cabeça'). A palavra 'terrible' significa terrível ou muito forte, e 'aujourd'hui' significa hoje.",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "un", "meaning": "um / uma" },
+      { "word": "mal", "meaning": "mal / dor" },
+      { "word": "de", "meaning": "de" },
+      { "word": "tête", "meaning": "cabeça (mal de tête = dor de cabeça)" },
+      { "word": "terrible", "meaning": "terrível / insuportável" },
+      { "word": "aujourd'hui", "meaning": "hoje" }
+    ]
+  },
+  "512": {
+    "explanation": "'Tu devrais' significa 'você deveria' (dando um conselho de cuidado). Em francês, quando você vai a um profissional humano (médico, dentista, cabeleireiro), usa-se a preposição 'chez' e não 'à': 'chez le médecin' (literalmente no consultório do médico).",
+    "breakdown": [
+      { "word": "Tu", "meaning": "Você" },
+      { "word": "devrais", "meaning": "deveria (conselho do verbo devoir)" },
+      { "word": "aller", "meaning": "ir" },
+      { "word": "chez", "meaning": "a / ao (usado para pessoas e profissionais)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "médecin", "meaning": "médico" }
+    ]
+  },
+  "513": {
+    "explanation": "Frase de alívio na recuperação: 'Je me sens' significa 'eu me sinto'. A palavra 'beaucoup' (muito) intensifica 'mieux' (melhor). 'Maintenant' significa 'agora' e fecha com o agradecimento 'merci'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
+      { "word": "beaucoup", "meaning": "muito" },
+      { "word": "mieux", "meaning": "melhor" },
+      { "word": "maintenant", "meaning": "agora" },
+      { "word": "merci", "meaning": "obrigado / agradeço" }
+    ]
+  },
+  "514": {
+    "explanation": "'Elle a mal à la gorge' significa 'ela está com dor de garganta' (usando a estrutura avoir mal à). 'Et' significa 'e'. O verbo tossir em francês é tousser, conjugado aqui como 'elle tousse' (ela tosse).",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "a", "meaning": "tem (do verbo avoir)" },
+      { "word": "mal", "meaning": "dor (avoir mal = sentir dor)" },
+      { "word": "à", "meaning": "na / em" },
+      { "word": "la", "meaning": "a" },
+      { "word": "gorge", "meaning": "garganta" },
+      { "word": "et", "meaning": "e" },
+      { "word": "elle", "meaning": "ela" },
+      { "word": "tousse", "meaning": "tosse (do verbo tousser)" }
+    ]
+  },
+  "515": {
+    "explanation": "Pergunta feita pelo médico: 'Prends-tu' é a forma de pergunta de 'você toma?' (do verbo prendre). Para remédios em geral no plural, usa-se a palavrinha 'des' antes de 'médicaments'.",
+    "breakdown": [
+      { "word": "Prends", "meaning": "Toma / Pegas (do verbo prendre)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "des", "meaning": "remédios em geral / alguns (marcador de plural)" },
+      { "word": "médicaments", "meaning": "remédios / medicamentos" }
+    ]
+  },
+  "516": {
+    "explanation": "'Je dois' é 'eu preciso' ou 'eu devo'. Em francês, a expressão padrão para marcar consulta ou horário é 'prendre rendez-vous'. E como vimos, para profissionais usa-se 'chez le dentiste' (ao dentista).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso / tenho que (do verbo devoir)" },
+      { "word": "prendre", "meaning": "tomar / marcar" },
+      { "word": "rendez-vous", "meaning": "compromisso / consulta (prendre rendez-vous = marcar consulta)" },
+      { "word": "chez", "meaning": "ao / na clínica de (preposição para pessoas e profissionais)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "dentiste", "meaning": "dentista" }
+    ]
+  },
+  "517": {
+    "explanation": "Para relatar que alguém quebrou um osso: 'il s'est cassé' significa 'ele quebrou' (a si mesmo no passado). Em francês usa-se 'le bras' (o braço) em vez de 'seu braço'. A expressão 'en jouant au football' significa 'enquanto jogava futebol' ou 'ao jogar futebol'.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "s'", "meaning": "se (encurtado antes de som de vogal)" },
+      { "word": "est", "meaning": "fez a ação no passado (verbo être usado em ações reflexivas)" },
+      { "word": "cassé", "meaning": "quebrado (se casser = quebrar uma parte do corpo)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "bras", "meaning": "braço" },
+      { "word": "en", "meaning": "enquanto / ao" },
+      { "word": "jouant", "meaning": "jogando (do verbo jouer)" },
+      { "word": "au", "meaning": "ao (junção de à + le)" },
+      { "word": "football", "meaning": "futebol" }
+    ]
+  },
+  "518": {
+    "explanation": "Alerta médico importante: 'Je suis allergique à' significa 'sou alérgico a'. A palavra 'certains' significa 'certos / alguns'. 'Types de médicaments' significa 'tipos de remédios'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "suis", "meaning": "sou (do verbo être)" },
+      { "word": "allergique", "meaning": "alérgico / alérgica" },
+      { "word": "à", "meaning": "a" },
+      { "word": "certains", "meaning": "certos / alguns" },
+      { "word": "types", "meaning": "tipos" },
+      { "word": "de", "meaning": "de" },
+      { "word": "médicaments", "meaning": "remédios / medicamentos" }
+    ]
+  },
+  "519": {
+    "explanation": "'Y a-t-il' significa 'tem?' ou 'há?'. 'Une pharmacie' é uma farmácia. A sigla '24h/24' é lida como 'vingt-quatre heures sur vingt-quatre' (aberta 24 horas por dia). A expressão 'par ici' significa 'por aqui' ou 'nas redondezas'.",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "pharmacie", "meaning": "farmácia" },
+      { "word": "ouverte", "meaning": "aberta (feminino de ouvert)" },
+      { "word": "24h/24", "meaning": "24 horas por dia (24 horas sobre 24)" },
+      { "word": "par", "meaning": "por" },
+      { "word": "ici", "meaning": "aqui (par ici = por aqui / nesta área)" }
+    ]
+  },
+  "520": {
+    "explanation": "Para descrever sintomas de mal-estar: 'Je me sens' significa 'eu me sinto'. 'Un peu' é 'um pouco'. A palavra 'étourdi' significa tonto ou zonzo, e 'faible' significa fraco ou sem forças.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco" },
+      { "word": "étourdi", "meaning": "tonto / zonzo" },
+      { "word": "et", "meaning": "e" },
+      { "word": "faible", "meaning": "fraco / sem energia" }
+    ]
+  },
+  "521": {
+    "explanation": "Orientação médica de repouso: 'Tu dois' significa 'você deve / você tem que'. O verbo descansar é 'se reposer' (descansar-se). A palavra 'pendant' significa 'durante' ou 'por', e 'quelques jours' significa 'alguns dias'.",
+    "breakdown": [
+      { "word": "Tu", "meaning": "Você" },
+      { "word": "dois", "meaning": "deve / precisas (do verbo devoir)" },
+      { "word": "te", "meaning": "te / se" },
+      { "word": "reposer", "meaning": "descansar (se reposer = descansar / repousar)" },
+      { "word": "pendant", "meaning": "durante / por" },
+      { "word": "quelques", "meaning": "alguns" },
+      { "word": "jours", "meaning": "dias" }
+    ]
+  },
+  "522": {
+    "explanation": "Pergunta que o médico faz para localizar o problema: 'Où' é 'onde'. 'As-tu mal' é a inversão de 'você sente dor'. A palavra 'exactement' significa 'exatamente'.",
+    "breakdown": [
+      { "word": "Où", "meaning": "Onde" },
+      { "word": "as", "meaning": "tem / sentes (do verbo avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "mal", "meaning": "dor (avoir mal = sentir dor)" },
+      { "word": "exactement", "meaning": "exatamente" }
+    ]
+  },
+  "523": {
+    "explanation": "'J'ai mal' é a fórmula padrão para 'estou com dor'. A contração 'au' (à + le) conecta com a palavra 'dos' (costas, que é masculina em francês e tem a letra 's' silenciosa).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "mal", "meaning": "dor (avoir mal = sentir dor)" },
+      { "word": "au", "meaning": "nas / ao (junção de à + le)" },
+      { "word": "dos", "meaning": "costas (palavra masculina singular)" }
+    ]
+  },
+  "524": {
+    "explanation": "Pergunta urgente de segurança: 'As-tu appelé' é a forma de pergunta no passado para 'você chamou?' ou 'você ligou para?' (com o verbo avoir + a ação no passado). 'La police' é a polícia.",
+    "breakdown": [
+      { "word": "As", "meaning": "fez a ação no passado (auxiliar avoir)" },
+      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
+      { "word": "appelé", "meaning": "chamou / telefonou (do verbo appeler)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "police", "meaning": "polícia" }
+    ]
+  },
+  "525": {
+    "explanation": "Em francês, a ala de pronto-socorro ou emergência do hospital é chamada no plural de 'les urgences'. 'Sont' é estão. A palavra 'bondées' significa lotadas ou cheias de gente (com terminação feminina plural para combinar com urgences).",
+    "breakdown": [
+      { "word": "Les", "meaning": "As / O" },
+      { "word": "urgences", "meaning": "pronto-socorro / emergências hospitalares (sempre no plural)" },
+      { "word": "sont", "meaning": "estão (do verbo être no plural)" },
+      { "word": "bondées", "meaning": "lotadas / superlotadas (no feminino plural)" }
+    ]
+  },
+  "526": {
+    "explanation": "'Je dois' significa 'eu preciso' ou 'eu devo'. O verbo comprar é 'acheter'. Em francês, analgésicos ou remédios para dor são chamados de 'des analgésiques' (com 'des' marcando o plural de medicamentos).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
+      { "word": "acheter", "meaning": "comprar" },
+      { "word": "des", "meaning": "remédios em geral / alguns (marcador de plural)" },
+      { "word": "analgésiques", "meaning": "analgésicos" }
+    ]
+  },
+  "527": {
+    "explanation": "O verbo souffrir significa sofrer ou padecer de algo e pede a preposição 'de' ('souffre d''). A expressão 'un gros rhume' é o jeito comum dos franceses dizerem 'um resfriado forte' ou 'uma gripe pesada'.",
+    "breakdown": [
+      { "word": "Elle", "meaning": "Ela" },
+      { "word": "souffre", "meaning": "sofre / padece (do verbo souffrir)" },
+      { "word": "d'", "meaning": "de (encurtado antes de som de vogal)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "gros", "meaning": "forte / grande / pesado" },
+      { "word": "rhume", "meaning": "resfriado (gros rhume = resfriado forte)" }
+    ]
+  },
+  "528": {
+    "explanation": "Alerta de perigo com ordem negativa: 'Ne touche pas à' significa 'não toque em' (o verbo toucher pede a preposição 'à'). 'Ça' é isso/aquilo. Em seguida vem a justificativa 'c'est dangereux' (isto é perigoso).",
+    "breakdown": [
+      { "word": "Ne", "meaning": "primeira parte do 'não'" },
+      { "word": "touche", "meaning": "toque / mexa (ordem do verbo toucher)" },
+      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+      { "word": "à", "meaning": "em" },
+      { "word": "ça", "meaning": "nisso / aquilo" },
+      { "word": "c'", "meaning": "isto / é (encurtado antes de verbo)" },
+      { "word": "est", "meaning": "é (do verbo être)" },
+      { "word": "dangereux", "meaning": "perigoso" }
+    ]
+  },
+  "529": {
+    "explanation": "Para acidentes domésticos: 'Je me suis coupé' significa 'eu cortei' (em mim mesmo no passado com être). 'Le doigt' é o dedo (com 'le' em vez de possessivo). A expressão 'en cuisinant' significa 'enquanto cozinhava' ou 'ao cozinhar'.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "suis", "meaning": "fiz a ação no passado (auxiliar être usado em ações em si mesmo)" },
+      { "word": "coupé", "meaning": "cortado (se couper = cortar-se)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "doigt", "meaning": "dedo (com som final mudo de 't')" },
+      { "word": "en", "meaning": "enquanto / ao" },
+      { "word": "cuisinant", "meaning": "cozinhando (do verbo cuisiner)" }
+    ]
+  },
+  "530": {
+    "explanation": "Pergunta em acidentes de trânsito: 'Y a-t-il' significa 'tem?' ou 'há?'. A palavra 'blessés' vem do verbo blesser (ferir) e significa 'feridos/machucados'. 'Dans l'accident' significa 'no acidente' (com 'l'' antes da vogal).",
+    "breakdown": [
+      { "word": "Y a-t-il", "meaning": "Tem / Há (forma de pergunta)" },
+      { "word": "des", "meaning": "pessoas em geral / alguns (marcador de plural)" },
+      { "word": "blessés", "meaning": "feridos / machucados" },
+      { "word": "dans", "meaning": "em / no" },
+      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
+      { "word": "accident", "meaning": "acidente" }
+    ]
+  },
+  "531": {
+    "explanation": "'Je dois' é 'eu preciso' ou 'eu devo'. O verbo ver ou consultar é 'voir'. 'Un spécialiste' é um médico especialista em determinada área da medicina.",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
+      { "word": "voir", "meaning": "ver / consultar" },
+      { "word": "un", "meaning": "um" },
+      { "word": "spécialiste", "meaning": "especialista / médico especialista" }
+    ]
+  },
+  "532": {
+    "explanation": "'Tu devrais' significa 'você deveria' (conselho de saúde). O verbo beber no infinitivo é 'boire'. A palavra 'beaucoup' (muito) pede sempre 'de' logo depois: 'beaucoup d'eau' (muita água, com 'd'' antes da vogal de eau).",
+    "breakdown": [
+      { "word": "Tu", "meaning": "Você" },
+      { "word": "devrais", "meaning": "deveria (conselho do verbo devoir)" },
+      { "word": "boire", "meaning": "beber" },
+      { "word": "beaucoup", "meaning": "muito / bastante" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "eau", "meaning": "água" }
+    ]
+  },
+  "533": {
+    "explanation": "Em francês, o verbo se remettre significa recuperar-se, restabelecer-se ou sarar. 'Il se remet d'' significa 'ele está se recuperando de'. 'Une opération' é uma cirurgia ou operação médica.",
+    "breakdown": [
+      { "word": "Il", "meaning": "Ele" },
+      { "word": "se", "meaning": "se" },
+      { "word": "remet", "meaning": "recupera / restabelece (do verbo se remettre)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "opération", "meaning": "operação / cirurgia" }
+    ]
+  },
+  "534": {
+    "explanation": "Forma formal e precisa de relatar febre no pronto-socorro. 'J'ai' é 'eu tenho'. 'Une température' é a temperatura corporal, e o adjetivo 'élevée' significa alta ou elevada (concordando no feminino com temperatura).",
+    "breakdown": [
+      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
+      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
+      { "word": "une", "meaning": "uma" },
+      { "word": "température", "meaning": "temperatura" },
+      { "word": "élevée", "meaning": "elevada / alta (no feminino)" }
+    ]
+  },
+  "535": {
+    "explanation": "Pergunta muito polida e completa: 'Pouvez-vous me dire' significa 'o senhor pode me dizer?'. 'Où se trouve' significa 'onde fica localizada'. 'La clinique' é a clínica, e a expressão 'la plus proche' significa 'a mais próxima'.",
+    "breakdown": [
+      { "word": "Pouvez", "meaning": "Pode / Podem (do verbo pouvoir com vous)" },
+      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para pergunta)" },
+      { "word": "me", "meaning": "me" },
+      { "word": "dire", "meaning": "dizer" },
+      { "word": "où", "meaning": "onde" },
+      { "word": "se", "meaning": "se" },
+      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "clinique", "meaning": "clínica (médica)" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plus", "meaning": "mais (la plus = a mais)" },
+      { "word": "proche", "meaning": "próxima" }
+    ]
+  },
+  "536": {
+    "explanation": "'Je dois' é 'eu preciso' ou 'eu devo'. O verbo renovar é 'renouveler'. Em francês, a receita médica é chamada de 'ordonnance' (palavra feminina, por isso usa 'mon ordonnance' apenas para facilitar o som antes da vogal).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
+      { "word": "renouveler", "meaning": "renovar" },
+      { "word": "mon", "meaning": "minha (usado aqui antes de palavra feminina iniciada por vogal)" },
+      { "word": "ordonnance", "meaning": "receita médica" }
+    ]
+  },
+  "537": {
+    "explanation": "'L'ambulance est arrivée' significa 'a ambulância chegou' (com o verbo être no passado e 'e' extra no final porque ambulância é feminina). A expressão 'il y a' seguida de tempo significa 'faz' ou 'há' ('il y a cinq minutes' = há cinco minutos).",
+    "breakdown": [
+      { "word": "L'", "meaning": "A (encurtado antes de som de vogal)" },
+      { "word": "ambulance", "meaning": "ambulância" },
+      { "word": "est", "meaning": "fez a ação no passado (auxiliar être)" },
+      { "word": "arrivée", "meaning": "chegada / chegou (do verbo arriver no feminino)" },
+      { "word": "il", "meaning": "ele" },
+      { "word": "y", "meaning": "lá" },
+      { "word": "a", "meaning": "tem (il y a = há / faz tempo)" },
+      { "word": "cinq", "meaning": "cinco" },
+      { "word": "minutes", "meaning": "minutos" }
+    ]
+  },
+  "538": {
+    "explanation": "'Je me sens' significa 'eu me sinto'. 'Un peu' é 'um pouco'. A palavra 'stressé' significa estressado. E a expressão que vimos antes, 'ces derniers temps', significa ao pé da letra 'nestes últimos tempos' (ultimamente).",
+    "breakdown": [
+      { "word": "Je", "meaning": "Eu" },
+      { "word": "me", "meaning": "me" },
+      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
+      { "word": "un", "meaning": "um" },
+      { "word": "peu", "meaning": "pouco" },
+      { "word": "stressé", "meaning": "estressado" },
+      { "word": "ces", "meaning": "nestes / estes" },
+      { "word": "derniers", "meaning": "últimos" },
+      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
+    ]
+  },
+  "539": {
+    "explanation": "Instrução médica de curativo: a expressão 'assurez-vous de' significa 'certifique-se de' ou 'garanta que'. O verbo manter ou guardar é 'garder'. 'La plaie' é o machucado ou ferida, e a palavra 'propre' significa limpa e desinfetada.",
+    "breakdown": [
+      { "word": "Assurez", "meaning": "Assegure / Certifique (pedido do verbo assurer)" },
+      { "word": "-vous", "meaning": "você / o senhor (ligado ao verbo)" },
+      { "word": "de", "meaning": "de" },
+      { "word": "garder", "meaning": "manter / guardar" },
+      { "word": "la", "meaning": "a" },
+      { "word": "plaie", "meaning": "ferida / machucado" },
+      { "word": "propre", "meaning": "limpa" }
+    ]
+  },
+  "540": {
+    "explanation": "Instrução de emergência internacional: 'Appelez' é a ordem de 'ligue' ou 'chame'. 'Le 999' é o número de socorro britânico (equivalente ao 15 ou 112 na França). A expressão oficial para 'em caso de emergência' é 'en cas d'urgence' (com 'd'' antes da vogal de urgence).",
+    "breakdown": [
+      { "word": "Appelez", "meaning": "Ligue / Chamem (ordem do verbo appeler)" },
+      { "word": "le", "meaning": "o" },
+      { "word": "999", "meaning": "999 (número de emergência)" },
+      { "word": "en", "meaning": "em" },
+      { "word": "cas", "meaning": "caso (en cas de = em caso de)" },
+      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
+      { "word": "urgence", "meaning": "urgência / emergência" }
+    ]
+  }
+}
