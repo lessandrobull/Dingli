@@ -602,7 +602,7 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
     }));
 
     Object.keys(localStorage).forEach(key => {
-      if (key.startsWith(`progresso_${idiomaOrigem}_${idiomaEstudo}_`)) {
+      if (key.startsWith(`progresso_${idiomaOrigem}_${idiomaEstudo}_`) || key === `maestria_${idiomaOrigem}_${idiomaEstudo}`) {
         localStorage.removeItem(key);
       }
     });
