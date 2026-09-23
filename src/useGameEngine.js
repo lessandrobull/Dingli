@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 
 export function useGameEngine({
   frasesFiltradas,
@@ -24,6 +24,11 @@ export function useGameEngine({
   const [filaErros, setFilaErros] = useState([]);
   const [filaAcertos, setFilaAcertos] = useState([]);
   const [sessaoDominium, setSessaoDominium] = useState({ primeira: [], recuperadas: [], acertosTempo: [], falhas: [] });
+  const inicioTaskRef = useRef(null);
+  const resetarTimerTask = useCallback(() => {
+    inicioTaskRef.current = null;
+  }, []);
+  const DURACAO_TASK = (2 * 60 + 30) * 1000;
 
   // Carregamento dinâmico baseado no curso atual (L1_L2)
   useEffect(() => {
@@ -85,10 +90,20 @@ export function useGameEngine({
     localStorage.setItem('pref_mostrar_traducao', JSON.stringify(mostrarTraducao));
   }, [mostrarTraducao]);
 
-  const avaliarProximoAlvo = useCallback((frasesAtuais = frasesFiltradas) => {
+      const avaliarProximoAlvo = useCallback((frasesAtuais = frasesFiltradas) => {
     const agora = Date.now();
+    const temTopicoCarregado = Boolean(frasesAtuais && frasesAtuais.length > 0);
 
-    // Subetapas 1 e 2: Varredura Global e Identificação de Urgência
+    // O timer da Task só inicia quando um tópico/estudo de fato está aberto
+    if (temTopicoCarregado && !inicioTaskRef.current) {
+      inicioTaskRef.current = agora;
+    }
+
+    const tempoDecorrido = inicioTaskRef.current ? agora - inicioTaskRef.current : 0;
+    const tempoEsgotado = Boolean(inicioTaskRef.current && tempoDecorrido >= DURACAO_TASK);
+
+    // Identificar frases em trânsito (espera de 30s)
+    let emTransito = [];
     let recuperacao = [];
     let progresso30s = [];
     let progressoDias = [];
@@ -97,13 +112,19 @@ export function useGameEngine({
       const id = Number(idStr);
       const maestria = frasesMaestria[idStr];
 
-      if (typeof maestria === 'object' && maestria.rank > 0 && maestria.next_review <= agora) {
-        if (maestria.status === 'recuperacao') {
-          recuperacao.push({ ...maestria, id, tipo: 'recuperacao' });
-        } else if (maestria.status === 'progresso') {
-          progresso30s.push({ ...maestria, id, tipo: 'progresso' });
-        } else if (maestria.status === 'macro') {
-          progressoDias.push({ ...maestria, id, tipo: 'macro' });
+      if (typeof maestria === "object" && maestria.rank > 0) {
+        if (maestria.status === "progresso" || maestria.status === "recuperacao") {
+          emTransito.push({ ...maestria, id });
+        }
+
+        if (maestria.next_review <= agora) {
+          if (maestria.status === "recuperacao") {
+            recuperacao.push({ ...maestria, id, tipo: "recuperacao" });
+          } else if (maestria.status === "progresso") {
+            progresso30s.push({ ...maestria, id, tipo: "progresso" });
+          } else if (maestria.status === "macro") {
+            progressoDias.push({ ...maestria, id, tipo: "macro" });
+          }
         }
       }
     });
@@ -113,35 +134,54 @@ export function useGameEngine({
     progresso30s.sort(sortCronologico);
     progressoDias.sort((a, b) => (a.next_review - a.last_review) - (b.next_review - b.last_review));
 
-    let escolhido = null;
-    if (recuperacao.length > 0) escolhido = recuperacao[0];
-    else if (progresso30s.length > 0) escolhido = progresso30s[0];
-    else if (progressoDias.length > 0) escolhido = progressoDias[0];
-
-    if (escolhido) {
-      // Prioridade Máxima: Retorna a revisão global engatilhada, sem precisar de índice
-      return { tipo: 'revisao', dados: escolhido };
-    }
-
-    // Preparação para Subetapa 4: Resgate de Inéditas no tópico atual (se houver algum carregado)
-    if (frasesAtuais && frasesAtuais.length > 0) {
-      let ineditas = [];
+    // Verificar se ainda existem inéditas no tópico carregado
+    let ineditas = [];
+    if (temTopicoCarregado) {
       frasesAtuais.forEach((f, index) => {
         const maestria = frasesMaestria[f.id];
-        const rank = typeof maestria === 'object' ? maestria.rank : (maestria || 0);
+        const rank = typeof maestria === "object" ? maestria.rank : (maestria || 0);
         if (rank === 0) {
-          ineditas.push({ id: f.id, rank: 0, tipo: 'inedita', indice: index, nivel: f.nivel, topico: f.topico });
+          ineditas.push({ id: f.id, rank: 0, tipo: "inedita", indice: index, nivel: f.nivel, topico: f.topico });
         }
       });
-
-      if (ineditas.length > 0) {
-        ineditas.sort((a, b) => a.id - b.id);
-        return ineditas[0];
-      }
+      ineditas.sort((a, b) => a.id - b.id);
     }
 
+    // Modo de drenagem: somente se havia tópico carregado e as inéditas acabaram, OU se estourou 5 minutos com tópico ativo
+    const semIneditasNoTopico = temTopicoCarregado && ineditas.length === 0;
+    const modoDrenagem = temTopicoCarregado && (tempoEsgotado || semIneditasNoTopico);
+
+    // --- MODO DE DRENAGEM ---
+    if (modoDrenagem) {
+      if (emTransito.length === 0) {
+        inicioTaskRef.current = null;
+        return {
+    resetarTimerTask, tipo: "concluido" };
+      }
+
+      if (recuperacao.length > 0) return { tipo: "revisao", dados: recuperacao[0] };
+      if (progresso30s.length > 0) return { tipo: "revisao", dados: progresso30s[0] };
+
+      // Se só restam cartas em espera de 30s e nenhuma está pronta, libera o cooldown imediatamente
+      emTransito.sort((a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0));
+      return { tipo: "revisao", dados: emTransito[0] };
+    }
+
+    // --- FLUXO NORMAL (Hierarquia original preservada) ---
+    if (recuperacao.length > 0) return { tipo: "revisao", dados: recuperacao[0] };
+    if (progresso30s.length > 0) return { tipo: "revisao", dados: progresso30s[0] };
+    if (progressoDias.length > 0) return { tipo: "revisao", dados: progressoDias[0] };
+    if (ineditas.length > 0) return ineditas[0];
+
+    // Se há tópico carregado e cartas em trânsito
+    if (temTopicoCarregado && emTransito.length > 0) {
+      emTransito.sort((a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0));
+      return { tipo: "revisao", dados: emTransito[0] };
+    }
+
+    // Sem tópico carregado ou nada pendente: retorna null para que a Regra 4 do Game busque o nível
     return null;
-  }, [frasesMaestria]);
+  }, [frasesMaestria, frasesFiltradas]);
 
   return {
     indice, setIndice,

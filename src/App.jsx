@@ -95,7 +95,8 @@ function App() {
     filaErros, setFilaErros,
     filaAcertos, setFilaAcertos,
     sessaoDominium, setSessaoDominium,
-    avaliarProximoAlvo
+    avaliarProximoAlvo,
+    resetarTimerTask
   } = useGameEngine({
     frasesFiltradas, setFrasesFiltradas,
     idiomaOrigem, idiomaEstudo, nivelAtivo, topicoAtivo,
@@ -261,6 +262,15 @@ function App() {
 
     let proximo = avaliarProximoAlvo(frasesFiltradas);
     if (proximo?.dados) precarregarAudios([proximo.dados], idiomaEstudo);
+
+    if (proximo?.tipo === 'concluido') {
+      limparEstadoExercicio();
+      setTopicoAtivo("");
+      sessionStorage.removeItem("app_topico");
+      setFrasesFiltradas([]);
+      mudarTela('menuCartoes');
+      return;
+    }
 
     if (!proximo) {
       // Regra 2 e 3: Se estava estudando um tópico e as frases acabaram
@@ -562,7 +572,10 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
   }
 
   function limparEstadoExercicio() {
+    if (typeof resetarTimerTask === "function") resetarTimerTask();
     setFraseAtivaGlobal(null);
+    setTopicoAtivo("");
+    sessionStorage.removeItem("app_topico");
     setModoExercicio(false);
     setSessaoIniciada(false);
     setExercicioNivel(0);
