@@ -786,7 +786,7 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
       />
     );
     if (tela === 'menuCartoes') return (
-      <MenuCartoes styles={styles} acionarFilaJogo={jogarDominiumInteligente} />
+      <MenuCartoes styles={styles} acionarFilaJogo={jogarDominiumInteligente} selecionarNivel={selecionarNivel} />
     );
     if (tela === 'escolherNivel') return (
       <EscolherNivel

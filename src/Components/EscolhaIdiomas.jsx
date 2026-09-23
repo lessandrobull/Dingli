@@ -28,7 +28,7 @@ export function EscolherOrigem({ styles }) {
 }
 
 export function EscolherEstudo({ styles, setFilaErros, setFilaAcertos }) {
-  const { temas, t, userRole, mudarTela, idiomaOrigem, setIdiomaEstudo } = useDingli();
+  const { temas, t, userRole, mudarTela, idiomaOrigem, setIdiomaEstudo, setOrigemNivel } = useDingli();
 
   if (!styles || !temas) return null;
   return (
@@ -42,7 +42,13 @@ export function EscolherEstudo({ styles, setFilaErros, setFilaAcertos }) {
         </button>
         <div className="scroll-container" style={styles.areaScrollMenu}>
           {Object.keys(temas).filter(s => s !== idiomaOrigem).map(sigla => (
-            <button key={sigla} onClick={() => { setIdiomaEstudo(sigla); setFilaErros([]); setFilaAcertos([]); mudarTela('menuCurso'); }} style={{ ...styles.btnPadrao, backgroundColor: temas[sigla].bg, color: temas[sigla].btn }}>
+            <button key={sigla} onClick={() => {
+              setIdiomaEstudo(sigla);
+              setFilaErros([]);
+              setFilaAcertos([]);
+              if (setOrigemNivel) setOrigemNivel('cadastro');
+              mudarTela('escolherNivel');
+            }} style={{ ...styles.btnPadrao, backgroundColor: temas[sigla].bg, color: temas[sigla].btn }}>
               {t.wantStudy} {temas[idiomaOrigem]?.nomes?.[sigla]?.toLowerCase()}
             </button>
           ))}

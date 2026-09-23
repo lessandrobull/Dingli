@@ -6,7 +6,7 @@ import { COR_TOM_CLARO, COR_INSTITUCIONAL_TITULO, COR_INSTITUCIONAL_ACAO, COR_SU
 export function EscolherNivel({
   styles, selecionarNivel, sessaoDominium, frasesMaestria
 }) {
-  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, mudarTela, COR_BASE_CARDS } = useDingli();
+  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, mudarTela, COR_BASE_CARDS, setNivelAtivo, origemNivel } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   const corFonte = getCorFonteDinamica(idiomaEstudo);
@@ -14,14 +14,18 @@ export function EscolherNivel({
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg }}>
       <div style={styles.mobileContainer}>
-        <button onClick={() => mudarTela('menuCartoes')} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.back}</button>
+        <button onClick={() => mudarTela('escolherIdioma')} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.back}</button>
         <div className="scroll-container" style={styles.areaScrollMenu}>
           {(ESTRUTURA_NIVEIS[idiomaEstudo] || ESTRUTURA_NIVEIS.default).map(n => {
             const desativado = false;
             return (
               <button
                 key={n}
-                onClick={() => !desativado && selecionarNivel(n)}
+                onClick={() => {
+                  if (desativado) return;
+                  if (setNivelAtivo) setNivelAtivo(n);
+                  mudarTela('menuCurso');
+                }}
                 disabled={desativado}
                 style={{
                   ...styles.btnPadrao,
@@ -96,7 +100,7 @@ export function EscolherTopic({
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg }}>
       <div style={styles.mobileContainer}>
-        <button onClick={() => mudarTela('escolherNivel')} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.back}</button>
+        <button onClick={() => mudarTela('menuCartoes')} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.back}</button>
         <div className="scroll-container" style={styles.areaScrollMenu}>
           {listaTopicos.map(tp => {
             const idsDoTopico = mapaTopicosIds[tp] || [];
