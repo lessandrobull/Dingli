@@ -6,7 +6,7 @@ export default function Hub({
   resetarProgressoIdioma,
   removerCursoIdioma
 }) {
-  const { temas, t, getCorFonteDinamica, idiomaEstudo, idiomaOrigem, mudarTela, COR_BASE_CARDS } = useDingli();
+  const { temas, t, getCorFonteDinamica, idiomaEstudo, idiomaOrigem, nivelAtivo, mudarTela, COR_BASE_CARDS } = useDingli();
   if (!styles || !temas || !idiomaEstudo) return null;
 
   const corFonteBotoes = getCorFonteDinamica(idiomaEstudo);
@@ -16,7 +16,7 @@ export default function Hub({
       <div style={styles.mobileContainer}>
         <div style={{ textAlign: 'center', marginBottom: '20px' }}>
           <h2 style={{ color: COR_BASE_CARDS, fontSize: '1.5rem', fontWeight: '900', textTransform: 'capitalize' }}>
-            {temas[idiomaOrigem]?.nomes?.[idiomaEstudo] || idiomaEstudo}
+            {`${temas[idiomaOrigem]?.nomes?.[idiomaEstudo] || idiomaEstudo} ${nivelAtivo || ""}`.trim()}
           </h2>
         </div>
 

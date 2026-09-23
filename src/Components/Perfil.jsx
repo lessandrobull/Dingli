@@ -10,7 +10,7 @@ export default function Perfil({
   setSessaoDominium,
   cursosInscritos
 }) {
-  const { temas, mudarTela, setIdiomaOrigem, setIdiomaEstudo, setUserRole } = useDingli();
+  const { temas, mudarTela, setIdiomaOrigem, setIdiomaEstudo, setUserRole, setNivelAtivo, nivelAtivo } = useDingli();
 
   if (!styles || !temas) {
     console.warn("Perfil: 'styles' ou 'temas' não foram fornecidos.");
@@ -57,10 +57,11 @@ export default function Perfil({
                       setUserRole('aluno');
                       setIdiomaOrigem(curso.origem);
                       setIdiomaEstudo(curso.estudo);
+                      if (setNivelAtivo) setNivelAtivo(curso.nivel || "A1");
                       mudarTela('menuCurso');
                     }}
                   >
-                    {temas[curso.origem]?.nomes?.[curso.estudo] || curso.nomeEstudo}
+                    {`${temas[curso.origem]?.nomes?.[curso.estudo] || curso.nomeEstudo} ${curso.nivel || "A1"}`}
                   </button>
                 );
               })}

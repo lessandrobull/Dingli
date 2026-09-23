@@ -399,9 +399,12 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
       isFirstRun.current = false;
       return;
     }
-    if (['perfil', 'escolherOrigem', 'escolherIdioma', 'menuCurso'].includes(tela)) {
+        if (['perfil', 'escolherOrigem', 'escolherIdioma'].includes(tela)) {
       setTopicoAtivo('');
       setNivelAtivo('');
+      setFrasesFiltradas([]);
+    } else if (tela === 'menuCurso') {
+      setTopicoAtivo('');
       setFrasesFiltradas([]);
     }
   }, [idiomaOrigem, idiomaEstudo, tela]);
@@ -467,13 +470,13 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
     if (tela === 'menuCurso' && idiomaEstudo && idiomaOrigem && userRole !== 'adm') {
       setCursosInscritos(prev => {
         const listaSemAtual = prev.filter(c => !(c.origem === idiomaOrigem && c.estudo === idiomaEstudo));
-        const cursoAtual = { origem: idiomaOrigem, estudo: idiomaEstudo, nomeEstudo: temas[idiomaOrigem]?.nomes?.[idiomaEstudo] || idiomaEstudo };
+        const cursoAtual = { origem: idiomaOrigem, estudo: idiomaEstudo, nivel: nivelAtivo || "A1", nomeEstudo: temas[idiomaOrigem]?.nomes?.[idiomaEstudo] || idiomaEstudo };
         const novaLista = [cursoAtual, ...listaSemAtual];
         localStorage.setItem('cursos_salvos', JSON.stringify(novaLista));
         return novaLista;
       });
     }
-  }, [tela, idiomaEstudo, idiomaOrigem, temas, userRole]);
+  }, [tela, idiomaEstudo, idiomaOrigem, nivelAtivo, temas, userRole]);
 
   const selecionarNivel = useCallback(async (n) => {
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
