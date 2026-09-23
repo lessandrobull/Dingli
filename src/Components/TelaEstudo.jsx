@@ -299,7 +299,7 @@ export default function TelaEstudo({
         else if (RANKS_WRITE.includes(exercicioNivel)) { setValorInput(""); setResultadoFeedback(null); }
       }, Math.max(fraseOriginal.split(" ").length * 600, 1000));
     }
-  }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo]);
+  }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, userRole]);
 
   const handleRever = useCallback(() => {
     const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);

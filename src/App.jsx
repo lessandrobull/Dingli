@@ -151,7 +151,7 @@ function App() {
       setResultadoFeedback('acerto');
       processandoAcertoRef.current = true;
 
-      if (true) {
+      if (userRole !== 'adm') {
         const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
         const inRecuperacao = typeof rankObj === 'object' && rankObj.status === 'recuperacao';
         const calc = calcularProximoRank(rankAtual, true, highestRank, inRecuperacao);
@@ -187,11 +187,13 @@ function App() {
         }, 30000);
       }
 
-      setFilaErros(prev => prev.filter(item => item.indice !== indice));
-      setFilaAcertos(prev => {
-        const existe = prev.some(item => item.indice === indice);
-        return existe ? prev : [...prev, { indice }];
-      });
+      if (userRole !== 'adm') {
+        setFilaErros(prev => prev.filter(item => item.indice !== indice));
+        setFilaAcertos(prev => {
+          const existe = prev.some(item => item.indice === indice);
+          return existe ? prev : [...prev, { indice }];
+        });
+      }
       const textoFinal = (idiomaEstudo === 'pi' && zhSalvar)
         ? zhSalvar
         : fraseOriginal;
@@ -202,41 +204,43 @@ function App() {
         setTranscricaoAoVivo("");
         setModoExercicio(false);
         processandoAcertoRef.current = false;
-        if (jogarDominiumInteligenteRef.current) {
+        if (userRole !== 'adm' && jogarDominiumInteligenteRef.current) {
           jogarDominiumInteligenteRef.current();
         }
       }, tempoAudio);
     } else if (resultado === 'erro') {
       setResultadoFeedback('erro');
       processandoAcertoRef.current = true;
-      const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
-      const inRecuperacao = typeof rankObj === 'object' && rankObj.status === 'recuperacao';
-      const calc = calcularProximoRank(rankAtual, false, highestRank, inRecuperacao);
-      const novoObjeto = {
-        rank: calc.novoRank,
-        status: calc.lista,
-        next_review: Date.now() + calc.espera,
-        last_review: Date.now(),
-        last_attempt_at: Date.now(),
-        highest_rank: Math.max(highestRank, calc.novoRank),
-        texto: fraseOriginal,
-        traducao: traducaoSalvar,
-        texto_zh: zhSalvar,
-        nivel: nivelSalvar,
-        topico: topicoSalvar
-      };
-      setFrasesMaestria(prev => ({ ...prev, [idAtual]: novoObjeto }));
-      setSessaoDominium(prev => ({
-        ...prev,
-        falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: idAtual, curso: cursoKey }],
-        primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal)
-      }));
-      setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
-      setFilaErros(prev => {
-        const existe = prev.some(item => item.indice === indice);
-        if (existe) return prev;
-        return [...prev, { indice, rank: calc.novoRank }];
-      });
+      if (userRole !== 'adm') {
+        const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
+        const inRecuperacao = typeof rankObj === 'object' && rankObj.status === 'recuperacao';
+        const calc = calcularProximoRank(rankAtual, false, highestRank, inRecuperacao);
+        const novoObjeto = {
+          rank: calc.novoRank,
+          status: calc.lista,
+          next_review: Date.now() + calc.espera,
+          last_review: Date.now(),
+          last_attempt_at: Date.now(),
+          highest_rank: Math.max(highestRank, calc.novoRank),
+          texto: fraseOriginal,
+          traducao: traducaoSalvar,
+          texto_zh: zhSalvar,
+          nivel: nivelSalvar,
+          topico: topicoSalvar
+        };
+        setFrasesMaestria(prev => ({ ...prev, [idAtual]: novoObjeto }));
+        setSessaoDominium(prev => ({
+          ...prev,
+          falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: idAtual, curso: cursoKey }],
+          primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal)
+        }));
+        setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
+        setFilaErros(prev => {
+          const existe = prev.some(item => item.indice === indice);
+          if (existe) return prev;
+          return [...prev, { indice, rank: calc.novoRank }];
+        });
+      }
       const textoFinalErro = (idiomaEstudo === 'pi' && zhSalvar)
         ? zhSalvar
         : fraseOriginal;
@@ -341,7 +345,7 @@ function App() {
         mudarTela('escolherTopic');
       }
     }
-  }, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio, topicoAtivo, nivelAtivo, idiomaOrigem, idiomaEstudo, frasesMaestria, verificarNivelConcluido]);
+  }, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio, topicoAtivo, nivelAtivo, idiomaOrigem, idiomaEstudo, frasesMaestria, verificarNivelConcluido, userRole]);
 
   useEffect(() => {
     jogarDominiumInteligenteRef.current = jogarDominiumInteligente;
