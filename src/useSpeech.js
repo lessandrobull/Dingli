@@ -316,17 +316,14 @@ export const useSpeech = ({
             pararMonitoramentoAudio();
             try { recognition.abort(); } catch (e) { }
 
-            setTimeout(() => {
-                setStatusVoz('IDLE');
-                if (onAvaliacaoConcluida) {
-                    onAvaliacaoConcluida({
-                        resultado: resultado,
-                        tentativas: tentativasVozRef.current,
-                        fraseOriginal: fraseOriginal,
-                        fraseObj: fraseAlvo
-                    });
-                }
-            }, 250);
+            if (onAvaliacaoConcluida) {
+                onAvaliacaoConcluida({
+                    resultado: resultado,
+                    tentativas: tentativasVozRef.current,
+                    fraseOriginal: fraseOriginal,
+                    fraseObj: fraseAlvo
+                });
+            }
         };
 
         const avaliarAgora = () => {

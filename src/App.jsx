@@ -202,6 +202,7 @@ function App() {
       setTimeout(() => {
         setResultadoFeedback(null);
         setTranscricaoAoVivo("");
+        setStatusVoz('IDLE');
         setModoExercicio(false);
         processandoAcertoRef.current = false;
         if (userRole !== 'adm' && jogarDominiumInteligenteRef.current) {
@@ -250,6 +251,7 @@ function App() {
       setTimeout(() => {
         setResultadoFeedback(null);
         setTranscricaoAoVivo("");
+        setStatusVoz('IDLE');
         processandoAcertoRef.current = false;
       }, tempoAudioErro);
     }
