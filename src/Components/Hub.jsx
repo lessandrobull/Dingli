@@ -37,7 +37,7 @@ function Hub({
             onClick={() => mudarTela('menuCartoes')}
             style={{ ...styles.btnPadrao, backgroundColor: COR_BASE_CARDS, color: corFonteBotoes }}
           >
-            {t?.phraseCards || 'Dìnglang'}
+            {t?.phraseCards || 'Dìngloop'}
           </button>
 
           <button
