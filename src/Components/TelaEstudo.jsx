@@ -527,7 +527,7 @@ export default function TelaEstudo({
                       </button>
 
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
-                      {temAudioExercicio ? (
+                      {temAudioExercicio && statusVoz === 'IDLE' && resultadoFeedback !== 'acerto' ? (
                         <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
                           {audioLento ? "Lento" : "Ouvir"}
                         </button>
