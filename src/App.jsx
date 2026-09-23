@@ -848,6 +848,8 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
       setIdiomaEstudo={setIdiomaEstudo}
       userRole={userRole}
       setUserRole={setUserRole}
+      nivelAtivo={nivelAtivo}
+      setNivelAtivo={setNivelAtivo}
       mudarTela={mudarTela}
       tela={tela}
     >

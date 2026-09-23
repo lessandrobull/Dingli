@@ -9,6 +9,7 @@ export function DingliProvider({
   idiomaOrigem, setIdiomaOrigem,
   idiomaEstudo, setIdiomaEstudo,
   userRole, setUserRole,
+  nivelAtivo, setNivelAtivo,
   mudarTela, tela
 }) {
   const getCorFonteDinamica = (idioma) => {
@@ -44,8 +45,9 @@ export function DingliProvider({
     idiomaOrigem, setIdiomaOrigem,
     idiomaEstudo, setIdiomaEstudo,
     userRole, setUserRole,
+    nivelAtivo, setNivelAtivo,
     mudarTela, tela
-  }), [contextValue, idiomaOrigem, setIdiomaOrigem, idiomaEstudo, setIdiomaEstudo, userRole, setUserRole, mudarTela, tela]);
+  }), [contextValue, idiomaOrigem, setIdiomaOrigem, idiomaEstudo, setIdiomaEstudo, userRole, setUserRole, nivelAtivo, setNivelAtivo, mudarTela, tela]);
 
   return (
     <DingliContext.Provider value={extendedValue}>
