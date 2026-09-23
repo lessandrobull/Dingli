@@ -24,11 +24,11 @@ export const COR_SUPERFICIE_DIGITACAO = "#f1f5f9";
 export const CORES_POR_IDIOMA = {
   pt: { bgPrincipal: "#4cb27d", acaoEscura: "#039241" },
   en: { bgPrincipal: "#4d6395", acaoEscura: "#012168" },
-  es: { bgPrincipal: "#f68161", acaoEscura: "#f24c1e" },
+  es: { bgPrincipal: "#e5595e", acaoEscura: "#da121a" },
   fr: { bgPrincipal: "#6fa4c0", acaoEscura: "#327da5" },
   it: { bgPrincipal: "#4cb196", acaoEscura: "#009069" },
-  ge: { bgPrincipal: "#c49d7c", acaoEscura: "#ab7445" },
-  pi: { bgPrincipal: "#d1596c", acaoEscura: "#bd132d" }
+  ge: { bgPrincipal: "#e74c4c", acaoEscura: "#dd0000" },
+  pi: { bgPrincipal: "#e74c4c", acaoEscura: "#bd132d" }
 };
 
 export function getTemaVisual(lang) {
