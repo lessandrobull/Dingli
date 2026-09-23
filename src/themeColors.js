@@ -22,13 +22,13 @@ export const COR_SUPERFICIE_DIGITACAO = "#f1f5f9";
 
 // 5. IDENTIDADES POR IDIOMA
 export const CORES_POR_IDIOMA = {
-  pt: { bgPrincipal: "#4dc6b8", acaoEscura: "#018e7e" },
-  en: { bgPrincipal: "#8392b5", acaoEscura: "#4d6395" },
-  es: { bgPrincipal: "#f87b6e", acaoEscura: "#f5422f" },
-  fr: { bgPrincipal: "#78aeb9", acaoEscura: "#378595" },
-  it: { bgPrincipal: "#4cb975", acaoEscura: "#009246" },
-  ge: { bgPrincipal: "#656463", acaoEscura: "#232120" },
-  pi: { bgPrincipal: "#df8b98", acaoEscura: "#b9354a" }
+  pt: { bgPrincipal: "#4cb27d", acaoEscura: "#039241" },
+  en: { bgPrincipal: "#4d6395", acaoEscura: "#012168" },
+  es: { bgPrincipal: "#f68161", acaoEscura: "#f24c1e" },
+  fr: { bgPrincipal: "#6fa4c0", acaoEscura: "#327da5" },
+  it: { bgPrincipal: "#4cb196", acaoEscura: "#009069" },
+  ge: { bgPrincipal: "#c49d7c", acaoEscura: "#ab7445" },
+  pi: { bgPrincipal: "#d1596c", acaoEscura: "#bd132d" }
 };
 
 export function getTemaVisual(lang) {
