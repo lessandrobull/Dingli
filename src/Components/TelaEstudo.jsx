@@ -200,7 +200,24 @@ export default function TelaEstudo({
         const pool = palavras.map((_, i) => i);
         for (let i = 0; i < qtdInterativa; i++) indicesInterativos.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
         setSlotsEx3(palavras.map((w, i) => indicesInterativos.includes(i) ? null : { id: `f-${i}`, texto: w, fixed: true }));
-        setPalavrasOpcoes(indicesInterativos.map(idx => ({ id: idx, texto: palavras[idx], usado: false })).sort(() => Math.random() - 0.5));
+        const itensOpcoes = indicesInterativos.map(idx => ({ id: idx, texto: palavras[idx], usado: false }));
+        let opcoesEmbaralhadas = [...itensOpcoes];
+        if (opcoesEmbaralhadas.length > 1) {
+          const estaNaOrdemOriginal = (arr) => arr.every((item, i) => i === 0 || item.id > arr[i - 1].id);
+          let tentativas = 0;
+          do {
+            for (let i = opcoesEmbaralhadas.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [opcoesEmbaralhadas[i], opcoesEmbaralhadas[j]] = [opcoesEmbaralhadas[j], opcoesEmbaralhadas[i]];
+            }
+            tentativas++;
+          } while (estaNaOrdemOriginal(opcoesEmbaralhadas) && tentativas < 25);
+
+          if (estaNaOrdemOriginal(opcoesEmbaralhadas)) {
+            opcoesEmbaralhadas.reverse();
+          }
+        }
+        setPalavrasOpcoes(opcoesEmbaralhadas);
       } else if (RANKS_VOICE.includes(exercicioNivel)) {
         const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
         setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
@@ -355,14 +372,40 @@ export default function TelaEstudo({
 
   useEffect(() => {
     const handleKeyDownGlobal = (e) => {
-      if (e.key === 'Enter' && !modoExercicio) {
+      if (e.key !== 'Enter') return;
+
+      if (!modoExercicio) {
         e.preventDefault();
         handlePraticar();
+        return;
+      }
+
+      if (resultadoFeedback) return;
+
+      if (RANKS_VOICE.includes(exercicioNivel)) {
+        if (statusVoz === 'RECORDING') {
+          e.preventDefault();
+          if (pararEAvaliarVoz) pararEAvaliarVoz();
+          else if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz();
+        } else if (statusVoz === 'IDLE') {
+          e.preventDefault();
+          iniciarReconhecimentoVoz(frase);
+        }
+      } else if (RANKS_SELECT.includes(exercicioNivel)) {
+        const todosPreenchidos = slotsEx3.length > 0 && !slotsEx3.some(s => s === null);
+        if (todosPreenchidos) {
+          e.preventDefault();
+          verificarResposta();
+        }
       }
     };
     window.addEventListener('keydown', handleKeyDownGlobal);
     return () => window.removeEventListener('keydown', handleKeyDownGlobal);
-  }, [modoExercicio, handlePraticar]);
+  }, [
+    modoExercicio, handlePraticar, resultadoFeedback, exercicioNivel,
+    statusVoz, pararEAvaliarVoz, iniciarReconhecimentoVoz, frase,
+    slotsEx3, verificarResposta
+  ]);
 
   if (carregandoDados || !frase || !textoEstudo) {
     return (
