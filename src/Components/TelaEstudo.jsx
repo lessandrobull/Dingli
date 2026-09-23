@@ -338,6 +338,32 @@ export default function TelaEstudo({
     }
   }, [audioLento, frase, idiomaEstudo, textoEstudo, falar]);
 
+  const handlePraticar = useCallback(() => {
+    if (modoExercicio) return;
+    if (userRole === 'aluno') {
+      const idAtual = frase?.id;
+      const maestriaData = frasesMaestria[idAtual];
+      const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
+      if (rankAtual > 0) return;
+      setModoJogo(true);
+      setSessaoIniciada(true);
+      iniciarExercicio(rankAtual > 0 ? rankAtual : 1);
+    } else {
+      mudarTela('selecaoExercicio');
+    }
+  }, [modoExercicio, userRole, frase, frasesMaestria, setModoJogo, setSessaoIniciada, iniciarExercicio, mudarTela]);
+
+  useEffect(() => {
+    const handleKeyDownGlobal = (e) => {
+      if (e.key === 'Enter' && !modoExercicio) {
+        e.preventDefault();
+        handlePraticar();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDownGlobal);
+    return () => window.removeEventListener('keydown', handleKeyDownGlobal);
+  }, [modoExercicio, handlePraticar]);
+
   if (carregandoDados || !frase || !textoEstudo) {
     return (
       <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo]?.bg || '#000' }}>
@@ -497,7 +523,7 @@ export default function TelaEstudo({
                       const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
                       return (
                         <button
-                          onClick={() => { setModoJogo(true); setSessaoIniciada(true); iniciarExercicio(rankAtual > 0 ? rankAtual : 1); }}
+                          onClick={handlePraticar}
                           disabled={rankAtual > 0}
                           style={{
                             ...styles.btnAcaoExtra,
@@ -511,7 +537,7 @@ export default function TelaEstudo({
                       );
                     })()
                   ) : (
-                    <button onClick={() => mudarTela('selecaoExercicio')} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt }}>
+                    <button onClick={handlePraticar} style={{ ...styles.btnAcaoExtra, backgroundColor: ns.bg, color: ns.txt }}>
                       {t.practice}
                     </button>
                   )}
