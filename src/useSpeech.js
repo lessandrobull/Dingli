@@ -1,3 +1,77 @@
+
+const NUMEROS_EXTENSO = {
+    fr: {
+        "zero": 0, "un": 1, "une": 1, "deux": 2, "trois": 3, "quatre": 4, "cinq": 5,
+        "six": 6, "sept": 7, "huit": 8, "neuf": 9, "dix": 10, "onze": 11, "douze": 12,
+        "treize": 13, "quatorze": 14, "quinze": 15, "seize": 16, "dix-sept": 17, "dix sept": 17,
+        "dix-huit": 18, "dix huit": 18, "dix-neuf": 19, "dix neuf": 19, "vingt": 20,
+        "vingt-et-un": 21, "vingt et un": 21, "trente": 30, "quarante": 40, "cinquante": 50,
+        "soixante": 60, "soixante-dix": 70, "soixante dix": 70, "septante": 70,
+        "quatre-vingts": 80, "quatre-vingt": 80, "quatre vingts": 80, "quatre vingt": 80, "octante": 80, "huitante": 80,
+        "quatre-vingt-dix": 90, "quatre vingt dix": 90, "nonante": 90,
+        "cent": 100, "cents": 100, "deux cents": 200, "cinq cents": 500, "mille": 1000, "million": 1000000
+    },
+    es: {
+        "cero": 0, "uno": 1, "una": 1, "un": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5,
+        "seis": 6, "siete": 7, "ocho": 8, "nueve": 9, "diez": 10, "once": 11, "doce": 12,
+        "trece": 13, "catorce": 14, "quince": 15, "dieciseis": 16, "diecisiete": 17, "dieciocho": 18, "diecinueve": 19,
+        "veinte": 20, "veintiuno": 21, "veintiun": 21, "veintidos": 22, "veintitres": 23, "veinticuatro": 24,
+        "veinticinco": 25, "veintiseis": 26, "veintisiete": 27, "veintiocho": 28, "veintinueve": 29,
+        "treinta": 30, "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "setenta": 70, "ochenta": 80, "noventa": 90,
+        "cien": 100, "ciento": 100, "doscientos": 200, "trescientos": 300, "cuatrocientos": 400, "quinientos": 500,
+        "seiscientos": 600, "setecientos": 700, "ochocientos": 800, "novecientos": 900, "mil": 1000, "millon": 1000000
+    },
+    pt: {
+        "zero": 0, "um": 1, "uma": 1, "dois": 2, "duas": 2, "tres": 3, "quatro": 4, "cinco": 5,
+        "seis": 6, "meia": 6, "sete": 7, "oito": 8, "nove": 9, "dez": 10, "onze": 11, "doze": 12,
+        "treze": 13, "quatorze": 14, "catorze": 14, "quinze": 15, "dezesseis": 16, "dezessete": 17, "dezoito": 18, "dezenove": 19,
+        "vinte": 20, "trinta": 30, "quarenta": 40, "cinquenta": 50, "sessenta": 60, "setenta": 70, "oitenta": 80, "noventa": 90,
+        "cem": 100, "cento": 100, "duzentos": 200, "trezentos": 300, "quatrocentos": 400, "quinhentos": 500,
+        "seiscentos": 600, "setecientos": 700, "oitocentos": 800, "novecentos": 900, "mil": 1000, "milhao": 1000000
+    },
+    en: {
+        "zero": 0, "oh": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9,
+        "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18, "nineteen": 19,
+        "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50, "sixty": 60, "seventy": 70, "eighty": 80, "ninety": 90,
+        "hundred": 100, "thousand": 1000, "million": 1000000
+    },
+    it: {
+        "zero": 0, "uno": 1, "una": 1, "un": 1, "due": 2, "tre": 3, "quattro": 4, "cinque": 5, "sei": 6, "sette": 7, "otto": 8, "nove": 9,
+        "dieci": 10, "undici": 11, "dodici": 12, "tredici": 13, "quattordici": 14, "quindici": 15, "sedici": 16, "diciassette": 17, "diciotto": 18, "diciannove": 19,
+        "venti": 20, "trenta": 30, "quaranta": 40, "cinquanta": 50, "sessanta": 60, "settanta": 70, "ottanta": 80, "novanta": 90,
+        "cento": 100, "duecento": 200, "trecento": 300, "quattrocento": 400, "cinquecento": 500, "seicento": 600, "settecento": 700, "ottocento": 800, "novecento": 900,
+        "mille": 1000, "mila": 1000, "milione": 1000000
+    },
+    ge: {
+        "null": 0, "eins": 1, "ein": 1, "eine": 1, "einen": 1, "einem": 1, "einer": 1, "eines": 1, "zwei": 2, "zwo": 2, "drei": 3, "vier": 4, "funf": 5, "sechs": 6, "sieben": 7, "acht": 8, "neun": 9,
+        "zehn": 10, "elf": 11, "zwolf": 12, "dreizehn": 13, "vierzehn": 14, "funfzehn": 15, "sechzehn": 16, "siebzehn": 17, "achtzehn": 18, "neunzehn": 19,
+        "zwanzig": 20, "dreissig": 30, "vierzig": 40, "funfzig": 50, "sechzig": 60, "siebzig": 70, "achtzig": 80, "neunzig": 90,
+        "hundert": 100, "eintausend": 1000, "tausend": 1000, "million": 1000000
+    }
+};
+
+function normalizarMandarimNumeros(str) {
+    const ZH_VAL = {
+        "零": 0, "〇": 0, "一": 1, "二": 2, "两": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9,
+        "十": 10, "百": 100, "千": 1000, "万": 10000
+    };
+    return (str || "").replace(/([零〇一二两三四五六七八九十百千万]+)/g, (match) => {
+        let total = 0, n = 0;
+        for (let char of match) {
+            const val = ZH_VAL[char];
+            if (val === undefined) continue;
+            if (val >= 10) {
+                total += (n || 1) * val;
+                n = 0;
+            } else {
+                n = val;
+            }
+        }
+        total += n;
+        return total;
+    });
+}
+
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService';
 
@@ -254,15 +328,40 @@ export const useSpeech = ({
     }, []);
 
     const normalizar = useCallback((t) => {
-        return (t || "")
+        if (!t) return "";
+        if (idiomaEstudo === "pi") {
+            return normalizarMandarimNumeros(t)
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase()
+                .replace(/[.,!?;:¿¡"'{}()[\]\\—…，。！？；：、-]/g, "")
+                .trim();
+        }
+
+        let txt = t
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .replace(/ß/g, "ss")
-            .toLowerCase()
-            .replace(/[.,!?;:¿¡"'{}()[\]\\—…，。！？；：、-]/g, "")
-            .replace(/\s+/g, " ")
-            .trim();
-    }, []);
+            .toLowerCase();
+
+        txt = txt.replace(/(\w+)-(\w+)/g, "$1 $2");
+
+        const tabela = NUMEROS_EXTENSO[idiomaEstudo] || NUMEROS_EXTENSO.fr;
+        const chavesOrdenadas = Object.keys(tabela).sort((a, b) => b.length - a.length);
+
+        for (let chave of chavesOrdenadas) {
+            const regex = new RegExp(`\\b${chave}\\b`, "g");
+            txt = txt.replace(regex, tabela[chave]);
+        }
+
+        txt = txt.replace(/\b([1-9])\s+100\b/g, (m, d) => Number(d) * 100);
+        txt = txt.replace(/\b([1-9]00)\s+([2-9]0)\s+([1-9])\b/g, (m, c, d, u) => Number(c) + Number(d) + Number(u));
+        txt = txt.replace(/\b([1-9]00)\s+([1-9][0-9])\b/g, (m, c, du) => Number(c) + Number(du));
+        txt = txt.replace(/\b([1-9]00)\s+([1-9])\b/g, (m, c, u) => Number(c) + Number(u));
+        txt = txt.replace(/\b([2-9]0)\s+([1-9])\b/g, (m, d, u) => Number(d) + Number(u));
+
+        return txt.replace(/[.,!?;:¿¡"'{}()[\]\\—…，。！？；：、-]/g, "").replace(/\s+/g, " ").trim();
+    }, [idiomaEstudo]);
 
     const animarVolumeOnda = useCallback(() => {
         if (!estaGravandoRef.current) {
@@ -333,7 +432,7 @@ export const useSpeech = ({
             const textoAlvo = (idiomaEstudo === 'pi' && fraseAlvo?.zh) ? fraseAlvo.zh : fraseOriginal;
             const fraseCorreta = normalizar(textoAlvo);
             const falaComparacao = normalizar(falaRef.current || "");
-            const palavrasCorretas = idiomaEstudo === 'pi' ? textoAlvo.split("") : fraseCorreta.split(" ");
+            const palavrasCorretas = idiomaEstudo === "pi" ? fraseCorreta.split("") : fraseCorreta.split(" ");
 
             const acertos = palavrasCorretas.filter(p => {
                 const pNorm = normalizar(p);
@@ -369,7 +468,7 @@ export const useSpeech = ({
             const textoAlvo = (idiomaEstudo === 'pi' && fraseAlvo?.zh) ? fraseAlvo.zh : fraseOriginal;
             const fraseCorreta = normalizar(textoAlvo);
             const falaComparacao = normalizar(falaAtual);
-            const palavrasCorretas = idiomaEstudo === 'pi' ? textoAlvo.split("") : fraseCorreta.split(" ");
+            const palavrasCorretas = idiomaEstudo === "pi" ? fraseCorreta.split("") : fraseCorreta.split(" ");
 
             const acertos = palavrasCorretas.filter(p => {
                 const pNorm = normalizar(p);
