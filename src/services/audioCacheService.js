@@ -11,6 +11,14 @@ export const VOZES_PT = ["v1", "v2", "v3", "v4"];
 export const VOZES_ZH = ["v1", "v2", "v3", "v4"];
 export const VOZES_PI = VOZES_ZH;
 
+
+// TABELA CENTRAL DE VERSÕES DE ÁUDIO (Cache Busting silencioso)
+// Use "id" para atualizar todas as línguas daquela frase, ou "idioma/id_voz" para uma voz específica
+export const VERSOES_AUDIOS = {
+  "35": 2,      // Frase 35 atualizada com dicção humana em todos os idiomas
+  "fr/9_v3": 2  // Frase 9 em francês (voz v3 Charline) corrigida no Audacity
+};
+
 export function montarAudioUrl(id, voz = "v1", idioma = "en") {
   const pastaIdioma = idioma === "pi" ? "zh" : idioma;
   return `${SUPABASE_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3`;
