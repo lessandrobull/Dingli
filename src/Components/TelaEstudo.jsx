@@ -3,6 +3,7 @@ import React from 'react';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
+import { supabase } from '../supabaseClient';
 import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
 import { calcularProximoRank } from '../useSRSLogic';
 
@@ -130,6 +131,14 @@ const ExercicioVoz = ({
   );
 };
 
+const OPCOES_REPORTE = [
+  "Áudio",
+  "Frase do exercício",
+  "Tradução",
+  "Dificuldade para digitar",
+  "Dificuldade para gravação da fala"
+];
+
 export default function TelaEstudo({
   fraseAtivaGlobal,
   frasesFiltradas, indice, nivelAtivo, topicoAtivo,
@@ -142,7 +151,7 @@ export default function TelaEstudo({
   filaErros, setFilaErros, filaAcertos, setFilaAcertos,
   sessaoDominium, setSessaoDominium, jogarDominiumInteligente
 }) {
-  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole, getCorFonteDinamica } = useDingli();
 
   const frase = React.useMemo(() => {
     return fraseAtivaGlobal
@@ -165,6 +174,104 @@ export default function TelaEstudo({
   const processandoAcertoRef = useRef(false);
 
   const [audioLento, setAudioLento] = useState(false);
+  const [modalReporteAberto, setModalReporteAberto] = useState(false);
+  const [opcoesSelecionadas, setOpcoesSelecionadas] = useState([]);
+  const [outroTexto, setOutroTexto] = useState("");
+  const [enviandoReporte, setEnviandoReporte] = useState(false);
+  const [reporteEnviado, setReporteEnviado] = useState(false);
+
+  const corDinamica = (getCorFonteDinamica && idiomaEstudo)
+    ? getCorFonteDinamica(idiomaEstudo)
+    : (temas[idiomaEstudo]?.bg || "#0f172a");
+
+  const resetarModalReporte = useCallback(() => {
+    setModalReporteAberto(false);
+    setOpcoesSelecionadas([]);
+    setOutroTexto("");
+    setEnviandoReporte(false);
+    setReporteEnviado(false);
+  }, []);
+
+  const toggleOpcao = (op) => {
+    if (reporteEnviado) return;
+    setOpcoesSelecionadas(prev =>
+      prev.includes(op) ? prev.filter(item => item !== op) : [...prev, op]
+    );
+};
+
+  const enviarReporte = useCallback(async () => {
+    const problemas = [...opcoesSelecionadas];
+    if (outroTexto.trim()) problemas.push(`Outro: ${outroTexto.trim()}`);
+    if (problemas.length === 0) return;
+    setEnviandoReporte(true);
+    try {
+      const payload = {
+        frase_id: frase?.id || 0,
+        idioma_estudo: idiomaEstudo,
+        idioma_origem: idiomaOrigem,
+        voz: "v1",
+        tipo_problema: problemas.join(", "),
+        observacao: outroTexto.trim() || null,
+        resolvido: false
+      };
+      await supabase.from("reports_frases").insert([payload]);
+      setReporteEnviado(true);
+    } catch (err) {
+      console.error("[Reporte] Erro ao enviar:", err);
+      setReporteEnviado(true);
+    } finally {
+      setEnviandoReporte(false);
+    }
+  }, [frase, idiomaEstudo, idiomaOrigem, opcoesSelecionadas, outroTexto]);
+
+  const pularFrase = useCallback(() => {
+    const fraseId = frase?.id;
+    if (!fraseId) {
+      resetarModalReporte();
+      return;
+    }
+    if (setFrasesMaestria) {
+      setFrasesMaestria(prev => {
+        const rankObj = prev[fraseId];
+        const rankAtual = typeof rankObj === "object" ? (rankObj.rank || 1) : (rankObj || 1);
+        const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
+        const nova = {
+          ...prev,
+          [fraseId]: {
+            ...(typeof rankObj === "object" ? rankObj : {}),
+            rank: rankAtual,
+            status: "macro",
+            next_review: Date.now() + (7 * 24 * 60 * 60 * 1000),
+            last_review: Date.now(),
+            last_attempt_at: Date.now()
+          }
+        };
+        localStorage.setItem(chaveMaestria, JSON.stringify(nova));
+        return nova;
+      });
+    }
+    const fraseOriginal = frase ? (frase[idiomaEstudo] || "") : "";
+    if (setFilaErros) setFilaErros(prev => prev.filter(item => item.indice !== indice && item.id !== fraseId));
+    if (setFilaAcertos) setFilaAcertos(prev => prev.filter(item => item.id !== fraseId));
+    if (setSessaoDominium) {
+      setSessaoDominium(prev => ({
+        ...prev,
+        primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal && f.id !== fraseId),
+        recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal && f.id !== fraseId),
+        acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal && a.id !== fraseId),
+        falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal && f.id !== fraseId)
+      }));
+    }
+    resetarModalReporte();
+    if (limparEstadoExercicio) limparEstadoExercicio();
+    setResultadoFeedback(null);
+    if (setModoExercicio) setModoExercicio(false);
+    if (jogarDominiumRef.current) {
+      jogarDominiumRef.current();
+    } else if (setIndice) {
+      setIndice(prev => (prev + 1) % frasesFiltradas.length);
+    }
+  }, [frase, idiomaEstudo, idiomaOrigem, indice, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarModalReporte, limparEstadoExercicio, setResultadoFeedback, setModoExercicio, frasesFiltradas.length, setIndice]);
 
   useEffect(() => {
     setAudioLento(false);
@@ -484,8 +591,182 @@ export default function TelaEstudo({
         {!modoExercicio && (
           <div style={styles.headerEstudoMinimo}><span style={styles.contadorCompacto}>{indice + 1} / {frasesFiltradas.length}</span></div>
         )}
-        <div style={{ ...styles.cardFixoRelativo, margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? COR_ACERTO : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent'), outline: 'none' }}
+        <div style={{ ...styles.cardFixoRelativo, position: 'relative', margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? COR_ACERTO : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent'), outline: 'none' }}
           onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}>
+
+          {/* Botao discreto ⚑ no topo esquerdo do card */}
+          <button
+            type="button"
+            onClick={() => {
+              setOpcoesSelecionadas([]);
+              setOutroTexto("");
+              setReporteEnviado(false);
+              setModalReporteAberto(true);
+            }}
+            title="Reportar problema"
+            style={{
+              position: "absolute",
+              top: "14px",
+              left: "16px",
+              background: "none",
+              border: "none",
+              padding: "6px",
+              cursor: "pointer",
+              color: temas[idiomaEstudo]?.bg || "#475569",
+              opacity: 0.35,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: 10,
+              lineHeight: 1
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.35")}
+          >
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+              <line x1="4" y1="22" x2="4" y2="15" />
+            </svg>
+          </button>
+
+          {/* Janela sobreposta (adota cor de fundo da tela inicial do idioma) */}
+          {modalReporteAberto && (
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: temas[idiomaEstudo]?.bg || "#4d6395",
+                borderRadius: "26px",
+                padding: "20px 18px",
+                display: "flex",
+                flexDirection: "column",
+                zIndex: 25,
+                boxSizing: "border-box",
+                overflowY: "auto"
+              }}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" }}>
+                <span style={{ fontSize: "0.82rem", fontWeight: "800", color: "#ffffff", whiteSpace: "nowrap", letterSpacing: "0.2px" }}>
+                  Encontrou problemas? Mande pra gente:
+                </span>
+                <button
+                  type="button"
+                  onClick={resetarModalReporte}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: "#ffffff",
+                    opacity: 0.8,
+                    fontSize: "1.2rem",
+                    cursor: "pointer",
+                    padding: "0 0 0 10px",
+                    lineHeight: "1"
+                  }}
+                >
+                  ✕
+                </button>
+              </div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "14px" }}>
+                {OPCOES_REPORTE.map((op) => {
+                  const selecionado = opcoesSelecionadas.includes(op);
+                  return (
+                    <button
+                      key={op}
+                      type="button"
+                      disabled={reporteEnviado}
+                      onClick={() => toggleOpcao(op)}
+                      style={{
+                        padding: "10px 14px",
+                        borderRadius: "8px",
+                        border: selecionado ? ("2px solid " + corDinamica) : "1px solid rgba(255,255,255,0.25)",
+                        backgroundColor: "#ffffff",
+                        color: "#1e293b",
+                        fontSize: "0.9rem",
+                        fontWeight: selecionado ? "800" : "600",
+                        textAlign: "left",
+                        cursor: reporteEnviado ? "default" : "pointer",
+                        boxShadow: selecionado ? "0 0 0 2px rgba(255,255,255,0.5)" : "none"
+                      }}
+                    >
+                      {op}
+                    </button>
+                  );
+                })}
+
+                {/* Campo de digitacao branco no 6o slot */}
+                <input
+                  type="text"
+                  disabled={reporteEnviado}
+                  value={outroTexto}
+                  onChange={(e) => setOutroTexto(e.target.value)}
+                  placeholder="Outro: descreva aqui..."
+                  maxLength={150}
+                  style={{
+                    width: "100%",
+                    padding: "10px 14px",
+                    borderRadius: "8px",
+                    border: outroTexto.trim() ? ("2px solid " + corDinamica) : "1px solid rgba(255,255,255,0.25)",
+                    backgroundColor: "#ffffff",
+                    color: "#1e293b",
+                    fontSize: "0.9rem",
+                    fontWeight: outroTexto.trim() ? "800" : "600",
+                    outline: "none",
+                    boxSizing: "border-box",
+                    boxShadow: outroTexto.trim() ? "0 0 0 2px rgba(255,255,255,0.5)" : "none"
+                  }}
+                />
+              </div>
+
+              <div style={{ marginTop: "auto", paddingTop: "8px" }}>
+                {!reporteEnviado ? (
+                  <button
+                    type="button"
+                    disabled={(!opcoesSelecionadas.length && !outroTexto.trim()) || enviandoReporte}
+                    onClick={enviarReporte}
+                    style={{
+                      width: "100%",
+                      padding: "14px",
+                      borderRadius: "10px",
+                      border: "none",
+                      backgroundColor: ((!opcoesSelecionadas.length && !outroTexto.trim()) || enviandoReporte)
+                        ? "rgba(255,255,255,0.3)"
+                        : corDinamica,
+                      color: "#ffffff",
+                      fontSize: "1rem",
+                      fontWeight: "800",
+                      cursor: ((!opcoesSelecionadas.length && !outroTexto.trim()) || enviandoReporte) ? "not-allowed" : "pointer",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
+                    }}
+                  >
+                    {enviandoReporte ? "Enviando..." : "Enviar"}
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={pularFrase}
+                    style={{
+                      width: "100%",
+                      padding: "14px",
+                      borderRadius: "10px",
+                      border: "none",
+                      backgroundColor: corDinamica,
+                      color: "#ffffff",
+                      fontSize: "1rem",
+                      fontWeight: "800",
+                      cursor: "pointer",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
+                    }}
+                  >
+                    Pular Frase
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
 
           <div style={styles.topCardAreaFixed}>
             {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{topicoAtivo}</p>}
