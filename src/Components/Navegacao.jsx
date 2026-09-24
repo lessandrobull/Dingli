@@ -195,7 +195,7 @@ export function EscolherTopic({
 }
 
 export function SelecaoExercicio({ styles, iniciarExercicio }) {
-  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo } = useDingli();
+  const { temas, t, getCorFonteDinamica, navStyle, idiomaEstudo, mudarTela, userRole } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   const corFonte = getCorFonteDinamica(idiomaEstudo);
@@ -203,7 +203,27 @@ export function SelecaoExercicio({ styles, iniciarExercicio }) {
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg }}>
       <div style={styles.mobileContainer}>
-        <button onClick={() => window.history.back()} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.back}</button>
+        {userRole === 'adm' ? (
+          <div style={{ display: "flex", gap: "8px", width: "100%", marginBottom: "5px" }}>
+            <button
+              onClick={() => mudarTela("estudo")}
+              style={{ ...styles.btnNavTopo, flex: 1, width: "auto", marginBottom: 0, backgroundColor: ns.bg, color: ns.txt }}
+            >
+              ← Card
+            </button>
+            <button
+              onClick={() => {
+                sessionStorage.setItem("adm_subtela", "reportes");
+                mudarTela("adm");
+              }}
+              style={{ ...styles.btnNavTopo, flex: 1, width: "auto", marginBottom: 0, backgroundColor: ns.bg, color: ns.txt }}
+            >
+              ← Reportes
+            </button>
+          </div>
+        ) : (
+          <button onClick={() => window.history.back()} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.back}</button>
+        )}
         <div className="scroll-container" style={styles.areaScrollMenu}>
           {NOMES_RANKS.map((nome, i) => {
             const n = i + 1;

@@ -437,7 +437,7 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
       if (tela === 'estudo' && frasesFiltradas.length === 0 && !fraseAtivaGlobal) {
         limparEstadoExercicioRef.current();
         mudarTela('escolherTopic');
-      } else if (tela === 'selecaoExercicio' && frasesFiltradas.length === 0) {
+      } else if (tela === 'selecaoExercicio' && frasesFiltradas.length === 0 && !fraseAtivaGlobal) {
         mudarTela('escolherTopic');
       } else if (tela === 'escolherTopic') {
         if (!nivelAtivo) {
@@ -830,7 +830,7 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
       <SelecaoExercicio styles={styles} iniciarExercicio={iniciarExercicio} />
     );
     if (tela === 'adm') return (
-      <Adm styles={styles} />
+      <Adm styles={styles} setFraseAtivaGlobal={setFraseAtivaGlobal} setTopicoAtivo={setTopicoAtivo} />
     );
     if (tela === 'explicacaoIA') return (
       <ExplicacaoIA

@@ -587,7 +587,7 @@ export default function TelaEstudo({
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg, height: alturaTela, position: 'absolute', top: 0, left: 0, width: '100%' }}>
       <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
-        <button onClick={() => { limparEstadoExercicio(); mudarTela('menuCartoes'); }} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.quit}</button>
+        <button onClick={() => { const destino = userRole === 'adm' ? 'adm' : 'menuCartoes'; limparEstadoExercicio(); mudarTela(destino); }} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>← {t.quit}</button>
         {!modoExercicio && (
           <div style={styles.headerEstudoMinimo}><span style={styles.contadorCompacto}>{indice + 1} / {frasesFiltradas.length}</span></div>
         )}
