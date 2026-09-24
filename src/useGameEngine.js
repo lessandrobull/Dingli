@@ -24,11 +24,14 @@ export function useGameEngine({
   const [filaErros, setFilaErros] = useState([]);
   const [filaAcertos, setFilaAcertos] = useState([]);
   const [sessaoDominium, setSessaoDominium] = useState({ primeira: [], recuperadas: [], acertosTempo: [], falhas: [] });
-  const inicioTaskRef = useRef(null);
+
+  // Bandeja de controle da Task (máximo de 5 frases por ciclo)
+  const bandejaTaskRef = useRef([]);
+  const LIMITE_BANDEJA = 5;
+
   const resetarTimerTask = useCallback(() => {
-    inicioTaskRef.current = null;
+    bandejaTaskRef.current = [];
   }, []);
-  const DURACAO_TASK = (2 * 60 + 30) * 1000;
 
   // Carregamento dinâmico baseado no curso atual (L1_L2)
   useEffect(() => {
@@ -86,27 +89,20 @@ export function useGameEngine({
     if (!idiomaOrigem || !idiomaEstudo) return;
     localStorage.setItem(`sessao_dominium_${idiomaOrigem}_${idiomaEstudo}`, JSON.stringify(sessaoDominium));
   }, [sessaoDominium, idiomaOrigem, idiomaEstudo]);
+
   useEffect(() => {
     localStorage.setItem('pref_mostrar_traducao', JSON.stringify(mostrarTraducao));
   }, [mostrarTraducao]);
 
-      const avaliarProximoAlvo = useCallback((frasesAtuais = frasesFiltradas) => {
+  const avaliarProximoAlvo = useCallback((frasesAtuais = frasesFiltradas) => {
     const agora = Date.now();
     const temTopicoCarregado = Boolean(frasesAtuais && frasesAtuais.length > 0);
 
-    // O timer da Task só inicia quando um tópico/estudo de fato está aberto
-    if (temTopicoCarregado && !inicioTaskRef.current) {
-      inicioTaskRef.current = agora;
-    }
-
-    const tempoDecorrido = inicioTaskRef.current ? agora - inicioTaskRef.current : 0;
-    const tempoEsgotado = Boolean(inicioTaskRef.current && tempoDecorrido >= DURACAO_TASK);
-
-    // Identificar frases em trânsito (espera de 30s)
-    let emTransito = [];
-    let recuperacao = [];
-    let progresso30s = [];
-    let progressoDias = [];
+    // 1. Mapeamento das listas globais do sistema
+    let emTransitoGlobal = [];
+    let recuperacaoGlobal = [];
+    let progresso30sGlobal = [];
+    let progressoDiasGlobal = [];
 
     Object.keys(frasesMaestria).forEach(idStr => {
       const id = Number(idStr);
@@ -114,74 +110,115 @@ export function useGameEngine({
 
       if (typeof maestria === "object" && maestria.rank > 0) {
         if (maestria.status === "progresso" || maestria.status === "recuperacao") {
-          emTransito.push({ ...maestria, id });
+          emTransitoGlobal.push({ ...maestria, id });
         }
 
         if (maestria.next_review <= agora) {
           if (maestria.status === "recuperacao") {
-            recuperacao.push({ ...maestria, id, tipo: "recuperacao" });
+            recuperacaoGlobal.push({ ...maestria, id, tipo: "recuperacao" });
           } else if (maestria.status === "progresso") {
-            progresso30s.push({ ...maestria, id, tipo: "progresso" });
+            progresso30sGlobal.push({ ...maestria, id, tipo: "progresso" });
           } else if (maestria.status === "macro") {
-            progressoDias.push({ ...maestria, id, tipo: "macro" });
+            progressoDiasGlobal.push({ ...maestria, id, tipo: "macro" });
           }
         }
       }
     });
 
-    const sortCronologico = (a, b) => a.last_attempt_at - b.last_attempt_at;
-    recuperacao.sort(sortCronologico);
-    progresso30s.sort(sortCronologico);
-    progressoDias.sort((a, b) => (a.next_review - a.last_review) - (b.next_review - b.last_review));
+    const sortCronologico = (a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0);
+    recuperacaoGlobal.sort(sortCronologico);
+    progresso30sGlobal.sort(sortCronologico);
+    progressoDiasGlobal.sort((a, b) => (a.next_review - a.last_review) - (b.next_review - b.last_review));
 
-    // Verificar se ainda existem inéditas no tópico carregado
-    let ineditas = [];
+    // Mapeamento de inéditas do tópico (se houver tópico carregado)
+    let ineditasGlobal = [];
     if (temTopicoCarregado) {
       frasesAtuais.forEach((f, index) => {
         const maestria = frasesMaestria[f.id];
         const rank = typeof maestria === "object" ? maestria.rank : (maestria || 0);
         if (rank === 0) {
-          ineditas.push({ id: f.id, rank: 0, tipo: "inedita", indice: index, nivel: f.nivel, topico: f.topico });
+          ineditasGlobal.push({ id: f.id, rank: 0, tipo: "inedita", indice: index, nivel: f.nivel, topico: f.topico });
         }
       });
-      ineditas.sort((a, b) => a.id - b.id);
+      ineditasGlobal.sort((a, b) => a.id - b.id);
     }
 
-    // Modo de drenagem: somente se havia tópico carregado e as inéditas acabaram, OU se estourou 5 minutos com tópico ativo
-    const semIneditasNoTopico = temTopicoCarregado && ineditas.length === 0;
-    const modoDrenagem = temTopicoCarregado && (tempoEsgotado || semIneditasNoTopico);
+    // 2. Admissão na Bandeja da Task (Capacidade máxima de 5 frases)
+    if (bandejaTaskRef.current.length === 0) {
+      const novaBandeja = [];
 
-    // --- MODO DE DRENAGEM ---
-    if (modoDrenagem) {
-      if (emTransito.length === 0) {
-        inicioTaskRef.current = null;
-        return {
-    resetarTimerTask, tipo: "concluido" };
-      }
+      // A) Prioriza cartas que já estavam abertas em mesa da sessão
+      emTransitoGlobal.forEach(item => {
+        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
+          novaBandeja.push(item.id);
+        }
+      });
 
-      if (recuperacao.length > 0) return { tipo: "revisao", dados: recuperacao[0] };
-      if (progresso30s.length > 0) return { tipo: "revisao", dados: progresso30s[0] };
+      // B) Preenche com revisões liberadas de dias anteriores (Rank 6+)
+      progressoDiasGlobal.forEach(item => {
+        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
+          novaBandeja.push(item.id);
+        }
+      });
 
-      // Se só restam cartas em espera de 30s e nenhuma está pronta, libera o cooldown imediatamente
-      emTransito.sort((a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0));
-      return { tipo: "revisao", dados: emTransito[0] };
+      // C) Preenche com cartas inéditas do tópico ativo
+      ineditasGlobal.forEach(item => {
+        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
+          novaBandeja.push(item.id);
+        }
+      });
+
+      bandejaTaskRef.current = novaBandeja;
     }
 
-    // --- FLUXO NORMAL (Hierarquia original preservada) ---
-    if (recuperacao.length > 0) return { tipo: "revisao", dados: recuperacao[0] };
-    if (progresso30s.length > 0) return { tipo: "revisao", dados: progresso30s[0] };
-    if (progressoDias.length > 0) return { tipo: "revisao", dados: progressoDias[0] };
-    if (ineditas.length > 0) return ineditas[0];
-
-    // Se há tópico carregado e cartas em trânsito
-    if (temTopicoCarregado && emTransito.length > 0) {
-      emTransito.sort((a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0));
-      return { tipo: "revisao", dados: emTransito[0] };
+    // Se mesmo após a admissão a bandeja estiver vazia (sem cartas no tópico ou mesa)
+    if (bandejaTaskRef.current.length === 0) {
+      return null;
     }
 
-    // Sem tópico carregado ou nada pendente: retorna null para que a Regra 4 do Game busque o nível
-    return null;
-  }, [frasesMaestria, frasesFiltradas]);
+    const idsBandeja = bandejaTaskRef.current;
+
+    // 3. Filtro restrito: o aluno só pratica frases admitidas na bandeja
+    const recuperacaoBandeja = recuperacaoGlobal.filter(item => idsBandeja.includes(item.id));
+    const progresso30sBandeja = progresso30sGlobal.filter(item => idsBandeja.includes(item.id));
+    const progressoDiasBandeja = progressoDiasGlobal.filter(item => idsBandeja.includes(item.id));
+    const ineditasBandeja = ineditasGlobal.filter(item => idsBandeja.includes(item.id));
+    const emTransitoBandeja = emTransitoGlobal.filter(item => idsBandeja.includes(item.id));
+
+    // 4. Verificação de Conclusão da Task
+    const totalPendentes = recuperacaoBandeja.length +
+                           progresso30sBandeja.length +
+                           progressoDiasBandeja.length +
+                           ineditasBandeja.length +
+                           emTransitoBandeja.length;
+
+    if (totalPendentes === 0) {
+      bandejaTaskRef.current = [];
+      return { resetarTimerTask, tipo: "concluido" };
+    }
+
+    // 5. Ordem de Execução dos Exercícios dentro da Bandeja
+    // 1º: Erros recentes que já cumpriram os 30s
+    if (recuperacaoBandeja.length > 0) return { tipo: "revisao", dados: recuperacaoBandeja[0] };
+
+    // 2º: Micro-ciclos normais que já cumpriram os 30s
+    if (progresso30sBandeja.length > 0) return { tipo: "revisao", dados: progresso30sBandeja[0] };
+
+    // 3º: Revisões de dias aguardando a 1ª rodada
+    if (progressoDiasBandeja.length > 0) return { tipo: "revisao", dados: progressoDiasBandeja[0] };
+
+    // 4º: Inéditas aguardando a 1ª rodada
+    if (ineditasBandeja.length > 0) return ineditasBandeja[0];
+
+    // 5º: Bypass de Cooldown Ocioso
+    if (emTransitoBandeja.length > 0) {
+      emTransitoBandeja.sort(sortCronologico);
+      return { tipo: "revisao", dados: emTransitoBandeja[0] };
+    }
+
+    bandejaTaskRef.current = [];
+    return { resetarTimerTask, tipo: "concluido" };
+  }, [frasesMaestria, frasesFiltradas, resetarTimerTask]);
 
   return {
     indice, setIndice,
@@ -190,6 +227,7 @@ export function useGameEngine({
     filaErros, setFilaErros,
     filaAcertos, setFilaAcertos,
     sessaoDominium, setSessaoDominium,
-    avaliarProximoAlvo
+    avaliarProximoAlvo,
+    resetarTimerTask
   }
 }
