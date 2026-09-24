@@ -337,11 +337,14 @@ function App() {
     if (proximo.tipo === 'inedita') {
       setFraseAtivaGlobal(null);
       if (proximo.indice !== -1 && proximo.indice !== undefined) {
-        limparEstadoExercicio();
         setIndice(proximo.indice);
         setModoJogo(false);
         setSessaoIniciada(false);
         setModoExercicio(false);
+        setResultadoFeedback(null);
+        setTranscricaoAoVivo("");
+        setStatusVoz('IDLE');
+        processandoAcertoRef.current = false;
         mudarTela('estudo');
       } else {
         limparEstadoExercicio();

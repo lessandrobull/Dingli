@@ -25,12 +25,12 @@ export function useGameEngine({
   const [filaAcertos, setFilaAcertos] = useState([]);
   const [sessaoDominium, setSessaoDominium] = useState({ primeira: [], recuperadas: [], acertosTempo: [], falhas: [] });
 
-  // Bandeja de controle da Task (máximo de 5 frases por ciclo)
-  const bandejaTaskRef = useRef([]);
+  // Registro fixo dos IDs admitidos na Task atual (limite de 5 frases)
+  const taskIdsRef = useRef([]);
   const LIMITE_BANDEJA = 5;
 
   const resetarTimerTask = useCallback(() => {
-    bandejaTaskRef.current = [];
+    taskIdsRef.current = [];
   }, []);
 
   // Carregamento dinâmico baseado no curso atual (L1_L2)
@@ -130,7 +130,7 @@ export function useGameEngine({
     progresso30sGlobal.sort(sortCronologico);
     progressoDiasGlobal.sort((a, b) => (a.next_review - a.last_review) - (b.next_review - b.last_review));
 
-    // Mapeamento de inéditas do tópico (se houver tópico carregado)
+    // Mapeamento de inéditas do tópico
     let ineditasGlobal = [];
     if (temTopicoCarregado) {
       frasesAtuais.forEach((f, index) => {
@@ -143,80 +143,81 @@ export function useGameEngine({
       ineditasGlobal.sort((a, b) => a.id - b.id);
     }
 
-    // 2. Admissão na Bandeja da Task (Capacidade máxima de 5 frases)
-    if (bandejaTaskRef.current.length === 0) {
+    // 2. Admissão inicial da Task (fixa até 5 frases na sessão)
+    if (taskIdsRef.current.length === 0) {
       const novaBandeja = [];
 
-      // A) Prioriza cartas que já estavam abertas em mesa da sessão
+      // A) Cartas em trânsito abertas na mesa
       emTransitoGlobal.forEach(item => {
         if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
           novaBandeja.push(item.id);
         }
       });
 
-      // B) Preenche com revisões liberadas de dias anteriores (Rank 6+)
+      // B) Revisões liberadas de dias anteriores (Rank 6+)
       progressoDiasGlobal.forEach(item => {
         if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
           novaBandeja.push(item.id);
         }
       });
 
-      // C) Preenche com cartas inéditas do tópico ativo
+      // C) Inéditas do tópico ativo
       ineditasGlobal.forEach(item => {
         if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
           novaBandeja.push(item.id);
         }
       });
 
-      bandejaTaskRef.current = novaBandeja;
+      taskIdsRef.current = novaBandeja;
     }
 
-    // Se mesmo após a admissão a bandeja estiver vazia (sem cartas no tópico ou mesa)
-    if (bandejaTaskRef.current.length === 0) {
+    if (taskIdsRef.current.length === 0) {
       return null;
     }
 
-    const idsBandeja = bandejaTaskRef.current;
+    const idsBandeja = taskIdsRef.current;
 
-    // 3. Filtro restrito: o aluno só pratica frases admitidas na bandeja
-    const recuperacaoBandeja = recuperacaoGlobal.filter(item => idsBandeja.includes(item.id));
-    const progresso30sBandeja = progresso30sGlobal.filter(item => idsBandeja.includes(item.id));
-    const progressoDiasBandeja = progressoDiasGlobal.filter(item => idsBandeja.includes(item.id));
-    const ineditasBandeja = ineditasGlobal.filter(item => idsBandeja.includes(item.id));
-    const emTransitoBandeja = emTransitoGlobal.filter(item => idsBandeja.includes(item.id));
+    // 3. Identificar quais frases da Task AINDA NÃO CONCLUÍRAM (não atingiram repouso de dias)
+    // Uma frase está concluída quando atingiu status 'macro' e next_review > agora (ex: Rank 6 com 1 dia de descanso)
+    const idsPendentes = idsBandeja.filter(id => {
+      const m = frasesMaestria[id];
+      const estaEmRepouso = m && typeof m === "object" && m.status === "macro" && m.next_review > agora;
+      return !estaEmRepouso;
+    });
 
-    // 4. Verificação de Conclusão da Task
-    const totalPendentes = recuperacaoBandeja.length +
-                           progresso30sBandeja.length +
-                           progressoDiasBandeja.length +
-                           ineditasBandeja.length +
-                           emTransitoBandeja.length;
-
-    if (totalPendentes === 0) {
-      bandejaTaskRef.current = [];
+    // 4. Se todas as frases da Task atingiram o próximo porto seguro (repouso) -> Fim da Task!
+    if (idsPendentes.length === 0) {
+      taskIdsRef.current = [];
       return { resetarTimerTask, tipo: "concluido" };
     }
 
-    // 5. Ordem de Execução dos Exercícios dentro da Bandeja
-    // 1º: Erros recentes que já cumpriram os 30s
+    // 5. Seleção restrita estritamente entre as frases pendentes da Task
+    const recuperacaoBandeja = recuperacaoGlobal.filter(item => idsPendentes.includes(item.id));
+    const progresso30sBandeja = progresso30sGlobal.filter(item => idsPendentes.includes(item.id));
+    const progressoDiasBandeja = progressoDiasGlobal.filter(item => idsPendentes.includes(item.id));
+    const ineditasBandeja = ineditasGlobal.filter(item => idsPendentes.includes(item.id));
+    const emTransitoBandeja = emTransitoGlobal.filter(item => idsPendentes.includes(item.id));
+
+    // 1º: Erros recentes prontos (30s cumpridos)
     if (recuperacaoBandeja.length > 0) return { tipo: "revisao", dados: recuperacaoBandeja[0] };
 
-    // 2º: Micro-ciclos normais que já cumpriram os 30s
+    // 2º: Micro-ciclos normais prontos (30s cumpridos)
     if (progresso30sBandeja.length > 0) return { tipo: "revisao", dados: progresso30sBandeja[0] };
 
-    // 3º: Revisões de dias aguardando a 1ª rodada
+    // 3º: Revisões de dias aguardando a primeira rodada
     if (progressoDiasBandeja.length > 0) return { tipo: "revisao", dados: progressoDiasBandeja[0] };
 
-    // 4º: Inéditas aguardando a 1ª rodada
+    // 4º: Inéditas que ainda não foram praticadas
     if (ineditasBandeja.length > 0) return ineditasBandeja[0];
 
     // 5º: Bypass de Cooldown Ocioso
+    // Se todas as pendentes da bandeja estão em espera de 30s, entrega a que espera há mais tempo
     if (emTransitoBandeja.length > 0) {
       emTransitoBandeja.sort(sortCronologico);
       return { tipo: "revisao", dados: emTransitoBandeja[0] };
     }
 
-    bandejaTaskRef.current = [];
+    taskIdsRef.current = [];
     return { resetarTimerTask, tipo: "concluido" };
   }, [frasesMaestria, frasesFiltradas, resetarTimerTask]);
 
