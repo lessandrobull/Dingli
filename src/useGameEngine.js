@@ -33,6 +33,36 @@ export function useGameEngine({
     taskIdsRef.current = [];
   }, []);
 
+  // ETAPA 2: Move a frase para o final da fila da bandeja atual da Task
+  const postergarParaFimDaTask = useCallback((idAlvo) => {
+    if (!idAlvo) return;
+    
+    // 1. Move para a última posição de taskIdsRef.current
+    if (taskIdsRef.current && taskIdsRef.current.includes(idAlvo)) {
+      taskIdsRef.current = [...taskIdsRef.current.filter(id => id !== idAlvo), idAlvo];
+    } else if (taskIdsRef.current) {
+      taskIdsRef.current.push(idAlvo);
+    }
+
+    // 2. Registra timestamp recente para que a ordenação cronológica a posicione por último
+    const agora = Date.now();
+    setFrasesMaestria(prev => {
+      const item = prev[idAlvo];
+      if (!item) return prev;
+      const rankAtual = typeof item === 'object' ? item.rank : (item || 0);
+      return {
+        ...prev,
+        [idAlvo]: {
+          ...(typeof item === 'object' ? item : {}),
+          rank: rankAtual,
+          status: 'recuperacao',
+          last_attempt_at: agora,
+          next_review: agora + 30000 // Cooldown de 30s para dar vez às outras pendentes
+        }
+      };
+    });
+  }, []);
+
   // Carregamento dinâmico baseado no curso atual (L1_L2)
   useEffect(() => {
     if (!idiomaOrigem || !idiomaEstudo) return;
@@ -178,14 +208,13 @@ export function useGameEngine({
     const idsBandeja = taskIdsRef.current;
 
     // 3. Identificar quais frases da Task AINDA NÃO CONCLUÍRAM (não atingiram repouso de dias)
-    // Uma frase está concluída quando atingiu status 'macro' e next_review > agora (ex: Rank 6 com 1 dia de descanso)
     const idsPendentes = idsBandeja.filter(id => {
       const m = frasesMaestria[id];
       const estaEmRepouso = m && typeof m === "object" && m.status === "macro" && m.next_review > agora;
       return !estaEmRepouso;
     });
 
-    // 4. Se todas as frases da Task atingiram o próximo porto seguro (repouso) -> Fim da Task!
+    // 4. Se todas as frases da Task atingiram o repouso -> Fim da Task!
     if (idsPendentes.length === 0) {
       taskIdsRef.current = [];
       return { resetarTimerTask, tipo: "concluido" };
@@ -210,8 +239,7 @@ export function useGameEngine({
     // 4º: Inéditas que ainda não foram praticadas
     if (ineditasBandeja.length > 0) return ineditasBandeja[0];
 
-    // 5º: Bypass de Cooldown Ocioso
-    // Se todas as pendentes da bandeja estão em espera de 30s, entrega a que espera há mais tempo
+    // 5º: Bypass de Cooldown Ocioso (se todas aguardam tempo, entrega a que espera há mais tempo)
     if (emTransitoBandeja.length > 0) {
       emTransitoBandeja.sort(sortCronologico);
       return { tipo: "revisao", dados: emTransitoBandeja[0] };
@@ -229,6 +257,7 @@ export function useGameEngine({
     filaAcertos, setFilaAcertos,
     sessaoDominium, setSessaoDominium,
     avaliarProximoAlvo,
-    resetarTimerTask
+    resetarTimerTask,
+    postergarParaFimDaTask
   }
 }

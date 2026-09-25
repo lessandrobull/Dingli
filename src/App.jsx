@@ -61,6 +61,7 @@ function App() {
       setBaixandoTopico(null);
     }
   }, [nivelAtivo, idiomaOrigem, idiomaEstudo]);
+
   const [fraseTeorica, setFraseTeorica] = useState("Carregando inspiração...");
   const [nomeAluno, setNomeAluno] = useState("Estudante");
   const apiKey = "AIzaSyAv_65bjZGGtUDJugC_GtTQoMmXrFw1XtY";
@@ -97,7 +98,8 @@ function App() {
     filaAcertos, setFilaAcertos,
     sessaoDominium, setSessaoDominium,
     avaliarProximoAlvo,
-    resetarTimerTask
+    resetarTimerTask,
+    postergarParaFimDaTask
   } = useGameEngine({
     frasesFiltradas, setFrasesFiltradas,
     idiomaOrigem, idiomaEstudo, nivelAtivo, topicoAtivo,
@@ -246,11 +248,16 @@ function App() {
       const textoFinalErro = (idiomaEstudo === 'pi' && zhSalvar)
         ? zhSalvar
         : fraseOriginal;
-      const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 600, 1000);
 
-      if (falarRef.current) falarRef.current({ id: idAtual, texto: textoFinalErro }, false);
+      // ETAPA 1: Áudio LENTO pós-erro com SORTEIO DE VOZ DIFERENTE DA ANTERIOR
+      if (falarRef.current) {
+        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, true);
+      }
+
+      const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 850, 1500);
+
       setTimeout(() => {
-        setResultadoFeedback(null);
+        // Mantém resultadoFeedback 'erro' para que as palavras vermelhas fiquem visíveis e clicáveis
         setTranscricaoAoVivo("");
         setStatusVoz('IDLE');
         processandoAcertoRef.current = false;
@@ -259,7 +266,6 @@ function App() {
   }, [indice, frasesFiltradas, idiomaEstudo, idiomaOrigem, frasesMaestria, nivelAtivo, topicoAtivo, modoJogo, setResultadoFeedback, setSessaoDominium, setFrasesMaestria, setFilaErros, setFilaAcertos, setIndice, fraseAtivaGlobal]);
 
   const jogarDominiumInteligente = useCallback(async () => {
-    // Pre-carrega frases ativas da sessao Dominium em segundo plano
     const filaDominium = [
       ...(sessaoDominium?.recuperadas || []),
       ...(sessaoDominium?.primeira || []),
@@ -280,7 +286,6 @@ function App() {
     }
 
     if (!proximo) {
-      // Regra 2 e 3: Se estava estudando um tópico e as frases acabaram
       if (topicoAtivo) {
         limparEstadoExercicio();
         if (verificarNivelConcluido()) {
@@ -291,7 +296,6 @@ function App() {
         return;
       }
 
-      // Regra 4: Sem tópico aberto no dia (Game direto) -> menor ID geral sem inicialização
       const nivelBusca = nivelAtivo || "A1";
       const colTopicOrigem = `topic_${idiomaOrigem}`;
       let dadosNivel = null;
@@ -315,7 +319,6 @@ function App() {
         }
       }
 
-      // Se todas as frases do nível já foram praticadas
       if (verificarNivelConcluido()) {
         limparEstadoExercicio();
         mudarTela("nivelConcluido");
@@ -359,6 +362,7 @@ function App() {
 
   const {
     estaOuvindo, statusVoz, transcricaoAoVivo, volume,
+    tentativasVoz, resetarTentativasVoz,
     falar, iniciarReconhecimentoVoz, pararEAvaliarVoz, pararMonitoramentoAudio,
     setEstaOuvindo, setStatusVoz, setTranscricaoAoVivo
   } = useSpeech({
@@ -372,46 +376,43 @@ function App() {
   }, [falar]);
 
   const [aiLoading, setAiLoading] = useState(false);
-const [aiExplanation, setAiExplanation] = useState(null);
+  const [aiExplanation, setAiExplanation] = useState(null);
 
-const explicarFraseIA = useCallback(async (idFornecido) => {
-  // Identifica o ID da frase ativa com segurança (via argumento ou via índice da tela)
-  const idAlvo = idFornecido || fraseAtivaGlobal?.id || frasesFiltradas[indice]?.id;
-  if (!idAlvo) return;
+  const explicarFraseIA = useCallback(async (idFornecido) => {
+    const idAlvo = idFornecido || fraseAtivaGlobal?.id || frasesFiltradas[indice]?.id;
+    if (!idAlvo) return;
 
-  const chaveTopico = `${nivelAtivo}_${topicoAtivo}`;
-  const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+    const chaveTopico = `${nivelAtivo}_${topicoAtivo}`;
+    const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
 
-  // 1. Se o JSON deste tópico já foi baixado na sessão, lê direto da memória (0ms)
-  if (cacheExplicacoesTopico.current[chaveTopico]) {
-    const dados = cacheExplicacoesTopico.current[chaveTopico][String(idAlvo)];
-    setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
-    mudarTela('explicacaoIA');
-    return;
-  }
-
-  // 2. Se for a primeira vez no tópico, carrega o arquivo JSON local
-  setAiLoading(true);
-  try {
-    const nomeArquivo = encodeURIComponent(`${chaveTopico}.json`);
-    const resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
-    
-    if (resposta.ok) {
-      const mapa = await resposta.json();
-      cacheExplicacoesTopico.current[chaveTopico] = mapa;
-      const dados = mapa[String(idAlvo)];
+    if (cacheExplicacoesTopico.current[chaveTopico]) {
+      const dados = cacheExplicacoesTopico.current[chaveTopico][String(idAlvo)];
       setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
-    } else {
-      setAiExplanation({ explanation: "Arquivo de explicações do tópico não localizado.", breakdown: [] });
+      mudarTela('explicacaoIA');
+      return;
     }
-  } catch (err) {
-    console.warn("[App] Falha ao carregar explicação local:", err);
-    setAiExplanation({ explanation: "Erro ao abrir explicação local.", breakdown: [] });
-  } finally {
-    setAiLoading(false);
-    mudarTela('explicacaoIA');
-  }
-}, [nivelAtivo, topicoAtivo, idiomaEstudo, idiomaOrigem, mudarTela, fraseAtivaGlobal, frasesFiltradas, indice]);
+
+    setAiLoading(true);
+    try {
+      const nomeArquivo = encodeURIComponent(`${chaveTopico}.json`);
+      const resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+      
+      if (resposta.ok) {
+        const mapa = await resposta.json();
+        cacheExplicacoesTopico.current[chaveTopico] = mapa;
+        const dados = mapa[String(idAlvo)];
+        setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
+      } else {
+        setAiExplanation({ explanation: "Arquivo de explicações do tópico não localizado.", breakdown: [] });
+      }
+    } catch (err) {
+      console.warn("[App] Falha ao carregar explicação local:", err);
+      setAiExplanation({ explanation: "Erro ao abrir explicação local.", breakdown: [] });
+    } finally {
+      setAiLoading(false);
+      mudarTela('explicacaoIA');
+    }
+  }, [nivelAtivo, topicoAtivo, idiomaEstudo, idiomaOrigem, mudarTela, fraseAtivaGlobal, frasesFiltradas, indice]);
 
   const isFirstRun = useRef(true);
   useEffect(() => {
@@ -419,7 +420,7 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
       isFirstRun.current = false;
       return;
     }
-        if (['perfil', 'escolherOrigem', 'escolherIdioma'].includes(tela)) {
+    if (['perfil', 'escolherOrigem', 'escolherIdioma'].includes(tela)) {
       setTopicoAtivo('');
       setNivelAtivo('');
       setFrasesFiltradas([]);
@@ -583,6 +584,7 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
 
   function limparEstadoExercicio() {
     if (typeof resetarTimerTask === "function") resetarTimerTask();
+    if (typeof resetarTentativasVoz === "function") resetarTentativasVoz();
     setFraseAtivaGlobal(null);
     setTopicoAtivo("");
     sessionStorage.removeItem("app_topico");
@@ -861,6 +863,7 @@ const explicarFraseIA = useCallback(async (idFornecido) => {
         aiExplanation={aiExplanation} aiLoading={aiLoading} setModoExercicio={setModoExercicio}
         filaErros={filaErros} setFilaErros={setFilaErros} filaAcertos={filaAcertos} setFilaAcertos={setFilaAcertos}
         sessaoDominium={sessaoDominium} setSessaoDominium={setSessaoDominium} jogarDominiumInteligente={jogarDominiumInteligente}
+        tentativasVoz={tentativasVoz} resetarTentativasVoz={resetarTentativasVoz} postergarParaFimDaTask={postergarParaFimDaTask}
       />
     );
     return null;

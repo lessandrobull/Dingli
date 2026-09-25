@@ -6,6 +6,7 @@ import { useDingli } from '../DingliContext';
 import { supabase } from '../supabaseClient';
 import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
 import { calcularProximoRank } from '../useSRSLogic';
+import { tocarAudioPalavra } from '../services/audioCacheService';
 
 const ExercicioSelecao = ({
   idiomaEstudo, frase, exercicioNivel, fontSizeEx3, styles, temas,
@@ -104,7 +105,7 @@ const ExercicioVoz = ({
   transcricaoAoVivo, indicesOcultosVoz, styles
 }) => {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center', width: '100%' }}>
       <p style={styles.textoFrasePrincipal}>
         {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{textoEstudo}</span> : (() => {
           let currentZhIndex = 0;
@@ -122,11 +123,55 @@ const ExercicioVoz = ({
             const oculto = indicesOcultosVoz.includes(i);
             let cor = oculto ? 'transparent' : '#000';
             let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
-            if (estaNaFala) { cor = COR_ACERTO; borderB = '2px solid transparent'; } else if (resultadoFeedback === 'erro') { cor = '#ef4444'; }
-            return <span key={i} style={{ color: cor, borderBottom: borderB, paddingBottom: '2px', display: 'inline-block', marginRight: '4px' }}>{word}</span>
+            const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
+
+            if (estaNaFala) {
+              cor = COR_ACERTO;
+              borderB = '2px solid transparent';
+            } else if (resultadoFeedback === 'erro') {
+              cor = '#ef4444';
+              borderB = 'none';
+            }
+
+            return (
+              <span
+                key={i}
+                onClick={() => {
+                  if (ehErro) {
+                    tocarAudioPalavra(word, idiomaEstudo);
+                  }
+                }}
+                title={ehErro ? "Toque para ouvir a pronúncia isolada" : ""}
+                style={{
+                  color: cor,
+                  borderBottom: borderB,
+                  paddingBottom: '2px',
+                  display: 'inline-block',
+                  marginRight: '5px',
+                  cursor: ehErro ? 'pointer' : 'default',
+                  userSelect: 'none',
+                  transition: 'transform 0.15s ease'
+                }}
+                onMouseDown={(e) => {
+                  if (ehErro) e.currentTarget.style.transform = 'scale(0.92)';
+                }}
+                onMouseUp={(e) => {
+                  if (ehErro) e.currentTarget.style.transform = 'scale(1)';
+                }}
+              >
+                {word}
+              </span>
+            );
           });
         })()}
       </p>
+
+      {/* Dica visual */}
+      {resultadoFeedback === 'erro' && (
+        <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#64748b', fontWeight: '600', textAlign: 'center' }}>
+          Toque na palavra para ouvir a pronúncia
+        </div>
+      )}
     </div>
   );
 };
@@ -149,7 +194,8 @@ export default function TelaEstudo({
   iniciarReconhecimentoVoz, pararEAvaliarVoz, setIndice, transcricaoAoVivo,
   iniciarExercicio, aiExplanation, aiLoading, setModoExercicio,
   filaErros, setFilaErros, filaAcertos, setFilaAcertos,
-  sessaoDominium, setSessaoDominium, jogarDominiumInteligente
+  sessaoDominium, setSessaoDominium, jogarDominiumInteligente,
+  tentativasVoz = 0, resetarTentativasVoz, postergarParaFimDaTask
 }) {
   const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, userRole, getCorFonteDinamica } = useDingli();
 
@@ -197,7 +243,7 @@ export default function TelaEstudo({
     setOpcoesSelecionadas(prev =>
       prev.includes(op) ? prev.filter(item => item !== op) : [...prev, op]
     );
-};
+  };
 
   const enviarReporte = useCallback(async () => {
     const problemas = [...opcoesSelecionadas];
@@ -272,6 +318,20 @@ export default function TelaEstudo({
       setIndice(prev => (prev + 1) % frasesFiltradas.length);
     }
   }, [frase, idiomaEstudo, idiomaOrigem, indice, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarModalReporte, limparEstadoExercicio, setResultadoFeedback, setModoExercicio, frasesFiltradas.length, setIndice]);
+
+  // ETAPA 2: Escape no 3º Erro Consecutivo de Pronúncia
+  const handleRevisarMaisTarde = useCallback(() => {
+    const fraseId = frase?.id;
+    if (postergarParaFimDaTask && fraseId) {
+      postergarParaFimDaTask(fraseId);
+    }
+    if (resetarTentativasVoz) resetarTentativasVoz();
+    setResultadoFeedback(null);
+    if (setModoExercicio) setModoExercicio(false);
+    if (jogarDominiumRef.current) {
+      jogarDominiumRef.current();
+    }
+  }, [frase?.id, postergarParaFimDaTask, resetarTentativasVoz, setResultadoFeedback, setModoExercicio]);
 
   useEffect(() => {
     setAudioLento(false);
@@ -414,6 +474,7 @@ export default function TelaEstudo({
     setSessaoIniciada(false);
     setResultadoFeedback(null);
     setValorInput("");
+    if (resetarTentativasVoz) resetarTentativasVoz();
     if (window.recognitionInstance) {
       try { window.recognitionInstance.abort(); } catch (e) { }
     }
@@ -444,7 +505,7 @@ export default function TelaEstudo({
       acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal),
       falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal)
     }));
-  }, [frase, idiomaEstudo, indice, nivelAtivo, topicoAtivo, setModoExercicio, setSessaoIniciada, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium]);
+  }, [frase, idiomaEstudo, indice, nivelAtivo, topicoAtivo, setModoExercicio, setSessaoIniciada, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarTentativasVoz]);
 
   const textoEstudo = normalizarFrase(frase?.[idiomaEstudo] || "");
 
@@ -487,20 +548,27 @@ export default function TelaEstudo({
         return;
       }
 
-      if (resultadoFeedback) return;
+      if (resultadoFeedback === 'acerto') return;
 
       if (RANKS_VOICE.includes(exercicioNivel)) {
+        if (tentativasVoz >= 3 && resultadoFeedback === 'erro') {
+          e.preventDefault();
+          handleRevisarMaisTarde();
+          return;
+        }
+
         if (statusVoz === 'RECORDING') {
           e.preventDefault();
           if (pararEAvaliarVoz) pararEAvaliarVoz();
           else if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz();
         } else if (statusVoz === 'IDLE') {
           e.preventDefault();
+          setResultadoFeedback(null);
           iniciarReconhecimentoVoz(frase);
         }
       } else if (RANKS_SELECT.includes(exercicioNivel)) {
         const todosPreenchidos = slotsEx3.length > 0 && !slotsEx3.some(s => s === null);
-        if (todosPreenchidos) {
+        if (todosPreenchidos && !resultadoFeedback) {
           e.preventDefault();
           verificarResposta();
         }
@@ -511,7 +579,7 @@ export default function TelaEstudo({
   }, [
     modoExercicio, handlePraticar, resultadoFeedback, exercicioNivel,
     statusVoz, pararEAvaliarVoz, iniciarReconhecimentoVoz, frase,
-    slotsEx3, verificarResposta
+    slotsEx3, verificarResposta, tentativasVoz, handleRevisarMaisTarde
   ]);
 
   if (carregandoDados || !frase || !textoEstudo) {
@@ -581,7 +649,6 @@ export default function TelaEstudo({
 
   const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
 
-  // Determina se o rank do exercício permite ouvir áudio
   const temAudioExercicio = !modoExercicio || ![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel));
 
   return (
@@ -629,7 +696,7 @@ export default function TelaEstudo({
             </svg>
           </button>
 
-          {/* Janela sobreposta (adota cor de fundo da tela inicial do idioma) */}
+          {/* Janela sobreposta de reporte */}
           {modalReporteAberto && (
             <div
               style={{
@@ -697,7 +764,6 @@ export default function TelaEstudo({
                   );
                 })}
 
-                {/* Campo de digitacao branco no 6o slot */}
                 <input
                   type="text"
                   disabled={reporteEnviado}
@@ -806,11 +872,50 @@ export default function TelaEstudo({
                   />
                 ) : (
                   RANKS_VOICE.includes(exercicioNivel) ? (
-                    <ExercicioVoz
-                      textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
-                      temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
-                      indicesOcultosVoz={indicesOcultosVoz} styles={styles}
-                    />
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                      <ExercicioVoz
+                        textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
+                        temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
+                        indicesOcultosVoz={indicesOcultosVoz} styles={styles}
+                      />
+
+                      {/* ETAPA 2: AVISO NO 3º ERRO CONSECUTIVO COM SAÍDA PARA O FINAL DA TASK */}
+                      {resultadoFeedback === 'erro' && tentativasVoz >= 3 && (
+                        <div style={{
+                          marginTop: '16px',
+                          padding: '14px 16px',
+                          backgroundColor: '#fef2f2',
+                          borderRadius: '12px',
+                          border: '1px solid #fecaca',
+                          textAlign: 'center',
+                          width: '100%',
+                          maxWidth: '360px',
+                          boxSizing: 'border-box'
+                        }}>
+                          <p style={{ margin: '0 0 10px 0', fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.4' }}>
+                            Revisar mais tarde, dê uma pesquisada nessa pronúncia e tente no próximo ciclo
+                          </p>
+                          <button
+                            type="button"
+                            onClick={handleRevisarMaisTarde}
+                            style={{
+                              padding: '10px 16px',
+                              backgroundColor: corDinamica,
+                              color: '#ffffff',
+                              width: '100%',
+                              fontSize: '0.95rem',
+                              fontWeight: '800',
+                              borderRadius: '8px',
+                              cursor: 'pointer',
+                              border: 'none',
+                              boxShadow: '0 2px 6px rgba(0,0,0,0.1)'
+                            }}
+                          >
+                            Continuar Ciclo →
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   ) : (
                     <div style={{ textAlign: 'center' }}>
                       <p style={styles.textoFrasePrincipal}>{textoEstudo}</p>
@@ -877,7 +982,7 @@ export default function TelaEstudo({
                       </button>
 
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
-                      {temAudioExercicio && statusVoz === 'IDLE' && !resultadoFeedback ? (
+                      {temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
                         <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
                           {audioLento ? "Lento" : "Ouvir"}
                         </button>
@@ -887,28 +992,35 @@ export default function TelaEstudo({
                         </button>
                       )}
 
-                      {/* 3. Botão Falar agora / Verificar (mesma aparência de Praticar) */}
+                      {/* 3. Botão Falar agora / Verificar / Tentar novamente */}
                       <button
                         onClick={() => {
                           if (statusVoz === 'RECORDING') {
                             if (pararEAvaliarVoz) pararEAvaliarVoz();
                             else if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz();
-                          } else if (statusVoz === 'IDLE' && !resultadoFeedback) {
+                          } else if (statusVoz === 'IDLE') {
+                            if (tentativasVoz >= 3 && resultadoFeedback === 'erro') {
+                              handleRevisarMaisTarde();
+                              return;
+                            }
+                            setResultadoFeedback(null);
                             iniciarReconhecimentoVoz(frase);
                           }
                         }}
-                        disabled={statusVoz === 'EVALUATING' || resultadoFeedback !== null}
+                        disabled={statusVoz === 'EVALUATING' || resultadoFeedback === 'acerto'}
                         style={{
                           ...styles.btnAcaoExtra,
                           backgroundColor: ns.bg,
                           color: ns.txt,
-                          opacity: (resultadoFeedback !== null || statusVoz === 'EVALUATING') ? 0.5 : 1
+                          opacity: (resultadoFeedback === 'acerto' || statusVoz === 'EVALUATING') ? 0.5 : 1
                         }}
                       >
                         {statusVoz === 'RECORDING' ? (
                           t.check || 'Verificar'
                         ) : statusVoz === 'EVALUATING' ? (
                           '...'
+                        ) : resultadoFeedback === 'erro' ? (
+                          tentativasVoz >= 3 ? 'Continuar' : 'Falar de novo'
                         ) : (
                           t.speakNow
                         )}

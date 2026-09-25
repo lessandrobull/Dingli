@@ -1,10 +1,9 @@
-
 const NUMEROS_EXTENSO = {
     fr: {
         "zero": 0, "un": 1, "une": 1, "deux": 2, "trois": 3, "quatre": 4, "cinq": 5,
         "six": 6, "sept": 7, "huit": 8, "neuf": 9, "dix": 10, "onze": 11, "douze": 12,
         "treize": 13, "quatorze": 14, "quinze": 15, "seize": 16, "dix-sept": 17, "dix sept": 17,
-        "dix-huit": 18, "dix huit": 18, "dix-neuf": 19, "dix neuf": 19, "vingt": 20,
+        "dix-huit": 18, "dix復huit": 18, "dix-neuf": 19, "dix neuf": 19, "vingt": 20,
         "vingt-et-un": 21, "vingt et un": 21, "trente": 30, "quarante": 40, "cinquante": 50,
         "soixante": 60, "soixante-dix": 70, "soixante dix": 70, "septante": 70,
         "quatre-vingts": 80, "quatre-vingt": 80, "quatre vingts": 80, "quatre vingt": 80, "octante": 80, "huitante": 80,
@@ -38,7 +37,7 @@ const NUMEROS_EXTENSO = {
     it: {
         "zero": 0, "uno": 1, "una": 1, "un": 1, "due": 2, "tre": 3, "quattro": 4, "cinque": 5, "sei": 6, "sette": 7, "otto": 8, "nove": 9,
         "dieci": 10, "undici": 11, "dodici": 12, "tredici": 13, "quattordici": 14, "quindici": 15, "sedici": 16, "diciassette": 17, "diciotto": 18, "diciannove": 19,
-        "venti": 20, "trenta": 30, "quaranta": 40, "cinquanta": 50, "sessanta": 60, "settanta": 70, "ottanta": 80, "novanta": 90,
+        "venti": 20, "trenta": 30, "quaranta": 40, "cinquanta": 50, "sessanta": 60, "settanta": 70, "ottanta": 80, "noventa": 90,
         "cento": 100, "duecento": 200, "trecento": 300, "quattrocento": 400, "cinquecento": 500, "seicento": 600, "settecento": 700, "ottocento": 800, "novecento": 900,
         "mille": 1000, "mila": 1000, "milione": 1000000
     },
@@ -100,6 +99,7 @@ export const useSpeech = ({
     const [transcricaoAoVivo, setTranscricaoAoVivo] = useState("");
     const [volume, setVolume] = useState(0);
     const [vozAtiva, setVozAtiva] = useState(null);
+    const [tentativasVoz, setTentativasVoz] = useState(0);
 
     const animationFrameRef = useRef(null);
     const timerSilencioRef = useRef(null);
@@ -143,7 +143,6 @@ export const useSpeech = ({
         const listaBase = obterListaVozesIdioma(lang);
         if (!filaVozesRef.current || filaVozesRef.current.length === 0) {
             let novoSorteio = embaralharArray(listaBase);
-            // Evita repetir a mesma voz imediatamente na virada de ciclo (se houver mais de 1)
             if (novoSorteio.length > 1 && novoSorteio[0] === vozAtualRef.current) {
                 const swapIdx = Math.floor(Math.random() * (novoSorteio.length - 1)) + 1;
                 [novoSorteio[0], novoSorteio[swapIdx]] = [novoSorteio[swapIdx], novoSorteio[0]];
@@ -156,9 +155,26 @@ export const useSpeech = ({
         return vozSorteada;
     }, [obterListaVozesIdioma]);
 
+    // ETAPA 1: Sorteia uma voz DIFERENTE da voz atual de forma aleatória
+    const obterVozAleatoriaDiferente = useCallback((lang) => {
+        const listaBase = obterListaVozesIdioma(lang);
+        if (listaBase.length <= 1) {
+            const unica = listaBase[0] || "v1";
+            vozAtualRef.current = unica;
+            setVozAtiva(unica);
+            return unica;
+        }
+        const outras = listaBase.filter(v => v !== vozAtualRef.current);
+        const sorteada = outras[Math.floor(Math.random() * outras.length)];
+        vozAtualRef.current = sorteada;
+        setVozAtiva(sorteada);
+        return sorteada;
+    }, [obterListaVozesIdioma]);
+
     // Reseta estado transitório na mudança de frase ou idioma
     useEffect(() => {
         tentativasVozRef.current = 0;
+        setTentativasVoz(0);
         vozAtualRef.current = null;
         setVozAtiva(null);
     }, [indice]);
@@ -202,7 +218,6 @@ export const useSpeech = ({
                 return v.lang.toLowerCase().includes(lang) && (!name.includes('google') || isQuality) && (!name.includes('microsoft') || isQuality);
             });
             const selectedVoice = voices.length > 0 ? voices[voiceIndex.current % voices.length] : null;
-            // Só avança a voz de síntese se não for repetição lenta
             if (!lento && voices.length > 0) voiceIndex.current += 1;
 
             if (lento) {
@@ -268,15 +283,15 @@ export const useSpeech = ({
                 let voz = null;
 
                 if (typeof alvo === 'object' && alvo !== null && alvo.voz) {
-                    // Voz explicitamente indicada
                     voz = alvo.voz;
                     vozAtualRef.current = voz;
                     setVozAtiva(voz);
+                } else if (typeof alvo === 'object' && alvo !== null && alvo.sortearDiferente) {
+                    // ETAPA 1: Sorteio aleatório de voz diferente da anterior no erro
+                    voz = obterVozAleatoriaDiferente(idiomaEstudo);
                 } else if (lento && vozAtualRef.current) {
-                    // 1.1: Repetição lenta reutiliza exatamente a mesma voz
                     voz = vozAtualRef.current;
                 } else {
-                    // 1.2: Reprodução normal consome do sorteio sem repetição
                     voz = obterProximaVoz(idiomaEstudo);
                 }
 
@@ -319,7 +334,7 @@ export const useSpeech = ({
 
         // Fallback nativo
         falarTTS(texto, lento, callback);
-    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, falarTTS, obterProximaVoz]);
+    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, falarTTS, obterProximaVoz, obterVozAleatoriaDiferente]);
 
     const pararMonitoramentoAudio = useCallback(() => {
         estaGravandoRef.current = false;
@@ -386,7 +401,7 @@ export const useSpeech = ({
             fraseAlvoRef.current = fraseParam;
         }
 
-        tentativasVozRef.current = 0;
+        // NÃO reseta tentativasVozRef aqui para permitir contagem contínua de erros consecutivos
         setEstaOuvindo(true);
         setStatusVoz('RECORDING');
         estaGravandoRef.current = true;
@@ -443,9 +458,12 @@ export const useSpeech = ({
             const limiar = palavrasCorretas.length <= 2 ? 0.5 : 0.75;
 
             if (percentual >= limiar || (fraseCorreta && falaComparacao.includes(fraseCorreta))) {
+                tentativasVozRef.current = 0;
+                setTentativasVoz(0);
                 dispararConclusao('acerto', falaRef.current, fraseAlvo, fraseOriginal);
             } else {
                 tentativasVozRef.current += 1;
+                setTentativasVoz(tentativasVozRef.current);
                 dispararConclusao('erro', falaRef.current, fraseAlvo, fraseOriginal);
             }
         };
@@ -531,6 +549,7 @@ export const useSpeech = ({
         transcricaoAoVivo,
         volume,
         vozAtiva,
+        tentativasVoz,
         falar,
         iniciarReconhecimentoVoz,
         pararMonitoramentoAudio,
@@ -538,6 +557,10 @@ export const useSpeech = ({
         resetarVozAtual: () => {
             vozAtualRef.current = null;
             setVozAtiva(null);
+        },
+        resetarTentativasVoz: () => {
+            tentativasVozRef.current = 0;
+            setTentativasVoz(0);
         },
         pararEAvaliarVoz: () => { if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz(); },
         setEstaOuvindo,
