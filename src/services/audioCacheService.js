@@ -14,7 +14,9 @@ export const VOZES_PI = VOZES_ZH;
 // TABELA CENTRAL DE VERSÕES DE ÁUDIO (Cache Busting silencioso)
 export const VERSOES_AUDIOS = {
   "35": 2,      // Frase 35 atualizada com dicção humana em todos os idiomas
-  "fr/9_v3": 2  // Frase 9 em francês (voz v3 Charline) corrigida no Audacity
+  "fr/9_v3": 2, // Frase 9 em francês (voz v3 Charline) corrigida no Audacity
+  "519": 2,     // Frase 519 (24h/24 -> vingt-quatre heures sur vingt-quatre)
+  "1117": 2     // Frase 1117 (24h/24 -> vingt-quatre heures sur vingt-quatre)
 };
 
 export function montarAudioUrl(id, voz = "v1", idioma = "en") {
@@ -49,6 +51,72 @@ export async function obterAudioUrl(id, voz = "v1", idioma = "en") {
   } catch (err) {}
 
   return urlRemota;
+}
+
+// ==========================================
+// SUPORTE A PALAVRAS ISOLADAS (ETAPA 3 & 4)
+// ==========================================
+export function sanitizarPalavraAudio(palavra) {
+  return (palavra || "")
+    .trim()
+    .toLowerCase()
+    .replace(/ß/g, "ss")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "")
+    .replace(/['’]/g, "_");
+}
+
+export function montarAudioPalavraUrl(palavra, idioma = "en") {
+  const pastaIdioma = idioma === "pi" ? "zh" : idioma;
+  const slug = sanitizarPalavraAudio(palavra);
+  return `${SUPABASE_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
+}
+
+export async function obterAudioPalavraUrl(palavra, idioma = "en") {
+  const urlRemota = montarAudioPalavraUrl(palavra, idioma);
+
+  // 1. Tenta Cache Storage (PC / HTTPS)
+  if ("caches" in window) {
+    try {
+      const cache = await caches.open(CACHE_NAME);
+      const resposta = await cache.match(urlRemota);
+      if (resposta) {
+        const blob = await resposta.blob();
+        return URL.createObjectURL(blob);
+      }
+    } catch (err) {}
+  }
+
+  // 2. Fallback IndexedDB (Celular / HTTP Local)
+  try {
+    const registro = await obterDoIndexedDB(STORES.AUDIOS, urlRemota);
+    if (registro && registro.blob) {
+      return URL.createObjectURL(registro.blob);
+    }
+  } catch (err) {}
+
+  return urlRemota;
+}
+
+export async function tocarAudioPalavra(palavra, idioma = "en") {
+  try {
+    const slug = sanitizarPalavraAudio(palavra);
+    const url = await obterAudioPalavraUrl(palavra, idioma);
+    console.log("[Dìnglì Áudio]", { palavraOriginal: palavra, slugGerado: slug, urlFinal: url });
+    if (!slug) return;
+    const audio = new Audio(url);
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => console.log("[Dìnglì Áudio] ✔ Reprodução iniciada:", slug))
+        .catch(e => {
+          console.error("[Dìnglì Áudio] ✖ Falha ao reproduzir áudio:", e.message, "URL:", url);
+        });
+    }
+  } catch (err) {
+    console.error("[Dìnglì Áudio] ✖ Erro geral:", err);
+  }
 }
 
 export async function precarregarAudios(listaFrases, idioma = "en", vozes = ["v1"]) {

@@ -30,3 +30,12 @@ esqueleto_dingli.txt
 mapear.py
 recuperados/
 src/gerarExplicacoes.mjs
+
+# Temporários de áudio
+ffmpeg.exe
+*.zip
+*_teste*.mp3
+auditar_colisoes_e_ffmpeg.py
+corrigir_frases_fr.py
+varredura_l1.py
+aplicar_etapa1_l1.py
