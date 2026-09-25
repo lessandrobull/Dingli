@@ -57,14 +57,44 @@ export async function obterAudioUrl(id, voz = "v1", idioma = "en") {
 // SUPORTE A PALAVRAS ISOLADAS (ETAPA 3 & 4)
 // ==========================================
 export function sanitizarPalavraAudio(palavra) {
-  return (palavra || "")
-    .trim()
-    .toLowerCase()
-    .replace(/ß/g, "ss")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+  const p = (palavra || "").trim().toLowerCase().replace(/ß/g, "ss");
+  const semPontuacao = p
     .replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "")
     .replace(/['’]/g, "_");
+
+  if (!semPontuacao) return "";
+
+  const nfd = semPontuacao.normalize("NFD");
+  const mapaDiacriticos = {
+    "\u0300": "grave",
+    "\u0301": "acute",
+    "\u0302": "circ",
+    "\u0303": "tilde",
+    "\u0308": "uml",
+    "\u0327": "ced"
+  };
+
+  const baseChars = [];
+  const marcas = [];
+  let ultimoCharBase = "";
+
+  for (let i = 0; i < nfd.length; i++) {
+    const char = nfd[i];
+    if (mapaDiacriticos[char]) {
+      marcas.push(`${ultimoCharBase || ""}_${mapaDiacriticos[char]}`);
+    } else {
+      if (!/[\u0300-\u036f]/.test(char)) {
+        baseChars.push(char);
+        ultimoCharBase = char;
+      }
+    }
+  }
+
+  const slugBase = baseChars.join("").replace(/[^a-zA-Z0-9_-]/g, "");
+  if (marcas.length > 0) {
+    return `${slugBase}_${marcas.join("_")}`;
+  }
+  return slugBase;
 }
 
 export function montarAudioPalavraUrl(palavra, idioma = "en") {

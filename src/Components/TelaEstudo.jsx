@@ -102,8 +102,7 @@ const ExercicioEscrita = ({
 
 const ExercicioVoz = ({
   textoEstudo, resultadoFeedback, idiomaEstudo, temas, frase,
-  transcricaoAoVivo, indicesOcultosVoz, styles
-}) => {
+  transcricaoAoVivo, indicesOcultosVoz, styles, t }) => {
   return (
     <div style={{ textAlign: 'center', width: '100%' }}>
       <p style={styles.textoFrasePrincipal}>
@@ -141,7 +140,7 @@ const ExercicioVoz = ({
                     tocarAudioPalavra(word, idiomaEstudo);
                   }
                 }}
-                title={ehErro ? "Toque para ouvir a pronúncia isolada" : ""}
+                title={ehErro ? (t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada") : ""}
                 style={{
                   color: cor,
                   borderBottom: borderB,
@@ -169,19 +168,19 @@ const ExercicioVoz = ({
       {/* Dica visual */}
       {resultadoFeedback === 'erro' && (
         <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#64748b', fontWeight: '600', textAlign: 'center' }}>
-          Toque na palavra para ouvir a pronúncia
+          {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
         </div>
       )}
     </div>
   );
 };
 
-const OPCOES_REPORTE = [
-  "Áudio",
-  "Frase do exercício",
-  "Tradução",
-  "Dificuldade para digitar",
-  "Dificuldade para gravação da fala"
+const obterOpcoesReporte = (t) => [
+  t?.reportAudio || "Áudio",
+  t?.reportSentence || "Frase do exercício",
+  t?.reportTranslation || "Tradução",
+  t?.reportTypingDiff || "Dificuldade para digitar",
+  t?.reportVoiceDiff || "Dificuldade para gravação da fala"
 ];
 
 export default function TelaEstudo({
@@ -670,7 +669,7 @@ export default function TelaEstudo({
               setReporteEnviado(false);
               setModalReporteAberto(true);
             }}
-            title="Reportar problema"
+            title={t?.reportModalTitle || "Reportar problema"}
             style={{
               position: "absolute",
               top: "14px",
@@ -717,7 +716,7 @@ export default function TelaEstudo({
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" }}>
                 <span style={{ fontSize: "0.82rem", fontWeight: "800", color: "#ffffff", whiteSpace: "nowrap", letterSpacing: "0.2px" }}>
-                  Encontrou problemas? Mande pra gente:
+                  {t?.reportModalHeading || "Encontrou problemas? Mande pra gente:"}
                 </span>
                 <button
                   type="button"
@@ -738,7 +737,7 @@ export default function TelaEstudo({
               </div>
 
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "14px" }}>
-                {OPCOES_REPORTE.map((op) => {
+                {obterOpcoesReporte(t).map((op) => {
                   const selecionado = opcoesSelecionadas.includes(op);
                   return (
                     <button
@@ -769,7 +768,7 @@ export default function TelaEstudo({
                   disabled={reporteEnviado}
                   value={outroTexto}
                   onChange={(e) => setOutroTexto(e.target.value)}
-                  placeholder="Outro: descreva aqui..."
+                  placeholder={t?.reportOtherPlaceholder || "Outro: descreva aqui..."}
                   maxLength={150}
                   style={{
                     width: "100%",
@@ -808,7 +807,7 @@ export default function TelaEstudo({
                       boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
                     }}
                   >
-                    {enviandoReporte ? "Enviando..." : "Enviar"}
+                    {enviandoReporte ? (t?.sending || "Enviando...") : (t?.send || "Enviar")}
                   </button>
                 ) : (
                   <button
@@ -826,9 +825,7 @@ export default function TelaEstudo({
                       cursor: "pointer",
                       boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
                     }}
-                  >
-                    Pular Frase
-                  </button>
+                  >{t?.skipSentence || "Pular Frase"}</button>
                 )}
               </div>
             </div>
@@ -873,11 +870,9 @@ export default function TelaEstudo({
                 ) : (
                   RANKS_VOICE.includes(exercicioNivel) ? (
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-                      <ExercicioVoz
-                        textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
+                      <ExercicioVoz textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
                         temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
-                        indicesOcultosVoz={indicesOcultosVoz} styles={styles}
-                      />
+                        indicesOcultosVoz={indicesOcultosVoz} styles={styles} t={t} />
 
                       {/* ETAPA 2: AVISO NO 3º ERRO CONSECUTIVO COM SAÍDA PARA O FINAL DA TASK */}
                       {resultadoFeedback === 'erro' && tentativasVoz >= 3 && (
@@ -893,7 +888,7 @@ export default function TelaEstudo({
                           boxSizing: 'border-box'
                         }}>
                           <p style={{ margin: '0 0 10px 0', fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.4' }}>
-                            Revisar mais tarde, dê uma pesquisada nessa pronúncia e tente no próximo ciclo
+                            {t?.reviewLaterPrompt || "Revisar mais tarde, dê uma pesquisada nessa pronúncia e tente no próximo ciclo"}
                           </p>
                           <button
                             type="button"
@@ -911,7 +906,7 @@ export default function TelaEstudo({
                               boxShadow: '0 2px 6px rgba(0,0,0,0.1)'
                             }}
                           >
-                            Continuar Ciclo →
+                            {(t?.continueCycle || "Continuar Ciclo") + " →"}
                           </button>
                         </div>
                       )}
@@ -937,12 +932,10 @@ export default function TelaEstudo({
               {!modoExercicio ? (
                 /* Card inicial: 3 botões em linha horizontal */
                 <div style={styles.rowBotoesIA}>
-                  <button onClick={() => explicarFraseIA(frase?.id)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
-                    Explicação
-                  </button>
+                  <button onClick={() => explicarFraseIA(frase?.id)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>{t?.askAi || "Explicação"}</button>
 
                   <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                    {audioLento ? "Lento" : "Ouvir"}
+                    {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
                   </button>
 
                   {userRole === 'aluno' ? (
@@ -984,7 +977,7 @@ export default function TelaEstudo({
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
                       {temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
                         <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                          {audioLento ? "Lento" : "Ouvir"}
+                          {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
                         </button>
                       ) : (
                         <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
@@ -1020,7 +1013,7 @@ export default function TelaEstudo({
                         ) : statusVoz === 'EVALUATING' ? (
                           '...'
                         ) : resultadoFeedback === 'erro' ? (
-                          tentativasVoz >= 3 ? 'Continuar' : 'Falar de novo'
+                          tentativasVoz >= 3 ? (t?.continueCycle || 'Continuar') : (t?.speakAgain || 'Falar de novo')
                         ) : (
                           t.speakNow
                         )}
@@ -1036,7 +1029,7 @@ export default function TelaEstudo({
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
                       {temAudioExercicio ? (
                         <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                          {audioLento ? "Lento" : "Ouvir"}
+                          {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
                         </button>
                       ) : (
                         <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
