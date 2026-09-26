@@ -39,3 +39,13 @@ auditar_colisoes_e_ffmpeg.py
 corrigir_frases_fr.py
 varredura_l1.py
 aplicar_etapa1_l1.py
+
+# Scripts e arquivos temporários de processamento local
+teste_*.mp3
+Useful Languages - Supabase.csv
+gerar_palavras_isoladas.py
+regerar_frase_35.py
+resolver_acentos_e_subir.py
+upload_*.py
+
+scripts/
