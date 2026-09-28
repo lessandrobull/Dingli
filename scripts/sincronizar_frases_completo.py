@@ -19,7 +19,10 @@ SUPABASE_URL = env.get("SUPABASE_URL")
 KEY = env.get("SUPABASE_SERVICE_ROLE_KEY")
 BUCKET = "audios"
 
-# Vozes oficiais de frases por idioma
+if not SUPABASE_URL or not KEY:
+    raise ValueError("SUPABASE_URL ou SUPABASE_SERVICE_ROLE_KEY ausentes no .env.local.")
+
+# Vozes oficiais de frases por idioma (Seção 4.A do DINGLI_MASTER.md)
 VOZES_FRASES = {
     "en": [
         ("v1", "en-US-AndrewNeural"), ("v2", "en-US-GuyNeural"),
@@ -53,9 +56,14 @@ VOZES_FRASES = {
     ]
 }
 
-idioma_alvo = sys.argv[1].lower() if len(sys.argv) > 1 else None
+args = [a.lower() for a in sys.argv[1:]]
+dry_run = "--dry-run" in args
+idiomas_informados = [a for a in args if not a.startswith("--")]
+
+idioma_alvo = idiomas_informados[0] if idiomas_informados else None
 if not idioma_alvo or idioma_alvo not in VOZES_FRASES:
     print(f"[ERRO] Especifique um idioma válido: {list(VOZES_FRASES.keys())}")
+    print("Exemplo: python scripts/sincronizar_frases_completo.py zh [--dry-run]")
     sys.exit(1)
 
 backups = sorted(glob.glob("backups/sentences_backup_*.csv"))
@@ -65,42 +73,77 @@ if not backups:
 ultimo_backup = backups[-1]
 CSV_FILE = "supabase_sentences.csv"
 
-print("=" * 65)
-print(f" DÌNGLÌ - PASSO 6: PIPELINE UNIFICADO DE FRASES ({idioma_alvo.upper()})")
-print(f" Referência Backup: {ultimo_backup}")
-print("=" * 65)
+print("=" * 70)
+print(f" DÌNGLÌ - PIPELINE UNIFICADO DE FRASES ({idioma_alvo.upper()})")
+print(f" Modo: {'SOMENTE LEITURA (DRY-RUN)' if dry_run else 'EXECUÇÃO REAL'}")
+print(f" Backup de Referência: {ultimo_backup}")
+print(f" Arquivo CSV Fonte:   {CSV_FILE}")
+print("=" * 70)
 
-db_data = {int(r["id"]): r for r in csv.DictReader(open(ultimo_backup, encoding="utf-8-sig", errors="ignore"))}
-csv_data = {int(r["id"]): r for r in csv.DictReader(open(CSV_FILE, encoding="utf-8-sig", errors="ignore"))}
+db_data = {int(r["id"]): r for r in csv.DictReader(open(ultimo_backup, encoding="utf-8-sig", errors="ignore")) if r.get("id", "").isdigit()}
+csv_data = {int(r["id"]): r for r in csv.DictReader(open(CSV_FILE, encoding="utf-8-sig", errors="ignore")) if r.get("id", "").isdigit()}
 
-alteracoes = {}
+# 1. Identificar deltas de áudio (texto falado) e de banco (dados textuais)
+alteracoes_audio = {}
+alteracoes_db = {}
+
 for fid, r_csv in sorted(csv_data.items()):
-    val_csv = (r_csv.get(idioma_alvo) or "").strip()
-    val_db = (db_data.get(fid, {}).get(idioma_alvo) or "").strip()
-    if val_csv and val_csv != val_db:
-        alteracoes[fid] = val_csv
+    r_db = db_data.get(fid, {})
+    val_csv_texto = (r_csv.get(idioma_alvo) or "").strip()
+    val_db_texto = (r_db.get(idioma_alvo) or "").strip()
 
-if not alteracoes:
-    print(f"✔ Nenhuma alteração detectada para [{idioma_alvo.upper()}]. Frases já estão em paridade!")
+    # Áudio depende estritamente do texto falado (para zh, são os Hanzi)
+    if val_csv_texto and val_csv_texto != val_db_texto:
+        alteracoes_audio[fid] = val_csv_texto
+
+    # Banco: se for mandarim, monitora Hanzi (zh) E Pinyin (pi)
+    if idioma_alvo == "zh":
+        val_csv_pi = (r_csv.get("pi") or "").strip()
+        val_db_pi = (r_db.get("pi") or "").strip()
+        if (val_csv_texto != val_db_texto) or (val_csv_pi != val_db_pi):
+            alteracoes_db[fid] = {"zh": val_csv_texto, "pi": val_csv_pi}
+    else:
+        if val_csv_texto != val_db_texto:
+            alteracoes_db[fid] = {idioma_alvo: val_csv_texto}
+
+total_vozes = len(VOZES_FRASES[idioma_alvo])
+total_audios = len(alteracoes_audio) * total_vozes
+
+print(f"\n[DIAGNÓSTICO FACTUAL]")
+print(f"  - Frases com áudio desatualizado (síntese + upload): {len(alteracoes_audio)} ({total_audios} arquivos .mp3)")
+if idioma_alvo == "zh":
+    somente_pi = len(alteracoes_db) - len(alteracoes_audio)
+    print(f"  - Frases com ajuste apenas de Pinyin (sem re-síntese de áudio): {somente_pi}")
+print(f"  - Total de registros a atualizar no Supabase DB: {len(alteracoes_db)}")
+
+if not alteracoes_db and not alteracoes_audio:
+    print(f"\n✔ Nenhuma alteração detectada para [{idioma_alvo.upper()}]. Tudo 100% sincronizado!")
     sys.exit(0)
 
-print(f"Total de frases a sincronizar: {len(alteracoes)}")
+if dry_run:
+    print("\n[DRY-RUN CONCLUÍDO] Nenhuma alteração física ou remota foi realizada.")
+    print("Para aplicar de verdade, execute sem a flag --dry-run:")
+    print(f"  python scripts/sincronizar_frases_completo.py {idioma_alvo}")
+    sys.exit(0)
 
-# 1. Quarentena de áudios antigos locais
+# ==============================================================================
+# EXECUÇÃO REAL
+# ==============================================================================
 pasta_frases = os.path.join("audios_dingli", idioma_alvo)
 pasta_quar = os.path.join("audios_dingli", "quarentena_frases", idioma_alvo)
 os.makedirs(pasta_quar, exist_ok=True)
 os.makedirs(pasta_frases, exist_ok=True)
 
+# 1. Quarentena de áudios antigos locais
 movidos = 0
-for fid in alteracoes.keys():
+for fid in alteracoes_audio.keys():
     for tag_voz, _ in VOZES_FRASES[idioma_alvo]:
         arq = f"{fid}_{tag_voz}.mp3"
         caminho_antigo = os.path.join(pasta_frases, arq)
         if os.path.exists(caminho_antigo):
             shutil.move(caminho_antigo, os.path.join(pasta_quar, arq))
             movidos += 1
-print(f"✔ 1. Quarentena local: {movidos} áudios anteriores isolados com segurança.")
+print(f"\n✔ 1. Quarentena local: {movidos} áudios anteriores isolados em {pasta_quar}.")
 
 # 2. Síntese assíncrona com Edge-TTS
 semaforo = asyncio.Semaphore(4)
@@ -126,7 +169,7 @@ async def sintetizar(fid, texto, tag_voz, voz):
 
 async def rodar_sintese():
     tarefas = []
-    for fid, texto in alteracoes.items():
+    for fid, texto in alteracoes_audio.items():
         for tag_voz, voz in VOZES_FRASES[idioma_alvo]:
             tarefas.append(sintetizar(fid, texto, tag_voz, voz))
     await asyncio.gather(*tarefas)
@@ -139,6 +182,8 @@ print(f"✔ 2. Síntese concluída: {progresso['ok']} arquivos gerados | Falhas:
 def upload_audio(fid, tag_voz):
     arq = f"{fid}_{tag_voz}.mp3"
     caminho = os.path.join(pasta_frases, arq)
+    if not os.path.exists(caminho):
+        return False
     url = f"{SUPABASE_URL}/storage/v1/object/{BUCKET}/{idioma_alvo}/{arq}"
     with open(caminho, "rb") as f:
         conteudo = f.read()
@@ -159,14 +204,13 @@ def upload_audio(fid, tag_voz):
     return False
 
 uploads_ok = 0
-total_uploads = len(alteracoes) * len(VOZES_FRASES[idioma_alvo])
 with ThreadPoolExecutor(max_workers=6) as executor:
-    futuros = [executor.submit(upload_audio, fid, tag) for fid in alteracoes.keys() for tag, _ in VOZES_FRASES[idioma_alvo]]
+    futuros = [executor.submit(upload_audio, fid, tag) for fid in alteracoes_audio.keys() for tag, _ in VOZES_FRASES[idioma_alvo]]
     for fut in as_completed(futuros):
         if fut.result():
             uploads_ok += 1
 
-print(f"✔ 3. Storage Upload: {uploads_ok}/{total_uploads} áudios enviados com x-upsert!")
+print(f"✔ 3. Storage Upload: {uploads_ok}/{total_audios} áudios enviados com x-upsert!")
 
 # 4. Atualização da tabela sentences no Supabase DB
 headers_patch = {
@@ -177,13 +221,18 @@ headers_patch = {
 }
 
 db_ok = 0
-for fid, texto in alteracoes.items():
+for fid, payload in alteracoes_db.items():
     url = f"{SUPABASE_URL}/rest/v1/sentences?id=eq.{fid}"
-    body = json.dumps({idioma_alvo: texto}).encode("utf-8")
+    body = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=body, headers=headers_patch, method="PATCH")
-    with urllib.request.urlopen(req) as resp:
-        if resp.status in (200, 204):
-            db_ok += 1
+    for _ in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                if resp.status in (200, 204):
+                    db_ok += 1
+                    break
+        except Exception:
+            pass
 
-print(f"✔ 4. Supabase DB atualizado: {db_ok}/{len(alteracoes)} sentenças sincronizadas!")
+print(f"✔ 4. Supabase DB atualizado: {db_ok}/{len(alteracoes_db)} sentenças sincronizadas!")
 print("\n🎉 PASSO 6 FINALIZADO COM SUCESSO ABSOLUTO!")

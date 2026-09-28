@@ -44,3 +44,12 @@ upload_*.py
 .env.local
 .env
 backups/
+
+# Python e caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Áudios e quarentenas locais (mantém apenas estrutura se necessário)
+audios_dingli/quarentena_*/
+backups/*.csv

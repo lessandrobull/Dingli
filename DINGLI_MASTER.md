@@ -89,6 +89,12 @@
   * Alemão (`ge` - 4 vozes): Jonas, Florian, Seraphina, Katja.
   * Mandarim (`zh` - 4 vozes): Xiaoxiao, Yunxi, Yunjian, Xiaoyi.
 
+
+### C. Regra do Mandarim: Par Inseparável Hanzi (`zh`) e Pinyin (`pi`)
+- Ao sincronizar o idioma Mandarim, os campos `zh` e `pi` formam um par inseparável no banco de dados Supabase (`sentences`).
+- Toda atualização no Supabase para Mandarim deve enviar simultaneamente ambos os campos: `{"zh": ..., "pi": ...}`.
+- A geração e upload de áudios é disparada exclusivamente para frases em que o texto Hanzi (`zh`) foi alterado. Alterações restritas a ajustes ortográficos/fonéticos de Pinyin (`pi`) atualizam o banco de dados sem re-síntese redundante de áudio.
+
 ### B. Palavras Isoladas (`audios_dingli/palavras/{lang}/{slug}.mp3`)
 - Desambiguação Fonética Obrigatória (Sufixos NFD):
   * Proibido normalizar ciegamente para ASCII puro removendo acentos.
@@ -111,6 +117,15 @@
   * Mandarim: `zh-CN-XiaoxiaoNeural`
 
 ---
+
+
+### E. Regra Oficial do Vocabulário de Mandarim (Passo 7)
+- **Origem Lexical:** As palavras isoladas de Mandarim derivam exclusivamente da coluna `pi` (Pinyin com acentos tonais) do `supabase_sentences.csv`.
+- **Voz Neural:** Síntese direta com `zh-CN-XiaoxiaoNeural` a partir do Pinyin com marcas de tom nativas.
+- **Desambiguação e Slugs:** Utiliza `sanitizar_palavra_audio`, suportando formalmente `macron` (`̄` - 1º tom) e `caron` (`̌` - 3º tom), além de `acute` (`́` - 2º tom) e `grave` (`̀` - 4º tom).
+- **Destino Storage:** Bucket `audios/palavras/zh/{slug}.mp3`.
+- **Tratamento de Áudio:** Todo arquivo de vocabulário recebe pré-delay de 300ms e pós-padding de 100ms via FFmpeg para prevenção de DAC sleep.
+- **Comando Único Oficial:** `python scripts/sincronizar_vocabulario.py zh [--dry-run]`.
 
 ## 5. MATRIZ DE ESTADO DOS IDIOMAS (100% FACTUAL)
 | Idioma | Frases no Supabase | Áudios de Frases (Storage) | Palavras no Disco | Palavras no Storage | Status Oficial |
@@ -158,5 +173,5 @@ Sempre que o usuário solicitar revisão ou melhoria didática de frases, a exec
 3. [Chat] Análise, discussão e aprovação final das sugestões pelo usuário. Ao aprovar um bloco de frases, a IA deve obrigatoriamente questionar se há mais alguma frase para ser revisada antes de avançar; o Passo 4 só pode ser iniciado após a confirmação explícita do usuário autorizando o início da sincronização.
 4. [Terminal] Backup automático da tabela `sentences` do Supabase (`backups/sentences_backup_TIMESTAMP.csv`) seguido da atualização do CSV local (`supabase_sentences.csv`) em `utf-8-sig` (`python scripts/aplicar_revisao_e_backup.py`).
 5. [Manual] Usuário importa o CSV no Google Sheets para acompanhamento visual e cópia de segurança pessoal.
-6. [Terminal] Pipeline unificado de frases completas: quarentena local dos áudios antigos, síntese Edge-TTS de todas as vozes oficiais, upload com `x-upsert` para o Storage e atualização da tabela `sentences` no Supabase via `PATCH` (`python scripts/sincronizar_frases_completo.py [idioma]`).
+6. [Terminal] Pipeline unificado de frases completas: quarentena local dos áudios antigos, síntese Edge-TTS de todas as vozes oficiais, upload com `x-upsert` para o Storage e atualização da tabela `sentences` no Supabase via `PATCH` (`python scripts/sincronizar_frases_completo.py [idioma] [--dry-run]`).
 7. [Terminal] Pipeline unificado de vocabulário de palavras isoladas: auditoria via `scripts/sanitizacao.py`, quarentena de órfãos locais, síntese com Edge-TTS + FFmpeg (`adelay=300|300,apad=pad_dur=0.1` a 128 kbps), upload para o Storage, purga de órfãos remotos em lotes e ateste de 100% de paridade (`python scripts/sincronizar_vocabulario_completo.py [idioma|todos]`).

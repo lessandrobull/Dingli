@@ -16,7 +16,9 @@ def sanitizar_palavra_audio(palavra):
         "\u0302": "circ",
         "\u0303": "tilde",
         "\u0308": "uml",
-        "\u0327": "ced"
+        "\u0327": "ced",
+        "\u0304": "macron",
+        "\u030c": "caron"
     }
 
     base_chars = []
