@@ -114,3 +114,51 @@ export async function buscarSentencaPorIdNoIndexedDB(id) {
     return null;
   }
 }
+export async function removerDoIndexedDB(storeName, key) {
+  try {
+    const db = await abrirDB();
+    if (!db) return;
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(storeName, "readwrite");
+      const store = tx.objectStore(storeName);
+      store.delete(key);
+      tx.oncomplete = () => resolve(true);
+      tx.onerror = () => reject(tx.error);
+    });
+  } catch (err) {
+    console.warn(`[offlineStorage] Falha ao remover de ${storeName}:`, err);
+  }
+}
+
+export async function invalidarTopicosPorSentencas(ids, idiomaEstudo) {
+  try {
+    const db = await abrirDB();
+    if (!db) return false;
+    const idsSet = new Set(ids.map(Number));
+    return new Promise((resolve) => {
+      const tx = db.transaction(STORES.SENTENCES, "readwrite");
+      const store = tx.objectStore(STORES.SENTENCES);
+      const req = store.openCursor();
+      req.onsuccess = (e) => {
+        const cursor = e.target.result;
+        if (cursor) {
+          const key = cursor.key;
+          const pastaIdioma = idiomaEstudo === "pi" ? "zh" : idiomaEstudo;
+          if (typeof key === 'string' && (key.includes(`_${idiomaEstudo}_`) || key.includes(`_${pastaIdioma}_`))) {
+            const lista = cursor.value?.dados;
+            if (Array.isArray(lista) && lista.some(item => idsSet.has(Number(item.id)))) {
+              cursor.delete();
+            }
+          }
+          cursor.continue();
+        } else {
+          resolve(true);
+        }
+      };
+      req.onerror = () => resolve(false);
+    });
+  } catch (err) {
+    console.warn("[offlineStorage] Erro ao invalidar tópicos:", err);
+    return false;
+  }
+}

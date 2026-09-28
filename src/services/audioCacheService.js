@@ -1,4 +1,4 @@
-import { salvarNoIndexedDB, obterDoIndexedDB, STORES } from './offlineStorage';
+import { salvarNoIndexedDB, obterDoIndexedDB, removerDoIndexedDB, STORES } from './offlineStorage';
 
 const SUPABASE_AUDIO_BASE = "https://lxdmfaxxxfyzbpzvniyi.supabase.co/storage/v1/object/public/audios";
 const CACHE_NAME = "dingli-audios-v1";
@@ -210,5 +210,101 @@ export async function precarregarAudios(listaFrases, idioma = "en", vozes = ["v1
     }
   } catch (err) {
     console.warn("[audioCacheService] Erro durante o pré-carregamento:", err);
+  }
+}
+
+export function obterVozesPorIdioma(idioma) {
+  const map = {
+    zh: VOZES_ZH,
+    pi: VOZES_PI,
+    pt: VOZES_PT,
+    ge: VOZES_GE,
+    it: VOZES_IT,
+    fr: VOZES_FR,
+    es: VOZES_ES,
+    en: VOZES_EN
+  };
+  return map[idioma] || VOZES_EN;
+}
+
+export async function expurgarAudiosDeIds(ids, idioma = "en") {
+  if (!ids || ids.length === 0) return;
+  const vozes = obterVozesPorIdioma(idioma);
+  const temCaches = ("caches" in window);
+  let cache = null;
+  if (temCaches) {
+    try { cache = await caches.open(CACHE_NAME); } catch (e) {}
+  }
+
+  for (const id of ids) {
+    for (const voz of vozes) {
+      const url = montarAudioUrl(id, voz, idioma);
+      if (cache) {
+        try {
+          await cache.delete(url);
+          await cache.delete(url, { ignoreSearch: true });
+        } catch (e) {}
+      }
+      try {
+        await removerDoIndexedDB(STORES.AUDIOS, url);
+      } catch (e) {}
+    }
+  }
+}
+
+export async function baixarNovosAudiosComProgresso(ids, idioma = "en", onProgresso = null, vozesCustom = null) {
+  if (!ids || ids.length === 0) {
+    if (onProgresso) onProgresso({ concluidos: 0, total: 0, percentual: 100 });
+    return;
+  }
+
+  const vozes = vozesCustom || obterVozesPorIdioma(idioma);
+  const temCaches = ("caches" in window);
+  let cache = null;
+  if (temCaches) {
+    try { cache = await caches.open(CACHE_NAME); } catch (e) {}
+  }
+
+  const urlsParaBaixar = [];
+  for (const id of ids) {
+    for (const voz of vozes) {
+      urlsParaBaixar.push(montarAudioUrl(id, voz, idioma));
+    }
+  }
+
+  const total = urlsParaBaixar.length;
+  let concluidos = 0;
+
+  if (total === 0) {
+    if (onProgresso) onProgresso({ concluidos: 0, total: 0, percentual: 100 });
+    return;
+  }
+
+  const LIMITE_CONCORRENCIA = 4;
+  for (let i = 0; i < urlsParaBaixar.length; i += LIMITE_CONCORRENCIA) {
+    const lote = urlsParaBaixar.slice(i, i + LIMITE_CONCORRENCIA);
+    await Promise.all(
+      lote.map(async (url) => {
+        try {
+          const resp = await fetch(url, { mode: "cors" });
+          if (resp.ok) {
+            if (cache) {
+              await cache.put(url, resp);
+            } else {
+              const blob = await resp.blob();
+              await salvarNoIndexedDB(STORES.AUDIOS, url, { key: url, blob: blob });
+            }
+          }
+        } catch (fetchErr) {
+          console.warn(`[audioCacheService] Falha ao baixar áudio na atualização: ${url}`);
+        } finally {
+          concluidos++;
+          if (onProgresso) {
+            const percentual = Math.round((concluidos / total) * 100);
+            onProgresso({ concluidos, total, percentual });
+          }
+        }
+      })
+    );
   }
 }

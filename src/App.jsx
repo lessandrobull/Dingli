@@ -15,10 +15,11 @@ import Adm from './Components/Adm'
 import { ESTRUTURA_NIVEIS } from './constant'
 import { ExplicacaoIA, DominiumStats } from './Components/Relatorios'
 import MenuCartoes from './Components/MenuCartoes'
+import CardAvisoAtualizacao from './Components/CardAvisoAtualizacao'
 import { dataService } from './dataService'
 import { calcularProximoRank } from './useSRSLogic'
-import { precarregarAudios, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService'
-import { listarTopicosSalvos } from './services/offlineStorage'
+import { precarregarAudios, expurgarAudiosDeIds, baixarNovosAudiosComProgresso, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService'
+import { listarTopicosSalvos, invalidarTopicosPorSentencas } from './services/offlineStorage'
 import { DingliProvider } from './DingliContext'
 
 function App() {
@@ -72,6 +73,12 @@ function App() {
   const [modoJogo, setModoJogo] = useState(false);
   const [modoExercicio, setModoExercicio] = useState(false);
   const [resultadoFeedback, setResultadoFeedback] = useState(null);
+
+  // Estados do Sistema de Atualização de Conteúdo
+  const [revisaoPendente, setRevisaoPendente] = useState(null);
+  const [modalAtualizacaoAberto, setModalAtualizacaoAberto] = useState(false);
+  const [acaoPendenteAposAtualizacao, setAcaoPendenteAposAtualizacao] = useState(null);
+  const [qtdFrasesEstudadasAfetadas, setQtdFrasesEstudadasAfetadas] = useState(0);
   const [exercicioNivel, setExercicioNivel] = useState(0);
 
   // Novo estado para segurar a Revisão Global do "Saque Rápido"
@@ -788,6 +795,111 @@ function App() {
     }
   }, [indice, tela, frasesFiltradas]);
 
+  // Checagem em background silenciosa de revisões de conteúdo
+  useEffect(() => {
+    if (!idiomaEstudo || tela !== 'menuCartoes') return;
+    let ativo = true;
+
+    const checarRevisoes = async () => {
+      try {
+        const resultado = await dataService.verificarRevisoesPendentes(idiomaEstudo);
+        if (ativo && resultado?.temRevisao) {
+          setRevisaoPendente(resultado);
+        }
+      } catch (err) {
+        console.warn("[App] Falha ao verificar revisões em segundo plano:", err);
+      }
+    };
+
+    checarRevisoes();
+    return () => { ativo = false; };
+  }, [idiomaEstudo, tela]);
+
+  // Interceptador dos cliques em Deck e Game com os 3 cenários
+  const interceptarAcaoComChecagem = useCallback(async (acaoDestino) => {
+    // Cenário 1: Não há revisões pendentes
+    if (!revisaoPendente || !revisaoPendente.temRevisao || !revisaoPendente.ids?.length) {
+      acaoDestino();
+      return;
+    }
+
+    const idsRevisao = revisaoPendente.ids;
+    // Identifica quais frases o usuário já estudou (Rank > 0)
+    const idsEstudados = idsRevisao.filter(id => {
+      const item = frasesMaestria[id];
+      const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
+      return rank > 0;
+    });
+
+    // Cenário 2: Há revisão, mas o aluno nunca estudou essas frases (R = 0)
+    if (idsEstudados.length === 0) {
+      try {
+        await expurgarAudiosDeIds(idsRevisao, idiomaEstudo);
+        await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
+        localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
+        setRevisaoPendente(null);
+      } catch (err) {
+        console.warn("[App] Falha na atualização silenciosa:", err);
+      }
+      acaoDestino();
+      return;
+    }
+
+    // Cenário 3: Há frases revisadas com Rank > 0 -> exibe o CardAvisoAtualizacao
+    setQtdFrasesEstudadasAfetadas(idsEstudados.length);
+    setAcaoPendenteAposAtualizacao(() => acaoDestino);
+    setModalAtualizacaoAberto(true);
+  }, [revisaoPendente, frasesMaestria, idiomaEstudo]);
+
+  // Execução cirúrgica do reset de maestria e download dos novos áudios
+  const executarAtualizacaoConteudo = useCallback(async (onProgresso) => {
+    if (!revisaoPendente) return;
+    const idsRevisao = revisaoPendente.ids || [];
+    const cursoKey = `${idiomaOrigem}_${idiomaEstudo}`;
+
+    // 1. Reset cirúrgico de maestria para Rank 0 das frases afetadas
+    const agora = Date.now();
+    let novaMaestria = { ...frasesMaestria };
+    idsRevisao.forEach(id => {
+      if (novaMaestria[id] !== undefined) {
+        const itemAtual = novaMaestria[id];
+        novaMaestria[id] = typeof itemAtual === 'object'
+          ? { ...itemAtual, rank: 0, status: 'inedita', next_review: agora, highest_rank: 0 }
+          : 0;
+      }
+    });
+
+    setFrasesMaestria(novaMaestria);
+    localStorage.setItem(`maestria_${cursoKey}`, JSON.stringify(novaMaestria));
+
+    if (user?.id) {
+      try {
+        await dataService.saveUserProgress(user.id, cursoKey, novaMaestria);
+      } catch (err) {
+        console.warn("[App] Falha ao persistir reset de maestria no Supabase:", err);
+      }
+    }
+
+    // 2. Limpeza cirúrgica de caches locais
+    await expurgarAudiosDeIds(idsRevisao, idiomaEstudo);
+    await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
+
+    // 3. Download com progresso dos novos áudios
+    await baixarNovosAudiosComProgresso(idsRevisao, idiomaEstudo, onProgresso);
+
+    // 4. Conclusão da versão
+    localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
+    setRevisaoPendente(null);
+    setModalAtualizacaoAberto(false);
+
+    // 5. Executa a ação pendente que o aluno havia clicado (Deck ou Game)
+    if (acaoPendenteAposAtualizacao) {
+      const acao = acaoPendenteAposAtualizacao;
+      setAcaoPendenteAposAtualizacao(null);
+      acao();
+    }
+  }, [revisaoPendente, frasesMaestria, idiomaOrigem, idiomaEstudo, user, setFrasesMaestria, acaoPendenteAposAtualizacao]);
+
   const renderTela = () => {
     if (tela === 'perfil') return (
       <Perfil
@@ -811,7 +923,11 @@ function App() {
       />
     );
     if (tela === 'menuCartoes') return (
-      <MenuCartoes styles={styles} acionarFilaJogo={jogarDominiumInteligente} selecionarNivel={selecionarNivel} />
+      <MenuCartoes
+        styles={styles}
+        acionarFilaJogo={() => interceptarAcaoComChecagem(jogarDominiumInteligente)}
+        selecionarNivel={(n) => interceptarAcaoComChecagem(() => selecionarNivel(n))}
+      />
     );
     if (tela === 'escolherNivel') return (
       <EscolherNivel
@@ -883,6 +999,18 @@ function App() {
       tela={tela}
     >
       {renderTela()}
+      {modalAtualizacaoAberto && (
+        <CardAvisoAtualizacao
+          styles={styles}
+          descricao={revisaoPendente?.descricao || ""}
+          quantidadeFrases={qtdFrasesEstudadasAfetadas}
+          onConfirmar={executarAtualizacaoConteudo}
+          onFechar={() => {
+            setModalAtualizacaoAberto(false);
+            setAcaoPendenteAposAtualizacao(null);
+          }}
+        />
+      )}
     </DingliProvider>
   );
 }

@@ -235,4 +235,49 @@ for fid, payload in alteracoes_db.items():
             pass
 
 print(f"✔ 4. Supabase DB atualizado: {db_ok}/{len(alteracoes_db)} sentenças sincronizadas!")
+
+# 5. Registro automático de nova versão na tabela curso_revisoes
+if db_ok > 0:
+    idioma_curso = "pi" if idioma_alvo == "zh" else idioma_alvo
+    print("\n[SISTEMA DE VERSIONAMENTO]")
+    print(f"Registrando nova versão na tabela curso_revisoes para o curso [{idioma_curso.upper()}]...")
+    try:
+        # Consulta a versão mais recente registrada para o curso
+        url_versao = f"{SUPABASE_URL}/rest/v1/curso_revisoes?idioma=eq.{idioma_curso}&select=versao&order=versao.desc&limit=1"
+        headers_get = {
+            "apikey": KEY,
+            "Authorization": f"Bearer {KEY}"
+        }
+        req_get = urllib.request.Request(url_versao, headers=headers_get)
+        with urllib.request.urlopen(req_get, timeout=15) as resp_v:
+            dados_v = json.loads(resp_v.read().decode("utf-8"))
+            versao_atual = dados_v[0]["versao"] if dados_v else 0
+
+        nova_versao = versao_atual + 1
+        ids_afetados = sorted(list(alteracoes_db.keys()))
+        payload_revisao = {
+            "versao": nova_versao,
+            "idioma": idioma_curso,
+            "ids_alterados": ids_afetados,
+            "descricao": f"Atualização de conteúdo ({len(ids_afetados)} frase{'s' if len(ids_afetados) > 1 else ''} aprimorada{'s' if len(ids_afetados) > 1 else ''})."
+        }
+
+        url_post = f"{SUPABASE_URL}/rest/v1/curso_revisoes"
+        headers_post = {
+            "apikey": KEY,
+            "Authorization": f"Bearer {KEY}",
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal"
+        }
+        body_post = json.dumps(payload_revisao).encode("utf-8")
+        req_post = urllib.request.Request(url_post, data=body_post, headers=headers_post, method="POST")
+        with urllib.request.urlopen(req_post, timeout=15) as resp_post:
+            if resp_post.status in (200, 201):
+                print(f"✔ Versão {nova_versao} registrada com sucesso na tabela curso_revisoes!")
+                print(f"  - Total de IDs registrados: {len(ids_afetados)}")
+            else:
+                print(f"⚠ Resposta inesperada ao registrar versão: {resp_post.status}")
+    except Exception as err_rev:
+        print(f"⚠ Falha ao registrar versão na tabela curso_revisoes: {err_rev}")
+
 print("\n🎉 PASSO 6 FINALIZADO COM SUCESSO ABSOLUTO!")

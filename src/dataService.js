@@ -105,5 +105,40 @@ export const dataService = {
       console.warn("[dataService] Falha ao sincronizar progresso na nuvem. Mantido no storage local:", err);
       return { data: null, error: err };
     }
+  },
+
+  // --- Controle de Revisões de Conteúdo ---
+  // --- Controle de Revisões de Conteúdo ---
+  verificarRevisoesPendentes: async (idiomaEstudo) => {
+    try {
+      const chaveVersaoLocal = `versao_conteudo_${idiomaEstudo}`;
+      const versaoLocal = parseInt(localStorage.getItem(chaveVersaoLocal) || "0", 10);
+
+      const { data, error } = await supabase
+        .from('curso_revisoes')
+        .select('versao, ids_alterados, descricao')
+        .eq('idioma', idiomaEstudo)
+        .gt('versao', versaoLocal)
+        .order('versao', { ascending: true });
+
+      if (error || !data || data.length === 0) {
+        return { temRevisao: false, ids: [], novaVersao: versaoLocal, descricao: "" };
+      }
+
+      // Unifica todos os IDs de revisões acumuladas sem duplicatas
+      const todosIds = Array.from(new Set(data.flatMap(r => r.ids_alterados || [])));
+      const ultimaVersao = data[data.length - 1].versao;
+      const descricao = data[data.length - 1].descricao;
+
+      return {
+        temRevisao: true,
+        ids: todosIds,
+        novaVersao: ultimaVersao,
+        descricao: descricao
+      };
+    } catch (err) {
+      console.warn('[dataService] Falha ao verificar revisões pendentes:', err);
+      return { temRevisao: false, ids: [], novaVersao: 0, descricao: "" };
+    }
   }
 };
