@@ -49,3 +49,5 @@ resolver_acentos_e_subir.py
 upload_*.py
 
 scripts/
+.env.local
+.env
