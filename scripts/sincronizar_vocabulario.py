@@ -19,7 +19,7 @@ VOZES_OFICIAIS = {
     "fr": "fr-FR-DeniseNeural",
     "ge": "de-DE-KatjaNeural",
     "it": "it-IT-IsabellaNeural",
-    "pt": "pt-BR-ThalitaMultilingualNeural"
+    "pt": "pt-BR-FranciscaNeural"
 }
 
 alvo = sys.argv[1].lower() if len(sys.argv) > 1 else "todos"
