@@ -6,12 +6,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
 node_modules
 dist
 dist-ssr
 *.local
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,15 +20,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
 audios_dingli/
-
 *.bak
 esqueleto_dingli.txt
 mapear.py
 recuperados/
 src/gerarExplicacoes.mjs
-
 # Temporários de áudio
 ffmpeg.exe
 *.zip
@@ -39,7 +34,6 @@ auditar_colisoes_e_ffmpeg.py
 corrigir_frases_fr.py
 varredura_l1.py
 aplicar_etapa1_l1.py
-
 # Scripts e arquivos temporários de processamento local
 teste_*.mp3
 Useful Languages - Supabase.csv
@@ -47,7 +41,6 @@ gerar_palavras_isoladas.py
 regerar_frase_35.py
 resolver_acentos_e_subir.py
 upload_*.py
-
-scripts/
 .env.local
 .env
+backups/

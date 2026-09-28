@@ -1,0 +1,23 @@
+ID 1128 | slug: atenderme                 | original: atenderme       | frase: Necesito encontrar un dentista de urgencia que pueda atenderme ahora mismo.
+ID  412 | slug: barca                     | original: barca           | frase: La barca sale a las nueve y media.
+ID    5 | slug: buenos                    | original: Buenos          | frase: Buenos días a todos.
+ID 1148 | slug: comportamento             | original: comportamento   | frase: Siempre me han fascinado las complejidades del comportamento humano.
+ID 1183 | slug: desenvolver               | original: desenvolver.    | frase: Creo que la creatividad es una habilidad que se puede fomentar e desenvolver.
+ID 1088 | slug: desenvolvimento           | original: desenvolvimento | frase: Estoy planeando inscribirme en una serie de talleres de desenvolvimento profesional.
+ID  105 | slug: dobla                     | original: Dobla           | frase: Dobla a la izquierda en la esquina.
+ID 1057 | slug: estava                    | original: estava          | frase: El gran almacén estava tan lleno que no pude encontrar lo que quería.
+ID 1152 | slug: falar                     | original: falar           | frase: ¿Te resulta fácil abrirte e falar de tus emociones?
+ID 1044 | slug: fazer                     | original: fazer           | frase: Me gustaría fazer un pedido para recoger en unos veinte minutos.
+ID 1126 | slug: felt                      | original: felt            | frase: Me he felt muito más estresado de lo normal debido a la carga de trabalho.
+ID 1063 | slug: fidelidad                 | original: fidelidad?      | frase: ¿Hay algún descuento adicional para los miembros del programa de fidelidad?
+ID  368 | slug: limpiando                 | original: limpiando       | frase: Estoy limpiando la casa en este momento.
+ID  935 | slug: mas                       | original: mas             | frase: Solía ser bastante tímido, mas me he vuelto mucho más seguro con el tiempo.
+ID  985 | slug: muita                     | original: muita           | frase: No suelo ver muita televisión, ya que me parece una pérdida de tiempo.
+ID 1114 | slug: passos                    | original: passos          | frase: ¿Cuáles son los passos necesarios a seguir si pierdes tus tarjetas de crédito en el extranjero?
+ID  926 | slug: processo                  | original: processo.       | frase: Gracias por ser tan paciente conmigo durante este processo.
+ID 1105 | slug: processos                 | original: processos       | frase: He estado intentando encontrar una forma de optimizar nuestros processos internos.
+ID 1107 | slug: trabalhando               | original: trabalhando     | frase: No estou seguro de si quiero seguir trabalhando en el sector privado.
+ID 1090 | slug: trabalhar                 | original: trabalhar       | frase: He estado explorando la posibilidad de trabalhar de forma remota permanentemente.
+ID 1101 | slug: trabalhas                 | original: trabalhas       | frase: ¿Crees que eres más productivo cuando trabalhas en equipo?
+ID  379 | slug: trabalho                  | original: trabalho?       | frase: ¿Alguna vez caminas al trabalho?
+ID 1121 | slug: tratamento                | original: tratamento      | frase: Debes completar todo el tratamento médico, incluso si te sientes mejor.
