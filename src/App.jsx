@@ -860,7 +860,14 @@ function App() {
     const idsRevisao = revisaoPendente.ids || [];
     const cursoKey = `${idiomaOrigem}_${idiomaEstudo}`;
 
-    // 1. Reset cirúrgico de maestria para Rank 0 das frases afetadas
+    // 1. Identificar estritamente as frases estudadas que precisam de download imediato
+    const idsEstudados = idsRevisao.filter(id => {
+      const item = frasesMaestria[id];
+      const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
+      return rank > 0;
+    });
+
+    // 2. Reset cirúrgico de maestria para Rank 0 das frases afetadas
     const agora = Date.now();
     let novaMaestria = { ...frasesMaestria };
     idsRevisao.forEach(id => {
@@ -875,20 +882,21 @@ function App() {
     setFrasesMaestria(novaMaestria);
     localStorage.setItem(`maestria_${cursoKey}`, JSON.stringify(novaMaestria));
 
+    // Persistência no Supabase em segundo plano (não trava a barra de progresso)
     if (user?.id) {
-      try {
-        await dataService.saveUserProgress(user.id, cursoKey, novaMaestria);
-      } catch (err) {
-        console.warn("[App] Falha ao persistir reset de maestria no Supabase:", err);
-      }
+      dataService.saveUserProgress(user.id, cursoKey, novaMaestria)
+        .catch(err => console.warn("[App] Falha ao persistir progresso no Supabase:", err));
     }
 
-    // 2. Limpeza cirúrgica de caches locais
-    await expurgarAudiosDeIds(idsRevisao, idiomaEstudo);
-    await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
+    // Limpeza de cache dos IDs não estudados em segundo plano
+    Promise.all([
+      expurgarAudiosDeIds(idsRevisao, idiomaEstudo),
+      invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo)
+    ]).catch(err => console.warn("[App] Limpeza em segundo plano:", err));
 
-    // 3. Download com progresso dos novos áudios
-    await baixarNovosAudiosComProgresso(idsRevisao, idiomaEstudo, onProgresso);
+    // 3. Download imediato com progresso: baixa APENAS as frases que o aluno estuda
+    const idsParaBaixar = idsEstudados.length > 0 ? idsEstudados : idsRevisao.slice(0, 10);
+    await baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo, onProgresso);
 
     // 4. Conclusão da versão
     localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
