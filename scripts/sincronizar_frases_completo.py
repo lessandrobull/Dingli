@@ -58,6 +58,7 @@ VOZES_FRASES = {
 
 args = [a.lower() for a in sys.argv[1:]]
 dry_run = "--dry-run" in args
+somente_audio = "--somente-audio" in args
 idiomas_informados = [a for a in args if not a.startswith("--")]
 
 idioma_alvo = idiomas_informados[0] if idiomas_informados else None
@@ -66,7 +67,7 @@ if not idioma_alvo or idioma_alvo not in VOZES_FRASES:
     print("Exemplo: python scripts/sincronizar_frases_completo.py zh [--dry-run]")
     sys.exit(1)
 
-backups = sorted(glob.glob("backups/sentences_backup_*.csv"))
+backups = sorted(glob.glob("backups/sentences_v*.csv") + glob.glob("backups/sentences_backup_*.csv"))
 if not backups:
     raise FileNotFoundError("Nenhum backup localizado em backups/. Execute o Passo 4 antes.")
 
@@ -211,6 +212,12 @@ with ThreadPoolExecutor(max_workers=6) as executor:
             uploads_ok += 1
 
 print(f"✔ 3. Storage Upload: {uploads_ok}/{total_audios} áudios enviados com x-upsert!")
+
+if somente_audio:
+    print("
+✔ [MODO SOMENTE-ÁUDIO] Síntese e upload de frases concluídos com 100% de sucesso!")
+    print("  Atualização da tabela sentences e registro de versão delegados ao orquestrador.")
+    sys.exit(0)
 
 # 4. Atualização da tabela sentences no Supabase DB
 headers_patch = {
