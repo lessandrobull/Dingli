@@ -833,14 +833,17 @@ function App() {
 
     // Cenário 2: Há revisão, mas o aluno nunca estudou essas frases (R = 0)
     if (idsEstudados.length === 0) {
-      try {
-        await expurgarAudiosDeIds(idsRevisao, idiomaEstudo);
-        await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
-        localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
-        setRevisaoPendente(null);
-      } catch (err) {
-        console.warn("[App] Falha na atualização silenciosa:", err);
-      }
+      // Grava versão imediatamente para liberar o estado da UI
+      const versaoAlvo = revisaoPendente.novaVersao;
+      localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(versaoAlvo));
+      setRevisaoPendente(null);
+
+      // Limpeza de cache e IndexedDB em segundo plano (sem travar abertura do Deck/Game)
+      Promise.all([
+        expurgarAudiosDeIds(idsRevisao, idiomaEstudo),
+        invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo)
+      ]).catch(err => console.warn("[App] Limpeza em segundo plano:", err));
+
       acaoDestino();
       return;
     }

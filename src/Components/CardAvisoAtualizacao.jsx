@@ -43,8 +43,8 @@ const TEXTOS_AVISO = {
     topicoLabel: "Aggiornamento Contenuti",
     titulo: "Contenuto Migliorato!",
     mensagemGeral: "Abbiamo revisionato il corso e migliorato il materiale per garantire un'esperienza di studio ancora più fluida e accurata.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio o rifiniture del testo.` : `${qtd} frase che hai già studiato è stata aggiornata con nuovi audio o rifiniture del testo.`,
-    mensagemCiclo: "Per permetterti di padroneggiare la nuova versione, queste frasi sono state riposizionate all'inizio del tuo ciclo di pratica.",
+    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio o rifiniture del testo.` : `${qtd} frase che hai già studiata è stata aggiornata con nuovi audio o rifiniture del testo.`,
+    mensagemCiclo: "Per permetterti di padroneggiare la nuova versão, queste frasi sono state riposizionate all'inizio del tuo ciclo di pratica.",
     botaoAcao: "Aggiorna e Pratica",
     baixando: "Aggiornamento audio..."
   },
@@ -123,9 +123,30 @@ export default function CardAvisoAtualizacao({
   };
 
   return (
-    <div style={{ ...styles.viewport, backgroundColor: corTema, height: alturaTela, position: 'absolute', top: 0, left: 0, width: '100%', zIndex: 9999 }}>
-      <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
-        {/* Botão de saída no topo com a mesma estrutura de TelaEstudo */}
+    <div style={{
+      ...styles.viewport,
+      backgroundColor: corTema,
+      height: alturaTela,
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      width: '100vw',
+      zIndex: 9999,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      boxSizing: 'border-box'
+    }}>
+      <div style={{
+        ...styles.mobileContainer,
+        margin: '0 auto',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        boxSizing: 'border-box'
+      }}>
+        {/* Botão de saída no topo */}
         <button
           type="button"
           onClick={handleSair}
@@ -135,26 +156,49 @@ export default function CardAvisoAtualizacao({
             backgroundColor: ns.bg,
             color: ns.txt,
             opacity: emAndamento ? 0.5 : 1,
-            cursor: emAndamento ? 'not-allowed' : 'pointer'
+            cursor: emAndamento ? 'not-allowed' : 'pointer',
+            alignSelf: 'stretch'
           }}
         >
           ← {t?.quit || "Sair"}
         </button>
 
-        {/* Card central idêntico ao de TelaEstudo */}
-        <div style={{ ...styles.cardFixoRelativo, position: 'relative', margin: '0 auto', outline: 'none' }}>
+        {/* Card central com centralização explícita */}
+        <div style={{
+          ...styles.cardFixoRelativo,
+          position: 'relative',
+          margin: '0 auto',
+          width: '100%',
+          boxSizing: 'border-box',
+          outline: 'none',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
+        }}>
           
           {/* Topo do Card */}
-          <div style={styles.topCardAreaFixed}>
-            <p style={{ ...styles.labelTopico, color: corTema, margin: '0 0 10px 0' }}>
+          <div style={{ ...styles.topCardAreaFixed, textAlign: 'center', width: '100%' }}>
+            <p style={{ ...styles.labelTopico, color: corTema, margin: '0 0 10px 0', textAlign: 'center' }}>
               {textos.topicoLabel}
             </p>
           </div>
 
           {/* Área Central Informativa */}
-          <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: '10px 15px', overflowY: 'auto', textAlign: 'center' }}>
+          <div style={{
+            ...styles.areaFraseCentralFlex,
+            flex: 1,
+            width: '100%',
+            padding: '10px 10px',
+            overflowY: 'auto',
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxSizing: 'border-box'
+          }}>
             
-            {/* Ícone de atualização em SVG nativo */}
+            {/* Ícone de atualização */}
             <div style={{
               width: '56px',
               height: '56px',
@@ -164,7 +208,8 @@ export default function CardAvisoAtualizacao({
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              margin: '0 auto 14px auto'
+              margin: '0 auto 14px auto',
+              flexShrink: 0
             }}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
@@ -175,7 +220,9 @@ export default function CardAvisoAtualizacao({
               margin: '0 0 12px 0',
               fontSize: '1.35rem',
               fontWeight: '900',
-              color: '#1e293b'
+              color: '#1e293b',
+              textAlign: 'center',
+              width: '100%'
             }}>
               {textos.titulo}
             </h2>
@@ -184,7 +231,9 @@ export default function CardAvisoAtualizacao({
               margin: '0 0 14px 0',
               fontSize: '0.92rem',
               color: '#475569',
-              lineHeight: '1.45'
+              lineHeight: '1.45',
+              textAlign: 'center',
+              width: '100%'
             }}>
               {textos.mensagemGeral}
             </p>
@@ -197,13 +246,15 @@ export default function CardAvisoAtualizacao({
                 padding: '12px 14px',
                 margin: '0 0 14px 0',
                 width: '100%',
-                boxSizing: 'border-box'
+                boxSizing: 'border-box',
+                textAlign: 'center'
               }}>
                 <p style={{
                   margin: '0 0 6px 0',
                   fontSize: '0.95rem',
                   fontWeight: '800',
-                  color: corTema
+                  color: corTema,
+                  textAlign: 'center'
                 }}>
                   {textos.mensagemFrases(quantidadeFrases)}
                 </p>
@@ -211,7 +262,8 @@ export default function CardAvisoAtualizacao({
                   margin: 0,
                   fontSize: '0.85rem',
                   color: '#64748b',
-                  lineHeight: '1.4'
+                  lineHeight: '1.4',
+                  textAlign: 'center'
                 }}>
                   {textos.mensagemCiclo}
                 </p>
@@ -223,7 +275,9 @@ export default function CardAvisoAtualizacao({
                 margin: '4px 0 0 0',
                 fontSize: '0.8rem',
                 color: '#94a3b8',
-                fontStyle: 'italic'
+                fontStyle: 'italic',
+                textAlign: 'center',
+                width: '100%'
               }}>
                 {descricao}
               </p>
@@ -231,7 +285,7 @@ export default function CardAvisoAtualizacao({
           </div>
 
           {/* Área Inferior com Botão e Barra de Progresso */}
-          <div style={{ ...styles.bottomCardAreaFixed, gap: '8px', paddingTop: '10px' }}>
+          <div style={{ ...styles.bottomCardAreaFixed, gap: '8px', paddingTop: '10px', width: '100%' }}>
             <button
               type="button"
               disabled={emAndamento}
