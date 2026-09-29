@@ -27,6 +27,30 @@
 
 ---
 
+### 0.1 AMBIENTE OPERACIONAL, TERMINAL E PROTOCOLO DE INTERAÇÃO
+- **Terminal Oficial:** Git Bash no Windows (`MINGW64`), executado estritamente na raiz do repositório (`~/Documents/Apps/Dìnglì`).
+- **Padrão de Scripts e Automação:** Todo comando de inspeção, refatoração ou automação via terminal DEVE ser entregue pronto para o Git Bash utilizando Python com heredoc Bash (`python - << 'EOF' ... EOF`), com codificação explícita `utf-8` ou `utf-8-sig`. É estritamente proibido o uso de comandos em PowerShell (`.ps1`) ou Prompt de Comando (`cmd.exe`).
+- **Modelo de Interação:** O agente de IA não possui terminal autônomo conectado diretamente ao computador; toda ação no sistema depende de o desenvolvedor colar comandos fornecidos no Git Bash e retornar os logs para validação factual.
+
+### 0.2 INFRAESTRUTURA, DEPLOY CONTÍNUO E CONTROLE DE VERSÃO
+- **Branch Principal:** `master`.
+- **Deploy Contínuo (CI/CD):** Todo commit enviado via `git push origin master` dispara automaticamente o build e deploy em produção (Vercel/Netlify).
+- **Rigor de Versionamento:** Qualquer alteração no código deve ser precedida e sucedida por checagem de status (`git status -s`) e seguir a convenção de Conventional Commits (`feat:`, `fix:`, `perf:`, `docs:`, `chore:`).
+
+### 0.3 HIERARQUIA DE DADOS E REGRA ANTI-STALE (AS 4 CAMADAS DO APP)
+Para garantir consistência absoluta e impedir a renderização de dados desatualizados (*stale state*), toda funcionalidade ou refatoração deve respeitar a hierarquia de persistência:
+1. **Camada 1 - Memória RAM (React Hooks / State):** `frasesFiltradas`, `fraseAtivaGlobal`, `sessaoDominium`. Devem ser higienizadas de imediato (`limparEstadoExercicio`, `setFrasesFiltradas([])`) antes de qualquer recarga de conteúdo.
+2. **Camada 2 - Armazenamento Síncrono do Navegador:** `localStorage` (`versao_conteudo_${idiomaEstudo}`, `maestria_${cursoKey}`) e `sessionStorage` (`app_topico`).
+3. **Camada 3 - Armazenamento Offline em Disco:** `IndexedDB` (Stores: `SENTENCES`, `TOPICS`, `AUDIOS`) e `CacheStorage` (`CACHE_NAME`). Atualizações de texto devem sincronizar diretamente o IndexedDB para evitar downloads redundantes.
+4. **Camada 4 - Nuvem / Supabase:** Banco relacional PostgreSQL (`sentences`, `curso_revisoes`, `user_progress`) e Bucket de Storage (`audios_dingli/`).
+
+### 0.4 PADRÕES DE ÁUDIO, VOZES E IDIOMAS
+- **Storage de Frases:** `audios_dingli/{lang}/{id}_{voz}.mp3`.
+- **Storage de Vocabulário Isolado:** `audios_dingli/palavras/{lang}/{slug}.mp3`.
+- **Mandarim (`zh`/`pi`):** Par inseparável Hanzi (`zh`) e Pinyin tonal (`pi`). Qualquer alteração em ideogramas exige sincronia imediata com o pinyin correspondente.
+
+---
+
 ## 1. CONTEXTO GERAL E FUNDAÇÕES DA APLICAÇÃO
 - Objetivo: Aplicativo progressivo para aprendizado acelerado de idiomas, baseado no algoritmo proprietário de repetição espaçada (SRS) "Dominium".
 - Pilares Didáticos: Input compreensível, treino ativo de pronúncia em tempo real, arquitetura offline-first e interface móvel responsiva estrita.
