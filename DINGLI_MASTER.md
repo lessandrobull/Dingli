@@ -175,3 +175,37 @@ Sempre que o usuário solicitar revisão ou melhoria didática de frases, a exec
 5. [Manual] Usuário importa o CSV no Google Sheets para acompanhamento visual e cópia de segurança pessoal.
 6. [Terminal] Pipeline unificado de frases completas: quarentena local dos áudios antigos, síntese Edge-TTS de todas as vozes oficiais, upload com `x-upsert` para o Storage e atualização da tabela `sentences` no Supabase via `PATCH` (`python scripts/sincronizar_frases_completo.py [idioma] [--dry-run]`).
 7. [Terminal] Pipeline unificado de vocabulário de palavras isoladas: auditoria via `scripts/sanitizacao.py`, quarentena de órfãos locais, síntese com Edge-TTS + FFmpeg (`adelay=300|300,apad=pad_dur=0.1` a 128 kbps), upload para o Storage, purga de órfãos remotos em lotes e ateste de 100% de paridade (`python scripts/sincronizar_vocabulario_completo.py [idioma|todos]`).
+---
+
+## 8. SUBSISTEMA DE VERSIONAMENTO E SINCRONIZAÇÃO CIRÚRGICA DE CONTEÚDO
+
+### 8.1 Tabela `curso_revisoes` e Pipeline no Supabase
+- **Estrutura:** Registra a evolução de conteúdo por curso (`idioma`, `versao`, `ids`, `descricao`, `updated_at`).
+- **Automação (`sincronizar_frases_completo.py`):** Ao auditar ou sincronizar frases com alterações de texto/áudio, o script detecta os IDs afetados, incrementa a versão daquele idioma e grava o registro de revisão no Supabase.
+
+### 8.2 Os 3 Cenários Determinísticos de Atualização no Front-End
+A verificação ocorre na transição de telas (abertura de Deck/Game) comparando a versão remota (`curso_revisoes`) com o cache local (`localStorage.getItem('versao_conteudo_' + idiomaEstudo)`):
+1. **Cenário 1 (Sem revisão pendente):** A versão local é igual à remota. A navegação prossegue de imediato.
+2. **Cenário 2 (Revisão existente, R = 0 frases estudadas):**
+   - Gravação imediata da nova versão no `localStorage`.
+   - Limpeza assíncrona em segundo plano de caches antigos (`expurgarAudiosDeIds`, `invalidarTopicosPorSentencas`) via `Promise.all()`.
+   - Abertura imediata do Deck ou Game sem bloqueio de interface.
+3. **Cenário 3 (Revisão existente com frases já estudadas, R > 0):**
+   - Interceptação com bloqueio e exibição do modal `CardAvisoAtualizacao.jsx`.
+
+### 8.3 Contrato de Limpeza Prévia de Memória e Consistência (Pre-emptive Clearing)
+Para evitar condições de corrida (*stale state*) onde o motor do jogo lê frases antigas ainda em memória ao terminar o download:
+1. **Limpeza Prévia de Memória RAM:** No clique de confirmação, executar imediatamente:
+   - `limparEstadoExercicio()` e `setFrasesFiltradas([])`.
+   - Remoção dos IDs revisados de `sessaoDominium` (`primeira`, `recuperadas`, `acertosTempo`, `falhas`).
+   - Reset de `frasesMaestria[id]` para Rank 0 descartando chaves estáticas de texto (`texto`, `traducao`, `texto_zh`).
+2. **Sincronização no IndexedDB (`offlineStorage`):**
+   - Os tópicos afetados salvos localmente (`topicosBaixados`) são reconsultados na nuvem e regravados no IndexedDB com os textos atualizados, prevenindo solicitações de download redundantes no Deck.
+3. **Download Cirúrgico (`audioCacheService`):**
+   - O download de novos arquivos `.mp3` é restrito estritamente aos IDs estudados pelo usuário (em lotes concorrentes de 4), emitindo percentual contínuo de 0% a 100% diretamente no botão.
+4. **Finalização:** Gravação da nova versão no `localStorage`, fechamento do modal e acionamento da tela de destino com os novos dados em vigor.
+
+### 8.4 Interface Centralizada e Internacionalizada (`CardAvisoAtualizacao.jsx`)
+- Componente em tela cheia com alinhamento vertical e horizontal estrito (`margin: 0 auto`, `alignItems: 'center'`).
+- Suporte nativo para os 7 idiomas suportados (`pt`, `en`, `es`, `fr`, `it`, `ge`, `pi`).
+- Monitoramento de viewport dinâmico (`visualViewport`) para evitar deslocamento com teclados virtuais ou barras de navegação móveis.
