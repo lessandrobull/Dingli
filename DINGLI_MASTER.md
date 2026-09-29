@@ -45,8 +45,13 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
 4. **Camada 4 - Nuvem / Supabase:** Banco relacional PostgreSQL (`sentences`, `curso_revisoes`, `user_progress`) e Bucket de Storage (`audios_dingli/`).
 
 ### 0.4 PADRÕES DE ÁUDIO, VOZES E IDIOMAS
-- **Storage de Frases:** `audios_dingli/{lang}/{id}_{voz}.mp3`.
-- **Storage de Vocabulário Isolado:** `audios_dingli/palavras/{lang}/{slug}.mp3`.
+- **Bucket Supabase Storage Oficial:** `audios` (Público).
+- **Storage Remoto de Frases:** `{SUPABASE_URL}/storage/v1/object/audios/{lang}/{id}_{voz}.mp3`.
+- **Storage Remoto de Vocabulário:** `{SUPABASE_URL}/storage/v1/object/audios/palavras/{lang}/{slug}.mp3`.
+- **Diretório Local de Frases:** `audios_dingli/{lang}/{id}_{voz}.mp3`.
+- **Diretório Local de Vocabulário:** `audios_dingli/palavras/{lang}/{slug}.mp3`.
+- **Livro-Razão de Auditoria Local:** `backups/historico_revisoes.md`.
+- **Snapshots Locais da Base:** `backups/sentences_v{versao}_{idioma}_{timestamp}.csv`.
 - **Mandarim (`zh`/`pi`):** Par inseparável Hanzi (`zh`) e Pinyin tonal (`pi`). Qualquer alteração em ideogramas exige sincronia imediata com o pinyin correspondente.
 
 ---
@@ -104,14 +109,47 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
 ## 4. ENGENHARIA DE ÁUDIO: FRASES VS. PALAVRAS E REGRAS FONÉTICAS
 ### A. Frases Completas (`audios_dingli/{lang}/{id}_{voz}.mp3`)
 - Formato: `{id}_{voz}.mp3` (ex: `1_v1.mp3`, `988_v2.mp3`).
-- Vozes Oficiais de Frases:
-  * Inglês (`en` - 6 vozes): Andrew, Guy, Eric, Jenny, Libby, Clara.
-  * Espanhol (`es` - 6 vozes): Tomás, Jorge, Alex, Salomé, Catalina, Dalia.
-  * Francês (`fr` - 4 vozes): Denise, Henri, Charline, Thierry.
-  * Italiano (`it` - 4 vozes): Giuseppe, Diego, Isabella, Elsa.
-  * Português (`pt` - 4 vozes): Antônio, Thalita, Hyunsu, Ava.
-  * Alemão (`ge` - 4 vozes): Jonas, Florian, Seraphina, Katja.
-  * Mandarim (`zh` - 4 vozes): Xiaoxiao, Yunxi, Yunjian, Xiaoyi.
+- Bucket Supabase: `audios/{lang}/{id}_{voz}.mp3`.
+- Identificadores Técnicos Oficiais (Edge-TTS):
+  * **Inglês (`en` - 6 vozes):**
+    - `v1`: `en-US-AndrewNeural`
+    - `v2`: `en-US-GuyNeural`
+    - `v3`: `en-US-EricNeural`
+    - `v4`: `en-US-JennyNeural`
+    - `v5`: `en-GB-LibbyNeural`
+    - `v6`: `en-CA-ClaraNeural`
+  * **Espanhol (`es` - 6 vozes):**
+    - `v1`: `es-AR-TomasNeural`
+    - `v2`: `es-MX-JorgeNeural`
+    - `v3`: `es-PE-AlexNeural`
+    - `v4`: `es-CO-SalomeNeural`
+    - `v5`: `es-CL-CatalinaNeural`
+    - `v6`: `es-MX-DaliaNeural`
+  * **Francês (`fr` - 4 vozes):**
+    - `v1`: `fr-FR-DeniseNeural`
+    - `v2`: `fr-FR-HenriNeural`
+    - `v3`: `fr-BE-CharlineNeural`
+    - `v4`: `fr-CA-ThierryNeural`
+  * **Italiano (`it` - 4 vozes):**
+    - `v1`: `it-IT-GiuseppeMultilingualNeural`
+    - `v2`: `it-IT-DiegoNeural`
+    - `v3`: `it-IT-IsabellaNeural`
+    - `v4`: `it-IT-ElsaNeural`
+  * **Português (`pt` - 4 vozes):**
+    - `v1`: `pt-BR-AntonioNeural`
+    - `v2`: `pt-BR-ThalitaMultilingualNeural`
+    - `v3`: `ko-KR-HyunsuMultilingualNeural`
+    - `v4`: `en-US-AvaMultilingualNeural`
+  * **Alemão (`ge` - 4 vozes):**
+    - `v1`: `de-AT-JonasNeural`
+    - `v2`: `de-DE-FlorianMultilingualNeural`
+    - `v3`: `de-DE-SeraphinaMultilingualNeural`
+    - `v4`: `de-DE-KatjaNeural`
+  * **Mandarim (`zh` - 4 vozes):**
+    - `v1`: `zh-CN-XiaoxiaoNeural`
+    - `v2`: `zh-CN-YunxiNeural`
+    - `v3`: `zh-CN-YunjianNeural`
+    - `v4`: `zh-CN-XiaoyiNeural`
 
 
 ### C. Regra do Mandarim: Par Inseparável Hanzi (`zh`) e Pinyin (`pi`)
@@ -215,6 +253,28 @@ Sempre que o usuário solicitar revisão ou melhoria didática de frases, a exec
 5. [Manual] Usuário importa o CSV no Google Sheets para acompanhamento visual e cópia de segurança pessoal.
 6. [Terminal] Pipeline unificado de frases completas: quarentena local dos áudios antigos, síntese Edge-TTS de todas as vozes oficiais, upload com `x-upsert` para o Storage e atualização da tabela `sentences` no Supabase via `PATCH` (`python scripts/sincronizar_frases_completo.py [idioma] [--dry-run]`).
 7. [Terminal] Pipeline unificado de vocabulário de palavras isoladas: auditoria via `scripts/sanitizacao.py`, quarentena de órfãos locais, síntese com Edge-TTS + FFmpeg (`adelay=300|300,apad=pad_dur=0.1` a 128 kbps), upload para o Storage, purga de órfãos remotos em lotes e ateste de 100% de paridade (`python scripts/sincronizar_vocabulario_completo.py [idioma|todos]`).
+---
+
+### 7.3 CONTROLE DE CICLOS, VERSIONAMENTO E BACKUPS (SUPABASE: curso_revisoes)
+
+#### A. Arquitetura de Versões Independentes por Idioma
+- Cada idioma mantém seu próprio contador sequencial de versão na tabela `curso_revisoes`.
+- Atualizações em um curso incrementam apenas o contador daquele idioma, registrando a lista exata de IDs alterados.
+- Todo ciclo sincronizado gera um snapshot completo da tabela `sentences` em `backups/sentences_v{versao}_{idioma}_{timestamp}.csv` e anexa o evento no livro-razão `backups/historico_revisoes.md`.
+
+#### B. Estado Oficial de Versões
+- **Mandarim (`zh`)**: Versão 2 (921 frases aprimoradas).
+- **Inglês (`en`)**: Versão 2 (ID 135 reparado).
+- **Espanhol (`es`)**: Versão 2 (ID 135 reparado).
+- **Italiano (`it`)**: Versão 2 (ID 135 reparado).
+- **Francês (`fr`)**: Versão 1 (Carga inicial de 1.200 frases).
+- **Alemão (`ge`)**: Versão 1 (Carga inicial de 1.200 frases).
+- **Português (`pt`)**: Versão 3 atual:
+  * Nível A1 (IDs 1–300): Concluído (Versão 2 — 37 revisões aplicadas).
+  * Nível A2 (IDs 301–600): Concluído (Versão 3 — 16 revisões aplicadas).
+  * Nível B1 (IDs 601–900): Pendente de início.
+  * Nível B2 (IDs 901–1200): Pendente.
+
 ---
 
 ## 8. SUBSISTEMA DE VERSIONAMENTO E SINCRONIZAÇÃO CIRÚRGICA DE CONTEÚDO

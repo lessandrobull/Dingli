@@ -43,7 +43,8 @@ resolver_acentos_e_subir.py
 upload_*.py
 .env.local
 .env
-backups/
+backups/*
+!backups/historico_revisoes.md
 
 # Python e caches
 __pycache__/
@@ -53,3 +54,6 @@ __pycache__/
 # Áudios e quarentenas locais (mantém apenas estrutura se necessário)
 audios_dingli/quarentena_*/
 backups/*.csv
+
+# Backup local de trabalho do Master
+dingli_master_backup.md
