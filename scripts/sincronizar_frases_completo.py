@@ -214,9 +214,9 @@ with ThreadPoolExecutor(max_workers=6) as executor:
 print(f"✔ 3. Storage Upload: {uploads_ok}/{total_audios} áudios enviados com x-upsert!")
 
 if somente_audio:
-    print("
-✔ [MODO SOMENTE-ÁUDIO] Síntese e upload de frases concluídos com 100% de sucesso!")
-    print("  Atualização da tabela sentences e registro de versão delegados ao orquestrador.")
+    print()
+    print('✔ [MODO SOMENTE-ÁUDIO] Síntese e upload de frases concluídos com 100% de sucesso!')
+    print('  Atualização da tabela sentences e registro de versão delegados ao orquestrador.')
     sys.exit(0)
 
 # 4. Atualização da tabela sentences no Supabase DB

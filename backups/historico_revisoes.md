@@ -19,7 +19,16 @@
 
 ---
 
+| auto | 2026-09-29 15:11:47 | **PT** | v4 | 8 | Atualização de conteúdo (8 frases aprimoradas). | `sentences_v3_pt_20260929_120840.csv` |
+
+---
+
 ## Detalhamento de IDs por Versão
+
+### PT (v4) — 2026-09-29 15:11:47
+- **Descrição:** Atualização de conteúdo (8 frases aprimoradas).
+- **Total de frases:** 8
+- **IDs:** 603, 605, 608, 612, 617, 635, 639, 641
 
 ### Registro #2: ES (v1) — 2026-09-29 00:02:04
 - **Descrição:** Revisão de conteúdo (347 frases aprimoradas).
