@@ -184,18 +184,21 @@ for l in idiomas_alvo:
                 pass
         return False
 
-    todos_arquivos = [f[:-4] for f in os.listdir(dir_lang) if f.endswith(".mp3")]
-    print(f"  Iniciando upload de {len(todos_arquivos)} palavras para Storage (palavras/{l}/)...")
-    uploads_ok = 0
-    feitos = 0
-    with ThreadPoolExecutor(max_workers=6) as executor:
-        futuros = [executor.submit(upload_palavra, s) for s in todos_arquivos]
-        for fut in as_completed(futuros):
-            feitos += 1
-            if fut.result():
-                uploads_ok += 1
-            pct = (feitos / len(todos_arquivos)) * 100
-            print(f"  [Upload Storage {l.upper()}] {feitos}/{len(todos_arquivos)} ({pct:.1f}%) | Enviados: {uploads_ok}", end="\r", flush=True)
-    print(f"\n  ✔ Upload [{l.upper()}]: {uploads_ok}/{len(todos_arquivos)} sincronizados!")
+    # 3. Upload exclusivo das palavras faltantes recém-geradas
+    if faltantes:
+        print(f"  Iniciando upload de {len(faltantes)} novas palavras para Storage (palavras/{l}/)...")
+        uploads_ok = 0
+        feitos = 0
+        with ThreadPoolExecutor(max_workers=6) as executor:
+            futuros = [executor.submit(upload_palavra, s) for s in faltantes]
+            for fut in as_completed(futuros):
+                feitos += 1
+                if fut.result():
+                    uploads_ok += 1
+                pct = (feitos / len(faltantes)) * 100
+                print(f"  [Upload Storage {l.upper()}] {feitos}/{len(faltantes)} ({pct:.1f}%) | Enviados: {uploads_ok}", end="\r", flush=True)
+        print(f"\n  ✔ Upload [{l.upper()}]: {uploads_ok}/{len(faltantes)} sincronizados!")
+    else:
+        print(f"  ✔ Nenhuma palavra nova pendente de upload para [{l.upper()}].")
 
 print("\n🎉 PIPELINE DE VOCABULÁRIO FINALIZADO COM SUCESSO ABSOLUTO!")

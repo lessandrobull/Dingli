@@ -27,10 +27,10 @@ VOZES_FRASES = {
     "en": [
         ("v1", "en-US-AndrewNeural"), ("v2", "en-US-GuyNeural"),
         ("v3", "en-US-EricNeural"), ("v4", "en-US-JennyNeural"),
-        ("v5", "en-US-LibbyNeural"), ("v6", "en-CA-ClaraNeural")
+        ("v5", "en-GB-LibbyNeural"), ("v6", "en-CA-ClaraNeural")
     ],
     "es": [
-        ("v1", "es-MX-TomasNeural"), ("v2", "es-MX-JorgeNeural"),
+        ("v1", "es-AR-TomasNeural"), ("v2", "es-MX-JorgeNeural"),
         ("v3", "es-MX-DaliaNeural"), ("v4", "es-ES-AlvaroNeural"),
         ("v5", "es-ES-ElviraNeural"), ("v6", "es-US-AlonsoNeural")
     ],
@@ -39,15 +39,15 @@ VOZES_FRASES = {
         ("v3", "fr-FR-VivienneMultilingualNeural"), ("v4", "fr-FR-RemyMultilingualNeural")
     ],
     "it": [
-        ("v1", "it-IT-GiuseppeNeural"), ("v2", "it-IT-DiegoNeural"),
+        ("v1", "it-IT-GiuseppeMultilingualNeural"), ("v2", "it-IT-DiegoNeural"),
         ("v3", "it-IT-IsabellaNeural"), ("v4", "it-IT-ElsaNeural")
     ],
     "pt": [
         ("v1", "pt-BR-AntonioNeural"), ("v2", "pt-BR-ThalitaMultilingualNeural"),
-        ("v3", "pt-BR-FranciscaNeural"), ("v4", "pt-BR-BrendaNeural")
+        ("v3", "ko-KR-HyunsuMultilingualNeural"), ("v4", "en-US-AvaMultilingualNeural")
     ],
     "ge": [
-        ("v1", "de-DE-JonasNeural"), ("v2", "de-DE-FlorianMultilingualNeural"),
+        ("v1", "de-AT-JonasNeural"), ("v2", "de-DE-FlorianMultilingualNeural"),
         ("v3", "de-DE-SeraphinaMultilingualNeural"), ("v4", "de-DE-KatjaNeural")
     ],
     "zh": [

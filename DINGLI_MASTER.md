@@ -151,6 +151,15 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
 - **Tratamento de Áudio:** Todo arquivo de vocabulário recebe pré-delay de 300ms e pós-padding de 100ms via FFmpeg para prevenção de DAC sleep.
 - **Comando Único Oficial:** `python scripts/sincronizar_vocabulario.py zh [--dry-run]`.
 
+
+### F. Orquestrador Unificado de Sincronização Total (Passos 4, 6 e 7)
+Fluxo oficial automatizado em 2 comandos após aprovação da tabela de revisão:
+1. **Preparação & Auditoria Prévia (Backup Supabase + Patch CSV + Dry-Run Completo):**
+   `python scripts/sincronizar_tudo.py [idiomas...] --patch revisoes.json --dry-run`
+2. **Execução Real Definitiva (Síntese TTS, Upload Storage, PATCH DB, Purga Remota):**
+   `python scripts/sincronizar_tudo.py [idiomas...]`
+   *(Lembrete: Enquanto a execução real é processada no terminal, o operador pode copiar manualmente o arquivo recém-gerado em `backups/sentences_backup_[timestamp].csv` para a planilha espelho do Google Sheets).*
+
 ## 5. MATRIZ DE ESTADO DOS IDIOMAS (100% FACTUAL)
 | Idioma | Frases no Supabase | Áudios de Frases (Storage) | Palavras no Disco | Palavras no Storage | Status Oficial |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -194,8 +203,15 @@ Sempre que o usuário solicitar revisão ou melhoria didática de frases, a exec
 2. [Chat] Tabela comparativa gerada pela IA contendo estritamente as colunas:
    `id | inglês | como está | como deve ser | explicação mais breve possível`
    (aplicando os 4 pilares da Seção 7.1).
+   - REGRA MANDATÓRIA DE LARGURA TOTAL (FULL-WIDTH):
+     * Abertura obrigatória na primeira linha sem saudações ou títulos Markdown (##):
+       "Tabela comparativa de frases de [Idioma] tendo o Inglês como referência:"
+     * Alinhamento estrito à esquerda em todas as 5 colunas no separador:
+       `| :--- | :--- | :--- | :--- | :--- |`
+     * Proibição de tags ou notas internas dentro das células para não forçar barra de rolagem horizontal.
+     * Concisão estrita na 5ª coluna: frases sem alteração recebem exclusivamente "Perfeito e natural." e frases com ajuste recebem explicação direta de no máximo 1 linha curta.
 3. [Chat] Análise, discussão e aprovação final das sugestões pelo usuário. Ao aprovar um bloco de frases, a IA deve obrigatoriamente questionar se há mais alguma frase para ser revisada antes de avançar; o Passo 4 só pode ser iniciado após a confirmação explícita do usuário autorizando o início da sincronização.
-4. [Terminal] Backup automático da tabela `sentences` do Supabase (`backups/sentences_backup_TIMESTAMP.csv`) seguido da atualização do CSV local (`supabase_sentences.csv`) em `utf-8-sig` (`python scripts/aplicar_revisao_e_backup.py`).
+4. [Terminal] Backup automático da tabela `sentences` do Supabase (`backups/sentences_backup_TIMESTAMP.csv`) seguido da atualização do CSV local (`supabase_sentences.csv`) em `utf-8-sig` (`python scripts/aplicar_revisao_e_backup.py [arquivo_revisoes.json]`), preservando rigorosamente todas as 19 colunas curriculares e pedagógicas existentes no arquivo via reader.fieldnames.
 5. [Manual] Usuário importa o CSV no Google Sheets para acompanhamento visual e cópia de segurança pessoal.
 6. [Terminal] Pipeline unificado de frases completas: quarentena local dos áudios antigos, síntese Edge-TTS de todas as vozes oficiais, upload com `x-upsert` para o Storage e atualização da tabela `sentences` no Supabase via `PATCH` (`python scripts/sincronizar_frases_completo.py [idioma] [--dry-run]`).
 7. [Terminal] Pipeline unificado de vocabulário de palavras isoladas: auditoria via `scripts/sanitizacao.py`, quarentena de órfãos locais, síntese com Edge-TTS + FFmpeg (`adelay=300|300,apad=pad_dur=0.1` a 128 kbps), upload para o Storage, purga de órfãos remotos em lotes e ateste de 100% de paridade (`python scripts/sincronizar_vocabulario_completo.py [idioma|todos]`).
