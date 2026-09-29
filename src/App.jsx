@@ -858,58 +858,76 @@ function App() {
   const executarAtualizacaoConteudo = useCallback(async (onProgresso) => {
     if (!revisaoPendente) return;
     const idsRevisao = revisaoPendente.ids || [];
+    const idsRevisaoSet = new Set(idsRevisao.map(Number));
     const cursoKey = `${idiomaOrigem}_${idiomaEstudo}`;
 
-    // 1. Identificar estritamente as frases estudadas que precisam de download imediato
+    // 1. LIMPEZA PRÉVIA DE MEMÓRIA (React State & LocalStorage)
+    limparEstadoExercicio();
+    setFrasesFiltradas([]);
+
+    setSessaoDominium(prev => ({
+      ...prev,
+      primeira: (prev?.primeira || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+      recuperadas: (prev?.recuperadas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+      acertosTempo: (prev?.acertosTempo || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+      falhas: (prev?.falhas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item)))
+    }));
+
     const idsEstudados = idsRevisao.filter(id => {
       const item = frasesMaestria[id];
       const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
       return rank > 0;
     });
 
-    // 2. Reset cirúrgico de maestria para Rank 0 das frases afetadas
     const agora = Date.now();
     let novaMaestria = { ...frasesMaestria };
     idsRevisao.forEach(id => {
       if (novaMaestria[id] !== undefined) {
-        const itemAtual = novaMaestria[id];
-        novaMaestria[id] = typeof itemAtual === 'object'
-          ? { ...itemAtual, rank: 0, status: 'inedita', next_review: agora, highest_rank: 0 }
-          : 0;
+        novaMaestria[id] = { rank: 0, status: 'inedita', next_review: agora, highest_rank: 0 };
       }
     });
 
     setFrasesMaestria(novaMaestria);
     localStorage.setItem(`maestria_${cursoKey}`, JSON.stringify(novaMaestria));
 
-    // Persistência no Supabase em segundo plano (não trava a barra de progresso)
     if (user?.id) {
       dataService.saveUserProgress(user.id, cursoKey, novaMaestria)
         .catch(err => console.warn("[App] Falha ao persistir progresso no Supabase:", err));
     }
 
-    // Limpeza de cache dos IDs não estudados em segundo plano
-    Promise.all([
-      expurgarAudiosDeIds(idsRevisao, idiomaEstudo),
-      invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo)
-    ]).catch(err => console.warn("[App] Limpeza em segundo plano:", err));
+    // 2. ATUALIZAÇÃO DO CACHE LOCAL (IndexedDB)
+    const topicosParaRecarregar = [...topicosBaixados];
+    const sincronizarTopicosLocais = async () => {
+      await expurgarAudiosDeIds(idsRevisao, idiomaEstudo);
+      await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
+      const colTopicOrigem = `topic_${idiomaOrigem}`;
+      for (const tNome of topicosParaRecarregar) {
+        try {
+          await dataService.getSentencesByTopic(nivelAtivo || "A1", idiomaEstudo, colTopicOrigem, tNome);
+        } catch (e) {
+          console.warn(`[App] Falha ao recarregar tópico '${tNome}' no IndexedDB:`, e);
+        }
+      }
+    };
 
-    // 3. Download imediato com progresso: baixa APENAS as frases que o aluno estuda
+    sincronizarTopicosLocais().catch(err => console.warn("[App] Erro na sincronização IndexedDB:", err));
+
+    // 3. DOWNLOAD DOS NOVOS ÁUDIOS COM PROGRESSO
     const idsParaBaixar = idsEstudados.length > 0 ? idsEstudados : idsRevisao.slice(0, 10);
     await baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo, onProgresso);
 
-    // 4. Conclusão da versão
+    // 4. CONCLUSÃO DA VERSÃO
     localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
     setRevisaoPendente(null);
     setModalAtualizacaoAberto(false);
 
-    // 5. Executa a ação pendente que o aluno havia clicado (Deck ou Game)
+    // 5. NAVEGAÇÃO IMEDIATA COM DADOS NOVOS
     if (acaoPendenteAposAtualizacao) {
       const acao = acaoPendenteAposAtualizacao;
       setAcaoPendenteAposAtualizacao(null);
       acao();
     }
-  }, [revisaoPendente, frasesMaestria, idiomaOrigem, idiomaEstudo, user, setFrasesMaestria, acaoPendenteAposAtualizacao]);
+  }, [revisaoPendente, frasesMaestria, idiomaOrigem, idiomaEstudo, user, nivelAtivo, topicosBaixados, setFrasesMaestria, setSessaoDominium, limparEstadoExercicio, acaoPendenteAposAtualizacao]);
 
   const renderTela = () => {
     if (tela === 'perfil') return (
