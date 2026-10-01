@@ -583,6 +583,7 @@ function App() {
   }, [selecionarTopico]);
 
   function iniciarExercicio(numNivel, indiceForcado, arrayFornecido) {
+    setResultadoFeedback(null);
     setExercicioNivel(numNivel);
     if (indiceForcado !== undefined) setIndice(indiceForcado);
     setModoExercicio(true);
@@ -998,7 +999,7 @@ function App() {
       <TelaEstudo
         fraseAtivaGlobal={fraseAtivaGlobal}
         frasesFiltradas={frasesFiltradas} indice={indice} nivelAtivo={nivelAtivo} topicoAtivo={topicoAtivo}
-        modoExercicio={modoExercicio} exercicioNivel={exercicioNivel} resultadoFeedbackProp={resultadoFeedback} styles={styles}
+        modoExercicio={modoExercicio} exercicioNivel={exercicioNivel} resultadoFeedbackProp={resultadoFeedback} setResultadoFeedbackProp={setResultadoFeedback} styles={styles}
         carregandoDados={carregandoDados} mostrarTraducao={mostrarTraducao}
         setMostrarTraducao={setMostrarTraducao} falar={falar} explicarFraseIA={explicarFraseIA}
         frasesMaestria={frasesMaestria} setFrasesMaestria={setFrasesMaestria} setModoJogo={setModoJogo}

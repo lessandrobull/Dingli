@@ -186,7 +186,7 @@ const obterOpcoesReporte = (t) => [
 export default function TelaEstudo({
   fraseAtivaGlobal,
   frasesFiltradas, indice, nivelAtivo, topicoAtivo,
-  modoExercicio, exercicioNivel, resultadoFeedbackProp, styles,
+  modoExercicio, exercicioNivel, resultadoFeedbackProp, setResultadoFeedbackProp, styles,
   carregandoDados, mostrarTraducao, setMostrarTraducao, falar,
   explicarFraseIA, frasesMaestria, setFrasesMaestria, setModoJogo,
   setSessaoIniciada, limparEstadoExercicio, statusVoz, volume,
@@ -208,7 +208,12 @@ export default function TelaEstudo({
 
   const [feedbackLocal, setFeedbackLocal] = useState(null);
   const resultadoFeedback = (resultadoFeedbackProp !== undefined && resultadoFeedbackProp !== null) ? resultadoFeedbackProp : feedbackLocal;
-  const setResultadoFeedback = setFeedbackLocal;
+  const setResultadoFeedback = (val) => {
+    setFeedbackLocal(val);
+    if (typeof setResultadoFeedbackProp === 'function') {
+      setResultadoFeedbackProp(val);
+    }
+  };
   const [valorInput, setValorInput] = useState("");
   const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "" });
   const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
@@ -326,6 +331,8 @@ export default function TelaEstudo({
     }
     if (resetarTentativasVoz) resetarTentativasVoz();
     setResultadoFeedback(null);
+    setValorInput("");
+    setTentativaFinalizada(false);
     if (setModoExercicio) setModoExercicio(false);
     if (jogarDominiumRef.current) {
       jogarDominiumRef.current();
