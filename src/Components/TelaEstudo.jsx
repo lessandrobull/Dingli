@@ -326,9 +326,39 @@ export default function TelaEstudo({
   // ETAPA 2: Escape no 3º Erro Consecutivo de Pronúncia
   const handleRevisarMaisTarde = useCallback(() => {
     const fraseId = frase?.id;
-    if (postergarParaFimDaTask && fraseId) {
-      postergarParaFimDaTask(fraseId);
+    if (fraseId) {
+      // 1. Ejeção da Task atual
+      if (postergarParaFimDaTask) {
+        postergarParaFimDaTask(fraseId);
+      }
+
+      // 2. Persistência isolada no Dìnglab do curso atual (L1_L2)
+      try {
+        const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
+        const listaAtual = JSON.parse(localStorage.getItem(chaveDinglab) || '[]');
+        if (!listaAtual.some(item => item.id === fraseId)) {
+          listaAtual.push({
+            ...frase,
+            adicionadoEm: Date.now()
+          });
+          localStorage.setItem(chaveDinglab, JSON.stringify(listaAtual));
+        }
+      } catch (err) {
+        console.error('[Dìnglab] Erro ao salvar localmente:', err);
+      }
+
+      // 3. 1º Reporte silencioso no Supabase
+      supabase.from("reports_frases").insert([{
+        frase_id: fraseId,
+        idioma_estudo: idiomaEstudo,
+        idioma_origem: idiomaOrigem,
+        voz: "v1",
+        tipo_problema: "Dìnglab (3 erros de pronúncia)",
+        observacao: "Ejetada para o Dìnglab pelo aluno",
+        resolvido: false
+      }]).then(() => {}).catch(e => console.error('[Dìnglab] Erro telemetria:', e));
     }
+
     if (resetarTentativasVoz) resetarTentativasVoz();
     setResultadoFeedback(null);
     setValorInput("");
@@ -337,7 +367,7 @@ export default function TelaEstudo({
     if (jogarDominiumRef.current) {
       jogarDominiumRef.current();
     }
-  }, [frase?.id, postergarParaFimDaTask, resetarTentativasVoz, setResultadoFeedback, setModoExercicio]);
+  }, [frase, idiomaEstudo, idiomaOrigem, postergarParaFimDaTask, resetarTentativasVoz, setResultadoFeedback, setModoExercicio]);
 
   useEffect(() => {
     setAudioLento(false);

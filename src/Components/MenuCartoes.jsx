@@ -1,4 +1,5 @@
-import React from 'react';
+import { precarregarPalavras } from '../services/audioCacheService';
+import React, { useState, useEffect } from 'react';
 import { useDingli } from '../DingliContext';
 
 export default function MenuCartoes({
@@ -6,8 +7,26 @@ export default function MenuCartoes({
   acionarFilaJogo,
   selecionarNivel
 }) {
-  const { temas, t, getCorFonteDinamica, idiomaEstudo, mudarTela, COR_BASE_CARDS, nivelAtivo, navStyle } = useDingli();
+  const { temas, t, getCorFonteDinamica, idiomaOrigem, idiomaEstudo, mudarTela, COR_BASE_CARDS, nivelAtivo, navStyle } = useDingli();
   if (!styles || !temas || !idiomaEstudo) return null;
+
+  const [qtdDinglab, setQtdDinglab] = useState(0);
+
+  useEffect(() => {
+    if (!idiomaOrigem || !idiomaEstudo) return;
+    try {
+      const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
+      const salvo = localStorage.getItem(chaveDinglab);
+      if (salvo) {
+        const lista = JSON.parse(salvo);
+        setQtdDinglab(Array.isArray(lista) ? lista.length : 0);
+      } else {
+        setQtdDinglab(0);
+      }
+    } catch (e) {
+      setQtdDinglab(0);
+    }
+  }, [idiomaOrigem, idiomaEstudo]);
 
   const ns = navStyle(idiomaEstudo);
   const corFonteBotoes = getCorFonteDinamica(idiomaEstudo);
@@ -52,6 +71,58 @@ export default function MenuCartoes({
             style={{ ...styles.btnPadrao, backgroundColor: COR_BASE_CARDS, color: corFonteBotoes }}
           >
             Dominium
+          </button>
+          <button
+            onClick={() => {
+              try {
+                const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
+                const salvo = localStorage.getItem(chaveDinglab);
+                if (salvo) {
+                  const lista = JSON.parse(salvo);
+                  if (Array.isArray(lista) && lista.length > 0) {
+                    const todasPalavras = [];
+                    lista.forEach(item => {
+                      const txt = item[idiomaEstudo] || item.texto || item.en || "";
+                      txt.split(/\s+/).forEach(w => {
+                        const limpa = w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim();
+                        if (limpa) todasPalavras.push(limpa);
+                      });
+                    });
+                    if (todasPalavras.length > 0) {
+                      precarregarPalavras(todasPalavras, idiomaEstudo);
+                    }
+                  }
+                }
+              } catch (e) {}
+              mudarTela('dinglab');
+            }}
+            style={{
+              ...styles.btnPadrao,
+              backgroundColor: COR_BASE_CARDS,
+              color: corFonteBotoes,
+              position: 'relative'
+            }}
+          >
+            <span>{t?.dinglab || 'Dìnglab'}</span>
+            {qtdDinglab > 0 && (
+              <span
+                style={{
+                  position: 'absolute',
+                  right: '18px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  backgroundColor: '#ef4444',
+                  color: '#ffffff',
+                  borderRadius: '9999px',
+                  padding: '2px 10px',
+                  fontSize: '0.9rem',
+                  fontWeight: '900',
+                  lineHeight: '1.2'
+                }}
+              >
+                {qtdDinglab}
+              </span>
+            )}
           </button>
         </div>
       </div>

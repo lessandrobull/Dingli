@@ -1,3 +1,4 @@
+import Dinglab from './Components/Dinglab';
 import { useEffect, useState, useCallback, useRef, useMemo } from 'react'
 import {
   RANKS_SELECT, RANKS_WRITE, RANKS_VOICE, NOMES_RANKS,
@@ -24,6 +25,8 @@ import { DingliProvider } from './DingliContext'
 
 function App() {
   const [tela, setTela] = useState(() => sessionStorage.getItem('app_tela') || 'perfil');
+  const telaRef = useRef(tela);
+  useEffect(() => { telaRef.current = tela; }, [tela]);
   const [mensagemOrientacao, setMensagemOrientacao] = useState("");
   const [idiomaOrigem, setIdiomaOrigem] = useState(() => sessionStorage.getItem('app_origem') || 'pt');
   const [idiomaEstudo, setIdiomaEstudo] = useState(() => sessionStorage.getItem('app_estudo') || '');
@@ -86,6 +89,7 @@ function App() {
 
   // Estados voláteis migrados para TelaEstudo
   const processandoAcertoRef = useRef(false);
+  const onAvaliacaoDinglabRef = useRef(null);
   const [cursosInscritos, setCursosInscritos] = useState(() => {
     const salvo = localStorage.getItem('cursos_salvos');
     return salvo ? JSON.parse(salvo) : [];
@@ -147,6 +151,13 @@ function App() {
   const falarRef = useRef(null);
 
   const processarResultadoVoz = useCallback(({ resultado, tentativas, fraseOriginal }) => {
+    if (telaRef.current === 'dinglab') {
+      if (setStatusVoz) setStatusVoz('IDLE');
+      if (onAvaliacaoDinglabRef.current) {
+        onAvaliacaoDinglabRef.current({ resultado, tentativas, fraseOriginal });
+      }
+      return;
+    }
     const idAtual = fraseAtivaGlobal ? fraseAtivaGlobal.id : frasesFiltradas[indice]?.id;
     if (!idAtual) return;
     const zhSalvar = fraseAtivaGlobal ? fraseAtivaGlobal.texto_zh : (frasesFiltradas[indice]?.zh || "");
@@ -384,12 +395,21 @@ function App() {
 
   const [aiLoading, setAiLoading] = useState(false);
   const [aiExplanation, setAiExplanation] = useState(null);
+  const [telaRetornoExplicacao, setTelaRetornoExplicacao] = useState('estudo');
+  const [fraseExplicacao, setFraseExplicacao] = useState(null);
+  const [indiceDinglab, setIndiceDinglab] = useState(0);
 
-  const explicarFraseIA = useCallback(async (idFornecido) => {
-    const idAlvo = idFornecido || fraseAtivaGlobal?.id || frasesFiltradas[indice]?.id;
+  const explicarFraseIA = useCallback(async (idFornecido, fraseCustom = null) => {
+    const fObj = fraseCustom || fraseAtivaGlobal || frasesFiltradas[indice];
+    const idAlvo = idFornecido || fObj?.id;
     if (!idAlvo) return;
 
-    const chaveTopico = `${nivelAtivo}_${topicoAtivo}`;
+    setFraseExplicacao(fObj || null);
+    setTelaRetornoExplicacao(telaRef.current === 'dinglab' ? 'dinglab' : 'estudo');
+
+    const nivelAlvo = fObj?.nivel || nivelAtivo || "A1";
+    const topicoAlvo = fObj?.topico || topicoAtivo || "";
+    const chaveTopico = `${nivelAlvo}_${topicoAlvo}`;
     const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
 
     if (cacheExplicacoesTopico.current[chaveTopico]) {
@@ -987,12 +1007,34 @@ function App() {
       <ExplicacaoIA
         styles={styles} aiLoading={aiLoading} aiExplanation={aiExplanation}
         frasesFiltradas={frasesFiltradas} indice={indice} explicarFraseIA={explicarFraseIA}
+        telaRetorno={telaRetornoExplicacao}
+        fraseExibicao={fraseExplicacao}
       />
     );
     if (tela === 'dominiumStats') return (
       <DominiumStats
         styles={styles} sessaoDominium={sessaoDominium}
         frasesFiltradas={frasesFiltradas} frasesMaestria={frasesMaestria}
+      />
+    );
+        if (tela === 'dinglab') return (
+      <Dinglab
+        styles={styles}
+        falar={falar}
+        iniciarReconhecimentoVoz={iniciarReconhecimentoVoz}
+        pararEAvaliarVoz={pararEAvaliarVoz}
+        statusVoz={statusVoz}
+        setStatusVoz={setStatusVoz}
+        transcricaoAoVivo={transcricaoAoVivo}
+        setTranscricaoAoVivo={setTranscricaoAoVivo}
+        volume={volume}
+        explicarFraseIA={explicarFraseIA}
+        frasesMaestria={frasesMaestria}
+        setFrasesMaestria={setFrasesMaestria}
+        user={user}
+        onAvaliacaoDinglabRef={onAvaliacaoDinglabRef}
+        indice={indiceDinglab}
+        setIndice={setIndiceDinglab}
       />
     );
     if (tela === 'estudo') return (
@@ -1004,8 +1046,10 @@ function App() {
         setMostrarTraducao={setMostrarTraducao} falar={falar} explicarFraseIA={explicarFraseIA}
         frasesMaestria={frasesMaestria} setFrasesMaestria={setFrasesMaestria} setModoJogo={setModoJogo}
         setSessaoIniciada={setSessaoIniciada} limparEstadoExercicio={limparEstadoExercicio} statusVoz={statusVoz}
+        setStatusVoz={setStatusVoz}
         volume={volume} iniciarReconhecimentoVoz={iniciarReconhecimentoVoz} pararEAvaliarVoz={pararEAvaliarVoz}
-        setIndice={setIndice} transcricaoAoVivo={transcricaoAoVivo} iniciarExercicio={iniciarExercicio}
+        setIndice={setIndice} transcricaoAoVivo={transcricaoAoVivo}
+        setTranscricaoAoVivo={setTranscricaoAoVivo} iniciarExercicio={iniciarExercicio}
         aiExplanation={aiExplanation} aiLoading={aiLoading} setModoExercicio={setModoExercicio}
         filaErros={filaErros} setFilaErros={setFilaErros} filaAcertos={filaAcertos} setFilaAcertos={setFilaAcertos}
         sessaoDominium={sessaoDominium} setSessaoDominium={setSessaoDominium} jogarDominiumInteligente={jogarDominiumInteligente}

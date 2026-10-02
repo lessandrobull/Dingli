@@ -36,31 +36,10 @@ export function useGameEngine({
   // ETAPA 2: Move a frase para o final da fila da bandeja atual da Task
   const postergarParaFimDaTask = useCallback((idAlvo) => {
     if (!idAlvo) return;
-    
-    // 1. Move para a última posição de taskIdsRef.current
-    if (taskIdsRef.current && taskIdsRef.current.includes(idAlvo)) {
-      taskIdsRef.current = [...taskIdsRef.current.filter(id => id !== idAlvo), idAlvo];
-    } else if (taskIdsRef.current) {
-      taskIdsRef.current.push(idAlvo);
+    // Ejeção: remove da bandeja atual da Task sem penalizar ou alterar rank
+    if (taskIdsRef.current) {
+      taskIdsRef.current = taskIdsRef.current.filter(id => id !== idAlvo);
     }
-
-    // 2. Registra timestamp recente para que a ordenação cronológica a posicione por último
-    const agora = Date.now();
-    setFrasesMaestria(prev => {
-      const item = prev[idAlvo];
-      if (!item) return prev;
-      const rankAtual = typeof item === 'object' ? item.rank : (item || 0);
-      return {
-        ...prev,
-        [idAlvo]: {
-          ...(typeof item === 'object' ? item : {}),
-          rank: rankAtual,
-          status: 'recuperacao',
-          last_attempt_at: agora,
-          next_review: agora + 30000 // Cooldown de 30s para dar vez às outras pendentes
-        }
-      };
-    });
   }, []);
 
   // Carregamento dinâmico baseado no curso atual (L1_L2)
@@ -175,25 +154,31 @@ export function useGameEngine({
 
     // 2. Admissão inicial da Task (fixa até 5 frases na sessão)
     if (taskIdsRef.current.length === 0) {
+      const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
+      let idsNoDinglab = [];
+      try {
+        const salvoDinglab = localStorage.getItem(chaveDinglab);
+        if (salvoDinglab) idsNoDinglab = JSON.parse(salvoDinglab).map(item => item.id);
+      } catch (e) { }
       const novaBandeja = [];
 
       // A) Cartas em trânsito abertas na mesa
       emTransitoGlobal.forEach(item => {
-        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
+        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
           novaBandeja.push(item.id);
         }
       });
 
       // B) Revisões liberadas de dias anteriores (Rank 6+)
       progressoDiasGlobal.forEach(item => {
-        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
+        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
           novaBandeja.push(item.id);
         }
       });
 
       // C) Inéditas do tópico ativo
       ineditasGlobal.forEach(item => {
-        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id)) {
+        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
           novaBandeja.push(item.id);
         }
       });

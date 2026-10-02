@@ -4,17 +4,18 @@ import { useDingli } from '../DingliContext';
 
 export function ExplicacaoIA({
   styles,
-  aiLoading, aiExplanation, frasesFiltradas, indice, explicarFraseIA
+  aiLoading, aiExplanation, frasesFiltradas, indice, explicarFraseIA,
+  telaRetorno = 'estudo', fraseExibicao = null
 }) {
   const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, COR_BASE_CARDS } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
-  const frase = frasesFiltradas[indice];
+  const frase = fraseExibicao || frasesFiltradas[indice];
 
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg }}>
       <div style={styles.mobileContainer}>
-        <button onClick={() => mudarTela('estudo')} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>
+        <button onClick={() => mudarTela(telaRetorno || 'estudo')} style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}>
           ← {t.back}
         </button>
         <div style={{
@@ -62,7 +63,7 @@ export function ExplicacaoIA({
 
                 {/* Tradução L1 */}
                 <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.3', margin: '4px 0 12px 0', textAlign: 'center', fontStyle: 'italic' }}>
-                  {idiomaOrigem === 'pi' ? frasesFiltradas[indice]?.zh : frasesFiltradas[indice]?.[idiomaOrigem]}
+                  {idiomaOrigem === 'pi' ? (frase?.zh || frasesFiltradas[indice]?.zh) : (frase?.[idiomaOrigem] || frase?.traducao || frasesFiltradas[indice]?.[idiomaOrigem])}
                 </p>
 
                 {/* Explicação gramatical e didática estrutural */}

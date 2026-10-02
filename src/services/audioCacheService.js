@@ -134,16 +134,44 @@ export async function obterAudioPalavraUrl(palavra, idioma = "en") {
 export async function tocarAudioPalavra(palavra, idioma = "en") {
   try {
     const slug = sanitizarPalavraAudio(palavra);
+    if (!slug) return;
     const url = await obterAudioPalavraUrl(palavra, idioma);
     console.log("[Dìnglì Áudio]", { palavraOriginal: palavra, slugGerado: slug, urlFinal: url });
-    if (!slug) return;
+
+    const dispararFallbackTTS = () => {
+      if (window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(palavra);
+        const LANG_MAP = {
+          pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
+          it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
+        };
+        u.lang = LANG_MAP[idioma] || 'en-US';
+        u.rate = 0.85;
+        window.speechSynthesis.speak(u);
+      }
+    };
+
     const audio = new Audio(url);
+    let fallbackAcionado = false;
+
+    audio.onerror = () => {
+      if (!fallbackAcionado) {
+        fallbackAcionado = true;
+        dispararFallbackTTS();
+      }
+    };
+
     const playPromise = audio.play();
     if (playPromise !== undefined) {
       playPromise
         .then(() => console.log("[Dìnglì Áudio] ✔ Reprodução iniciada:", slug))
-        .catch(e => {
-          console.error("[Dìnglì Áudio] ✖ Falha ao reproduzir áudio:", e.message, "URL:", url);
+        .catch((e) => {
+          if (e.name === "AbortError") return;
+          if (!fallbackAcionado) {
+            fallbackAcionado = true;
+            dispararFallbackTTS();
+          }
         });
     }
   } catch (err) {
@@ -307,4 +335,248 @@ export async function baixarNovosAudiosComProgresso(ids, idioma = "en", onProgre
       })
     );
   }
+}
+
+// ==========================================
+// PRÉ-CARREGAMENTO E REPRODUÇÃO CONTROLADA DE PALAVRAS
+// ==========================================
+export async function precarregarPalavras(palavras, idioma = "en") {
+  if (!palavras || !Array.isArray(palavras) || palavras.length === 0) return;
+  const pastaIdioma = idioma === "pi" ? "zh" : idioma;
+  const unicas = Array.from(new Set(
+    palavras.map(p => sanitizarPalavraAudio(p)).filter(Boolean)
+  ));
+  if (unicas.length === 0) return;
+
+  const temCaches = ("caches" in window);
+  let cache = null;
+  if (temCaches) {
+    try { cache = await caches.open(CACHE_NAME); } catch (e) {}
+  }
+
+  const LIMITE = 4;
+  for (let i = 0; i < unicas.length; i += LIMITE) {
+    const lote = unicas.slice(i, i + LIMITE);
+    await Promise.all(lote.map(async (slug) => {
+      const url = `${SUPABASE_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
+      try {
+        if (cache) {
+          const jaExiste = await cache.match(url);
+          if (!jaExiste) {
+            const resp = await fetch(url, { mode: "cors" });
+            if (resp.ok) await cache.put(url, resp);
+          }
+        } else {
+          const reg = await obterDoIndexedDB(STORES.AUDIOS, url);
+          if (!reg) {
+            const resp = await fetch(url, { mode: "cors" });
+            if (resp.ok) {
+              const blob = await resp.blob();
+              await salvarNoIndexedDB(STORES.AUDIOS, url, { key: url, blob });
+            }
+          }
+        }
+      } catch (e) {}
+    }));
+  }
+}
+
+export function tocarAudioPalavraComControle(palavra, idioma = "en") {
+  let audioInstance = null;
+  let abortado = false;
+
+  const promessa = new Promise((resolve) => {
+    const slug = sanitizarPalavraAudio(palavra);
+    if (!slug) {
+      resolve({ duracao: 0.4, cancelado: false });
+      return;
+    }
+
+    obterAudioPalavraUrl(palavra, idioma).then((url) => {
+      if (abortado) {
+        resolve({ duracao: 0, cancelado: true });
+        return;
+      }
+
+      const audio = new Audio(url);
+      audioInstance = audio;
+      let inicio = 0;
+      let resolvido = false;
+
+      const finalizar = (dur) => {
+        if (resolvido) return;
+        resolvido = true;
+        resolve({ duracao: dur, cancelado: false });
+      };
+
+      const dispararFallbackTTS = () => {
+        if (abortado || resolvido) return;
+        if (window.speechSynthesis) {
+          window.speechSynthesis.cancel();
+          const u = new SpeechSynthesisUtterance(palavra);
+          const LANG_MAP = {
+            pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
+            it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
+          };
+          u.lang = LANG_MAP[idioma] || 'en-US';
+          u.rate = 0.85;
+          const t0 = Date.now();
+          u.onend = () => {
+            const dur = Math.max(0.4, (Date.now() - t0) / 1000);
+            finalizar(dur);
+          };
+          u.onerror = () => {
+            finalizar(0.4);
+          };
+          window.speechSynthesis.speak(u);
+        } else {
+          finalizar(0.4);
+        }
+      };
+
+      audio.onplay = () => {
+        inicio = Date.now();
+      };
+
+      audio.onended = () => {
+        const dur = audio.duration && !isNaN(audio.duration) && isFinite(audio.duration)
+          ? audio.duration
+          : (inicio ? (Date.now() - inicio) / 1000 : 0.4);
+        finalizar(dur);
+      };
+
+      audio.onerror = () => {
+        dispararFallbackTTS();
+      };
+
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((e) => {
+          if (e.name === "AbortError" || abortado) {
+            if (!resolvido) {
+              resolvido = true;
+              resolve({ duracao: 0, cancelado: true });
+            }
+            return;
+          }
+          dispararFallbackTTS();
+        });
+      }
+    }).catch(() => {
+      resolve({ duracao: 0.4, cancelado: false });
+    });
+  });
+
+  const abortar = () => {
+    abortado = true;
+    if (audioInstance) {
+      try {
+        audioInstance.pause();
+        audioInstance.src = "";
+      } catch (e) {}
+      audioInstance = null;
+    }
+    if (window.speechSynthesis) {
+      try { window.speechSynthesis.cancel(); } catch (e) {}
+    }
+  };
+
+  return { promessa, abortar };
+}
+
+export function tocarAudioPalavraMetronomo(palavra, idioma = "en", onSomComecou = null) {
+  let audioInstance = null;
+  let cancelado = false;
+  let disparado = false;
+
+  const dispararInicio = () => {
+    if (disparado || cancelado) return;
+    disparado = true;
+    if (onSomComecou) {
+      onSomComecou();
+      onSomComecou = null;
+    }
+  };
+
+  // Trava de segurança: se o navegador demorar mais de 350ms para decodificar, dispara o visual
+  const timerSeguranca = setTimeout(() => {
+    dispararInicio();
+  }, 900);
+
+  const promessa = new Promise(async (resolve) => {
+    const slug = sanitizarPalavraAudio(palavra);
+    if (!slug) {
+      clearTimeout(timerSeguranca);
+      dispararInicio();
+      resolve({ cancelado: false });
+      return;
+    }
+
+    try {
+      const url = await obterAudioPalavraUrl(palavra, idioma);
+      if (cancelado) {
+        clearTimeout(timerSeguranca);
+        resolve({ cancelado: true });
+        return;
+      }
+
+      const audio = new Audio(url);
+      audioInstance = audio;
+
+      audio.onplaying = () => {
+        clearTimeout(timerSeguranca);
+        dispararInicio();
+      };
+
+      audio.onerror = () => {
+        clearTimeout(timerSeguranca);
+        if (cancelado) return;
+        dispararInicio();
+        if (window.speechSynthesis) {
+          window.speechSynthesis.cancel();
+          const u = new SpeechSynthesisUtterance(palavra);
+          const LANG_MAP = {
+            pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
+            it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
+          };
+          u.lang = LANG_MAP[idioma] || 'en-US';
+          u.rate = 0.85;
+          window.speechSynthesis.speak(u);
+        }
+      };
+
+      const p = audio.play();
+      if (p !== undefined) {
+        p.catch((e) => {
+          if (e.name === "AbortError" || cancelado) return;
+          audio.onerror();
+        });
+      }
+
+      resolve({ audio, cancelado: false });
+    } catch (err) {
+      clearTimeout(timerSeguranca);
+      dispararInicio();
+      resolve({ cancelado: false });
+    }
+  });
+
+  const abortar = () => {
+    cancelado = true;
+    clearTimeout(timerSeguranca);
+    onSomComecou = null;
+    if (audioInstance) {
+      try {
+        audioInstance.pause();
+        audioInstance.currentTime = 0;
+        audioInstance.src = "";
+      } catch (e) {}
+      audioInstance = null;
+    }
+    if (window.speechSynthesis) {
+      try { window.speechSynthesis.cancel(); } catch (e) {}
+    }
+  };
+
+  return { promessa, abortar };
 }
