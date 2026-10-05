@@ -8,6 +8,12 @@ import {
   COR_SUPERFICIE_DIGITACAO
 } from '../themeColors';
 
+const extrairRankDinglab = (item) => {
+  const texto = `${item?.observacao || ''} ${item?.tipo_problema || ''}`;
+  const match = texto.match(/Rank\s*(\d+)/i) || texto.match(/R(\d+)/i);
+  return match ? `R${match[1]}` : '';
+};
+
 export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
   const { mudarTela, setUserRole, setIdiomaEstudo, setIdiomaOrigem, setNivelAtivo } = useDingli();
   const [subTela, setSubTela] = useState(() => sessionStorage.getItem('adm_subtela') || 'menu');
@@ -59,6 +65,25 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
     } catch (err) {
       console.error('[Adm] Erro ao alternar resolvido:', err);
       setReportes(prev => prev.map(item => item.id === id ? { ...item, resolvido: statusAtual } : item));
+    }
+  };
+
+  const deletarReporte = async (id, e) => {
+    if (e) e.stopPropagation();
+    try {
+      setReportes(prev => prev.filter(item => item.id !== id));
+      const { error } = await supabase
+        .from('reports_frases')
+        .delete()
+        .eq('id', id);
+
+      if (error) {
+        console.error('[Adm] Erro ao deletar reporte:', error);
+        carregarReportes();
+      }
+    } catch (err) {
+      console.error('[Adm] Erro ao deletar reporte:', err);
+      carregarReportes();
     }
   };
 
@@ -217,6 +242,20 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
               )}
 
               {!carregando && reportes.map((item) => {
+                const ehDinglab = Boolean(
+                  item.tipo_problema?.toLowerCase().includes('dìnglab') ||
+                  item.tipo_problema?.toLowerCase().includes('dinglab') ||
+                  item.observacao?.toLowerCase().includes('dìnglab') ||
+                  item.observacao?.toLowerCase().includes('dinglab')
+                );
+                const rankDinglab = ehDinglab ? extrairRankDinglab(item) : '';
+                const resolvidoNoPronto = Boolean(
+                  item.tipo_problema?.toLowerCase().includes('superada') ||
+                  item.observacao?.toLowerCase().includes('retornou')
+                );
+                const sufixoDinglab = ehDinglab ? ' Dìnglab' : '';
+
+                // Se for reporte comum já resolvido pelo Adm, exibe no formato recolhido
                 if (item.resolvido) {
                   return (
                     <div
@@ -239,6 +278,27 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
                         <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>
                           {item.created_at ? new Date(item.created_at).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }) : ''}
                         </span>
+                        <button
+                          onClick={(e) => deletarReporte(item.id, e)}
+                          title="Excluir reporte"
+                          style={{
+                            width: '22px',
+                            height: '22px',
+                            borderRadius: '5px',
+                            border: '1.5px solid #ef4444',
+                            backgroundColor: '#fee2e2',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                            padding: 0
+                          }}
+                        >
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                          </svg>
+                        </button>
                         <button
                           onClick={(e) => alternarResolvido(item.id, item.resolvido, e)}
                           title="Desmarcar (tornar pendente)"
@@ -265,6 +325,7 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
                   );
                 }
 
+                // Cards abertos: reportes do Dìnglab (sempre abertos) ou reportes comuns pendentes
                 return (
                   <div
                     key={item.id}
@@ -281,37 +342,72 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
                   >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #e2e8f0', paddingBottom: '8px' }}>
                       <span style={{ fontWeight: '800', color: COR_INSTITUCIONAL_TITULO, fontSize: '0.95rem' }}>
-                        Frase #{item.frase_id} · {item.idioma_estudo?.toUpperCase()} ({item.voz || 'v1'})
+                        Frase #{item.frase_id} · {item.idioma_estudo?.toUpperCase()} ({item.voz || 'v1'}){sufixoDinglab}
                       </span>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <span style={{ fontSize: '0.75rem', color: '#64748b' }}>
                           {item.created_at ? new Date(item.created_at).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }) : ''}
                         </span>
                         <button
-                          onClick={(e) => alternarResolvido(item.id, item.resolvido, e)}
-                          title="Marcar como resolvido"
+                          onClick={(e) => deletarReporte(item.id, e)}
+                          title="Excluir reporte"
                           style={{
                             width: '22px',
                             height: '22px',
                             borderRadius: '5px',
-                            border: '2px solid #94a3b8',
-                            backgroundColor: '#ffffff',
+                            border: '1.5px solid #ef4444',
+                            backgroundColor: '#fee2e2',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                             cursor: 'pointer',
                             padding: 0
                           }}
-                        />
+                        >
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                          </svg>
+                        </button>
+                        <button
+                          onClick={(e) => alternarResolvido(item.id, item.resolvido, e)}
+                          title={item.resolvido ? "Desmarcar (tornar pendente)" : "Marcar como resolvido"}
+                          style={{
+                            width: '22px',
+                            height: '22px',
+                            borderRadius: '5px',
+                            border: item.resolvido ? '1.5px solid #10b981' : '2px solid #94a3b8',
+                            backgroundColor: item.resolvido ? '#10b981' : '#ffffff',
+                            color: '#ffffff',
+                            fontSize: '0.85rem',
+                            fontWeight: '900',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                            padding: 0
+                          }}
+                        >
+                          {item.resolvido ? '✓' : ''}
+                        </button>
                       </div>
                     </div>
 
                     <div style={{ fontSize: '0.9rem', color: '#334155' }}>
-                      <strong>Problema:</strong> {item.tipo_problema}
+                      <strong>Problema:</strong>{' '}
+                      {ehDinglab ? (
+                        <span>
+                          {rankDinglab || 'Dìnglab'}
+                          {resolvidoNoPronto && (
+                            <span style={{ color: '#10b981', fontWeight: '800', marginLeft: '6px' }}>
+                              - Aluno passou!
+                            </span>
+                          )}
+                        </span>
+                      ) : (
+                        item.tipo_problema
+                      )}
                     </div>
-
-                    {item.observacao && (
-                      <div style={{ fontSize: '0.85rem', color: '#475569', backgroundColor: '#f8fafc', padding: '8px 10px', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
-                        <strong>Observação:</strong> {item.observacao}
-                      </div>
-                    )}
 
                     <button
                       onClick={() => inspecionarNoCard(item)}

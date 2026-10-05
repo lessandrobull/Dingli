@@ -21,7 +21,7 @@ export default function Perfil({
     };
   }, []);
 
-  const handleToqueTitulo = () => {
+  const handleToqueFrase = () => {
     toquesRef.current += 1;
     if (timerToquesRef.current) clearTimeout(timerToquesRef.current);
 
@@ -47,10 +47,10 @@ export default function Perfil({
       <div style={styles.mobileContainer}>
         <div style={{ ...styles.topoPerfil, flexDirection: 'column', alignItems: 'center' }}>
           <img src="/assets/logos/dingli_logo_perfil.png" alt="DìNGLì Logo" style={{ width: '100%', height: '140px', objectFit: 'contain', marginBottom: '5px', marginTop: '5px' }} />
-          <h2 onClick={handleToqueTitulo} style={{ ...styles.nomeAluno, color: COR_INSTITUCIONAL_TITULO, margin: '0', cursor: 'pointer', userSelect: 'none', WebkitUserSelect: 'none' }}>Olá, {nomeAluno || 'Estudante'}</h2>
+          <h2 style={{ ...styles.nomeAluno, color: COR_INSTITUCIONAL_TITULO, margin: '0' }}>Olá, {nomeAluno || 'Estudante'}</h2>
         </div>
 
-        <div style={{ ...styles.quadroFrase, backgroundColor: COR_TOM_CLARO, border: 'none', boxShadow: 'none', marginBottom: '-20px', marginTop: '-10px' }}>
+        <div onClick={handleToqueFrase} style={{ ...styles.quadroFrase, backgroundColor: COR_TOM_CLARO, border: 'none', boxShadow: 'none', marginBottom: '-20px', marginTop: '-10px' }}>
           <p style={{ ...styles.textoFrase, color: COR_INSTITUCIONAL_ACAO }}>{fraseTeorica || 'A carregar inspiração...'}</p>
         </div>
 
@@ -94,6 +94,7 @@ export default function Perfil({
           </div>
         </div>
 
+          {import.meta.env.DEV && (
         <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', flexShrink: 0, paddingBottom: '0px' }}>
           <button
             style={{ ...styles.btnLabHome, margin: '0 auto', display: 'block', width: '100%', backgroundColor: COR_TOM_CLARO }}
@@ -105,6 +106,7 @@ export default function Perfil({
             <span style={{ ...styles.labDestaque, color: COR_INSTITUCIONAL_ACAO }}>Adm</span>
           </button>
         </div>
+          )}
       </div>
     </div>
   );
