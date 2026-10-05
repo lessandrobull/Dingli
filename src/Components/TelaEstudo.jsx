@@ -531,16 +531,20 @@ export default function TelaEstudo({
       processandoAcertoRef.current = true;
       const rankObj = frasesMaestria[frase.id];
       const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
-      const calc = calcularProximoRank(rankAtual, false);
+      const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
+      const estavaNaFilaErro = filaErros.some(item => item.indice === indice) || (typeof rankObj === 'object' && rankObj.status === 'recuperacao');
+      const calc = calcularProximoRank(rankAtual, false, highestRank, estavaNaFilaErro);
+
       setFrasesMaestria(prev => ({
         ...prev,
         [frase.id]: {
           ...(typeof rankObj === 'object' ? rankObj : {}),
           rank: calc.novoRank,
           status: calc.lista,
-          next_review: Date.now(),
+          next_review: Date.now() + calc.espera,
           last_review: Date.now(),
           last_attempt_at: Date.now(),
+          highest_rank: Math.max(highestRank, calc.novoRank),
           texto: fraseOriginal,
           traducao: frase[idiomaOrigem] || "",
           texto_zh: frase?.zh || "",
@@ -549,27 +553,31 @@ export default function TelaEstudo({
         }
       }));
 
-      // Rota a carta para o final da fila da bandeja (Carrossel FIFO)
-      if (typeof rotacionarBandeja === 'function') {
-        rotacionarBandeja(frase.id, false);
-      }
-
-      setSessaoDominium(prev => ({ ...prev, falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}` }], primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal) }));
+      setSessaoDominium(prev => ({
+        ...prev,
+        falhas: [...(prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}` }],
+        primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal)
+      }));
       setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
       setFilaErros(prev => prev.some(item => item.indice === indice) ? prev : [...prev, { indice, rank: calc.novoRank }]);
 
-      const concluirErro = () => {
-        setResultadoFeedback(null);
-        setValorInput("");
+      // Permanece no card para correção imediata do aluno
+      const resetarParaNovaTentativa = () => {
         setTentativaFinalizada(false);
         processandoAcertoRef.current = false;
-        if (jogarDominiumRef.current) jogarDominiumRef.current();
+        if (RANKS_SELECT.includes(exercicioNivel)) {
+          setResultadoFeedback('erro_limpo');
+        } else if (RANKS_WRITE.includes(exercicioNivel)) {
+          setValorInput("");
+          setResultadoFeedback(null);
+        }
       };
 
       if (falar) {
-        falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : textoEstudo }, false, concluirErro);
+        falar({ id: frase?.id, texto: (idiomaEstudo === 'pi' && frase.zh) ? frase.zh : textoEstudo }, false, resetarParaNovaTentativa);
       } else {
-        setTimeout(concluirErro, 1500);
+        const tempoAudioErro = Math.max(fraseOriginal.split(" ").length * 600, 1000);
+        setTimeout(resetarParaNovaTentativa, tempoAudioErro);
       }
     }
   }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, userRole]);

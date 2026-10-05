@@ -104,7 +104,7 @@ O Dìngloop é o ecossistema mestre de estudo ativo contínuo que unifica a Task
 | Tipo de Exercício | Ação do Aluno | Efeito no Rank | Destino no Carrossel FIFO |
 | :--- | :--- | :---: | :--- |
 | **Escrita ou Seleção** | Acerto | $+1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
-| **Escrita ou Seleção** | Erro | $-1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
+| **Escrita ou Seleção** | Erro | $-1$ rank | Permanece no mesmo card para correção imediata. A rotação e avanço ocorrem exclusivamente após o acerto. |
 | **Voz (`RANKS_VOICE`)** | Acerto na 1ª tentativa | $+1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
 | **Voz (`RANKS_VOICE`)** | Acerto na 2ª ou 3ª tentativa | $-1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
 | **Voz (`RANKS_VOICE`)** | 3 falhas consecutivas | $0$ (Rank blindado) | Ejeção imediata ao Dìnglab (`rotacionarBandeja(id, true)`) — sai da mesa |
