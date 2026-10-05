@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useDingli } from '../DingliContext';
 import { COR_TOM_CLARO, COR_INSTITUCIONAL_TITULO, COR_INSTITUCIONAL_ACAO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
 
@@ -12,6 +12,31 @@ export default function Perfil({
 }) {
   const { temas, mudarTela, setIdiomaOrigem, setIdiomaEstudo, setUserRole, setNivelAtivo, nivelAtivo } = useDingli();
 
+  const toquesRef = useRef(0);
+  const timerToquesRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (timerToquesRef.current) clearTimeout(timerToquesRef.current);
+    };
+  }, []);
+
+  const handleToqueTitulo = () => {
+    toquesRef.current += 1;
+    if (timerToquesRef.current) clearTimeout(timerToquesRef.current);
+
+    if (toquesRef.current >= 4) {
+      toquesRef.current = 0;
+      setUserRole('adm');
+      mudarTela('adm');
+      return;
+    }
+
+    timerToquesRef.current = setTimeout(() => {
+      toquesRef.current = 0;
+    }, 1500);
+  };
+
   if (!styles || !temas) {
     console.warn("Perfil: 'styles' ou 'temas' não foram fornecidos.");
     return null;
@@ -22,7 +47,7 @@ export default function Perfil({
       <div style={styles.mobileContainer}>
         <div style={{ ...styles.topoPerfil, flexDirection: 'column', alignItems: 'center' }}>
           <img src="/assets/logos/dingli_logo_perfil.png" alt="DìNGLì Logo" style={{ width: '100%', height: '140px', objectFit: 'contain', marginBottom: '5px', marginTop: '5px' }} />
-          <h2 style={{ ...styles.nomeAluno, color: COR_INSTITUCIONAL_TITULO, margin: '0' }}>Olá, {nomeAluno || 'Estudante'}</h2>
+          <h2 onClick={handleToqueTitulo} style={{ ...styles.nomeAluno, color: COR_INSTITUCIONAL_TITULO, margin: '0', cursor: 'pointer', userSelect: 'none', WebkitUserSelect: 'none' }}>Olá, {nomeAluno || 'Estudante'}</h2>
         </div>
 
         <div style={{ ...styles.quadroFrase, backgroundColor: COR_TOM_CLARO, border: 'none', boxShadow: 'none', marginBottom: '-20px', marginTop: '-10px' }}>
