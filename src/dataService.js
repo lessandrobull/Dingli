@@ -19,7 +19,7 @@ export const dataService = {
     try {
       const resposta = await supabase
         .from('sentences')
-        .select(`id, ${colTopicOrigem}`)
+        .select(`id, ${colTopicOrigem}, ${idiomaEstudo}`)
         .eq('level', nivel.toUpperCase())
         .not(idiomaEstudo, 'is', null)
         .order('id', { ascending: true });

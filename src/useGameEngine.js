@@ -15,7 +15,7 @@ export function useGameEngine({
   setSessaoIniciada,
   setModoExercicio,
 }) {
-  const [indice, setIndice] = useState(0)
+  const [indice, setIndice] = useState(0);
   const [mostrarTraducao, setMostrarTraducao] = useState(() => {
     const salvo = localStorage.getItem('pref_mostrar_traducao');
     return salvo !== null ? JSON.parse(salvo) : false;
@@ -25,49 +25,86 @@ export function useGameEngine({
   const [filaAcertos, setFilaAcertos] = useState([]);
   const [sessaoDominium, setSessaoDominium] = useState({ primeira: [], recuperadas: [], acertosTempo: [], falhas: [] });
 
-  // Registro fixo dos IDs admitidos na Task atual (limite de 5 frases)
   const taskIdsRef = useRef([]);
   const LIMITE_BANDEJA = 5;
+  const aguardandoExpansaoAvulsoRef = useRef(false);
+
+  const chaveBandeja = (idiomaOrigem && idiomaEstudo) ? `bandeja_${idiomaOrigem}_${idiomaEstudo}` : null;
+  const chaveDinglab = (idiomaOrigem && idiomaEstudo) ? `dinglab_${idiomaOrigem}_${idiomaEstudo}` : null;
 
   const resetarTimerTask = useCallback(() => {
     taskIdsRef.current = [];
+    aguardandoExpansaoAvulsoRef.current = false;
   }, []);
 
-  // ETAPA 2: Move a frase para o final da fila da bandeja atual da Task
-  const postergarParaFimDaTask = useCallback((idAlvo) => {
-    if (!idAlvo) return;
-    // Ejeção: remove da bandeja atual da Task sem penalizar ou alterar rank
-    if (taskIdsRef.current) {
-      taskIdsRef.current = taskIdsRef.current.filter(id => id !== idAlvo);
+  // Persiste no localStorage EXCLUSIVAMENTE cartas iniciadas (rank > 0)
+  const sincronizarPersistenciaBandeja = useCallback((fila) => {
+    if (!chaveBandeja) return;
+    if (!fila || fila.length === 0) {
+      try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+      return;
     }
-  }, []);
 
-  // Carregamento dinâmico baseado no curso atual (L1_L2)
+    const listaRef = frasesFiltradas || [];
+    const iniciadas = fila.filter(id => {
+      const m = frasesMaestria[id];
+      const r = typeof m === 'object' ? m.rank : (m || 0);
+      return r > 0;
+    });
+
+    if (iniciadas.length > 0) {
+      const payload = iniciadas.map(id => {
+        const m = frasesMaestria[id];
+        const fObj = listaRef.find(f => Number(f.id) === id);
+        const texto = (typeof m === 'object' && m.texto) ? m.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
+        return { id, texto };
+      });
+      try { localStorage.setItem(chaveBandeja, JSON.stringify(payload)); } catch (e) {}
+    } else {
+      try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+    }
+  }, [chaveBandeja, frasesMaestria, frasesFiltradas, idiomaEstudo]);
+
+  // ROTAÇÃO FIFO PURA DA BANDEJA
+  const rotacionarBandeja = useCallback((idAlvo, foiConcluido = false) => {
+    if (!idAlvo) return;
+    const idNum = Number(idAlvo);
+    let fila = taskIdsRef.current || [];
+
+    if (foiConcluido) {
+      fila = fila.filter(id => id !== idNum);
+    } else {
+      if (fila.includes(idNum)) {
+        fila = [...fila.filter(id => id !== idNum), idNum];
+      }
+    }
+
+    taskIdsRef.current = fila;
+    sincronizarPersistenciaBandeja(fila);
+  }, [sincronizarPersistenciaBandeja]);
+
+  const postergarParaFimDaTask = useCallback((idAlvo) => {
+    rotacionarBandeja(idAlvo, false);
+  }, [rotacionarBandeja]);
+
+  // Carga e saneamento inicial de maestria
   useEffect(() => {
     if (!idiomaOrigem || !idiomaEstudo) return;
     const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
     const salvoMaestria = localStorage.getItem(chaveMaestria);
     let dadosMaestria = salvoMaestria ? JSON.parse(salvoMaestria) : {};
-
     const agora = Date.now();
     let houveDegradacao = false;
+
+    // Regra anti-stale de 30 minutos apenas para microciclos abandonados por longo tempo
     Object.keys(dadosMaestria).forEach(id => {
       const item = dadosMaestria[id];
       if (typeof item === 'object' && item.last_review && item.next_review) {
-        if (agora >= item.next_review) {
+        if (agora >= item.next_review && item.status !== 'macro') {
           const tempo = agora - item.last_review;
           const r = item.rank;
-          let nR = r;
-          if (r >= 1 && r <= 5 && tempo > 1800000) nR = 0;
-          else if (r >= 6 && r <= 9 && tempo > 172800000) nR = 0;
-          else if (r >= 10 && r <= 14 && tempo > 345600000) nR = 6;
-          else if (r >= 15 && r <= 18 && tempo > 691200000) nR = 10;
-          else if (r >= 19 && r <= 23 && tempo > 1382400000) nR = 15;
-          else if (r >= 24 && r <= 26 && tempo > 2764800000) nR = 19;
-          else if (r === 27 && tempo > 5529600000) nR = 19;
-
-          if (nR !== r) {
-            dadosMaestria[id] = { ...item, rank: nR, status: nR === 0 ? 'inedita' : 'recuperacao', next_review: agora };
+          if (r >= 1 && r <= 5 && tempo > 1800000) {
+            dadosMaestria[id] = { ...item, rank: 0, status: 'inedita', next_review: agora };
             houveDegradacao = true;
           }
         }
@@ -86,7 +123,6 @@ export function useGameEngine({
     }
   }, [idiomaOrigem, idiomaEstudo]);
 
-  // Persistência automática
   useEffect(() => {
     if (!idiomaOrigem || !idiomaEstudo) return;
     if (Object.keys(frasesMaestria).length > 0) {
@@ -103,136 +139,262 @@ export function useGameEngine({
     localStorage.setItem('pref_mostrar_traducao', JSON.stringify(mostrarTraducao));
   }, [mostrarTraducao]);
 
-  const avaliarProximoAlvo = useCallback((frasesAtuais = frasesFiltradas) => {
+  // INICIALIZAÇÃO CONTROLADA DA BANDEJA
+  const inicializarBandeja = useCallback(async ({ idCardEscolhido = null, frasesTopico = null, frasesNivel = null } = {}) => {
+    // Trava Hermética: se a Task já está em andamento, nunca admite cartas novas
+    if (taskIdsRef.current && taskIdsRef.current.length > 0) {
+      return;
+    }
+
     const agora = Date.now();
-    const temTopicoCarregado = Boolean(frasesAtuais && frasesAtuais.length > 0);
+    let idsNoDinglab = [];
+    if (chaveDinglab) {
+      try {
+        const salvoD = localStorage.getItem(chaveDinglab);
+        if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
+      } catch (e) {}
+    }
 
-    // 1. Mapeamento das listas globais do sistema
-    let emTransitoGlobal = [];
-    let recuperacaoGlobal = [];
-    let progresso30sGlobal = [];
-    let progressoDiasGlobal = [];
-
-    Object.keys(frasesMaestria).forEach(idStr => {
-      const id = Number(idStr);
-      const maestria = frasesMaestria[idStr];
-
-      if (typeof maestria === "object" && maestria.rank > 0) {
-        if (maestria.status === "progresso" || maestria.status === "recuperacao") {
-          emTransitoGlobal.push({ ...maestria, id });
-        }
-
-        if (maestria.next_review <= agora) {
-          if (maestria.status === "recuperacao") {
-            recuperacaoGlobal.push({ ...maestria, id, tipo: "recuperacao" });
-          } else if (maestria.status === "progresso") {
-            progresso30sGlobal.push({ ...maestria, id, tipo: "progresso" });
-          } else if (maestria.status === "macro") {
-            progressoDiasGlobal.push({ ...maestria, id, tipo: "macro" });
+    // 1. Obter cartas de bandeja abandonada
+    let idsAbandonadas = [];
+    if (chaveBandeja) {
+      try {
+        const salvoB = localStorage.getItem(chaveBandeja);
+        if (salvoB) {
+          const arrB = JSON.parse(salvoB);
+          if (Array.isArray(arrB)) {
+            idsAbandonadas = arrB
+              .map(item => (typeof item === 'object' && item !== null ? Number(item.id) : Number(item)))
+              .filter(id => {
+                if (idsNoDinglab.includes(id)) return false;
+                const m = frasesMaestria[id];
+                const estaEmRepouso = m && typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
+                return !estaEmRepouso;
+              });
           }
         }
+      } catch (e) {}
+    }
+
+    // 2. Obter cartas prontas de 'Próximas' (repousos macro vencidos + recém-saídas do Dìnglab)
+    let proximasProntas = [];
+    Object.keys(frasesMaestria).forEach(idStr => {
+      const id = Number(idStr);
+      const m = frasesMaestria[idStr];
+      if (typeof m === 'object' && m.rank > 0 && !idsNoDinglab.includes(id) && m.next_review <= agora) {
+        proximasProntas.push({ id, ...m });
+      }
+    });
+    proximasProntas.sort((a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0));
+
+    const novaBandeja = [];
+
+    if (idCardEscolhido) {
+      // CENÁRIO 2: Card Avulso
+      const idNum = Number(idCardEscolhido);
+      if (!idsNoDinglab.includes(idNum)) {
+        novaBandeja.push(idNum); // Vaga 1
+      }
+      taskIdsRef.current = novaBandeja;
+      aguardandoExpansaoAvulsoRef.current = true;
+      sincronizarPersistenciaBandeja(novaBandeja);
+      return novaBandeja;
+    }
+
+    // CENÁRIO 1: Botão GAME
+    // Prioridade 1: Abandonadas
+    idsAbandonadas.forEach(id => {
+      if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(id) && !idsNoDinglab.includes(id)) {
+        novaBandeja.push(id);
       }
     });
 
-    const sortCronologico = (a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0);
-    recuperacaoGlobal.sort(sortCronologico);
-    progresso30sGlobal.sort(sortCronologico);
-    progressoDiasGlobal.sort((a, b) => (a.next_review - a.last_review) - (b.next_review - b.last_review));
+    // Prioridade 2: Próximas
+    proximasProntas.forEach(item => {
+      if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
+        novaBandeja.push(item.id);
+      }
+    });
 
-    // Mapeamento de inéditas do tópico
-    let ineditasGlobal = [];
-    if (temTopicoCarregado) {
-      frasesAtuais.forEach((f, index) => {
-        const maestria = frasesMaestria[f.id];
-        const rank = typeof maestria === "object" ? maestria.rank : (maestria || 0);
-        if (rank === 0) {
-          ineditasGlobal.push({ id: f.id, rank: 0, tipo: "inedita", indice: index, nivel: f.nivel, topico: f.topico });
+    // Prioridade 3: Inéditas de menor ID global do nível
+    const listaRef = frasesNivel || frasesTopico || frasesFiltradas || [];
+    if (novaBandeja.length < LIMITE_BANDEJA && Array.isArray(listaRef)) {
+      const ineditas = listaRef
+        .filter(f => {
+          const fid = Number(f.id);
+          const m = frasesMaestria[fid];
+          const rank = typeof m === 'object' ? m.rank : (m || 0);
+          return rank === 0 && !idsNoDinglab.includes(fid);
+        })
+        .map(f => Number(f.id))
+        .sort((a, b) => a - b);
+
+      ineditas.forEach(id => {
+        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(id)) {
+          novaBandeja.push(id);
         }
       });
-      ineditasGlobal.sort((a, b) => a.id - b.id);
     }
 
-    // 2. Admissão inicial da Task (fixa até 5 frases na sessão)
-    if (taskIdsRef.current.length === 0) {
-      const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
-      let idsNoDinglab = [];
+    taskIdsRef.current = novaBandeja;
+    sincronizarPersistenciaBandeja(novaBandeja);
+    return novaBandeja;
+  }, [chaveBandeja, chaveDinglab, frasesMaestria, frasesFiltradas, sincronizarPersistenciaBandeja]);
+
+  // Expansão das Vagas 2 a 5 para Card Avulso após responder à Vaga 1
+  const expandirBandejaAvulsoSeNecessario = useCallback((frasesTopico, frasesNivel) => {
+    if (!aguardandoExpansaoAvulsoRef.current) return;
+    aguardandoExpansaoAvulsoRef.current = false;
+
+    let fila = [...taskIdsRef.current];
+    const agora = Date.now();
+
+    let idsNoDinglab = [];
+    if (chaveDinglab) {
       try {
-        const salvoDinglab = localStorage.getItem(chaveDinglab);
-        if (salvoDinglab) idsNoDinglab = JSON.parse(salvoDinglab).map(item => item.id);
-      } catch (e) { }
-      const novaBandeja = [];
-
-      // A) Cartas em trânsito abertas na mesa
-      emTransitoGlobal.forEach(item => {
-        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
-          novaBandeja.push(item.id);
-        }
-      });
-
-      // B) Revisões liberadas de dias anteriores (Rank 6+)
-      progressoDiasGlobal.forEach(item => {
-        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
-          novaBandeja.push(item.id);
-        }
-      });
-
-      // C) Inéditas do tópico ativo
-      ineditasGlobal.forEach(item => {
-        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
-          novaBandeja.push(item.id);
-        }
-      });
-
-      taskIdsRef.current = novaBandeja;
+        const salvoD = localStorage.getItem(chaveDinglab);
+        if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
+      } catch (e) {}
     }
 
-    if (taskIdsRef.current.length === 0) {
-      return null;
+    // 1ª Prioridade: Abandonadas anteriores
+    if (chaveBandeja) {
+      try {
+        const salvoB = localStorage.getItem(chaveBandeja);
+        if (salvoB) {
+          const arrB = JSON.parse(salvoB);
+          if (Array.isArray(arrB)) {
+            arrB.forEach(item => {
+              const id = typeof item === 'object' && item !== null ? Number(item.id) : Number(item);
+              if (fila.length < LIMITE_BANDEJA && !fila.includes(id) && !idsNoDinglab.includes(id)) {
+                fila.push(id);
+              }
+            });
+          }
+        }
+      } catch (e) {}
     }
 
-    const idsBandeja = taskIdsRef.current;
+    // 2ª Prioridade: Próximas
+    Object.keys(frasesMaestria).forEach(idStr => {
+      const id = Number(idStr);
+      const m = frasesMaestria[idStr];
+      if (fila.length < LIMITE_BANDEJA && typeof m === 'object' && m.rank > 0 && !idsNoDinglab.includes(id) && m.next_review <= agora) {
+        if (!fila.includes(id)) fila.push(id);
+      }
+    });
 
-    // 3. Identificar quais frases da Task AINDA NÃO CONCLUÍRAM (não atingiram repouso de dias)
-    const idsPendentes = idsBandeja.filter(id => {
+    // 3ª Prioridade: Inéditas do mesmo tópico
+    if (fila.length < LIMITE_BANDEJA && Array.isArray(frasesTopico)) {
+      const ineditasTopico = frasesTopico
+        .filter(f => {
+          const fid = Number(f.id);
+          const m = frasesMaestria[fid];
+          const rank = typeof m === 'object' ? m.rank : (m || 0);
+          return rank === 0 && !idsNoDinglab.includes(fid);
+        })
+        .map(f => Number(f.id))
+        .sort((a, b) => a - b);
+
+      ineditasTopico.forEach(id => {
+        if (fila.length < LIMITE_BANDEJA && !fila.includes(id)) {
+          fila.push(id);
+        }
+      });
+    }
+
+    // 4ª Prioridade: Inéditas de menor ID do nível
+    if (fila.length < LIMITE_BANDEJA && Array.isArray(frasesNivel)) {
+      const ineditasNivel = frasesNivel
+        .filter(f => {
+          const fid = Number(f.id);
+          const m = frasesMaestria[fid];
+          const rank = typeof m === 'object' ? m.rank : (m || 0);
+          return rank === 0 && !idsNoDinglab.includes(fid);
+        })
+        .map(f => Number(f.id))
+        .sort((a, b) => a - b);
+
+      ineditasNivel.forEach(id => {
+        if (fila.length < LIMITE_BANDEJA && !fila.includes(id)) {
+          fila.push(id);
+        }
+      });
+    }
+
+    // A carta avulsa que acabou de ser praticada deve ir para o FINAL da fila
+    const idCartaAvulsa = taskIdsRef.current.length > 0 ? taskIdsRef.current[0] : null;
+    let filaOrdenada = fila;
+    if (idCartaAvulsa && fila.includes(idCartaAvulsa)) {
+      filaOrdenada = [...fila.filter(id => id !== idCartaAvulsa), idCartaAvulsa];
+    }
+
+    taskIdsRef.current = filaOrdenada;
+    sincronizarPersistenciaBandeja(filaOrdenada);
+  }, [chaveBandeja, chaveDinglab, frasesMaestria, sincronizarPersistenciaBandeja]);
+
+  // AVALIADOR DETERMINÍSTICO FIFO
+  const avaliarProximoAlvo = useCallback((frasesAtuais = frasesFiltradas) => {
+    const agora = Date.now();
+    let idsNoDinglab = [];
+    if (chaveDinglab) {
+      try {
+        const salvoD = localStorage.getItem(chaveDinglab);
+        if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
+      } catch (e) {}
+    }
+
+    // Filtra quem de fato ainda está pendente nesta rodada
+    const idsPendentes = (taskIdsRef.current || []).filter(id => {
+      if (idsNoDinglab.includes(id)) return false;
       const m = frasesMaestria[id];
-      const estaEmRepouso = m && typeof m === "object" && m.status === "macro" && m.next_review > agora;
+      const estaEmRepouso = m && typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
       return !estaEmRepouso;
     });
 
-    // 4. Se todas as frases da Task atingiram o repouso -> Fim da Task!
+    taskIdsRef.current = idsPendentes;
+    sincronizarPersistenciaBandeja(idsPendentes);
+
+    // Conclusão Natural: se não há mais cartas na fila, encerra a Task
     if (idsPendentes.length === 0) {
-      taskIdsRef.current = [];
+      if (chaveBandeja) {
+        try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+      }
       return { resetarTimerTask, tipo: "concluido" };
     }
 
-    // 5. Seleção restrita estritamente entre as frases pendentes da Task
-    const recuperacaoBandeja = recuperacaoGlobal.filter(item => idsPendentes.includes(item.id));
-    const progresso30sBandeja = progresso30sGlobal.filter(item => idsPendentes.includes(item.id));
-    const progressoDiasBandeja = progressoDiasGlobal.filter(item => idsPendentes.includes(item.id));
-    const ineditasBandeja = ineditasGlobal.filter(item => idsPendentes.includes(item.id));
-    const emTransitoBandeja = emTransitoGlobal.filter(item => idsPendentes.includes(item.id));
+    // Carrossel FIFO: pega rigorosamente o primeiro ID da fila
+    const idAlvo = idsPendentes[0];
+    const maestriaAlvo = frasesMaestria[idAlvo];
+    const rankAlvo = typeof maestriaAlvo === 'object' ? (maestriaAlvo.rank || 0) : (maestriaAlvo || 0);
 
-    // 1º: Erros recentes prontos (30s cumpridos)
-    if (recuperacaoBandeja.length > 0) return { tipo: "revisao", dados: recuperacaoBandeja[0] };
+    const listaRef = frasesAtuais || frasesFiltradas || [];
+    const fObj = listaRef.find(f => Number(f.id) === idAlvo);
+    const idxNoTopico = listaRef.findIndex(f => Number(f.id) === idAlvo);
 
-    // 2º: Micro-ciclos normais prontos (30s cumpridos)
-    if (progresso30sBandeja.length > 0) return { tipo: "revisao", dados: progresso30sBandeja[0] };
-
-    // 3º: Revisões de dias aguardando a primeira rodada
-    if (progressoDiasBandeja.length > 0) return { tipo: "revisao", dados: progressoDiasBandeja[0] };
-
-    // 4º: Inéditas que ainda não foram praticadas
-    if (ineditasBandeja.length > 0) return ineditasBandeja[0];
-
-    // 5º: Bypass de Cooldown Ocioso (se todas aguardam tempo, entrega a que espera há mais tempo)
-    if (emTransitoBandeja.length > 0) {
-      emTransitoBandeja.sort(sortCronologico);
-      return { tipo: "revisao", dados: emTransitoBandeja[0] };
+    if (rankAlvo > 0) {
+      return {
+        tipo: "revisao",
+        dados: {
+          ...(typeof maestriaAlvo === 'object' ? maestriaAlvo : {}),
+          id: idAlvo,
+          rank: rankAlvo,
+          texto: (typeof maestriaAlvo === 'object' && maestriaAlvo.texto) ? maestriaAlvo.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "")
+        }
+      };
     }
 
-    taskIdsRef.current = [];
-    return { resetarTimerTask, tipo: "concluido" };
-  }, [frasesMaestria, frasesFiltradas, resetarTimerTask]);
+    // Inédita (Rank 0)
+    return {
+      id: idAlvo,
+      rank: 0,
+      tipo: "inedita",
+      indice: idxNoTopico !== -1 ? idxNoTopico : 0,
+      nivel: fObj?.level || fObj?.nivel || nivelAtivo || "A1",
+      topico: fObj?.topico || fObj?.topic || topicoAtivo || "",
+      dados: fObj
+    };
+  }, [frasesMaestria, frasesFiltradas, chaveDinglab, chaveBandeja, resetarTimerTask, sincronizarPersistenciaBandeja, idiomaEstudo, nivelAtivo, topicoAtivo]);
 
   return {
     indice, setIndice,
@@ -243,6 +405,10 @@ export function useGameEngine({
     sessaoDominium, setSessaoDominium,
     avaliarProximoAlvo,
     resetarTimerTask,
-    postergarParaFimDaTask
-  }
+    postergarParaFimDaTask,
+    inicializarBandeja,
+    rotacionarBandeja,
+    expandirBandejaAvulsoSeNecessario,
+    taskIdsRef
+  };
 }

@@ -127,6 +127,13 @@ export default function Dinglab({
 
   // 3. Callback de conclusão de fala: MODO ESPELHO vs PROVA DE FOGO (ESCALA 5)
   const timerFeedbackRef = useRef(null);
+
+  // Limpa o timer de transição estritamente ao desmontar o componente Dìnglab
+  useEffect(() => {
+    return () => {
+      if (timerFeedbackRef.current) clearTimeout(timerFeedbackRef.current);
+    };
+  }, []);
   useEffect(() => {
     if (onAvaliacaoDinglabRef) {
       onAvaliacaoDinglabRef.current = ({ resultado }) => {
@@ -153,23 +160,24 @@ export default function Dinglab({
         } else {
           // ==================== PROVA DE FOGO (DECISÃO FINAL) ====================
           if (resultado === 'acerto') {
+            setToastVisible(false);
             setResultadoFeedback('acerto');
-            setFeedbackMensagem(t?.dinglabSuccessChallenge || "Frase dominada! +1 rank conquistado.");
+            setFeedbackMensagem("");
 
             const idAtual = fraseAtual.id;
             const rankObj = frasesMaestria[idAtual];
             const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
             const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
-            const calc = calcularProximoRank(rankAtual, true, highestRank, false);
 
+            // Mantém estritamente o rank atual (sem evoluir nem regredir) e define next_review para agora
             const novoObjeto = {
               ...(typeof rankObj === 'object' ? rankObj : {}),
-              rank: calc.novoRank,
-              status: calc.lista,
-              next_review: Date.now() + calc.espera,
+              rank: rankAtual,
+              status: (typeof rankObj === 'object' && rankObj.status) ? rankObj.status : 'recuperacao',
+              next_review: Date.now(),
               last_review: Date.now(),
               last_attempt_at: Date.now(),
-              highest_rank: Math.max(highestRank, calc.novoRank),
+              highest_rank: highestRank,
               texto: textoEstudo,
               traducao: traducaoTexto,
               texto_zh: fraseAtual?.zh || "",
@@ -184,12 +192,12 @@ export default function Dinglab({
                 try {
                   const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
                   localStorage.setItem(chaveMaestria, JSON.stringify(nova));
-                } catch (e) {}
+                } catch (e) { }
                 return nova;
               });
             }
 
-            // Remove a frase superada do Dìnglab local
+            // Remove a frase superada do Dìnglab localmente
             let novaLista = [];
             try {
               const salvo = localStorage.getItem(chaveDinglab);
@@ -197,23 +205,35 @@ export default function Dinglab({
                 const arr = JSON.parse(salvo);
                 novaLista = arr.filter(item => item.id !== idAtual);
                 localStorage.setItem(chaveDinglab, JSON.stringify(novaLista));
-                setLista(novaLista);
               }
-            } catch (e) {}
+            } catch (e) { }
 
-            // Emite 2º reporte silencioso ao Supabase
+            // Emite reporte silencioso ao Supabase
             supabase.from("reports_frases").insert([{
               frase_id: idAtual,
               idioma_estudo: idiomaEstudo,
               idioma_origem: idiomaOrigem,
               voz: "v1",
               tipo_problema: "Dìnglab (Superada na Prova de Fogo)",
-              observacao: `Promovida para o Rank ${calc.novoRank} pelo aluno`,
+              observacao: `Retornou ao Dìngloop no Rank ${rankAtual} pelo aluno`,
               resolvido: true
-            }]).then(() => {}).catch(err => console.warn('[Dìnglab] Erro 2o reporte:', err));
+            }]).then(() => { }).catch(err => console.warn('[Dìnglab] Erro 2o reporte:', err));
 
-            // Feedback verde por 3 segundos antes da transição
+            // Toca o áudio da frase mais uma vez em velocidade normal (idêntico ao Dìngloop)
+            const alvoAudio = {
+              id: idAtual,
+              texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo
+            };
+            if (falar) {
+              falar(alvoAudio, false);
+            }
+
+            // Tempo calculado idêntico ao TelaEstudo.jsx / App.jsx
+            const tempoAudio = Math.max(textoEstudo.split(" ").length * 600, 1500);
+
+            // Aguarda o áudio terminar para avançar para o próximo card
             timerFeedbackRef.current = setTimeout(() => {
+              setLista(novaLista);
               setModoProva(false);
               setResultadoFeedback(null);
               setFeedbackMensagem("");
@@ -224,33 +244,27 @@ export default function Dinglab({
               if (indice > novaLista.length) {
                 setIndice(Math.max(0, novaLista.length));
               }
-            }, 3000);
+            }, tempoAudio);
 
           } else {
-            // Reprovação na Prova de Fogo: ZERO punição
+            // Reprovação na Prova de Fogo: ZERO punição e mantém a mensagem em vermelho fixa na tela
+            setToastVisible(false);
             setResultadoFeedback('erro');
             setFeedbackMensagem(t?.dinglabFailChallenge || "Quase lá! Treine mais um pouco no modo espelho e tente de novo.");
-
-            timerFeedbackRef.current = setTimeout(() => {
-              setModoProva(false);
-              setResultadoFeedback(null);
-              setFeedbackMensagem("");
-              setTranscricaoFixa("");
-              if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
-              if (setStatusVoz) setStatusVoz('IDLE');
-            }, 3000);
+            setModoProva(false);
+            if (setStatusVoz) setStatusVoz('IDLE');
+            if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
           }
         }
       };
     }
     return () => {
       if (onAvaliacaoDinglabRef) onAvaliacaoDinglabRef.current = null;
-      if (timerFeedbackRef.current) clearTimeout(timerFeedbackRef.current);
     };
   }, [
     onAvaliacaoDinglabRef, fraseAtual, textoEstudo, traducaoTexto, frasesMaestria,
     setFrasesMaestria, idiomaOrigem, idiomaEstudo, chaveDinglab, indice, setIndice,
-    t, setStatusVoz, setTranscricaoAoVivo
+    t, setStatusVoz, setTranscricaoAoVivo, falar
   ]);
 
   useEffect(() => {
@@ -262,7 +276,7 @@ export default function Dinglab({
   useEffect(() => {
     if (statusVoz !== 'RECORDING') {
       if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
-        try { mediaRecorderRef.current.stop(); } catch (e) {}
+        try { mediaRecorderRef.current.stop(); } catch (e) { }
       }
     }
   }, [statusVoz]);
@@ -937,11 +951,11 @@ export default function Dinglab({
                     <div style={{ marginTop: '12px', fontSize: '0.92rem', fontWeight: '800', color: resultadoFeedback === 'acerto' ? COR_ACERTO : '#ef4444', textAlign: 'center', padding: '0 10px' }}>
                       {feedbackMensagem}
                     </div>
-                  ) : (
+                  ) : resultadoFeedback !== 'acerto' ? (
                     <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#334155', fontWeight: '700', textAlign: 'center' }}>
                       {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
                     </div>
-                  )}
+                  ) : null}
                 </div>
               </div>
 

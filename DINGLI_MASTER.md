@@ -40,9 +40,11 @@
 ### 0.3 HIERARQUIA DE DADOS E REGRA ANTI-STALE (AS 4 CAMADAS DO APP)
 Para garantir consistência absoluta e impedir a renderização de dados desatualizados (*stale state*), toda funcionalidade ou refatoração deve respeitar a hierarquia de persistência:
 1. **Camada 1 - Memória RAM (React Hooks / State):** `frasesFiltradas`, `fraseAtivaGlobal`, `sessaoDominium`. Devem ser higienizadas de imediato (`limparEstadoExercicio`, `setFrasesFiltradas([])`) antes de qualquer recarga de conteúdo.
-2. **Camada 2 - Armazenamento Síncrono do Navegador:** `localStorage` (`versao_conteudo_${idiomaEstudo}`, `maestria_${cursoKey}`) e `sessionStorage` (`app_topico`).
+2. **Camada 2 - Armazenamento Síncrono do Navegador:** 
+   - `localStorage`: `versao_conteudo_${idiomaEstudo}`, `maestria_${cursoKey}`, `bandeja_${idiomaOrigem}_${idiomaEstudo}` (apenas cartas iniciadas da Task), `dinglab_${idiomaOrigem}_${idiomaEstudo}` (quarentena fonética) e `sessao_dominium_${cursoKey}`.
+   - `sessionStorage`: `app_topico`, `app_tela`, `app_nivel`, `app_origem`, `app_estudo`.
 3. **Camada 3 - Armazenamento Offline em Disco:** `IndexedDB` (Stores: `SENTENCES`, `TOPICS`, `AUDIOS`) e `CacheStorage` (`CACHE_NAME`). Atualizações de texto devem sincronizar diretamente o IndexedDB para evitar downloads redundantes.
-4. **Camada 4 - Nuvem / Supabase:** Banco relacional PostgreSQL (`sentences`, `curso_revisoes`, `user_progress`) e Bucket de Storage (`audios_dingli/`).
+4. **Camada 4 - Nuvem / Supabase:** Banco relacional PostgreSQL (`sentences`, `curso_revisoes`, `user_progress`, `reports_frases`) e Bucket de Storage (`audios/`).
 
 ### 0.4 PADRÕES DE ÁUDIO, VOZES E IDIOMAS
 - **Bucket Supabase Storage Oficial:** `audios` (Público).
@@ -57,11 +59,11 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
 ---
 
 ## 1. CONTEXTO GERAL E FUNDAÇÕES DA APLICAÇÃO
-- Objetivo: Aplicativo progressivo para aprendizado acelerado de idiomas, baseado no algoritmo proprietário de repetição espaçada (SRS) "Dominium".
-- Pilares Didáticos: Input compreensível, treino ativo de pronúncia em tempo real, arquitetura offline-first e interface móvel responsiva estrita.
+- Objetivo: Aplicativo progressivo para aprendizado acelerado de idiomas, baseado no ecossistema de estudo contínuo "Dìngloop" e no algoritmo proprietário de repetição espaçada (SRS) "Dominium".
+- Pilares Didáticos: Input compreensível, treino ativo de pronúncia em tempo real, rotação determinística FIFO, arquitetura offline-first e interface móvel responsiva estrita.
 - Stack Tecnológica:
   * Frontend: React 19 (`^19.2.0`), Vite 7 (`^7.3.1`).
-  * Backend / Banco: Supabase (PostgreSQL - tabela `sentences`).
+  * Backend / Banco: Supabase (PostgreSQL - tabelas `sentences`, `curso_revisoes`, `user_progress`, `reports_frases`).
   * Armazenamento Remoto: Supabase Storage (Bucket público `audios`).
   * Cache Local: IndexedDB nativo (`DB_NAME = "dingli_offline_db"`, `DB_VERSION = 3`).
 - Grade Curricular:
@@ -73,22 +75,103 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
 
 ---
 
-## 2. MOTOR DOMINIUM (SRS DETERMINÍSTICO) E CICLO DA TASK
-- Bandeja Hermética de 5 Cartas (`taskIdsRef.current`, `LIMITE_BANDEJA = 5`):
-  * A sessão ativa de estudo admite no máximo 5 frases distintas por ciclo de estudo (Task).
-  * Prioridade de Admissão: 1º Cartas em trânsito abertas na mesa (`emTransito`); 2º Revisões liberadas de dias anteriores (`progressoDias`); 3º Cartas inéditas do tópico/nível (`ineditas`).
-  * Fechamento Hermético: Preenchida a cota de 5 IDs, a admissão fecha totalmente. Nenhuma 6ª carta entra na sessão corrente (~4 a 5 minutos por Task).
-- Válvula de Escape no 3º Erro Consecutivo de Voz:
-  * Ao registrar 3 falhas consecutivas na mesma frase em exercícios vocais, o microfone não entra em loop.
-  * O app exibe o aviso pedagógico: "Revisar mais tarde, dê uma pesquisada nessa pronúncia e tente no próximo ciclo".
-  * O botão move o ID da frase para o final da fila da bandeja atual (`taskIdsRef.current = [...outras, idAlvo]`), retendo o rank em recuperação no Dominium sem punições desproporcionais.
-- Escala de Ranks e Portos Seguros (Descansos Exponenciais):
-  * Ranks 1 a 5 (microciclos de 30s) -> ao acertar Rank 5 atinge Rank 6: descanso de 1 dia.
-  * Ranks 6 a 9 -> ao acertar Rank 9 atinge Rank 10: descanso de 2 dias.
-  * Ranks 10 a 14 -> atinge Rank 15: descanso de 4 dias.
-  * Ranks 15 a 18 -> atinge Rank 19: descanso de 8 dias.
-  * Ranks 19 a 23 -> atinge Rank 24: descanso de 16 dias.
-  * Ranks 24 a 26 -> atinge Rank 27: descanso perpétuo de 32 dias (Maestria Permanente).
+## 2. O MOTOR DÌNGLOOP (TASK HERMÉTICA & CARROSSEL FIFO PURO)
+O Dìngloop é o ecossistema mestre de estudo ativo contínuo que unifica a Task (carrossel de até 5 cartas), o motor SRS Dominium e o subsistema Dìnglab.
+
+### 2.1 Princípios Invariantes da Task
+1. **Extinção Total de Timers de 30 Segundos:** Nos microciclos (Ranks 1 a 5), não existe contagem regressiva cronológica (`espera: 0`). A frase respondida fica imediatamente disponível para a esteira e o espaçamento pedagógico é determinado mecanicamente pela rotação das outras cartas da bandeja.
+2. **Capacidade Hermética (Teto de 5 Cartas):** A sessão ativa admite no máximo 5 cartas distintas (`LIMITE_BANDEJA = 5`). Nenhuma 6ª carta é admitida durante a Task.
+3. **Bloqueio Absoluto do Dìnglab:** Nenhuma frase que esteja retida no Dìnglab pode entrar na bandeja.
+4. **Fechamento e Encerramento Determinístico:** Quando a contagem de cartas pendentes na bandeja chega a zero (todas graduaram para descanso de macrociclo ou foram enviadas ao Dìnglab), a Task declara `tipo: 'concluido'`, a chave `bandeja_${idiomaOrigem}_${idiomaEstudo}` é removida do `localStorage` e o aluno retorna imediatamente ao menu do Dìngloop (`menuCartoes`), sem admissão de novas cartas.
+
+### 2.2 Os Dois Cenários Determinísticos de Inicialização
+1. **Cenário 1 — Início via Botão GAME (Modo Global):**
+   * A formação das 5 vagas ocorre no momento do clique respeitando a ordem estrita:
+     - **1ª Prioridade:** Cartas remanescentes da Bandeja abandonada anterior (se houver).
+     - **2ª Prioridade:** Cartas da lista **Próximas** (revisões de macrociclo vencidas + recém-saídas do Dìnglab com `next_review <= agora`).
+     - **3ª Prioridade:** Cartas inéditas (Rank 0) de menor ID global do nível atual.
+   * **Exceção de Fim de Nível:** Se a soma de todas as cartas disponíveis for menor que 5, a Task fecha hermeticamente com as cartas existentes (ex: 2 ou 3).
+2. **Cenário 2 — Início via Card Avulso (Modo Tópico / Deck):**
+   * **Vaga 1:** A carta clicada assume a mesa, abrindo em formato de apresentação (R0) com botões "Explicação", "Ouvir" e "Praticar" e cabeçalho exibindo tópico e posição real (`indice + 1 / total`).
+   * **Expansão das Vagas 2 a 5:** Ocorre após a resposta do primeiro exercício dessa 1ª carta (seja acerto ou erro):
+     - **1ª Prioridade:** Cartas remanescentes da Bandeja abandonada anterior.
+     - **2ª Prioridade:** Cartas da lista **Próximas**.
+     - **3ª Prioridade:** Cartas inéditas de menor ID do mesmo tópico da Vaga 1.
+     - **4ª Prioridade (Transbordamento):** Cartas inéditas de menor ID global do nível (se o tópico esgotar).
+   * **Rotação da Carta 1:** Tendo acabado de ser respondida, a Carta 1 é reposicionada obrigatoriamente no **final da fila expandida** (`[carta2, carta3, carta4, carta5, carta1]`), garantindo que o carrossel chame a Carta 2 em seguida e só retorne à Carta 1 após o giro completo.
+
+### 2.3 Matriz de Regras de Exercício, Ranks e Fila FIFO
+| Tipo de Exercício | Ação do Aluno | Efeito no Rank | Destino no Carrossel FIFO |
+| :--- | :--- | :---: | :--- |
+| **Escrita ou Seleção** | Acerto | $+1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
+| **Escrita ou Seleção** | Erro | $-1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
+| **Voz (`RANKS_VOICE`)** | Acerto na 1ª tentativa | $+1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
+| **Voz (`RANKS_VOICE`)** | Acerto na 2ª ou 3ª tentativa | $-1$ rank | Fim da fila da bandeja (`rotacionarBandeja(id, false)`) |
+| **Voz (`RANKS_VOICE`)** | 3 falhas consecutivas | $0$ (Rank blindado) | Ejeção imediata ao Dìnglab (`rotacionarBandeja(id, true)`) — sai da mesa |
+| **Qualquer Exercício** | Acerto em Rank de Macrociclo (R5, R9, R14, R18, R23, R27) | Avança para R6, R10, R15, R19, R24 | Conquista repouso em dias e **sai da mesa** (`rotacionarBandeja(id, true)`) |
+
+*Nota sobre R27:* Ao acertar o Rank 27, a frase inicia o loop perpétuo de manutenção no Rank 24 com descanso de 32 dias.
+
+### 2.4 Persistência Seletiva no Abandono da Task
+Se o aluno interromper a Task antes do fim (clicando em "← Sair" ou fechando a aplicação):
+* A chave `bandeja_${idiomaOrigem}_${idiomaEstudo}` grava **estritamente as frases que foram efetivamente colocadas em jogo (`rank > 0`) e que ainda não concluíram**.
+* Frases reservadas na memória que ainda não foram apresentadas na tela continuam como cartas inéditas livres no banco.
+* O relatório exibe `BANDEJA (X)` com a contagem real exata, sem vagas vazias, sem R0 fantasma e sem erros de "Frase não encontrada".
+
+---
+
+## 2.1 O SUBSISTEMA DÌNGLAB (QUARENTENA FONÉTICA & PROVA DE FOGO)
+O Dìnglab é o laboratório fonético de isolamento do Dìngloop, ativado para proteger a retenção do aluno contra travas fonéticas.
+
+### A. Gatilho de Ejeção e Blindagem de Rank
+* Ao registrar a 3ª falha consecutiva na mesma frase em exercícios de fala (`RANKS_VOICE`), o microfone cessa e é exibido o card pedagógico de encaminhamento.
+* O acionamento de `handleRevisarMaisTarde` executa:
+  1. Ejeção limpa da bandeja ativa (`rotacionarBandeja(fraseId, true)`), sem admitir carta substituta.
+  2. Preservação estrita do rank praticado (`exercicioNivel`) tanto em `frasesMaestria` quanto no objeto gravado sob `dinglab_${idiomaOrigem}_${idiomaEstudo}`.
+  3. Telemetria silenciosa gravada em `reports_frases` (`tipo_problema: "Dìnglab (3 erros de pronúncia)"`, `resolvido: false`).
+
+### B. Modo Espelho e Metrônomo Silábico
+* Treino livre com metrônomo palavra por palavra acionando arquivos `.mp3` individuais de vocabulário via `tocarAudioPalavraMetronomo`.
+* Sincronização visual em tempo real: a palavra acende no momento exato do som, acompanhada por gravação espelho para autocrítica auditiva sem julgamento de nota.
+
+### C. Prova de Fogo (Botão "Pronto")
+* **Em Caso de Reprovação Vocal:** Mensagem de incentivo em vermelho fixa na tela, sem timer de desaparecimento e com **zero punição de rank**. A frase permanece retida no Dìnglab para novo treino.
+* **Em Caso de Aprovação Vocal:**
+  1. Feedback visual imediato: palavras e borda do card tornam-se verdes (`COR_ACERTO`).
+  2. Reprodução do áudio integral da frase em velocidade normal via `falar(alvo, false)`.
+  3. Remoção da frase do `localStorage` do Dìnglab (`chaveDinglab`).
+  4. Preservação do rank original da frase (sem rebaixamento e sem salto indevido).
+  5. Marcação de `next_review = Date.now()`, fazendo a frase entrar imediatamente na lista **Próximas** do relatório Dominium para ser admitida no próximo ciclo natural da Task.
+  6. Telemetria de resolução enviada a `reports_frases` (`resolvido: true`).
+  7. Avanço automático condicionado ao término do áudio (`onended`). Caso esgote a lista, exibe a tela "Dìnglab em dia!".
+
+---
+
+## 2.2 O RELATÓRIO DOMINIUM (HIERARQUIA OFICIAL DAS LISTAS)
+O componente `DominiumStats` (`src/useDominiumData.js`) organiza as cartas nas seguintes seções:
+1. **1. DÌNGLAB (X) (Topo Absoluto):** Frases retidas no laboratório com seus ranks originais preservados. São mutuamente exclusivas e não aparecem em nenhuma outra seção.
+2. **2. BANDEJA (X) (Condicional de Abandono):** Só é renderizada se houver frases de uma Task abandonada pelo aluno. Exibe apenas cartas efetivamente iniciadas e pendentes. Fica oculta em sessões finalizadas com sucesso.
+3. **3. PRÓXIMAS (X):** Frases com descanso macro de dias cumprido (`next_review <= agora`) e frases recém-saídas da Prova de Fogo do Dìnglab. Exclui rigorosamente quem está na Bandeja ou no Dìnglab.
+4. **4. PROGRESSO DE DIAS:** Frases em repouso macro do SRS divididas em blocos:
+   - Progresso 1 dia (após R5)
+   - Progresso 2 dias (após R9)
+   - Progresso 4 dias (após R14)
+   - Progresso 8 dias (após R18)
+   - Progresso 16 dias (após R23)
+   - Manutenção 32 dias (após R27 / loop no R24)
+* **Proibição:** É terminantemente proibida a exibição ou cômputo de listas de 30 segundos.
+
+---
+
+## 2.3 ESCALA DE RANKS E DESCANSOS EXPONENCIAIS (DOMINIUM SRS)
+* **Microciclos (Ranks 1 a 5):** Estudo rotativo puro no carrossel da Task sem bloqueio cronológico.
+* **Macrociclos (Portos Seguros Exponenciais):**
+  - Ranks 1 a 5 -> ao acertar Rank 5 atinge **Rank 6:** 1 dia de descanso ($86.400.000	ext{ ms}$).
+  - Ranks 6 a 9 -> ao acertar Rank 9 atinge **Rank 10:** 2 dias de descanso ($172.800.000	ext{ ms}$).
+  - Ranks 10 a 14 -> ao acertar Rank 14 atinge **Rank 15:** 4 dias de descanso ($345.600.000	ext{ ms}$).
+  - Ranks 15 a 18 -> ao acertar Rank 18 atinge **Rank 19:** 8 dias de descanso ($691.200.000	ext{ ms}$).
+  - Ranks 19 a 23 -> ao acertar Rank 23 atinge **Rank 24:** 16 dias de descanso ($1.382.400.000	ext{ ms}$).
+  - Ranks 24 a 26 -> ao acertar Rank 27 atinge **Rank 24 (Loop):** 32 dias de descanso perpétuo ($2.764.800.000	ext{ ms}$).
 
 ---
 
@@ -97,6 +180,9 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
   * Web Speech API contínua com `interimResults = true`.
   * Acerto validado com taxa >= 75% com buffer de tolerância de 0,75s.
   * Erro decretado após silêncio contínuo de 1,3s abaixo do limiar.
+- Transição Vinculada ao Término do Áudio (`onended`):
+  * Toda transição de card após acerto ou erro aguarda obrigatoriamente o evento nativo de término do áudio (`audio.onended`) via callback de `falar()`.
+  * Proibido o uso de temporizadores matemáticos fixos baseados em contagem de palavras multiplicadas por milissegundos para forçar trocas de tela.
 - Áudio Lento Exclusivo Pós-Erro:
   * Pré-avaliação / Botão Ouvir regular: reprodução sempre em velocidade normal (1.00 para ocidentais / 0.85 para mandarim).
   * Pós-erro vocal: disparado automaticamente em velocidade lenta (0.65 para ocidentais / 0.50 para mandarim via `VELOCIDADES_AUDIO`) exclusivamente quando `resultado === 'erro'`.
@@ -180,7 +266,6 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
 
 ---
 
-
 ### E. Regra Oficial do Vocabulário de Mandarim (Passo 7)
 - **Origem Lexical:** As palavras isoladas de Mandarim derivam exclusivamente da coluna `pi` (Pinyin com acentos tonais) do `supabase_sentences.csv`.
 - **Voz Neural:** Síntese direta com `zh-CN-XiaoxiaoNeural` a partir do Pinyin com marcas de tom nativas.
@@ -189,7 +274,6 @@ Para garantir consistência absoluta e impedir a renderização de dados desatua
 - **Tratamento de Áudio:** Todo arquivo de vocabulário recebe pré-delay de 300ms e pós-padding de 100ms via FFmpeg para prevenção de DAC sleep.
 - **Comando Único Oficial:** `python scripts/sincronizar_vocabulario.py zh [--dry-run]`.
 
-
 ### F. Orquestrador Unificado de Sincronização Total (Passos 4, 6 e 7)
 Fluxo oficial automatizado em 2 comandos após aprovação da tabela de revisão:
 1. **Preparação & Auditoria Prévia (Backup Supabase + Patch CSV + Dry-Run Completo):**
@@ -197,6 +281,8 @@ Fluxo oficial automatizado em 2 comandos após aprovação da tabela de revisão
 2. **Execução Real Definitiva (Síntese TTS, Upload Storage, PATCH DB, Purga Remota):**
    `python scripts/sincronizar_tudo.py [idiomas...]`
    *(Lembrete: Enquanto a execução real é processada no terminal, o operador pode copiar manualmente o arquivo recém-gerado em `backups/sentences_backup_[timestamp].csv` para a planilha espelho do Google Sheets).*
+
+---
 
 ## 5. MATRIZ DE ESTADO DOS IDIOMAS (100% FACTUAL)
 | Idioma | Frases no Supabase | Áudios de Frases (Storage) | Palavras no Disco | Palavras no Storage | Status Oficial |

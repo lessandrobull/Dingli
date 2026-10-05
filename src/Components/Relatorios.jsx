@@ -99,10 +99,10 @@ export function ExplicacaoIA({
 }
 
 export function DominiumStats({ styles, sessaoDominium, frasesFiltradas, frasesMaestria }) {
-  const { temas, t, navStyle, idiomaEstudo, mudarTela, COR_BASE_CARDS } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, COR_BASE_CARDS } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
-  const listas = useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestria, idiomaEstudo });
+  const listas = useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestria, idiomaEstudo, idiomaOrigem });
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg }}>
       <div style={styles.mobileContainer}>
