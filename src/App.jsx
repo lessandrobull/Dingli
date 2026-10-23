@@ -68,7 +68,6 @@ function App() {
 
   const [fraseTeorica, setFraseTeorica] = useState("Carregando inspiração...");
   const [nomeAluno, setNomeAluno] = useState("Estudante");
-  const apiKey = "AIzaSyAv_65bjZGGtUDJugC_GtTQoMmXrFw1XtY";
   const [userRole, setUserRole] = useState(() => localStorage.getItem('app_role') || null);
   const [sessaoIniciada, setSessaoIniciada] = useState(false);
   const [carregandoDados, setCarregandoDados] = useState(false);
@@ -201,14 +200,14 @@ function App() {
           rotacionarBandeja(idAtual, calc.lista === 'macro');
         }
 
-          setSessaoDominium(prev => ({
+        setSessaoDominium(prev => ({
           ...prev,
           primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal),
           recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal),
           acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal),
           falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal)
         }));
-        
+
       }
 
       if (userRole !== 'adm') {
@@ -317,7 +316,7 @@ function App() {
         if (resp?.data && resp.data.length > 0) {
           frasesCandidatas = resp.data;
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // Expansão das Vagas 2 a 5 para Card Avulso (Cenário 2)
@@ -375,7 +374,7 @@ function App() {
             setFrasesFiltradas(resp.data);
             idxAlvo = resp.data.findIndex(f => Number(f.id) === Number(proximo.id));
           }
-        } catch (e) {}
+        } catch (e) { }
       }
 
       if (idxAlvo !== -1) {
@@ -456,7 +455,7 @@ function App() {
     try {
       const nomeArquivo = encodeURIComponent(`${chaveTopico}.json`);
       const resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
-      
+
       if (resposta.ok) {
         const mapa = await resposta.json();
         cacheExplicacoesTopico.current[chaveTopico] = mapa;
@@ -629,7 +628,7 @@ function App() {
         try {
           const respN = await dataService.getTopicsByLevel(nivelEfetivo, idiomaOrigem, idiomaEstudo);
           dadosNivel = respN?.data;
-        } catch (e) {}
+        } catch (e) { }
         await inicializarBandeja({
           idCardEscolhido: idEscolhido,
           frasesTopico: data,
@@ -1073,7 +1072,7 @@ function App() {
         frasesFiltradas={frasesFiltradas} frasesMaestria={frasesMaestria}
       />
     );
-        if (tela === 'dinglab') return (
+    if (tela === 'dinglab') return (
       <Dinglab
         styles={styles}
         falar={falar}

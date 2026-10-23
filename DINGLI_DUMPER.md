@@ -6011,7 +6011,8 @@ createRoot(document.getElementById('root')).render(
 ### 📄 ARQUIVO: ./src/services/audioCacheService.js
 import { salvarNoIndexedDB, obterDoIndexedDB, removerDoIndexedDB, STORES } from './offlineStorage';
 
-const SUPABASE_AUDIO_BASE = "https://lxdmfaxxxfyzbpzvniyi.supabase.co/storage/v1/object/public/audios";
+const R2_AUDIO_BASE = "https://pub-b24d092a7bf34fd9bf22befba89de35f.r2.dev";
+
 const CACHE_NAME = "dingli-audios-v1";
 export const VOZES_EN = ["v1", "v2", "v3", "v4", "v5", "v6"];
 export const VOZES_ES = ["v1", "v2", "v3", "v4", "v5", "v6"];
@@ -6035,7 +6036,7 @@ export function montarAudioUrl(id, voz = "v1", idioma = "en") {
   const chaveVoz = `${pastaIdioma}/${id}_${voz}`;
   const versao = VERSOES_AUDIOS[chaveVoz] || VERSOES_AUDIOS[String(id)] || null;
   const sufixo = versao ? `?v=${versao}` : "";
-  return `${SUPABASE_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3${sufixo}`;
+  return `${R2_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3${sufixo}`;
 }
 
 export async function obterAudioUrl(id, voz = "v1", idioma = "en") {
@@ -6050,7 +6051,7 @@ export async function obterAudioUrl(id, voz = "v1", idioma = "en") {
         const blob = await resposta.blob();
         return URL.createObjectURL(blob);
       }
-    } catch (err) {}
+    } catch (err) { }
   }
 
   // 2. Fallback IndexedDB (Celular / HTTP Local)
@@ -6059,7 +6060,7 @@ export async function obterAudioUrl(id, voz = "v1", idioma = "en") {
     if (registro && registro.blob) {
       return URL.createObjectURL(registro.blob);
     }
-  } catch (err) {}
+  } catch (err) { }
 
   return urlRemota;
 }
@@ -6113,7 +6114,7 @@ export function sanitizarPalavraAudio(palavra) {
 export function montarAudioPalavraUrl(palavra, idioma = "en") {
   const pastaIdioma = idioma === "pi" ? "zh" : idioma;
   const slug = sanitizarPalavraAudio(palavra);
-  return `${SUPABASE_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
+  return `${R2_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
 }
 
 export async function obterAudioPalavraUrl(palavra, idioma = "en") {
@@ -6128,7 +6129,7 @@ export async function obterAudioPalavraUrl(palavra, idioma = "en") {
         const blob = await resposta.blob();
         return URL.createObjectURL(blob);
       }
-    } catch (err) {}
+    } catch (err) { }
   }
 
   // 2. Fallback IndexedDB (Celular / HTTP Local)
@@ -6137,7 +6138,7 @@ export async function obterAudioPalavraUrl(palavra, idioma = "en") {
     if (registro && registro.blob) {
       return URL.createObjectURL(registro.blob);
     }
-  } catch (err) {}
+  } catch (err) { }
 
   return urlRemota;
 }
@@ -6203,7 +6204,7 @@ export async function precarregarAudios(listaFrases, idioma = "en", vozes = ["v1
     const temCaches = ("caches" in window);
     let cache = null;
     if (temCaches) {
-      try { cache = await caches.open(CACHE_NAME); } catch (e) {}
+      try { cache = await caches.open(CACHE_NAME); } catch (e) { }
     }
 
     const urlsParaBaixar = [];
@@ -6272,7 +6273,7 @@ export async function expurgarAudiosDeIds(ids, idioma = "en") {
   const temCaches = ("caches" in window);
   let cache = null;
   if (temCaches) {
-    try { cache = await caches.open(CACHE_NAME); } catch (e) {}
+    try { cache = await caches.open(CACHE_NAME); } catch (e) { }
   }
 
   for (const id of ids) {
@@ -6282,11 +6283,11 @@ export async function expurgarAudiosDeIds(ids, idioma = "en") {
         try {
           await cache.delete(url);
           await cache.delete(url, { ignoreSearch: true });
-        } catch (e) {}
+        } catch (e) { }
       }
       try {
         await removerDoIndexedDB(STORES.AUDIOS, url);
-      } catch (e) {}
+      } catch (e) { }
     }
   }
 }
@@ -6301,7 +6302,7 @@ export async function baixarNovosAudiosComProgresso(ids, idioma = "en", onProgre
   const temCaches = ("caches" in window);
   let cache = null;
   if (temCaches) {
-    try { cache = await caches.open(CACHE_NAME); } catch (e) {}
+    try { cache = await caches.open(CACHE_NAME); } catch (e) { }
   }
 
   const urlsParaBaixar = [];
@@ -6362,14 +6363,14 @@ export async function precarregarPalavras(palavras, idioma = "en") {
   const temCaches = ("caches" in window);
   let cache = null;
   if (temCaches) {
-    try { cache = await caches.open(CACHE_NAME); } catch (e) {}
+    try { cache = await caches.open(CACHE_NAME); } catch (e) { }
   }
 
   const LIMITE = 4;
   for (let i = 0; i < unicas.length; i += LIMITE) {
     const lote = unicas.slice(i, i + LIMITE);
     await Promise.all(lote.map(async (slug) => {
-      const url = `${SUPABASE_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
+      const url = `${R2_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
       try {
         if (cache) {
           const jaExiste = await cache.match(url);
@@ -6387,7 +6388,7 @@ export async function precarregarPalavras(palavras, idioma = "en") {
             }
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }));
   }
 }
@@ -6484,11 +6485,11 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
       try {
         audioInstance.pause();
         audioInstance.src = "";
-      } catch (e) {}
+      } catch (e) { }
       audioInstance = null;
     }
     if (window.speechSynthesis) {
-      try { window.speechSynthesis.cancel(); } catch (e) {}
+      try { window.speechSynthesis.cancel(); } catch (e) { }
     }
   };
 
@@ -6581,11 +6582,11 @@ export function tocarAudioPalavraMetronomo(palavra, idioma = "en", onSomComecou 
         audioInstance.pause();
         audioInstance.currentTime = 0;
         audioInstance.src = "";
-      } catch (e) {}
+      } catch (e) { }
       audioInstance = null;
     }
     if (window.speechSynthesis) {
-      try { window.speechSynthesis.cancel(); } catch (e) {}
+      try { window.speechSynthesis.cancel(); } catch (e) { }
     }
   };
 
