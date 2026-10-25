@@ -64,66 +64,9 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./public/sw.js
 ./README.md
 ./scripts/aplicar_revisao_e_backup.py
-./scripts/legado/analisar_extras_en.py
-./scripts/legado/analisar_extras_es.py
-./scripts/legado/aplicar_revisao_ge.py
-./scripts/legado/auditar_clique_palavras_geral.py
-./scripts/legado/auditar_colisoes_e_ffmpeg.py
-./scripts/legado/auditar_detalhes_passo10.py
-./scripts/legado/auditar_orfaos.py
-./scripts/legado/auditar_palavras_ascii_oficial.py
-./scripts/legado/auditar_palavras_ge.py
-./scripts/legado/auditar_palavras_it.py
-./scripts/legado/auditar_supabase_e_faltantes.py
-./scripts/legado/auditar_supabase_storage.py
-./scripts/legado/auditoria_geral_sistema.py
-./scripts/legado/corrigir_frases_fr.py
-./scripts/legado/diagnostico_completo.py
-./scripts/legado/diagnostico_palavras_it_e_deltas.py
-./scripts/legado/executar_passo_7_audios.py
-./scripts/legado/executar_resgate_es_pt.py
-./scripts/legado/extras_en_inspirational.txt
-./scripts/legado/extras_en_orfaos_totais.txt
-./scripts/legado/extras_en_topicos.txt
-./scripts/legado/extras_es_inspirational.txt
-./scripts/legado/extras_es_orfaos_totais.txt
-./scripts/legado/extras_es_topicos.txt
-./scripts/legado/faltantes_es.txt
-./scripts/legado/gerar_audios_en.py
-./scripts/legado/gerar_audios_es.py
-./scripts/legado/gerar_audios_fr.py
-./scripts/legado/gerar_audios_ge.py
-./scripts/legado/gerar_audios_it.py
-./scripts/legado/gerar_audios_pt.py
-./scripts/legado/gerar_audios_zh.py
-./scripts/legado/gerar_deltas_fr.py
-./scripts/legado/gerar_palavras_isoladas.py
-./scripts/legado/mapear.py
-./scripts/legado/mapear_resgate_es_pt.py
-./scripts/legado/rastrear_origem_extras.py
-./scripts/legado/regerar_e_subir_frases_alteradas.py
-./scripts/legado/regerar_frase_35.py
-./scripts/legado/regerar_pt_francisca.py
-./scripts/legado/resolver_acentos_e_subir.py
-./scripts/legado/resolver_en_e_inspecionar_es_pt.py
-./scripts/legado/resolver_palavras_it.py
-./scripts/legado/sincronizar_storage_it.py
-./scripts/legado/upload_5550192.py
-./scripts/legado/upload_audios_en.py
-./scripts/legado/upload_audios_es.py
-./scripts/legado/upload_audios_fr.py
-./scripts/legado/upload_audios_ge.py
-./scripts/legado/upload_audios_it.py
-./scripts/legado/upload_audios_pt.py
-./scripts/legado/upload_audios_zh.py
-./scripts/legado/upload_frase_35.py
-./scripts/legado/upload_palavras_isoladas.py
-./scripts/legado/varredura_l1.py
-./scripts/legado/verificar_dingli_e_frases_novas.py
 ./scripts/sanitizacao.py
 ./scripts/sincronizar_frases_completo.py
 ./scripts/sincronizar_sentences_db.py
-./scripts/sincronizar_storage_vocabulario.py
 ./scripts/sincronizar_tudo.py
 ./scripts/sincronizar_vocabulario.py
 ./scripts/sincronizar_vocabulario_completo.py
@@ -509,7 +452,6 @@ function App() {
 
   const [fraseTeorica, setFraseTeorica] = useState("Carregando inspiração...");
   const [nomeAluno, setNomeAluno] = useState("Estudante");
-  const apiKey = "AIzaSyAv_65bjZGGtUDJugC_GtTQoMmXrFw1XtY";
   const [userRole, setUserRole] = useState(() => localStorage.getItem('app_role') || null);
   const [sessaoIniciada, setSessaoIniciada] = useState(false);
   const [carregandoDados, setCarregandoDados] = useState(false);
@@ -642,14 +584,14 @@ function App() {
           rotacionarBandeja(idAtual, calc.lista === 'macro');
         }
 
-          setSessaoDominium(prev => ({
+        setSessaoDominium(prev => ({
           ...prev,
           primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal),
           recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal),
           acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal),
           falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal)
         }));
-        
+
       }
 
       if (userRole !== 'adm') {
@@ -758,7 +700,7 @@ function App() {
         if (resp?.data && resp.data.length > 0) {
           frasesCandidatas = resp.data;
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // Expansão das Vagas 2 a 5 para Card Avulso (Cenário 2)
@@ -816,7 +758,7 @@ function App() {
             setFrasesFiltradas(resp.data);
             idxAlvo = resp.data.findIndex(f => Number(f.id) === Number(proximo.id));
           }
-        } catch (e) {}
+        } catch (e) { }
       }
 
       if (idxAlvo !== -1) {
@@ -897,7 +839,7 @@ function App() {
     try {
       const nomeArquivo = encodeURIComponent(`${chaveTopico}.json`);
       const resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
-      
+
       if (resposta.ok) {
         const mapa = await resposta.json();
         cacheExplicacoesTopico.current[chaveTopico] = mapa;
@@ -1070,7 +1012,7 @@ function App() {
         try {
           const respN = await dataService.getTopicsByLevel(nivelEfetivo, idiomaOrigem, idiomaEstudo);
           dadosNivel = respN?.data;
-        } catch (e) {}
+        } catch (e) { }
         await inicializarBandeja({
           idCardEscolhido: idEscolhido,
           frasesTopico: data,
@@ -1514,7 +1456,7 @@ function App() {
         frasesFiltradas={frasesFiltradas} frasesMaestria={frasesMaestria}
       />
     );
-        if (tela === 'dinglab') return (
+    if (tela === 'dinglab') return (
       <Dinglab
         styles={styles}
         falar={falar}
@@ -1532,6 +1474,8 @@ function App() {
         onAvaliacaoDinglabRef={onAvaliacaoDinglabRef}
         indice={indiceDinglab}
         setIndice={setIndiceDinglab}
+        jogarDominiumInteligente={jogarDominiumInteligente}
+        rotacionarBandeja={rotacionarBandeja}
       />
     );
     if (tela === 'estudo') return (
@@ -2405,18 +2349,28 @@ export default function Dinglab({
   user,
   onAvaliacaoDinglabRef,
   indice: indiceProp = 0,
-  setIndice: setIndiceProp
+  setIndice: setIndiceProp,
+  jogarDominiumInteligente,
+  rotacionarBandeja
 }) {
   const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, getCorFonteDinamica } = useDingli();
 
+  const [modoPitstop, setModoPitstop] = useState(() => {
+    return sessionStorage.getItem('dinglab_modo_pitstop') === 'true';
+  });
   const [lista, setLista] = useState([]);
   const [indiceLocal, setIndiceLocal] = useState(indiceProp);
   const indice = indiceProp !== undefined ? indiceProp : indiceLocal;
+  const indiceRef = useRef(indice);
+  useEffect(() => {
+    indiceRef.current = indice;
+  }, [indice]);
+
   const setIndice = useCallback((val) => {
-    const novo = typeof val === 'function' ? val(indice) : val;
+    const novo = typeof val === 'function' ? val(indiceRef.current) : val;
     setIndiceLocal(novo);
     if (setIndiceProp) setIndiceProp(novo);
-  }, [indice, setIndiceProp]);
+  }, [setIndiceProp]);
 
   const [alturaTela, setAlturaTela] = useState(window.innerHeight);
   const [audioLento, setAudioLento] = useState(false);
@@ -2462,14 +2416,35 @@ export default function Dinglab({
       const salvo = localStorage.getItem(chaveDinglab);
       if (salvo) {
         const arr = JSON.parse(salvo);
-        setLista(Array.isArray(arr) ? arr : []);
+        const listaCarregada = Array.isArray(arr) ? arr : [];
+        setLista(listaCarregada);
+
+        const targetId = sessionStorage.getItem('dinglab_card_id');
+        if (targetId) {
+          sessionStorage.removeItem('dinglab_card_id');
+          const idx = listaCarregada.findIndex(item => Number(item.id) === Number(targetId));
+          if (idx !== -1) {
+            setIndice(idx + 1);
+          } else {
+            setIndice(listaCarregada.length > 0 ? 1 : 0);
+          }
+        } else {
+          setIndice(listaCarregada.length > 0 ? 1 : 0);
+        }
       } else {
         setLista([]);
       }
     } catch (e) {
       setLista([]);
     }
-  }, [chaveDinglab, idiomaOrigem, idiomaEstudo]);
+  }, [chaveDinglab, idiomaOrigem, idiomaEstudo, setIndice]);
+
+  // Trava contra índices superiores ao tamanho real da lista
+  useEffect(() => {
+    if (lista.length > 0 && indice > lista.length) {
+      setIndice(lista.length);
+    }
+  }, [lista.length, indice, setIndice]);
 
   // 2. Altura dinâmica da viewport
   useEffect(() => {
@@ -2535,8 +2510,8 @@ export default function Dinglab({
 
             const idAtual = fraseAtual.id;
             const rankObj = frasesMaestria[idAtual];
-            const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
-            const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
+            const rankAtual = Number(fraseAtual.rank) || (typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0)) || 1;
+            const highestRank = Math.max((typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual), rankAtual);
 
             // Mantém estritamente o rank atual (sem evoluir nem regredir) e define next_review para agora
             const novoObjeto = {
@@ -2600,8 +2575,20 @@ export default function Dinglab({
             // Tempo calculado idêntico ao TelaEstudo.jsx / App.jsx
             const tempoAudio = Math.max(textoEstudo.split(" ").length * 600, 1500);
 
-            // Aguarda o áudio terminar para avançar para o próximo card
+            // Aguarda o áudio terminar para avançar para o próximo card ou retornar ao Dìngloop
             timerFeedbackRef.current = setTimeout(() => {
+              const ehPitstop = sessionStorage.getItem('dinglab_modo_pitstop') === 'true';
+              sessionStorage.removeItem('dinglab_modo_pitstop');
+              if (ehPitstop) {
+                if (rotacionarBandeja) {
+                  rotacionarBandeja(idAtual, false);
+                }
+                if (jogarDominiumInteligente) {
+                  jogarDominiumInteligente();
+                }
+                return;
+              }
+
               setLista(novaLista);
               setModoProva(false);
               setResultadoFeedback(null);
@@ -2900,13 +2887,26 @@ export default function Dinglab({
     }
   }, [fraseAtual, idiomaEstudo, idiomaOrigem, opcoesSelecionadas, outroTexto]);
 
+  const handleVoltarAoDingloop = useCallback(() => {
+    sessionStorage.removeItem('dinglab_modo_pitstop');
+    setModoPitstop(false);
+    if (jogarDominiumInteligente) {
+      jogarDominiumInteligente();
+    } else {
+      mudarTela('menuCartoes');
+    }
+  }, [jogarDominiumInteligente, mudarTela]);
+
   // Tela de conclusão ("Dìnglab em dia!")
   if (lista.length === 0) {
     return (
       <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a', height: alturaTela, position: 'absolute', top: 0, left: 0, width: '100%' }}>
         <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
           <button
-            onClick={() => mudarTela('menuCartoes')}
+            onClick={() => {
+              sessionStorage.removeItem('dinglab_modo_pitstop');
+              mudarTela('menuCartoes');
+            }}
             style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}
           >
             ← {t?.quit || 'Sair'}
@@ -2945,7 +2945,10 @@ export default function Dinglab({
       <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
 
         <button
-          onClick={() => mudarTela('menuCartoes')}
+          onClick={() => {
+            sessionStorage.removeItem('dinglab_modo_pitstop');
+            mudarTela('menuCartoes');
+          }}
           style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}
         >
           ← {t?.quit || 'Sair'}
@@ -3544,67 +3547,94 @@ export default function Dinglab({
               boxSizing: 'border-box'
             }}
           >
-            <button
-              type="button"
-              disabled={indice === 0}
-              onClick={() => setIndice(prev => Math.max(0, prev - 1))}
-              style={{
-                padding: '9px 16px',
-                borderRadius: '10px',
-                border: 'none',
-                backgroundColor: indice === 0 ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
-                color: indice === 0 ? '#64748b' : ns.txt,
-                fontWeight: '800',
-                fontSize: '0.88rem',
-                cursor: indice === 0 ? 'not-allowed' : 'pointer',
-                opacity: indice === 0 ? 0.35 : 1,
-                minWidth: '100px',
-                minHeight: '38px',
-                transition: 'all 0.2s ease',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
-              ← {t?.prev || "Anterior"}
-            </button>
+            {modoPitstop ? (
+              <button
+                type="button"
+                onClick={handleVoltarAoDingloop}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: '12px',
+                  border: 'none',
+                  backgroundColor: ns.bg,
+                  color: ns.txt,
+                  fontWeight: '800',
+                  fontSize: '0.92rem',
+                  cursor: 'pointer',
+                  minHeight: '44px',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+              >
+                Tentar depois, voltar ao Dìngloop →
+              </button>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  disabled={indice === 0}
+                  onClick={() => setIndice(prev => Math.max(0, prev - 1))}
+                  style={{
+                    padding: '9px 16px',
+                    borderRadius: '10px',
+                    border: 'none',
+                    backgroundColor: indice === 0 ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
+                    color: indice === 0 ? '#64748b' : ns.txt,
+                    fontWeight: '800',
+                    fontSize: '0.88rem',
+                    cursor: indice === 0 ? 'not-allowed' : 'pointer',
+                    opacity: indice === 0 ? 0.35 : 1,
+                    minWidth: '100px',
+                    minHeight: '38px',
+                    transition: 'all 0.2s ease',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  {indice <= 1 ? "← Guia" : `← ${t?.prev || "Anterior"}`}
+                </button>
 
-            <span
-              style={{
-                fontSize: '0.86rem',
-                fontWeight: '800',
-                color: '#1e293b',
-                letterSpacing: '0.4px',
-                userSelect: 'none'
-              }}
-            >
-              {ehCardZero ? "Card 0" : `${indice} / ${lista.length}`}
-            </span>
+                <span
+                  style={{
+                    fontSize: '0.86rem',
+                    fontWeight: '800',
+                    color: '#1e293b',
+                    letterSpacing: '0.4px',
+                    userSelect: 'none'
+                  }}
+                >
+                  {ehCardZero ? "Guia" : `${indice} / ${lista.length}`}
+                </span>
 
-            <button
-              type="button"
-              disabled={indice >= lista.length}
-              onClick={() => setIndice(prev => Math.min(lista.length, prev + 1))}
-              style={{
-                padding: '9px 16px',
-                borderRadius: '10px',
-                border: 'none',
-                backgroundColor: indice >= lista.length ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
-                color: indice >= lista.length ? '#64748b' : ns.txt,
-                fontWeight: '800',
-                fontSize: '0.88rem',
-                cursor: indice >= lista.length ? 'not-allowed' : 'pointer',
-                opacity: indice >= lista.length ? 0.35 : 1,
-                minWidth: '100px',
-                minHeight: '38px',
-                transition: 'all 0.2s ease',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
-              {t?.next || "Próximo"} →
-            </button>
+                <button
+                  type="button"
+                  disabled={indice >= lista.length && !ehCardZero}
+                  onClick={() => setIndice(prev => Math.min(lista.length, prev + 1))}
+                  style={{
+                    padding: '9px 16px',
+                    borderRadius: '10px',
+                    border: 'none',
+                    backgroundColor: (indice >= lista.length && !ehCardZero) ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
+                    color: (indice >= lista.length && !ehCardZero) ? '#64748b' : ns.txt,
+                    fontWeight: '800',
+                    fontSize: '0.88rem',
+                    cursor: (indice >= lista.length && !ehCardZero) ? 'not-allowed' : 'pointer',
+                    opacity: (indice >= lista.length && !ehCardZero) ? 0.35 : 1,
+                    minWidth: '100px',
+                    minHeight: '38px',
+                    transition: 'all 0.2s ease',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  {ehCardZero ? "Praticar →" : `${t?.next || "Próximo"} →`}
+                </button>
+              </>
+            )}
           </div>
 
         </div>
@@ -3880,7 +3910,8 @@ export default function MenuCartoes({
                     }
                   }
                 }
-              } catch (e) {}
+              } catch (e) { }
+              sessionStorage.removeItem('dinglab_modo_pitstop');
               mudarTela('dinglab');
             }}
             style={{
@@ -4673,7 +4704,14 @@ export default function TelaEstudo({
 
   const frase = React.useMemo(() => {
     return fraseAtivaGlobal
-      ? { id: fraseAtivaGlobal.id, [idiomaEstudo]: fraseAtivaGlobal.texto, [idiomaOrigem]: fraseAtivaGlobal.traducao || "", zh: fraseAtivaGlobal.texto_zh, nivel: fraseAtivaGlobal.nivel, topico: fraseAtivaGlobal.topico }
+      ? {
+        id: fraseAtivaGlobal.id,
+        [idiomaEstudo]: fraseAtivaGlobal.texto || fraseAtivaGlobal[idiomaEstudo] || "",
+        [idiomaOrigem]: fraseAtivaGlobal.traducao || fraseAtivaGlobal[idiomaOrigem] || "",
+        zh: fraseAtivaGlobal.texto_zh || fraseAtivaGlobal.zh || "",
+        nivel: fraseAtivaGlobal.nivel || "",
+        topico: fraseAtivaGlobal.topico || ""
+      }
       : frasesFiltradas[indice];
   }, [fraseAtivaGlobal, frasesFiltradas, indice, idiomaEstudo, idiomaOrigem]);
 
@@ -4831,7 +4869,7 @@ export default function TelaEstudo({
           try {
             const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
             localStorage.setItem(chaveMaestria, JSON.stringify(nova));
-          } catch(e) {}
+          } catch (e) { }
           return nova;
         });
       }
@@ -4861,7 +4899,7 @@ export default function TelaEstudo({
         tipo_problema: "Dìnglab (3 erros de pronúncia)",
         observacao: `Ejetada para o Dìnglab no Rank ${rankPreservado} pelo aluno`,
         resolvido: false
-      }]).then(() => {}).catch(e => console.error('[Dìnglab] Erro telemetria:', e));
+      }]).then(() => { }).catch(e => console.error('[Dìnglab] Erro telemetria:', e));
     }
 
     if (resetarTentativasVoz) resetarTentativasVoz();
@@ -4979,9 +5017,9 @@ export default function TelaEstudo({
       const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
       const calc = calcularProximoRank(rankAtual, true, highestRank, estavaNaFilaErro || (typeof rankObj === 'object' && rankObj.status === 'recuperacao'));
       setFrasesMaestria(prev => ({ ...prev, [frase.id]: { rank: calc.novoRank, status: calc.lista, next_review: Date.now() + calc.espera, last_review: Date.now(), last_attempt_at: Date.now(), highest_rank: Math.max(highestRank, calc.novoRank), texto: fraseOriginal, traducao: frase[idiomaOrigem] || "", texto_zh: frase?.zh || "", nivel: frase.nivel || nivelAtivo, topico: frase.topico || topicoAtivo } }));
-        if (typeof rotacionarBandeja === 'function') {
-          rotacionarBandeja(frase.id, calc.lista === 'macro');
-        }
+      if (typeof rotacionarBandeja === 'function') {
+        rotacionarBandeja(frase.id, calc.lista === 'macro');
+      }
       if (estavaNaFilaErro) {
         setSessaoDominium(prev => ({ ...prev, primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal), recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal), falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal) }));
         setTimeout(() => setSessaoDominium(prev => ({ ...prev, recuperadas: [...(prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}`, nivel: nivelAtivo, topico: topicoAtivo }] })), 30000);
@@ -5055,44 +5093,77 @@ export default function TelaEstudo({
     }
   }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, userRole]);
 
-  const handleRever = useCallback(() => {
-    const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
-    setModoExercicio(false);
-    setSessaoIniciada(false);
-    setResultadoFeedback(null);
-    setValorInput("");
-    if (resetarTentativasVoz) resetarTentativasVoz();
+  const handleEnviarParaDinglab = useCallback(() => {
+    const fraseId = frase?.id;
+    if (fraseId) {
+      if (typeof rotacionarBandeja === 'function') {
+        rotacionarBandeja(fraseId, true);
+      }
+
+      const rankPreservado = Number(exercicioNivel) || (typeof frasesMaestria[fraseId] === 'object' ? frasesMaestria[fraseId].rank : frasesMaestria[fraseId]) || 1;
+
+      if (setFrasesMaestria) {
+        setFrasesMaestria(prev => {
+          const rankObj = prev[fraseId];
+          const nova = {
+            ...prev,
+            [fraseId]: {
+              ...(typeof rankObj === 'object' ? rankObj : {}),
+              rank: rankPreservado,
+              status: 'recuperacao',
+              next_review: Date.now(),
+              last_review: Date.now(),
+              last_attempt_at: Date.now(),
+              highest_rank: Math.max((typeof rankObj === 'object' ? (rankObj.highest_rank || rankPreservado) : rankPreservado), rankPreservado),
+              texto: normalizarFrase(frase[idiomaEstudo] || frase.texto || ""),
+              traducao: frase[idiomaOrigem] || frase.traducao || "",
+              texto_zh: frase?.zh || frase?.texto_zh || "",
+              nivel: frase.nivel || nivelAtivo,
+              topico: frase.topico || topicoAtivo
+            }
+          };
+          try {
+            const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
+            localStorage.setItem(chaveMaestria, JSON.stringify(nova));
+          } catch (e) { }
+          return nova;
+        });
+      }
+
+      try {
+        const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
+        const listaAtual = JSON.parse(localStorage.getItem(chaveDinglab) || '[]');
+        if (!listaAtual.some(item => Number(item.id) === Number(fraseId))) {
+          listaAtual.push({
+            ...frase,
+            rank: rankPreservado,
+            adicionadoEm: Date.now()
+          });
+          localStorage.setItem(chaveDinglab, JSON.stringify(listaAtual));
+        }
+      } catch (err) {
+        console.error('[Dìnglab] Erro ao salvar localmente:', err);
+      }
+    }
+
     if (window.recognitionInstance) {
       try { window.recognitionInstance.abort(); } catch (e) { }
     }
+    if (window.speechSynthesis) {
+      try { window.speechSynthesis.cancel(); } catch (e) { }
+    }
+    if (resetarTentativasVoz) resetarTentativasVoz();
+    setResultadoFeedback(null);
+    setValorInput("");
+    setTentativaFinalizada(false);
+    if (setModoExercicio) setModoExercicio(false);
 
-    setFrasesMaestria(prev => ({
-      ...prev,
-      [frase.id]: {
-        rank: 0,
-        status: 'inedita',
-        next_review: Date.now(),
-        last_review: Date.now(),
-        last_attempt_at: Date.now(),
-        highest_rank: 0,
-        texto: fraseOriginal,
-        traducao: frase[idiomaOrigem] || "",
-        texto_zh: frase?.zh || "",
-        nivel: frase.nivel || nivelAtivo,
-        topico: frase.topico || topicoAtivo
-      }
-    }));
-
-    setFilaErros(prev => prev.filter(item => item.indice !== indice));
-    setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
-    setSessaoDominium(prev => ({
-      ...prev,
-      primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal),
-      recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal),
-      acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal),
-      falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal)
-    }));
-  }, [frase, idiomaEstudo, indice, nivelAtivo, topicoAtivo, setModoExercicio, setSessaoIniciada, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarTentativasVoz]);
+    if (fraseId) {
+      sessionStorage.setItem('dinglab_card_id', String(fraseId));
+      sessionStorage.setItem('dinglab_modo_pitstop', 'true');
+    }
+    mudarTela('dinglab');
+  }, [frase, exercicioNivel, frasesMaestria, setFrasesMaestria, idiomaOrigem, idiomaEstudo, nivelAtivo, topicoAtivo, rotacionarBandeja, resetarTentativasVoz, setResultadoFeedback, setModoExercicio, mudarTela]);
 
   const textoEstudo = normalizarFrase(frase?.[idiomaEstudo] || "");
 
@@ -5218,10 +5289,10 @@ export default function TelaEstudo({
   }, [exercicioNivel, modoExercicio, setMostrarTraducao]);
 
   React.useEffect(() => {
-    if (modoExercicio && RANKS_WRITE.includes(exercicioNivel) && editableRef.current) {
+    if (modoExercicio && RANKS_WRITE.includes(exercicioNivel) && editableRef.current && !modalReporteAberto) {
       const el = editableRef.current;
       const manterFoco = () => {
-        if (modoExercicio && !resultadoFeedback) {
+        if (modoExercicio && !resultadoFeedback && !modalReporteAberto) {
           setTimeout(() => el.focus(), 0);
         }
       };
@@ -5232,7 +5303,7 @@ export default function TelaEstudo({
         el.removeEventListener('blur', manterFoco);
       };
     }
-  }, [exercicioNivel, modoExercicio, indice, resultadoFeedback]);
+  }, [exercicioNivel, modoExercicio, indice, resultadoFeedback, modalReporteAberto]);
 
   const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
 
@@ -5420,22 +5491,21 @@ export default function TelaEstudo({
           )}
 
           <div style={styles.topCardAreaFixed}>
-            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{topicoAtivo}</p>}
-            {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
-            {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
+            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{frase?.topico || topicoAtivo}</p>}            {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
+            {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) && (
               <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginTop: '10px', textAlign: 'center', width: '100%' }}>
-                {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
+                {idiomaOrigem === 'pi' ? (frase?.zh || frase?.texto_zh) : (frase?.[idiomaOrigem] || frase?.traducao)}
               </div>
             )}
-            {modoExercicio && !isEx3 && !RANKS_WRITE.includes(exercicioNivel) && idiomaEstudo === 'pi' && frase?.zh && (
-              <div style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '5px' }}>{frase.zh}</div>
+            {modoExercicio && !isEx3 && !RANKS_WRITE.includes(Number(exercicioNivel)) && idiomaEstudo === 'pi' && (frase?.zh || frase?.texto_zh) && (
+              <div style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '5px' }}>{frase.zh || frase.texto_zh}</div>
             )}
           </div>
 
           <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: isEx3 ? 0 : '10px 0', overflow: isEx3 ? 'hidden' : 'auto' }}>
-            {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
+            {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) && (
               <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', textAlign: 'center', width: '100%' }}>
-                {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
+                {idiomaOrigem === 'pi' ? (frase?.zh || frase?.texto_zh) : (frase?.[idiomaOrigem] || frase?.traducao)}
               </div>
             )}
             {modoExercicio ? (
@@ -5475,27 +5545,26 @@ export default function TelaEstudo({
                           maxWidth: '360px',
                           boxSizing: 'border-box'
                         }}>
-                          <p style={{ margin: '0 0 10px 0', fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.4' }}>
-                            {t?.reviewLaterPrompt || "Revisar mais tarde, dê uma pesquisada nessa pronúncia e tente no próximo ciclo"}
+                          <p style={{ margin: 0, fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.45' }}>
+                            Relaxa, pronúncia exige costume. Essa frase foi guardada no seu Dìnglab para você treinar com calma quantas vezes quiser. Prefere treinar já ou continuar com as outras no Dìngloop?
                           </p>
-                          <button
-                            type="button"
-                            onClick={handleRevisarMaisTarde}
-                            style={{
-                              padding: '10px 16px',
-                              backgroundColor: corDinamica,
-                              color: '#ffffff',
-                              width: '100%',
-                              fontSize: '0.95rem',
-                              fontWeight: '800',
-                              borderRadius: '8px',
-                              cursor: 'pointer',
-                              border: 'none',
-                              boxShadow: '0 2px 6px rgba(0,0,0,0.1)'
-                            }}
-                          >
-                            {(t?.continueCycle || "Continuar Ciclo") + " →"}
-                          </button>
+                          <div style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            marginTop: '12px',
+                            padding: '0 28px',
+                            color: '#991b1b'
+                          }}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <line x1="17" y1="7" x2="7" y2="17" />
+                              <polyline points="17 17 7 17 7 7" />
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <line x1="7" y1="7" x2="17" y2="17" />
+                              <polyline points="7 17 17 17 17 7" />
+                            </svg>
+                          </div>
                         </div>
                       )}
                     </div>
@@ -5557,20 +5626,22 @@ export default function TelaEstudo({
                 <div style={styles.rowBotoesIA}>
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>
-                      {/* 1. Botão Rever (mesma aparência de Explicação) */}
-                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
-                        {t.review}
+                      {/* 1. Botão Dìnglab (mesma aparência de Explicação) */}
+                      <button onClick={handleEnviarParaDinglab} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
+                        {t?.dinglab || "Dìnglab"}
                       </button>
 
-                      {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
-                      {temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
-                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                          {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
-                        </button>
-                      ) : (
-                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
-                          &nbsp;
-                        </button>
+                     {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
+                      {!(resultadoFeedback === 'erro' && tentativasVoz >= 3) && (
+                        temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
+                          <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
+                            {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                          </button>
+                        ) : (
+                          <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
+                            &nbsp;
+                          </button>
+                        )
                       )}
 
                       {/* 3. Botão Falar agora / Verificar / Tentar novamente */}
@@ -5609,9 +5680,9 @@ export default function TelaEstudo({
                     </>
                   ) : (
                     <>
-                      {/* 1. Botão Rever (mesma aparência de Explicação) */}
-                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
-                        {t.review}
+                      {/* 1. Botão Dìnglab (mesma aparência de Explicação) */}
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleEnviarParaDinglab} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
+                        {t?.dinglab || "Dìnglab"}
                       </button>
 
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
@@ -5719,7 +5790,7 @@ export const dataService = {
     try {
       const resposta = await supabase
         .from('sentences')
-        .select(`id, ${colTopicOrigem}, ${idiomaEstudo}`)
+        .select('*')
         .eq('level', nivel.toUpperCase())
         .not(idiomaEstudo, 'is', null)
         .order('id', { ascending: true });
@@ -7082,7 +7153,7 @@ export function useGameEngine({
   const sincronizarPersistenciaBandeja = useCallback((fila) => {
     if (!chaveBandeja) return;
     if (!fila || fila.length === 0) {
-      try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+      try { localStorage.removeItem(chaveBandeja); } catch (e) { }
       return;
     }
 
@@ -7100,9 +7171,9 @@ export function useGameEngine({
         const texto = (typeof m === 'object' && m.texto) ? m.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
         return { id, texto };
       });
-      try { localStorage.setItem(chaveBandeja, JSON.stringify(payload)); } catch (e) {}
+      try { localStorage.setItem(chaveBandeja, JSON.stringify(payload)); } catch (e) { }
     } else {
-      try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+      try { localStorage.removeItem(chaveBandeja); } catch (e) { }
     }
   }, [chaveBandeja, frasesMaestria, frasesFiltradas, idiomaEstudo]);
 
@@ -7113,12 +7184,10 @@ export function useGameEngine({
     let fila = taskIdsRef.current || [];
 
     if (foiConcluido) {
-      fila = fila.filter(id => id !== idNum);
-    } else {
-      if (fila.includes(idNum)) {
-        fila = [...fila.filter(id => id !== idNum), idNum];
-      }
-    }
+    fila = fila.filter(id => id !== idNum);
+  } else {
+    fila = [...fila.filter(id => id !== idNum), idNum];
+  }
 
     taskIdsRef.current = fila;
     sincronizarPersistenciaBandeja(fila);
@@ -7193,7 +7262,7 @@ export function useGameEngine({
       try {
         const salvoD = localStorage.getItem(chaveDinglab);
         if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 1. Obter cartas de bandeja abandonada
@@ -7214,7 +7283,7 @@ export function useGameEngine({
               });
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 2. Obter cartas prontas de 'Próximas' (repousos macro vencidos + recém-saídas do Dìnglab)
@@ -7295,7 +7364,7 @@ export function useGameEngine({
       try {
         const salvoD = localStorage.getItem(chaveDinglab);
         if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 1ª Prioridade: Abandonadas anteriores
@@ -7313,7 +7382,7 @@ export function useGameEngine({
             });
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 2ª Prioridade: Próximas
@@ -7382,7 +7451,7 @@ export function useGameEngine({
       try {
         const salvoD = localStorage.getItem(chaveDinglab);
         if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // Filtra quem de fato ainda está pendente nesta rodada
@@ -7399,7 +7468,7 @@ export function useGameEngine({
     // Conclusão Natural: se não há mais cartas na fila, encerra a Task
     if (idsPendentes.length === 0) {
       if (chaveBandeja) {
-        try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+        try { localStorage.removeItem(chaveBandeja); } catch (e) { }
       }
       return { resetarTimerTask, tipo: "concluido" };
     }
@@ -7414,13 +7483,20 @@ export function useGameEngine({
     const idxNoTopico = listaRef.findIndex(f => Number(f.id) === idAlvo);
 
     if (rankAlvo > 0) {
+      const textoAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.texto) ? maestriaAlvo.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
+      const traducaoAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.traducao) ? maestriaAlvo.traducao : (fObj ? (fObj[idiomaOrigem] || fObj.traducao || "") : "");
+      const zhAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.texto_zh) ? maestriaAlvo.texto_zh : (fObj ? (fObj.zh || fObj.texto_zh || "") : "");
       return {
         tipo: "revisao",
         dados: {
           ...(typeof maestriaAlvo === 'object' ? maestriaAlvo : {}),
           id: idAlvo,
           rank: rankAlvo,
-          texto: (typeof maestriaAlvo === 'object' && maestriaAlvo.texto) ? maestriaAlvo.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "")
+          texto: textoAlvo,
+          traducao: traducaoAlvo,
+          texto_zh: zhAlvo,
+          nivel: (typeof maestriaAlvo === 'object' && maestriaAlvo.nivel) || fObj?.level || fObj?.nivel || nivelAtivo || "A1",
+          topico: (typeof maestriaAlvo === 'object' && maestriaAlvo.topico) || fObj?.topico || fObj?.topic || topicoAtivo || ""
         }
       };
     }

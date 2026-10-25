@@ -1090,6 +1090,8 @@ function App() {
         onAvaliacaoDinglabRef={onAvaliacaoDinglabRef}
         indice={indiceDinglab}
         setIndice={setIndiceDinglab}
+        jogarDominiumInteligente={jogarDominiumInteligente}
+        rotacionarBandeja={rotacionarBandeja}
       />
     );
     if (tela === 'estudo') return (

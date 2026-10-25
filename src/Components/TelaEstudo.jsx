@@ -200,7 +200,14 @@ export default function TelaEstudo({
 
   const frase = React.useMemo(() => {
     return fraseAtivaGlobal
-      ? { id: fraseAtivaGlobal.id, [idiomaEstudo]: fraseAtivaGlobal.texto, [idiomaOrigem]: fraseAtivaGlobal.traducao || "", zh: fraseAtivaGlobal.texto_zh, nivel: fraseAtivaGlobal.nivel, topico: fraseAtivaGlobal.topico }
+      ? {
+        id: fraseAtivaGlobal.id,
+        [idiomaEstudo]: fraseAtivaGlobal.texto || fraseAtivaGlobal[idiomaEstudo] || "",
+        [idiomaOrigem]: fraseAtivaGlobal.traducao || fraseAtivaGlobal[idiomaOrigem] || "",
+        zh: fraseAtivaGlobal.texto_zh || fraseAtivaGlobal.zh || "",
+        nivel: fraseAtivaGlobal.nivel || "",
+        topico: fraseAtivaGlobal.topico || ""
+      }
       : frasesFiltradas[indice];
   }, [fraseAtivaGlobal, frasesFiltradas, indice, idiomaEstudo, idiomaOrigem]);
 
@@ -358,7 +365,7 @@ export default function TelaEstudo({
           try {
             const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
             localStorage.setItem(chaveMaestria, JSON.stringify(nova));
-          } catch(e) {}
+          } catch (e) { }
           return nova;
         });
       }
@@ -388,7 +395,7 @@ export default function TelaEstudo({
         tipo_problema: "Dìnglab (3 erros de pronúncia)",
         observacao: `Ejetada para o Dìnglab no Rank ${rankPreservado} pelo aluno`,
         resolvido: false
-      }]).then(() => {}).catch(e => console.error('[Dìnglab] Erro telemetria:', e));
+      }]).then(() => { }).catch(e => console.error('[Dìnglab] Erro telemetria:', e));
     }
 
     if (resetarTentativasVoz) resetarTentativasVoz();
@@ -506,9 +513,9 @@ export default function TelaEstudo({
       const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
       const calc = calcularProximoRank(rankAtual, true, highestRank, estavaNaFilaErro || (typeof rankObj === 'object' && rankObj.status === 'recuperacao'));
       setFrasesMaestria(prev => ({ ...prev, [frase.id]: { rank: calc.novoRank, status: calc.lista, next_review: Date.now() + calc.espera, last_review: Date.now(), last_attempt_at: Date.now(), highest_rank: Math.max(highestRank, calc.novoRank), texto: fraseOriginal, traducao: frase[idiomaOrigem] || "", texto_zh: frase?.zh || "", nivel: frase.nivel || nivelAtivo, topico: frase.topico || topicoAtivo } }));
-        if (typeof rotacionarBandeja === 'function') {
-          rotacionarBandeja(frase.id, calc.lista === 'macro');
-        }
+      if (typeof rotacionarBandeja === 'function') {
+        rotacionarBandeja(frase.id, calc.lista === 'macro');
+      }
       if (estavaNaFilaErro) {
         setSessaoDominium(prev => ({ ...prev, primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal), recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal), falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal) }));
         setTimeout(() => setSessaoDominium(prev => ({ ...prev, recuperadas: [...(prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), { frase: fraseOriginal, id: frase.id, curso: `${idiomaOrigem}_${idiomaEstudo}`, nivel: nivelAtivo, topico: topicoAtivo }] })), 30000);
@@ -582,44 +589,77 @@ export default function TelaEstudo({
     }
   }, [resultadoFeedback, frase, idiomaEstudo, exercicioNivel, slotsEx3, valorInput, configLacuna, frasesMaestria, falar, setFilaAcertos, setFilaErros, setFrasesMaestria, setSessaoDominium, filaErros, indice, idiomaOrigem, nivelAtivo, topicoAtivo, userRole]);
 
-  const handleRever = useCallback(() => {
-    const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
-    setModoExercicio(false);
-    setSessaoIniciada(false);
-    setResultadoFeedback(null);
-    setValorInput("");
-    if (resetarTentativasVoz) resetarTentativasVoz();
+  const handleEnviarParaDinglab = useCallback(() => {
+    const fraseId = frase?.id;
+    if (fraseId) {
+      if (typeof rotacionarBandeja === 'function') {
+        rotacionarBandeja(fraseId, true);
+      }
+
+      const rankPreservado = Number(exercicioNivel) || (typeof frasesMaestria[fraseId] === 'object' ? frasesMaestria[fraseId].rank : frasesMaestria[fraseId]) || 1;
+
+      if (setFrasesMaestria) {
+        setFrasesMaestria(prev => {
+          const rankObj = prev[fraseId];
+          const nova = {
+            ...prev,
+            [fraseId]: {
+              ...(typeof rankObj === 'object' ? rankObj : {}),
+              rank: rankPreservado,
+              status: 'recuperacao',
+              next_review: Date.now(),
+              last_review: Date.now(),
+              last_attempt_at: Date.now(),
+              highest_rank: Math.max((typeof rankObj === 'object' ? (rankObj.highest_rank || rankPreservado) : rankPreservado), rankPreservado),
+              texto: normalizarFrase(frase[idiomaEstudo] || frase.texto || ""),
+              traducao: frase[idiomaOrigem] || frase.traducao || "",
+              texto_zh: frase?.zh || frase?.texto_zh || "",
+              nivel: frase.nivel || nivelAtivo,
+              topico: frase.topico || topicoAtivo
+            }
+          };
+          try {
+            const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
+            localStorage.setItem(chaveMaestria, JSON.stringify(nova));
+          } catch (e) { }
+          return nova;
+        });
+      }
+
+      try {
+        const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
+        const listaAtual = JSON.parse(localStorage.getItem(chaveDinglab) || '[]');
+        if (!listaAtual.some(item => Number(item.id) === Number(fraseId))) {
+          listaAtual.push({
+            ...frase,
+            rank: rankPreservado,
+            adicionadoEm: Date.now()
+          });
+          localStorage.setItem(chaveDinglab, JSON.stringify(listaAtual));
+        }
+      } catch (err) {
+        console.error('[Dìnglab] Erro ao salvar localmente:', err);
+      }
+    }
+
     if (window.recognitionInstance) {
       try { window.recognitionInstance.abort(); } catch (e) { }
     }
+    if (window.speechSynthesis) {
+      try { window.speechSynthesis.cancel(); } catch (e) { }
+    }
+    if (resetarTentativasVoz) resetarTentativasVoz();
+    setResultadoFeedback(null);
+    setValorInput("");
+    setTentativaFinalizada(false);
+    if (setModoExercicio) setModoExercicio(false);
 
-    setFrasesMaestria(prev => ({
-      ...prev,
-      [frase.id]: {
-        rank: 0,
-        status: 'inedita',
-        next_review: Date.now(),
-        last_review: Date.now(),
-        last_attempt_at: Date.now(),
-        highest_rank: 0,
-        texto: fraseOriginal,
-        traducao: frase[idiomaOrigem] || "",
-        texto_zh: frase?.zh || "",
-        nivel: frase.nivel || nivelAtivo,
-        topico: frase.topico || topicoAtivo
-      }
-    }));
-
-    setFilaErros(prev => prev.filter(item => item.indice !== indice));
-    setFilaAcertos(prev => prev.filter(item => item.indice !== indice));
-    setSessaoDominium(prev => ({
-      ...prev,
-      primeira: (prev.primeira || []).filter(f => (f.frase || f) !== fraseOriginal),
-      recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal),
-      acertosTempo: (prev.acertosTempo || []).filter(a => (a.frase || a) !== fraseOriginal),
-      falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal)
-    }));
-  }, [frase, idiomaEstudo, indice, nivelAtivo, topicoAtivo, setModoExercicio, setSessaoIniciada, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarTentativasVoz]);
+    if (fraseId) {
+      sessionStorage.setItem('dinglab_card_id', String(fraseId));
+      sessionStorage.setItem('dinglab_modo_pitstop', 'true');
+    }
+    mudarTela('dinglab');
+  }, [frase, exercicioNivel, frasesMaestria, setFrasesMaestria, idiomaOrigem, idiomaEstudo, nivelAtivo, topicoAtivo, rotacionarBandeja, resetarTentativasVoz, setResultadoFeedback, setModoExercicio, mudarTela]);
 
   const textoEstudo = normalizarFrase(frase?.[idiomaEstudo] || "");
 
@@ -745,10 +785,10 @@ export default function TelaEstudo({
   }, [exercicioNivel, modoExercicio, setMostrarTraducao]);
 
   React.useEffect(() => {
-    if (modoExercicio && RANKS_WRITE.includes(exercicioNivel) && editableRef.current) {
+    if (modoExercicio && RANKS_WRITE.includes(exercicioNivel) && editableRef.current && !modalReporteAberto) {
       const el = editableRef.current;
       const manterFoco = () => {
-        if (modoExercicio && !resultadoFeedback) {
+        if (modoExercicio && !resultadoFeedback && !modalReporteAberto) {
           setTimeout(() => el.focus(), 0);
         }
       };
@@ -759,7 +799,7 @@ export default function TelaEstudo({
         el.removeEventListener('blur', manterFoco);
       };
     }
-  }, [exercicioNivel, modoExercicio, indice, resultadoFeedback]);
+  }, [exercicioNivel, modoExercicio, indice, resultadoFeedback, modalReporteAberto]);
 
   const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
 
@@ -947,22 +987,21 @@ export default function TelaEstudo({
           )}
 
           <div style={styles.topCardAreaFixed}>
-            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{topicoAtivo}</p>}
-            {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
-            {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
+            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{frase?.topico || topicoAtivo}</p>}            {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
+            {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) && (
               <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginTop: '10px', textAlign: 'center', width: '100%' }}>
-                {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
+                {idiomaOrigem === 'pi' ? (frase?.zh || frase?.texto_zh) : (frase?.[idiomaOrigem] || frase?.traducao)}
               </div>
             )}
-            {modoExercicio && !isEx3 && !RANKS_WRITE.includes(exercicioNivel) && idiomaEstudo === 'pi' && frase?.zh && (
-              <div style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '5px' }}>{frase.zh}</div>
+            {modoExercicio && !isEx3 && !RANKS_WRITE.includes(Number(exercicioNivel)) && idiomaEstudo === 'pi' && (frase?.zh || frase?.texto_zh) && (
+              <div style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '5px' }}>{frase.zh || frase.texto_zh}</div>
             )}
           </div>
 
           <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: isEx3 ? 0 : '10px 0', overflow: isEx3 ? 'hidden' : 'auto' }}>
-            {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(exercicioNivel) && (
+            {modoExercicio && isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) && (
               <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', textAlign: 'center', width: '100%' }}>
-                {idiomaOrigem === 'pi' ? frase?.zh : frase?.[idiomaOrigem]}
+                {idiomaOrigem === 'pi' ? (frase?.zh || frase?.texto_zh) : (frase?.[idiomaOrigem] || frase?.traducao)}
               </div>
             )}
             {modoExercicio ? (
@@ -1002,27 +1041,26 @@ export default function TelaEstudo({
                           maxWidth: '360px',
                           boxSizing: 'border-box'
                         }}>
-                          <p style={{ margin: '0 0 10px 0', fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.4' }}>
-                            {t?.reviewLaterPrompt || "Revisar mais tarde, dê uma pesquisada nessa pronúncia e tente no próximo ciclo"}
+                          <p style={{ margin: 0, fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.45' }}>
+                            Relaxa, pronúncia exige costume. Essa frase foi guardada no seu Dìnglab para você treinar com calma quantas vezes quiser. Prefere treinar já ou continuar com as outras no Dìngloop?
                           </p>
-                          <button
-                            type="button"
-                            onClick={handleRevisarMaisTarde}
-                            style={{
-                              padding: '10px 16px',
-                              backgroundColor: corDinamica,
-                              color: '#ffffff',
-                              width: '100%',
-                              fontSize: '0.95rem',
-                              fontWeight: '800',
-                              borderRadius: '8px',
-                              cursor: 'pointer',
-                              border: 'none',
-                              boxShadow: '0 2px 6px rgba(0,0,0,0.1)'
-                            }}
-                          >
-                            {(t?.continueCycle || "Continuar Ciclo") + " →"}
-                          </button>
+                          <div style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            marginTop: '12px',
+                            padding: '0 28px',
+                            color: '#991b1b'
+                          }}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <line x1="17" y1="7" x2="7" y2="17" />
+                              <polyline points="17 17 7 17 7 7" />
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <line x1="7" y1="7" x2="17" y2="17" />
+                              <polyline points="7 17 17 17 17 7" />
+                            </svg>
+                          </div>
                         </div>
                       )}
                     </div>
@@ -1084,20 +1122,22 @@ export default function TelaEstudo({
                 <div style={styles.rowBotoesIA}>
                   {RANKS_VOICE.includes(exercicioNivel) ? (
                     <>
-                      {/* 1. Botão Rever (mesma aparência de Explicação) */}
-                      <button onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
-                        {t.review}
+                      {/* 1. Botão Dìnglab (mesma aparência de Explicação) */}
+                      <button onClick={handleEnviarParaDinglab} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
+                        {t?.dinglab || "Dìnglab"}
                       </button>
 
-                      {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
-                      {temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
-                        <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                          {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
-                        </button>
-                      ) : (
-                        <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
-                          &nbsp;
-                        </button>
+                     {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
+                      {!(resultadoFeedback === 'erro' && tentativasVoz >= 3) && (
+                        temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
+                          <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
+                            {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                          </button>
+                        ) : (
+                          <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
+                            &nbsp;
+                          </button>
+                        )
                       )}
 
                       {/* 3. Botão Falar agora / Verificar / Tentar novamente */}
@@ -1136,9 +1176,9 @@ export default function TelaEstudo({
                     </>
                   ) : (
                     <>
-                      {/* 1. Botão Rever (mesma aparência de Explicação) */}
-                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleRever} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
-                        {t.review}
+                      {/* 1. Botão Dìnglab (mesma aparência de Explicação) */}
+                      <button onMouseDown={(e) => e.preventDefault()} onClick={handleEnviarParaDinglab} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>
+                        {t?.dinglab || "Dìnglab"}
                       </button>
 
                       {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}

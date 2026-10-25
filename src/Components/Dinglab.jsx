@@ -36,18 +36,28 @@ export default function Dinglab({
   user,
   onAvaliacaoDinglabRef,
   indice: indiceProp = 0,
-  setIndice: setIndiceProp
+  setIndice: setIndiceProp,
+  jogarDominiumInteligente,
+  rotacionarBandeja
 }) {
   const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, getCorFonteDinamica } = useDingli();
 
+  const [modoPitstop, setModoPitstop] = useState(() => {
+    return sessionStorage.getItem('dinglab_modo_pitstop') === 'true';
+  });
   const [lista, setLista] = useState([]);
   const [indiceLocal, setIndiceLocal] = useState(indiceProp);
   const indice = indiceProp !== undefined ? indiceProp : indiceLocal;
+  const indiceRef = useRef(indice);
+  useEffect(() => {
+    indiceRef.current = indice;
+  }, [indice]);
+
   const setIndice = useCallback((val) => {
-    const novo = typeof val === 'function' ? val(indice) : val;
+    const novo = typeof val === 'function' ? val(indiceRef.current) : val;
     setIndiceLocal(novo);
     if (setIndiceProp) setIndiceProp(novo);
-  }, [indice, setIndiceProp]);
+  }, [setIndiceProp]);
 
   const [alturaTela, setAlturaTela] = useState(window.innerHeight);
   const [audioLento, setAudioLento] = useState(false);
@@ -93,14 +103,35 @@ export default function Dinglab({
       const salvo = localStorage.getItem(chaveDinglab);
       if (salvo) {
         const arr = JSON.parse(salvo);
-        setLista(Array.isArray(arr) ? arr : []);
+        const listaCarregada = Array.isArray(arr) ? arr : [];
+        setLista(listaCarregada);
+
+        const targetId = sessionStorage.getItem('dinglab_card_id');
+        if (targetId) {
+          sessionStorage.removeItem('dinglab_card_id');
+          const idx = listaCarregada.findIndex(item => Number(item.id) === Number(targetId));
+          if (idx !== -1) {
+            setIndice(idx + 1);
+          } else {
+            setIndice(listaCarregada.length > 0 ? 1 : 0);
+          }
+        } else {
+          setIndice(listaCarregada.length > 0 ? 1 : 0);
+        }
       } else {
         setLista([]);
       }
     } catch (e) {
       setLista([]);
     }
-  }, [chaveDinglab, idiomaOrigem, idiomaEstudo]);
+  }, [chaveDinglab, idiomaOrigem, idiomaEstudo, setIndice]);
+
+  // Trava contra índices superiores ao tamanho real da lista
+  useEffect(() => {
+    if (lista.length > 0 && indice > lista.length) {
+      setIndice(lista.length);
+    }
+  }, [lista.length, indice, setIndice]);
 
   // 2. Altura dinâmica da viewport
   useEffect(() => {
@@ -166,8 +197,8 @@ export default function Dinglab({
 
             const idAtual = fraseAtual.id;
             const rankObj = frasesMaestria[idAtual];
-            const rankAtual = typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0);
-            const highestRank = typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual;
+            const rankAtual = Number(fraseAtual.rank) || (typeof rankObj === 'object' ? rankObj.rank : (rankObj || 0)) || 1;
+            const highestRank = Math.max((typeof rankObj === 'object' ? (rankObj.highest_rank || rankAtual) : rankAtual), rankAtual);
 
             // Mantém estritamente o rank atual (sem evoluir nem regredir) e define next_review para agora
             const novoObjeto = {
@@ -231,8 +262,20 @@ export default function Dinglab({
             // Tempo calculado idêntico ao TelaEstudo.jsx / App.jsx
             const tempoAudio = Math.max(textoEstudo.split(" ").length * 600, 1500);
 
-            // Aguarda o áudio terminar para avançar para o próximo card
+            // Aguarda o áudio terminar para avançar para o próximo card ou retornar ao Dìngloop
             timerFeedbackRef.current = setTimeout(() => {
+              const ehPitstop = sessionStorage.getItem('dinglab_modo_pitstop') === 'true';
+              sessionStorage.removeItem('dinglab_modo_pitstop');
+              if (ehPitstop) {
+                if (rotacionarBandeja) {
+                  rotacionarBandeja(idAtual, false);
+                }
+                if (jogarDominiumInteligente) {
+                  jogarDominiumInteligente();
+                }
+                return;
+              }
+
               setLista(novaLista);
               setModoProva(false);
               setResultadoFeedback(null);
@@ -531,13 +574,26 @@ export default function Dinglab({
     }
   }, [fraseAtual, idiomaEstudo, idiomaOrigem, opcoesSelecionadas, outroTexto]);
 
+  const handleVoltarAoDingloop = useCallback(() => {
+    sessionStorage.removeItem('dinglab_modo_pitstop');
+    setModoPitstop(false);
+    if (jogarDominiumInteligente) {
+      jogarDominiumInteligente();
+    } else {
+      mudarTela('menuCartoes');
+    }
+  }, [jogarDominiumInteligente, mudarTela]);
+
   // Tela de conclusão ("Dìnglab em dia!")
   if (lista.length === 0) {
     return (
       <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a', height: alturaTela, position: 'absolute', top: 0, left: 0, width: '100%' }}>
         <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
           <button
-            onClick={() => mudarTela('menuCartoes')}
+            onClick={() => {
+              sessionStorage.removeItem('dinglab_modo_pitstop');
+              mudarTela('menuCartoes');
+            }}
             style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}
           >
             ← {t?.quit || 'Sair'}
@@ -576,7 +632,10 @@ export default function Dinglab({
       <div style={{ ...styles.mobileContainer, justifyContent: 'flex-start' }}>
 
         <button
-          onClick={() => mudarTela('menuCartoes')}
+          onClick={() => {
+            sessionStorage.removeItem('dinglab_modo_pitstop');
+            mudarTela('menuCartoes');
+          }}
           style={{ ...styles.btnNavTopo, backgroundColor: ns.bg, color: ns.txt }}
         >
           ← {t?.quit || 'Sair'}
@@ -1175,67 +1234,94 @@ export default function Dinglab({
               boxSizing: 'border-box'
             }}
           >
-            <button
-              type="button"
-              disabled={indice === 0}
-              onClick={() => setIndice(prev => Math.max(0, prev - 1))}
-              style={{
-                padding: '9px 16px',
-                borderRadius: '10px',
-                border: 'none',
-                backgroundColor: indice === 0 ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
-                color: indice === 0 ? '#64748b' : ns.txt,
-                fontWeight: '800',
-                fontSize: '0.88rem',
-                cursor: indice === 0 ? 'not-allowed' : 'pointer',
-                opacity: indice === 0 ? 0.35 : 1,
-                minWidth: '100px',
-                minHeight: '38px',
-                transition: 'all 0.2s ease',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
-              ← {t?.prev || "Anterior"}
-            </button>
+            {modoPitstop ? (
+              <button
+                type="button"
+                onClick={handleVoltarAoDingloop}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: '12px',
+                  border: 'none',
+                  backgroundColor: ns.bg,
+                  color: ns.txt,
+                  fontWeight: '800',
+                  fontSize: '0.92rem',
+                  cursor: 'pointer',
+                  minHeight: '44px',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+              >
+                Tentar depois, voltar ao Dìngloop →
+              </button>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  disabled={indice === 0}
+                  onClick={() => setIndice(prev => Math.max(0, prev - 1))}
+                  style={{
+                    padding: '9px 16px',
+                    borderRadius: '10px',
+                    border: 'none',
+                    backgroundColor: indice === 0 ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
+                    color: indice === 0 ? '#64748b' : ns.txt,
+                    fontWeight: '800',
+                    fontSize: '0.88rem',
+                    cursor: indice === 0 ? 'not-allowed' : 'pointer',
+                    opacity: indice === 0 ? 0.35 : 1,
+                    minWidth: '100px',
+                    minHeight: '38px',
+                    transition: 'all 0.2s ease',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  {indice <= 1 ? "← Guia" : `← ${t?.prev || "Anterior"}`}
+                </button>
 
-            <span
-              style={{
-                fontSize: '0.86rem',
-                fontWeight: '800',
-                color: '#1e293b',
-                letterSpacing: '0.4px',
-                userSelect: 'none'
-              }}
-            >
-              {ehCardZero ? "Card 0" : `${indice} / ${lista.length}`}
-            </span>
+                <span
+                  style={{
+                    fontSize: '0.86rem',
+                    fontWeight: '800',
+                    color: '#1e293b',
+                    letterSpacing: '0.4px',
+                    userSelect: 'none'
+                  }}
+                >
+                  {ehCardZero ? "Guia" : `${indice} / ${lista.length}`}
+                </span>
 
-            <button
-              type="button"
-              disabled={indice >= lista.length}
-              onClick={() => setIndice(prev => Math.min(lista.length, prev + 1))}
-              style={{
-                padding: '9px 16px',
-                borderRadius: '10px',
-                border: 'none',
-                backgroundColor: indice >= lista.length ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
-                color: indice >= lista.length ? '#64748b' : ns.txt,
-                fontWeight: '800',
-                fontSize: '0.88rem',
-                cursor: indice >= lista.length ? 'not-allowed' : 'pointer',
-                opacity: indice >= lista.length ? 0.35 : 1,
-                minWidth: '100px',
-                minHeight: '38px',
-                transition: 'all 0.2s ease',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
-              {t?.next || "Próximo"} →
-            </button>
+                <button
+                  type="button"
+                  disabled={indice >= lista.length && !ehCardZero}
+                  onClick={() => setIndice(prev => Math.min(lista.length, prev + 1))}
+                  style={{
+                    padding: '9px 16px',
+                    borderRadius: '10px',
+                    border: 'none',
+                    backgroundColor: (indice >= lista.length && !ehCardZero) ? 'rgba(0, 0, 0, 0.06)' : ns.bg,
+                    color: (indice >= lista.length && !ehCardZero) ? '#64748b' : ns.txt,
+                    fontWeight: '800',
+                    fontSize: '0.88rem',
+                    cursor: (indice >= lista.length && !ehCardZero) ? 'not-allowed' : 'pointer',
+                    opacity: (indice >= lista.length && !ehCardZero) ? 0.35 : 1,
+                    minWidth: '100px',
+                    minHeight: '38px',
+                    transition: 'all 0.2s ease',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  {ehCardZero ? "Praticar →" : `${t?.next || "Próximo"} →`}
+                </button>
+              </>
+            )}
           </div>
 
         </div>

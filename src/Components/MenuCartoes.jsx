@@ -93,7 +93,8 @@ export default function MenuCartoes({
                     }
                   }
                 }
-              } catch (e) {}
+              } catch (e) { }
+              sessionStorage.removeItem('dinglab_modo_pitstop');
               mudarTela('dinglab');
             }}
             style={{

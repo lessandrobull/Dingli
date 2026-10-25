@@ -41,7 +41,7 @@ export function useGameEngine({
   const sincronizarPersistenciaBandeja = useCallback((fila) => {
     if (!chaveBandeja) return;
     if (!fila || fila.length === 0) {
-      try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+      try { localStorage.removeItem(chaveBandeja); } catch (e) { }
       return;
     }
 
@@ -59,9 +59,9 @@ export function useGameEngine({
         const texto = (typeof m === 'object' && m.texto) ? m.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
         return { id, texto };
       });
-      try { localStorage.setItem(chaveBandeja, JSON.stringify(payload)); } catch (e) {}
+      try { localStorage.setItem(chaveBandeja, JSON.stringify(payload)); } catch (e) { }
     } else {
-      try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+      try { localStorage.removeItem(chaveBandeja); } catch (e) { }
     }
   }, [chaveBandeja, frasesMaestria, frasesFiltradas, idiomaEstudo]);
 
@@ -72,12 +72,10 @@ export function useGameEngine({
     let fila = taskIdsRef.current || [];
 
     if (foiConcluido) {
-      fila = fila.filter(id => id !== idNum);
-    } else {
-      if (fila.includes(idNum)) {
-        fila = [...fila.filter(id => id !== idNum), idNum];
-      }
-    }
+    fila = fila.filter(id => id !== idNum);
+  } else {
+    fila = [...fila.filter(id => id !== idNum), idNum];
+  }
 
     taskIdsRef.current = fila;
     sincronizarPersistenciaBandeja(fila);
@@ -152,7 +150,7 @@ export function useGameEngine({
       try {
         const salvoD = localStorage.getItem(chaveDinglab);
         if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 1. Obter cartas de bandeja abandonada
@@ -173,7 +171,7 @@ export function useGameEngine({
               });
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 2. Obter cartas prontas de 'Próximas' (repousos macro vencidos + recém-saídas do Dìnglab)
@@ -254,7 +252,7 @@ export function useGameEngine({
       try {
         const salvoD = localStorage.getItem(chaveDinglab);
         if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 1ª Prioridade: Abandonadas anteriores
@@ -272,7 +270,7 @@ export function useGameEngine({
             });
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 2ª Prioridade: Próximas
@@ -341,7 +339,7 @@ export function useGameEngine({
       try {
         const salvoD = localStorage.getItem(chaveDinglab);
         if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // Filtra quem de fato ainda está pendente nesta rodada
@@ -358,7 +356,7 @@ export function useGameEngine({
     // Conclusão Natural: se não há mais cartas na fila, encerra a Task
     if (idsPendentes.length === 0) {
       if (chaveBandeja) {
-        try { localStorage.removeItem(chaveBandeja); } catch (e) {}
+        try { localStorage.removeItem(chaveBandeja); } catch (e) { }
       }
       return { resetarTimerTask, tipo: "concluido" };
     }
@@ -373,13 +371,20 @@ export function useGameEngine({
     const idxNoTopico = listaRef.findIndex(f => Number(f.id) === idAlvo);
 
     if (rankAlvo > 0) {
+      const textoAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.texto) ? maestriaAlvo.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
+      const traducaoAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.traducao) ? maestriaAlvo.traducao : (fObj ? (fObj[idiomaOrigem] || fObj.traducao || "") : "");
+      const zhAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.texto_zh) ? maestriaAlvo.texto_zh : (fObj ? (fObj.zh || fObj.texto_zh || "") : "");
       return {
         tipo: "revisao",
         dados: {
           ...(typeof maestriaAlvo === 'object' ? maestriaAlvo : {}),
           id: idAlvo,
           rank: rankAlvo,
-          texto: (typeof maestriaAlvo === 'object' && maestriaAlvo.texto) ? maestriaAlvo.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "")
+          texto: textoAlvo,
+          traducao: traducaoAlvo,
+          texto_zh: zhAlvo,
+          nivel: (typeof maestriaAlvo === 'object' && maestriaAlvo.nivel) || fObj?.level || fObj?.nivel || nivelAtivo || "A1",
+          topico: (typeof maestriaAlvo === 'object' && maestriaAlvo.topico) || fObj?.topico || fObj?.topic || topicoAtivo || ""
         }
       };
     }
