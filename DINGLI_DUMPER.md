@@ -531,7 +531,6 @@ function App() {
         ? zhSalvar
         : fraseOriginal;
       const finalizarTransfere = () => {
-        setResultadoFeedback(null);
         setTranscricaoAoVivo("");
         setStatusVoz('IDLE');
         processandoAcertoRef.current = false;
@@ -583,19 +582,24 @@ function App() {
         ? zhSalvar
         : fraseOriginal;
 
-      // ETAPA 1: Áudio LENTO pós-erro com SORTEIO DE VOZ DIFERENTE DA ANTERIOR
-      if (falarRef.current) {
-        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, true);
-      }
-
-      const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 850, 1500);
-
-      setTimeout(() => {
-        // Mantém resultadoFeedback 'erro' para que as palavras vermelhas fiquem visíveis e clicáveis
+     // Finaliza o feedback assim que o áudio de correção termina
+      const finalizarAudioErro = () => {
         setTranscricaoAoVivo("");
         setStatusVoz('IDLE');
         processandoAcertoRef.current = false;
-      }, tempoAudioErro);
+        if (!tentativas || tentativas < 3) {
+          setResultadoFeedback(null);
+        } else {
+          setResultadoFeedback('dinglab');
+        }
+      };
+
+      if (falarRef.current) {
+        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, true, finalizarAudioErro);
+      } else {
+        const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 850, 1500);
+        setTimeout(finalizarAudioErro, tempoAudioErro);
+      }
     }
   }, [indice, frasesFiltradas, idiomaEstudo, idiomaOrigem, frasesMaestria, nivelAtivo, topicoAtivo, modoJogo, setResultadoFeedback, setSessaoDominium, setFrasesMaestria, setFilaErros, setFilaAcertos, setIndice, fraseAtivaGlobal]);
 
@@ -4484,10 +4488,39 @@ const ExercicioEscrita = ({
               setValorInput(texto);
             }}
             onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
-            style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
+            style={{
+              ...styles.inputSobreposto,
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              lineHeight: '1.2',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              width: '100%',
+              maxWidth: '100%',
+              boxSizing: 'border-box',
+              color: resultadoFeedback ? 'transparent' : '#1e293b'
+            }}
           />
           {resultadoFeedback && (
-            <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
+            <div style={{
+              ...styles.inputSobreposto,
+              pointerEvents: 'none',
+              backgroundColor: 'transparent',
+              borderBottomColor: 'transparent',
+              position: 'absolute',
+              left: 0,
+              top: 1,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              lineHeight: '1.2',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              width: '100%',
+              maxWidth: '100%',
+              boxSizing: 'border-box'
+            }}>
               {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
                 const userWords = valorInput.trim().split(/\s+/);
                 const clean = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
@@ -4505,77 +4538,89 @@ const ExercicioEscrita = ({
 
 const ExercicioVoz = ({
   textoEstudo, resultadoFeedback, idiomaEstudo, temas, frase,
-  transcricaoAoVivo, indicesOcultosVoz, styles, t, tentativasVoz }) => {
+  transcricaoAoVivo, indicesOcultosVoz, styles, t, tentativasVoz, statusVoz }) => {
   return (
     <div style={{ textAlign: 'center', width: '100%' }}>
       <p style={{
         ...styles.textoFrasePrincipal,
-        marginTop: (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? '-10px' : '-4px'
-      }}>        {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{textoEstudo}</span> : (() => {
-        let currentZhIndex = 0;
-        const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
-        return textoEstudo.split(" ").map((word, i) => {
-          const normalizarPalavra = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
-          let pLimpa = normalizarPalavra(word);
-          if (idiomaEstudo === 'pi') {
-            const numSyllables = (word.match(/[aeiouüáéíóúàèìòùǎěǐǒǔāēīōū]+/gi) || [1]).length;
-            pLimpa = zhLimpo.substring(currentZhIndex, currentZhIndex + numSyllables);
-            currentZhIndex += numSyllables;
-          }
-          const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
-          const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
-          const oculto = indicesOcultosVoz.includes(i);
-          let cor = oculto ? 'transparent' : '#000';
-          let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
-          const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
+        marginTop: (resultadoFeedback === 'dinglab') ? '-10px' : '-4px'
+      }}>
+        {(() => {
+          let currentZhIndex = 0;
+          const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
+          const ehAcertoTotal = resultadoFeedback === 'acerto';
+
+          return textoEstudo.split(" ").map((word, i) => {
+            const normalizarPalavra = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+            let pLimpa = normalizarPalavra(word);
+            if (idiomaEstudo === 'pi') {
+              const numSyllables = (word.match(/[aeiouüáéíóúàèìòùǎěǐǒǔāēīōū]+/gi) || [1]).length;
+              pLimpa = zhLimpo.substring(currentZhIndex, currentZhIndex + numSyllables);
+              currentZhIndex += numSyllables;
+            }
+            const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+            const estaNaFala = ehAcertoTotal || (pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa)));
+            const oculto = !ehAcertoTotal && indicesOcultosVoz.includes(i);
+            let cor = oculto ? 'transparent' : '#000';
+            let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
+            const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
 
           if (estaNaFala) {
-            cor = COR_ACERTO;
-            borderB = '2px solid transparent';
-          } else if (resultadoFeedback === 'erro') {
-            cor = tentativasVoz >= 3 ? '#0f172a' : '#ef4444';
-            borderB = 'none';
-          }
+              cor = COR_ACERTO;
+              borderB = '2px solid transparent';
+            } else if (resultadoFeedback === 'erro') {
+              cor = '#ef4444';
+              borderB = '2px solid transparent';
+            } else if (resultadoFeedback === 'dinglab') {
+              cor = '#0f172a';
+              borderB = '2px solid transparent';
+            }
 
-          return (
-            <span
-              key={i}
-              onClick={() => {
-                if (ehErro) {
-                  tocarAudioPalavra(word, idiomaEstudo);
-                }
-              }}
-              title={ehErro ? (t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada") : ""}
-              style={{
-                color: cor,
-                borderBottom: borderB,
-                paddingBottom: '2px',
-                display: 'inline-block',
-                marginRight: '5px',
-                cursor: ehErro ? 'pointer' : 'default',
-                userSelect: 'none',
-                transition: 'transform 0.15s ease'
-              }}
-              onMouseDown={(e) => {
-                if (ehErro) e.currentTarget.style.transform = 'scale(0.92)';
-              }}
-              onMouseUp={(e) => {
-                if (ehErro) e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              {word}
-            </span>
-          );
-        });
-      })()}
+            return (
+              <span
+                key={i}
+                onClick={() => {
+                  if (ehErro) {
+                    tocarAudioPalavra(word, idiomaEstudo);
+                  }
+                }}
+                title={ehErro ? (t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada") : ""}
+                style={{
+                  color: cor,
+                  borderBottom: borderB,
+                  paddingBottom: '2px',
+                  display: 'inline-block',
+                  marginRight: '5px',
+                  cursor: ehErro ? 'pointer' : 'default',
+                  userSelect: 'none',
+                  transition: 'transform 0.15s ease'
+                }}
+                onMouseDown={(e) => {
+                  if (ehErro) e.currentTarget.style.transform = 'scale(0.92)';
+                }}
+                onMouseUp={(e) => {
+                  if (ehErro) e.currentTarget.style.transform = 'scale(1)';
+                }}
+              >
+                {word}
+              </span>
+            );
+          });
+        })()}
       </p>
 
-      {/* Dica visual */}
-      {resultadoFeedback === 'erro' && tentativasVoz < 3 && (
-        <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#64748b', fontWeight: '600', textAlign: 'center' }}>
-          {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
-        </div>
-      )}
+      {/* Dica visual com altura reservada para manter o centro imóvel */}
+      <div style={{
+        marginTop: '12px',
+        minHeight: '20px',
+        fontSize: '0.84rem',
+        color: '#64748b',
+        fontWeight: '600',
+        textAlign: 'center',
+        visibility: (resultadoFeedback === 'erro' && tentativasVoz < 3) ? 'visible' : 'hidden'
+      }}>
+        {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
+      </div>
     </div>
   );
 };
@@ -4618,20 +4663,30 @@ export default function TelaEstudo({
 
   const ns = navStyle(idiomaEstudo);
 
-  const [feedbackLocal, setFeedbackLocal] = useState(null);
-  const resultadoFeedback = (resultadoFeedbackProp !== undefined && resultadoFeedbackProp !== null) ? resultadoFeedbackProp : feedbackLocal;
+ const [feedbackLocal, setFeedbackLocal] = useState(null);
+  const resultadoFeedback = (resultadoFeedbackProp !== undefined) ? resultadoFeedbackProp : feedbackLocal;
   const setResultadoFeedback = (val) => {
     setFeedbackLocal(val);
     if (typeof setResultadoFeedbackProp === 'function') {
       setResultadoFeedbackProp(val);
     }
   };
+  const ehDinglabAtivo = resultadoFeedback === 'dinglab';
   const [valorInput, setValorInput] = useState("");
   const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "" });
   const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
   const [slotsEx3, setSlotsEx3] = useState([]);
-  const [indicesOcultosVoz, setIndicesOcultosVoz] = useState([]);
   const [, setTentativaFinalizada] = useState(false);
+
+  const indicesOcultosVoz = React.useMemo(() => {
+    if (!modoExercicio || !RANKS_VOICE.map(Number).includes(Number(exercicioNivel)) || !frase) return [];
+    const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
+    const percentual = (Number(exercicioNivel) <= 9) ? 0.3 : (Number(exercicioNivel) <= 18) ? 0.7 : 1.0;
+    const palavras = fraseOriginal.split(" ");
+    const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(Number(exercicioNivel)) ? 2 : 0), Math.round(palavras.length * percentual));
+    return Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i);
+  }, [modoExercicio, exercicioNivel, frase, idiomaEstudo]);
+
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
 
@@ -4865,12 +4920,11 @@ export default function TelaEstudo({
           }
         }
         setPalavrasOpcoes(opcoesEmbaralhadas);
-      } else if (RANKS_VOICE.includes(exercicioNivel)) {
-        const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
-        setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
+     } else if (RANKS_VOICE.includes(exercicioNivel)) {
+        // Cálculo síncrono via useMemo para evitar o piscar da frase
       }
     } else {
-      setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]); setIndicesOcultosVoz([]);
+      setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]);
       if (editableRef.current) editableRef.current.innerText = "";
     }
   }, [modoExercicio, exercicioNivel, indice, frase, idiomaEstudo, falar]);
@@ -4928,7 +4982,6 @@ export default function TelaEstudo({
         setSessaoDominium(prev => ({ ...prev, recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), acertosTempo: [...(prev.acertosTempo || []).filter(a => a.frase !== fraseOriginal), { frase: fraseOriginal, id: frase.id, time: Date.now(), curso: `${idiomaOrigem}_${idiomaEstudo}`, nivel: nivelAtivo, topico: topicoAtivo }] }));
       }
       const concluirExercicio = () => {
-        setResultadoFeedback(null);
         processandoAcertoRef.current = false;
         if (jogarDominiumRef.current) jogarDominiumRef.current();
       };
@@ -5206,7 +5259,12 @@ export default function TelaEstudo({
     }
   }, [exercicioNivel, modoExercicio, indice, resultadoFeedback, modalReporteAberto]);
 
-  const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
+ const isCheckDisabled = modoExercicio && (
+    resultadoFeedback === 'acerto' ||
+    resultadoFeedback === 'erro' ||
+    (RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) ||
+    (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed))
+  );
 
   const temAudioExercicio = !modoExercicio || ![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel));
 
@@ -5222,7 +5280,8 @@ export default function TelaEstudo({
             ...styles.cardFixoRelativo,
             position: 'relative',
             margin: '0 auto',
-            ...(resultadoFeedback === 'erro' && tentativasVoz >= 3 ? {
+            transition: 'background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease',
+            ...(ehDinglabAtivo ? {
               backgroundColor: 'rgba(255, 255, 255, 0.3)',
               backdropFilter: 'blur(14px)',
               WebkitBackdropFilter: 'blur(14px)',
@@ -5230,9 +5289,9 @@ export default function TelaEstudo({
             } : {}),
             borderColor: resultadoFeedback === 'acerto'
               ? COR_ACERTO
-              : (resultadoFeedback === 'erro'
-                ? (tentativasVoz >= 3 ? 'rgba(255, 255, 255, 0.45)' : '#ef4444')
-                : 'transparent'),
+              : (ehDinglabAtivo
+                ? 'rgba(255, 255, 255, 0.45)'
+                : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent')),
             outline: 'none'
           }}
           onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}
@@ -5412,7 +5471,7 @@ export default function TelaEstudo({
           <div style={styles.topCardAreaFixed}>
             {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{frase?.topico || topicoAtivo}</p>}
             {modoExercicio && (
-              (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? (
+              ehDinglabAtivo ? (
                 <span
                   style={{
                     display: 'inline-block',
@@ -5436,13 +5495,13 @@ export default function TelaEstudo({
                 </span>
               )
             )}
-            {modoExercicio && !isEx3 && ([1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) || (resultadoFeedback === 'erro' && tentativasVoz >= 3)) && (
+            {modoExercicio && !isEx3 && ([1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) || ehDinglabAtivo) && (
               <div style={{
-                color: (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? '#1e293b' : '#64748b',
+                color: ehDinglabAtivo ? '#1e293b' : '#64748b',
                 lineHeight: '1.2',
                 fontSize: '1.1rem',
                 fontWeight: '700',
-                marginTop: (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? '-3px' : '10px',
+                marginTop: ehDinglabAtivo ? '-3px' : '10px',
                 textAlign: 'center',
                 width: '100%',
                 boxSizing: 'border-box'
@@ -5484,33 +5543,42 @@ export default function TelaEstudo({
                       <ExercicioVoz textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
                         temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
                         indicesOcultosVoz={indicesOcultosVoz} styles={styles} t={t}
-                        tentativasVoz={tentativasVoz} />
+                        tentativasVoz={tentativasVoz} statusVoz={statusVoz} />
 
                       {/* ETAPA 2: AVISO NO 3º ERRO CONSECUTIVO COM SAÍDA PARA O FINAL DA TASK */}
-                      {resultadoFeedback === 'erro' && tentativasVoz >= 3 && (
-                        <div style={{
-                          position: 'absolute',
-                          bottom: '90px',
-                          left: '20px',
-                          right: '20px',
-                          padding: '10px 10px',
-                          backgroundColor: 'rgba(255, 255, 255, 0.55)',
-                          borderRadius: '16px',
-                          border: '1px solid rgba(255, 255, 255, 0.65)',
-                          boxSizing: 'border-box',
-                          zIndex: 10
-                        }}>
-                          <p style={{
-                            margin: 0,
-                            fontSize: '1.11rem',
-                            color: '#334155',
-                            fontWeight: '600',
-                            lineHeight: '1.4',
-                            textAlign: 'center'
+                      {ehDinglabAtivo && (
+                        <>
+                          <style>{`
+                            @keyframes fadeInAviso {
+                              from { opacity: 0; transform: translateY(4px); }
+                              to { opacity: 1; transform: translateY(0); }
+                            }
+                          `}</style>
+                          <div style={{
+                            position: 'absolute',
+                            bottom: '90px',
+                            left: '20px',
+                            right: '20px',
+                            padding: '10px 10px',
+                            backgroundColor: 'rgba(255, 255, 255, 0.55)',
+                            borderRadius: '16px',
+                            border: '1px solid rgba(255, 255, 255, 0.65)',
+                            boxSizing: 'border-box',
+                            zIndex: 10,
+                            animation: 'fadeInAviso 0.25s ease-out forwards'
                           }}>
-                            Vamos treinar esta frase no Dìnglab. Prefere treinar já ou continuar com as outras no Dìngloop primeiro?
-                          </p>
-                        </div>
+                            <p style={{
+                              margin: 0,
+                              fontSize: '1.11rem',
+                              color: '#334155',
+                              fontWeight: '600',
+                              lineHeight: '1.4',
+                              textAlign: 'center'
+                            }}>
+                              Vamos treinar esta frase no Dìnglab. Prefere treinar já ou continuar com as outras no Dìngloop primeiro?
+                            </p>
+                          </div>
+                        </>
                       )}
                     </div>
                   ) : (
@@ -5577,7 +5645,7 @@ export default function TelaEstudo({
                       </button>
 
                       {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
-                      {!(resultadoFeedback === 'erro' && tentativasVoz >= 3) && (
+                      {!ehDinglabAtivo && (
                         temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
                           <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
                             {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
@@ -5596,7 +5664,7 @@ export default function TelaEstudo({
                             if (pararEAvaliarVoz) pararEAvaliarVoz();
                             else if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz();
                           } else if (statusVoz === 'IDLE') {
-                            if (tentativasVoz >= 3 && resultadoFeedback === 'erro') {
+                            if (ehDinglabAtivo) {
                               handleRevisarMaisTarde();
                               return;
                             }
@@ -5609,15 +5677,19 @@ export default function TelaEstudo({
                           ...styles.btnAcaoExtra,
                           backgroundColor: ns.bg,
                           color: ns.txt,
-                          opacity: (resultadoFeedback === 'acerto' || statusVoz === 'EVALUATING') ? 0.5 : 1
+                          opacity: statusVoz === 'EVALUATING' ? 0.5 : 1
                         }}
                       >
                         {statusVoz === 'RECORDING' ? (
                           t.check || 'Verificar'
                         ) : statusVoz === 'EVALUATING' ? (
                           '...'
+                        ) : resultadoFeedback === 'acerto' ? (
+                          'Ok'
+                        ) : ehDinglabAtivo ? (
+                          t?.continueCycle || 'Continuar'
                         ) : resultadoFeedback === 'erro' ? (
-                          tentativasVoz >= 3 ? (t?.continueCycle || 'Continuar') : (t?.speakAgain || 'Falar de novo')
+                          t?.speakAgain || 'Falar de novo'
                         ) : (
                           t.speakNow
                         )}
@@ -5654,7 +5726,7 @@ export default function TelaEstudo({
                           cursor: isCheckDisabled ? 'not-allowed' : 'pointer'
                         }}
                       >
-                        {t.check}
+                        {resultadoFeedback === 'acerto' ? 'Ok' : (t.check || 'Verificar')}
                       </button>
                     </>
                   )}
