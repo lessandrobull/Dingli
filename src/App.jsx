@@ -220,7 +220,6 @@ function App() {
         ? zhSalvar
         : fraseOriginal;
       const finalizarTransfere = () => {
-        setResultadoFeedback(null);
         setTranscricaoAoVivo("");
         setStatusVoz('IDLE');
         processandoAcertoRef.current = false;
@@ -272,19 +271,24 @@ function App() {
         ? zhSalvar
         : fraseOriginal;
 
-      // ETAPA 1: Áudio LENTO pós-erro com SORTEIO DE VOZ DIFERENTE DA ANTERIOR
-      if (falarRef.current) {
-        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, true);
-      }
-
-      const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 850, 1500);
-
-      setTimeout(() => {
-        // Mantém resultadoFeedback 'erro' para que as palavras vermelhas fiquem visíveis e clicáveis
+     // Finaliza o feedback assim que o áudio de correção termina
+      const finalizarAudioErro = () => {
         setTranscricaoAoVivo("");
         setStatusVoz('IDLE');
         processandoAcertoRef.current = false;
-      }, tempoAudioErro);
+        if (!tentativas || tentativas < 3) {
+          setResultadoFeedback(null);
+        } else {
+          setResultadoFeedback('dinglab');
+        }
+      };
+
+      if (falarRef.current) {
+        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, true, finalizarAudioErro);
+      } else {
+        const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 850, 1500);
+        setTimeout(finalizarAudioErro, tempoAudioErro);
+      }
     }
   }, [indice, frasesFiltradas, idiomaEstudo, idiomaOrigem, frasesMaestria, nivelAtivo, topicoAtivo, modoJogo, setResultadoFeedback, setSessaoDominium, setFrasesMaestria, setFilaErros, setFilaAcertos, setIndice, fraseAtivaGlobal]);
 

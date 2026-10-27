@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
 import { supabase } from '../supabaseClient';
-import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
+import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO, CORES_POR_IDIOMA } from '../themeColors';
 import { calcularProximoRank } from '../useSRSLogic';
 import { tocarAudioPalavra } from '../services/audioCacheService';
 
@@ -81,10 +81,39 @@ const ExercicioEscrita = ({
               setValorInput(texto);
             }}
             onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
-            style={{ ...styles.inputSobreposto, display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box', color: resultadoFeedback ? 'transparent' : '#1e293b' }}
+            style={{
+              ...styles.inputSobreposto,
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              lineHeight: '1.2',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              width: '100%',
+              maxWidth: '100%',
+              boxSizing: 'border-box',
+              color: resultadoFeedback ? 'transparent' : '#1e293b'
+            }}
           />
           {resultadoFeedback && (
-            <div style={{ ...styles.inputSobreposto, pointerEvents: 'none', backgroundColor: 'transparent', borderBottomColor: 'transparent', display: 'block', position: 'absolute', left: 0, top: 0, whiteSpace: 'nowrap', overflow: 'hidden', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
+            <div style={{
+              ...styles.inputSobreposto,
+              pointerEvents: 'none',
+              backgroundColor: 'transparent',
+              borderBottomColor: 'transparent',
+              position: 'absolute',
+              left: 0,
+              top: 1,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              lineHeight: '1.2',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              width: '100%',
+              maxWidth: '100%',
+              boxSizing: 'border-box'
+            }}>
               {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
                 const userWords = valorInput.trim().split(/\s+/);
                 const clean = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
@@ -102,13 +131,18 @@ const ExercicioEscrita = ({
 
 const ExercicioVoz = ({
   textoEstudo, resultadoFeedback, idiomaEstudo, temas, frase,
-  transcricaoAoVivo, indicesOcultosVoz, styles, t }) => {
+  transcricaoAoVivo, indicesOcultosVoz, styles, t, tentativasVoz, statusVoz }) => {
   return (
     <div style={{ textAlign: 'center', width: '100%' }}>
-      <p style={styles.textoFrasePrincipal}>
-        {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{textoEstudo}</span> : (() => {
+      <p style={{
+        ...styles.textoFrasePrincipal,
+        marginTop: (resultadoFeedback === 'dinglab') ? '-10px' : '-4px'
+      }}>
+        {(() => {
           let currentZhIndex = 0;
           const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
+          const ehAcertoTotal = resultadoFeedback === 'acerto';
+
           return textoEstudo.split(" ").map((word, i) => {
             const normalizarPalavra = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
             let pLimpa = normalizarPalavra(word);
@@ -118,18 +152,21 @@ const ExercicioVoz = ({
               currentZhIndex += numSyllables;
             }
             const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
-            const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
-            const oculto = indicesOcultosVoz.includes(i);
+            const estaNaFala = ehAcertoTotal || (pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa)));
+            const oculto = !ehAcertoTotal && indicesOcultosVoz.includes(i);
             let cor = oculto ? 'transparent' : '#000';
             let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
             const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
 
-            if (estaNaFala) {
+          if (estaNaFala) {
               cor = COR_ACERTO;
               borderB = '2px solid transparent';
             } else if (resultadoFeedback === 'erro') {
               cor = '#ef4444';
-              borderB = 'none';
+              borderB = '2px solid transparent';
+            } else if (resultadoFeedback === 'dinglab') {
+              cor = '#0f172a';
+              borderB = '2px solid transparent';
             }
 
             return (
@@ -165,12 +202,18 @@ const ExercicioVoz = ({
         })()}
       </p>
 
-      {/* Dica visual */}
-      {resultadoFeedback === 'erro' && (
-        <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#64748b', fontWeight: '600', textAlign: 'center' }}>
-          {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
-        </div>
-      )}
+      {/* Dica visual com altura reservada para manter o centro imóvel */}
+      <div style={{
+        marginTop: '12px',
+        minHeight: '20px',
+        fontSize: '0.84rem',
+        color: '#64748b',
+        fontWeight: '600',
+        textAlign: 'center',
+        visibility: (resultadoFeedback === 'erro' && tentativasVoz < 3) ? 'visible' : 'hidden'
+      }}>
+        {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
+      </div>
     </div>
   );
 };
@@ -213,20 +256,30 @@ export default function TelaEstudo({
 
   const ns = navStyle(idiomaEstudo);
 
-  const [feedbackLocal, setFeedbackLocal] = useState(null);
-  const resultadoFeedback = (resultadoFeedbackProp !== undefined && resultadoFeedbackProp !== null) ? resultadoFeedbackProp : feedbackLocal;
+ const [feedbackLocal, setFeedbackLocal] = useState(null);
+  const resultadoFeedback = (resultadoFeedbackProp !== undefined) ? resultadoFeedbackProp : feedbackLocal;
   const setResultadoFeedback = (val) => {
     setFeedbackLocal(val);
     if (typeof setResultadoFeedbackProp === 'function') {
       setResultadoFeedbackProp(val);
     }
   };
+  const ehDinglabAtivo = resultadoFeedback === 'dinglab';
   const [valorInput, setValorInput] = useState("");
   const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "" });
   const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
   const [slotsEx3, setSlotsEx3] = useState([]);
-  const [indicesOcultosVoz, setIndicesOcultosVoz] = useState([]);
   const [, setTentativaFinalizada] = useState(false);
+
+  const indicesOcultosVoz = React.useMemo(() => {
+    if (!modoExercicio || !RANKS_VOICE.map(Number).includes(Number(exercicioNivel)) || !frase) return [];
+    const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
+    const percentual = (Number(exercicioNivel) <= 9) ? 0.3 : (Number(exercicioNivel) <= 18) ? 0.7 : 1.0;
+    const palavras = fraseOriginal.split(" ");
+    const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(Number(exercicioNivel)) ? 2 : 0), Math.round(palavras.length * percentual));
+    return Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i);
+  }, [modoExercicio, exercicioNivel, frase, idiomaEstudo]);
+
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
 
@@ -460,12 +513,11 @@ export default function TelaEstudo({
           }
         }
         setPalavrasOpcoes(opcoesEmbaralhadas);
-      } else if (RANKS_VOICE.includes(exercicioNivel)) {
-        const finalQtdVoz = Math.max(([3, 8, 12, 17, 21, 26].includes(exercicioNivel) ? 2 : 0), Math.round(palavras.length * percentual));
-        setIndicesOcultosVoz(Array.from({ length: Math.min(finalQtdVoz, palavras.length) }, (_, i) => i));
+     } else if (RANKS_VOICE.includes(exercicioNivel)) {
+        // Cálculo síncrono via useMemo para evitar o piscar da frase
       }
     } else {
-      setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]); setIndicesOcultosVoz([]);
+      setResultadoFeedback(null); setValorInput(""); setPalavrasOpcoes([]); setSlotsEx3([]);
       if (editableRef.current) editableRef.current.innerText = "";
     }
   }, [modoExercicio, exercicioNivel, indice, frase, idiomaEstudo, falar]);
@@ -523,7 +575,6 @@ export default function TelaEstudo({
         setSessaoDominium(prev => ({ ...prev, recuperadas: (prev.recuperadas || []).filter(f => (f.frase || f) !== fraseOriginal), acertosTempo: [...(prev.acertosTempo || []).filter(a => a.frase !== fraseOriginal), { frase: fraseOriginal, id: frase.id, time: Date.now(), curso: `${idiomaOrigem}_${idiomaEstudo}`, nivel: nivelAtivo, topico: topicoAtivo }] }));
       }
       const concluirExercicio = () => {
-        setResultadoFeedback(null);
         processandoAcertoRef.current = false;
         if (jogarDominiumRef.current) jogarDominiumRef.current();
       };
@@ -801,7 +852,12 @@ export default function TelaEstudo({
     }
   }, [exercicioNivel, modoExercicio, indice, resultadoFeedback, modalReporteAberto]);
 
-  const isCheckDisabled = modoExercicio && ((RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) || (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed)));
+ const isCheckDisabled = modoExercicio && (
+    resultadoFeedback === 'acerto' ||
+    resultadoFeedback === 'erro' ||
+    (RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) ||
+    (RANKS_SELECT.includes(exercicioNivel) && !slotsEx3.some(s => s && !s.fixed))
+  );
 
   const temAudioExercicio = !modoExercicio || ![4, 13, 22, 6, 15, 24, 8, 17, 26].includes(Number(exercicioNivel));
 
@@ -812,8 +868,27 @@ export default function TelaEstudo({
         {!modoExercicio && (
           <div style={styles.headerEstudoMinimo}><span style={styles.contadorCompacto}>{indice + 1} / {frasesFiltradas.length}</span></div>
         )}
-        <div style={{ ...styles.cardFixoRelativo, position: 'relative', margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? COR_ACERTO : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent'), outline: 'none' }}
-          onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}>
+        <div
+          style={{
+            ...styles.cardFixoRelativo,
+            position: 'relative',
+            margin: '0 auto',
+            transition: 'background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease',
+            ...(ehDinglabAtivo ? {
+              backgroundColor: 'rgba(255, 255, 255, 0.3)',
+              backdropFilter: 'blur(14px)',
+              WebkitBackdropFilter: 'blur(14px)',
+              boxShadow: '0 12px 32px rgba(0, 0, 0, 0.16)'
+            } : {}),
+            borderColor: resultadoFeedback === 'acerto'
+              ? COR_ACERTO
+              : (ehDinglabAtivo
+                ? 'rgba(255, 255, 255, 0.45)'
+                : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent')),
+            outline: 'none'
+          }}
+          onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}
+        >
 
           {/* Botao discreto ⚑ no topo esquerdo do card */}
           <button
@@ -987,9 +1062,43 @@ export default function TelaEstudo({
           )}
 
           <div style={styles.topCardAreaFixed}>
-            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{frase?.topico || topicoAtivo}</p>}            {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
-            {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) && (
-              <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginTop: '10px', textAlign: 'center', width: '100%' }}>
+            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{frase?.topico || topicoAtivo}</p>}
+            {modoExercicio && (
+              ehDinglabAtivo ? (
+                <span
+                  style={{
+                    display: 'inline-block',
+                    padding: '3px 14px',
+                    borderRadius: '16px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.65)',
+                    color: '#0f172a',
+                    fontSize: '0.82rem',
+                    fontWeight: '900',
+                    letterSpacing: '1.5px',
+                    textTransform: 'uppercase',
+                    marginBottom: '10px',
+                    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.05)'
+                  }}
+                >
+                  Dìnglab
+                </span>
+              ) : (
+                <span style={styles.labelInstrucao}>
+                  {RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}
+                </span>
+              )
+            )}
+            {modoExercicio && !isEx3 && ([1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) || ehDinglabAtivo) && (
+              <div style={{
+                color: ehDinglabAtivo ? '#1e293b' : '#64748b',
+                lineHeight: '1.2',
+                fontSize: '1.1rem',
+                fontWeight: '700',
+                marginTop: ehDinglabAtivo ? '-3px' : '10px',
+                textAlign: 'center',
+                width: '100%',
+                boxSizing: 'border-box'
+              }}>
                 {idiomaOrigem === 'pi' ? (frase?.zh || frase?.texto_zh) : (frase?.[idiomaOrigem] || frase?.traducao)}
               </div>
             )}
@@ -1026,42 +1135,43 @@ export default function TelaEstudo({
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
                       <ExercicioVoz textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
                         temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
-                        indicesOcultosVoz={indicesOcultosVoz} styles={styles} t={t} />
+                        indicesOcultosVoz={indicesOcultosVoz} styles={styles} t={t}
+                        tentativasVoz={tentativasVoz} statusVoz={statusVoz} />
 
                       {/* ETAPA 2: AVISO NO 3º ERRO CONSECUTIVO COM SAÍDA PARA O FINAL DA TASK */}
-                      {resultadoFeedback === 'erro' && tentativasVoz >= 3 && (
-                        <div style={{
-                          marginTop: '16px',
-                          padding: '14px 16px',
-                          backgroundColor: '#fef2f2',
-                          borderRadius: '12px',
-                          border: '1px solid #fecaca',
-                          textAlign: 'center',
-                          width: '100%',
-                          maxWidth: '360px',
-                          boxSizing: 'border-box'
-                        }}>
-                          <p style={{ margin: 0, fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.45' }}>
-                            Relaxa, pronúncia exige costume. Essa frase foi guardada no seu Dìnglab para você treinar com calma quantas vezes quiser. Prefere treinar já ou continuar com as outras no Dìngloop?
-                          </p>
+                      {ehDinglabAtivo && (
+                        <>
+                          <style>{`
+                            @keyframes fadeInAviso {
+                              from { opacity: 0; transform: translateY(4px); }
+                              to { opacity: 1; transform: translateY(0); }
+                            }
+                          `}</style>
                           <div style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            marginTop: '12px',
-                            padding: '0 28px',
-                            color: '#991b1b'
+                            position: 'absolute',
+                            bottom: '90px',
+                            left: '20px',
+                            right: '20px',
+                            padding: '10px 10px',
+                            backgroundColor: 'rgba(255, 255, 255, 0.55)',
+                            borderRadius: '16px',
+                            border: '1px solid rgba(255, 255, 255, 0.65)',
+                            boxSizing: 'border-box',
+                            zIndex: 10,
+                            animation: 'fadeInAviso 0.25s ease-out forwards'
                           }}>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                              <line x1="17" y1="7" x2="7" y2="17" />
-                              <polyline points="17 17 7 17 7 7" />
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                              <line x1="7" y1="7" x2="17" y2="17" />
-                              <polyline points="7 17 17 17 17 7" />
-                            </svg>
+                            <p style={{
+                              margin: 0,
+                              fontSize: '1.11rem',
+                              color: '#334155',
+                              fontWeight: '600',
+                              lineHeight: '1.4',
+                              textAlign: 'center'
+                            }}>
+                              Vamos treinar esta frase no Dìnglab. Prefere treinar já ou continuar com as outras no Dìngloop primeiro?
+                            </p>
                           </div>
-                        </div>
+                        </>
                       )}
                     </div>
                   ) : (
@@ -1127,8 +1237,8 @@ export default function TelaEstudo({
                         {t?.dinglab || "Dìnglab"}
                       </button>
 
-                     {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
-                      {!(resultadoFeedback === 'erro' && tentativasVoz >= 3) && (
+                      {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
+                      {!ehDinglabAtivo && (
                         temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
                           <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
                             {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
@@ -1147,7 +1257,7 @@ export default function TelaEstudo({
                             if (pararEAvaliarVoz) pararEAvaliarVoz();
                             else if (window.dingliPararEAvaliarVoz) window.dingliPararEAvaliarVoz();
                           } else if (statusVoz === 'IDLE') {
-                            if (tentativasVoz >= 3 && resultadoFeedback === 'erro') {
+                            if (ehDinglabAtivo) {
                               handleRevisarMaisTarde();
                               return;
                             }
@@ -1160,15 +1270,19 @@ export default function TelaEstudo({
                           ...styles.btnAcaoExtra,
                           backgroundColor: ns.bg,
                           color: ns.txt,
-                          opacity: (resultadoFeedback === 'acerto' || statusVoz === 'EVALUATING') ? 0.5 : 1
+                          opacity: statusVoz === 'EVALUATING' ? 0.5 : 1
                         }}
                       >
                         {statusVoz === 'RECORDING' ? (
                           t.check || 'Verificar'
                         ) : statusVoz === 'EVALUATING' ? (
                           '...'
+                        ) : resultadoFeedback === 'acerto' ? (
+                          'Ok'
+                        ) : ehDinglabAtivo ? (
+                          t?.continueCycle || 'Continuar'
                         ) : resultadoFeedback === 'erro' ? (
-                          tentativasVoz >= 3 ? (t?.continueCycle || 'Continuar') : (t?.speakAgain || 'Falar de novo')
+                          t?.speakAgain || 'Falar de novo'
                         ) : (
                           t.speakNow
                         )}
@@ -1205,7 +1319,7 @@ export default function TelaEstudo({
                           cursor: isCheckDisabled ? 'not-allowed' : 'pointer'
                         }}
                       >
-                        {t.check}
+                        {resultadoFeedback === 'acerto' ? 'Ok' : (t.check || 'Verificar')}
                       </button>
                     </>
                   )}

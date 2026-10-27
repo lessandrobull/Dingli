@@ -4407,7 +4407,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { RANKS_SELECT, RANKS_WRITE, RANKS_VOICE } from '../constant';
 import { useDingli } from '../DingliContext';
 import { supabase } from '../supabaseClient';
-import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
+import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO, CORES_POR_IDIOMA } from '../themeColors';
 import { calcularProximoRank } from '../useSRSLogic';
 import { tocarAudioPalavra } from '../services/audioCacheService';
 
@@ -4505,71 +4505,73 @@ const ExercicioEscrita = ({
 
 const ExercicioVoz = ({
   textoEstudo, resultadoFeedback, idiomaEstudo, temas, frase,
-  transcricaoAoVivo, indicesOcultosVoz, styles, t }) => {
+  transcricaoAoVivo, indicesOcultosVoz, styles, t, tentativasVoz }) => {
   return (
     <div style={{ textAlign: 'center', width: '100%' }}>
-      <p style={styles.textoFrasePrincipal}>
-        {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{textoEstudo}</span> : (() => {
-          let currentZhIndex = 0;
-          const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
-          return textoEstudo.split(" ").map((word, i) => {
-            const normalizarPalavra = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
-            let pLimpa = normalizarPalavra(word);
-            if (idiomaEstudo === 'pi') {
-              const numSyllables = (word.match(/[aeiouüáéíóúàèìòùǎěǐǒǔāēīōū]+/gi) || [1]).length;
-              pLimpa = zhLimpo.substring(currentZhIndex, currentZhIndex + numSyllables);
-              currentZhIndex += numSyllables;
-            }
-            const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
-            const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
-            const oculto = indicesOcultosVoz.includes(i);
-            let cor = oculto ? 'transparent' : '#000';
-            let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
-            const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
+      <p style={{
+        ...styles.textoFrasePrincipal,
+        marginTop: (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? '-10px' : '-4px'
+      }}>        {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{textoEstudo}</span> : (() => {
+        let currentZhIndex = 0;
+        const zhLimpo = frase?.zh ? frase.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
+        return textoEstudo.split(" ").map((word, i) => {
+          const normalizarPalavra = (t) => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+          let pLimpa = normalizarPalavra(word);
+          if (idiomaEstudo === 'pi') {
+            const numSyllables = (word.match(/[aeiouüáéíóúàèìòùǎěǐǒǔāēīōū]+/gi) || [1]).length;
+            pLimpa = zhLimpo.substring(currentZhIndex, currentZhIndex + numSyllables);
+            currentZhIndex += numSyllables;
+          }
+          const tLimpa = (transcricaoAoVivo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+          const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
+          const oculto = indicesOcultosVoz.includes(i);
+          let cor = oculto ? 'transparent' : '#000';
+          let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
+          const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
 
-            if (estaNaFala) {
-              cor = COR_ACERTO;
-              borderB = '2px solid transparent';
-            } else if (resultadoFeedback === 'erro') {
-              cor = '#ef4444';
-              borderB = 'none';
-            }
+          if (estaNaFala) {
+            cor = COR_ACERTO;
+            borderB = '2px solid transparent';
+          } else if (resultadoFeedback === 'erro') {
+            cor = tentativasVoz >= 3 ? '#0f172a' : '#ef4444';
+            borderB = 'none';
+          }
 
-            return (
-              <span
-                key={i}
-                onClick={() => {
-                  if (ehErro) {
-                    tocarAudioPalavra(word, idiomaEstudo);
-                  }
-                }}
-                title={ehErro ? (t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada") : ""}
-                style={{
-                  color: cor,
-                  borderBottom: borderB,
-                  paddingBottom: '2px',
-                  display: 'inline-block',
-                  marginRight: '5px',
-                  cursor: ehErro ? 'pointer' : 'default',
-                  userSelect: 'none',
-                  transition: 'transform 0.15s ease'
-                }}
-                onMouseDown={(e) => {
-                  if (ehErro) e.currentTarget.style.transform = 'scale(0.92)';
-                }}
-                onMouseUp={(e) => {
-                  if (ehErro) e.currentTarget.style.transform = 'scale(1)';
-                }}
-              >
-                {word}
-              </span>
-            );
-          });
-        })()}
+          return (
+            <span
+              key={i}
+              onClick={() => {
+                if (ehErro) {
+                  tocarAudioPalavra(word, idiomaEstudo);
+                }
+              }}
+              title={ehErro ? (t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada") : ""}
+              style={{
+                color: cor,
+                borderBottom: borderB,
+                paddingBottom: '2px',
+                display: 'inline-block',
+                marginRight: '5px',
+                cursor: ehErro ? 'pointer' : 'default',
+                userSelect: 'none',
+                transition: 'transform 0.15s ease'
+              }}
+              onMouseDown={(e) => {
+                if (ehErro) e.currentTarget.style.transform = 'scale(0.92)';
+              }}
+              onMouseUp={(e) => {
+                if (ehErro) e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              {word}
+            </span>
+          );
+        });
+      })()}
       </p>
 
       {/* Dica visual */}
-      {resultadoFeedback === 'erro' && (
+      {resultadoFeedback === 'erro' && tentativasVoz < 3 && (
         <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#64748b', fontWeight: '600', textAlign: 'center' }}>
           {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
         </div>
@@ -5215,8 +5217,26 @@ export default function TelaEstudo({
         {!modoExercicio && (
           <div style={styles.headerEstudoMinimo}><span style={styles.contadorCompacto}>{indice + 1} / {frasesFiltradas.length}</span></div>
         )}
-        <div style={{ ...styles.cardFixoRelativo, position: 'relative', margin: '0 auto', borderColor: resultadoFeedback === 'acerto' ? COR_ACERTO : (resultadoFeedback === 'erro' ? '#ef4444' : 'transparent'), outline: 'none' }}
-          onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}>
+        <div
+          style={{
+            ...styles.cardFixoRelativo,
+            position: 'relative',
+            margin: '0 auto',
+            ...(resultadoFeedback === 'erro' && tentativasVoz >= 3 ? {
+              backgroundColor: 'rgba(255, 255, 255, 0.3)',
+              backdropFilter: 'blur(14px)',
+              WebkitBackdropFilter: 'blur(14px)',
+              boxShadow: '0 12px 32px rgba(0, 0, 0, 0.16)'
+            } : {}),
+            borderColor: resultadoFeedback === 'acerto'
+              ? COR_ACERTO
+              : (resultadoFeedback === 'erro'
+                ? (tentativasVoz >= 3 ? 'rgba(255, 255, 255, 0.45)' : '#ef4444')
+                : 'transparent'),
+            outline: 'none'
+          }}
+          onKeyDown={(e) => { if (e.key === 'Enter' && modoExercicio && !resultadoFeedback) { e.preventDefault(); verificarResposta(); } }}
+        >
 
           {/* Botao discreto ⚑ no topo esquerdo do card */}
           <button
@@ -5390,9 +5410,43 @@ export default function TelaEstudo({
           )}
 
           <div style={styles.topCardAreaFixed}>
-            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{frase?.topico || topicoAtivo}</p>}            {modoExercicio && <span style={styles.labelInstrucao}>{RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}</span>}
-            {modoExercicio && !isEx3 && [1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) && (
-              <div style={{ color: '#64748b', lineHeight: '1.2', fontSize: '1.1rem', fontWeight: '600', marginTop: '10px', textAlign: 'center', width: '100%' }}>
+            {!modoExercicio && <p style={{ ...styles.labelTopico, color: temas[idiomaEstudo].bg }}>{frase?.topico || topicoAtivo}</p>}
+            {modoExercicio && (
+              (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? (
+                <span
+                  style={{
+                    display: 'inline-block',
+                    padding: '3px 14px',
+                    borderRadius: '16px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.65)',
+                    color: '#0f172a',
+                    fontSize: '0.82rem',
+                    fontWeight: '900',
+                    letterSpacing: '1.5px',
+                    textTransform: 'uppercase',
+                    marginBottom: '10px',
+                    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.05)'
+                  }}
+                >
+                  Dìnglab
+                </span>
+              ) : (
+                <span style={styles.labelInstrucao}>
+                  {RANKS_SELECT.includes(exercicioNivel) ? t.order : RANKS_WRITE.includes(exercicioNivel) ? t.fill : RANKS_VOICE.includes(exercicioNivel) ? t.pronounce : ""}
+                </span>
+              )
+            )}
+            {modoExercicio && !isEx3 && ([1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 24, 26].includes(Number(exercicioNivel)) || (resultadoFeedback === 'erro' && tentativasVoz >= 3)) && (
+              <div style={{
+                color: (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? '#1e293b' : '#64748b',
+                lineHeight: '1.2',
+                fontSize: '1.1rem',
+                fontWeight: '700',
+                marginTop: (resultadoFeedback === 'erro' && tentativasVoz >= 3) ? '-3px' : '10px',
+                textAlign: 'center',
+                width: '100%',
+                boxSizing: 'border-box'
+              }}>
                 {idiomaOrigem === 'pi' ? (frase?.zh || frase?.texto_zh) : (frase?.[idiomaOrigem] || frase?.traducao)}
               </div>
             )}
@@ -5429,41 +5483,33 @@ export default function TelaEstudo({
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
                       <ExercicioVoz textoEstudo={textoEstudo} resultadoFeedback={resultadoFeedback} idiomaEstudo={idiomaEstudo}
                         temas={temas} frase={frase} transcricaoAoVivo={transcricaoAoVivo}
-                        indicesOcultosVoz={indicesOcultosVoz} styles={styles} t={t} />
+                        indicesOcultosVoz={indicesOcultosVoz} styles={styles} t={t}
+                        tentativasVoz={tentativasVoz} />
 
                       {/* ETAPA 2: AVISO NO 3º ERRO CONSECUTIVO COM SAÍDA PARA O FINAL DA TASK */}
                       {resultadoFeedback === 'erro' && tentativasVoz >= 3 && (
                         <div style={{
-                          marginTop: '16px',
-                          padding: '14px 16px',
-                          backgroundColor: '#fef2f2',
-                          borderRadius: '12px',
-                          border: '1px solid #fecaca',
-                          textAlign: 'center',
-                          width: '100%',
-                          maxWidth: '360px',
-                          boxSizing: 'border-box'
+                          position: 'absolute',
+                          bottom: '90px',
+                          left: '20px',
+                          right: '20px',
+                          padding: '10px 10px',
+                          backgroundColor: 'rgba(255, 255, 255, 0.55)',
+                          borderRadius: '16px',
+                          border: '1px solid rgba(255, 255, 255, 0.65)',
+                          boxSizing: 'border-box',
+                          zIndex: 10
                         }}>
-                          <p style={{ margin: 0, fontSize: '0.88rem', color: '#991b1b', fontWeight: '700', lineHeight: '1.45' }}>
-                            Relaxa, pronúncia exige costume. Essa frase foi guardada no seu Dìnglab para você treinar com calma quantas vezes quiser. Prefere treinar já ou continuar com as outras no Dìngloop?
-                          </p>
-                          <div style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            marginTop: '12px',
-                            padding: '0 28px',
-                            color: '#991b1b'
+                          <p style={{
+                            margin: 0,
+                            fontSize: '1.11rem',
+                            color: '#334155',
+                            fontWeight: '600',
+                            lineHeight: '1.4',
+                            textAlign: 'center'
                           }}>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                              <line x1="17" y1="7" x2="7" y2="17" />
-                              <polyline points="17 17 7 17 7 7" />
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                              <line x1="7" y1="7" x2="17" y2="17" />
-                              <polyline points="7 17 17 17 17 7" />
-                            </svg>
-                          </div>
+                            Vamos treinar esta frase no Dìnglab. Prefere treinar já ou continuar com as outras no Dìngloop primeiro?
+                          </p>
                         </div>
                       )}
                     </div>
@@ -5530,7 +5576,7 @@ export default function TelaEstudo({
                         {t?.dinglab || "Dìnglab"}
                       </button>
 
-                     {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
+                      {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
                       {!(resultadoFeedback === 'erro' && tentativasVoz >= 3) && (
                         temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
                           <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
