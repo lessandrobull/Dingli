@@ -112,7 +112,6 @@ function App() {
     postergarParaFimDaTask,
     inicializarBandeja,
     rotacionarBandeja,
-    expandirBandejaAvulsoSeNecessario,
     taskIdsRef
   } = useGameEngine({
     frasesFiltradas, setFrasesFiltradas,
@@ -319,14 +318,9 @@ function App() {
       } catch (e) { }
     }
 
-    // Expansão das Vagas 2 a 5 para Card Avulso (Cenário 2)
-    if (typeof expandirBandejaAvulsoSeNecessario === 'function') {
-      expandirBandejaAvulsoSeNecessario(frasesFiltradas, frasesCandidatas);
-    }
-
     // Inicialização exclusiva em acionamento manual (Botão GAME)
     if (isInicioManual && typeof inicializarBandeja === "function") {
-      await inicializarBandeja({ frasesNivel: frasesCandidatas });
+      await inicializarBandeja();
     }
     let proximo = avaliarProximoAlvo(frasesCandidatas);
 
@@ -383,17 +377,7 @@ function App() {
         setIndice(proximo.indice);
       }
 
-      const dadosInedita = {
-        id: proximo.id,
-        rank: 0,
-        texto: fObj ? (fObj[idiomaEstudo] || fObj.texto) : "",
-        traducao: fObj ? (fObj[idiomaOrigem] || fObj.traducao || "") : "",
-        texto_zh: fObj?.zh || "",
-        nivel: nivelAlvo,
-        topico: nomeTopico
-      };
-
-      setFraseAtivaGlobal(dadosInedita);
+      setFraseAtivaGlobal(null);
       setModoJogo(false);
       setSessaoIniciada(false);
       setModoExercicio(false);
@@ -622,19 +606,6 @@ function App() {
       }
 
 
-      const idEscolhido = data[menorIdInedito !== Infinity ? indexAlvo : indexAbsoluto]?.id;
-      if (idEscolhido && typeof inicializarBandeja === "function") {
-        let dadosNivel = null;
-        try {
-          const respN = await dataService.getTopicsByLevel(nivelEfetivo, idiomaOrigem, idiomaEstudo);
-          dadosNivel = respN?.data;
-        } catch (e) { }
-        await inicializarBandeja({
-          idCardEscolhido: idEscolhido,
-          frasesTopico: data,
-          frasesNivel: dadosNivel
-        });
-      }
       setIndice(menorIdInedito !== Infinity ? indexAlvo : indexAbsoluto);
       setFilaErros([]);
       setFilaAcertos([]);
@@ -695,6 +666,7 @@ function App() {
         key.startsWith(`progresso_${idiomaOrigem}_${idiomaEstudo}_`) ||
         key === `maestria_${idiomaOrigem}_${idiomaEstudo}` ||
         key === `bandeja_${idiomaOrigem}_${idiomaEstudo}` ||
+        key === `bandeja_fechada_${idiomaOrigem}_${idiomaEstudo}` ||
         key === `dinglab_${idiomaOrigem}_${idiomaEstudo}` ||
         key === `sessao_dominium_${idiomaOrigem}_${idiomaEstudo}`
       ) {

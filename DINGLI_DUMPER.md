@@ -2,17 +2,8 @@
 Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicação.
 
 ## 1. ÁRVORE DE DIRETÓRIOS
-./.cursorrules
 ./.gitignore
 ./backups/historico_revisoes.md
-./backups/sentences_backup_20260927_201057.csv
-./backups/sentences_backup_20260928_035917.csv
-./backups/sentences_backup_20260928_035926.csv
-./backups/sentences_backup_20260929_003716.csv
-./backups/sentences_backup_20260929_022456.csv
-./backups/sentences_v3_pt_20260929_120323.csv
-./backups/sentences_v3_pt_20260929_120512.csv
-./backups/sentences_v3_pt_20260929_120840.csv
 ./DINGLI_MASTER.md
 ./eslint.config.js
 ./ffmpeg.exe
@@ -20,46 +11,6 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./package.json
 ./package-lock.json
 ./pub.sh
-./public/explicacoes/fr_pt/A1_Comida e Restaurantes.json
-./public/explicacoes/fr_pt/A1_Compras e Dinheiro.json
-./public/explicacoes/fr_pt/A1_Conceitos Abstratos.json
-./public/explicacoes/fr_pt/A1_Informações Pessoais.json
-./public/explicacoes/fr_pt/A1_Opiniões e Sentimentos.json
-./public/explicacoes/fr_pt/A1_Saudações e Socialização.json
-./public/explicacoes/fr_pt/A1_Saúde e Emergências.json
-./public/explicacoes/fr_pt/A1_Trabalho e Estudo.json
-./public/explicacoes/fr_pt/A1_Viagem e Transporte.json
-./public/explicacoes/fr_pt/A1_Vida Diária e Rotinas.json
-./public/explicacoes/fr_pt/A2_Comida e Restaurantes.json
-./public/explicacoes/fr_pt/A2_Compras e Dinheiro.json
-./public/explicacoes/fr_pt/A2_Conceitos Abstratos.json
-./public/explicacoes/fr_pt/A2_Informações Pessoais.json
-./public/explicacoes/fr_pt/A2_Opiniões e Sentimentos.json
-./public/explicacoes/fr_pt/A2_Saudações e Socialização.json
-./public/explicacoes/fr_pt/A2_Saúde e Emergências.json
-./public/explicacoes/fr_pt/A2_Trabalho e Estudo.json
-./public/explicacoes/fr_pt/A2_Viagem e Transporte.json
-./public/explicacoes/fr_pt/A2_Vida Diária e Rotinas.json
-./public/explicacoes/fr_pt/B1_Comida e Restaurantes.json
-./public/explicacoes/fr_pt/B1_Compras e Dinheiro.json
-./public/explicacoes/fr_pt/B1_Conceitos Abstratos.json
-./public/explicacoes/fr_pt/B1_Informações Pessoais.json
-./public/explicacoes/fr_pt/B1_Opiniões e Sentimentos.json
-./public/explicacoes/fr_pt/B1_Saudações e Socialização.json
-./public/explicacoes/fr_pt/B1_Saúde e Emergências.json
-./public/explicacoes/fr_pt/B1_Trabalho e Estudo.json
-./public/explicacoes/fr_pt/B1_Viagem e Transporte.json
-./public/explicacoes/fr_pt/B1_Vida Diária e Rotinas.json
-./public/explicacoes/fr_pt/B2_Comida e Restaurantes.json
-./public/explicacoes/fr_pt/B2_Compras e Dinheiro.json
-./public/explicacoes/fr_pt/B2_Conceitos Abstratos.json
-./public/explicacoes/fr_pt/B2_Informações Pessoais.json
-./public/explicacoes/fr_pt/B2_Opiniões e Sentimentos.json
-./public/explicacoes/fr_pt/B2_Saudações e Socialização.json
-./public/explicacoes/fr_pt/B2_Saúde e Emergências.json
-./public/explicacoes/fr_pt/B2_Trabalho e Estudo.json
-./public/explicacoes/fr_pt/B2_Viagem e Transporte.json
-./public/explicacoes/fr_pt/B2_Vida Diária e Rotinas.json
 ./public/manifest.json
 ./public/sw.js
 ./README.md
@@ -98,34 +49,10 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./src/useGameEngine.js
 ./src/useSpeech.js
 ./src/useSRSLogic.js
-./supabase_sentences.csv
 ./vite.config.js
 
 ## 2. CÓDIGO FONTE INTEGRAL
 
-
-### 📄 ARQUIVO: ./.cursorrules
-# Role & Context
-Você é um assistente de programação focado em React e JavaScript. Meu objetivo é aprender, portanto, suas explicações devem ser claras e diretas.
-
-# Regras de Resposta (Strict Rules)
-* **Não altere arquivos diretamente:** Nunca aplique alterações no código por conta própria. 
-* **Formato de Entrega:** Forneça sempre blocos de código para que eu altere manualmente.
-* **Orientação de Contexto:** Para cada alteração sugerida, você deve mostrar:
-    - 5 linhas de contexto acima do trecho a ser inserido.
-    - O trecho de código novo/alterado.
-    - 5 linhas de contexto abaixo do trecho.
-* **Fidelidade ao Texto:** Use exatamente as mesmas linhas que já estão no meu arquivo para que eu possa localizá-las facilmente via busca (Ctrl+F).
-* **Tradução:** Não traduza termos técnicos ou mensagens a menos que eu peça explicitamente.
-
-# Estilo de Código
-* Prefira Functional Components e Hooks em React.
-* Mantenha a consistência com as bibliotecas já instaladas no `package.json`.
-* Antes de corrigir qualquer erro, explique o "porquê" do erro e me consulte se desejo a correção.
-
-# Restrições de Comunicação
-* Seja conciso. Respostas simples e diretamente relacionadas à pergunta.
-* Se a pergunta não for sobre código, ignore a regra das "5 linhas de contexto".
 
 ### 📄 ARQUIVO: ./.gitignore
 # Logs
@@ -496,7 +423,6 @@ function App() {
     postergarParaFimDaTask,
     inicializarBandeja,
     rotacionarBandeja,
-    expandirBandejaAvulsoSeNecessario,
     taskIdsRef
   } = useGameEngine({
     frasesFiltradas, setFrasesFiltradas,
@@ -703,14 +629,9 @@ function App() {
       } catch (e) { }
     }
 
-    // Expansão das Vagas 2 a 5 para Card Avulso (Cenário 2)
-    if (typeof expandirBandejaAvulsoSeNecessario === 'function') {
-      expandirBandejaAvulsoSeNecessario(frasesFiltradas, frasesCandidatas);
-    }
-
     // Inicialização exclusiva em acionamento manual (Botão GAME)
     if (isInicioManual && typeof inicializarBandeja === "function") {
-      await inicializarBandeja({ frasesNivel: frasesCandidatas });
+      await inicializarBandeja();
     }
     let proximo = avaliarProximoAlvo(frasesCandidatas);
 
@@ -767,17 +688,7 @@ function App() {
         setIndice(proximo.indice);
       }
 
-      const dadosInedita = {
-        id: proximo.id,
-        rank: 0,
-        texto: fObj ? (fObj[idiomaEstudo] || fObj.texto) : "",
-        traducao: fObj ? (fObj[idiomaOrigem] || fObj.traducao || "") : "",
-        texto_zh: fObj?.zh || "",
-        nivel: nivelAlvo,
-        topico: nomeTopico
-      };
-
-      setFraseAtivaGlobal(dadosInedita);
+      setFraseAtivaGlobal(null);
       setModoJogo(false);
       setSessaoIniciada(false);
       setModoExercicio(false);
@@ -1006,19 +917,6 @@ function App() {
       }
 
 
-      const idEscolhido = data[menorIdInedito !== Infinity ? indexAlvo : indexAbsoluto]?.id;
-      if (idEscolhido && typeof inicializarBandeja === "function") {
-        let dadosNivel = null;
-        try {
-          const respN = await dataService.getTopicsByLevel(nivelEfetivo, idiomaOrigem, idiomaEstudo);
-          dadosNivel = respN?.data;
-        } catch (e) { }
-        await inicializarBandeja({
-          idCardEscolhido: idEscolhido,
-          frasesTopico: data,
-          frasesNivel: dadosNivel
-        });
-      }
       setIndice(menorIdInedito !== Infinity ? indexAlvo : indexAbsoluto);
       setFilaErros([]);
       setFilaAcertos([]);
@@ -1079,6 +977,7 @@ function App() {
         key.startsWith(`progresso_${idiomaOrigem}_${idiomaEstudo}_`) ||
         key === `maestria_${idiomaOrigem}_${idiomaEstudo}` ||
         key === `bandeja_${idiomaOrigem}_${idiomaEstudo}` ||
+        key === `bandeja_fechada_${idiomaOrigem}_${idiomaEstudo}` ||
         key === `dinglab_${idiomaOrigem}_${idiomaEstudo}` ||
         key === `sessao_dominium_${idiomaOrigem}_${idiomaEstudo}`
       ) {
@@ -7139,17 +7038,19 @@ export function useGameEngine({
 
   const taskIdsRef = useRef([]);
   const LIMITE_BANDEJA = 5;
-  const aguardandoExpansaoAvulsoRef = useRef(false);
 
   const chaveBandeja = (idiomaOrigem && idiomaEstudo) ? `bandeja_${idiomaOrigem}_${idiomaEstudo}` : null;
   const chaveDinglab = (idiomaOrigem && idiomaEstudo) ? `dinglab_${idiomaOrigem}_${idiomaEstudo}` : null;
+  const chaveBandejaFechada = (idiomaOrigem && idiomaEstudo) ? `bandeja_fechada_${idiomaOrigem}_${idiomaEstudo}` : null;
 
   const resetarTimerTask = useCallback(() => {
     taskIdsRef.current = [];
-    aguardandoExpansaoAvulsoRef.current = false;
-  }, []);
+    if (chaveBandejaFechada) {
+      try { localStorage.removeItem(chaveBandejaFechada); } catch (e) { }
+    }
+  }, [chaveBandejaFechada]);
 
-  // Persiste no localStorage EXCLUSIVAMENTE cartas iniciadas (rank > 0)
+  // Persiste no localStorage as cartas ativas na bandeja
   const sincronizarPersistenciaBandeja = useCallback((fila) => {
     if (!chaveBandeja) return;
     if (!fila || fila.length === 0) {
@@ -7158,40 +7059,57 @@ export function useGameEngine({
     }
 
     const listaRef = frasesFiltradas || [];
-    const iniciadas = fila.filter(id => {
+    const payload = fila.map(id => {
       const m = frasesMaestria[id];
-      const r = typeof m === 'object' ? m.rank : (m || 0);
-      return r > 0;
+      const fObj = listaRef.find(f => Number(f.id) === id);
+      const texto = (typeof m === 'object' && m.texto) ? m.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
+      return { id, texto };
     });
-
-    if (iniciadas.length > 0) {
-      const payload = iniciadas.map(id => {
-        const m = frasesMaestria[id];
-        const fObj = listaRef.find(f => Number(f.id) === id);
-        const texto = (typeof m === 'object' && m.texto) ? m.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
-        return { id, texto };
-      });
-      try { localStorage.setItem(chaveBandeja, JSON.stringify(payload)); } catch (e) { }
-    } else {
-      try { localStorage.removeItem(chaveBandeja); } catch (e) { }
-    }
+    try { localStorage.setItem(chaveBandeja, JSON.stringify(payload)); } catch (e) { }
   }, [chaveBandeja, frasesMaestria, frasesFiltradas, idiomaEstudo]);
 
   // ROTAÇÃO FIFO PURA DA BANDEJA
   const rotacionarBandeja = useCallback((idAlvo, foiConcluido = false) => {
     if (!idAlvo) return;
     const idNum = Number(idAlvo);
-    let fila = taskIdsRef.current || [];
+    let fila = (taskIdsRef.current && taskIdsRef.current.length > 0)
+      ? [...taskIdsRef.current]
+      : [];
+
+    if (fila.length === 0 && chaveBandeja) {
+      try {
+        const salvoB = localStorage.getItem(chaveBandeja);
+        if (salvoB) {
+          const arrB = JSON.parse(salvoB);
+          if (Array.isArray(arrB)) {
+            fila = arrB.map(item => typeof item === 'object' && item !== null ? Number(item.id) : Number(item)).filter(Boolean);
+          }
+        }
+      } catch (e) { }
+    }
 
     if (foiConcluido) {
-    fila = fila.filter(id => id !== idNum);
-  } else {
-    fila = [...fila.filter(id => id !== idNum), idNum];
-  }
+      // Formatura macro (R5->R6 descanso de 1 dia, etc): sai da bandeja
+      fila = fila.filter(id => id !== idNum);
+    } else {
+      const jaEstavaNaBandeja = fila.includes(idNum);
+
+      if (jaEstavaNaBandeja) {
+        // Carta já pertencia à bandeja: gira para o final da fila (FIFO)
+        fila = [...fila.filter(id => id !== idNum), idNum];
+      } else {
+        // Carta recém-iniciada:
+        // Se a bandeja tiver vagas (< 5), entra em ÚLTIMO LUGAR na bandeja.
+        // Se a bandeja já estiver com 5, não entra na bandeja (fica ao final de Próximas).
+        if (fila.length < LIMITE_BANDEJA) {
+          fila = [...fila, idNum];
+        }
+      }
+    }
 
     taskIdsRef.current = fila;
     sincronizarPersistenciaBandeja(fila);
-  }, [sincronizarPersistenciaBandeja]);
+  }, [chaveBandeja, sincronizarPersistenciaBandeja]);
 
   const postergarParaFimDaTask = useCallback((idAlvo) => {
     rotacionarBandeja(idAlvo, false);
@@ -7249,11 +7167,11 @@ export function useGameEngine({
     localStorage.setItem('pref_mostrar_traducao', JSON.stringify(mostrarTraducao));
   }, [mostrarTraducao]);
 
-  // INICIALIZAÇÃO CONTROLADA DA BANDEJA
-  const inicializarBandeja = useCallback(async ({ idCardEscolhido = null, frasesTopico = null, frasesNivel = null } = {}) => {
-    // Trava Hermética: se a Task já está em andamento, nunca admite cartas novas
+  // INICIALIZAÇÃO CONTROLADA DA BANDEJA (Carrega estritamente cartas ativas abandonadas)
+  const inicializarBandeja = useCallback(async () => {
+    // Se a Task já está ativa na memória, preserva a fila atual
     if (taskIdsRef.current && taskIdsRef.current.length > 0) {
-      return;
+      return taskIdsRef.current;
     }
 
     const agora = Date.now();
@@ -7265,7 +7183,7 @@ export function useGameEngine({
       } catch (e) { }
     }
 
-    // 1. Obter cartas de bandeja abandonada
+    // Carrega estritamente cartas com Rank > 0 que foram abandonadas na bandeja
     let idsAbandonadas = [];
     if (chaveBandeja) {
       try {
@@ -7276,171 +7194,21 @@ export function useGameEngine({
             idsAbandonadas = arrB
               .map(item => (typeof item === 'object' && item !== null ? Number(item.id) : Number(item)))
               .filter(id => {
-                if (idsNoDinglab.includes(id)) return false;
+                if (!id || idsNoDinglab.includes(id)) return false;
                 const m = frasesMaestria[id];
-                const estaEmRepouso = m && typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
-                return !estaEmRepouso;
+                const rank = typeof m === 'object' ? (m.rank || 0) : (m || 0);
+                const estaEmRepouso = typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
+                return rank > 0 && !estaEmRepouso;
               });
           }
         }
       } catch (e) { }
     }
 
-    // 2. Obter cartas prontas de 'Próximas' (repousos macro vencidos + recém-saídas do Dìnglab)
-    let proximasProntas = [];
-    Object.keys(frasesMaestria).forEach(idStr => {
-      const id = Number(idStr);
-      const m = frasesMaestria[idStr];
-      if (typeof m === 'object' && m.rank > 0 && !idsNoDinglab.includes(id) && m.next_review <= agora) {
-        proximasProntas.push({ id, ...m });
-      }
-    });
-    proximasProntas.sort((a, b) => (a.last_attempt_at || 0) - (b.last_attempt_at || 0));
-
-    const novaBandeja = [];
-
-    if (idCardEscolhido) {
-      // CENÁRIO 2: Card Avulso
-      const idNum = Number(idCardEscolhido);
-      if (!idsNoDinglab.includes(idNum)) {
-        novaBandeja.push(idNum); // Vaga 1
-      }
-      taskIdsRef.current = novaBandeja;
-      aguardandoExpansaoAvulsoRef.current = true;
-      sincronizarPersistenciaBandeja(novaBandeja);
-      return novaBandeja;
-    }
-
-    // CENÁRIO 1: Botão GAME
-    // Prioridade 1: Abandonadas
-    idsAbandonadas.forEach(id => {
-      if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(id) && !idsNoDinglab.includes(id)) {
-        novaBandeja.push(id);
-      }
-    });
-
-    // Prioridade 2: Próximas
-    proximasProntas.forEach(item => {
-      if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(item.id) && !idsNoDinglab.includes(item.id)) {
-        novaBandeja.push(item.id);
-      }
-    });
-
-    // Prioridade 3: Inéditas de menor ID global do nível
-    const listaRef = frasesNivel || frasesTopico || frasesFiltradas || [];
-    if (novaBandeja.length < LIMITE_BANDEJA && Array.isArray(listaRef)) {
-      const ineditas = listaRef
-        .filter(f => {
-          const fid = Number(f.id);
-          const m = frasesMaestria[fid];
-          const rank = typeof m === 'object' ? m.rank : (m || 0);
-          return rank === 0 && !idsNoDinglab.includes(fid);
-        })
-        .map(f => Number(f.id))
-        .sort((a, b) => a - b);
-
-      ineditas.forEach(id => {
-        if (novaBandeja.length < LIMITE_BANDEJA && !novaBandeja.includes(id)) {
-          novaBandeja.push(id);
-        }
-      });
-    }
-
+    const novaBandeja = idsAbandonadas.slice(0, LIMITE_BANDEJA);
     taskIdsRef.current = novaBandeja;
     sincronizarPersistenciaBandeja(novaBandeja);
     return novaBandeja;
-  }, [chaveBandeja, chaveDinglab, frasesMaestria, frasesFiltradas, sincronizarPersistenciaBandeja]);
-
-  // Expansão das Vagas 2 a 5 para Card Avulso após responder à Vaga 1
-  const expandirBandejaAvulsoSeNecessario = useCallback((frasesTopico, frasesNivel) => {
-    if (!aguardandoExpansaoAvulsoRef.current) return;
-    aguardandoExpansaoAvulsoRef.current = false;
-
-    let fila = [...taskIdsRef.current];
-    const agora = Date.now();
-
-    let idsNoDinglab = [];
-    if (chaveDinglab) {
-      try {
-        const salvoD = localStorage.getItem(chaveDinglab);
-        if (salvoD) idsNoDinglab = JSON.parse(salvoD).map(item => Number(item.id));
-      } catch (e) { }
-    }
-
-    // 1ª Prioridade: Abandonadas anteriores
-    if (chaveBandeja) {
-      try {
-        const salvoB = localStorage.getItem(chaveBandeja);
-        if (salvoB) {
-          const arrB = JSON.parse(salvoB);
-          if (Array.isArray(arrB)) {
-            arrB.forEach(item => {
-              const id = typeof item === 'object' && item !== null ? Number(item.id) : Number(item);
-              if (fila.length < LIMITE_BANDEJA && !fila.includes(id) && !idsNoDinglab.includes(id)) {
-                fila.push(id);
-              }
-            });
-          }
-        }
-      } catch (e) { }
-    }
-
-    // 2ª Prioridade: Próximas
-    Object.keys(frasesMaestria).forEach(idStr => {
-      const id = Number(idStr);
-      const m = frasesMaestria[idStr];
-      if (fila.length < LIMITE_BANDEJA && typeof m === 'object' && m.rank > 0 && !idsNoDinglab.includes(id) && m.next_review <= agora) {
-        if (!fila.includes(id)) fila.push(id);
-      }
-    });
-
-    // 3ª Prioridade: Inéditas do mesmo tópico
-    if (fila.length < LIMITE_BANDEJA && Array.isArray(frasesTopico)) {
-      const ineditasTopico = frasesTopico
-        .filter(f => {
-          const fid = Number(f.id);
-          const m = frasesMaestria[fid];
-          const rank = typeof m === 'object' ? m.rank : (m || 0);
-          return rank === 0 && !idsNoDinglab.includes(fid);
-        })
-        .map(f => Number(f.id))
-        .sort((a, b) => a - b);
-
-      ineditasTopico.forEach(id => {
-        if (fila.length < LIMITE_BANDEJA && !fila.includes(id)) {
-          fila.push(id);
-        }
-      });
-    }
-
-    // 4ª Prioridade: Inéditas de menor ID do nível
-    if (fila.length < LIMITE_BANDEJA && Array.isArray(frasesNivel)) {
-      const ineditasNivel = frasesNivel
-        .filter(f => {
-          const fid = Number(f.id);
-          const m = frasesMaestria[fid];
-          const rank = typeof m === 'object' ? m.rank : (m || 0);
-          return rank === 0 && !idsNoDinglab.includes(fid);
-        })
-        .map(f => Number(f.id))
-        .sort((a, b) => a - b);
-
-      ineditasNivel.forEach(id => {
-        if (fila.length < LIMITE_BANDEJA && !fila.includes(id)) {
-          fila.push(id);
-        }
-      });
-    }
-
-    // A carta avulsa que acabou de ser praticada deve ir para o FINAL da fila
-    const idCartaAvulsa = taskIdsRef.current.length > 0 ? taskIdsRef.current[0] : null;
-    let filaOrdenada = fila;
-    if (idCartaAvulsa && fila.includes(idCartaAvulsa)) {
-      filaOrdenada = [...fila.filter(id => id !== idCartaAvulsa), idCartaAvulsa];
-    }
-
-    taskIdsRef.current = filaOrdenada;
-    sincronizarPersistenciaBandeja(filaOrdenada);
   }, [chaveBandeja, chaveDinglab, frasesMaestria, sincronizarPersistenciaBandeja]);
 
   // AVALIADOR DETERMINÍSTICO FIFO
@@ -7454,9 +7222,9 @@ export function useGameEngine({
       } catch (e) { }
     }
 
-    // Filtra quem de fato ainda está pendente nesta rodada
-    const idsPendentes = (taskIdsRef.current || []).filter(id => {
-      if (idsNoDinglab.includes(id)) return false;
+    // 1. Filtra cartas ativas na bandeja (remove Dìnglab e repousos macro)
+    let idsPendentes = (taskIdsRef.current || []).filter(id => {
+      if (!id || idsNoDinglab.includes(id)) return false;
       const m = frasesMaestria[id];
       const estaEmRepouso = m && typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
       return !estaEmRepouso;
@@ -7465,27 +7233,109 @@ export function useGameEngine({
     taskIdsRef.current = idsPendentes;
     sincronizarPersistenciaBandeja(idsPendentes);
 
-    // Conclusão Natural: se não há mais cartas na fila, encerra a Task
-    if (idsPendentes.length === 0) {
-      if (chaveBandeja) {
-        try { localStorage.removeItem(chaveBandeja); } catch (e) { }
-      }
-      return { resetarTimerTask, tipo: "concluido" };
+    // Se atingiu o teto de 5, fecha a admissão da bandeja
+    if (idsPendentes.length >= LIMITE_BANDEJA && chaveBandejaFechada) {
+      try { localStorage.setItem(chaveBandejaFechada, 'true'); } catch (e) { }
     }
 
-    // Carrossel FIFO: pega rigorosamente o primeiro ID da fila
-    const idAlvo = idsPendentes[0];
-    const maestriaAlvo = frasesMaestria[idAlvo];
-    const rankAlvo = typeof maestriaAlvo === 'object' ? (maestriaAlvo.rank || 0) : (maestriaAlvo || 0);
+    const bandejaJaFechou = chaveBandejaFechada
+      ? (localStorage.getItem(chaveBandejaFechada) === 'true')
+      : false;
 
-    const listaRef = frasesAtuais || frasesFiltradas || [];
-    const fObj = listaRef.find(f => Number(f.id) === idAlvo);
-    const idxNoTopico = listaRef.findIndex(f => Number(f.id) === idAlvo);
+    // 2. Admissão de cartas até completar 5 (se a bandeja ainda não fechou)
+    if (!bandejaJaFechou && idsPendentes.length < LIMITE_BANDEJA) {
+      // 2a. Busca a mais antiga pronta na lista de Próximas
+      let proximaPronta = null;
+      let menorTempo = Infinity;
 
-    if (rankAlvo > 0) {
+      Object.keys(frasesMaestria).forEach(idStr => {
+        const id = Number(idStr);
+        const m = frasesMaestria[idStr];
+        if (
+          typeof m === 'object' &&
+          m.rank > 0 &&
+          !idsPendentes.includes(id) &&
+          !idsNoDinglab.includes(id) &&
+          m.next_review <= agora
+        ) {
+          const tempo = m.last_attempt_at || 0;
+          if (tempo < menorTempo) {
+            menorTempo = tempo;
+            proximaPronta = { id, ...m };
+          }
+        }
+      });
+
+      if (proximaPronta) {
+        const novaFila = [...idsPendentes, proximaPronta.id];
+        taskIdsRef.current = novaFila;
+        sincronizarPersistenciaBandeja(novaFila);
+        if (novaFila.length >= LIMITE_BANDEJA && chaveBandejaFechada) {
+          try { localStorage.setItem(chaveBandejaFechada, 'true'); } catch (e) { }
+        }
+
+        return {
+          tipo: "revisao",
+          dados: {
+            ...proximaPronta,
+            id: proximaPronta.id,
+            rank: proximaPronta.rank,
+            texto: proximaPronta.texto || "",
+            traducao: proximaPronta.traducao || "",
+            texto_zh: proximaPronta.texto_zh || "",
+            nivel: proximaPronta.nivel || nivelAtivo || "A1",
+            topico: proximaPronta.topico || topicoAtivo || ""
+          }
+        };
+      }
+
+      // 2b. Se Próximas está vazia, sugere a inédita de menor ID no nível
+      const listaRef = frasesAtuais || frasesFiltradas || [];
+      const ineditas = (Array.isArray(listaRef) ? listaRef : [])
+        .filter(f => {
+          const fid = Number(f.id);
+          const m = frasesMaestria[fid];
+          const rank = typeof m === 'object' ? m.rank : (m || 0);
+          return rank === 0 && !idsPendentes.includes(fid) && !idsNoDinglab.includes(fid);
+        })
+        .sort((a, b) => Number(a.id) - Number(b.id));
+
+      if (ineditas.length > 0) {
+        const fInedita = ineditas[0];
+        const colTopicOrigem = idiomaOrigem ? `topic_${idiomaOrigem}` : 'topic_pt';
+        const nomeTopico = fInedita[colTopicOrigem] || fInedita.topico || fInedita.topic || topicoAtivo || "";
+        const idxNoTopico = listaRef.findIndex(f => Number(f.id) === Number(fInedita.id));
+
+        return {
+          id: Number(fInedita.id),
+          rank: 0,
+          tipo: "inedita",
+          indice: idxNoTopico !== -1 ? idxNoTopico : 0,
+          nivel: fInedita.level || fInedita.nivel || nivelAtivo || "A1",
+          topico: nomeTopico,
+          dados: fInedita
+        };
+      }
+
+      // 2c. Não há Próximas nem Inéditas no nível: fecha a bandeja com as cartas restantes
+      if (chaveBandejaFechada) {
+        try { localStorage.setItem(chaveBandejaFechada, 'true'); } catch (e) { }
+      }
+    }
+
+    // 3. Fila FIFO pura da bandeja
+    if (idsPendentes.length > 0) {
+      const idAlvo = idsPendentes[0];
+      const maestriaAlvo = frasesMaestria[idAlvo];
+      const rankAlvo = typeof maestriaAlvo === 'object' ? (maestriaAlvo.rank || 0) : (maestriaAlvo || 0);
+
+      const listaRef = frasesAtuais || frasesFiltradas || [];
+      const fObj = listaRef.find(f => Number(f.id) === idAlvo);
+
       const textoAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.texto) ? maestriaAlvo.texto : (fObj ? (fObj[idiomaEstudo] || fObj.texto) : "");
       const traducaoAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.traducao) ? maestriaAlvo.traducao : (fObj ? (fObj[idiomaOrigem] || fObj.traducao || "") : "");
       const zhAlvo = (typeof maestriaAlvo === 'object' && maestriaAlvo.texto_zh) ? maestriaAlvo.texto_zh : (fObj ? (fObj.zh || fObj.texto_zh || "") : "");
+
       return {
         tipo: "revisao",
         dados: {
@@ -7501,17 +7351,15 @@ export function useGameEngine({
       };
     }
 
-    // Inédita (Rank 0)
-    return {
-      id: idAlvo,
-      rank: 0,
-      tipo: "inedita",
-      indice: idxNoTopico !== -1 ? idxNoTopico : 0,
-      nivel: fObj?.level || fObj?.nivel || nivelAtivo || "A1",
-      topico: fObj?.topico || fObj?.topic || topicoAtivo || "",
-      dados: fObj
-    };
-  }, [frasesMaestria, frasesFiltradas, chaveDinglab, chaveBandeja, resetarTimerTask, sincronizarPersistenciaBandeja, idiomaEstudo, nivelAtivo, topicoAtivo]);
+    // 4. Bandeja vazia e sem novas cartas: encerra a Task
+    if (chaveBandeja) {
+      try { localStorage.removeItem(chaveBandeja); } catch (e) { }
+    }
+    if (chaveBandejaFechada) {
+      try { localStorage.removeItem(chaveBandejaFechada); } catch (e) { }
+    }
+    return { resetarTimerTask, tipo: "concluido" };
+  }, [frasesMaestria, frasesFiltradas, chaveDinglab, chaveBandeja, chaveBandejaFechada, resetarTimerTask, sincronizarPersistenciaBandeja, idiomaEstudo, idiomaOrigem, nivelAtivo, topicoAtivo]);
 
   return {
     indice, setIndice,
@@ -7525,7 +7373,6 @@ export function useGameEngine({
     postergarParaFimDaTask,
     inicializarBandeja,
     rotacionarBandeja,
-    expandirBandejaAvulsoSeNecessario,
     taskIdsRef
   };
 }

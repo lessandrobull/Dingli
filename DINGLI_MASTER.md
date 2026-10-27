@@ -5,9 +5,25 @@
 
 ## 1. Visão Geral da Plataforma
 O **DINGLI** é um Progressive Web App (PWA) de aprendizado acelerado de idiomas e treino ativo de pronúncia baseado no ecossistema de estudo contínuo "Dìngloop" e no algoritmo proprietário de repetição espaçada (SRS) "Dominium".
-- **Proposta Central:** Input compreensível e treino prático de fala em tempo real com correção fonética imediata, operando através de uma esteira hermética e determinística com fila FIFO de até 5 cartas em jogo (`LIMITE_BANDEJA = 5`), sem contadores artificiais de tempo nos microciclos, com arquitetura offline-first e interface móvel responsiva.
+- **Proposta Central:** Input compreensível e treino prático de fala em tempo real com correção fonética imediata, operando através de uma esteira determinística com fila FIFO de exatamente até 5 cartas em jogo (`LIMITE_BANDEJA = 5`), sem contadores artificiais de tempo nos microciclos, com arquitetura offline-first e interface móvel responsiva.
 - **Entrada de Dados:** Reconhecimento de voz em tempo real via Web Speech API para exercícios orais, além de digitação e seleção por toque para exercícios de escrita, baseados em uma grade fixa de exatamente 1.200 frases sequenciais distribuídas em 4 níveis do CEFR (A1 a B2), 40 tópicos e 7 idiomas (8 frentes, incluindo Mandarim Hanzi e Pinyin com tons).
 - **Processamento:** O sistema valida o acerto fonético e sintático, gerencia avanço e recuo de ranks (R1 a R27), encaminha frases para quarentena no laboratório fonético **Dìnglab** (automaticamente após 3 falhas vocais consecutivas ou manualmente via **Modo Pitstop** durante qualquer exercício) blindando o rank conquistado, oferece treino livre no **Modo Espelho** (com gravação da própria voz e metrônomo de repetição por palavra) e reintegração via **Prova de Fogo**, agenda revisões de macrociclo com descansos exponenciais de 1 a 32 dias no algoritmo Dominium, aplica atualizações cirúrgicas de versão de conteúdo (`CardAvisoAtualizacao`) e sincroniza dados entre memória RAM, cache do navegador (Cache Storage, IndexedDB e localStorage) e nuvem (Supabase e Cloudflare R2).
+
+### Mecânica Operacional do Dominium (Task, Bandeja e Esteira)
+- **Definição de Task (Bandeja):** Uma Task é um ciclo ativo de estudos operado por uma bandeja com capacidade fixa de até 5 frases simultâneas (`LIMITE_BANDEJA = 5`). As frases em jogo rodam em rotação contínua até que atinjam seus respectivos portos seguros de descanso macro (R5 $\rightarrow$ R6 repousa 1 dia; R9 $\rightarrow$ R10 repousa 2 dias; R14 $\rightarrow$ R15 repousa 4 dias; R18 $\rightarrow$ R19 repousa 8 dias; R23 $\rightarrow$ R24 repousa 16 dias; R27 $\rightarrow$ R24 repousa 32 dias). Apenas no esgotamento de cartas inéditas do nível sem cartas prontas na lista **Próximas**, a bandeja fecha com menos de 5 cartas.
+- **Fila Unificada de Prioridades de Entrega:** O motor avaliador (`avaliarProximoAlvo`) adota estritamente a seguinte cascata:
+  1. **1ª da Bandeja:** Se houver frases ativas na bandeja (`taskIdsRef`), entrega o elemento frontal da fila FIFO.
+  2. **1ª de Próximas:** Se a bandeja tiver vagas ($< 5$) e não estiver fechada, busca e promove a frase mais antiga pronta da gaveta **Próximas** (`next_review <= Date.now()`).
+  3. **Inédita de Menor ID:** Se a bandeja tiver vagas ($< 5$), não estiver fechada e a lista Próximas estiver vazia, sugere a frase inédita (Rank 0) de menor ID global do nível.
+- **Navegação Livre em Cards Rank 0:** Cartas inéditas sugeridas abrem obrigatoriamente na tela de apresentação (R0) com botão "Praticar" ativo e com `fraseAtivaGlobal` nula, garantindo que os botões "Anterior" e "Próximo" naveguem com total liberdade por todas as cartas do tópico. O aluno pode aceitar a sugestão, folhear o tópico, sair para o Deck e escolher outro tópico ou interromper o estudo.
+- **Dois Caminhos de Acesso:**
+  - **Caminho A (Botão GAME):** O aluno inicia a esteira automática, recebendo a 1ª da bandeja, ou a 1ª de Próximas, ou a sugestão da inédita de menor ID na Prioridade 3.
+  - **Caminho B (Card Inédito Manual no Deck):** O aluno acessa o Deck, escolhe um tópico e clica diretamente em "Praticar" em um card Rank 0, atuando manualmente na Prioridade 3 da esteira e executando imediatamente o Rank 1.
+- **Alocação Pós-Exercício da Inédita:**
+  - **Se a bandeja tiver menos de 5 cartas:** A carta recém-praticada entra **após a última da bandeja**. Ao atingir 5 cartas, a bandeja ativa a trava de fechamento (`bandeja_fechada_${idiomaOrigem}_${idiomaEstudo}`), cessando a admissão de novas inéditas.
+  - **Se a bandeja já estiver completa com 5 cartas (abandono prévio):** A carta recém-praticada **não entra na bandeja** e é carimbada com timestamp recente, posicionando-se após a última da fila **Próximas**.
+  - Em ambos os casos, a esteira entrega em seguida a **1ª carta da Bandeja**, operando em FIFO pura.
+- **Formatura e Conclusão:** Ao atingir o descanso macro (`foiConcluido = true`), a frase é expurgada da bandeja e enviada à sua respectiva gaveta de repouso no Dominium. Ao zerar todos os IDs pendentes da bandeja, a Task é dada como concluída, limpando as chaves de persistência local e retornando o aluno ao menu.
 
 ---
 
@@ -133,7 +149,7 @@ echo "Concluído! Arquivo $OUTPUT gerado com sucesso."
 ## 5. Protocolo de Autoatualização e Governança do Dumper (Encerramento de Sessão)
 **Ação Obrigatória:** Antes de dar como finalizado qualquer atendimento que altere a arquitetura, estrutura ou escopo da plataforma, a IA deve cumprir o seguinte checklist de governança:
 
-1. **Auditoria de Escopo e Arquitetura:** Avaliar se as alterações realizadas modificaram integrações externas (Supabase, Cloudflare R2, Edge-TTS, Web Speech API, etc.), dependências estruturais ou fluxos de trabalho descritos na Seção 3 deste documento.
+1. **Auditoria de Escopo e Arquitetura:** Avaliar se as alterações realizadas modificaram integrações externas (Supabase, Cloudflare R2, Edge-TTS, Web Speech API, etc.), dependências estruturais ou fluxos de trabalho descritos na Seção 1 e Seção 3 deste documento.
 2. **Governança do Comando do Dumper (Seção 4):** Caso novos arquivos secundários, dados estáticos brutos, scripts pontuais de automação ou arquivos de documentação sejam criados no projeto, a IA DEVE atualizar as regras `-not -path` ou `-not -name` na Seção 4 para preservar o teto operacional de segurança de 8.000 linhas da Seção 2, mantendo nela estritamente o código-fonte vivo da aplicação (`src/` e arquivos vitais de configuração).
 3. **Entrega de Atualização:** Caso identifique divergências, fornecer explicitamente ao usuário a versão revisada e atualizada do `DINGLI_MASTER.md` utilizando encapsulamento com 4 crases para evitar quebra de formatação.
 4. **Instrução de Novo Snapshot:** Instruir o usuário a gerar uma nova versão do `DINGLI_DUMPER.md` caso arquivos tenham sido criados, movidos ou excluídos.
