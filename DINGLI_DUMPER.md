@@ -10,7 +10,6 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./index.html
 ./package.json
 ./package-lock.json
-./pub.sh
 ./public/manifest.json
 ./public/sw.js
 ./README.md
@@ -201,13 +200,6 @@ export default defineConfig([
     "vite": "^7.3.1"
   }
 }
-
-
-### 📄 ARQUIVO: ./pub.sh
-#!/bin/bash
-git add .
-git commit -m "$1"
-git push origin master
 
 
 ### 📄 ARQUIVO: ./public/manifest.json
@@ -4456,80 +4448,130 @@ const ExercicioEscrita = ({
   configLacuna, valorInput, setValorInput, resultadoFeedback, setResultadoFeedback,
   verificarResposta, editableRef, temas, idiomaEstudo, styles
 }) => {
+  const prefixoLimpo = (configLacuna.prefixo || "").trim();
+  const ehInicioOracao = !prefixoLimpo || /[.!?]\s*$/.test(prefixoLimpo);
+
   return (
     <div style={{ width: '100%', textAlign: 'center' }}>
       <div style={styles.containerLacuna}>
         {configLacuna.prefixo}
-        <div style={styles.wrapperInputRelativo}>
-          <span style={styles.placeholderInvisivel}>{configLacuna.resposta}</span>
-          <input
-            ref={editableRef}
-            type="text"
-            value={valorInput}
-            disabled={resultadoFeedback === 'acerto'}
-            autoCapitalize={!configLacuna.prefixo.trim() ? "sentences" : "none"}
-            autoCorrect="off"
-            spellCheck="false"
-            onFocus={() => {
-              if (resultadoFeedback === 'erro') {
-                setValorInput("");
-                setResultadoFeedback(null);
-              }
-              setTimeout(() => {
-                const botoes = document.getElementById('area-botoes-card');
-                if (botoes) botoes.scrollIntoView({ behavior: 'smooth', block: 'end' });
-              }, 300);
-            }}
-            onChange={(e) => {
-              let texto = e.target.value;
-              if (!configLacuna.prefixo.trim() && texto.length === 1 && texto[0] >= 'a' && texto[0] <= 'z') {
-                texto = texto.toUpperCase();
-              }
-              setValorInput(texto);
-            }}
-            onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); verificarResposta(); } }}
-            style={{
-              ...styles.inputSobreposto,
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              lineHeight: '1.2',
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              width: '100%',
-              maxWidth: '100%',
-              boxSizing: 'border-box',
-              color: resultadoFeedback ? 'transparent' : '#1e293b'
-            }}
-          />
-          {resultadoFeedback && (
-            <div style={{
-              ...styles.inputSobreposto,
-              pointerEvents: 'none',
-              backgroundColor: 'transparent',
-              borderBottomColor: 'transparent',
-              position: 'absolute',
-              left: 0,
-              top: 1,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              lineHeight: '1.2',
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              width: '100%',
-              maxWidth: '100%',
-              boxSizing: 'border-box'
-            }}>
-              {resultadoFeedback === 'acerto' ? <span style={{ color: COR_ACERTO }}>{configLacuna.resposta}</span> : configLacuna.resposta.split(/\s+/).map((word, i) => {
-                const userWords = valorInput.trim().split(/\s+/);
-                const clean = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
-                const isCorrect = clean(word) === clean(userWords[i]);
-                return <span key={i} style={{ color: isCorrect ? COR_ACERTO : '#ef4444' }}>{i > 0 ? ' ' : ''}{word}</span>
-              })}
-            </div>
-          )}
-        </div>
+        <span style={{ display: 'inline-flex', alignItems: 'baseline', verticalAlign: 'baseline', whiteSpace: 'nowrap' }}>
+          <div style={styles.wrapperInputRelativo}>
+            <span style={styles.placeholderInvisivel}>{configLacuna.resposta}</span>
+            <div
+              ref={editableRef}
+              contentEditable={resultadoFeedback !== 'acerto'}
+              suppressContentEditableWarning={true}
+              autoCapitalize={ehInicioOracao ? "sentences" : "none"}
+              autocapitalize={ehInicioOracao ? "sentences" : "none"}
+              autoCorrect="off"
+              spellCheck="false"
+              onFocus={() => {
+                if (resultadoFeedback === 'erro') {
+                  setValorInput("");
+                  setResultadoFeedback(null);
+                  if (editableRef.current) editableRef.current.innerText = "";
+                }
+                setTimeout(() => {
+                  const botoes = document.getElementById('area-botoes-card');
+                  if (botoes) botoes.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }, 300);
+              }}
+              onInput={(e) => {
+                let texto = e.currentTarget.innerText || "";
+                if (texto.length === 1) {
+                  const charOriginal = texto[0];
+                  const charAjustado = ehInicioOracao ? charOriginal.toUpperCase() : charOriginal.toLowerCase();
+                  if (charOriginal !== charAjustado) {
+                    texto = charAjustado;
+                    e.currentTarget.innerText = texto;
+                    const sel = window.getSelection();
+                    const range = document.createRange();
+                    range.selectNodeContents(e.currentTarget);
+                    range.collapse(false);
+                    sel.removeAllRanges();
+                    sel.addRange(range);
+                  }
+                }
+                setValorInput(texto);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  verificarResposta();
+                }
+              }}
+              onPaste={(e) => {
+                e.preventDefault();
+                const text = e.clipboardData.getData('text/plain');
+                document.execCommand('insertText', false, text);
+              }}
+              style={{
+                gridArea: '1/1',
+                backgroundColor: '#f1f5f9',
+                borderRadius: '6px',
+                borderBottom: '3px solid #cbd5e1',
+                padding: '0 10px',
+                boxSizing: 'border-box',
+                font: 'inherit',
+                fontWeight: '900',
+                lineHeight: '1.2',
+                textAlign: 'center',
+                whiteSpace: 'pre-wrap',
+                wordBreak: 'break-word',
+                outline: 'none',
+                color: resultadoFeedback ? 'transparent' : '#1e293b',
+                caretColor: resultadoFeedback ? 'transparent' : '#1e293b',
+                width: '100%',
+                height: '100%',
+                overflow: 'hidden'
+              }}
+            />
+            {resultadoFeedback && (
+              <div style={{
+                gridArea: '1/1',
+                pointerEvents: 'none',
+                backgroundColor: 'transparent',
+                borderRadius: '6px',
+                borderBottom: '3px solid transparent',
+                padding: '0 10px',
+                boxSizing: 'border-box',
+                font: 'inherit',
+                fontWeight: '900',
+                lineHeight: '1.2',
+                textAlign: 'center',
+                whiteSpace: 'pre-wrap',
+                wordBreak: 'break-word',
+                width: '100%',
+                height: '100%',
+                overflow: 'hidden'
+              }}>
+                {resultadoFeedback === 'acerto' ? (
+                  <span style={{ color: COR_ACERTO }}>{configLacuna.resposta}</span>
+                ) : (
+                  configLacuna.resposta.split(/\s+/).map((word, i) => {
+                    const userWords = (valorInput || "").trim().split(/\s+/);
+                    const clean = (s) => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+                    const isCorrect = clean(word) === clean(userWords[i]);
+                    return (
+                      <span
+                        key={i}
+                        style={{
+                          color: isCorrect ? COR_ACERTO : '#ef4444',
+                          whiteSpace: 'pre'
+                        }}
+                      >
+                        {i > 0 ? ' ' : ''}{word}
+                      </span>
+                    );
+                  })
+                )}
+              </div>
+            )}
+          </div>
+          {configLacuna.pontuacao}
+        </span>
         {configLacuna.sufixo}
       </div>
     </div>
@@ -4565,7 +4607,7 @@ const ExercicioVoz = ({
             let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
             const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
 
-          if (estaNaFala) {
+            if (estaNaFala) {
               cor = COR_ACERTO;
               borderB = '2px solid transparent';
             } else if (resultadoFeedback === 'erro') {
@@ -4663,7 +4705,7 @@ export default function TelaEstudo({
 
   const ns = navStyle(idiomaEstudo);
 
- const [feedbackLocal, setFeedbackLocal] = useState(null);
+  const [feedbackLocal, setFeedbackLocal] = useState(null);
   const resultadoFeedback = (resultadoFeedbackProp !== undefined) ? resultadoFeedbackProp : feedbackLocal;
   const setResultadoFeedback = (val) => {
     setFeedbackLocal(val);
@@ -4673,8 +4715,7 @@ export default function TelaEstudo({
   };
   const ehDinglabAtivo = resultadoFeedback === 'dinglab';
   const [valorInput, setValorInput] = useState("");
-  const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "" });
-  const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
+  const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "", pontuacao: "" }); const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
   const [slotsEx3, setSlotsEx3] = useState([]);
   const [, setTentativaFinalizada] = useState(false);
 
@@ -4880,6 +4921,7 @@ export default function TelaEstudo({
   useEffect(() => {
     if (modoExercicio && exercicioNivel > 0 && frase) {
       setResultadoFeedback(null); setTentativaFinalizada(false); setValorInput("");
+      if (editableRef.current) editableRef.current.innerText = "";
 
       const fraseOriginal = normalizarFrase(frase[idiomaEstudo]);
       const percentual = (exercicioNivel <= 9) ? 0.3 : (exercicioNivel <= 18) ? 0.7 : 1.0;
@@ -4894,7 +4936,13 @@ export default function TelaEstudo({
         const pontuacaoFinalMatch = seqResposta.match(/[.,!?;:]+$/);
         const pontuacaoFinal = pontuacaoFinalMatch ? pontuacaoFinalMatch[0] : "";
         const resposta = seqResposta.replace(/^[¿¡"'(]+/, "").replace(/[.,!?;:]+$/, "");
-        setConfigLacuna({ prefixo: prefixo + prefixoAdicional, sufixo: pontuacaoFinal + ((inicioIdx + qtdPalavrasOcultas < palavras.length ? " " : "") + palavras.slice(inicioIdx + qtdPalavrasOcultas).join(" ")), resposta });
+        const restoTexto = (inicioIdx + qtdPalavrasOcultas < palavras.length ? " " : "") + palavras.slice(inicioIdx + qtdPalavrasOcultas).join(" ");
+        setConfigLacuna({
+          prefixo: prefixo + prefixoAdicional,
+          pontuacao: pontuacaoFinal,
+          sufixo: restoTexto,
+          resposta
+        });
       } else if (RANKS_SELECT.includes(exercicioNivel)) {
         const minInterativo = (exercicioNivel <= 9) ? Math.min(2, palavras.length) : 1;
         const qtdInterativa = Math.max(minInterativo, Math.round(palavras.length * percentual));
@@ -4920,7 +4968,7 @@ export default function TelaEstudo({
           }
         }
         setPalavrasOpcoes(opcoesEmbaralhadas);
-     } else if (RANKS_VOICE.includes(exercicioNivel)) {
+      } else if (RANKS_VOICE.includes(exercicioNivel)) {
         // Cálculo síncrono via useMemo para evitar o piscar da frase
       }
     } else {
@@ -5035,6 +5083,7 @@ export default function TelaEstudo({
         } else if (RANKS_WRITE.includes(exercicioNivel)) {
           setValorInput("");
           setResultadoFeedback(null);
+          if (editableRef.current) editableRef.current.innerText = "";
         }
       };
 
@@ -5259,7 +5308,7 @@ export default function TelaEstudo({
     }
   }, [exercicioNivel, modoExercicio, indice, resultadoFeedback, modalReporteAberto]);
 
- const isCheckDisabled = modoExercicio && (
+  const isCheckDisabled = modoExercicio && (
     resultadoFeedback === 'acerto' ||
     resultadoFeedback === 'erro' ||
     (RANKS_WRITE.includes(exercicioNivel) && !valorInput.trim()) ||
