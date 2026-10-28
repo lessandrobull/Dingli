@@ -76,14 +76,14 @@ import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_
 
 // TABELA CENTRAL DE VELOCIDADES DE ÁUDIO (Ajuste manual por idioma)
 export const VELOCIDADES_AUDIO = {
-    pi: { normal: 0.85, lento: 0.50 }, // Mandarim
-    zh: { normal: 0.85, lento: 0.50 },
-    en: { normal: 1.00, lento: 0.65 }, // Inglês
-    es: { normal: 1.00, lento: 0.65 }, // Espanhol
-    fr: { normal: 1.00, lento: 0.65 }, // Francês
-    it: { normal: 1.00, lento: 0.65 }, // Italiano
-    ge: { normal: 1.00, lento: 0.65 }, // Alemão
-    pt: { normal: 1.00, lento: 0.65 }  // Português
+    pi: { normal: 0.85, lento: 0.60 }, // Mandarim
+    zh: { normal: 0.85, lento: 0.60 },
+    en: { normal: 1.00, lento: 0.75 }, // Inglês
+    es: { normal: 1.00, lento: 0.75 }, // Espanhol
+    fr: { normal: 1.00, lento: 0.75 }, // Francês
+    it: { normal: 1.00, lento: 0.75 }, // Italiano
+    ge: { normal: 1.00, lento: 0.75 }, // Alemão
+    pt: { normal: 1.00, lento: 0.75 }  // Português
 };
 
 export const useSpeech = ({
