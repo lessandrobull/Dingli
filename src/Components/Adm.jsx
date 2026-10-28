@@ -193,6 +193,22 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
               >
                 Reportes de Frases
               </button>
+
+              <button
+                onClick={() => { window.location.href = '/auditor.html'; }}
+                style={{
+                  padding: '16px',
+                  borderRadius: '12px',
+                  border: 'none',
+                  backgroundColor: COR_SUPERFICIE_DIGITACAO,
+                  color: COR_INSTITUCIONAL_ACAO,
+                  fontWeight: '900',
+                  fontSize: '1.1rem',
+                  cursor: 'pointer'
+                }}
+              >
+                Auditor de Áudios
+              </button>
             </div>
           </>
         ) : (

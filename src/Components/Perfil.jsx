@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useDingli } from '../DingliContext';
 import { COR_TOM_CLARO, COR_INSTITUCIONAL_TITULO, COR_INSTITUCIONAL_ACAO, COR_SUPERFICIE_DIGITACAO } from '../themeColors';
+import { supabase } from '../supabaseClient';
 
 export default function Perfil({
   styles,
@@ -11,6 +12,10 @@ export default function Perfil({
   cursosInscritos
 }) {
   const { temas, mudarTela, setIdiomaOrigem, setIdiomaEstudo, setUserRole, setNivelAtivo, nivelAtivo } = useDingli();
+
+  const [modalLoginAberto, setModalLoginAberto] = useState(false);
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
 
   const toquesRef = useRef(0);
   const timerToquesRef = useRef(null);
@@ -27,14 +32,34 @@ export default function Perfil({
 
     if (toquesRef.current >= 4) {
       toquesRef.current = 0;
-      setUserRole('adm');
-      mudarTela('adm');
+      setModalLoginAberto(true);
       return;
     }
 
     timerToquesRef.current = setTimeout(() => {
       toquesRef.current = 0;
     }, 1500);
+  };
+
+  const handleLogin = async () => {
+    if (!email || !senha) {
+      alert('Preencha o e-mail e a senha.');
+      return;
+    }
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password: senha,
+    });
+
+    if (error) {
+      alert('Falha no login: ' + error.message);
+      return;
+    }
+
+    setModalLoginAberto(false);
+    setUserRole('adm');
+    mudarTela('adm');
   };
 
   if (!styles || !temas) {
@@ -94,19 +119,116 @@ export default function Perfil({
           </div>
         </div>
 
-          {import.meta.env.DEV && (
-        <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', flexShrink: 0, paddingBottom: '0px' }}>
-          <button
-            style={{ ...styles.btnLabHome, margin: '0 auto', display: 'block', width: '100%', backgroundColor: COR_TOM_CLARO }}
-            onClick={() => {
-              setUserRole('adm');
-              mudarTela('adm');
-            }}
-          >
-            <span style={{ ...styles.labDestaque, color: COR_INSTITUCIONAL_ACAO }}>Adm</span>
-          </button>
-        </div>
-          )}
+        {import.meta.env.DEV && (
+          <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', flexShrink: 0, paddingBottom: '0px' }}>
+            <button
+              style={{ ...styles.btnLabHome, margin: '0 auto', display: 'block', width: '100%', backgroundColor: COR_TOM_CLARO }}
+              onClick={() => {
+                setModalLoginAberto(true);
+              }}
+            >
+              <span style={{ ...styles.labDestaque, color: COR_INSTITUCIONAL_ACAO }}>Adm</span>
+            </button>
+          </div>
+        )}
+
+        {modalLoginAberto && (
+          <div style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100dvh',
+            backgroundColor: 'rgba(0,0,0,0.6)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            padding: '20px',
+            boxSizing: 'border-box'
+          }}>
+            <div style={{
+              backgroundColor: '#ffffff',
+              borderRadius: '16px',
+              padding: '24px',
+              width: '100%',
+              maxWidth: '360px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '12px',
+              boxShadow: '0 10px 25px rgba(0,0,0,0.2)'
+            }}>
+              <h3 style={{ margin: 0, color: COR_INSTITUCIONAL_TITULO, textAlign: 'center' }}>
+                Acesso Adm
+              </h3>
+
+              <input
+                type="email"
+                placeholder="E-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={{
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #cbd5e1',
+                  fontSize: '0.95rem',
+                  outline: 'none'
+                }}
+              />
+
+              <input
+                type="password"
+                placeholder="Senha"
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
+                style={{
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #cbd5e1',
+                  fontSize: '0.95rem',
+                  outline: 'none'
+                }}
+              />
+
+              <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
+                <button
+                  type="button"
+                  onClick={() => setModalLoginAberto(false)}
+                  style={{
+                    flex: 1,
+                    padding: '10px',
+                    borderRadius: '8px',
+                    border: '1px solid #cbd5e1',
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    fontWeight: '700',
+                    cursor: 'pointer'
+                  }}
+                >
+                  Cancelar
+                </button>
+
+                <button
+                  type="button"
+                  id="btnConfirmarLogin"
+                  onClick={handleLogin}
+                  style={{
+                    flex: 1,
+                    padding: '10px',
+                    borderRadius: '8px',
+                    border: 'none',
+                    backgroundColor: COR_INSTITUCIONAL_ACAO,
+                    color: '#ffffff',
+                    fontWeight: '700',
+                    cursor: 'pointer'
+                  }}
+                >
+                  Entrar
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

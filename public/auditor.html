@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dìnglì - Auditor de Áudios</title>
+    <style>
+        :root {
+            --bg: #e4eafa;
+            --card: #e4eafa;
+            --titulo: #254b73;
+            --acao: #3a6ea5;
+            --superficie: #edf2fc;
+            --text: #1e293b;
+            --muted: #5e738f;
+            --border: #b8cbe8;
+            --danger: #a34343;
+            --danger-bg: #eedede;
+            --danger-border: #cf9b9b;
+            --success: #10b981;
+        }
+
+        * {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 12px 16px;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.35rem;
+            font-weight: 900;
+            color: var(--titulo);
+            text-align: center;
+        }
+
+        .painel-filtros {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 8px;
+            background: var(--card);
+            padding: 10px 14px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 20px rgba(30, 58, 95, 0.10);
+        }
+
+        label {
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: var(--muted);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--superficie);
+            color: var(--text);
+            font-size: 0.85rem;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .card-reprodutor {
+            background: var(--card);
+            border-radius: 18px;
+            padding: 18px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 14px 32px rgba(30, 58, 95, 0.16), 0 3px 8px rgba(30, 58, 95, 0.08);
+        }
+
+        .info-topo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .texto-frase {
+            font-size: 1.35rem;
+            font-weight: 900;
+            color: var(--text);
+            line-height: 1.25;
+            margin: 2px 0;
+            min-height: 32px;
+        }
+
+        .texto-traducao {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .grade-vozes {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .btn-voz {
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--superficie);
+            color: var(--text);
+            font-weight: 800;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+
+        .btn-voz.ativo {
+            background: var(--acao);
+            color: #ffffff;
+            border-color: var(--acao);
+        }
+
+        .controles-player {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-top: 4px;
+        }
+
+        .btn-acao {
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 800;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primario {
+            background: var(--acao);
+            color: #ffffff;
+            box-shadow: 0 3px 10px rgba(58, 110, 165, 0.25);
+        }
+
+        .btn-secundario {
+            background: var(--superficie);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-perigo {
+            background: var(--danger-bg);
+            color: var(--danger);
+            border: 1px solid var(--danger-border);
+            font-weight: 800;
+            font-size: 0.88rem;
+        }
+
+        .opcoes-autoplay {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--superficie);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            color: var(--muted);
+            border: 1px solid var(--border);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header style="justify-content: center; border-bottom: none; padding-bottom: 0;">
+            <h1 style="text-align: center;">Dìnglì Audio Auditor</h1>
+            <span id="badgeProgresso" style="display: none;"></span>
+        </header>
+
+        <!-- Filtros -->
+        <div class="painel-filtros">
+            <div>
+                <label>Idioma</label>
+                <select id="selectIdioma">
+                    <option value="en">Inglês (en)</option>
+                    <option value="es">Espanhol (es)</option>
+                    <option value="fr">Francês (fr)</option>
+                    <option value="it">Italiano (it)</option>
+                    <option value="ge">Alemão (ge)</option>
+                    <option value="pt">Português (pt)</option>
+                    <option value="zh">Mandarim (zh)</option>
+                </select>
+            </div>
+            <div>
+                <label>Nível</label>
+                <select id="selectNivel">
+                    <option value="TODOS">Todos os Níveis</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                </select>
+            </div>
+            <div>
+                <label>Velocidade</label>
+                <select id="selectVelocidade">
+                    <option value="1.0">1.0x (Normal)</option>
+                    <option value="0.85">0.85x</option>
+                    <option value="0.75">0.75x</option>
+                    <option value="0.65">0.65x (Lento)</option>
+                </select>
+            </div>
+            <div>
+                <label>Ir para Frase ID</label>
+                <input type="number" id="inputBuscarId" placeholder="Ex: 35">
+            </div>
+        </div>
+
+        <!-- Card do Player -->
+        <div class="card-reprodutor">
+            <div class="info-topo">
+                <span id="labelTopico">Tópico: --</span>
+                <span id="labelContador">0 / 0</span>
+            </div>
+
+            <div>
+                <div id="textoPrincipal" class="texto-frase">Carregando frases...</div>
+                <p id="textoTraducao" class="texto-traducao">--</p>
+            </div>
+
+            <!-- Seletor de Vozes -->
+            <div>
+                <label>Vozes Disponíveis na Faixa:</label>
+                <div id="gradeVozes" class="grade-vozes"></div>
+            </div>
+
+            <!-- Controles de Navegação -->
+            <div class="controles-player">
+                <button id="btnAnterior" class="btn-acao btn-secundario">⏮ Anterior</button>
+                <button id="btnPlay" class="btn-acao btn-primario">▶ Reproduzir</button>
+                <button id="btnProxima" class="btn-acao btn-secundario">Próxima ⏭</button>
+            </div>
+
+            <!-- Autoplay e Sinalização -->
+            <div class="opcoes-autoplay">
+                <label style="margin: 0; color: #fff; cursor: pointer;">
+                    <input type="checkbox" id="checkAutoplay" style="width: auto; margin-right: 6px;">
+                    Playlist Automática (Avançar sozinho)
+                </label>
+                <span>Pausa: <b>1.0s</b></span>
+            </div>
+
+            <div style="display: flex; gap: 8px; align-items: center; width: 100%;">
+                <button id="btnReportar" class="btn-acao btn-perigo"
+                    style="flex: 0 0 auto; white-space: nowrap; padding: 10px 14px;">
+                    Sinalizar problema
+                </button>
+                <input type="text" id="inputProblema" placeholder="Descreva o defeito do áudio..." style="flex: 1;" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const R2_BASE = "https://pub-b24d092a7bf34fd9bf22befba89de35f.r2.dev";
+        const SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co";
+        const SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp";
+
+        const MAPA_VOZES = {
+            en: ["v1", "v2", "v3", "v4", "v5", "v6"],
+            es: ["v1", "v2", "v3", "v4", "v5", "v6"],
+            fr: ["v1", "v2", "v3", "v4"],
+            it: ["v1", "v2", "v3", "v4"],
+            ge: ["v1", "v2", "v3", "v4"],
+            pt: ["v1", "v2", "v3", "v4"],
+            zh: ["v1", "v2", "v3", "v4"]
+        };
+
+        let frases = [];
+        let indiceAtual = 0;
+        let vozAtual = "v1";
+        let audio = new Audio();
+        let timerAutoplay = null;
+
+        async function carregarFrases() {
+            const badge = document.getElementById("badgeProgresso");
+            const textoPrincipal = document.getElementById("textoPrincipal");
+            badge.innerText = "Baixando frases...";
+
+            try {
+                const headers = {
+                    "apikey": SUPABASE_KEY,
+                    "Authorization": `Bearer ${SUPABASE_KEY}`
+                };
+
+                // Busca em dois lotes para cobrir todas as 1.200 frases sem travar no limite de 1.000 do Supabase
+                const [resp1, resp2] = await Promise.all([
+                    fetch(`${SUPABASE_URL}/rest/v1/sentences?select=*&order=id.asc&limit=1000&offset=0`, { headers }),
+                    fetch(`${SUPABASE_URL}/rest/v1/sentences?select=*&order=id.asc&limit=1000&offset=1000`, { headers })
+                ]);
+
+                if (!resp1.ok) throw new Error(`Falha no lote 1: HTTP ${resp1.status}`);
+
+                const data1 = await resp1.json();
+                const data2 = resp2.ok ? await resp2.json() : [];
+                frases = [...data1, ...data2];
+
+                if (!frases.length) throw new Error("O banco de dados não retornou frases.");
+
+                filtrarFrases();
+            } catch (err) {
+                console.error("[Auditor] Erro de conexão:", err);
+                badge.innerText = "Erro de conexão";
+                badge.style.backgroundColor = "var(--danger)";
+                badge.style.color = "#ffffff";
+                textoPrincipal.innerHTML = `<span style="color: var(--danger); font-size: 1.1rem;">Falha ao carregar frases: ${err.message}</span>`;
+            }
+        }
+
+        function filtrarFrases() {
+            const nivel = document.getElementById("selectNivel").value;
+            const idioma = document.getElementById("selectIdioma").value;
+
+            window.frasesFiltradas = frases.filter(f => {
+                const matchNivel = (nivel === "TODOS" || f.level === nivel);
+                const temIdioma = Boolean(f[idioma]);
+                return matchNivel && temIdioma;
+            });
+
+            indiceAtual = 0;
+            atualizarVozesDisponiveis();
+            atualizarCard();
+        }
+
+        function atualizarVozesDisponiveis() {
+            const idioma = document.getElementById("selectIdioma").value;
+            const vozes = MAPA_VOZES[idioma] || ["v1"];
+            if (!vozes.includes(vozAtual)) vozAtual = "v1";
+
+            const grade = document.getElementById("gradeVozes");
+            grade.innerHTML = "";
+            vozes.forEach(v => {
+                const btn = document.createElement("button");
+                btn.className = "btn-voz" + (v === vozAtual ? " ativo" : "");
+                btn.innerText = v.toUpperCase();
+                btn.onclick = () => {
+                    vozAtual = v;
+                    atualizarVozesDisponiveis();
+                    tocarAudio();
+                };
+                grade.appendChild(btn);
+            });
+        }
+
+        function atualizarCard() {
+            const lista = window.frasesFiltradas || [];
+            if (lista.length === 0) {
+                document.getElementById("textoPrincipal").innerText = "Nenhuma frase encontrada para este filtro.";
+                document.getElementById("textoTraducao").innerText = "";
+                return;
+            }
+
+            const item = lista[indiceAtual];
+            const idioma = document.getElementById("selectIdioma").value;
+
+            document.getElementById("textoPrincipal").innerText = item[idioma] || item.texto || "";
+            document.getElementById("textoTraducao").innerText = item.pt || item.topic_pt || "";
+            document.getElementById("labelTopico").innerText = `ID #${item.id} · ${item.level} · ${item.topic_pt || item.topic_en || ''}`;
+            document.getElementById("labelContador").innerText = `${indiceAtual + 1} / ${lista.length}`;
+
+            const badge = document.getElementById("badgeProgresso");
+            badge.innerText = `${lista.length} frases prontas`;
+            badge.style.backgroundColor = "#334155";
+            badge.style.color = "var(--muted)";
+        }
+
+        function tocarAudio() {
+            clearTimeout(timerAutoplay);
+            const lista = window.frasesFiltradas || [];
+            if (lista.length === 0) return;
+
+            const item = lista[indiceAtual];
+            const idioma = document.getElementById("selectIdioma").value;
+            const pasta = idioma === "pi" ? "zh" : idioma;
+            const url = `${R2_BASE}/${pasta}/${item.id}_${vozAtual}.mp3?v=${Date.now()}`;
+
+            audio.pause();
+            audio = new Audio(url);
+            audio.playbackRate = parseFloat(document.getElementById("selectVelocidade").value);
+
+            document.getElementById("btnPlay").innerText = "⏸ Pausar";
+
+            audio.onended = () => {
+                document.getElementById("btnPlay").innerText = "▶ Reproduzir";
+                if (document.getElementById("checkAutoplay").checked) {
+                    timerAutoplay = setTimeout(() => {
+                        avancar();
+                        tocarAudio();
+                    }, 1000);
+                }
+            };
+
+            audio.onerror = () => {
+                document.getElementById("btnPlay").innerText = "Erro Áudio";
+                if (document.getElementById("checkAutoplay").checked) {
+                    timerAutoplay = setTimeout(() => {
+                        avancar();
+                        tocarAudio();
+                    }, 1500);
+                }
+            };
+
+            audio.play().catch(() => {
+                document.getElementById("btnPlay").innerText = "▶ Reproduzir";
+            });
+        }
+
+        function pausarOuTocar() {
+            if (!audio.paused && audio.duration > 0) {
+                audio.pause();
+                document.getElementById("btnPlay").innerText = "▶ Reproduzir";
+            } else {
+                tocarAudio();
+            }
+        }
+
+        function avancar() {
+            const lista = window.frasesFiltradas || [];
+            if (indiceAtual < lista.length - 1) {
+                indiceAtual++;
+                atualizarCard();
+            }
+        }
+
+        function voltar() {
+            if (indiceAtual > 0) {
+                indiceAtual--;
+                atualizarCard();
+            }
+        }
+
+        async function sinalizarAudio() {
+            const item = window.frasesFiltradas[indiceAtual];
+            const idioma = document.getElementById("selectIdioma").value;
+            const btn = document.getElementById("btnReportar");
+            const inputProblema = document.getElementById("inputProblema");
+            const textoProblema = inputProblema ? inputProblema.value.trim() : "";
+
+            btn.innerText = "A registrar...";
+
+            try {
+                const resp = await fetch(`${SUPABASE_URL}/rest/v1/reports_frases`, {
+                    method: "POST",
+                    headers: {
+                        "apikey": SUPABASE_KEY,
+                        "Authorization": `Bearer ${SUPABASE_KEY}`,
+                        "Content-Type": "application/json",
+                        "Prefer": "return=minimal"
+                    },
+                    body: JSON.stringify([{
+                        frase_id: item.id,
+                        idioma_estudo: idioma,
+                        idioma_origem: "pt",
+                        voz: vozAtual,
+                        tipo_problema: textoProblema ? `Auditoria: ${textoProblema}` : "Auditoria Manual: Áudio com defeito",
+                        observacao: `Sinalizado via Auditor Web (${item.id}_${vozAtual}.mp3)${textoProblema ? ` - ${textoProblema}` : ""}`,
+                        resolvido: false
+                    }])
+                });
+
+                if (!resp.ok) throw new Error("Erro HTTP");
+
+                btn.innerText = "✔ Sinalizado!";
+                btn.style.color = "var(--success)";
+                if (inputProblema) inputProblema.value = "";
+
+                setTimeout(() => {
+                    btn.innerText = "Sinalizar problema";
+                    btn.style.color = "var(--danger)";
+                }, 2000);
+            } catch (err) {
+                alert("Falha ao gravar reporte no Supabase.");
+                btn.innerText = "Sinalizar problema";
+            }
+        }
+
+        // Event Listeners
+        document.getElementById("btnPlay").onclick = pausarOuTocar;
+        document.getElementById("btnProxima").onclick = () => { avancar(); tocarAudio(); };
+        document.getElementById("btnAnterior").onclick = () => { voltar(); tocarAudio(); };
+        document.getElementById("btnReportar").onclick = sinalizarAudio;
+        document.getElementById("selectIdioma").onchange = filtrarFrases;
+        document.getElementById("selectNivel").onchange = filtrarFrases;
+        document.getElementById("selectVelocidade").onchange = () => {
+            audio.playbackRate = parseFloat(document.getElementById("selectVelocidade").value);
+        };
+        document.getElementById("inputBuscarId").onkeydown = (e) => {
+            if (e.key === "Enter") {
+                const id = parseInt(e.target.value, 10);
+                const idx = window.frasesFiltradas.findIndex(f => f.id === id);
+                if (idx !== -1) {
+                    indiceAtual = idx;
+                    atualizarCard();
+                    tocarAudio();
+                } else {
+                    alert("ID não encontrado no filtro atual.");
+                }
+            }
+        };
+
+        // Atalhos de teclado
+        window.onkeydown = (e) => {
+            if (e.target.tagName === "INPUT") return;
+            if (e.code === "Space") { e.preventDefault(); pausarOuTocar(); }
+            if (e.code === "ArrowRight") { e.preventDefault(); avancar(); tocarAudio(); }
+            if (e.code === "ArrowLeft") { e.preventDefault(); voltar(); tocarAudio(); }
+            if (e.key === "f" || e.key === "F") { e.preventDefault(); sinalizarAudio(); }
+            if (["1", "2", "3", "4", "5", "6"].includes(e.key)) {
+                const idioma = document.getElementById("selectIdioma").value;
+                const vozes = MAPA_VOZES[idioma] || [];
+                const vozEscolhida = `v${e.key}`;
+                if (vozes.includes(vozEscolhida)) {
+                    vozAtual = vozEscolhida;
+                    atualizarVozesDisponiveis();
+                    tocarAudio();
+                }
+            }
+        };
+
+        carregarFrases();
+    </script>
+</body>
+
+</html>

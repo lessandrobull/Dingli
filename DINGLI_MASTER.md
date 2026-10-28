@@ -32,31 +32,36 @@ O **DINGLI** é um Progressive Web App (PWA) de aprendizado acelerado de idiomas
 
 ---
 
-## 2. Ambiente de Desenvolvimento
+## 2. Ambiente de Desenvolvimento e Regras de Conduta para IAs
 - **Ambiente Operacional:** Windows.
-- **Terminal Padrão:** Git Bash integrado ao VSCode.
-- **Diretriz para IAs:** Todos os comandos de terminal sugeridos devem ser estritamente compatíveis com a sintaxe do Git Bash / Bash no ambiente Windows.
-- **Sempre proibido inferir:** ao receber instruções, é obrigatório saber como o projeto está e como tem que ser antes de realizar qualquer alteração.
+- **Terminal Padrão:** Git Bash integrado ao VSCode. Todos os comandos de terminal sugeridos devem ser estritamente compatíveis com a sintaxe do Git Bash / Bash no ambiente Windows.
+- **Comunicação:** Respostas sempre curtas, diretas e estritamente em Português do Brasil (`pt-BR`), sem textos longos ou introduções desnecessárias.
+- **Proibido Inferir, Supor ou Chutar:** É terminantemente proibido adivinhar código, nomes de variáveis, estrutura de arquivos ou números (como contagem de linhas). A IA deve sempre verificar o arquivo real no `DINGLI_DUMPER.md` (ou solicitar o arquivo atual ao usuário caso não esteja visível) antes de afirmar qualquer coisa ou propor alterações.
+- **Fluxo de Trabalho em Suaves Etapas (Proibido Despejar Código):** Ao receber uma demanda, a IA deve primeiro confirmar o que entendeu e apresentar um planejamento dividido em etapas suaves (uma etapa por vez), sem enviar blocos de código sem autorização prévia e sem tomar decisões pelo projeto.
+- **Padrão Obrigatório de Alteração ("Como está" x "Como tem que ser"):** Toda alteração de código ou documentação — somente após autorizada pelo usuário — deve ser apresentada mostrando estritamente o trecho exato atual (**Como está**) e o trecho novo (**Como tem que ser**) para localização e edição manual.
 
 ---
 
 ## 3. Infraestrutura e Serviços Externos (Invisíveis no Código Local)
 Esta seção documenta as dependências que residem fora do repositório local e os motores híbridos que o código-fonte consome:
 
-### A. Supabase (PostgreSQL & Auth Anônima)
-- Autenticação anônima silenciosa (`signInAnonymously`) com fallback transparente para operação 100% local.
+### A. Supabase (PostgreSQL, Auth Anônima & Auth Admin)
+- Autenticação em dois níveis:
+  - **Alunos (`App.jsx` / `dataService.js`):** autenticação anônima silenciosa (`signInAnonymously`) com fallback transparente para operação 100% local.
+  - **Administrador (`Perfil.jsx`):** autenticação via e-mail e senha (`supabase.auth.signInWithPassword`) em modal acionado por 4 toques consecutivos (janela de `1500ms`) na frase inspiracional (ou pelo botão `Adm` em ambiente `DEV`), definindo `userRole = 'adm'`, abrindo a tela `adm` e autenticando a sessão para exclusão de registros em `reports_frases` sob política RLS restrita ao papel `authenticated`.
 - Banco de dados relacional com as tabelas:
   - `sentences`: base curricular das 1.200 frases em todos os idiomas, tópicos por idioma de origem (`topic_{lang}`) e frases inspiracionais.
   - `curso_revisoes`: controle de versionamento independente por idioma (`versao`, `ids_alterados`, `descricao`), permitindo invalidação seletiva de cache e reset cirúrgico apenas das frases atualizadas.
   - `user_progress`: persistência de progresso e maestria em nuvem (`user_id`, `idioma`, `maestria`) com regras de degradação por inatividade.
-  - `reports_frases`: telemetria de reportes manuais dos alunos, quarentenas automáticas do Dìnglab (3 erros vocais) e superações na Prova de Fogo, gerenciáveis pelo painel administrativo (`Adm.jsx`).
+  - `reports_frases`: telemetria de reportes manuais dos alunos (`TelaEstudo.jsx` e `Dinglab.jsx`), quarentenas automáticas do Dìnglab (3 erros vocais), superações na Prova de Fogo e reportes manuais de auditoria de áudio (`public/auditor.html`), gerenciáveis (marcar resolvido, inspecionar no card e excluir) pelo painel administrativo (`Adm.jsx`).
 
-### B. Cloudflare R2 (Storage Remoto de Áudios) e Cache Offline Híbrido
+### B. Cloudflare R2 (Storage Remoto de Áudios), Cache Offline Híbrido e Auditor de Áudios
 - Bucket público no **Cloudflare R2** (`https://pub-b24d092a7bf34fd9bf22befba89de35f.r2.dev`) contendo:
   - Arquivos de frases completas (`/{lang}/{id}_{voz}.mp3`), com 6 vozes (`v1` a `v6`) para Inglês e Espanhol e 4 vozes (`v1` a `v4`) para Francês, Italiano, Alemão, Português e Mandarim (`zh`).
   - Arquivos de vocabulário de palavras isoladas (`/palavras/{lang}/{slug}.mp3`) sanitizados com mapeamento de diacríticos.
 - Controle de versionamento local (`VERSOES_AUDIOS`) para *cache busting* silencioso (`?v=2`) em regravações pontuais.
 - Persistência offline em duas camadas: **Cache Storage API** (`dingli-audios-v1`) como camada primária e **IndexedDB** (`dingli_offline_db` v3 com as *stores* `topics_cache`, `sentences_cache` e `audios_cache`) como *fallback* para dados e blobs de áudio.
+- **Auditor de Áudios (`public/auditor.html`):** ferramenta web independente acessada pelo botão `Auditor de Áudios` no menu de `Adm.jsx` (`window.location.href = '/auditor.html'`). Carrega as 1.200 frases da tabela `sentences` em dois lotes paralelos via REST (`limit=1000&offset=0` e `limit=1000&offset=1000`), reproduz os arquivos `.mp3` diretamente do Cloudflare R2 com *cache busting* (`?v=${Date.now()}`), opera com filtros de idioma, nível, velocidade (`1.0x` a `0.65x`) e busca por ID, seletor de vozes (`v1` a `v6`), playlist automática (pausa de `1.0s`), atalhos de teclado (`Espaço`, `←`/`→`, `1` a `6`, `F`) e envio de reportes com campo descritivo (`inputProblema`) para a tabela `reports_frases`, utilizando paleta clara (`#e4eafa`) e barra de rolagem oculta.
 
 ### C. Síntese Neural de Voz (Edge-TTS), Pipeline FFmpeg e Motor de Reprodução
 - Síntese automatizada de frases e termos isolados via Microsoft Edge-TTS cobrindo as vozes oficiais dos 7 idiomas (scripts em `scripts/`).
