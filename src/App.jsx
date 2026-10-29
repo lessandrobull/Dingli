@@ -271,7 +271,7 @@ function App() {
         ? zhSalvar
         : fraseOriginal;
 
-     // Finaliza o feedback assim que o áudio de correção termina
+      // Finaliza o feedback assim que o áudio de correção termina
       const finalizarAudioErro = () => {
         setTranscricaoAoVivo("");
         setStatusVoz('IDLE');
@@ -885,16 +885,18 @@ function App() {
 
     // Cenário 2: Há revisão, mas o aluno nunca estudou essas frases (R = 0)
     if (idsEstudados.length === 0) {
-      // Grava versão imediatamente para liberar o estado da UI
       const versaoAlvo = revisaoPendente.novaVersao;
       localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(versaoAlvo));
       setRevisaoPendente(null);
 
-      // Limpeza de cache e IndexedDB em segundo plano (sem travar abertura do Deck/Game)
-      Promise.all([
-        expurgarAudiosDeIds(idsRevisao, idiomaEstudo),
-        invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo)
-      ]).catch(err => console.warn("[App] Limpeza em segundo plano:", err));
+      // Limpeza de cache e IndexedDB em segundo plano
+      const ehTexto = revisaoPendente.tipo === 'texto';
+      const tarefasLimpeza = [expurgarAudiosDeIds(idsRevisao, idiomaEstudo)];
+      if (ehTexto) {
+        tarefasLimpeza.push(invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo));
+      }
+
+      Promise.all(tarefasLimpeza).catch(err => console.warn("[App] Limpeza em segundo plano:", err));
 
       acaoDestino();
       return;
@@ -906,58 +908,57 @@ function App() {
     setModalAtualizacaoAberto(true);
   }, [revisaoPendente, frasesMaestria, idiomaEstudo]);
 
-  // Execução cirúrgica do reset de maestria e download dos novos áudios
+  // Execução da atualização de conteúdo (com separação entre Texto e Áudio)
   const executarAtualizacaoConteudo = useCallback(async (onProgresso) => {
     if (!revisaoPendente) return;
     const idsRevisao = revisaoPendente.ids || [];
     const idsRevisaoSet = new Set(idsRevisao.map(Number));
     const cursoKey = `${idiomaOrigem}_${idiomaEstudo}`;
+    const ehTexto = revisaoPendente.tipo === 'texto';
 
-    // 1. LIMPEZA PRÉVIA DE MEMÓRIA (React State & LocalStorage)
-    limparEstadoExercicio();
-    setFrasesFiltradas([]);
+    // 1. LIMPEZA DE MEMÓRIA E RESET DE MAESTRIA (Apenas se for alteração de TEXTO)
+    if (ehTexto) {
+      limparEstadoExercicio();
+      setFrasesFiltradas([]);
 
-    setSessaoDominium(prev => ({
-      ...prev,
-      primeira: (prev?.primeira || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
-      recuperadas: (prev?.recuperadas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
-      acertosTempo: (prev?.acertosTempo || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
-      falhas: (prev?.falhas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item)))
-    }));
+      setSessaoDominium(prev => ({
+        ...prev,
+        primeira: (prev?.primeira || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+        recuperadas: (prev?.recuperadas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+        acertosTempo: (prev?.acertosTempo || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+        falhas: (prev?.falhas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item)))
+      }));
 
-    const idsEstudados = idsRevisao.filter(id => {
-      const item = frasesMaestria[id];
-      const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
-      return rank > 0;
-    });
+      const agora = Date.now();
+      let novaMaestria = { ...frasesMaestria };
+      idsRevisao.forEach(id => {
+        if (novaMaestria[id] !== undefined) {
+          novaMaestria[id] = { rank: 0, status: 'inedita', next_review: agora, highest_rank: 0 };
+        }
+      });
 
-    const agora = Date.now();
-    let novaMaestria = { ...frasesMaestria };
-    idsRevisao.forEach(id => {
-      if (novaMaestria[id] !== undefined) {
-        novaMaestria[id] = { rank: 0, status: 'inedita', next_review: agora, highest_rank: 0 };
+      setFrasesMaestria(novaMaestria);
+      localStorage.setItem(`maestria_${cursoKey}`, JSON.stringify(novaMaestria));
+
+      if (user?.id) {
+        dataService.saveUserProgress(user.id, cursoKey, novaMaestria)
+          .catch(err => console.warn("[App] Falha ao persistir progresso no Supabase:", err));
       }
-    });
-
-    setFrasesMaestria(novaMaestria);
-    localStorage.setItem(`maestria_${cursoKey}`, JSON.stringify(novaMaestria));
-
-    if (user?.id) {
-      dataService.saveUserProgress(user.id, cursoKey, novaMaestria)
-        .catch(err => console.warn("[App] Falha ao persistir progresso no Supabase:", err));
     }
 
-    // 2. ATUALIZAÇÃO DO CACHE LOCAL (IndexedDB)
+    // 2. ATUALIZAÇÃO DO CACHE LOCAL (Expurgo de áudios antigos)
     const topicosParaRecarregar = [...topicosBaixados];
     const sincronizarTopicosLocais = async () => {
       await expurgarAudiosDeIds(idsRevisao, idiomaEstudo);
-      await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
-      const colTopicOrigem = `topic_${idiomaOrigem}`;
-      for (const tNome of topicosParaRecarregar) {
-        try {
-          await dataService.getSentencesByTopic(nivelAtivo || "A1", idiomaEstudo, colTopicOrigem, tNome);
-        } catch (e) {
-          console.warn(`[App] Falha ao recarregar tópico '${tNome}' no IndexedDB:`, e);
+      if (ehTexto) {
+        await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
+        const colTopicOrigem = `topic_${idiomaOrigem}`;
+        for (const tNome of topicosParaRecarregar) {
+          try {
+            await dataService.getSentencesByTopic(nivelAtivo || "A1", idiomaEstudo, colTopicOrigem, tNome);
+          } catch (e) {
+            console.warn(`[App] Falha ao recarregar tópico '${tNome}' no IndexedDB:`, e);
+          }
         }
       }
     };
@@ -1109,6 +1110,7 @@ function App() {
       {modalAtualizacaoAberto && (
         <CardAvisoAtualizacao
           styles={styles}
+          tipo={revisaoPendente?.tipo || "texto"}
           descricao={revisaoPendente?.descricao || ""}
           quantidadeFrases={qtdFrasesEstudadasAfetadas}
           onConfirmar={executarAtualizacaoConteudo}

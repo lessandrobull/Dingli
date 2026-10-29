@@ -64,7 +64,7 @@ Esta seção documenta as dependências que residem fora do repositório local e
 - **Auditor de Áudios (`public/auditor.html`):** ferramenta web independente acessada pelo botão `Auditor de Áudios` no menu de `Adm.jsx` (`window.location.href = '/auditor.html'`). Carrega as 1.200 frases da tabela `sentences` em dois lotes paralelos via REST (`limit=1000&offset=0` e `limit=1000&offset=1000`), reproduz os arquivos `.mp3` diretamente do Cloudflare R2 com *cache busting* (`?v=${Date.now()}`), opera com filtros de idioma, nível, velocidade (`1.0x` a `0.65x`) e busca por ID, seletor de vozes (`v1` a `v6`), playlist automática (pausa de `1.0s`), atalhos de teclado (`Espaço`, `←`/`→`, `1` a `6`, `F`) e envio de reportes com campo descritivo (`inputProblema`) para a tabela `reports_frases`, utilizando paleta clara (`#e4eafa`) e barra de rolagem oculta.
 
 ### C. Síntese Neural de Voz (Edge-TTS), Pipeline FFmpeg e Motor de Reprodução
-- Síntese automatizada de frases e termos isolados via Microsoft Edge-TTS cobrindo as vozes oficiais dos 7 idiomas (scripts em `scripts/`).
+- Síntese automatizada de frases e termos isolados via Microsoft Edge-TTS cobrindo as vozes oficiais dos 7 idiomas, orquestrada exclusivamente pelo script unificado `scripts/dingli.py` com envio direto ao Cloudflare R2.
 - Tratamento de áudio anti-corte (prevenção de DAC sleep) nos arquivos de vocabulário com pré-delay de 300ms (`adelay=300|300`) e pós-padding de 100ms (`apad=pad_dur=0.1`) a 128 kbps via FFmpeg para evitar corte de pronúncia em fones Bluetooth por economia de energia.
 - Sorteio sem repetição da fila de vozes em tempo de execução (`useSpeech.js`), troca forçada para uma voz diferente da anterior na reprodução lenta pós-erro e velocidades calibradas por idioma (`VELOCIDADES_AUDIO`).
 
@@ -163,3 +163,99 @@ echo "Concluído! Arquivo $OUTPUT gerado com sucesso."
 2. **Governança do Comando do Dumper (Seção 4):** Caso novos arquivos secundários, dados estáticos brutos, scripts pontuais de automação ou arquivos de documentação sejam criados no projeto, a IA DEVE atualizar as regras `-not -path` ou `-not -name` na Seção 4 para preservar o teto operacional de segurança de 8.000 linhas da Seção 2, mantendo nela estritamente o código-fonte vivo da aplicação (`src/` e arquivos vitais de configuração).
 3. **Entrega de Atualização:** Caso identifique divergências, fornecer explicitamente ao usuário a versão revisada e atualizada do `DINGLI_MASTER.md` utilizando encapsulamento com 4 crases para evitar quebra de formatação.
 4. **Instrução de Novo Snapshot:** Instruir o usuário a gerar uma nova versão do `DINGLI_DUMPER.md` caso arquivos tenham sido criados, movidos ou excluídos.
+
+---
+
+## 6. Governança de Revisões, Atualizações e Script Unificado (`scripts/dingli.py`)
+
+### 6.1 Tabela de Vozes Oficiais do Ecossistema Dìnglì
+
+#### A. Frases Completas (Edge-TTS)
+- **Inglês (`en`):**
+  - `v1`: `en-US-SteffanNeural` (Masculina)
+  - `v2`: `en-IE-ConnorNeural` (Masculina)
+  - `v3`: `en-CA-LiamNeural` (Masculina)
+  - `v4`: `en-US-JennyNeural` (Feminina)
+  - `v5`: `en-GB-LibbyNeural` (Feminina)
+  - `v6`: `en-CA-ClaraNeural` (Feminina)
+- **Espanhol (`es`):**
+  - `v1`: `es-AR-TomasNeural`
+  - `v2`: `es-MX-JorgeNeural`
+  - `v3`: `es-MX-DaliaNeural`
+  - `v4`: `es-ES-AlvaroNeural`
+  - `v5`: `es-ES-ElviraNeural`
+  - `v6`: `es-US-AlonsoNeural`
+- **Francês (`fr`):**
+  - `v1`: `fr-FR-DeniseNeural`
+  - `v2`: `fr-FR-HenriNeural`
+  - `v3`: `fr-FR-VivienneMultilingualNeural`
+  - `v4`: `fr-FR-RemyMultilingualNeural`
+- **Italiano (`it`):**
+  - `v1`: `it-IT-GiuseppeMultilingualNeural`
+  - `v2`: `it-IT-DiegoNeural`
+  - `v3`: `it-IT-IsabellaNeural`
+  - `v4`: `it-IT-ElsaNeural`
+- **Português (`pt`):**
+  - `v1`: `pt-BR-AntonioNeural`
+  - `v2`: `pt-BR-ThalitaMultilingualNeural`
+  - `v3`: `ko-KR-HyunsuMultilingualNeural`
+  - `v4`: `en-US-AvaMultilingualNeural`
+- **Alemão (`ge`):**
+  - `v1`: `de-AT-JonasNeural`
+  - `v2`: `de-DE-FlorianMultilingualNeural`
+  - `v3`: `de-DE-SeraphinaMultilingualNeural`
+  - `v4`: `de-DE-KatjaNeural`
+- **Mandarim (`zh`):**
+  - `v1`: `zh-CN-XiaoxiaoNeural`
+  - `v2`: `zh-CN-YunxiNeural`
+  - `v3`: `zh-CN-YunjianNeural`
+  - `v4`: `zh-CN-XiaoyiNeural`
+
+#### B. Palavras Isoladas / Vocabulário (Edge-TTS + FFmpeg)
+- `en`: `en-CA-ClaraNeural`
+- `es`: `es-MX-DaliaNeural`
+- `fr`: `fr-FR-DeniseNeural`
+- `ge`: `de-DE-KatjaNeural`
+- `it`: `it-IT-IsabellaNeural`
+- `pt`: `pt-BR-FranciscaNeural`
+- `zh`: `zh-CN-XiaoxiaoNeural`
+
+---
+
+### 6.2 Regras da Tabela Comparativa de Revisão no Chat
+Sempre que o usuário solicitar revisão ou melhoria didática de frases, a IA DEVE estruturar o atendimento seguindo rigorosamente estas diretrizes:
+- **Tamanho do Bloco:** Lotes recomendados de exatamente 50 frases por chamada para manter controle fino e evitar saturação de contexto.
+- **Colunas Obrigatórias:** A tabela gerada pela IA deve conter estritamente as colunas:
+  `id | inglês | como está | como deve ser | explicação mais breve possível`
+- **Formatação de Tela:** A tabela deve ocupar toda a largura útil da tela (de lado a lado), garantindo o máximo de espaço horizontal para que cada frase seja lida com clareza sem quebras desnecessárias de linha.
+
+---
+
+### 6.3 Fluxo F1: Revisão ou Alteração de Texto (Com Reset de Rank)
+Aplicado quando a escrita da frase ou da tradução é modificada. Exige reaprendizado do aluno, regravação de áudios de frases, atualização do vocabulário léxico e commit estrutural no banco[cite: 1, 20].
+
+- **Passo 1 (Chat):** Usuário solicita a revisão informando o idioma e o bloco de frases (ex: 50 frases)[cite: 20].
+- **Passo 2 (Terminal - Backup):** A IA orienta o comando de backup. O usuário executa `python scripts/dingli.py backup` (que extrai as 1.200 frases paginadas da tabela `sentences` do Supabase para `backups/sentences_backup_TIMESTAMP.csv`) e cola a confirmação no chat[cite: 2, 4, 20].
+- **Passo 3 (Chat - Tabela Comparativa):** A IA entrega a tabela de 50 frases no formato de largura máxima. O usuário avalia e aprova as frases que devem mudar[cite: 20].
+- **Passo 4 (Terminal - Patch Local):** A IA entrega o comando para salvar o arquivo `patch.json` e aplicar as alterações aprovadas em `supabase_sentences.csv` via `python scripts/dingli.py patch patch.json`[cite: 2, 4, 20].
+- **Passo 5 (Terminal - Frases no Cloudflare R2):** Usuário executa `python scripts/dingli.py frases-f1 <idioma>`. O script compara o CSV com o último backup, move os áudios locais antigos dessas frases para `audios_dingli/quarentena_frases/<idioma>/`, sintetiza os novos `.mp3` via Edge-TTS e faz upload com sobrescrita direta no bucket do Cloudflare R2[cite: 1, 4, 20].
+- **Passo 6 (Terminal - Palavras Isoladas no Cloudflare R2):** Usuário executa `python scripts/dingli.py palavras-f1 <idioma>`. O script varre o CSV local, move palavras órfãs locais para quarentena, sintetiza palavras novas com Edge-TTS + FFmpeg (`adelay=300|300,apad=pad_dur=0.1`), faz upload para `palavras/<idioma>/` no Cloudflare R2 e deleta do bucket R2 os arquivos de palavras órfãs que não pertencem mais ao curso[cite: 1, 7, 15, 19, 20].
+- **Passo 7 (Terminal - Commit no Banco e Carimbo de Versão):** Usuário executa `python scripts/dingli.py commit-f1 <idioma>`. O script atualiza as colunas de texto na tabela `sentences` do Supabase via PATCH e insere uma nova linha na tabela `curso_revisoes` com `tipo = 'texto'`, listando os IDs afetados[cite: 4, 6, 20].
+- **Passo 8 (App do Aluno):** O app lê a versão com `tipo = 'texto'`. Ao abrir Deck ou Game, exibe o `CardAvisoAtualizacao` informando que o conteúdo foi aprimorado. Ao clicar em atualizar, o app expurga os áudios antigos do Cache Storage e IndexedDB, invalida tópicos em cache, reseta as frases afetadas para `rank: 0` (`inedita`), baixa os novos áudios do R2 com barra de progresso e libera o estudo[cite: 1, 20].
+
+---
+
+### 6.4 Fluxo F2: Atualização Pura de Áudio e Novas Vozes (Sem Perda de Progresso)
+Aplicado quando o texto permanece 100% idêntico e apenas as gravações de áudio/vozes foram alteradas ou adicionadas. O progresso do aluno é estritamente preservado[cite: 1, 20].
+
+- **Passo 1 (Chat):** Usuário define idioma, vozes envolvidas e faixa de IDs (ex: `en`, `1 1200`, `--vozes v1,v2,v3`)[cite: 1, 20].
+- **Passo 2 (Terminal - Síntese e Upload R2):** Usuário executa `python scripts/dingli.py frases-f2 <idioma> <inicio> <fim> [--vozes <v1,v2...>]`. O script sintetiza os áudios via Edge-TTS e faz upload direto ao Cloudflare R2 sobrescrevendo os arquivos no bucket[cite: 1, 20].
+- **Passo 3 (Terminal - Carimbo de Versão de Áudio):** Usuário executa `python scripts/dingli.py commit-f2 <idioma> <inicio> <fim>`. O script insere uma linha em `curso_revisoes` no Supabase com `tipo = 'audio'`, nova versão e a lista dos IDs afetados (sem modificar a tabela `sentences`)[cite: 1, 20].
+- **Passo 4 (App do Aluno):** O app detecta a versão com `tipo = 'audio'`. Exibe o `CardAvisoAtualizacao` informando que novas pronúncias foram aprimoradas e que o progresso e ranks do Dìngloop continuam exatamente iguais. Ao confirmar, o app limpa o cache antigo, preserva integralmente os ranks do aluno, baixa os novos MP3s com barra de porcentagem e libera a sessão imediatamente[cite: 1, 20].
+
+---
+
+### 6.5 Governança do Script Único (`scripts/dingli.py`)
+- **Centralização Estrita:** Toda e qualquer rotina de backup, patch, síntese de frases, geração de vocabulário, uploads para Cloudflare R2 e carimbos de versão no Supabase é executada exclusivamente por `scripts/dingli.py`[cite: 20].
+- **Scripts Legados Extintos:** Fica expressamente proibida a criação ou execução dos scripts fragmentados antigos (`sincronizar_frases_completo.py`, `sincronizar_vocabulario.py`, `sincronizar_storage_vocabulario.py`, `sincronizar_vocabulario_completo.py`, `sincronizar_sentences_db.py`, `sincronizar_tudo.py`, `aplicar_revisao_e_backup.py`, etc.)[cite: 20].
+- **Saídas Orientadoras no Terminal:** Cada subcomando do `scripts/dingli.py` imprime um relatório visual do que foi realizado e exibe ao final a orientação exata do próximo comando que o usuário e a IA devem executar[cite: 20].

@@ -4,13 +4,24 @@ import { styles as defaultStyles } from '../styles';
 
 const TEXTOS_AVISO = {
   pt: {
-    topicoLabel: "Atualização de Conteúdo",
-    titulo: "Conteúdo Aprimorado!",
-    mensagemGeral: "Revisamos o curso e aprimoramos o conteúdo para que sua experiência de aprendizado seja ainda mais natural e precisa.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com novas pronúncias ou ajustes de escrita.` : `${qtd} frase que você já estudou foi atualizada com novas pronúncias ou ajustes de escrita.`,
-    mensagemCiclo: "Para garantir que você domine a nova versão, essas frases foram recolocadas no início do seu ciclo de prática.",
-    botaoAcao: "Atualizar e Praticar",
-    baixando: "Atualizando áudios..."
+    texto: {
+      topicoLabel: "Atualização de Conteúdo",
+      titulo: "Conteúdo Aprimorado!",
+      mensagemGeral: "Revisamos o curso e aprimoramos o conteúdo para que sua experiência de aprendizado seja ainda mais natural e precisa.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com ajustes de escrita.` : `${qtd} frase que você já estudou foi atualizada com ajustes de escrita.`,
+      mensagemCiclo: "Para garantir que você domine a nova versão, essas frases foram recolocadas no início do seu ciclo de prática.",
+      botaoAcao: "Atualizar e Praticar",
+      baixando: "Atualizando áudios..."
+    },
+    audio: {
+      topicoLabel: "Atualização de Áudios",
+      titulo: "Novas Vozes e Pronúncias!",
+      mensagemGeral: "Atualizamos as gravações de áudio com pronúncias ainda mais naturais e claras.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou receberam novos áudios de pronúncia.` : `${qtd} frase que você já estudou recebeu novos áudios de pronúncia.`,
+      mensagemCiclo: "O seu progresso no Dìngloop continua exatamente o mesmo!",
+      botaoAcao: "Atualizar Áudios",
+      baixando: "A descarregar novos áudios..."
+    }
   },
   en: {
     topicoLabel: "Content Update",
@@ -70,6 +81,7 @@ const TEXTOS_AVISO = {
 
 export default function CardAvisoAtualizacao({
   styles = defaultStyles,
+  tipo = "texto",
   descricao = "",
   quantidadeFrases = 0,
   onConfirmar,
@@ -92,7 +104,8 @@ export default function CardAvisoAtualizacao({
     };
   }, []);
 
-  const textos = TEXTOS_AVISO[idiomaOrigem] || TEXTOS_AVISO.pt;
+  const grupoIdiomas = TEXTOS_AVISO[idiomaOrigem] || TEXTOS_AVISO.pt;
+  const textos = (grupoIdiomas[tipo] || grupoIdiomas.texto || grupoIdiomas);
   const corTema = temas[idiomaEstudo]?.bg || "#4f46e5";
 
   const handleSair = () => {

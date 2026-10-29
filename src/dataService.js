@@ -116,25 +116,30 @@ export const dataService = {
 
       const { data, error } = await supabase
         .from('curso_revisoes')
-        .select('versao, ids_alterados, descricao')
+        .select('versao, ids_alterados, descricao, tipo')
         .eq('idioma', idiomaEstudo)
         .gt('versao', versaoLocal)
         .order('versao', { ascending: true });
 
       if (error || !data || data.length === 0) {
-        return { temRevisao: false, ids: [], novaVersao: versaoLocal, descricao: "" };
+        return { temRevisao: false, ids: [], novaVersao: versaoLocal, descricao: "", tipo: "texto" };
       }
 
       // Unifica todos os IDs de revisões acumuladas sem duplicatas
       const todosIds = Array.from(new Set(data.flatMap(r => r.ids_alterados || [])));
-      const ultimaVersao = data[data.length - 1].versao;
-      const descricao = data[data.length - 1].descricao;
+      const ultimaRevisao = data[data.length - 1];
+      const ultimaVersao = ultimaRevisao.versao;
+      const descricao = ultimaRevisao.descricao;
+      // Se houver qualquer revisão acumulada do tipo 'texto', prioriza 'texto' (com reset de rank)
+      const temAlteracaoTexto = data.some(r => r.tipo === 'texto');
+      const tipoFinal = temAlteracaoTexto ? 'texto' : (ultimaRevisao.tipo || 'audio');
 
       return {
         temRevisao: true,
         ids: todosIds,
         novaVersao: ultimaVersao,
-        descricao: descricao
+        descricao: descricao,
+        tipo: tipoFinal
       };
     } catch (err) {
       console.warn('[dataService] Falha ao verificar revisões pendentes:', err);
