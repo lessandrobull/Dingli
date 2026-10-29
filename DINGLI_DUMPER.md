@@ -10,12 +10,12 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./index.html
 ./package.json
 ./package-lock.json
-./pub.sh
 ./public/auditor.html
 ./public/manifest.json
 ./public/sw.js
 ./README.md
 ./scripts/aplicar_revisao_e_backup.py
+./scripts/atualizar_vozes_masculinas_en.py
 ./scripts/sanitizacao.py
 ./scripts/sincronizar_frases_completo.py
 ./scripts/sincronizar_sentences_db.py
@@ -202,13 +202,6 @@ export default defineConfig([
     "vite": "^7.3.1"
   }
 }
-
-
-### 📄 ARQUIVO: ./pub.sh
-#!/bin/bash
-git add .
-git commit -m "$1"
-git push origin master
 
 
 ### 📄 ARQUIVO: ./public/auditor.html
@@ -429,7 +422,10 @@ git push origin master
 <body>
 
     <div class="container">
-        <header style="justify-content: center; border-bottom: none; padding-bottom: 0;">
+        <header style="justify-content: center; border-bottom: none; padding-bottom: 0; position: relative;">
+            <button onclick="window.location.href = '/';" style="position: absolute; left: 0; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--superficie); color: var(--titulo); font-size: 0.82rem; font-weight: 800; cursor: pointer;">
+                ← Adm
+            </button>
             <h1 style="text-align: center;">Dìnglì Audio Auditor</h1>
             <span id="badgeProgresso" style="display: none;"></span>
         </header>
@@ -8349,14 +8345,14 @@ import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_
 
 // TABELA CENTRAL DE VELOCIDADES DE ÁUDIO (Ajuste manual por idioma)
 export const VELOCIDADES_AUDIO = {
-    pi: { normal: 0.85, lento: 0.50 }, // Mandarim
-    zh: { normal: 0.85, lento: 0.50 },
-    en: { normal: 1.00, lento: 0.65 }, // Inglês
-    es: { normal: 1.00, lento: 0.65 }, // Espanhol
-    fr: { normal: 1.00, lento: 0.65 }, // Francês
-    it: { normal: 1.00, lento: 0.65 }, // Italiano
-    ge: { normal: 1.00, lento: 0.65 }, // Alemão
-    pt: { normal: 1.00, lento: 0.65 }  // Português
+    pi: { normal: 0.85, lento: 0.60 }, // Mandarim
+    zh: { normal: 0.85, lento: 0.60 },
+    en: { normal: 1.00, lento: 0.75 }, // Inglês
+    es: { normal: 1.00, lento: 0.75 }, // Espanhol
+    fr: { normal: 1.00, lento: 0.75 }, // Francês
+    it: { normal: 1.00, lento: 0.75 }, // Italiano
+    ge: { normal: 1.00, lento: 0.75 }, // Alemão
+    pt: { normal: 1.00, lento: 0.75 }  // Português
 };
 
 export const useSpeech = ({
