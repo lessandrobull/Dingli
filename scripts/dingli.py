@@ -44,15 +44,21 @@ with open(caminho_env, "r", encoding="utf-8") as f:
         line = line.strip()
         if line and not line.startswith("#") and "=" in line:
             k, v = line.split("=", 1)
-            env[k.strip()] = v.strip()
+            # Remove espaços e aspas simples ou duplas ao redor do valor
+            env[k.strip()] = v.strip().strip("'\"")
 
-SUPABASE_URL = env.get("SUPABASE_URL")
-SUPABASE_KEY = env.get("SUPABASE_SERVICE_ROLE_KEY")
+SUPABASE_URL = (env.get("SUPABASE_URL") or env.get("VITE_SUPABASE_URL") or "").rstrip("/")
+SUPABASE_KEY = env.get("SUPABASE_SECRET_KEY")
 
-R2_ENDPOINT = env.get("R2_ENDPOINT_URL") or env.get("CLOUDFLARE_R2_ENDPOINT") or env.get("R2_ENDPOINT")
+R2_ENDPOINT = (
+    env.get("R2_ENDPOINT_S3") or 
+    env.get("R2_ENDPOINT_URL") or 
+    env.get("CLOUDFLARE_R2_ENDPOINT") or 
+    env.get("R2_ENDPOINT")
+)
 R2_KEY_ID = env.get("R2_ACCESS_KEY_ID") or env.get("CLOUDFLARE_R2_ACCESS_KEY_ID") or env.get("AWS_ACCESS_KEY_ID")
 R2_SECRET = env.get("R2_SECRET_ACCESS_KEY") or env.get("CLOUDFLARE_R2_SECRET_ACCESS_KEY") or env.get("AWS_SECRET_ACCESS_KEY")
-R2_BUCKET = env.get("R2_BUCKET_NAME") or env.get("R2_BUCKET") or "dingli-audios"
+R2_BUCKET = env.get("R2_BUCKET") or env.get("R2_BUCKET_NAME") or "dingli-audios"
 
 FFMPEG_EXE = os.path.abspath("ffmpeg.exe")
 CSV_SENTENCES = "supabase_sentences.csv"
@@ -171,7 +177,7 @@ def cmd_backup():
     print(" DÌNGLÌ - FLUXO F1: BACKUP DE SEGURANÇA (SUPABASE DB)")
     print("=" * 70)
     if not SUPABASE_URL or not SUPABASE_KEY:
-        raise ValueError("SUPABASE_URL ou SUPABASE_SERVICE_ROLE_KEY ausentes no .env.local.")
+        raise ValueError("SUPABASE_URL ou SUPABASE_SECRET_KEY ausentes no .env.local.")
 
     os.makedirs("backups", exist_ok=True)
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -570,13 +576,12 @@ def cmd_commit_f1(idioma):
     versao_anterior = obter_versao_atual_supabase(idioma)
     nova_versao = versao_anterior + 1
     ids_alterados = sorted(list(alteracoes_db.keys()))
-    descricao_rev = f"Aprimoramento curricular ({len(ids_alterados)} frase{'s' if len(ids_alterados) > 1 else ''} atualizada{'s' if len(ids_alterados) > 1 else ''})."
 
     payload_rev = {
         "versao": nova_versao,
         "idioma": idioma,
         "ids_alterados": ids_alterados,
-        "descricao": descricao_rev,
+        "descricao": "",
         "tipo": "texto"
     }
 
@@ -729,13 +734,12 @@ def cmd_commit_f2(idioma, inicio, fim):
 
     versao_anterior = obter_versao_atual_supabase(idioma)
     nova_versao = versao_anterior + 1
-    descricao_rev = f"Aprimoramento de pronúncias e novas vozes ({len(ids_alterados)} frases atualizadas)."
 
     payload_rev = {
         "versao": nova_versao,
         "idioma": idioma,
         "ids_alterados": ids_alterados,
-        "descricao": descricao_rev,
+        "descricao": "",
         "tipo": "audio"
     }
 

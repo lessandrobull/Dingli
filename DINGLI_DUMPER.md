@@ -14,14 +14,9 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./public/manifest.json
 ./public/sw.js
 ./README.md
-./scripts/aplicar_revisao_e_backup.py
-./scripts/atualizar_vozes_masculinas_en.py
-./scripts/sanitizacao.py
-./scripts/sincronizar_frases_completo.py
-./scripts/sincronizar_sentences_db.py
-./scripts/sincronizar_tudo.py
-./scripts/sincronizar_vocabulario.py
-./scripts/sincronizar_vocabulario_completo.py
+./scripts/dingli.py
+./scripts/extrair.mjs
+./scripts/gerarExplicacoes.mjs
 ./src/App.css
 ./src/App.jsx
 ./src/Components/Adm.jsx
@@ -37,8 +32,6 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./src/constant.js
 ./src/dataService.js
 ./src/DingliContext.jsx
-./src/extrair.mjs
-./src/gerarExplicacoes.mjs
 ./src/index.css
 ./src/main.jsx
 ./src/services/audioCacheService.js
@@ -83,17 +76,12 @@ dist-ssr
 # Builds, mídias e temporários locais
 audios_dingli/
 *.bak
-esqueleto_dingli.txt
-recuperados/
-src/gerarExplicacoes.mjs
+scripts/gerarExplicacoes.mjs
+scripts/extrair.mjs
 ffmpeg.exe
 *.zip
 *_teste*.mp3
 teste_*.mp3
-Useful Languages - Supabase.csv
-
-# Scripts arquivados / Legado (substitui todas as linhas avulsas)
-scripts/legado/
 
 # Variáveis de ambiente
 .env.local
@@ -203,587 +191,6 @@ export default defineConfig([
   }
 }
 
-
-### 📄 ARQUIVO: ./public/auditor.html
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dìnglì - Auditor de Áudios</title>
-    <style>
-        :root {
-            --bg: #e4eafa;
-            --card: #e4eafa;
-            --titulo: #254b73;
-            --acao: #3a6ea5;
-            --superficie: #edf2fc;
-            --text: #1e293b;
-            --muted: #5e738f;
-            --border: #b8cbe8;
-            --danger: #a34343;
-            --danger-bg: #eedede;
-            --danger-border: #cf9b9b;
-            --success: #10b981;
-        }
-
-        * {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        *::-webkit-scrollbar {
-            display: none;
-        }
-
-        body {
-            margin: 0;
-            padding: 12px 16px;
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 680px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 0px;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 1.35rem;
-            font-weight: 900;
-            color: var(--titulo);
-            text-align: center;
-        }
-
-        .painel-filtros {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 8px;
-            background: var(--card);
-            padding: 10px 14px;
-            border-radius: 14px;
-            border: 1px solid var(--border);
-            box-shadow: 0 8px 20px rgba(30, 58, 95, 0.10);
-        }
-
-        label {
-            font-size: 0.72rem;
-            font-weight: 800;
-            color: var(--muted);
-            display: block;
-            margin-bottom: 3px;
-        }
-
-        select,
-        input {
-            width: 100%;
-            padding: 8px 10px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            background: var(--superficie);
-            color: var(--text);
-            font-size: 0.85rem;
-            box-sizing: border-box;
-            outline: none;
-        }
-
-        .card-reprodutor {
-            background: var(--card);
-            border-radius: 18px;
-            padding: 18px 22px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            border: 1px solid var(--border);
-            box-shadow: 0 14px 32px rgba(30, 58, 95, 0.16), 0 3px 8px rgba(30, 58, 95, 0.08);
-        }
-
-        .info-topo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--muted);
-            font-size: 0.82rem;
-            font-weight: 700;
-        }
-
-        .texto-frase {
-            font-size: 1.35rem;
-            font-weight: 900;
-            color: var(--text);
-            line-height: 1.25;
-            margin: 2px 0;
-            min-height: 32px;
-        }
-
-        .texto-traducao {
-            font-size: 0.95rem;
-            color: var(--muted);
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .grade-vozes {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-
-        .btn-voz {
-            padding: 6px 12px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            background: var(--superficie);
-            color: var(--text);
-            font-weight: 800;
-            font-size: 0.8rem;
-            cursor: pointer;
-        }
-
-        .btn-voz.ativo {
-            background: var(--acao);
-            color: #ffffff;
-            border-color: var(--acao);
-        }
-
-        .controles-player {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            margin-top: 4px;
-        }
-
-        .btn-acao {
-            flex: 1;
-            padding: 12px;
-            border-radius: 10px;
-            border: none;
-            font-weight: 800;
-            font-size: 0.9rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .btn-primario {
-            background: var(--acao);
-            color: #ffffff;
-            box-shadow: 0 3px 10px rgba(58, 110, 165, 0.25);
-        }
-
-        .btn-secundario {
-            background: var(--superficie);
-            color: var(--text);
-            border: 1px solid var(--border);
-        }
-
-        .btn-perigo {
-            background: var(--danger-bg);
-            color: var(--danger);
-            border: 1px solid var(--danger-border);
-            font-weight: 800;
-            font-size: 0.88rem;
-        }
-
-        .opcoes-autoplay {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: var(--superficie);
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-size: 0.8rem;
-            color: var(--muted);
-            border: 1px solid var(--border);
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <header style="justify-content: center; border-bottom: none; padding-bottom: 0; position: relative;">
-            <button onclick="window.location.href = '/';" style="position: absolute; left: 0; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--superficie); color: var(--titulo); font-size: 0.82rem; font-weight: 800; cursor: pointer;">
-                ← Adm
-            </button>
-            <h1 style="text-align: center;">Dìnglì Audio Auditor</h1>
-            <span id="badgeProgresso" style="display: none;"></span>
-        </header>
-
-        <!-- Filtros -->
-        <div class="painel-filtros">
-            <div>
-                <label>Idioma</label>
-                <select id="selectIdioma">
-                    <option value="en">Inglês (en)</option>
-                    <option value="es">Espanhol (es)</option>
-                    <option value="fr">Francês (fr)</option>
-                    <option value="it">Italiano (it)</option>
-                    <option value="ge">Alemão (ge)</option>
-                    <option value="pt">Português (pt)</option>
-                    <option value="zh">Mandarim (zh)</option>
-                </select>
-            </div>
-            <div>
-                <label>Nível</label>
-                <select id="selectNivel">
-                    <option value="TODOS">Todos os Níveis</option>
-                    <option value="A1">A1</option>
-                    <option value="A2">A2</option>
-                    <option value="B1">B1</option>
-                    <option value="B2">B2</option>
-                </select>
-            </div>
-            <div>
-                <label>Velocidade</label>
-                <select id="selectVelocidade">
-                    <option value="1.0">1.0x (Normal)</option>
-                    <option value="0.85">0.85x</option>
-                    <option value="0.75">0.75x</option>
-                    <option value="0.65">0.65x (Lento)</option>
-                </select>
-            </div>
-            <div>
-                <label>Ir para Frase ID</label>
-                <input type="number" id="inputBuscarId" placeholder="Ex: 35">
-            </div>
-        </div>
-
-        <!-- Card do Player -->
-        <div class="card-reprodutor">
-            <div class="info-topo">
-                <span id="labelTopico">Tópico: --</span>
-                <span id="labelContador">0 / 0</span>
-            </div>
-
-            <div>
-                <div id="textoPrincipal" class="texto-frase">Carregando frases...</div>
-                <p id="textoTraducao" class="texto-traducao">--</p>
-            </div>
-
-            <!-- Seletor de Vozes -->
-            <div>
-                <label>Vozes Disponíveis na Faixa:</label>
-                <div id="gradeVozes" class="grade-vozes"></div>
-            </div>
-
-            <!-- Controles de Navegação -->
-            <div class="controles-player">
-                <button id="btnAnterior" class="btn-acao btn-secundario">⏮ Anterior</button>
-                <button id="btnPlay" class="btn-acao btn-primario">▶ Reproduzir</button>
-                <button id="btnProxima" class="btn-acao btn-secundario">Próxima ⏭</button>
-            </div>
-
-            <!-- Autoplay e Sinalização -->
-            <div class="opcoes-autoplay">
-                <label style="margin: 0; color: #fff; cursor: pointer;">
-                    <input type="checkbox" id="checkAutoplay" style="width: auto; margin-right: 6px;">
-                    Playlist Automática (Avançar sozinho)
-                </label>
-                <span>Pausa: <b>1.0s</b></span>
-            </div>
-
-            <div style="display: flex; gap: 8px; align-items: center; width: 100%;">
-                <button id="btnReportar" class="btn-acao btn-perigo"
-                    style="flex: 0 0 auto; white-space: nowrap; padding: 10px 14px;">
-                    Sinalizar problema
-                </button>
-                <input type="text" id="inputProblema" placeholder="Descreva o defeito do áudio..." style="flex: 1;" />
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const R2_BASE = "https://pub-b24d092a7bf34fd9bf22befba89de35f.r2.dev";
-        const SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co";
-        const SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp";
-
-        const MAPA_VOZES = {
-            en: ["v1", "v2", "v3", "v4", "v5", "v6"],
-            es: ["v1", "v2", "v3", "v4", "v5", "v6"],
-            fr: ["v1", "v2", "v3", "v4"],
-            it: ["v1", "v2", "v3", "v4"],
-            ge: ["v1", "v2", "v3", "v4"],
-            pt: ["v1", "v2", "v3", "v4"],
-            zh: ["v1", "v2", "v3", "v4"]
-        };
-
-        let frases = [];
-        let indiceAtual = 0;
-        let vozAtual = "v1";
-        let audio = new Audio();
-        let timerAutoplay = null;
-
-        async function carregarFrases() {
-            const badge = document.getElementById("badgeProgresso");
-            const textoPrincipal = document.getElementById("textoPrincipal");
-            badge.innerText = "Baixando frases...";
-
-            try {
-                const headers = {
-                    "apikey": SUPABASE_KEY,
-                    "Authorization": `Bearer ${SUPABASE_KEY}`
-                };
-
-                // Busca em dois lotes para cobrir todas as 1.200 frases sem travar no limite de 1.000 do Supabase
-                const [resp1, resp2] = await Promise.all([
-                    fetch(`${SUPABASE_URL}/rest/v1/sentences?select=*&order=id.asc&limit=1000&offset=0`, { headers }),
-                    fetch(`${SUPABASE_URL}/rest/v1/sentences?select=*&order=id.asc&limit=1000&offset=1000`, { headers })
-                ]);
-
-                if (!resp1.ok) throw new Error(`Falha no lote 1: HTTP ${resp1.status}`);
-
-                const data1 = await resp1.json();
-                const data2 = resp2.ok ? await resp2.json() : [];
-                frases = [...data1, ...data2];
-
-                if (!frases.length) throw new Error("O banco de dados não retornou frases.");
-
-                filtrarFrases();
-            } catch (err) {
-                console.error("[Auditor] Erro de conexão:", err);
-                badge.innerText = "Erro de conexão";
-                badge.style.backgroundColor = "var(--danger)";
-                badge.style.color = "#ffffff";
-                textoPrincipal.innerHTML = `<span style="color: var(--danger); font-size: 1.1rem;">Falha ao carregar frases: ${err.message}</span>`;
-            }
-        }
-
-        function filtrarFrases() {
-            const nivel = document.getElementById("selectNivel").value;
-            const idioma = document.getElementById("selectIdioma").value;
-
-            window.frasesFiltradas = frases.filter(f => {
-                const matchNivel = (nivel === "TODOS" || f.level === nivel);
-                const temIdioma = Boolean(f[idioma]);
-                return matchNivel && temIdioma;
-            });
-
-            indiceAtual = 0;
-            atualizarVozesDisponiveis();
-            atualizarCard();
-        }
-
-        function atualizarVozesDisponiveis() {
-            const idioma = document.getElementById("selectIdioma").value;
-            const vozes = MAPA_VOZES[idioma] || ["v1"];
-            if (!vozes.includes(vozAtual)) vozAtual = "v1";
-
-            const grade = document.getElementById("gradeVozes");
-            grade.innerHTML = "";
-            vozes.forEach(v => {
-                const btn = document.createElement("button");
-                btn.className = "btn-voz" + (v === vozAtual ? " ativo" : "");
-                btn.innerText = v.toUpperCase();
-                btn.onclick = () => {
-                    vozAtual = v;
-                    atualizarVozesDisponiveis();
-                    tocarAudio();
-                };
-                grade.appendChild(btn);
-            });
-        }
-
-        function atualizarCard() {
-            const lista = window.frasesFiltradas || [];
-            if (lista.length === 0) {
-                document.getElementById("textoPrincipal").innerText = "Nenhuma frase encontrada para este filtro.";
-                document.getElementById("textoTraducao").innerText = "";
-                return;
-            }
-
-            const item = lista[indiceAtual];
-            const idioma = document.getElementById("selectIdioma").value;
-
-            document.getElementById("textoPrincipal").innerText = item[idioma] || item.texto || "";
-            document.getElementById("textoTraducao").innerText = item.pt || item.topic_pt || "";
-            document.getElementById("labelTopico").innerText = `ID #${item.id} · ${item.level} · ${item.topic_pt || item.topic_en || ''}`;
-            document.getElementById("labelContador").innerText = `${indiceAtual + 1} / ${lista.length}`;
-
-            const badge = document.getElementById("badgeProgresso");
-            badge.innerText = `${lista.length} frases prontas`;
-            badge.style.backgroundColor = "#334155";
-            badge.style.color = "var(--muted)";
-        }
-
-        function tocarAudio() {
-            clearTimeout(timerAutoplay);
-            const lista = window.frasesFiltradas || [];
-            if (lista.length === 0) return;
-
-            const item = lista[indiceAtual];
-            const idioma = document.getElementById("selectIdioma").value;
-            const pasta = idioma === "pi" ? "zh" : idioma;
-            const url = `${R2_BASE}/${pasta}/${item.id}_${vozAtual}.mp3?v=${Date.now()}`;
-
-            audio.pause();
-            audio = new Audio(url);
-            audio.playbackRate = parseFloat(document.getElementById("selectVelocidade").value);
-
-            document.getElementById("btnPlay").innerText = "⏸ Pausar";
-
-            audio.onended = () => {
-                document.getElementById("btnPlay").innerText = "▶ Reproduzir";
-                if (document.getElementById("checkAutoplay").checked) {
-                    timerAutoplay = setTimeout(() => {
-                        avancar();
-                        tocarAudio();
-                    }, 1000);
-                }
-            };
-
-            audio.onerror = () => {
-                document.getElementById("btnPlay").innerText = "Erro Áudio";
-                if (document.getElementById("checkAutoplay").checked) {
-                    timerAutoplay = setTimeout(() => {
-                        avancar();
-                        tocarAudio();
-                    }, 1500);
-                }
-            };
-
-            audio.play().catch(() => {
-                document.getElementById("btnPlay").innerText = "▶ Reproduzir";
-            });
-        }
-
-        function pausarOuTocar() {
-            if (!audio.paused && audio.duration > 0) {
-                audio.pause();
-                document.getElementById("btnPlay").innerText = "▶ Reproduzir";
-            } else {
-                tocarAudio();
-            }
-        }
-
-        function avancar() {
-            const lista = window.frasesFiltradas || [];
-            if (indiceAtual < lista.length - 1) {
-                indiceAtual++;
-                atualizarCard();
-            }
-        }
-
-        function voltar() {
-            if (indiceAtual > 0) {
-                indiceAtual--;
-                atualizarCard();
-            }
-        }
-
-        async function sinalizarAudio() {
-            const item = window.frasesFiltradas[indiceAtual];
-            const idioma = document.getElementById("selectIdioma").value;
-            const btn = document.getElementById("btnReportar");
-            const inputProblema = document.getElementById("inputProblema");
-            const textoProblema = inputProblema ? inputProblema.value.trim() : "";
-
-            btn.innerText = "A registrar...";
-
-            try {
-                const resp = await fetch(`${SUPABASE_URL}/rest/v1/reports_frases`, {
-                    method: "POST",
-                    headers: {
-                        "apikey": SUPABASE_KEY,
-                        "Authorization": `Bearer ${SUPABASE_KEY}`,
-                        "Content-Type": "application/json",
-                        "Prefer": "return=minimal"
-                    },
-                    body: JSON.stringify([{
-                        frase_id: item.id,
-                        idioma_estudo: idioma,
-                        idioma_origem: "pt",
-                        voz: vozAtual,
-                        tipo_problema: textoProblema ? `Auditoria: ${textoProblema}` : "Auditoria Manual: Áudio com defeito",
-                        observacao: `Sinalizado via Auditor Web (${item.id}_${vozAtual}.mp3)${textoProblema ? ` - ${textoProblema}` : ""}`,
-                        resolvido: false
-                    }])
-                });
-
-                if (!resp.ok) throw new Error("Erro HTTP");
-
-                btn.innerText = "✔ Sinalizado!";
-                btn.style.color = "var(--success)";
-                if (inputProblema) inputProblema.value = "";
-
-                setTimeout(() => {
-                    btn.innerText = "Sinalizar problema";
-                    btn.style.color = "var(--danger)";
-                }, 2000);
-            } catch (err) {
-                alert("Falha ao gravar reporte no Supabase.");
-                btn.innerText = "Sinalizar problema";
-            }
-        }
-
-        // Event Listeners
-        document.getElementById("btnPlay").onclick = pausarOuTocar;
-        document.getElementById("btnProxima").onclick = () => { avancar(); tocarAudio(); };
-        document.getElementById("btnAnterior").onclick = () => { voltar(); tocarAudio(); };
-        document.getElementById("btnReportar").onclick = sinalizarAudio;
-        document.getElementById("selectIdioma").onchange = filtrarFrases;
-        document.getElementById("selectNivel").onchange = filtrarFrases;
-        document.getElementById("selectVelocidade").onchange = () => {
-            audio.playbackRate = parseFloat(document.getElementById("selectVelocidade").value);
-        };
-        document.getElementById("inputBuscarId").onkeydown = (e) => {
-            if (e.key === "Enter") {
-                const id = parseInt(e.target.value, 10);
-                const idx = window.frasesFiltradas.findIndex(f => f.id === id);
-                if (idx !== -1) {
-                    indiceAtual = idx;
-                    atualizarCard();
-                    tocarAudio();
-                } else {
-                    alert("ID não encontrado no filtro atual.");
-                }
-            }
-        };
-
-        // Atalhos de teclado
-        window.onkeydown = (e) => {
-            if (e.target.tagName === "INPUT") return;
-            if (e.code === "Space") { e.preventDefault(); pausarOuTocar(); }
-            if (e.code === "ArrowRight") { e.preventDefault(); avancar(); tocarAudio(); }
-            if (e.code === "ArrowLeft") { e.preventDefault(); voltar(); tocarAudio(); }
-            if (e.key === "f" || e.key === "F") { e.preventDefault(); sinalizarAudio(); }
-            if (["1", "2", "3", "4", "5", "6"].includes(e.key)) {
-                const idioma = document.getElementById("selectIdioma").value;
-                const vozes = MAPA_VOZES[idioma] || [];
-                const vozEscolhida = `v${e.key}`;
-                if (vozes.includes(vozEscolhida)) {
-                    vozAtual = vozEscolhida;
-                    atualizarVozesDisponiveis();
-                    tocarAudio();
-                }
-            }
-        };
-
-        carregarFrases();
-    </script>
-</body>
-
-</html>
 
 ### 📄 ARQUIVO: ./public/manifest.json
 {
@@ -1157,7 +564,7 @@ function App() {
         ? zhSalvar
         : fraseOriginal;
 
-     // Finaliza o feedback assim que o áudio de correção termina
+      // Finaliza o feedback assim que o áudio de correção termina
       const finalizarAudioErro = () => {
         setTranscricaoAoVivo("");
         setStatusVoz('IDLE');
@@ -1771,16 +1178,18 @@ function App() {
 
     // Cenário 2: Há revisão, mas o aluno nunca estudou essas frases (R = 0)
     if (idsEstudados.length === 0) {
-      // Grava versão imediatamente para liberar o estado da UI
       const versaoAlvo = revisaoPendente.novaVersao;
       localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(versaoAlvo));
       setRevisaoPendente(null);
 
-      // Limpeza de cache e IndexedDB em segundo plano (sem travar abertura do Deck/Game)
-      Promise.all([
-        expurgarAudiosDeIds(idsRevisao, idiomaEstudo),
-        invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo)
-      ]).catch(err => console.warn("[App] Limpeza em segundo plano:", err));
+      // Limpeza de cache e IndexedDB em segundo plano
+      const ehTexto = revisaoPendente.tipo === 'texto';
+      const tarefasLimpeza = [expurgarAudiosDeIds(idsRevisao, idiomaEstudo)];
+      if (ehTexto) {
+        tarefasLimpeza.push(invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo));
+      }
+
+      Promise.all(tarefasLimpeza).catch(err => console.warn("[App] Limpeza em segundo plano:", err));
 
       acaoDestino();
       return;
@@ -1792,58 +1201,57 @@ function App() {
     setModalAtualizacaoAberto(true);
   }, [revisaoPendente, frasesMaestria, idiomaEstudo]);
 
-  // Execução cirúrgica do reset de maestria e download dos novos áudios
+  // Execução da atualização de conteúdo (com separação entre Texto e Áudio)
   const executarAtualizacaoConteudo = useCallback(async (onProgresso) => {
     if (!revisaoPendente) return;
     const idsRevisao = revisaoPendente.ids || [];
     const idsRevisaoSet = new Set(idsRevisao.map(Number));
     const cursoKey = `${idiomaOrigem}_${idiomaEstudo}`;
+    const ehTexto = revisaoPendente.tipo === 'texto';
 
-    // 1. LIMPEZA PRÉVIA DE MEMÓRIA (React State & LocalStorage)
-    limparEstadoExercicio();
-    setFrasesFiltradas([]);
+    // 1. LIMPEZA DE MEMÓRIA E RESET DE MAESTRIA (Apenas se for alteração de TEXTO)
+    if (ehTexto) {
+      limparEstadoExercicio();
+      setFrasesFiltradas([]);
 
-    setSessaoDominium(prev => ({
-      ...prev,
-      primeira: (prev?.primeira || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
-      recuperadas: (prev?.recuperadas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
-      acertosTempo: (prev?.acertosTempo || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
-      falhas: (prev?.falhas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item)))
-    }));
+      setSessaoDominium(prev => ({
+        ...prev,
+        primeira: (prev?.primeira || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+        recuperadas: (prev?.recuperadas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+        acertosTempo: (prev?.acertosTempo || []).filter(item => !idsRevisaoSet.has(Number(item.id || item))),
+        falhas: (prev?.falhas || []).filter(item => !idsRevisaoSet.has(Number(item.id || item)))
+      }));
 
-    const idsEstudados = idsRevisao.filter(id => {
-      const item = frasesMaestria[id];
-      const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
-      return rank > 0;
-    });
+      const agora = Date.now();
+      let novaMaestria = { ...frasesMaestria };
+      idsRevisao.forEach(id => {
+        if (novaMaestria[id] !== undefined) {
+          novaMaestria[id] = { rank: 0, status: 'inedita', next_review: agora, highest_rank: 0 };
+        }
+      });
 
-    const agora = Date.now();
-    let novaMaestria = { ...frasesMaestria };
-    idsRevisao.forEach(id => {
-      if (novaMaestria[id] !== undefined) {
-        novaMaestria[id] = { rank: 0, status: 'inedita', next_review: agora, highest_rank: 0 };
+      setFrasesMaestria(novaMaestria);
+      localStorage.setItem(`maestria_${cursoKey}`, JSON.stringify(novaMaestria));
+
+      if (user?.id) {
+        dataService.saveUserProgress(user.id, cursoKey, novaMaestria)
+          .catch(err => console.warn("[App] Falha ao persistir progresso no Supabase:", err));
       }
-    });
-
-    setFrasesMaestria(novaMaestria);
-    localStorage.setItem(`maestria_${cursoKey}`, JSON.stringify(novaMaestria));
-
-    if (user?.id) {
-      dataService.saveUserProgress(user.id, cursoKey, novaMaestria)
-        .catch(err => console.warn("[App] Falha ao persistir progresso no Supabase:", err));
     }
 
-    // 2. ATUALIZAÇÃO DO CACHE LOCAL (IndexedDB)
+    // 2. ATUALIZAÇÃO DO CACHE LOCAL (Expurgo de áudios antigos)
     const topicosParaRecarregar = [...topicosBaixados];
     const sincronizarTopicosLocais = async () => {
       await expurgarAudiosDeIds(idsRevisao, idiomaEstudo);
-      await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
-      const colTopicOrigem = `topic_${idiomaOrigem}`;
-      for (const tNome of topicosParaRecarregar) {
-        try {
-          await dataService.getSentencesByTopic(nivelAtivo || "A1", idiomaEstudo, colTopicOrigem, tNome);
-        } catch (e) {
-          console.warn(`[App] Falha ao recarregar tópico '${tNome}' no IndexedDB:`, e);
+      if (ehTexto) {
+        await invalidarTopicosPorSentencas(idsRevisao, idiomaEstudo);
+        const colTopicOrigem = `topic_${idiomaOrigem}`;
+        for (const tNome of topicosParaRecarregar) {
+          try {
+            await dataService.getSentencesByTopic(nivelAtivo || "A1", idiomaEstudo, colTopicOrigem, tNome);
+          } catch (e) {
+            console.warn(`[App] Falha ao recarregar tópico '${tNome}' no IndexedDB:`, e);
+          }
         }
       }
     };
@@ -1851,6 +1259,11 @@ function App() {
     sincronizarTopicosLocais().catch(err => console.warn("[App] Erro na sincronização IndexedDB:", err));
 
     // 3. DOWNLOAD DOS NOVOS ÁUDIOS COM PROGRESSO
+    const idsEstudados = idsRevisao.filter(id => {
+      const item = frasesMaestria[id];
+      const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
+      return rank > 0;
+    });
     const idsParaBaixar = idsEstudados.length > 0 ? idsEstudados : idsRevisao.slice(0, 10);
     await baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo, onProgresso);
 
@@ -1995,7 +1408,7 @@ function App() {
       {modalAtualizacaoAberto && (
         <CardAvisoAtualizacao
           styles={styles}
-          descricao={revisaoPendente?.descricao || ""}
+          tipo={revisaoPendente?.tipo || "texto"}
           quantidadeFrases={qtdFrasesEstudadasAfetadas}
           onConfirmar={executarAtualizacaoConteudo}
           onFechar={() => {
@@ -2475,72 +1888,150 @@ import { styles as defaultStyles } from '../styles';
 
 const TEXTOS_AVISO = {
   pt: {
-    topicoLabel: "Atualização de Conteúdo",
-    titulo: "Conteúdo Aprimorado!",
-    mensagemGeral: "Revisamos o curso e aprimoramos o conteúdo para que sua experiência de aprendizado seja ainda mais natural e precisa.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com novas pronúncias ou ajustes de escrita.` : `${qtd} frase que você já estudou foi atualizada com novas pronúncias ou ajustes de escrita.`,
-    mensagemCiclo: "Para garantir que você domine a nova versão, essas frases foram recolocadas no início do seu ciclo de prática.",
-    botaoAcao: "Atualizar e Praticar",
-    baixando: "Atualizando áudios..."
+    texto: {
+      topicoLabel: "Atualização de Conteúdo",
+      titulo: "Conteúdo Aprimorado!",
+      mensagemGeral: "Revisamos o curso e aprimoramos o conteúdo para que sua experiência de aprendizado seja ainda mais natural e precisa.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com novas pronúncias ou ajustes de escrita.` : `${qtd} frase que você já estudou foi atualizada com novas pronúncias ou ajustes de escrita.`,
+      mensagemCiclo: "Para garantir que você domine a nova versão, essas frases foram recolocadas no início do seu ciclo de prática.",
+      botaoAcao: "Atualizar e Praticar",
+      baixando: "Atualizando áudios..."
+    },
+    audio: {
+      topicoLabel: "Atualização de Áudios",
+      titulo: "Novas Vozes e Pronúncias!",
+      mensagemGeral: "Atualizamos os áudios com pronúncias ainda mais naturais e claras.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com novas pronúncias.` : `${qtd} frase que você já estudou foi atualizada com novas pronúncias.`,
+      mensagemCiclo: "Seu progresso no Dìngloop não foi alterado.",
+      botaoAcao: "Atualizar e Praticar",
+      baixando: "Atualizando áudios..."
+    }
   },
   en: {
-    topicoLabel: "Content Update",
-    titulo: "Content Improved!",
-    mensagemGeral: "We reviewed the course and improved the content to ensure your learning experience is even more natural and accurate.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} sentences you previously studied have been updated with new pronunciations or text refinements.` : `${qtd} sentence you previously studied has been updated with new pronunciations or text refinements.`,
-    mensagemCiclo: "To ensure you master the updated version, these sentences were placed back at the beginning of your study cycle.",
-    botaoAcao: "Update and Practice",
-    baixando: "Updating audio files..."
+    texto: {
+      topicoLabel: "Content Update",
+      titulo: "Content Improved!",
+      mensagemGeral: "We reviewed the course and improved the content to ensure your learning experience is even more natural and accurate.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} sentences you previously studied have been updated with new pronunciations or text refinements.` : `${qtd} sentence you previously studied has been updated with new pronunciations or text refinements.`,
+      mensagemCiclo: "To ensure you master the updated version, these sentences were placed back at the beginning of your study cycle.",
+      botaoAcao: "Update and Practice",
+      baixando: "Updating audio files..."
+    },
+    audio: {
+      topicoLabel: "Audio Update",
+      titulo: "New Voices and Pronunciations!",
+      mensagemGeral: "We updated the audio recordings with clearer and more natural pronunciations.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} sentences you previously studied have been updated with new pronunciations.` : `${qtd} sentence you previously studied has been updated with new pronunciations.`,
+      mensagemCiclo: "Your progress in Dìngloop remains unchanged.",
+      botaoAcao: "Update and Practice",
+      baixando: "Updating audio files..."
+    }
   },
   es: {
-    topicoLabel: "Actualización de Contenido",
-    titulo: "¡Contenido Mejorado!",
-    mensagemGeral: "Hemos revisado el curso y mejorado el contenido para garantizar que tu experiencia de aprendizaje sea aún más natural y precisa.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que ya habías estudiado han sido actualizadas con nuevas pronunciaciones o ajustes de texto.` : `${qtd} frase que ya habías estudiado ha sido actualizada con nuevas pronunciaciones o ajustes de texto.`,
-    mensagemCiclo: "Para asegurarte de dominar la nueva versión, estas frases han sido reincorporadas al inicio de tu ciclo de práctica.",
-    botaoAcao: "Actualizar y Practicar",
-    baixando: "Actualizando audios..."
+    texto: {
+      topicoLabel: "Actualización de Contenido",
+      titulo: "¡Contenido Mejorado!",
+      mensagemGeral: "Hemos revisado el curso y mejorado el contenido para garantizar que tu experiencia de aprendizaje sea aún más natural y precisa.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que ya habías estudiado han sido actualizadas con nuevas pronunciaciones o ajustes de texto.` : `${qtd} frase que ya habías estudiado ha sido actualizada con nuevas pronunciaciones o ajustes de texto.`,
+      mensagemCiclo: "Para asegurarte de dominar la nueva versión, estas frases han sido reincorporadas al inicio de tu ciclo de práctica.",
+      botaoAcao: "Actualizar y Practicar",
+      baixando: "Actualizando audios..."
+    },
+    audio: {
+      topicoLabel: "Actualización de Audios",
+      titulo: "¡Nuevas Voces y Pronunciaciones!",
+      mensagemGeral: "Actualizamos los audios con pronunciaciones aún más claras y naturales.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que ya habías estudiado han sido actualizadas con nuevas pronunciaciones.` : `${qtd} frase que ya habías estudiado ha sido actualizada con nuevas pronunciaciones.`,
+      mensagemCiclo: "Tu progreso en Dìngloop no ha cambiado.",
+      botaoAcao: "Actualizar y Practicar",
+      baixando: "Actualizando audios..."
+    }
   },
   fr: {
-    topicoLabel: "Mise à Jour du Contenu",
-    titulo: "Contenu Amélioré !",
-    mensagemGeral: "Nous avons révisé le cours et amélioré le contenu pour rendre votre expérience d'apprentissage encore plus naturelle et précise.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} phrases déjà étudiées ont été mises à jour avec de nouveaux enregistrements audio ou ajustements de texte.` : `${qtd} phrase déjà étudiée a été mise à jour avec de nouveaux enregistrements audio ou ajustements de texte.`,
-    mensagemCiclo: "Pour vous permettre de bien assimiler la nouvelle version, ces phrases ont été replacées au début de votre cycle d'étude.",
-    botaoAcao: "Mettre à jour et Pratiquer",
-    baixando: "Mise à jour des audios..."
+    texto: {
+      topicoLabel: "Mise à Jour du Contenu",
+      titulo: "Contenu Amélioré !",
+      mensagemGeral: "Nous avons révisé le cours et amélioré le contenu pour rendre votre expérience d'apprentissage encore plus naturelle et précise.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} phrases déjà étudiées ont été mises à jour avec de nouveaux enregistrements audio ou ajustements de texte.` : `${qtd} phrase déjà étudiée a été mise à jour avec de nouveaux enregistrements audio ou ajustements de texte.`,
+      mensagemCiclo: "Pour vous permettre de bien assimiler la nouvelle version, ces phrases ont été replacées au début de votre cycle d'étude.",
+      botaoAcao: "Mettre à jour et Pratiquer",
+      baixando: "Mise à jour des audios..."
+    },
+    audio: {
+      topicoLabel: "Mise à Jour des Audios",
+      titulo: "Nouvelles Voix et Prononciations !",
+      mensagemGeral: "Nous avons mis à jour les enregistrements avec des prononciations encore plus claires et naturelles.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} phrases déjà étudiées ont été mises à jour avec de nouveaux enregistrements audio.` : `${qtd} phrase déjà étudiée a été mise à jour avec de nouveaux enregistrements audio.`,
+      mensagemCiclo: "Votre progression dans Dìngloop reste inchangée.",
+      botaoAcao: "Mettre à jour et Pratiquer",
+      baixando: "Mise à jour des audios..."
+    }
   },
   it: {
-    topicoLabel: "Aggiornamento Contenuti",
-    titulo: "Contenuto Migliorato!",
-    mensagemGeral: "Abbiamo revisionato il corso e migliorato il materiale per garantire un'esperienza di studio ancora più fluida e accurata.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio o rifiniture del testo.` : `${qtd} frase che hai già studiata è stata aggiornata con nuovi audio o rifiniture del testo.`,
-    mensagemCiclo: "Per permetterti di padroneggiare la nuova versão, queste frasi sono state riposizionate all'inizio del tuo ciclo di pratica.",
-    botaoAcao: "Aggiorna e Pratica",
-    baixando: "Aggiornamento audio..."
+    texto: {
+      topicoLabel: "Aggiornamento Contenuti",
+      titulo: "Contenuto Migliorato!",
+      mensagemGeral: "Abbiamo revisionato il corso e migliorato il materiale per garantire un'esperienza di studio ancora più fluida e accurata.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio o rifiniture del testo.` : `${qtd} frase che hai già studiata è stata aggiornata con nuovi audio o rifiniture del testo.`,
+      mensagemCiclo: "Per permetterti di padroneggiare la nuova versione, queste frasi sono state riposizionate all'inizio del tuo ciclo di pratica.",
+      botaoAcao: "Aggiorna e Pratica",
+      baixando: "Aggiornamento audio..."
+    },
+    audio: {
+      topicoLabel: "Aggiornamento Audio",
+      titulo: "Nuove Voci e Pronunce!",
+      mensagemGeral: "Abbiamo aggiornato gli audio con pronunce ancora più chiare e naturali.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio di pronuncia.` : `${qtd} frase che hai già studiata è stata aggiornata con nuovi audio di pronuncia.`,
+      mensagemCiclo: "I tuoi progressi in Dìngloop non sono stati modificati.",
+      botaoAcao: "Aggiorna e Pratica",
+      baixando: "Aggiornamento audio..."
+    }
   },
   ge: {
-    topicoLabel: "Inhaltsaktualisierung",
-    titulo: "Verbesserter Inhalt!",
-    mensagemGeral: "Wir haben den Kurs überarbeitet und optimiert, um Ihr Lernerlebnis noch natürlicher und präziser zu gestalten.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} Sätze, die Sie bereits gelernt haben, wurden mit neuen Audios oder Textanpassungen aktualisiert.` : `${qtd} Satz, den Sie bereits gelernt haben, wurde mit neuen Audios oder Textanpassungen aktualisiert.`,
-    mensagemCiclo: "Damit Sie die neue Version sicher beherrschen, wurden diese Sätze an den Anfang Ihres Lernzyklus verschoben.",
-    botaoAcao: "Aktualisieren und Üben",
-    baixando: "Audios werden aktualisiert..."
+    texto: {
+      topicoLabel: "Inhaltsaktualisierung",
+      titulo: "Verbesserter Inhalt!",
+      mensagemGeral: "Wir haben den Kurs überarbeitet und optimiert, um Ihr Lernerlebnis noch natürlicher und präziser zu gestalten.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} Sätze, die Sie bereits gelernt haben, wurden mit neuen Audios oder Textanpassungen aktualisiert.` : `${qtd} Satz, den Sie bereits gelernt haben, wurde mit neuen Audios oder Textanpassungen aktualisiert.`,
+      mensagemCiclo: "Damit Sie die neue Version sicher beherrschen, wurden diese Sätze an den Anfang Ihres Lernzyklus verschoben.",
+      botaoAcao: "Aktualisieren und Üben",
+      baixando: "Audios werden aktualisiert..."
+    },
+    audio: {
+      topicoLabel: "Audio-Aktualisierung",
+      titulo: "Neue Stimmen und Aussprachen!",
+      mensagemGeral: "Wir haben die Audioaufnahmen mit noch klareren und natürlicheren Aussprachen aktualisiert.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} Sätze, die Sie bereits gelernt haben, wurden mit neuen Aussprachen aktualisiert.` : `${qtd} Satz, den Sie bereits gelernt haben, wurde mit neuen Aussprachen aktualisiert.`,
+      mensagemCiclo: "Ihr Fortschritt in Dìngloop bleibt unverändert.",
+      botaoAcao: "Aktualisieren und Üben",
+      baixando: "Audios werden aktualisiert..."
+    }
   },
   pi: {
-    topicoLabel: "内容更新 (Nèiróng gēngxīn)",
-    titulo: "内容已优化！(Nèiróng yǐ yōuhuà!)",
-    mensagemGeral: "我们对课程内容进行了全面修订与优化，以提供更加纯正的发音和更精准的语言表达。",
-    mensagemFrases: (qtd) => `您之前学过的 ${qtd} 个句子已更新了全新音频或文本校正。`,
-    mensagemCiclo: "为了帮助您完全掌握最新版本，这些句子已重新置于您当前练习周期的首位。",
-    botaoAcao: "更新并练习 (Gēngxīn bìng liànxí)",
-    baixando: "正在更新音频... (Zhèngzài gēngxīn yīnpín...)"
+    texto: {
+      topicoLabel: "内容更新 (Nèiróng gēngxīn)",
+      titulo: "内容已优化！(Nèiróng yǐ yōuhuà!)",
+      mensagemGeral: "我们对课程内容进行了全面修订与优化，以提供更加纯正的发音和更精准的语言表达。",
+      mensagemFrases: (qtd) => `您之前学过的 ${qtd} 个句子已更新了全新音频或文本校正。`,
+      mensagemCiclo: "为了帮助您完全掌握最新版本，这些句子已重新置于您当前练习周期的首位。",
+      botaoAcao: "更新并练习 (Gēngxīn bìng liànxí)",
+      baixando: "正在更新音频... (Zhèngzài gēngxīn yīnpín...)"
+    },
+    audio: {
+      topicoLabel: "音频更新 (Yīnpín gēngxīn)",
+      titulo: "全新人声与发音！(Quánxīn rénshēng yǔ fāyīn!)",
+      mensagemGeral: "我们更新了音频，带来更加纯正、清晰的发音。(Wǒmen gēngxīnle yīnpín, dàilái gèngjiā chúnzhèng, qīngxī de fāyīn.)",
+      mensagemFrases: (qtd) => `您之前学过的 ${qtd} 个句子已更新了全新发音音频。(Nín zhīqián xuéguò de ${qtd} gè jùzi yǐ gēngxīnle quánxīn fāyīn yīnpín.)`,
+      mensagemCiclo: "您在 Dìngloop 中的学习进度保持不变。(Nín zài Dìngloop zhōng de xuéxí jìndù bǎochí bùbiàn.)",
+      botaoAcao: "更新并练习 (Gēngxīn bìng liànxí)",
+      baixando: "正在更新音频... (Zhèngzài gēngxīn yīnpín...)"
+    }
   }
 };
 
 export default function CardAvisoAtualizacao({
   styles = defaultStyles,
+  tipo = "texto",
   descricao = "",
   quantidadeFrases = 0,
   onConfirmar,
@@ -2563,7 +2054,8 @@ export default function CardAvisoAtualizacao({
     };
   }, []);
 
-  const textos = TEXTOS_AVISO[idiomaOrigem] || TEXTOS_AVISO.pt;
+  const grupoIdiomas = TEXTOS_AVISO[idiomaOrigem] || TEXTOS_AVISO.pt;
+  const textos = (grupoIdiomas[tipo] || grupoIdiomas.texto || grupoIdiomas);
   const corTema = temas[idiomaEstudo]?.bg || "#4f46e5";
 
   const handleSair = () => {
@@ -2646,7 +2138,7 @@ export default function CardAvisoAtualizacao({
           flexDirection: 'column',
           alignItems: 'center'
         }}>
-          
+
           {/* Topo do Card */}
           <div style={{ ...styles.topCardAreaFixed, textAlign: 'center', width: '100%' }}>
             <p style={{ ...styles.labelTopico, color: corTema, margin: '0 0 10px 0', textAlign: 'center' }}>
@@ -2659,16 +2151,16 @@ export default function CardAvisoAtualizacao({
             ...styles.areaFraseCentralFlex,
             flex: 1,
             width: '100%',
-            padding: '10px 10px',
+            padding: '4px 10px',
             overflowY: 'auto',
             textAlign: 'center',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'space-evenly',
             boxSizing: 'border-box'
           }}>
-            
+
             {/* Ícone de atualização */}
             <div style={{
               width: '56px',
@@ -2679,16 +2171,16 @@ export default function CardAvisoAtualizacao({
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              margin: '0 auto 14px auto',
+              margin: '0 auto',
               flexShrink: 0
             }}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
               </svg>
             </div>
 
             <h2 style={{
-              margin: '0 0 12px 0',
+              margin: 0,
               fontSize: '1.35rem',
               fontWeight: '900',
               color: '#1e293b',
@@ -2699,7 +2191,7 @@ export default function CardAvisoAtualizacao({
             </h2>
 
             <p style={{
-              margin: '0 0 14px 0',
+              margin: 0,
               fontSize: '0.92rem',
               color: '#475569',
               lineHeight: '1.45',
@@ -2715,7 +2207,7 @@ export default function CardAvisoAtualizacao({
                 border: '1px solid #e2e8f0',
                 borderRadius: '12px',
                 padding: '12px 14px',
-                margin: '0 0 14px 0',
+                margin: 0,
                 width: '100%',
                 boxSizing: 'border-box',
                 textAlign: 'center'
@@ -2739,19 +2231,6 @@ export default function CardAvisoAtualizacao({
                   {textos.mensagemCiclo}
                 </p>
               </div>
-            )}
-
-            {descricao && (
-              <p style={{
-                margin: '4px 0 0 0',
-                fontSize: '0.8rem',
-                color: '#94a3b8',
-                fontStyle: 'italic',
-                textAlign: 'center',
-                width: '100%'
-              }}>
-                {descricao}
-              </p>
             )}
           </div>
 
@@ -6674,25 +6153,30 @@ export const dataService = {
 
       const { data, error } = await supabase
         .from('curso_revisoes')
-        .select('versao, ids_alterados, descricao')
+        .select('versao, ids_alterados, descricao, tipo')
         .eq('idioma', idiomaEstudo)
         .gt('versao', versaoLocal)
         .order('versao', { ascending: true });
 
       if (error || !data || data.length === 0) {
-        return { temRevisao: false, ids: [], novaVersao: versaoLocal, descricao: "" };
+        return { temRevisao: false, ids: [], novaVersao: versaoLocal, descricao: "", tipo: "texto" };
       }
 
       // Unifica todos os IDs de revisões acumuladas sem duplicatas
       const todosIds = Array.from(new Set(data.flatMap(r => r.ids_alterados || [])));
-      const ultimaVersao = data[data.length - 1].versao;
-      const descricao = data[data.length - 1].descricao;
+      const ultimaRevisao = data[data.length - 1];
+      const ultimaVersao = ultimaRevisao.versao;
+      const descricao = ultimaRevisao.descricao;
+      // Se houver qualquer revisão acumulada do tipo 'texto', prioriza 'texto' (com reset de rank)
+      const temAlteracaoTexto = data.some(r => r.tipo === 'texto');
+      const tipoFinal = temAlteracaoTexto ? 'texto' : (ultimaRevisao.tipo || 'audio');
 
       return {
         temRevisao: true,
         ids: todosIds,
         novaVersao: ultimaVersao,
-        descricao: descricao
+        descricao: descricao,
+        tipo: tipoFinal
       };
     } catch (err) {
       console.warn('[dataService] Falha ao verificar revisões pendentes:', err);

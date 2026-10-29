@@ -51,7 +51,7 @@ Esta seção documenta as dependências que residem fora do repositório local e
   - **Administrador (`Perfil.jsx`):** autenticação via e-mail e senha (`supabase.auth.signInWithPassword`) em modal acionado por 4 toques consecutivos (janela de `1500ms`) na frase inspiracional (ou pelo botão `Adm` em ambiente `DEV`), definindo `userRole = 'adm'`, abrindo a tela `adm` e autenticando a sessão para exclusão de registros em `reports_frases` sob política RLS restrita ao papel `authenticated`.
 - Banco de dados relacional com as tabelas:
   - `sentences`: base curricular das 1.200 frases em todos os idiomas, tópicos por idioma de origem (`topic_{lang}`) e frases inspiracionais.
-  - `curso_revisoes`: controle de versionamento independente por idioma (`versao`, `ids_alterados`, `descricao`), permitindo invalidação seletiva de cache e reset cirúrgico apenas das frases atualizadas.
+  - `curso_revisoes`: controle de versionamento independente por idioma (`versao`, `ids_alterados`, `descricao`, `tipo`), permitindo invalidação seletiva de cache e reset cirúrgico apenas das frases atualizadas (`tipo = 'texto'`) ou preservação integral de progresso e ranks (`tipo = 'audio'`).
   - `user_progress`: persistência de progresso e maestria em nuvem (`user_id`, `idioma`, `maestria`) com regras de degradação por inatividade.
   - `reports_frases`: telemetria de reportes manuais dos alunos (`TelaEstudo.jsx` e `Dinglab.jsx`), quarentenas automáticas do Dìnglab (3 erros vocais), superações na Prova de Fogo e reportes manuais de auditoria de áudio (`public/auditor.html`), gerenciáveis (marcar resolvido, inspecionar no card e excluir) pelo painel administrativo (`Adm.jsx`).
 
@@ -71,22 +71,29 @@ Esta seção documenta as dependências que residem fora do repositório local e
 ### D. Web Speech API, MediaRecorder e Explicações Estáticas Locais
 - **Web Speech API:** Reconhecimento de voz contínuo executado nativamente no navegador (`continuous = true`, `interimResults = true`) com limiar adaptativo (`>= 75%` geral e `>= 50%` para frases de até 2 palavras), confirmação rápida de acerto em `750ms` e tolerância de silêncio (VAD) de `1,3s`, além de normalização fonética e conversão de numerais por extenso (`NUMEROS_EXTENSO` e `normalizarMandarimNumeros`).
 - **MediaRecorder API:** Gravação local em tempo real da voz do aluno (`audio/webm`) no Modo Espelho do Dìnglab para reprodução comparativa imediata ("Ouvir gravação").
-- **Base Estática de Explicações (`/public/explicacoes/`):** Explicações gramaticais e *breakdowns* de vocabulário pré-gerados em arquivos JSON estáticos (`/public/explicacoes/{estudo}_{origem}/{nivel}_{topico}.json`) com cache em memória (`cacheExplicacoesTopico`), eliminando latência e custos de API de IA durante o estudo.
+- **Base Estática de Explicações (`/public/explicacoes/`):** Explicações gramaticais e *breakdowns* de vocabulário pré-gerados offline em arquivos JSON estáticos (`/public/explicacoes/{estudo}_{origem}/{nivel}_{topico}.json`) via scripts utilitários (`scripts/extrair.mjs` e `scripts/gerarExplicacoes.mjs`), com cache em memória (`cacheExplicacoesTopico`), eliminando latência e custos de API de IA durante o estudo.
 
 ---
 
-## 4. Protocolo de Inicialização para IAs (Geração do Dumper)
-**Ação Obrigatória:** Ao iniciar uma nova conversa técnica, a IA deve orientar o usuário a executar o comando abaixo no Git Bash. Este script varre a estrutura do projeto e consolida a árvore de arquivos e o código-fonte atualizado no arquivo `DINGLI_DUMPER.md`.
+## 4. Protocolo de Inicialização para IAs (Geração dos Dumpers)
+**Ação Obrigatória:** Ao iniciar uma nova conversa técnica, a IA deve orientar o usuário a executar o comando unificado abaixo no Git Bash. Este script varre a estrutura do projeto e gera simultaneamente dois snapshots complementares:
+1. `DINGLI_DUMPER.md`: Contém a árvore geral e o código integral da aplicação frontend/PWA (`src/` e configurações vitais de build).
+2. `DINGLI_DUMPER_SCRIPTS.md`: Contém as ferramentas internas (`public/auditor.html`), o livro-razão de revisões (`backups/historico_revisoes.md`) e os scripts de automação (`scripts/dingli.py`, `scripts/extrair.mjs`, `scripts/gerarExplicacoes.mjs`).
 
 > **Parâmetro de Estabilidade Técnica:** A Seção 2 do Dumper foi calibrada para manter o volume total abaixo de 8.000 linhas (~250 KB), garantindo entrega integral sem cortes em nenhum modelo de IA. Arquivos utilitários de build local, binários, mídias, backups, bases estáticas de explicações e scripts Python de automação permanecem documentados neste Master, não sendo despejados na Seção 2.
 
 ```bash
-OUTPUT="DINGLI_DUMPER.md"
-echo "Gerando Snapshot Técnico do DINGLI..."
-echo "# 🖨️ DINGLI_DUMPER.md" > "$OUTPUT"
-echo "Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicação." >> "$OUTPUT"
+# ------------------------------------------------------------------------------
+# 1. DUMPER PRINCIPAL: APLICAÇÃO & FRONTEND (DINGLI_DUMPER.md)
+# ------------------------------------------------------------------------------
+OUTPUT_CORE="DINGLI_DUMPER.md"
+OUTPUT_SCRIPTS="DINGLI_DUMPER_SCRIPTS.md"
 
-echo -e "\n## 1. ÁRVORE DE DIRETÓRIOS" >> "$OUTPUT"
+echo "Gerando Snapshot da Aplicação ($OUTPUT_CORE)..."
+echo "# 🖨️ DINGLI_DUMPER.md" > "$OUTPUT_CORE"
+echo "Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicação." >> "$OUTPUT_CORE"
+
+echo -e "\n## 1. ÁRVORE DE DIRETÓRIOS" >> "$OUTPUT_CORE"
 find . -type f \
   -not -path "*/node_modules/*" \
   -not -path "*/.git/*" \
@@ -97,7 +104,8 @@ find . -type f \
   -not -path "*/public/explicacoes/*" \
   -not -path "*/__pycache__/*" \
   -not -name "*.env*" \
-  -not -name "$OUTPUT" \
+  -not -name "$OUTPUT_CORE" \
+  -not -name "$OUTPUT_SCRIPTS" \
   -not -name "*.csv*" \
   -not -name "*.mp3" \
   -not -name "*.wav" \
@@ -106,9 +114,9 @@ find . -type f \
   -not -name "*.svg" \
   -not -name "*.ico" \
   -not -name "*.webp" \
-  -not -name "*.pyc" | sort >> "$OUTPUT"
+  -not -name "*.pyc" | sort >> "$OUTPUT_CORE"
 
-echo -e "\n## 2. CÓDIGO FONTE INTEGRAL" >> "$OUTPUT"
+echo -e "\n## 2. CÓDIGO FONTE INTEGRAL" >> "$OUTPUT_CORE"
 find . -type f \
   -not -path "*/node_modules/*" \
   -not -path "*/.git/*" \
@@ -121,7 +129,9 @@ find . -type f \
   -not -path "*/scripts/*" \
   -not -path "*/__pycache__/*" \
   -not -name "*.env*" \
-  -not -name "$OUTPUT" \
+  -not -name "$OUTPUT_CORE" \
+  -not -name "$OUTPUT_SCRIPTS" \
+  -not -name "auditor.html" \
   -not -name "*.exe" \
   -not -name "*.dll" \
   -not -name "*.csv*" \
@@ -136,23 +146,39 @@ find . -type f \
   -not -name "*.pyc" \
   -not -name "*.txt" \
   -not -name "package-lock.json" \
-  -not -name "audioPronuncias.json" \
-  -not -name "dingli_master_backup.md" \
-  -not -name "documentacao_dominium.html" \
   -not -name "DINGLI_MASTER.md" \
   -not -name "historico_revisoes.md" \
-  -not -name "README.md" \
-  -not -name "gerarExplicacoes.mjs" \
-  -not -name "extrair.mjs" | sort | while read -r file; do
-  echo -e "\n\n### 📄 ARQUIVO: $file" >> "$OUTPUT"
+  -not -name "README.md" | sort | while read -r file; do
+  echo -e "\n\n### 📄 ARQUIVO: $file" >> "$OUTPUT_CORE"
   sed -e 's/GEMINI_API_KEY: "[^"]*"/GEMINI_API_KEY: "SUA_CHAVE_GEMINI_AQUI"/' \
-      -e 's/SUPABASE_SERVICE_ROLE_KEY: "[^"]*"/SUPABASE_SERVICE_ROLE_KEY: "SUA_CHAVE_SUPABASE_SERVICE_ROLE_AQUI"/' \
-      "$file" >> "$OUTPUT"
+      -e 's/SUPABASE_SECRET_KEY: "[^"]*"/SUPABASE_SECRET_KEY: "SUA_CHAVE_SUPABASE_SECRET_AQUI"/' \
+      "$file" >> "$OUTPUT_CORE"
 done
-echo "Concluído! Arquivo $OUTPUT gerado com sucesso."
+
+# ------------------------------------------------------------------------------
+# 2. DUMPER DE SCRIPTS, FERRAMENTAS & AUDITORIA (DINGLI_DUMPER_SCRIPTS.md)
+# ------------------------------------------------------------------------------
+echo "Gerando Snapshot de Scripts e Ferramentas ($OUTPUT_SCRIPTS)..."
+echo "# 🛠️ DINGLI_DUMPER_SCRIPTS.md" > "$OUTPUT_SCRIPTS"
+echo "Snapshot técnico de scripts de automação, ferramentas de auditoria e governança de dados do Dìnglì." >> "$OUTPUT_SCRIPTS"
+
+echo -e "\n## 1. CÓDIGO FONTE DE SCRIPTS E FERRAMENTAS" >> "$OUTPUT_SCRIPTS"
+find ./scripts ./public/auditor.html ./backups/historico_revisoes.md -type f 2>/dev/null \
+  -not -name "*.pyc" \
+  -not -name "__pycache__" | sort | while read -r file; do
+  if [ -f "$file" ]; then
+    echo -e "\n\n### 📄 ARQUIVO: $file" >> "$OUTPUT_SCRIPTS"
+    sed -e 's/GEMINI_API_KEY: "[^"]*"/GEMINI_API_KEY: "SUA_CHAVE_GEMINI_AQUI"/' \
+        -e 's/API_KEY = "[^"]*"/API_KEY = "SUA_CHAVE_GEMINI_AQUI"/' \
+        -e 's/SUPABASE_SECRET_KEY: "[^"]*"/SUPABASE_SECRET_KEY: "SUA_CHAVE_SUPABASE_SECRET_AQUI"/' \
+        "$file" >> "$OUTPUT_SCRIPTS"
+  fi
+done
+
+echo "✔ Concluído com sucesso! Gerados: $OUTPUT_CORE e $OUTPUT_SCRIPTS."
 ```
 
-*Instrução para a IA:* Somente após o usuário rodar o comando e disponibilizar o conteúdo do `DINGLI_DUMPER.md`, inicie as análises e edições solicitadas.
+*Instrução para a IA:* Somente após o usuário rodar o comando e disponibilizar o conteúdo do `DINGLI_DUMPER.md` (e `DINGLI_DUMPER_SCRIPTS.md`, caso a demanda envolva banco, áudios ou automações), inicie as análises e edições solicitadas.
 
 ---
 
@@ -162,7 +188,7 @@ echo "Concluído! Arquivo $OUTPUT gerado com sucesso."
 1. **Auditoria de Escopo e Arquitetura:** Avaliar se as alterações realizadas modificaram integrações externas (Supabase, Cloudflare R2, Edge-TTS, Web Speech API, etc.), dependências estruturais ou fluxos de trabalho descritos na Seção 1 e Seção 3 deste documento.
 2. **Governança do Comando do Dumper (Seção 4):** Caso novos arquivos secundários, dados estáticos brutos, scripts pontuais de automação ou arquivos de documentação sejam criados no projeto, a IA DEVE atualizar as regras `-not -path` ou `-not -name` na Seção 4 para preservar o teto operacional de segurança de 8.000 linhas da Seção 2, mantendo nela estritamente o código-fonte vivo da aplicação (`src/` e arquivos vitais de configuração).
 3. **Entrega de Atualização:** Caso identifique divergências, fornecer explicitamente ao usuário a versão revisada e atualizada do `DINGLI_MASTER.md` utilizando encapsulamento com 4 crases para evitar quebra de formatação.
-4. **Instrução de Novo Snapshot:** Instruir o usuário a gerar uma nova versão do `DINGLI_DUMPER.md` caso arquivos tenham sido criados, movidos ou excluídos.
+4. **Instrução de Novo Snapshot:** Instruir o usuário a gerar uma nova versão dos dumpers (`DINGLI_DUMPER.md` e `DINGLI_DUMPER_SCRIPTS.md`) caso arquivos tenham sido criados, movidos ou excluídos.
 
 ---
 
@@ -232,30 +258,30 @@ Sempre que o usuário solicitar revisão ou melhoria didática de frases, a IA D
 ---
 
 ### 6.3 Fluxo F1: Revisão ou Alteração de Texto (Com Reset de Rank)
-Aplicado quando a escrita da frase ou da tradução é modificada. Exige reaprendizado do aluno, regravação de áudios de frases, atualização do vocabulário léxico e commit estrutural no banco[cite: 1, 20].
+Aplicado quando a escrita da frase ou da tradução é modificada. Exige reaprendizado do aluno, regravação de áudios de frases, atualização do vocabulário léxico e commit estrutural no banco.
 
-- **Passo 1 (Chat):** Usuário solicita a revisão informando o idioma e o bloco de frases (ex: 50 frases)[cite: 20].
-- **Passo 2 (Terminal - Backup):** A IA orienta o comando de backup. O usuário executa `python scripts/dingli.py backup` (que extrai as 1.200 frases paginadas da tabela `sentences` do Supabase para `backups/sentences_backup_TIMESTAMP.csv`) e cola a confirmação no chat[cite: 2, 4, 20].
-- **Passo 3 (Chat - Tabela Comparativa):** A IA entrega a tabela de 50 frases no formato de largura máxima. O usuário avalia e aprova as frases que devem mudar[cite: 20].
-- **Passo 4 (Terminal - Patch Local):** A IA entrega o comando para salvar o arquivo `patch.json` e aplicar as alterações aprovadas em `supabase_sentences.csv` via `python scripts/dingli.py patch patch.json`[cite: 2, 4, 20].
-- **Passo 5 (Terminal - Frases no Cloudflare R2):** Usuário executa `python scripts/dingli.py frases-f1 <idioma>`. O script compara o CSV com o último backup, move os áudios locais antigos dessas frases para `audios_dingli/quarentena_frases/<idioma>/`, sintetiza os novos `.mp3` via Edge-TTS e faz upload com sobrescrita direta no bucket do Cloudflare R2[cite: 1, 4, 20].
-- **Passo 6 (Terminal - Palavras Isoladas no Cloudflare R2):** Usuário executa `python scripts/dingli.py palavras-f1 <idioma>`. O script varre o CSV local, move palavras órfãs locais para quarentena, sintetiza palavras novas com Edge-TTS + FFmpeg (`adelay=300|300,apad=pad_dur=0.1`), faz upload para `palavras/<idioma>/` no Cloudflare R2 e deleta do bucket R2 os arquivos de palavras órfãs que não pertencem mais ao curso[cite: 1, 7, 15, 19, 20].
-- **Passo 7 (Terminal - Commit no Banco e Carimbo de Versão):** Usuário executa `python scripts/dingli.py commit-f1 <idioma>`. O script atualiza as colunas de texto na tabela `sentences` do Supabase via PATCH e insere uma nova linha na tabela `curso_revisoes` com `tipo = 'texto'`, listando os IDs afetados[cite: 4, 6, 20].
-- **Passo 8 (App do Aluno):** O app lê a versão com `tipo = 'texto'`. Ao abrir Deck ou Game, exibe o `CardAvisoAtualizacao` informando que o conteúdo foi aprimorado. Ao clicar em atualizar, o app expurga os áudios antigos do Cache Storage e IndexedDB, invalida tópicos em cache, reseta as frases afetadas para `rank: 0` (`inedita`), baixa os novos áudios do R2 com barra de progresso e libera o estudo[cite: 1, 20].
+- **Passo 1 (Chat):** Usuário solicita a revisão informando o idioma e o bloco de frases (ex: 50 frases).
+- **Passo 2 (Terminal - Backup):** A IA orienta o comando de backup. O usuário executa `python scripts/dingli.py backup` (que extrai as 1.200 frases paginadas da tabela `sentences` do Supabase para `backups/sentences_backup_TIMESTAMP.csv`) e cola a confirmação no chat.
+- **Passo 3 (Chat - Tabela Comparativa):** A IA entrega a tabela de 50 frases no formato de largura máxima. O usuário avalia e aprova as frases que devem mudar.
+- **Passo 4 (Terminal - Patch Local):** A IA entrega o comando para salvar o arquivo `patch.json` e aplicar as alterações aprovadas em `supabase_sentences.csv` via `python scripts/dingli.py patch patch.json`.
+- **Passo 5 (Terminal - Frases no Cloudflare R2):** Usuário executa `python scripts/dingli.py frases-f1 <idioma>`. O script compara o CSV com o último backup, move os áudios locais antigos dessas frases para `audios_dingli/quarentena_frases/<idioma>/`, sintetiza os novos `.mp3` via Edge-TTS e faz upload com sobrescrita direta no bucket do Cloudflare R2.
+- **Passo 6 (Terminal - Palavras Isoladas no Cloudflare R2):** Usuário executa `python scripts/dingli.py palavras-f1 <idioma>`. O script varre o CSV local, move palavras órfãs locais para quarentena, sintetiza palavras novas com Edge-TTS + FFmpeg (`adelay=300|300,apad=pad_dur=0.1`), faz upload para `palavras/<idioma>/` no Cloudflare R2 e deleta do bucket R2 os arquivos de palavras órfãs que não pertencem mais ao curso.
+- **Passo 7 (Terminal - Commit no Banco e Carimbo de Versão):** Usuário executa `python scripts/dingli.py commit-f1 <idioma>`. O script atualiza as colunas de texto na tabela `sentences` do Supabase via PATCH e insere uma nova linha na tabela `curso_revisoes` com `tipo = 'texto'`, listando os IDs afetados.
+- **Passo 8 (App do Aluno):** O app lê a versão com `tipo = 'texto'`. Ao abrir Deck ou Game, exibe o `CardAvisoAtualizacao` informando que o conteúdo foi aprimorado. Ao clicar em atualizar, o app expurga os áudios antigos do Cache Storage e IndexedDB, invalida tópicos em cache, reseta as frases afetadas para `rank: 0` (`inedita`), baixa os novos áudios do R2 com barra de progresso e libera o estudo.
 
 ---
 
 ### 6.4 Fluxo F2: Atualização Pura de Áudio e Novas Vozes (Sem Perda de Progresso)
-Aplicado quando o texto permanece 100% idêntico e apenas as gravações de áudio/vozes foram alteradas ou adicionadas. O progresso do aluno é estritamente preservado[cite: 1, 20].
+Aplicado quando o texto permanece 100% idêntico e apenas as gravações de áudio/vozes foram alteradas ou adicionadas. O progresso do aluno é estritamente preservado.
 
-- **Passo 1 (Chat):** Usuário define idioma, vozes envolvidas e faixa de IDs (ex: `en`, `1 1200`, `--vozes v1,v2,v3`)[cite: 1, 20].
-- **Passo 2 (Terminal - Síntese e Upload R2):** Usuário executa `python scripts/dingli.py frases-f2 <idioma> <inicio> <fim> [--vozes <v1,v2...>]`. O script sintetiza os áudios via Edge-TTS e faz upload direto ao Cloudflare R2 sobrescrevendo os arquivos no bucket[cite: 1, 20].
-- **Passo 3 (Terminal - Carimbo de Versão de Áudio):** Usuário executa `python scripts/dingli.py commit-f2 <idioma> <inicio> <fim>`. O script insere uma linha em `curso_revisoes` no Supabase com `tipo = 'audio'`, nova versão e a lista dos IDs afetados (sem modificar a tabela `sentences`)[cite: 1, 20].
-- **Passo 4 (App do Aluno):** O app detecta a versão com `tipo = 'audio'`. Exibe o `CardAvisoAtualizacao` informando que novas pronúncias foram aprimoradas e que o progresso e ranks do Dìngloop continuam exatamente iguais. Ao confirmar, o app limpa o cache antigo, preserva integralmente os ranks do aluno, baixa os novos MP3s com barra de porcentagem e libera a sessão imediatamente[cite: 1, 20].
+- **Passo 1 (Chat):** Usuário define idioma, vozes envolvidas e faixa de IDs (ex: `en`, `1 1200`, `--vozes v1,v2,v3`).
+- **Passo 2 (Terminal - Síntese e Upload R2):** Usuário executa `python scripts/dingli.py frases-f2 <idioma> <inicio> <fim> [--vozes <v1,v2...>]`. O script sintetiza os áudios via Edge-TTS e faz upload direto ao Cloudflare R2 sobrescrevendo os arquivos no bucket.
+- **Passo 3 (Terminal - Carimbo de Versão de Áudio):** Usuário executa `python scripts/dingli.py commit-f2 <idioma> <inicio> <fim>`. O script insere uma linha em `curso_revisoes` no Supabase com `tipo = 'audio'`, nova versão e a lista dos IDs afetados (sem modificar a tabela `sentences`).
+- **Passo 4 (App do Aluno):** O app detecta a versão com `tipo = 'audio'`. Exibe o `CardAvisoAtualizacao` informando que novas pronúncias foram aprimoradas e que o progresso e ranks do Dìngloop continuam exatamente iguais. Ao confirmar, o app limpa o cache antigo, preserva integralmente os ranks do aluno, baixa os novos MP3s com barra de porcentagem e libera a sessão imediatamente.
 
 ---
 
 ### 6.5 Governança do Script Único (`scripts/dingli.py`)
-- **Centralização Estrita:** Toda e qualquer rotina de backup, patch, síntese de frases, geração de vocabulário, uploads para Cloudflare R2 e carimbos de versão no Supabase é executada exclusivamente por `scripts/dingli.py`[cite: 20].
-- **Scripts Legados Extintos:** Fica expressamente proibida a criação ou execução dos scripts fragmentados antigos (`sincronizar_frases_completo.py`, `sincronizar_vocabulario.py`, `sincronizar_storage_vocabulario.py`, `sincronizar_vocabulario_completo.py`, `sincronizar_sentences_db.py`, `sincronizar_tudo.py`, `aplicar_revisao_e_backup.py`, etc.)[cite: 20].
-- **Saídas Orientadoras no Terminal:** Cada subcomando do `scripts/dingli.py` imprime um relatório visual do que foi realizado e exibe ao final a orientação exata do próximo comando que o usuário e a IA devem executar[cite: 20].
+- **Centralização Estrita:** Toda e qualquer rotina de backup, patch, síntese de frases, geração de vocabulário, uploads para Cloudflare R2 e carimbos de versão no Supabase é executada exclusivamente por `scripts/dingli.py`.
+- **Scripts Legados Extintos:** Fica expressamente proibida a criação ou execução dos scripts fragmentados antigos (`sincronizar_frases_completo.py`, `sincronizar_vocabulario.py`, `sincronizar_storage_vocabulario.py`, `sincronizar_vocabulario_completo.py`, `sincronizar_sentences_db.py`, `sincronizar_tudo.py`, `aplicar_revisao_e_backup.py`, etc.).
+- **Saídas Orientadoras no Terminal:** Cada subcomando do `scripts/dingli.py` imprime um relatório visual do que foi realizado e exibe ao final a orientação exata do próximo comando que o usuário e a IA devem executar.

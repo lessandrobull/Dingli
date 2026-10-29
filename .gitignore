@@ -25,17 +25,12 @@ dist-ssr
 # Builds, mídias e temporários locais
 audios_dingli/
 *.bak
-esqueleto_dingli.txt
-recuperados/
-src/gerarExplicacoes.mjs
+scripts/gerarExplicacoes.mjs
+scripts/extrair.mjs
 ffmpeg.exe
 *.zip
 *_teste*.mp3
 teste_*.mp3
-Useful Languages - Supabase.csv
-
-# Scripts arquivados / Legado (substitui todas as linhas avulsas)
-scripts/legado/
 
 # Variáveis de ambiente
 .env.local

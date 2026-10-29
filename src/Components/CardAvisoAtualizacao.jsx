@@ -8,7 +8,7 @@ const TEXTOS_AVISO = {
       topicoLabel: "Atualização de Conteúdo",
       titulo: "Conteúdo Aprimorado!",
       mensagemGeral: "Revisamos o curso e aprimoramos o conteúdo para que sua experiência de aprendizado seja ainda mais natural e precisa.",
-      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com ajustes de escrita.` : `${qtd} frase que você já estudou foi atualizada com ajustes de escrita.`,
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com novas pronúncias ou ajustes de escrita.` : `${qtd} frase que você já estudou foi atualizada com novas pronúncias ou ajustes de escrita.`,
       mensagemCiclo: "Para garantir que você domine a nova versão, essas frases foram recolocadas no início do seu ciclo de prática.",
       botaoAcao: "Atualizar e Praticar",
       baixando: "Atualizando áudios..."
@@ -16,66 +16,132 @@ const TEXTOS_AVISO = {
     audio: {
       topicoLabel: "Atualização de Áudios",
       titulo: "Novas Vozes e Pronúncias!",
-      mensagemGeral: "Atualizamos as gravações de áudio com pronúncias ainda mais naturais e claras.",
-      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou receberam novos áudios de pronúncia.` : `${qtd} frase que você já estudou recebeu novos áudios de pronúncia.`,
-      mensagemCiclo: "O seu progresso no Dìngloop continua exatamente o mesmo!",
-      botaoAcao: "Atualizar Áudios",
-      baixando: "A descarregar novos áudios..."
+      mensagemGeral: "Atualizamos os áudios com pronúncias ainda mais naturais e claras.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que você já estudou foram atualizadas com novas pronúncias.` : `${qtd} frase que você já estudou foi atualizada com novas pronúncias.`,
+      mensagemCiclo: "Seu progresso no Dìngloop não foi alterado.",
+      botaoAcao: "Atualizar e Praticar",
+      baixando: "Atualizando áudios..."
     }
   },
   en: {
-    topicoLabel: "Content Update",
-    titulo: "Content Improved!",
-    mensagemGeral: "We reviewed the course and improved the content to ensure your learning experience is even more natural and accurate.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} sentences you previously studied have been updated with new pronunciations or text refinements.` : `${qtd} sentence you previously studied has been updated with new pronunciations or text refinements.`,
-    mensagemCiclo: "To ensure you master the updated version, these sentences were placed back at the beginning of your study cycle.",
-    botaoAcao: "Update and Practice",
-    baixando: "Updating audio files..."
+    texto: {
+      topicoLabel: "Content Update",
+      titulo: "Content Improved!",
+      mensagemGeral: "We reviewed the course and improved the content to ensure your learning experience is even more natural and accurate.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} sentences you previously studied have been updated with new pronunciations or text refinements.` : `${qtd} sentence you previously studied has been updated with new pronunciations or text refinements.`,
+      mensagemCiclo: "To ensure you master the updated version, these sentences were placed back at the beginning of your study cycle.",
+      botaoAcao: "Update and Practice",
+      baixando: "Updating audio files..."
+    },
+    audio: {
+      topicoLabel: "Audio Update",
+      titulo: "New Voices and Pronunciations!",
+      mensagemGeral: "We updated the audio recordings with clearer and more natural pronunciations.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} sentences you previously studied have been updated with new pronunciations.` : `${qtd} sentence you previously studied has been updated with new pronunciations.`,
+      mensagemCiclo: "Your progress in Dìngloop remains unchanged.",
+      botaoAcao: "Update and Practice",
+      baixando: "Updating audio files..."
+    }
   },
   es: {
-    topicoLabel: "Actualización de Contenido",
-    titulo: "¡Contenido Mejorado!",
-    mensagemGeral: "Hemos revisado el curso y mejorado el contenido para garantizar que tu experiencia de aprendizaje sea aún más natural y precisa.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que ya habías estudiado han sido actualizadas con nuevas pronunciaciones o ajustes de texto.` : `${qtd} frase que ya habías estudiado ha sido actualizada con nuevas pronunciaciones o ajustes de texto.`,
-    mensagemCiclo: "Para asegurarte de dominar la nueva versión, estas frases han sido reincorporadas al inicio de tu ciclo de práctica.",
-    botaoAcao: "Actualizar y Practicar",
-    baixando: "Actualizando audios..."
+    texto: {
+      topicoLabel: "Actualización de Contenido",
+      titulo: "¡Contenido Mejorado!",
+      mensagemGeral: "Hemos revisado el curso y mejorado el contenido para garantizar que tu experiencia de aprendizaje sea aún más natural y precisa.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que ya habías estudiado han sido actualizadas con nuevas pronunciaciones o ajustes de texto.` : `${qtd} frase que ya habías estudiado ha sido actualizada con nuevas pronunciaciones o ajustes de texto.`,
+      mensagemCiclo: "Para asegurarte de dominar la nueva versión, estas frases han sido reincorporadas al inicio de tu ciclo de práctica.",
+      botaoAcao: "Actualizar y Practicar",
+      baixando: "Actualizando audios..."
+    },
+    audio: {
+      topicoLabel: "Actualización de Audios",
+      titulo: "¡Nuevas Voces y Pronunciaciones!",
+      mensagemGeral: "Actualizamos los audios con pronunciaciones aún más claras y naturales.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frases que ya habías estudiado han sido actualizadas con nuevas pronunciaciones.` : `${qtd} frase que ya habías estudiado ha sido actualizada con nuevas pronunciaciones.`,
+      mensagemCiclo: "Tu progreso en Dìngloop no ha cambiado.",
+      botaoAcao: "Actualizar y Practicar",
+      baixando: "Actualizando audios..."
+    }
   },
   fr: {
-    topicoLabel: "Mise à Jour du Contenu",
-    titulo: "Contenu Amélioré !",
-    mensagemGeral: "Nous avons révisé le cours et amélioré le contenu pour rendre votre expérience d'apprentissage encore plus naturelle et précise.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} phrases déjà étudiées ont été mises à jour avec de nouveaux enregistrements audio ou ajustements de texte.` : `${qtd} phrase déjà étudiée a été mise à jour avec de nouveaux enregistrements audio ou ajustements de texte.`,
-    mensagemCiclo: "Pour vous permettre de bien assimiler la nouvelle version, ces phrases ont été replacées au début de votre cycle d'étude.",
-    botaoAcao: "Mettre à jour et Pratiquer",
-    baixando: "Mise à jour des audios..."
+    texto: {
+      topicoLabel: "Mise à Jour du Contenu",
+      titulo: "Contenu Amélioré !",
+      mensagemGeral: "Nous avons révisé le cours et amélioré le contenu pour rendre votre expérience d'apprentissage encore plus naturelle et précise.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} phrases déjà étudiées ont été mises à jour avec de nouveaux enregistrements audio ou ajustements de texte.` : `${qtd} phrase déjà étudiée a été mise à jour avec de nouveaux enregistrements audio ou ajustements de texte.`,
+      mensagemCiclo: "Pour vous permettre de bien assimiler la nouvelle version, ces phrases ont été replacées au début de votre cycle d'étude.",
+      botaoAcao: "Mettre à jour et Pratiquer",
+      baixando: "Mise à jour des audios..."
+    },
+    audio: {
+      topicoLabel: "Mise à Jour des Audios",
+      titulo: "Nouvelles Voix et Prononciations !",
+      mensagemGeral: "Nous avons mis à jour les enregistrements avec des prononciations encore plus claires et naturelles.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} phrases déjà étudiées ont été mises à jour avec de nouveaux enregistrements audio.` : `${qtd} phrase déjà étudiée a été mise à jour avec de nouveaux enregistrements audio.`,
+      mensagemCiclo: "Votre progression dans Dìngloop reste inchangée.",
+      botaoAcao: "Mettre à jour et Pratiquer",
+      baixando: "Mise à jour des audios..."
+    }
   },
   it: {
-    topicoLabel: "Aggiornamento Contenuti",
-    titulo: "Contenuto Migliorato!",
-    mensagemGeral: "Abbiamo revisionato il corso e migliorato il materiale per garantire un'esperienza di studio ancora più fluida e accurata.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio o rifiniture del testo.` : `${qtd} frase che hai già studiata è stata aggiornata con nuovi audio o rifiniture del testo.`,
-    mensagemCiclo: "Per permetterti di padroneggiare la nuova versão, queste frasi sono state riposizionate all'inizio del tuo ciclo di pratica.",
-    botaoAcao: "Aggiorna e Pratica",
-    baixando: "Aggiornamento audio..."
+    texto: {
+      topicoLabel: "Aggiornamento Contenuti",
+      titulo: "Contenuto Migliorato!",
+      mensagemGeral: "Abbiamo revisionato il corso e migliorato il materiale per garantire un'esperienza di studio ancora più fluida e accurata.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio o rifiniture del testo.` : `${qtd} frase che hai già studiata è stata aggiornata con nuovi audio o rifiniture del testo.`,
+      mensagemCiclo: "Per permetterti di padroneggiare la nuova versione, queste frasi sono state riposizionate all'inizio del tuo ciclo di pratica.",
+      botaoAcao: "Aggiorna e Pratica",
+      baixando: "Aggiornamento audio..."
+    },
+    audio: {
+      topicoLabel: "Aggiornamento Audio",
+      titulo: "Nuove Voci e Pronunce!",
+      mensagemGeral: "Abbiamo aggiornato gli audio con pronunce ancora più chiare e naturali.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} frasi che hai già studiato sono state aggiornate con nuovi audio di pronuncia.` : `${qtd} frase che hai già studiata è stata aggiornata con nuovi audio di pronuncia.`,
+      mensagemCiclo: "I tuoi progressi in Dìngloop non sono stati modificati.",
+      botaoAcao: "Aggiorna e Pratica",
+      baixando: "Aggiornamento audio..."
+    }
   },
   ge: {
-    topicoLabel: "Inhaltsaktualisierung",
-    titulo: "Verbesserter Inhalt!",
-    mensagemGeral: "Wir haben den Kurs überarbeitet und optimiert, um Ihr Lernerlebnis noch natürlicher und präziser zu gestalten.",
-    mensagemFrases: (qtd) => qtd > 1 ? `${qtd} Sätze, die Sie bereits gelernt haben, wurden mit neuen Audios oder Textanpassungen aktualisiert.` : `${qtd} Satz, den Sie bereits gelernt haben, wurde mit neuen Audios oder Textanpassungen aktualisiert.`,
-    mensagemCiclo: "Damit Sie die neue Version sicher beherrschen, wurden diese Sätze an den Anfang Ihres Lernzyklus verschoben.",
-    botaoAcao: "Aktualisieren und Üben",
-    baixando: "Audios werden aktualisiert..."
+    texto: {
+      topicoLabel: "Inhaltsaktualisierung",
+      titulo: "Verbesserter Inhalt!",
+      mensagemGeral: "Wir haben den Kurs überarbeitet und optimiert, um Ihr Lernerlebnis noch natürlicher und präziser zu gestalten.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} Sätze, die Sie bereits gelernt haben, wurden mit neuen Audios oder Textanpassungen aktualisiert.` : `${qtd} Satz, den Sie bereits gelernt haben, wurde mit neuen Audios oder Textanpassungen aktualisiert.`,
+      mensagemCiclo: "Damit Sie die neue Version sicher beherrschen, wurden diese Sätze an den Anfang Ihres Lernzyklus verschoben.",
+      botaoAcao: "Aktualisieren und Üben",
+      baixando: "Audios werden aktualisiert..."
+    },
+    audio: {
+      topicoLabel: "Audio-Aktualisierung",
+      titulo: "Neue Stimmen und Aussprachen!",
+      mensagemGeral: "Wir haben die Audioaufnahmen mit noch klareren und natürlicheren Aussprachen aktualisiert.",
+      mensagemFrases: (qtd) => qtd > 1 ? `${qtd} Sätze, die Sie bereits gelernt haben, wurden mit neuen Aussprachen aktualisiert.` : `${qtd} Satz, den Sie bereits gelernt haben, wurde mit neuen Aussprachen aktualisiert.`,
+      mensagemCiclo: "Ihr Fortschritt in Dìngloop bleibt unverändert.",
+      botaoAcao: "Aktualisieren und Üben",
+      baixando: "Audios werden aktualisiert..."
+    }
   },
   pi: {
-    topicoLabel: "内容更新 (Nèiróng gēngxīn)",
-    titulo: "内容已优化！(Nèiróng yǐ yōuhuà!)",
-    mensagemGeral: "我们对课程内容进行了全面修订与优化，以提供更加纯正的发音和更精准的语言表达。",
-    mensagemFrases: (qtd) => `您之前学过的 ${qtd} 个句子已更新了全新音频或文本校正。`,
-    mensagemCiclo: "为了帮助您完全掌握最新版本，这些句子已重新置于您当前练习周期的首位。",
-    botaoAcao: "更新并练习 (Gēngxīn bìng liànxí)",
-    baixando: "正在更新音频... (Zhèngzài gēngxīn yīnpín...)"
+    texto: {
+      topicoLabel: "内容更新 (Nèiróng gēngxīn)",
+      titulo: "内容已优化！(Nèiróng yǐ yōuhuà!)",
+      mensagemGeral: "我们对课程内容进行了全面修订与优化，以提供更加纯正的发音和更精准的语言表达。",
+      mensagemFrases: (qtd) => `您之前学过的 ${qtd} 个句子已更新了全新音频或文本校正。`,
+      mensagemCiclo: "为了帮助您完全掌握最新版本，这些句子已重新置于您当前练习周期的首位。",
+      botaoAcao: "更新并练习 (Gēngxīn bìng liànxí)",
+      baixando: "正在更新音频... (Zhèngzài gēngxīn yīnpín...)"
+    },
+    audio: {
+      topicoLabel: "音频更新 (Yīnpín gēngxīn)",
+      titulo: "全新人声与发音！(Quánxīn rénshēng yǔ fāyīn!)",
+      mensagemGeral: "我们更新了音频，带来更加纯正、清晰的发音。(Wǒmen gēngxīnle yīnpín, dàilái gèngjiā chúnzhèng, qīngxī de fāyīn.)",
+      mensagemFrases: (qtd) => `您之前学过的 ${qtd} 个句子已更新了全新发音音频。(Nín zhīqián xuéguò de ${qtd} gè jùzi yǐ gēngxīnle quánxīn fāyīn yīnpín.)`,
+      mensagemCiclo: "您在 Dìngloop 中的学习进度保持不变。(Nín zài Dìngloop zhōng de xuéxí jìndù bǎochí bùbiàn.)",
+      botaoAcao: "更新并练习 (Gēngxīn bìng liànxí)",
+      baixando: "正在更新音频... (Zhèngzài gēngxīn yīnpín...)"
+    }
   }
 };
 
@@ -188,7 +254,7 @@ export default function CardAvisoAtualizacao({
           flexDirection: 'column',
           alignItems: 'center'
         }}>
-          
+
           {/* Topo do Card */}
           <div style={{ ...styles.topCardAreaFixed, textAlign: 'center', width: '100%' }}>
             <p style={{ ...styles.labelTopico, color: corTema, margin: '0 0 10px 0', textAlign: 'center' }}>
@@ -201,16 +267,16 @@ export default function CardAvisoAtualizacao({
             ...styles.areaFraseCentralFlex,
             flex: 1,
             width: '100%',
-            padding: '10px 10px',
+            padding: '4px 10px',
             overflowY: 'auto',
             textAlign: 'center',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'space-evenly',
             boxSizing: 'border-box'
           }}>
-            
+
             {/* Ícone de atualização */}
             <div style={{
               width: '56px',
@@ -221,16 +287,16 @@ export default function CardAvisoAtualizacao({
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              margin: '0 auto 14px auto',
+              margin: '0 auto',
               flexShrink: 0
             }}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
               </svg>
             </div>
 
             <h2 style={{
-              margin: '0 0 12px 0',
+              margin: 0,
               fontSize: '1.35rem',
               fontWeight: '900',
               color: '#1e293b',
@@ -241,7 +307,7 @@ export default function CardAvisoAtualizacao({
             </h2>
 
             <p style={{
-              margin: '0 0 14px 0',
+              margin: 0,
               fontSize: '0.92rem',
               color: '#475569',
               lineHeight: '1.45',
@@ -257,7 +323,7 @@ export default function CardAvisoAtualizacao({
                 border: '1px solid #e2e8f0',
                 borderRadius: '12px',
                 padding: '12px 14px',
-                margin: '0 0 14px 0',
+                margin: 0,
                 width: '100%',
                 boxSizing: 'border-box',
                 textAlign: 'center'
@@ -281,19 +347,6 @@ export default function CardAvisoAtualizacao({
                   {textos.mensagemCiclo}
                 </p>
               </div>
-            )}
-
-            {descricao && (
-              <p style={{
-                margin: '4px 0 0 0',
-                fontSize: '0.8rem',
-                color: '#94a3b8',
-                fontStyle: 'italic',
-                textAlign: 'center',
-                width: '100%'
-              }}>
-                {descricao}
-              </p>
             )}
           </div>
 

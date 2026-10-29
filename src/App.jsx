@@ -966,6 +966,11 @@ function App() {
     sincronizarTopicosLocais().catch(err => console.warn("[App] Erro na sincronização IndexedDB:", err));
 
     // 3. DOWNLOAD DOS NOVOS ÁUDIOS COM PROGRESSO
+    const idsEstudados = idsRevisao.filter(id => {
+      const item = frasesMaestria[id];
+      const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
+      return rank > 0;
+    });
     const idsParaBaixar = idsEstudados.length > 0 ? idsEstudados : idsRevisao.slice(0, 10);
     await baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo, onProgresso);
 
@@ -1111,7 +1116,6 @@ function App() {
         <CardAvisoAtualizacao
           styles={styles}
           tipo={revisaoPendente?.tipo || "texto"}
-          descricao={revisaoPendente?.descricao || ""}
           quantidadeFrases={qtdFrasesEstudadasAfetadas}
           onConfirmar={executarAtualizacaoConteudo}
           onFechar={() => {
