@@ -57,7 +57,7 @@ Esta seção documenta as dependências que residem fora do repositório local e
 
 ### B. Cloudflare R2 (Storage Remoto de Áudios), Cache Offline Híbrido e Auditor de Áudios
 - Bucket público no **Cloudflare R2** (`https://pub-b24d092a7bf34fd9bf22befba89de35f.r2.dev`) contendo:
-  - Arquivos de frases completas (`/{lang}/{id}_{voz}.mp3`), com 6 vozes (`v1` a `v6`) para Inglês e Espanhol e 4 vozes (`v1` a `v4`) para Francês, Italiano, Alemão, Português e Mandarim (`zh`).
+  - Arquivos de frases completas (`/{lang}/{id}_{voz}.mp3`), com 6 vozes (`v1` a `v6`) para Inglês, Espanhol e Francês e 4 vozes (`v1` a `v4`) para Italiano, Alemão, Português e Mandarim (`zh`).
   - Arquivos de vocabulário de palavras isoladas (`/palavras/{lang}/{slug}.mp3`) sanitizados com mapeamento de diacríticos.
 - Controle de versionamento local (`VERSOES_AUDIOS`) para *cache busting* silencioso (`?v=2`) em regravações pontuais.
 - Persistência offline em duas camadas: **Cache Storage API** (`dingli-audios-v1`) como camada primária e **IndexedDB** (`dingli_offline_db` v3 com as *stores* `topics_cache`, `sentences_cache` e `audios_cache`) como *fallback* para dados e blobs de áudio.
@@ -215,7 +215,9 @@ echo "✔ Concluído com sucesso! Gerados: $OUTPUT_CORE e $OUTPUT_SCRIPTS."
   - `v1`: `fr-FR-DeniseNeural`
   - `v2`: `fr-FR-HenriNeural`
   - `v3`: `fr-FR-VivienneMultilingualNeural`
-  - `v4`: `fr-FR-RemyMultilingualNeural`
+  - `v4`: `fr-BE-GerardNeural`
+  - `v5`: `fr-CH-ArianeNeural`
+  - `v6`: `ko-KR-HyunsuMultilingualNeural`
 - **Italiano (`it`):**
   - `v1`: `it-IT-GiuseppeMultilingualNeural`
   - `v2`: `it-IT-DiegoNeural`

@@ -5,6 +5,7 @@ import re
 import csv
 import glob
 import json
+import time
 import shutil
 import asyncio
 import datetime
@@ -79,7 +80,8 @@ VOZES_FRASES = {
     ],
     "fr": [
         ("v1", "fr-FR-DeniseNeural"), ("v2", "fr-FR-HenriNeural"),
-        ("v3", "fr-FR-VivienneMultilingualNeural"), ("v4", "fr-FR-RemyMultilingualNeural")
+        ("v3", "fr-FR-VivienneMultilingualNeural"), ("v4", "fr-BE-GerardNeural"),
+        ("v5", "fr-CH-ArianeNeural"), ("v6", "ko-KR-HyunsuMultilingualNeural")
     ],
     "it": [
         ("v1", "it-IT-GiuseppeMultilingualNeural"), ("v2", "it-IT-DiegoNeural"),
@@ -108,6 +110,68 @@ VOZES_VOCABULARIO = {
     "pt": "pt-BR-FranciscaNeural",
     "zh": "zh-CN-XiaoxiaoNeural"
 }
+
+# ------------------------------------------------------------------------------
+# DIRETRIZES FONÉTICAS E EXCEÇÕES DE ÁUDIO
+# ------------------------------------------------------------------------------
+SLUGS_PROTEGIDOS = {"5550192", "24h24", "112"}
+
+EXCECOES_FRASES = {
+    35: {
+        "en": "My phone number is five five five, oh one, nine two.",
+        "es": "Mi número de teléfono es el cinco cinco cinco, cero uno, noventa y dos.",
+        "fr": "Mon numéro de téléphone est le cinq cinq cinq, zéro un, quatre-vingt-douze.",
+        "it": "Il mio numero di telefono è il cinque cinque cinque, zero uno, novantadue.",
+        "pt": "Meu número de telefone é cinco cinco cinco, zero um, noventa e dois.",
+        "ge": "Meine Telefonnummer ist fünf fünf fünf, null eins, zweiundneunzig.",
+        "zh": "我的电话号码是：五五五，零一，九二。"
+    },
+    519: {
+        "fr": "Y a-t-il une pharmacie ouverte vingt-quatre heures sur vingt-quatre par ici ?"
+    },
+   540: {
+        "en": "Call one one two, if there is an emergency.",
+        "es": "Llama al uno uno dos, si hay una emergencia.",
+        "fr": "Appelle le un un deux, en cas d'urgence.",
+        "it": "Chiama l'uno uno due, in caso di emergenza.",
+        "pt": "Ligue para o um um dois, se houver uma emergência.",
+        "ge": "Ruf im Notfall die eins eins zwei an.",
+        "zh": "如果有紧急情况请打一一二。"
+    },
+    1117: {
+        "fr": "Savez-vous par hasard où se trouve la clinique ouverte vingt-quatre heures sur vingt-quatre la plus proche ?"
+    }
+}
+
+EXCECOES_PALAVRAS = {
+    "5550192": {
+        "en": "five five five, oh one, nine two",
+        "es": "cinco cinco cinco, cero uno, noventa y dos",
+        "fr": "cinq cinq cinq, zéro un, quatre-vingt-douze",
+        "it": "cinque cinque cinque, zero uno, novantadue",
+        "pt": "cinco cinco cinco, zero um, noventa e dois",
+        "ge": "fünf fünf fünf, null eins, zweiundneunzig",
+        "zh": "五五五，零一，九二"
+    },
+    "24h24": {
+        "fr": "vingt-quatre heures sur vingt-quatre"
+    },
+    "112": {
+        "en": "one, one, two",
+        "es": "uno, uno, dos",
+        "fr": "un, un, deux",
+        "it": "uno, uno, due",
+        "pt": "um, um, dois",
+        "ge": "eins, eins, zwei",
+        "zh": "一、一、二"
+    }
+}
+
+def obter_texto_fala_frase(fid, idioma, texto_padrao):
+    fid_int = int(fid)
+    if fid_int in EXCECOES_FRASES and idioma in EXCECOES_FRASES[fid_int]:
+        return EXCECOES_FRASES[fid_int][idioma]
+    return texto_padrao
 
 # ------------------------------------------------------------------------------
 # FUNÇÕES UTILITÁRIAS
@@ -305,34 +369,49 @@ def cmd_frases_f1(idioma):
     print("Sintetizando novos áudios de frases...")
     semaforo = asyncio.Semaphore(4)
     progresso = {"ok": 0, "erros": 0}
+    total_tarefas = len(alteracoes) * len(VOZES_FRASES[idioma])
+    t_inicio_sintese = time.time()
 
     async def sintetizar(fid, texto, tag_voz, voz):
         final_mp3 = os.path.join(pasta_frases, f"{fid}_{tag_voz}.mp3")
-        async with semaforo:
-            sucesso = False
-            for _ in range(3):
-                try:
-                    com = edge_tts.Communicate(texto, voz)
-                    await com.save(final_mp3)
-                    if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
-                        sucesso = True
-                        break
-                except Exception:
-                    await asyncio.sleep(1)
-            if sucesso:
-                progresso["ok"] += 1
-            else:
-                progresso["erros"] += 1
+        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+            progresso["ok"] += 1
+        else:
+            async with semaforo:
+                sucesso = False
+                for _ in range(3):
+                    try:
+                        com = edge_tts.Communicate(texto, voz)
+                        await com.save(final_mp3)
+                        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+                            sucesso = True
+                            break
+                    except Exception:
+                        await asyncio.sleep(1)
+                if sucesso:
+                    progresso["ok"] += 1
+                else:
+                    progresso["erros"] += 1
+
+        processados = progresso["ok"] + progresso["erros"]
+        decorrido = time.time() - t_inicio_sintese
+        taxa = processados / decorrido if decorrido > 0 else 0
+        m, s = int(decorrido // 60), int(decorrido % 60)
+        pct = (processados / total_tarefas) * 100
+        sys.stdout.write(f"\r  -> Síntese: {processados}/{total_tarefas} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+        sys.stdout.flush()
 
     async def rodar_sintese():
         tarefas = []
         for fid, texto in alteracoes.items():
+            texto_fala = obter_texto_fala_frase(fid, idioma, texto)
             for tag_voz, voz in VOZES_FRASES[idioma]:
-                tarefas.append(sintetizar(fid, texto, tag_voz, voz))
+                tarefas.append(sintetizar(fid, texto_fala, tag_voz, voz))
         await asyncio.gather(*tarefas)
 
     asyncio.run(rodar_sintese())
-    print(f"✔ Síntese concluída: {progresso['ok']} arquivos gerados | Falhas: {progresso['erros']}")
+    print()
+    print(f"✔ Síntese concluída: {progresso['ok']} arquivos prontos | Falhas: {progresso['erros']}")
     if progresso["erros"] > 0:
         print("[FALHA] Erro na síntese de áudio. Abortando upload.")
         sys.exit(1)
@@ -355,11 +434,19 @@ def cmd_frases_f1(idioma):
 
     uploads_ok = 0
     total_audios = len(alteracoes) * len(VOZES_FRASES[idioma])
+    t_inicio = time.time()
     with ThreadPoolExecutor(max_workers=8) as executor:
         futuros = [executor.submit(upload_r2, fid, tag) for fid in alteracoes.keys() for tag, _ in VOZES_FRASES[idioma]]
         for fut in as_completed(futuros):
             if fut.result():
                 uploads_ok += 1
+            decorrido = time.time() - t_inicio
+            taxa = uploads_ok / decorrido if decorrido > 0 else 0
+            m, s = int(decorrido // 60), int(decorrido % 60)
+            pct = (uploads_ok / total_audios) * 100
+            sys.stdout.write(f"\r  -> Enviando: {uploads_ok}/{total_audios} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+            sys.stdout.flush()
+    print()
 
     print(f"✔ Cloudflare R2 Upload: {uploads_ok}/{total_audios} áudios enviados com sucesso!")
     if uploads_ok != total_audios:
@@ -398,9 +485,12 @@ def cmd_palavras_f1(idioma):
                 for token in texto.split():
                     slug = sanitizar_palavra_audio(token)
                     if slug and slug not in mapa_esperado:
-                        fala = re.sub(r'[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]', '', token.strip())
-                        if idioma == "pt" and fala.lower() == "e":
-                            fala = "ê"
+                        if slug in EXCECOES_PALAVRAS and idioma in EXCECOES_PALAVRAS[slug]:
+                            fala = EXCECOES_PALAVRAS[slug][idioma]
+                        else:
+                            fala = re.sub(r'[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]', '', token.strip())
+                            if idioma == "pt" and fala.lower() == "e":
+                                fala = "ê"
                         mapa_esperado[slug] = fala
 
     dir_lang = os.path.join("audios_dingli", "palavras", idioma)
@@ -410,7 +500,7 @@ def cmd_palavras_f1(idioma):
 
     arquivos_locais = set(f for f in os.listdir(dir_lang) if f.endswith(".mp3"))
     esperados_set = set(f"{s}.mp3" for s in mapa_esperado.keys())
-    orfaos_locais = list(arquivos_locais - esperados_set)
+    orfaos_locais = [f for f in (arquivos_locais - esperados_set) if f[:-4] not in SLUGS_PROTEGIDOS]
     faltantes_locais = [s for s in mapa_esperado.keys() if f"{s}.mp3" not in arquivos_locais]
 
     print(f"Diagnóstico local: Esperados: {len(esperados_set)} | No disco: {len(arquivos_locais)} | Órfãos: {len(orfaos_locais)} | Faltantes: {len(faltantes_locais)}")
@@ -425,44 +515,58 @@ def cmd_palavras_f1(idioma):
         voz = VOZES_VOCABULARIO[idioma]
         semaforo = asyncio.Semaphore(4)
         progresso = {"ok": 0, "erros": 0}
+        total_termos = len(faltantes_locais)
+        t_inicio_palavras = time.time()
 
         async def gerar_termo(slug, texto_fala):
             temp_mp3 = os.path.join(dir_lang, f"temp_{slug}.mp3")
             final_mp3 = os.path.join(dir_lang, f"{slug}.mp3")
-            async with semaforo:
-                sucesso = False
-                for _ in range(3):
-                    try:
-                        com = edge_tts.Communicate(texto_fala, voz)
-                        await com.save(temp_mp3)
-                        if os.path.exists(temp_mp3) and os.path.getsize(temp_mp3) > 0:
-                            sucesso = True
-                            break
-                    except Exception:
-                        await asyncio.sleep(1)
+            if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+                progresso["ok"] += 1
+            else:
+                async with semaforo:
+                    sucesso = False
+                    for _ in range(3):
+                        try:
+                            com = edge_tts.Communicate(texto_fala, voz)
+                            await com.save(temp_mp3)
+                            if os.path.exists(temp_mp3) and os.path.getsize(temp_mp3) > 0:
+                                sucesso = True
+                                break
+                        except Exception:
+                            await asyncio.sleep(1)
 
-                if sucesso:
-                    cmd = [
-                        FFMPEG_EXE, "-y", "-i", temp_mp3,
-                        "-af", "adelay=300|300,apad=pad_dur=0.1",
-                        "-b:a", "128k", final_mp3
-                    ]
-                    res = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                    if res.returncode == 0 and os.path.exists(final_mp3):
-                        progresso["ok"] += 1
+                    if sucesso:
+                        cmd = [
+                            FFMPEG_EXE, "-y", "-i", temp_mp3,
+                            "-af", "adelay=300|300,apad=pad_dur=0.1",
+                            "-b:a", "128k", final_mp3
+                        ]
+                        res = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                        if res.returncode == 0 and os.path.exists(final_mp3):
+                            progresso["ok"] += 1
+                        else:
+                            progresso["erros"] += 1
+                        if os.path.exists(temp_mp3):
+                            os.remove(temp_mp3)
                     else:
                         progresso["erros"] += 1
-                    if os.path.exists(temp_mp3):
-                        os.remove(temp_mp3)
-                else:
-                    progresso["erros"] += 1
+
+            processados = progresso["ok"] + progresso["erros"]
+            decorrido = time.time() - t_inicio_palavras
+            taxa = processados / decorrido if decorrido > 0 else 0
+            m, s = int(decorrido // 60), int(decorrido % 60)
+            pct = (processados / total_termos) * 100
+            sys.stdout.write(f"\r  -> Palavras: {processados}/{total_termos} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+            sys.stdout.flush()
 
         async def rodar_todas():
             tarefas = [gerar_termo(s, mapa_esperado[s]) for s in faltantes_locais]
             await asyncio.gather(*tarefas)
 
         asyncio.run(rodar_todas())
-        print(f"✔ Síntese de palavras concluída: {progresso['ok']} geradas | Falhas: {progresso['erros']}")
+        print()
+        print(f"✔ Síntese de palavras concluída: {progresso['ok']} prontas | Falhas: {progresso['erros']}")
 
     print("Auditando paridade de palavras no Cloudflare R2...")
     s3 = get_r2_client()
@@ -479,7 +583,7 @@ def cmd_palavras_f1(idioma):
 
     esperados_nomes = set(f"{s}.mp3" for s in mapa_esperado.keys())
     faltantes_remotos = list(esperados_nomes - remotos)
-    orfaos_remotos = list(remotos - esperados_nomes)
+    orfaos_remotos = [f for f in (remotos - esperados_nomes) if f[:-4] not in SLUGS_PROTEGIDOS]
 
     print(f"Paridade R2: Esperadas: {len(esperados_nomes)} | No R2: {len(remotos)} | Faltando no R2: {len(faltantes_remotos)} | Órfãs no R2: {len(orfaos_remotos)}")
 
@@ -495,12 +599,21 @@ def cmd_palavras_f1(idioma):
                 return False
 
         enviados = 0
+        total_palavras = len(faltantes_remotos)
+        t_inicio = time.time()
         with ThreadPoolExecutor(max_workers=8) as executor:
             futuros = [executor.submit(upload_termo, n) for n in faltantes_remotos]
             for fut in as_completed(futuros):
                 if fut.result():
                     enviados += 1
-        print(f"✔ Upload R2: {enviados}/{len(faltantes_remotos)} palavras enviadas!")
+                decorrido = time.time() - t_inicio
+                taxa = enviados / decorrido if decorrido > 0 else 0
+                m, s = int(decorrido // 60), int(decorrido % 60)
+                pct = (enviados / total_palavras) * 100
+                sys.stdout.write(f"\r  -> Enviando: {enviados}/{total_palavras} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+                sys.stdout.flush()
+        print()
+        print(f"✔ Upload R2: {enviados}/{total_palavras} palavras enviadas!")
 
     if orfaos_remotos:
         print(f"Deletando {len(orfaos_remotos)} palavras órfãs no Cloudflare R2...")
@@ -555,6 +668,8 @@ def cmd_commit_f1(idioma):
     }
 
     db_sucessos = 0
+    total_db = len(alteracoes_db)
+    t_inicio_db = time.time()
     for fid, payload in alteracoes_db.items():
         url_patch = f"{SUPABASE_URL}/rest/v1/sentences?id=eq.{fid}"
         req_patch = urllib.request.Request(url_patch, data=json.dumps(payload).encode("utf-8"), headers=headers_patch, method="PATCH")
@@ -567,11 +682,19 @@ def cmd_commit_f1(idioma):
             except Exception:
                 pass
 
-    if db_sucessos != len(alteracoes_db):
-        print(f"[ERRO] Falha ao atualizar sentences: {db_sucessos}/{len(alteracoes_db)} frases sincronizadas.")
+        decorrido = time.time() - t_inicio_db
+        taxa = db_sucessos / decorrido if decorrido > 0 else 0
+        m, s = int(decorrido // 60), int(decorrido % 60)
+        pct = (db_sucessos / total_db) * 100
+        sys.stdout.write(f"\r  -> Banco: {db_sucessos}/{total_db} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} req/s")
+        sys.stdout.flush()
+    print()
+
+    if db_sucessos != total_db:
+        print(f"[ERRO] Falha ao atualizar sentences: {db_sucessos}/{total_db} frases sincronizadas.")
         sys.exit(1)
 
-    print(f"✔ Supabase DB atualizado: {db_sucessos}/{len(alteracoes_db)} frases sincronizadas com sucesso!")
+    print(f"✔ Supabase DB atualizado: {db_sucessos}/{total_db} frases sincronizadas com sucesso!")
 
     versao_anterior = obter_versao_atual_supabase(idioma)
     nova_versao = versao_anterior + 1
@@ -647,7 +770,7 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
                 if inicio <= fid_int <= fim:
                     txt = (r.get(idioma) or "").strip()
                     if txt:
-                        frases_map[fid_int] = txt
+                        frases_map[fid_int] = obter_texto_fala_frase(fid_int, idioma, txt)
 
     pasta_frases = os.path.join("audios_dingli", idioma)
     os.makedirs(pasta_frases, exist_ok=True)
@@ -655,24 +778,37 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
     print("Iniciando síntese Edge-TTS...")
     semaforo = asyncio.Semaphore(4)
     progresso = {"ok": 0, "erros": 0}
+    total_tarefas = len(frases_map) * len(vozes_alvo)
+    t_inicio_sintese = time.time()
 
     async def sintetizar(fid, texto, tag_voz, voz):
         final_mp3 = os.path.join(pasta_frases, f"{fid}_{tag_voz}.mp3")
-        async with semaforo:
-            sucesso = False
-            for _ in range(3):
-                try:
-                    com = edge_tts.Communicate(texto, voz)
-                    await com.save(final_mp3)
-                    if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
-                        sucesso = True
-                        break
-                except Exception:
-                    await asyncio.sleep(1)
-            if sucesso:
-                progresso["ok"] += 1
-            else:
-                progresso["erros"] += 1
+        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+            progresso["ok"] += 1
+        else:
+            async with semaforo:
+                sucesso = False
+                for _ in range(3):
+                    try:
+                        com = edge_tts.Communicate(texto, voz)
+                        await com.save(final_mp3)
+                        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+                            sucesso = True
+                            break
+                    except Exception:
+                        await asyncio.sleep(1)
+                if sucesso:
+                    progresso["ok"] += 1
+                else:
+                    progresso["erros"] += 1
+
+        processados = progresso["ok"] + progresso["erros"]
+        decorrido = time.time() - t_inicio_sintese
+        taxa = processados / decorrido if decorrido > 0 else 0
+        m, s = int(decorrido // 60), int(decorrido % 60)
+        pct = (processados / total_tarefas) * 100
+        sys.stdout.write(f"\r  -> Síntese: {processados}/{total_tarefas} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+        sys.stdout.flush()
 
     async def rodar():
         tarefas = []
@@ -682,7 +818,8 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
         await asyncio.gather(*tarefas)
 
     asyncio.run(rodar())
-    print(f"✔ Síntese concluída: {progresso['ok']} arquivos gerados | Falhas: {progresso['erros']}")
+    print()
+    print(f"✔ Síntese concluída: {progresso['ok']} arquivos prontos | Falhas: {progresso['erros']}")
     if progresso["erros"] > 0:
         print("[FALHA] Interrupção na síntese. Abortando upload.")
         sys.exit(1)
@@ -704,11 +841,19 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
 
     total = len(frases_map) * len(vozes_alvo)
     uploads_ok = 0
+    t_inicio = time.time()
     with ThreadPoolExecutor(max_workers=8) as executor:
         futuros = [executor.submit(upload_r2, fid, tag) for fid in frases_map.keys() for tag, _ in vozes_alvo]
         for fut in as_completed(futuros):
             if fut.result():
                 uploads_ok += 1
+            decorrido = time.time() - t_inicio
+            taxa = uploads_ok / decorrido if decorrido > 0 else 0
+            m, s = int(decorrido // 60), int(decorrido % 60)
+            pct = (uploads_ok / total) * 100
+            sys.stdout.write(f"\r  -> Enviando: {uploads_ok}/{total} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+            sys.stdout.flush()
+    print()
 
     print(f"✔ Upload Cloudflare R2: {uploads_ok}/{total} áudios enviados com sucesso!")
     if uploads_ok != total:
