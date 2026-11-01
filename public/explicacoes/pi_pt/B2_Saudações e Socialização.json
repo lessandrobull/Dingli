@@ -1,0 +1,782 @@
+{
+  "901": {
+    "explanation": "Para expressar \"faz tanto tempo que não nos vemos\", o mandarim usa 这么久没见 (Zhème jiǔ méi jiàn), que significa ao pé da letra \"tanto tempo sem ver\". A ideia de poder conversar e relembrar o passado com alguém aparece em 能和你叙叙旧 (néng hé nǐ xùxùjiù), onde \"conversar sobre velhos tempos\" é dito pelo bloco de ação do final. Por fim, a sensação agradável de \"é muito bom\" é entregue por 真好 (zhēn hǎo), que fecha a frase com tom caloroso.",
+    "breakdown": [
+      {
+        "word": "这么久 (Zhème jiǔ)",
+        "meaning": "Tanto tempo — 这 (zhè): este; 么 (me): sufixo indicador; 久 (jiǔ): longo tempo. Sentido literal: 'este tempo longo'."
+      },
+      {
+        "word": "没见 (méi jiàn)",
+        "meaning": "Sem ver / Não se ver — 没 (méi): não ter / não; 见 (jiàn): ver / encontrar. Sentido literal: 'não ver'."
+      },
+      {
+        "word": "能和你 (néng hé nǐ)",
+        "meaning": "Poder com você — 能 (néng): poder / ser capaz; 和 (hé): com; 你 (nǐ): você."
+      },
+      {
+        "word": "叙叙旧 (xùxùjiù)",
+        "meaning": "Relembrar os velhos tempos / Conversar — 叙 (xù): narrar / conversar; 旧 (jiù): antigo / passado. Sentido literal: 'narrar e narrar o passado'."
+      },
+      {
+        "word": "真好 (zhēn hǎo)",
+        "meaning": "É realmente bom — 真 (zhēn): realmente / de verdade; 好 (hǎo): bom."
+      }
+    ],
+    "pronuncia": "Em 这么久没见 (Zhème jiǔ méi jiàn), fale \"djê-mê\" suave, solte o \"djiôu\" caindo e subindo o tom, suba a voz em \"mái\" e desça firme em \"diên\". Para 能和你 (néng hé nǐ), suba a voz no \"nêng\", suba no \"rruê\" e caia-suba no \"nǐ\". Em 叙叙旧 (xùxùjiù), faça um som de \"ch\" bem fino e de biquinho soprando ar em \"chü-chü\" caindo o tom e termine subindo e caindo no \"djiôu\". Finalize com 真好 (zhēn hǎo) enrolando a língua em \"djên\" e descendo e subindo no \"rǎo\".\nLeia: Djê-mê djiôu mái diên, nêng rruê nǐ chü-chü-djiôu djên rǎo."
+  },
+  "902": {
+    "explanation": "A expressão \"não sei se você poderia\" começa com 不知您能否 (Bùzhī nín néngfǒu), uma forma muito respeitosa de fazer um pedido. O ato de \"me ajudar a apresentar\" vem com 帮我引荐 (bāng wǒ yǐnjiàn), onde o segundo termo traz a ideia formal de introduzir alguém. A suavização do pedido é feita por 一下 (yīxià), que equivale a \"um momento\" ou \"uma rápida olhada\". A frase termina apontando o destino da introdução com 你们经理 (nǐmen jīnglǐ), que significa \"o seu gerente\".",
+    "breakdown": [
+      {
+        "word": "不知 (Bùzhī)",
+        "meaning": "Não saber — 不 (bù): não; 知 (zhī): saber / conhecer. Sentido literal: 'não sei'."
+      },
+      {
+        "word": "您能否 (nín néngfǒu)",
+        "meaning": "Se o senhor/a senhora poderia — 您 (nín): você (formal); 能 (néng): poder; 否 (fǒu): ou não."
+      },
+      {
+        "word": "帮我 (bāng wǒ)",
+        "meaning": "Ajudar-me — 帮 (bāng): ajudar; 我 (wǒ): eu / mim."
+      },
+      {
+        "word": "引荐一下 (yǐnjiàn yīxià)",
+        "meaning": "Apresentar um pouco — 引 (yǐn): guiar / puxar; 荐 (jiàn): recomendar; 一下 (yīxià): um pouco / dar uma rápida ação. Sentido literal: 'guiar e recomendar um pouco'."
+      },
+      {
+        "word": "你们经理 (nǐmen jīnglǐ)",
+        "meaning": "O gerente de vocês — 你们 (nǐmen): vocês; 经理 (jīnglǐ): gerente / diretor."
+      }
+    ],
+    "pronuncia": "Em 不知 (Bùzhī), desça o som em \"bú\" e enrole a língua para soltar um \"djī\". Em 您能否 (nín néngfǒu), suba o tom no \"nín\", suba no \"nêng\" e caia e suba no \"fǒu\". Para 帮我 (bāng wǒ), diga \"bāng\" bem plano e alto e desça e suba o \"uǒ\". Em 引荐一下 (yǐnjiàn yīxià), faça \"ín\" subindo e caindo, \"diên\" caindo forte, \"í\" subindo e \"chiá\" caindo seco. Feche com 你们经理 (nǐmen jīnglǐ) dizendo \"nǐ-mên\" rápido e \"djīng-lí\" com som de \"dj\" bem limpo no céu da boca.\nLeia: Bù-djī nín nêng-fǒu bāng uǒ ín-diên í-chiá nǐ-mên djīng-lí?"
+  },
+  "903": {
+    "explanation": "A expressão de cortesia \"desculpe incomodar\" é dita com 不好意思打扰一下 (Bù hǎoyìsi dǎrǎo yīxià). A frase segue explicando o momento anterior com 我刚才 (wǒ gāngcái), que significa \"eu há pouco\". A ação de ouvir sem querer é traduzida por 无意中听到了 (wúyì zhōng tīngdào le), mostrando que não houve intenção. A frase conclui com 你们的谈话 (nǐmen de tánhuà), que traz o sentido de \"a conversa de vocês\".",
+    "breakdown": [
+      {
+        "word": "不好意思 (Bù hǎoyìsi)",
+        "meaning": "Desculpe / Com licença — 不 (bù): não; 好 (hǎo): bom; 意 (yì): intenção; 思 (si): pensamento. Sentido literal: 'não é de boa intenção (causar embaraço)'."
+      },
+      {
+        "word": "打扰一下 (dǎrǎo yīxià)",
+        "meaning": "Incomodar um pouco — 打扰 (dǎrǎo): perturbar / incomodar; 一下 (yīxià): um pouco."
+      },
+      {
+        "word": "我刚才 (wǒ gāngcái)",
+        "meaning": "Eu agora há pouco — 我 (wǒ): eu; 刚才 (gāngcái): agora há pouco / um momento atrás."
+      },
+      {
+        "word": "无意中 (wúyì zhōng)",
+        "meaning": "Sem intenção / Por acaso — 无 (wú): sem; 意 (yì): intenção; 中 (zhōng): no meio de. Sentido literal: 'no meio da ausência de intenção'."
+      },
+      {
+        "word": "听到了 (tīngdào le)",
+        "meaning": "Escutei / Ouvi — 听 (tīng): ouvir; 到 (dào): alcançar / conseguir; 了 (le): ação concluída."
+      },
+      {
+        "word": "你们的谈话 (nǐmen de tánhuà)",
+        "meaning": "A conversa de vocês — 你们 (nǐmen): vocês; 的 (de): de; 谈话 (tánhuà): conversa / diálogo."
+      }
+    ],
+    "pronuncia": "Em 不好意思 (Bù hǎoyìsi), fale \"bù rǎo-í-sī\" com o \"sī\" bem leve. Em 打扰一下 (dǎrǎo yīxià), desça e suba o \"dǎ\", suba no \"rǎo\", diga \"í\" subindo e \"chiá\" caindo. Para 我刚才 (wǒ gāngcái), mande \"uǒ\", depois \"gāng\" reto e alto e \"tsái\" com som de \"ts\" subindo. Em 无意中 (wúyì zhōng), suba a voz no \"ú\", caia no \"ì\" e enrole a língua para um \"djōng\" plano. Em 听到了 (tīngdào le), solte bastante ar no \"tīng\", caia no \"dào\" e solte o \"lê\" murcho. Termine 你们的谈话 (nǐmen de tánhuà) com \"nǐ-mên dê tán-rruá\".\nLeia: Bù rǎo-í-sī dǎ-rǎo í-chiá, uǒ gāng-tsái wú-yì djōng tīng-dào lê nǐ-mên dê tán-rruá."
+  },
+  "904": {
+    "explanation": "Para explicar o atraso de forma formal, usa-se 没能及时回复您 (Méi néng jíshí huífù nín), que significa literalmente \"não ter conseguido a tempo responder ao senhor\". A frase faz a transição para as desculpas com 在此向您 (zàicǐ xiàng nín), que equivale a \"aqui perante o senhor\". A entrega das desculpas é feita por 致以诚挚的歉意 (zhìyǐ chéngzhì de qiànyì), uma combinação refinada que expressa \"apresentar sinceras desculpas\".",
+    "breakdown": [
+      {
+        "word": "没能 (Méi néng)",
+        "meaning": "Não ter conseguido — 没 (méi): não; 能 (néng): conseguir / poder."
+      },
+      {
+        "word": "及时 (jíshí)",
+        "meaning": "A tempo / Pontualmente — 及 (jí): alcançar; 时 (shí): tempo."
+      },
+      {
+        "word": "回复您 (huífù nín)",
+        "meaning": "Responder ao senhor — 回复 (huífù): responder / dar retorno; 您 (nín): o senhor / a senhora (formal)."
+      },
+      {
+        "word": "在此 (zàicǐ)",
+        "meaning": "Neste momento / Por meio desta — 在 (zài): em; 此 (cǐ): este / aqui."
+      },
+      {
+        "word": "向您 (xiàng nín)",
+        "meaning": "Para com o senhor — 向 (xiàng): em direção a / para; 您 (nín): você formal."
+      },
+      {
+        "word": "致以 (zhìyǐ)",
+        "meaning": "Apresentar / Levar a — 致 (zhì): enviar / entregar; 以 (yǐ): com / por meio de."
+      },
+      {
+        "word": "诚挚的 (chéngzhì de)",
+        "meaning": "Sincero(a) — 诚 (chéng): honesto / sincero; 挚 (zhì): ardente / devotado; 的 (de): conector que junta ao nome."
+      },
+      {
+        "word": "歉意 (qiànyì)",
+        "meaning": "Desculpas / Sentimento de culpa — 歉 (qiàn): lamentar / desculpar-se; 意 (yì): sentimento / intenção."
+      }
+    ],
+    "pronuncia": "Comece em 没能 (Méi néng) subindo o tom em \"mái\" e no \"nêng\". Em 及时 (jíshí), suba a voz em \"djí\" e enrole a língua para subir no \"chí\". Para 回复您 (huífù nín), diga \"rruí\" subindo, \"fù\" caindo e \"nín\" subindo. Em 在此 (zàicǐ), fale \"dzài\" caindo e \"tsǐ\" caindo e subindo. Em 向您 (xiàng nín), fale \"chiàng\" caindo e \"nín\" subindo. Em 致以 (zhìyǐ), enrole a língua no \"djì\" caindo e suba em \"yǐ\". Para 诚挚的 (chéngzhì de), enrole a língua para soltar um \"châng\" subindo, um \"djì\" caindo e o \"dê\" murcho. Feche com 歉意 (qiànyì) soprando ar forte no \"chiàn\" caindo e caindo no \"yì\".\nLeia: Mái nêng djí-chí rruí-fù nín, dzài-tsǐ chiàng nín djì-yǐ châng-djì dê chiàn-yì."
+  },
+  "905": {
+    "explanation": "A saudação clássica para reencontros é 好久不见 (Hǎojiǔ bùjiàn), que significa ao pé da letra \"muito tempo sem ver\". Para perguntar o que a pessoa tem feito ultimamente, usa-se 你最近 (nǐ zuìjìn), que direciona a pergunta ao tempo recente. O trecho 都在忙些什么呢 (dōu zài máng xiē shénme ne) completa o sentido com \"no que tem estado ocupado\", mantendo o tom informal e amigável da conversa.",
+    "breakdown": [
+      {
+        "word": "好久不见 (Hǎojiǔ bùjiàn)",
+        "meaning": "Há quanto tempo não nos vemos — 好 (hǎo): muito; 久 (jiǔ): longo tempo; 不 (bù): não; 见 (jiàn): ver. Sentido literal: 'muito tempo sem ver'."
+      },
+      {
+        "word": "你最近 (nǐ zuìjìn)",
+        "meaning": "Você ultimamente — 你 (nǐ): você; 最近 (zuìjìn): ultimamente / recentemente."
+      },
+      {
+        "word": "都在忙 (dōu zài máng)",
+        "meaning": "Tem estado ocupado — 都 (dōu): tudo / todos; 在 (zài): no processo de; 忙 (máng): ocupado."
+      },
+      {
+        "word": "些什么呢 (xiē shénme ne)",
+        "meaning": "Com quais coisas — 些 (xiē): algumas coisas; 什么 (shénme): o quê; 呢 (ne): partícula de tom de pergunta leve."
+      }
+    ],
+    "pronuncia": "Em 好久不见 (Hǎojiǔ bùjiàn), fale \"ráo-djiôu\" com tons subindo, \"bú\" subindo e \"diên\" caindo seco. Em 你最近 (nǐ zuìjìn), faça \"nǐ\", depois \"dzuì\" caindo e \"djìn\" caindo. Para 都在忙 (dōu zài máng), mande \"dōu\" plano e alto, \"dzài\" caindo e \"máng\" subindo a voz. Feche com 些什么呢 (xiē shénme ne) dizendo \"chiē\" alto e plano, \"chén-mê\" subindo e o \"nê\" bem suave no final.\nLeia: Ráo-djiôu bú-diên, nǐ dzuì-djìn dōu dzài máng chiē chén-mê nê?"
+  },
+  "906": {
+    "explanation": "Para direcionar a gratidão ao que foi feito, o mandarim começa com 对您为我们 (Duì nín wèi wǒmen), indicando \"em relação ao que o senhor fez por nós\". A totalidade dessas ações é marcada por 所做的一切 (suǒ zuò de yīqiè), que traduz \"tudo o que realizou\". A expressão final de agradecimento profundo vem em 我深表感谢 (wǒ shēn biǎo gǎnxiè), que ao pé da letra significa \"eu expresso profundamente minha gratidão\".",
+    "breakdown": [
+      {
+        "word": "对您 (Duì nín)",
+        "meaning": "Para com o senhor — 对 (duì): para / em relação a; 您 (nín): você (formal)."
+      },
+      {
+        "word": "为我们 (wèi wǒmen)",
+        "meaning": "Por nós — 为 (wèi): por / em benefício de; 我们 (wǒmen): nós."
+      },
+      {
+        "word": "所做的一切 (suǒ zuò de yīqiè)",
+        "meaning": "Tudo aquilo que fez — 所 (suǒ): conector de ação; 做 (zuò): fazer; 的 (de): de; 一切 (yīqiè): tudo / a totalidade."
+      },
+      {
+        "word": "我深表 (wǒ shēn biǎo)",
+        "meaning": "Eu expresso profundamente — 我 (wǒ): eu; 深 (shēn): profundo; 表 (biǎo): expressar / demonstrar."
+      },
+      {
+        "word": "感谢 (gǎnxiè)",
+        "meaning": "Agradecimento / Gratidão — 感 (gǎn): sentir; 谢 (xiè): agradecer."
+      }
+    ],
+    "pronuncia": "Em 对您 (Duì nín), faça \"duì\" caindo e \"nín\" subindo. Em 为我们 (wèi wǒmen), mande \"uèi\" caindo seco e \"uǒ-mên\" leve. Para 所做的一切 (suǒ zuò de yīqiè), faça \"suǒ\" caindo e subindo, \"dzuò\" caindo, \"dê\" suave, \"í\" subindo e \"tchiè\" caindo forte com ar soprado. Em 我深表 (wǒ shēn biǎo), fale \"uǒ\" leve, \"chēn\" bem plano e alto e \"biǎo\" descendo e subindo. Feche com 感谢 (gǎnxiè) dizendo \"gǎn\" subindo e \"chiè\" caindo forte.\nLeia: Duì nín uèi uǒ-mên suǒ dzuò dê í-tchiè, uǒ chēn biǎo gǎn-chiè."
+  },
+  "907": {
+    "explanation": "A pergunta educada \"você se importa se...\" é expressa por 不介意我 (Bù jièyì wǒ), que literalmente diz \"não se importa se eu\". A ação de sentar mais perto e vir até a pessoa vem descrita por 坐过来 (zuò guòlái). A ideia de bater um papo rápido aparece em 聊会儿 (liáo huìr), e a frase termina com 吧 (ba), que deixa o convite leve, transformando tudo em \"que tal eu me sentar aqui para conversarmos um pouco?\".",
+    "breakdown": [
+      {
+        "word": "不介意 (Bù jièyì)",
+        "meaning": "Não se importar — 不 (bù): não; 介意 (jièyì): importar-se / incomodar-se."
+      },
+      {
+        "word": "我坐过来 (wǒ zuò guòlái)",
+        "meaning": "Eu me sentar para cá — 我 (wǒ): eu; 坐 (zuò): sentar; 过来 (guòlái): vir para cá."
+      },
+      {
+        "word": "聊会儿 (liáo huìr)",
+        "meaning": "Conversar um pouco — 聊 (liáo): conversar / bater papo; 会儿 (huìr): um tempinho / um momento."
+      },
+      {
+        "word": "吧 (ba)",
+        "meaning": "Partícula de sugestão — Usada para suavizar a pergunta e pedir confirmação leve."
+      }
+    ],
+    "pronuncia": "Em 不介意 (Bù jièyì), suba o tom no \"bú\" e desça firme em \"diè-yì\". Para 我坐过来 (wǒ zuò guòlái), diga \"uǒ\" leve, \"dzuò\" caindo, \"guò\" caindo e \"lái\" subindo a voz. Em 聊会儿 (liáo huìr), faça o \"liáo\" subindo o tom e enrole a língua no final de \"rruêr\" num som contínuo. Termine com o 吧 (ba) soltando um \"bâ\" curto e sem peso.\nLeia: Bú diè-yì uǒ dzuò guò-lái liáo rruêr bâ?"
+  },
+  "908": {
+    "explanation": "A dúvida amigável começa com 我们好像 (Wǒmen hǎoxiàng), que transmite a impressão de \"parece que nós\". A negação do fato até o momento é dada por 还没 (hái méi), que significa \"ainda não\". O ato formal de se conhecer vem em 正式认识过 (zhèngshì rènshi guò), que literalmente diz \"conhecer de forma oficial\". A frase encerra com a partícula 吧 (ba), que busca a confirmação do interlocutor.",
+    "breakdown": [
+      {
+        "word": "我们 (Wǒmen)",
+        "meaning": "Nós — 我 (wǒ): eu; 们 (men): indicador de plural."
+      },
+      {
+        "word": "好像 (hǎoxiàng)",
+        "meaning": "Parece / Aparentemente — 好 (hǎo): bom / muito; 像 (xiàng): parecer / ser como."
+      },
+      {
+        "word": "还没 (hái méi)",
+        "meaning": "Ainda não — 还 (hái): ainda; 没 (méi): não."
+      },
+      {
+        "word": "正式 (zhèngshì)",
+        "meaning": "Oficialmente / Formalmente — 正 (zhèng): correto / principal; 式 (shì): forma / estilo."
+      },
+      {
+        "word": "认识过 (rènshi guò)",
+        "meaning": "Haver se conhecido — 认识 (rènshi): conhecer / reconhecer; 过 (guò): marca de experiência passada."
+      },
+      {
+        "word": "吧 (ba)",
+        "meaning": "Né? / Certo? — Partícula final para pedir confirmação amigável."
+      }
+    ],
+    "pronuncia": "Em 我们 (Wǒmen), fale \"uǒ-mên\". Em 好像 (hǎoxiàng), desça e suba no \"rǎo\" e caia no \"chiàng\". Para 还没 (hái méi), suba o tom nas duas palavras: \"rái mái\". Em 正式 (zhèngshì), enrole a língua no céu da boca para mandar \"djèng-chì\" com os dois sons caindo secos. Para 认识过 (rènshi guò), continue com a língua enrolada em \"rèn-chī\" e caia no \"guò\". Feche com 吧 (ba) bem suave em \"bâ\".\nLeia: Uǒ-mên rǎo-chiàng rái mái djèng-chì rèn-chī guò bâ?"
+  },
+  "909": {
+    "explanation": "O sentimento de expectativa é aberto por 我很期待 (Wǒ hěn qīdài), que significa \"estou muito ansioso/esperançoso\". O desejo de acompanhar a evolução vem em 看到 (kàndào), que é \"ver/testemunhar\". O objeto da expectativa é o projeto, identificado por 这个项目 (zhège xiàngmù). A frase termina definindo o progresso com 的后续进展 (de hòuxù jìnzhǎn), que traduz \"os desdobramentos e avanços futuros\".",
+    "breakdown": [
+      {
+        "word": "我很期待 (Wǒ hěn qīdài)",
+        "meaning": "Estou muito ansioso / Aguardo muito — 我 (wǒ): eu; 很 (hěn): muito; 期待 (qīdài): aguardar com expectativa / ansiar."
+      },
+      {
+        "word": "看到 (kàndào)",
+        "meaning": "Ver / Testemunhar — 看 (kàn): olhar / ver; 到 (dào): alcançar / conseguir."
+      },
+      {
+        "word": "这个项目 (zhège xiàngmù)",
+        "meaning": "Este projeto — 这个 (zhège): este; 项目 (xiàngmù): projeto / item."
+      },
+      {
+        "word": "的 (de)",
+        "meaning": "De — Conector que liga o projeto ao seu progresso."
+      },
+      {
+        "word": "后续进展 (hòuxù jìnzhǎn)",
+        "meaning": "Desdobramentos futuros / Progresso posterior — 后续 (hòuxù): subsequente / futuro; 进展 (jìnzhǎn): progresso / evolução."
+      }
+    ],
+    "pronuncia": "Em 我很期待 (Wǒ hěn qīdài), fale \"uǒ rěn\" com o tom subindo levemente em \"rěn\", depois \"tchī\" alto e plano e \"dài\" caindo. Em 看到 (kàndào), faça \"kàn-dào\" caindo rápido nos dois. Para 这个项目 (zhège xiàngmù), mande \"djè-gê\", \"chiàng\" caindo e \"mù\" caindo. Solte o 的 (de) murcho como \"dê\". Feche com 后续进展 (hòuxù jìnzhǎn) dizendo \"ròu\" caindo, \"chü\" caindo com biquinho nos lábios, \"djìn\" caindo e enrole a língua para subir no \"djǎn\".\nLeia: Uǒ rěn tchī-dài kàn-dào djè-gê chiàng-mù dê ròu-chü djìn-djǎn."
+  },
+  "910": {
+    "explanation": "O pedido de favor começa amigavelmente com 能帮我 (Néng bāng wǒ), que significa \"pode me ajudar a\". A direção do recado é indicada por 向团队里的其他人 (xiàng tuánduì lǐ de qítā rén), que quer dizer \"para as outras pessoas dentro da equipe\". A ação de mandar os cumprimentos é dita por 带个好 (dài gè hǎo), equivalente a \"levar um 'tudo bem'\". A pergunta encerra com 吗 (ma) para formalizar a solicitação.",
+    "breakdown": [
+      {
+        "word": "能帮我 (Néng bāng wǒ)",
+        "meaning": "Pode me ajudar a — 能 (néng): poder; 帮 (bāng): ajudar; 我 (wǒ): eu / mim."
+      },
+      {
+        "word": "向 (xiàng)",
+        "meaning": "Para / Em direção a."
+      },
+      {
+        "word": "团队里的 (tuánduì lǐ de)",
+        "meaning": "De dentro da equipe — 团队 (tuánduì): equipe / time; 里 (lǐ): dentro; 的 (de): de."
+      },
+      {
+        "word": "其他人 (qítā rén)",
+        "meaning": "Outras pessoas — 其他 (qítā): outros; 人 (rén): pessoas."
+      },
+      {
+        "word": "带个好 (dài gè hǎo)",
+        "meaning": "Mandar lembranças / Levar um abraço — 带 (dài): levar; 个 (gè): elemento de contagem; 好 (hǎo): bem / cumprimentos."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 能帮我 (Néng bāng wǒ), suba em \"nêng\", faça \"bāng\" alto e plano e desça-suba no \"uǒ\". Em 向 (xiàng), caia o tom em \"chiàng\". Em 团队里的 (tuánduì lǐ de), faça \"tuán\" subindo, \"duì\" caindo, \"lǐ\" subindo e \"dê\" suave. Para 其他人 (qítā rén), diga \"tchí\" subindo com ar, \"tā\" plano e alto e enrole a língua para subir no \"jên\". Em 带个好 (dài gè hǎo), faça \"dài-gê\" caindo e \"rǎo\" subindo. Feche com 吗 (ma) num \"mâ\" leve.\nLeia: Nêng bāng uǒ chiàng tuán-duì lǐ dê tchí-tā jên dài gê rǎo mâ?"
+  },
+  "911": {
+    "explanation": "O agradecimento caloroso inicia com 非常感谢您 (Fēicháng gǎnxiè nín), que traduz \"agradeço muitíssimo ao senhor\". A razão da gratidão vem descrita por 准备了 (zhǔnbèi le), indicando que a pessoa \"preparou\". A frase termina elogiando o banquete com 这么丰盛的晚餐 (zhème fēngshèng de wǎncān), que ao pé da letra é \"um jantar tão farto e maravilhoso\".",
+    "breakdown": [
+      {
+        "word": "非常感谢您 (Fēicháng gǎnxiè nín)",
+        "meaning": "Agradeço muitíssimo ao senhor — 非常 (fēicháng): extraordinariamente / muito; 感谢 (gǎnxiè): agradecer; 您 (nín): o senhor / a senhora."
+      },
+      {
+        "word": "准备了 (zhǔnbèi le)",
+        "meaning": "Preparou — 准备 (zhǔnbèi): preparar; 了 (le): ação concluída."
+      },
+      {
+        "word": "这么 (zhème)",
+        "meaning": "Tão / Assim."
+      },
+      {
+        "word": "丰盛的 (fēngshèng de)",
+        "meaning": "Farto / Abundante — 丰盛 (fēngshèng): farto / rico; 的 (de): conector."
+      },
+      {
+        "word": "晚餐 (wǎncān)",
+        "meaning": "Jantar — 晚 (wǎn): noite / tardio; 餐 (cān): refeição."
+      }
+    ],
+    "pronuncia": "Em 非常感谢您 (Fēicháng gǎnxiè nín), fale \"fēi\" plano, \"cháng\" subindo enrolando a língua, \"gǎn\" subindo, \"chiè\" caindo seco e \"nín\" subindo. Em 准备了 (zhǔnbèi le), enrole a língua para fazer \"djǔn\" caindo e subindo, \"bèi\" caindo seco e o \"lê\" apagado. Para 这么 (zhème), faça \"djè-mê\". Em 丰盛的 (fēngshèng de), diga \"fēng\" plano, enrole a língua em \"chèng\" caindo e solte o \"dê\". Feche com 晚餐 (wǎncān) fazendo \"uǎn\" subindo e \"tsān\" bem plano e alto.\nLeia: Fēi-cháng gǎn-chiè nín djǔn-bèi lê djè-mê fēng-chèng dê uǎn-tsān."
+  },
+  "912": {
+    "explanation": "Para justificar uma visita surpresa, a frase começa com 没提前打招呼 (Méi tíqián dǎ zhāohu), que significa \"não dar um alô com antecedência\". A chegada no local é descrita simplesmente por 就过来 (jiù guòlái). A esperança de não ter atrapalhado é expressa por 希望没打扰到你 (xīwàng méi dǎrǎo dào nǐ), que fecha a frase com \"espero não ter chegado a incomodar você\".",
+    "breakdown": [
+      {
+        "word": "没提前 (Méi tíqián)",
+        "meaning": "Não com antecedência — 没 (méi): não; 提前 (tíqián): antecipadamente."
+      },
+      {
+        "word": "打招呼 (dǎ zhāohu)",
+        "meaning": "Avisar / Cumprimentar — 打 (dǎ): dar / fazer; 招呼 (zhāohu): aviso / saudação."
+      },
+      {
+        "word": "就过来 (jiù guòlái)",
+        "meaning": "Já vir para cá — 就 (jiù): então / simplesmente; 过来 (guòlái): vir para cá."
+      },
+      {
+        "word": "希望 (xīwàng)",
+        "meaning": "Esperar / Torcer para — 希 (xī): esperar; 望 (wàng): olhar para frente."
+      },
+      {
+        "word": "没打扰到你 (méi dǎrǎo dào nǐ)",
+        "meaning": "Não ter incomodado você — 没 (méi): não; 打扰 (dǎrǎo): incomodar; 到 (dào): alcançar / conseguir; 你 (nǐ): você."
+      }
+    ],
+    "pronuncia": "Em 没提前 (Méi tíqián), suba a voz em \"mái\", suba em \"tí\" e suba com ar em \"tchián\". Em 打招呼 (dǎ zhāohu), faça \"dǎ\" subindo, enrole a língua para um \"djāo\" plano e alto e \"ru\" suave. Para 就过来 (jiù guòlái), caia a voz em \"djiôu\", caia em \"guò\" e suba em \"lái\". Em 希望 (xīwàng), faça \"chī\" plano e alto e \"uàng\" caindo seco. Feche com 没打扰到你 (méi dǎrǎo dào nǐ) dizendo \"mái dǎ-rǎo dào nǐ\" em tom encadeado e suave.\nLeia: Mái tí-tchián dǎ djāo-ru djiôu guò-lái, chī-uàng mái dǎ-rǎo dào nǐ."
+  },
+  "913": {
+    "explanation": "A despedida educada por ter outro compromisso começa com 我接下来 (Wǒ jiēxiàlái), que introduz \"eu, em seguida\". A existência de outro assunto é explicada por 还有点别的事 (hái yǒudiǎn bié de shì), que traduz \"ainda tenho um pouquinho de outras coisas para fazer\". A saída graciosa é arrematada por 就先失陪了 (jiù xiān shīpéi le), uma forma extremamente cortês de dizer \"então vou me retirar primeiro\".",
+    "breakdown": [
+      {
+        "word": "我接下来 (Wǒ jiēxiàlái)",
+        "meaning": "Eu em seguida — 我 (wǒ): eu; 接下来 (jiēxiàlái): em seguida / a seguir."
+      },
+      {
+        "word": "还有点 (hái yǒudiǎn)",
+        "meaning": "Ainda ter um pouco de — 还 (hái): ainda; 有 (yǒu): ter; 点 (diǎn): um pouco."
+      },
+      {
+        "word": "别的事 (bié de shì)",
+        "meaning": "Outras coisas / Outros assuntos — 别 (bié): outro; 的 (de): de; 事 (shì): assunto / coisa."
+      },
+      {
+        "word": "就先 (jiù xiān)",
+        "meaning": "Então primeiro — 就 (jiù): então; 先 (xiān): primeiro."
+      },
+      {
+        "word": "失陪了 (shīpéi le)",
+        "meaning": "Com licença ao me retirar — 失 (shī): perder / deixar de acompanhar; 陪 (péi): acompanhar; 了 (le): marca de mudança de estado."
+      }
+    ],
+    "pronuncia": "Em 我接下来 (Wǒ jiēxiàlái), fale \"uǒ\", depois \"diē\" alto e plano, \"chiá\" caindo e \"lái\" subindo. Em 还有点 (hái yǒudiǎn), suba o tom em \"rái\", caia-suba em \"yǒu\" e em \"diǎn\". Para 别的事 (bié de shì), suba a voz em \"bié\", diga \"dê\" leve e enrole a língua para cair forte no \"chì\". Em 就先 (jiù xiān), fale \"djiôu\" caindo e \"chiān\" alto e plano. Feche com 失陪了 (shīpéi le) enrolando a língua no \"chī\" plano, subindo no \"péi\" com ar e soltando o \"lê\" murcho.\nLeia: Uǒ diē-chiá-lái rái yǒu-diǎn bié dê chì, djiôu chiān chī-péi lê."
+  },
+  "914": {
+    "explanation": "O desejo de manter contato no futuro começa com 我们以后 (Wǒmen yǐhòu), que aponta para \"nós, daqui para a frente\". O reforço da intenção é dado por 可要 (kě yào), que enfatiza o \"precisamos/devemos\". A ação principal aparece em 常联系 (cháng liánxì), que traduz \"entrar em contato com frequência\". A frase encerra com a partícula 呀 (a), que adiciona calor e afeto à despedida.",
+    "breakdown": [
+      {
+        "word": "我们 (Wǒmen)",
+        "meaning": "Nós — 我 (wǒ): eu; 们 (men): plural."
+      },
+      {
+        "word": "以后 (yǐhòu)",
+        "meaning": "Daqui para a frente / No futuro — 以 (yǐ): a partir de; 后 (hòu): depois."
+      },
+      {
+        "word": "可要 (kě yào)",
+        "meaning": "Com certeza dever / Precisar — 可 (kě): certamente; 要 (yào): dever / querer."
+      },
+      {
+        "word": "常联系 (cháng liánxì)",
+        "meaning": "Contatar com frequência — 常 (cháng): frequentemente; 联系 (liánxì): manter contato / comunicar-se."
+      },
+      {
+        "word": "啊 (a)",
+        "meaning": "Partícula de entusiasmo e carinho no final da frase."
+      }
+    ],
+    "pronuncia": "Em 我们 (Wǒmen), fale \"uǒ-mên\". Em 以后 (yǐhòu), faça \"yǐ\" subindo e \"ròu\" caindo. Para 可要 (kě yào), suba no \"kě\" e caia forte no \"yào\". Em 常联系 (cháng liánxì), enrole a língua para subir no \"cháng\", suba a voz em \"lián\" e caia seco em \"chì\". Finalize com o 啊 (a) soltando um \"â\" bem aberto e amigável.\nLeia: Uǒ-mên yǐ-ròu kě yào cháng lián-chì â."
+  },
+  "915": {
+    "explanation": "Para perguntar sobre a disponibilidade de alguém no momento, começa-se com 你现在 (Nǐ xiànzài), que significa \"você agora\". A pergunta de conveniência é feita com 方便 (fāngbiàn), equivalente a \"é conveniente / está fácil?\". O objetivo da conversa aparece em 聊几分钟 (liáo jǐ fēnzhōng), que traduz \"conversar por alguns minutos\". A pergunta termina com 吗 (ma) para fechar a solicitação.",
+    "breakdown": [
+      {
+        "word": "你现在 (Nǐ xiànzài)",
+        "meaning": "Você agora — 你 (nǐ): você; 现在 (xiànzài): agora / no momento."
+      },
+      {
+        "word": "方便 (fāngbiàn)",
+        "meaning": "Ser conveniente / Estar livre — 方 (fāng): direção; 便 (biàn): conveniente / fácil."
+      },
+      {
+        "word": "聊 (liáo)",
+        "meaning": "Conversar / Bater papo."
+      },
+      {
+        "word": "几分钟 (jǐ fēnzhōng)",
+        "meaning": "Alguns minutos — 几 (jǐ): alguns / quantos; 分钟 (fēnzhōng): minutos."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 你现在 (Nǐ xiànzài), fale \"nǐ\", depois \"chiàn-dzài\" caindo nos dois tons. Em 方便 (fāngbiàn), diga \"fāng\" alto e plano e \"biàn\" caindo seco. Para 聊 (liáo), suba a voz em \"liáo\". Em 几分钟 (jǐ fēnzhōng), desça e suba o \"djǐ\", diga \"fēn\" plano e enrole a língua no \"djōng\" alto e plano. Feche com 吗 (ma) num suave \"mâ\".\nLeia: Nǐ chiàn-dzài fāng-biàn liáo djǐ fēn-djōng mâ?"
+  },
+  "916": {
+    "explanation": "A extrema gratidão pelo tempo concedido começa com 非常感谢您 (Fēicháng gǎnxiè nín). O contexto de agenda cheia é elegantemente descrito por 在百忙之中 (zài bǎimáng zhī zhōng), uma expressão clássica que significa \"no meio de tanta correria\". A ação de arranjar um espaço para a reunião vem em 抽空见我 (chōukòng jiàn wǒ), que se traduz por \"tirar um tempo vago para me encontrar\".",
+    "breakdown": [
+      {
+        "word": "非常感谢您 (Fēicháng gǎnxiè nín)",
+        "meaning": "Muito obrigado ao senhor — 非常 (fēicháng): muito; 感谢 (gǎnxiè): agradecer; 您 (nín): o senhor / a senhora."
+      },
+      {
+        "word": "在 (zài)",
+        "meaning": "Em / No meio de."
+      },
+      {
+        "word": "百忙之中 (bǎimáng zhī zhōng)",
+        "meaning": "No meio de cem ocupações / Correria — 百 (bǎi): cem / muitos; 忙 (máng): ocupado; 之 (zhī): conector formal; 中 (zhōng): meio."
+      },
+      {
+        "word": "抽空 (chōukòng)",
+        "meaning": "Arranjar tempo vago — 抽 (chōu): extrair / tirar; 空 (kòng): tempo livre / espaço."
+      },
+      {
+        "word": "见我 (jiàn wǒ)",
+        "meaning": "Encontrar-me — 见 (jiàn): ver / encontrar; 我 (wǒ): eu / mim."
+      }
+    ],
+    "pronuncia": "Em 非常感谢您 (Fēicháng gǎnxiè nín), faça \"fēi-cháng gǎn-chiè nín\". Em 在百忙之中 (zài bǎimáng zhī zhōng), fale \"dzài\" caindo, \"bǎi\" subindo, \"máng\" subindo, enrole a língua no \"djī\" plano e no \"djōng\" plano. Para 抽空 (chōukòng), enrole a língua soprando ar em \"chōu\" e caia forte em \"kòng\". Feche com 见我 (jiàn wǒ) dizendo \"dièn\" caindo seco e \"uǒ\" subindo a voz.\nLeia: Fēi-cháng gǎn-chiè nín dzài bǎi-máng djī djōng chōu-kòng dièn uǒ."
+  },
+  "917": {
+    "explanation": "O pedido de desculpas suave começa com 不好意思 (Bù hǎoyìsi). A explicação de não ter ouvido direito é dada por 我没太听清 (wǒ méi tài tīngqīng), que significa \"eu não ouvi com total clareza\". A parte específica que não ficou clara é apontada no final por 你最后说的这部分 (nǐ zuìhòu shuō de zhè bùfen), traduzido como \"esta parte que você disse por último\".",
+    "breakdown": [
+      {
+        "word": "不好意思 (Bù hǎoyìsi)",
+        "meaning": "Desculpe / Com licença."
+      },
+      {
+        "word": "我没太 (wǒ méi tài)",
+        "meaning": "Eu não muito — 我 (wǒ): eu; 没 (méi): não; 太 (tài): muito / exageradamente."
+      },
+      {
+        "word": "听清 (tīngqīng)",
+        "meaning": "Ouvir com clareza — 听 (tīng): ouvir; 清 (qīng): claro / nítido."
+      },
+      {
+        "word": "你最后说的 (nǐ zuìhòu shuō de)",
+        "meaning": "O que você disse por último — 你 (nǐ): você; 最后 (zuìhòu): por último / no final; 说 (shuō): falar; 的 (de): conector."
+      },
+      {
+        "word": "这部分 (zhè bùfen)",
+        "meaning": "Esta parte — 这 (zhè): esta; 部分 (bùfen): parte / seção."
+      }
+    ],
+    "pronuncia": "Em 不好意思 (Bù hǎoyìsi), fale \"bù rǎo-í-sī\". Em 我没太 (wǒ méi tài), diga \"uǒ\", suba em \"mái\" e caia em \"tài\". Para 听清 (tīngqīng), mande \"tīng\" plano e solte ar forte em \"tchīng\" plano e alto. Em 你最后说的 (nǐ zuìhòu shuō de), fale \"nǐ\", \"dzuì-ròu\" caindo nos dois, enrole a língua em \"chōu\" e fale \"dê\" murcho. Feche com 这部分 (zhè bùfen) dizendo \"djè\" caindo, \"bù\" caindo e \"fēn\" plano.\nLeia: Bù rǎo-í-sī uǒ mái tài tīng-tchīng nǐ dzuì-ròu chōu dê djè bù-fēn."
+  },
+  "918": {
+    "explanation": "A alegria do encontro é iniciada com 很高兴 (Hěn gāoxìng), que traduz \"estou muito feliz\". A conquista da espera é expressa por 终于 (zhōngyú), que significa \"finalmente\". O ato de se encontrarem presencialmente vem em 见到您本人了 (jiàndào nín běnrén le), cuja tradução literal é \"ter conseguido encontrar a própria pessoa do senhor\".",
+    "breakdown": [
+      {
+        "word": "很高兴 (Hěn gāoxìng)",
+        "meaning": "Muito feliz — 很 (hěn): muito; 高兴 (gāoxìng): feliz / alegre."
+      },
+      {
+        "word": "终于 (zhōngyú)",
+        "meaning": "Finalmente / Por fim — 终 (zhōng): fim; 于 (yú): em."
+      },
+      {
+        "word": "见到 (jiàndào)",
+        "meaning": "Encontrar / Ver — 见 (jiàn): ver; 到 (dào): alcançar."
+      },
+      {
+        "word": "您本人 (nín běnrén)",
+        "meaning": "O senhor em pessoa — 您 (nín): o senhor; 本人 (běnrén): a própria pessoa / em pessoa."
+      },
+      {
+        "word": "了 (le)",
+        "meaning": "Partícula indicando a concretização da ação."
+      }
+    ],
+    "pronuncia": "Em 很高兴 (Hěn gāoxìng), suba o tom em \"rěn\", diga \"gāo\" alto e plano e \"chìng\" caindo. Em 终于 (zhōngyú), enrole a língua no \"djōng\" alto e suba a voz em \"yú\". Para 见到 (jiàndào), faça \"dièn-dào\" caindo seco nos dois. Em 您本人 (nín běnrén), suba em \"nín\", desça e suba em \"běn\" e enrole a língua para subir em \"jên\". Termine com o 了 (le) bem leve em \"lê\".\nLeia: Rěn gāo-chìng djōng-yú dièn-dào nín běn-jên lê."
+  },
+  "919": {
+    "explanation": "A disposição em ajudar é aberta por 我很乐意 (Wǒ hěn lèyì), que significa \"estou muito feliz/disposto a\". A ação de guiar a pessoa é trazida por 带你 (dài nǐ), que é \"levar você\". O local da visita é 在办公室 (zài bàngōngshì), que especifica \"no escritório\". A frase conclui com 转转 (zhuànzhuan), um verbo duplicativo informal que significa \"dar uma voltinha / passear um pouco\".",
+    "breakdown": [
+      {
+        "word": "我很乐意 (Wǒ hěn lèyì)",
+        "meaning": "Com muito prazer / Muito disposto — 我 (wǒ): eu; 很 (hěn): muito; 乐意 (lèyì): com prazer / de boa vontade."
+      },
+      {
+        "word": "带你 (dài nǐ)",
+        "meaning": "Levar você — 带 (dài): guiar / levar; 你 (nǐ): você."
+      },
+      {
+        "word": "在办公室 (zài bàngōngshì)",
+        "meaning": "No escritório — 在 (zài): em; 办公室 (bàngōngshì): escritório."
+      },
+      {
+        "word": "转转 (zhuànzhuan)",
+        "meaning": "Dar uma volta / Circular — 转 (zhuàn): girar / passear."
+      }
+    ],
+    "pronuncia": "Em 我很乐意 (Wǒ hěn lèyì), diga \"uǒ rěn\" subindo a voz em \"rěn\", caia em \"lè\" e em \"yì\". Em 带你 (dài nǐ), faça \"dài\" caindo e \"nǐ\" subindo. Para 在办公室 (zài bàngōngshì), caia no \"dzài\", faça \"bàn\" caindo, \"gōng\" alto e plano, e enrole a língua para cair no \"chì\". Feche com 转转 (zhuànzhuan) enrolando a língua no \"djouàn\" caindo e repetindo o segundo suavemente.\nLeia: Uǒ rěn lè-yì dài nǐ dzài bàn-gōng-chì djouàn-djouan."
+  },
+  "920": {
+    "explanation": "A abertura formal para desculpas por transtornos começa com 由此 (Yóucǐ), que significa \"a partir disto / por causa disto\". O transtorno causado é descrito por 给您带来的不便 (gěi nín dài lái de bùbiàn), traduzido como \"o inconveniente trazido ao senhor\". A frase encerra de maneira extremamente formal com 我们深表歉意 (wǒmen shēn biǎo qiànyì), que significa \"nós expressamos profundas desculpas\".",
+    "breakdown": [
+      {
+        "word": "由此 (Yóucǐ)",
+        "meaning": "Por causa disto / A partir disto — 由 (yóu): a partir de / devido a; 此 (cǐ): isto."
+      },
+      {
+        "word": "给您 (gěi nín)",
+        "meaning": "Para o senhor — 给 (gěi): dar / para; 您 (nín): o senhor."
+      },
+      {
+        "word": "带来的 (dàilái de)",
+        "meaning": "Trazido — 带来 (dàilái): trazer; 的 (de): conector."
+      },
+      {
+        "word": "不便 (bùbiàn)",
+        "meaning": "Inconveniente / Transtorno — 不 (bù): não; 便 (biàn): conveniente."
+      },
+      {
+        "word": "我们深表 (wǒmen shēn biǎo)",
+        "meaning": "Nós expressamos profundamente — 我们 (wǒmen): nós; 深 (shēn): profundo; 表 (biǎo): expressar."
+      },
+      {
+        "word": "歉意 (qiànyì)",
+        "meaning": "Desculpas / Lamentação."
+      }
+    ],
+    "pronuncia": "Em 由此 (Yóucǐ), suba em \"yóu\" e desça-suba no \"tsǐ\". Em 给您 (gěi nín), diga \"gěi\" subindo e \"nín\" subindo. Para 带来的 (dàilái de), faça \"dài\" caindo, \"lái\" subindo e \"dê\" murcho. Em 不便 (bùbiàn), mande \"bú\" subindo e \"biàn\" caindo seco. Em 我们深表 (wǒmen shēn biǎo), fale \"uǒ-mên\", \"chēn\" plano e \"biǎo\" descendo-subindo. Feche com 歉意 (qiànyì) soltando ar em \"chiàn\" caindo e \"yì\" caindo.\nLeia: Yóu-tsǐ gěi nín dài-lái dê bú-biàn, uǒ-mên chēn biǎo chiàn-yì."
+  },
+  "921": {
+    "explanation": "A pergunta sobre adaptação no trabalho começa definindo o local com 新岗位 (Xīn gǎngwèi), que é o \"novo cargo/posto\". A pessoa interrogada é 你 (nǐ), \"você\". A ação de se adaptar e o grau de sucesso vêm em 适应得 (shìyìng de). A frase encerra perguntando \"como está sendo?\" com 怎么样了 (zěnmeyàng le), montando a pergunta completa de adaptação.",
+    "breakdown": [
+      {
+        "word": "新岗位 (Xīn gǎngwèi)",
+        "meaning": "Novo cargo — 新 (xīn): novo; 岗位 (gǎngwèi): posto / cargo."
+      },
+      {
+        "word": "你 (nǐ)",
+        "meaning": "Você."
+      },
+      {
+        "word": "适应得 (shìyìng de)",
+        "meaning": "Adaptar-se — 适应 (shìyìng): adaptar-se; 得 (de): conector de modo."
+      },
+      {
+        "word": "怎么样了 (zěnmeyàng le)",
+        "meaning": "Como está? — 怎么样 (zěnmeyàng): como / de que jeito; 了 (le): marca de estado atual."
+      }
+    ],
+    "pronuncia": "Em 新岗位 (Xīn gǎngwèi), fale \"chīn\" alto e plano, \"gǎng\" descendo-subindo e \"uèi\" caindo seco. Em 你 (nǐ), diga \"nǐ\". Para 适应得 (shìyìng de), enrole a língua para soltar um \"chì\" caindo, \"yìng\" caindo e \"dê\" leve. Feche com 怎么样了 (zěnmeyàng le) dizendo \"dzěn-mê\" suave, \"yàng\" caindo forte e o \"lê\" bem murcho.\nLeia: Chīn gǎng-uèi nǐ chì-yìng dê dzěn-mê-yàng lê?"
+  },
+  "922": {
+    "explanation": "A satisfação em conhecer alguém é dita com 很高兴结识您 (Hěn gāoxìng jiéshí nín), que traduz \"muito feliz em fazer sua amizade\". A expectativa de um reencontro no futuro próximo vem em 期待不久后 (qīdài bùjiǔ hòu), que significa \"aguardando para daqui a não muito tempo\". A frase termina com 能再次相遇 (néng zàicì xiāngyù), que ao pé da letra é \"poder reencontrar mais uma vez\".",
+    "breakdown": [
+      {
+        "word": "很高兴 (Hěn gāoxìng)",
+        "meaning": "Muito feliz."
+      },
+      {
+        "word": "结识您 (jiéshí nín)",
+        "meaning": "Conhecer o senhor — 结识 (jiéshí): conhecer / fazer amizade; 您 (nín): o senhor."
+      },
+      {
+        "word": "期待 (qīdài)",
+        "meaning": "Aguardar com expectativa / Ansiar."
+      },
+      {
+        "word": "不久后 (bùjiǔ hòu)",
+        "meaning": "Em pouco tempo / Em breve — 不久 (bùjiǔ): em pouco tempo; 后 (hòu): depois."
+      },
+      {
+        "word": "能再次 (néng zàicì)",
+        "meaning": "Poder novamente — 能 (néng): poder; 再次 (zàicì): mais uma vez."
+      },
+      {
+        "word": "相遇 (xiāngyù)",
+        "meaning": "Encontrar-se / Cruzar caminhos — 相 (xiāng): mutuamente; 遇 (yù): encontrar."
+      }
+    ],
+    "pronuncia": "Em 很高兴 (Hěn gāoxìng), faça \"rěn gāo-chìng\". Em 结识您 (jiéshí nín), suba o tom em \"dié\", enrole a língua para subir no \"chí\" e suba no \"nín\". Para 期待 (qīdài), diga \"tchī\" alto e plano e \"dài\" caindo. Em 不久后 (bùjiǔ hòu), faça \"bù-jiǔ\" com tom subindo no \"jiǔ\" e caia no \"ròu\". Em 能再次 (néng zàicì), suba no \"nêng\", caia no \"dzài\" e no \"tsì\". Feche com 相遇 (xiāngyù) dizendo \"chiāng\" alto e plano e \"yù\" caindo com biquinho.\nLeia: Rěn gāo-chìng dié-chí nín, tchī-dài bù-jiǔ ròu nêng dzài-tsì chiāng-yù."
+  },
+  "923": {
+    "explanation": "A pergunta sobre remarcar a reunião começa propondo a opção com 我们能不能 (Wǒmen néng bù néng), que significa \"nós podemos ou não?\". A ação de pegar o compromisso é iniciada por 把会议 (bǎ huìyì), apontando \"a reunião\". O adiamento é expresso por 推迟到 (tuīchí dào), que traduz \"adiar para\". A frase encerra definindo o novo momento com 下周 (xià zhōu) e a partícula de pergunta 吗 (ma).",
+    "breakdown": [
+      {
+        "word": "我们能不能 (Wǒmen néng bù néng)",
+        "meaning": "Nós podemos ou não — 我们 (wǒmen): nós; 能不能 (néng bù néng): pode ou não pode."
+      },
+      {
+        "word": "把会议 (bǎ huìyì)",
+        "meaning": "A reunião (como objeto) — 把 (bǎ): partícula que introduz o objeto; 会议 (huìyì): reunião / conferência."
+      },
+      {
+        "word": "推迟到 (tuīchí dào)",
+        "meaning": "Adiar para — 推迟 (tuīchí): adiar / postergar; 到 (dào): até / para."
+      },
+      {
+        "word": "下周 (xià zhōu)",
+        "meaning": "Próxima semana — 下 (xià): seguinte / próxima; 周 (zhōu): semana."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 我们能不能 (Wǒmen néng bù néng), fale \"uǒ-mên nêng bù nêng\". Em 把会议 (bǎ huìyì), faça \"bǎ\" subindo, \"rùèi\" caindo e \"yì\" caindo. Para 推迟到 (tuīchí dào), solte bastante ar em \"tuī\" plano, enrole a língua para subir no \"chí\" e caia seco em \"dào\". Em 下周 (xià zhōu), fale \"chià\" caindo e enrole a língua para soltar um \"djōu\" alto e plano. Feche com 吗 (ma) suave em \"mâ\".\nLeia: Uǒ-mên nêng bù nêng bǎ rùèi-yì tuī-chí dào chià djōu mâ?"
+  },
+  "924": {
+    "explanation": "A promessa firme de repassar um recado começa com 我一定会 (Wǒ yīdìng huì), que se traduz por \"eu com certeza vou\". A informação a ser levada é identificada por 把这个情况 (bǎ zhège qíngkuàng), que quer dizer \"esta situação / este fato\". A transmissão do recado é expressa por 转达给 (zhuǎndá gěi), que significa \"repassar para\". A frase fecha com 相关负责人 (xiāngguān fùzérén), que significa \"o responsável encarregado\".",
+    "breakdown": [
+      {
+        "word": "我一定会 (Wǒ yīdìng huì)",
+        "meaning": "Eu com certeza vou — 我 (wǒ): eu; 一定 (yīdìng): com certeza / sem falta; 会 (huì): ir (futuro)."
+      },
+      {
+        "word": "把这个情况 (bǎ zhège qíngkuàng)",
+        "meaning": "Esta situação — 把 (bǎ): partícula de objeto; 这个 (zhège): esta; 情况 (qíngkuàng): situação / fato."
+      },
+      {
+        "word": "转达给 (zhuǎndá gěi)",
+        "meaning": "Repassar para — 转达 (zhuǎndá): transmitir / repassar; 给 (gěi): para / a."
+      },
+      {
+        "word": "相关负责人 (xiāngguān fùzérén)",
+        "meaning": "Pessoa responsável relacionada — 相关 (xiāngguān): relacionado; 负责人 (fùzérén): encarregado / responsável."
+      }
+    ],
+    "pronuncia": "Em 我一定会 (Wǒ yīdìng huì), diga \"uǒ\", depois \"í-dìng\" subindo e caindo, e \"rùèi\" caindo. Em 把这个情况 (bǎ zhège qíngkuàng), faça \"bǎ\", \"djè-gê\", \"tchíng\" subindo e \"kuàng\" caindo. Para 转达给 (zhuǎndá gěi), enrole a língua no \"djouǎn\" descendo e subindo, suba em \"dá\" e suba em \"gěi\". Feche com 相关负责人 (xiāngguān fùzérén) dizendo \"chiāng-guān\" planos e altos, e enrole a língua para mandar \"fù-dzé-jên\".\nLeia: Uǒ í-dìng rùèi bǎ djè-gê tchíng-kuàng djouǎn-dá gěi chiāng-guān fù-dzé-jên."
+  },
+  "925": {
+    "explanation": "Os desejos de boa estadia e trabalho começam com 祝你在这里 (Zhù nǐ zài zhèlǐ), que traduz \"desejo que você aqui\". A parte da experiência agradável é 过得愉快 (guò de yúkuài), que significa \"passe um tempo agradável\". Os votos de sucesso no trabalho vêm em 工作顺利 (gōngzuò shùnlì). A frase encerra desejando frutos com 收获满满 (shōuhuò mǎnmǎn), que ao pé da letra é \"colheita plenamente cheia\".",
+    "breakdown": [
+      {
+        "word": "祝你 (Zhù nǐ)",
+        "meaning": "Desejo a você — 祝 (zhù): desejar; 你 (nǐ): você."
+      },
+      {
+        "word": "在这里 (zài zhèlǐ)",
+        "meaning": "Aqui — 在 (zài): em; 这里 (zhèlǐ): aqui."
+      },
+      {
+        "word": "过得愉快 (guò de yúkuài)",
+        "meaning": "Passar um tempo agradável — 过 (guò): passar / viver; 得 (de): conector; 愉快 (yúkuài): alegre / agradável."
+      },
+      {
+        "word": "工作顺利 (gōngzuò shùnlì)",
+        "meaning": "Trabalho fluir bem — 工作 (gōngzuò): trabalho; 顺利 (shùnlì): suave / sem percalços."
+      },
+      {
+        "word": "收获满满 (shōuhuò mǎnmǎn)",
+        "meaning": "Colheita abundante — 收获 (shōuhuò): colheita / aprendizados; 满满 (mǎnmǎn): repleto / cheio."
+      }
+    ],
+    "pronuncia": "Em 祝你 (Zhù nǐ), enrole a língua em \"djù\" caindo e diga \"nǐ\". Em 在这里 (zài zhèlǐ), faça \"dzài\" caindo, enrole a língua em \"djè\" caindo e suba no \"lǐ\". Para 过得愉快 (guò de yúkuài), faça \"guò dê\", suba a voz em \"yú\" e caia em \"kuài\". Em 工作顺利 (gōngzuò shùnlì), fale \"gōng\" plano, \"dzuò\" caindo, e enrole a língua para \"chùn-lì\" caindo nos dois. Feche com 收获满满 (shōuhuò mǎnmǎn) dizendo \"chōu\" plano enrolando a língua, \"rruò\" caindo e \"mǎn-mǎn\" descendo e subindo.\nLeia: Djù nǐ dzài djè-lǐ guò dê yú-kuài, gōng-dzuò chùn-lì, chōu-rruò mǎn-mǎn."
+  },
+  "926": {
+    "explanation": "O agradecimento pela paciência começa com 非常感谢你 (Fēicháng gǎnxiè nǐ). O período de tempo é demarcado por 在此期间 (zàicǐ qījiān), que significa \"durante este período de tempo\". A atitude de paciência da pessoa é finalizada com 对我的耐心包容 (duì wǒ de nàixīn bāoróng), que se traduz por \"para comigo ter tido paciência e compreensão\".",
+    "breakdown": [
+      {
+        "word": "非常感谢你 (Fēicháng gǎnxiè nǐ)",
+        "meaning": "Muito obrigado a você."
+      },
+      {
+        "word": "在此期间 (zàicǐ qījiān)",
+        "meaning": "Neste período / Durante este tempo — 在此 (zàicǐ): nisto / neste; 期间 (qījiān): período / tempo."
+      },
+      {
+        "word": "对我的 (duì wǒ de)",
+        "meaning": "Para comigo — 对 (duì): para / em relação a; 我 (wǒ): eu; 的 (de): de."
+      },
+      {
+        "word": "耐心包容 (nàixīn bāoróng)",
+        "meaning": "Paciência e tolerância — 耐心 (nàixīn): paciência; 包容 (bāoróng): tolerância / compreensão."
+      }
+    ],
+    "pronuncia": "Em 非常感谢你 (Fēicháng gǎnxiè nǐ), diga \"fēi-cháng gǎn-chiè nǐ\". Em 在此期间 (zàicǐ qījiān), faça \"dzài\" caindo, \"tsǐ\" subindo, \"tchī\" alto e plano e \"diān\" alto e plano. Para 对我的 (duì wǒ de), fale \"duì uǒ dê\". Feche com 耐心包容 (nàixīn bāoróng) fazendo \"nài\" caindo, \"chīn\" alto e plano, \"bāo\" alto e plano e subindo a voz no \"róng\".\nLeia: Fēi-cháng gǎn-chiè nǐ dzài-tsǐ tchī-diān duì uǒ dê nài-chīn bāo-róng."
+  },
+  "927": {
+    "explanation": "A ação de estar no processo de fazer algo é dita por 我正准备 (Wǒ zhèng zhǔnbèi), traduzida como \"eu estava justamente me preparando para\". O objetivo era 给你可以打电话 (gěi nǐ dǎ diànhuà), que é \"fazer uma ligação para você\". A interrupção oportuna pela mensagem é descrita no final por 就看到你的消息了 (jiù kàndào nǐ de xiāoxi le), que quer dizer \"quando então vi a sua mensagem\".",
+    "breakdown": [
+      {
+        "word": "我正准备 (Wǒ zhèng zhǔnbèi)",
+        "meaning": "Eu estava prestes a / Justamente me preparando — 我 (wǒ): eu; 正 (zhèng): justamente / agora; 准备 (zhǔnbèi): preparar."
+      },
+      {
+        "word": "给你 (gěi nǐ)",
+        "meaning": "Para você — 给 (gěi): dar / para; 你 (nǐ): você."
+      },
+      {
+        "word": "打电话 (dǎ diànhuà)",
+        "meaning": "Fazer ligação — 打 (dǎ): fazer / disparar; 电话 (diànhuà): telefone."
+      },
+      {
+        "word": "就看到 (jiù kàndào)",
+        "meaning": "Aí vi / Logo avistei — 就 (jiù): aí / logo; 看到 (kàndào): ver / avistar."
+      },
+      {
+        "word": "你的消息了 (nǐ de xiāoxi le)",
+        "meaning": "A sua mensagem — 你的 (nǐ de): seu; 消息 (xiāoxi): mensagem / notícia; 了 (le): marca de ocorrência."
+      }
+    ],
+    "pronuncia": "Em 我正准备 (Wǒ zhèng zhǔnbèi), diga \"uǒ\", enrole a língua no \"djèng\" caindo, enrole em \"djǔn\" subindo e caia em \"bèi\". Em 给你 (gěi nǐ), suba no \"gěi\" e desça-suba no \"nǐ\". Para 打电话 (dǎ diànhuà), faça \"dǎ\" subindo, \"diàn\" caindo e \"rruá\" caindo. Em 就看到 (jiù kàndào), fale \"djiôu kàn-dào\" caindo nos três. Feche com 你的消息了 (nǐ de xiāoxi le) dizendo \"nǐ dê\", \"chiāo-chī\" alto e o \"lê\" bem apagado.\nLeia: Uǒ djèng djǔn-bèi gěi nǐ dǎ diàn-rruá, djiôu kàn-dào nǐ dê chiāo-chī lê."
+  },
+  "928": {
+    "explanation": "A alegria por abrir o jogo começa com 我很高兴 (Wǒ hěn gāoxìng), que traduz \"estou muito feliz\". A oportunidade criada é expressa por 我们有机会 (wǒmen yǒu jīhuì), que se traduz por \"nós termos a oportunidade de\". A ação de conversar abertamente e esclarecer tudo é trazida por 把话说开 (bǎ huà shuōkāi), que ao pé da letra significa \"pegar a conversa e abrir inteiramente\".",
+    "breakdown": [
+      {
+        "word": "我很高兴 (Wǒ hěn gāoxìng)",
+        "meaning": "Eu estou muito feliz — 我 (wǒ): eu; 很高兴 (hěn gāoxìng): muito feliz."
+      },
+      {
+        "word": "我们有机会 (wǒmen yǒu jīhuì)",
+        "meaning": "Nós termos a oportunidade — 我们 (wǒmen): nós; 有 (yǒu): ter; 机会 (jīhuì): oportunidade."
+      },
+      {
+        "word": "把话说开 (bǎ huà shuōkāi)",
+        "meaning": "Esclarecer tudo / Falar abertamente — 把 (bǎ): partícula de objeto; 话 (huà): fala / palavras; 说开 (shuōkāi): falar até abrir / esclarecer."
+      }
+    ],
+    "pronuncia": "Em 我很高兴 (Wǒ hěn gāoxìng), fale \"uǒ rěn gāo-chìng\". Em 我们有机会 (wǒmen yǒu jīhuì), fale \"uǒ-mên\", \"yǒu\" descendo-subindo, \"djī\" alto e plano e \"rùèi\" caindo. Feche com 把话说开 (bǎ huà shuōkāi) fazendo \"bǎ\" subindo, \"rruà\" caindo seco, enrole a língua para mandar \"chōu\" alto e plano e termine com \"kāi\" alto e plano.\nLeia: Uǒ rěn gāo-chìng uǒ-mên yǒu djī-rùèi bǎ rruà chōu-kāi."
+  },
+  "929": {
+    "explanation": "A oferta de ajuda abre com a condição 如果还有 (Rúguǒ hái yǒu), que traduz \"se ainda houver\". O tipo de necessidade é descrito por 其他需要协助的地方 (qítā xūyào xiézhù de dìfang), que ao pé da letra é \"outros pontos que precisem de assistência\". O pedido para ser informado é encerrado com 请随时告诉我 (qǐng suíshí gàosu wǒ), significando \"por favor me avise a qualquer momento\".",
+    "breakdown": [
+      {
+        "word": "如果还有 (Rúguǒ hái yǒu)",
+        "meaning": "Se ainda houver — 如果 (rúguǒ): se; 还有 (hái yǒu): ainda ter."
+      },
+      {
+        "word": "其他 (qítā)",
+        "meaning": "Outros."
+      },
+      {
+        "word": "需要协助的地方 (xūyào xiézhù de dìfang)",
+        "meaning": "Pontos que precisam de assistência — 需要 (xūyào): precisar; 协助 (xiézhù): assistência / ajuda; 的 (de): conector; 地方 (dìfang): lugar / ponto."
+      },
+      {
+        "word": "请随时 (qǐng suíshí)",
+        "meaning": "Por favor a qualquer momento — 请 (qǐng): por favor; 随时 (suíshí): a qualquer momento."
+      },
+      {
+        "word": "告诉我 (gàosu wǒ)",
+        "meaning": "Avisar-me / Dizer-me — 告诉 (gàosu): contar / avisar; 我 (wǒ): eu / mim."
+      }
+    ],
+    "pronuncia": "Em 如果还有 (Rúguǒ hái yǒu), suba em \"rú\", suba no \"guǒ\", suba no \"rái\" e desça-suba no \"yǒu\". Em 其他 (qítā), faça \"tchí-tā\". Para 需要协助的地方 (xūyào xiézhù de dìfang), diga \"chü-yào\" com biquinho, \"chié-djù\" caindo nos dois, \"dê\" suave e \"dì-fāng\". Em 请随时 (qǐng suíshí), diga \"tchǐng\" descendo e subindo, e suba no \"suí-chí\" enrolando a língua no final. Feche com 告诉我 (gàosu wǒ) fazendo \"gào-sū uǒ\".\nLeia: Rú-guǒ rái yǒu tchí-tā chü-yào chié-djù dê dì-fāng, tchǐng suí-chí gào-sū uǒ."
+  },
+  "930": {
+    "explanation": "A despedida informal para um compromisso marcado começa com 那 (Nà), que quer dizer \"então\". A indicação do grupo vem em 咱们 (zánmen), equivalente a \"nós / a gente\". A marcação do dia e local é feita por 周四会上 (zhōusì huì shàng), que traduz \"na reunião de quinta-feira\". A frase encerra com 见 (jiàn), o verbo \"ver/encontrar\", resultando em \"então a gente se vê na reunião de quinta!\".",
+    "breakdown": [
+      {
+        "word": "那 (Nà)",
+        "meaning": "Então / Sendo assim."
+      },
+      {
+        "word": "咱们 (zánmen)",
+        "meaning": "Nós (incluindo o ouvinte) / A gente — 咱 (zán): nós; 们 (men): plural."
+      },
+      {
+        "word": "周四 (zhōusì)",
+        "meaning": "Quinta-feira — 周 (zhōu): semana; 四 (sì): quatro (quarto dia da semana)."
+      },
+      {
+        "word": "会上 (huì shàng)",
+        "meaning": "Na reunião — 会 (huì): reunião / conferência; 上 (shàng): em / acima."
+      },
+      {
+        "word": "见 (jiàn)",
+        "meaning": "Ver-se / Encontrar-se."
+      }
+    ],
+    "pronuncia": "Em 那 (Nà), fale \"nà\" caindo seco. Em 咱们 (zánmen), suba a voz no \"dzán\" e solte o \"mên\" suave. Para 周四 (zhōusì), enrole a língua para fazer \"djōu\" alto e plano e diga \"sì\" caindo seco. Em 会上 (huì shàng), faça \"rùèi\" caindo e enrole a língua para cair no \"châng\". Feche com 见 (jiàn) dizendo \"dièn\" caindo seco e bem firme.\nLeia: Nà dzán-mên djōu-sì rùèi châng dièn!"
+  }
+}

@@ -332,7 +332,6 @@ export default function TelaEstudo({
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
 
-  const [audioLento, setAudioLento] = useState(false);
   const [modalReporteAberto, setModalReporteAberto] = useState(false);
   const [opcoesSelecionadas, setOpcoesSelecionadas] = useState([]);
   const [outroTexto, setOutroTexto] = useState("");
@@ -509,10 +508,6 @@ export default function TelaEstudo({
       jogarDominiumRef.current();
     }
   }, [frase, idiomaEstudo, idiomaOrigem, postergarParaFimDaTask, rotacionarBandeja, resetarTentativasVoz, setResultadoFeedback, setModoExercicio, exercicioNivel, frasesMaestria, setFrasesMaestria, nivelAtivo, topicoAtivo]);
-
-  useEffect(() => {
-    setAudioLento(false);
-  }, [indice, frase?.id, exercicioNivel]);
 
   const jogarDominiumRef = useRef(jogarDominiumInteligente);
   useEffect(() => {
@@ -776,14 +771,8 @@ export default function TelaEstudo({
       id: frase?.id,
       texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo
     };
-    if (!audioLento) {
-      falar(alvo, false);
-      setAudioLento(true);
-    } else {
-      falar(alvo, true);
-      setAudioLento(false);
-    }
-  }, [audioLento, frase, idiomaEstudo, textoEstudo, falar]);
+    falar(alvo, false);
+  }, [frase, idiomaEstudo, textoEstudo, falar]);
 
   const handlePraticar = useCallback(() => {
     if (modoExercicio) return;
@@ -1255,7 +1244,7 @@ export default function TelaEstudo({
                   <button onClick={() => explicarFraseIA(frase?.id)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>{t?.askAi || "Explicação"}</button>
 
                   <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                    {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                    {t?.normal || "Ouvir"}
                   </button>
 
                   {userRole === 'aluno' ? (
@@ -1294,11 +1283,11 @@ export default function TelaEstudo({
                         {t?.dinglab || "Dìnglab"}
                       </button>
 
-                      {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
+                      {/* 2. Botão Central: Ouvir (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
                       {!ehDinglabAtivo && (
                         temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
                           <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                            {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                            {t?.normal || "Ouvir"}
                           </button>
                         ) : (
                           <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
@@ -1352,10 +1341,10 @@ export default function TelaEstudo({
                         {t?.dinglab || "Dìnglab"}
                       </button>
 
-                      {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
+                      {/* 2. Botão Central: Ouvir se permitido, ou vazio e desativado */}
                       {temAudioExercicio ? (
                         <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                          {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                          {t?.normal || "Ouvir"}
                         </button>
                       ) : (
                         <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>

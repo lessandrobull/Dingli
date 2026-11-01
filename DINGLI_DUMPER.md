@@ -4,6 +4,7 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ## 1. ÁRVORE DE DIRETÓRIOS
 ./.gitignore
 ./backups/historico_revisoes.md
+./DINGLI_EXPLICACOES.md
 ./DINGLI_MASTER.md
 ./eslint.config.js
 ./ffmpeg.exe
@@ -17,6 +18,18 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./scripts/dingli.py
 ./scripts/extrair.mjs
 ./scripts/gerarExplicacoes.mjs
+./scripts/quarentena_legados/audioPronuncias.json
+./scripts/quarentena_legados/gerar_audios_en.py
+./scripts/quarentena_legados/gerar_audios_es.py
+./scripts/quarentena_legados/gerar_audios_fr.py
+./scripts/quarentena_legados/gerar_audios_ge.py
+./scripts/quarentena_legados/gerar_audios_it.py
+./scripts/quarentena_legados/gerar_audios_pt.py
+./scripts/quarentena_legados/gerar_audios_zh.py
+./scripts/quarentena_legados/gerarExplicacoes - Copy.mjs
+./scripts/quarentena_legados/regerar_pt_francisca.py
+./scripts/quarentena_legados/resolver_palavras_it.py
+./scripts/quarentena_legados/sanitizacao.py
 ./src/App.css
 ./src/App.jsx
 ./src/Components/Adm.jsx
@@ -708,8 +721,17 @@ function App() {
 
   const [aiLoading, setAiLoading] = useState(false);
   const [aiExplanation, setAiExplanation] = useState(null);
-  const [telaRetornoExplicacao, setTelaRetornoExplicacao] = useState('estudo');
-  const [fraseExplicacao, setFraseExplicacao] = useState(null);
+  const [telaRetornoExplicacao, setTelaRetornoExplicacao] = useState(() => {
+    return sessionStorage.getItem('app_explicacao_retorno') || 'estudo';
+  });
+  const [fraseExplicacao, setFraseExplicacao] = useState(() => {
+    try {
+      const salvo = sessionStorage.getItem('app_explicacao_frase');
+      return salvo ? JSON.parse(salvo) : null;
+    } catch (e) {
+      return null;
+    }
+  });
   const [indiceDinglab, setIndiceDinglab] = useState(0);
 
   const explicarFraseIA = useCallback(async (idFornecido, fraseCustom = null) => {
@@ -717,16 +739,26 @@ function App() {
     const idAlvo = idFornecido || fObj?.id;
     if (!idAlvo) return;
 
+    const retornoAlvo = telaRef.current === 'dinglab' ? 'dinglab' : 'estudo';
     setFraseExplicacao(fObj || null);
-    setTelaRetornoExplicacao(telaRef.current === 'dinglab' ? 'dinglab' : 'estudo');
+    setTelaRetornoExplicacao(retornoAlvo);
 
-    const nivelAlvo = fObj?.nivel || nivelAtivo || "A1";
-    const topicoAlvo = fObj?.topico || topicoAtivo || "";
-    const chaveTopico = `${nivelAlvo}_${topicoAlvo}`;
+    if (fObj) {
+      try {
+        sessionStorage.setItem('app_explicacao_frase', JSON.stringify(fObj));
+        sessionStorage.setItem('app_explicacao_id', String(idAlvo));
+        sessionStorage.setItem('app_explicacao_retorno', retornoAlvo);
+      } catch (e) {}
+    }
+
+    const colTopicOrigem = `topic_${idiomaOrigem}`;
+    const nivelAlvo = fObj?.nivel || fObj?.level || nivelAtivo || "A1";
+    const topicoAlvo = fObj?.topico || fObj?.[colTopicOrigem] || topicoAtivo || "";
     const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+    const chaveCache = `${parIdiomas}_${nivelAlvo}_${topicoAlvo}`;
 
-    if (cacheExplicacoesTopico.current[chaveTopico]) {
-      const dados = cacheExplicacoesTopico.current[chaveTopico][String(idAlvo)];
+    if (cacheExplicacoesTopico.current[chaveCache]) {
+      const dados = cacheExplicacoesTopico.current[chaveCache][String(idAlvo)];
       setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
       mudarTela('explicacaoIA');
       return;
@@ -734,12 +766,24 @@ function App() {
 
     setAiLoading(true);
     try {
-      const nomeArquivo = encodeURIComponent(`${chaveTopico}.json`);
-      const resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+      const nomeArquivo = encodeURIComponent(`${nivelAlvo}_${topicoAlvo}.json`);
+      let resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+      if (!resposta.ok) {
+        resposta = await fetch(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`);
+      }
 
       if (resposta.ok) {
-        const mapa = await resposta.json();
-        cacheExplicacoesTopico.current[chaveTopico] = mapa;
+        let mapa = await resposta.json();
+        if (Array.isArray(mapa)) {
+          mapa = Object.assign({}, ...mapa);
+        } else if (mapa && typeof mapa === 'object' && !mapa[String(idAlvo)]) {
+          const chaves = Object.keys(mapa);
+          if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
+            const interno = mapa[chaves[0]];
+            mapa = Array.isArray(interno) ? Object.assign({}, ...interno) : interno;
+          }
+        }
+        cacheExplicacoesTopico.current[chaveCache] = mapa;
         const dados = mapa[String(idAlvo)];
         setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
       } else {
@@ -753,6 +797,20 @@ function App() {
       mudarTela('explicacaoIA');
     }
   }, [nivelAtivo, topicoAtivo, idiomaEstudo, idiomaOrigem, mudarTela, fraseAtivaGlobal, frasesFiltradas, indice]);
+
+  useEffect(() => {
+    if (tela === 'explicacaoIA' && !aiExplanation && !aiLoading) {
+      const idSalvo = sessionStorage.getItem('app_explicacao_id');
+      let fSalva = null;
+      try {
+        const s = sessionStorage.getItem('app_explicacao_frase');
+        if (s) fSalva = JSON.parse(s);
+      } catch (e) {}
+      if (idSalvo) {
+        explicarFraseIA(idSalvo, fSalva);
+      }
+    }
+  }, [tela, aiExplanation, aiLoading, explicarFraseIA]);
 
   const isFirstRun = useRef(true);
   useEffect(() => {
@@ -929,8 +987,6 @@ function App() {
     if (typeof resetarTimerTask === "function") resetarTimerTask();
     if (typeof resetarTentativasVoz === "function") resetarTentativasVoz();
     setFraseAtivaGlobal(null);
-    setTopicoAtivo("");
-    sessionStorage.removeItem("app_topico");
     setModoExercicio(false);
     setSessaoIniciada(false);
     setExercicioNivel(0);
@@ -1113,9 +1169,11 @@ function App() {
     };
     carregarFraseInspiracional();
     const handlePopState = (event) => {
-      limparEstadoExercicio();
-      if (event.state && event.state.tela) setTela(event.state.tela);
-      else setTela('perfil');
+      const telaDestino = event.state?.tela || 'perfil';
+      if (telaDestino !== 'estudo' && telaDestino !== 'explicacaoIA') {
+        limparEstadoExercicio();
+      }
+      setTela(telaDestino);
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -4503,14 +4561,14 @@ export function ExplicacaoIA({
                 flex: 1,
                 border: '1px solid #747474',
                 borderRadius: '22px',
-                padding: '16px 14px',
+                padding: '16px 24px',
                 backgroundColor: COR_BASE_CARDS,
                 boxSizing: 'border-box',
                 overflowY: 'auto',
                 WebkitOverflowScrolling: 'touch'
               }}>
                 {/* Frase L2 + Hanzi (se mandarim) */}
-                <div style={{ textAlign: 'center', marginBottom: '6px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '10px' }}>
                   <h2 style={{ color: temas[idiomaEstudo].bg, fontWeight: '800', fontSize: '1.25rem', margin: 0, lineHeight: '1.25' }}>
                     {frase?.[idiomaEstudo]}
                   </h2>
@@ -4522,9 +4580,14 @@ export function ExplicacaoIA({
                 </div>
 
                 {/* Tradução L1 */}
-                <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.3', margin: '4px 0 12px 0', textAlign: 'center', fontStyle: 'italic' }}>
+                <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.3', margin: '4px 0 18px 0', textAlign: 'center', fontStyle: 'italic' }}>
                   {idiomaOrigem === 'pi' ? (frase?.zh || frasesFiltradas[indice]?.zh) : (frase?.[idiomaOrigem] || frase?.traducao || frasesFiltradas[indice]?.[idiomaOrigem])}
                 </p>
+
+                {/* Subtítulo: Entenda a frase */}
+                <div style={{ fontSize: '0.85rem', fontWeight: '800', color: temas[idiomaEstudo].bg, marginBottom: '4px', textAlign: 'left' }}>
+                  {t?.understandSentence || "Entenda a frase"}
+                </div>
 
                 {/* Explicação gramatical e didática estrutural */}
                 <p style={{ color: '#334155', fontSize: '0.92rem', lineHeight: '1.45', margin: '0 0 12px 0', textAlign: 'justify', width: '100%' }}>
@@ -4534,11 +4597,28 @@ export function ExplicacaoIA({
                 {/* Breakdown termo a termo completo */}
                 {aiExplanation.breakdown && aiExplanation.breakdown.length > 0 && (
                   <div style={{ borderTop: '1px solid #cbd5e1', paddingTop: '10px', display: 'flex', flexDirection: 'column', gap: '6px', width: '100%' }}>
+                    {/* Subtítulo: Palavra por palavra */}
+                    <div style={{ fontSize: '0.85rem', fontWeight: '800', color: temas[idiomaEstudo].bg, marginBottom: '2px', textAlign: 'left' }}>
+                      {t?.wordByWord || "Palavra por palavra"}
+                    </div>
                     {aiExplanation.breakdown.map((item, i) => (
-                      <div key={i} style={{ fontSize: '0.88rem', color: '#475569', textAlign: 'left', lineHeight: '1.35', padding: '2px 0' }}>
+                      <div key={i} style={{ fontSize: '0.88rem', color: '#475569', textAlign: 'left', lineHeight: '1.27', padding: '0px 0' }}>
                         <b style={{ color: temas[idiomaEstudo].bg }}>{item.word}</b>: <span>{item.meaning}</span>
                       </div>
                     ))}
+                  </div>
+                )}
+
+                {/* Dica de Pronúncia */}
+                {aiExplanation.pronuncia && (
+                  <div style={{ borderTop: '1px solid #cbd5e1', paddingTop: '10px', marginTop: '10px', width: '100%' }}>
+                    {/* Subtítulo: Dica de pronúncia */}
+                    <div style={{ fontSize: '0.85rem', fontWeight: '800', color: temas[idiomaEstudo].bg, marginBottom: '4px', textAlign: 'left' }}>
+                      {t?.pronunciationTip || "Dica de pronúncia"}
+                    </div>
+                    <p style={{ color: '#334155', fontSize: '0.9rem', lineHeight: '1.45', margin: 0, textAlign: 'justify' }}>
+                      {aiExplanation.pronuncia}
+                    </p>
                   </div>
                 )}
               </div>
@@ -6358,7 +6438,7 @@ const R2_AUDIO_BASE = "https://pub-b24d092a7bf34fd9bf22befba89de35f.r2.dev";
 const CACHE_NAME = "dingli-audios-v1";
 export const VOZES_EN = ["v1", "v2", "v3", "v4", "v5", "v6"];
 export const VOZES_ES = ["v1", "v2", "v3", "v4", "v5", "v6"];
-export const VOZES_FR = ["v1", "v2", "v3", "v4"];
+export const VOZES_FR = ["v1", "v2", "v3", "v4", "v5", "v6"];
 export const VOZES_IT = ["v1", "v2", "v3", "v4"];
 export const VOZES_GE = ["v1", "v2", "v3", "v4"];
 export const VOZES_PT = ["v1", "v2", "v3", "v4"];

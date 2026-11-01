@@ -43,14 +43,14 @@ export function ExplicacaoIA({
                 flex: 1,
                 border: '1px solid #747474',
                 borderRadius: '22px',
-                padding: '16px 14px',
+                padding: '16px 24px',
                 backgroundColor: COR_BASE_CARDS,
                 boxSizing: 'border-box',
                 overflowY: 'auto',
                 WebkitOverflowScrolling: 'touch'
               }}>
                 {/* Frase L2 + Hanzi (se mandarim) */}
-                <div style={{ textAlign: 'center', marginBottom: '6px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '10px' }}>
                   <h2 style={{ color: temas[idiomaEstudo].bg, fontWeight: '800', fontSize: '1.25rem', margin: 0, lineHeight: '1.25' }}>
                     {frase?.[idiomaEstudo]}
                   </h2>
@@ -62,9 +62,14 @@ export function ExplicacaoIA({
                 </div>
 
                 {/* Tradução L1 */}
-                <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.3', margin: '4px 0 12px 0', textAlign: 'center', fontStyle: 'italic' }}>
+                <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.3', margin: '4px 0 18px 0', textAlign: 'center', fontStyle: 'italic' }}>
                   {idiomaOrigem === 'pi' ? (frase?.zh || frasesFiltradas[indice]?.zh) : (frase?.[idiomaOrigem] || frase?.traducao || frasesFiltradas[indice]?.[idiomaOrigem])}
                 </p>
+
+                {/* Subtítulo: Entenda a frase */}
+                <div style={{ fontSize: '0.85rem', fontWeight: '800', color: temas[idiomaEstudo].bg, marginBottom: '4px', textAlign: 'left' }}>
+                  {t?.understandSentence || "Entenda a frase"}
+                </div>
 
                 {/* Explicação gramatical e didática estrutural */}
                 <p style={{ color: '#334155', fontSize: '0.92rem', lineHeight: '1.45', margin: '0 0 12px 0', textAlign: 'justify', width: '100%' }}>
@@ -74,11 +79,28 @@ export function ExplicacaoIA({
                 {/* Breakdown termo a termo completo */}
                 {aiExplanation.breakdown && aiExplanation.breakdown.length > 0 && (
                   <div style={{ borderTop: '1px solid #cbd5e1', paddingTop: '10px', display: 'flex', flexDirection: 'column', gap: '6px', width: '100%' }}>
+                    {/* Subtítulo: Palavra por palavra */}
+                    <div style={{ fontSize: '0.85rem', fontWeight: '800', color: temas[idiomaEstudo].bg, marginBottom: '2px', textAlign: 'left' }}>
+                      {t?.wordByWord || "Palavra por palavra"}
+                    </div>
                     {aiExplanation.breakdown.map((item, i) => (
-                      <div key={i} style={{ fontSize: '0.88rem', color: '#475569', textAlign: 'left', lineHeight: '1.35', padding: '2px 0' }}>
+                      <div key={i} style={{ fontSize: '0.88rem', color: '#475569', textAlign: 'left', lineHeight: '1.27', padding: '0px 0' }}>
                         <b style={{ color: temas[idiomaEstudo].bg }}>{item.word}</b>: <span>{item.meaning}</span>
                       </div>
                     ))}
+                  </div>
+                )}
+
+                {/* Dica de Pronúncia */}
+                {aiExplanation.pronuncia && (
+                  <div style={{ borderTop: '1px solid #cbd5e1', paddingTop: '10px', marginTop: '10px', width: '100%' }}>
+                    {/* Subtítulo: Dica de pronúncia */}
+                    <div style={{ fontSize: '0.85rem', fontWeight: '800', color: temas[idiomaEstudo].bg, marginBottom: '4px', textAlign: 'left' }}>
+                      {t?.pronunciationTip || "Dica de pronúncia"}
+                    </div>
+                    <p style={{ color: '#334155', fontSize: '0.9rem', lineHeight: '1.45', margin: 0, textAlign: 'justify' }}>
+                      {aiExplanation.pronuncia}
+                    </p>
                   </div>
                 )}
               </div>

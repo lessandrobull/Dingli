@@ -13,6 +13,10 @@ O **DINGLI** é um Progressive Web App (PWA) de aprendizado acelerado de idiomas
   - **Pontuação Final Soldada:** A pontuação imediata pós-lacuna (`configLacuna.pontuacao`: `.`, `!`, `?`, etc.) é renderizada dentro de um `<span>` com `display: 'inline-flex'` e `whiteSpace: 'nowrap'` junto ao `wrapperInputRelativo`, impedindo que o ponto quebre sozinho para a linha inferior.
   - **Camada de Correção (Verde/Vermelho):** O feedback compartilha a célula `gridArea: '1/1'` com `whiteSpace: 'pre-wrap'` e renderiza cada palavra com `whiteSpace: 'pre'`, preservando os espaços originais entre palavras nas mesmas quebras de linha da lacuna.
   - **Regra de Maiúsculas e Minúsculas (`ehInicioOracao`):** Avalia se o prefixo está vazio ou termina em `.`, `!` ou `?`. No 1º caractere digitado, força maiúscula em início de oração e força minúscula em lacunas de meio de oração, reposicionando o cursor ao final via `Selection/Range`.
+- **Arquitetura de Navegação, Histórico e Persistência de Estado (`App.jsx`):**
+  - **Histórico e Botão Voltar do Navegador (`handlePopState`):** O evento nativo `popstate` é tratado para preservar o contexto quando a tela de destino for `estudo` ou `explicacaoIA`. A rotina `limparEstadoExercicio` limpa estritamente timers de voz e instâncias do Web Speech API, preservando o `topicoAtivo` e o `sessionStorage.getItem('app_topico')` para evitar que o título do tópico seja apagado do card ao retornar do navegador.
+  - **Persistência da Tela de Explicação (F5):** Ao invocar `explicarFraseIA`, o ID da frase, o objeto completo da sentença e a tela de retorno (`estudo` ou `dinglab`) são salvos em `sessionStorage` (`app_explicacao_id`, `app_explicacao_frase`, `app_explicacao_retorno`). No recarregamento da página (F5), um efeito dedicado reidrata os dados e mantém o usuário na tela `explicacaoIA`.
+  - **Resiliência no Carregamento de Explicações:** A consulta aos arquivos JSON em `/explicacoes/{par}/` busca a rota com e sem codificação de caracteres (`encodeURIComponent`), infere o tópico da própria sentença (`topic_{origem}`) se `topicoAtivo` estiver vazio e normaliza em tempo de execução respostas em lista (`[{ "id": ... }]`), achatando-as para objetos planos `{ "id": ... }`.
 
 ### Mecânica Operacional do Dominium (Task, Bandeja e Esteira)
 - **Definição de Task (Bandeja):** Uma Task é um ciclo ativo de estudos operado por uma bandeja com capacidade fixa de até 5 frases simultâneas (`LIMITE_BANDEJA = 5`). As frases em jogo rodam em rotação contínua até que atinjam seus respectivos portos seguros de descanso macro (R5 $\rightarrow$ R6 repousa 1 dia; R9 $\rightarrow$ R10 repousa 2 dias; R14 $\rightarrow$ R15 repousa 4 dias; R18 $\rightarrow$ R19 repousa 8 dias; R23 $\rightarrow$ R24 repousa 16 dias; R27 $\rightarrow$ R24 repousa 32 dias). Apenas no esgotamento de cartas inéditas do nível sem cartas prontas na lista **Próximas**, a bandeja fecha com menos de 5 cartas.
@@ -66,19 +70,19 @@ Esta seção documenta as dependências que residem fora do repositório local e
 ### C. Síntese Neural de Voz (Edge-TTS), Pipeline FFmpeg e Motor de Reprodução
 - Síntese automatizada de frases e termos isolados via Microsoft Edge-TTS cobrindo as vozes oficiais dos 7 idiomas, orquestrada exclusivamente pelo script unificado `scripts/dingli.py` com envio direto ao Cloudflare R2.
 - Tratamento de áudio anti-corte (prevenção de DAC sleep) nos arquivos de vocabulário com pré-delay de 300ms (`adelay=300|300`) e pós-padding de 100ms (`apad=pad_dur=0.1`) a 128 kbps via FFmpeg para evitar corte de pronúncia em fones Bluetooth por economia de energia.
-- Sorteio sem repetição da fila de vozes em tempo de execução (`useSpeech.js`), troca forçada para uma voz diferente da anterior na reprodução lenta pós-erro e velocidades calibradas por idioma (`VELOCIDADES_AUDIO`).
+- Sorteio sem repetição da fila de vozes em tempo de execução (`useSpeech.js`), troca forçada para uma voz diferente da anterior na reprodução pós-erro em velocidade normal, velocidade lenta restrita exclusivamente ao Dìnglab (`Dinglab.jsx`) e velocidades calibradas por idioma (`VELOCIDADES_AUDIO`).
 
 ### D. Web Speech API, MediaRecorder e Explicações Estáticas Locais
 - **Web Speech API:** Reconhecimento de voz contínuo executado nativamente no navegador (`continuous = true`, `interimResults = true`) com limiar adaptativo (`>= 75%` geral e `>= 50%` para frases de até 2 palavras), confirmação rápida de acerto em `750ms` e tolerância de silêncio (VAD) de `1,3s`, além de normalização fonética e conversão de numerais por extenso (`NUMEROS_EXTENSO` e `normalizarMandarimNumeros`).
 - **MediaRecorder API:** Gravação local em tempo real da voz do aluno (`audio/webm`) no Modo Espelho do Dìnglab para reprodução comparativa imediata ("Ouvir gravação").
-- **Base Estática de Explicações (`/public/explicacoes/`):** Explicações gramaticais e *breakdowns* de vocabulário pré-gerados offline em arquivos JSON estáticos (`/public/explicacoes/{estudo}_{origem}/{nivel}_{topico}.json`) via scripts utilitários (`scripts/extrair.mjs` e `scripts/gerarExplicacoes.mjs`), com cache em memória (`cacheExplicacoesTopico`), eliminando latência e custos de API de IA durante o estudo.
+- **Base Estática de Explicações (`/public/explicacoes/`):** Explicações pedagógicas estruturadas e *breakdowns* pré-gerados offline em arquivos JSON estáticos (`/public/explicacoes/{estudo}_{origem}/{nivel}_{topico}.json`) via esteira automatizada em nuvem no Google Apps Script (`Motor.gs`, `MatrizPares.gs`, documentados em `DINGLI_EXPLICACOES.md`), consumidos com cache em memória (`cacheExplicacoesTopico`) e blindagem de formato contra arrays aninhados, eliminando latência e custos de API em tempo real durante o estudo.
 
 ---
 
 ## 4. Protocolo de Inicialização para IAs (Geração dos Dumpers)
 **Ação Obrigatória:** Ao iniciar uma nova conversa técnica, a IA deve orientar o usuário a executar o comando unificado abaixo no Git Bash. Este script varre a estrutura do projeto e gera simultaneamente dois snapshots complementares:
 1. `DINGLI_DUMPER.md`: Contém a árvore geral e o código integral da aplicação frontend/PWA (`src/` e configurações vitais de build).
-2. `DINGLI_DUMPER_SCRIPTS.md`: Contém as ferramentas internas (`public/auditor.html`), o livro-razão de revisões (`backups/historico_revisoes.md`) e os scripts de automação (`scripts/dingli.py`, `scripts/extrair.mjs`, `scripts/gerarExplicacoes.mjs`).
+2. `DINGLI_DUMPER_SCRIPTS.md`: Contém as ferramentas internas (`public/auditor.html`), o livro-razão de revisões (`backups/historico_revisoes.md`), o manual operacional do gerador de explicações (`DINGLI_EXPLICACOES.md`) e os scripts de automação (`scripts/dingli.py`, `scripts/extrair.mjs`, `scripts/gerarExplicacoes.mjs`).
 
 > **Parâmetro de Estabilidade Técnica:** A Seção 2 do Dumper foi calibrada para manter o volume total abaixo de 8.000 linhas (~250 KB), garantindo entrega integral sem cortes em nenhum modelo de IA. Arquivos utilitários de build local, binários, mídias, backups, bases estáticas de explicações e scripts Python de automação permanecem documentados neste Master, não sendo despejados na Seção 2.
 
@@ -131,6 +135,7 @@ find . -type f \
   -not -name "*.env*" \
   -not -name "$OUTPUT_CORE" \
   -not -name "$OUTPUT_SCRIPTS" \
+  -not -name "DINGLI_EXPLICACOES.md" \
   -not -name "auditor.html" \
   -not -name "*.exe" \
   -not -name "*.dll" \
@@ -163,7 +168,7 @@ echo "# 🛠️ DINGLI_DUMPER_SCRIPTS.md" > "$OUTPUT_SCRIPTS"
 echo "Snapshot técnico de scripts de automação, ferramentas de auditoria e governança de dados do Dìnglì." >> "$OUTPUT_SCRIPTS"
 
 echo -e "\n## 1. CÓDIGO FONTE DE SCRIPTS E FERRAMENTAS" >> "$OUTPUT_SCRIPTS"
-find ./scripts ./public/auditor.html ./backups/historico_revisoes.md -type f 2>/dev/null \
+find ./scripts ./public/auditor.html ./backups/historico_revisoes.md ./DINGLI_EXPLICACOES.md -type f 2>/dev/null \
   -not -name "*.pyc" \
   -not -name "__pycache__" | sort | while read -r file; do
   if [ -f "$file" ]; then
@@ -287,3 +292,18 @@ Aplicado quando o texto permanece 100% idêntico e apenas as gravações de áud
 - **Centralização Estrita:** Toda e qualquer rotina de backup, patch, síntese de frases, geração de vocabulário, uploads para Cloudflare R2 e carimbos de versão no Supabase é executada exclusivamente por `scripts/dingli.py`.
 - **Scripts Legados Extintos:** Fica expressamente proibida a criação ou execução dos scripts fragmentados antigos (`sincronizar_frases_completo.py`, `sincronizar_vocabulario.py`, `sincronizar_storage_vocabulario.py`, `sincronizar_vocabulario_completo.py`, `sincronizar_sentences_db.py`, `sincronizar_tudo.py`, `aplicar_revisao_e_backup.py`, etc.).
 - **Saídas Orientadoras no Terminal:** Cada subcomando do `scripts/dingli.py` imprime um relatório visual do que foi realizado e exibe ao final a orientação exata do próximo comando que o usuário e a IA devem executar.
+
+---
+
+## 7. FLUXO OFICIAL DE GERAÇÃO DE EXPLICAÇÕES DIDÁTICAS (GOOGLE APPS SCRIPT)
+
+O ecossistema oficial de produção de explicações didáticas opera de forma 100% autônoma e em nuvem via **Google Apps Script (GAS)**, integrado diretamente à API REST do **Supabase** e com gravação direta no **Google Drive** (`Explicacoes_Prontas`), eliminando a necessidade de prompts manuais no chat e de scripts locais legados.
+
+A documentação operacional completa, proibições de jargões técnicos, regras por arquétipo (ideográfico/tonal vs. alfabético) e o código integral do motor (`Config.gs`, `MatrizPares.gs` e `Motor.gs`) residem no arquivo **`DINGLI_EXPLICACOES.md`** (mantido no `DINGLI_DUMPER_SCRIPTS.md`).
+
+### Diretriz para o Assistente AI:
+Sempre que o usuário solicitar novos pares, ajustes de motor ou auditoria da esteira de explicações:
+1. **Fonte Única da Verdade:** A governança pedagógica e o código-fonte da esteira pertencem estritamente ao documento `DINGLI_EXPLICACOES.md`.
+2. **Cadastro em `MatrizPares.gs`:** A inclusão de novos pares é feita adicionando a chave correspondente (ex: `en_pt`, `fr_pt`) no objeto `MATRIZ_PARES`, seguindo o esqueleto padronizado (`nomeEstudo`, `nomeOrigem`, `instrucaoGeral` e `exemploMestre`) com proibições absolutas de jargões gramaticais/fonéticos e exemplo padrão ouro validado.
+3. **Planilha de Controle (`Controle_Geracao`):** A esteira monitora as tarefas via colunas: `ID_Lote`, `Par`, `Nivel`, `Topico`, `Status` (`Pendente`, `Em Processamento`, `Concluído`, `Erro`), `Inicio` (`DD/MM/AAAA HH:mm:ss`), `Duracao` (`Xm Ys` ou `Xs`) e `Nome_Arquivo_Final`.
+4. **Scripts Locais Descontinuados:** Os arquivos `scripts/gerarExplicacoes.mjs`, `scripts/extrair.mjs` e `prompt_gerar.txt` pertencem ao método manual antigo e foram descontinuados em favor da automação em nuvem via GAS.

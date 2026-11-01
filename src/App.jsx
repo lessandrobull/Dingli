@@ -284,7 +284,7 @@ function App() {
       };
 
       if (falarRef.current) {
-        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, true, finalizarAudioErro);
+        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, false, finalizarAudioErro);
       } else {
         const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 850, 1500);
         setTimeout(finalizarAudioErro, tempoAudioErro);
@@ -415,8 +415,17 @@ function App() {
 
   const [aiLoading, setAiLoading] = useState(false);
   const [aiExplanation, setAiExplanation] = useState(null);
-  const [telaRetornoExplicacao, setTelaRetornoExplicacao] = useState('estudo');
-  const [fraseExplicacao, setFraseExplicacao] = useState(null);
+  const [telaRetornoExplicacao, setTelaRetornoExplicacao] = useState(() => {
+    return sessionStorage.getItem('app_explicacao_retorno') || 'estudo';
+  });
+  const [fraseExplicacao, setFraseExplicacao] = useState(() => {
+    try {
+      const salvo = sessionStorage.getItem('app_explicacao_frase');
+      return salvo ? JSON.parse(salvo) : null;
+    } catch (e) {
+      return null;
+    }
+  });
   const [indiceDinglab, setIndiceDinglab] = useState(0);
 
   const explicarFraseIA = useCallback(async (idFornecido, fraseCustom = null) => {
@@ -424,16 +433,26 @@ function App() {
     const idAlvo = idFornecido || fObj?.id;
     if (!idAlvo) return;
 
+    const retornoAlvo = telaRef.current === 'dinglab' ? 'dinglab' : 'estudo';
     setFraseExplicacao(fObj || null);
-    setTelaRetornoExplicacao(telaRef.current === 'dinglab' ? 'dinglab' : 'estudo');
+    setTelaRetornoExplicacao(retornoAlvo);
 
-    const nivelAlvo = fObj?.nivel || nivelAtivo || "A1";
-    const topicoAlvo = fObj?.topico || topicoAtivo || "";
-    const chaveTopico = `${nivelAlvo}_${topicoAlvo}`;
+    if (fObj) {
+      try {
+        sessionStorage.setItem('app_explicacao_frase', JSON.stringify(fObj));
+        sessionStorage.setItem('app_explicacao_id', String(idAlvo));
+        sessionStorage.setItem('app_explicacao_retorno', retornoAlvo);
+      } catch (e) {}
+    }
+
+    const colTopicOrigem = `topic_${idiomaOrigem}`;
+    const nivelAlvo = fObj?.nivel || fObj?.level || nivelAtivo || "A1";
+    const topicoAlvo = fObj?.topico || fObj?.[colTopicOrigem] || topicoAtivo || "";
     const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+    const chaveCache = `${parIdiomas}_${nivelAlvo}_${topicoAlvo}`;
 
-    if (cacheExplicacoesTopico.current[chaveTopico]) {
-      const dados = cacheExplicacoesTopico.current[chaveTopico][String(idAlvo)];
+    if (cacheExplicacoesTopico.current[chaveCache]) {
+      const dados = cacheExplicacoesTopico.current[chaveCache][String(idAlvo)];
       setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
       mudarTela('explicacaoIA');
       return;
@@ -441,12 +460,24 @@ function App() {
 
     setAiLoading(true);
     try {
-      const nomeArquivo = encodeURIComponent(`${chaveTopico}.json`);
-      const resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+      const nomeArquivo = encodeURIComponent(`${nivelAlvo}_${topicoAlvo}.json`);
+      let resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+      if (!resposta.ok) {
+        resposta = await fetch(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`);
+      }
 
       if (resposta.ok) {
-        const mapa = await resposta.json();
-        cacheExplicacoesTopico.current[chaveTopico] = mapa;
+        let mapa = await resposta.json();
+        if (Array.isArray(mapa)) {
+          mapa = Object.assign({}, ...mapa);
+        } else if (mapa && typeof mapa === 'object' && !mapa[String(idAlvo)]) {
+          const chaves = Object.keys(mapa);
+          if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
+            const interno = mapa[chaves[0]];
+            mapa = Array.isArray(interno) ? Object.assign({}, ...interno) : interno;
+          }
+        }
+        cacheExplicacoesTopico.current[chaveCache] = mapa;
         const dados = mapa[String(idAlvo)];
         setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
       } else {
@@ -460,6 +491,20 @@ function App() {
       mudarTela('explicacaoIA');
     }
   }, [nivelAtivo, topicoAtivo, idiomaEstudo, idiomaOrigem, mudarTela, fraseAtivaGlobal, frasesFiltradas, indice]);
+
+  useEffect(() => {
+    if (tela === 'explicacaoIA' && !aiExplanation && !aiLoading) {
+      const idSalvo = sessionStorage.getItem('app_explicacao_id');
+      let fSalva = null;
+      try {
+        const s = sessionStorage.getItem('app_explicacao_frase');
+        if (s) fSalva = JSON.parse(s);
+      } catch (e) {}
+      if (idSalvo) {
+        explicarFraseIA(idSalvo, fSalva);
+      }
+    }
+  }, [tela, aiExplanation, aiLoading, explicarFraseIA]);
 
   const isFirstRun = useRef(true);
   useEffect(() => {
@@ -636,8 +681,6 @@ function App() {
     if (typeof resetarTimerTask === "function") resetarTimerTask();
     if (typeof resetarTentativasVoz === "function") resetarTentativasVoz();
     setFraseAtivaGlobal(null);
-    setTopicoAtivo("");
-    sessionStorage.removeItem("app_topico");
     setModoExercicio(false);
     setSessaoIniciada(false);
     setExercicioNivel(0);
@@ -820,9 +863,11 @@ function App() {
     };
     carregarFraseInspiracional();
     const handlePopState = (event) => {
-      limparEstadoExercicio();
-      if (event.state && event.state.tela) setTela(event.state.tela);
-      else setTela('perfil');
+      const telaDestino = event.state?.tela || 'perfil';
+      if (telaDestino !== 'estudo' && telaDestino !== 'explicacaoIA') {
+        limparEstadoExercicio();
+      }
+      setTela(telaDestino);
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);

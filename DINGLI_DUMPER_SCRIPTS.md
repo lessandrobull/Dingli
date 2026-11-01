@@ -99,6 +99,472 @@ Snapshot técnico de scripts de automação, ferramentas de auditoria e governan
 
 
 
+### 📄 ARQUIVO: ./DINGLI_EXPLICACOES.md
+# DINGLI_EXPLICACOES.md
+**Documentação Operacional e Arquitetura do Gerador de Explicações Didáticas - Dìnglì**
+
+---
+
+## 1. Visão Geral e Fluxo Operacional
+O ecossistema de geração de explicações pedagógicas do Dìnglì opera de forma 100% autônoma e em nuvem via **Google Apps Script (GAS)** integrado ao **Google Drive**, eliminando necessidade de terminal local, máquina ligada ou intervenção manual durante a produção em lote.
+
+### O Fluxo em 4 Passos
+1. **Alimentação da Fila:** O usuário registra a linha na planilha de controle informando o par (ex: `pi_pt`), nível (ex: `B2`), tópico e o status `Pendente`.
+2. **Disparo Programado:** Em intervalos fixos (ou execução manual), o gatilho automático (*time-driven trigger*) do GAS executa o script na nuvem sem depender de máquina local ligada.
+3. **Processamento Especializado:** O motor lê a tarefa pendente, busca as 30 frases diretamente na tabela `sentences` do Supabase via REST API, carrega as regras e o padrão ouro da `MatrizPares.gs` e aciona a API do Gemini em cascata com retentativas.
+4. **Finalização e Arquivamento:** O script valida a estrutura do JSON (garantindo formato de objeto plano), grava o arquivo final diretamente na pasta de destino no Google Drive e atualiza a planilha de controle para `Concluído` com timestamp e nome do arquivo gerado.
+
+---
+
+## 2. Componentes no Google Apps Script (GAS)
+
+O projeto no GAS é dividido em 3 arquivos com responsabilidades estritamente isoladas:
+
+### A. `Config.gs`
+Centraliza as credenciais de acesso, modelos de IA e identificadores de ambiente:
+- Chave de API do Gemini (`GEMINI_API_KEY`) e lista de modelos em cascata (`GEMINI_MODELS`).
+- Credenciais da REST API do Supabase (`SUPABASE_URL` e `SUPABASE_KEY`).
+- ID da Planilha Google de Controle (`ID_PLANILHA_CONTROLE`).
+- ID da pasta de destino no Google Drive (`ID_PASTA_PRONTAS`).
+
+### B. `MatrizPares.gs`
+Manual isolado de cada um dos 42 pares de idiomas do ecossistema. Nenhum par interfere no outro. Cada entrada contém:
+- Idioma de estudo e idioma de origem.
+- Regras de tom, didática e proibições de jargões técnicos.
+- Diretriz específica de pronúncia adaptada à fonética do idioma de origem.
+- Exemplo mestre completo com o padrão ouro validado de saída (`explanation`, `breakdown`, `pronuncia`).
+
+### C. `Motor.gs`
+O executor universal do pipeline. A lógica permanece fixa e idêntica para qualquer par:
+- Consulta a planilha de controle e puxa a primeira tarefa com status `Pendente`.
+- Consulta a API do Supabase via `UrlFetchApp` e busca as 30 frases do tópico em tempo real.
+- Monta o prompt dinâmico usando a instrução e o padrão ouro cadastrados na `MatrizPares.gs`.
+- Executa a cascata Gemini com retentativa dupla e normaliza a resposta (achatando para objeto direto).
+- Grava o JSON final pronto (`Nivel_Topico.json`) diretamente na pasta configurada no Drive.
+- Atualiza status, timestamps e nome do arquivo na planilha de controle.
+
+---
+
+## 3. Infraestrutura no Google Drive
+
+A estrutura no Drive é simplificada e padronizada da seguinte forma:
+
+```text
+[Pasta Raiz: Dingli_Gerador_Explicacoes]
+├── Explicacoes_Prontas/       # JSONs finais estruturados consumidos pelo app
+└── Controle_Geracao           # Planilha Google de auditoria e status da esteira
+```
+
+### Colunas da Planilha `Controle_Geracao`
+- **Coluna A:** `ID_Lote` (Identificador sequencial)
+- **Coluna B:** `Par` (ex: `pi_pt`, `en_pt`, `es_pt`)
+- **Coluna C:** `Nivel` (ex: `A1`, `A2`, `B1`, `B2`)
+- **Coluna D:** `Topico` (ex: `Conceitos Abstratos`)
+- **Coluna E:** `Status` (`Pendente`, `Em Processamento`, `Concluído`, `Erro`)
+- **Coluna F:** `Data_Inicio` (Timestamp do início da geração)
+- **Coluna G:** `Data_Conclusao` (Timestamp do término)
+- **Coluna H:** `Nome_Arquivo_Final` (ex: `B2_Conceitos Abstratos.json`)
+
+---
+
+## 4. Matriz Piloto: Mandarim Pinyin para Português (`pi_pt`)
+
+### 4.1 Proibição Absoluta de Jargões
+- **Termos gramaticais proibidos:** canônica, sintagma, elisão, clítico, próclise, ênclise, anafórico, deítico, pretérito, acusativo, dativo, genitivo, declinação, desinência, partícula aspectual, classificador nominal, cópula, oração subordinada.
+- **Termos fonéticos proibidos:** fricativa, oclusiva, bilabial, alveolar, velar, glotal, liaison, schwa, flap, apócope, fonema, alofone, IPA.
+
+### 4.2 Diretrizes por Campo
+
+#### 1. `explanation`
+- Texto corrido em **parágrafo único** (sem quebras de linha).
+- Mapeamento direto de cada bloco de significado: termo em português $\rightarrow$ correspondente em `Hanzi (Pinyin)` $\rightarrow$ explicação direta do sentido prático e literal.
+
+#### 2. `breakdown`
+- Decomposição exaustiva de todos os blocos significativos da frase.
+- Formato do item:
+  - `word`: `"Bloco em Hanzi (Pinyin)"`
+  - `meaning`: `"Tradução — Caractere 1 (pinyin): significado; Caractere 2 (pinyin): significado. Sentido literal: '...'."`
+
+#### 3. `pronuncia`
+- Texto corrido explicando a pronúncia de **todas as partes da frase** de maneira simples e próxima.
+- Comparações com sons reais do português e referências físicas diretas (posição dos lábios, língua no céu da boca, ar soprado).
+- Fechamento obrigatório na última linha com a frase transcrita do jeito que se lê em português:  
+  `Leia: [transcrição adaptada ao português]`
+
+---
+
+### 4.3 Exemplo Padrão Ouro (`pi_pt` - Frase 1171)
+
+```json
+{
+  "1171": {
+    "explanation": "Para \"a globalização\", o mandarim vai direto ao ponto com 全球化 (Quánqiúhuà), sem precisar da palavra \"conceito\". O nosso \"fundamentalmente\" vira 从根本上 (cóng gēnběn shàng), que significa ao pé da letra \"a partir da raiz\". O verbo \"alterou\" vem logo em seguida com 改变了 (gǎibiàn le), onde a partícula \"le\" crava que a mudança já se consolidou na realidade. Por fim, \"a maneira como vivemos\" é expressa por 人类的生活方式 (rénlèi de shēnghuó fāngshì), que ao pé da letra é \"o estilo de vida da humanidade\".",
+    "breakdown": [
+      {
+        "word": "全球化 (Quánqiúhuà)",
+        "meaning": "Globalização — 全 (quán): todo / inteiro; 球 (qiú): globo / esfera (o planeta Terra); 化 (huà): sufixo de transformação (-ização). Sentido literal: 'tornar o globo um só'."
+      },
+      {
+        "word": "从根本上 (cóng gēnběn shàng)",
+        "meaning": "Pela raiz / Fundamentalmente — 从 (cóng): a partir de / desde; 根本 (gēnběn): raiz, base; 上 (shàng): no plano de / no aspecto de. Sentido literal: 'a partir do plano da raiz'."
+      },
+      {
+        "word": "改变了 (gǎibiàn le)",
+        "meaning": "Alterou / Mudou — 改 (gǎi): mudar / alterar; 变 (biàn): transformar-se; 了 (le): marca que a transformação se consolidou na realidade."
+      },
+      {
+        "word": "人类的 (rénlèi de)",
+        "meaning": "Da humanidade — 人 (rén): pessoa / humano; 类 (lèi): tipo / espécie / categoria; 的 (de): conector de posse equivalente ao 'de'."
+      },
+      {
+        "word": "生活方式 (shēnghuó fāngshì)",
+        "meaning": "Modo de vida — 生活 (shēnghuó): vida / viver no dia a dia; 方式 (fāngshì): método / formato / jeito de fazer. Sentido literal: 'o formato de vida'."
+      }
+    ],
+    "pronuncia": "Comece em 全球化 (Quánqiúhuà) fazendo o \"qu\" e o \"qi\" com som de \"tch\" bem soprado soltando bastante ar (\"tchiuán-tchiôu\") e descendo firme a voz no \"rruá\". Em 从 (cóng), ataque com som de \"ts\" como em pizza subindo o tom (\"tsông\"), e passe por 根本 (gēnběn) dizendo um \"guên\" plano e reto e um \"bên\" que desce e sobe a entonação, travando em 上 (shàng) com a língua virada para trás num \"châng\" que cai com força. Em 改变了 (gǎibiàn le), o \"gái\" desce e sobe a voz, o \"biên\" cai seco e o \"le\" morre rápido e sem peso como um \"lê\" murcho. Para 人类的 (rénlèi de), enrole a ponta da língua em direção ao céu da boca para o \"r\" soar como uma mistura suave de \"j\" com \"r\" em \"jên\", desça o tom firme em \"lêi\" e solte o \"de\" bem apagado. Feche com 生活方式 (shēnghuó fāngshì) mantendo o \"chêng\" reto e alto, o \"rruó\" subindo a voz como quem faz uma pergunta, o \"fāng\" aberto e longo, e curve a ponta da língua no céu da boca em \"shì\" para soltar um \"chí\" seco e firme.\nLeia: Tchiuán-tchiôu-rruá tsông guên-bên châng, gái-biên-lê jên-lêi-dê chêng-rruó fāng-chí."
+  }
+}
+```
+
+---
+
+## 5. Diretrizes de Governança para Novos Pares
+
+1. **Escala:** Serão contemplados 42 pares de idiomas, totalizando 1.680 tópicos e 50.400 frases explicadas.
+2. **Isolamento de Código:** A adição de novos pares deve ser feita **estritamente em `MatrizPares.gs`**, sem modificar o motor `Motor.gs` nem as configurações centrais em `Config.gs`.
+3. **Padrão Obrigatório:** Cada par adicionado deve ter 1 tópico testado e validado visualmente antes de ser inserido na rotina automática de execução periódica.
+
+---
+
+## 6. Template Oficial de Código (`MatrizPares.gs`)
+
+Toda nova entrada adicionada ao arquivo `MatrizPares.gs` DEVE seguir estritamente este esqueleto de chaves:
+
+```javascript
+const MATRIZ_PARES = {
+  // Substitua [par_estudo_origem] pela chave oficial (ex: fr_pt, en_pt, es_pt, it_pt)
+  par_estudo_origem: {
+    nomeEstudo: "Nome do Idioma de Estudo",
+    nomeOrigem: "Nome do Idioma Nativo do Aluno",
+    instrucaoGeral: `Você é um professor fluente em [Idioma Origem] e nativo em [Idioma Estudo].
+Seu papel é explicar frases em [Idioma Estudo] para alunos que falam [Idioma Origem] de forma simples, direta e sem nenhum termo técnico de gramática ou fonética.
+
+PROIBIÇÃO ABSOLUTA DE JARGÕES:
+- Gramática: canônica, sintagma, elisão, clítico, próclise, ênclise, anafórico, deítico, pretérito, acusativo, dativo, genitivo, declinação, desinência, partícula aspectual, classificador nominal, cópula, oração subordinada.
+- Fonética: fricativa, oclusiva, bilabial, alveolar, velar, glotal, liaison, schwa, flap, apócope, fonema, alofone, IPA.
+
+REGRAS OBRIGATÓRIAS POR CAMPO:
+1. "explanation": Parágrafo único contínuo (sem quebras de linha). Mapeie os blocos principais: termo nativo -> correspondente na língua de estudo -> lógica prática e sentido real.
+2. "breakdown": Array com cada bloco significativo e vocabulário, explicando pedaço por pedaço e sentido literal.
+3. "pronuncia": Texto corrido com referências físicas (boca, língua, ar) comparando com sons conhecidos do aluno. Na última linha, transcrição adaptada obrigatória:
+Leia: [transcrição adaptada]`,
+    exemploMestre: {
+      explanation: "Texto do padrão ouro...",
+      breakdown: [
+        { "word": "Termo", "meaning": "Significado e sentido literal" }
+      ],
+      pronuncia: "Dicas práticas...\nLeia: Transcricao aproximada"
+    }
+  }
+};
+```
+
+---
+
+## 7. Arquivos no GAS
+
+### A. Motor.gs
+
+```javascript
+function chamarGeminiCascata(payload) {
+  for (let m = 0; m < CONFIG.GEMINI_MODELS.length; m++) {
+    const modelCandidate = CONFIG.GEMINI_MODELS[m];
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelCandidate}:generateContent?key=${encodeURIComponent(CONFIG.GEMINI_API_KEY)}`;
+
+    Logger.log(`[GEMINI] Tentando modelo: ${modelCandidate}...`);
+
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      try {
+        const response = UrlFetchApp.fetch(url, {
+          method: "post",
+          contentType: "application/json",
+          payload: JSON.stringify(payload),
+          muteHttpExceptions: true
+        });
+
+        const code = response.getResponseCode();
+        if (code === 200) {
+          const json = JSON.parse(response.getContentText());
+          let rawText = json.candidates[0].content.parts[0].text.trim();
+          rawText = rawText.replace(/^```json\s*/i, "").replace(/```$/i, "").trim();
+          Logger.log(`[GEMINI SUCESSO] Resposta gerada via ${modelCandidate}.`);
+          return JSON.parse(rawText);
+        } else {
+          Logger.log(`[GEMINI] ${modelCandidate} retornou HTTP ${code} na tentativa ${attempt}.`);
+        }
+      } catch (e) {
+        Logger.log(`[GEMINI] Falha no ${modelCandidate} (Tentativa ${attempt}): ${e.message}`);
+      }
+      Utilities.sleep(1500);
+    }
+
+    Logger.log(`[GEMINI FALLBACK] ${modelCandidate} esgotou tentativas. Pulando para o próximo...`);
+  }
+
+  Logger.log(`[GEMINI ERRO CRÍTICO] Nenhum modelo da cascata respondeu.`);
+  return null;
+}
+
+function obterFrasesSupabase(par, nivel, topico) {
+  const partes = par.split("_");
+  const estudo = partes[0];
+  const origem = partes[1];
+  const colTopicOrigem = `topic_${origem}`;
+
+  const url = `${CONFIG.SUPABASE_URL}/rest/v1/sentences?level=eq.${encodeURIComponent(nivel)}&${colTopicOrigem}=eq.${encodeURIComponent(topico)}&order=id.asc`;
+  const options = {
+    method: "get",
+    headers: {
+      "apikey": CONFIG.SUPABASE_KEY,
+      "Authorization": `Bearer ${CONFIG.SUPABASE_KEY}`,
+      "Accept": "application/json"
+    },
+    muteHttpExceptions: true
+  };
+
+  const response = UrlFetchApp.fetch(url, options);
+  if (response.getResponseCode() !== 200) {
+    throw new Error(`Falha ao consultar Supabase: HTTP ${response.getResponseCode()}`);
+  }
+
+  const dados = JSON.parse(response.getContentText());
+  const ehMandarim = (estudo === "zh" || estudo === "pi");
+
+  return dados.map(f => {
+    const item = {
+      id: f.id,
+      [origem]: f[origem]
+    };
+    if (ehMandarim) {
+      item.zh = f.zh;
+      item.pi = f.pi;
+    } else {
+      item[estudo] = f[estudo];
+    }
+    return item;
+  });
+}
+
+function processarProximoTopico() {
+  const planilha = SpreadsheetApp.openById(CONFIG.ID_PLANILHA_CONTROLE).getActiveSheet();
+  const dados = planilha.getDataRange().getValues();
+
+  let linhaAlvo = -1;
+  let tarefa = null;
+
+  for (let i = 1; i < dados.length; i++) {
+    if (dados[i][4] === "Pendente") {
+      linhaAlvo = i + 1;
+      tarefa = {
+        idLote: dados[i][0],
+        par: dados[i][1],
+        nivel: dados[i][2],
+        topico: dados[i][3]
+      };
+      break;
+    }
+  }
+
+  if (!tarefa) {
+    Logger.log("Nenhuma tarefa com status 'Pendente' encontrada.");
+    return;
+  }
+
+  const matriz = MATRIZ_PARES[tarefa.par];
+  if (!matriz) {
+    Logger.log(`Erro: Par '${tarefa.par}' não cadastrado na MatrizPares.`);
+    planilha.getRange(linhaAlvo, 5).setValue("Erro: Matriz Inexistente");
+    return;
+  }
+
+  planilha.getRange(linhaAlvo, 5).setValue("Em Processamento");
+  planilha.getRange(linhaAlvo, 6).setValue(new Date());
+
+  try {
+    Logger.log(`Buscando frases do Supabase para [${tarefa.nivel}] ${tarefa.topico} (${tarefa.par})...`);
+    const frasesLote = obterFrasesSupabase(tarefa.par, tarefa.nivel, tarefa.topico);
+
+    if (!frasesLote || frasesLote.length === 0) {
+      throw new Error("Nenhuma frase retornada pelo Supabase para este tópico.");
+    }
+
+    const prompt = `${matriz.instrucaoGeral}
+
+FORMATO DE RETORNO EXCLUSIVO (JSON puro):
+{
+  "ID_DA_FRASE": {
+    "explanation": "...",
+    "breakdown": [
+      { "word": "...", "meaning": "..." }
+    ],
+    "pronuncia": "...\nLeia: ..."
+  }
+}
+
+EXEMPLO DE PADRÃO OURO:
+${JSON.stringify({ "1171": matriz.exemploMestre }, null, 2)}
+
+LOTE DE FRASES DO TÓPICO A PROCESSAR:
+${JSON.stringify(frasesLote, null, 2)}`;
+
+    const payload = {
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: {
+        responseMimeType: "application/json",
+        temperature: 0.2
+      }
+    };
+
+    const jsonResultado = chamarGeminiCascata(payload);
+
+    if (!jsonResultado) {
+      planilha.getRange(linhaAlvo, 5).setValue("Erro: Falha na API");
+      return;
+    }
+
+    // Blindagem de formato: achata se for array ou desempacota chave externa caso a IA envolva o retorno
+    let jsonFinal = jsonResultado;
+    if (Array.isArray(jsonResultado)) {
+      jsonFinal = {};
+      jsonResultado.forEach(item => {
+        Object.assign(jsonFinal, item);
+      });
+    } else if (typeof jsonResultado === 'object' && jsonResultado !== null) {
+      const chaves = Object.keys(jsonResultado);
+      if (chaves.length === 1 && typeof jsonResultado[chaves[0]] === 'object' && !jsonResultado[String(frasesLote[0].id)]) {
+        const primeiroValor = jsonResultado[chaves[0]];
+        if (Array.isArray(primeiroValor)) {
+          jsonFinal = {};
+          primeiroValor.forEach(item => Object.assign(jsonFinal, item));
+        } else {
+          jsonFinal = primeiroValor;
+        }
+      }
+    }
+
+    const nomeArquivoFinal = `${tarefa.nivel}_${tarefa.topico}.json`;
+    const pastaProntas = DriveApp.getFolderById(CONFIG.ID_PASTA_PRONTAS);
+    pastaProntas.createFile(nomeArquivoFinal, JSON.stringify(jsonFinal, null, 2), MimeType.PLAIN_TEXT);
+
+    planilha.getRange(linhaAlvo, 5).setValue("Concluído");
+    planilha.getRange(linhaAlvo, 7).setValue(new Date());
+    planilha.getRange(linhaAlvo, 8).setValue(nomeArquivoFinal);
+
+    Logger.log(`✔ Tópico concluído com sucesso: ${nomeArquivoFinal}`);
+
+  } catch (err) {
+    Logger.log(`Falha ao processar: ${err.message}`);
+    planilha.getRange(linhaAlvo, 5).setValue(`Erro: ${err.message}`);
+  }
+}
+```
+
+### B. MatrizPares.gs
+
+```javascript
+const MATRIZ_PARES = {
+  pi_pt: {
+    nomeEstudo: "Mandarim (Pinyin)",
+    nomeOrigem: "Português",
+    instrucaoGeral: `Você é um professor fluente em Português e com pronúncia de nativo em Mandarim (Pinyin).
+Seu papel é explicar frases em Mandarim para alunos que falam Português de forma simples, direta e sem nenhum termo técnico de gramática ou fonética.
+
+PROIBIÇÃO ABSOLUTA DE JARGÕES:
+- Gramática: canônica, sintagma, elisão, clítico, próclise, ênclise, anafórico, deítico, pretérito, acusativo, dativo, genitivo, declinação, desinência, partícula aspectual, classificador nominal, cópula, oração subordinada.
+- Fonética: fricativa, oclusiva, bilabial, alveolar, velar, glotal, liaison, schwa, flap, apócope, fonema, alofone, IPA.
+
+REGRAS OBRIGATÓRIAS POR CAMPO:
+1. "explanation": Parágrafo único contínuo (sem quebras de linha). Mapeie os blocos: termo em português -> correspondente em Hanzi (Pinyin) -> sentido prático/literal.
+2. "breakdown": Array com cada bloco significativo, decompondo cada caractere individual com seu significado, e finalizando com o sentido literal do bloco.
+3. "pronuncia": Texto corrido explicando a pronúncia de TODAS as partes da frase com referências a sons do português e posições físicas (língua, lábios, ar). Na última linha, coloque obrigatoriamente a frase completa para leitura fonética direta no formato:
+Leia: [transcrição adaptada ao português]`,
+    exemploMestre: {
+      explanation: "Para \"a globalização\", o mandarim vai direto ao ponto com 全球化 (Quánqiúhuà), sem precisar da palavra \"conceito\". O nosso \"fundamentalmente\" vira 从根本上 (cóng gēnběn shàng), que significa ao pé da letra \"a partir da raiz\". O verbo \"alterou\" vem logo em seguida com 改变了 (gǎibiàn le), onde a partícula \"le\" crava que a mudança já se consolidou na realidade. Por fim, \"a maneira como vivemos\" é expressa por 人类的生活方式 (rénlèi de shēnghuó fāngshì), que ao pé da letra é \"o estilo de vida da humanidade\".",
+      breakdown: [
+        {
+          word: "全球化 (Quánqiúhuà)",
+          meaning: "Globalização — 全 (quán): todo / inteiro; 球 (qiú): globo / esfera (o planeta Terra); 化 (huà): sufixo de transformação (-ização). Sentido literal: 'tornar o globo um só'."
+        },
+        {
+          word: "从根本上 (cóng gēnběn shàng)",
+          meaning: "Pela raiz / Fundamentalmente — 从 (cóng): a partir de / desde; 根本 (gēnběn): raiz, base; 上 (shàng): no plano de / no aspecto de. Sentido literal: 'a partir do plano da raiz'."
+        },
+        {
+          word: "改变了 (gǎibiàn le)",
+          meaning: "Alterou / Mudou — 改 (gǎi): mudar / alterar; 变 (biàn): transformar-se; 了 (le): marca que a transformação se consolidou na realidade."
+        },
+        {
+          word: "人类的 (rénlèi de)",
+          meaning: "Da humanidade — 人 (rén): pessoa / humano; 类 (lèi): tipo / espécie / categoria; 的 (de): conector de posse equivalente ao 'de'."
+        },
+        {
+          word: "生活方式 (shēnghuó fāngshì)",
+          meaning: "Modo de vida — 生活 (shēnghuó): vida / viver no dia a dia; 方式 (fāngshì): método / formato / jeito de fazer. Sentido literal: 'o formato de vida'."
+        }
+      ],
+      pronuncia: "Comece em 全球化 (Quánqiúhuà) fazendo o \"qu\" e o \"qi\" com som de \"tch\" bem soprado soltando bastante ar (\"tchiuán-tchiôu\") e descendo firme a voz no \"rruá\". Em 从 (cóng), ataque com som de \"ts\" como em pizza subindo o tom (\"tsông\"), e passe por 根本 (gēnběn) dizendo um \"guên\" plano e reto e um \"bên\" que desce e sobe a entonação, travando em 上 (shàng) com a língua virada para trás num \"châng\" que cai com força. Em 改变了 (gǎibiàn le), o \"gái\" desce e sobe a voz, o \"biên\" cai seco e o \"le\" morre rápido e sem peso como um \"lê\" murcho. Para 人类的 (rénlèi de), enrole a ponta da língua em direção ao céu da boca para o \"r\" soar como uma mistura suave de \"j\" com \"r\" em \"jên\", desça o tom firme em \"lêi\" e solte o \"de\" bem apagado. Feche com 生活方式 (shēnghuó fāngshì) mantendo o \"chêng\" reto e alto, o \"rruó\" subindo a voz como quem faz uma pergunta, o \"fāng\" aberto e longo, e curve a ponta da língua no céu da boca em \"shì\" para soltar um \"chí\" seco e firme.\nLeia: Tchiuán-tchiôu-rruá tsông guên-bên châng, gái-biên-lê jên-lêi-dê chêng-rruó fāng-chí."
+    }
+  },
+
+  en_pt: {
+    nomeEstudo: "Inglês",
+    nomeOrigem: "Português",
+    instrucaoGeral: `Você é um professor fluente em Português e com pronúncia de nativo em Inglês.
+Seu papel é explicar frases em Inglês para alunos que falam Português de forma simples, direta, acolhedora e sem nenhum termo técnico de gramática ou fonética.
+
+PROIBIÇÃO ABSOLUTA DE JARGÕES:
+- Gramática: canônica, sintagma, elisão, clítico, próclise, ênclise, anafórico, deítico, pretérito, acusativo, dativo, genitivo, declinação, desinência, partícula aspectual, oração subordinada, particípio, transitividade, adjunto adverbial.
+- Fonética: fricativa, oclusiva, bilabial, alveolar, velar, glotal, liaison, schwa, flap, apócope, fonema, alofone, IPA.
+
+REGRAS OBRIGATÓRIAS POR CAMPO:
+1. "explanation": Parágrafo único contínuo (sem quebras de linha). Explique o raciocínio prático de como nativos do inglês pensam a frase em comparação com o português, destacando a ordem natural das palavras, contrações e sentido real.
+2. "breakdown": Array com cada bloco significativo e vocabulário da frase (incluindo preposições, phrasal verbs e conectores). Mostre a tradução direta e o sentido prático/literal de cada pedaço.
+3. "pronuncia": Texto corrido explicando a pronúncia de TODAS as partes da frase com referências físicas diretas (posição da língua entre os dentes para o "th", língua curvada no céu da boca para o "r", letras finais que morrem sem soltar vogal e como juntar o final de uma palavra com o início da outra). Na última linha, coloque obrigatoriamente a frase completa para leitura fonética direta no formato:
+Leia: [transcrição adaptada ao português]`,
+    exemploMestre: {
+      explanation: "Para 'o conceito de globalização', o inglês usa 'The concept of globalization', ligando as palavras em um fluxo contínuo. O nosso 'fundamentalmente' vira 'fundamentally', que vem logo antes da ação para enfatizar o verbo. A alteração no passado é marcada por 'altered', mostrando que a estrutura das coisas mudou. Por fim, 'a maneira como vivemos' é expressa de forma muito mais enxuta por 'the way we live', sem precisar colocar palavras extras como 'como' ou 'na qual'.",
+      breakdown: [
+        {
+          word: "The concept of",
+          meaning: "O conceito de — The: o; concept: conceito / ideia estruturada; of: de."
+        },
+        {
+          word: "globalization",
+          meaning: "Globalização — global: mundial / relativo ao planeta todo; -ization: terminação que equivale ao nosso '-ização'."
+        },
+        {
+          word: "fundamentally",
+          meaning: "Fundamentalmente / Na raiz — fundamental: essencial / base de algo; -ly: terminação que equivale ao nosso '-mente'."
+        },
+        {
+          word: "altered",
+          meaning: "Alterou / Modificou — forma no passado do verbo to alter (mudar)."
+        },
+        {
+          word: "the way",
+          meaning: "A maneira / O jeito — literalmente 'o caminho' ou 'a forma'."
+        },
+        {
+          word: "we live",
+          meaning: "Nós vivemos — we: nós; live: viver / ter o dia a dia."
+        }
+      ],
+      pronuncia: "Comece em 'The' colocando a pontinha da língua levemente entre os dentes da frente para soltar um som de 'D' vibrado com ar ('dhê'). Em 'concept of', emende o 't' final direto no 'of', falando tudo junto como 'kón-sép-tóv', com som de 'v' suave no fim. Na palavra 'globalization', marque o ritmo com 'glôu-bê-lai-ZÊI-chân', caprichando no 'zêi' mais forte e fechando o final com a boca relaxada num 'chân' curto. Em 'fundamentally', solte o início pelo nariz ('fan-dê-MÊN-tê-li'). Em 'altered', curve a ponta da língua em direção ao céu da boca para fazer o 'r' típico americano ('ÓL-têrd'), sem pronunciar nenhum 'e' no final. Conclua grudando 'the way we live' como um bloco só: faça o 'th' com a língua nos dentes ('dhê'), o 'uei' aberto e feche com 'uí lív', travando a voz seco no 'v'.\nLeia: Dhê kón-sép-tóv glôu-bê-lai-zêi-chân fan-dê-mên-tê-li ól-têrd dhê uêi uí lív."
+    }
+  }
+};
+```
+
 ### 📄 ARQUIVO: ./public/auditor.html
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -106,6 +572,9 @@ Snapshot técnico de scripts de automação, ferramentas de auditoria e governan
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/logos/dingli_logo32.png?v=3">
+    <link rel="icon" type="image/png" href="/assets/logos/dingli_logo32.png?v=3" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/logos/dingli_logo512.png?v=3" sizes="512x512">
     <title>Dìnglì - Auditor de Áudios</title>
     <style>
         :root {
@@ -416,7 +885,7 @@ Snapshot técnico de scripts de automação, ferramentas de auditoria e governan
         const MAPA_VOZES = {
             en: ["v1", "v2", "v3", "v4", "v5", "v6"],
             es: ["v1", "v2", "v3", "v4", "v5", "v6"],
-            fr: ["v1", "v2", "v3", "v4"],
+            fr: ["v1", "v2", "v3", "v4", "v5", "v6"],
             it: ["v1", "v2", "v3", "v4"],
             ge: ["v1", "v2", "v3", "v4"],
             pt: ["v1", "v2", "v3", "v4"],
@@ -688,6 +1157,7 @@ import re
 import csv
 import glob
 import json
+import time
 import shutil
 import asyncio
 import datetime
@@ -762,7 +1232,8 @@ VOZES_FRASES = {
     ],
     "fr": [
         ("v1", "fr-FR-DeniseNeural"), ("v2", "fr-FR-HenriNeural"),
-        ("v3", "fr-FR-VivienneMultilingualNeural"), ("v4", "fr-FR-RemyMultilingualNeural")
+        ("v3", "fr-FR-VivienneMultilingualNeural"), ("v4", "fr-BE-GerardNeural"),
+        ("v5", "fr-CH-ArianeNeural"), ("v6", "ko-KR-HyunsuMultilingualNeural")
     ],
     "it": [
         ("v1", "it-IT-GiuseppeMultilingualNeural"), ("v2", "it-IT-DiegoNeural"),
@@ -791,6 +1262,68 @@ VOZES_VOCABULARIO = {
     "pt": "pt-BR-FranciscaNeural",
     "zh": "zh-CN-XiaoxiaoNeural"
 }
+
+# ------------------------------------------------------------------------------
+# DIRETRIZES FONÉTICAS E EXCEÇÕES DE ÁUDIO
+# ------------------------------------------------------------------------------
+SLUGS_PROTEGIDOS = {"5550192", "24h24", "112"}
+
+EXCECOES_FRASES = {
+    35: {
+        "en": "My phone number is five five five, oh one, nine two.",
+        "es": "Mi número de teléfono es el cinco cinco cinco, cero uno, noventa y dos.",
+        "fr": "Mon numéro de téléphone est le cinq cinq cinq, zéro un, quatre-vingt-douze.",
+        "it": "Il mio numero di telefono è il cinque cinque cinque, zero uno, novantadue.",
+        "pt": "Meu número de telefone é cinco cinco cinco, zero um, noventa e dois.",
+        "ge": "Meine Telefonnummer ist fünf fünf fünf, null eins, zweiundneunzig.",
+        "zh": "我的电话号码是：五五五，零一，九二。"
+    },
+    519: {
+        "fr": "Y a-t-il une pharmacie ouverte vingt-quatre heures sur vingt-quatre par ici ?"
+    },
+   540: {
+        "en": "Call one one two, if there is an emergency.",
+        "es": "Llama al uno uno dos, si hay una emergencia.",
+        "fr": "Appelle le un un deux, en cas d'urgence.",
+        "it": "Chiama l'uno uno due, in caso di emergenza.",
+        "pt": "Ligue para o um um dois, se houver uma emergência.",
+        "ge": "Ruf im Notfall die eins eins zwei an.",
+        "zh": "如果有紧急情况请打一一二。"
+    },
+    1117: {
+        "fr": "Savez-vous par hasard où se trouve la clinique ouverte vingt-quatre heures sur vingt-quatre la plus proche ?"
+    }
+}
+
+EXCECOES_PALAVRAS = {
+    "5550192": {
+        "en": "five five five, oh one, nine two",
+        "es": "cinco cinco cinco, cero uno, noventa y dos",
+        "fr": "cinq cinq cinq, zéro un, quatre-vingt-douze",
+        "it": "cinque cinque cinque, zero uno, novantadue",
+        "pt": "cinco cinco cinco, zero um, noventa e dois",
+        "ge": "fünf fünf fünf, null eins, zweiundneunzig",
+        "zh": "五五五，零一，九二"
+    },
+    "24h24": {
+        "fr": "vingt-quatre heures sur vingt-quatre"
+    },
+    "112": {
+        "en": "one, one, two",
+        "es": "uno, uno, dos",
+        "fr": "un, un, deux",
+        "it": "uno, uno, due",
+        "pt": "um, um, dois",
+        "ge": "eins, eins, zwei",
+        "zh": "一、一、二"
+    }
+}
+
+def obter_texto_fala_frase(fid, idioma, texto_padrao):
+    fid_int = int(fid)
+    if fid_int in EXCECOES_FRASES and idioma in EXCECOES_FRASES[fid_int]:
+        return EXCECOES_FRASES[fid_int][idioma]
+    return texto_padrao
 
 # ------------------------------------------------------------------------------
 # FUNÇÕES UTILITÁRIAS
@@ -988,34 +1521,49 @@ def cmd_frases_f1(idioma):
     print("Sintetizando novos áudios de frases...")
     semaforo = asyncio.Semaphore(4)
     progresso = {"ok": 0, "erros": 0}
+    total_tarefas = len(alteracoes) * len(VOZES_FRASES[idioma])
+    t_inicio_sintese = time.time()
 
     async def sintetizar(fid, texto, tag_voz, voz):
         final_mp3 = os.path.join(pasta_frases, f"{fid}_{tag_voz}.mp3")
-        async with semaforo:
-            sucesso = False
-            for _ in range(3):
-                try:
-                    com = edge_tts.Communicate(texto, voz)
-                    await com.save(final_mp3)
-                    if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
-                        sucesso = True
-                        break
-                except Exception:
-                    await asyncio.sleep(1)
-            if sucesso:
-                progresso["ok"] += 1
-            else:
-                progresso["erros"] += 1
+        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+            progresso["ok"] += 1
+        else:
+            async with semaforo:
+                sucesso = False
+                for _ in range(3):
+                    try:
+                        com = edge_tts.Communicate(texto, voz)
+                        await com.save(final_mp3)
+                        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+                            sucesso = True
+                            break
+                    except Exception:
+                        await asyncio.sleep(1)
+                if sucesso:
+                    progresso["ok"] += 1
+                else:
+                    progresso["erros"] += 1
+
+        processados = progresso["ok"] + progresso["erros"]
+        decorrido = time.time() - t_inicio_sintese
+        taxa = processados / decorrido if decorrido > 0 else 0
+        m, s = int(decorrido // 60), int(decorrido % 60)
+        pct = (processados / total_tarefas) * 100
+        sys.stdout.write(f"\r  -> Síntese: {processados}/{total_tarefas} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+        sys.stdout.flush()
 
     async def rodar_sintese():
         tarefas = []
         for fid, texto in alteracoes.items():
+            texto_fala = obter_texto_fala_frase(fid, idioma, texto)
             for tag_voz, voz in VOZES_FRASES[idioma]:
-                tarefas.append(sintetizar(fid, texto, tag_voz, voz))
+                tarefas.append(sintetizar(fid, texto_fala, tag_voz, voz))
         await asyncio.gather(*tarefas)
 
     asyncio.run(rodar_sintese())
-    print(f"✔ Síntese concluída: {progresso['ok']} arquivos gerados | Falhas: {progresso['erros']}")
+    print()
+    print(f"✔ Síntese concluída: {progresso['ok']} arquivos prontos | Falhas: {progresso['erros']}")
     if progresso["erros"] > 0:
         print("[FALHA] Erro na síntese de áudio. Abortando upload.")
         sys.exit(1)
@@ -1038,11 +1586,19 @@ def cmd_frases_f1(idioma):
 
     uploads_ok = 0
     total_audios = len(alteracoes) * len(VOZES_FRASES[idioma])
+    t_inicio = time.time()
     with ThreadPoolExecutor(max_workers=8) as executor:
         futuros = [executor.submit(upload_r2, fid, tag) for fid in alteracoes.keys() for tag, _ in VOZES_FRASES[idioma]]
         for fut in as_completed(futuros):
             if fut.result():
                 uploads_ok += 1
+            decorrido = time.time() - t_inicio
+            taxa = uploads_ok / decorrido if decorrido > 0 else 0
+            m, s = int(decorrido // 60), int(decorrido % 60)
+            pct = (uploads_ok / total_audios) * 100
+            sys.stdout.write(f"\r  -> Enviando: {uploads_ok}/{total_audios} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+            sys.stdout.flush()
+    print()
 
     print(f"✔ Cloudflare R2 Upload: {uploads_ok}/{total_audios} áudios enviados com sucesso!")
     if uploads_ok != total_audios:
@@ -1081,9 +1637,12 @@ def cmd_palavras_f1(idioma):
                 for token in texto.split():
                     slug = sanitizar_palavra_audio(token)
                     if slug and slug not in mapa_esperado:
-                        fala = re.sub(r'[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]', '', token.strip())
-                        if idioma == "pt" and fala.lower() == "e":
-                            fala = "ê"
+                        if slug in EXCECOES_PALAVRAS and idioma in EXCECOES_PALAVRAS[slug]:
+                            fala = EXCECOES_PALAVRAS[slug][idioma]
+                        else:
+                            fala = re.sub(r'[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]', '', token.strip())
+                            if idioma == "pt" and fala.lower() == "e":
+                                fala = "ê"
                         mapa_esperado[slug] = fala
 
     dir_lang = os.path.join("audios_dingli", "palavras", idioma)
@@ -1093,7 +1652,7 @@ def cmd_palavras_f1(idioma):
 
     arquivos_locais = set(f for f in os.listdir(dir_lang) if f.endswith(".mp3"))
     esperados_set = set(f"{s}.mp3" for s in mapa_esperado.keys())
-    orfaos_locais = list(arquivos_locais - esperados_set)
+    orfaos_locais = [f for f in (arquivos_locais - esperados_set) if f[:-4] not in SLUGS_PROTEGIDOS]
     faltantes_locais = [s for s in mapa_esperado.keys() if f"{s}.mp3" not in arquivos_locais]
 
     print(f"Diagnóstico local: Esperados: {len(esperados_set)} | No disco: {len(arquivos_locais)} | Órfãos: {len(orfaos_locais)} | Faltantes: {len(faltantes_locais)}")
@@ -1108,44 +1667,58 @@ def cmd_palavras_f1(idioma):
         voz = VOZES_VOCABULARIO[idioma]
         semaforo = asyncio.Semaphore(4)
         progresso = {"ok": 0, "erros": 0}
+        total_termos = len(faltantes_locais)
+        t_inicio_palavras = time.time()
 
         async def gerar_termo(slug, texto_fala):
             temp_mp3 = os.path.join(dir_lang, f"temp_{slug}.mp3")
             final_mp3 = os.path.join(dir_lang, f"{slug}.mp3")
-            async with semaforo:
-                sucesso = False
-                for _ in range(3):
-                    try:
-                        com = edge_tts.Communicate(texto_fala, voz)
-                        await com.save(temp_mp3)
-                        if os.path.exists(temp_mp3) and os.path.getsize(temp_mp3) > 0:
-                            sucesso = True
-                            break
-                    except Exception:
-                        await asyncio.sleep(1)
+            if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+                progresso["ok"] += 1
+            else:
+                async with semaforo:
+                    sucesso = False
+                    for _ in range(3):
+                        try:
+                            com = edge_tts.Communicate(texto_fala, voz)
+                            await com.save(temp_mp3)
+                            if os.path.exists(temp_mp3) and os.path.getsize(temp_mp3) > 0:
+                                sucesso = True
+                                break
+                        except Exception:
+                            await asyncio.sleep(1)
 
-                if sucesso:
-                    cmd = [
-                        FFMPEG_EXE, "-y", "-i", temp_mp3,
-                        "-af", "adelay=300|300,apad=pad_dur=0.1",
-                        "-b:a", "128k", final_mp3
-                    ]
-                    res = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                    if res.returncode == 0 and os.path.exists(final_mp3):
-                        progresso["ok"] += 1
+                    if sucesso:
+                        cmd = [
+                            FFMPEG_EXE, "-y", "-i", temp_mp3,
+                            "-af", "adelay=300|300,apad=pad_dur=0.1",
+                            "-b:a", "128k", final_mp3
+                        ]
+                        res = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                        if res.returncode == 0 and os.path.exists(final_mp3):
+                            progresso["ok"] += 1
+                        else:
+                            progresso["erros"] += 1
+                        if os.path.exists(temp_mp3):
+                            os.remove(temp_mp3)
                     else:
                         progresso["erros"] += 1
-                    if os.path.exists(temp_mp3):
-                        os.remove(temp_mp3)
-                else:
-                    progresso["erros"] += 1
+
+            processados = progresso["ok"] + progresso["erros"]
+            decorrido = time.time() - t_inicio_palavras
+            taxa = processados / decorrido if decorrido > 0 else 0
+            m, s = int(decorrido // 60), int(decorrido % 60)
+            pct = (processados / total_termos) * 100
+            sys.stdout.write(f"\r  -> Palavras: {processados}/{total_termos} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+            sys.stdout.flush()
 
         async def rodar_todas():
             tarefas = [gerar_termo(s, mapa_esperado[s]) for s in faltantes_locais]
             await asyncio.gather(*tarefas)
 
         asyncio.run(rodar_todas())
-        print(f"✔ Síntese de palavras concluída: {progresso['ok']} geradas | Falhas: {progresso['erros']}")
+        print()
+        print(f"✔ Síntese de palavras concluída: {progresso['ok']} prontas | Falhas: {progresso['erros']}")
 
     print("Auditando paridade de palavras no Cloudflare R2...")
     s3 = get_r2_client()
@@ -1162,7 +1735,7 @@ def cmd_palavras_f1(idioma):
 
     esperados_nomes = set(f"{s}.mp3" for s in mapa_esperado.keys())
     faltantes_remotos = list(esperados_nomes - remotos)
-    orfaos_remotos = list(remotos - esperados_nomes)
+    orfaos_remotos = [f for f in (remotos - esperados_nomes) if f[:-4] not in SLUGS_PROTEGIDOS]
 
     print(f"Paridade R2: Esperadas: {len(esperados_nomes)} | No R2: {len(remotos)} | Faltando no R2: {len(faltantes_remotos)} | Órfãs no R2: {len(orfaos_remotos)}")
 
@@ -1178,12 +1751,21 @@ def cmd_palavras_f1(idioma):
                 return False
 
         enviados = 0
+        total_palavras = len(faltantes_remotos)
+        t_inicio = time.time()
         with ThreadPoolExecutor(max_workers=8) as executor:
             futuros = [executor.submit(upload_termo, n) for n in faltantes_remotos]
             for fut in as_completed(futuros):
                 if fut.result():
                     enviados += 1
-        print(f"✔ Upload R2: {enviados}/{len(faltantes_remotos)} palavras enviadas!")
+                decorrido = time.time() - t_inicio
+                taxa = enviados / decorrido if decorrido > 0 else 0
+                m, s = int(decorrido // 60), int(decorrido % 60)
+                pct = (enviados / total_palavras) * 100
+                sys.stdout.write(f"\r  -> Enviando: {enviados}/{total_palavras} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+                sys.stdout.flush()
+        print()
+        print(f"✔ Upload R2: {enviados}/{total_palavras} palavras enviadas!")
 
     if orfaos_remotos:
         print(f"Deletando {len(orfaos_remotos)} palavras órfãs no Cloudflare R2...")
@@ -1238,6 +1820,8 @@ def cmd_commit_f1(idioma):
     }
 
     db_sucessos = 0
+    total_db = len(alteracoes_db)
+    t_inicio_db = time.time()
     for fid, payload in alteracoes_db.items():
         url_patch = f"{SUPABASE_URL}/rest/v1/sentences?id=eq.{fid}"
         req_patch = urllib.request.Request(url_patch, data=json.dumps(payload).encode("utf-8"), headers=headers_patch, method="PATCH")
@@ -1250,11 +1834,19 @@ def cmd_commit_f1(idioma):
             except Exception:
                 pass
 
-    if db_sucessos != len(alteracoes_db):
-        print(f"[ERRO] Falha ao atualizar sentences: {db_sucessos}/{len(alteracoes_db)} frases sincronizadas.")
+        decorrido = time.time() - t_inicio_db
+        taxa = db_sucessos / decorrido if decorrido > 0 else 0
+        m, s = int(decorrido // 60), int(decorrido % 60)
+        pct = (db_sucessos / total_db) * 100
+        sys.stdout.write(f"\r  -> Banco: {db_sucessos}/{total_db} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} req/s")
+        sys.stdout.flush()
+    print()
+
+    if db_sucessos != total_db:
+        print(f"[ERRO] Falha ao atualizar sentences: {db_sucessos}/{total_db} frases sincronizadas.")
         sys.exit(1)
 
-    print(f"✔ Supabase DB atualizado: {db_sucessos}/{len(alteracoes_db)} frases sincronizadas com sucesso!")
+    print(f"✔ Supabase DB atualizado: {db_sucessos}/{total_db} frases sincronizadas com sucesso!")
 
     versao_anterior = obter_versao_atual_supabase(idioma)
     nova_versao = versao_anterior + 1
@@ -1330,7 +1922,7 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
                 if inicio <= fid_int <= fim:
                     txt = (r.get(idioma) or "").strip()
                     if txt:
-                        frases_map[fid_int] = txt
+                        frases_map[fid_int] = obter_texto_fala_frase(fid_int, idioma, txt)
 
     pasta_frases = os.path.join("audios_dingli", idioma)
     os.makedirs(pasta_frases, exist_ok=True)
@@ -1338,24 +1930,37 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
     print("Iniciando síntese Edge-TTS...")
     semaforo = asyncio.Semaphore(4)
     progresso = {"ok": 0, "erros": 0}
+    total_tarefas = len(frases_map) * len(vozes_alvo)
+    t_inicio_sintese = time.time()
 
     async def sintetizar(fid, texto, tag_voz, voz):
         final_mp3 = os.path.join(pasta_frases, f"{fid}_{tag_voz}.mp3")
-        async with semaforo:
-            sucesso = False
-            for _ in range(3):
-                try:
-                    com = edge_tts.Communicate(texto, voz)
-                    await com.save(final_mp3)
-                    if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
-                        sucesso = True
-                        break
-                except Exception:
-                    await asyncio.sleep(1)
-            if sucesso:
-                progresso["ok"] += 1
-            else:
-                progresso["erros"] += 1
+        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+            progresso["ok"] += 1
+        else:
+            async with semaforo:
+                sucesso = False
+                for _ in range(3):
+                    try:
+                        com = edge_tts.Communicate(texto, voz)
+                        await com.save(final_mp3)
+                        if os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+                            sucesso = True
+                            break
+                    except Exception:
+                        await asyncio.sleep(1)
+                if sucesso:
+                    progresso["ok"] += 1
+                else:
+                    progresso["erros"] += 1
+
+        processados = progresso["ok"] + progresso["erros"]
+        decorrido = time.time() - t_inicio_sintese
+        taxa = processados / decorrido if decorrido > 0 else 0
+        m, s = int(decorrido // 60), int(decorrido % 60)
+        pct = (processados / total_tarefas) * 100
+        sys.stdout.write(f"\r  -> Síntese: {processados}/{total_tarefas} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+        sys.stdout.flush()
 
     async def rodar():
         tarefas = []
@@ -1365,7 +1970,8 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
         await asyncio.gather(*tarefas)
 
     asyncio.run(rodar())
-    print(f"✔ Síntese concluída: {progresso['ok']} arquivos gerados | Falhas: {progresso['erros']}")
+    print()
+    print(f"✔ Síntese concluída: {progresso['ok']} arquivos prontos | Falhas: {progresso['erros']}")
     if progresso["erros"] > 0:
         print("[FALHA] Interrupção na síntese. Abortando upload.")
         sys.exit(1)
@@ -1387,11 +1993,19 @@ def cmd_frases_f2(idioma, inicio, fim, vozes_custom=None):
 
     total = len(frases_map) * len(vozes_alvo)
     uploads_ok = 0
+    t_inicio = time.time()
     with ThreadPoolExecutor(max_workers=8) as executor:
         futuros = [executor.submit(upload_r2, fid, tag) for fid in frases_map.keys() for tag, _ in vozes_alvo]
         for fut in as_completed(futuros):
             if fut.result():
                 uploads_ok += 1
+            decorrido = time.time() - t_inicio
+            taxa = uploads_ok / decorrido if decorrido > 0 else 0
+            m, s = int(decorrido // 60), int(decorrido % 60)
+            pct = (uploads_ok / total) * 100
+            sys.stdout.write(f"\r  -> Enviando: {uploads_ok}/{total} ({pct:.1f}%) | Tempo: {m:02d}:{s:02d} | {taxa:.1f} arq/s")
+            sys.stdout.flush()
+    print()
 
     print(f"✔ Upload Cloudflare R2: {uploads_ok}/{total} áudios enviados com sucesso!")
     if uploads_ok != total:
@@ -1542,15 +2156,845 @@ import { supabase } from '../src/supabaseClient.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const API_KEY = "SUA_CHAVE_GEMINI_AQUI";
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
+// Argumentos via CLI: node scripts/gerarExplicacoes.mjs <estudo> <origem> <nivel> "<topico>"
+const IDIOMA_ESTUDO = process.argv[2] || 'pi';
+const IDIOMA_ORIGEM = process.argv[3] || 'pt';
+const NIVEL = (process.argv[4] || 'B2').toUpperCase();
+const TOPICO = process.argv[5] || 'Conceitos Abstratos';
 
-// Lista de termos acadêmicos e gramaticais estritamente proibidos
+const NOMES_IDIOMAS = {
+  fr: 'Francês', en: 'Inglês', es: 'Espanhol',
+  it: 'Italiano', ge: 'Alemão', pt: 'Português',
+  zh: 'Mandarim', pi: 'Mandarim (Pinyin)'
+};
+
 const PALAVRAS_PROIBIDAS = [
   "canônica", "canônico", "causativo", "sintagma", "elidido", "elisão",
   "clítico", "próclise", "ênclise", "anafórico", "deítico", "pretérito",
   "inversão interrogativa", "particípio adjetivado", "oração subordinada",
-  "apresentativo", "descontínua", "eufônica", "eufônico", "locução adverbial"
+  "apresentativo", "descontínua", "eufônica", "eufônico", "locução adverbial",
+  "acusativo", "dativo", "genitivo", "declinação", "desinência",
+  "partícula aspectual", "classificador nominal", "cópula",
+  "fricativa", "oclusiva", "bilabial", "alveolar", "velar", "glotal",
+  "liaison", "schwa", "flap", "apócope", "fonema", "alofone", "ipa"
+];
+
+const EXEMPLOS_PADRAO_OURO = `
+Exemplo 1:
+Frase: "S'il te plaît, parle lentement."
+Tradução: "Por favor, fale devagar."
+Saída:
+{
+  "explanation": "O clássico 'por favor' do francês (s'il te plaît) significa ao pé da letra 'se isso te agrada'. Como a conversa é informal, o verbo falar (parle) entra no modo de pedido, e a letra 's' do final é descartada. A palavra 'lentement' junta 'lente' com o sufixo '-ment' (o nosso '-mente').",
+  "breakdown": [
+    { "word": "S'il te plaît", "meaning": "por favor (jeito informal usado com amigos e conhecidos)" },
+    { "word": "parle", "meaning": "fale / fala (pedido direto, sem o 's' no final)" },
+    { "word": "lentement", "meaning": "devagar / lentamente" }
+  ],
+  "pronuncia": "Em 's'il te plaît', o som sai direto como 'sil-te-plê' (o 't' final morre e o 'aît' vira som de 'ê'). Em 'parle', o 'R' arranha leve no fundo da garganta e o 'e' final não se fala ('parl'). Feche com 'lan-te-man', com o som saindo pelo nariz e sem pronunciar o último 't'."
+}
+
+Exemplo 2:
+Frase: "Il n'est pas mon frère."
+Tradução: "Ele não é meu irmão."
+Saída:
+{
+  "explanation": "Para dizer 'não' com verbos em francês, a língua abraça a ação com duas peças: o 'n'' vem antes (encurtado porque 'est' começa com vogal) e o 'pas' vem logo em seguida. O 'mon' funciona exatamente como o nosso 'meu'.",
+  "breakdown": [
+    { "word": "Il", "meaning": "Ele" },
+    { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
+    { "word": "est", "meaning": "é (do verbo être)" },
+    { "word": "pas", "meaning": "segunda parte que fecha a negação" },
+    { "word": "mon", "meaning": "meu" },
+    { "word": "frère", "meaning": "irmão" }
+  ],
+  "pronuncia": "Aqui você gruda as palavras: 'Il n'est pas' soa tudo junto como 'il-né-pá' (o 's' de 'est' e o 's' de 'pas' são mudos). Em 'mon', faça a boca redonda para o som nasal. E em 'frère', capriche no 'R' arranhado e pare direto na consoante: fale 'frér', sem soltar nenhum 'i' no final."
+}
+`;
+
+async function gerarPromptParaChat() {
+  const colTopicOrigem = `topic_${IDIOMA_ORIGEM}`;
+  const ehMandarim = IDIOMA_ESTUDO === 'zh' || IDIOMA_ESTUDO === 'pi';
+  const colunasAlvo = ehMandarim ? 'id, zh, pi' : `id, ${IDIOMA_ESTUDO}`;
+  const colunas = `${colunasAlvo}, ${IDIOMA_ORIGEM}, level, ${colTopicOrigem}`;
+
+  const { data, error } = await supabase
+    .from('sentences')
+    .select(colunas)
+    .eq('level', NIVEL)
+    .eq(colTopicOrigem, TOPICO)
+    .order('id', { ascending: true });
+
+  if (error || !data || data.length === 0) {
+    console.error('❌ Erro ou nenhuma frase encontrada no Supabase:', error);
+    return;
+  }
+
+  const nomeAlvo = NOMES_IDIOMAS[IDIOMA_ESTUDO] || IDIOMA_ESTUDO;
+  const nomeBase = NOMES_IDIOMAS[IDIOMA_ORIGEM] || IDIOMA_ORIGEM;
+
+  const regraMandarim = ehMandarim
+    ? '\n   - Para o mandarim, no campo "word" do breakdown, coloque SEMPRE o caractere seguido do pinyin com tons entre parênteses. Exemplo: "保护 (bǎohù)".'
+    : '';
+
+  const loteLimpo = data.map(f => {
+    const item = { id: f.id, [IDIOMA_ORIGEM]: f[IDIOMA_ORIGEM] };
+    if (ehMandarim) {
+      item.zh = f.zh;
+      item.pi = f.pi;
+    } else {
+      item[IDIOMA_ESTUDO] = f[IDIOMA_ESTUDO];
+    }
+    return item;
+  });
+
+  const promptFinal = `Você é um amigo professor experiente e muito didático, fluente em ${nomeBase} e com pronúncia e ritmo de nativo em ${nomeAlvo}.
+Seu papel é explicar frases em ${nomeAlvo} para alunos que falam ${nomeBase}, como um amigo experiente que mora fora explicando a lógica prática do dia a dia, de forma clara, natural e sem termos técnicos de gramática ou fonética. 
+
+IMPORTANTE: Toda a sua resposta (explicações, vocabulário e pronúncia) deve ser redigida estritamente em ${nomeBase}.
+
+PROIBIÇÃO ABSOLUTA DE JARGÕES TÉCNICOS:
+1. Termos gramaticais proibidos: canônica, causativo, sintagma, elisão, clítico, próclise, ênclise, anafórico, deítico, pretérito, acusativo, dativo, genitivo, declinação, desinência, partícula aspectual, classificador nominal, cópula, oração subordinada.
+2. Termos fonéticos proibidos: fricativa, oclusiva, bilabial, alveolar, velar, glotal, liaison, schwa, flap, apócope, fonema, alofone, IPA.
+
+REGRAS OBRIGATÓRIAS:
+1. explanation: Curta e direta, explicando o raciocínio real de como nativos do ${nomeAlvo} montam a frase, com aspecto de um amigo professor experiente e muito didático, de forma clara, natural e sem termos técnicos de gramática.
+2. breakdown: Decomposição EXAUSTIVA de 100% dos elementos da frase. Nenhuma palavra ou elemento gramatical pode ficar de fora.${regraMandarim}
+3. pronuncia: Um parágrafo curto e fluido com dicas práticas de pronúncia, com aspecto de um amigo professor experiente e muito didático que fala o ${nomeBase} do aluno e que já fala o ${nomeAlvo} muito bem, explicando para o aluno de forma mais informal, sem termos técnicos de fonética.
+   - Destaque letras que não são faladas (letras mudas).
+   - Mostre como emendar os sons entre palavras vizinhas para a frase fluir em um bloco só.
+   - Use referências físicas diretas (posição dos lábios, língua nos dentes, ar na garganta) comparando com sons conhecidos de ${nomeBase}.
+   - Proibido usar símbolos do alfabeto fonético (IPA); use transcrições intuitivas adaptadas para quem lê em ${nomeBase}.
+
+FORMATO DE RETORNO:
+Retorne ESTRITAMENTE um objeto JSON onde cada chave é o ID da frase (como string) contendo os campos:
+- "explanation": string
+- "breakdown": array de objetos [{"word": string, "meaning": string}]
+- "pronuncia": string
+
+${EXEMPLOS_PADRAO_OURO}
+
+REGRA DE PRODUÇÃO EM ESTEIRA (6 BLOCOS DE 5 FRASES):
+O lote abaixo contém ${loteLimpo.length} frases ([${NIVEL}] ${TOPICO} - ${IDIOMA_ESTUDO}_${IDIOMA_ORIGEM}).
+Para garantir precisão e auditoria de qualidade:
+- Sua primeira resposta DEVE conter ESTRITAMENTE as primeiras 5 frases (Bloco 1: frases 1 a 5).
+- Ao final, pergunte se pode avançar para o Bloco 2.
+- A cada confirmação do usuário ("ok" ou "próximo"), envie o bloco seguinte de 5 frases.
+- No Bloco 6 (frases 26 a 30), envie o bloco e, em seguida, o JSON final consolidado com as 30 frases fechadas prontas para gravação no arquivo.
+
+Lote completo de frases:
+${JSON.stringify(loteLimpo, null, 2)}
+`;
+
+  // Salva em arquivo para copiar fácil e imprime aviso
+  const caminhoPrompt = path.resolve(__dirname, '../prompt_gerar.txt');
+  fs.writeFileSync(caminhoPrompt, promptFinal, 'utf-8');
+
+  console.log('='.repeat(65));
+  console.log(`✔ PROMPT GERADO COM SUCESSO! (${loteLimpo.length} frases)`);
+  console.log(`Arquivo salvo em: prompt_gerar.txt`);
+  console.log('='.repeat(65));
+  console.log('Basta abrir o arquivo "prompt_gerar.txt", copiar tudo e colar aqui no chat.');
+}
+
+gerarPromptParaChat();
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/audioPronuncias.json
+{
+  "35": {
+    "descricao": "Número de telefone ditado com ritmo natural em blocos",
+    "fr": "Mon numéro de téléphone est le cinq cinq cinq, zéro un, quatre-vingt-douze.",
+    "pt": "Meu número de telefone é cinco cinco cinco, zero um, noventa e dois.",
+    "en": "My phone number is five five five, oh one, nine two.",
+    "es": "Mi número de teléfono es el cinco cinco cinco, cero uno, noventa y dos.",
+    "it": "Il mio numero di telefono è il cinque cinque cinque, zero uno, novantadue.",
+    "ge": "Meine Telefonnummer ist fünf fünf fünf, null eins, zweiundneunzig.",
+    "zh": "我的电话号码是：五五五，零一，九二。",
+    "zh_rate": "-15%"
+  }
+}
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerar_audios_en.py
+import asyncio
+import os
+import json
+import urllib.request
+import edge_tts
+
+SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co"
+SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp"
+PASTA_DESTINO = "audios_dingli/en"
+
+VOZES = {
+    "v1": "en-US-AndrewNeural",
+    "v2": "en-US-GuyNeural",
+    "v3": "en-US-EricNeural",
+    "v4": "en-US-JennyNeural",
+    "v5": "en-GB-LibbyNeural",
+    "v6": "en-CA-ClaraNeural"
+}
+
+def buscar_todas_frases():
+    frases = []
+    offset = 0
+    tamanho_pagina = 1000
+    
+    while True:
+        url = f"{SUPABASE_URL}/rest/v1/sentences?select=id,en&en=not.is.null&order=id.asc&limit={tamanho_pagina}&offset={offset}"
+        req = urllib.request.Request(url, headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}"
+        })
+        with urllib.request.urlopen(req) as response:
+            dados = json.loads(response.read().decode('utf-8'))
+            if not dados:
+                break
+            frases.extend(dados)
+            if len(dados) < tamanho_pagina:
+                break
+            offset += tamanho_pagina
+            
+    return frases
+
+async def sintetizar_audio(semaforo, texto, voz, caminho_arquivo):
+    if os.path.exists(caminho_arquivo) and os.path.getsize(caminho_arquivo) > 0:
+        return False
+
+    async with semaforo:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto, voz)
+                await com.save(caminho_arquivo)
+                return True
+            except Exception:
+                if tentativa == 2:
+                    print(f"\n[ERRO] Falha ao gerar: {caminho_arquivo}")
+                    return False
+                await asyncio.sleep(1.5)
+
+async def main():
+    os.makedirs(PASTA_DESTINO, exist_ok=True)
+    
+    print("Consultando frases no Supabase...")
+    frases = buscar_todas_frases()
+    total_frases = len(frases)
+    total_audios = total_frases * len(VOZES)
+    print(f"Total de frases encontradas: {total_frases} ({total_audios} arquivos de áudio no total)")
+    
+    semaforo = asyncio.Semaphore(5)
+    tarefas = []
+    
+    for item in frases:
+        f_id = item["id"]
+        texto = item["en"].strip()
+        if not texto:
+            continue
+            
+        for v_num, voz in VOZES.items():
+            arquivo = os.path.join(PASTA_DESTINO, f"{f_id}_{v_num}.mp3")
+            tarefas.append(sintetizar_audio(semaforo, texto, voz, arquivo))
+
+    concluidos = 0
+    for future in asyncio.as_completed(tarefas):
+        gerou = await future
+        concluidos += 1
+        if concluidos % 50 == 0 or concluidos == total_audios:
+            pct = (concluidos / total_audios) * 100
+            print(f"Progresso: {concluidos}/{total_audios} ({pct:.1f}%)", end="\r", flush=True)
+
+    print("\nProcessamento concluído com sucesso!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerar_audios_es.py
+import asyncio
+import os
+import json
+import urllib.request
+import edge_tts
+
+SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co"
+SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp"
+PASTA_DESTINO = "audios_dingli/es"
+
+VOZES = {
+    "v1": "es-AR-TomasNeural",
+    "v2": "es-MX-JorgeNeural",
+    "v3": "es-PE-AlexNeural",
+    "v4": "es-CO-SalomeNeural",
+    "v5": "es-CL-CatalinaNeural",
+    "v6": "es-MX-DaliaNeural"
+}
+
+def buscar_todas_frases():
+    frases = []
+    offset = 0
+    tamanho_pagina = 1000
+    
+    while True:
+        url = f"{SUPABASE_URL}/rest/v1/sentences?select=id,es&es=not.is.null&order=id.asc&limit={tamanho_pagina}&offset={offset}"
+        req = urllib.request.Request(url, headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}"
+        })
+        with urllib.request.urlopen(req) as response:
+            dados = json.loads(response.read().decode('utf-8'))
+            if not dados:
+                break
+            frases.extend(dados)
+            if len(dados) < tamanho_pagina:
+                break
+            offset += tamanho_pagina
+            
+    return frases
+
+async def sintetizar_audio(semaforo, texto, voz, caminho_arquivo):
+    if os.path.exists(caminho_arquivo) and os.path.getsize(caminho_arquivo) > 0:
+        return False
+
+    async with semaforo:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto, voz)
+                await com.save(caminho_arquivo)
+                return True
+            except Exception:
+                if tentativa == 2:
+                    print(f"\n[ERRO] Falha ao gerar: {caminho_arquivo}")
+                    return False
+                await asyncio.sleep(1.5)
+
+async def main():
+    os.makedirs(PASTA_DESTINO, exist_ok=True)
+    
+    print("Consultando frases em Espanhol no Supabase...")
+    frases = buscar_todas_frases()
+    total_frases = len(frases)
+    total_audios = total_frases * len(VOZES)
+    print(f"Total de frases encontradas: {total_frases} ({total_audios} arquivos de audio no total)")
+    
+    semaforo = asyncio.Semaphore(5)
+    tarefas = []
+    
+    for item in frases:
+        f_id = item["id"]
+        texto = (item.get("es") or "").strip()
+        if not texto:
+            continue
+            
+        for v_num, voz in VOZES.items():
+            arquivo = os.path.join(PASTA_DESTINO, f"{f_id}_{v_num}.mp3")
+            tarefas.append(sintetizar_audio(semaforo, texto, voz, arquivo))
+
+    concluidos = 0
+    for future in asyncio.as_completed(tarefas):
+        gerou = await future
+        concluidos += 1
+        if concluidos % 50 == 0 or concluidos == total_audios:
+            pct = (concluidos / total_audios) * 100
+            print(f"Progresso: {concluidos}/{total_audios} ({pct:.1f}%)", end="\r", flush=True)
+
+    print("\nProcessamento em espanhol concluido com sucesso!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerar_audios_fr.py
+import asyncio
+import os
+import json
+import urllib.request
+import edge_tts
+
+SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co"
+SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp"
+PASTA_DESTINO = "audios_dingli/fr"
+
+VOZES = {
+    "v1": "fr-FR-DeniseNeural",
+    "v2": "fr-FR-HenriNeural",
+    "v3": "fr-BE-CharlineNeural",
+    "v4": "fr-CA-ThierryNeural"
+}
+
+def buscar_todas_frases():
+    frases = []
+    offset = 0
+    tamanho_pagina = 1000
+    
+    while True:
+        url = f"{SUPABASE_URL}/rest/v1/sentences?select=id,fr&fr=not.is.null&order=id.asc&limit={tamanho_pagina}&offset={offset}"
+        req = urllib.request.Request(url, headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}"
+        })
+        with urllib.request.urlopen(req) as response:
+            dados = json.loads(response.read().decode('utf-8'))
+            if not dados:
+                break
+            frases.extend(dados)
+            if len(dados) < tamanho_pagina:
+                break
+            offset += tamanho_pagina
+            
+    return frases
+
+async def sintetizar_audio(semaforo, texto, voz, caminho_arquivo):
+    if os.path.exists(caminho_arquivo) and os.path.getsize(caminho_arquivo) > 0:
+        return False
+
+    async with semaforo:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto, voz)
+                await com.save(caminho_arquivo)
+                return True
+            except Exception:
+                if tentativa == 2:
+                    print(f"\n[ERRO] Falha ao gerar: {caminho_arquivo}")
+                    return False
+                await asyncio.sleep(1.5)
+
+async def main():
+    os.makedirs(PASTA_DESTINO, exist_ok=True)
+    
+    print("Consultando frases em Frances no Supabase...")
+    frases = buscar_todas_frases()
+    total_frases = len(frases)
+    total_audios = total_frases * len(VOZES)
+    print(f"Total de frases encontradas: {total_frases} ({total_audios} arquivos de audio no total)")
+    
+    semaforo = asyncio.Semaphore(5)
+    tarefas = []
+    
+    for item in frases:
+        f_id = item["id"]
+        texto = (item.get("fr") or "").strip()
+        if not texto:
+            continue
+            
+        for v_num, voz in VOZES.items():
+            arquivo = os.path.join(PASTA_DESTINO, f"{f_id}_{v_num}.mp3")
+            tarefas.append(sintetizar_audio(semaforo, texto, voz, arquivo))
+
+    concluidos = 0
+    for future in asyncio.as_completed(tarefas):
+        gerou = await future
+        concluidos += 1
+        if concluidos % 50 == 0 or concluidos == total_audios:
+            pct = (concluidos / total_audios) * 100
+            print(f"Progresso: {concluidos}/{total_audios} ({pct:.1f}%)", end="\r", flush=True)
+
+    print("\nProcessamento em frances concluido com sucesso!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerar_audios_ge.py
+import asyncio
+import os
+import json
+import urllib.request
+import edge_tts
+
+SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co"
+SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp"
+PASTA_DESTINO = "audios_dingli/ge"
+
+VOZES = {
+    "v1": "de-AT-JonasNeural",
+    "v2": "de-DE-FlorianMultilingualNeural",
+    "v3": "de-DE-SeraphinaMultilingualNeural",
+    "v4": "de-DE-KatjaNeural"
+}
+
+def buscar_todas_frases():
+    frases = []
+    offset = 0
+    tamanho_pagina = 1000
+    
+    while True:
+        url = f"{SUPABASE_URL}/rest/v1/sentences?select=id,ge&ge=not.is.null&order=id.asc&limit={tamanho_pagina}&offset={offset}"
+        req = urllib.request.Request(url, headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}"
+        })
+        with urllib.request.urlopen(req) as response:
+            dados = json.loads(response.read().decode('utf-8'))
+            if not dados:
+                break
+            frases.extend(dados)
+            if len(dados) < tamanho_pagina:
+                break
+            offset += tamanho_pagina
+            
+    return frases
+
+async def sintetizar_audio(semaforo, texto, voz, caminho_arquivo):
+    if os.path.exists(caminho_arquivo) and os.path.getsize(caminho_arquivo) > 0:
+        return False
+
+    async with semaforo:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto, voz)
+                await com.save(caminho_arquivo)
+                return True
+            except Exception:
+                if tentativa == 2:
+                    print(f"\n[ERRO] Falha ao gerar: {caminho_arquivo}")
+                    return False
+                await asyncio.sleep(1.5)
+
+async def main():
+    os.makedirs(PASTA_DESTINO, exist_ok=True)
+    
+    print("Consultando frases em Alemao no Supabase...")
+    frases = buscar_todas_frases()
+    total_frases = len(frases)
+    total_audios = total_frases * len(VOZES)
+    print(f"Total de frases encontradas: {total_frases} ({total_audios} arquivos de audio no total)")
+    
+    semaforo = asyncio.Semaphore(5)
+    tarefas = []
+    
+    for item in frases:
+        f_id = item["id"]
+        texto = (item.get("ge") or "").strip()
+        if not texto:
+            continue
+            
+        for v_num, voz in VOZES.items():
+            arquivo = os.path.join(PASTA_DESTINO, f"{f_id}_{v_num}.mp3")
+            tarefas.append(sintetizar_audio(semaforo, texto, voz, arquivo))
+
+    concluidos = 0
+    for future in asyncio.as_completed(tarefas):
+        gerou = await future
+        concluidos += 1
+        if concluidos % 50 == 0 or concluidos == total_audios:
+            pct = (concluidos / total_audios) * 100
+            print(f"Progresso: {concluidos}/{total_audios} ({pct:.1f}%)", end="\r", flush=True)
+
+    print("\nProcessamento em alemao concluido com sucesso!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerar_audios_it.py
+import asyncio
+import os
+import json
+import urllib.request
+import edge_tts
+
+SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co"
+SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp"
+PASTA_DESTINO = "audios_dingli/it"
+
+VOZES = {
+    "v1": "it-IT-GiuseppeMultilingualNeural",
+    "v2": "it-IT-DiegoNeural",
+    "v3": "it-IT-IsabellaNeural",
+    "v4": "it-IT-ElsaNeural"
+}
+
+def buscar_todas_frases():
+    frases = []
+    offset = 0
+    tamanho_pagina = 1000
+    
+    while True:
+        url = f"{SUPABASE_URL}/rest/v1/sentences?select=id,it&it=not.is.null&order=id.asc&limit={tamanho_pagina}&offset={offset}"
+        req = urllib.request.Request(url, headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}"
+        })
+        with urllib.request.urlopen(req) as response:
+            dados = json.loads(response.read().decode('utf-8'))
+            if not dados:
+                break
+            frases.extend(dados)
+            if len(dados) < tamanho_pagina:
+                break
+            offset += tamanho_pagina
+            
+    return frases
+
+async def sintetizar_audio(semaforo, texto, voz, caminho_arquivo):
+    if os.path.exists(caminho_arquivo) and os.path.getsize(caminho_arquivo) > 0:
+        return False
+
+    async with semaforo:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto, voz)
+                await com.save(caminho_arquivo)
+                return True
+            except Exception:
+                if tentativa == 2:
+                    print(f"\n[ERRO] Falha ao gerar: {caminho_arquivo}")
+                    return False
+                await asyncio.sleep(1.5)
+
+async def main():
+    os.makedirs(PASTA_DESTINO, exist_ok=True)
+    
+    print("Consultando frases em Italiano no Supabase...")
+    frases = buscar_todas_frases()
+    total_frases = len(frases)
+    total_audios = total_frases * len(VOZES)
+    print(f"Total de frases encontradas: {total_frases} ({total_audios} arquivos de audio no total)")
+    
+    semaforo = asyncio.Semaphore(5)
+    tarefas = []
+    
+    for item in frases:
+        f_id = item["id"]
+        texto = (item.get("it") or "").strip()
+        if not texto:
+            continue
+            
+        for v_num, voz in VOZES.items():
+            arquivo = os.path.join(PASTA_DESTINO, f"{f_id}_{v_num}.mp3")
+            tarefas.append(sintetizar_audio(semaforo, texto, voz, arquivo))
+
+    concluidos = 0
+    for future in asyncio.as_completed(tarefas):
+        gerou = await future
+        concluidos += 1
+        if concluidos % 50 == 0 or concluidos == total_audios:
+            pct = (concluidos / total_audios) * 100
+            print(f"Progresso: {concluidos}/{total_audios} ({pct:.1f}%)", end="\r", flush=True)
+
+    print("\nProcessamento em italiano concluido com sucesso!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerar_audios_pt.py
+import asyncio
+import os
+import json
+import urllib.request
+import edge_tts
+
+SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co"
+SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp"
+PASTA_DESTINO = "audios_dingli/pt"
+
+VOZES = {
+    "v1": "pt-BR-AntonioNeural",
+    "v2": "pt-BR-ThalitaMultilingualNeural",
+    "v3": "ko-KR-HyunsuMultilingualNeural",
+    "v4": "en-US-AvaMultilingualNeural"
+}
+
+def buscar_todas_frases():
+    frases = []
+    offset = 0
+    tamanho_pagina = 1000
+    
+    while True:
+        url = f"{SUPABASE_URL}/rest/v1/sentences?select=id,pt&pt=not.is.null&order=id.asc&limit={tamanho_pagina}&offset={offset}"
+        req = urllib.request.Request(url, headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}"
+        })
+        with urllib.request.urlopen(req) as response:
+            dados = json.loads(response.read().decode('utf-8'))
+            if not dados:
+                break
+            frases.extend(dados)
+            if len(dados) < tamanho_pagina:
+                break
+            offset += tamanho_pagina
+            
+    return frases
+
+async def sintetizar_audio(semaforo, texto, voz, caminho_arquivo):
+    if os.path.exists(caminho_arquivo) and os.path.getsize(caminho_arquivo) > 0:
+        return False
+
+    async with semaforo:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto, voz)
+                await com.save(caminho_arquivo)
+                return True
+            except Exception:
+                if tentativa == 2:
+                    print(f"\n[ERRO] Falha ao gerar: {caminho_arquivo}")
+                    return False
+                await asyncio.sleep(1.5)
+
+async def main():
+    os.makedirs(PASTA_DESTINO, exist_ok=True)
+    
+    print("Consultando frases em Português no Supabase...")
+    frases = buscar_todas_frases()
+    total_frases = len(frases)
+    total_audios = total_frases * len(VOZES)
+    print(f"Total de frases encontradas: {total_frases} ({total_audios} arquivos de áudio no total)")
+    
+    semaforo = asyncio.Semaphore(5)
+    tarefas = []
+    
+    for item in frases:
+        f_id = item["id"]
+        texto = (item.get("pt") or "").strip()
+        if not texto:
+            continue
+            
+        for v_num, voz in VOZES.items():
+            arquivo = os.path.join(PASTA_DESTINO, f"{f_id}_{v_num}.mp3")
+            tarefas.append(sintetizar_audio(semaforo, texto, voz, arquivo))
+
+    concluidos = 0
+    for future in asyncio.as_completed(tarefas):
+        gerou = await future
+        concluidos += 1
+        if concluidos % 50 == 0 or concluidos == total_audios:
+            pct = (concluidos / total_audios) * 100
+            print(f"Progresso: {concluidos}/{total_audios} ({pct:.1f}%)", end="\r", flush=True)
+
+    print("\nProcessamento em português concluído com sucesso!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerar_audios_zh.py
+import asyncio
+import os
+import json
+import urllib.request
+import edge_tts
+
+SUPABASE_URL = "https://lxdmfaxxxfyzbpzvniyi.supabase.co"
+SUPABASE_KEY = "sb_publishable_iPykeIMk376fBXL0b-hGjA_FkvaDcVp"
+PASTA_DESTINO = "audios_dingli/zh"
+
+VOZES = {
+    "v1": "zh-CN-XiaoxiaoNeural",
+    "v2": "zh-CN-YunxiNeural",
+    "v3": "zh-CN-YunjianNeural",
+    "v4": "zh-CN-XiaoyiNeural"
+}
+
+def buscar_todas_frases():
+    frases = []
+    offset = 0
+    tamanho_pagina = 1000
+    
+    while True:
+        url = f"{SUPABASE_URL}/rest/v1/sentences?select=id,zh&zh=not.is.null&order=id.asc&limit={tamanho_pagina}&offset={offset}"
+        req = urllib.request.Request(url, headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}"
+        })
+        with urllib.request.urlopen(req) as response:
+            dados = json.loads(response.read().decode('utf-8'))
+            if not dados:
+                break
+            frases.extend(dados)
+            if len(dados) < tamanho_pagina:
+                break
+            offset += tamanho_pagina
+            
+    return frases
+
+async def sintetizar_audio(semaforo, texto, voz, caminho_arquivo):
+    if os.path.exists(caminho_arquivo) and os.path.getsize(caminho_arquivo) > 0:
+        return False
+
+    async with semaforo:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto, voz)
+                await com.save(caminho_arquivo)
+                return True
+            except Exception:
+                if tentativa == 2:
+                    print(f"\n[ERRO] Falha ao gerar: {caminho_arquivo}")
+                    return False
+                await asyncio.sleep(1.5)
+
+async def main():
+    os.makedirs(PASTA_DESTINO, exist_ok=True)
+    
+    print("Consultando frases em Mandarim (Hanzi) no Supabase...")
+    frases = buscar_todas_frases()
+    total_frases = len(frases)
+    total_audios = total_frases * len(VOZES)
+    print(f"Total de frases encontradas: {total_frases} ({total_audios} arquivos de áudio no total)")
+    
+    semaforo = asyncio.Semaphore(5)
+    tarefas = []
+    
+    for item in frases:
+        f_id = item["id"]
+        texto = (item.get("zh") or "").strip()
+        if not texto:
+            continue
+            
+        for v_num, voz in VOZES.items():
+            arquivo = os.path.join(PASTA_DESTINO, f"{f_id}_{v_num}.mp3")
+            tarefas.append(sintetizar_audio(semaforo, texto, voz, arquivo))
+
+    concluidos = 0
+    for future in asyncio.as_completed(tarefas):
+        gerou = await future
+        concluidos += 1
+        if concluidos % 50 == 0 or concluidos == total_audios:
+            pct = (concluidos / total_audios) * 100
+            print(f"Progresso: {concluidos}/{total_audios} ({pct:.1f}%)", end="\r", flush=True)
+
+    print("\nProcessamento em Mandarim concluído com sucesso!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/gerarExplicacoes - Copy.mjs
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { supabase } from '../src/supabaseClient.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const API_KEY = "SUA_CHAVE_GEMINI_AQUI";
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
+
+// Parâmetros de idioma e filtro via linha de comando (padrão: fr e pt)
+const IDIOMA_ESTUDO = process.argv[2] || 'fr';
+const IDIOMA_ORIGEM = process.argv[3] || 'pt';
+const FILTRO_TOPICO = process.argv[4] || null;
+
+const NOMES_IDIOMAS = {
+  fr: 'Francês', en: 'Inglês', es: 'Espanhol',
+  it: 'Italiano', ge: 'Alemão', pt: 'Português',
+  zh: 'Mandarim', pi: 'Mandarim (Pinyin)'
+};
+
+// Lista de termos acadêmicos e fonéticos estritamente proibidos
+const PALAVRAS_PROIBIDAS = [
+  "canônica", "canônico", "causativo", "sintagma", "elidido", "elisão",
+  "clítico", "próclise", "ênclise", "anafórico", "deítico", "pretérito",
+  "inversão interrogativa", "particípio adjetivado", "oração subordinada",
+  "apresentativo", "descontínua", "eufônica", "eufônico", "locução adverbial",
+  "acusativo", "dativo", "genitivo", "declinação", "desinência",
+  "partícula aspectual", "classificador nominal", "cópula",
+  "fricativa", "oclusiva", "bilabial", "alveolar", "velar", "glotal",
+  "liaison", "schwa", "flap", "apócope", "fonema", "alofone", "ipa"
 ];
 
 // Exemplos que servem de modelo obrigatório de tom e profundidade
@@ -1560,12 +3004,13 @@ Frase: "S'il te plaît, parle lentement."
 Tradução: "Por favor, fale devagar."
 Saída:
 {
-  "explanation": "O clássico 'por favor' do francês (s'il te plaît) significa ao pé da letra 'se isso te agrada'. Como a conversa é informal, o verbo falar (parle) entra no modo de pedido. Um detalhe importante: enquanto no presente comum se escreve 'tu parles' com S, na hora de fazer um pedido ou dar uma instrução o S cai fora. A palavra 'lentement' é a junção de lente (lenta) com o sufixo -ment (o nosso '-mente').",
+  "explanation": "O clássico 'por favor' do francês (s'il te plaît) significa ao pé da letra 'se isso te agrada'. Como a conversa é informal, o verbo falar (parle) entra no modo de pedido, e a letra 's' do final é descartada. A palavra 'lentement' junta 'lente' com o sufixo '-ment' (o nosso '-mente').",
   "breakdown": [
     { "word": "S'il te plaît", "meaning": "por favor (jeito informal usado com amigos e conhecidos)" },
     { "word": "parle", "meaning": "fale / fala (pedido direto, sem o 's' no final)" },
     { "word": "lentement", "meaning": "devagar / lentamente" }
-  ]
+  ],
+  "pronuncia": "Em 's'il te plaît', o som sai direto como 'sil-te-plê' (o 't' final morre e o 'aît' vira som de 'ê'). Em 'parle', o 'R' arranha leve no fundo da garganta e o 'e' final não se fala ('parl'). Feche com 'lan-te-man', com o som saindo pelo nariz e sem pronunciar o último 't'."
 }
 
 Exemplo 2:
@@ -1573,7 +3018,7 @@ Frase: "Il n'est pas mon frère."
 Tradução: "Ele não é meu irmão."
 Saída:
 {
-  "explanation": "Para dizer 'não' em francês com verbos, a língua usa uma estrutura em duas partes que abraça a ação: o 'n'' vem antes do verbo (encurtado porque 'est' começa com vogal) e o 'pas' vem logo depois. O 'mon' funciona exatamente como o nosso 'meu'.",
+  "explanation": "Para dizer 'não' com verbos em francês, a língua abraça a ação com duas peças: o 'n'' vem antes (encurtado porque 'est' começa com vogal) e o 'pas' vem logo em seguida. O 'mon' funciona exatamente como o nosso 'meu'.",
   "breakdown": [
     { "word": "Il", "meaning": "Ele" },
     { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
@@ -1581,7 +3026,8 @@ Saída:
     { "word": "pas", "meaning": "segunda parte que fecha a negação" },
     { "word": "mon", "meaning": "meu" },
     { "word": "frère", "meaning": "irmão" }
-  ]
+  ],
+  "pronuncia": "Aqui você gruda as palavras: 'Il n'est pas' soa tudo junto como 'il-né-pá' (o 's' de 'est' e o 's' de 'pas' são mudos). Em 'mon', faça a boca redonda para o som nasal. E em 'frère', capriche no 'R' arranhado e pare direto na consoante: fale 'frér', sem soltar nenhum 'i' no final."
 }
 `;
 
@@ -1592,7 +3038,9 @@ function aguardar(ms) {
 function validarTextoSemJargao(texto) {
   const textoMin = texto.toLowerCase();
   for (const termo of PALAVRAS_PROIBIDAS) {
-    if (textoMin.includes(termo.toLowerCase())) {
+    // Procura o termo como palavra isolada para não travar em palavras como "principal"
+    const regex = new RegExp(`\\b${termo.toLowerCase()}\\b`, 'i');
+    if (regex.test(textoMin)) {
       return { valido: false, termo };
     }
   }
@@ -1600,14 +3048,29 @@ function validarTextoSemJargao(texto) {
 }
 
 async function chamarGemini(blocoFrases, tentativa = 1) {
+  const nomeAlvo = NOMES_IDIOMAS[IDIOMA_ESTUDO] || IDIOMA_ESTUDO;
+  const nomeBase = NOMES_IDIOMAS[IDIOMA_ORIGEM] || IDIOMA_ORIGEM;
+
+  const regraMandarim = (IDIOMA_ESTUDO === 'zh' || IDIOMA_ESTUDO === 'pi')
+    ? '\n   - Para o mandarim, no campo "word" do breakdown, coloque SEMPRE o caractere seguido do pinyin com tons entre parênteses. Exemplo: "保护 (bǎohù)".'
+    : '';
+
   const prompt = `
-Você é um professor experiente e muito didático.
-Explique as frases em Francês para alunos brasileiros como um amigo experiente que mora fora explicando a lógica prática do dia a dia, de forma clara, natural e sem termos técnicos de gramática (PROIBIDO usar: ${PALAVRAS_PROIBIDAS.join(', ')}).
+Você é um mentor experiente e muito didático, fluente em ${nomeBase} e com pronúncia e ritmo de nativo em ${nomeAlvo}.
+Seu papel é explicar frases em ${nomeAlvo} para alunos que falam ${nomeBase}, de forma prática, direta e acolhedora — como um amigo ensinando ao lado da mesa a lógica do dia a dia e o "bizu" real da pronúncia.
+
+IMPORTANTE: Toda a sua resposta (explicações, vocabulário e pronúncia) deve ser redigida estritamente em ${nomeBase}.
+PROIBIÇÃO ABSOLUTA DE JARGÕES TÉCNICOS: ${PALAVRAS_PROIBIDAS.join(', ')}.
 
 Regras obrigatórias:
-1. Explicação: Curta, direta (2 a 4 linhas), explicando o raciocínio real de como o francês constrói a ideia.
-2. Breakdown: Decomposição EXAUSTIVA de 100% das palavras e partículas da frase. Nenhuma palavra ou partícula pode ficar de fora.
-3. Formato: Retorne ESTRITAMENTE um objeto JSON onde cada chave é o ID da frase (como string) contendo "explanation" e "breakdown" (array com objetos contendo "word" e "meaning").
+1. explanation: Curta e direta (2 a 4 linhas), explicando o raciocínio real de como ${nomeAlvo} monta a ideia em comparação com a lógica de ${nomeBase}, sem termos teóricos.
+2. breakdown: Decomposição EXAUSTIVA de 100% das palavras e partículas da frase. Nenhuma palavra ou elemento gramatical pode ficar de fora (array de objetos com "word" e "meaning").${regraMandarim}
+3. pronuncia: Um parágrafo curto e fluido (2 a 4 linhas) com dicas práticas de fala:
+   - Destaque letras que não são faladas (letras mudas).
+   - Mostre como emendar os sons entre palavras vizinhas para a frase fluir em um bloco só.
+   - Use referências físicas diretas (posição dos lábios, língua nos dentes, ar na garganta) comparando com sons conhecidos de ${nomeBase}.
+   - Proibido usar símbolos do alfabeto fonético (IPA); use aproximações sonoras intuitivas adaptadas para quem lê em ${nomeBase}.
+4. Formato: Retorne ESTRITAMENTE um objeto JSON onde cada chave é o ID da frase (como string) contendo "explanation", "breakdown" e "pronuncia".
 
 ${EXEMPLOS_PADRAO_OURO}
 
@@ -1650,8 +3113,8 @@ ${JSON.stringify(blocoFrases, null, 2)}
   } catch (err) {
     if (tentativa <= 4) {
       const is429 = err.message.includes('429');
-      const tempoEspera = is429 ? 35000 : 4000;
-      console.warn(`[API] ${is429 ? 'Limite de requisições por minuto atingido (429).' : 'Erro na chamada:'} Aguardando ${tempoEspera / 1000}s para retentar (tentativa ${tentativa + 1})...`);
+      const tempoEspera = is429 ? 50000 : 4000;
+      console.warn(`[API] ${is429 ? 'Limite de requisições atingido (429).' : 'Erro na chamada:'} Aguardando ${tempoEspera / 1000}s para retentar (tentativa ${tentativa + 1})...`);
       await aguardar(tempoEspera);
       return await chamarGemini(blocoFrases, tentativa + 1);
     }
@@ -1663,15 +3126,15 @@ async function processarTopico(nivel, nomeTopico, frasesTopico, pastaDestino) {
   const nomeArquivo = `${nivel}_${nomeTopico}.json`;
   const caminhoArquivo = path.join(pastaDestino, nomeArquivo);
 
-  // Checkpoint: pula arquivos já gerados com todas as frases
-  if (fs.existsSync(caminhoArquivo)) {
+  // Checkpoint: pula arquivos já gerados com todas as frases (a menos que um tópico específico tenha sido solicitado)
+  if (!FILTRO_TOPICO && fs.existsSync(caminhoArquivo)) {
     try {
       const conteudo = JSON.parse(fs.readFileSync(caminhoArquivo, 'utf-8'));
       if (Object.keys(conteudo).length >= frasesTopico.length) {
         console.log(`[Checkpoint] Pulando '${nomeArquivo}' (já completo com ${frasesTopico.length} frases).`);
         return;
       }
-    } catch (e) {}
+    } catch (e) { }
   }
 
   console.log(`\n======================================================`);
@@ -1679,14 +3142,22 @@ async function processarTopico(nivel, nomeTopico, frasesTopico, pastaDestino) {
   console.log(`======================================================`);
 
   const resultadoTopico = {};
-  const TAMANHO_LOTE = 5;
+  const TAMANHO_LOTE = 6;
 
   for (let i = 0; i < frasesTopico.length; i += TAMANHO_LOTE) {
-    const lote = frasesTopico.slice(i, i + TAMANHO_LOTE).map(f => ({
-      id: f.id,
-      fr: f.fr,
-      pt: f.pt
-    }));
+    const lote = frasesTopico.slice(i, i + TAMANHO_LOTE).map(f => {
+      const item = {
+        id: f.id,
+        [IDIOMA_ORIGEM]: f[IDIOMA_ORIGEM]
+      };
+      if (IDIOMA_ESTUDO === 'zh' || IDIOMA_ESTUDO === 'pi') {
+        item.zh = f.zh;
+        item.pi = f.pi;
+      } else {
+        item[IDIOMA_ESTUDO] = f[IDIOMA_ESTUDO];
+      }
+      return item;
+    });
 
     const loteNum = Math.floor(i / TAMANHO_LOTE) + 1;
     const totalLotes = Math.ceil(frasesTopico.length / TAMANHO_LOTE);
@@ -1695,8 +3166,8 @@ async function processarTopico(nivel, nomeTopico, frasesTopico, pastaDestino) {
     const resultadoLote = await chamarGemini(lote);
     Object.assign(resultadoTopico, resultadoLote);
 
-    // Pausa preventiva de 4.5 segundos entre lotes para respeitar a cota de 15 RPM
-    await aguardar(4500);
+    // Pausa preventiva de 6 segundos entre lotes para respeitar a cota de 10 RPM
+    await aguardar(6000);
   }
 
   fs.writeFileSync(caminhoArquivo, JSON.stringify(resultadoTopico, null, 2), 'utf-8');
@@ -1704,22 +3175,26 @@ async function processarTopico(nivel, nomeTopico, frasesTopico, pastaDestino) {
 }
 
 async function iniciarEsteira() {
-  const pastaDestino = path.resolve(__dirname, '../public/explicacoes/fr_pt');
+  const parIdiomas = `${IDIOMA_ESTUDO}_${IDIOMA_ORIGEM}`;
+  const pastaDestino = path.resolve(__dirname, `../public/explicacoes/${parIdiomas}`);
   if (!fs.existsSync(pastaDestino)) {
     fs.mkdirSync(pastaDestino, { recursive: true });
   }
 
+  const colTopicOrigem = `topic_${IDIOMA_ORIGEM}`;
   const NIVEIS = ['A1', 'A2', 'B1', 'B2'];
+  const colunasAlvo = (IDIOMA_ESTUDO === 'zh' || IDIOMA_ESTUDO === 'pi') ? 'zh, pi' : IDIOMA_ESTUDO;
+  const colunaFiltro = (IDIOMA_ESTUDO === 'zh' || IDIOMA_ESTUDO === 'pi') ? 'zh' : IDIOMA_ESTUDO;
 
   for (const nivel of NIVEIS) {
-    console.log(`\n>>> Carregando frases do nível ${nivel} do Supabase...`);
-    
-    // Consulta por nível (300 frases cada, sem atingir a trava de 1.000 registros do Supabase)
+    console.log(`\n>>> Carregando frases do nível ${nivel} (${parIdiomas}) do Supabase...`);
+
+    const colunas = `id, ${colunasAlvo}, ${IDIOMA_ORIGEM}, level, ${colTopicOrigem}`;
     const { data, error } = await supabase
       .from('sentences')
-      .select('id, fr, pt, level, topic_pt')
+      .select(colunas)
       .eq('level', nivel)
-      .not('fr', 'is', null)
+      .not(colunaFiltro, 'is', null)
       .order('id', { ascending: true });
 
     if (error) {
@@ -1727,16 +3202,19 @@ async function iniciarEsteira() {
       continue;
     }
 
-    // Agrupa as 300 frases em seus 10 tópicos mantendo a ordem correta dos IDs
+    // Agrupa as frases nos tópicos da língua nativa do aluno
     const topicosDoNivel = {};
     for (const f of data) {
-      const tp = f.topic_pt;
+      const tp = f[colTopicOrigem];
       if (!tp) continue;
       if (!topicosDoNivel[tp]) topicosDoNivel[tp] = [];
       topicosDoNivel[tp].push(f);
     }
 
     for (const [nomeTopico, frases] of Object.entries(topicosDoNivel)) {
+      if (FILTRO_TOPICO && !nomeTopico.toLowerCase().includes(FILTRO_TOPICO.toLowerCase())) {
+        continue;
+      }
       await processarTopico(nivel, nomeTopico, frases, pastaDestino);
     }
   }
@@ -1747,3 +3225,245 @@ async function iniciarEsteira() {
 }
 
 iniciarEsteira();
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/regerar_pt_francisca.py
+# -*- coding: utf-8 -*-
+import asyncio, csv, os, re, shutil, subprocess, unicodedata, edge_tts
+
+CSV_FILE = 'supabase_sentences.csv'
+PASTA_PT = os.path.join('audios_dingli', 'palavras', 'pt')
+PASTA_QUARENTENA_PT = os.path.join('audios_dingli', 'quarentena_orfaos', 'pt_legado')
+FFMPEG = os.path.abspath('ffmpeg.exe')
+VOZ = 'pt-BR-FranciscaNeural'
+SEMAFORO_LIMITE = 6
+
+def sanitizar_palavra_audio(palavra):
+    p = (palavra or '').strip().lower().replace('ß', 'ss')
+    sem_p = re.sub(r'[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]', '', p).replace("'", "_").replace('’', '_')
+    if not sem_p: return ''
+    nfd = unicodedata.normalize('NFD', sem_p)
+    mapa = {'\u0300': 'grave', '\u0301': 'acute', '\u0302': 'circ', '\u0303': 'tilde', '\u0308': 'uml', '\u0327': 'ced'}
+    base_chars, marcas, ultimo = [], [], ''
+    for c in nfd:
+        if c in mapa:
+            marcas.append(f'{ultimo}_{mapa[c]}')
+        elif not ('\u0300' <= c <= '\u036f'):
+            base_chars.append(c)
+            ultimo = c
+    slug = re.sub(r'[^a-zA-Z0-9_-]', '', ''.join(base_chars))
+    return f'{slug}_{"_".join(marcas)}' if marcas else slug
+
+# 1. Isolamento seguro da pasta legada
+if os.path.exists(PASTA_PT):
+    os.makedirs(os.path.dirname(PASTA_QUARENTENA_PT), exist_ok=True)
+    if os.path.exists(PASTA_QUARENTENA_PT):
+        shutil.rmtree(PASTA_QUARENTENA_PT)
+    shutil.move(PASTA_PT, PASTA_QUARENTENA_PT)
+    print(f"✔ Pasta legada de 'pt' movida com segurança para: {PASTA_QUARENTENA_PT}")
+
+os.makedirs(PASTA_PT, exist_ok=True)
+
+# 2. Extração determinística do vocabulário oficial
+mapa_palavras = {}  # slug -> texto_tts
+
+with open(CSV_FILE, mode='r', encoding='utf-8-sig') as f:
+    for row in csv.DictReader(f):
+        texto = row.get('pt', '')
+        if not texto: continue
+        for token in texto.split():
+            slug = sanitizar_palavra_audio(token)
+            if not slug or slug in mapa_palavras:
+                continue
+            
+            # Ajuste fonético de fechamento para a conjunção 'e'
+            limpa = token.strip('.,!?;:¿¡"“”`{}()[]-—…，。！？；：、«»/\\~*').lower()
+            if limpa == 'e':
+                texto_tts = 'ê'
+            else:
+                texto_tts = limpa
+            
+            mapa_palavras[slug] = texto_tts
+
+total = len(mapa_palavras)
+print(f"Total de palavras únicas a sintetizar: {total} (Voz: {VOZ})")
+
+# 3. Pipeline assíncrono: Edge-TTS + FFmpeg 300ms
+async def sintetizar_item(slug, texto_tts, sem, progresso):
+    destino_final = os.path.join(PASTA_PT, f"{slug}.mp3")
+    destino_raw = os.path.join(PASTA_PT, f"{slug}_raw.mp3")
+
+    async with sem:
+        for tentativa in range(3):
+            try:
+                com = edge_tts.Communicate(texto_tts, VOZ)
+                await com.save(destino_raw)
+                
+                cmd = [
+                    FFMPEG, '-y', '-i', destino_raw,
+                    '-af', 'adelay=300|300,apad=pad_dur=0.1',
+                    '-b:a', '128k', destino_final
+                ]
+                res = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                if os.path.exists(destino_raw):
+                    os.remove(destino_raw)
+                
+                if res.returncode == 0 and os.path.exists(destino_final) and os.path.getsize(destino_final) > 0:
+                    progresso['ok'] += 1
+                    break
+            except Exception:
+                if os.path.exists(destino_raw):
+                    os.remove(destino_raw)
+                await asyncio.sleep(1.0)
+        else:
+            progresso['falhas'].append(slug)
+
+    progresso['atual'] += 1
+    atual = progresso['atual']
+    if atual % 100 == 0 or atual == total:
+        print(f"Progresso [PT]: {atual}/{total} gerados ({progresso['ok']} sucessos, {len(progresso['falhas'])} falhas)...", flush=True)
+
+async def main():
+    sem = asyncio.Semaphore(SEMAFORO_LIMITE)
+    progresso = {'atual': 0, 'ok': 0, 'falhas': []}
+    tarefas = [sintetizar_item(slug, txt, sem, progresso) for slug, txt in mapa_palavras.items()]
+    await asyncio.gather(*tarefas)
+
+    print("\n" + "=" * 50)
+    print(f"Concluído! Total gerado no disco: {len(os.listdir(PASTA_PT))} arquivos.")
+    if progresso['falhas']:
+        print(f"Falhas registradas ({len(progresso['falhas'])}): {progresso['falhas']}")
+    else:
+        print("✔ 100% dos arquivos gerados com sucesso e sem falhas.")
+
+asyncio.run(main())
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/resolver_palavras_it.py
+# -*- coding: utf-8 -*-
+import os
+import shutil
+import asyncio
+import subprocess
+import edge_tts
+
+PASTA_IT = os.path.join("audios_dingli", "palavras", "it")
+PASTA_QUARENTENA = os.path.join("audios_dingli", "quarentena_orfaos", "it")
+FFMPEG = os.path.abspath("ffmpeg.exe")
+VOZ = "it-IT-IsabellaNeural"
+
+os.makedirs(PASTA_QUARENTENA, exist_ok=True)
+
+# 1. Carregar lista de faltantes e órfãs geradas na auditoria
+faltantes = {}
+with open("palavras_it_faltantes.txt", "r", encoding="utf-8") as f:
+    for l in f:
+        partes = l.strip().split("\t")
+        if len(partes) == 2:
+            faltantes[partes[0]] = partes[1]
+
+with open("palavras_it_orfas.txt", "r", encoding="utf-8") as f:
+    orfas = [l.strip() for l in f if l.strip()]
+
+print("=" * 65)
+print(f"1. RELAÇÃO COMPLETA DAS {len(faltantes)} PALAVRAS FALTANTES")
+print("=" * 65)
+for slug, falar in sorted(faltantes.items()):
+    print(f"  slug: {slug:<30} | falar: '{falar}'")
+
+print("\n" + "=" * 65)
+print("2. ISOLAMENTO DAS 1.591 ÓRFÃS PARA QUARENTENA")
+print("=" * 65)
+protegidos = {"5550192"}
+movidos = 0
+for slug in orfas:
+    if slug in protegidos:
+        continue
+    arq = f"{slug}.mp3"
+    origem = os.path.join(PASTA_IT, arq)
+    destino = os.path.join(PASTA_QUARENTENA, arq)
+    if os.path.exists(origem):
+        shutil.move(origem, destino)
+        movidos += 1
+
+print(f"✔ Arquivos movidos com segurança para quarentena_orfaos/it: {movidos}")
+
+print("\n" + "=" * 65)
+print(f"3. SÍNTESE COM ISABELLANEURAL + FFMPEG 300ms/100ms")
+print("=" * 65)
+async def sintetizar():
+    for slug, texto in sorted(faltantes.items()):
+        raw_mp3 = os.path.join(PASTA_IT, f"{slug}_raw.mp3")
+        final_mp3 = os.path.join(PASTA_IT, f"{slug}.mp3")
+        
+        # Síntese neural Edge-TTS
+        com = edge_tts.Communicate(texto, VOZ)
+        await com.save(raw_mp3)
+        
+        # Injeção de 300ms adelay e 100ms apad via FFmpeg
+        cmd = [
+            FFMPEG, "-y", "-i", raw_mp3,
+            "-af", "adelay=300|300,apad=pad_dur=0.1",
+            "-b:a", "128k", final_mp3
+        ]
+        res = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        
+        if os.path.exists(raw_mp3):
+            os.remove(raw_mp3)
+            
+        if res.returncode == 0 and os.path.exists(final_mp3) and os.path.getsize(final_mp3) > 0:
+            print(f"  ✔ Gerado com silêncio: {slug}.mp3 (input: '{texto}')")
+        else:
+            print(f"  ✖ Falha ao processar: {slug}.mp3")
+
+asyncio.run(sintetizar())
+
+total_final = len([f for f in os.listdir(PASTA_IT) if f.endswith(".mp3")])
+print("\n" + "=" * 65)
+print(f"CONFERÊNCIA FINAL LOCAL: {total_final} / 2148 arquivos")
+print("=" * 65)
+if total_final == 2148:
+    print("✔ Paridade local absoluta: exatamente 2.148 palavras oficiais prontas!")
+else:
+    print(f"⚠ Atenção: total diverge em {total_final - 2148} arquivos.")
+
+
+### 📄 ARQUIVO: ./scripts/quarentena_legados/sanitizacao.py
+# -*- coding: utf-8 -*-
+import re
+import unicodedata
+
+def sanitizar_palavra_audio(palavra):
+    p = (palavra or "").strip().lower().replace("ß", "ss")
+    sem_pontuacao = re.sub(r'[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]', '', p)
+    sem_pontuacao = re.sub(r"['’]", "_", sem_pontuacao)
+    if not sem_pontuacao:
+        return ""
+
+    nfd = unicodedata.normalize("NFD", sem_pontuacao)
+    mapa_diacriticos = {
+        "\u0300": "grave",
+        "\u0301": "acute",
+        "\u0302": "circ",
+        "\u0303": "tilde",
+        "\u0308": "uml",
+        "\u0327": "ced",
+        "\u0304": "macron",
+        "\u030c": "caron"
+    }
+
+    base_chars = []
+    marcas = []
+    ultimo_char_base = ""
+
+    for char in nfd:
+        if char in mapa_diacriticos:
+            marcas.append(f"{ultimo_char_base}_{mapa_diacriticos[char]}")
+        else:
+            if not ("\u0300" <= char <= "\u036f"):
+                base_chars.append(char)
+                ultimo_char_base = char
+
+    slug_base = re.sub(r"[^a-zA-Z0-9_-]", "", "".join(base_chars))
+    if marcas:
+        return f"{slug_base}_{'_'.join(marcas)}"
+    return slug_base
