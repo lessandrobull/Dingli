@@ -1,0 +1,562 @@
+{
+  "211": {
+    "explanation": "Para a frase \"Estou me sentindo mal\", o mandarim começa com \"eu\", que é 我 (wǒ). A ideia de sentir ou achar é expressa por 觉得 (juéde). Por fim, o mal-estar é indicado por 不舒服 (bù shūfu), que significa literalmente \"não confortável\".",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "觉得 (juéde)",
+        "meaning": "Sentir / Achar — 觉 (jué): perceber / sentir; 得 (de): resultado do sentimento. Sentido prático: 'sentir-se'."
+      },
+      {
+        "word": "不舒服 (bù shūfu)",
+        "meaning": "Mal / Desconfortável — 不 (bù): não; 舒 (shū): relaxado; 服 (fú): confortável. Sentido literal: 'não confortável'."
+      }
+    ],
+    "pronuncia": "Comece em 我 (wǒ) mergulhando o tom de voz e subindo suavemente como \"uó\". Em 觉得 (juéde), fale \"tchiué\" subindo o tom e \"dê\" de forma curta e leve. Para 不舒服 (bù shūfu), pronuncie o \"bù\" caindo firme como \"bú\", o \"shū\" com a língua enrolada em direção ao céu da boca fazendo som de \"chū\" contínuo, e termine no \"fu\" bem suave e leve.\nLeia: Uó tchiué-dê bú chū-fú."
+  },
+  "212": {
+    "explanation": "Para perguntar \"Onde fica o hospital?\", o mandarim coloca primeiro o local \"hospital\", que é 医院 (yīyuàn). Em seguida, a ideia de estar localizado é expressa por 在 (zài), e a pergunta \"onde\" é feita com 在哪里 (zài nǎlǐ), que significa literalmente \"estar em qual lugar\".",
+    "breakdown": [
+      {
+        "word": "医院 (yīyuàn)",
+        "meaning": "Hospital — 医 (yī): medicina / médico; 院 (yuàn): pátio / instituição. Sentido literal: 'instituição médica'."
+      },
+      {
+        "word": "在哪里 (zài nǎlǐ)",
+        "meaning": "Onde fica / Onde está — 在 (zài): estar em; 哪 (nǎ): qual; 里 (lǐ): dentro / lugar. Sentido literal: 'estar em qual lugar'."
+      }
+    ],
+    "pronuncia": "Em 医院 (yīyuàn), faça o \"yī\" plano e agudo como um \"í\" longo, e o \"yuàn\" caindo com força como \"iüán\". No bloco 在哪里 (zài nǎlǐ), faça o \"zài\" caindo forte como \"tsái\", o \"nǎ\" baixando o tom da voz como \"ná\", e o \"lǐ\" subindo levemente como \"lí\".\nLeia: Í-iüán tsái ná-lí?"
+  },
+  "213": {
+    "explanation": "Para a frase \"Eu preciso de um médico\", o mandarim traz o \"eu\" com 我 (wǒ). A necessidade é indicada por 需要 (xūyào), que significa \"precisar\". Em seguida, em vez de dizer apenas \"médico\", usa-se a expressão 看医生 (kàn yīshēng), que literalmente significa \"ver o médico\".",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "需要 (xūyào)",
+        "meaning": "Precisar / Necessitar — 需 (xū): necessitar; 要 (yào): querer / precisar. Sentido prático: 'ter necessidade de'."
+      },
+      {
+        "word": "看医生 (kàn yīshēng)",
+        "meaning": "Consultar médico — 看 (kàn): ver / visitar; 医 (yī): medicina; 生 (shēng): nascer / profissional. Sentido literal: 'ver o médico'."
+      }
+    ],
+    "pronuncia": "Abra com 我 (wǒ) fazendo o tom cair e subir como \"uó\". Em 需要 (xūyào), projete os lábios para frente no \"xū\" fazendo som de \"xü\" agudo e cai firme no \"yào\" como \"iáo\". Para 看医生 (kàn yīshēng), solte um vento forte na letra \"k\" de \"kàn\" caindo a voz como \"khán\", diga o \"yī\" bem alto e contínuo como \"í\", e feche com \"shēng\" enrolando a língua no céu da boca para o som de \"chêng\".\nLeia: Uó xü-iáo khán í-chêng."
+  },
+  "214": {
+    "explanation": "Para perguntar \"Você tem algum remédio?\", o mandarim começa com \"você\", que é 你 (nǐ). O ato de possuir vem com 有 (yǒu), que significa \"ter\". A palavra para remédio é 药 (yào), e a frase fecha com 吗 (ma), que transforma toda a afirmação em uma pergunta direta.",
+    "breakdown": [
+      {
+        "word": "你 (nǐ)",
+        "meaning": "Você — pessoa com quem se fala."
+      },
+      {
+        "word": "有 (yǒu)",
+        "meaning": "Ter / Possuir."
+      },
+      {
+        "word": "药 (yào)",
+        "meaning": "Remédio / Medicamento."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Tom de pergunta — colocado no fim para transformar a frase em pergunta."
+      }
+    ],
+    "pronuncia": "Comece com 你 (nǐ) descendo ligeiramente a voz como \"ní\". Em 有 (yǒu), faça o tom mergulhar e subir como \"iôu\". O som de 药 (yào) cai com muita força como \"iáo\". Finalize com o 吗 (ma) curtinho e leve como um \"má\" sem peso.\nLeia: Ní iôu iáo má?"
+  },
+  "215": {
+    "explanation": "Para a frase \"Minha cabeça dói\", o mandarim simplifica dizendo literalmente \"Eu cabeça doer\". O \"eu\" é 我 (wǒ), a palavra para cabeça é 头 (tóu), e a sensação de dor é dada por 疼 (téng).",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "头 (tóu)",
+        "meaning": "Cabeça."
+      },
+      {
+        "word": "疼 (téng)",
+        "meaning": "Doer / Sentir dor."
+      }
+    ],
+    "pronuncia": "Comece com 我 (wǒ) baixando e subindo o tom como \"uó\". Em 头 (tóu), suba o tom da voz como se estivesse fazendo uma pergunta, soar como \"tôu\". Para 疼 (téng), solte um sopro de ar na letra \"t\" e suba a voz parecendo \"têng\".\nLeia: Uó tôu-têng."
+  },
+  "216": {
+    "explanation": "Para dizer \"Eu estou muito cansado\", a estrutura em mandarim traz \"eu\" com 我 (wǒ). A ideia de intensidade \"muito\" vem com 很 (hěn), e a palavra para o estado de cansaço é 累 (lèi).",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "很 (hěn)",
+        "meaning": "Muito — intensificador de estado."
+      },
+      {
+        "word": "累 (lèi)",
+        "meaning": "Cansado / Exausto."
+      }
+    ],
+    "pronuncia": "Diga 我 (wǒ) com o tom subindo como \"uó\". Em 很 (hěn), desça e suba a voz suavemente fazendo som de \"rên\". Feche a frase com 累 (lèi) caindo a voz com firmeza e força como \"lêi\".\nLeia: Uó rên lêi."
+  },
+  "217": {
+    "explanation": "Para a ordem urgente \"Chame uma ambulância!\", o mandarim começa com 快 (kuài), que significa \"rápido\". O ato de chamar vem com 叫 (jiào). A palavra para ambulância é 救护车 (jiùhùchē), que ao pé da letra significa \"carro de resgate e proteção\".",
+    "breakdown": [
+      {
+        "word": "快 (kuài)",
+        "meaning": "Rápido / Depressa."
+      },
+      {
+        "word": "叫 (jiào)",
+        "meaning": "Chamar / Chamar por."
+      },
+      {
+        "word": "救护车 (jiùhùchē)",
+        "meaning": "Ambulância — 救 (jiù): salvar / resgatar; 护 (hù): proteger; 车 (chē): veículo / carro. Sentido literal: 'carro de resgate e proteção'."
+      }
+    ],
+    "pronuncia": "Em 快 (kuài), solte ar ao dizer \"khuái\" caindo a voz. Em 叫 (jiào), dê um tom seco e firme como \"tchiáo\". Para 救护车 (jiùhùchē), diga \"tchiôu\" caindo, \"rrú\" caindo e termine no \"tchê\" mantendo o som contínuo e a língua levemente curvada no céu da boca.\nLeia: Khuái tchiáo tchiôu-rrú-tchê!"
+  },
+  "218": {
+    "explanation": "Para perguntar \"Tem uma farmácia por perto?\", o mandarim inicia apontando o local com 附近 (fùjìn), que significa \"nas proximidades\". A existência é dada por 有 (yǒu), ou seja, \"tem\". O estabelecimento é 药店 (yàodiàn), literalmente \"loja de remédios\", e a frase fecha com 吗 (ma) para marcar a pergunta.",
+    "breakdown": [
+      {
+        "word": "附近 (fùjìn)",
+        "meaning": "Nas proximidades / Por perto — 附 (fù): anexar / próximo; 近 (jìn): perto. Sentido literal: 'perto do local'."
+      },
+      {
+        "word": "有 (yǒu)",
+        "meaning": "Ter / Haver."
+      },
+      {
+        "word": "药店 (yàodiàn)",
+        "meaning": "Farmácia — 药 (yào): remédio; 店 (diàn): loja. Sentido literal: 'loja de remédios'."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Tom de pergunta."
+      }
+    ],
+    "pronuncia": "Em 附近 (fùjìn), caia o tom no \"fù\" e faça o \"jìn\" firme como \"djîn\". Em 有 (yǒu), mergulhe e suba a voz como \"iôu\". Para 药店 (yàodiàn), faça ambos caírem com força como \"iáo-diên\". Termine suavemente em 吗 (ma) como \"má\".\nLeia: Fú-djîn iôu iáo-diên má?"
+  },
+  "219": {
+    "explanation": "Para dizer \"Eu estou resfriado\", a frase começa com \"eu\", que é 我 (wǒ). O estado de estar resfriado é expressado por 感冒 (gǎnmào). O elemento 了 (le) no final confirma que essa condição de resfriado já se concretizou.",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "感冒 (gǎnmào)",
+        "meaning": "Resfriado / Pegar resfriado — 感 (gǎn): sentir / afetação; 冒 (mào): emitir / expor-se. Sentido prático: 'estar com resfriado'."
+      },
+      {
+        "word": "了 (le)",
+        "meaning": "Mudança de estado — indica que a situação de estar resfriado aconteceu."
+      }
+    ],
+    "pronuncia": "Comece em 我 (wǒ) subindo o tom como \"uó\". Em 感冒 (gǎnmào), faça o \"gǎn\" mergulhar e subir como \"gǎn\", e caia a voz forte no \"mào\" como \"máo\". Finalize com o 了 (le) curto e fraco como um \"lê\" murcho.\nLeia: Uó gǎn-máo lê."
+  },
+  "220": {
+    "explanation": "Para a frase \"Ele não está se sentindo bem\", o mandarim começa com \"ele\", que é 他 (tā). O sentimento é introduzido por 觉得 (juéde). A condição de desconforto é dada por 不舒服 (bù shūfu), que significa literalmente \"não confortável\".",
+    "breakdown": [
+      {
+        "word": "他 (tā)",
+        "meaning": "Ele — pessoa de quem se fala."
+      },
+      {
+        "word": "觉得 (juéde)",
+        "meaning": "Sentir / Achar — 觉 (jué): perceber; 得 (de): resultado da percepção. Sentido prático: 'sentir-se'."
+      },
+      {
+        "word": "不舒服 (bù shūfu)",
+        "meaning": "Mal / Desconfortável — 不 (bù): não; 舒 (shū): relaxado; 服 (fú): confortável. Sentido literal: 'não confortável'."
+      }
+    ],
+    "pronuncia": "Comece em 他 (tā) soltando o som alto e plano como \"tā\". Em 觉得 (juéde), fale \"tchiué\" subindo a voz e \"dê\" levinho. Para 不舒服 (bù shūfu), faça o \"bù\" caindo seco como \"bú\", o \"shū\" com a língua curvada no céu da boca como \"chū\", e feche no \"fu\" suave.\nLeia: Tā tchiué-dê bú chū-fú."
+  },
+  "221": {
+    "explanation": "Para perguntar \"Você está bem?\", o mandarim usa uma estrutura que significa ao pé da letra \"Você não tem nada, certo?\". O \"você\" é 你 (nǐ), a negação de problema é 没事 (méi shì), que quer dizer \"sem problemas\", e o 吧 (ba) no fim pede uma confirmação suave.",
+    "breakdown": [
+      {
+        "word": "你 (nǐ)",
+        "meaning": "Você — pessoa com quem se fala."
+      },
+      {
+        "word": "没事 (méi shì)",
+        "meaning": "Sem problemas / Tudo bem — 没 (méi): não ter; 事 (shì): assunto / problema. Sentido literal: 'não ter problemas'."
+      },
+      {
+        "word": "吧 (ba)",
+        "meaning": "Tom de confirmação — equivalente ao nosso 'né?' ou 'certo?'."
+      }
+    ],
+    "pronuncia": "Fale 你 (nǐ) baixando o tom como \"ní\". Em 没事 (méi shì), suba o tom no \"méi\" e caia com a língua enrolada no céu da boca para fazer o \"shì\" soar como \"chí\". Termine no 吧 (ba) bem leve como \"bá\".\nLeia: Ní méi chí bá?"
+  },
+  "222": {
+    "explanation": "Para a frase \"Eu preciso de água\", o mandarim expressa a vontade dizendo \"Eu gostaria de beber um pouco de água\". O \"eu\" é 我 (wǒ), o desejo vem em 想 (xiǎng), a ação de beber é 喝 (hē), a quantidade \"um pouco\" é 点 (diǎn), e a palavra para água é 水 (shuǐ).",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "想 (xiǎng)",
+        "meaning": "Gostaria de / Querer."
+      },
+      {
+        "word": "喝 (hē)",
+        "meaning": "Beber."
+      },
+      {
+        "word": "点 (diǎn)",
+        "meaning": "Um pouco — abreviação de 一点 (yīdiǎn)."
+      },
+      {
+        "word": "水 (shuǐ)",
+        "meaning": "Água."
+      }
+    ],
+    "pronuncia": "Diga 我 (wǒ) subindo a voz como \"uó\". Em 想 (xiǎng), desça e suba o tom como \"xiáng\". O 喝 (hē) é contínuo e plano como \"rê\". Em 点 (diǎn), suba suave em \"diǎn\", e feche em 水 (shuǐ) curvando a língua para fazer um \"chúei\" que mergulha e sobe a voz.\nLeia: Uó xiáng rê diǎn chúei."
+  },
+  "223": {
+    "explanation": "Para o pedido de socorro \"Me ajude, por favor!\", o mandarim usa 请 (qǐng) para \"por favor\". O ato de ajudar vem duplicado em 帮帮 (bāng bāng) para soar mais suave e urgente ao mesmo tempo, e a frase encerra com \"mim/eu\", que é 我 (wǒ).",
+    "breakdown": [
+      {
+        "word": "请 (qǐng)",
+        "meaning": "Por favor / Por gentileza."
+      },
+      {
+        "word": "帮帮 (bāng bāng)",
+        "meaning": "Ajudar um pouco — 帮 (bāng): ajudar. A repetição deixa o pedido mais direto e humano."
+      },
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu / Mim."
+      }
+    ],
+    "pronuncia": "Comece em 请 (qǐng) soltando ar como um \"tchǐng\" que desce e sobe. Em 帮帮 (bāng bāng), fale o primeiro \"bāng\" reto e alto e o segundo leve. Encerre com 我 (wǒ) baixando e subindo o tom como \"uó\".\nLeia: Tchǐng bāng-bāng uó!"
+  },
+  "224": {
+    "explanation": "Para dizer \"Eu perdi minha bolsa\", o mandarim organiza a ideia como \"Minha bolsa se perdeu\". O termo para \"minha\" é 我的 (wǒ de). A palavra para bolsa é 包 (bāo). O fato de ter sido perdida é expressado por 丢了 (diū le).",
+    "breakdown": [
+      {
+        "word": "我的 (wǒ de)",
+        "meaning": "Meu / Minha — 我 (wǒ): eu; 的 (de): liga a posse à coisa possuída."
+      },
+      {
+        "word": "包 (bāo)",
+        "meaning": "Bolsa / Mochila / Pacote."
+      },
+      {
+        "word": "丢了 (diū le)",
+        "meaning": "Perdeu-se / Foi perdido — 丢 (diū): perder; 了 (le): indica que a perda já aconteceu."
+      }
+    ],
+    "pronuncia": "Fale 我 (wǒ) caindo e subindo como \"uó\", e ligue no \"de\" curto como \"dê\". O 包 (bāo) é falado alto e reto como \"bāo\". Em 丢了 (diū le), faça o \"diū\" reto e longo como \"diū\" e o \"le\" levinho como \"lê\".\nLeia: Uó-dê bāo diū-lê."
+  },
+  "225": {
+    "explanation": "Para a frase \"A delegacia de polícia fica ali\", o mandarim coloca o termo delegacia em primeiro lugar: 派出所 (pàichūsuǒ). A indicação de localização é feita com 在 (zài), e a direção \"ali / naquele lado\" é dada por 那边 (nàbiān).",
+    "breakdown": [
+      {
+        "word": "派出所 (pàichūsuǒ)",
+        "meaning": "Delegacia de polícia — 派 (pài): enviar; 出 (chū): fora; 所 (suǒ): local. Sentido literal: 'local de envio de agentes'."
+      },
+      {
+        "word": "在 (zài)",
+        "meaning": "Estar em / Ficar em."
+      },
+      {
+        "word": "那边 (nàbiān)",
+        "meaning": "Ali / Naquele lado — 那 (nà): aquele; 边 (biān): lado. Sentido literal: 'naquele lado'."
+      }
+    ],
+    "pronuncia": "Em 派出所 (pàichūsuǒ), solte um vento forte no \"pài\", enrole a língua no \"chū\" mantendo o tom alto, e desça o tom no \"suǒ\" como \"suó\". O 在 (zài) cai firme como \"tsái\". Em 那边 (nàbiān), o \"nà\" cai com força e o \"biān\" fica plano como \"biēn\".\nLeia: Phài-chū-suó tsái ná-biēn."
+  },
+  "226": {
+    "explanation": "Para dizer \"Eu não me sinto bem\", o mandarim utiliza \"eu\", que é 我 (wǒ). O verbo para sentir ou achar é 觉得 (juéde). Em seguida, a expressão \"não muito bem\" é composta por 不太好 (bù tài hǎo), que ao pé da letra significa \"não muito bom\".",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "觉得 (juéde)",
+        "meaning": "Sentir / Achar — 觉 (jué): perceber; 得 (de): resultado. Sentido prático: 'sentir-se'."
+      },
+      {
+        "word": "不太好 (bù tài hǎo)",
+        "meaning": "Não muito bom / Não muito bem — 不 (bù): não; 太 (tài): muito / excessivamente; 好 (hǎo): bom. Sentido literal: 'não muito bom'."
+      }
+    ],
+    "pronuncia": "Comece em 我 (wǒ) subindo a voz como \"uó\". Diga 觉得 (juéde) fazendo \"tchiué\" subindo o tom e \"dê\" curto. Em 不太好 (bù tài hǎo), faça o \"bù\" caindo leve como \"bú\", o \"tài\" caindo com força como \"tái\", e o \"hǎo\" mergulhando a voz para soar como \"ráo\".\nLeia: Uó tchiué-dê bú tái ráo."
+  },
+  "227": {
+    "explanation": "Para expressar \"Minha perna está quebrada\", o mandarim monta a estrutura \"Minha perna quebrou\". A posse \"minha\" vem em 我的 (wǒ de). A palavra para perna é 腿 (tuǐ). A ideia de quebrar totalmente vem em 断了 (duàn le).",
+    "breakdown": [
+      {
+        "word": "我的 (wǒ de)",
+        "meaning": "Minha — 我 (wǒ): eu; 的 (de): liga a posse."
+      },
+      {
+        "word": "腿 (tuǐ)",
+        "meaning": "Perna."
+      },
+      {
+        "word": "断了 (duàn le)",
+        "meaning": "Quebrou / Partiu-se — 断 (duàn): quebrar / partir; 了 (le): indica que o fato se consumou."
+      }
+    ],
+    "pronuncia": "Faça 我 (wǒ) subindo a voz em \"uó\" e junte o \"de\" leve como \"dê\". Em 腿 (tuǐ), desça e suba o tom fazendo som de \"tuěi\". Para 断了 (duàn le), caia a voz forte no \"duàn\" como \"duán\" e solte o \"le\" curtinho como \"lê\".\nLeia: Uó-dê tuěi duán-lê."
+  },
+  "228": {
+    "explanation": "Para perguntar \"Você tem um curativo?\", o mandarim traz o \"você\" com 你 (nǐ), a posse \"tem\" com 有 (yǒu), a palavra para atadura ou curativo 绷带 (bēngdài), e fecha a frase com 吗 (ma) para indicar a pergunta.",
+    "breakdown": [
+      {
+        "word": "你 (nǐ)",
+        "meaning": "Você — pessoa com quem se fala."
+      },
+      {
+        "word": "有 (yǒu)",
+        "meaning": "Ter / Possuir."
+      },
+      {
+        "word": "绷带 (bēngdài)",
+        "meaning": "Curativo / Atadura — 绷 (bēng): esticar / enfaixar; 带 (dài): fita / faixa. Sentido literal: 'faixa para enfaixar'."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Tom de pergunta."
+      }
+    ],
+    "pronuncia": "Comece no 你 (nǐ) baixando o tom como \"ní\". Em 有 (yǒu), mergulhe e suba a voz como \"iôu\". Para 绷带 (bēngdài), fale o \"bēng\" alto e plano como \"bêng\", e caia a voz no \"dài\" como \"dái\". Termine em 吗 (ma) leve como \"má\".\nLeia: Ní iôu bêng-dái má?"
+  },
+  "229": {
+    "explanation": "Para a frase \"Eu sou alérgico a gatos\", o mandarim estrutura como \"Eu em relação a gatos sou alérgico\". O \"eu\" é 我 (wǒ). A ideia de \"em relação a\" é 对 (duì). A palavra para gato é 猫 (māo), e a alergia é dada por 过敏 (guòmǐn).",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "对 (duì)",
+        "meaning": "Em relação a / Com relação a."
+      },
+      {
+        "word": "猫 (māo)",
+        "meaning": "Gato."
+      },
+      {
+        "word": "过敏 (guòmǐn)",
+        "meaning": "Alérgico / Ter alergia — 过 (guò): ultrapassar; 敏 (mǐn): sensível. Sentido literal: 'hipersensível'."
+      }
+    ],
+    "pronuncia": "Diga 我 (wǒ) subindo o tom como \"uó\". Em 对 (duì), caia a voz firme como \"duái\". O 猫 (māo) é falado alto e reto como \"māo\". Em 过敏 (guòmǐn), caia o tom no \"guò\" como \"guó\" e suba a voz no \"mǐn\" fazendo som de \"mín\".\nLeia: Uó duái māo guó-mín."
+  },
+  "230": {
+    "explanation": "Para dizer \"O médico está vindo\", o mandarim diz \"Médico veio\". A palavra para médico é 医生 (yīshēng). O ato de vir é 来 (lái), e a conclusão da ação ou chegada é confirmada por 了 (le).",
+    "breakdown": [
+      {
+        "word": "医生 (yīshēng)",
+        "meaning": "Médico — 医 (yī): medicina; 生 (shēng): profissional / nascer."
+      },
+      {
+        "word": "来了 (lái le)",
+        "meaning": "Veio / Chegou — 来 (lái): vir; 了 (le): indica que a ação se concretizou."
+      }
+    ],
+    "pronuncia": "Em 医生 (yīshēng), faça o \"yī\" plano como \"í\", e o \"shēng\" alto enrolando a língua no céu da boca para soar como \"chêng\". Para 来了 (lái le), suba a voz no \"lái\" como quem faz uma pergunta e feche no \"le\" bem suave como \"lê\".\nLeia: Í-chêng lái-lê."
+  },
+  "231": {
+    "explanation": "Para perguntar \"Onde fica a saída de emergência?\", o mandarim coloca primeiro o termo emergência 紧急 (jǐnjí), seguido de saída 出口 (chūkǒu). A localização é expressa por 在 (zài), e o termo \"onde\" é feito por 哪里 (nǎlǐ).",
+    "breakdown": [
+      {
+        "word": "紧急 (jǐnjí)",
+        "meaning": "Emergência / Urgente — 紧 (jǐn): tenso / urgente; 急 (jí): apressado. Sentido literal: 'urgente e premente'."
+      },
+      {
+        "word": "出口 (chūkǒu)",
+        "meaning": "Saída — 出 (chū): sair; 口 (kǒu): boca / abertura. Sentido literal: 'abertura de saída'."
+      },
+      {
+        "word": "在哪里 (zài nǎlǐ)",
+        "meaning": "Onde fica — 在 (zài): estar em; 哪 (nǎ): qual; 里 (lǐ): lugar."
+      }
+    ],
+    "pronuncia": "Em 紧急 (jǐnjí), faça o \"jǐn\" mergulhar o tom e o \"jí\" subir como \"djín\". Em 出口 (chūkǒu), enrole a língua em \"chū\" mantendo o som reto, e desça e suba o tom em \"kǒu\" como \"khôu\". Em 在哪里 (zài nǎlǐ), caia o tom no \"zài\" como \"tsái\" e diga \"ná-lí\".\nLeia: Djǐn-jí chū-khôu tsái ná-lí?"
+  },
+  "232": {
+    "explanation": "Para a frase \"Eu estou com febre\", a estrutura em mandarim diz \"Eu manifestei febre\". O \"eu\" é 我 (wǒ). A manifestação da febre vem em 发烧 (fāshāo), e o elemento 了 (le) confirma que o estado de febre já está acontecendo.",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "发烧 (fāshāo)",
+        "meaning": "Estar com febre / Ter febre — 发 (fā): emitir / mandar para fora; 烧 (shāo): queimar / esquentar. Sentido literal: 'emitir calor'."
+      },
+      {
+        "word": "了 (le)",
+        "meaning": "Mudança de estado — confirma que a febre se instalou."
+      }
+    ],
+    "pronuncia": "Fale 我 (wǒ) subindo o tom como \"uó\". Em 发烧 (fāshāo), mantenha o \"fā\" alto e plano, e enrole a língua no céu da boca para o \"shāo\" soar como \"chāo\" contínuo. Encerre com o 了 (le) levinho como \"lê\".\nLeia: Uó fā-chāo lê."
+  },
+  "233": {
+    "explanation": "Para perguntar \"Dói aqui?\", o mandarim traz a indicação do lugar \"aqui\", que é 这里 (zhèlǐ). A palavra para doer é 疼 (téng), e o tom de pergunta vem com a partícula 吗 (ma) no final.",
+    "breakdown": [
+      {
+        "word": "这里 (zhèlǐ)",
+        "meaning": "Aqui / Este lugar — 这 (zhè): este; 里 (lǐ): dentro / lugar."
+      },
+      {
+        "word": "疼 (téng)",
+        "meaning": "Doer / Sentir dor."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Tom de pergunta."
+      }
+    ],
+    "pronuncia": "Em 这里 (zhèlǐ), enrole a língua no \"zhè\" caindo a voz como \"djê\", e suba levemente no \"lǐ\" como \"lí\". Para 疼 (téng), solte um vento na letra \"t\" subindo a voz como \"têng\". Feche com 吗 (ma) bem suave como \"má\".\nLeia: Djê-lí têng má?"
+  },
+  "234": {
+    "explanation": "Para a frase \"Eu preciso me sentar\", o mandarim expressa o desejo de sentar-se dizendo \"Eu gostaria de sentar para baixo\". O \"eu\" é 我 (wǒ), a vontade vem em 想 (xiǎng), e o ato de sentar-se é 坐下 (zuò xià).",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "想 (xiǎng)",
+        "meaning": "Gostaria de / Querer."
+      },
+      {
+        "word": "坐下 (zuò xià)",
+        "meaning": "Sentar-se — 坐 (zuò): sentar; 下 (xià): para baixo. Sentido literal: 'sentar para baixo'."
+      }
+    ],
+    "pronuncia": "Diga 我 (wǒ) subindo a voz como \"uó\". Em 想 (xiǎng), desça e suba o tom em \"xiáng\". Em 坐下 (zuò xià), faça o \"zuò\" caindo firme como \"tsuó\" e o \"xià\" caindo com força como \"xiá\".\nLeia: Uó xiáng tsuó xiá."
+  },
+  "235": {
+    "explanation": "Para pedir \"Fique calmo, por favor\", o mandarim começa com 请 (qǐng) para \"por favor\". A ação de manter-se em um estado é 保持 (bǎochí), e a palavra para a calma é 冷静 (lěngjìng), que significa literalmente \"frio e quieto\".",
+    "breakdown": [
+      {
+        "word": "请 (qǐng)",
+        "meaning": "Por favor / Por gentileza."
+      },
+      {
+        "word": "保持 (bǎochí)",
+        "meaning": "Manter / Preservar — 保 (bǎo): proteger; 持 (chí): segurar. Sentido prático: 'manter um estado'."
+      },
+      {
+        "word": "冷静 (lěngjìng)",
+        "meaning": "Calmo / Calma — 冷 (lěng): frio; 静 (jìng): silencioso / tranquilo. Sentido literal: 'frio e tranquilo'."
+      }
+    ],
+    "pronuncia": "Comece em 请 (qǐng) com som de \"tchǐng\" soltando ar. Em 保持 (bǎochí), desça o tom em \"bǎo\" e suba a voz enrolando a língua no \"chí\". Para 冷静 (lěngjìng), desça o tom no \"lěng\" e caia com firmeza no \"jìng\" como \"djīng\".\nLeia: Tchǐng bǎo-chí lěng-djīng."
+  },
+  "236": {
+    "explanation": "Para perguntar \"Ele está respirando?\", a frase em mandarim diz literalmente \"Ele ainda tem respiração?\". O \"ele\" é 他 (tā). A ideia de continuatividade \"ainda\" é 还 (hái). Ter é 有 (yǒu). A palavra para respiração é 呼吸 (hūxī), e o tom de pergunta fecha com 吗 (ma).",
+    "breakdown": [
+      {
+        "word": "他 (tā)",
+        "meaning": "Ele — pessoa de quem se fala."
+      },
+      {
+        "word": "还有 (hái yǒu)",
+        "meaning": "Ainda tem — 还 (hái): ainda; 有 (yǒu): ter."
+      },
+      {
+        "word": "呼吸 (hūxī)",
+        "meaning": "Respiração / Respirar — 呼 (hū): expirar; 吸 (xī): inspirar. Sentido literal: 'expirar e inspirar'."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Tom de pergunta."
+      }
+    ],
+    "pronuncia": "Diga 他 (tā) reto e alto como \"tā\". Em 还有 (hái yǒu), suba o tom no \"hái\" como \"rái\" e desça-e-suba no \"yǒu\" como \"iôu\". Para 呼吸 (hūxī), mantenha o \"hū\" plano como \"rū\" e o \"xī\" reto como \"xī\". Termine em 吗 (ma) suavemente como \"má\".\nLeia: Tā rái iôu rū-xī má?"
+  },
+  "237": {
+    "explanation": "Para dizer \"Eu esqueci meu remédio\", o mandarim expressa a ideia como \"Eu esqueci de trazer o remédio\". O \"eu\" é 我 (wǒ). O esquecimento é 忘了 (wàngle). A ação de trazer é 带 (dài), e a palavra para remédio é 药 (yào).",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "忘了 (wàngle)",
+        "meaning": "Esqueci / Esqueceu — 忘 (wàng): esquecer; 了 (le): confirma que o esquecimento ocorreu."
+      },
+      {
+        "word": "带 (dài)",
+        "meaning": "Trazer / Levar consigo."
+      },
+      {
+        "word": "药 (yào)",
+        "meaning": "Remédio / Medicamento."
+      }
+    ],
+    "pronuncia": "Abra com 我 (wǒ) subindo a voz como \"uó\". Em 忘了 (wàngle), caia o tom forte no \"wàng\" como \"uáng\" e solte o \"le\" levinho como \"lê\". Para 带药 (dài yào), faça ambos caírem com força na voz como \"dái-iáo\".\nLeia: Uó uáng-lê dái iáo."
+  },
+  "238": {
+    "explanation": "Para a frase \"Ela está no hospital\", a estrutura em mandarim traz \"ela\" com 她 (tā). A localização é indicada por 在 (zài), que significa \"estar em\". O local \"hospital\" vem no final com 医院 (yīyuàn).",
+    "breakdown": [
+      {
+        "word": "她 (tā)",
+        "meaning": "Ela — pessoa de quem se fala."
+      },
+      {
+        "word": "在 (zài)",
+        "meaning": "Estar em / Ficar em."
+      },
+      {
+        "word": "医院 (yīyuàn)",
+        "meaning": "Hospital — 医 (yī): medicina; 院 (yuàn): instituição."
+      }
+    ],
+    "pronuncia": "Comece em 她 (tā) mantendo o tom plano e alto como \"tā\". O 在 (zài) cai com força como \"tsái\". Em 医院 (yīyuàn), diga \"yī\" plano e alto como \"í\", e caia o tom no \"yuàn\" como \"iüán\".\nLeia: Tā tsái í-iüán."
+  },
+  "239": {
+    "explanation": "Para a frase \"Eu preciso de ajuda imediatamente\", o mandarim começa com \"eu\", que é 我 (wǒ). O termo para \"imediatamente\" vem logo a seguir com 马上 (mǎshàng). A necessidade é dada por 需要 (xūyào), e a palavra para ajuda é 帮助 (bāngzhù).",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "马上 (mǎshàng)",
+        "meaning": "Imediatamente / Já — 马 (mǎ): cavalo; 上 (shàng): em cima de. Sentido literal: 'no lombo do cavalo (sem perder tempo)'."
+      },
+      {
+        "word": "需要 (xūyào)",
+        "meaning": "Precisar / Necessitar — 需 (xū): necessitar; 要 (yào): querer."
+      },
+      {
+        "word": "帮助 (bāngzhù)",
+        "meaning": "Ajuda / Socorro — 帮 (bāng): ajudar; 助 (zhù): auxiliar."
+      }
+    ],
+    "pronuncia": "Diga 我 (wǒ) subindo a voz como \"uó\". Em 马上 (mǎshàng), desça e suba o tom no \"mǎ\" como \"má\", e caia o tom no \"shàng\" como \"châng\". Em 需要 (xūyào), projete a boca para o \"xū\" soar como \"xü\" e caia no \"yào\" como \"iáo\". Feche em 帮助 (bāngzhù) fazendo \"bāng\" reto e caindo o tom enrolando a língua no \"zhù\" como \"djú\".\nLeia: Uó má-châng xü-iáo bāng-djú."
+  },
+  "240": {
+    "explanation": "Para a exclamação de alerta \"Cuidado!\", o mandarim usa a expressão 小心 (xiǎoxīn), que significa literalmente \"coração pequeno\", incentivando a pessoa a manter a mente cautelosa e atenta aos detalhes do redor.",
+    "breakdown": [
+      {
+        "word": "小心 (xiǎoxīn)",
+        "meaning": "Cuidado / Prestar atenção — 小 (xiǎo): pequeno; 心 (xīn): coração / mente. Sentido literal: 'coração pequeno / cauteloso'."
+      }
+    ],
+    "pronuncia": "Para falar 小心 (xiǎoxīn), comece no \"xiǎo\" fazendo o tom da voz mergulhar e subir como \"siáo\", e emende no \"xīn\" mantendo o som plano, alto e contínuo como \"sīn\".\nLeia: Siáo-sīn!"
+  }
+}

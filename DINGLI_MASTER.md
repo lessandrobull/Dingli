@@ -80,7 +80,7 @@ Esta seção documenta as dependências que residem fora do repositório local e
 ---
 
 ## 4. Protocolo de Inicialização para IAs (Geração dos Dumpers)
-**Ação Obrigatória:** Ao iniciar uma nova conversa técnica, a IA deve orientar o usuário a executar o comando unificado abaixo no Git Bash. Este script varre a estrutura do projeto e gera simultaneamente dois snapshots complementares:
+**Ação Obrigatória:** Ao iniciar uma nova conversa técnica, a IA deve orientar o usuário a executar o comando unificado abaixo no Git Bash, mostrando o comando no chat para o usuário. Este script varre a estrutura do projeto e gera simultaneamente dois snapshots complementares:
 1. `DINGLI_DUMPER.md`: Contém a árvore geral e o código integral da aplicação frontend/PWA (`src/` e configurações vitais de build).
 2. `DINGLI_DUMPER_SCRIPTS.md`: Contém as ferramentas internas (`public/auditor.html`), o livro-razão de revisões (`backups/historico_revisoes.md`), o manual operacional do gerador de explicações (`DINGLI_EXPLICACOES.md`) e os scripts de automação (`scripts/dingli.py`, `scripts/extrair.mjs`, `scripts/gerarExplicacoes.mjs`).
 

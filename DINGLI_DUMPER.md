@@ -590,7 +590,7 @@ function App() {
       };
 
       if (falarRef.current) {
-        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, true, finalizarAudioErro);
+        falarRef.current({ id: idAtual, texto: textoFinalErro, sortearDiferente: true }, false, finalizarAudioErro);
       } else {
         const tempoAudioErro = Math.max((idiomaEstudo === 'pi' ? textoFinalErro.split("").length : fraseOriginal.split(" ").length) * 850, 1500);
         setTimeout(finalizarAudioErro, tempoAudioErro);
@@ -5011,7 +5011,6 @@ export default function TelaEstudo({
   const editableRef = useRef(null);
   const processandoAcertoRef = useRef(false);
 
-  const [audioLento, setAudioLento] = useState(false);
   const [modalReporteAberto, setModalReporteAberto] = useState(false);
   const [opcoesSelecionadas, setOpcoesSelecionadas] = useState([]);
   const [outroTexto, setOutroTexto] = useState("");
@@ -5188,10 +5187,6 @@ export default function TelaEstudo({
       jogarDominiumRef.current();
     }
   }, [frase, idiomaEstudo, idiomaOrigem, postergarParaFimDaTask, rotacionarBandeja, resetarTentativasVoz, setResultadoFeedback, setModoExercicio, exercicioNivel, frasesMaestria, setFrasesMaestria, nivelAtivo, topicoAtivo]);
-
-  useEffect(() => {
-    setAudioLento(false);
-  }, [indice, frase?.id, exercicioNivel]);
 
   const jogarDominiumRef = useRef(jogarDominiumInteligente);
   useEffect(() => {
@@ -5455,14 +5450,8 @@ export default function TelaEstudo({
       id: frase?.id,
       texto: (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : textoEstudo
     };
-    if (!audioLento) {
-      falar(alvo, false);
-      setAudioLento(true);
-    } else {
-      falar(alvo, true);
-      setAudioLento(false);
-    }
-  }, [audioLento, frase, idiomaEstudo, textoEstudo, falar]);
+    falar(alvo, false);
+  }, [frase, idiomaEstudo, textoEstudo, falar]);
 
   const handlePraticar = useCallback(() => {
     if (modoExercicio) return;
@@ -5934,7 +5923,7 @@ export default function TelaEstudo({
                   <button onClick={() => explicarFraseIA(frase?.id)} style={{ ...styles.btnAcaoExtra, backgroundColor: temas[idiomaEstudo]?.bg, color: COR_TOM_CLARO }}>{t?.askAi || "Explicação"}</button>
 
                   <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                    {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                    {t?.normal || "Ouvir"}
                   </button>
 
                   {userRole === 'aluno' ? (
@@ -5973,11 +5962,11 @@ export default function TelaEstudo({
                         {t?.dinglab || "Dìnglab"}
                       </button>
 
-                      {/* 2. Botão Central: Ouvir/Lento (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
+                      {/* 2. Botão Central: Ouvir (ocultado no 3º erro para manter apenas Dìnglab e Continuar) */}
                       {!ehDinglabAtivo && (
                         temAudioExercicio && statusVoz === 'IDLE' && (!resultadoFeedback || resultadoFeedback === 'erro') ? (
                           <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                            {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                            {t?.normal || "Ouvir"}
                           </button>
                         ) : (
                           <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
@@ -6031,10 +6020,10 @@ export default function TelaEstudo({
                         {t?.dinglab || "Dìnglab"}
                       </button>
 
-                      {/* 2. Botão Central: Ouvir/Lento se permitido, ou vazio e desativado */}
+                      {/* 2. Botão Central: Ouvir se permitido, ou vazio e desativado */}
                       {temAudioExercicio ? (
                         <button onMouseDown={(e) => e.preventDefault()} onClick={handleOuvirClick} style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, color: ns.bg, border: `1px solid ${temas[idiomaEstudo]?.bg}` }}>
-                          {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                          {t?.normal || "Ouvir"}
                         </button>
                       ) : (
                         <button disabled style={{ ...styles.btnAcaoExtra, backgroundColor: COR_SUPERFICIE_DIGITACAO, border: `1px solid ${temas[idiomaEstudo]?.bg}`, opacity: 0.2, cursor: 'default' }}>
@@ -7909,14 +7898,14 @@ import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_
 
 // TABELA CENTRAL DE VELOCIDADES DE ÁUDIO (Ajuste manual por idioma)
 export const VELOCIDADES_AUDIO = {
-    pi: { normal: 0.85, lento: 0.60 }, // Mandarim
-    zh: { normal: 0.85, lento: 0.60 },
-    en: { normal: 1.00, lento: 0.75 }, // Inglês
-    es: { normal: 1.00, lento: 0.75 }, // Espanhol
-    fr: { normal: 1.00, lento: 0.75 }, // Francês
-    it: { normal: 1.00, lento: 0.75 }, // Italiano
-    ge: { normal: 1.00, lento: 0.75 }, // Alemão
-    pt: { normal: 1.00, lento: 0.75 }  // Português
+    pi: { normal: 0.70, lento: 0.60 }, // Mandarim
+    zh: { normal: 0.70, lento: 0.60 },
+    en: { normal: 0.90, lento: 0.75 }, // Inglês
+    es: { normal: 0.90, lento: 0.75 }, // Espanhol
+    fr: { normal: 0.90, lento: 0.75 }, // Francês
+    it: { normal: 0.90, lento: 0.75 }, // Italiano
+    ge: { normal: 0.90, lento: 0.75 }, // Alemão
+    pt: { normal: 0.90, lento: 0.75 }  // Português
 };
 
 export const useSpeech = ({

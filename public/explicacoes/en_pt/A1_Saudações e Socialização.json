@@ -1,707 +1,498 @@
 {
   "1": {
-    "explanation": "Para se apresentar em Inglês, a gente usa a estrutura fixa 'my name is' que significa 'meu nome é'. É como se você dissesse 'o meu nome é' e depois completasse com o seu nome. O 'Hello' é o nosso 'Olá' e funciona igual.",
+    "explanation": "Para se apresentar em inglês, começamos com a saudação direta 'Hello', seguida pela expressão 'my name is' que equivale ao nosso 'meu nome é', finalizando com o seu nome próprio de forma simples e natural.",
     "breakdown": [
       {
         "word": "Hello",
-        "meaning": "Olá"
+        "meaning": "Olá — saudação inicial."
       },
       {
-        "word": "my",
-        "meaning": "meu / minha"
-      },
-      {
-        "word": "name",
-        "meaning": "nome"
+        "word": "my name",
+        "meaning": "Meu nome — my: meu/minha; name: nome."
       },
       {
         "word": "is",
-        "meaning": "é (do verbo ser/estar)"
+        "meaning": "É — do verbo ser/estar."
       },
       {
         "word": "Dìnglì",
-        "meaning": "Dìnglì (nome próprio)"
+        "meaning": "Dìnglì — nome próprio."
       }
     ],
-    "pronuncia": "Comece com 'ré-lou', soltando um arzinho no 'h' como um suspiro. Depois, 'mai nêim iz'. O 's' de 'is' tem som de 'z', como em 'casa'. Tente emendar 'name' com 'is' para soar como 'nêi-miz', tudo junto, sem pausas."
+    "pronuncia": "Fale 'Hello' soltando o ar suave pela garganta no início ('hê-LÔU'). Em 'my name is', emende o som do 'm' final de 'name' diretamente no 'is', pronunciando tudo junto como 'mái nêi-miz', com um som de 'z' leve no fim. Termine dizendo 'Dìnglì'.\nLeia: Hê-lôu, mái nêi-miz Dìnglì."
   },
   "2": {
-    "explanation": "Essa é a forma mais comum de perguntar 'como você está' em Inglês. A ordem das palavras é um pouco diferente do Português, mas a ideia é a mesma. 'How' é 'como', 'are' é o 'está' e 'you' é 'você'.",
+    "explanation": "Em inglês, para perguntar como alguém está, colocamos a palavra de pergunta 'How' no início, seguida do verbo 'are', depois a pessoa 'you', e terminamos com o tempo 'today', mantendo uma sequência muito parecida com o português.",
     "breakdown": [
       {
         "word": "How",
-        "meaning": "Como"
+        "meaning": "Como — palavra usada para fazer perguntas sobre o estado de algo ou alguém."
       },
       {
-        "word": "are",
-        "meaning": "está (do verbo ser/estar)"
-      },
-      {
-        "word": "you",
-        "meaning": "você"
+        "word": "are you",
+        "meaning": "Você está / Você é — are: está/é; you: você."
       },
       {
         "word": "today",
-        "meaning": "hoje"
+        "meaning": "Hoje — to: neste/para; day: dia."
       }
     ],
-    "pronuncia": "Comece com 'ráu', soltando um ar no 'h'. O 'are' soa como 'ár', com o 'r' bem suave, quase um 'a' prolongado. Emende 'are' com 'you' para soar como 'ár-iú'. Finalize com 'tu-dêi', com o 'd' bem leve e o 'ay' como 'ei' de 'leite'."
+    "pronuncia": "Comece com 'How' soltando o ar pela garganta ('HÁU'). Emende 'are' curvando a ponta da língua em direção ao céu da boca ('ár'). Diga 'you' de forma suave ('iú') e feche com 'today' marcando o final 'tû-DÊI'. Junte 'are you' quase como 'ár-iú'.\nLeia: Háu ár iú tû-dêi?"
   },
   "3": {
-    "explanation": "Essa é a resposta padrão para 'como você está'. 'I am' significa 'eu estou', e 'fine' é 'bem'. 'Thank you' é a forma de dizer 'obrigado', e funciona como uma expressão única, não palavra por palavra.",
+    "explanation": "Para responder que está bem, o inglês usa 'I am fine', que significa 'Eu estou bem', e logo em seguida adiciona 'thank you' para agradecer, juntando o estado pessoal à cortesia.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "am",
-        "meaning": "estou (do verbo ser/estar)"
+        "word": "I am",
+        "meaning": "Eu estou / Eu sou — I: eu; am: estou/sou."
       },
       {
         "word": "fine",
-        "meaning": "bem"
+        "meaning": "Bem / Ótimo — estado de espírito ou de saúde."
       },
       {
-        "word": "thank",
-        "meaning": "agradecer / obrigado (parte da expressão)"
-      },
-      {
-        "word": "you",
-        "meaning": "você (parte da expressão)"
+        "word": "thank you",
+        "meaning": "Obrigado(a) — thank: agradecer; you: a você."
       }
     ],
-    "pronuncia": "Diga 'ái ém', emendando as duas palavras. Em 'fine', o 'i' tem som de 'ai', como em 'pai'. Para 'thank', coloque a ponta da língua entre os dentes da frente e solte um 'f' com ar, como 'fénk'. O 'k' é seco. Junte 'thank' com 'you' para soar como 'fénk-iú'."
+    "pronuncia": "Fale 'I am' ligando as duas palavras como 'ái êm'. A palavra 'fine' termina com o 'n' travado no céu da boca ('fáin'), sem som de 'e' no final. Em 'thank you', posicione a ponta da língua levemente entre os dentes da frente para fazer um 's' soprado ('thênk') e emende direto no 'iú'.\nLeia: Ái êm fáin, thênk iú."
   },
   "4": {
-    "explanation": "Essa frase é o nosso 'prazer em te conhecer'. Em Inglês, a ideia é 'agradável encontrar você'. O 'to' aqui serve para ligar o 'agradável' à ação de 'conhecer'. É uma expressão muito comum ao conhecer alguém pela primeira vez.",
+    "explanation": "Essa é uma forma curta e comum de dizer 'prazer em te conhecer', onde 'Nice' significa agradável ou bom, ligado pelo 'to' ao verbo 'meet' (encontrar/conhecer) e 'you' (você).",
     "breakdown": [
       {
         "word": "Nice",
-        "meaning": "Agradável / Legal (aqui, parte da expressão 'prazer')"
+        "meaning": "Agradável / Bom / Prazeroso."
       },
       {
-        "word": "to",
-        "meaning": "para / de (liga o 'nice' ao 'meet')"
-      },
-      {
-        "word": "meet",
-        "meaning": "encontrar / conhecer"
+        "word": "to meet",
+        "meaning": "Encontrar / Conhecer — to: marca de ação; meet: encontrar."
       },
       {
         "word": "you",
-        "meaning": "você"
+        "meaning": "Você / Te."
       }
     ],
-    "pronuncia": "Comece com 'náis'. O 'to' pode soar como 'tú' ou, mais rápido, como 'tchú'. Em 'meet', o 'ee' tem som de 'i' prolongado, como em 'piscina'. Tente emendar 'meet' com 'you' para soar como 'mít-chú', onde o 't' se mistura com o 'y' e vira um som de 'tch'."
+    "pronuncia": "Fale 'Nice' terminando no som de 's' puro ('náis'), sem vogal no fim. Junte 'meet you' fazendo o som do 't' final se transformar em um som leve de 'tch' ao se conectar com 'you', soando como 'mít-chú'.\nLeia: Náis tû mít-chú."
   },
   "5": {
-    "explanation": "Essa é a saudação de 'bom dia' em Inglês. 'Good' é 'bom' e 'morning' é 'manhã'. A palavra 'everyone' significa 'todo mundo' ou 'todos', e é usada para saudar um grupo de pessoas.",
+    "explanation": "Usamos essa saudação para cumprimentar um grupo pela manhã. O inglês junta 'Good morning' (bom dia) com 'everyone' (todos), formando uma mensagem clara e direta.",
     "breakdown": [
       {
-        "word": "Good",
-        "meaning": "Bom / Boa"
-      },
-      {
-        "word": "morning",
-        "meaning": "manhã"
+        "word": "Good morning",
+        "meaning": "Bom dia — good: bom; morning: manhã."
       },
       {
         "word": "everyone",
-        "meaning": "todo mundo / todos"
+        "meaning": "Todos / Todo mundo — every: cada; one: pessoa/um."
       }
     ],
-    "pronuncia": "Diga 'gúd', com o 'oo' como o 'u' de 'lua'. Em 'morning', o 'r' é suave e o 'ng' é um som nasal, como o 'nh' de 'minha', mas sem o 'i'. Em 'everyone', o 'e' inicial é quase um 'é', e o 'ry' soa como 'ri', então 'év-ri-uan'. Tente emendar 'Good morning' para soar como 'gúd-mór-ning'."
+    "pronuncia": "Em 'Good', o som final do 'd' morre seco sem falar 'di'. Em 'morning', curve a língua em direção ao céu da boca para fazer o 'r' ('MÓR-nin'), sem pronunciar um 'g' forte no fim. Para 'everyone', fale 'ÉV-ri-uân', unindo tudo em um ritmo fluído.\nLeia: Gúd mór-nin, év-ri-uân."
   },
   "6": {
-    "explanation": "Para perguntar 'De onde você é?' em inglês, a gente coloca o 'onde' (where) no começo da frase e o 'de' (from) vai lá no final, como se fosse 'Onde você é de?'. É uma construção bem comum para perguntas sobre origem.",
+    "explanation": "Para perguntar a origem de alguém, a estrutura em inglês coloca a palavra 'Where' (Onde) no início, seguida de 'are you' (está/é você) e deixa a palavra 'from' (de) no final da frase.",
     "breakdown": [
       {
         "word": "Where",
-        "meaning": "Onde"
+        "meaning": "Onde."
       },
       {
-        "word": "are",
-        "meaning": "é / está (verbo 'to be' para 'you')"
-      },
-      {
-        "word": "you",
-        "meaning": "você"
+        "word": "are you",
+        "meaning": "Você é / Você está."
       },
       {
         "word": "from",
-        "meaning": "de"
+        "meaning": "De / Vindo de — indica origem."
       }
     ],
-    "pronuncia": "Comece com 'uér', com o 'r' suave como em 'caro'. Grude no 'ár' (o 'r' também é suave). O 'you' é 'iú'. E o 'from' é 'frôm', com o 'm' fechando os lábios. Tente falar 'uér-ár-iú-frôm', tudo emendado, sem pausas."
+    "pronuncia": "Comece com 'Where' curvando a língua para dentro no som do 'r' ('uêr'). Conecte com 'are' e 'you' criando um fluxo contínuo 'uêr-ár-iú'. Em 'from', curve a língua no 'r' e feche os lábios no 'm' no final ('fróm').\nLeia: Uêr ár iú fróm?"
   },
   "7": {
-    "explanation": "Para responder 'Eu sou da Espanha', a gente usa 'I am' para 'eu sou'. O 'from' significa 'de' ou 'da', e 'Spain' é o nome do país. Simples e direto, seguindo a mesma lógica da pergunta.",
+    "explanation": "Para responder sobre sua origem, você diz 'I am' (Eu sou) seguido de 'from' (de) e o nome do país, mantendo exatamente a ordem lógica de onde você vem.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "am",
-        "meaning": "sou (verbo 'to be' para 'I')"
+        "word": "I am",
+        "meaning": "Eu sou / Eu estou."
       },
       {
         "word": "from",
-        "meaning": "de / da"
+        "meaning": "De — indica origem."
       },
       {
         "word": "Spain",
-        "meaning": "Espanha"
+        "meaning": "Espanha."
       }
     ],
-    "pronuncia": "O 'I' é 'ái'. O 'am' é 'ém'. Junte os dois: 'ái-ém'. O 'from' é 'frôm', com o 'm' fechando a boca. E 'Spain' é 'spêin', com o 's' bem sibilante, como em 'sapato', e o 'n' no final. Fale 'ái-ém-frôm-spêin'."
+    "pronuncia": "Diga 'I am' unindo como 'ái êm'. Na palavra 'from', mantenha os dentes afastados no início e feche a boca no 'm' final ('fróm'). Em 'Spain', comece direto no som de 's' sem colocar um 'e' antes, dizendo 'spêin'.\nLeia: Ái êm fróm spêin."
   },
   "8": {
-    "explanation": "Para fazer uma pergunta com o verbo 'ser' ou 'estar' em inglês, a gente inverte a ordem. Em vez de 'Você é...', a gente começa com 'É você...'. O 'a' é como o nosso 'um' ou 'uma'.",
+    "explanation": "Em perguntas com o verbo ser/estar, o inglês coloca o 'Are' logo antes da pessoa 'you'. Em seguida, é necessário colocar 'a' (um/uma) antes da profissão ou ocupação como 'student'.",
     "breakdown": [
       {
-        "word": "Are",
-        "meaning": "É (verbo 'to be' para 'you', no começo para pergunta)"
-      },
-      {
-        "word": "you",
-        "meaning": "você"
+        "word": "Are you",
+        "meaning": "Você é? / Você está? — inversão usada para fazer perguntas."
       },
       {
         "word": "a",
-        "meaning": "um / uma"
+        "meaning": "Um / Uma."
       },
       {
         "word": "student",
-        "meaning": "estudante"
+        "meaning": "Estudante / Aluno."
       }
     ],
-    "pronuncia": "Comece com 'ár', com o 'r' suave. Grude no 'iú' (you). O 'a' é um som bem curtinho, quase um 'ã' ou 'ê' rápido. E 'student' é 'stú-dent', com o 't' final bem de leve, quase um 'd' rápido. Tente 'ár-iú-ã-stú-dent'."
+    "pronuncia": "Ligue 'Are you a' de forma muito fluida como 'ár-iú-ê'. Na palavra 'student', comece no 's' seco, sem som de 'e' antes, e fale 'STÚ-dent', deixando o 't' final morrer sem soltar vogal.\nLeia: Ár iú ê stú-dent?"
   },
   "9": {
-    "explanation": "Para dizer 'não' em inglês com o verbo 'ser' (is), a gente coloca o 'not' logo depois do 'is'. O 'my' funciona exatamente como o nosso 'meu'.",
+    "explanation": "Para dizer que alguém não é algo, o inglês junta a pessoa 'He' (Ele), o verbo 'is' (é) e a palavra de negação 'not' (não), terminando com a indicação de parentesco 'my brother'.",
     "breakdown": [
       {
-        "word": "He",
-        "meaning": "Ele"
+        "word": "He is not",
+        "meaning": "Ele não é — he: ele; is: é; not: não."
       },
       {
-        "word": "is",
-        "meaning": "é (verbo 'to be' para 'he')"
-      },
-      {
-        "word": "not",
-        "meaning": "não"
-      },
-      {
-        "word": "my",
-        "meaning": "meu"
-      },
-      {
-        "word": "brother",
-        "meaning": "irmão"
+        "word": "my brother",
+        "meaning": "Meu irmão — my: meu; brother: irmão."
       }
     ],
-    "pronuncia": "O 'He' é 'rí'. O 'is' é 'íz', com som de 'z'. O 'not' é 'nót'. Grude 'is not' como 'íz-nót'. O 'my' é 'mái'. E 'brother' é 'bró-der', com o 'th' fazendo a língua vibrar um pouquinho entre os dentes, como um 'd' bem suave. Fale 'rí-íz-nót-mái-bró-der'."
+    "pronuncia": "Fale 'He' soltando ar pela garganta ('hí'). Emende 'is not' como 'iz nót', travando o 't' no céu da boca. Em 'brother', coloque a ponta da língua entre os dentes no 'th' para fazer o som 'brá-dhêr', curvando a língua no 'r' final.\nLeia: Hí iz nót mái brá-dhêr."
   },
   "10": {
-    "explanation": "Essa frase é bem direta. 'She is' é 'ela é'. 'My' é 'minha'. 'Best' significa 'melhor', e 'friend' é 'amiga'. A ordem das palavras é a mesma que no português.",
+    "explanation": "Para apresentar alguém especial, usamos 'She is' (Ela é), colocamos a qualidade 'best' (melhor) antes da palavra 'friend' (amiga), exatamente na ordem que o inglês usa para qualificadores.",
     "breakdown": [
       {
-        "word": "She",
-        "meaning": "Ela"
+        "word": "She is",
+        "meaning": "Ela é / Ela está — she: ela; is: é."
       },
       {
-        "word": "is",
-        "meaning": "é (verbo 'to be' para 'she')"
-      },
-      {
-        "word": "my",
-        "meaning": "minha"
-      },
-      {
-        "word": "best",
-        "meaning": "melhor"
+        "word": "my best",
+        "meaning": "Minha melhor — my: minha; best: melhor."
       },
       {
         "word": "friend",
-        "meaning": "amiga"
+        "meaning": "Amigo / Amiga."
       }
     ],
-    "pronuncia": "O 'She' é 'shí'. O 'is' é 'íz', com som de 'z'. Grude os dois: 'shí-íz'. O 'my' é 'mái'. O 'best' é 'bést'. E 'friend' é 'frénd', com o 'd' final bem de leve, quase não se ouve. Tente 'shí-íz-mái-bést-frénd'."
+    "pronuncia": "Inicie com 'She' fazendo som de chiado suave ('chí'). Emende no 'is' criando 'chí-iz'. Diga 'my best' com 't' seco no fim ('mái bêst') e conclua com 'friend' ('frênd'), travando o som no 'd' sem soltar um 'i' no final.\nLeia: Chí iz mái bêst frênd."
   },
   "11": {
-    "explanation": "Para perguntar o nome de alguém em inglês, a estrutura é bem direta. Começa com 'what' (o que/qual), seguido do 'is' (é) e depois 'your name' (seu nome). É como se você perguntasse 'Qual é o seu nome?' na mesma ordem que falamos em português.",
+    "explanation": "Essa pergunta junta 'What' (Qual/O que) com 'is' (é), seguida de 'your name' (seu nome). É a forma direta e padrão de perguntar o nome de alguém.",
     "breakdown": [
       {
-        "word": "What",
-        "meaning": "Qual / O que"
+        "word": "What is",
+        "meaning": "Qual é / O que é — what: o que/qual; is: é."
       },
       {
-        "word": "is",
-        "meaning": "é (do verbo ser/estar)"
-      },
-      {
-        "word": "your",
-        "meaning": "seu / sua"
-      },
-      {
-        "word": "name",
-        "meaning": "nome"
+        "word": "your name",
+        "meaning": "Seu nome — your: seu/sua; name: nome."
       }
     ],
-    "pronuncia": "Tente grudar as palavras: 'What is' soa como 'uó-ríz' (o 't' de 'what' vira um 'r' suave quando emenda com 'is'). Depois, 'your' é 'iór' e 'name' é 'nêim'. Fale tudo junto, como um bloco só: 'uó-ríz-iór-nêim?'."
+    "pronuncia": "Junte 'What is' transformando o 't' em um som leve e rápido parecido com um 'r' suave do português ('uó-riz'). Diga 'your' curvando a língua ('iór') e termine em 'name' encostando os lábios no 'm' ('nêim').\nLeia: Uó-riz iór nêim?"
   },
   "12": {
-    "explanation": "Para dizer 'eu falo', usamos 'I speak'. A expressão 'um pouco' em inglês é 'a little', e o 'a' é sempre importante aqui. 'English' é a palavra para 'inglês'. A ordem das palavras é bem parecida com a do português.",
+    "explanation": "Para expressar sua capacidade de falar um idioma, você diz 'I speak' (Eu falo) e adiciona a quantidade 'a little' (um pouco) antes da palavra 'English' (inglês).",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
+        "word": "I speak",
+        "meaning": "Eu falo — I: eu; speak: falar."
       },
       {
-        "word": "speak",
-        "meaning": "falo / falar"
-      },
-      {
-        "word": "a",
-        "meaning": "um / uma (parte da expressão 'um pouco')"
-      },
-      {
-        "word": "little",
-        "meaning": "pouco / pequena"
+        "word": "a little",
+        "meaning": "Um pouco — a: um; little: pouco."
       },
       {
         "word": "English",
-        "meaning": "Inglês"
+        "meaning": "Inglês."
       }
     ],
-    "pronuncia": "Comece com 'ai spík' (o 's' de 'speak' tem som de 's' de 'sapato'). Em 'a little', o 'a' gruda no 'little', e o 't' de 'little' tem um som de 'r' bem suave, quase um 'li-rô'. Finalize com 'ín-glísh', com o 'sh' como o 'x' de 'xícara'. Tudo junto: 'ai spík a li-rô ín-glísh'."
+    "pronuncia": "Diga 'I' ('ái') e 'speak' sem vogal antes do 's' ('spík'). Em 'a little', faça o 'tt' com um som rápido de 'r' suave ('ê lí-rôl'). Emende em 'English' falando 'ÍN-glich' com chiado final.\nLeia: Ái spík ê lí-rôl ín-glich."
   },
   "13": {
-    "explanation": "Para fazer perguntas simples no presente em inglês, a gente usa o 'do' no começo da frase. Ele não tem um significado próprio aqui, só mostra que é uma pergunta. Depois vem 'você' (you) e o verbo 'falar' (speak).",
+    "explanation": "Para fazer perguntas de ação no presente, o inglês usa a palavra de apoio 'Do' no início, seguida por 'you' (você), o verbo 'speak' (falar) e o idioma 'English'.",
     "breakdown": [
       {
-        "word": "Do",
-        "meaning": "(palavra que indica que é uma pergunta no presente)"
-      },
-      {
-        "word": "you",
-        "meaning": "você"
+        "word": "Do you",
+        "meaning": "Você...? — do: palavra de apoio para perguntas; you: você."
       },
       {
         "word": "speak",
-        "meaning": "fala / falar"
+        "meaning": "Fala / Falar."
       },
       {
         "word": "English",
-        "meaning": "Inglês"
+        "meaning": "Inglês."
       }
     ],
-    "pronuncia": "Grude o 'do you' como 'díu'. O 'speak' começa com um 's' forte, como em 'sapato', então 'spík'. E 'English' é 'ín-glísh', com o 'sh' como o 'x' de 'xícara'. A frase toda soa como 'díu spík ín-glísh?', com a voz subindo no final para indicar a pergunta."
+    "pronuncia": "Junte 'Do you' de forma suave como 'dú iú'. A palavra 'speak' deve começar direto no som de 's' ('spík'), travando o 'k' no final. Conclua com 'English' marcando o som 'ÍN-glich'.\nLeia: Dú iú spík ín-glich?"
   },
   "14": {
-    "explanation": "Para dizer 'eu não entendo' em inglês, a gente usa 'I' (eu) e, para a negação, coloca 'do not' antes do verbo. 'Understand' é o verbo 'entender'. Na fala do dia a dia, 'do not' vira 'don't', que é mais comum.",
+    "explanation": "Para negar uma ação, usamos 'I' (eu) junto com a palavra de apoio 'do' e a negação 'not', vindo antes do verbo principal 'understand' (entender).",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "do",
-        "meaning": "(palavra que ajuda a formar o 'não' no presente)"
-      },
-      {
-        "word": "not",
-        "meaning": "não"
+        "word": "I do not",
+        "meaning": "Eu não — I: eu; do not: combinação que nega a ação."
       },
       {
         "word": "understand",
-        "meaning": "entendo / entender"
+        "meaning": "Entendo / Entender."
       }
     ],
-    "pronuncia": "Você pode falar 'ai dú nót' ou, de forma mais natural, 'ai dônt'. O 't' de 'not' ou 'don't' é bem leve, quase não sai. Depois, 'understand' soa como 'ân-der-sténd', com o 'u' inicial como o 'ã' de 'cãibra'. A sílaba forte é no final: 'ân-der-STÉND'."
+    "pronuncia": "Fale 'I do not' conectando as palavras como 'ái dú nót', travando o 't' de 'not' na ponta dos dentes. Em 'understand', fale 'ân-dêr-STÊND', curvando a língua no 'r' do meio e travando a voz no 'd' final.\nLeia: Ái dú nót ân-dêr-stênd."
   },
   "15": {
-    "explanation": "Para pedir 'por favor', usamos 'please'. 'Speak' é 'fale'. Para dizer 'devagar' ou 'lentamente' em inglês, a gente geralmente adiciona '-ly' no final da palavra que descreve como a ação é feita, como em 'slowly' (de 'slow' que é lento).",
+    "explanation": "Pedimos cortesia usando 'Please' (Por favor), seguido da ação 'speak' (fale) e do modo 'slowly' (devagar), mantendo a mensagem clara e bem-educada.",
     "breakdown": [
       {
         "word": "Please",
-        "meaning": "Por favor"
+        "meaning": "Por favor."
       },
       {
         "word": "speak",
-        "meaning": "fale / falar"
+        "meaning": "Fale / Falar."
       },
       {
         "word": "slowly",
-        "meaning": "devagar / lentamente"
+        "meaning": "Devagar / Lentamente — slow: lento; -ly: sufixo que equivale a '-mente'."
       }
     ],
-    "pronuncia": "Comece com 'plííz', com o 's' final vibrando como um 'z'. Depois, 'spík', com o 's' de 'sapato'. E 'slowly' é 'slôu-lí', com o 'l' bem suave, encostando a ponta da língua no céu da boca, atrás dos dentes da frente. Fale tudo junto, com ritmo: 'plííz spík slôu-lí'."
+    "pronuncia": "Fale 'Please' terminando num som de 'z' suave sem vogal extra ('plíz'). Em 'speak', inicie no 's' puro ('spík'). Em 'slowly', fale de forma pausada 'SLÔU-li'.\nLeia: Plíz spík slôu-li."
   },
   "16": {
-    "explanation": "Para perguntar 'como se soletra isso?', o inglês usa 'how' (como) e a estrutura 'do you' para fazer a pergunta no presente para 'você'. O verbo 'spell' é 'soletrar', e 'that' significa 'isso' ou 'aquilo'. A montagem é bem direta, seguindo a ordem das ideias.",
+    "explanation": "Para perguntar como se escreve uma palavra, usamos 'How' (Como), a palavra de apoio 'do', o sujeito 'you' (você), o verbo 'spell' (soletra) e 'that' (isso).",
     "breakdown": [
       {
-        "word": "How",
-        "meaning": "Como"
-      },
-      {
-        "word": "do",
-        "meaning": "(ajuda a formar a pergunta no presente para 'você')"
-      },
-      {
-        "word": "you",
-        "meaning": "você"
+        "word": "How do you",
+        "meaning": "Como você...?"
       },
       {
         "word": "spell",
-        "meaning": "soletrar"
+        "meaning": "Soletra / Escreve letra por letra."
       },
       {
         "word": "that",
-        "meaning": "isso / aquilo"
+        "meaning": "Isso / Aquilo."
       }
     ],
-    "pronuncia": "Comece com 'ráu'. O 'do you' gruda e vira 'diu', bem rápido. 'Spell' é como 'spél', com o 'L' no final encostando a ponta da língua no céu da boca, atrás dos dentes da frente. O 'th' de 'that' é com a língua entre os dentes, soltando um arzinho, e o 'a' é aberto, como 'dát'. Junte tudo: 'Ráu diu spél dát?'."
+    "pronuncia": "Junte 'How do you' em um ritmo rápido como 'háu dú iú'. Fale 'spell' encostando a língua atrás dos dentes superiores no 'l' ('spêl'). Em 'that', coloque a ponta da língua entre os dentes para fazer 'dhêt'.\nLeia: Háu dú iú spêl dhêt?"
   },
   "17": {
-    "explanation": "Para se despedir, 'Goodbye' é o mais comum, como nosso 'tchau' ou 'adeus'. 'See you later' é o nosso 'até mais tarde' ou 'a gente se vê depois'. O 'see you' é bem direto, e 'later' indica o tempo, sem precisar de preposição como o nosso 'até'.",
+    "explanation": "Uma despedida muito comum que junta a saudação de saída 'Goodbye' (Tchau) com a expressão 'see you later', que significa literalmente 'vejo você mais tarde'.",
     "breakdown": [
       {
         "word": "Goodbye",
-        "meaning": "Tchau / Adeus"
+        "meaning": "Tchau / Adeus."
       },
       {
-        "word": "see",
-        "meaning": "ver"
-      },
-      {
-        "word": "you",
-        "meaning": "você"
+        "word": "see you",
+        "meaning": "Vejo você / Até — see: ver; you: você."
       },
       {
         "word": "later",
-        "meaning": "mais tarde / depois"
+        "meaning": "Mais tarde."
       }
     ],
-    "pronuncia": "Fale 'gud-bái', com o 'd' bem suave, quase sumindo. O 'see you' gruda e vira 'sí-iu'. Em 'later', o 't' no meio da palavra soa como um 'r' suave do português (tipo em 'caro'), então fica 'lêi-rer'. Junte tudo: 'Gud-bái, sí-iu lêi-rer'."
+    "pronuncia": "Diga 'Goodbye' como 'gúd-bái'. Em 'see you', fale de forma bem leve 'sí iú'. Na palavra 'later', faça o 't' do meio com som rápido de 'r' suave e curve a língua no final ('LÊI-rêr').\nLeia: Gúd-bái, sí iú lêi-rêr."
   },
   "18": {
-    "explanation": "Essa é uma frase de desejo, como 'tenha um bom dia'. Em inglês, o 'a' antes de 'nice day' é obrigatório para indicar 'um' ou 'uma'. 'Have' é o verbo ter, 'nice' é bom/legal, e 'day' é dia. A ordem é bem parecida com a nossa.",
+    "explanation": "Desejar um bom dia em inglês é feito com 'Have' (Tenha), seguido do artigo 'a' (um) e da combinação 'nice day' (bom dia / dia agradável).",
     "breakdown": [
       {
-        "word": "Have",
-        "meaning": "Tenha (do verbo ter)"
+        "word": "Have a",
+        "meaning": "Tenha um / Tenha uma — have: ter; a: um/uma."
       },
       {
-        "word": "a",
-        "meaning": "um / uma"
-      },
-      {
-        "word": "nice",
-        "meaning": "bom / legal / agradável"
-      },
-      {
-        "word": "day",
-        "meaning": "dia"
+        "word": "nice day",
+        "meaning": "Bom dia — nice: agradável; day: dia."
       }
     ],
-    "pronuncia": "Comece com 'rév', com o 'v' vibrando os lábios. O 'a' gruda no 'have' e vira 'ré-va'. 'Nice' é 'náis', com o 's' chiando como em 'casa'. 'Day' é 'dêi'. Junte tudo: 'Ré-va náis dêi'.",
-    "id": 18
+    "pronuncia": "Emende o som de 'v' em 'Have' direto no 'a', formando 'hê-vê'. Fale 'nice' terminando no som de 's' ('náis') e conclua com 'day' pronunciando 'dêi'.\nLeia: Hê-vê náis dêi."
   },
   "19": {
-    "explanation": "Para apresentar alguém ou algo que está perto, o inglês usa 'This is', que significa 'este é' ou 'esta é'. 'My' funciona exatamente como o nosso 'meu' ou 'minha'. 'Teacher' é a palavra para professor ou professora, sem distinção de gênero.",
+    "explanation": "Para apontar alguém perto de você, usa-se 'This is' (Este é), seguido de 'my' (meu) e da profissão 'teacher' (professor), mostrando quem a pessoa é.",
     "breakdown": [
       {
-        "word": "This",
-        "meaning": "Este / Esta / Isso"
+        "word": "This is",
+        "meaning": "Este é / Esta é — this: este/esta; is: é."
       },
       {
-        "word": "is",
-        "meaning": "é (do verbo ser/estar)"
-      },
-      {
-        "word": "my",
-        "meaning": "meu / minha"
-      },
-      {
-        "word": "teacher",
-        "meaning": "professor / professora"
+        "word": "my teacher",
+        "meaning": "Meu professor — my: meu/minha; teacher: professor(a)."
       }
     ],
-    "pronuncia": "O 'th' de 'this' é com a língua entre os dentes, vibrando a garganta, como um 'd' suave. Grude 'this is' e soa como 'dís-is'. 'My' é 'mái'. Em 'teacher', o 'ch' é como o 'tch' de 'tchau', e o 'er' final é um som de 'ãr' com a língua para trás, sem encostar em nada. Junte tudo: 'Dís-is mái tí-tchãr'."
+    "pronuncia": "Em 'This', posicione a ponta da língua entre os dentes ('dhis') e ligue ao 'is' formando 'dhi-siz'. Para 'teacher', faça o som inicial de 'tch' e curve a língua no 'r' final ('TÍ-tchêr').\nLeia: Dhi-siz mái tí-tchêr."
   },
   "20": {
-    "explanation": "Para dizer 'eles não são', o inglês usa 'they are not'. O 'not' vem depois do 'are' para fazer a negação. 'From' é a preposição 'de' para indicar origem, como em 'de Londres'. A estrutura é bem direta, sem rodeios.",
+    "explanation": "Para dizer que um grupo não pertence a um lugar, usamos 'They' (Eles), o verbo 'are' com 'not' (não são), e a indicação de origem 'from London' (de Londres).",
     "breakdown": [
       {
-        "word": "They",
-        "meaning": "Eles / Elas"
+        "word": "They are not",
+        "meaning": "Eles não são — they: eles/elas; are: são; not: não."
       },
       {
-        "word": "are",
-        "meaning": "são / estão (do verbo ser/estar)"
-      },
-      {
-        "word": "not",
-        "meaning": "não"
-      },
-      {
-        "word": "from",
-        "meaning": "de (origem)"
-      },
-      {
-        "word": "London",
-        "meaning": "Londres"
+        "word": "from London",
+        "meaning": "De Londres — from: de; London: Londres."
       }
     ],
-    "pronuncia": "O 'th' de 'they' é com a língua entre os dentes, vibrando a garganta, como um 'd' suave. 'Are' é como 'ár'. Grude 'are not' e soa como 'ár-nót'. O 'o' de 'from' é um som mais fechado, como 'frãm'. Em 'London', o primeiro 'o' é como 'ã' e o 'don' é como 'dãn', com a língua no céu da boca para o 'n'. Junte tudo: 'Dêi ár-nót frãm Lãn-dãn'."
+    "pronuncia": "Em 'They', coloque a língua entre os dentes ('dhêi'). Curve a língua em 'are' ('ár') e fale 'not' travando o 't'. Em 'from London', feche a boca no 'm' de 'fróm' e fale 'LÂN-dân'.\nLeia: Dhêi ár nót fróm lân-dân."
   },
   "21": {
-    "explanation": "Em inglês, para fazer uma pergunta com o verbo 'ser/estar' (to be), a gente inverte a ordem: o 'é' (is) vem antes do 'ele' (he). É como se a pergunta começasse com a ação. O 'seu' (your) e 'amigo' (friend) seguem a mesma lógica do português, sem mistério.",
+    "explanation": "Para perguntar se ele é seu amigo, invertemos a ordem colocando 'Is' no início, seguido de 'he' (ele) e da combinação 'your friend' (seu amigo).",
     "breakdown": [
       {
-        "word": "Is",
-        "meaning": "é (do verbo 'to be', usado para 'ele/ela/isso')"
+        "word": "Is he",
+        "meaning": "Ele é...? — inversão para pergunta."
       },
       {
-        "word": "he",
-        "meaning": "ele"
-      },
-      {
-        "word": "your",
-        "meaning": "seu/sua"
-      },
-      {
-        "word": "friend",
-        "meaning": "amigo/amiga"
+        "word": "your friend",
+        "meaning": "Seu amigo — your: seu; friend: amigo."
       }
     ],
-    "pronuncia": "Comece com 'Is' que soa como 'íz', com o 's' vibrando como um zumbido. Grude no 'he', que é um 'rí' com um soprinho no começo. Junte 'your' como 'iór', com a língua enrolando um pouco para o 'r'. Termine com 'friend', que é 'frênd', com o 'd' bem de leve, quase sumindo. Tente falar tudo junto: 'íz-rí-iór-frênd?'."
+    "pronuncia": "Ligue o som de 'z' de 'Is' direto no 'he', falando 'iz-hí'. Em 'your', curve a língua ('iór') e termine em 'friend' travando a voz na letra 'd' sem soltar som de 'i' no final ('frênd').\nLeia: Iz hí iór frênd?"
   },
   "22": {
-    "explanation": "A palavra 'Welcome' é a forma direta de dizer 'bem-vindo'. O 'to' aqui funciona como o nosso 'a' ou 'para' quando indica um destino. 'Our' é o nosso 'nossa' ou 'nosso', e 'house' é simplesmente 'casa'. A estrutura é bem parecida com a do português.",
+    "explanation": "Ao acolher alguém, usamos 'Welcome' (Bem-vindo), a preposição 'to' (à / ao) e a indicação do local 'our house' (nossa casa).",
     "breakdown": [
       {
         "word": "Welcome",
-        "meaning": "bem-vindo/bem-vinda"
+        "meaning": "Bem-vindo / Bem-vinda."
       },
       {
-        "word": "to",
-        "meaning": "a / para (indicando direção ou destino)"
-      },
-      {
-        "word": "our",
-        "meaning": "nosso/nossa"
+        "word": "to our",
+        "meaning": "À nossa / Ao nosso — to: a/para; our: nosso/nossa."
       },
       {
         "word": "house",
-        "meaning": "casa"
+        "meaning": "Casa."
       }
     ],
-    "pronuncia": "Fale 'Welcome' como 'uél-com', com o 'o' final bem curtinho. O 'to' é um 'tchu' rápido, quase um 'tú'. Emende 'our' como 'áur', com o 'r' suave. Para 'house', comece com um 'h' soprado e termine com um 's' que vibra como um 'z': 'háu-z'. Junte tudo: 'uél-com-tchu-áur-háu-z'."
+    "pronuncia": "Fale 'Welcome' terminando com os lábios juntos no 'm' ('UÊL-kâm'). Ligue 'to our' como 'tú áu-êr', curvando a língua no 'r'. Termine com 'house' soltando o ar no início ('háus').\nLeia: Uêl-kâm tú áu-êr háus."
   },
   "23": {
-    "explanation": "'Excuse me' é a forma educada de chamar atenção ou pedir licença. Para perguntar as horas, o inglês usa 'what time' (que hora) e depois inverte o 'é' (is) e 'isso' (it), ficando 'is it'. É como se dissesse 'que hora é isso?'.",
+    "explanation": "Para pedir licença e perguntar as horas, usamos a expressão cortês 'Excuse me' e em seguida 'what time is it', que literalmente significa 'que tempo/hora é isso'.",
     "breakdown": [
       {
         "word": "Excuse me",
-        "meaning": "com licença / desculpe-me"
+        "meaning": "Com licença / Dá licença."
       },
       {
-        "word": "what",
-        "meaning": "que / qual"
+        "word": "what time",
+        "meaning": "Que horas / Qual tempo."
       },
       {
-        "word": "time",
-        "meaning": "hora / tempo"
-      },
-      {
-        "word": "is",
-        "meaning": "é (do verbo 'to be')"
-      },
-      {
-        "word": "it",
-        "meaning": "isso / ele/ela (para coisas ou situações)"
+        "word": "is it",
+        "meaning": "É isso — estrutura para perguntar as horas."
       }
     ],
-    "pronuncia": "'Excuse me' soa como 'éks-kiú-z-mi', com o 's' de 'excuse' vibrando como 'z'. Em 'what time', o 't' de 'what' é quase mudo, e você gruda no 'time' que é 'táim'. O 'is it' vira 'íz-it', com o 's' de 'is' vibrando. Tente falar 'uót-táim-íz-it?', quase como uma palavra só."
+    "pronuncia": "Fale 'Excuse me' como 'iks-KJÚZ mí'. Em 'what time', trave o 't' de 'what'. Emende 'is it' fazendo o som de 'z' se ligar ao 'it', soando como 'iz-it', morrendo seco no 't' final.\nLeia: Iks-kjúz mí, uót táim iz-it?"
   },
   "24": {
-    "explanation": "Para dizer 'sinto muito', o inglês usa 'I am sorry', que significa 'eu estou arrependido/triste'. A segunda parte, 'I am late', quer dizer 'eu estou atrasado'. É como se você dissesse 'eu estou arrependido, eu estou atrasado'.",
+    "explanation": "Para se desculpar por um atraso, dizemos 'I am sorry' (Sinto muito / Estou chateado) e adicionamos a razão 'I am late' (estou atrasado).",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "eu"
+        "word": "I am sorry",
+        "meaning": "Sinto muito / Me desculpe — I am: estou; sorry: triste/arrependido."
       },
       {
-        "word": "am",
-        "meaning": "sou / estou (do verbo 'to be', usado com 'I')"
-      },
-      {
-        "word": "sorry",
-        "meaning": "arrependido / triste / desculpado"
-      },
-      {
-        "word": "late",
-        "meaning": "atrasado/atrasada"
+        "word": "I am late",
+        "meaning": "Estou atrasado(a) — late: atrasado."
       }
     ],
-    "pronuncia": "Comece com 'ai-ém-sóri', com o 'r' de 'sorry' bem suave. Depois, emende no segundo 'ai-ém', que pode ser falado mais rápido, quase como 'aim'. O 'late' é 'lêit', com o 't' final bem de leve. Tente juntar tudo: 'ai-ém-sóri-aim-lêit', quase como se fosse uma frase musical."
+    "pronuncia": "Fale 'I am' como 'ái êm'. Em 'sorry', curve a língua para o som do 'r' ('SÓ-ri'). Repita 'I am' ('ái êm') e finalize com 'late' marcando o 't' seco no final ('lêit').\nLeia: Ái êm só-ri ái êm lêit."
   },
   "25": {
-    "explanation": "Para perguntar se alguém 'pode' fazer algo, o inglês coloca o 'can' (poder) antes do 'you' (você). O 'help me' é direto, 'ajudar-me'. E 'please' é o nosso 'por favor', que pode vir no final da frase para ser educado.",
+    "explanation": "Para pedir ajuda educadamente, começamos com 'Can you' (Você pode), o verbo 'help' (ajudar) focado em 'me' (mim), e encerramos com 'please' (por favor).",
     "breakdown": [
       {
-        "word": "Can",
-        "meaning": "pode / conseguir (verbo 'poder')"
+        "word": "Can you",
+        "meaning": "Você pode...? — can: poder; you: você."
       },
       {
-        "word": "you",
-        "meaning": "você"
-      },
-      {
-        "word": "help",
-        "meaning": "ajudar"
-      },
-      {
-        "word": "me",
-        "meaning": "me / mim"
+        "word": "help me",
+        "meaning": "Me ajudar — help: ajudar; me: a mim."
       },
       {
         "word": "please",
-        "meaning": "por favor"
+        "meaning": "Por favor."
       }
     ],
-    "pronuncia": "O 'can' é 'kén', com o 'a' aberto. Grude no 'you', que vira 'iú'. O 'help' é 'hélp', com o 'h' soprado e o 'p' bem marcado. O 'me' é 'mi'. E 'please' é 'plííz', com o 's' vibrando como 'z'. Tente falar tudo junto: 'kén-iú-hélp-mi-plííz?', com a voz subindo no final para a pergunta."
+    "pronuncia": "Junte 'Can you' suavemente como 'kên iú'. Em 'help me', encoste a língua no céu da boca para o 'l' de 'help' ('hêlp mí'). Conclua com 'please' terminando em som de 'z' ('plíz').\nLeia: Kên iú hêlp mí, plíz?"
   },
   "26": {
-    "explanation": "Em inglês, para falar de algo geral como 'É um prazer', a gente começa com 'It is'. O 'a' é o nosso 'um' ou 'uma'. 'To meet you' é o nosso 'te conhecer', onde o 'to' mostra que o verbo 'meet' (conhecer) está no modo de infinitivo, sem conjugar.",
+    "explanation": "Uma maneira formal e educada de dizer que é um prazer conhecer alguém, usando 'It is a pleasure' (É um prazer) seguido de 'to meet you' (conhecer você).",
     "breakdown": [
       {
-        "word": "It",
-        "meaning": "Isso / Ele (usado para coisas ou ideias gerais)"
-      },
-      {
-        "word": "is",
-        "meaning": "é (do verbo 'ser/estar')"
-      },
-      {
-        "word": "a",
-        "meaning": "um / uma"
+        "word": "It is a",
+        "meaning": "É um / É uma — it: isso/marca de sujeito; is: é; a: um/uma."
       },
       {
         "word": "pleasure",
-        "meaning": "prazer"
+        "meaning": "Prazer."
       },
       {
-        "word": "to",
-        "meaning": "para / de (aqui, indica que o verbo seguinte está no modo 'infinitivo')"
-      },
-      {
-        "word": "meet",
-        "meaning": "encontrar / conhecer"
-      },
-      {
-        "word": "you",
-        "meaning": "você / te / o(a) senhor(a)"
+        "word": "to meet you",
+        "meaning": "Em te conhecer."
       }
     ],
-    "pronuncia": "Comece grudando 'It is' que soa como 'í-ris'. Em 'a pleasure', o 's' tem som de 'j' (como em 'jardim'), então fale 'a-plé-jãr', com o 'r' no final bem suave, quase sumindo. Para 'to meet you', junte o 't' de 'to' com o 'y' de 'you' para fazer um som de 'tch', ficando 'tchu-mít-chu'."
+    "pronuncia": "Ligue 'It is a' como 'it iz ê'. Na palavra 'pleasure', faça um som de 'j' suave no meio ('PLÊ-jêr'). Junte 'meet you' fazendo o som 'mít-chú'.\nLeia: It iz ê plê-jêr tú mít-chú."
   },
   "27": {
-    "explanation": "Para perguntar 'Quem é' em inglês, você usa 'Who is'. A palavra 'that' serve para apontar algo que está mais longe, como o nosso 'aquele' ou 'aquela'. 'Man' é simplesmente 'homem'.",
+    "explanation": "Para perguntar sobre a identidade de alguém distante, usa-se 'Who' (Quem), o verbo 'is' (é), e a combinação 'that man' (aquele homem).",
     "breakdown": [
       {
-        "word": "Who",
-        "meaning": "Quem"
+        "word": "Who is",
+        "meaning": "Quem é — who: quem; is: é."
       },
       {
-        "word": "is",
-        "meaning": "é (do verbo 'ser/estar')"
-      },
-      {
-        "word": "that",
-        "meaning": "aquele / aquela / isso / esse / essa"
-      },
-      {
-        "word": "man",
-        "meaning": "homem"
+        "word": "that man",
+        "meaning": "Aquele homem — that: aquele; man: homem."
       }
     ],
-    "pronuncia": "O 'wh' de 'Who' tem som de 'h' suave, como um suspiro, então fale 'hu'. Grude 'is that' e o 's' de 'is' vira som de 'z', ficando 'iz-dét'. O 'a' de 'that' e 'man' tem som de 'é' aberto, como em 'pé'. A frase toda soa como 'hu-iz-dét-mén', com o 'n' de 'man' terminando com a língua no céu da boca."
+    "pronuncia": "Ligue 'Who is' como 'hú-iz'. Em 'that', ponha a ponta da língua entre os dentes ('dhêt'). Em 'man', termine encostando os lábios no som de 'n' ('mên').\nLeia: Hú iz dhêt mên?"
   },
   "28": {
-    "explanation": "Em inglês, você sempre precisa dizer 'nós somos/estamos' (We are), mesmo que em português a gente só diga 'estamos'. 'Very' é o nosso 'muito'. 'Happy' é 'feliz' e 'today' é 'hoje'.",
+    "explanation": "Para expressar a felicidade do grupo no dia de hoje, usamos 'We are' (Nós estamos), o intensificador 'very' (muito), a emoção 'happy' (felizes) e o tempo 'today' (hoje).",
     "breakdown": [
       {
-        "word": "We",
-        "meaning": "Nós"
+        "word": "We are",
+        "meaning": "Nós estamos / Nós somos — we: nós; are: estamos/somos."
       },
       {
-        "word": "are",
-        "meaning": "somos / estamos (do verbo 'ser/estar')"
-      },
-      {
-        "word": "very",
-        "meaning": "muito / muito(a)"
-      },
-      {
-        "word": "happy",
-        "meaning": "feliz / felizes"
+        "word": "very happy",
+        "meaning": "Muito felizes — very: muito; happy: feliz."
       },
       {
         "word": "today",
-        "meaning": "hoje"
+        "meaning": "Hoje."
       }
     ],
-    "pronuncia": "Fale 'We are' como 'uí-ár', com o 'r' bem suave, quase um 'a' prolongado. Em 'very', o 'v' vibra os lábios e o 'r' é enrolado, como em 'carro' em português, mas mais suave: 'vé-ri'. 'Happy' tem o 'h' com som de 'r' suave, como em 'rato', e o 'a' é aberto: 'ré-pi'. 'Today' soa como 'tchú-dêi', com o 'o' quase sumindo e o 'ay' com som de 'ei'."
+    "pronuncia": "Junte 'We are' curvando a língua no final de 'are' ('uí ár'). Fale 'very' com 'r' curvado ('VÉ-ri') e 'happy' soltando ar no início ('HÊ-pi'). Termine com 'today' ('tû-DÊI').\nLeia: Uí ár vé-ri hê-pi tû-dêi."
   },
   "29": {
-    "explanation": "Para fazer uma pergunta em inglês com 'ser/estar', você troca a ordem: o 'are' vem antes do 'they' (eles). 'Your' é o nosso 'seus' ou 'suas'. 'Parents' significa 'pais' (pai e mãe).",
+    "explanation": "Para perguntar sobre o parentesco de terceiros, colocamos 'Are' no início, seguido do grupo 'they' (eles) e do termo de parentesco 'your parents' (seus pais).",
     "breakdown": [
       {
-        "word": "Are",
-        "meaning": "são / estão (do verbo 'ser/estar', aqui usado para pergunta)"
+        "word": "Are they",
+        "meaning": "Eles são...? / Elas são...?"
       },
       {
-        "word": "they",
-        "meaning": "eles / elas"
-      },
-      {
-        "word": "your",
-        "meaning": "seu / sua / seus / suas"
-      },
-      {
-        "word": "parents",
-        "meaning": "pais (pai e mãe)"
+        "word": "your parents",
+        "meaning": "Seus pais — your: seus/suas; parents: pais (pai e mãe)."
       }
     ],
-    "pronuncia": "Comece com 'Are' como 'ár', com a língua um pouco para trás. 'They' tem o som do 'th' que é como um 'd' com a língua entre os dentes, e o 'ey' soa como 'ei': 'dêi'. 'Your' soa como 'iór', com o 'r' bem suave. 'Parents' soa como 'pé-rents', com o 'a' aberto e o 'ts' final bem marcado."
+    "pronuncia": "Curve a língua em 'Are' ('ár') e ponha a ponta da língua entre os dentes em 'they' ('dhêi'). Diga 'your' curvando a língua ('iór') e termine em 'parents' travando o 't' seco ('PÊ-rênts').\nLeia: Ár dhêi iór pê-rênts?"
   },
   "30": {
-    "explanation": "'Thank you' é o jeito de dizer 'obrigado' em inglês, literalmente 'agradeço a você'. Para reforçar, você adiciona 'very much', que significa 'muito' ou 'muitíssimo'.",
+    "explanation": "Para agradecer de forma mais intensa, junta-se a expressão clássica 'Thank you' (Obrigado a você) com o reforço 'very much' (muito).",
     "breakdown": [
       {
-        "word": "Thank",
-        "meaning": "agradecer / obrigado (aqui, como parte da expressão)"
+        "word": "Thank you",
+        "meaning": "Obrigado(a) — thank: agradecer; you: você."
       },
       {
-        "word": "you",
-        "meaning": "você / te"
-      },
-      {
-        "word": "very",
-        "meaning": "muito / muito(a)"
-      },
-      {
-        "word": "much",
-        "meaning": "muito / muita (usado para coisas que não dá pra contar)"
+        "word": "very much",
+        "meaning": "Muito — very: muito; much: bastante/muito."
       }
     ],
-    "pronuncia": "O 'th' de 'Thank' é um som que não existe em português: coloque a ponta da língua entre os dentes e sopre, fazendo um som de 'f' ou 's' meio abafado, e depois fale 'fénk'. 'You' soa como 'iu'. 'Very much' gruda: o 'v' vibra os lábios, o 'r' é suave, e o 'ch' de 'much' é como o 'tch' de 'tchau'. Fica 'vé-ri-mãtch'."
+    "pronuncia": "Em 'Thank', posicione a ponta da língua entre os dentes da frente ('thênk') e ligue direto ao 'you' ('thênk iú'). Fale 'very' curvando a língua ('VÉ-ri') e termine 'much' com som de 'tch' no fim ('mâtch').\nLeia: Thênk iú vé-ri mâtch."
   }
 }
