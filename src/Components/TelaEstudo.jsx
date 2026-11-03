@@ -52,6 +52,14 @@ const ExercicioEscrita = ({
   const prefixoLimpo = (configLacuna.prefixo || "").trim();
   const ehInicioOracao = !prefixoLimpo || /[.!?]\s*$/.test(prefixoLimpo);
 
+  useEffect(() => {
+    return () => {
+      if (editableRef?.current && document.activeElement === editableRef.current) {
+        editableRef.current.blur();
+      }
+    };
+  }, [editableRef]);
+
   return (
     <div style={{ width: '100%', textAlign: 'center' }}>
       <div style={styles.containerLacuna}>
@@ -61,7 +69,7 @@ const ExercicioEscrita = ({
             <span style={styles.placeholderInvisivel}>{configLacuna.resposta}</span>
             <div
               ref={editableRef}
-              contentEditable={resultadoFeedback !== 'acerto'}
+              contentEditable={true}
               suppressContentEditableWarning={true}
               autoCapitalize={ehInicioOracao ? "sentences" : "none"}
               autocapitalize={ehInicioOracao ? "sentences" : "none"}
@@ -78,7 +86,16 @@ const ExercicioEscrita = ({
                   if (botoes) botoes.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }, 300);
               }}
+              onBeforeInput={(e) => {
+                if (resultadoFeedback === 'acerto') {
+                  e.preventDefault();
+                }
+              }}
               onInput={(e) => {
+                if (resultadoFeedback === 'acerto') {
+                  e.preventDefault();
+                  return;
+                }
                 let texto = e.currentTarget.innerText || "";
                 if (texto.length === 1) {
                   const charOriginal = texto[0];
@@ -97,6 +114,11 @@ const ExercicioEscrita = ({
                 setValorInput(texto);
               }}
               onKeyDown={(e) => {
+                if (resultadoFeedback === 'acerto') {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return;
+                }
                 if (e.key === 'Enter') {
                   e.preventDefault();
                   e.stopPropagation();
@@ -105,6 +127,7 @@ const ExercicioEscrita = ({
               }}
               onPaste={(e) => {
                 e.preventDefault();
+                if (resultadoFeedback === 'acerto') return;
                 const text = e.clipboardData.getData('text/plain');
                 document.execCommand('insertText', false, text);
               }}
@@ -1315,16 +1338,17 @@ export default function TelaEstudo({
                         style={{
                           ...styles.btnAcaoExtra,
                           backgroundColor: ns.bg,
-                          color: ns.txt,
-                          opacity: statusVoz === 'EVALUATING' ? 0.5 : 1
+                          color: resultadoFeedback === 'acerto' ? '#ffffff' : ns.txt,
+                          border: resultadoFeedback === 'acerto' ? '2px solid #ffffff' : '2px solid transparent',
+                          opacity: (statusVoz === 'EVALUATING' && resultadoFeedback !== 'acerto') ? 0.5 : 1
                         }}
                       >
-                        {statusVoz === 'RECORDING' ? (
+                        {resultadoFeedback === 'acerto' ? (
+                          'Ok'
+                        ) : statusVoz === 'RECORDING' ? (
                           t.check || 'Verificar'
                         ) : statusVoz === 'EVALUATING' ? (
                           '...'
-                        ) : resultadoFeedback === 'acerto' ? (
-                          'Ok'
                         ) : ehDinglabAtivo ? (
                           t?.continueCycle || 'Continuar'
                         ) : resultadoFeedback === 'erro' ? (
@@ -1360,8 +1384,9 @@ export default function TelaEstudo({
                         style={{
                           ...styles.btnAcaoExtra,
                           backgroundColor: ns.bg,
-                          color: ns.txt,
-                          opacity: isCheckDisabled ? 0.5 : 1,
+                          color: resultadoFeedback === 'acerto' ? '#ffffff' : ns.txt,
+                          border: resultadoFeedback === 'acerto' ? '2px solid #ffffff' : '2px solid transparent',
+                          opacity: (isCheckDisabled && resultadoFeedback !== 'acerto') ? 0.5 : 1,
                           cursor: isCheckDisabled ? 'not-allowed' : 'pointer'
                         }}
                       >
