@@ -134,7 +134,9 @@ const ExercicioEscrita = ({
                 document.execCommand('insertText', false, text);
               }}
               style={{
-                gridArea: '1/1',
+                position: 'absolute',
+                top: 0,
+                left: 0,
                 backgroundColor: '#f1f5f9',
                 borderRadius: '6px',
                 borderBottom: '3px solid #cbd5e1',
@@ -156,7 +158,9 @@ const ExercicioEscrita = ({
             />
             {resultadoFeedback && (
               <div style={{
-                gridArea: '1/1',
+                position: 'absolute',
+                top: 0,
+                left: 0,
                 pointerEvents: 'none',
                 backgroundColor: 'transparent',
                 borderRadius: '6px',

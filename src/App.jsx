@@ -801,7 +801,14 @@ function App() {
               const rankNuvem = typeof objNuvem === 'object' ? objNuvem.rank : (objNuvem || 0);
               const objLocal = novaMaestria[id];
               const rankLocal = typeof objLocal === 'object' ? objLocal.rank : (objLocal || 0);
-              if (rankNuvem > rankLocal) {
+
+              const timeNuvem = (typeof objNuvem === 'object' && (objNuvem.last_attempt_at || objNuvem.last_review)) || 0;
+              const timeLocal = (typeof objLocal === 'object' && (objLocal.last_attempt_at || objLocal.last_review)) || 0;
+
+              if (!objLocal || timeNuvem > timeLocal || rankNuvem > rankLocal) {
+                novaMaestria[id] = objNuvem;
+                houveMudanca = true;
+              } else if (timeNuvem === timeLocal && rankNuvem !== rankLocal) {
                 novaMaestria[id] = objNuvem;
                 houveMudanca = true;
               }

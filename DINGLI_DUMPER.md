@@ -1107,7 +1107,14 @@ function App() {
               const rankNuvem = typeof objNuvem === 'object' ? objNuvem.rank : (objNuvem || 0);
               const objLocal = novaMaestria[id];
               const rankLocal = typeof objLocal === 'object' ? objLocal.rank : (objLocal || 0);
-              if (rankNuvem > rankLocal) {
+
+              const timeNuvem = (typeof objNuvem === 'object' && (objNuvem.last_attempt_at || objNuvem.last_review)) || 0;
+              const timeLocal = (typeof objLocal === 'object' && (objLocal.last_attempt_at || objLocal.last_review)) || 0;
+
+              if (!objLocal || timeNuvem > timeLocal || rankNuvem > rankLocal) {
+                novaMaestria[id] = objNuvem;
+                houveMudanca = true;
+              } else if (timeNuvem === timeLocal && rankNuvem !== rankLocal) {
                 novaMaestria[id] = objNuvem;
                 houveMudanca = true;
               }
@@ -4852,7 +4859,9 @@ const ExercicioEscrita = ({
                 document.execCommand('insertText', false, text);
               }}
               style={{
-                gridArea: '1/1',
+                position: 'absolute',
+                top: 0,
+                left: 0,
                 backgroundColor: '#f1f5f9',
                 borderRadius: '6px',
                 borderBottom: '3px solid #cbd5e1',
@@ -4874,7 +4883,9 @@ const ExercicioEscrita = ({
             />
             {resultadoFeedback && (
               <div style={{
-                gridArea: '1/1',
+                position: 'absolute',
+                top: 0,
+                left: 0,
                 pointerEvents: 'none',
                 backgroundColor: 'transparent',
                 borderRadius: '6px',
@@ -7689,20 +7700,34 @@ export function useGameEngine({
     const agora = Date.now();
     let houveDegradacao = false;
 
-    // Regra anti-stale de 30 minutos apenas para microciclos abandonados por longo tempo
-    Object.keys(dadosMaestria).forEach(id => {
-      const item = dadosMaestria[id];
-      if (typeof item === 'object' && item.last_review && item.next_review) {
-        if (agora >= item.next_review && item.status !== 'macro') {
-          const tempo = agora - item.last_review;
-          const r = item.rank;
-          if (r >= 1 && r <= 5 && tempo > 1800000) {
-            dadosMaestria[id] = { ...item, rank: 0, status: 'inedita', next_review: agora };
-            houveDegradacao = true;
+    // Regra de degradação completa por inatividade (R1 a R27)
+      Object.keys(dadosMaestria).forEach(id => {
+        const item = dadosMaestria[id];
+        if (typeof item === 'object' && item.last_review && item.next_review) {
+          if (agora >= item.next_review) {
+            const tempo = agora - item.last_review;
+            const r = item.rank;
+            let nR = r;
+            if (r >= 1 && r <= 5 && tempo > 1800000) nR = 0;
+            else if (r >= 6 && r <= 9 && tempo > 172800000) nR = 0;
+            else if (r >= 10 && r <= 14 && tempo > 345600000) nR = 6;
+            else if (r >= 15 && r <= 18 && tempo > 691200000) nR = 10;
+            else if (r >= 19 && r <= 23 && tempo > 1382400000) nR = 15;
+            else if (r >= 24 && r <= 26 && tempo > 2764800000) nR = 19;
+            else if (r === 27 && tempo > 5529600000) nR = 19;
+
+            if (nR !== r) {
+              dadosMaestria[id] = {
+                ...item,
+                rank: nR,
+                status: nR === 0 ? 'inedita' : 'recuperacao',
+                next_review: agora
+              };
+              houveDegradacao = true;
+            }
           }
         }
-      }
-    });
+      });
 
     if (houveDegradacao) localStorage.setItem(chaveMaestria, JSON.stringify(dadosMaestria));
     setFrasesMaestria(dadosMaestria);
