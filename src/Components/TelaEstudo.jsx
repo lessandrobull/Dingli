@@ -75,6 +75,8 @@ const ExercicioEscrita = ({
               autocapitalize={ehInicioOracao ? "sentences" : "none"}
               autoCorrect="off"
               spellCheck="false"
+              writingsuggestions="false"
+              data-ms-editor="false"
               onFocus={() => {
                 if (resultadoFeedback === 'erro') {
                   setValorInput("");
@@ -209,7 +211,7 @@ const ExercicioVoz = ({
     <div style={{ textAlign: 'center', width: '100%' }}>
       <p style={{
         ...styles.textoFrasePrincipal,
-        marginTop: (resultadoFeedback === 'dinglab') ? '-10px' : '-4px'
+        marginTop: (resultadoFeedback === 'dinglab') ? '-6px' : '-4px'
       }}>
         {(() => {
           let currentZhIndex = 0;
@@ -274,19 +276,6 @@ const ExercicioVoz = ({
           });
         })()}
       </p>
-
-      {/* Dica visual com altura reservada para manter o centro imóvel */}
-      <div style={{
-        marginTop: '12px',
-        minHeight: '20px',
-        fontSize: '0.84rem',
-        color: '#64748b',
-        fontWeight: '600',
-        textAlign: 'center',
-        visibility: (resultadoFeedback === 'erro' && tentativasVoz < 3) ? 'visible' : 'hidden'
-      }}>
-        {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
-      </div>
     </div>
   );
 };
@@ -411,18 +400,45 @@ export default function TelaEstudo({
       resetarModalReporte();
       return;
     }
+
+    // 1. Envia o reporte silencioso ao Supabase avisando da frase pulada
+    try {
+      const problemas = [...opcoesSelecionadas];
+      if (outroTexto.trim()) problemas.push(outroTexto.trim());
+      const detalhe = problemas.length > 0 ? `Frase pulada, conferir: ${problemas.join(", ")}` : "Frase pulada, conferir";
+
+      supabase.from("reports_frases").insert([{
+        frase_id: fraseId,
+        idioma_estudo: idiomaEstudo,
+        idioma_origem: idiomaOrigem,
+        voz: "v1",
+        tipo_problema: "Frase pulada, conferir",
+        observacao: detalhe,
+        resolvido: false
+      }]).then(() => { }).catch(err => console.error('[Reporte] Erro:', err));
+    } catch (e) { }
+
+    // 2. Trava a frase em quarentena sem timer de retorno, preservando o rank exato
     if (setFrasesMaestria) {
       setFrasesMaestria(prev => {
         const rankObj = prev[fraseId];
-        const rankAtual = typeof rankObj === "object" ? (rankObj.rank || 1) : (rankObj || 1);
+        let rankAtual = 0;
+        if (typeof rankObj === "object" && rankObj?.rank !== undefined) {
+          rankAtual = rankObj.rank;
+        } else if (typeof rankObj === "number") {
+          rankAtual = rankObj;
+        } else if (frase?.rank !== undefined) {
+          rankAtual = Number(frase.rank);
+        }
+
         const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
         const nova = {
           ...prev,
           [fraseId]: {
             ...(typeof rankObj === "object" ? rankObj : {}),
             rank: rankAtual,
-            status: "macro",
-            next_review: Date.now() + (7 * 24 * 60 * 60 * 1000),
+            status: "bloqueada",
+            next_review: null,
             last_review: Date.now(),
             last_attempt_at: Date.now()
           }
@@ -431,6 +447,13 @@ export default function TelaEstudo({
         return nova;
       });
     }
+
+    // 3. Ejetar da bandeja ativa na hora para puxar a substituta sem tela vazia
+    if (typeof rotacionarBandeja === 'function') {
+      rotacionarBandeja(fraseId, true);
+    }
+
+    // 4. Expurga a frase das filas ativas do Dominium
     const fraseOriginal = frase ? (frase[idiomaEstudo] || "") : "";
     if (setFilaErros) setFilaErros(prev => prev.filter(item => item.indice !== indice && item.id !== fraseId));
     if (setFilaAcertos) setFilaAcertos(prev => prev.filter(item => item.id !== fraseId));
@@ -443,16 +466,24 @@ export default function TelaEstudo({
         falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal && f.id !== fraseId)
       }));
     }
+
     resetarModalReporte();
-    if (limparEstadoExercicio) limparEstadoExercicio();
     setResultadoFeedback(null);
-    if (setModoExercicio) setModoExercicio(false);
-    if (jogarDominiumRef.current) {
-      jogarDominiumRef.current();
+    setValorInput("");
+    if (editableRef.current) editableRef.current.innerText = "";
+    if (resetarTentativasVoz) resetarTentativasVoz();
+
+    // Se estiver no Game ou em exercício ativo, chama o motor Dominium.
+    // Se estiver no Deck (navegando no tópico), apenas avança para o próximo card sem fechar o tópico.
+    if (modoExercicio || fraseAtivaGlobal) {
+      if (setModoExercicio) setModoExercicio(false);
+      if (jogarDominiumRef.current) {
+        jogarDominiumRef.current();
+      }
     } else if (setIndice) {
       setIndice(prev => (prev + 1) % frasesFiltradas.length);
     }
-  }, [frase, idiomaEstudo, idiomaOrigem, indice, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarModalReporte, limparEstadoExercicio, setResultadoFeedback, setModoExercicio, frasesFiltradas.length, setIndice]);
+  }, [frase, fraseAtivaGlobal, modoExercicio, idiomaEstudo, idiomaOrigem, indice, opcoesSelecionadas, outroTexto, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarModalReporte, setResultadoFeedback, setModoExercicio, frasesFiltradas.length, setIndice, rotacionarBandeja, resetarTentativasVoz]);
 
   // ETAPA 2: Escape no 3º Erro Consecutivo de Pronúncia com Blindagem de Rank
   const handleRevisarMaisTarde = useCallback(() => {
@@ -1274,7 +1305,31 @@ export default function TelaEstudo({
                     (() => {
                       const idAtual = frase?.id;
                       const maestriaData = frasesMaestria[idAtual];
+                      const estaBloqueada = typeof maestriaData === 'object' && maestriaData?.status === 'bloqueada';
                       const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
+
+                      if (estaBloqueada) {
+                        return (
+                          <button
+                            disabled
+                            style={{
+                              ...styles.btnAcaoExtra,
+                              backgroundColor: ns.bg,
+                              color: ns.txt,
+                              opacity: 0.6,
+                              cursor: 'not-allowed',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center'
+                            }}
+                          >
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                          </button>
+                        );
+                      }
+
                       return (
                         <button
                           onClick={handlePraticar}

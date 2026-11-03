@@ -1532,9 +1532,41 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
     }
   }, [subTela, carregarReportes]);
 
+  const liberarFraseQuarentena = (reporte) => {
+    if (!reporte?.frase_id) return;
+    const idiomaOrigemAlvo = reporte.idioma_origem || 'pt';
+    const idiomaEstudoAlvo = reporte.idioma_estudo || 'en';
+    const chave = `maestria_${idiomaOrigemAlvo}_${idiomaEstudoAlvo}`;
+    try {
+      const salvo = localStorage.getItem(chave);
+      if (salvo) {
+        const dados = JSON.parse(salvo);
+        const fId = reporte.frase_id;
+        const item = dados[fId];
+        if (item && typeof item === 'object' && item.status === 'bloqueada') {
+          dados[fId] = {
+            ...item,
+            status: 'macro',
+            next_review: Date.now()
+          };
+          localStorage.setItem(chave, JSON.stringify(dados));
+        }
+      }
+    } catch (err) {
+      console.error('[Adm] Erro ao destravar frase da quarentena:', err);
+    }
+  };
+
   const alternarResolvido = async (id, statusAtual, e) => {
     if (e) e.stopPropagation();
     const novoStatus = !statusAtual;
+    const reporteAlvo = reportes.find(item => item.id === id);
+
+    // Destrava a frase e a envia para as Próximas ao marcar como resolvida
+    if (novoStatus && reporteAlvo) {
+      liberarFraseQuarentena(reporteAlvo);
+    }
+
     try {
       setReportes(prev => prev.map(item => item.id === id ? { ...item, resolvido: novoStatus } : item));
       const { error } = await supabase
@@ -1554,6 +1586,13 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
 
   const deletarReporte = async (id, e) => {
     if (e) e.stopPropagation();
+    const reporteAlvo = reportes.find(item => item.id === id);
+
+    // Destrava a frase e a envia para as Próximas ao excluir o reporte
+    if (reporteAlvo) {
+      liberarFraseQuarentena(reporteAlvo);
+    }
+
     try {
       setReportes(prev => prev.filter(item => item.id !== id));
       const { error } = await supabase
@@ -4731,6 +4770,14 @@ const ExercicioEscrita = ({
   const prefixoLimpo = (configLacuna.prefixo || "").trim();
   const ehInicioOracao = !prefixoLimpo || /[.!?]\s*$/.test(prefixoLimpo);
 
+  useEffect(() => {
+    return () => {
+      if (editableRef?.current && document.activeElement === editableRef.current) {
+        editableRef.current.blur();
+      }
+    };
+  }, [editableRef]);
+
   return (
     <div style={{ width: '100%', textAlign: 'center' }}>
       <div style={styles.containerLacuna}>
@@ -4740,12 +4787,14 @@ const ExercicioEscrita = ({
             <span style={styles.placeholderInvisivel}>{configLacuna.resposta}</span>
             <div
               ref={editableRef}
-              contentEditable={resultadoFeedback !== 'acerto'}
+              contentEditable={true}
               suppressContentEditableWarning={true}
               autoCapitalize={ehInicioOracao ? "sentences" : "none"}
               autocapitalize={ehInicioOracao ? "sentences" : "none"}
               autoCorrect="off"
               spellCheck="false"
+              writingsuggestions="false"
+              data-ms-editor="false"
               onFocus={() => {
                 if (resultadoFeedback === 'erro') {
                   setValorInput("");
@@ -4757,7 +4806,16 @@ const ExercicioEscrita = ({
                   if (botoes) botoes.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }, 300);
               }}
+              onBeforeInput={(e) => {
+                if (resultadoFeedback === 'acerto') {
+                  e.preventDefault();
+                }
+              }}
               onInput={(e) => {
+                if (resultadoFeedback === 'acerto') {
+                  e.preventDefault();
+                  return;
+                }
                 let texto = e.currentTarget.innerText || "";
                 if (texto.length === 1) {
                   const charOriginal = texto[0];
@@ -4776,6 +4834,11 @@ const ExercicioEscrita = ({
                 setValorInput(texto);
               }}
               onKeyDown={(e) => {
+                if (resultadoFeedback === 'acerto') {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return;
+                }
                 if (e.key === 'Enter') {
                   e.preventDefault();
                   e.stopPropagation();
@@ -4784,6 +4847,7 @@ const ExercicioEscrita = ({
               }}
               onPaste={(e) => {
                 e.preventDefault();
+                if (resultadoFeedback === 'acerto') return;
                 const text = e.clipboardData.getData('text/plain');
                 document.execCommand('insertText', false, text);
               }}
@@ -4865,7 +4929,7 @@ const ExercicioVoz = ({
     <div style={{ textAlign: 'center', width: '100%' }}>
       <p style={{
         ...styles.textoFrasePrincipal,
-        marginTop: (resultadoFeedback === 'dinglab') ? '-10px' : '-4px'
+        marginTop: (resultadoFeedback === 'dinglab') ? '-6px' : '-4px'
       }}>
         {(() => {
           let currentZhIndex = 0;
@@ -4930,19 +4994,6 @@ const ExercicioVoz = ({
           });
         })()}
       </p>
-
-      {/* Dica visual com altura reservada para manter o centro imóvel */}
-      <div style={{
-        marginTop: '12px',
-        minHeight: '20px',
-        fontSize: '0.84rem',
-        color: '#64748b',
-        fontWeight: '600',
-        textAlign: 'center',
-        visibility: (resultadoFeedback === 'erro' && tentativasVoz < 3) ? 'visible' : 'hidden'
-      }}>
-        {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
-      </div>
     </div>
   );
 };
@@ -5067,18 +5118,45 @@ export default function TelaEstudo({
       resetarModalReporte();
       return;
     }
+
+    // 1. Envia o reporte silencioso ao Supabase avisando da frase pulada
+    try {
+      const problemas = [...opcoesSelecionadas];
+      if (outroTexto.trim()) problemas.push(outroTexto.trim());
+      const detalhe = problemas.length > 0 ? `Frase pulada, conferir: ${problemas.join(", ")}` : "Frase pulada, conferir";
+
+      supabase.from("reports_frases").insert([{
+        frase_id: fraseId,
+        idioma_estudo: idiomaEstudo,
+        idioma_origem: idiomaOrigem,
+        voz: "v1",
+        tipo_problema: "Frase pulada, conferir",
+        observacao: detalhe,
+        resolvido: false
+      }]).then(() => { }).catch(err => console.error('[Reporte] Erro:', err));
+    } catch (e) { }
+
+    // 2. Trava a frase em quarentena sem timer de retorno, preservando o rank exato
     if (setFrasesMaestria) {
       setFrasesMaestria(prev => {
         const rankObj = prev[fraseId];
-        const rankAtual = typeof rankObj === "object" ? (rankObj.rank || 1) : (rankObj || 1);
+        let rankAtual = 0;
+        if (typeof rankObj === "object" && rankObj?.rank !== undefined) {
+          rankAtual = rankObj.rank;
+        } else if (typeof rankObj === "number") {
+          rankAtual = rankObj;
+        } else if (frase?.rank !== undefined) {
+          rankAtual = Number(frase.rank);
+        }
+
         const chaveMaestria = `maestria_${idiomaOrigem}_${idiomaEstudo}`;
         const nova = {
           ...prev,
           [fraseId]: {
             ...(typeof rankObj === "object" ? rankObj : {}),
             rank: rankAtual,
-            status: "macro",
-            next_review: Date.now() + (7 * 24 * 60 * 60 * 1000),
+            status: "bloqueada",
+            next_review: null,
             last_review: Date.now(),
             last_attempt_at: Date.now()
           }
@@ -5087,6 +5165,13 @@ export default function TelaEstudo({
         return nova;
       });
     }
+
+    // 3. Ejetar da bandeja ativa na hora para puxar a substituta sem tela vazia
+    if (typeof rotacionarBandeja === 'function') {
+      rotacionarBandeja(fraseId, true);
+    }
+
+    // 4. Expurga a frase das filas ativas do Dominium
     const fraseOriginal = frase ? (frase[idiomaEstudo] || "") : "";
     if (setFilaErros) setFilaErros(prev => prev.filter(item => item.indice !== indice && item.id !== fraseId));
     if (setFilaAcertos) setFilaAcertos(prev => prev.filter(item => item.id !== fraseId));
@@ -5099,16 +5184,24 @@ export default function TelaEstudo({
         falhas: (prev.falhas || []).filter(f => (f.frase || f) !== fraseOriginal && f.id !== fraseId)
       }));
     }
+
     resetarModalReporte();
-    if (limparEstadoExercicio) limparEstadoExercicio();
     setResultadoFeedback(null);
-    if (setModoExercicio) setModoExercicio(false);
-    if (jogarDominiumRef.current) {
-      jogarDominiumRef.current();
+    setValorInput("");
+    if (editableRef.current) editableRef.current.innerText = "";
+    if (resetarTentativasVoz) resetarTentativasVoz();
+
+    // Se estiver no Game ou em exercício ativo, chama o motor Dominium.
+    // Se estiver no Deck (navegando no tópico), apenas avança para o próximo card sem fechar o tópico.
+    if (modoExercicio || fraseAtivaGlobal) {
+      if (setModoExercicio) setModoExercicio(false);
+      if (jogarDominiumRef.current) {
+        jogarDominiumRef.current();
+      }
     } else if (setIndice) {
       setIndice(prev => (prev + 1) % frasesFiltradas.length);
     }
-  }, [frase, idiomaEstudo, idiomaOrigem, indice, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarModalReporte, limparEstadoExercicio, setResultadoFeedback, setModoExercicio, frasesFiltradas.length, setIndice]);
+  }, [frase, fraseAtivaGlobal, modoExercicio, idiomaEstudo, idiomaOrigem, indice, opcoesSelecionadas, outroTexto, setFrasesMaestria, setFilaErros, setFilaAcertos, setSessaoDominium, resetarModalReporte, setResultadoFeedback, setModoExercicio, frasesFiltradas.length, setIndice, rotacionarBandeja, resetarTentativasVoz]);
 
   // ETAPA 2: Escape no 3º Erro Consecutivo de Pronúncia com Blindagem de Rank
   const handleRevisarMaisTarde = useCallback(() => {
@@ -5930,7 +6023,31 @@ export default function TelaEstudo({
                     (() => {
                       const idAtual = frase?.id;
                       const maestriaData = frasesMaestria[idAtual];
+                      const estaBloqueada = typeof maestriaData === 'object' && maestriaData?.status === 'bloqueada';
                       const rankAtual = typeof maestriaData === 'object' ? maestriaData.rank : (maestriaData || 0);
+
+                      if (estaBloqueada) {
+                        return (
+                          <button
+                            disabled
+                            style={{
+                              ...styles.btnAcaoExtra,
+                              backgroundColor: ns.bg,
+                              color: ns.txt,
+                              opacity: 0.6,
+                              cursor: 'not-allowed',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center'
+                            }}
+                          >
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                          </button>
+                        );
+                      }
+
                       return (
                         <button
                           onClick={handlePraticar}
@@ -5994,16 +6111,17 @@ export default function TelaEstudo({
                         style={{
                           ...styles.btnAcaoExtra,
                           backgroundColor: ns.bg,
-                          color: ns.txt,
-                          opacity: statusVoz === 'EVALUATING' ? 0.5 : 1
+                          color: resultadoFeedback === 'acerto' ? '#ffffff' : ns.txt,
+                          border: resultadoFeedback === 'acerto' ? '2px solid #ffffff' : '2px solid transparent',
+                          opacity: (statusVoz === 'EVALUATING' && resultadoFeedback !== 'acerto') ? 0.5 : 1
                         }}
                       >
-                        {statusVoz === 'RECORDING' ? (
+                        {resultadoFeedback === 'acerto' ? (
+                          'Ok'
+                        ) : statusVoz === 'RECORDING' ? (
                           t.check || 'Verificar'
                         ) : statusVoz === 'EVALUATING' ? (
                           '...'
-                        ) : resultadoFeedback === 'acerto' ? (
-                          'Ok'
                         ) : ehDinglabAtivo ? (
                           t?.continueCycle || 'Continuar'
                         ) : resultadoFeedback === 'erro' ? (
@@ -6039,8 +6157,9 @@ export default function TelaEstudo({
                         style={{
                           ...styles.btnAcaoExtra,
                           backgroundColor: ns.bg,
-                          color: ns.txt,
-                          opacity: isCheckDisabled ? 0.5 : 1,
+                          color: resultadoFeedback === 'acerto' ? '#ffffff' : ns.txt,
+                          border: resultadoFeedback === 'acerto' ? '2px solid #ffffff' : '2px solid transparent',
+                          opacity: (isCheckDisabled && resultadoFeedback !== 'acerto') ? 0.5 : 1,
                           cursor: isCheckDisabled ? 'not-allowed' : 'pointer'
                         }}
                       >
@@ -7309,7 +7428,7 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
             idsDinglab = arrD.map(item => Number(item.id));
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 2. Frases da Bandeja (Apenas cartas efetivamente iniciadas e abandonadas)
@@ -7324,7 +7443,9 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
           if (Array.isArray(arrB)) {
             arrB.forEach(item => {
               const idNum = typeof item === 'object' && item !== null ? Number(item.id) : Number(item);
-              if (!idsDinglab.includes(idNum)) {
+              // Como tem que ser:
+              const mItem = frasesMaestria[idNum];
+              if (!idsDinglab.includes(idNum) && mItem?.status !== 'bloqueada') {
                 idsBandeja.push(idNum);
                 if (typeof item === 'object' && item !== null && item.texto) {
                   mapaTextosBandeja[idNum] = item.texto;
@@ -7333,7 +7454,7 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
             });
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     const obterTextoFrase = (idNum, data) => {
@@ -7373,13 +7494,16 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
           const idNum = Number(id);
           if (typeof data !== 'object' || data.rank === 0) return false;
 
+          // Frases em quarentena/bloqueadas são estritamente excluídas de todas as listas
+          if (data.status === 'bloqueada') return false;
+
           // Frases no Dìnglab são estritamente excluídas de todas as listas abaixo
           if (idsDinglab.includes(idNum)) return false;
 
           // Frases na Bandeja abandonada são estritamente excluídas de todas as listas abaixo
           if (idsBandeja.includes(idNum)) return false;
 
-          const isReady = data.next_review <= agora;
+          const isReady = data.next_review !== null && data.next_review <= agora;
 
           if (criterio === 'proximas') {
             // Próximas = Repousos macro de dias vencidos + Frases recém-saídas do Dìnglab
@@ -7639,7 +7763,8 @@ export function useGameEngine({
                 const m = frasesMaestria[id];
                 const rank = typeof m === 'object' ? (m.rank || 0) : (m || 0);
                 const estaEmRepouso = typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
-                return rank > 0 && !estaEmRepouso;
+                const estaBloqueada = typeof m === 'object' && m.status === 'bloqueada';
+                return rank > 0 && !estaEmRepouso && !estaBloqueada;
               });
           }
         }
@@ -7667,8 +7792,10 @@ export function useGameEngine({
     let idsPendentes = (taskIdsRef.current || []).filter(id => {
       if (!id || idsNoDinglab.includes(id)) return false;
       const m = frasesMaestria[id];
+      // Como tem que ser:
       const estaEmRepouso = m && typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
-      return !estaEmRepouso;
+      const estaBloqueada = m && typeof m === 'object' && m.status === 'bloqueada';
+      return !estaEmRepouso && !estaBloqueada;
     });
 
     taskIdsRef.current = idsPendentes;
@@ -7694,9 +7821,12 @@ export function useGameEngine({
         const m = frasesMaestria[idStr];
         if (
           typeof m === 'object' &&
+          // Como tem que ser:
           m.rank > 0 &&
+          m.status !== 'bloqueada' &&
           !idsPendentes.includes(id) &&
           !idsNoDinglab.includes(id) &&
+          m.next_review !== null &&
           m.next_review <= agora
         ) {
           const tempo = m.last_attempt_at || 0;
@@ -7737,7 +7867,8 @@ export function useGameEngine({
           const fid = Number(f.id);
           const m = frasesMaestria[fid];
           const rank = typeof m === 'object' ? m.rank : (m || 0);
-          return rank === 0 && !idsPendentes.includes(fid) && !idsNoDinglab.includes(fid);
+          const estaBloqueada = typeof m === 'object' && m?.status === 'bloqueada';
+          return rank === 0 && !estaBloqueada && !idsPendentes.includes(fid) && !idsNoDinglab.includes(fid);
         })
         .sort((a, b) => Number(a.id) - Number(b.id));
 
@@ -7900,12 +8031,12 @@ import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_
 export const VELOCIDADES_AUDIO = {
     pi: { normal: 0.70, lento: 0.60 }, // Mandarim
     zh: { normal: 0.70, lento: 0.60 },
-    en: { normal: 0.90, lento: 0.75 }, // Inglês
-    es: { normal: 0.90, lento: 0.75 }, // Espanhol
-    fr: { normal: 0.90, lento: 0.75 }, // Francês
-    it: { normal: 0.90, lento: 0.75 }, // Italiano
-    ge: { normal: 0.90, lento: 0.75 }, // Alemão
-    pt: { normal: 0.90, lento: 0.75 }  // Português
+    en: { normal: 1.00, lento: 0.75 }, // Inglês
+    es: { normal: 1.00, lento: 0.75 }, // Espanhol
+    fr: { normal: 1.00, lento: 0.75 }, // Francês
+    it: { normal: 1.00, lento: 0.75 }, // Italiano
+    ge: { normal: 1.00, lento: 0.75 }, // Alemão
+    pt: { normal: 1.00, lento: 0.75 }  // Português
 };
 
 export const useSpeech = ({

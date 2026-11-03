@@ -18,7 +18,7 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
             idsDinglab = arrD.map(item => Number(item.id));
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     // 2. Frases da Bandeja (Apenas cartas efetivamente iniciadas e abandonadas)
@@ -33,7 +33,9 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
           if (Array.isArray(arrB)) {
             arrB.forEach(item => {
               const idNum = typeof item === 'object' && item !== null ? Number(item.id) : Number(item);
-              if (!idsDinglab.includes(idNum)) {
+              // Como tem que ser:
+              const mItem = frasesMaestria[idNum];
+              if (!idsDinglab.includes(idNum) && mItem?.status !== 'bloqueada') {
                 idsBandeja.push(idNum);
                 if (typeof item === 'object' && item !== null && item.texto) {
                   mapaTextosBandeja[idNum] = item.texto;
@@ -42,7 +44,7 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
             });
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     const obterTextoFrase = (idNum, data) => {
@@ -82,13 +84,16 @@ export function useDominiumData({ sessaoDominium, frasesFiltradas, frasesMaestri
           const idNum = Number(id);
           if (typeof data !== 'object' || data.rank === 0) return false;
 
+          // Frases em quarentena/bloqueadas são estritamente excluídas de todas as listas
+          if (data.status === 'bloqueada') return false;
+
           // Frases no Dìnglab são estritamente excluídas de todas as listas abaixo
           if (idsDinglab.includes(idNum)) return false;
 
           // Frases na Bandeja abandonada são estritamente excluídas de todas as listas abaixo
           if (idsBandeja.includes(idNum)) return false;
 
-          const isReady = data.next_review <= agora;
+          const isReady = data.next_review !== null && data.next_review <= agora;
 
           if (criterio === 'proximas') {
             // Próximas = Repousos macro de dias vencidos + Frases recém-saídas do Dìnglab

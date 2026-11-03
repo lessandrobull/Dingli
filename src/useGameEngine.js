@@ -187,7 +187,8 @@ export function useGameEngine({
                 const m = frasesMaestria[id];
                 const rank = typeof m === 'object' ? (m.rank || 0) : (m || 0);
                 const estaEmRepouso = typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
-                return rank > 0 && !estaEmRepouso;
+                const estaBloqueada = typeof m === 'object' && m.status === 'bloqueada';
+                return rank > 0 && !estaEmRepouso && !estaBloqueada;
               });
           }
         }
@@ -215,8 +216,10 @@ export function useGameEngine({
     let idsPendentes = (taskIdsRef.current || []).filter(id => {
       if (!id || idsNoDinglab.includes(id)) return false;
       const m = frasesMaestria[id];
+      // Como tem que ser:
       const estaEmRepouso = m && typeof m === 'object' && m.status === 'macro' && m.next_review > agora;
-      return !estaEmRepouso;
+      const estaBloqueada = m && typeof m === 'object' && m.status === 'bloqueada';
+      return !estaEmRepouso && !estaBloqueada;
     });
 
     taskIdsRef.current = idsPendentes;
@@ -242,9 +245,12 @@ export function useGameEngine({
         const m = frasesMaestria[idStr];
         if (
           typeof m === 'object' &&
+          // Como tem que ser:
           m.rank > 0 &&
+          m.status !== 'bloqueada' &&
           !idsPendentes.includes(id) &&
           !idsNoDinglab.includes(id) &&
+          m.next_review !== null &&
           m.next_review <= agora
         ) {
           const tempo = m.last_attempt_at || 0;
@@ -285,7 +291,8 @@ export function useGameEngine({
           const fid = Number(f.id);
           const m = frasesMaestria[fid];
           const rank = typeof m === 'object' ? m.rank : (m || 0);
-          return rank === 0 && !idsPendentes.includes(fid) && !idsNoDinglab.includes(fid);
+          const estaBloqueada = typeof m === 'object' && m?.status === 'bloqueada';
+          return rank === 0 && !estaBloqueada && !idsPendentes.includes(fid) && !idsNoDinglab.includes(fid);
         })
         .sort((a, b) => Number(a.id) - Number(b.id));
 

@@ -48,9 +48,41 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
     }
   }, [subTela, carregarReportes]);
 
+  const liberarFraseQuarentena = (reporte) => {
+    if (!reporte?.frase_id) return;
+    const idiomaOrigemAlvo = reporte.idioma_origem || 'pt';
+    const idiomaEstudoAlvo = reporte.idioma_estudo || 'en';
+    const chave = `maestria_${idiomaOrigemAlvo}_${idiomaEstudoAlvo}`;
+    try {
+      const salvo = localStorage.getItem(chave);
+      if (salvo) {
+        const dados = JSON.parse(salvo);
+        const fId = reporte.frase_id;
+        const item = dados[fId];
+        if (item && typeof item === 'object' && item.status === 'bloqueada') {
+          dados[fId] = {
+            ...item,
+            status: 'macro',
+            next_review: Date.now()
+          };
+          localStorage.setItem(chave, JSON.stringify(dados));
+        }
+      }
+    } catch (err) {
+      console.error('[Adm] Erro ao destravar frase da quarentena:', err);
+    }
+  };
+
   const alternarResolvido = async (id, statusAtual, e) => {
     if (e) e.stopPropagation();
     const novoStatus = !statusAtual;
+    const reporteAlvo = reportes.find(item => item.id === id);
+
+    // Destrava a frase e a envia para as Próximas ao marcar como resolvida
+    if (novoStatus && reporteAlvo) {
+      liberarFraseQuarentena(reporteAlvo);
+    }
+
     try {
       setReportes(prev => prev.map(item => item.id === id ? { ...item, resolvido: novoStatus } : item));
       const { error } = await supabase
@@ -70,6 +102,13 @@ export function Adm({ styles, setFraseAtivaGlobal, setTopicoAtivo }) {
 
   const deletarReporte = async (id, e) => {
     if (e) e.stopPropagation();
+    const reporteAlvo = reportes.find(item => item.id === id);
+
+    // Destrava a frase e a envia para as Próximas ao excluir o reporte
+    if (reporteAlvo) {
+      liberarFraseQuarentena(reporteAlvo);
+    }
+
     try {
       setReportes(prev => prev.filter(item => item.id !== id));
       const { error } = await supabase
