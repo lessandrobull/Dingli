@@ -1,474 +1,654 @@
 {
   "811": {
-    "explanation": "Para falar sobre mal-estar físico passageiro de forma refinada, o francês usa 'indisposé' (indisposto ou com ligeiro incômodo). 'Je me sens' significa 'eu me sinto'. 'Un peu' é 'um pouco', e a expressão 'ces derniers temps' significa 'ultimamente / nestes últimos tempos'.",
+    "explanation": "Para dizer que você se sente de uma certa forma, o francês usa 'Je me sens' (Eu me sinto). A expressão 'un peu' significa 'um pouco' e 'indisposé' é muito parecida com o nosso 'indisposto'. No final, 'ces derniers temps' é o jeito natural de dizer 'ultimamente', que ao pé da letra seria 'estes últimos tempos'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "me", "meaning": "me" },
-      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "peu", "meaning": "pouco (un peu = um pouco)" },
-      { "word": "indisposé", "meaning": "indisposto / com mal-estar" },
-      { "word": "ces", "meaning": "nestes" },
-      { "word": "derniers", "meaning": "últimos" },
-      { "word": "temps", "meaning": "tempos (ces derniers temps = ultimamente)" }
-    ]
+      {
+        "word": "Je me sens",
+        "meaning": "Eu me sinto — Je: eu; me: me; sens: sinto."
+      },
+      {
+        "word": "un peu",
+        "meaning": "Um pouco — un: um; peu: pouco."
+      },
+      {
+        "word": "indisposé",
+        "meaning": "Indisposto — mal-estar físico leve."
+      },
+      {
+        "word": "ces derniers temps",
+        "meaning": "Ultimamente — ces: estes; derniers: últimos; temps: tempos."
+      }
+    ],
+    "pronuncia": "Comece com 'Je' fazendo um bico e soltando o som de 'jê', o mesmo para 'me' ('mê'). Em 'sens', o som é nasal, como se o 'n' ficasse preso no nariz ('sãn'). 'Un' também é nasal e 'peu' exige um bico bem fechado ('pê'). Em 'indisposé', fale 'in-dis-pô-zê' com o 'ê' bem limpo. 'Ces' soa como 'sê'. Em 'derniers', o 'R' é arranhado no fundo da garganta e o 's' final some ('dér-ni-ê'). Termine com 'temps' saindo totalmente pelo nariz ('tãn').\nLeia: Jê mê sãn ãn pê in-dis-pô-zê sê dér-ni-ê tãn."
   },
   "812": {
-    "explanation": "'Vous devriez' significa 'o senhor deveria / você deveria' (conselho do verbo devoir). 'Voir un médecin' é consultar ou ver um médico. A palavra 'si' significa 'se'. 'La douleur' é a dor (palavra feminina em francês). A negação 'ne... pas' envolve o verbo sumir ou desaparecer: 'ne disparaît pas' (não passar / não sumir).",
+    "explanation": "Em francês, para dar um conselho, usamos 'Vous devriez' (Você deveria). O verbo 'voir' (ver) é usado aqui no sentido de 'consultar'. A condição 'si la douleur' (se a dor) termina com a negação 'ne disparaît pas', onde o 'ne' e o 'pas' abraçam a palavra 'desaparece' para dizer que ela não vai embora.",
     "breakdown": [
-      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
-      { "word": "devriez", "meaning": "deveria (conselho do verbo devoir com vous)" },
-      { "word": "voir", "meaning": "ver / consultar" },
-      { "word": "un", "meaning": "um" },
-      { "word": "médecin", "meaning": "médico" },
-      { "word": "si", "meaning": "se" },
-      { "word": "la", "meaning": "a" },
-      { "word": "douleur", "meaning": "dor (palavra feminina em francês)" },
-      { "word": "ne", "meaning": "primeira parte do 'não'" },
-      { "word": "disparaît", "meaning": "desaparece / passa / some (do verbo disparaître)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" }
-    ]
+      {
+        "word": "Vous devriez",
+        "meaning": "Você deveria — vous: você/senhor; devriez: deveria."
+      },
+      {
+        "word": "voir un médecin",
+        "meaning": "Consultar um médico — voir: ver; un: um; médecin: médico."
+      },
+      {
+        "word": "si la douleur",
+        "meaning": "Se a dor — si: se; la: a; douleur: dor."
+      },
+      {
+        "word": "ne disparaît pas",
+        "meaning": "Não desaparece / não passa — ne... pas: não; disparaît: desaparece."
+      }
+    ],
+    "pronuncia": "Fale 'Vous' como 'vu'. Em 'devriez', o 'R' é arranhado e o final soa como 'ê' ('dê-vri-ê'). 'Voir' tem som de 'vu-ár'. 'Un' é nasal e 'médecin' soa como 'méd-sãn', com o final pelo nariz. 'Douleur' começa com 'du' e termina com um 'R' suave ('du-lêr'). Em 'ne', faça bico ('nê'). 'Disparaît' soa como 'dis-pa-ré' e o 'pas' é um 'pá' curto.\nLeia: Vu dê-vri-ê vu-ár ãn méd-sãn si la du-lêr nê dis-pa-ré pá."
   },
   "813": {
-    "explanation": "'J'ai rendez-vous' significa 'eu tenho hora marcada / tenho consulta'. Como vimos, para pessoas e profissionais de saúde, usa-se 'chez le dentiste' (ao dentista / no consultório do dentista). A indicação de horário é 'à quatre heures' (às quatro horas).",
+    "explanation": "A expressão 'J'ai rendez-vous' é a forma padrão para dizer 'tenho um compromisso' ou 'tenho hora marcada'. O termo 'chez' é muito usado e significa 'na casa de' ou 'no consultório de'. Para as horas, eles dizem 'à quatre heures', juntando o som do número com a palavra horas.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
-      { "word": "rendez-vous", "meaning": "compromisso / consulta marcada" },
-      { "word": "chez", "meaning": "no consultório de / com (preposição para pessoas e profissionais)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "dentiste", "meaning": "dentista" },
-      { "word": "à", "meaning": "às" },
-      { "word": "quatre", "meaning": "quatro" },
-      { "word": "heures", "meaning": "horas" }
-    ]
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho — J': eu; ai: tenho."
+      },
+      {
+        "word": "rendez-vous",
+        "meaning": "Compromisso / Consulta — hora marcada."
+      },
+      {
+        "word": "chez le dentiste",
+        "meaning": "No dentista — chez: em/na casa de; le: o; dentiste: dentista."
+      },
+      {
+        "word": "à quatre heures",
+        "meaning": "Às quatro horas — à: às; quatre: quatro; heures: horas."
+      }
+    ],
+    "pronuncia": "O 'J'ai' soa como 'jê'. 'Rendez-vous' começa nasal e termina em 'vu' ('rãn-dê-vu'). 'Chez' é 'chê' e 'le' tem bico ('lê'). 'Dentiste' é 'dãn-tist'. Em 'à quatre heures', o 'quatre' perde o final e o 'R' gruda no 'heures', que tem som de 'êr'.\nLeia: Jê rãn-dê-vu chê lê dãn-tist a ka-trêr."
   },
   "814": {
-    "explanation": "Pergunta de emergência no exterior: 'Que' é 'o que'. 'Dois-je faire' é a forma interrogativa de 'eu devo fazer?'. A conjunção 'si' é 'se'. 'Je perds' é 'eu perder / perco' (do verbo perdre). 'Mon passeport' é meu passaporte, e 'en voyage' significa 'em viagem / durante a viagem'.",
+    "explanation": "Para fazer uma pergunta sobre dever, o francês inverte a ordem: 'dois-je' (devo eu). 'Perds' é o verbo perder. 'Mon passeport' é quase igual ao português. A expressão 'en voyage' usa o 'en' para indicar que algo acontece durante a situação de estar viajando.",
     "breakdown": [
-      { "word": "Que", "meaning": "O que" },
-      { "word": "dois", "meaning": "devo (do verbo devoir)" },
-      { "word": "-je", "meaning": "eu (ligado ao verbo para a pergunta)" },
-      { "word": "faire", "meaning": "fazer" },
-      { "word": "si", "meaning": "se" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "perds", "meaning": "perco / perder (do verbo perdre)" },
-      { "word": "mon", "meaning": "meu" },
-      { "word": "passeport", "meaning": "passaporte" },
-      { "word": "en", "meaning": "em" },
-      { "word": "voyage", "meaning": "viagem (en voyage = viajando / em viagem)" }
-    ]
+      {
+        "word": "Que dois-je faire",
+        "meaning": "O que devo fazer — Que: o que; dois-je: devo eu; faire: fazer."
+      },
+      {
+        "word": "si je perds",
+        "meaning": "Se eu perder — si: se; je: eu; perds: perco/perder."
+      },
+      {
+        "word": "mon passeport",
+        "meaning": "Meu passaporte — mon: meu; passeport: passaporte."
+      },
+      {
+        "word": "en voyage",
+        "meaning": "Em viagem — en: em; voyage: viagem."
+      }
+    ],
+    "pronuncia": "Fale 'Que' com bico ('kê'). 'Dois-je' soa como 'du-á-jê'. 'Faire' é 'fér' com o 'R' no fundo da garganta. 'Je' é 'jê' (bico). 'Perds' é 'pér'. 'Mon' é nasal ('mõn'). 'Passeport' morre no 'R' ('pas-pór'). 'En' é nasal ('ãn') e 'voyage' soa como 'vu-a-yáj'.\nLeia: Kê du-á-jê fér si jê pér mõn pas-pór ãn vu-a-yáj."
   },
   "815": {
-    "explanation": "'Je suis allergique aux chats' significa 'sou alérgico a gatos' (com aux = à + les). A palavra 'donc' significa 'portanto / então'. A negação 'je ne peux pas' significa 'eu não posso'. O verbo ficar ou permanecer é 'rester'. A expressão 'chez vous' significa 'na sua casa / na casa de vocês'.",
+    "explanation": "Dizer 'Je suis allergique aux chats' é direto: 'Eu sou alérgico aos gatos'. A palavra 'donc' (então) conecta com a impossibilidade 'je ne peux pas' (eu não posso). O 'rester' aqui significa 'ficar' ou 'se hospedar' e 'chez vous' é o jeito educado de dizer 'na sua casa'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "sou (do verbo être)" },
-      { "word": "allergique", "meaning": "alérgico / alérgica" },
-      { "word": "aux", "meaning": "a / aos (junção de à + les)" },
-      { "word": "chats", "meaning": "gatos" },
-      { "word": "donc", "meaning": "portanto / por isso / então" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "ne", "meaning": "primeira parte do 'não'" },
-      { "word": "peux", "meaning": "posso (do verbo pouvoir)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "rester", "meaning": "ficar / permanecer" },
-      { "word": "chez", "meaning": "na casa de" },
-      { "word": "vous", "meaning": "o senhor / a senhora / vocês (chez vous = na sua casa)" }
-    ]
+      {
+        "word": "Je suis allergique",
+        "meaning": "Eu sou alérgico — Je: eu; suis: sou; allergique: alérgico."
+      },
+      {
+        "word": "aux chats",
+        "meaning": "Aos gatos — aux: aos; chats: gatos."
+      },
+      {
+        "word": "donc",
+        "meaning": "Então / Portanto."
+      },
+      {
+        "word": "je ne peux pas",
+        "meaning": "Eu não posso — peux: posso."
+      },
+      {
+        "word": "rester chez vous",
+        "meaning": "Ficar na sua casa — rester: ficar; chez vous: na sua casa."
+      }
+    ],
+    "pronuncia": "Fale 'Je' com bico ('jê'). 'Suis' soa como 'su-í'. 'Allergique' é 'a-lér-jík'. 'Aux chats' soa apenas como 'ô chá'. 'Donc' é 'dõnk'. 'Peux' exige um bico bem fechado ('pê'). 'Rester' é 'rês-tê'. 'Chez vous' soa como 'chê vu'.\nLeia: Jê su-í a-lér-jík ô chá, dõnk jê nê pê pá rês-tê chê vu."
   },
   "816": {
-    "explanation": "O verbo souffrir pede a preposição 'de' ('souffre de'). Em francês, dores nas costas no plural é dito 'maux de dos' (onde maux é o plural irregular de mal). A palavra 'depuis' indica a duração contínua ('há' ou 'desde'), e 'quelques semaines' significa 'algumas semanas'.",
+    "explanation": "O francês usa 'souffre de maux de dos' para 'sofre de dores nas costas'. A palavra 'maux' é o plural de mal (dor). 'Depuis' é a palavra chave para dizer 'há' ou 'desde' quando algo começou no passado e continua agora. 'Quelques' significa 'algumas'.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "souffre", "meaning": "sofre / padece (do verbo souffrir)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "maux", "meaning": "dores / males (plural de mal)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "dos", "meaning": "costas (maux de dos = dores nas costas)" },
-      { "word": "depuis", "meaning": "há / desde" },
-      { "word": "quelques", "meaning": "algumas" },
-      { "word": "semaines", "meaning": "semanas" }
-    ]
+      {
+        "word": "Elle souffre de",
+        "meaning": "Ela sofre de — Elle: ela; souffre: sofre."
+      },
+      {
+        "word": "maux de dos",
+        "meaning": "Dores nas costas — maux: dores; dos: costas."
+      },
+      {
+        "word": "depuis",
+        "meaning": "Há / Desde — indica tempo decorrido."
+      },
+      {
+        "word": "quelques semaines",
+        "meaning": "Algumas semanas — quelques: algumas; semaines: semanas."
+      }
+    ],
+    "pronuncia": "Fale 'Elle' como 'él'. 'Souffre' termina no som do 'R' arranhado ('sufr'). 'Maux' e 'dos' têm som de 'ô' ('mô dê dô'). 'Depuis' soa como 'dê-pu-í'. 'Quelques' é 'kél-kê' (bico no final). 'Semaines' soa como 'sê-mén', com o 'n' aparecendo de leve.\nLeia: Él sufr dê mô dê dô dê-pu-í kél-kê sê-mén."
   },
   "817": {
-    "explanation": "Pergunta indispensável de socorro: 'Savez-vous' é 'o senhor sabe?'. O verbo se trouver no plural é 'se trouvent' (ficam / estão localizadas). 'Les urgences' é o pronto-socorro / emergência (sempre no plural). A expressão 'les plus proches' significa 'as mais próximas'.",
+    "explanation": "Para perguntar 'Você sabe', usamos 'Savez-vous'. A expressão 'où se trouvent' significa 'onde se encontram' ou 'onde ficam'. 'Les urgences' é como eles chamam o pronto-socorro. 'Les plus proches' significa 'as mais próximas'.",
     "breakdown": [
-      { "word": "Savez", "meaning": "Sabe / Sabem (do verbo savoir com vous)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para pergunta)" },
-      { "word": "où", "meaning": "onde" },
-      { "word": "se", "meaning": "se" },
-      { "word": "trouvent", "meaning": "encontram / ficam (do verbo se trouver no plural)" },
-      { "word": "les", "meaning": "as / o" },
-      { "word": "urgences", "meaning": "pronto-socorro / emergências hospitalares" },
-      { "word": "les", "meaning": "as" },
-      { "word": "plus", "meaning": "mais (les plus = as mais)" },
-      { "word": "proches", "meaning": "próximas (no plural)" }
-    ]
+      {
+        "word": "Savez-vous",
+        "meaning": "Você sabe — savez: sabe; vous: você."
+      },
+      {
+        "word": "où se trouvent",
+        "meaning": "Onde ficam — où: onde; se trouvent: se encontram."
+      },
+      {
+        "word": "les urgences",
+        "meaning": "O pronto-socorro — urgences: emergências."
+      },
+      {
+        "word": "les plus proches",
+        "meaning": "As mais próximas — plus: mais; proches: próximas."
+      }
+    ],
+    "pronuncia": "Fale 'Savez-vous' como 'sa-vê-vu'. 'Où' é um 'u' simples. 'Se trouvent' soa como 'sê truv'. Em 'les urgences', o 's' de 'les' gruda no 'u' com som de 'z' ('lê-zür-jãn-s'). 'Plus' soa como 'plü' (bico de 'u' com som de 'i') e 'proches' é 'próch'.\nLeia: Sa-vê-vu u sê truv lê-zür-jãn-s lê plü próch."
   },
   "818": {
-    "explanation": "'J'ai décidé de' significa 'eu decidi' (passado de décider com avoir). O verbo começar é 'commencer'. 'Un régime' é uma dieta ou regime alimentar. A expressão 'plus sain' significa 'mais saudável' (onde sain significa são/saudável).",
+    "explanation": "A frase começa com 'J'ai décidé' (Eu decidi). O 'de' é necessário antes de 'commencer' (começar). 'Un régime' é uma dieta. 'Plus sain' significa 'mais saudável', sendo que 'sain' vem de 'são' ou 'intacto'.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "décidé", "meaning": "decidido / decidi (do verbo décider)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "commencer", "meaning": "começar" },
-      { "word": "un", "meaning": "um / uma" },
-      { "word": "régime", "meaning": "dieta / regime alimentar" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "sain", "meaning": "saudável / são" }
-    ]
+      {
+        "word": "J'ai décidé de",
+        "meaning": "Eu decidi — J'ai: eu tenho/eu fiz; décidé: decidido."
+      },
+      {
+        "word": "commencer",
+        "meaning": "Começar."
+      },
+      {
+        "word": "un régime",
+        "meaning": "Uma dieta / um regime."
+      },
+      {
+        "word": "plus sain",
+        "meaning": "Mais saudável — plus: mais; sain: saudável/são."
+      }
+    ],
+    "pronuncia": "Fale 'J'ai' como 'jê'. 'Décidé' é 'dê-si-dê'. 'Commencer' tem som nasal no meio e termina em 'ê' ('kô-mãn-sê'). 'Un' é nasal. 'Régime' soa como 'rê-jím'. 'Plus' é 'plü' (bico) e 'sain' é um som nasal que lembra 'sãn'.\nLeia: Jê dê-si-dê dê kô-mãn-sê ãn rê-jím plü sãn."
   },
   "819": {
-    "explanation": "'J'étais si fatigué que' significa 'eu estava tão cansado que'. O verbo pegar no sono ou adormecer é o reflexivo s'endormir: 'je me suis endormi' (adormeci / peguei no sono, com être no passado). 'Dans le bus' significa 'no ônibus'.",
+    "explanation": "Para dizer 'Eu estava', usamos 'J'étais'. O 'si' aqui funciona como 'tão'. A parte 'je me suis endormi' é o jeito francês de dizer 'eu adormeci' ou 'eu peguei no sono'. 'Dans le bus' é simplesmente 'no ônibus'.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "étais", "meaning": "estava (passado do verbo être)" },
-      { "word": "si", "meaning": "tão" },
-      { "word": "fatigué", "meaning": "cansado" },
-      { "word": "que", "meaning": "que" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "me", "meaning": "me" },
-      { "word": "suis", "meaning": "fiz a ação no passado (auxiliar être para verbos reflexivos)" },
-      { "word": "endormi", "meaning": "adormecido / dormi (do verbo s'endormir)" },
-      { "word": "dans", "meaning": "em / no" },
-      { "word": "le", "meaning": "o" },
-      { "word": "bus", "meaning": "ônibus" }
-    ]
+      {
+        "word": "J'étais si fatigué",
+        "meaning": "Eu estava tão cansado — J'étais: eu estava; si: tão; fatigué: cansado."
+      },
+      {
+        "word": "que je me suis",
+        "meaning": "Que eu me (ação feita comigo mesmo)."
+      },
+      {
+        "word": "endormi",
+        "meaning": "Adormeci / dormi."
+      },
+      {
+        "word": "dans le bus",
+        "meaning": "No ônibus — dans: dentro de/no; bus: ônibus."
+      }
+    ],
+    "pronuncia": "Fale 'J'étais' como 'jê-té'. 'Si fatigué' é 'si fa-ti-guê'. 'Que' tem bico ('kê'). 'Je me suis' soa como 'jê mê su-í'. 'Endormi' começa nasal ('ãn-dór-mi'). 'Dans' é nasal ('dãn'). 'Le' tem bico ('lê') e 'bus' soa como 'büs' (bico de 'u' falando 'i').\nLeia: Jê-té si fa-ti-guê kê jê mê su-í ãn-dór-mi dãn lê büs."
   },
   "820": {
-    "explanation": "Frase para avisar ao trabalho sobre ausência por doença: 'Je suis désolé' é 'sinto muito'. 'Je ne peux pas venir travailler' significa 'não posso ir trabalhar / vir trabalhar'. A conjunção 'car' significa 'pois / porque', e 'je suis malade' é 'estou doente'.",
+    "explanation": "'Je suis désolé' é a forma clássica de pedir desculpas ou dizer 'sinto muito'. 'Je ne peux pas' é 'eu não posso'. O verbo 'venir' (vir) se junta a 'travailler' (trabalhar). A palavra 'car' é um jeito comum de dizer 'porque' ou 'pois'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "estou (do verbo être)" },
-      { "word": "désolé", "meaning": "desolado / sinto muito" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "ne", "meaning": "primeira parte do 'não'" },
-      { "word": "peux", "meaning": "posso (do verbo pouvoir)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "venir", "meaning": "vir / ir" },
-      { "word": "travailler", "meaning": "trabalhar" },
-      { "word": "car", "meaning": "pois / porque / já que" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "suis", "meaning": "estou (do verbo être)" },
-      { "word": "malade", "meaning": "doente" }
-    ]
+      {
+        "word": "Je suis désolé",
+        "meaning": "Sinto muito / Estou arrependido."
+      },
+      {
+        "word": "je ne peux pas",
+        "meaning": "Eu não posso — peux: posso."
+      },
+      {
+        "word": "venir travailler",
+        "meaning": "Vir trabalhar — venir: vir; travailler: trabalhar."
+      },
+      {
+        "word": "car je suis malade",
+        "meaning": "Pois estou doente — car: pois/porque; malade: doente."
+      }
+    ],
+    "pronuncia": "Fale 'Je suis' como 'jê su-í'. 'Désolé' é 'dê-zô-lê'. 'Peux' tem bico fechado ('pê'). 'Venir' termina com o 'R' suave ('vê-nir'). 'Travailler' soa como 'tra-va-yê'. 'Car' tem o 'R' arranhado ('kar'). 'Malade' termina seco no 'd' ('ma-lad').\nLeia: Jê su-í dê-zô-lê, jê nê pê pá vê-nir tra-va-yê kar jê su-í ma-lad."
   },
   "821": {
-    "explanation": "Posologia indicada pelo médico ou farmacêutico: 'Vous devez prendre' significa 'você precisa tomar / o senhor deve tomar'. 'Ce médicament' é este remédio. A expressão 'deux fois par jour' significa 'duas vezes por dia'. 'Après les repas' significa 'após as refeições / depois das refeições'.",
+    "explanation": "Para ordens ou instruções médicas, usamos 'Vous devez' (Você deve). 'Prendre' serve para 'tomar' remédios. 'Deux fois par jour' significa 'duas vezes por dia'. 'Après les repas' é 'após as refeições'.",
     "breakdown": [
-      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
-      { "word": "devez", "meaning": "deve / tem que (do verbo devoir com vous)" },
-      { "word": "prendre", "meaning": "tomar" },
-      { "word": "ce", "meaning": "este" },
-      { "word": "médicament", "meaning": "remédio / medicamento" },
-      { "word": "deux", "meaning": "duas" },
-      { "word": "fois", "meaning": "vezes" },
-      { "word": "par", "meaning": "por" },
-      { "word": "jour", "meaning": "dia" },
-      { "word": "après", "meaning": "após / depois de" },
-      { "word": "les", "meaning": "as" },
-      { "word": "repas", "meaning": "refeições" }
-    ]
+      {
+        "word": "Vous devez prendre",
+        "meaning": "Você deve tomar — devez: deve; prendre: tomar/pegar."
+      },
+      {
+        "word": "ce médicament",
+        "meaning": "Este remédio — ce: este; médicament: medicamento."
+      },
+      {
+        "word": "deux fois par jour",
+        "meaning": "Duas vezes por dia — deux: duas; fois: vezes; jour: dia."
+      },
+      {
+        "word": "après les repas",
+        "meaning": "Após as refeições — après: após; repas: refeições."
+      }
+    ],
+    "pronuncia": "Fale 'Vous devez' como 'vu dê-vê'. 'Prendre' termina no 'R' seco ('prãndr'). 'Ce' tem bico ('sê'). 'Médicament' termina nasal ('mê-di-ka-mãn'). 'Deux' tem bico ('dê'). 'Fois' é 'fu-á'. 'Jour' tem o 'j' forte e 'R' no fim ('jur'). 'Après' é 'a-pré' e 'repas' é 'rê-pá'.\nLeia: Vu dê-vê prãndr sê mê-di-ka-mãn dê fu-á par jur a-pré lê rê-pá."
   },
   "822": {
-    "explanation": "'J'essaie de' significa 'estou tentando' (do verbo essayer). Em francês, emagrecer ou perder peso é 'perdre du poids' (literalmente perder do peso). A preposição 'pour' significa 'para', e 'l'été' é o verão (com 'l'' antes da vogal).",
+    "explanation": "'J'essaie de' significa 'Eu tento' ou 'Estou tentando'. 'Perdre du poids' é a expressão para 'perder peso'. 'Pour l'été' significa 'para o verão', onde o 'l' gruda na palavra verão.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "essaie", "meaning": "tento / estou tentando (do verbo essayer)" },
-      { "word": "de", "meaning": "de (essayer de = tentar)" },
-      { "word": "perdre", "meaning": "perder" },
-      { "word": "du", "meaning": "do (junção de de + le)" },
-      { "word": "poids", "meaning": "peso (perdre du poids = emagrecer / perder peso)" },
-      { "word": "pour", "meaning": "para" },
-      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
-      { "word": "été", "meaning": "verão" }
-    ]
+      {
+        "word": "J'essaie de",
+        "meaning": "Eu tento / estou tentando — essayer: tentar."
+      },
+      {
+        "word": "perdre du poids",
+        "meaning": "Perder peso — perdre: perder; poids: peso."
+      },
+      {
+        "word": "pour l'été",
+        "meaning": "Para o verão — pour: para; été: verão."
+      }
+    ],
+    "pronuncia": "Fale 'J'essaie' como 'jê-sé'. 'De' tem bico ('dê'). 'Perdre' termina no 'R' ('pérdr'). 'Du' tem bico de 'u' com som de 'i' ('dü'). 'Poids' soa como 'pu-á'. 'Pour' é 'pur' e 'l'été' é 'lê-tê'.\nLeia: Jê-sé dê pérdr dü pu-á pur lê-tê."
   },
   "823": {
-    "explanation": "Frase de apoio empático e carinho: 'Y a-t-il quelque chose que' significa 'tem alguma coisa que / há algo que'. 'Je puisse faire' significa 'eu possa fazer' (usando 'puisse' após a pergunta aberta). 'Pour vous aider à' significa 'para ajudá-lo a'. O verbo sentir-se melhor é 'vous sentir mieux'.",
+    "explanation": "A pergunta começa com 'Y a-t-il' (Existe / Há). 'Quelque chose' é 'alguma coisa'. 'Que je puisse faire' significa 'que eu possa fazer'. O final 'vous sentir mieux' é 'se sentir melhor'.",
     "breakdown": [
-      { "word": "Y a-t-il", "meaning": "Tem / Há / Existe (forma de pergunta)" },
-      { "word": "quelque", "meaning": "alguma" },
-      { "word": "chose", "meaning": "coisa (quelque chose = algo / alguma coisa)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "puisse", "meaning": "possa (forma do verbo pouvoir)" },
-      { "word": "faire", "meaning": "fazer" },
-      { "word": "pour", "meaning": "para" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "aider", "meaning": "ajudar" },
-      { "word": "à", "meaning": "a" },
-      { "word": "vous", "meaning": "se" },
-      { "word": "sentir", "meaning": "sentir (se sentir = sentir-se)" },
-      { "word": "mieux", "meaning": "melhor" }
-    ]
+      {
+        "word": "Y a-t-il",
+        "meaning": "Existe / Há."
+      },
+      {
+        "word": "quelque chose",
+        "meaning": "Algo / Alguma coisa."
+      },
+      {
+        "word": "que je puisse faire",
+        "meaning": "Que eu possa fazer — puisse: possa."
+      },
+      {
+        "word": "pour vous aider",
+        "meaning": "Para ajudar você — aider: ajudar."
+      },
+      {
+        "word": "à vous sentir mieux",
+        "meaning": "A se sentir melhor — mieux: melhor."
+      }
+    ],
+    "pronuncia": "Fale 'Y a-t-il' como 'i-a-til'. 'Quelque chose' é 'kél-kê chôz'. 'Puisse' soa como 'pu-ís'. 'Faire' é 'fér'. 'Aider' é 'ê-dê'. 'Sentir' termina no 'R' ('sãn-tir'). 'Mieux' exige um bico e soa como 'mi-ê'.\nLeia: I-a-til kél-kê chôz kê jê pu-ís fér pur vu-zê-dê a vu sãn-tir mi-ê."
   },
   "824": {
-    "explanation": "'J'ai eu un petit accident' significa 'tive um pequeno acidente' (passado de avoir). A expressão 'alors que' significa 'enquanto / no momento em que'. 'J'allais au travail' significa 'eu ia para o trabalho' (passado de aller). A expressão 'à vélo' significa 'de bicicleta / pedalando'.",
+    "explanation": "'J'ai eu' significa 'Eu tive'. 'Un petit accident' é 'um pequeno acidente'. A expressão 'alors que' significa 'enquanto' ou 'no momento em que'. 'À vélo' é o jeito curto de dizer 'de bicicleta'.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "eu", "meaning": "tido / tive (passado do verbo avoir)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "petit", "meaning": "pequeno" },
-      { "word": "accident", "meaning": "acidente" },
-      { "word": "alors", "meaning": "então" },
-      { "word": "que", "meaning": "que (alors que = enquanto / no momento em que)" },
-      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
-      { "word": "allais", "meaning": "ia (passado contínuo do verbo aller)" },
-      { "word": "au", "meaning": "ao / para o (junção de à + le)" },
-      { "word": "travail", "meaning": "trabalho" },
-      { "word": "à", "meaning": "de / a" },
-      { "word": "vélo", "meaning": "bicicleta (à vélo = de bicicleta)" }
-    ]
+      {
+        "word": "J'ai eu",
+        "meaning": "Eu tive — eu: tive (passado de ter)."
+      },
+      {
+        "word": "un petit accident",
+        "meaning": "Um pequeno acidente — petit: pequeno."
+      },
+      {
+        "word": "alors que",
+        "meaning": "Enquanto / No momento em que."
+      },
+      {
+        "word": "j'allais au travail",
+        "meaning": "Eu ia ao trabalho — allais: ia; travail: trabalho."
+      },
+      {
+        "word": "à vélo",
+        "meaning": "De bicicleta."
+      }
+    ],
+    "pronuncia": "Fale 'J'ai' como 'jê' e 'eu' como 'ü' (bico de 'u' som de 'i'). 'Petit' é 'pê-ti'. 'Accident' termina nasal ('ak-si-dãn'). 'Alors que' é 'a-lór kê'. 'J'allais' é 'ja-lé'. 'Travail' soa como 'tra-vái'. 'Vélo' é 'vê-lô'.\nLeia: Jê ü ãn pê-ti ak-si-dãn a-lór kê ja-lé ô tra-vái a vê-lô."
   },
   "825": {
-    "explanation": "'Le médecin m'a dit que' significa 'o médico me disse que' (passado de dire com avoir). 'Je devais' significa 'eu devia / eu precisava' (passado de devoir). Em francês, fazer exercícios físicos é 'faire de l'exercice', e com 'plus' fica 'faire plus d'exercice' (com 'd'' antes da vogal de exercice).",
+    "explanation": "'Le médecin m'a dit' significa 'O médico me disse'. O 'que je devais' (que eu devia) introduz a recomendação. 'Faire plus d'exercice' é 'fazer mais exercício', onde o 's' de 'plus' costuma ser pronunciado antes de vogal.",
     "breakdown": [
-      { "word": "Le", "meaning": "O" },
-      { "word": "médecin", "meaning": "médico" },
-      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
-      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "dit", "meaning": "dito / disse (passado do verbo dire)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "devais", "meaning": "devia / precisava (passado do verbo devoir)" },
-      { "word": "faire", "meaning": "fazer" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "exercice", "meaning": "exercício (faire de l'exercice = exercitar-se)" }
-    ]
+      {
+        "word": "Le médecin m'a dit",
+        "meaning": "O médico me disse — médecin: médico; dit: disse."
+      },
+      {
+        "word": "que je devais",
+        "meaning": "Que eu devia / que eu precisava."
+      },
+      {
+        "word": "faire plus d'exercice",
+        "meaning": "Fazer mais exercício — exercice: exercício."
+      }
+    ],
+    "pronuncia": "Fale 'Le' com bico ('lê'). 'Médecin' é 'méd-sãn' (nasal). 'M'a dit' é 'ma di'. 'Devais' soa como 'dê-vé'. 'Faire' é 'fér'. Em 'plus d'exercice', o 's' vira 'z' e gruda: 'plü-zê-gzér-sís'.\nLeia: Lê méd-sãn ma di kê jê dê-vé fér plü-zê-gzér-sís."
   },
   "826": {
-    "explanation": "'Je me sens' significa 'eu me sinto'. A expressão 'beaucoup plus' significa 'muito mais'. 'Stressé' é estressado. E a expressão consagrada 'que d'habitude' significa 'do que o habitual / do que de costume' (com 'd'' antes da vogal de habitude).",
+    "explanation": "Aqui usamos 'Je me sens' (Eu me sinto) seguido de 'beaucoup plus' (muito mais). A palavra 'stressé' é igual ao português. 'Que d'habitude' é a forma natural de dizer 'do que o habitual' ou 'do que de costume'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "me", "meaning": "me" },
-      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
-      { "word": "beaucoup", "meaning": "muito" },
-      { "word": "plus", "meaning": "mais (beaucoup plus = muito mais)" },
-      { "word": "stressé", "meaning": "estressado" },
-      { "word": "que", "meaning": "do que" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "habitude", "meaning": "costume / hábito (d'habitude = de costume / o normal)" }
-    ]
+      {
+        "word": "Je me sens",
+        "meaning": "Eu me sinto."
+      },
+      {
+        "word": "beaucoup plus",
+        "meaning": "Muito mais — beaucoup: muito; plus: mais."
+      },
+      {
+        "word": "stressé",
+        "meaning": "Estressado."
+      },
+      {
+        "word": "que d'habitude",
+        "meaning": "Do que o normal / de costume — habitude: hábito."
+      }
+    ],
+    "pronuncia": "Fale 'Je me sens' como 'jê mê sãn' (nasal). 'Beaucoup' é 'bô-ku'. 'Plus' é 'plü' (bico). 'Stressé' é 'strê-sê'. 'Que' tem bico ('kê'). 'D'habitude' soa como 'da-bi-tüd' (bico no final). \nLeia: Jê mê sãn bô-ku plü strê-sê kê da-bi-tüd."
   },
   "827": {
-    "explanation": "Pergunta de segurança para motoristas: 'Avez-vous' é 'o senhor tem / você tem?'. Em francês, kit ou estojo de primeiros socorros é chamado de 'une trousse de premiers soins' (onde trousse é estojo/bolsinha e soins são cuidados). 'Dans votre voiture' é 'no seu carro'.",
+    "explanation": "A pergunta começa com 'Avez-vous' (Tem você). 'Une trousse' é um estojo ou kit. 'Premiers soins' significa 'primeiros cuidados' ou 'socorros'. 'Dans votre voiture' é 'no seu carro'.",
     "breakdown": [
-      { "word": "Avez", "meaning": "Tem / Têm (do verbo avoir com vous)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "trousse", "meaning": "estojo / kit / bolsinha" },
-      { "word": "de", "meaning": "de" },
-      { "word": "premiers", "meaning": "primeiros" },
-      { "word": "soins", "meaning": "socorros / cuidados (trousse de premiers soins = kit de primeiros socorros)" },
-      { "word": "dans", "meaning": "em / no" },
-      { "word": "votre", "meaning": "seu / sua" },
-      { "word": "voiture", "meaning": "carro" }
-    ]
+      {
+        "word": "Avez-vous",
+        "meaning": "Você tem — avez: tem; vous: você."
+      },
+      {
+        "word": "une trousse de",
+        "meaning": "Um kit de / um estojo de."
+      },
+      {
+        "word": "premiers soins",
+        "meaning": "Primeiros socorros — soins: cuidados."
+      },
+      {
+        "word": "dans votre voiture",
+        "meaning": "No seu carro — voiture: carro."
+      }
+    ],
+    "pronuncia": "Fale 'Avez-vous' como 'a-vê-vu'. 'Une' é 'ün' (bico). 'Trousse' é 'trus'. 'Premiers' é 'prê-mi-ê'. 'Soins' é nasal e soa como 'su-ãn'. 'Votre' termina no 'R' seco ('vótr'). 'Voiture' é 'vu-a-tür' (bico no final).\nLeia: A-vê-vu ün trus dê prê-mi-ê su-ãn dãn vótr vu-a-tür."
   },
   "828": {
-    "explanation": "'Je dois trouver' significa 'eu preciso encontrar / devo achar'. 'Une pharmacie' é uma farmácia. A expressão 'ouverte tard' significa 'aberta até tarde' (com ouverte no feminino para concordar com pharmacie).",
+    "explanation": "'Je dois' significa 'Eu devo' ou 'Eu preciso'. 'Trouver' é o verbo encontrar. 'Ouverte tard' significa 'aberta tarde', indicando o horário de funcionamento.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
-      { "word": "trouver", "meaning": "encontrar / achar" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "pharmacie", "meaning": "farmácia" },
-      { "word": "ouverte", "meaning": "aberta (feminino de ouvert)" },
-      { "word": "tard", "meaning": "tarde (ouverte tard = aberta até tarde)" }
-    ]
+      {
+        "word": "Je dois trouver",
+        "meaning": "Eu preciso encontrar — dois: devo; trouver: encontrar."
+      },
+      {
+        "word": "une pharmacie",
+        "meaning": "Uma farmácia."
+      },
+      {
+        "word": "ouverte tard",
+        "meaning": "Aberta tarde — ouverte: aberta; tard: tarde."
+      }
+    ],
+    "pronuncia": "Fale 'Je' com bico ('jê'). 'Dois' é 'du-á'. 'Trouver' é 'tru-vê'. 'Une' é 'ün' (bico). 'Pharmacie' é 'far-ma-sí'. 'Ouverte' termina no 'T' seco ('u-vért'). 'Tard' termina no 'R' arranhado ('tár').\nLeia: Jê du-á tru-vê ün far-ma-sí u-vért tár."
   },
   "829": {
-    "explanation": "O verbo se remettre significa recuperar-se ou restabelecer-se ('elle se remet d'' = ela está se recuperando de). 'Un rhume' é um resfriado. 'Qu'elle a eu' significa 'que ela teve' (passado de avoir). 'La semaine dernière' significa 'na semana passada'.",
+    "explanation": "'Elle se remet' significa 'Ela se recupera' ou 'está melhorando'. 'D'un rhume' é 'de um resfriado'. 'Qu'elle a eu' é o jeito de dizer 'que ela teve'. 'La semaine dernière' é 'a semana passada'.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "se", "meaning": "se" },
-      { "word": "remet", "meaning": "recupera / restabelece (do verbo se remettre)" },
-      { "word": "d'", "meaning": "de (encurtado antes de som de vogal)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "rhume", "meaning": "resfriado" },
-      { "word": "qu'", "meaning": "que (encurtado antes de vogal)" },
-      { "word": "elle", "meaning": "ela" },
-      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "eu", "meaning": "tido / teve (passado do verbo avoir)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "semaine", "meaning": "semana" },
-      { "word": "dernière", "meaning": "passada / última (no feminino)" }
-    ]
+      {
+        "word": "Elle se remet",
+        "meaning": "Ela se recupera — remet: recupera/restabelece."
+      },
+      {
+        "word": "d'un rhume",
+        "meaning": "De um resfriado — rhume: resfriado."
+      },
+      {
+        "word": "qu'elle a eu",
+        "meaning": "Que ela teve — a eu: teve."
+      },
+      {
+        "word": "la semaine dernière",
+        "meaning": "A semana passada — dernière: última/passada."
+      }
+    ],
+    "pronuncia": "Fale 'Elle' como 'él'. 'Remet' é 'rê-mé'. 'D'un' é nasal ('dãn'). 'Rhume' soa como 'rüm' (bico). 'Qu'elle' é 'kél'. 'A eu' soa como 'a ü' (bico). 'Semaine' é 'sê-mén' e 'dernière' é 'dér-ni-ér'.\nLeia: Él sê rê-mé dãn rüm kél a ü la sê-mén dér-ni-ér."
   },
   "830": {
-    "explanation": "Negação no passado com jamais: 'ne me suis jamais cassé' significa 'nunca quebrei' em mim mesmo (com o verbo reflexivo se casser no passado com être). Na negação, usa-se 'd'os' (com 'de' encurtado para 'd'' antes de osso, que tem 's' mudo no singular). 'De ma vie' é a expressão 'na minha vida'.",
+    "explanation": "Para dizer 'Eu nunca', o francês usa 'Je ne... jamais'. A expressão 'me suis cassé' significa 'me quebrei'. 'D'os' significa 'de osso' e 'de ma vie' é 'da minha vida'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "ne", "meaning": "primeira parte do 'nunca'" },
-      { "word": "me", "meaning": "me" },
-      { "word": "suis", "meaning": "fiz a ação no passado (auxiliar être para verbos reflexivos)" },
-      { "word": "jamais", "meaning": "nunca (ne... jamais = nunca)" },
-      { "word": "cassé", "meaning": "quebrado (se casser = quebrar parte do corpo)" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal; usado na negação)" },
-      { "word": "os", "meaning": "osso" },
-      { "word": "de", "meaning": "de / em" },
-      { "word": "ma", "meaning": "minha" },
-      { "word": "vie", "meaning": "vida (de ma vie = na minha vida)" }
-    ]
+      {
+        "word": "Je ne me suis jamais",
+        "meaning": "Eu nunca me — jamais: nunca."
+      },
+      {
+        "word": "cassé d'os",
+        "meaning": "Quebrei um osso — cassé: quebrado; os: osso."
+      },
+      {
+        "word": "de ma vie",
+        "meaning": "Na minha vida — vie: vida."
+      }
+    ],
+    "pronuncia": "Fale 'Je ne me suis' como 'jê nê mê su-í' (bicos no início). 'Jamais' é 'ja-mé'. 'Cassé' é 'ka-sê'. 'D'os' soa como 'dô'. 'Ma vie' é 'ma ví'.\nLeia: Jê nê mê su-í ja-mé ka-sê dô dê ma ví."
   },
   "831": {
-    "explanation": "'Vous devriez boire' significa 'o senhor deveria beber / você deve beber' (conselho de saúde). A expressão 'plus d'eau' significa 'mais água' (com 'd'' antes da vogal de eau). A preposição 'pour' significa 'para', e a expressão 'rester hydraté' significa 'manter-se hidratado / ficar hidratado'.",
+    "explanation": "'Vous devriez' é 'Você deveria'. 'Boire plus d'eau' significa 'beber mais água'. 'Pour rester hydraté' é 'para ficar hidratado', usando 'rester' no sentido de permanecer em um estado.",
     "breakdown": [
-      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
-      { "word": "devriez", "meaning": "deveria (conselho do verbo devoir com vous)" },
-      { "word": "boire", "meaning": "beber" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "eau", "meaning": "água" },
-      { "word": "pour", "meaning": "para" },
-      { "word": "rester", "meaning": "ficar / permanecer / manter-se" },
-      { "word": "hydraté", "meaning": "hidratado" }
-    ]
+      {
+        "word": "Vous devriez boire",
+        "meaning": "Você deveria beber — boire: beber."
+      },
+      {
+        "word": "plus d'eau",
+        "meaning": "Mais água — plus: mais; eau: água."
+      },
+      {
+        "word": "pour rester hydraté",
+        "meaning": "Para ficar hidratado — hydraté: hidratado."
+      }
+    ],
+    "pronuncia": "Fale 'Vous' como 'vu'. 'Devriez' é 'dê-vri-ê'. 'Boire' soa como 'bu-ár'. 'Plus d'eau' gruda o 's' com som de 'z': 'plü-zô'. 'Rester' é 'rês-tê' e 'hydraté' é 'i-dra-tê'.\nLeia: Vu dê-vri-ê bu-ár plü-zô pur rês-tê i-dra-tê."
   },
   "832": {
-    "explanation": "'Je cherche' significa 'estou procurando' ou 'busco'. 'Une salle de sport' é uma academia de ginástica. A expressão 'près de' significa 'perto de', e 'chez moi' é a fórmula padrão para 'minha casa'.",
+    "explanation": "'Je cherche' significa 'Eu procuro' ou 'Estou procurando'. 'Une salle de sport' é o termo comum para 'academia'. 'Près de chez moi' significa 'perto de minha casa' ou 'perto de onde moro'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "salle", "meaning": "sala" },
-      { "word": "de", "meaning": "de" },
-      { "word": "sport", "meaning": "esporte (salle de sport = academia)" },
-      { "word": "près", "meaning": "perto" },
-      { "word": "de", "meaning": "de" },
-      { "word": "chez", "meaning": "na casa de" },
-      { "word": "moi", "meaning": "mim (chez moi = na minha casa)" }
-    ]
+      {
+        "word": "Je cherche",
+        "meaning": "Eu procuro — chercher: procurar."
+      },
+      {
+        "word": "une salle de sport",
+        "meaning": "Uma academia — salle: sala; sport: esporte."
+      },
+      {
+        "word": "près de chez moi",
+        "meaning": "Perto de minha casa — près: perto; chez moi: minha casa."
+      }
+    ],
+    "pronuncia": "Fale 'Je' com bico ('jê'). 'Cherche' termina no som de 'ch' seco ('chérch'). 'Une' é 'ün' (bico). 'Salle' é 'sal'. 'Sport' soa como 'spór'. 'Près' é 'pré'. 'Chez moi' soa como 'chê mu-á'.\nLeia: Jê chérch ün sal dê spór pré dê chê mu-á."
   },
   "833": {
-    "explanation": "'L'infirmière' é a enfermeira (com 'l'' antes da vogal). 'A été' significa 'foi / esteve' (passado de être). Os adjetivos 'très gentille et serviable' significam 'muito gentil e prestativa'. A palavra 'pendant' significa 'durante' e 'ma visite' é minha visita/consulta.",
+    "explanation": "'L'infirmière' é a enfermeira. 'A été' significa 'foi'. 'Très gentille et serviable' descreve alguém 'muito gentil e prestativa'. 'Pendant' é a palavra para 'durante'.",
     "breakdown": [
-      { "word": "L'", "meaning": "A (encurtado antes de vogal)" },
-      { "word": "infirmière", "meaning": "enfermeira" },
-      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "été", "meaning": "sido / foi (passado do verbo être)" },
-      { "word": "très", "meaning": "muito" },
-      { "word": "gentille", "meaning": "gentil / atenciosa (no feminino)" },
-      { "word": "et", "meaning": "e" },
-      { "word": "serviable", "meaning": "prestativa / prestativo" },
-      { "word": "pendant", "meaning": "durante" },
-      { "word": "ma", "meaning": "minha" },
-      { "word": "visite", "meaning": "visita / consulta" }
-    ]
+      {
+        "word": "L'infirmière",
+        "meaning": "A enfermeira."
+      },
+      {
+        "word": "a été très gentille",
+        "meaning": "Foi muito gentil — été: sido/foi; gentille: gentil."
+      },
+      {
+        "word": "et serviable",
+        "meaning": "E prestativa / útil."
+      },
+      {
+        "word": "pendant ma visite",
+        "meaning": "Durante minha visita — pendant: durante."
+      }
+    ],
+    "pronuncia": "Fale 'L'infirmière' como 'lãn-fir-mi-ér'. 'A été' é 'a ê-tê'. 'Très' é 'trê'. 'Gentille' soa como 'jãn-tí-i'. 'Et' é 'ê'. 'Serviable' é 'sér-vi-ábl'. 'Pendant' é nasal ('pãn-dãn'). 'Visite' é 'vi-zít'.\nLeia: Lãn-fir-mi-ér a ê-tê trê jãn-tí-i ê sér-vi-ábl pãn-dãn ma vi-zít."
   },
   "834": {
-    "explanation": "Em francês, ter dificuldade em fazer algo é dito com a expressão 'avoir du mal à' (literalmente ter do mal a). 'J'ai eu du mal à dormir' significa 'tive dificuldade para dormir' (passado de avoir). A palavra 'récemment' significa recentemente.",
+    "explanation": "A expressão 'J'ai eu du mal à' significa 'Eu tive dificuldade em' ou 'tive problemas para'. 'Dormir' é igual ao português e 'récemment' é 'recentemente'.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "eu", "meaning": "tido / tive (passado do verbo avoir)" },
-      { "word": "du", "meaning": "do (junção de de + le)" },
-      { "word": "mal", "meaning": "mal / dificuldade (avoir du mal à = ter dificuldade em)" },
-      { "word": "à", "meaning": "a / para" },
-      { "word": "dormir", "meaning": "dormir" },
-      { "word": "récemment", "meaning": "recentemente" }
-    ]
+      {
+        "word": "J'ai eu du mal à",
+        "meaning": "Tive dificuldade em / tive problemas para — mal: mal/dificuldade."
+      },
+      {
+        "word": "dormir",
+        "meaning": "Dormir."
+      },
+      {
+        "word": "récemment",
+        "meaning": "Recentemente."
+      }
+    ],
+    "pronuncia": "Fale 'J'ai' como 'jê' e 'eu' como 'ü' (bico). 'Du' tem bico ('dü'). 'Mal' é 'mal'. 'Dormir' termina no 'R' ('dór-mir'). 'Récemment' soa como 'rê-sa-mãn' (nasal no final).\nLeia: Jê ü dü mal a dór-mir rê-sa-mãn."
   },
   "835": {
-    "explanation": "'Quelle est' é 'qual é' (no feminino). 'La meilleure façon de' significa 'a melhor maneira / melhor forma de' (com 'de' encurtado para 'd'' antes de vogal). O verbo evitar é 'éviter'. Em francês, contrair ou pegar um resfriado é 'attraper un rhume'.",
+    "explanation": "'Quelle est' significa 'Qual é'. 'La meilleure façon' é 'a melhor maneira'. 'D'éviter' (de evitar) se junta a 'd'attraper un rhume' (de pegar um resfriado), onde 'attraper' significa literalmente 'capturar'.",
     "breakdown": [
-      { "word": "Quelle", "meaning": "Qual (feminino de quel)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "meilleure", "meaning": "melhor (no feminino)" },
-      { "word": "façon", "meaning": "forma / maneira / jeito" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "éviter", "meaning": "evitar" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "attraper", "meaning": "pegar / apanhar (attraper un rhume = pegar um resfriado)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "rhume", "meaning": "resfriado" }
-    ]
+      {
+        "word": "Quelle est",
+        "meaning": "Qual é — Quelle: qual."
+      },
+      {
+        "word": "la meilleure façon",
+        "meaning": "A melhor maneira — meilleure: melhor; façon: jeito/maneira."
+      },
+      {
+        "word": "d'éviter",
+        "meaning": "De evitar."
+      },
+      {
+        "word": "d'attraper un rhume",
+        "meaning": "De pegar um resfriado — attraper: pegar/apanhar."
+      }
+    ],
+    "pronuncia": "Fale 'Quelle est' como 'kél é'. 'Meilleure' soa como 'mê-yêr'. 'Façon' é nasal ('fa-sõn'). 'D'éviter' é 'dê-vi-tê'. 'D'attraper' é 'da-tra-pê'. 'Un rhume' soa como 'ãn rüm' (nasal e bico).\nLeia: Kél é la mê-yêr fa-sõn dê-vi-tê da-tra-pê ãn rüm."
   },
   "836": {
-    "explanation": "'Je dois' é 'eu preciso' ou 'eu devo'. O verbo renovar é 'renouveler'. Em francês, apólice de seguro de saúde é chamada de 'police d'assurance maladie' (onde assurance é seguro e maladie é doença/saúde).",
+    "explanation": "'Je dois' significa 'Eu devo' ou 'Eu preciso'. 'Renouveler' é renovar. 'Ma police d'assurance maladie' é o termo técnico para 'minha apólice de seguro saúde', onde 'assurance' é seguro e 'maladie' é doença.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "dois", "meaning": "devo / preciso (do verbo devoir)" },
-      { "word": "renouveler", "meaning": "renovar" },
-      { "word": "ma", "meaning": "minha" },
-      { "word": "police", "meaning": "apólice (de seguro)" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "assurance", "meaning": "seguro" },
-      { "word": "maladie", "meaning": "doença / saúde (assurance maladie = plano de saúde / seguro de saúde)" }
-    ]
+      {
+        "word": "Je dois renouveler",
+        "meaning": "Eu preciso renovar — renouveler: renovar."
+      },
+      {
+        "word": "ma police",
+        "meaning": "Minha apólice / meu contrato."
+      },
+      {
+        "word": "d'assurance maladie",
+        "meaning": "De seguro saúde — assurance: seguro; maladie: doença/saúde."
+      }
+    ],
+    "pronuncia": "Fale 'Je' com bico ('jê'). 'Dois' é 'du-á'. 'Renouveler' é 'rê-nu-vlê'. 'Police' é 'pô-lís'. 'D'assurance' soa como 'da-sü-rãn-s'. 'Maladie' é 'ma-la-dí'.\nLeia: Jê du-á rê-nu-vlê ma pô-lís da-sü-rãn-s ma-la-dí."
   },
   "837": {
-    "explanation": "Frase de alívio com exames médicos: 'J'ai été très soulagé' significa 'fiquei muito aliviado' (passado de être). A palavra 'quand' significa 'quando'. 'Les résultats des tests' são os resultados dos testes/exames (com des = de + les). 'Sont arrivés' significa 'chegaram' (passado de arriver com être no plural).",
+    "explanation": "'J'ai été' significa 'Eu fui' ou 'Eu fiquei'. 'Soulagé' é aliviado. 'Quand les résultats' (quando os resultados) termina com 'sont arrivés' (chegaram), indicando uma ação concluída.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "été", "meaning": "sido / fiquei (passado do verbo être)" },
-      { "word": "très", "meaning": "muito" },
-      { "word": "soulagé", "meaning": "aliviado" },
-      { "word": "quand", "meaning": "quando" },
-      { "word": "les", "meaning": "os" },
-      { "word": "résultats", "meaning": "resultados" },
-      { "word": "des", "meaning": "dos (junção de de + les)" },
-      { "word": "tests", "meaning": "testes / exames" },
-      { "word": "sont", "meaning": "fizeram a ação no passado (auxiliar être no plural)" },
-      { "word": "arrivés", "meaning": "chegados / chegaram (do verbo arriver no plural)" }
-    ]
+      {
+        "word": "J'ai été très soulagé",
+        "meaning": "Fiquei muito aliviado — soulagé: aliviado."
+      },
+      {
+        "word": "quand les résultats",
+        "meaning": "Quando os resultados — quand: quando."
+      },
+      {
+        "word": "des tests",
+        "meaning": "Dos testes / exames."
+      },
+      {
+        "word": "sont arrivés",
+        "meaning": "Chegaram — sont: são/estão; arrivés: chegados."
+      }
+    ],
+    "pronuncia": "Fale 'J'ai été' como 'jê ê-tê'. 'Très' é 'trê'. 'Soulagé' é 'su-la-jê'. 'Quand' é nasal ('kãn'). 'Les résultats' soa como 'lê rê-zül-tá'. 'Des tests' é 'dê têst'. 'Sont arrivés' gruda o 't' no 'a': 'sõn-ta-ri-vê'.\nLeia: Jê ê-tê trê su-la-jê kãn lê rê-zül-tá dê têst sõn-ta-ri-vê."
   },
   "838": {
-    "explanation": "Pergunta reflexiva de saúde: 'Pensez-vous' significa 'o senhor acha / você pensa?'. A expressão 'que ce soit' significa 'que isso seja' (usando 'soit' após a dúvida). 'Une bonne idée' é uma boa ideia. A preposição 'de' conecta com 'prendre des vitamines' (tomar vitaminas).",
+    "explanation": "'Pensez-vous que' é 'Você acha que'. A expressão 'ce soit' significa 'que seja'. 'Une bonne idée' é 'uma boa ideia'. 'De prendre des vitamines' é 'tomar vitaminas'.",
     "breakdown": [
-      { "word": "Pensez", "meaning": "Pensa / Acha (do verbo penser com vous)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "ce", "meaning": "isto / isso" },
-      { "word": "soit", "meaning": "seja (forma do verbo être)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "bonne", "meaning": "boa" },
-      { "word": "idée", "meaning": "ideia" },
-      { "word": "de", "meaning": "de" },
-      { "word": "prendre", "meaning": "tomar" },
-      { "word": "des", "meaning": "vitaminas em geral / algumas (marcador de plural)" },
-      { "word": "vitamines", "meaning": "vitaminas" }
-    ]
+      {
+        "word": "Pensez-vous que",
+        "meaning": "Você acha que / Você pensa que."
+      },
+      {
+        "word": "ce soit",
+        "meaning": "Que seja."
+      },
+      {
+        "word": "une bonne idée",
+        "meaning": "Uma boa ideia — bonne: boa; idée: ideia."
+      },
+      {
+        "word": "de prendre",
+        "meaning": "De tomar / de pegar."
+      },
+      {
+        "word": "des vitamines",
+        "meaning": "Vitaminas."
+      }
+    ],
+    "pronuncia": "Fale 'Pensez-vous' como 'pãn-sê-vu'. 'Que' tem bico ('kê'). 'Ce soit' soa como 'sê su-á'. 'Une' é 'ün' (bico). 'Bonne' é 'bón'. 'Idée' é 'i-dê'. 'Prendre' termina no 'R' seco ('prãndr'). 'Vitamines' é 'vi-ta-mín'.\nLeia: Pãn-sê-vu kê sê su-á ün bón i-dê dê prãndr dê vi-ta-mín."
   },
   "839": {
-    "explanation": "'Je me sens beaucoup mieux' significa 'estou me sentindo muito melhor'. A palavra 'depuis que' significa 'desde que'. 'J'ai commencé à marcher' significa 'comecei a caminhar' (com o verbo commencer no passado seguido de 'à' e o verbo caminhar 'marcher').",
+    "explanation": "'Je me sens beaucoup mieux' significa 'Eu me sinto muito melhor'. 'Depuis que' (desde que) introduz o motivo: 'j'ai commencé à marcher' (eu comecei a caminhar).",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "me", "meaning": "me" },
-      { "word": "sens", "meaning": "sinto (do verbo se sentir)" },
-      { "word": "beaucoup", "meaning": "muito" },
-      { "word": "mieux", "meaning": "melhor" },
-      { "word": "depuis", "meaning": "desde" },
-      { "word": "que", "meaning": "que (depuis que = desde que)" },
-      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "commencé", "meaning": "começado / comecei (do verbo commencer)" },
-      { "word": "à", "meaning": "a" },
-      { "word": "marcher", "meaning": "caminhar / andar" }
-    ]
+      {
+        "word": "Je me sens",
+        "meaning": "Eu me sinto."
+      },
+      {
+        "word": "beaucoup mieux",
+        "meaning": "Muito melhor — mieux: melhor."
+      },
+      {
+        "word": "depuis que",
+        "meaning": "Desde que."
+      },
+      {
+        "word": "j'ai commencé à",
+        "meaning": "Eu comecei a."
+      },
+      {
+        "word": "marcher",
+        "meaning": "Caminhar / marchar."
+      }
+    ],
+    "pronuncia": "Fale 'Je me sens' como 'jê mê sãn' (nasal). 'Beaucoup' é 'bô-ku'. 'Mieux' tem bico ('mi-ê'). 'Depuis que' é 'dê-pu-í kê'. 'J'ai commencé' é 'jê kô-mãn-sê'. 'Marcher' é 'mar-chê'.\nLeia: Jê mê sãn bô-ku mi-ê dê-pu-í kê jê kô-mãn-sê a mar-chê."
   },
   "840": {
-    "explanation": "Orientação de segurança e emergência: 'Vous devriez appeler' significa 'você deve chamar / o senhor deveria ligar para'. 'La police' é a polícia. A palavra 'si' significa 'se'. 'Vous voyez' é 'o senhor vir / você vê'. A expressão 'quelque chose de suspect' significa 'algo suspeito' (com 'de' antes do adjetivo).",
+    "explanation": "'Vous devriez' é 'Você deveria'. 'Appeler la police' é 'chamar a polícia'. 'Si vous voyez' significa 'se você vir' ou 'se você vê'. 'Quelque chose de suspect' é 'algo de suspeito'.",
     "breakdown": [
-      { "word": "Vous", "meaning": "O senhor / A senhora / Você" },
-      { "word": "devriez", "meaning": "deveria (conselho do verbo devoir com vous)" },
-      { "word": "appeler", "meaning": "chamar / ligar para" },
-      { "word": "la", "meaning": "a" },
-      { "word": "police", "meaning": "polícia" },
-      { "word": "si", "meaning": "se" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "voyez", "meaning": "vê / vir (do verbo voir com vous)" },
-      { "word": "quelque", "meaning": "alguma" },
-      { "word": "chose", "meaning": "coisa (quelque chose = algo / alguma coisa)" },
-      { "word": "de", "meaning": "de (usado após quelque chose antes de adjetivos)" },
-      { "word": "suspect", "meaning": "suspeito" }
-    ]
+      {
+        "word": "Vous devriez appeler",
+        "meaning": "Você deveria chamar — appeler: chamar."
+      },
+      {
+        "word": "la police",
+        "meaning": "A polícia."
+      },
+      {
+        "word": "si vous voyez",
+        "meaning": "Se você vir — voyez: vê/vir."
+      },
+      {
+        "word": "quelque chose",
+        "meaning": "Algo / Alguma coisa."
+      },
+      {
+        "word": "de suspect",
+        "meaning": "De suspeito."
+      }
+    ],
+    "pronuncia": "Fale 'Vous devriez' como 'vu dê-vri-ê'. 'Appeler' soa como 'a-plê'. 'Police' é 'pô-lís'. 'Si vous voyez' é 'si vu vu-a-yê'. 'Quelque chose' é 'kél-kê chôz'. 'Suspect' soa como 'süs-pê' (bico no início).\nLeia: Vu dê-vri-ê a-plê la pô-lís si vu vu-a-yê kél-kê chôz dê süs-pê."
   }
 }

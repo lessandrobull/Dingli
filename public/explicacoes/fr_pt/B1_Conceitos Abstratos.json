@@ -1,488 +1,698 @@
 {
   "871": {
-    "explanation": "Frase inspiradora sobre transformação pessoal: 'Je crois que' significa 'eu acredito que'. 'L'éducation' é a educação (com 'l'' antes da vogal). A expressão superlativa 'l'outil le plus puissant' significa 'a ferramenta mais poderosa' (onde outil é ferramenta e puissant é poderoso). A expressão 'que nous ayons' significa 'que temos à nossa disposição'.",
+    "explanation": "Para dizer 'acredito que', os franceses usam 'Je crois que'. A 'educação' ganha um 'l'' colado antes ('l'éducation') e o verbo 'ser' entra como 'est' (é). A expressão 'ferramenta mais poderosa' é construída com 'l'outil' (a ferramenta) seguido de 'le plus puissant' (o mais potente / poderoso). Por fim, em vez do verbo normal no presente, para indicar que 'temos' essa ferramenta no campo das ideias e crenças, eles usam a forma 'nous ayons'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "crois", "meaning": "acredito / creio (do verbo croire)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "éducation", "meaning": "educação" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "outil", "meaning": "ferramenta / instrumento" },
-      { "word": "le", "meaning": "o" },
-      { "word": "plus", "meaning": "mais (le plus puissant = o mais poderoso)" },
-      { "word": "puissant", "meaning": "poderoso" },
-      { "word": "que", "meaning": "que" },
-      { "word": "nous", "meaning": "nós" },
-      { "word": "ayons", "meaning": "temos / tenhamos (forma do verbo avoir)" }
-    ]
+      {
+        "word": "Je crois que",
+        "meaning": "Eu acredito que / Eu creio que — Je: eu; crois: acredito/creio; que: que."
+      },
+      {
+        "word": "l'éducation",
+        "meaning": "A educação — l': o/a; éducation: educação."
+      },
+      {
+        "word": "est",
+        "meaning": "É — verbo ser no presente."
+      },
+      {
+        "word": "l'outil",
+        "meaning": "A ferramenta — l': o/a; outil: ferramenta / utensílio."
+      },
+      {
+        "word": "le plus puissant",
+        "meaning": "A mais poderosa / A mais potente — le plus: o mais; puissant: potente / poderoso."
+      },
+      {
+        "word": "que nous ayons",
+        "meaning": "Que temos / Que tenhamos — que: que; nous: nós; ayons: tenhamos / temos."
+      }
+    ],
+    "pronuncia": "Comece em 'Je crois que' fazendo bico no 'je' ('jû'), solte 'kro-a' emendando no 'kê'. Em 'l'éducation', fale 'lé-dü-ka-siõn', com o 'u' bem espremido de bico e o som nasal no fim sem soltar a língua. Passe para 'est' com som puro de 'ê'. Junte o 'l' de 'l'outil' com 'u-ti' ('lu-ti'), sem pronunciar o 'l' final de 'outil'. Em 'le plus puissant', fale 'lê plü pü-i-sãn', fazendo bico no 'ü' e som nasal no 'sãn'. Feche com 'que nous ayons', juntando o som de 's' de 'nous' no 'ayons' como um 'z' ('kê nu-za-iõn').\nLeia: Jû kro-a kê lé-dü-ka-siõn ê lu-ti lê plü pü-i-sãn kê nu-za-iõn."
   },
   "872": {
-    "explanation": "'Il est important de' significa 'é importante'. O verbo achar ou encontrar é 'trouver'. 'Un équilibre' é um equilíbrio. A preposição 'entre' significa 'entre', e a expressão 'travail et loisirs' significa 'trabalho e lazer/passatempos'.",
+    "explanation": "Em francês, para dizer 'é importante', o idioma exige um sujeito neutro 'Il', ficando 'Il est important'. Depois disso, para ligar à ação, entra a palavra 'de', formando 'de trouver' (encontrar). A ideia de 'um equilíbrio' vira 'un équilibre', que emenda suavemente. Para indicar 'entre trabalho e lazer', o francês usa 'entre travail et loisirs', onde 'et' junta as duas pontas e 'loisirs' traz a ideia das atividades de tempo livre.",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "important", "meaning": "importante" },
-      { "word": "de", "meaning": "de" },
-      { "word": "trouver", "meaning": "encontrar / achar" },
-      { "word": "un", "meaning": "um" },
-      { "word": "équilibre", "meaning": "equilíbrio" },
-      { "word": "entre", "meaning": "entre" },
-      { "word": "travail", "meaning": "trabalho" },
-      { "word": "et", "meaning": "e" },
-      { "word": "loisirs", "meaning": "lazer / passatempos" }
-    ]
+      {
+        "word": "Il est important de",
+        "meaning": "É importante — Il: ele (neutro); est: é; important: importante; de: de / para."
+      },
+      {
+        "word": "trouver",
+        "meaning": "Encontrar / Achar — verbo encontrar."
+      },
+      {
+        "word": "un équilibre",
+        "meaning": "Um equilíbrio — un: um; équilibre: equilíbrio."
+      },
+      {
+        "word": "entre",
+        "meaning": "Entre — preposição entre."
+      },
+      {
+        "word": "travail",
+        "meaning": "Trabalho — palavra para trabalho / labor."
+      },
+      {
+        "word": "et loisirs",
+        "meaning": "E lazer / E momentos livres — et: e; loisirs: momentos livres / lazer."
+      }
+    ],
+    "pronuncia": "Junte 'Il est important' em um único bloco fluído: 'i-lê-tẽm-pór-tãn'. Passe por 'de trouver' soltando 'dê tru-vê', arranhando suavemente o 'R' na garganta. Em 'un équilibre', emende o som nasal de 'un' com a vogal seguinte fazendo 'ũ-nê-ki-líbr'. Solte 'ãn-trê' raspando o 'R', fale 'tra-va-i' com o som final deslizado e feche em 'ê lu-a-zír', soltando o 'z' nítido e arranhando o 'R' final.\nLeia: I-lê-tẽm-pór-tãn dê tru-vê ũ-nê-ki-líbr ãn-trê tra-va-i ê lu-a-zír."
   },
   "873": {
-    "explanation": "'La technologie a changé' significa 'a tecnologia mudou' (passado de changer com avoir). A expressão 'la façon dont' significa 'a maneira como / o modo como'. 'Nous communiquons' significa 'nós nos comunicamos'. E a expressão 'les uns avec les autres' é a fórmula clássica em francês para 'uns com os outros'.",
+    "explanation": "A frase começa com 'La technologie', seguida de 'a changé' (mudou/tem mudado). O francês usa a expressão 'la façon dont' para dizer 'a maneira como' ou 'o jeito pelo qual'. Para expressar a ação em conjunto 'nos comunicamos', eles usam 'nous communiquons' seguido da expressão fixa 'les uns avec les autres', que ao pé da letra é 'uns com os outros'.",
     "breakdown": [
-      { "word": "La", "meaning": "A" },
-      { "word": "technologie", "meaning": "tecnologia" },
-      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "changé", "meaning": "mudado / alterou (do verbo changer)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "façon", "meaning": "maneira / forma" },
-      { "word": "dont", "meaning": "pela qual / como (la façon dont = o jeito como)" },
-      { "word": "nous", "meaning": "nós" },
-      { "word": "communiquons", "meaning": "comunicamos (do verbo communiquer)" },
-      { "word": "les", "meaning": "os" },
-      { "word": "uns", "meaning": "uns" },
-      { "word": "avec", "meaning": "com" },
-      { "word": "les", "meaning": "os" },
-      { "word": "autres", "meaning": "outros (les uns avec les autres = uns com os outros)" }
-    ]
+      {
+        "word": "La technologie",
+        "meaning": "A tecnologia — La: a; technologie: tecnologia."
+      },
+      {
+        "word": "a changé",
+        "meaning": "Mudou / Alterou — a: tem / marca da ação; changé: mudado."
+      },
+      {
+        "word": "la façon dont",
+        "meaning": "A forma como / A maneira pela qual — la: a; façon: maneira; dont: da qual / como."
+      },
+      {
+        "word": "nous communiquons",
+        "meaning": "Nós nos comunicamos — nous: nós; communiquons: comunicamos."
+      },
+      {
+        "word": "les uns avec les autres",
+        "meaning": "Uns com os outros — les uns: uns; avec: com; les autres: os outros."
+      }
+    ],
+    "pronuncia": "Fale 'La ték-nô-lô-ji a shãn-jê' com som nasal no 'shãn'. Em 'la façon dont', fale 'la fa-sõn dõn', mantendo o som saindo pelo nariz. Em 'nous communiquons', fale 'nu kô-mü-ni-kõn', fazendo bico no 'ü'. Feche com 'les uns avec les autres' juntando tudo em 'lê-zũ-na-vèk-lê-zôtr', raspando o 'R' de 'autres'.\nLeia: La ték-nô-lô-ji a shãn-jê la fa-sõn dõn nu kô-mü-ni-kõn lê-zũ-na-vèk-lê-zôtr."
   },
   "874": {
-    "explanation": "'Je pense que' significa 'eu acho que'. 'Tout le monde' é 'todo mundo / todos'. 'Devrait avoir droit à' significa 'deveria ter direito a'. Em francês, serviços de saúde são chamados no plural de 'soins de santé' (cuidados de saúde), e 'gratuits' significa gratuitos.",
+    "explanation": "Para 'acho que', o francês usa 'Je pense que'. No lugar de 'todos', o francês prefere a expressão 'tout le monde' (ao pé da letra, 'todo o mundo'). O verbo 'deveria' entra como 'devrait' e liga-se a 'avoir droit à' (ter direito a). A expressão 'saúde gratuita' é traduzida no plural como 'des soins de santé gratuits', que significa literalmente 'cuidados de saúde gratuitos'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "tout", "meaning": "todo" },
-      { "word": "le", "meaning": "o" },
-      { "word": "monde", "meaning": "mundo (tout le monde = todo mundo / todos)" },
-      { "word": "devrait", "meaning": "deveria (do verbo devoir)" },
-      { "word": "avoir", "meaning": "ter" },
-      { "word": "droit", "meaning": "direito (avoir droit à = ter direito a)" },
-      { "word": "à", "meaning": "a" },
-      { "word": "des", "meaning": "serviços em geral / (marcador de plural)" },
-      { "word": "soins", "meaning": "cuidados / assistência médica" },
-      { "word": "de", "meaning": "de" },
-      { "word": "santé", "meaning": "saúde (soins de santé = saúde pública / cuidados de saúde)" },
-      { "word": "gratuits", "meaning": "gratuitos (no plural)" }
-    ]
+      {
+        "word": "Je pense que",
+        "meaning": "Acho que / Penso que — Je: eu; pense: penso; que: que."
+      },
+      {
+        "word": "tout le monde",
+        "meaning": "Todos / Todo mundo — tout: todo; le: o; monde: mundo."
+      },
+      {
+        "word": "devrait avoir droit à",
+        "meaning": "Deveria ter direito a — devrait: deveria; avoir: ter; droit: direito; à: a."
+      },
+      {
+        "word": "des soins de santé",
+        "meaning": "Cuidados de saúde / Saúde — des: de (plural); soins: cuidados; de: de; santé: saúde."
+      },
+      {
+        "word": "gratuits",
+        "meaning": "Gratuitos — adjetivo para algo sem custo."
+      }
+    ],
+    "pronuncia": "Comece em 'Je pense que' com 'jû pãn-sê kê', usando som nasal em 'pãn'. Fale 'tu lê mõnd' deixando a vogal nasal fluir. Em 'devrait avoir droit à', fale 'dê-vrè a-vu-ar dru-a a', arranhando o 'R'. Em 'des soins de santé gratuits', junte 'dê su-ẽn dê sãn-tê gra-tü-i', sem pronunciar as letras finais 's' ou 'ts'.\nLeia: Jû pãn-sê kê tu lê mõnd dê-vrè a-vu-ar dru-a a dê su-ẽn dê sãn-tê gra-tü-i."
   },
   "875": {
-    "explanation": "'L'environnement' é o meio ambiente (com 'l'' antes da vogal). A expressão 'quelque chose que' significa 'algo que / alguma coisa que'. 'Nous devons protéger' significa 'nós devemos proteger'. 'Pour l'avenir' significa 'para o futuro'.",
+    "explanation": "A palavra 'meio ambiente' é 'l'environnement', precedida do artigo encurtado. Em seguida temos 'est quelque chose', onde 'quelque chose' significa 'algo' ou 'uma coisa'. A ação 'devemos proteger' vira 'nous devons protéger', ligando com 'pour l'avenir' para indicar o destino 'para o futuro'.",
     "breakdown": [
-      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
-      { "word": "environnement", "meaning": "meio ambiente / ambiente" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "quelque", "meaning": "alguma" },
-      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "nous", "meaning": "nós" },
-      { "word": "devons", "meaning": "devemos / precisamos (do verbo devoir)" },
-      { "word": "protéger", "meaning": "proteger" },
-      { "word": "pour", "meaning": "para" },
-      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
-      { "word": "avenir", "meaning": "futuro / porvir" }
-    ]
+      {
+        "word": "L'environnement",
+        "meaning": "O meio ambiente — l': o; environnement: meio ambiente."
+      },
+      {
+        "word": "est quelque chose que",
+        "meaning": "É algo que — est: é; quelque chose: algo / alguma coisa; que: que."
+      },
+      {
+        "word": "nous devons",
+        "meaning": "Nós devemos — nous: nós; devons: devemos."
+      },
+      {
+        "word": "protéger",
+        "meaning": "Proteger — verbo proteger."
+      },
+      {
+        "word": "pour l'avenir",
+        "meaning": "Para o futuro — pour: para; l'avenir: o futuro."
+      }
+    ],
+    "pronuncia": "Fale 'lãn-vi-rô-nê-mãn' mantendo o som nasal no início e fim. Em 'est quelque chose', diga 'ê kèl-kê shôz'. Fale 'nu dê-võn prô-tê-jê' arranhando o 'R' em 'prô-tê-jê'. Feche com 'pur la-vê-nír' mantendo o 'R' raspado na garganta em 'pur' e no fim de 'avenir'.\nLeia: Lãn-vi-rô-nê-mãn ê kèl-kê shôz kê nu dê-võn prô-tê-jê pur la-vê-nír."
   },
   "876": {
-    "explanation": "Pergunta filosófica: 'Pensez-vous' é 'o senhor acha / você pensa?'. 'L'argent' é o dinheiro. A palavra 'puisse' é a forma de poder exigida após dúvida ('possa'). A palavra 'vraiment' é 'realmente'. O verbo rendre significa tornar ou fazer ficar: 'rendre les gens heureux' (fazer as pessoas felizes).",
+    "explanation": "Para perguntar 'você acha que...?', o francês inverte a ordem das palavras e cria 'Pensez-vous que...?'. A palavra 'dinheiro' é 'l'argent'. Para expressar a possibilidade ou hipótese ('possa/pode'), usa-se 'puisse' acompanhado de 'vraiment' (realmente). A expressão 'fazer as pessoas felizes' é dita como 'rendre les gens heureux', onde 'rendre' tem o sentido de 'tornar' ou 'transformar em'.",
     "breakdown": [
-      { "word": "Pensez", "meaning": "Pensa / Acha (do verbo penser com vous)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
-      { "word": "argent", "meaning": "dinheiro" },
-      { "word": "puisse", "meaning": "possa (forma do verbo pouvoir)" },
-      { "word": "vraiment", "meaning": "realmente / de verdade" },
-      { "word": "rendre", "meaning": "tornar / fazer ficar (do verbo rendre)" },
-      { "word": "les", "meaning": "as" },
-      { "word": "gens", "meaning": "pessoas / gente" },
-      { "word": "heureux", "meaning": "felizes (no plural)" }
-    ]
+      {
+        "word": "Pensez-vous que",
+        "meaning": "Você acha que / O senhor pensa que — Pensez: pensa/acha; vous: você; que: que."
+      },
+      {
+        "word": "l'argent",
+        "meaning": "O dinheiro — l': o; argent: dinheiro."
+      },
+      {
+        "word": "puisse vraiment",
+        "meaning": "Possa realmente / Pode de fato — puisse: possa; vraiment: realmente."
+      },
+      {
+        "word": "rendre",
+        "meaning": "Tornar / Fazer — verbo no sentido de transformar."
+      },
+      {
+        "word": "les gens",
+        "meaning": "As pessoas — les: as; gens: pessoas."
+      },
+      {
+        "word": "heureux",
+        "meaning": "Felizes — adjetivo feliz/felizes."
+      }
+    ],
+    "pronuncia": "Comece em 'pãn-sê vu kê', soltando o som nasal em 'pãn'. Em 'l'argent puisse vraiment', fale 'lar-jãn pü-is vrê-mãn', com bico em 'pü'. Em 'rendre les gens heureux', fale 'rãn-drê lê jãn-zö-rö', juntando o 's' de 'gens' no 'heureux' com som de 'z' e projetando os lábios para frente no som de 'ö'.\nLeia: Pãn-sê vu kê lar-jãn pü-is vrê-mãn rãn-drê lê jãn-zö-rö ?"
   },
   "877": {
-    "explanation": "'Il est souvent difficile de' significa 'muitas vezes é difícil / frequentemente é difícil'. O verbo tomar decisões em francês usa 'prendre' (literalmente pegar/tomar). A expressão 'la bonne décision' significa 'a decisão certa / a boa decisão' (com bonne antes de décision).",
+    "explanation": "A estrutura começa com o sujeito neutro 'Il est' (é), vindo em seguida a palavra 'souvent' (frequentemente) e 'difficile' (difícil). A ligação para o verbo 'tomar' é feita com 'de', formando 'de prendre'. Para 'a decisão certa', o francês coloca o adjetivo de qualidade 'bonne' (boa) antes do substantivo, resultando em 'la bonne décision' (literalmente, 'a boa decisão').",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "souvent", "meaning": "frequentemente / muitas vezes" },
-      { "word": "difficile", "meaning": "difícil" },
-      { "word": "de", "meaning": "de" },
-      { "word": "prendre", "meaning": "tomar (prendre une décision = tomar uma decisão)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "bonne", "meaning": "boa / certa (no feminino)" },
-      { "word": "décision", "meaning": "decisão" }
-    ]
+      {
+        "word": "Il est souvent",
+        "meaning": "É frequentemente — Il: ele (neutro); est: é; souvent: frequentemente."
+      },
+      {
+        "word": "difficile de",
+        "meaning": "Difícil de / Difícil para — difficile: difícil; de: de."
+      },
+      {
+        "word": "prendre",
+        "meaning": "Tomar / Pegar — verbo tomar/pegar."
+      },
+      {
+        "word": "la bonne décision",
+        "meaning": "A decisão certa / A boa decisão — la: a; bonne: boa; décision: decisão."
+      }
+    ],
+    "pronuncia": "Emende 'Il est souvent' em 'i-lê su-vãn', com som nasal no fim. Passe por 'di-fi-síl dê prãn-drê', arranhando suavemente o 'R' no meio de 'prendre'. Termine com 'la bón dê-si-ziõn', soltando o som nasal final pelo nariz.\nLeia: I-lê su-vãn di-fi-síl dê prãn-drê la bón dê-si-ziõn."
   },
   "878": {
-    "explanation": "'J'ai toujours été fasciné par' significa 'eu sempre fui fascinado por' (passado de être com avoir). 'L'histoire du monde' significa 'a história do mundo' (com 'l'' antes de h mudo e 'du' = de + le).",
+    "explanation": "Para dizer 'eu sempre fui', o francês junta o ajudante 'J'ai' (eu tenho) com a palavra 'toujours' (sempre) e a ação 'été' (sido/estado). A expressão 'fascinado por' é 'fasciné par'. Por fim, 'a história do mundo' vira 'l'histoire du monde', onde 'du' junta a preposição 'de' com o artigo 'le' (do).",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "toujours", "meaning": "sempre" },
-      { "word": "été", "meaning": "sido / estado (passado do verbo être)" },
-      { "word": "fasciné", "meaning": "fascinado / encantado" },
-      { "word": "par", "meaning": "pela / por" },
-      { "word": "l'", "meaning": "a (encurtado antes de h mudo)" },
-      { "word": "histoire", "meaning": "história" },
-      { "word": "du", "meaning": "do (junção de de + le)" },
-      { "word": "monde", "meaning": "mundo" }
-    ]
+      {
+        "word": "J'ai toujours été",
+        "meaning": "Sempre fui / Sempre estive — J'ai: eu tenho; toujours: sempre; été: sido/estado."
+      },
+      {
+        "word": "fasciné par",
+        "meaning": "Fascinado por — fasciné: fascinado; par: por."
+      },
+      {
+        "word": "l'histoire du monde",
+        "meaning": "A história do mundo — l'histoire: a história; du: do; monde: mundo."
+      }
+    ],
+    "pronuncia": "Junte 'J'ai toujours été' como 'jê tu-jur-zê-tê', fazendo a ligação do 's' com som de 'z'. Solte 'fa-si-nê par', raspando o 'R' final em 'par'. Para terminar, diga 'lis-tu-ar dü mõnd', fazendo bico no 'dü' e soltando o som nasal em 'mõnd'.\nLeia: Jê tu-jur-zê-tê fa-si-nê par lis-tu-ar dü mõnd."
   },
   "879": {
-    "explanation": "'Nous devons trouver' significa 'nós precisamos encontrar / devemos achar'. A expressão 'un meilleur moyen de' significa 'uma maneira melhor de / um meio melhor de'. O verbo resolver é 'résoudre', e 'nos problèmes' são nossos problemas.",
+    "explanation": "Para 'precisamos/devemos', a frase usa 'Nous devons', seguida de 'trouver' (encontrar). A ideia de 'uma maneira melhor' é traduzida como 'un meilleur moyen', onde 'meilleur' (melhor) vem antes de 'moyen' (meio/maneira). A ligação 'de resolver nossos problemas' é feita diretamente com 'de résoudre nos problèmes'.",
     "breakdown": [
-      { "word": "Nous", "meaning": "Nós" },
-      { "word": "devons", "meaning": "devemos / precisamos (do verbo devoir)" },
-      { "word": "trouver", "meaning": "encontrar / achar" },
-      { "word": "un", "meaning": "um" },
-      { "word": "meilleur", "meaning": "melhor" },
-      { "word": "moyen", "meaning": "meio / maneira" },
-      { "word": "de", "meaning": "de" },
-      { "word": "résoudre", "meaning": "resolver / solucionar" },
-      { "word": "nos", "meaning": "nossos" },
-      { "word": "problèmes", "meaning": "problemas" }
-    ]
+      {
+        "word": "Nous devons",
+        "meaning": "Nós devemos / Precisamos — nous: nós; devons: devemos."
+      },
+      {
+        "word": "trouver",
+        "meaning": "Encontrar — verbo encontrar."
+      },
+      {
+        "word": "un meilleur moyen",
+        "meaning": "Um melhor meio / Uma maneira melhor — un: um; meilleur: melhor; moyen: meio/maneira."
+      },
+      {
+        "word": "de résoudre",
+        "meaning": "De resolver — de: de; résoudre: resolver."
+      },
+      {
+        "word": "nos problèmes",
+        "meaning": "Nossos problemas — nos: nossos; problèmes: problemas."
+      }
+    ],
+    "pronuncia": "Fale 'nu dê-võn tru-vê', com som nasal em 'dê-võn'. Em 'un meilleur moyen', diga 'ũ mè-i-ör mu-a-iẽn'. Passe por 'dê rê-zuc-drê', arranhando o 'R' inicial e final. Feche com 'nô prô-blèm', pronunciando o 'è' aberto.\nLeia: Nu dê-võn tru-vê ũ mè-i-ör mu-a-iẽn dê rê-zuc-drê nô prô-blèm."
   },
   "880": {
-    "explanation": "'Quel est' é 'qual é'. A expressão 'selon vous' significa 'na sua visão / na sua opinião'. 'Le sens du vrai succès' significa 'o significado do verdadeiro sucesso' (com vrai vindo antes de succès, e 'du' = de + le).",
+    "explanation": "A frase começa perguntando 'Qual é' com 'Quel est'. Para inserir a expressão de opinião 'na sua opinião / segundo você', usa-se 'selon vous'. Em seguida vem 'le sens du vrai succès', que significa literalmente 'o sentido do verdadeiro sucesso', colocando o adjetivo 'vrai' (verdadeiro) antes de 'succès'.",
     "breakdown": [
-      { "word": "Quel", "meaning": "Qual" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "selon", "meaning": "segundo / de acordo com" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você (selon vous = na sua opinião)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "sens", "meaning": "sentido / significado" },
-      { "word": "du", "meaning": "do (junção de de + le)" },
-      { "word": "vrai", "meaning": "verdadeiro / real" },
-      { "word": "succès", "meaning": "sucesso" }
-    ]
+      {
+        "word": "Quel est",
+        "meaning": "Qual é — Quel: qual; est: é."
+      },
+      {
+        "word": "selon vous",
+        "meaning": "Na sua opinião / Segundo você — selon: segundo/conforme; vous: você/o senhor."
+      },
+      {
+        "word": "le sens du",
+        "meaning": "O sentido do / O significado do — le: o; sens: sentido; du: do."
+      },
+      {
+        "word": "vrai succès",
+        "meaning": "Verdadeiro sucesso — vrai: verdadeiro; succès: sucesso."
+      }
+    ],
+    "pronuncia": "Emende 'Quel est' como 'kè-lê'. Fale 'sê-lõn vu' com som nasal em 'lõn'. Diga 'lê sãn-s' pronunciando o 's' final de 'sens'. Termine com 'dü vrê sük-sè', fazendo bico no 'dü' e no 'sü' de 'succès'.\nLeia: Kè-lê sê-lõn vu lê sãn-s dü vrê sük-sè ?"
   },
   "881": {
-    "explanation": "'Il est important de' significa 'é importante'. O verbo respeitar é 'respecter'. 'Les opinions' são as opiniões (feminino plural). A contração 'des' (de + les) conecta com os outros: 'des autres' (dos outros / das outras pessoas).",
+    "explanation": "Como de costume para frases impessoais, o francês usa 'Il est important de' para 'é importante'. A ação 'respeitar' vira 'respecter'. A expressão 'as opiniões das outras pessoas' vira 'les opinions des autres', onde 'des' junta 'de' com 'les' (das) e 'autres' indica 'outras/outros'.",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "important", "meaning": "importante" },
-      { "word": "de", "meaning": "de" },
-      { "word": "respecter", "meaning": "respeitar" },
-      { "word": "les", "meaning": "as" },
-      { "word": "opinions", "meaning": "opiniões" },
-      { "word": "des", "meaning": "dos / das (junção de de + les)" },
-      { "word": "autres", "meaning": "outros / outras pessoas" }
-    ]
+      {
+        "word": "Il est important de",
+        "meaning": "É importante — Il: ele (neutro); est: é; important: importante; de: de."
+      },
+      {
+        "word": "respecter",
+        "meaning": "Respeitar — verbo respeitar."
+      },
+      {
+        "word": "les opinions",
+        "meaning": "As opiniões — les: as; opinions: opiniões."
+      },
+      {
+        "word": "des autres",
+        "meaning": "Das outras pessoas / Dos outros — des: dos/das; autres: outros/outras."
+      }
+    ],
+    "pronuncia": "Junte 'Il est important' como 'i-lê-tẽm-pór-tãn'. Fale 'dê rès-pèk-tê' raspando o 'R' inicial. Em 'les opinions des autres', faça a ligação: 'lê-zô-pi-ni-õn dê-zôtr', deixando a última palavra morrer suavemente no 'tr'.\nLeia: I-lê-tẽm-pór-tãn dê rès-pèk-tê lê-zô-pi-ni-õn dê-zôtr."
   },
   "882": {
-    "explanation": "Frase sobre generosidade no saber: 'La connaissance' é o conhecimento. 'Est quelque chose qui grandit' significa 'é algo que cresce' (do verbo grandir). A expressão 'plus on la partage' significa 'quanto mais a compartilhamos' (com o pronome 'la' referindo-se ao conhecimento feminino).",
+    "explanation": "O termo 'conhecimento' recebe o artigo 'La' em francês, ficando 'La connaissance'. Em seguida, 'é algo que' vira 'est quelque chose qui'. O verbo 'crescer' entra como 'grandit'. A ideia proporcional 'quanto mais a compartilhamos' é resumida elegantemente pela expressão 'plus on la partage', onde 'on' representa as pessoas em geral.",
     "breakdown": [
-      { "word": "La", "meaning": "O / A" },
-      { "word": "connaissance", "meaning": "conhecimento (palavra feminina em francês)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "quelque", "meaning": "alguma" },
-      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
-      { "word": "qui", "meaning": "que" },
-      { "word": "grandit", "meaning": "cresce (do verbo grandir)" },
-      { "word": "plus", "meaning": "mais (plus on = quanto mais a gente)" },
-      { "word": "on", "meaning": "a gente / se" },
-      { "word": "la", "meaning": "a / o (pronome que se refere ao conhecimento)" },
-      { "word": "partage", "meaning": "compartilha / divide (do verbo partager)" }
-    ]
+      {
+        "word": "La connaissance",
+        "meaning": "O conhecimento — La: o/a; connaissance: conhecimento."
+      },
+      {
+        "word": "est quelque chose qui",
+        "meaning": "É algo que — est: é; quelque chose: algo; qui: que (sujeito da ação)."
+      },
+      {
+        "word": "grandit",
+        "meaning": "Cresce / Aumenta — forma do verbo crescer."
+      },
+      {
+        "word": "plus on la partage",
+        "meaning": "Quanto mais a compartilhamos — plus: mais; on: a gente/nós; la: a/o; partage: compartilha."
+      }
+    ],
+    "pronuncia": "Fale 'La kô-nê-sãn-s' com som nasal no final. Passe para 'ê kèl-kê shôz ki grãn-di', raspando o 'R' em 'grãn'. Termine com 'plü-zõn la par-taj', fazendo a ligação de 'plus' no 'on' com som de 'z' ('plü-zõn') e raspando o 'R' de 'partage'.\nLeia: La kô-nê-sãn-s ê kèl-kê shôz ki grãn-di plü-zõn la par-taj."
   },
   "883": {
-    "explanation": "'Je pense que' significa 'eu acho que'. 'Le voyage' é a viagem ou o viajar. A expressão 'un excellent moyen de' significa 'uma ótima maneira de / um excelente meio de'. O verbo élargir significa ampliar ou alargar ('élargir l'esprit' = abrir a mente / expandir o espírito).",
+    "explanation": "A frase inicia com 'Je pense que' (acho que). Em francês, em vez do verbo no infinitivo, usa-se o substantivo com artigo: 'le voyage' (a viagem / o viajar). A expressão 'uma ótima maneira' vira 'un excellent moyen', trocando a ordem para colocar o adjetivo antes. A finalidade 'de ampliar a mente' vira 'd'élargir l'esprit', adaptando o termo 'mente' para 'l'esprit' (o espírito / a mente).",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "le", "meaning": "a / o" },
-      { "word": "voyage", "meaning": "viagem / o ato de viajar (masculino em francês)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "un", "meaning": "um / uma" },
-      { "word": "excellent", "meaning": "excelente / ótimo" },
-      { "word": "moyen", "meaning": "meio / maneira" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "élargir", "meaning": "ampliar / expandir / alargar" },
-      { "word": "l'", "meaning": "o / a (encurtado antes de vogal)" },
-      { "word": "esprit", "meaning": "mente / espírito" }
-    ]
+      {
+        "word": "Je pense que",
+        "meaning": "Acho que / Penso que — Je: eu; pense: penso; que: que."
+      },
+      {
+        "word": "le voyage",
+        "meaning": "Viajar / A viagem — le: o; voyage: viagem."
+      },
+      {
+        "word": "est un excellent moyen",
+        "meaning": "É um excelente meio / É uma ótima maneira — est: é; un: um; excellent: excelente; moyen: meio/maneira."
+      },
+      {
+        "word": "d'élargir l'esprit",
+        "meaning": "De ampliar a mente — d': de; élargir: ampliar/alargar; l'esprit: o espírito/a mente."
+      }
+    ],
+    "pronuncia": "Fale 'jû pãn-sê kê lê vu-a-yaj'. Em 'est un excellent moyen', junte tudo: 'ê-tũ-nèk-sè-lãn mu-a-iẽn'. Termine com 'dê-lar-jír lès-pri', sem pronunciar o 't' final de 'esprit' e arranhando os 'R's.\nLeia: Jû pãn-sê kê lê vu-a-yaj ê-tũ-nèk-sè-lãn mu-a-iẽn dê-lar-jír lès-pri."
   },
   "884": {
-    "explanation": "'L'avenir' significa o futuro ou porvir (com 'l'' antes da vogal). 'Est quelque chose que' significa 'é algo que'. 'Nous créons' significa 'nós criamos' (do verbo créer). A palavra 'nous-mêmes' significa 'nós mesmos' (com hífen e 's' no plural).",
+    "explanation": "Para 'o futuro', usa-se 'L'avenir'. A estrutura 'é algo que' é 'est quelque chose que'. Em seguida, para dar ênfase a 'nós mesmos criamos', o francês coloca primeiro o sujeito 'nous', depois o verbo 'créons' (criamos) e reforça no final com 'nous-mêmes' (nós mesmos).",
     "breakdown": [
-      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
-      { "word": "avenir", "meaning": "futuro / porvir" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "quelque", "meaning": "alguma" },
-      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "nous", "meaning": "nós" },
-      { "word": "créons", "meaning": "criamos (do verbo créer)" },
-      { "word": "nous-mêmes", "meaning": "nós mesmos" }
-    ]
+      {
+        "word": "L'avenir",
+        "meaning": "O futuro — l': o; avenir: futuro."
+      },
+      {
+        "word": "est quelque chose que",
+        "meaning": "É algo que — est: é; quelque chose: algo; que: que."
+      },
+      {
+        "word": "nous créons",
+        "meaning": "Nós criamos — nous: nós; créons: criamos."
+      },
+      {
+        "word": "nous-mêmes",
+        "meaning": "Nós mesmos — nous: nós; mêmes: mesmos."
+      }
+    ],
+    "pronuncia": "Diga 'la-vê-nír' raspando o 'R' no final. Fale 'ê kèl-kê shôz kê'. Em 'nous créons', fale 'nu krê-õn', com som nasal no fim. Feche com 'nu-mêm', pronunciando o 'ê' longo e sem falar o 's' final.\nLeia: La-vê-nír ê kèl-kê shôz kê nu krê-õn nu-mêm."
   },
   "885": {
-    "explanation": "Pergunta com inversão: 'Est-il possible de' significa 'é possível?'. O verbo viver é 'vivre'. 'Dans un monde' é 'em um mundo'. A expressão 'sans aucun conflit' significa 'sem nenhum conflito' (onde aucun reforça a ausência total).",
+    "explanation": "Para transformar 'é possível' em uma pergunta direta, o francês inverte para 'Est-il possible...'. A ligação para o verbo entra com 'de', formando 'de vivre' (viver). A ideia 'em um mundo' vira 'dans un monde'. Para expressar 'sem nenhum conflito', a combinação é 'sans aucun conflit', onde 'aucun' reforça a ausência total.",
     "breakdown": [
-      { "word": "Est", "meaning": "É (do verbo être)" },
-      { "word": "-il", "meaning": "ele / isso (invertido para a pergunta)" },
-      { "word": "possible", "meaning": "possível" },
-      { "word": "de", "meaning": "de" },
-      { "word": "vivre", "meaning": "viver" },
-      { "word": "dans", "meaning": "em" },
-      { "word": "un", "meaning": "um" },
-      { "word": "monde", "meaning": "mundo" },
-      { "word": "sans", "meaning": "sem" },
-      { "word": "aucun", "meaning": "nenhum" },
-      { "word": "conflit", "meaning": "conflito" }
-    ]
+      {
+        "word": "Est-il possible de",
+        "meaning": "É possível — Est: é; il: ele (neutro); possible: possível; de: de."
+      },
+      {
+        "word": "vivre",
+        "meaning": "Viver — verbo viver."
+      },
+      {
+        "word": "dans un monde",
+        "meaning": "Em um mundo — dans: em; un: um; monde: mundo."
+      },
+      {
+        "word": "sans aucun conflit",
+        "meaning": "Sem nenhum conflito — sans: sem; aucun: nenhum; conflit: conflito."
+      }
+    ],
+    "pronuncia": "Junte a pergunta: 'ês-til pô-síblê dê vívr'. Fale 'dãn-zũ mõnd', emendando o 's' de 'dans' no 'un' com som de 'z'. Termine com 'sãn-zô-kẽn kõn-fli', juntando 'sans' e 'aucun' e deixando o 't' de 'conflit' mudo.\nLeia: Ês-til pô-síblê dê vívr dãn-zũ mõnd sãn-zô-kẽn kõn-fli ?"
   },
   "886": {
-    "explanation": "'Nous devrions tous' significa 'todos nós deveríamos' (do verbo devoir com tous). A expressão 'essayer d'être' significa 'tentar ser' (com 'de' encurtado para 'd'' antes de vogal). 'Plus conscients de' significa 'mais conscientes de' (com 's' no plural). 'Nos actions' são nossas ações.",
+    "explanation": "A frase começa com 'Nous devrions tous' (nós deveríamos todos), onde o 's' de 'tous' é pronunciado para dar ênfase. A ação 'tentar ser' vira 'essayer d'être'. A expressão 'mais conscientes de nossas ações' é traduzida por 'plus conscients de nos actions', mantendo uma estrutura muito parecida com o português.",
     "breakdown": [
-      { "word": "Nous", "meaning": "Nós" },
-      { "word": "devrions", "meaning": "deveríamos (do verbo devoir)" },
-      { "word": "tous", "meaning": "todos" },
-      { "word": "essayer", "meaning": "tentar" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "être", "meaning": "ser / estar" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "conscients", "meaning": "conscientes (no plural)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "nos", "meaning": "nossas" },
-      { "word": "actions", "meaning": "ações" }
-    ]
+      {
+        "word": "Nous devrions tous",
+        "meaning": "Nós deveríamos todos — nous: nós; devrions: deveríamos; tous: todos."
+      },
+      {
+        "word": "essayer d'être",
+        "meaning": "Tentar ser / Tentar estar — essayer: tentar; d': de; être: ser."
+      },
+      {
+        "word": "plus conscients de",
+        "meaning": "Mais conscientes de — plus: mais; conscients: conscientes; de: de."
+      },
+      {
+        "word": "nos actions",
+        "meaning": "Nossas ações — nos: nossas; actions: ações."
+      }
+    ],
+    "pronuncia": "Fale 'nu dê-vri-õn tus', soltando o 's' em 'tus'. Em 'essayer d'être', fale 'ê-sè-iê dêt-rê'. Passe por 'plü kõn-siãn dê', mantendo o som nasal. Termine com 'nô-zak-siõn', ligando o 's' de 'nos' na vogal com som de 'z'.\nLeia: Nu dê-vri-õn tus ê-sè-iê dêt-rê plü kõn-siãn dê nô-zak-siõn."
   },
   "887": {
-    "explanation": "'Je crois que' significa 'eu acredito que'. 'Tout le monde a' é 'todo mundo tem / todos têm' (sempre tratado no singular). A expressão 'un talent particulier' significa 'um talento especial / um talento particular' (com o adjetivo vindo após o substantivo).",
+    "explanation": "Começa com 'Je crois que' (acredito que). Em vez de 'todos têm', o francês prefere 'tout le monde a' (todo mundo tem). O termo 'um talento especial' vira 'un talent particulier', onde o adjetivo 'particulier' (particular / especial) vem logo depois do substantivo.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "crois", "meaning": "acredito / creio (do verbo croire)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "tout", "meaning": "todo" },
-      { "word": "le", "meaning": "o" },
-      { "word": "monde", "meaning": "mundo (tout le monde = todo mundo / todos)" },
-      { "word": "a", "meaning": "tem (do verbo avoir)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "talent", "meaning": "talento" },
-      { "word": "particulier", "meaning": "particular / especial / próprio" }
-    ]
+      {
+        "word": "Je crois que",
+        "meaning": "Acredito que — Je: eu; crois: acredito; que: que."
+      },
+      {
+        "word": "tout le monde a",
+        "meaning": "Todos têm / Todo mundo tem — tout: todo; le: o; monde: mundo; a: tem."
+      },
+      {
+        "word": "un talent",
+        "meaning": "Um talento — un: um; talent: talento."
+      },
+      {
+        "word": "particulier",
+        "meaning": "Especial / Particular — adjetivo para algo próprio ou especial."
+      }
+    ],
+    "pronuncia": "Diga 'jû kro-a kê'. Junte 'tout le monde a' em 'tu lê mõn-da'. Em 'un talent particulier', fale 'ũ ta-lãn par-ti-kü-li-ê', mantendo o 't' final de 'talent' mudo e fazendo bico no 'ü'.\nLeia: Jû kro-a kê tu lê mõn-da ũ ta-lãn par-ti-kü-li-ê."
   },
   "888": {
-    "explanation": "'Il est important d'' significa 'é importante' (com 'de' encurtado para 'd'' antes de vogal). O verbo aprender é 'apprendre'. A contração 'des' (de + les) conecta com os erros: 'des erreurs'. A contração 'du' (de + le) conecta com o passado: 'du passé'.",
+    "explanation": "Temos novamente a expressão impessoal 'Il est important' (é importante). A preposição 'de' junta-se a 'apprendre' virando 'd'apprendre' (aprender). A ideia de 'com os erros' é traduzida literalmente como 'dos erros' usando 'des erreurs'. Por fim, 'do passado' é 'du passé' (junção de 'de' com 'le').",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "important", "meaning": "importante" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "apprendre", "meaning": "aprender" },
-      { "word": "des", "meaning": "dos / com os (junção de de + les)" },
-      { "word": "erreurs", "meaning": "erros" },
-      { "word": "du", "meaning": "do (junção de de + le)" },
-      { "word": "passé", "meaning": "passado" }
-    ]
+      {
+        "word": "Il est important d'",
+        "meaning": "É importante — Il: ele (neutro); est: é; important: importante; d': de."
+      },
+      {
+        "word": "apprendre",
+        "meaning": "Aprender — verbo aprender."
+      },
+      {
+        "word": "des erreurs",
+        "meaning": "Com os erros / Dos erros — des: dos/de; erreurs: erros."
+      },
+      {
+        "word": "du passé",
+        "meaning": "Do passado — du: do; passé: passado."
+      }
+    ],
+    "pronuncia": "Junte o início: 'i-lê-tẽm-pór-tãn da-prãn-drê'. Em 'des erreurs', ligue o 's' com som de 'z': 'dê-zê-rör', raspando o 'R'. Feche com 'dü pa-sê', fazendo bico no 'dü'.\nLeia: I-lê-tẽm-pór-tãn da-prãn-drê dê-zê-rör dü pa-sê."
   },
   "889": {
-    "explanation": "'Quel est' é 'qual é'. A expressão 'selon vous' significa 'na sua visão / na sua opinião'. 'Le rôle de l'art' significa 'o papel da arte' (com 'l'' antes da vogal de art). 'Dans notre société' significa 'na nossa sociedade'.",
+    "explanation": "Para a pergunta 'Qual é', usa-se 'Quel est'. A intercalação de opinião 'na sua opinião' vira 'selon vous'. A expressão 'o papel da arte' é 'le rôle de l'art', onde 'rôle' é papel/função. E 'na nossa sociedade' traduz-se como 'dans notre société'.",
     "breakdown": [
-      { "word": "Quel", "meaning": "Qual" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "selon", "meaning": "segundo / de acordo com" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você (selon vous = na sua opinião)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "rôle", "meaning": "papel / função" },
-      { "word": "de", "meaning": "de / da" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "art", "meaning": "arte" },
-      { "word": "dans", "meaning": "em / na" },
-      { "word": "notre", "meaning": "nossa" },
-      { "word": "société", "meaning": "sociedade" }
-    ]
+      {
+        "word": "Quel est",
+        "meaning": "Qual é — Quel: qual; est: é."
+      },
+      {
+        "word": "selon vous",
+        "meaning": "Na sua opinião / Segundo você — selon: segundo; vous: você."
+      },
+      {
+        "word": "le rôle de l'art",
+        "meaning": "O papel da arte — le: o; rôle: papel/função; de: de; l'art: a arte."
+      },
+      {
+        "word": "dans notre société",
+        "meaning": "Na nossa sociedade — dans: em/na; notre: nossa; société: sociedade."
+      }
+    ],
+    "pronuncia": "Fale 'kè-lê sê-lõn vu'. Em 'le rôle de l'art', fale 'lê rôl dê lar', raspando o 'R' em 'rôle' e 'art'. Feche com 'dãn nótr sô-si-ê-tê', soltando som nasal em 'dãn'.\nLeia: Kè-lê sê-lõn vu lê rôl dê lar dãn nótr sô-si-ê-tê ?"
   },
   "890": {
-    "explanation": "'Le bonheur' é a felicidade (palavra masculina em francês). 'Est quelque chose qui vient' significa 'é algo que vem' (do verbo venir). A expressão 'de l'intérieur de soi' significa 'de dentro de si mesmo / do íntimo da pessoa' (com 'soi' indicando a própria pessoa).",
+    "explanation": "O substantivo 'felicidade' em francês é masculino: 'Le bonheur'. A estrutura 'é algo que' entra como 'est quelque chose qui'. O verbo 'vir' vira 'vient' (vem). E para dizer 'de dentro de si mesmo / de dentro de você', a expressão clássica em francês é 'de l'intérieur de soi'.",
     "breakdown": [
-      { "word": "Le", "meaning": "A / O" },
-      { "word": "bonheur", "meaning": "felicidade (palavra masculina em francês)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "quelque", "meaning": "alguma" },
-      { "word": "chose", "meaning": "coisa (quelque chose = algo)" },
-      { "word": "qui", "meaning": "que" },
-      { "word": "vient", "meaning": "vem (do verbo venir)" },
-      { "word": "de", "meaning": "de / do" },
-      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
-      { "word": "intérieur", "meaning": "interior" },
-      { "word": "de", "meaning": "de" },
-      { "word": "soi", "meaning": "si / si mesmo (de l'intérieur de soi = de dentro de si)" }
-    ]
+      {
+        "word": "Le bonheur",
+        "meaning": "A felicidade — Le: o; bonheur: felicidade/bem-estar."
+      },
+      {
+        "word": "est quelque chose qui",
+        "meaning": "É algo que — est: é; quelque chose: algo; qui: que."
+      },
+      {
+        "word": "vient de",
+        "meaning": "Vem de — vient: vem; de: de."
+      },
+      {
+        "word": "l'intérieur de soi",
+        "meaning": "Dentro de si / Dentro de você — l'intérieur: o interior; de: de; soi: si próprio/você."
+      }
+    ],
+    "pronuncia": "Fale 'Lê bó-nör' raspando o 'R' final. Diga 'ê kèl-kê shôz ki viẽn dê'. Em 'l'intérieur de soi', fale 'lẽn-tê-ri-ör dê su-a', com som nasal no início de 'intérieur'.\nLeia: Lê bó-nör ê kèl-kê shôz ki viẽn dê lẽn-tê-ri-ör dê su-a."
   },
   "891": {
-    "explanation": "'Nous vivons dans' significa 'nós vivemos em' (do verbo vivre). 'Un monde' é um mundo. A expressão elegante 'en constante évolution' significa 'em constante evolução / em contínua transformação' (com o adjetivo constante antes do substantivo évolution).",
+    "explanation": "Para 'nós vivemos', usa-se 'Nous vivons'. O complemento 'em um mundo' é 'dans un monde'. E a expressão 'em constante mudança/evolução' é traduzida perfeitamente pela frase feita 'en constante évolution'.",
     "breakdown": [
-      { "word": "Nous", "meaning": "Nós" },
-      { "word": "vivons", "meaning": "vivemos (do verbo vivre)" },
-      { "word": "dans", "meaning": "em" },
-      { "word": "un", "meaning": "um" },
-      { "word": "monde", "meaning": "mundo" },
-      { "word": "en", "meaning": "em" },
-      { "word": "constante", "meaning": "constante / contínua (no feminino)" },
-      { "word": "évolution", "meaning": "evolução / transformação" }
-    ]
+      {
+        "word": "Nous vivons",
+        "meaning": "Nós vivemos — nous: nós; vivons: vivemos."
+      },
+      {
+        "word": "dans un monde",
+        "meaning": "Em um mundo — dans: em; un: um; monde: mundo."
+      },
+      {
+        "word": "en constante évolution",
+        "meaning": "Em constante mudança / Em constante evolução — en: em; constante: constante; évolution: evolução/mudança."
+      }
+    ],
+    "pronuncia": "Fale 'nu vi-võn' com som nasal no fim. Junte 'dans un monde' como 'dãn-zũ mõnd'. Para terminar, diga 'ãn kõn-stãnt ê-vô-lü-siõn', mantendo os sons nasais e o bico no 'lü'.\nLeia: Nu vi-võn dãn-zũ mõnd ãn kõn-stãnt ê-vô-lü-siõn."
   },
   "892": {
-    "explanation": "'Je pense que' significa 'eu acho que'. 'L'amitié' é a amizade (com 'l'' antes da vogal). A expressão 'est plus importante que' significa 'é mais importante do que' (com importante no feminino concordando com amitié). 'L'argent' é o dinheiro.",
+    "explanation": "Começa com 'Je pense que' (acho que). A palavra 'amizade' ganha artigo: 'l'amitié'. A comparação 'é mais importante do que' vira 'est plus importante que'. No final, 'o dinheiro' entra como 'l'argent'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "amitié", "meaning": "amizade" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "importante", "meaning": "importante (no feminino)" },
-      { "word": "que", "meaning": "do que / que" },
-      { "word": "l'", "meaning": "o (encurtado antes de vogal)" },
-      { "word": "argent", "meaning": "dinheiro" }
-    ]
+      {
+        "word": "Je pense que",
+        "meaning": "Acho que — Je: eu; pense: penso; que: que."
+      },
+      {
+        "word": "l'amitié",
+        "meaning": "A amizade — l': a; amitié: amizade."
+      },
+      {
+        "word": "est plus importante que",
+        "meaning": "É mais importante que — est: é; plus: mais; importante: importante; que: que."
+      },
+      {
+        "word": "l'argent",
+        "meaning": "O dinheiro — l': o; argent: dinheiro."
+      }
+    ],
+    "pronuncia": "Fale 'jû pãn-sê kê la-mi-ti-ê'. Em 'est plus importante que', fale 'ê plü-zẽm-pór-tãnt kê', ligando o 's' de 'plus' no 'importante'. Termine com 'lar-jãn', soltando o som nasal no fim.\nLeia: Jû pãn-sê kê la-mi-ti-ê ê plü-zẽm-pór-tãnt kê lar-jãn."
   },
   "893": {
-    "explanation": "'Il est nécessaire de' significa 'é necessário'. Em francês, a expressão para correr riscos é 'prendre des risques'. A construção 'si l'on veut' usa o artigo 'l'' antes de 'on' apenas para deixar o som mais agradável na fala ('se a gente quiser / se quisermos'). O verbo conseguir ou ter sucesso é 'réussir'.",
+    "explanation": "A expressão impessoal 'é necessário' vira 'Il est nécessaire de'. A ideia de 'correr riscos' em francês é traduzida literalmente como 'tomar riscos': 'prendre des risques'. Para 'se você quiser / se a gente quiser', usa-se 'si l'on veut', onde 'l'on' traz elegância ao dizer 'a gente'. O verbo 'ter sucesso' é expresso em uma só palavra: 'réussir'.",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "nécessaire", "meaning": "necessário" },
-      { "word": "de", "meaning": "de" },
-      { "word": "prendre", "meaning": "tomar / assumir" },
-      { "word": "des", "meaning": "de (marcador de plural)" },
-      { "word": "risques", "meaning": "riscos (prendre des risques = correr riscos)" },
-      { "word": "si", "meaning": "se" },
-      { "word": "l'", "meaning": "partícula de apoio usada para suavizar o som antes de on" },
-      { "word": "on", "meaning": "a gente / se" },
-      { "word": "veut", "meaning": "quer (do verbo vouloir)" },
-      { "word": "réussir", "meaning": "ter sucesso / vencer / triunfar" }
-    ]
+      {
+        "word": "Il est nécessaire de",
+        "meaning": "É necessário — Il: ele (neutro); est: é; nécessaire: necessário; de: de."
+      },
+      {
+        "word": "prendre des risques",
+        "meaning": "Correr riscos / Tomar riscos — prendre: tomar/pegar; des: riscos (plural); risques: riscos."
+      },
+      {
+        "word": "si l'on veut",
+        "meaning": "Se a gente quiser / Se você quiser — si: se; l'on: a gente; veut: quer."
+      },
+      {
+        "word": "réussir",
+        "meaning": "Ter sucesso / Ser bem-sucedido — verbo ter sucesso."
+      }
+    ],
+    "pronuncia": "Junte 'Il est nécessaire' como 'i-lê nô-sê-sèr dê'. Fale 'prãn-drê dê rísk'. Em 'si l'on veut', fale 'si lõn vö'. Feche com 'rê-ü-sír', fazendo bico no 'ü' e raspando o 'R' no começo e fim.\nLeia: I-lê nô-sê-sèr dê prãn-drê dê rísk si lõn vö rê-ü-sír."
   },
   "894": {
-    "explanation": "'Quel est' é 'qual é'. A expressão 'selon vous' significa 'na sua visão / segundo o senhor'. Em francês, direitos humanos é dito 'droits de l'homme' (com homem no singular representando a humanidade). A expressão superlativa 'le plus important' significa 'o mais importante'.",
+    "explanation": "Começamos com 'Quel est, selon vous' (qual é, na sua opinião). O termo 'direito humano' ou 'direito do homem' é 'le droit de l'homme'. Para dizer 'o mais importante', a frase usa o superlativo 'le plus important'.",
     "breakdown": [
-      { "word": "Quel", "meaning": "Qual" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "selon", "meaning": "segundo / de acordo com" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você (selon vous = na sua opinião)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "droit", "meaning": "direito" },
-      { "word": "de", "meaning": "de / do" },
-      { "word": "l'", "meaning": "o (encurtado antes de h mudo)" },
-      { "word": "homme", "meaning": "homem (droit de l'homme = direito humano)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "plus", "meaning": "mais (le plus = o mais)" },
-      { "word": "important", "meaning": "importante" }
-    ]
+      {
+        "word": "Quel est",
+        "meaning": "Qual é — Quel: qual; est: é."
+      },
+      {
+        "word": "selon vous",
+        "meaning": "Na sua opinião — selon: segundo; vous: você."
+      },
+      {
+        "word": "le droit de l'homme",
+        "meaning": "O direito humano / O direito do homem — le: o; droit: direito; de: de; l'homme: o homem."
+      },
+      {
+        "word": "le plus important",
+        "meaning": "O mais importante — le plus: o mais; important: importante."
+      }
+    ],
+    "pronuncia": "Fale 'kè-lê sê-lõn vu'. Em 'le droit de l'homme', fale 'lê dru-a dê lóm'. Termine com 'lê plü-zẽm-pór-tãn', ligando o 's' de 'plus' em 'importante' com som de 'z'.\nLeia: Kè-lê sê-lõn vu lê dru-a dê lóm lê plü-zẽm-pór-tãn ?"
   },
   "895": {
-    "explanation": "'J'ai toujours pensé que' significa 'eu sempre pensei / achei que' (passado de penser com avoir). 'La nature' é a natureza. A expressão 'le meilleur professeur' significa 'o melhor professor' (onde o adjetivo meilleur vem antes de professeur).",
+    "explanation": "Para 'sempre achei', o francês usa 'J'ai toujours pensé', combinando o ajudante 'J'ai' com 'toujours' (sempre) e 'pensé' (pensado/achado). Em seguida vem 'que la nature' (que a natureza) e 'est le meilleur professeur' (é o melhor professor). Repare que a palavra 'professeur' é mantida no masculino como conceito geral.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "toujours", "meaning": "sempre" },
-      { "word": "pensé", "meaning": "pensado / achei (do verbo penser)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "la", "meaning": "a" },
-      { "word": "nature", "meaning": "natureza" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "meilleur", "meaning": "melhor" },
-      { "word": "professeur", "meaning": "professor" }
-    ]
+      {
+        "word": "J'ai toujours pensé que",
+        "meaning": "Sempre achei que / Sempre pensei que — J'ai: eu tenho; toujours: sempre; pensé: pensado; que: que."
+      },
+      {
+        "word": "la nature",
+        "meaning": "A natureza — la: a; nature: natureza."
+      },
+      {
+        "word": "est le meilleur",
+        "meaning": "É o melhor — est: é; le: o; meilleur: melhor."
+      },
+      {
+        "word": "professeur",
+        "meaning": "Professor / Professora — substantivo professor."
+      }
+    ],
+    "pronuncia": "Fale 'jê tu-jur pãn-sê kê'. Diga 'la na-tür', fazendo bico no 'ü'. Em 'est le meilleur professeur', fale 'ê lê mè-i-ör prô-fê-sör', raspando os 'R's na garganta.\nLeia: Jê tu-jur pãn-sê kê la na-tür ê lê mè-i-ör prô-fê-sör."
   },
   "896": {
-    "explanation": "'Il est important d'être honnête' significa 'é importante ser honesto' (com 'de' encurtado para 'd'' antes de vogal). A expressão 'avec soi-même' significa 'consigo mesmo' (com soi indicando a pessoa interior). A expressão 'et avec les autres' significa 'e com os outros'.",
+    "explanation": "Inicia com 'Il est important' (é importante). A ligação para 'ser honesto' vira 'd'être honnête'. Para 'consigo mesmo', o francês usa 'avec soi-même'. A frase conclui com 'et avec les autres' (e com os outros).",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele / Isso (sujeito neutro)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "important", "meaning": "importante" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "être", "meaning": "ser" },
-      { "word": "honnête", "meaning": "honesto / sincero" },
-      { "word": "avec", "meaning": "com" },
-      { "word": "soi-même", "meaning": "si mesmo / consigo mesmo" },
-      { "word": "et", "meaning": "e" },
-      { "word": "avec", "meaning": "com" },
-      { "word": "les", "meaning": "os" },
-      { "word": "autres", "meaning": "outros" }
-    ]
+      {
+        "word": "Il est important d'être",
+        "meaning": "É importante ser — Il: ele (neutro); est: é; important: importante; d': de; être: ser."
+      },
+      {
+        "word": "honnête avec",
+        "meaning": "Honesto com — honnête: honesto; avec: com."
+      },
+      {
+        "word": "soi-même",
+        "meaning": "Consigo mesmo / Si mesmo — soi: si; même: mesmo."
+      },
+      {
+        "word": "et avec les autres",
+        "meaning": "E com os outros — et: e; avec: com; les: os; autres: outros."
+      }
+    ],
+    "pronuncia": "Junte 'i-lê-tẽm-pór-tãn dêt-rô-nêt', fazendo a ligação do 't' de 'être' com 'honnête'. Fale 'a-vèk su-a-mêm'. Termine com 'ê a-vèk lê-zôtr', juntando o 's' de 'les' no 'autres'.\nLeia: I-lê-tẽm-pór-tãn dêt-rô-nêt a-vèk su-a-mêm ê a-vèk lê-zôtr."
   },
   "897": {
-    "explanation": "'Nous devrions essayer d'' significa 'deveríamos tentar' (com 'de' encurtado para 'd'' antes de vogal). O verbo ajudar é 'aider'. A palavra 'ceux' é o pronome que significa 'aqueles'. A expressão 'qui ont moins de chance que nous' significa literalmente 'que têm menos sorte do que nós' (o nosso 'menos afortunados').",
+    "explanation": "Para 'deveríamos tentar', a frase usa 'Nous devrions essayer'. A ligação para 'ajudar aqueles' vira 'd'aider ceux'. E a expressão para 'menos afortunados / que têm menos sorte que nós' é traduzida literalmente por 'que têm menos sorte que nós': 'qui ont moins de chance que nous'.",
     "breakdown": [
-      { "word": "Nous", "meaning": "Nós" },
-      { "word": "devrions", "meaning": "deveríamos (do verbo devoir)" },
-      { "word": "essayer", "meaning": "tentar" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "aider", "meaning": "ajudar" },
-      { "word": "ceux", "meaning": "aqueles" },
-      { "word": "qui", "meaning": "que" },
-      { "word": "ont", "meaning": "têm (do verbo avoir no plural)" },
-      { "word": "moins", "meaning": "menos" },
-      { "word": "de", "meaning": "de (usado após palavras de quantidade)" },
-      { "word": "chance", "meaning": "sorte (avoir de la chance = ter sorte / ser afortunado)" },
-      { "word": "que", "meaning": "do que / que" },
-      { "word": "nous", "meaning": "nós" }
-    ]
+      {
+        "word": "Nous devrions",
+        "meaning": "Nós deveríamos — nous: nós; devrions: deveríamos."
+      },
+      {
+        "word": "essayer d'aider",
+        "meaning": "Tentar ajudar — essayer: tentar; d': de; aider: ajudar."
+      },
+      {
+        "word": "ceux qui ont",
+        "meaning": "Aqueles que têm — ceux: aqueles; qui: que; ont: têm."
+      },
+      {
+        "word": "moins de chance",
+        "meaning": "Menos sorte / Menos oportunidade — moins: menos; de: de; chance: sorte."
+      },
+      {
+        "word": "que nous",
+        "meaning": "Que nós — que: que; nous: nós."
+      }
+    ],
+    "pronuncia": "Fale 'nu dê-vri-õn ê-sè-iê dê-dê'. Em 'ceux qui ont', fale 'sö ki-õn', ligando suavemente. Passe por 'mu-ẽn dê shãn-s' e feche com 'kê nu'.\nLeia: Nu dê-vri-õn ê-sè-iê dê-dê sö ki-õn mu-ẽn dê shãn-s kê nu."
   },
   "898": {
-    "explanation": "'Je pense que le temps est' significa 'eu acho que o tempo é'. A expressão superlativa 'la chose la plus précieuse' significa 'a coisa mais preciosa' (com précieuse no feminino concordando com chose). A expressão 'que nous ayons' significa 'que temos em nossas mãos / que possuímos'.",
+    "explanation": "A frase começa com 'Je pense que' (acho que). Em seguida temos 'le temps' (o tempo) e 'est la chose la plus précieuse' (é a coisa mais preciosa/valiosa). Para fechar 'que temos', assim como na primeira frase, o francês usa a forma 'que nous ayons'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "pense", "meaning": "penso / acho (do verbo penser)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "le", "meaning": "o" },
-      { "word": "temps", "meaning": "tempo" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "chose", "meaning": "coisa" },
-      { "word": "la", "meaning": "a" },
-      { "word": "plus", "meaning": "mais (la plus = a mais)" },
-      { "word": "précieuse", "meaning": "preciosa / valiosa (no feminino)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "nous", "meaning": "nós" },
-      { "word": "ayons", "meaning": "temos / tenhamos (forma do verbo avoir)" }
-    ]
+      {
+        "word": "Je pense que",
+        "meaning": "Acho que — Je: eu; pense: penso; que: que."
+      },
+      {
+        "word": "le temps est",
+        "meaning": "O tempo é — le: o; temps: tempo; est: é."
+      },
+      {
+        "word": "la chose la plus précieuse",
+        "meaning": "A coisa mais preciosa / valiosa — la chose: a coisa; la plus: a mais; précieuse: preciosa."
+      },
+      {
+        "word": "que nous ayons",
+        "meaning": "Que temos / Que tenhamos — que: que; nous: nós; ayons: tenhamos."
+      }
+    ],
+    "pronuncia": "Fale 'jû pãn-sê kê lê tãn-zê', ligando o 's' de 'temps' em 'est' com som de 'z'. Diga 'la shôz la plü prê-si-öz', fazendo bico no 'plü' e pronunciando o 'öz' suave. Termine com 'kê nu-za-iõn'.\nLeia: Jû pãn-sê kê lê tãn-zê la shôz la plü prê-si-öz kê nu-za-iõn."
   },
   "899": {
-    "explanation": "Pergunta sobre o impacto digital: 'Pensez-vous' é 'o senhor acha / você pensa?'. 'Qu'Internet a amélioré' significa 'que a internet melhorou' (com 'qu'' antes da vogal e o passado de améliorer com avoir). 'Nos vies' significa 'nossas vidas'.",
+    "explanation": "Para perguntar 'você acha que...?', usa-se 'Pensez-vous que...'. A palavra 'Internet' dispensa artigo em francês no uso comum. O verbo 'tornou melhores / melhorou' é expresso diretamente pela forma no passado 'a amélioré'. E 'nossas vidas' vira 'nos vies'.",
     "breakdown": [
-      { "word": "Pensez", "meaning": "Pensa / Acha (do verbo penser com vous)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
-      { "word": "qu'", "meaning": "que (encurtado antes de vogal)" },
-      { "word": "Internet", "meaning": "internet" },
-      { "word": "a", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "amélioré", "meaning": "melhorado / aprimorou (do verbo améliorer)" },
-      { "word": "nos", "meaning": "nossas" },
-      { "word": "vies", "meaning": "vidas" }
-    ]
+      {
+        "word": "Pensez-vous qu'",
+        "meaning": "Você acha que / O senhor pensa que — Pensez: pensa; vous: você; qu': que."
+      },
+      {
+        "word": "Internet",
+        "meaning": "A internet — nome próprio para a rede."
+      },
+      {
+        "word": "a amélioré",
+        "meaning": "Melhorou / Tornou melhor — a: tem; amélioré: melhorado."
+      },
+      {
+        "word": "nos vies",
+        "meaning": "Nossas vidas — nos: nossas; vies: vidas."
+      }
+    ],
+    "pronuncia": "Fale 'pãn-sê vu kẽn-tèr-nèt', ligando o 'que' diretamente em 'Internet'. Em 'a amélioré', diga 'a a-mê-li-ô-rê'. Termine com 'nô vi', sem pronunciar o 's' final de 'vies'.\nLeia: Pãn-sê vu kẽn-tèr-nèt a a-mê-li-ô-rê nô vi ?"
   },
   "900": {
-    "explanation": "Frase de ouro que conclui 100% do Nível B1: 'Le monde serait' significa 'o mundo seria' (forma do verbo être). 'Un meilleur endroit' significa 'um lugar melhor'. A palavra 'si' significa 'se'. 'Tout le monde était' significa 'todo mundo fosse / era'. A expressão 'plus gentil' significa 'mais gentil / mais amável'.",
+    "explanation": "A frase inicia com 'Le monde serait' (o mundo seria). A expressão 'um lugar melhor' é 'un meilleur endroit', trazendo o adjetivo 'meilleur' antes da palavra 'endroit' (lugar/local). A condição 'se todos fossem' vira 'si tout le monde était' (se todo mundo era/fosse). E conclui com 'plus gentil' (mais gentil/amável).",
     "breakdown": [
-      { "word": "Le", "meaning": "O" },
-      { "word": "monde", "meaning": "mundo" },
-      { "word": "serait", "meaning": "seria (forma do verbo être)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "meilleur", "meaning": "melhor" },
-      { "word": "endroit", "meaning": "lugar / local" },
-      { "word": "si", "meaning": "se" },
-      { "word": "tout", "meaning": "todo" },
-      { "word": "le", "meaning": "o" },
-      { "word": "monde", "meaning": "mundo (tout le monde = todos / todo mundo)" },
-      { "word": "était", "meaning": "fosse / era (passado do verbo être)" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "gentil", "meaning": "gentil / amável" }
-    ]
+      {
+        "word": "Le monde serait",
+        "meaning": "O mundo seria — Le: o; monde: mundo; serait: seria."
+      },
+      {
+        "word": "un meilleur endroit",
+        "meaning": "Um melhor lugar / Um lugar melhor — un: um; meilleur: melhor; endroit: lugar."
+      },
+      {
+        "word": "si tout le monde était",
+        "meaning": "Se todos fossem / Se todo mundo fosse — si: se; tout le monde: todo mundo; était: era/fosse."
+      },
+      {
+        "word": "plus gentil",
+        "meaning": "Mais gentil — plus: mais; gentil: gentil."
+      }
+    ],
+    "pronuncia": "Fale 'Lê mõnd sê-rè'. Junte 'un meilleur endroit' em 'ũ mè-i-ö-rãn-dru-a'. Em 'si tout le monde était', fale 'si tu lê mõn-dê-tè'. Termine com 'plü jãn-ti', sem pronunciar o 'l' final de 'gentil'.\nLeia: Lê mõnd sê-rè ũ mè-i-ö-rãn-dru-a si tu lê mõn-dê-tè plü jãn-ti."
   }
 }

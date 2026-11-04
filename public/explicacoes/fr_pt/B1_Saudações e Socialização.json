@@ -1,451 +1,634 @@
 {
   "601": {
-    "explanation": "Frase calorosa e muito elegante para reencontros. 'C'est un plaisir de' significa 'é um prazer'. O pronome 'vous' (você / o senhor) vem antes do verbo rever ('revoir'). A expressão 'après tout ce temps' significa literalmente 'depois de todo esse tempo'.",
+    "explanation": "Para dizer que é um prazer ver alguém novamente, o francês usa 'C'est un plaisir' (É um prazer) seguido de 'de vous revoir', onde 'revoir' significa literalmente 're-ver'. A expressão 'après tout ce temps' é idêntica ao nosso 'depois de todo esse tempo', mantendo a mesma lógica de ordem das palavras que usamos no português.",
     "breakdown": [
-      { "word": "C'", "meaning": "Isto / É (encurtado antes de verbo)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "plaisir", "meaning": "prazer" },
-      { "word": "de", "meaning": "de" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você (pronome formal de tratamento)" },
-      { "word": "revoir", "meaning": "rever / ver novamente" },
-      { "word": "après", "meaning": "depois de / após" },
-      { "word": "tout", "meaning": "todo" },
-      { "word": "ce", "meaning": "este / esse" },
-      { "word": "temps", "meaning": "tempo" }
-    ]
+      {
+        "word": "C'est un plaisir",
+        "meaning": "É um prazer — C'est: é; un: um; plaisir: prazer."
+      },
+      {
+        "word": "de vous revoir",
+        "meaning": "de ver você de novo — de: de; vous: você/vocês; revoir: ver novamente."
+      },
+      {
+        "word": "après",
+        "meaning": "depois / após."
+      },
+      {
+        "word": "tout ce temps",
+        "meaning": "todo esse tempo — tout: todo; ce: esse; temps: tempo."
+      }
+    ],
+    "pronuncia": "Comece com 'C'est un' juntando o som do 't' no 'un' como se fosse uma palavra só ('sé-tã'), com o 'un' saindo pelo nariz. Em 'plaisir', o 's' tem som de 'z' e o 'r' final é arranhado suavemente na garganta ('plé-zír'). Em 'revoir', faça o som de 'v' e termine com o 'r' arranhado ('rê-vo-ár'). Em 'après', o 's' final é mudo ('a-pré'). Em 'tout ce temps', o 't' de 'tout' é mudo, o 'ce' é curto e 'temps' é um som nasal onde a boca não fecha no final ('tu sê tã').\nLeia: Sé-tã plé-zír dê vu rê-vo-ár a-pré tu sê tã."
   },
   "602": {
-    "explanation": "Ótima pergunta para conversar sobre a rotina profissional de alguém de forma educada: 'Comment se passe' significa 'como vai' ou 'como está indo'. 'Votre travail' é seu trabalho, e a expressão 'ces jours-ci' significa 'hoje em dia / ultimamente'.",
+    "explanation": "Nesta pergunta sobre o trabalho, os franceses usam 'Comment se passe', que significa 'Como se passa' ou 'Como está indo'. O termo 'votre travail' é 'seu trabalho' de forma respeitosa, e a expressão 'ces jours-ci' é o jeito deles de dizer 'esses dias aqui', o que equivale ao nosso 'ultimamente'.",
     "breakdown": [
-      { "word": "Comment", "meaning": "Como" },
-      { "word": "se", "meaning": "se" },
-      { "word": "passe", "meaning": "passa / vai / desenrola-se (do verbo se passer)" },
-      { "word": "votre", "meaning": "seu / sua (tratamento formal com vous)" },
-      { "word": "travail", "meaning": "trabalho" },
-      { "word": "ces", "meaning": "estes" },
-      { "word": "jours", "meaning": "dias" },
-      { "word": "-ci", "meaning": "aqui (ces jours-ci = ultimamente / hoje em dia)" }
-    ]
+      {
+        "word": "Comment",
+        "meaning": "Como."
+      },
+      {
+        "word": "se passe",
+        "meaning": "se passa / está indo."
+      },
+      {
+        "word": "votre travail",
+        "meaning": "seu trabalho — votre: seu/sua (formal); travail: trabalho."
+      },
+      {
+        "word": "ces jours-ci",
+        "meaning": "ultimamente / estes dias — ces: estes; jours: dias; ci: aqui."
+      }
+    ],
+    "pronuncia": "Em 'Comment', o 't' final morre e o 'en' sai pelo nariz ('kô-mã'). Em 'se passe', o 'e' final é mudo, parando no som do 's' ('sê páss'). Em 'votre', o 'r' é arranhado e o 'e' quase não aparece ('vótr'). Em 'travail', o final tem som de 'ai' como em 'pai' ('tra-vái'). Em 'ces jours-ci', o 's' de 'ces' e 'jours' é mudo, e o 'j' é vibrado como em 'janela' ('sê jur-si').\nLeia: Kô-mã sê páss vótr tra-vái sê jur-si ?"
   },
   "603": {
-    "explanation": "Um jeito suave e refinado de convidar alguém sem soar insistente: 'Je me demandais si' significa 'eu estava me perguntando se'. 'Vous aimeriez' significa 'o senhor gostaria' ou 'vocês gostariam'. O verbo jantar é 'dîner', e 'avec nous' significa 'conosco / com a gente'.",
+    "explanation": "A frase começa com 'Je me demandais', que literalmente é 'Eu me perguntava', mas que usamos para dizer 'Eu estava pensando'. O 'si vous aimeriez' traz o 'gostaria' de forma polida, e 'dîner avec nous' é simplesmente 'jantar conosco', seguindo a mesma ordem do português.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "me", "meaning": "me" },
-      { "word": "demandais", "meaning": "perguntava (do verbo se demander)" },
-      { "word": "si", "meaning": "se" },
-      { "word": "vous", "meaning": "o senhor / a senhora / vocês" },
-      { "word": "aimeriez", "meaning": "gostaria / gostariam (forma suave do verbo aimer)" },
-      { "word": "dîner", "meaning": "jantar" },
-      { "word": "avec", "meaning": "com" },
-      { "word": "nous", "meaning": "nós / conosco" }
-    ]
+      {
+        "word": "Je me demandais",
+        "meaning": "Eu estava pensando / Eu me perguntava."
+      },
+      {
+        "word": "si vous aimeriez",
+        "meaning": "se você gostaria — si: se; aimeriez: gostaria."
+      },
+      {
+        "word": "dîner",
+        "meaning": "jantar."
+      },
+      {
+        "word": "avec nous",
+        "meaning": "conosco / com a gente — avec: com; nous: nós/nos."
+      }
+    ],
+    "pronuncia": "Em 'Je me demandais', os 'e' são curtos e o final 'ais' tem som de 'é' ('jê mê dê-mãn-dé'). Em 'si vous aimeriez', junte o 's' de 'vous' com o 'a' de 'aimeriez' fazendo som de 'z' ('si vu-zê-mê-ri-ê'). Em 'dîner', o 'r' final é mudo ('di-nê'). Em 'avec nous', o 'c' de 'avec' aparece bem, mas o 's' de 'nous' é totalmente mudo ('a-vék nu').\nLeia: Jê mê dê-mãn-dé si vu-zê-mê-ri-ê di-nê a-vék nu."
   },
   "604": {
-    "explanation": "Abordagem super educada para interromper alguém em uma reunião ou evento: 'Désolé de vous interrompre' é 'desculpe interrompê-lo'. 'Mais' é mas. 'Puis-je' é 'posso eu'. Em francês, fazer uma pergunta é 'poser une question' (literalmente pousar/colocar uma questão), e 'rapide' significa rápida.",
+    "explanation": "Para pedir licença, usa-se 'Désolé de' (Desculpe por) seguido da ação. O 'puis-je' é uma forma muito elegante de dizer 'posso eu', invertendo a ordem para soar mais educado. 'Poser une question' é a expressão padrão, como se você estivesse 'colocando' uma pergunta na mesa.",
     "breakdown": [
-      { "word": "Désolé", "meaning": "Desculpe / Sinto muito" },
-      { "word": "de", "meaning": "de / por" },
-      { "word": "vous", "meaning": "você / o senhor" },
-      { "word": "interrompre", "meaning": "interromper" },
-      { "word": "mais", "meaning": "mas" },
-      { "word": "puis", "meaning": "posso (forma polida do verbo pouvoir)" },
-      { "word": "-je", "meaning": "eu (ligado ao verbo)" },
-      { "word": "poser", "meaning": "fazer / colocar (poser une question = fazer uma pergunta)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "question", "meaning": "pergunta" },
-      { "word": "rapide", "meaning": "rápida" }
-    ]
+      {
+        "word": "Désolé de",
+        "meaning": "Desculpe por / Sinto muito por."
+      },
+      {
+        "word": "vous interrompre",
+        "meaning": "interromper você."
+      },
+      {
+        "word": "mais puis-je",
+        "meaning": "mas posso eu — mais: mas; puis-je: posso eu (formal)."
+      },
+      {
+        "word": "poser une question",
+        "meaning": "fazer uma pergunta — poser: colocar/fazer; une: uma; question: pergunta."
+      },
+      {
+        "word": "rapide",
+        "meaning": "rápida."
+      }
+    ],
+    "pronuncia": "Em 'Désolé', o som é de 'ê' limpo. Em 'vous interrompre', junte o 's' com o 'i' fazendo som de 'z' ('vu-zẽn-tê-rõm-pr'), arranhando o 'r' no final. Em 'puis-je', o 'ui' é rápido e o 'j' é como em 'jato' ('pui-jê'). Em 'question', o 'ti' tem som de 'si' e o final é nasal ('kés-ti-õn'). Em 'rapide', o 'r' é arranhado e o 'e' final morre ('ra-píd').\nLeia: Dé-zô-lé dê vu-zẽn-tê-rõm-pr mé pui-jê pô-zê ün kés-ti-õn ra-píd ?"
   },
   "605": {
-    "explanation": "Expressão muito expressiva para quem não se fala há muito tempo: 'Cela fait une éternité que' significa literalmente 'faz uma eternidade que' (o nosso 'faz séculos que'). Em seguida vem o passado negativo 'nous ne nous sommes pas parlé' (nós não nos falamos).",
+    "explanation": "A expressão 'Cela fait une éternité' é o equivalente ao nosso 'Faz uma eternidade' ou 'Faz séculos'. O francês usa a negação dupla 'ne... pas' em volta da ação, e o 'nous ne nous sommes pas parlé' mostra que a ação de falar foi mútua (nós não nos falamos).",
     "breakdown": [
-      { "word": "Cela", "meaning": "Isto / Isso" },
-      { "word": "fait", "meaning": "faz (do verbo faire)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "éternité", "meaning": "eternidade (cela fait une éternité = faz séculos)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "nous", "meaning": "nós" },
-      { "word": "ne", "meaning": "primeira parte do 'não'" },
-      { "word": "nous", "meaning": "nos (indica ação mútua entre nós)" },
-      { "word": "sommes", "meaning": "fizemos a ação (auxiliar être usado em verbos reflexivos no passado)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "parlé", "meaning": "falado / conversado (do verbo se parler)" }
-    ]
+      {
+        "word": "Cela fait",
+        "meaning": "Faz / Isso faz."
+      },
+      {
+        "word": "une éternité",
+        "meaning": "uma eternidade / séculos."
+      },
+      {
+        "word": "que nous",
+        "meaning": "que nós."
+      },
+      {
+        "word": "ne nous sommes pas parlé",
+        "meaning": "não nos falamos — ne/pas: marca de negação; sommes parlé: falamos."
+      }
+    ],
+    "pronuncia": "Em 'Cela fait', o 't' é mudo ('sê-la fé'). Em 'éternité', o 'r' é arranhado no meio da palavra ('ê-tér-ni-té'). Em 'nous ne nous sommes pas parlé', todos os 's' finais são mudos, exceto se você quiser juntar 'sommes' com 'pas', mas geralmente morrem. O 'é' de 'parlé' é bem fechado ('nu nê nu sõm pá par-lé').\nLeia: Sê-la fé ün ê-tér-ni-té kê nu nê nu sõm pá par-lé."
   },
   "606": {
-    "explanation": "'J'aimerais' significa 'eu gostaria' (modo gentil). O pronome 'vous' (a você / ao senhor) vem colado antes do verbo apresentar ('présenter'). 'Mon collègue' é meu colega. 'Qui travaille' significa 'que trabalha', e 'à Londres' é 'em Londres'.",
+    "explanation": "Para apresentar alguém, o francês diz 'J'aimerais vous présenter' (Eu gostaria de lhe apresentar). A estrutura 'qui travaille à Londres' é idêntica ao português 'que trabalha em Londres', facilitando muito a compreensão direta.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
-      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
-      { "word": "vous", "meaning": "a você / ao senhor / lhes" },
-      { "word": "présenter", "meaning": "apresentar" },
-      { "word": "mon", "meaning": "meu" },
-      { "word": "collègue", "meaning": "colega" },
-      { "word": "qui", "meaning": "que (pronome relativo)" },
-      { "word": "travaille", "meaning": "trabalha (do verbo travailler)" },
-      { "word": "à", "meaning": "em" },
-      { "word": "Londres", "meaning": "Londres" }
-    ]
+      {
+        "word": "J'aimerais",
+        "meaning": "Eu gostaria."
+      },
+      {
+        "word": "vous présenter",
+        "meaning": "apresentar a você."
+      },
+      {
+        "word": "mon collègue",
+        "meaning": "meu colega."
+      },
+      {
+        "word": "qui travaille",
+        "meaning": "que trabalha."
+      },
+      {
+        "word": "à Londres",
+        "meaning": "em Londres."
+      }
+    ],
+    "pronuncia": "Em 'J'aimerais', o 'j' é vibrado e o final soa como 'é' ('jém-ré'). Em 'présenter', o 'r' final é mudo e o 'en' é nasal ('pré-zãn-té'). Em 'collègue', o 'g' é seco e o 'e' final morre ('kô-lég'). Em 'travaille', o final soa como 'ai' ('tra-vái'). Em 'Londres', o 'on' é nasal e o 'r' final é arranhado sem soltar vogal depois ('lõn-dr').\nLeia: Jém-ré vu pré-zãn-té mõn kô-lég ki tra-vái a lõn-dr."
   },
   "607": {
-    "explanation": "Agradecimento elegante ao se despedir do anfitrião: 'Merci pour' é 'obrigado por / agradeço por'. 'Votre hospitalité' é sua hospitalidade. A palavra 'pendant' significa 'durante' e 'mon séjour' significa 'minha estadia'.",
+    "explanation": "Esta é uma frase de agradecimento comum. 'Merci pour' (Obrigado por) é seguido pelo motivo. 'Pendant mon séjour' usa a palavra 'pendant' para 'durante' e 'séjour' para 'estadia' ou 'permanência', um termo muito usado em viagens.",
     "breakdown": [
-      { "word": "Merci", "meaning": "Obrigado / Agradeço" },
-      { "word": "pour", "meaning": "por / pela" },
-      { "word": "votre", "meaning": "sua / de vocês" },
-      { "word": "hospitalité", "meaning": "hospitalidade" },
-      { "word": "pendant", "meaning": "durante" },
-      { "word": "mon", "meaning": "minha / meu" },
-      { "word": "séjour", "meaning": "estadia / estada" }
-    ]
+      {
+        "word": "Merci pour",
+        "meaning": "Obrigado por."
+      },
+      {
+        "word": "votre hospitalité",
+        "meaning": "sua hospitalidade."
+      },
+      {
+        "word": "pendant",
+        "meaning": "durante."
+      },
+      {
+        "word": "mon séjour",
+        "meaning": "minha estadia / meu período de permanência."
+      }
+    ],
+    "pronuncia": "Em 'Merci', o 'r' é arranhado ('mér-si'). Em 'pour', o 'r' final aparece suavemente ('pur'). Em 'hospitalité', o 'h' é mudo e o 'r' de 'votre' junta com o 'o' ('vó-trôs-pi-ta-li-té'). Em 'pendant', os dois 'an' são nasais e o 't' final é mudo ('pãn-dãn'). Em 'séjour', o 'j' é como em 'jardim' e o 'r' final é arranhado ('sê-júr').\nLeia: Mér-si pur vó-trôs-pi-ta-li-té pãn-dãn mõn sê-júr."
   },
   "608": {
-    "explanation": "Frase diplomática para fazer uma pergunta pessoal sobre compras: 'J'espère que cela ne vous dérange pas' significa 'espero que isso não o incomode'. 'Si je vous demande' é 'se eu lhe perguntar'. 'Où vous avez acheté ça' significa 'onde você comprou isso'.",
+    "explanation": "Aqui usamos 'J'espère que' (Espero que) e uma forma educada de dizer 'não se importe': 'cela ne vous dérange pas'. A pergunta 'onde você comprou isso' vira 'où vous avez acheté ça', mantendo a lógica de ação passada com o ajudante 'avez'.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "espère", "meaning": "espero (do verbo espérer)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "cela", "meaning": "isto / isso" },
-      { "word": "ne", "meaning": "primeira parte do 'não'" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "dérange", "meaning": "incomoda / atrapalha (do verbo déranger)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "si", "meaning": "se" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "vous", "meaning": "lhe / a você" },
-      { "word": "demande", "meaning": "pergunto (do verbo demander)" },
-      { "word": "où", "meaning": "onde" },
-      { "word": "vous", "meaning": "você / o senhor" },
-      { "word": "avez", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "acheté", "meaning": "comprado / comprou (do verbo acheter)" },
-      { "word": "ça", "meaning": "isso" }
-    ]
+      {
+        "word": "J'espère que",
+        "meaning": "Espero que."
+      },
+      {
+        "word": "cela ne vous dérange pas",
+        "meaning": "isso não te incomode / você não se importe."
+      },
+      {
+        "word": "si je vous demande",
+        "meaning": "se eu te perguntar."
+      },
+      {
+        "word": "où vous avez acheté ça",
+        "meaning": "onde você comprou isso — acheté: comprado; ça: isso."
+      }
+    ],
+    "pronuncia": "Em 'J'espère', o 'r' é arranhado e o 'e' final morre ('jés-pér'). Em 'dérange', o 'en' é nasal e o 'g' tem som de 'j' suave ('dê-rãnj'). Em 'avez acheté', junte o 'z' com o 'a' fazendo som de 'z' ('vu-za-vê-za-chê-té'). O 'ça' tem som de 'sa' normal. O 'où' tem som de 'u' puro.\nLeia: Jés-pér kê sê-la nê vu dê-rãnj pá si jê vu dê-mãnd u vu-za-vê-za-chê-té sa."
   },
   "609": {
-    "explanation": "A expressão 'avoir hâte de' significa 'mal poder esperar' ou 'estar ansioso por algo bom'. 'J'ai vraiment hâte de' é 'estou realmente ansioso por'. 'Notre réunion' é nossa reunião, e 'la semaine prochaine' é a próxima semana.",
+    "explanation": "Em francês, para dizer que está ansioso, usa-se a expressão 'avec impatience' (com impaciência) no final da frase. O verbo 'j'attends' significa 'eu espero', mas nesse contexto de reunião próxima, transmite a ideia de expectativa positiva.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
-      { "word": "vraiment", "meaning": "realmente / de verdade" },
-      { "word": "hâte", "meaning": "pressa (avoir hâte de = estar ansioso por / mal poder esperar)" },
-      { "word": "de", "meaning": "de / por" },
-      { "word": "notre", "meaning": "nossa" },
-      { "word": "réunion", "meaning": "reunião" },
-      { "word": "la", "meaning": "a" },
-      { "word": "semaine", "meaning": "semana" },
-      { "word": "prochaine", "meaning": "próxima (no feminino)" }
-    ]
+      {
+        "word": "J'attends",
+        "meaning": "Eu espero / Estou aguardando."
+      },
+      {
+        "word": "notre réunion",
+        "meaning": "nossa reunião."
+      },
+      {
+        "word": "de la semaine prochaine",
+        "meaning": "da semana que vem — semaine: semana; prochaine: próxima."
+      },
+      {
+        "word": "avec impatience",
+        "meaning": "com ansiedade / ansioso — literalmente: 'com impaciência'."
+      }
+    ],
+    "pronuncia": "Em 'J'attends', o 'en' é nasal e o 'ds' final é mudo ('ja-tã'). Em 'réunion', o 'r' é arranhado e o final é nasal ('rê-ü-ni-õn'). Em 'semaine', o 'ai' soa como 'é' e o 'e' final morre ('sê-mén'). Em 'prochaine', o 'ch' tem som de 'ch' de 'chave' ('prô-chén'). Em 'impatience', o 'im' e o 'en' são nasais e o 't' tem som de 's' ('ẽn-pa-si-ãns').\nLeia: Ja-tã nó-trê rê-ü-ni-õn dê la sê-mén prô-chén a-vék ẽn-pa-si-ãns."
   },
   "610": {
-    "explanation": "Recado por telefone ou recepção: 'Pourriez-vous' significa 'o senhor poderia?'. O pronome 'lui' significa 'a ele / a ela' e vem antes do verbo dizer ('dire'). 'Que j'ai appelé' significa 'que eu liguei' (no passado com avoir). Fecha com o formal 's'il vous plaît'.",
+    "explanation": "Esta é uma forma muito educada de pedir um favor. 'Pourriez-vous' é 'Você poderia'. O 'lui dire' (dizer a ele/ela) coloca o 'lui' antes do verbo. 'J'ai appelé' é o nosso 'eu liguei', usando o ajudante 'ai' para marcar que a ligação já aconteceu.",
     "breakdown": [
-      { "word": "Pourriez", "meaning": "Poderia (forma polida do verbo pouvoir)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
-      { "word": "lui", "meaning": "lhe / a ele / a ela" },
-      { "word": "dire", "meaning": "dizer" },
-      { "word": "que", "meaning": "que" },
-      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "appelé", "meaning": "ligado / telefonei (do verbo appeler)" },
-      { "word": "s'il vous plaît", "meaning": "por favor (formal e educado)" }
-    ]
+      {
+        "word": "Pourriez-vous",
+        "meaning": "Você poderia."
+      },
+      {
+        "word": "lui dire",
+        "meaning": "dizer a ele / dizer a ela."
+      },
+      {
+        "word": "que j'ai appelé",
+        "meaning": "que eu liguei."
+      },
+      {
+        "word": "s'il vous plaît",
+        "meaning": "por favor."
+      }
+    ],
+    "pronuncia": "Em 'Pourriez-vous', o 'ou' tem som de 'u' e o 's' final é mudo ('pu-ri-ê-vu'). Em 'lui dire', o 'ui' é rápido e o 'r' de 'dire' é arranhado ('lüi dír'). Em 'j'ai appelé', junte o 'j' com o 'ai' ('jé') e fale o 'appelé' com som de 'ê' no final ('a-pê-lé'). O 's'il vous plaît' soa como 'sil-vu-plé'.\nLeia: Pu-ri-ê-vu lüi dír kê jé a-pê-lé sil-vu-plé ?"
   },
   "611": {
-    "explanation": "'Je serais ravi de' significa 'eu ficaria encantado / muito feliz em'. O pronome 'vous' (você / o senhor) vem antes do verbo ajudar ('aider'). A preposição 'pour' significa 'com / para', e 'votre projet' é seu projeto.",
+    "explanation": "Para dizer que ficaria feliz em ajudar, o francês usa 'Je serais ravi de' (Eu estaria encantado de). A preposição 'pour' é usada aqui para indicar o objetivo da ajuda: 'para o seu projeto'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "serais", "meaning": "seria / ficaria (forma suave do verbo être)" },
-      { "word": "ravi", "meaning": "encantado / muito contente / feliz" },
-      { "word": "de", "meaning": "de / em" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "aider", "meaning": "ajudar" },
-      { "word": "pour", "meaning": "para / com" },
-      { "word": "votre", "meaning": "seu / de vocês" },
-      { "word": "projet", "meaning": "projeto" }
-    ]
+      {
+        "word": "Je serais ravi de",
+        "meaning": "Eu ficaria feliz em / Eu ficaria encantado de."
+      },
+      {
+        "word": "vous aider",
+        "meaning": "ajudar você."
+      },
+      {
+        "word": "pour votre projet",
+        "meaning": "com seu projeto / para seu projeto."
+      }
+    ],
+    "pronuncia": "Em 'Je serais', o 'j' é vibrado e o final soa como 'é' ('jê sê-ré'). Em 'ravi', o 'r' é arranhado ('ra-vi'). Em 'aider', o 'r' final é mudo ('ê-dé'). Em 'votre projet', o 'r' de 'votre' é seco e o 't' final de 'projet' é mudo, terminando em som de 'é' ('vótr prô-jé').\nLeia: Jê sê-ré ra-vi dê vu-zê-dé pur vótr prô-jé."
   },
   "612": {
-    "explanation": "Agradecimento refinado por felicitações: 'C'était très gentil de votre part' significa 'foi muita gentileza da sua parte'. O verbo lembrar-se é se souvenir, exigindo 'de vous souvenir de'. 'Mon anniversaire' é meu aniversário.",
+    "explanation": "A estrutura 'C'était très gentil de votre part' é a forma padrão de dizer 'Foi muita gentileza da sua parte'. O verbo 'se souvenir de' é o jeito francês de dizer 'lembrar-se de', e 'mon anniversaire' é o termo para aniversário de nascimento.",
     "breakdown": [
-      { "word": "C'", "meaning": "Isto / Foi (encurtado antes de vogal)" },
-      { "word": "était", "meaning": "era / foi (passado do verbo être)" },
-      { "word": "très", "meaning": "muito" },
-      { "word": "gentil", "meaning": "gentil / atencioso" },
-      { "word": "de", "meaning": "de" },
-      { "word": "votre", "meaning": "sua" },
-      { "word": "part", "meaning": "parte (de votre part = da sua parte)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "vous", "meaning": "se (ação reflexiva com vous)" },
-      { "word": "souvenir", "meaning": "lembrar (se souvenir = lembrar-se)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "mon", "meaning": "meu" },
-      { "word": "anniversaire", "meaning": "aniversário" }
-    ]
+      {
+        "word": "C'était très gentil",
+        "meaning": "Foi muito gentil — C'était: era/foi; très: muito; gentil: gentil."
+      },
+      {
+        "word": "de votre part",
+        "meaning": "da sua parte."
+      },
+      {
+        "word": "de vous souvenir de",
+        "meaning": "de se lembrar de."
+      },
+      {
+        "word": "mon anniversaire",
+        "meaning": "meu aniversário."
+      }
+    ],
+    "pronuncia": "Em 'C'était', o 't' final é mudo ('sé-té'). Em 'très gentil', o 's' é mudo e o 'l' de 'gentil' também não aparece ('tré jãn-ti'). Em 'part', o 'r' é arranhado e o 't' morre ('pár'). Em 'souvenir', o 'r' final aparece suave ('su-vê-nír'). Em 'anniversaire', junte o 'n' de 'mon' com o 'a' ('mõ-na-ni-vêr-sér').\nLeia: Sé-té tré jãn-ti dê vó-trê pár dê vu su-vê-nír dê mõ-na-ni-vêr-sér."
   },
   "613": {
-    "explanation": "Pergunta para saber das novidades de alguém: 'Qu'avez-vous fait' é 'o que você tem feito?'. 'Depuis la dernière fois' significa 'desde a última vez'. 'Que je vous ai vu' significa 'que eu o vi' (com 'vous' antes do verbo voir no passado).",
+    "explanation": "Esta pergunta usa a inversão 'avez-vous' para ser formal. 'Depuis' significa 'desde' e 'la dernière fois' é 'a última vez'. O final 'que je vous ai vu' (que eu vi você) usa o ajudante 'ai' para indicar que o encontro já ocorreu.",
     "breakdown": [
-      { "word": "Qu'", "meaning": "O que (encurtado antes de som de vogal)" },
-      { "word": "avez", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
-      { "word": "fait", "meaning": "feito / fez (do verbo faire)" },
-      { "word": "depuis", "meaning": "desde" },
-      { "word": "la", "meaning": "a" },
-      { "word": "dernière", "meaning": "última (no feminino)" },
-      { "word": "fois", "meaning": "vez" },
-      { "word": "que", "meaning": "que" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "vu", "meaning": "visto / vi (do verbo voir)" }
-    ]
+      {
+        "word": "Qu'avez-vous fait",
+        "meaning": "O que você fez — Qu': o que; avez-vous: você tem/fez; fait: feito."
+      },
+      {
+        "word": "depuis",
+        "meaning": "desde."
+      },
+      {
+        "word": "la dernière fois",
+        "meaning": "a última vez."
+      },
+      {
+        "word": "que je vous ai vu",
+        "meaning": "que eu te vi."
+      }
+    ],
+    "pronuncia": "Em 'Qu'avez-vous', junte o 'z' com o 'v' ('ka-vê-vu'). Em 'fait', o 't' é mudo ('fé'). Em 'depuis', o 's' final é mudo ('dê-püi'). Em 'dernière fois', o 'r' é arranhado e o 's' de 'fois' é mudo ('dér-ni-ér fo-á'). Em 'que je vous ai vu', junte o 's' de 'vous' com o 'ai' fazendo som de 'z' ('kê jê vu-zê vü').\nLeia: Ka-vê-vu fé dê-püi la dér-ni-ér fo-á kê jê vu-zê vü ?"
   },
   "614": {
-    "explanation": "Frase de alto nível para dizer que não entendeu com perfeição: 'Je crains de ne pas avoir' significa 'receio não ter'. A expressão 'tout à fait' significa 'completamente / de todo'. O verbo saisir significa captar/entender. 'Ce que vous venez de dire' significa 'aquilo que o senhor acabou de dizer'.",
+    "explanation": "O verbo 'craindre' (recear) é usado aqui como 'Je crains de' (Receio). A expressão 'tout à fait saisi' significa 'totalmente compreendido'. O final 'vous venez de dire' usa o verbo 'venir' (vir) para indicar algo que acabou de acontecer.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "crains", "meaning": "receio / temo (do verbo craindre)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "ne", "meaning": "primeira parte do 'não'" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "avoir", "meaning": "ter (auxiliar de ação passada)" },
-      { "word": "tout", "meaning": "todo / totalmente" },
-      { "word": "à", "meaning": "a" },
-      { "word": "fait", "meaning": "feito (tout à fait = completamente / exatamente)" },
-      { "word": "saisi", "meaning": "captado / compreendido (do verbo saisir)" },
-      { "word": "ce", "meaning": "aquilo / o" },
-      { "word": "que", "meaning": "que" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "venez", "meaning": "acabou (do verbo venir usado para ação recente)" },
-      { "word": "de", "meaning": "de (venir de = acabar de)" },
-      { "word": "dire", "meaning": "dizer" }
-    ]
+      {
+        "word": "Je crains de",
+        "meaning": "Eu receio / Tenho medo de."
+      },
+      {
+        "word": "ne pas avoir",
+        "meaning": "não ter."
+      },
+      {
+        "word": "tout à fait saisi",
+        "meaning": "entendido totalmente / captado bem."
+      },
+      {
+        "word": "ce que vous venez de dire",
+        "meaning": "o que você acabou de dizer."
+      }
+    ],
+    "pronuncia": "Em 'Je crains', o 'ai' com 'n' é um som nasal aberto ('jê krẽn'). Em 'tout à fait', junte o 't' com o 'à' e o outro 't' com o 'f' ('tu-ta-fé'). Em 'saisi', o 's' do meio tem som de 'z' ('sé-zi'). Em 'venez de dire', o 'z' é mudo e o 'r' de 'dire' é arranhado ('vê-nê dê dír').\nLeia: Jê krẽn dê nê pá-za-vo-ár tu-ta-fé sé-zi sê kê vu vê-nê dê dír."
   },
   "615": {
-    "explanation": "Pergunta muito polida para pedir orientação em prédios: 'Savez-vous' é 'o senhor sabe?'. A expressão 'par hasard' significa 'por acaso'. 'Où se trouve' significa 'onde fica localizada'. 'La salle de conférence' é a sala de conferências.",
+    "explanation": "Para perguntar 'por acaso', o francês usa 'par hasard'. A estrutura 'où se trouve' significa 'onde se encontra' ou 'onde fica'. 'Salle de conférence' é a tradução direta para sala de conferência.",
     "breakdown": [
-      { "word": "Savez", "meaning": "Sabe / Sabem (do verbo savoir com vous)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para pergunta)" },
-      { "word": "par", "meaning": "por" },
-      { "word": "hasard", "meaning": "acaso (par hasard = por acaso)" },
-      { "word": "où", "meaning": "onde" },
-      { "word": "se", "meaning": "se" },
-      { "word": "trouve", "meaning": "encontra / fica (do verbo se trouver)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "salle", "meaning": "sala" },
-      { "word": "de", "meaning": "de" },
-      { "word": "conférence", "meaning": "conferência / palestra" }
-    ]
+      {
+        "word": "Savez-vous",
+        "meaning": "Você sabe."
+      },
+      {
+        "word": "par hasard",
+        "meaning": "por acaso."
+      },
+      {
+        "word": "où se trouve",
+        "meaning": "onde fica / onde se encontra."
+      },
+      {
+        "word": "la salle de conférence",
+        "meaning": "a sala de conferência."
+      }
+    ],
+    "pronuncia": "Em 'Savez-vous', o 'z' é mudo ('sa-vê-vu'). Em 'par hasard', o 'h' é mudo e o 'r' final de 'hasard' também costuma ser mudo ou bem discreto ('par a-zár'). Em 'trouve', o 'e' final morre ('trúv'). Em 'conférence', o 'on' e o 'en' são nasais e o 'r' é arranhado ('kõn-fê-rãns').\nLeia: Sa-vê-vu par a-zár u sê trúv la sal dê kõn-fê-rãns ?"
   },
   "616": {
-    "explanation": "'Je vous préviendrai' significa 'eu avisarei o senhor / vou te avisar' (futuro do verbo prévenir). A expressão 'dès que' significa 'assim que' ou 'logo que'. 'J'aurai' é 'eu tiver' (futuro do verbo avoir), e 'une réponse' é uma resposta.",
+    "explanation": "O verbo 'prévenir' significa avisar com antecedência. 'Dès que' é uma expressão fixa para 'assim que'. A frase termina com 'j'aurai une réponse' (eu terei uma resposta), indicando uma ação futura.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "préviendrai", "meaning": "avisarei / prevenirei (futuro do verbo prévenir)" },
-      { "word": "dès", "meaning": "desde" },
-      { "word": "que", "meaning": "que (dès que = assim que / logo que)" },
-      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
-      { "word": "aurai", "meaning": "tiver (futuro do verbo avoir)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "réponse", "meaning": "resposta" }
-    ]
+      {
+        "word": "Je vous préviendrai",
+        "meaning": "Eu te avisarei / Eu te aviso."
+      },
+      {
+        "word": "dès que",
+        "meaning": "assim que / logo que."
+      },
+      {
+        "word": "j'aurai",
+        "meaning": "eu terei / eu tiver."
+      },
+      {
+        "word": "une réponse",
+        "meaning": "uma resposta."
+      }
+    ],
+    "pronuncia": "Em 'préviendrai', o 'en' é nasal e o final soa como 'é' ('pré-vi-ẽn-dré'). Em 'dès que', o som é aberto e curto ('dè kê'). Em 'j'aurai', o 'j' é vibrado e o final é 'ê' ('jô-ré'). Em 'réponse', o 'r' é arranhado, o 'on' é nasal e o 's' final é pronunciado, mas o 'e' morre ('rê-põns').\nLeia: Jê vu pré-vi-ẽn-dré dè kê jô-ré ün rê-põns."
   },
   "617": {
-    "explanation": "Fórmula cerimoniosa para cartas ou despedidas formais: 'Veuillez' é a forma respeitosa de 'por favor, queira / tenha a bondade de'. O verbo transmitir é 'transmettre'. 'Mes meilleurs vœux' significa 'meus melhores votos' ou felicitações. 'À votre famille' é 'à sua família'.",
+    "explanation": "O verbo 'Veuillez' é uma forma muito polida de pedir algo, como 'Tenha a bondade de'. 'Mes meilleurs vœux' é a expressão clássica para 'meus melhores votos' ou 'lembranças', usada para desejar coisas boas à família de alguém.",
     "breakdown": [
-      { "word": "Veuillez", "meaning": "Tenha a bondade de / Por favor (forma polida do verbo vouloir)" },
-      { "word": "transmettre", "meaning": "transmitir / repassar" },
-      { "word": "mes", "meaning": "meus" },
-      { "word": "meilleurs", "meaning": "melhores" },
-      { "word": "vœux", "meaning": "votos / felicitações" },
-      { "word": "à", "meaning": "a / para" },
-      { "word": "votre", "meaning": "sua" },
-      { "word": "famille", "meaning": "família" }
-    ]
+      {
+        "word": "Veuillez",
+        "meaning": "Por favor / Tenha a bondade de."
+      },
+      {
+        "word": "transmettre",
+        "meaning": "transmitir / passar / enviar."
+      },
+      {
+        "word": "mes meilleurs vœux",
+        "meaning": "meus melhores votos / minhas lembranças."
+      },
+      {
+        "word": "à votre famille",
+        "meaning": "para sua família."
+      }
+    ],
+    "pronuncia": "Em 'Veuillez', o final soa como um 'i' suave ('vê-ié'). Em 'transmettre', o 'an' é nasal e o 'r' final é seco ('trãns-mé-tr'). Em 'meilleurs vœux', o 'r' de 'meilleurs' é arranhado e 'vœux' tem som de 'v' com a boca em posição de 'u', mas soltando 'ê' ('mê-iêr vê').\nLeia: Vê-ié trãns-mé-tr mê mê-iêr vê a vó-trê fa-mí-iê."
   },
   "618": {
-    "explanation": "Para puxar assunto após um período sem se ver: 'Cela fait' é 'faz'. A expressão 'un petit moment' significa 'um tempinho' ou 'já faz um tempo'. A tag question 'n'est-ce pas ?' funciona como 'não é?' ou 'né?'.",
+    "explanation": "Esta é uma forma casual de notar o tempo passado. 'Cela fait' (Isso faz) seguido de 'un petit moment' (um tempinho). O 'n'est-ce pas' no final é o nosso 'não é?' ou o mineiro 'né?'.",
     "breakdown": [
-      { "word": "Cela", "meaning": "Isto / Isso" },
-      { "word": "fait", "meaning": "faz (do verbo faire)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "petit", "meaning": "pequeno" },
-      { "word": "moment", "meaning": "momento (un petit moment = um bom tempo / um tempinho)" },
-      { "word": "n'", "meaning": "não (encurtado antes de verbo)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "-ce", "meaning": "isso" },
-      { "word": "pas", "meaning": "não (n'est-ce pas = não é?)" }
-    ]
+      {
+        "word": "Cela fait",
+        "meaning": "Faz / Isso faz."
+      },
+      {
+        "word": "un petit moment",
+        "meaning": "um tempinho / um pequeno momento."
+      },
+      {
+        "word": "n'est-ce pas",
+        "meaning": "não é? / né?"
+      }
+    ],
+    "pronuncia": "Em 'Cela fait', o 't' é mudo ('sê-la fé'). Em 'un petit moment', o 'un' é nasal, o 't' de 'petit' é mudo e o 'en' de 'moment' é nasal com 't' mudo ('ã pê-ti mô-mã'). O 'n'est-ce pas' soa como 'nê-spá', bem rápido.\nLeia: Sê-la fé ã pê-ti mô-mã nê-spá ?"
   },
   "619": {
-    "explanation": "Situação social embaraçosa resolvida com muita educação: 'Je suis désolé' é 'sinto muito'. 'J'ai oublié' é 'esqueci'. 'Votre nom' é seu nome. Em seguida vem 'pourriez-vous me le rappeler ?' (poderia me lembrar disso?, com 'me' e 'le' antes do verbo rappeler).",
+    "explanation": "Para se desculpar por esquecer algo, usa-se 'J'ai oublié' (Eu esqueci). A pergunta 'pourriez-vous me le rappeler' usa 'rappeler' que significa 'chamar de novo' ou 'lembrar', e o 'le' refere-se ao nome que foi esquecido.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "estou (do verbo être)" },
-      { "word": "désolé", "meaning": "desolado / sinto muito" },
-      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "oublié", "meaning": "esquecido / esqueci (do verbo oublier)" },
-      { "word": "votre", "meaning": "seu / sua" },
-      { "word": "nom", "meaning": "nome" },
-      { "word": "pourriez", "meaning": "poderia (forma polida do verbo pouvoir)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para pergunta)" },
-      { "word": "me", "meaning": "me" },
-      { "word": "le", "meaning": "o / isso (referindo-se ao nome esquecido)" },
-      { "word": "rappeler", "meaning": "lembrar / recordar (me le rappeler = me lembrar disso)" }
-    ]
+      {
+        "word": "Je suis désolé",
+        "meaning": "Sinto muito / Estou arrependido."
+      },
+      {
+        "word": "j'ai oublié",
+        "meaning": "eu esqueci."
+      },
+      {
+        "word": "votre nom",
+        "meaning": "seu nome."
+      },
+      {
+        "word": "pourriez-vous",
+        "meaning": "você poderia."
+      },
+      {
+        "word": "me le rappeler",
+        "meaning": "me lembrar dele / me recordar."
+      }
+    ],
+    "pronuncia": "Em 'Je suis', o 's' final é mudo ('jê süi'). Em 'oublié', o som final é 'ê' ('u-bli-ê'). Em 'nom', o 'om' é nasal e o 'm' não fecha os lábios ('nõn'). Em 'rappeler', o 'r' inicial e o do meio são arranhados, e o 'r' final é mudo ('ra-pê-lé').\nLeia: Jê süi dé-zô-lé jé u-bli-ê vó-trê nõn pu-ri-ê-vu mê lê ra-pê-lé ?"
   },
   "620": {
-    "explanation": "Pergunta feita ao telefone: 'Aimeriez-vous' é 'o senhor gostaria / você gostaria?'. O pronome 'lui' significa 'a ele / a ela'. O verbo deixar é 'laisser', e 'un message' é um recado ou mensagem.",
+    "explanation": "Esta pergunta oferece a opção de deixar um recado. 'Aimeriez-vous' (Você gostaria) vem antes de 'lui laisser' (deixar para ele ou para ela). Em francês, 'lui' serve para ambos os sexos nesse contexto de 'para ele/ela'.",
     "breakdown": [
-      { "word": "Aimeriez", "meaning": "Gostaria (forma polida do verbo aimer)" },
-      { "word": "-vous", "meaning": "o senhor / a senhora / você (invertido para a pergunta)" },
-      { "word": "lui", "meaning": "a ele / a ela / lhe" },
-      { "word": "laisser", "meaning": "deixar" },
-      { "word": "un", "meaning": "um / uma" },
-      { "word": "message", "meaning": "mensagem / recado (palavra masculina em francês)" }
-    ]
+      {
+        "word": "Aimeriez-vous",
+        "meaning": "Você gostaria."
+      },
+      {
+        "word": "lui laisser",
+        "meaning": "deixar para ele / deixar para ela."
+      },
+      {
+        "word": "un message",
+        "meaning": "um recado / uma mensagem."
+      }
+    ],
+    "pronuncia": "Em 'Aimeriez-vous', o 'ai' soa como 'é' e o 's' final é mudo ('ê-mê-ri-ê-vu'). Em 'lui laisser', o 'ui' é rápido e o 'r' final de 'laisser' é mudo ('lüi lê-sé'). Em 'message', o 'j' final é suave como em 'viagem' e o 'e' final morre ('mê-sáj').\nLeia: Ê-mê-ri-ê-vu lüi lê-sé ã mê-sáj ?"
   },
   "621": {
-    "explanation": "Agradecimento corporativo de alto nível: 'Je vous remercie de' significa 'eu lhe agradeço por'. 'Avoir pris le temps' significa 'ter dedicado tempo / ter tirado um tempo'. O pronome 'me' vem antes do verbo encontrar/reunir-se ('rencontrer').",
+    "explanation": "Uma forma elegante de agradecer pelo tempo de alguém. 'Je vous remercie' (Eu te agradeço) é seguido de 'd'avoir pris' (por ter tomado/tirado). 'Rencontrer' é o verbo para encontrar ou se reunir com alguém.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "remercie", "meaning": "agradeço (do verbo remercier)" },
-      { "word": "d'", "meaning": "de / por (encurtado antes de vogal)" },
-      { "word": "avoir", "meaning": "ter (auxiliar do passado)" },
-      { "word": "pris", "meaning": "tomado / tirado (passado do verbo prendre)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "temps", "meaning": "tempo (prendre le temps = dedicar tempo)" },
-      { "word": "de", "meaning": "de / para" },
-      { "word": "me", "meaning": "me" },
-      { "word": "rencontrer", "meaning": "encontrar / reunir-se" }
-    ]
+      {
+        "word": "Je vous remercie",
+        "meaning": "Eu te agradeço."
+      },
+      {
+        "word": "d'avoir pris le temps",
+        "meaning": "por ter tirado um tempo — avoir: ter; pris: tomado/tirado; temps: tempo."
+      },
+      {
+        "word": "de me rencontrer",
+        "meaning": "de se reunir comigo / de me encontrar."
+      }
+    ],
+    "pronuncia": "Em 'remercie', o 'r' é arranhado e o 'e' final é mudo ('rê-mér-si'). Em 'd'avoir pris', o 'r' de 'pris' é arranhado e o 's' é mudo ('da-vo-ár pri'). Em 'temps', o 's' é mudo e o som é nasal ('tã'). Em 'rencontrer', os dois 'en/on' são nasais e o 'r' final é mudo ('rãn-kõn-tré').\nLeia: Jê vu rê-mér-si da-vo-ár pri lê tã dê mê rãn-kõn-tré."
   },
   "622": {
-    "explanation": "Pedido de desculpas muito elegante por atraso: 'Désolé de' significa 'desculpe por'. O pronome 'vous' (você / o senhor) vem antes da expressão 'avoir fait attendre' (ter feito esperar, estrutura onde faire indica que você causou a espera de alguém).",
+    "explanation": "Para se desculpar pelo atraso, dizemos 'Désolé de' (Desculpe por) e usamos a estrutura 'vous avoir fait attendre', que literalmente significa 'ter feito você esperar'.",
     "breakdown": [
-      { "word": "Désolé", "meaning": "Desculpe / Sinto muito" },
-      { "word": "de", "meaning": "de / por" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "avoir", "meaning": "ter (auxiliar do passado)" },
-      { "word": "fait", "meaning": "feito (do verbo faire)" },
-      { "word": "attendre", "meaning": "esperar (faire attendre = fazer esperar)" }
-    ]
+      {
+        "word": "Désolé de",
+        "meaning": "Desculpe por / Sinto muito por."
+      },
+      {
+        "word": "vous avoir fait",
+        "meaning": "ter feito você — avoir: ter; fait: feito."
+      },
+      {
+        "word": "attendre",
+        "meaning": "esperar."
+      }
+    ],
+    "pronuncia": "Em 'Désolé', o som é 'ê' ('dé-zô-lé'). Em 'vous avoir', junte o 's' com o 'a' fazendo som de 'z' ('vu-za-vo-ár'). Em 'fait', o 't' é mudo ('fé'). Em 'attendre', o 'en' é nasal e o 'r' final é arranhado sem vogal depois ('a-tãn-dr').\nLeia: Dé-zô-lé dê vu-za-vo-ár fé a-tãn-dr."
   },
   "623": {
-    "explanation": "Provérbio perfeito para quando você esbarra com alguém conhecido em um lugar inesperado. 'Le monde est petit' significa 'o mundo é pequeno'. No final, fecha com a confirmação 'n'est-ce pas ?' (não é?).",
+    "explanation": "Esta expressão é idêntica ao português. 'Le monde' (O mundo) 'est petit' (é pequeno). O 'n'est-ce pas' funciona como o nosso 'não é?' para buscar concordância.",
     "breakdown": [
-      { "word": "Le", "meaning": "O" },
-      { "word": "monde", "meaning": "mundo" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "petit", "meaning": "pequeno" },
-      { "word": "n'", "meaning": "não (encurtado antes de verbo)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "-ce", "meaning": "isso" },
-      { "word": "pas", "meaning": "não (n'est-ce pas = não é?)" }
-    ]
+      {
+        "word": "Le monde",
+        "meaning": "O mundo."
+      },
+      {
+        "word": "est petit",
+        "meaning": "é pequeno."
+      },
+      {
+        "word": "n'est-ce pas",
+        "meaning": "não é? / né?"
+      }
+    ],
+    "pronuncia": "Em 'Le monde', o 'on' é nasal e o 'e' final morre ('lê mõnd'). Em 'est petit', o 't' de 'est' é mudo e o 't' final de 'petit' também ('é pê-ti'). O 'n'est-ce pas' é falado rápido como se fosse uma palavra só ('nê-spá').\nLeia: Lê mõnd é pê-ti nê-spá ?"
   },
   "624": {
-    "explanation": "'J'espère que' significa 'espero que'. A expressão 'tout se passe bien' significa 'tudo esteja correndo bem / tudo vá bem'. 'Avec votre nouvel emploi' significa 'com seu novo emprego' (com nouvel antes da palavra masculina com vogal).",
+    "explanation": "Aqui usamos 'J'espère que' (Espero que) e a expressão 'tout se passe bien' (tudo se passa bem / tudo vai bem). 'Nouvel emploi' é 'novo emprego', onde 'nouvel' é usado antes de palavras que começam com vogal para facilitar a fala.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "espère", "meaning": "espero (do verbo espérer)" },
-      { "word": "que", "meaning": "que" },
-      { "word": "tout", "meaning": "tudo" },
-      { "word": "se", "meaning": "se" },
-      { "word": "passe", "meaning": "passe / corra / vá (do verbo se passer)" },
-      { "word": "bien", "meaning": "bem" },
-      { "word": "avec", "meaning": "com" },
-      { "word": "votre", "meaning": "seu / sua" },
-      { "word": "nouvel", "meaning": "novo (usado antes de palavra masculina com vogal)" },
-      { "word": "emploi", "meaning": "emprego / trabalho" }
-    ]
+      {
+        "word": "J'espère que",
+        "meaning": "Espero que."
+      },
+      {
+        "word": "tout se passe bien",
+        "meaning": "tudo esteja indo bem / tudo se passe bem."
+      },
+      {
+        "word": "avec votre nouvel emploi",
+        "meaning": "com seu novo emprego — nouvel: novo; emploi: emprego."
+      }
+    ],
+    "pronuncia": "Em 'J'espère', o 'r' é arranhado ('jés-pér'). Em 'passe bien', o 'e' de 'passe' morre e 'bien' tem um som nasal como 'bi-ẽn' ('páss bi-ẽn'). Em 'nouvel emploi', junte o 'l' com o 'e' ('nu-vê-lãm-plo-á'), com o 'em' saindo pelo nariz.\nLeia: Jés-pér kê tu sê páss bi-ẽn a-vék vó-trê nu-vê-lãm-plo-á."
   },
   "625": {
-    "explanation": "Gentileza de recepção: 'Puis-je' é 'posso eu'. O pronome 'vous' (ao senhor / a você) vem antes de 'proposer' (oferecer/propor). 'Un siège' é um assento ou cadeira. A expressão 'en attendant' significa 'enquanto espera' ou 'entrementes'.",
+    "explanation": "O 'Puis-je' é o 'posso eu' formal. 'Proposer un siège' é 'oferecer um assento'. A expressão 'en attendant' significa 'enquanto espera' ou 'na espera', vindo do verbo 'attendre'.",
     "breakdown": [
-      { "word": "Puis", "meaning": "Posso (forma polida do verbo pouvoir)" },
-      { "word": "-je", "meaning": "eu (ligado ao verbo para pergunta)" },
-      { "word": "vous", "meaning": "a você / ao senhor / lhe" },
-      { "word": "proposer", "meaning": "propor / oferecer" },
-      { "word": "un", "meaning": "um" },
-      { "word": "siège", "meaning": "assento / lugar para sentar" },
-      { "word": "en", "meaning": "em" },
-      { "word": "attendant", "meaning": "esperando (en attendant = enquanto espera / entretanto)" }
-    ]
+      {
+        "word": "Puis-je",
+        "meaning": "Posso eu (formal)."
+      },
+      {
+        "word": "vous proposer",
+        "meaning": "lhe oferecer / propor a você."
+      },
+      {
+        "word": "un siège",
+        "meaning": "um assento / um lugar."
+      },
+      {
+        "word": "en attendant",
+        "meaning": "enquanto espera / na espera."
+      }
+    ],
+    "pronuncia": "Em 'Puis-je', o 'ui' é rápido e o 'j' é vibrado ('püi-jê'). Em 'proposer', o 'r' final é mudo ('prô-pô-zé'). Em 'siège', o 'g' tem som de 'j' suave ('si-éj'). Em 'en attendant', todos os 'en/an' são nasais e o 't' final é mudo ('ãn-na-tãn-dãn').\nLeia: Püi-jê vu prô-pô-zé ã si-éj ãn-na-tãn-dãn ?"
   },
   "626": {
-    "explanation": "'J'aimerais me présenter' significa 'gostaria de me apresentar'. Em seguida vem a frase direta de cargo: 'je suis le nouveau directeur' (sou o novo diretor/gerente), onde o adjetivo 'nouveau' vem antes de directeur.",
+    "explanation": "Para se apresentar, usa-se 'J'aimerais me présenter' (Eu gostaria de me apresentar). 'Je suis le nouveau directeur' usa 'nouveau' para 'novo' e 'directeur' que pode ser diretor ou gerente, dependendo do contexto da empresa.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
-      { "word": "aimerais", "meaning": "gostaria (do verbo aimer)" },
-      { "word": "me", "meaning": "me" },
-      { "word": "présenter", "meaning": "apresentar" },
-      { "word": "je", "meaning": "eu" },
-      { "word": "suis", "meaning": "sou (do verbo être)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "nouveau", "meaning": "novo" },
-      { "word": "directeur", "meaning": "diretor / gerente" }
-    ]
+      {
+        "word": "J'aimerais",
+        "meaning": "Eu gostaria."
+      },
+      {
+        "word": "me présenter",
+        "meaning": "me apresentar."
+      },
+      {
+        "word": "je suis",
+        "meaning": "eu sou."
+      },
+      {
+        "word": "le nouveau directeur",
+        "meaning": "o novo diretor / o novo gerente."
+      }
+    ],
+    "pronuncia": "Em 'J'aimerais', o final soa como 'é' ('jém-ré'). Em 'présenter', o 'en' é nasal e o 'r' final é mudo ('pré-zãn-té'). Em 'nouveau', o 'eau' tem som de 'ô' puro ('nu-vô'). Em 'directeur', o 'r' final é arranhado suavemente na garganta ('di-rék-têr').\nLeia: Jém-ré mê pré-zãn-té jê süi lê nu-vô di-rék-têr."
   },
   "627": {
-    "explanation": "Expressão idiomática excelente para reencontros informais: 'prendre des nouvelles' significa literalmente 'pegar notícias' (o nosso 'colocar o papo em dia / saber das novidades'). 'C'était génial' significa 'foi ótimo / foi maravilhoso'.",
+    "explanation": "A expressão 'avoir de vos nouvelles' significa literalmente 'ter notícias suas', mas é usada exatamente como o nosso 'colocar o papo em dia' ou 'saber de você'. 'C'était génial' é uma forma bem positiva de dizer 'foi ótimo'.",
     "breakdown": [
-      { "word": "C'", "meaning": "Isto / Foi (encurtado antes de vogal)" },
-      { "word": "était", "meaning": "foi / era (passado do verbo être)" },
-      { "word": "génial", "meaning": "ótimo / genial / maravilhoso" },
-      { "word": "de", "meaning": "de" },
-      { "word": "prendre", "meaning": "tomar / pegar" },
-      { "word": "des", "meaning": "de (parte da expressão)" },
-      { "word": "nouvelles", "meaning": "notícias (prendre des nouvelles = saber das novidades / colocar o papo em dia)" }
-    ]
+      {
+        "word": "C'était génial",
+        "meaning": "Foi ótimo / Foi genial."
+      },
+      {
+        "word": "d'avoir",
+        "meaning": "de ter."
+      },
+      {
+        "word": "de vos nouvelles",
+        "meaning": "notícias suas / saber de você."
+      }
+    ],
+    "pronuncia": "Em 'C'était', o 't' final é mudo ('sé-té'). Em 'génial', o 'g' tem som de 'j' e o 'l' final é pronunciado com a língua no céu da boca ('jé-ni-ál'). Em 'nouvelles', o 'ou' tem som de 'u' e o 's' final é mudo ('nu-vél').\nLeia: Sé-té jé-ni-ál da-vo-ár dê vu nu-vél."
   },
   "628": {
-    "explanation": "Pedido amigável e educado de socorro rápido: 'Ça vous dérangerait de' significa 'o senhor se importaria de' ou 'você se incomodaria de'. O 'm'' é o 'me' encurtado antes do verbo ajudar ('aider'). 'Une seconde' significa 'um segundo'.",
+    "explanation": "Esta é uma forma polida de pedir ajuda. 'Ça vous dérangerait' significa 'Isso te incomodaria' ou 'Você se importaria'. 'M'aider une seconde' é 'me ajudar um segundo', uma expressão de tempo curto igual à nossa.",
     "breakdown": [
-      { "word": "Ça", "meaning": "Isto / Isso" },
-      { "word": "vous", "meaning": "o senhor / a senhora / você" },
-      { "word": "dérangerait", "meaning": "incomodaria / atrapalharia (do verbo déranger)" },
-      { "word": "de", "meaning": "de (ça vous dérangerait de = você se importaria de)" },
-      { "word": "m'", "meaning": "me (encurtado antes de vogal)" },
-      { "word": "aider", "meaning": "ajudar" },
-      { "word": "une", "meaning": "um / uma" },
-      { "word": "seconde", "meaning": "segundo" }
-    ]
+      {
+        "word": "Ça vous dérangerait",
+        "meaning": "Você se importaria / Isso te incomodaria."
+      },
+      {
+        "word": "de m'aider",
+        "meaning": "de me ajudar."
+      },
+      {
+        "word": "une seconde",
+        "meaning": "um segundo."
+      }
+    ],
+    "pronuncia": "Em 'Ça vous', o 's' é mudo ('sa vu'). Em 'dérangerait', o 'en' é nasal e o final soa como 'é' ('dê-rãn-jê-ré'). Em 'm'aider', o 'r' final é mudo ('mê-dé'). Em 'seconde', o 'c' tem som de 'g' e o 'on' é nasal ('sê-gõnd').\nLeia: Sa vu dê-rãn-jê-ré dê mê-dé ün sê-gõnd ?"
   },
   "629": {
-    "explanation": "'J'ai vraiment apprécié' significa 'gostei muito' ou 'apreciei de verdade'. 'La conversation que nous avons eue' significa 'a conversa que tivemos' (onde eue ganha 'e' para concordar com a conversa feminina já mencionada). A expressão 'tout à l'heure' significa 'mais cedo / há pouco'.",
+    "explanation": "O verbo 'apprécier' é usado para dizer que gostou de algo. 'Tout à l'heure' é uma expressão muito comum que significa 'agora pouco' ou 'mais cedo', referindo-se a um passado bem próximo.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "vraiment", "meaning": "realmente / de verdade" },
-      { "word": "apprécié", "meaning": "apreciado / gostei (do verbo apprécier)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "conversation", "meaning": "conversa" },
-      { "word": "que", "meaning": "que" },
-      { "word": "nous", "meaning": "nós" },
-      { "word": "avons", "meaning": "tivemos no passado (auxiliar avoir)" },
-      { "word": "eue", "meaning": "tido / tida (passado do verbo avoir no feminino)" },
-      { "word": "tout", "meaning": "todo" },
-      { "word": "à", "meaning": "a" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "heure", "meaning": "hora (tout à l'heure = mais cedo / há pouco)" }
-    ]
+      {
+        "word": "J'ai vraiment apprécié",
+        "meaning": "Eu realmente gostei / apreciei — vraiment: realmente; apprécié: apreciado."
+      },
+      {
+        "word": "la conversation",
+        "meaning": "a conversa."
+      },
+      {
+        "word": "que nous avons eue",
+        "meaning": "que nós tivemos."
+      },
+      {
+        "word": "tout à l'heure",
+        "meaning": "mais cedo / agora pouco."
+      }
+    ],
+    "pronuncia": "Em 'vraiment', o 'en' é nasal e o 't' é mudo ('vré-mã'). Em 'apprécié', o final é 'ê' ('a-pré-si-ê'). Em 'conversation', o 'on' e o 'en' são nasais e o final é 'si-õn' ('kõn-vêr-sa-si-õn'). Em 'tout à l'heure', junte tudo: 'tu-ta-lêr', arranhando o 'r' no final.\nLeia: Jé vré-mã a-pré-si-ê la kõn-vêr-sa-si-õn kê nu-za-võn-zü tu-ta-lêr."
   },
   "630": {
-    "explanation": "Despedida tradicional na sexta-feira de trabalho: o verbo passar está na forma educada com vous ('passez' = passe / passem). 'Un excellent week-end' é um excelente fim de semana. E 'à lundi' é a fórmula clássica para 'até segunda-feira'.",
+    "explanation": "Para desejar um bom fim de semana, usa-se 'Passez' (Passe/Tenha). O francês adotou a palavra 'week-end' do inglês. 'À lundi' é a forma curta de dizer 'até segunda-feira', usando a preposição 'à' para indicar o próximo encontro.",
     "breakdown": [
-      { "word": "Passez", "meaning": "Passe / Passem (desejo do verbo passer)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "excellent", "meaning": "excelente" },
-      { "word": "week-end", "meaning": "fim de semana" },
-      { "word": "et", "meaning": "e" },
-      { "word": "à", "meaning": "até" },
-      { "word": "lundi", "meaning": "segunda-feira (à lundi = até segunda-feira)" }
-    ]
+      {
+        "word": "Passez",
+        "meaning": "Tenha / Passe."
+      },
+      {
+        "word": "un excellent week-end",
+        "meaning": "um excelente fim de semana."
+      },
+      {
+        "word": "et à lundi",
+        "meaning": "e até segunda-feira."
+      }
+    ],
+    "pronuncia": "Em 'Passez un', junte o 'z' com o 'un' fazendo som de 'z' e o 'un' nasal ('pa-ssé-zã'). Em 'excellent', o 'x' soa como 'ks' e o 't' final é mudo ('ék-sê-lã'). Em 'week-end', soa como no inglês, mas com o 'en' mais nasal ('wi-kẽnd'). Em 'à lundi', o 'un' de 'lundi' é nasal ('a lãn-di').\nLeia: Pa-ssé-zã ék-sê-lã wi-kẽnd ê a lãn-di !"
   }
 }

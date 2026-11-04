@@ -1,365 +1,578 @@
 {
   "481": {
-    "explanation": "'J'ai' é 'eu tenho'. Com a palavra 'beaucoup' (muito), usa-se sempre 'de' logo depois: 'beaucoup de travail' (muito trabalho). A preposição 'à' liga o trabalho à ação que precisa ser feita ('à faire' = para fazer/por fazer), e 'aujourd'hui' significa hoje.",
+    "explanation": "Para dizer que você tem algo, o francês usa 'J'ai', que é a união do 'eu' com o 'tenho'. A expressão 'beaucoup de' funciona como um bloco único para dizer 'muito' ou 'muita quantidade de' alguma coisa. O resto da frase segue uma lógica bem parecida com a nossa, colocando o trabalho, a ação de fazer e o tempo (hoje) no final.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de som de vogal)" },
-      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
-      { "word": "beaucoup", "meaning": "muito" },
-      { "word": "de", "meaning": "de (usado após palavras de quantidade)" },
-      { "word": "travail", "meaning": "trabalho" },
-      { "word": "à", "meaning": "para / por" },
-      { "word": "faire", "meaning": "fazer" },
-      { "word": "aujourd'hui", "meaning": "hoje" }
-    ]
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho — J': eu; ai: tenho."
+      },
+      {
+        "word": "beaucoup de",
+        "meaning": "Muito / Muita quantidade de."
+      },
+      {
+        "word": "travail",
+        "meaning": "Trabalho."
+      },
+      {
+        "word": "à faire",
+        "meaning": "Para fazer."
+      },
+      {
+        "word": "aujourd'hui",
+        "meaning": "Hoje."
+      }
+    ],
+    "pronuncia": "Comece com 'Jê' bem curto. Em 'beaucoup', diga 'bô-cu' sem pronunciar o 'p' final. O 'de' tem um som de 'dê' com a boca mais relaxada. Em 'travail', o final soa como um 'i' suave ('tra-vái'). O 'à' é um 'a' comum e 'faire' soa como 'fér', com o 'R' arranhado no fundo da garganta. Termine com 'ô-jur-duí', lembrando de arranhar o 'R' no meio da palavra.\nLeia: Jê bô-cu dê tra-vái a fér ô-jur-duí."
   },
   "482": {
-    "explanation": "Pergunta sobre a escola: como 'matière' (matéria/disciplina) é feminina em francês, usa-se 'Quelle' (qual no feminino) e 'ta' (sua/tua no feminino). A palavra 'préférée' ganha um 'e' no final. 'À l'école' significa 'na escola' (com 'l'' encurtado antes de vogal).",
+    "explanation": "Nesta pergunta, o francês usa 'Quelle' para 'Qual', que combina com a palavra 'matière' (matéria). O 'est' é o nosso 'é'. Note que eles usam 'ta' para 'sua' de forma bem direta antes do objeto. A palavra 'préférée' vem logo depois, assim como fazemos no português, e o local 'à l'école' junta o 'na' com 'escola' de um jeito bem fluido.",
     "breakdown": [
-      { "word": "Quelle", "meaning": "Qual (no feminino)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "ta", "meaning": "sua / tua (feminino)" },
-      { "word": "matière", "meaning": "matéria / disciplina escolar" },
-      { "word": "préférée", "meaning": "favorita / preferida (no feminino)" },
-      { "word": "à", "meaning": "em / na" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "école", "meaning": "escola" }
-    ]
+      {
+        "word": "Quelle",
+        "meaning": "Qual."
+      },
+      {
+        "word": "est",
+        "meaning": "É."
+      },
+      {
+        "word": "ta matière",
+        "meaning": "Sua matéria / Sua disciplina."
+      },
+      {
+        "word": "préférée",
+        "meaning": "Preferida / Favorita."
+      },
+      {
+        "word": "à l'école",
+        "meaning": "Na escola — à: em/na; l'école: a escola."
+      }
+    ],
+    "pronuncia": "Diga 'Kél' para a primeira palavra. O 'est' soa apenas como 'ê'. 'Ta' é normal e 'matière' soa como 'ma-ti-ér' com o 'R' final suave. Em 'préférée', faça os sons de 'ê' bem limpos: 'prê-fê-rê'. Termine com 'a-lê-cól', sem soltar nenhuma vogal depois do 'l' final.\nLeia: Kél ê ta ma-ti-ér prê-fê-rê a lê-cól ?"
   },
   "483": {
-    "explanation": "'Elle étudie' significa 'ela estuda' ou 'ela está estudando'. Com matérias acadêmicas, o francês costuma usar o artigo definido: 'l'histoire' (a história, com 'l'' antes do h mudo). 'À l'université' significa 'na universidade'.",
+    "explanation": "Aqui vemos 'Elle étudie', que é 'Ela estuda'. O francês coloca um 'l' grudadinho em 'histoire' (história) porque a palavra começa com som de vogal. O mesmo acontece com 'l'université'. É como se as palavras se fundissem para o som não dar trancos.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "étudie", "meaning": "estuda / está estudando (do verbo étudier)" },
-      { "word": "l'", "meaning": "a (encurtado antes de h mudo)" },
-      { "word": "histoire", "meaning": "história" },
-      { "word": "à", "meaning": "em / na" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "université", "meaning": "universidade" }
-    ]
+      {
+        "word": "Elle",
+        "meaning": "Ela."
+      },
+      {
+        "word": "étudie",
+        "meaning": "Estuda."
+      },
+      {
+        "word": "l'histoire",
+        "meaning": "A história."
+      },
+      {
+        "word": "à l'université",
+        "meaning": "Na universidade."
+      }
+    ],
+    "pronuncia": "Diga 'Él' para ela. Em 'étudie', o 'u' tem som de biquinho (faça bico de 'u' e diga 'i'): 'ê-tü-dí'. Em 'l'histoire', o 'h' não existe, então diga 'lis-tu-ár' arranhando o 'R'. Para a última parte, diga 'a-lü-ni-vêr-si-tê', também com biquinho no 'ü' e o 'R' suave no meio.\nLeia: Él ê-tü-dí lis-tu-ár a lü-ni-vêr-si-tê."
   },
   "484": {
-    "explanation": "'Je cherche' é 'estou procurando' ou 'busco'. 'Un travail' é um emprego ou trabalho. Em francês, trabalho de meio período é chamado de 'travail à mi-temps' (onde mi-temps significa literalmente metade do tempo).",
+    "explanation": "Para dizer 'estou procurando', o francês usa apenas uma palavra: 'cherche'. Eles não precisam do 'estou' nesse caso. 'Un travail' é 'um trabalho' e 'à mi-temps' é a expressão exata para 'meio período', que literalmente significa 'a meio tempo'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "cherche", "meaning": "procuro / estou procurando (do verbo chercher)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "travail", "meaning": "trabalho / emprego" },
-      { "word": "à", "meaning": "a / de" },
-      { "word": "mi-temps", "meaning": "meio período / meio tempo (à mi-temps = de meio período)" }
-    ]
+      {
+        "word": "Je cherche",
+        "meaning": "Eu procuro / Estou procurando."
+      },
+      {
+        "word": "un travail",
+        "meaning": "Um trabalho."
+      },
+      {
+        "word": "à mi-temps",
+        "meaning": "De meio período / A meio tempo."
+      }
+    ],
+    "pronuncia": "O 'Je' é um 'jê' com a boca relaxada. 'Cherche' soa como 'chérch', parando no som do 'ch' sem falar o 'e' final. 'Un' é um som nasal, como se fosse um 'ã' bem curto. 'Travail' termina em 'vái'. Em 'à mi-temps', o 'temps' soa como 'tã', com o som saindo pelo nariz e sem falar o 'p' ou o 's'.\nLeia: Jê chérch ã tra-vái a mi-tã."
   },
   "485": {
-    "explanation": "Pergunta com o verbo na frente: 'Dois-tu' significa 'você deve / você tem que?' (do verbo devoir). O verbo usar ou vestir é 'porter'. 'Un uniforme' é um uniforme, e 'au travail' significa 'no trabalho' (junção de à + le).",
+    "explanation": "Nesta pergunta, a ordem das palavras muda um pouco: 'Dois-tu' é o 'Você deve' invertido para mostrar que é uma dúvida. 'Porter' é o verbo para 'usar' ou 'vestir' roupas. O 'au' é a junção de 'em + o', resultando em 'no'.",
     "breakdown": [
-      { "word": "Dois", "meaning": "Deve / Deves / Tem que (do verbo devoir)" },
-      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
-      { "word": "porter", "meaning": "usar / vestir" },
-      { "word": "un", "meaning": "um" },
-      { "word": "uniforme", "meaning": "uniforme" },
-      { "word": "au", "meaning": "no (junção de à + le)" },
-      { "word": "travail", "meaning": "trabalho" }
-    ]
+      {
+        "word": "Dois-tu",
+        "meaning": "Você deve / Você tem que."
+      },
+      {
+        "word": "porter",
+        "meaning": "Usar / Vestir / Carregar."
+      },
+      {
+        "word": "un uniforme",
+        "meaning": "Um uniforme."
+      },
+      {
+        "word": "au travail",
+        "meaning": "No trabalho."
+      }
+    ],
+    "pronuncia": "Diga 'Duá' e emende um 'tü' com biquinho (bico de 'u' falando 'i'). 'Porter' soa como 'pôr-tê'. 'Un' é o som nasal 'ã'. 'Uniforme' começa com biquinho: 'ü-ni-fórm'. Termine com 'ô tra-vái'.\nLeia: Duá-tü pôr-tê ã ü-ni-fórm ô tra-vái ?"
   },
   "486": {
-    "explanation": "'Il est bien meilleur' significa 'ele é bem melhor' (com bien intensificando a qualidade). 'Que moi' significa 'que eu'. Para matérias ou áreas de conhecimento, usa-se a preposição 'en': 'en maths' (em matemática, forma abreviada e carinhosa de mathématiques).",
+    "explanation": "O francês usa 'bien meilleur' (bem melhor) para dar ênfase. O 'que moi' é o nosso 'do que eu'. No final, 'en maths' é o jeito curto de dizer 'em matemática', muito comum no dia a dia.",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "bien", "meaning": "bem / muito" },
-      { "word": "meilleur", "meaning": "melhor" },
-      { "word": "que", "meaning": "do que" },
-      { "word": "moi", "meaning": "eu / mim" },
-      { "word": "en", "meaning": "em" },
-      { "word": "maths", "meaning": "matemática (abreviação comum de mathématiques)" }
-    ]
+      {
+        "word": "Il est",
+        "meaning": "Ele é."
+      },
+      {
+        "word": "bien meilleur",
+        "meaning": "Bem melhor / Muito melhor."
+      },
+      {
+        "word": "que moi",
+        "meaning": "Do que eu."
+      },
+      {
+        "word": "en maths",
+        "meaning": "Em matemática."
+      }
+    ],
+    "pronuncia": "Diga 'Il ê' bem ligado. 'Bien' é um som nasal que lembra 'bi-ã'. 'Meilleur' soa como 'mê-iêr' com o 'R' arranhado. 'Que moi' vira 'kê muá'. Termine com 'ã mat', com o 'ã' bem nasal.\nLeia: Il ê bi-ã mê-iêr kê muá ã mat."
   },
   "487": {
-    "explanation": "Em francês, para dizer que foi reprovado ou não passou em uma prova, usa-se o verbo rater ('j'ai raté' = eu reprovei / não passei). Em francês, teste de direção é chamado de 'examen de conduite' (onde conduite significa condução/direção).",
+    "explanation": "Para dizer que falhou ou não passou, eles usam 'J'ai raté' (Eu tenho falhado/errado). 'Examen de conduite' é o nome oficial para o teste de direção, onde 'conduite' vem de conduzir.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "raté", "meaning": "reprovei / perdi / errei (do verbo rater)" },
-      { "word": "mon", "meaning": "meu" },
-      { "word": "examen", "meaning": "exame / teste" },
-      { "word": "de", "meaning": "de" },
-      { "word": "conduite", "meaning": "condução / direção (examen de conduite = teste de direção)" }
-    ]
+      {
+        "word": "J'ai raté",
+        "meaning": "Eu não passei / Eu falhei / Eu perdi."
+      },
+      {
+        "word": "mon examen",
+        "meaning": "Meu exame / Minha prova."
+      },
+      {
+        "word": "de conduite",
+        "meaning": "De direção / De condução."
+      }
+    ],
+    "pronuncia": "Comece com 'Jê ra-tê'. 'Mon' é um 'mô' bem nasal. 'Examen' soa como 'ég-za-mã', com o final saindo pelo nariz. 'De' é um 'dê' curto e 'conduite' soa como 'cõn-du-ít', fazendo o biquinho no 'u' antes do 'i'.\nLeia: Jê ra-tê mõ ég-za-mã dê cõn-du-ít."
   },
   "488": {
-    "explanation": "Pergunta sobre a agenda do dia: 'Vas-tu' é a forma interrogativa de 'você vai'. 'À la réunion' é à reunião (que é uma palavra feminina em francês). 'Cet après-midi' significa 'esta tarde / hoje à tarde'.",
+    "explanation": "Aqui temos outra pergunta com a ordem invertida: 'Vas-tu' (Vai você). 'Cet' é usado para 'este' ou 'esta' quando a próxima palavra começa com som de vogal, como em 'après-midi' (tarde/após o meio-dia).",
     "breakdown": [
-      { "word": "Vas", "meaning": "Vai / Vais (do verbo aller)" },
-      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
-      { "word": "à", "meaning": "a / para" },
-      { "word": "la", "meaning": "a" },
-      { "word": "réunion", "meaning": "reunião" },
-      { "word": "cet", "meaning": "esta / este (usado antes de palavra masculina com vogal)" },
-      { "word": "après-midi", "meaning": "tarde (cet après-midi = esta tarde)" }
-    ]
+      {
+        "word": "Vas-tu",
+        "meaning": "Você vai."
+      },
+      {
+        "word": "à la réunion",
+        "meaning": "À reunião."
+      },
+      {
+        "word": "cet après-midi",
+        "meaning": "Esta tarde — cet: esta; après-midi: tarde."
+      }
+    ],
+    "pronuncia": "Diga 'Va-tü' com biquinho no 'ü'. 'À la' é normal. 'Réunion' soa como 'rê-ü-ni-õ', com biquinho no 'ü' e o final bem nasal. 'Cet' soa como 'sét' e emenda direto em 'après-midi': 'sê-ta-pré-mi-dí'.\nLeia: Va-tü a la rê-ü-ni-õ sê-ta-pré-mi-dí ?"
   },
   "489": {
-    "explanation": "'Je dois' significa 'eu preciso' ou 'eu devo'. O verbo melhorar ou aprimorar é améliorer. 'Mes compétences' são minhas competências ou habilidades. A preposição 'en' conecta ao idioma: 'en anglais' (em inglês).",
+    "explanation": "O verbo 'dois' indica obrigação ou necessidade (devo/preciso). 'Améliorer' é o equivalente a melhorar. Note que 'mes compétences' (minhas competências) está no plural, e o francês usa 'en' para dizer em qual área (em inglês).",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "dois", "meaning": "devo / preciso / tenho que (do verbo devoir)" },
-      { "word": "améliorer", "meaning": "melhorar / aprimorar" },
-      { "word": "mes", "meaning": "minhas" },
-      { "word": "compétences", "meaning": "habilidades / competências" },
-      { "word": "en", "meaning": "em" },
-      { "word": "anglais", "meaning": "inglês" }
-    ]
+      {
+        "word": "Je dois",
+        "meaning": "Eu devo / Eu preciso."
+      },
+      {
+        "word": "améliorer",
+        "meaning": "Melhorar."
+      },
+      {
+        "word": "mes compétences",
+        "meaning": "Minhas competências / Minhas habilidades."
+      },
+      {
+        "word": "en anglais",
+        "meaning": "Em inglês."
+      }
+    ],
+    "pronuncia": "Diga 'Jê duá'. 'Améliorer' soa como 'a-mê-li-ô-rê'. 'Mes' é um 'mê' curto. 'Compétences' tem dois sons nasais: 'cõm-pê-tãns'. Termine com 'ã-nã-glé', juntando o som do 'n' no 'anglais'.\nLeia: Jê duá a-mê-li-ô-rê mê cõm-pê-tãns ã-nã-glé."
   },
   "490": {
-    "explanation": "'Elle travaille' significa 'ela trabalha'. Para indicar setores na empresa, usa-se 'au département' (no departamento, junção de à + le). A palavra 'marketing' é usada igual ao inglês e português.",
+    "explanation": "A frase segue a mesma ordem do português. 'Au' é a contração de 'no' (em + o). A palavra 'marketing' é usada igual ao inglês, mas com o sotaque charmoso do francês.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "travaille", "meaning": "trabalha (do verbo travailler)" },
-      { "word": "au", "meaning": "no (junção de à + le)" },
-      { "word": "département", "meaning": "departamento / setor" },
-      { "word": "marketing", "meaning": "marketing" }
-    ]
+      {
+        "word": "Elle travaille",
+        "meaning": "Ela trabalha."
+      },
+      {
+        "word": "au département",
+        "meaning": "No departamento."
+      },
+      {
+        "word": "marketing",
+        "meaning": "Marketing."
+      }
+    ],
+    "pronuncia": "Diga 'Él tra-vái'. 'Au' soa como 'ô'. 'Département' soa como 'dê-pár-tê-mã', com o 'R' arranhado e o final nasal. Termine com 'mar-kê-tíng', arranhando o 'R' de 'mar'.\nLeia: Él tra-vái ô dê-pár-tê-mã mar-kê-tíng."
   },
   "491": {
-    "explanation": "'Je suis fatigué' é 'estou cansado'. 'Parce que' significa 'porque'. 'J'ai travaillé' é 'eu trabalhei' (no passado com avoir). 'Tard' significa tarde, e a expressão 'hier soir' significa 'ontem à noite'.",
+    "explanation": "Para explicar o motivo, usamos 'parce que' (porque). O passado 'trabalhei' vira 'j'ai travaillé' (eu tenho trabalhado). 'Hier soir' é a forma natural de dizer 'ontem à noite', literalmente 'ontem à tarde/noite'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "estou (do verbo être)" },
-      { "word": "fatigué", "meaning": "cansado" },
-      { "word": "parce", "meaning": "por" },
-      { "word": "que", "meaning": "que (parce que = porque)" },
-      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "travaillé", "meaning": "trabalhado / trabalhei (do verbo travailler)" },
-      { "word": "tard", "meaning": "tarde" },
-      { "word": "hier", "meaning": "ontem" },
-      { "word": "soir", "meaning": "noite (hier soir = ontem à noite)" }
-    ]
+      {
+        "word": "Je suis fatigué",
+        "meaning": "Eu estou cansado."
+      },
+      {
+        "word": "parce que",
+        "meaning": "Porque."
+      },
+      {
+        "word": "j'ai travaillé tard",
+        "meaning": "Eu trabalhei tarde."
+      },
+      {
+        "word": "hier soir",
+        "meaning": "Ontem à noite."
+      }
+    ],
+    "pronuncia": "Diga 'Jê suí fa-ti-guê'. 'Parce que' soa como 'párs-kê'. 'J'ai travaillé' é 'jê tra-va-iê'. 'Tard' soa como 'tár' (o 'd' não sai). 'Hier soir' soa como 'i-ér suár', com os 'R' bem suaves.\nLeia: Jê suí fa-ti-guê párs-kê jê tra-va-iê tár i-ér suár."
   },
   "492": {
-    "explanation": "'À quelle heure' significa 'a que horas'. O verbo começar é 'commence'. Em eventos de trabalho ou acadêmicos, 'la conférence' refere-se à palestra ou conferência.",
+    "explanation": "A pergunta 'À quelle heure' (A que horas) é muito comum. O verbo 'commence' (começa) vem antes do que está começando, mantendo uma estrutura bem lógica para nós.",
     "breakdown": [
-      { "word": "À", "meaning": "A" },
-      { "word": "quelle", "meaning": "qual / que (feminino de quel)" },
-      { "word": "heure", "meaning": "hora" },
-      { "word": "commence", "meaning": "começa (do verbo commencer)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "conférence", "meaning": "palestra / conferência" }
-    ]
+      {
+        "word": "À quelle heure",
+        "meaning": "A que horas."
+      },
+      {
+        "word": "commence",
+        "meaning": "Começa."
+      },
+      {
+        "word": "la conférence",
+        "meaning": "A palestra / A conferência."
+      }
+    ],
+    "pronuncia": "Diga 'A kél êr', arranhando o 'R' de 'heure'. 'Commence' soa como 'cô-mãns' (nasal). 'La conférence' soa como 'la cõn-fê-rãns', com dois sons nasais bem claros.\nLeia: A kél êr cô-mãns la cõn-fê-rãns ?"
   },
   "493": {
-    "explanation": "'C'est' significa 'ele é' ou 'ela é'. Para dizer que alguém é o mais inteligente da turma, usa-se 'la personne la plus intelligente' (com intelligente no feminino concordando com pessoa). 'De la classe' significa 'da sala / da classe'.",
+    "explanation": "O 'C'est' serve para 'Ele é' ou 'Esta é'. Para fazer o superlativo 'a mais inteligente', o francês usa 'la plus intelligente'. 'De la classe' é exatamente 'da classe'.",
     "breakdown": [
-      { "word": "C'", "meaning": "Ele / Ela (encurtado antes de verbo)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "personne", "meaning": "pessoa" },
-      { "word": "la", "meaning": "a" },
-      { "word": "plus", "meaning": "mais (la plus = a mais)" },
-      { "word": "intelligente", "meaning": "inteligente (no feminino)" },
-      { "word": "de", "meaning": "de / da" },
-      { "word": "la", "meaning": "a" },
-      { "word": "classe", "meaning": "turma / classe" }
-    ]
+      {
+        "word": "C'est la personne",
+        "meaning": "É a pessoa / Esta é a pessoa."
+      },
+      {
+        "word": "la plus",
+        "meaning": "A mais."
+      },
+      {
+        "word": "intelligente",
+        "meaning": "Inteligente."
+      },
+      {
+        "word": "de la classe",
+        "meaning": "Da classe / Da sala."
+      }
+    ],
+    "pronuncia": "Diga 'Sê la pêr-són', arranhando o 'R'. 'La plus' tem biquinho: 'la plü'. 'Intelligente' soa como 'ãn-tê-li-jãnt' (nasal no início e no fim). Termine com 'dê la clás'.\nLeia: Sê la pêr-són la plü ãn-tê-li-jãnt dê la clás."
   },
   "494": {
-    "explanation": "Frase sobre estilo de trabalho: 'Je n'aime pas' é 'eu não gosto de'. O verbo trabalhar ('travailler') vem no infinitivo. A expressão francesa para trabalhar sob pressão é 'travailler sous pression'.",
+    "explanation": "Para dizer que não gosta, o francês 'abraça' o verbo com 'ne' e 'pas'. 'Sous pression' é a tradução direta de 'sob pressão'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
-      { "word": "aime", "meaning": "gosto (do verbo aimer)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "travailler", "meaning": "trabalhar" },
-      { "word": "sous", "meaning": "sob / debaixo de" },
-      { "word": "pression", "meaning": "pressão" }
-    ]
+      {
+        "word": "Je n'aime pas",
+        "meaning": "Eu não gosto — Je: eu; n'aime pas: não gosto."
+      },
+      {
+        "word": "travailler",
+        "meaning": "Trabalhar."
+      },
+      {
+        "word": "sous pression",
+        "meaning": "Sob pressão."
+      }
+    ],
+    "pronuncia": "Diga 'Jê ném pá' (o 'n' gruda no 'aime'). 'Travailler' é 'tra-va-iê'. 'Sous' soa como 'su' e 'pression' é 'prê-si-õ', com o final bem nasal saindo pelo nariz.\nLeia: Jê ném pá tra-va-iê su prê-si-õ."
   },
   "495": {
-    "explanation": "Pergunta comum em entrevistas: 'As-tu' é 'você tem?'. Como experiência é uma característica não quantificada em unidades, usa-se 'de l'expérience' (com 'de l'' encurtado antes de vogal). 'Dans la vente' significa 'em vendas / no setor de vendas'.",
+    "explanation": "Mais uma pergunta com inversão: 'As-tu' (Tem você). O 'de l'expérience' usa o 'l' para facilitar a fala antes de vogal. 'Dans la vente' significa 'nas vendas'.",
     "breakdown": [
-      { "word": "As", "meaning": "Tem / Tens (do verbo avoir)" },
-      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
-      { "word": "de l'", "meaning": "experiência em geral (marcador de quantidade antes de vogal)" },
-      { "word": "expérience", "meaning": "experiência" },
-      { "word": "dans", "meaning": "em / na" },
-      { "word": "la", "meaning": "a" },
-      { "word": "vente", "meaning": "venda / setor de vendas" }
-    ]
+      {
+        "word": "As-tu",
+        "meaning": "Você tem."
+      },
+      {
+        "word": "de l'expérience",
+        "meaning": "Experiência."
+      },
+      {
+        "word": "dans la vente",
+        "meaning": "Nas vendas / Na venda."
+      }
+    ],
+    "pronuncia": "Diga 'A-tü' com biquinho. 'De l'expérience' soa como 'dê léks-pê-ri-ãns' (nasal no fim). 'Dans la vente' soa como 'dã la vãnt', com dois sons nasais bem abertos.\nLeia: A-tü dê léks-pê-ri-ãns dã la vãnt ?"
   },
   "496": {
-    "explanation": "'J'écris' significa 'eu escrevo' ou 'estou escrevendo' (do verbo écrire). 'Un rapport' é um relatório profissional ou escolar. 'Pour mon patron' significa 'para meu chefe/patrão'.",
+    "explanation": "O verbo 'écris' serve tanto para 'escrevo' quanto para 'estou escrevendo'. 'Un rapport' é 'um relatório' e 'patron' é o jeito comum de chamar o chefe ou patrão.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "écris", "meaning": "escrevo / estou escrevendo (do verbo écrire)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "rapport", "meaning": "relatório" },
-      { "word": "pour", "meaning": "para" },
-      { "word": "mon", "meaning": "meu" },
-      { "word": "patron", "meaning": "chefe / patrão" }
-    ]
+      {
+        "word": "J'écris",
+        "meaning": "Eu escrevo / Estou escrevendo."
+      },
+      {
+        "word": "un rapport",
+        "meaning": "Um relatório."
+      },
+      {
+        "word": "pour mon patron",
+        "meaning": "Para meu patrão / chefe."
+      }
+    ],
+    "pronuncia": "Diga 'Jê-crí' arranhando o 'R'. 'Un' é o nasal 'ã'. 'Rapport' soa como 'ra-pôr' (o 't' final morre). 'Pour' é 'pur' e 'mon patron' soa como 'mõ pa-trõ', com dois 'os' nasais.\nLeia: Jê-crí ã ra-pôr pur mõ pa-trõ."
   },
   "497": {
-    "explanation": "'Elle va' significa 'ela vai' (indicando futuro). Em francês, pedir demissão ou sair do trabalho é o verbo démissionner. O adjetivo 'prochain' vem depois do mês: 'le mois prochain' (no próximo mês).",
+    "explanation": "Para o futuro próximo, usamos 'va' (vai) mais o verbo principal 'démissionner' (pedir demissão). 'Le mois prochain' é 'o mês próximo/que vem'.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "va", "meaning": "vai (do verbo aller indicando futuro)" },
-      { "word": "démissionner", "meaning": "pedir demissão / demitir-se" },
-      { "word": "le", "meaning": "o / no" },
-      { "word": "mois", "meaning": "mês" },
-      { "word": "prochain", "meaning": "próximo" }
-    ]
+      {
+        "word": "Elle va",
+        "meaning": "Ela vai."
+      },
+      {
+        "word": "démissionner",
+        "meaning": "Pedir demissão / Se demitir."
+      },
+      {
+        "word": "le mois prochain",
+        "meaning": "O mês que vem / O próximo mês."
+      }
+    ],
+    "pronuncia": "Diga 'Él va'. 'Démissionner' soa como 'dê-mi-si-ô-nê'. 'Le mois' é 'lê muá'. Termine com 'prô-chã', com o final bem nasal, como se fosse um 'ã' de maçã.\nLeia: Él va dê-mi-si-ô-nê lê muá prô-chã."
   },
   "498": {
-    "explanation": "'Nous avons' é 'nós temos'. 'Une pause' é um intervalo ou pausa para café/descanso. O horário marcado é indicado por 'à dix heures et demie' (às dez e meia, com demie no feminino concordando com horas).",
+    "explanation": "O francês usa 'Nous avons' (Nós temos). Para falar as horas, eles dizem 'dez horas e meia'. O 'et demie' é o nosso 'e meia'.",
     "breakdown": [
-      { "word": "Nous", "meaning": "Nós" },
-      { "word": "avons", "meaning": "temos (do verbo avoir)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "pause", "meaning": "pausa / intervalo" },
-      { "word": "à", "meaning": "às" },
-      { "word": "dix", "meaning": "dez" },
-      { "word": "heures", "meaning": "horas" },
-      { "word": "et", "meaning": "e" },
-      { "word": "demie", "meaning": "meia (et demie = e meia)" }
-    ]
+      {
+        "word": "Nous avons",
+        "meaning": "Nós temos."
+      },
+      {
+        "word": "une pause",
+        "meaning": "Uma pausa / Um intervalo."
+      },
+      {
+        "word": "à dix heures",
+        "meaning": "Às dez horas."
+      },
+      {
+        "word": "et demie",
+        "meaning": "E meia."
+      }
+    ],
+    "pronuncia": "Diga 'Nu-za-võ' (o 's' vira som de 'z' ao grudar no 'a'). 'Une pause' soa como 'ün pôz' (biquinho no 'ü'). 'À dix heures' soa como 'a di-zêr'. Termine com 'ê dê-mí'.\nLeia: Nu-za-võ ün pôz a di-zêr ê dê-mí."
   },
   "499": {
-    "explanation": "Pergunta sobre o futuro da prova: cita-se o tema ('L'examen') e em seguida usa-se 'va-t-il' (vai ele?), com a letrinha '-t-' ligando a fala. O verbo ser no infinitivo é 'être', e 'difficile' é difícil.",
+    "explanation": "Em perguntas formais, o francês coloca um '-t-' entre o verbo e o pronome para o som ficar mais bonito: 'va-t-il' (vai ele). 'Être' é o verbo ser/estar.",
     "breakdown": [
-      { "word": "L'", "meaning": "O (encurtado antes de vogal)" },
-      { "word": "examen", "meaning": "exame / prova" },
-      { "word": "va", "meaning": "vai (do verbo aller)" },
-      { "word": "-t-", "meaning": "letrinha de ligação usada para suavizar o som" },
-      { "word": "-il", "meaning": "ele (invertido para reforçar a pergunta)" },
-      { "word": "être", "meaning": "ser / estar" },
-      { "word": "difficile", "meaning": "difícil" }
-    ]
+      {
+        "word": "L'examen",
+        "meaning": "A prova / O exame."
+      },
+      {
+        "word": "va-t-il être",
+        "meaning": "Vai ser / Será."
+      },
+      {
+        "word": "difficile",
+        "meaning": "Difícil."
+      }
+    ],
+    "pronuncia": "Diga 'Lég-za-mã' (nasal no fim). 'Va-t-il' soa como 'va-til'. 'Être' soa como 'êtr' com o 'R' bem curtinho. Termine com 'di-fi-síl'.\nLeia: Lég-za-mã va-til êtr di-fi-síl ?"
   },
   "500": {
-    "explanation": "'J'ai besoin d'' significa 'eu preciso de' (com 'de' encurtado antes de vogal). O verbo usar é 'utiliser'. Como impressora em francês começa com vogal, usa-se 'l'imprimante' (com 'l'' encurtado).",
+    "explanation": "A expressão 'J'ai besoin de' significa 'Eu preciso de' (literalmente: eu tenho necessidade de). O 'd' gruda em 'utiliser' porque começa com vogal. 'L'imprimante' é a impressora.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
-      { "word": "besoin", "meaning": "necessidade (avoir besoin de = precisar de)" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "utiliser", "meaning": "usar / utilizar" },
-      { "word": "l'", "meaning": "a (encurtado antes de vogal)" },
-      { "word": "imprimante", "meaning": "impressora" }
-    ]
+      {
+        "word": "J'ai besoin d'",
+        "meaning": "Eu preciso de."
+      },
+      {
+        "word": "utiliser",
+        "meaning": "Usar / Utilizar."
+      },
+      {
+        "word": "l'imprimante",
+        "meaning": "A impressora."
+      }
+    ],
+    "pronuncia": "Diga 'Jê bê-zuã' (nasal no fim). 'D'utiliser' soa como 'dü-ti-li-zê' (biquinho no 'ü'). 'L'imprimante' soa como 'lãm-pri-mãnt', com dois sons nasais bem fortes.\nLeia: Jê bê-zuã dü-ti-li-zê lãm-pri-mãnt."
   },
   "501": {
-    "explanation": "'Il cherche' significa 'ele procura' ou 'está buscando' (do verbo chercher). Em francês, uma promoção de cargo na carreira é 'une promotion' (palavra feminina).",
+    "explanation": "Frase simples e direta. 'Il cherche' (Ele procura/busca) e 'une promotion' (uma promoção). A estrutura é idêntica ao português.",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele" },
-      { "word": "cherche", "meaning": "procura / busca (do verbo chercher)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "promotion", "meaning": "promoção (de cargo)" }
-    ]
+      {
+        "word": "Il cherche",
+        "meaning": "Ele busca / Ele procura."
+      },
+      {
+        "word": "une promotion",
+        "meaning": "Uma promoção."
+      }
+    ],
+    "pronuncia": "Diga 'Il chérch', parando no som do 'ch'. 'Une' tem biquinho: 'ün'. 'Promotion' soa como 'prô-mô-si-õ', com o final bem nasal saindo pelo nariz.\nLeia: Il chérch ün prô-mô-si-õ."
   },
   "502": {
-    "explanation": "'Je travaille ici' significa 'eu trabalho aqui'. A palavra 'depuis' indica a duração contínua de algo que começou no passado e ainda continua no presente ('há' ou 'desde'). 'Six mois' são seis meses.",
+    "explanation": "Para dizer 'há tanto tempo', o francês usa 'depuis' (desde). Eles dizem 'Eu trabalho aqui desde seis meses'. É o jeito deles de marcar que a ação ainda continua.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "travaille", "meaning": "trabalho (do verbo travailler)" },
-      { "word": "ici", "meaning": "aqui" },
-      { "word": "depuis", "meaning": "há / desde (para tempo contínuo)" },
-      { "word": "six", "meaning": "seis" },
-      { "word": "mois", "meaning": "meses" }
-    ]
+      {
+        "word": "Je travaille ici",
+        "meaning": "Eu trabalho aqui."
+      },
+      {
+        "word": "depuis",
+        "meaning": "Há / Desde."
+      },
+      {
+        "word": "six mois",
+        "meaning": "Seis meses."
+      }
+    ],
+    "pronuncia": "Diga 'Jê tra-vái i-sí'. 'Depuis' soa como 'dê-puí'. 'Six' antes de palavra com consoante soa apenas como 'si'. 'Mois' soa como 'muá'.\nLeia: Jê tra-vái i-sí dê-puí si muá."
   },
   "503": {
-    "explanation": "Pergunta sobre perfil profissional: 'Préfères-tu' é a forma interrogativa de 'você prefere'. O verbo trabalhar ('travailler') vem no infinitivo. 'Seul' é sozinho, e a expressão francesa para em equipe é 'en équipe'.",
+    "explanation": "Pergunta com inversão: 'Préfères-tu' (Prefere você). 'Seul' é sozinho e 'en équipe' é em equipe. O 'en' ganha um som de 'n' ao emendar na palavra seguinte.",
     "breakdown": [
-      { "word": "Préfères", "meaning": "Prefere / Preferes (do verbo préférer)" },
-      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
-      { "word": "travailler", "meaning": "trabalhar" },
-      { "word": "seul", "meaning": "sozinho" },
-      { "word": "ou", "meaning": "ou" },
-      { "word": "en", "meaning": "em" },
-      { "word": "équipe", "meaning": "equipe / time (en équipe = em equipe)" }
-    ]
+      {
+        "word": "Préfères-tu",
+        "meaning": "Você prefere."
+      },
+      {
+        "word": "travailler seul",
+        "meaning": "Trabalhar sozinho."
+      },
+      {
+        "word": "ou en équipe",
+        "meaning": "Ou em equipe."
+      }
+    ],
+    "pronuncia": "Diga 'Prê-fér-tü' (biquinho no 'ü'). 'Travailler' é 'tra-va-iê'. 'Seul' soa como 'sêl'. 'Ou' soa como 'u'. 'En équipe' soa como 'ã-nê-kíp' (o 'n' aparece na ligação).\nLeia: Prê-fér-tü tra-va-iê sêl u ã-nê-kíp ?"
   },
   "504": {
-    "explanation": "'Le bureau' é o escritório. 'Est situé' significa 'fica localizado' ou 'está situado' (do verbo situer). A contração 'au' (à + le) conecta com 'centre-ville' (centro da cidade).",
+    "explanation": "'Le bureau' pode ser tanto o escritório quanto a mesa de trabalho. 'Situé' é situado/localizado e 'au centre-ville' é a expressão para o centro da cidade.",
     "breakdown": [
-      { "word": "Le", "meaning": "O" },
-      { "word": "bureau", "meaning": "escritório" },
-      { "word": "est", "meaning": "está / é (do verbo être)" },
-      { "word": "situé", "meaning": "situado / localizado" },
-      { "word": "au", "meaning": "no (junção de à + le)" },
-      { "word": "centre-ville", "meaning": "centro da cidade" }
-    ]
+      {
+        "word": "Le bureau",
+        "meaning": "O escritório."
+      },
+      {
+        "word": "est situé",
+        "meaning": "Está situado / Fica."
+      },
+      {
+        "word": "au centre-ville",
+        "meaning": "No centro da cidade."
+      }
+    ],
+    "pronuncia": "Diga 'Lê bü-rô' (biquinho no 'ü'). 'Est situé' soa como 'ê si-tü-ê' (outro biquinho). 'Au' é 'ô'. 'Centre-ville' soa como 'sãntr-víl', com o 'ã' nasal e o 'R' final quase sumindo.\nLeia: Lê bü-rô ê si-tü-ê ô sãntr-víl."
   },
   "505": {
-    "explanation": "Cuidado com o verbo: aqui 'suis' vem do verbo suivre (seguir / acompanhar / cursar) e não do verbo être! 'Je suis un cours' é a forma correta em francês de dizer 'estou fazendo/acompanhando um curso'. A expressão 'en ligne' significa pela internet / online.",
+    "explanation": "Cuidado aqui! 'Je suis' pode ser 'eu sou/estou', mas também vem do verbo seguir. Então 'Je suis un cours' significa 'Eu sigo/faço um curso'. 'En ligne' é online.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "sigo / acompanho / faço curso (do verbo suivre)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "cours", "meaning": "curso / aula" },
-      { "word": "en", "meaning": "em" },
-      { "word": "ligne", "meaning": "linha (en ligne = online / pela internet)" }
-    ]
+      {
+        "word": "Je suis",
+        "meaning": "Eu sigo / Eu faço / Eu estou fazendo."
+      },
+      {
+        "word": "un cours",
+        "meaning": "Um curso."
+      },
+      {
+        "word": "en ligne",
+        "meaning": "Online / Em linha."
+      }
+    ],
+    "pronuncia": "Diga 'Jê suí'. 'Un' é o nasal 'ã'. 'Cours' soa como 'cur', arranhando o 'R'. 'En ligne' soa como 'ã lí-ñ', com o final lembrando o nosso 'nh' de 'linha'.\nLeia: Jê suí ã cur ã lí-ñ."
   },
   "506": {
-    "explanation": "Em francês, para dizer que alguém tem talento nato ou é muito bom em fazer algo, usa-se a expressão 'être doué pour' (literalmente ser dotado/talentoso para). O verbo explicar é 'expliquer', e 'les choses' são as coisas.",
+    "explanation": "A expressão 'être doué pour' significa 'ser talentoso ou bom em' alguma coisa. 'Expliquer les choses' é a tradução direta de explicar as coisas.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "très", "meaning": "muito" },
-      { "word": "douée", "meaning": "boa / talentosa / dotada (no feminino)" },
-      { "word": "pour", "meaning": "para (doué pour = bom em)" },
-      { "word": "expliquer", "meaning": "explicar" },
-      { "word": "les", "meaning": "as" },
-      { "word": "choses", "meaning": "coisas" }
-    ]
+      {
+        "word": "Elle est très douée",
+        "meaning": "Ela é muito talentosa / muito boa."
+      },
+      {
+        "word": "pour expliquer",
+        "meaning": "Para explicar."
+      },
+      {
+        "word": "les choses",
+        "meaning": "As coisas."
+      }
+    ],
+    "pronuncia": "Diga 'Él ê trê du-ê'. 'Pour' é 'pur'. 'Expliquer' soa como 'éks-pli-kê'. 'Les choses' soa como 'lê chôz', com o 's' final mudo.\nLeia: Él ê trê du-ê pur éks-pli-kê lê chôz."
   },
   "507": {
-    "explanation": "Termo oficial corporativo em francês: entrevista de emprego é chamada de 'entretien d'embauche' (onde embauche significa contratação). 'Demain matin' é 'amanhã de manhã'.",
+    "explanation": "'Un entretien d'embauche' é o termo completo para entrevista de emprego. 'Demain matin' é amanhã de manhã, sem precisar de preposição no meio.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
-      { "word": "un", "meaning": "uma / um" },
-      { "word": "entretien", "meaning": "entrevista" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "embauche", "meaning": "contratação (entretien d'embauche = entrevista de emprego)" },
-      { "word": "demain", "meaning": "amanhã" },
-      { "word": "matin", "meaning": "manhã (demain matin = amanhã de manhã)" }
-    ]
+      {
+        "word": "J'ai un entretien",
+        "meaning": "Eu tenho uma entrevista."
+      },
+      {
+        "word": "d'embauche",
+        "meaning": "De contratação / De emprego."
+      },
+      {
+        "word": "demain matin",
+        "meaning": "Amanhã de manhã."
+      }
+    ],
+    "pronuncia": "Diga 'Jê ã-nãntr-ti-ã' (o 'n' do 'un' gruda no 'entretien'). 'D'embauche' soa como 'dãm-bôch' (nasal). 'Demain matin' soa como 'dê-mã ma-tã', com dois finais nasais como 'maçã'.\nLeia: Jê ã-nãntr-ti-ã dãm-bôch dê-mã ma-tã."
   },
   "508": {
-    "explanation": "Pergunta clássica de RH em entrevistas: 'Quelles sont' é 'quais são' (no feminino plural, concordando com responsabilidades). 'Vos' é 'suas' de forma formal. 'Principales' significa principais, e 'responsabilités' são responsabilidades.",
+    "explanation": "Pergunta direta: 'Quelles sont' (Quais são). 'Vos' é o plural de seu/sua (seus/suas). 'Principales responsabilités' segue a mesma lógica do português.",
     "breakdown": [
-      { "word": "Quelles", "meaning": "Quais (feminino plural de quel)" },
-      { "word": "sont", "meaning": "são (do verbo être no plural)" },
-      { "word": "vos", "meaning": "suas (possessivo formal com vous)" },
-      { "word": "principales", "meaning": "principais (no feminino plural)" },
-      { "word": "responsabilités", "meaning": "responsabilidades" }
-    ]
+      {
+        "word": "Quelles sont",
+        "meaning": "Quais são."
+      },
+      {
+        "word": "vos principales",
+        "meaning": "Suas principais."
+      },
+      {
+        "word": "responsabilités",
+        "meaning": "Responsabilidades."
+      }
+    ],
+    "pronuncia": "Diga 'Kél sõ' (nasal). 'Vos' é 'vô'. 'Principales' soa como 'prãn-si-pál' (nasal no início). 'Responsabilités' soa como 'rês-põn-sa-bi-li-tê' (nasal no 'põn').\nLeia: Kél sõ vô prãn-si-pál rês-põn-sa-bi-li-tê ?"
   },
   "509": {
-    "explanation": "'J'ai besoin d'aide' significa 'preciso de ajuda' (com 'de' encurtado antes da vogal de aide). A preposição 'pour' significa 'para' ou 'com', e 'ce projet' é 'este projeto'.",
+    "explanation": "Usamos novamente 'J'ai besoin de' (Eu preciso de), mas aqui o 'de' vira 'd'' para grudar em 'aide' (ajuda). 'Ce projet' é 'este projeto'.",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
-      { "word": "besoin", "meaning": "necessidade (avoir besoin de = precisar de)" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "aide", "meaning": "ajuda / auxílio" },
-      { "word": "pour", "meaning": "para / com" },
-      { "word": "ce", "meaning": "este" },
-      { "word": "projet", "meaning": "projeto" }
-    ]
+      {
+        "word": "J'ai besoin d'aide",
+        "meaning": "Eu preciso de ajuda."
+      },
+      {
+        "word": "pour ce projet",
+        "meaning": "Para este projeto."
+      }
+    ],
+    "pronuncia": "Diga 'Jê bê-zuã déd' (o 'd' gruda no 'aide'). 'Pour' é 'pur'. 'Ce projet' soa como 'sê prô-jê', com o 't' final mudo.\nLeia: Jê bê-zuã déd pur sê prô-jê."
   },
   "510": {
-    "explanation": "'La bibliothèque' é a biblioteca. O adjetivo 'bon' (bom) costuma vir antes da palavra 'endroit' (lugar/local). A preposição 'pour' conecta ao verbo estudar no infinitivo ('étudier').",
+    "explanation": "A frase é quase igual ao português. 'Un bon endroit' significa 'um bom lugar'. O francês usa 'endroit' com frequência para se referir a locais específicos.",
     "breakdown": [
-      { "word": "La", "meaning": "A" },
-      { "word": "bibliothèque", "meaning": "biblioteca" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "bon", "meaning": "bom" },
-      { "word": "endroit", "meaning": "lugar / local" },
-      { "word": "pour", "meaning": "para" },
-      { "word": "étudier", "meaning": "estudar" }
-    ]
+      {
+        "word": "La bibliothèque",
+        "meaning": "A biblioteca."
+      },
+      {
+        "word": "est un bon endroit",
+        "meaning": "É um bom lugar."
+      },
+      {
+        "word": "pour étudier",
+        "meaning": "Para estudar."
+      }
+    ],
+    "pronuncia": "Diga 'La bi-bli-ô-ték'. 'Est un bon endroit' soa como 'ê-tã bõ-nã-druá' (tudo ligadinho e nasal). 'Pour étudier' soa como 'pur ê-tü-di-ê' (biquinho no 'ü').\nLeia: La bi-bli-ô-ték ê-tã bõ-nã-druá pur ê-tü-di-ê."
   }
 }

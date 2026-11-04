@@ -1,366 +1,574 @@
 {
   "331": {
-    "explanation": "Em francês, para dizer que você nasceu, usa-se o verbo ser no presente acompanhado de 'né' ('je suis né', literalmente 'eu sou nascido'). O adjetivo de tamanho 'petit' (pequeno) costuma vir antes da palavra 'village' (vila ou aldeia). Se quem estiver falando for mulher, na escrita acrescenta-se um 'e' no final (née), mantendo a mesma pronúncia.",
+    "explanation": "Para dizer 'eu nasci', em francês os nativos usam a expressão 'Je suis né', que significa ao pé da letra 'eu estou nascido'. A palavra 'dans' indica a localização 'em' ou 'dentro de', seguida de 'un petit village', onde o adjetivo 'petit' vem antes do nome da coisa, exatamente como no português 'uma pequena vila'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "sou / estou (verbo être usado para expressar nascimento)" },
-      { "word": "né", "meaning": "nascido (je suis né = eu nasci)" },
-      { "word": "dans", "meaning": "em / dentro de" },
-      { "word": "un", "meaning": "um" },
-      { "word": "petit", "meaning": "pequeno" },
-      { "word": "village", "meaning": "vilarejo / vila" }
-    ]
+      {
+        "word": "Je suis né",
+        "meaning": "Eu nasci — Je: eu; suis: estou; né: nascido."
+      },
+      {
+        "word": "dans",
+        "meaning": "Em / Dentro de."
+      },
+      {
+        "word": "un petit",
+        "meaning": "Um pequeno / Uma pequena — un: um; petit: pequeno."
+      },
+      {
+        "word": "village",
+        "meaning": "Vila / Vilarejo."
+      }
+    ],
+    "pronuncia": "Em 'Je suis né', faça um bico leve em 'Je' ('jû'), junte o 'suis' com som de bico ('süí') e feche em 'né' com 'ê' limpo. Em 'dans un', o som nasal de 'dans' se junta com 'un' formando um único bloco sem falar 'n' duro ('dã-zõn'). Em 'petit village', o 't' do meio fica bem curto ('p'tí') e 'village' fecha com som de 'j' suave e a vogal final mudo ('vi-láj').\nLeia: Jû süí né dã-zõn p'tí vi-láj."
   },
   "332": {
-    "explanation": "Pergunta sobre a infância de alguém: 'Où' é 'onde'. 'As-tu grandi' é a forma de pergunta no passado para 'você cresceu' (com o verbo avoir + a ação no passado 'grandi', do verbo grandir).",
+    "explanation": "Para perguntar onde alguém cresceu, os nativos invertem a ordem das palavras e dizem 'Où as-tu grandi?', que significa literalmente 'Onde tens tu crescido?'. A palavra 'Où' significa 'Onde', o ajudante 'as' (do verbo ter) combina com 'tu' (você), e 'grandi' completa o sentido indicando a ação de crescer no passado.",
     "breakdown": [
-      { "word": "Où", "meaning": "Onde" },
-      { "word": "as", "meaning": "fez a ação no passado (auxiliar avoir)" },
-      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
-      { "word": "grandi", "meaning": "crescido / cresceu (do verbo grandir)" }
-    ]
+      {
+        "word": "Où",
+        "meaning": "Onde."
+      },
+      {
+        "word": "as-tu",
+        "meaning": "Você tem / Tens tu — formato de pergunta invertida."
+      },
+      {
+        "word": "grandi",
+        "meaning": "Crescido / Cresceu — do verbo grandir (crescer)."
+      }
+    ],
+    "pronuncia": "O 'Où' sai com bico de 'u' bem fechado ('U'). Em 'as-tu', o 's' não é pronunciado antes do traço, e 'tu' exige um bico bem projetado com som entre 'i' e 'u' ('a-tü'). Em 'grandi', raspe suavemente o 'R' no fundo da garganta e feche no 'di' limpo ('grã-dí'), com o 'an' saindo pelo nariz sem bater a língua no céu da boca.\nLeia: U a-tü grã-dí?"
   },
   "333": {
-    "explanation": "Para falar sobre profissão com tempo de duração, a palavra mágica é 'depuis' (que significa 'desde' ou 'há tanto tempo'). Em francês, diz-se 'elle est infirmière' sem colocar 'uma' na frente da profissão.",
+    "explanation": "Em francês, para dizer que alguém exerce uma profissão há certo tempo, usa-se a palavra 'depuis', que equivale ao nosso 'há' ou 'desde'. Note também que não se usa artigo antes de 'infirmière' (enfermeira), indo direto de 'ela é' (Elle est) para o nome da profissão. No final, 'cinq ans' junta o número cinco com a palavra anos.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "infirmière", "meaning": "enfermeira" },
-      { "word": "depuis", "meaning": "desde / há (para indicar tempo que continua até o presente)" },
-      { "word": "cinq", "meaning": "cinco" },
-      { "word": "ans", "meaning": "anos" }
-    ]
+      {
+        "word": "Elle est",
+        "meaning": "Ela é / Ela está."
+      },
+      {
+        "word": "infirmière",
+        "meaning": "Enfermeira."
+      },
+      {
+        "word": "depuis",
+        "meaning": "Há / Desde."
+      },
+      {
+        "word": "cinq ans",
+        "meaning": "Cinco anos — cinq: cinco; ans: anos."
+      }
+    ],
+    "pronuncia": "Em 'Elle est infirmière', o 'Elle' se junta com 'est' e emenda no 'i' de 'infirmière' num som corrido ('ê-lê-tẽn-fir-miêr'), onde o 'R' no final é suavemente arranhado na garganta. Em 'depuis', o 'e' do meio é bem curto e o 'u' tem som de bico ('d'püí'). Em 'cinq ans', o som do número cinco gruda na palavra anos, transformando o som final em um 'k' que emenda no som nasal ('sẽn-kã').\nLeia: Ê-lê-tẽn-fir-miêr d'püí serão-kã."
   },
   "334": {
-    "explanation": "Para comparar pessoas em tamanho, usa-se 'plus grand que' (mais alto que). Em francês, 'mon frère aîné' é a forma padrão de se referir ao seu 'irmão mais velho'.",
+    "explanation": "Para fazer comparações de tamanho, o francês usa 'plus grand que', que equivale a 'mais alto que' ou 'mais grande que'. Na parte da família, enquanto no português dizemos 'irmão mais velho', os nativos preferem a palavra específica 'frère aîné', que significa literalmente 'irmão primogênito' ou 'irmão mais velho'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "sou (do verbo être)" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "grand", "meaning": "alto / grande" },
-      { "word": "que", "meaning": "que / do que" },
-      { "word": "mon", "meaning": "meu" },
-      { "word": "frère", "meaning": "irmão" },
-      { "word": "aîné", "meaning": "mais velho / primogênito" }
-    ]
+      {
+        "word": "Je suis",
+        "meaning": "Eu sou / Eu estou."
+      },
+      {
+        "word": "plus grand que",
+        "meaning": "Mais alto que / Mais grande que — plus: mais; grand: grande/alto; que: que."
+      },
+      {
+        "word": "mon frère",
+        "meaning": "Meu irmão — mon: meu; frère: irmão."
+      },
+      {
+        "word": "aîné",
+        "meaning": "Mais velho / Primogênito."
+      }
+    ],
+    "pronuncia": "Comece com 'Je suis' ('jû süí'). Em 'plus grand que', o 's' de 'plus' é mudo, o 'grand' tem som nasal sem falar o 'd' final ('grã'), e o 'que' sai bem curto ('kû'). Em 'mon frère', o 'mon' é nasal ('mõn') e 'frère' arranha o 'R' no fundo da garganta ('frêr'). Em 'aîné', emende o som do 'R' com a palavra seguinte soltando um 'ê-né' limpo.\nLeia: Jû süí plü grã kû mõn frêr ê-né."
   },
   "335": {
-    "explanation": "Pergunta para saber os gostos musicais de alguém. 'Quel genre de' significa 'que tipo de' ou 'que gênero de'. 'Préfères-tu' é a forma de pergunta de 'você prefere', com o verbo vindo na frente ligado por hífen à pessoa.",
+    "explanation": "Na hora de perguntar o gosto musical de alguém, os franceses dizem 'Quel genre de musique', que é o nosso 'Que tipo/gênero de música'. Para deixar claro que é uma pergunta direta, eles colocam o verbo 'préfères' na frente do 'tu', ligando as duas palavras com um hífen.",
     "breakdown": [
-      { "word": "Quel", "meaning": "Qual / Que" },
-      { "word": "genre", "meaning": "tipo / gênero" },
-      { "word": "de", "meaning": "de" },
-      { "word": "musique", "meaning": "música" },
-      { "word": "préfères", "meaning": "prefere / preferes (do verbo préférer)" },
-      { "word": "-tu", "meaning": "você (invertido para pergunta)" }
-    ]
+      {
+        "word": "Quel genre de",
+        "meaning": "Que tipo de / Qual gênero de — Quel: qual/que; genre: tipo/gênero; de: de."
+      },
+      {
+        "word": "musique",
+        "meaning": "Música."
+      },
+      {
+        "word": "préfères-tu",
+        "meaning": "Você prefere — formato invertido para perguntas."
+      }
+    ],
+    "pronuncia": "Fale 'Quel genre de' soltando o 'l' de 'Quel' ('kêl'), passe por 'jãn-rû' com o som de 'j' suave e o 'an' bem nasal saindo pelo nariz, e feche no 'dê'. Em 'musique', faça bico no 'u' ('mü-zík'). Em 'préfères-tu', o 'R' é levemente arranhado, e o 'tu' final exige o bico firme projetado com som de 'tü'.\nLeia: Kêl jãn-rû dê mü-zík prê-fêr-tü?"
   },
   "336": {
-    "explanation": "A expressão de negação 'ne... plus' significa 'não mais' ou 'já não'. A palavra 'chez' significa 'na casa de', e 'ses parents' são os pais dele (pai e mãe). Então 'il ne vit plus chez ses parents' significa literalmente 'ele não mora mais na casa dos pais dele'.",
+    "explanation": "A estrutura 'ne ... plus' forma a ideia de 'não mais'. O verbo 'vit' vem do verbo viver/morar. Para indicar 'na casa de alguém', os franceses usam a palavra mágica 'chez', então 'chez ses parents' significa ao pé da letra 'na casa dos seus pais'.",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele" },
-      { "word": "ne", "meaning": "primeira parte da negação" },
-      { "word": "vit", "meaning": "mora / vive (do verbo vivre)" },
-      { "word": "plus", "meaning": "mais (junto com 'ne' significa 'não mais')" },
-      { "word": "chez", "meaning": "na casa de" },
-      { "word": "ses", "meaning": "seus / dele (para coisas no plural)" },
-      { "word": "parents", "meaning": "pais (pai e mãe)" }
-    ]
+      {
+        "word": "Il ne vit plus",
+        "meaning": "Ele não mora mais / Ele não vive mais — Il: ele; ne...plus: não mais; vit: mora/vive."
+      },
+      {
+        "word": "chez",
+        "meaning": "Na casa de / Com."
+      },
+      {
+        "word": "ses parents",
+        "meaning": "Seus pais — ses: seus/suas; parents: pais."
+      }
+    ],
+    "pronuncia": "Em 'Il ne vit plus', o 'l' de 'Il' é bem marcado ('il'), o 'ne' é bem curto ('nû'), o 't' de 'vit' não é pronunciado e o 's' de 'plus' fica mudo ('ví plü'). Em 'chez ses parents', o 'z' de 'chez' é mudo ('chê'), o 's' final de 'ses' não aparece ('sê') e 'parents' tem o som nasal em 'an' com a terminação totalmente mudo ('pa-rã').\nLeia: Il nû ví plü chê sê pa-rã."
   },
   "337": {
-    "explanation": "'Ma sœur' é 'minha irmã'. 'Se marie' vem do verbo se marier (casar-se). Em francês, o adjetivo 'prochain' (próximo) vem depois do mês: 'le mois prochain' (no próximo mês).",
+    "explanation": "Em francês, para dizer que a irmã vai se casar, usa-se a expressão 'se marie', do verbo casar-se. Na marcação do tempo, em vez de usar a preposição 'em', a língua francesa vai direto ao ponto com 'le mois prochain', que significa literalmente 'o mês próximo'.",
     "breakdown": [
-      { "word": "Ma", "meaning": "Minha" },
-      { "word": "sœur", "meaning": "irmã" },
-      { "word": "se", "meaning": "se" },
-      { "word": "marie", "meaning": "casa (do verbo se marier)" },
-      { "word": "le", "meaning": "o / no" },
-      { "word": "mois", "meaning": "mês" },
-      { "word": "prochain", "meaning": "próximo" }
-    ]
+      {
+        "word": "Ma sœur",
+        "meaning": "Minha irmã — Ma: minha; sœur: irmã."
+      },
+      {
+        "word": "se marie",
+        "meaning": "Vai se casar / Casa-se."
+      },
+      {
+        "word": "le mois",
+        "meaning": "O mês."
+      },
+      {
+        "word": "prochain",
+        "meaning": "Próximo / Que vem."
+      }
+    ],
+    "pronuncia": "Em 'Ma sœur', a vogal em 'sœur' é dita com a boca arredondada soltando um 'sœr' com o 'R' arranhado suavemente. Em 'se marie', fale 'sû ma-rí'. Em 'le mois prochain', o 'mois' tem som de 'muá' sem falar o 's' final, e 'prochain' começa com 'prô-chẽn', com a vogal nasal saindo pelo nariz no fim.\nLeia: Ma sœr sû ma-rí lê muá prô-chẽn."
   },
   "338": {
-    "explanation": "'As-tu' é a pergunta 'você tem?'. Em francês, animais de estimação são chamados de 'animaux de compagnie' (literalmente animais de companhia). 'À la maison' é a expressão consagrada para 'em casa'.",
+    "explanation": "Para perguntar sobre bichos de estimação, o francês usa a inversão 'As-tu' (Tens tu) e a expressão 'animaux de compagnie', que significa literalmente 'animais de companhia'. Para indicar o local, 'à la maison' corresponde ao nosso 'em casa' ou 'na casa'.",
     "breakdown": [
-      { "word": "As", "meaning": "Tem / Tens (do verbo avoir)" },
-      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
-      { "word": "des", "meaning": "animais em geral / alguns (marcador de plural)" },
-      { "word": "animaux", "meaning": "animais (plural de animal)" },
-      { "word": "de", "meaning": "de" },
-      { "word": "compagnie", "meaning": "companhia (animaux de compagnie = bichos de estimação)" },
-      { "word": "à", "meaning": "em / na" },
-      { "word": "la", "meaning": "a" },
-      { "word": "maison", "meaning": "casa" }
-    ]
+      {
+        "word": "As-tu",
+        "meaning": "Você tem / Tens tu — formato de pergunta."
+      },
+      {
+        "word": "des animaux",
+        "meaning": "Animais — des: artigo plural; animaux: animais."
+      },
+      {
+        "word": "de compagnie",
+        "meaning": "De estimação / De companhia."
+      },
+      {
+        "word": "à la maison",
+        "meaning": "Em casa / Na casa."
+      }
+    ],
+    "pronuncia": "Comece com 'As-tu' ('a-tü') com bico em 'tü'. Em 'des animaux', o 's' de 'des' junta com 'animaux' fazendo som de 'z' ('dê-za-ni-mô'). Em 'de compagnie', a combinação de letras em 'pagnie' tem som parecido com 'nh' e a vogal final morre mudo ('dê kõm-pa-nhí'). Em 'à la maison', fale 'a la mê-zõn' com som nasal no final.\nLeia: A-tü dê-za-ni-mô dê kõm-pa-nhí a la mê-zõn?"
   },
   "339": {
-    "explanation": "Frase sobre um hábito do passado. 'Je jouais' significa 'eu tocava' ou 'eu costumava tocar'. Para instrumentos musicais, o verbo jouer sempre pede 'du' antes de palavras masculinas: 'du piano'. 'Quand j'étais jeune' significa 'quando eu era jovem'.",
+    "explanation": "Para falar de um hábito do passado, os franceses usam a forma 'jouais' (tocava/jogava). Para instrumentos musicais, junta-se o verbo tocar com 'du', resultando em 'du piano' (piano). O trecho 'quando eu era' sofre uma fusão natural entre 'quand' e 'j'étais' (eu era), e fecha com 'jeune' (jovem).",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "jouais", "meaning": "tocava / jogava (hábito contínuo do verbo jouer no passado)" },
-      { "word": "du", "meaning": "do (usado com instrumentos masculinos após jouer)" },
-      { "word": "piano", "meaning": "piano" },
-      { "word": "quand", "meaning": "quando" },
-      { "word": "j'", "meaning": "eu (encurtado antes de vogal)" },
-      { "word": "étais", "meaning": "era / estava (passado do verbo être)" },
-      { "word": "jeune", "meaning": "jovem" }
-    ]
+      {
+        "word": "Je jouais",
+        "meaning": "Eu tocava / Eu jogava."
+      },
+      {
+        "word": "du piano",
+        "meaning": "Piano — du: do instrumento."
+      },
+      {
+        "word": "quand j'étais",
+        "meaning": "Quando eu era — quand: quando; j'étais: eu era."
+      },
+      {
+        "word": "jeune",
+        "meaning": "Jovem / Novo."
+      }
+    ],
+    "pronuncia": "Fale 'Je jouais' com 'jû ju-ê'. Em 'du piano', faça bico em 'du' ('dü pi-a-nô'). Em 'quand j'étais', o som nasal de 'quand' encosta de forma fluida no 'j'é-tê' ('kã jê-tê'). Em 'jeune', a boca fica levemente projetada para o som de 'jœn', terminando suave no 'n' sem soltar vogal depois.\nLeia: Jû ju-ê dü pi-a-nô kã jê-tê jœn."
   },
   "340": {
-    "explanation": "Estrutura expressiva de comparação: 'Elle est beaucoup plus jeune' significa 'ela é muito mais jovem'. A expressão 'avoir l'air' significa 'aparentar' ou 'parecer'. O francês usa um 'n'' e 'en' para fazer essa ligação elegante ('qu'elle n'en a l'air' = do que ela aparenta ter de idade).",
+    "explanation": "Essa frase traz uma expressão típica: 'avoir l'air', que significa 'parecer' ou 'ter a aparência de'. A combinação 'beaucoup plus' quer dizer 'muito mais'. A pequena partícula 'n'en' entra por um costume formal da língua francesa em comparações, mas não altera o sentido de 'do que ela parece'.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "beaucoup", "meaning": "muito" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "jeune", "meaning": "jovem" },
-      { "word": "qu'", "meaning": "do que (encurtado antes de vogal)" },
-      { "word": "elle", "meaning": "ela" },
-      { "word": "n'", "meaning": "partícula de ligação usada em comparações refinadas" },
-      { "word": "en", "meaning": "disso (referindo-se à idade)" },
-      { "word": "a", "meaning": "tem (do verbo avoir)" },
-      { "word": "l'", "meaning": "o (encurtado antes de som de vogal)" },
-      { "word": "air", "meaning": "ar / aparência (avoir l'air = parecer / aparentar)" }
-    ]
+      {
+        "word": "Elle est",
+        "meaning": "Ela é / Ela está."
+      },
+      {
+        "word": "beaucoup plus",
+        "meaning": "Muito mais — beaucoup: muito; plus: mais."
+      },
+      {
+        "word": "jeune",
+        "meaning": "Jovem."
+      },
+      {
+        "word": "qu'elle n'en a l'air",
+        "meaning": "Do que ela parece / Do que aparenta — qu'elle: do que ela; a l'air: tem a aparência."
+      }
+    ],
+    "pronuncia": "Em 'Elle est', fale 'ê-lê'. Em 'beaucoup plus', o 'p' de 'beaucoup' é mudo ('bô-kú') e 'plus' faz 'plü' com bico. Em 'jeune', fale 'jœn'. Em 'qu'elle n'en a l'air', junte as palavras formando 'kêl nãn-na lêr', arranhando o 'R' final de 'l'air'.\nLeia: Ê-lê bô-kú plü jœn kêl nãn-na lêr."
   },
   "341": {
-    "explanation": "Pergunta afetuosa sobre recordações: 'Quel' é qual. A palavra 'souvenir' significa lembrança ou memória (cuidado: não significa a lembrancinha de presente, mas sim a recordação na mente). 'D'enfance' é 'de infância' e 'préféré' significa preferido.",
+    "explanation": "A pergunta começa com 'Quel est' (Qual é). A palavra 'souvenir' significa 'lembrança' ou 'memória'. A expressão 'd'enfance' significa 'de infância' (com o 'de' encurtado antes de vogal) e o adjetivo 'préféré' (favorito/preferido) vem no fim para qualificar a memória.",
     "breakdown": [
-      { "word": "Quel", "meaning": "Qual (no masculino)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "ton", "meaning": "seu / teu" },
-      { "word": "souvenir", "meaning": "lembrança / memória" },
-      { "word": "d'", "meaning": "de (encurtado antes de vogal)" },
-      { "word": "enfance", "meaning": "infância" },
-      { "word": "préféré", "meaning": "favorito / preferido" }
-    ]
+      {
+        "word": "Quel est",
+        "meaning": "Qual é."
+      },
+      {
+        "word": "ton souvenir",
+        "meaning": "Sua memória / Sua lembrança — ton: seu/sua; souvenir: memória/lembrança."
+      },
+      {
+        "word": "d'enfance",
+        "meaning": "De infância — de: de; enfance: infância."
+      },
+      {
+        "word": "préféré",
+        "meaning": "Favorito / Preferido."
+      }
+    ],
+    "pronuncia": "Em 'Quel est', junte os sons ('kê-lê'). Em 'ton souvenir', fale 'tõn sú-v'nír' com som nasal no 'ton' e o 'R' suave no fim de 'souvenir'. Em 'd'enfance', a vogal sai bem nasal pelo nariz e o final é suave ('dãn-fãns'). Em 'préféré', fale 'prê-fê-ré' com 'ê' bem limpos e 'R' arranhado.\nLeia: Kê-lê tõn sú-v'nír dãn-fãns prê-fê-ré?"
   },
   "342": {
-    "explanation": "Para dizer que você é 'o mais novo' ou 'a mais nova', usa-se 'la plus jeune' antes de pessoa ('personne'). 'De ma famille' é 'da minha família'.",
+    "explanation": "Para dizer 'a mais jovem', o francês coloca o artigo 'la' antes de 'plus jeune', formando a estrutura de superlativo 'la plus jeune'. Em seguida, usa-se a preposição 'de' junto com 'ma famille' (minha família).",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "suis", "meaning": "sou (do verbo être)" },
-      { "word": "la", "meaning": "a" },
-      { "word": "plus", "meaning": "mais (la plus = a mais)" },
-      { "word": "jeune", "meaning": "jovem / nova" },
-      { "word": "personne", "meaning": "pessoa" },
-      { "word": "de", "meaning": "de / da" },
-      { "word": "ma", "meaning": "minha" },
-      { "word": "famille", "meaning": "família" }
-    ]
+      {
+        "word": "Je suis",
+        "meaning": "Eu sou / Eu estou."
+      },
+      {
+        "word": "la plus jeune",
+        "meaning": "A mais jovem / A mais nova — la: a; plus: mais; jeune: jovem/nova."
+      },
+      {
+        "word": "de ma famille",
+        "meaning": "Da minha família — de: de; ma: minha; famille: família."
+      }
+    ],
+    "pronuncia": "Em 'Je suis', fale 'jû süí'. Em 'la plus jeune', o 's' de 'plus' é mudo e 'jeune' tem o bico relaxado ('la plü jœn'). Em 'de ma famille', fale 'dê ma fa-mí-yü', onde o final de 'famille' ganha um som suave que lembra 'ia'.\nLeia: Jû süí la plü jœn dê ma fa-mí-yü."
   },
   "343": {
-    "explanation": "Comparação de igualdade na negativa: 'ne... pas' abraça o verbo 'est'. A estrutura 'aussi... que' significa 'tão... quanto'. 'Amical' significa amigável ou simpático, e 'sa sœur' é a irmã dele.",
+    "explanation": "Para dizer que alguém 'não é tão... quanto', o francês usa a negação 'n'est pas' junto com 'aussi... que'. A palavra 'aussi' faz o papel de 'tão' e 'que' faz o papel de 'quanto'.",
     "breakdown": [
-      { "word": "Il", "meaning": "Ele" },
-      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "aussi", "meaning": "tão" },
-      { "word": "amical", "meaning": "amigável / simpático" },
-      { "word": "que", "meaning": "quanto" },
-      { "word": "sa", "meaning": "sua / dele (para palavra feminina)" },
-      { "word": "sœur", "meaning": "irmã" }
-    ]
+      {
+        "word": "Il n'est pas",
+        "meaning": "Ele não é — Il: ele; n'est pas: não é."
+      },
+      {
+        "word": "aussi amical que",
+        "meaning": "Tão amigável quanto — aussi: tão; amical: amigável; que: quanto."
+      },
+      {
+        "word": "sa sœur",
+        "meaning": "A irmã dele / Sua irmã — sa: sua/dele; sœur: irmã."
+      }
+    ],
+    "pronuncia": "Em 'Il n'est pas', junte 'il nê pá'. Em 'aussi amical que', fale 'ô-sí a-mi-kál kû', emendando as vogais de forma fluida. Em 'sa sœur', a palavra 'sœur' é dita abrindo a boca para um 'sœr' curto com o 'R' arranhado.\nLeia: Il nê pá ô-sí a-mi-kál kû sa sœr."
   },
   "344": {
-    "explanation": "A pergunta mais comum para saber quanto tempo alguém mora em uma cidade. 'Depuis combien de temps' é a fórmula padrão para 'há quanto tempo'. 'Habites-tu' é a inversão de 'você mora', e 'cette ville' é 'esta cidade'.",
+    "explanation": "A expressão 'Depuis combien de temps' é a forma padrão em francês para perguntar 'Há quanto tempo'. O verbo 'habites-tu' aparece invertido para indicar a pergunta (mora você), seguido de 'dans cette ville' (nesta cidade).",
     "breakdown": [
-      { "word": "Depuis", "meaning": "Desde / Há" },
-      { "word": "combien", "meaning": "quanto" },
-      { "word": "de", "meaning": "de (depuis combien de temps = há quanto tempo)" },
-      { "word": "temps", "meaning": "tempo" },
-      { "word": "habites", "meaning": "mora / habitas (do verbo habiter)" },
-      { "word": "-tu", "meaning": "você (invertido para a pergunta)" },
-      { "word": "dans", "meaning": "em / nesta" },
-      { "word": "cette", "meaning": "esta (feminino)" },
-      { "word": "ville", "meaning": "cidade" }
-    ]
+      {
+        "word": "Depuis combien de temps",
+        "meaning": "Há quanto tempo — Depuis: desde/há; combien de: quanto de; temps: tempo."
+      },
+      {
+        "word": "habites-tu",
+        "meaning": "Você mora — formato de pergunta."
+      },
+      {
+        "word": "dans cette ville",
+        "meaning": "Nesta cidade — dans: em; cette: esta; ville: cidade."
+      }
+    ],
+    "pronuncia": "Em 'Depuis combien de temps', fale 'd'püí kõm-biẽn dê tã', mantendo os sons nasais em 'combien' e 'temps' sem pronunciar as letras finais. Em 'habites-tu', o 'h' é mudo, o final do verbo não se pronuncia e o 'tu' sai com bico ('a-bít-tü'). Em 'dans cette ville', fale 'dã sêt víl'.\nLeia: D'püí kõm-biẽn dê tã a-bít-tü dã sêt víl?"
   },
   "345": {
-    "explanation": "O verbo mudar-se de residência em francês é emménager. 'J'ai emménagé' significa 'eu me mudei' (com avoir + a ação no passado). 'Ici' significa 'aqui', e a expressão 'il y a' seguida de tempo significa 'faz' ou 'há' (ex: 'il y a deux ans' = há dois anos).",
+    "explanation": "O verbo 'emménagé' significa 'mudar-se de casa/endereço'. A ação no passado combina 'J'ai' (eu tenho/eu fiz) com 'emménagé'. No final, a expressão 'il y a' significa 'há' (de tempo decorrido), seguida do tempo 'deux ans' (dois anos).",
     "breakdown": [
-      { "word": "J'", "meaning": "Eu (encurtado antes de vogal)" },
-      { "word": "ai", "meaning": "fiz a ação no passado (auxiliar avoir)" },
-      { "word": "emménagé", "meaning": "mudado / me mudei (do verbo emménager)" },
-      { "word": "ici", "meaning": "aqui / para cá" },
-      { "word": "il", "meaning": "ele" },
-      { "word": "y", "meaning": "lá" },
-      { "word": "a", "meaning": "tem (il y a = há / faz tempo)" },
-      { "word": "deux", "meaning": "dois" },
-      { "word": "ans", "meaning": "anos" }
-    ]
+      {
+        "word": "J'ai emménagé",
+        "meaning": "Eu me mudei — J'ai: eu fiz/tenho; emménagé: mudado de residência."
+      },
+      {
+        "word": "ici",
+        "meaning": "Aqui."
+      },
+      {
+        "word": "il y a",
+        "meaning": "Há / Faz — para tempo decorrido."
+      },
+      {
+        "word": "deux ans",
+        "meaning": "Dois anos — deux: dois; ans: anos."
+      }
+    ],
+    "pronuncia": "Em 'J'ai emménagé', junte tudo num fluxo contínuo ('jê-ãm-mê-na-jé'). Fale 'ici' como 'i-sí'. Em 'il y a deux ans', a expressão 'il y a' vira 'il-i-a', e o 'x' de 'deux' gruda no 'ans' fazendo som de 'z' ('dœ-zã').\nLeia: Jê-ãm-mê-na-jé i-sí il-i-a dœ-zã."
   },
   "346": {
-    "explanation": "'Est-ce que' introduz a pergunta com simpatia. 'La photographie' é a fotografia. O pronome 't'' (te/a você) vem colado antes do verbo intéresser, que significa 'te interessa' ou 'desperta seu interesse'.",
+    "explanation": "A frase começa com a fórmula clássica de perguntas 'Est-ce que', que equivale ao nosso 'Será que' ou simplesmente avisa que vem uma pergunta. Em seguida, 'la photographie' é o assunto, e 't'intéresse' significa 'interessa a você', com o pronome encurtado antes de vogal.",
     "breakdown": [
-      { "word": "Est-ce que", "meaning": "expressão usada para iniciar perguntas" },
-      { "word": "la", "meaning": "a" },
-      { "word": "photographie", "meaning": "fotografia" },
-      { "word": "t'", "meaning": "te / a você (encurtado antes de vogal)" },
-      { "word": "intéresse", "meaning": "interessa (do verbo intéresser)" }
-    ]
+      {
+        "word": "Est-ce que",
+        "meaning": "Será que / Acaso — marcador de pergunta."
+      },
+      {
+        "word": "la photographie",
+        "meaning": "A fotografia."
+      },
+      {
+        "word": "t'intéresse",
+        "meaning": "Interessa a você / Te interessa — t': te/a você; intéresse: interessa."
+      }
+    ],
+    "pronuncia": "Fale 'Est-ce que' como 'ês-kû'. Em 'la photographie', o 'ph' tem som de 'f' ('la fô-tô-gra-fí'). Em 't'intéresse', a vogal inicial é nasal e o final morre mudo sem soltar a última letra ('tẽn-tê-rês').\nLeia: Ês-kû la fô-tô-gra-fí tẽn-tê-rês?"
   },
   "347": {
-    "explanation": "'Elle veut' é 'ela quer'. O verbo ser/estar no infinitivo é 'être'. Repare que após o verbo ser, a profissão 'architecte' (arquiteta) vai direto sem nenhum artigo antes.",
+    "explanation": "O verbo 'veut' vem de querer (ela quer). Em francês, quando dizemos a profissão que alguém deseja ter, coloca-se o verbo no infinitivo 'être' (ser) seguido diretamente do nome da profissão 'architecte', sem artigos no meio.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "veut", "meaning": "quer (do verbo vouloir)" },
-      { "word": "être", "meaning": "ser" },
-      { "word": "architecte", "meaning": "arquiteta / arquiteto" }
-    ]
+      {
+        "word": "Elle veut",
+        "meaning": "Ela quer — Elle: ela; veut: quer."
+      },
+      {
+        "word": "être",
+        "meaning": "Ser / Estar."
+      },
+      {
+        "word": "architecte",
+        "meaning": "Arquiteta / Arquiteto."
+      }
+    ],
+    "pronuncia": "Em 'Elle veut', fale 'êl vœ' com bico relaxado em 'veut'. Em 'être architecte', o 'R' de 'être' emenda suave no 'a' de 'architecte' ('ê-trar-chi-têkt'), com o 'ch' tendo som suave de 'ch' como em 'chave'.\nLeia: Êl vœ ê-trar-chi-têkt."
   },
   "348": {
-    "explanation": "'Je n'ai pas' significa 'eu não tenho'. Com expressões de quantidade como 'beaucoup' (muito), usa-se sempre 'de' logo em seguida: 'beaucoup de temps libre' (muito tempo livre). A expressão nativa 'ces jours-ci' significa ao pé da letra 'nestes dias aqui' (hoje em dia / ultimamente).",
+    "explanation": "A negação 'Je n'ai pas' significa 'Eu não tenho'. A quantidade 'muito tempo livre' é dita como 'beaucoup de temps libre', onde a palavra 'de' é obrigatória depois de 'beaucoup'. Para dizer 'hoje em dia' ou 'atualmente', o francês usa a expressão 'ces jours-ci', que significa literalmente 'estes dias aqui'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "n'", "meaning": "primeira parte do 'não' (encurtada antes de vogal)" },
-      { "word": "ai", "meaning": "tenho (do verbo avoir)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "beaucoup", "meaning": "muito" },
-      { "word": "de", "meaning": "de (usado após advérbios de quantidade)" },
-      { "word": "temps", "meaning": "tempo" },
-      { "word": "libre", "meaning": "livre" },
-      { "word": "ces", "meaning": "estes" },
-      { "word": "jours", "meaning": "dias" },
-      { "word": "-ci", "meaning": "aqui (ces jours-ci = hoje em dia / ultimamente)" }
-    ]
+      {
+        "word": "Je n'ai pas",
+        "meaning": "Eu não tenho — Je: eu; n'ai pas: não tenho."
+      },
+      {
+        "word": "beaucoup de temps libre",
+        "meaning": "Muito tempo livre — beaucoup de: muito; temps: tempo; libre: livre."
+      },
+      {
+        "word": "ces jours-ci",
+        "meaning": "Hoje em dia / Estes dias — ces: estes; jours-ci: dias aqui."
+      }
+    ],
+    "pronuncia": "Fale 'Je n'ai pas' como 'jû nê pá'. Em 'beaucoup de temps libre', a letra final de 'beaucoup' é muda ('bô-kú'), 'de' é curto, 'temps' tem som nasal sem falar as consoantes finais ('tã'), e 'libre' arranha o 'R' final ('líbr'). Em 'ces jours-ci', fale 'sê júr-sí'.\nLeia: Jû nê pá bô-kú dê tã líbr sê júr-sí."
   },
   "349": {
-    "explanation": "Pergunta muito comum e natural sobre a carreira dos pais. 'Que' significa 'o que', 'fait ton père' é 'faz seu pai', e a expressão 'dans la vie' significa literalmente 'na vida' (o nosso 'o que ele faz da vida?').",
+    "explanation": "Essa é a forma mais natural em francês para perguntar a profissão de alguém. Ao pé da letra significa 'O que faz o seu pai na vida?'. A estrutura 'Que fait' significa 'O que faz', 'ton père' é 'seu pai', e 'dans la vie' é 'na vida'.",
     "breakdown": [
-      { "word": "Que", "meaning": "O que" },
-      { "word": "fait", "meaning": "faz (do verbo faire)" },
-      { "word": "ton", "meaning": "seu / teu" },
-      { "word": "père", "meaning": "pai" },
-      { "word": "dans", "meaning": "em / na" },
-      { "word": "la", "meaning": "a" },
-      { "word": "vie", "meaning": "vida (dans la vie = da vida / profissionalmente)" }
-    ]
+      {
+        "word": "Que fait",
+        "meaning": "O que faz — Que: o que; fait: faz."
+      },
+      {
+        "word": "ton père",
+        "meaning": "Seu pai — ton: seu; père: pai."
+      },
+      {
+        "word": "dans la vie",
+        "meaning": "Da vida / Na vida — dans: em/na; la vie: a vida."
+      }
+    ],
+    "pronuncia": "Fale 'Que fait' como 'kû fê'. Em 'ton père', o 'ton' é bem nasal ('tõn') e 'père' tem o 'R' final suavemente arranhado ('pêr'). Em 'dans la vie', o 'dans' é nasal ('dã') e fecha com 'la ví'.\nLeia: Kû fê tõn pêr dã la ví?"
   },
   "350": {
-    "explanation": "'Nous prévoyons' vem do verbo prévoir (prever ou planejar com antecedência). 'Une grande réunion de famille' é a forma de dizer 'um grande encontro ou reunião de família', com o adjetivo de tamanho 'grande' vindo antes do substantivo.",
+    "explanation": "O verbo 'prévoyons' significa 'planejamos' ou 'prevemos'. Em francês, o adjetivo 'grande' vem antes do nome 'réunion' (reunião), exatamente como no português 'uma grande reunião'. A expressão fecha com 'de famille' (de família).",
     "breakdown": [
-      { "word": "Nous", "meaning": "Nós" },
-      { "word": "prévoyons", "meaning": "planejamos / prevemos (do verbo prévoir)" },
-      { "word": "une", "meaning": "uma" },
-      { "word": "grande", "meaning": "grande" },
-      { "word": "réunion", "meaning": "reunião / encontro" },
-      { "word": "de", "meaning": "de" },
-      { "word": "famille", "meaning": "família" }
-    ]
+      {
+        "word": "Nous prévoyons",
+        "meaning": "Nós planejamos / Nós prevemos — Nous: nós; prévoyons: planejamos."
+      },
+      {
+        "word": "une grande",
+        "meaning": "Uma grande — une: uma; grande: grande."
+      },
+      {
+        "word": "réunion de famille",
+        "meaning": "Reunião de família — réunion: reunião; de: de; famille: família."
+      }
+    ],
+    "pronuncia": "Em 'Nous prévoyons', a letra final de 'Nous' é muda e 'prévoyons' sai como 'prê-vuá-iõn' com som nasal no fim. Em 'une grande', a vogal de 'une' exige bico no 'u' ('ün grãnd'). Em 'réunion de famille', fale 'rê-ü-niõn dê fa-mí-yü'.\nLeia: Nú prê-vuá-iõn ün grãnd rê-ü-niõn dê fa-mí-yü."
   },
   "351": {
-    "explanation": "Pergunta sobre traços físicos ou semelhança. O verbo ressembler (parecer-se com) pede a preposição 'à'. A letrinha '-t-' entre hífens serve para a ligação sonora de 'ressemble' com 'elle' ('ressemble-t-elle'). 'Sa mère' é a mãe dela.",
+    "explanation": "Para perguntar se alguém se parece com outra pessoa, o francês usa o verbo 'ressembler'. Na pergunta invertida 'Ressemble-t-elle', coloca-se uma letra 't' no meio apenas para facilitar a ligação de som entre o verbo e a palavra 'elle'. No final, 'à sa mère' significa 'com a mãe dela'.",
     "breakdown": [
-      { "word": "Ressemble", "meaning": "Parece (do verbo ressembler)" },
-      { "word": "-t-", "meaning": "letrinha de ligação usada para suavizar o som" },
-      { "word": "-elle", "meaning": "ela (invertido para a pergunta)" },
-      { "word": "à", "meaning": "com / a (quem se parece, em francês, se parece 'à')" },
-      { "word": "sa", "meaning": "sua / dela" },
-      { "word": "mère", "meaning": "mãe" }
-    ]
+      {
+        "word": "Ressemble-t-elle",
+        "meaning": "Ela se parece — formato de pergunta com 't' de ligação de som."
+      },
+      {
+        "word": "à sa mère",
+        "meaning": "Com a mãe dela / Com sua mãe — à: a/com; sa: sua/dela; mère: mãe."
+      }
+    ],
+    "pronuncia": "Fale 'Ressemble-t-elle' juntando as partes em um bloco fluido ('rê-sãmbl-têl'), arranhando o 'R' inicial e mantendo a vogal nasal em 'sãmbl'. Em 'à sa mère', fale 'a sa mêr', soltando o 'R' arranhado no final de 'mère'.\nLeia: Rê-sãmbl-têl a sa mêr?"
   },
   "352": {
-    "explanation": "Para dizer que não tem talento em alguma área: 'ne... pas' envolve 'suis'. A expressão 'bon en' significa 'bom em' algo. 'Sport' refere-se à prática de esportes em geral.",
+    "explanation": "A estrutura de negação 'Je ne suis pas' (Eu não sou) é seguida de 'très bon' (muito bom). Para indicar a área em que alguém é bom ou ruim, os franceses usam a palavra 'en', resultando em 'en sport' (em esportes/no esporte).",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "ne", "meaning": "primeira parte do 'não'" },
-      { "word": "suis", "meaning": "sou / estou (do verbo être)" },
-      { "word": "pas", "meaning": "segunda parte que fecha a negação" },
-      { "word": "très", "meaning": "muito" },
-      { "word": "bon", "meaning": "bom" },
-      { "word": "en", "meaning": "em" },
-      { "word": "sport", "meaning": "esporte" }
-    ]
+      {
+        "word": "Je ne suis pas",
+        "meaning": "Eu não sou — Je: eu; ne...pas: não; suis: sou/estou."
+      },
+      {
+        "word": "très bon",
+        "meaning": "Muito bom — très: muito; bon: bom."
+      },
+      {
+        "word": "en sport",
+        "meaning": "Em esportes / No esporte — en: em; sport: esporte."
+      }
+    ],
+    "pronuncia": "Fale 'Je ne suis pas' como 'jû nû süí pá'. Em 'très bon', o 'R' é arranhado em 'très' ('trê') e 'bon' tem som nasal fechado saindo pelo nariz ('bõn'). Em 'en sport', fale 'ã spór', sem pronunciar a letra 't' final de 'sport'.\nLeia: Jû nû süí pá trê bõn ã spór."
   },
   "353": {
-    "explanation": "Em francês, os avós são chamados de 'grands-parents' (literalmente 'grandes pais'). 'Vivent' é o verbo viver no plural. A expressão oficial para 'no campo / no interior' é 'à la campagne'.",
+    "explanation": "A palavra para avós em francês é 'grands-parents', que significa literalmente 'grandes pais'. O verbo 'vivent' significa 'moram/vivem'. A expressão 'à la campagne' é o equivalente em francês para 'no interior' ou 'no campo'.",
     "breakdown": [
-      { "word": "Mes", "meaning": "Meus (para plural)" },
-      { "word": "grands-parents", "meaning": "avós" },
-      { "word": "vivent", "meaning": "moram / vivem (do verbo vivre no plural)" },
-      { "word": "à", "meaning": "em / no" },
-      { "word": "la", "meaning": "a" },
-      { "word": "campagne", "meaning": "campo / interior (à la campagne = no interior)" }
-    ]
+      {
+        "word": "Mes grands-parents",
+        "meaning": "Meus avós — Mes: meus; grands-parents: avós."
+      },
+      {
+        "word": "vivent",
+        "meaning": "Moram / Vivem."
+      },
+      {
+        "word": "à la campagne",
+        "meaning": "No interior / No campo — à la: na/no; campagne: campo/interior."
+      }
+    ],
+    "pronuncia": "Em 'Mes grands-parents', fale 'mê grã-pa-rã', sem pronunciar as letras finais. Em 'vivent', a terminação da ação no plural é totalmente muda, soando apenas 'vív'. Em 'à la campagne', fale 'a la kõm-pá-nhü', com som suave de 'nh'.\nLeia: Mê grã-pa-rã vív a la kõm-pá-nhü."
   },
   "354": {
-    "explanation": "'Quel' é 'qual' no masculino. Na cultura francesa, o primeiro nome é 'prénom' (o que vem antes do sobrenome), e o nome do meio é chamado literalmente de 'deuxième prénom' (segundo prenome).",
+    "explanation": "Na França, 'prénom' é o primeiro nome. Para perguntar o 'nome do meio', os nativos dizem 'deuxième prénom', que significa literalmente 'segundo nome'. A frase abre com 'Quel est' (Qual é) e 'ton' (seu).",
     "breakdown": [
-      { "word": "Quel", "meaning": "Qual" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "ton", "meaning": "seu / teu" },
-      { "word": "deuxième", "meaning": "segundo" },
-      { "word": "prénom", "meaning": "primeiro nome (deuxième prénom = nome do meio)" }
-    ]
+      {
+        "word": "Quel est",
+        "meaning": "Qual é."
+      },
+      {
+        "word": "ton",
+        "meaning": "Seu."
+      },
+      {
+        "word": "deuxième",
+        "meaning": "Segundo."
+      },
+      {
+        "word": "prénom",
+        "meaning": "Nome / Primeiro nome."
+      }
+    ],
+    "pronuncia": "Em 'Quel est', junte os sons ('kê-lê'). Em 'ton deuxième', fale 'tõn dœ-ziêm', com bico em 'deux'. Em 'prénom', arranhe o 'R' inicial e fecha com a vogal nasal em 'nõn' ('prê-nõn').\nLeia: Kê-lê tõn dœ-ziêm prê-nõn?"
   },
   "355": {
-    "explanation": "'Je le connais' significa 'eu o conheço' (com o pronome 'le' vindo antes do verbo connaître). A palavra 'depuis' indica desde quando a amizade começou, e 'le lycée' é o ensino médio na França.",
+    "explanation": "Para dizer 'eu o conheço', o francês coloca a indicação da pessoa ('le', que significa 'ele/o') antes do verbo: 'Je le connais'. A indicação de tempo 'desde' é feita por 'depuis', e 'le lycée' refere-se ao ensino médio.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "le", "meaning": "o / ele (pronome que representa a pessoa conhecida)" },
-      { "word": "connais", "meaning": "conheço (do verbo connaître)" },
-      { "word": "depuis", "meaning": "desde" },
-      { "word": "le", "meaning": "o" },
-      { "word": "lycée", "meaning": "ensino médio / colégio" }
-    ]
+      {
+        "word": "Je le connais",
+        "meaning": "Eu o conheço — Je: eu; le: o/ele; connais: conheço."
+      },
+      {
+        "word": "depuis",
+        "meaning": "Desde / Há."
+      },
+      {
+        "word": "le lycée",
+        "meaning": "O ensino médio — le: o; lycée: escola de ensino médio."
+      }
+    ],
+    "pronuncia": "Fale 'Je le connais' como 'jû lê kô-nê', sem pronunciar a letra 's' final de 'connais'. Em 'depuis', a vogal do meio é curta e o 'u' faz bico ('d'püí'). Em 'le lycée', fale 'lê li-sé'.\nLeia: Jû lê kô-nê d'püí lê li-sé."
   },
   "356": {
-    "explanation": "Comparação de mudança física: 'plus mince que' significa 'mais magra que'. A palavra 'année' ganha o adjetivo 'dernière' após ela, formando 'l'année dernière' (no ano passado).",
+    "explanation": "Para fazer a comparação 'mais magra do que', o francês usa 'plus mince que'. Na expressão de tempo 'no ano passado', os nativos dizem 'l'année dernière', que significa literalmente 'o ano último/passado', sem colocar preposição antes.",
     "breakdown": [
-      { "word": "Elle", "meaning": "Ela" },
-      { "word": "est", "meaning": "está / é (do verbo être)" },
-      { "word": "plus", "meaning": "mais" },
-      { "word": "mince", "meaning": "magra / esbelta" },
-      { "word": "que", "meaning": "do que" },
-      { "word": "l'", "meaning": "o / a (encurtado antes de vogal)" },
-      { "word": "année", "meaning": "ano" },
-      { "word": "dernière", "meaning": "última / passada (l'année dernière = no ano passado)" }
-    ]
+      {
+        "word": "Elle est",
+        "meaning": "Ela está / Ela é."
+      },
+      {
+        "word": "plus mince que",
+        "meaning": "Mais magra que — plus: mais; mince: magra; que: que."
+      },
+      {
+        "word": "l'année dernière",
+        "meaning": "O ano passado / No ano passado — l'année: o ano; dernière: passada/última."
+      }
+    ],
+    "pronuncia": "Em 'Elle est', fale 'ê-lê'. Em 'plus mince que', a letra final de 'plus' é muda, 'mince' tem som nasal em 'mẽns' e 'que' sai curto ('plü mẽns kû'). Em 'l'année dernière', fale 'la-né dir-niêr', com o 'R' arranhado suavemente no final.\nLeia: Ê-lê plü mẽns kû la-né dir-niêr."
   },
   "357": {
-    "explanation": "Expressão idiomática deliciosa da língua francesa! 'Es-tu du matin ?' significa ao pé da letra 'você é da manhã?' (o nosso 'você é uma pessoa matutina / acorda cedo com disposição?').",
+    "explanation": "Essa é uma expressão muito comum em francês. Em vez de inventar uma palavra longa para 'pessoa matinal', os nativos simplesmente perguntam 'Es-tu du matin?', que significa ao pé da letra 'Você é do mato/da manhã?'.",
     "breakdown": [
-      { "word": "Es", "meaning": "És / É (do verbo être)" },
-      { "word": "-tu", "meaning": "você (invertido para pergunta)" },
-      { "word": "du", "meaning": "da / do (junção de de + le)" },
-      { "word": "matin", "meaning": "manhã (être du matin = ser uma pessoa matutina)" }
-    ]
+      {
+        "word": "Es-tu",
+        "meaning": "Você é — formato de pergunta invertido."
+      },
+      {
+        "word": "du matin",
+        "meaning": "Da manhã / Matinal — du: do/da; matin: manhã."
+      }
+    ],
+    "pronuncia": "Comece com 'Es-tu', lembrando de fazer o bico projetado na palavra 'tu' ('ê-tü'). Em 'du matin', faça bico curto em 'du' ('dü') e termine em 'ma-tẽn' com a vogal nasal saindo pelo nariz sem soltar a letra final.\nLeia: Ê-tü dü ma-tẽn?"
   },
   "358": {
-    "explanation": "Em francês, quando você prefere uma coisa a outra, a estrutura é 'préférer X au Y' (com a preposição 'au', junção de à + le). 'Je préfère le thé au café' significa 'eu prefiro chá em vez de café'.",
+    "explanation": "Em francês, ao comparar duas preferências com o verbo 'préférer' (preferir), usa-se a combinação 'au' para indicar a segunda opção. A frase estrutura-se como 'Eu prefiro o chá AO café', onde 'au' é a junção da ideia de 'a' com 'o'.",
     "breakdown": [
-      { "word": "Je", "meaning": "Eu" },
-      { "word": "préfère", "meaning": "prefiro (do verbo préférer)" },
-      { "word": "le", "meaning": "o" },
-      { "word": "thé", "meaning": "chá" },
-      { "word": "au", "meaning": "ao / em vez do (junção de à + le usada na comparação)" },
-      { "word": "café", "meaning": "café" }
-    ]
+      {
+        "word": "Je préfère",
+        "meaning": "Eu prefiro."
+      },
+      {
+        "word": "le thé",
+        "meaning": "O chá."
+      },
+      {
+        "word": "au café",
+        "meaning": "Ao café / Em vez de café — au: a + o / em relação a."
+      }
+    ],
+    "pronuncia": "Fale 'Je préfère' arranhando levemente o 'R' no meio e no fim ('jû prê-fêr'). Em 'le thé', o 'e' de 'thé' é um 'ê' bem limpo ('lê tê'). Em 'au café', fale 'ô ka-fé'.\nLeia: Jû prê-fêr lê tê ô ka-fé."
   },
   "359": {
-    "explanation": "'C'est un' é 'ele é um'. 'Étudiant' é estudante. A palavra 'travailleur' aqui funciona como um elogio de conduta, significando muito trabalhador, dedicado ou esforçado nos estudos.",
+    "explanation": "A expressão 'C'est un' significa 'Ele é um' ou 'É um'. Em francês, os adjetivos de dedicação como 'travailleur' (trabalhador/esforçado) vêm logo após o nome 'étudiant' (estudante/aluno).",
     "breakdown": [
-      { "word": "C'", "meaning": "Ele / Este (encurtado antes de verbo)" },
-      { "word": "est", "meaning": "é (do verbo être)" },
-      { "word": "un", "meaning": "um" },
-      { "word": "étudiant", "meaning": "estudante / aluno" },
-      { "word": "très", "meaning": "muito" },
-      { "word": "travailleur", "meaning": "trabalhador / dedicado / esforçado" }
-    ]
+      {
+        "word": "C'est un",
+        "meaning": "Ele é um / É um — C'est: é/este é; un: um."
+      },
+      {
+        "word": "étudiant",
+        "meaning": "Estudante / Aluno."
+      },
+      {
+        "word": "très travailleur",
+        "meaning": "Muito esforçado / Muito trabalhador — très: muito; travailleur: trabalhador/esforçado."
+      }
+    ],
+    "pronuncia": "Em 'C'est un étudiant', junte os sons fazendo 'sê-tẽn-nê-tü-diã', lembrando do bico em 'é-tü'. Em 'très travailleur', raspe o 'R' em 'très' ('trê') e fale 'tra-va-iœr', terminando com o som suave em 'iœr'.\nLeia: Sê-tẽn-nê-tü-diã trê tra-va-iœr."
   },
   "360": {
-    "explanation": "'Mon meilleur ami' é a fórmula padrão para 'meu melhor amigo'. O verbo morar é 'vit', e 'dans un autre pays' significa 'em outro país', com a palavra 'autre' (outro) posicionada antes de país.",
+    "explanation": "Em francês, 'meu melhor amigo' vira 'Mon meilleur ami'. Em seguida, 'vit' (mora/vive) é acompanhado da preposição 'dans un', que significa 'em um' ou 'dentro de um', terminando com 'autre pays' (outro país).",
     "breakdown": [
-      { "word": "Mon", "meaning": "Meu" },
-      { "word": "meilleur", "meaning": "melhor" },
-      { "word": "ami", "meaning": "amigo" },
-      { "word": "vit", "meaning": "mora / vive (do verbo vivre)" },
-      { "word": "dans", "meaning": "em" },
-      { "word": "un", "meaning": "um" },
-      { "word": "autre", "meaning": "outro" },
-      { "word": "pays", "meaning": "país" }
-    ]
+      {
+        "word": "Mon meilleur ami",
+        "meaning": "Meu melhor amigo — Mon: meu; meilleur: melhor; ami: amigo."
+      },
+      {
+        "word": "vit",
+        "meaning": "Mora / Vive."
+      },
+      {
+        "word": "dans un autre pays",
+        "meaning": "Em outro país — dans: em; un autre: um outro; pays: país."
+      }
+    ],
+    "pronuncia": "Em 'Mon meilleur ami', a consoante de 'mon' junta com 'meilleur' e emenda no 'ami' num bloco só ('mõn mê-yœ-ra-mí'). Fale 'vit' como 'ví'. Em 'dans un autre pays', junte 'dans' com 'un' ('dã-zõn'), fale 'ôtr' e feche em 'pê-í'.\nLeia: Mõn mê-yœ-ra-mí ví dã-zõn ôtr pê-í."
   }
 }
