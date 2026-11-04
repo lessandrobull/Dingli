@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useDominiumData } from '../useDominiumData';
 import { useDingli } from '../DingliContext';
-import { tocarAudioPalavra } from '../services/audioCacheService';
+import { tocarAudioPalavra, precarregarPalavras } from '../services/audioCacheService';
 
 export function ExplicacaoIA({
   styles,
@@ -13,6 +13,18 @@ export function ExplicacaoIA({
   const ns = navStyle(idiomaEstudo);
   const frase = fraseExibicao || frasesFiltradas[indice];
   const corBgPrincipal = temas[idiomaEstudo]?.bg || '#4f46e5';
+
+  useEffect(() => {
+    const texto = frase?.[idiomaEstudo] || "";
+    if (!texto || !idiomaEstudo) return;
+    const palavras = texto
+      .split(/\s+/)
+      .map(w => w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim())
+      .filter(Boolean);
+    if (palavras.length > 0) {
+      precarregarPalavras(palavras, idiomaEstudo);
+    }
+  }, [frase, idiomaEstudo]);
 
   const handleOuvirFrase = useCallback(() => {
     if (!falar || !frase) return;

@@ -132,17 +132,43 @@ export async function obterAudioPalavraUrl(palavra, idioma = "en") {
   return urlRemota;
 }
 
+let audioPalavraAtual = null;
+const cacheBlobUrlsPalavras = new Map();
+
 export async function tocarAudioPalavra(palavra, idioma = "en") {
   try {
     const slug = sanitizarPalavraAudio(palavra);
     if (!slug) return;
-    const url = await obterAudioPalavraUrl(palavra, idioma);
-    console.log("[Dìnglì Áudio]", { palavraOriginal: palavra, slugGerado: slug, urlFinal: url });
+
+    if (audioPalavraAtual) {
+      try {
+        audioPalavraAtual.pause();
+        audioPalavraAtual.currentTime = 0;
+      } catch (e) { }
+    }
+
+    const pastaIdioma = idioma === "pi" ? "zh" : idioma;
+    const chaveCache = `${pastaIdioma}_${slug}`;
+    let url = cacheBlobUrlsPalavras.get(chaveCache);
+
+    if (!url) {
+      url = await obterAudioPalavraUrl(palavra, idioma);
+      if (url && url.startsWith("blob:")) {
+        cacheBlobUrlsPalavras.set(chaveCache, url);
+      }
+    }
 
     const audio = new Audio(url);
+    audioPalavraAtual = audio;
 
     audio.onerror = (e) => {
       console.warn("[Dìnglì Áudio] ✖ Falha ao carregar áudio da palavra:", slug, e);
+    };
+
+    audio.onended = () => {
+      if (audioPalavraAtual === audio) {
+        audioPalavraAtual = null;
+      }
     };
 
     const playPromise = audio.play();
@@ -335,30 +361,42 @@ export async function precarregarPalavras(palavras, idioma = "en") {
   }
 
   const LIMITE = 4;
-  for (let i = 0; i < unicas.length; i += LIMITE) {
-    const lote = unicas.slice(i, i + LIMITE);
-    await Promise.all(lote.map(async (slug) => {
-      const url = `${R2_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
-      try {
-        if (cache) {
-          const jaExiste = await cache.match(url);
-          if (!jaExiste) {
-            const resp = await fetch(url, { mode: "cors" });
-            if (resp.ok) await cache.put(url, resp);
+          for (let i = 0; i < unicas.length; i += LIMITE) {
+            const lote = unicas.slice(i, i + LIMITE);
+            await Promise.all(lote.map(async (slug) => {
+              const url = `${R2_AUDIO_BASE}/palavras/${pastaIdioma}/${encodeURIComponent(slug)}.mp3`;
+              const chaveCache = `${pastaIdioma}_${slug}`;
+              try {
+                if (cache) {
+                  let resposta = await cache.match(url);
+                  if (!resposta) {
+                    const resp = await fetch(url, { mode: "cors" });
+                    if (resp.ok) {
+                      await cache.put(url, resp.clone());
+                      resposta = resp;
+                    }
+                  }
+                  if (resposta && !cacheBlobUrlsPalavras.has(chaveCache)) {
+                    const blob = await resposta.blob();
+                    cacheBlobUrlsPalavras.set(chaveCache, URL.createObjectURL(blob));
+                  }
+                } else {
+                  let reg = await obterDoIndexedDB(STORES.AUDIOS, url);
+                  if (!reg) {
+                    const resp = await fetch(url, { mode: "cors" });
+                    if (resp.ok) {
+                      const blob = await resp.blob();
+                      await salvarNoIndexedDB(STORES.AUDIOS, url, { key: url, blob });
+                      reg = { blob };
+                    }
+                  }
+                  if (reg?.blob && !cacheBlobUrlsPalavras.has(chaveCache)) {
+                    cacheBlobUrlsPalavras.set(chaveCache, URL.createObjectURL(reg.blob));
+                  }
+                }
+              } catch (e) { }
+            }));
           }
-        } else {
-          const reg = await obterDoIndexedDB(STORES.AUDIOS, url);
-          if (!reg) {
-            const resp = await fetch(url, { mode: "cors" });
-            if (resp.ok) {
-              const blob = await resp.blob();
-              await salvarNoIndexedDB(STORES.AUDIOS, url, { key: url, blob });
-            }
-          }
-        }
-      } catch (e) { }
-    }));
-  }
 }
 
 export function tocarAudioPalavraComControle(palavra, idioma = "en") {

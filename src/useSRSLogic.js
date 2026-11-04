@@ -2,9 +2,16 @@
 export function calcularProximoRank(rankAtual, isAcerto) {
   const rank = Math.max(1, Number(rankAtual) || 1);
 
-  // 1. ERRO (Escrita, Seleção ou Voz recuperada na 2ª/3ª tentativa): desce 1 rank
+  // 1. ERRO (Escrita, Seleção ou Voz recuperada na 2ª/3ª tentativa): desce por tiers pós-repouso ou 1 rank
   if (!isAcerto) {
-    const novoRank = Math.max(1, rank - 1);
+    const quedasMacro = {
+      6: 1,
+      10: 6,
+      15: 10,
+      19: 15,
+      24: 19
+    };
+    const novoRank = quedasMacro[rank] || Math.max(1, rank - 1);
     return { novoRank, lista: 'recuperacao', espera: 0 };
   }
 
