@@ -325,7 +325,7 @@ import MenuCartoes from './Components/MenuCartoes'
 import CardAvisoAtualizacao from './Components/CardAvisoAtualizacao'
 import { dataService } from './dataService'
 import { calcularProximoRank } from './useSRSLogic'
-import { precarregarAudios, expurgarAudiosDeIds, baixarNovosAudiosComProgresso, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService'
+import { precarregarAudios, precarregarPalavras, expurgarAudiosDeIds, baixarNovosAudiosComProgresso, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_PT, VOZES_ZH } from './services/audioCacheService'
 import { listarTopicosSalvos, invalidarTopicosPorSentencas } from './services/offlineStorage'
 import { DingliProvider } from './DingliContext'
 
@@ -353,6 +353,8 @@ function App() {
     return () => { ativo = false; };
   }, [nivelAtivo, idiomaEstudo]);
 
+  const cacheExplicacoesTopico = useRef({});
+
   const baixarTopicoOffline = useCallback(async (nomeTopico, nivel = nivelAtivo) => {
     if (!nomeTopico || !nivel) return;
     setBaixandoTopico(nomeTopico);
@@ -362,7 +364,59 @@ function App() {
       const { data } = await dataService.getSentencesByTopic(nivel, idiomaEstudo, colTopicOrigem, nomeTopico);
       if (data && data.length > 0) {
         const vozes = (idiomaEstudo === "pi" || idiomaEstudo === "zh") ? VOZES_ZH : (idiomaEstudo === "pt" ? VOZES_PT : (idiomaEstudo === "ge" ? VOZES_GE : (idiomaEstudo === "it" ? VOZES_IT : (idiomaEstudo === "fr" ? VOZES_FR : (idiomaEstudo === "es" ? VOZES_ES : VOZES_EN)))));
-        await precarregarAudios(data, idiomaEstudo, vozes);
+
+        // 1. Áudios das frases completas
+        const promessaFrases = precarregarAudios(data, idiomaEstudo, vozes);
+
+        // 2. Áudios das palavras isoladas do tópico
+        const todasPalavras = [];
+        data.forEach(item => {
+          const txt = item[idiomaEstudo] || item.texto || "";
+          txt.split(/\s+/).forEach(w => {
+            const limpa = w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim();
+            if (limpa) todasPalavras.push(limpa);
+          });
+        });
+        const promessaPalavras = todasPalavras.length > 0
+          ? precarregarPalavras(todasPalavras, idiomaEstudo)
+          : Promise.resolve();
+
+        // 3. Explicações pedagógicas (.json)
+        const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+        const chaveCache = `${parIdiomas}_${nivel}_${nomeTopico}`;
+        const promessaExplicacoes = (async () => {
+          if (cacheExplicacoesTopico.current[chaveCache]) return;
+          try {
+            const nomeArquivo = encodeURIComponent(`${nivel}_${nomeTopico}.json`);
+            let resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+            if (!resposta.ok) {
+              resposta = await fetch(`/explicacoes/${parIdiomas}/${nivel}_${nomeTopico}.json`);
+            }
+            if (resposta.ok) {
+              if ("caches" in window) {
+                try {
+                  const cache = await caches.open("dingli-audios-v1");
+                  await cache.put(`/explicacoes/${parIdiomas}/${nomeArquivo}`, resposta.clone());
+                } catch (e) { }
+              }
+              let mapa = await resposta.json();
+              if (Array.isArray(mapa)) {
+                mapa = Object.assign({}, ...mapa);
+              } else if (mapa && typeof mapa === 'object' && !mapa[String(data[0]?.id)]) {
+                const chaves = Object.keys(mapa);
+                if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
+                  const interno = mapa[chaves[0]];
+                  mapa = Array.isArray(interno) ? Object.assign({}, ...interno) : interno;
+                }
+              }
+              cacheExplicacoesTopico.current[chaveCache] = mapa;
+            }
+          } catch (errExp) {
+            console.warn("[App] Falha ao pré-carregar explicações:", errExp);
+          }
+        })();
+
+        await Promise.all([promessaFrases, promessaPalavras, promessaExplicacoes]);
         setTopicosBaixados(prev => prev.includes(nomeTopico) ? prev : [...prev, nomeTopico]);
       }
     } catch (e) {
@@ -400,7 +454,6 @@ function App() {
     return salvo ? JSON.parse(salvo) : [];
   });
   const ultimoAudioID = useRef("");
-  const cacheExplicacoesTopico = useRef({});
   const mudarTela = useCallback((novaTela) => {
     window.history.pushState({ tela: novaTela }, "");
     setTela(novaTela);
@@ -667,6 +720,9 @@ function App() {
 
       if (nomeTopico) {
         setTopicoAtivo(nomeTopico);
+        if (!topicosBaixados.includes(nomeTopico)) {
+          baixarTopicoOffline(nomeTopico, nivelAlvo);
+        }
       }
 
       // Sincroniza o índice real da frase no tópico para o contador (ex: 12 / 30)
@@ -696,9 +752,9 @@ function App() {
       setStatusVoz('IDLE');
       processandoAcertoRef.current = false;
       mudarTela('estudo');
-      return;
-    }
-  }, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio, topicoAtivo, nivelAtivo, idiomaOrigem, idiomaEstudo, frasesMaestria, verificarNivelConcluido, userRole]);
+    return;
+  }
+}, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio, topicoAtivo, nivelAtivo, idiomaOrigem, idiomaEstudo, frasesMaestria, verificarNivelConcluido, userRole, topicosBaixados, baixarTopicoOffline]);
 
   useEffect(() => {
     jogarDominiumInteligenteRef.current = jogarDominiumInteligente;
@@ -771,6 +827,14 @@ function App() {
       if (!resposta.ok) {
         resposta = await fetch(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`);
       }
+      if (!resposta.ok && "caches" in window) {
+        try {
+          const cache = await caches.open("dingli-audios-v1");
+          const cachedResp = (await cache.match(`/explicacoes/${parIdiomas}/${nomeArquivo}`)) ||
+                             (await cache.match(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`));
+          if (cachedResp) resposta = cachedResp;
+        } catch (e) { }
+      }
 
       if (resposta.ok) {
         let mapa = await resposta.json();
@@ -790,6 +854,30 @@ function App() {
         setAiExplanation({ explanation: "Arquivo de explicações do tópico não localizado.", breakdown: [] });
       }
     } catch (err) {
+      if ("caches" in window) {
+        try {
+          const cache = await caches.open("dingli-audios-v1");
+          const nomeArquivo = encodeURIComponent(`${nivelAlvo}_${topicoAlvo}.json`);
+          const cachedResp = (await cache.match(`/explicacoes/${parIdiomas}/${nomeArquivo}`)) ||
+                             (await cache.match(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`));
+          if (cachedResp) {
+            let mapa = await cachedResp.json();
+            if (Array.isArray(mapa)) {
+              mapa = Object.assign({}, ...mapa);
+            } else if (mapa && typeof mapa === 'object' && !mapa[String(idAlvo)]) {
+              const chaves = Object.keys(mapa);
+              if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
+                const interno = mapa[chaves[0]];
+                mapa = Array.isArray(interno) ? Object.assign({}, ...interno) : interno;
+              }
+            }
+            cacheExplicacoesTopico.current[chaveCache] = mapa;
+            const dados = mapa[String(idAlvo)];
+            setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
+            return;
+          }
+        } catch (e) { }
+      }
       console.warn("[App] Falha ao carregar explicação local:", err);
       setAiExplanation({ explanation: "Erro ao abrir explicação local.", breakdown: [] });
     } finally {
@@ -935,7 +1023,7 @@ function App() {
       const vozes = (idiomaEstudo === "pi" || idiomaEstudo === "zh") ? VOZES_ZH : (idiomaEstudo === "pt" ? VOZES_PT : (idiomaEstudo === "ge" ? VOZES_GE : (idiomaEstudo === "it" ? VOZES_IT : (idiomaEstudo === "fr" ? VOZES_FR : (idiomaEstudo === "es" ? VOZES_ES : VOZES_EN)))));
       precarregarAudios(data, idiomaEstudo, vozes);
       if (!topicosBaixados.includes(nomeTopico)) {
-        baixarTopicoOffline(nomeTopico, nivelAtivo);
+        baixarTopicoOffline(nomeTopico, nivelEfetivo);
       }
       setFrasesFiltradas(data);
       setTopicoAtivo(nomeTopico);
@@ -969,7 +1057,7 @@ function App() {
     } else {
       setCarregandoDados(false);
     }
-  }, [idiomaOrigem, idiomaEstudo, nivelAtivo, mudarTela, frasesMaestria]);
+  }, [idiomaOrigem, idiomaEstudo, nivelAtivo, mudarTela, frasesMaestria, topicosBaixados, baixarTopicoOffline]);
 
   useEffect(() => {
     selecionarTopicoRef.current = selecionarTopico;
@@ -1323,27 +1411,113 @@ function App() {
 
     sincronizarTopicosLocais().catch(err => console.warn("[App] Erro na sincronização IndexedDB:", err));
 
-    // 3. DOWNLOAD DOS NOVOS ÁUDIOS COM PROGRESSO
-    const idsEstudados = idsRevisao.filter(id => {
-      const item = frasesMaestria[id];
-      const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
-      return rank > 0;
-    });
-    const idsParaBaixar = idsEstudados.length > 0 ? idsEstudados : idsRevisao.slice(0, 10);
-    await baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo, onProgresso);
+    // 3. CONCLUSÃO DA VERSÃO E LIBERAÇÃO INSTANTÂNEA
+        localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
+        setRevisaoPendente(null);
+        setModalAtualizacaoAberto(false);
 
-    // 4. CONCLUSÃO DA VERSÃO
-    localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
-    setRevisaoPendente(null);
-    setModalAtualizacaoAberto(false);
+        if (acaoPendenteAposAtualizacao) {
+          const acao = acaoPendenteAposAtualizacao;
+          setAcaoPendenteAposAtualizacao(null);
+          acao();
+        }
 
-    // 5. NAVEGAÇÃO IMEDIATA COM DADOS NOVOS
-    if (acaoPendenteAposAtualizacao) {
-      const acao = acaoPendenteAposAtualizacao;
-      setAcaoPendenteAposAtualizacao(null);
-      acao();
-    }
-  }, [revisaoPendente, frasesMaestria, idiomaOrigem, idiomaEstudo, user, nivelAtivo, topicosBaixados, setFrasesMaestria, setSessaoDominium, limparEstadoExercicio, acaoPendenteAposAtualizacao]);
+        // 4. SINCRONIZAÇÃO COMPLETA EM SEGUNDO PLANO (Áudios, Palavras e Explicações)
+        const sincronizarSegundoPlano = async () => {
+          // a. Áudios das frases completas
+          const idsEstudados = idsRevisao.filter(id => {
+            const item = frasesMaestria[id];
+            const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
+            return rank > 0;
+          });
+          const idsParaBaixar = idsEstudados.length > 0 ? idsEstudados : idsRevisao.slice(0, 10);
+          const promessaAudios = baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo);
+
+          // b. Vocabulário de palavras isoladas e Explicações JSON dos tópicos afetados
+          const promessaVocabularioEExplicacoes = (async () => {
+            try {
+              const { data: sentencasNovas } = await dataService.getSentencesByIds(idsRevisao);
+              if (!sentencasNovas || sentencasNovas.length === 0) return;
+
+              // Palavras isoladas
+              const todasPalavras = [];
+              sentencasNovas.forEach(item => {
+                const txt = (idiomaEstudo === 'pi' && item.zh) ? item.zh : (item[idiomaEstudo] || item.texto || "");
+                txt.split(/\s+/).forEach(w => {
+                  const limpa = w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim();
+                  if (limpa) todasPalavras.push(limpa);
+                });
+              });
+              if (todasPalavras.length > 0) {
+                await precarregarPalavras(todasPalavras, idiomaEstudo);
+              }
+
+              // Explicações JSON
+              const colTopicOrigem = `topic_${idiomaOrigem}`;
+              const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+              const paresTopicos = new Map();
+
+              sentencasNovas.forEach(item => {
+                const n = item.level || "A1";
+                const tp = item[colTopicOrigem];
+                if (tp && !paresTopicos.has(`${n}_${tp}`)) {
+                  paresTopicos.set(`${n}_${tp}`, { nivel: n, topico: tp });
+                }
+              });
+
+              for (const { nivel: nTopico, topico: nomeTopico } of paresTopicos.values()) {
+                const chaveCache = `${parIdiomas}_${nTopico}_${nomeTopico}`;
+                delete cacheExplicacoesTopico.current[chaveCache];
+
+                const nomeArquivo = encodeURIComponent(`${nTopico}_${nomeTopico}.json`);
+                if ("caches" in window) {
+                  try {
+                    const cache = await caches.open("dingli-audios-v1");
+                    await cache.delete(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+                    await cache.delete(`/explicacoes/${parIdiomas}/${nTopico}_${nomeTopico}.json`);
+                  } catch (e) { }
+                }
+
+                try {
+                  let resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}?v=${Date.now()}`);
+                  if (!resposta.ok) {
+                    resposta = await fetch(`/explicacoes/${parIdiomas}/${nTopico}_${nomeTopico}.json?v=${Date.now()}`);
+                  }
+                  if (resposta.ok) {
+                    if ("caches" in window) {
+                      try {
+                        const cache = await caches.open("dingli-audios-v1");
+                        await cache.put(`/explicacoes/${parIdiomas}/${nomeArquivo}`, resposta.clone());
+                      } catch (e) { }
+                    }
+                    let mapa = await resposta.json();
+                    if (Array.isArray(mapa)) {
+                      mapa = Object.assign({}, ...mapa);
+                    } else if (mapa && typeof mapa === 'object' && !mapa[String(sentencasNovas[0]?.id)]) {
+                      const chaves = Object.keys(mapa);
+                      if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
+                        const interno = mapa[chaves[0]];
+                        mapa = Array.isArray(interno) ? Object.assign({}, ...interno) : interno;
+                      }
+                    }
+                    cacheExplicacoesTopico.current[chaveCache] = mapa;
+                  }
+                } catch (errJson) {
+                  console.warn(`[App] Falha ao atualizar explicação do tópico '${nomeTopico}':`, errJson);
+                }
+              }
+            } catch (errSentencas) {
+              console.warn("[App] Falha ao sincronizar vocabulário e explicações atualizadas:", errSentencas);
+            }
+          })();
+
+          await Promise.all([promessaAudios, promessaVocabularioEExplicacoes]);
+        };
+
+        sincronizarSegundoPlano().catch(err => {
+          console.warn("[App] Falha na sincronização completa em segundo plano:", err);
+        });
+      }, [revisaoPendente, frasesMaestria, idiomaOrigem, idiomaEstudo, user, nivelAtivo, topicosBaixados, setFrasesMaestria, setSessaoDominium, limparEstadoExercicio, acaoPendenteAposAtualizacao]);
 
   const renderTela = () => {
     if (tela === 'perfil') return (
@@ -1404,6 +1578,7 @@ function App() {
         frasesFiltradas={frasesFiltradas} indice={indice} explicarFraseIA={explicarFraseIA}
         telaRetorno={telaRetornoExplicacao}
         fraseExibicao={fraseExplicacao}
+        falar={falar}
       />
     );
     if (tela === 'dominiumStats') return (
@@ -2171,21 +2346,11 @@ export default function CardAvisoAtualizacao({
     }
   };
 
-  const handleAtualizar = async () => {
+  const handleAtualizar = () => {
     if (emAndamento) return;
     setEmAndamento(true);
-    setProgresso(0);
-
-    try {
-      if (onConfirmar) {
-        await onConfirmar((p) => {
-          const valor = typeof p === 'object' && p !== null ? p.percentual : p;
-          setProgresso(valor || 0);
-        });
-      }
-    } catch (err) {
-      console.error("[CardAvisoAtualizacao] Erro ao aplicar atualização:", err);
-      setEmAndamento(false);
+    if (onConfirmar) {
+      onConfirmar();
     }
   };
 
@@ -2338,7 +2503,7 @@ export default function CardAvisoAtualizacao({
             )}
           </div>
 
-          {/* Área Inferior com Botão e Barra de Progresso */}
+          {/* Área Inferior com Botão */}
           <div style={{ ...styles.bottomCardAreaFixed, gap: '8px', paddingTop: '10px', width: '100%' }}>
             <button
               type="button"
@@ -2358,26 +2523,8 @@ export default function CardAvisoAtualizacao({
                 transition: "opacity 0.2s"
               }}
             >
-              {emAndamento ? `${textos.baixando} ${progresso}%` : textos.botaoAcao}
+              {textos.botaoAcao}
             </button>
-
-            {/* Barra de Progresso Dinâmica */}
-            {emAndamento && (
-              <div style={{
-                width: '100%',
-                height: '6px',
-                backgroundColor: '#e2e8f0',
-                borderRadius: '3px',
-                overflow: 'hidden'
-              }}>
-                <div style={{
-                  width: `${progresso}%`,
-                  height: '100%',
-                  backgroundColor: corTema,
-                  transition: 'width 0.2s ease'
-                }} />
-              </div>
-            )}
           </div>
 
         </div>
@@ -4562,19 +4709,27 @@ export default function Perfil({
 }
 
 ### 📄 ARQUIVO: ./src/Components/Relatorios.jsx
-import React from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useDominiumData } from '../useDominiumData';
 import { useDingli } from '../DingliContext';
+import { tocarAudioPalavra } from '../services/audioCacheService';
 
 export function ExplicacaoIA({
   styles,
   aiLoading, aiExplanation, frasesFiltradas, indice, explicarFraseIA,
-  telaRetorno = 'estudo', fraseExibicao = null
+  telaRetorno = 'estudo', fraseExibicao = null, falar
 }) {
-  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, COR_BASE_CARDS } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, COR_BASE_CARDS, getCorFonteDinamica } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   const frase = fraseExibicao || frasesFiltradas[indice];
+  const corBgPrincipal = temas[idiomaEstudo]?.bg || '#4f46e5';
+
+  const handleOuvirFrase = useCallback(() => {
+    if (!falar || !frase) return;
+    const textoParaFalar = (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : (frase[idiomaEstudo] || "");
+    falar({ id: frase.id, texto: textoParaFalar }, false);
+  }, [falar, frase, idiomaEstudo]);
 
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg }}>
@@ -4613,11 +4768,81 @@ export function ExplicacaoIA({
                 overflowY: 'auto',
                 WebkitOverflowScrolling: 'touch'
               }}>
-                {/* Frase L2 + Hanzi (se mandarim) */}
-                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '10px' }}>
-                  <h2 style={{ color: temas[idiomaEstudo].bg, fontWeight: '800', fontSize: '1.25rem', margin: 0, lineHeight: '1.25' }}>
-                    {frase?.[idiomaEstudo]}
+               {/* Frase L2 + Hanzi (se mandarim) */}
+                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '32px' /* <-- Espaço superior para o ícone flutuar acima da 1ª letra */ }}>
+                  {/* Frase L2 grifada com o ícone ancorado acima da 1ª letra */}
+                  <h2 style={{ color: temas[idiomaEstudo].bg, fontWeight: '800', fontSize: '1.25rem', margin: 0, lineHeight: '1.35', width: '100%' }}>
+                    {(frase?.[idiomaEstudo] || "").split(/\s+/).filter(Boolean).map((word, i) => {
+                      const ehPrimeiraPalavra = i === 0;
+
+                      return (
+                        <span
+                          key={i}
+                          onClick={() => tocarAudioPalavra(word, idiomaEstudo)}
+                          title={t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada"}
+                          style={{
+                            display: 'inline-block',
+                            marginRight: '6px',
+                            cursor: 'pointer',
+                            userSelect: 'none',
+                            position: ehPrimeiraPalavra ? 'relative' : 'static',
+                            borderBottom: `2.5px solid ${(temas[idiomaEstudo]?.bg || '#4f46e5')}55`, /* <-- [Grifado] Espessura e opacidade da linha */
+                            paddingBottom: '1px', /* <-- Distância entre a letra e a linha grifada */
+                            transition: 'transform 0.1s ease, border-color 0.2s ease'
+                          }}
+                          onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.92)'; }}
+                          onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+                        >
+                          {ehPrimeiraPalavra && (
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleOuvirFrase();
+                              }}
+                              title={t?.normal || "Ouvir"}
+                              style={{
+                                position: 'absolute',
+                                bottom: '100%',
+                                left: '0px',
+                                marginBottom: '2px',  /* <-- Distância entre o ícone e o topo da 1ª letra */
+                                marginLeft: '-2px',   /* <-- Positivo empurra p/ direita, negativo p/ esquerda */
+                                background: 'none',
+                                border: 'none',
+                                outline: 'none',
+                                boxShadow: 'none',
+                                WebkitTapHighlightColor: 'transparent',
+                                padding: '2px',
+                                cursor: 'pointer',
+                                color: corBgPrincipal,
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                lineHeight: 1,
+                                flexShrink: 0
+                              }}
+                              onMouseDown={(e) => {
+                                e.stopPropagation();
+                                e.currentTarget.style.transform = 'scale(0.9)';
+                              }}
+                              onMouseUp={(e) => {
+                                e.stopPropagation();
+                                e.currentTarget.style.transform = 'scale(1)';
+                              }}
+                            >
+                              <svg width="22" height="22" viewBox="0 0 256 256" fill="none" stroke="currentColor" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M152,32V224L80,168H32a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8H80Z" />
+                                <path d="M192,106a32,32,0,0,1,0,44" />
+                                <path d="M221.7,78a72,72,0,0,1,0,100" />
+                              </svg>
+                            </button>
+                          )}
+                          {word}
+                        </span>
+                      );
+                    })}
                   </h2>
+
                   {idiomaEstudo === 'pi' && frase?.zh && (
                     <div style={{ color: '#64748b', fontSize: '1.15rem', marginTop: '4px', fontWeight: '600' }}>
                       {frase.zh}
@@ -4731,7 +4956,6 @@ import { useDingli } from '../DingliContext';
 import { supabase } from '../supabaseClient';
 import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO, CORES_POR_IDIOMA } from '../themeColors';
 import { calcularProximoRank } from '../useSRSLogic';
-import { tocarAudioPalavra } from '../services/audioCacheService';
 
 const ExercicioSelecao = ({
   idiomaEstudo, frase, exercicioNivel, fontSizeEx3, styles, temas,
@@ -4960,8 +5184,6 @@ const ExercicioVoz = ({
             const oculto = !ehAcertoTotal && indicesOcultosVoz.includes(i);
             let cor = oculto ? 'transparent' : '#000';
             let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
-            const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
-
             if (estaNaFala) {
               cor = COR_ACERTO;
               borderB = '2px solid transparent';
@@ -4976,27 +5198,13 @@ const ExercicioVoz = ({
             return (
               <span
                 key={i}
-                onClick={() => {
-                  if (ehErro) {
-                    tocarAudioPalavra(word, idiomaEstudo);
-                  }
-                }}
-                title={ehErro ? (t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada") : ""}
                 style={{
                   color: cor,
                   borderBottom: borderB,
                   paddingBottom: '2px',
                   display: 'inline-block',
                   marginRight: '5px',
-                  cursor: ehErro ? 'pointer' : 'default',
-                  userSelect: 'none',
-                  transition: 'transform 0.15s ease'
-                }}
-                onMouseDown={(e) => {
-                  if (ehErro) e.currentTarget.style.transform = 'scale(0.92)';
-                }}
-                onMouseUp={(e) => {
-                  if (ehErro) e.currentTarget.style.transform = 'scale(1)';
+                  userSelect: 'none'
                 }}
               >
                 {word}
@@ -6288,7 +6496,7 @@ export const dataService = {
         .order('id', { ascending: true });
 
       if (resposta && resposta.data && resposta.data.length > 0) {
-        await salvarNoIndexedDB(STORES.SENTENCES, cacheKey, resposta.data);
+        await salvarNoIndexedDB(STORES.TOPICS, cacheKey, resposta.data);
         return resposta;
       }
       throw new Error("Sem dados na nuvem");
@@ -6298,6 +6506,17 @@ export const dataService = {
       if (dadosLocais) {
         return { data: dadosLocais, error: null };
       }
+      return { data: null, error: err };
+    }
+  },
+
+  getSentencesByIds: async (ids) => {
+    try {
+      return await supabase
+        .from('sentences')
+        .select('*')
+        .in('id', ids);
+    } catch (err) {
       return { data: null, error: err };
     }
   },
@@ -6691,28 +6910,10 @@ export async function tocarAudioPalavra(palavra, idioma = "en") {
     const url = await obterAudioPalavraUrl(palavra, idioma);
     console.log("[Dìnglì Áudio]", { palavraOriginal: palavra, slugGerado: slug, urlFinal: url });
 
-    const dispararFallbackTTS = () => {
-      if (window.speechSynthesis) {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(palavra);
-        const LANG_MAP = {
-          pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
-          it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
-        };
-        u.lang = LANG_MAP[idioma] || 'en-US';
-        u.rate = 0.85;
-        window.speechSynthesis.speak(u);
-      }
-    };
-
     const audio = new Audio(url);
-    let fallbackAcionado = false;
 
-    audio.onerror = () => {
-      if (!fallbackAcionado) {
-        fallbackAcionado = true;
-        dispararFallbackTTS();
-      }
+    audio.onerror = (e) => {
+      console.warn("[Dìnglì Áudio] ✖ Falha ao carregar áudio da palavra:", slug, e);
     };
 
     const playPromise = audio.play();
@@ -6721,10 +6922,7 @@ export async function tocarAudioPalavra(palavra, idioma = "en") {
         .then(() => console.log("[Dìnglì Áudio] ✔ Reprodução iniciada:", slug))
         .catch((e) => {
           if (e.name === "AbortError") return;
-          if (!fallbackAcionado) {
-            fallbackAcionado = true;
-            dispararFallbackTTS();
-          }
+          console.warn("[Dìnglì Áudio] ✖ Erro ao reproduzir áudio da palavra:", slug, e);
         });
     }
   } catch (err) {
@@ -6962,31 +7160,6 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
         resolve({ duracao: dur, cancelado: false });
       };
 
-      const dispararFallbackTTS = () => {
-        if (abortado || resolvido) return;
-        if (window.speechSynthesis) {
-          window.speechSynthesis.cancel();
-          const u = new SpeechSynthesisUtterance(palavra);
-          const LANG_MAP = {
-            pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
-            it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
-          };
-          u.lang = LANG_MAP[idioma] || 'en-US';
-          u.rate = 0.85;
-          const t0 = Date.now();
-          u.onend = () => {
-            const dur = Math.max(0.4, (Date.now() - t0) / 1000);
-            finalizar(dur);
-          };
-          u.onerror = () => {
-            finalizar(0.4);
-          };
-          window.speechSynthesis.speak(u);
-        } else {
-          finalizar(0.4);
-        }
-      };
-
       audio.onplay = () => {
         inicio = Date.now();
       };
@@ -6999,7 +7172,8 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
       };
 
       audio.onerror = () => {
-        dispararFallbackTTS();
+        console.warn("[Dìnglì Áudio] ✖ Falha ao carregar áudio:", slug);
+        finalizar(0.4);
       };
 
       const playPromise = audio.play();
@@ -7012,7 +7186,7 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
             }
             return;
           }
-          dispararFallbackTTS();
+          finalizar(0.4);
         });
       }
     }).catch(() => {
@@ -7028,9 +7202,6 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
         audioInstance.src = "";
       } catch (e) { }
       audioInstance = null;
-    }
-    if (window.speechSynthesis) {
-      try { window.speechSynthesis.cancel(); } catch (e) { }
     }
   };
 
@@ -7084,18 +7255,8 @@ export function tocarAudioPalavraMetronomo(palavra, idioma = "en", onSomComecou 
       audio.onerror = () => {
         clearTimeout(timerSeguranca);
         if (cancelado) return;
+        console.warn("[Dìnglì Áudio Metrônomo] ✖ Falha ao carregar áudio:", slug);
         dispararInicio();
-        if (window.speechSynthesis) {
-          window.speechSynthesis.cancel();
-          const u = new SpeechSynthesisUtterance(palavra);
-          const LANG_MAP = {
-            pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
-            it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
-          };
-          u.lang = LANG_MAP[idioma] || 'en-US';
-          u.rate = 0.85;
-          window.speechSynthesis.speak(u);
-        }
       };
 
       const p = audio.play();
@@ -7125,9 +7286,6 @@ export function tocarAudioPalavraMetronomo(palavra, idioma = "en", onSomComecou 
         audioInstance.src = "";
       } catch (e) { }
       audioInstance = null;
-    }
-    if (window.speechSynthesis) {
-      try { window.speechSynthesis.cancel(); } catch (e) { }
     }
   };
 
@@ -8081,7 +8239,6 @@ export const useSpeech = ({
 
     const animationFrameRef = useRef(null);
     const timerSilencioRef = useRef(null);
-    const voiceIndex = useRef(0);
 
     // Controle do sorteio sem repetição e retenção de voz
     const filaVozesRef = useRef([]);
@@ -8183,58 +8340,6 @@ export const useSpeech = ({
         };
     }, [pararAudiosEmExecucao]);
 
-    const falarTTS = useCallback((texto, lento, callback) => {
-        if (!texto) return;
-        const synth = window.speechSynthesis;
-        synth.cancel();
-
-        setTimeout(() => {
-            const voices = synth.getVoices().filter(v => {
-                const name = v.name.toLowerCase();
-                const lang = temas[idiomaEstudo]?.langCode?.split('-')[0]?.toLowerCase();
-                const isQuality = name.includes('natural') || name.includes('neural') || name.includes('premium') || name.includes('online');
-                return v.lang.toLowerCase().includes(lang) && (!name.includes('google') || isQuality) && (!name.includes('microsoft') || isQuality);
-            });
-            const selectedVoice = voices.length > 0 ? voices[voiceIndex.current % voices.length] : null;
-            if (!lento && voices.length > 0) voiceIndex.current += 1;
-
-            if (lento) {
-                const palavrasBrutas = idiomaEstudo === 'pi' && !texto.includes(" ") ? texto.split("") : texto.split(" ");
-                const palavras = palavrasBrutas.filter(p => !/^[.,!?;:，。！？；：]+$/.test(p.trim()) && p.trim() !== "");
-                const falarPalavra = (index) => {
-                    if (index >= palavras.length) {
-                        if (callback) callback();
-                        window.utterance = null;
-                        return;
-                    }
-                    const msg = new SpeechSynthesisUtterance(palavras[index]);
-                    window.utterance = msg;
-                    if (selectedVoice) msg.voice = selectedVoice;
-                    msg.rate = 0.8;
-                    msg.lang = temas[idiomaEstudo]?.langCode || 'en-US';
-                    msg.onend = () => {
-                        setTimeout(() => falarPalavra(index + 1), 100);
-                    };
-                    synth.speak(msg);
-                };
-                synth.resume();
-                falarPalavra(0);
-            } else {
-                const msg = new SpeechSynthesisUtterance(texto);
-                window.utterance = msg;
-                if (selectedVoice) msg.voice = selectedVoice;
-                msg.rate = 0.9;
-                msg.lang = temas[idiomaEstudo]?.langCode || 'en-US';
-                msg.onend = () => {
-                    if (callback) callback();
-                    window.utterance = null;
-                };
-                synth.resume();
-                synth.speak(msg);
-            }
-        }, 50);
-    }, [idiomaEstudo, temas]);
-
     const falar = useCallback(async (alvo, lento = false, callback) => {
         if (!alvo) return;
         pararAudiosEmExecucao();
@@ -8265,7 +8370,6 @@ export const useSpeech = ({
                     vozAtualRef.current = voz;
                     setVozAtiva(voz);
                 } else if (typeof alvo === 'object' && alvo !== null && alvo.sortearDiferente) {
-                    // ETAPA 1: Sorteio aleatório de voz diferente da anterior no erro
                     voz = obterVozAleatoriaDiferente(idiomaEstudo);
                 } else if (lento && vozAtualRef.current) {
                     voz = vozAtualRef.current;
@@ -8287,9 +8391,9 @@ export const useSpeech = ({
                 };
 
                 audio.onerror = (err) => {
-                    console.warn(`[useSpeech] Falha ao reproduzir MP3 (${id}_${voz}), usando TTS:`, err);
+                    console.warn(`[useSpeech] Falha ao reproduzir MP3 (${id}_${voz}):`, err);
                     audioRef.current = null;
-                    falarTTS(texto, lento, callback);
+                    if (callback) callback();
                 };
 
                 if (currentRequestId !== playRequestIdRef.current) return;
@@ -8298,21 +8402,22 @@ export const useSpeech = ({
                 if (playPromise !== undefined) {
                     playPromise.catch((e) => {
                         if (e.name === "AbortError" || currentRequestId !== playRequestIdRef.current) return;
-                        console.warn("[useSpeech] Autoplay bloqueado ou falha de play, usando TTS:", e);
+                        console.warn("[useSpeech] Autoplay bloqueado ou falha de play:", e);
                         audioRef.current = null;
-                        falarTTS(texto, lento, callback);
+                        if (callback) callback();
                     });
                 }
                 return;
             } catch (err) {
-                console.warn("[useSpeech] Exceção ao abrir MP3, usando TTS:", err);
+                console.warn("[useSpeech] Exceção ao abrir MP3:", err);
                 audioRef.current = null;
+                if (callback) callback();
+                return;
             }
         }
 
-        // Fallback nativo
-        falarTTS(texto, lento, callback);
-    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, falarTTS, obterProximaVoz, obterVozAleatoriaDiferente]);
+        if (callback) callback();
+    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, obterProximaVoz, obterVozAleatoriaDiferente]);
 
     const pararMonitoramentoAudio = useCallback(() => {
         estaGravandoRef.current = false;

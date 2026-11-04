@@ -103,7 +103,6 @@ export const useSpeech = ({
 
     const animationFrameRef = useRef(null);
     const timerSilencioRef = useRef(null);
-    const voiceIndex = useRef(0);
 
     // Controle do sorteio sem repetição e retenção de voz
     const filaVozesRef = useRef([]);
@@ -205,58 +204,6 @@ export const useSpeech = ({
         };
     }, [pararAudiosEmExecucao]);
 
-    const falarTTS = useCallback((texto, lento, callback) => {
-        if (!texto) return;
-        const synth = window.speechSynthesis;
-        synth.cancel();
-
-        setTimeout(() => {
-            const voices = synth.getVoices().filter(v => {
-                const name = v.name.toLowerCase();
-                const lang = temas[idiomaEstudo]?.langCode?.split('-')[0]?.toLowerCase();
-                const isQuality = name.includes('natural') || name.includes('neural') || name.includes('premium') || name.includes('online');
-                return v.lang.toLowerCase().includes(lang) && (!name.includes('google') || isQuality) && (!name.includes('microsoft') || isQuality);
-            });
-            const selectedVoice = voices.length > 0 ? voices[voiceIndex.current % voices.length] : null;
-            if (!lento && voices.length > 0) voiceIndex.current += 1;
-
-            if (lento) {
-                const palavrasBrutas = idiomaEstudo === 'pi' && !texto.includes(" ") ? texto.split("") : texto.split(" ");
-                const palavras = palavrasBrutas.filter(p => !/^[.,!?;:，。！？；：]+$/.test(p.trim()) && p.trim() !== "");
-                const falarPalavra = (index) => {
-                    if (index >= palavras.length) {
-                        if (callback) callback();
-                        window.utterance = null;
-                        return;
-                    }
-                    const msg = new SpeechSynthesisUtterance(palavras[index]);
-                    window.utterance = msg;
-                    if (selectedVoice) msg.voice = selectedVoice;
-                    msg.rate = 0.8;
-                    msg.lang = temas[idiomaEstudo]?.langCode || 'en-US';
-                    msg.onend = () => {
-                        setTimeout(() => falarPalavra(index + 1), 100);
-                    };
-                    synth.speak(msg);
-                };
-                synth.resume();
-                falarPalavra(0);
-            } else {
-                const msg = new SpeechSynthesisUtterance(texto);
-                window.utterance = msg;
-                if (selectedVoice) msg.voice = selectedVoice;
-                msg.rate = 0.9;
-                msg.lang = temas[idiomaEstudo]?.langCode || 'en-US';
-                msg.onend = () => {
-                    if (callback) callback();
-                    window.utterance = null;
-                };
-                synth.resume();
-                synth.speak(msg);
-            }
-        }, 50);
-    }, [idiomaEstudo, temas]);
-
     const falar = useCallback(async (alvo, lento = false, callback) => {
         if (!alvo) return;
         pararAudiosEmExecucao();
@@ -287,7 +234,6 @@ export const useSpeech = ({
                     vozAtualRef.current = voz;
                     setVozAtiva(voz);
                 } else if (typeof alvo === 'object' && alvo !== null && alvo.sortearDiferente) {
-                    // ETAPA 1: Sorteio aleatório de voz diferente da anterior no erro
                     voz = obterVozAleatoriaDiferente(idiomaEstudo);
                 } else if (lento && vozAtualRef.current) {
                     voz = vozAtualRef.current;
@@ -309,9 +255,9 @@ export const useSpeech = ({
                 };
 
                 audio.onerror = (err) => {
-                    console.warn(`[useSpeech] Falha ao reproduzir MP3 (${id}_${voz}), usando TTS:`, err);
+                    console.warn(`[useSpeech] Falha ao reproduzir MP3 (${id}_${voz}):`, err);
                     audioRef.current = null;
-                    falarTTS(texto, lento, callback);
+                    if (callback) callback();
                 };
 
                 if (currentRequestId !== playRequestIdRef.current) return;
@@ -320,21 +266,22 @@ export const useSpeech = ({
                 if (playPromise !== undefined) {
                     playPromise.catch((e) => {
                         if (e.name === "AbortError" || currentRequestId !== playRequestIdRef.current) return;
-                        console.warn("[useSpeech] Autoplay bloqueado ou falha de play, usando TTS:", e);
+                        console.warn("[useSpeech] Autoplay bloqueado ou falha de play:", e);
                         audioRef.current = null;
-                        falarTTS(texto, lento, callback);
+                        if (callback) callback();
                     });
                 }
                 return;
             } catch (err) {
-                console.warn("[useSpeech] Exceção ao abrir MP3, usando TTS:", err);
+                console.warn("[useSpeech] Exceção ao abrir MP3:", err);
                 audioRef.current = null;
+                if (callback) callback();
+                return;
             }
         }
 
-        // Fallback nativo
-        falarTTS(texto, lento, callback);
-    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, falarTTS, obterProximaVoz, obterVozAleatoriaDiferente]);
+        if (callback) callback();
+    }, [idiomaEstudo, fraseAtiva, frasesFiltradas, indice, pararAudiosEmExecucao, obterProximaVoz, obterVozAleatoriaDiferente]);
 
     const pararMonitoramentoAudio = useCallback(() => {
         estaGravandoRef.current = false;

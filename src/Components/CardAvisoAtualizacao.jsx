@@ -183,21 +183,11 @@ export default function CardAvisoAtualizacao({
     }
   };
 
-  const handleAtualizar = async () => {
+  const handleAtualizar = () => {
     if (emAndamento) return;
     setEmAndamento(true);
-    setProgresso(0);
-
-    try {
-      if (onConfirmar) {
-        await onConfirmar((p) => {
-          const valor = typeof p === 'object' && p !== null ? p.percentual : p;
-          setProgresso(valor || 0);
-        });
-      }
-    } catch (err) {
-      console.error("[CardAvisoAtualizacao] Erro ao aplicar atualização:", err);
-      setEmAndamento(false);
+    if (onConfirmar) {
+      onConfirmar();
     }
   };
 
@@ -350,7 +340,7 @@ export default function CardAvisoAtualizacao({
             )}
           </div>
 
-          {/* Área Inferior com Botão e Barra de Progresso */}
+          {/* Área Inferior com Botão */}
           <div style={{ ...styles.bottomCardAreaFixed, gap: '8px', paddingTop: '10px', width: '100%' }}>
             <button
               type="button"
@@ -370,26 +360,8 @@ export default function CardAvisoAtualizacao({
                 transition: "opacity 0.2s"
               }}
             >
-              {emAndamento ? `${textos.baixando} ${progresso}%` : textos.botaoAcao}
+              {textos.botaoAcao}
             </button>
-
-            {/* Barra de Progresso Dinâmica */}
-            {emAndamento && (
-              <div style={{
-                width: '100%',
-                height: '6px',
-                backgroundColor: '#e2e8f0',
-                borderRadius: '3px',
-                overflow: 'hidden'
-              }}>
-                <div style={{
-                  width: `${progresso}%`,
-                  height: '100%',
-                  backgroundColor: corTema,
-                  transition: 'width 0.2s ease'
-                }} />
-              </div>
-            )}
           </div>
 
         </div>

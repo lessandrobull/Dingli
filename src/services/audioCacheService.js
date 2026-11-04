@@ -139,28 +139,10 @@ export async function tocarAudioPalavra(palavra, idioma = "en") {
     const url = await obterAudioPalavraUrl(palavra, idioma);
     console.log("[Dìnglì Áudio]", { palavraOriginal: palavra, slugGerado: slug, urlFinal: url });
 
-    const dispararFallbackTTS = () => {
-      if (window.speechSynthesis) {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(palavra);
-        const LANG_MAP = {
-          pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
-          it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
-        };
-        u.lang = LANG_MAP[idioma] || 'en-US';
-        u.rate = 0.85;
-        window.speechSynthesis.speak(u);
-      }
-    };
-
     const audio = new Audio(url);
-    let fallbackAcionado = false;
 
-    audio.onerror = () => {
-      if (!fallbackAcionado) {
-        fallbackAcionado = true;
-        dispararFallbackTTS();
-      }
+    audio.onerror = (e) => {
+      console.warn("[Dìnglì Áudio] ✖ Falha ao carregar áudio da palavra:", slug, e);
     };
 
     const playPromise = audio.play();
@@ -169,10 +151,7 @@ export async function tocarAudioPalavra(palavra, idioma = "en") {
         .then(() => console.log("[Dìnglì Áudio] ✔ Reprodução iniciada:", slug))
         .catch((e) => {
           if (e.name === "AbortError") return;
-          if (!fallbackAcionado) {
-            fallbackAcionado = true;
-            dispararFallbackTTS();
-          }
+          console.warn("[Dìnglì Áudio] ✖ Erro ao reproduzir áudio da palavra:", slug, e);
         });
     }
   } catch (err) {
@@ -410,31 +389,6 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
         resolve({ duracao: dur, cancelado: false });
       };
 
-      const dispararFallbackTTS = () => {
-        if (abortado || resolvido) return;
-        if (window.speechSynthesis) {
-          window.speechSynthesis.cancel();
-          const u = new SpeechSynthesisUtterance(palavra);
-          const LANG_MAP = {
-            pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
-            it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
-          };
-          u.lang = LANG_MAP[idioma] || 'en-US';
-          u.rate = 0.85;
-          const t0 = Date.now();
-          u.onend = () => {
-            const dur = Math.max(0.4, (Date.now() - t0) / 1000);
-            finalizar(dur);
-          };
-          u.onerror = () => {
-            finalizar(0.4);
-          };
-          window.speechSynthesis.speak(u);
-        } else {
-          finalizar(0.4);
-        }
-      };
-
       audio.onplay = () => {
         inicio = Date.now();
       };
@@ -447,7 +401,8 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
       };
 
       audio.onerror = () => {
-        dispararFallbackTTS();
+        console.warn("[Dìnglì Áudio] ✖ Falha ao carregar áudio:", slug);
+        finalizar(0.4);
       };
 
       const playPromise = audio.play();
@@ -460,7 +415,7 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
             }
             return;
           }
-          dispararFallbackTTS();
+          finalizar(0.4);
         });
       }
     }).catch(() => {
@@ -476,9 +431,6 @@ export function tocarAudioPalavraComControle(palavra, idioma = "en") {
         audioInstance.src = "";
       } catch (e) { }
       audioInstance = null;
-    }
-    if (window.speechSynthesis) {
-      try { window.speechSynthesis.cancel(); } catch (e) { }
     }
   };
 
@@ -532,18 +484,8 @@ export function tocarAudioPalavraMetronomo(palavra, idioma = "en", onSomComecou 
       audio.onerror = () => {
         clearTimeout(timerSeguranca);
         if (cancelado) return;
+        console.warn("[Dìnglì Áudio Metrônomo] ✖ Falha ao carregar áudio:", slug);
         dispararInicio();
-        if (window.speechSynthesis) {
-          window.speechSynthesis.cancel();
-          const u = new SpeechSynthesisUtterance(palavra);
-          const LANG_MAP = {
-            pi: 'zh-CN', zh: 'zh-CN', pt: 'pt-BR', ge: 'de-DE',
-            it: 'it-IT', fr: 'fr-FR', es: 'es-ES', en: 'en-US'
-          };
-          u.lang = LANG_MAP[idioma] || 'en-US';
-          u.rate = 0.85;
-          window.speechSynthesis.speak(u);
-        }
       };
 
       const p = audio.play();
@@ -573,9 +515,6 @@ export function tocarAudioPalavraMetronomo(palavra, idioma = "en", onSomComecou 
         audioInstance.src = "";
       } catch (e) { }
       audioInstance = null;
-    }
-    if (window.speechSynthesis) {
-      try { window.speechSynthesis.cancel(); } catch (e) { }
     }
   };
 

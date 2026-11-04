@@ -6,7 +6,6 @@ import { useDingli } from '../DingliContext';
 import { supabase } from '../supabaseClient';
 import { COR_ACERTO, COR_TOM_CLARO, COR_SUPERFICIE_DIGITACAO, CORES_POR_IDIOMA } from '../themeColors';
 import { calcularProximoRank } from '../useSRSLogic';
-import { tocarAudioPalavra } from '../services/audioCacheService';
 
 const ExercicioSelecao = ({
   idiomaEstudo, frase, exercicioNivel, fontSizeEx3, styles, temas,
@@ -235,8 +234,6 @@ const ExercicioVoz = ({
             const oculto = !ehAcertoTotal && indicesOcultosVoz.includes(i);
             let cor = oculto ? 'transparent' : '#000';
             let borderB = oculto ? '2px solid #cbd5e1' : '2px solid transparent';
-            const ehErro = resultadoFeedback === 'erro' && !estaNaFala;
-
             if (estaNaFala) {
               cor = COR_ACERTO;
               borderB = '2px solid transparent';
@@ -251,27 +248,13 @@ const ExercicioVoz = ({
             return (
               <span
                 key={i}
-                onClick={() => {
-                  if (ehErro) {
-                    tocarAudioPalavra(word, idiomaEstudo);
-                  }
-                }}
-                title={ehErro ? (t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada") : ""}
                 style={{
                   color: cor,
                   borderBottom: borderB,
                   paddingBottom: '2px',
                   display: 'inline-block',
                   marginRight: '5px',
-                  cursor: ehErro ? 'pointer' : 'default',
-                  userSelect: 'none',
-                  transition: 'transform 0.15s ease'
-                }}
-                onMouseDown={(e) => {
-                  if (ehErro) e.currentTarget.style.transform = 'scale(0.92)';
-                }}
-                onMouseUp={(e) => {
-                  if (ehErro) e.currentTarget.style.transform = 'scale(1)';
+                  userSelect: 'none'
                 }}
               >
                 {word}

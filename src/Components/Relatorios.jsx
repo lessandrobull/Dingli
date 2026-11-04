@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useDominiumData } from '../useDominiumData';
 import { useDingli } from '../DingliContext';
+import { tocarAudioPalavra } from '../services/audioCacheService';
 
 export function ExplicacaoIA({
   styles,
   aiLoading, aiExplanation, frasesFiltradas, indice, explicarFraseIA,
-  telaRetorno = 'estudo', fraseExibicao = null
+  telaRetorno = 'estudo', fraseExibicao = null, falar
 }) {
-  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, COR_BASE_CARDS } = useDingli();
+  const { temas, t, navStyle, idiomaEstudo, idiomaOrigem, mudarTela, COR_BASE_CARDS, getCorFonteDinamica } = useDingli();
 
   const ns = navStyle(idiomaEstudo);
   const frase = fraseExibicao || frasesFiltradas[indice];
+  const corBgPrincipal = temas[idiomaEstudo]?.bg || '#4f46e5';
+
+  const handleOuvirFrase = useCallback(() => {
+    if (!falar || !frase) return;
+    const textoParaFalar = (idiomaEstudo === 'pi' && frase?.zh) ? frase.zh : (frase[idiomaEstudo] || "");
+    falar({ id: frase.id, texto: textoParaFalar }, false);
+  }, [falar, frase, idiomaEstudo]);
 
   return (
     <div style={{ ...styles.viewport, backgroundColor: temas[idiomaEstudo].bg }}>
@@ -49,11 +57,81 @@ export function ExplicacaoIA({
                 overflowY: 'auto',
                 WebkitOverflowScrolling: 'touch'
               }}>
-                {/* Frase L2 + Hanzi (se mandarim) */}
-                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '10px' }}>
-                  <h2 style={{ color: temas[idiomaEstudo].bg, fontWeight: '800', fontSize: '1.25rem', margin: 0, lineHeight: '1.25' }}>
-                    {frase?.[idiomaEstudo]}
+               {/* Frase L2 + Hanzi (se mandarim) */}
+                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '32px' /* <-- Espaço superior para o ícone flutuar acima da 1ª letra */ }}>
+                  {/* Frase L2 grifada com o ícone ancorado acima da 1ª letra */}
+                  <h2 style={{ color: temas[idiomaEstudo].bg, fontWeight: '800', fontSize: '1.25rem', margin: 0, lineHeight: '1.35', width: '100%' }}>
+                    {(frase?.[idiomaEstudo] || "").split(/\s+/).filter(Boolean).map((word, i) => {
+                      const ehPrimeiraPalavra = i === 0;
+
+                      return (
+                        <span
+                          key={i}
+                          onClick={() => tocarAudioPalavra(word, idiomaEstudo)}
+                          title={t?.touchToListenTooltip || "Toque para ouvir a pronúncia isolada"}
+                          style={{
+                            display: 'inline-block',
+                            marginRight: '6px',
+                            cursor: 'pointer',
+                            userSelect: 'none',
+                            position: ehPrimeiraPalavra ? 'relative' : 'static',
+                            borderBottom: `2.5px solid ${(temas[idiomaEstudo]?.bg || '#4f46e5')}55`, /* <-- [Grifado] Espessura e opacidade da linha */
+                            paddingBottom: '1px', /* <-- Distância entre a letra e a linha grifada */
+                            transition: 'transform 0.1s ease, border-color 0.2s ease'
+                          }}
+                          onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.92)'; }}
+                          onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+                        >
+                          {ehPrimeiraPalavra && (
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleOuvirFrase();
+                              }}
+                              title={t?.normal || "Ouvir"}
+                              style={{
+                                position: 'absolute',
+                                bottom: '100%',
+                                left: '0px',
+                                marginBottom: '2px',  /* <-- Distância entre o ícone e o topo da 1ª letra */
+                                marginLeft: '-2px',   /* <-- Positivo empurra p/ direita, negativo p/ esquerda */
+                                background: 'none',
+                                border: 'none',
+                                outline: 'none',
+                                boxShadow: 'none',
+                                WebkitTapHighlightColor: 'transparent',
+                                padding: '2px',
+                                cursor: 'pointer',
+                                color: corBgPrincipal,
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                lineHeight: 1,
+                                flexShrink: 0
+                              }}
+                              onMouseDown={(e) => {
+                                e.stopPropagation();
+                                e.currentTarget.style.transform = 'scale(0.9)';
+                              }}
+                              onMouseUp={(e) => {
+                                e.stopPropagation();
+                                e.currentTarget.style.transform = 'scale(1)';
+                              }}
+                            >
+                              <svg width="22" height="22" viewBox="0 0 256 256" fill="none" stroke="currentColor" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M152,32V224L80,168H32a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8H80Z" />
+                                <path d="M192,106a32,32,0,0,1,0,44" />
+                                <path d="M221.7,78a72,72,0,0,1,0,100" />
+                              </svg>
+                            </button>
+                          )}
+                          {word}
+                        </span>
+                      );
+                    })}
                   </h2>
+
                   {idiomaEstudo === 'pi' && frase?.zh && (
                     <div style={{ color: '#64748b', fontSize: '1.15rem', marginTop: '4px', fontWeight: '600' }}>
                       {frase.zh}
