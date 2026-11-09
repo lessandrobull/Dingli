@@ -253,7 +253,8 @@ export default function Dinglab({
             // Toca o áudio da frase mais uma vez em velocidade normal (idêntico ao Dìngloop)
             const alvoAudio = {
               id: idAtual,
-              texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo
+              texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo,
+              dinglab: true
             };
             if (falar) {
               falar(alvoAudio, false);
@@ -383,7 +384,8 @@ export default function Dinglab({
     if (!fraseAtual) return;
     const alvo = {
       id: fraseAtual.id,
-      texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo
+      texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo,
+      dinglab: true
     };
     if (!audioLento) {
       falar(alvo, false);
