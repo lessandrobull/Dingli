@@ -1,298 +1,238 @@
 {
   "181": {
-    "explanation": "Em inglês, quando mencionamos nossa profissão ou papel, é indispensável usar a palavra 'um' ou 'uma' antes do cargo. Enquanto em português dizemos direto 'eu sou estudante', os nativos do inglês constroem a ideia como 'eu sou um estudante'. A palavra 'I' significa 'eu', 'am' é o verbo ser, 'a' indica 'um' e 'student' completa a frase.",
+    "explanation": "Em inglês, quando dizemos a nossa ocupação ou profissão, é obrigatório usar a palavra 'a' (um/uma) antes do nome da profissão, enquanto em português dizemos apenas 'eu sou estudante'. A frase literalmente significa 'eu sou um estudante'.",
     "breakdown": [
       {
         "word": "I am",
-        "meaning": "Eu sou — I: eu; am: sou/estou."
+        "meaning": "Eu sou / Eu estou — I: eu; am: sou/estou."
       },
       {
-        "word": "a",
-        "meaning": "Um / Uma — necessário antes de profissões no singular."
-      },
-      {
-        "word": "student",
-        "meaning": "Estudante / Aluno."
+        "word": "a student",
+        "meaning": "um estudante / um aluno — a: um/uma; student: estudante/aluno."
       }
     ],
-    "pronuncia": "Diga 'I' com som de 'ai'. Emende 'am' com 'a' falando 'ém-â'. Para 'student', não coloque som de 'i' no começo; inicie no som de assobio do 's' e siga com 'stiú-dênt', travando a língua no céu da boca ao fechar a palavra sem falar 'ti'.\nLeia: Ai ém â stiú-dênt."
+    "pronuncia": "Para o som em 'I am', diga 'ái' e junte em 'æm', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'a student', faça o som de 'ə' deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'student', engate direto no 'S' sem colocar 'i' antes ('stúu-dənt'), usando o som neutro 'ə' no meio e travando a ponta da língua no céu da boca no 'n' e 't' final sem colocar 'i' depois.\nLeia: Ái æm ə stúu-dənt."
   },
   "182": {
-    "explanation": "Para fazer perguntas sobre localização de uma ação no presente em inglês, a palavra de pergunta 'Where' vem primeiro, seguida do auxiliar 'do', que serve para indicar que uma pergunta está sendo feita para 'você' (you). Por fim, o verbo 'work' fecha a ideia. Em português perguntamos 'Onde você trabalha?', mas em inglês o 'do' atua como um sinalizador essencial de pergunta.",
+    "explanation": "Para fazer perguntas sobre ações em inglês, eles sempre usam uma palavra de apoio como 'do', que não tem tradução direta para o português, servindo para avisar que é uma pergunta no presente. O verbo 'work' exige o som do 'R' enrolado para trás e significa 'trabalhar'.",
     "breakdown": [
       {
-        "word": "Where",
-        "meaning": "Onde."
-      },
-      {
-        "word": "do",
-        "meaning": "Palavra que indica que a frase é uma pergunta no presente (sem tradução direta)."
-      },
-      {
-        "word": "you",
-        "meaning": "Você."
+        "word": "Where do you",
+        "meaning": "Onde você — Where: onde; do: palavra de apoio para perguntas; you: você."
       },
       {
         "word": "work",
-        "meaning": "Trabalha / Trabalhar."
+        "meaning": "trabalha — forma do verbo trabalhar."
       }
     ],
-    "pronuncia": "Comece em 'Where' assoprando um 'uêr' suave com a língua curvada para trás. Junte 'do you' de forma rápida como 'du-iú'. Na palavra 'work', curve bem a ponta da língua para o céu da boca para fazer o som do 'r' e termine travando no 'k' seco, sem som de 'ki'.\nLeia: Uêr du iú uôrk."
+    "pronuncia": "Para falar 'Where', projete os lábios em bico de 'u' no início em 'wéər'. Em 'do you', fale 'du yúu'. Para a palavra 'work' ('w3rk'), projete os lábios em bico no início e aplique a vogal do R central '3r' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada, cortando a seco no 'k' final sem colocar 'i' no fim.\nLeia: Wéər du yúu w3rk?"
   },
   "183": {
-    "explanation": "Nesta frase, a palavra 'in' significa 'em' e 'an' significa 'um' (usado antes de palavras que começam com som de vogal, como 'office'). Em inglês, emendamos a preposição com o artigo e o local. Então 'in an office' vira um fluxo único de som, significando literalmente 'em um escritório'.",
+    "explanation": "A palavra 'an' é usada em vez de 'a' porque a palavra seguinte, 'office', começa com som de vogal, facilitando a fala fluida. Eles conectam 'in an office' em um único som contínuo, significando literalmente 'eu trabalho em um escritório'.",
     "breakdown": [
       {
         "word": "I work",
-        "meaning": "Eu trabalho — I: eu; work: trabalho."
+        "meaning": "Eu trabalho — I: eu; work: trabalho/trabalhar."
       },
       {
-        "word": "in an",
-        "meaning": "Em um / Em uma — in: em; an: um/uma (usado antes de som de vogal)."
-      },
-      {
-        "word": "office",
-        "meaning": "Escritório."
+        "word": "in an office",
+        "meaning": "em um escritório — in: em; an: um/uma; office: escritório."
       }
     ],
-    "pronuncia": "Diga 'I' como 'ai'. Faça 'work' curvando a língua para trás no 'r' ('uôrk'). Junte 'in an office' como uma palavra só: encoste a língua no céu da boca para o 'n' de 'in', emende no 'an' e termine no 'office', soando 'i-nân-ó-fis'.\nLeia: Ai uôrk i-nân ó-fis."
+    "pronuncia": "No 'I work', emita 'ái' e em 'work' ('w3rk') mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o som '3r', cortando o 'k' a seco. Conecte 'in an office' em 'ı-nən-ó-fıs': em 'in' e no final de 'office', use o 'ı' curto mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. No meio de 'an', use o som neutro 'ə' mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular.\nLeia: Ái w3rk ı-nən-ó-fıs."
   },
   "184": {
-    "explanation": "Para negar uma ação para 'ele' (he) em inglês, usamos o par 'does not' antes do verbo principal. Em português dizemos apenas 'ele não tem', mas em inglês o 'does' apoia a negação do presente. Em seguida vem 'have' (ter) e 'a job' (um emprego), mantendo a regra de colocar 'um' antes de cargos ou tipos de trabalho.",
+    "explanation": "Para dizer que ele não faz algo, o inglês junta o verbo de apoio com a negação formando 'does not'. O verbo 'have' indica ter ou possuir um emprego ('a job').",
     "breakdown": [
       {
-        "word": "He",
-        "meaning": "Ele."
+        "word": "He does not",
+        "meaning": "Ele não — He: ele; does not: estrutura de negação no presente."
       },
       {
-        "word": "does not",
-        "meaning": "Não — marca de negação usada para ele/ela no presente."
-      },
-      {
-        "word": "have",
-        "meaning": "Tem / Ter."
-      },
-      {
-        "word": "a job",
-        "meaning": "Um emprego / Um trabalho — a: um; job: trabalho/emprego."
+        "word": "have a job",
+        "meaning": "tem um emprego — have: ter/possuir; a: um; job: emprego/trabalho."
       }
     ],
-    "pronuncia": "Fale 'He' soltando o ar como um 'h' suave de 'Riam' ('rî'). O 'does not' soa como 'dâz nót', travando a língua no 't'. Em 'have a', encoste o dente no lábio inferior para o 'v' e emende no 'a', formando 'rhév-â'. Em 'job', faça um som forte de 'dj' no início ('djób').\nLeia: Rî dâz nót rhév â djób."
+    "pronuncia": "Em 'He', diga 'hii' com sorriso. Em 'does not', fale 'dâz nót' usando 'â' na garganta e 'ó' aberto. Em 'have', use o 'æ' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É', encostando os dentes no lábio para o 'v'. Em 'a job', fale 'ə' mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular, e estale o 'dj' em 'djób' cortando o 'b' a seco sem 'i' no final.\nLeia: Hii dâz nót hæv ə djób."
   },
   "185": {
-    "explanation": "Quando queremos perguntar 'você gosta' em inglês, começamos a frase com 'Do' para sinalizar a pergunta. Depois temos 'you' (você), 'like' (gosta de) e 'your boss' (seu chefe). Note que o verbo 'like' já traz o sentido de gostar 'de' algo, sem precisar colocar a palavra 'de' separada.",
+    "explanation": "Em perguntas diretas no presente, o inglês coloca o 'Do' logo no início para indicar a interrogação. Note que 'like' conecta direto no objeto 'your boss' sem precisar da preposição 'de' que usamos no português.",
     "breakdown": [
       {
-        "word": "Do you",
-        "meaning": "Você...? — marca inicial de pergunta para 'você'."
-      },
-      {
-        "word": "like",
-        "meaning": "Gosta de / Gostar."
+        "word": "Do you like",
+        "meaning": "Você gosta de — Do: palavra de apoio para perguntas; you: você; like: gostar."
       },
       {
         "word": "your boss",
-        "meaning": "Seu chefe / Sua chefe — your: seu/sua; boss: chefe."
+        "meaning": "seu chefe / sua chefe — your: seu/sua; boss: chefe."
       }
     ],
-    "pronuncia": "Junte 'Do you' de forma fluida como 'du iú'. A palavra 'like' soa como 'laik', com o 'k' bem seco no final. Em 'your boss', curve a língua para o 'r' de 'your' ('iór') e termine em 'bós' com o som do 's' bem marcado.\nLeia: Du iú laik iór bós."
+    "pronuncia": "Comece com 'Do you' ('du yúu'). Em 'like', fale 'láik' travando a ponta da língua no céu da boca para o 'L' e cortando o 'k' a seco. Em 'your boss', fale 'yór' puxando a língua para trás no 'R' caipira e finalize em 'bós' com o 'ó' bem aberto soltando o queixo, cortando a seco no 's' final sem som de 'i'.\nLeia: Du yúu láik yór bós?"
   },
   "186": {
-    "explanation": "Em inglês, quando falamos que 'ela' faz uma ação rotineira, a palavra do verbo muda no final para indicar essa pessoa ('studies'). A expressão 'every day' significa 'todos os dias' ou 'cada dia', vindo logo após o verbo para indicar a frequência da rotina.",
+    "explanation": "Quando a frase é sobre 'ela' no presente, o verbo ganha uma terminação diferente ('studies'). Para dizer 'todos os dias', eles usam a expressão 'every day', que literalmente significa 'cada dia'.",
     "breakdown": [
       {
-        "word": "She",
-        "meaning": "Ela."
-      },
-      {
-        "word": "studies",
-        "meaning": "Estuda — forma do verbo estudar usada para ele ou ela."
+        "word": "She studies",
+        "meaning": "Ela estuda — She: ela; studies: estuda."
       },
       {
         "word": "every day",
-        "meaning": "Todos os dias / Cada dia — every: todo/cada; day: dia."
+        "meaning": "todos os dias — every: todos/cada; day: dia."
       }
     ],
-    "pronuncia": "Fale 'She' como 'chî'. Na palavra 'studies', diga 'stâ-dîz', sem colocar som de 'i' antes do 's'. Em 'every day', morda levemente o lábio inferior no 'v' ('év-ri') e conclua com 'dêi'.\nLeia: Chî stâ-dîz év-ri dêi."
+    "pronuncia": "Fale 'She' como 'chíi' com sorriso firme. Em 'studies', comece direto no som sibilante do 'S' sem colocar 'i' antes ('stâ-dız'), usando o 'â' curto na garganta e o 'ı' curto no final deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'every day', comprima 'every' em duas sílabas ('év-ri') com dentes no lábio em 'v', e termine em 'dêi' deslizando do 'ê' para o 'i'.\nLeia: Chíi stâ-dız év-ri dêi."
   },
   "187": {
-    "explanation": "Para dizer 'A escola é muito grande', o inglês segue uma ordem quase idêntica ao português: 'The school' (A escola), 'is' (é), 'very' (muito) e 'big' (grande). A palavra 'the' junta a ideia de 'o/a', servindo para especificar o local sobre o qual estamos falando.",
+    "explanation": "Em inglês, o som da palavra 'school' começa diretamente na letra S, sem colocar som de 'E' ou 'I' antes como fazemos em português. A palavra 'very' intensifica a característica 'big' (grande).",
     "breakdown": [
       {
         "word": "The school",
         "meaning": "A escola — The: a/o; school: escola."
       },
       {
-        "word": "is",
-        "meaning": "É / Está."
-      },
-      {
-        "word": "very big",
-        "meaning": "Muito grande — very: muito; big: grande."
+        "word": "is very big",
+        "meaning": "é muito grande — is: é; very: muito; big: grande."
       }
     ],
-    "pronuncia": "Para 'The', coloque a pontinha da língua entre os dentes da frente ('dhê'). Em 'school', comece no assobio do 's' sem som de 'i' antes ('skul'). Diga 'is' com som de 'iz' e junte em 'very big' ('vé-ri bîg'), travando a voz no 'g' final.\nLeia: Dhê skul iz vé-ri bîg."
+    "pronuncia": "Em 'The', use o som 'dh' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes junto do som neutro 'ə', que pede a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'school' ('skúul'), inicie no chiado do 'S' sem 'is-' e feche com o 'L' subindo a língua no céu da boca. Em 'is', use o 'ı' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i', e feche em 'z'. Em 'very big' ('vé-ri bıg'), mantenha o 'ı' em 'bıg' cortando o 'g' a seco sem colocar 'i' no final.\nLeia: Dhə skúul ız vé-ri bıg."
   },
   "188": {
-    "explanation": "Nesta frase, usamos 'I have' para 'eu tenho'. Em seguida, acrescenta-se 'a pen' (uma caneta) e conectamos com 'and paper' (e papel). Em inglês é comum usar a palavra 'um' antes do primeiro objeto contável ('caneta'), mantendo o substantivo sem artigo para 'papel' quando falado de forma geral.",
+    "explanation": "O verbo 'have' indica posse direta. Eles dizem 'a pen' (uma caneta) e juntam os elementos com 'and paper'. O ritmo da frase flui ligando as palavras de forma simples.",
     "breakdown": [
       {
         "word": "I have",
-        "meaning": "Eu tenho — I: eu; have: tenho/possuo."
+        "meaning": "Eu tenho — I: eu; have: tenho/possuir."
       },
       {
-        "word": "a pen",
-        "meaning": "Uma caneta — a: uma; pen: caneta."
-      },
-      {
-        "word": "and paper",
-        "meaning": "E papel — and: e; paper: papel."
+        "word": "a pen and paper",
+        "meaning": "uma caneta e papel — a: uma; pen: caneta; and: e; paper: papel."
       }
     ],
-    "pronuncia": "Diga 'I' como 'ai'. Junte 'have a' mordo levemente o lábio no 'v' ('rhév-â'). Em 'pen', encoste os lábios soltando ar ('pên'). Conecte 'and paper' dizendo 'ênd pêi-pêr', curvando a língua no 'r' final.\nLeia: Ai rhév â pên ênd pêi-pêr."
+    "pronuncia": "Fale 'Ái'. Em 'have', use 'æ' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' e encoste dentes no lábio ('hæv'). Em 'a', use o som 'ə' com a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'pen and paper', diga 'pén', use o 'æ' em 'ænd', e em 'paper' fale 'pêi-pər' terminando no som de R enrolado.\nLeia: Ái hæv ə pén ænd pêi-pər."
   },
   "189": {
-    "explanation": "Para fazer perguntas com o verbo 'ser' ou 'estar', o inglês coloca essa palavra logo no início da frase. Assim, 'Is the homework difficult?' significa 'A lição de casa é difícil?', começando com 'Is' (é), seguido por 'the homework' (a lição de casa) e finalizando com a característica 'difficult' (difícil).",
+    "explanation": "Para perguntar se algo é de determinado jeito, o verbo 'Is' vai para a frente da frase. A palavra 'homework' combina 'home' (casa) e 'work' (trabalho), criando o sentido literal de 'trabalho de casa'.",
     "breakdown": [
       {
-        "word": "Is",
-        "meaning": "É / Está — posicionada no início para montar a pergunta."
+        "word": "Is the",
+        "meaning": "É a / A — Is: verbo ser/estar no início para pergunta; the: a/o."
       },
       {
-        "word": "the homework",
-        "meaning": "A lição de casa / O dever de casa — the: a/o; homework: dever de casa."
-      },
-      {
-        "word": "difficult",
-        "meaning": "Difícil."
+        "word": "homework difficult",
+        "meaning": "tarefa de casa difícil — homework: lição/tarefa de casa; difficult: difícil."
       }
     ],
-    "pronuncia": "Comece com 'Is' como 'iz'. Coloque a língua entre os dentes para 'the' ('dhê'). Em 'homework', solte o ar suave no 'h' ('rhoum') e curve a língua no 'r' ('uôrk'). Conclua 'difficult' como 'dî-fi-kâlt', morrendo no 't' sem falar 'ti'.\nLeia: Iz dhê rhoum-uôrk dî-fi-kâlt."
+    "pronuncia": "Comece com 'Is' usando 'ı' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' ('ız'). Em 'the', use 'dh' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes junto de 'ə' (mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular). Em 'homework' ('hôum-w3rk'), use '3r' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada. Em 'difficult' ('dı-fı-kâlt'), use o 'ı' curto nas duas primeiras sílabas e trave no 't' sem 'i' final.\nLeia: Iz dhə hôum-w3rk dı-fı-kâlt?"
   },
   "190": {
-    "explanation": "Para dizer 'eu não entendo', o inglês junta 'I' (eu) com o par de negação 'do not' e o verbo 'understand' (entender). O bloco 'do not' avisa que a ação no presente está sendo negada. A frase se encerra com 'the lesson' (a lição / a aula).",
+    "explanation": "A negação de ações é feita com 'do not' antes do verbo principal. O verbo 'understand' junta a ideia de estar por baixo/junto do assunto para significar compreender.",
     "breakdown": [
       {
         "word": "I do not",
-        "meaning": "Eu não — I: eu; do not: marca de negação."
+        "meaning": "Eu não — I: eu; do not: estrutura de negação no presente."
       },
       {
         "word": "understand",
-        "meaning": "Entendo / Entender."
+        "meaning": "entendo / compreendo — verbo entender."
       },
       {
         "word": "the lesson",
-        "meaning": "A lição / A aula — the: a; lesson: lição/aula."
+        "meaning": "a lição / a aula — the: a; lesson: lição/aula."
       }
     ],
-    "pronuncia": "Diga 'I' como 'ai'. Fale 'do not' como 'du nót'. Em 'understand', diga 'ân-dêr-stênd', curvando a língua no 'r'. Para 'the lesson', ponta da língua nos dentes em 'the' ('dhê') e conclua com 'lé-sân'.\nLeia: Ai du nót ân-dêr-stênd dhê lé-sân."
+    "pronuncia": "Fale 'Ái du nót'. Em 'understand' ('ân-dər-stænd'), use '3r' em 'dər' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada, e em 'stænd' comece no chiado do S sem 'i' e use 'æ' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É', travando no 'd' a seco. Em 'the lesson', faça 'dhə' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes com 'ə' (mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular), e conclua em 'lé-sn' subindo a língua para travar no 'n'.\nLeia: Ái du nót ân-dər-stænd dhə lé-sn."
   },
   "191": {
-    "explanation": "Para perguntar a profissão de alguém, a estrutura em inglês começa com 'What is' (Qual é), seguida por 'your' (sua) e 'profession' (profissão). Essa ordem é perfeita e direta, muito semelhante ao português, focando em identificar o trabalho da pessoa.",
+    "explanation": "Em inglês, 'What is' é a forma padrão para perguntar 'Qual é'. A palavra 'profession' termina com som de 'chən', bem diferente da terminação '-ção' do português.",
     "breakdown": [
       {
         "word": "What is",
         "meaning": "Qual é — What: qual/o que; is: é."
       },
       {
-        "word": "your",
-        "meaning": "Sua / Seu."
-      },
-      {
-        "word": "profession",
-        "meaning": "Profissão / Ocupação."
+        "word": "your profession",
+        "meaning": "a sua profissão — your: sua/seu; profession: profissão."
       }
     ],
-    "pronuncia": "Junte 'What is' falando 'uót iz'. Na palavra 'your', curve a língua para trás ao som do 'r' ('iór'). Em 'profession', diga 'prô-fé-chân', caprichando no som de 'ch' no meio e fechando com o 'n' suave.\nLeia: Uót iz iór prô-fé-chân."
+    "pronuncia": "No 'What is', ligue em 'wó-tız' usando o 'ı' em 'ız' mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'your', fale 'yór' enrolando a língua. Em 'profession' ('prə-fé-chən'), use 'ə' na primeira sílaba deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular, e termine no chiado suave com 'n' travado nos dentes.\nLeia: Wó-tız yór prə-fé-chən?"
   },
   "192": {
-    "explanation": "Nesta frase, descrevemos quem a pessoa é usando 'He is' (Ele é). Antes de dizer a profissão ou título, o inglês sempre exige a palavra 'a' (um). A qualidade 'famous' (famoso) vem imediatamente antes da palavra 'doctor' (médico), seguindo o padrão em que a característica antecede o nome.",
+    "explanation": "Em inglês, os adjetivos como 'famous' (famoso) vêm sempre antes do nome a que se referem, por isso eles dizem 'um famoso médico' em vez de 'um médico famoso'.",
     "breakdown": [
       {
         "word": "He is",
         "meaning": "Ele é — He: ele; is: é."
       },
       {
-        "word": "a famous",
-        "meaning": "Um famoso / Uma famosa — a: um; famous: famoso."
-      },
-      {
-        "word": "doctor",
-        "meaning": "Médico / Médica."
+        "word": "a famous doctor",
+        "meaning": "um médico famoso — a: um; famous: famoso; doctor: médico."
       }
     ],
-    "pronuncia": "Fale 'He is' juntando como 'rî iz'. Em 'famous', diga 'fêi-mâs'. Na palavra 'doctor', fale 'dók-tôr', curvando a ponta da língua no céu da boca para o 'r' final.\nLeia: Rî iz â fêi-mâs dók-tôr."
+    "pronuncia": "Diga 'Hii' e conecte em 'ız' (usando 'ı' com o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'). Em 'a', use 'ə' deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'famous', fale 'fêi-məs' também com o som neutro 'ə'. Em 'doctor' ('dók-tər'), use o 'ó' aberto na primeira sílaba e termine em 'tər' enrolando a língua no R.\nLeia: Hii ız ə fêi-məs dók-tər."
   },
   "193": {
-    "explanation": "A frase começa com 'We' (Nós) e a ação 'study' (estudamos). Em inglês, os nomes de idiomas como 'English' sempre são escritos com letra maiúscula. A palavra 'together' (juntos) entra no final para indicar que a ação é feita em parceria.",
+    "explanation": "Note que no presente o verbo 'study' não muda de forma quando se refere a 'nós' (We study). A palavra 'together' junta a ideia de 'juntos' ao final da frase.",
     "breakdown": [
       {
         "word": "We study",
-        "meaning": "Nós estudamos — We: nós; study: estudamos."
+        "meaning": "Nós estudamos — We: nós; study: estudamos/estudar."
       },
       {
-        "word": "English",
-        "meaning": "Inglês (o idioma)."
-      },
-      {
-        "word": "together",
-        "meaning": "Juntos / Em conjunto."
+        "word": "English together",
+        "meaning": "inglês juntos — English: inglês; together: juntos."
       }
     ],
-    "pronuncia": "Diga 'We' como 'uí'. Em 'study', inicie direto no som de 's' sem colocar 'i' antes ('stâ-di'). Diga 'English' como 'în-glich'. Para 'together', fale 'tû-gué-dhêr', colocando a língua nos dentes no 'th' e curvando no 'r' final.\nLeia: Uí stâ-di în-glich tû-gué-dhêr."
+    "pronuncia": "Em 'We', faça bico de 'u' soltando 'wii'. Em 'study' ('stâ-dı'), comece direto no chiado do S sem 'i' inicial, use 'â' na garganta e feche no 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'English' ('ıng-glıch'), use o 'ı' curto no início e no fim. Em 'together' ('tə-gé-dhər'), use o 'ə' inicial com a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular, e faça o 'dh' final colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes.\nLeia: Wii stâ-dı ıng-glıch tə-gé-dhər."
   },
   "194": {
-    "explanation": "Para perguntar se você trabalha nos fins de semana, a frase abre com o auxiliar de pergunta 'Do', seguido de 'you work' (você trabalha). A preposição 'on' é a escolha natural em inglês para indicar dias da semana ou finais de semana ('weekends').",
+    "explanation": "Para dizer 'nos fins de semana', o inglês usa a preposição 'on' acompanhada da palavra composta 'weekends' (literalmente 'fins de semana'). O 'Do' marca o início da pergunta.",
     "breakdown": [
       {
         "word": "Do you work",
-        "meaning": "Você trabalha...? — Do: marca de pergunta; you: você; work: trabalha."
+        "meaning": "Você trabalha — Do: palavra de apoio para perguntas; you: você; work: trabalha/trabalhar."
       },
       {
         "word": "on weekends",
-        "meaning": "Nos fins de semana / Aos finais de semana — on: em/nos; weekends: fins de semana."
+        "meaning": "aos fins de semana / nos finais de semana — on: em/nos; weekends: fins de semana."
       }
     ],
-    "pronuncia": "Junte 'Do you' como 'du iú'. Faça 'work' curvando a língua no 'r' ('uôrk'). Diga 'on' como 'ón' e junte em 'weekends' falando 'uîk-êndz', travando o som no 'z' final.\nLeia: Du iú uôrk ón uîk-êndz."
+    "pronuncia": "Fale 'Du yúu'. Em 'work' ('w3rk'), use a vogal do R central '3r' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada, cortando o 'k' a seco sem 'i'. Em 'on weekends', fale 'ón wíi-kendz', mantendo o 'ii' longo em 'week' e travando em 'ndz' sem acrescentar vogal de apoio no final.\nLeia: Du yúu w3rk ón wíi-kendz?"
   },
   "195": {
-    "explanation": "Em inglês, para dizer 'uma reunião', usamos 'a meeting'. Para indicar o horário exato de um compromisso, usa-se a preposição 'at' seguida do número 'ten' (dez). Portanto, 'at ten' equivale exatamente a 'às dez'.",
+    "explanation": "Para marcar horários exatos no relógio, o inglês usa sempre a palavra 'at' (às). A palavra 'meeting' vem do verbo encontrar e significa reunião.",
     "breakdown": [
       {
         "word": "I have",
-        "meaning": "Eu tenho — I: eu; have: tenho."
+        "meaning": "Eu tenho — I: eu; have: tenho/possuir."
       },
       {
         "word": "a meeting",
-        "meaning": "Uma reunião / Um encontro — a: uma; meeting: reunião."
+        "meaning": "uma reunião — a: uma; meeting: reunião/encontro."
       },
       {
         "word": "at ten",
-        "meaning": "Às dez — at: às/em; ten: dez."
+        "meaning": "às dez — at: às/em; ten: dez."
       }
     ],
-    "pronuncia": "Diga 'I' como 'ai'. Junte 'have a' como 'rhév-â'. Em 'meeting', os nativos costumam falar 'mî-tîn'. Conclua em 'at ten' dizendo 'êt tên', encostando a língua atrás dos dentes no 't' final.\nLeia: Ai rhév â mî-tîn êt tên."
+    "pronuncia": "Em 'I have', fale 'ái' e use 'æ' em 'hæv' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'a', faça 'ə' deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'meeting', diga 'míi-rıng' com o T suave. Em 'at ten', use 'æ' em 'æt' com mandíbula vertical e 'É' nos cantos, e feche em 'tén' travando o N nos dentes superiores.\nLeia: Ái hæv ə míi-rıng æt tén."
   },
   "196": {
-    "explanation": "Nesta frase, 'The teacher' significa 'O professor' ou 'A professora'. O verbo 'is' traz o sentido de 'é', e a combinação 'very kind' significa 'muito gentil'. A palavra 'kind' é muito usada em inglês para descrever alguém bondoso e atencioso.",
+    "explanation": "A palavra 'teacher' serve tanto para professor quanto para professora. O adjetivo 'kind' significa gentil ou atencioso.",
     "breakdown": [
       {
         "word": "The teacher",
         "meaning": "O professor / A professora — The: o/a; teacher: professor(a)."
       },
       {
-        "word": "is",
-        "meaning": "É / Está."
-      },
-      {
-        "word": "very kind",
-        "meaning": "Muito gentil / Muito bondoso — very: muito; kind: gentil."
+        "word": "is very kind",
+        "meaning": "é muito gentil / muito atencioso — is: é; very: muito; kind: gentil/bondoso."
       }
     ],
-    "pronuncia": "Para 'The', coloque a língua nos dentes ('dhê'). Em 'teacher', faça som de 'tí-tchêr', curvando a língua no 'r'. Diga 'is' como 'iz', 'very' como 'vé-ri' e termine em 'kind' como 'kaind', travando a voz no 'd'.\nLeia: Dhê tí-tchêr iz vé-ri kaind."
+    "pronuncia": "Em 'The', use 'dh' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes com 'ə' (mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular). Em 'teacher', dê o estalo de espirro em 'tíi-tchər'. Em 'is', use o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' ('ız'). Em 'very kind', diga 'vé-ri káind' travando no 'd' final a seco.\nLeia: Dhə tíi-tchər ız vé-ri káind."
   },
   "197": {
-    "explanation": "A estrutura 'I write' significa 'eu escrevo'. Em seguida, usamos 'in' para indicar que escrevemos dentro do objeto, acompanhado de 'my notebook' (meu caderno). Note que 'notebook' em inglês se refere ao caderno de papel, enquanto o computador portátil costuma ser chamado de 'laptop'.",
+    "explanation": "O verbo 'write' tem a letra W muda e começa direto no som do R enrolado. A palavra 'notebook' é uma junção de 'note' (nota) e 'book' (livro), significando caderno.",
     "breakdown": [
       {
         "word": "I write",
@@ -300,63 +240,55 @@
       },
       {
         "word": "in my notebook",
-        "meaning": "No meu caderno — in: em/no; my: meu; notebook: caderno."
+        "meaning": "no meu caderno — in: em; my: meu/minha; notebook: caderno."
       }
     ],
-    "pronuncia": "Fale 'I' como 'ai'. O verbo 'write' soa como 'rait', curvando bem a língua no 'r'. Junte 'in my' como 'în mai' e conclua com 'nout-bûk', fazendo o 'k' final seco e sem vogal depois.\nLeia: Ai rait în mai nout-bûk."
+    "pronuncia": "Fale 'Ái'. Em 'write', ignore o W e fale 'ráit' cortando o T a seco sem 'i'. Em 'in my', fale 'ın mái' usando o 'ı' em 'ın' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'notebook', diga 'nôut-buk' usando o 'u' curto em 'buk' com lábios entreabertos sem armar bico, cortando o 'k' a seco.\nLeia: Ái ráit ın mái nôut-buk."
   },
   "198": {
-    "explanation": "Quando dizemos que 'ela' realiza uma ação, o verbo ganha a marcação no final, virando 'speaks' (fala). Em seguida vem o número 'three' (três) e a palavra 'languages' (idiomas / línguas). A ordem das palavras é idêntica à do português.",
+    "explanation": "Para o sujeito 'she', o verbo ganha o S no final ('speaks'). O número 'three' exige o sopro do TH sem voz, e 'languages' ganha uma sílaba extra no plural por terminar em som chiado.",
     "breakdown": [
       {
         "word": "She speaks",
-        "meaning": "Ela fala — She: ela; speaks: fala."
+        "meaning": "Ela fala — She: ela; speaks: fala/falar."
       },
       {
-        "word": "three",
-        "meaning": "Três."
-      },
-      {
-        "word": "languages",
-        "meaning": "Idiomas / Línguas."
+        "word": "three languages",
+        "meaning": "três idiomas / três línguas — three: três; languages: idiomas/línguas."
       }
     ],
-    "pronuncia": "Diga 'She' como 'chî'. Em 'speaks', comece no assobio do 's' sem som de 'i' antes ('spîks'). Para 'three', posicione a ponta da língua entre os dentes e sopre para fazer 'thrî'. Termine com 'lêng-gui-djêz'.\nLeia: Chî spîks thrî lêng-gui-djêz."
+    "pronuncia": "Fale 'She' como 'chíi'. Em 'speaks', comece direto no chiado do S sem 'i' antes ('spiiks') com 'ii' longo e corte no 's' final. Em 'three', use o 'th' colocando a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz ('thrii'). Em 'languages' ('læng-gwı-djəz'), use 'æ' em 'læng' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É', use 'ı' curto em 'gwı' (queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i') e termine no som neutro 'ə' em 'djəz' com mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular.\nLeia: Chíi spiiks thrii læng-gwı-djəz."
   },
   "199": {
-    "explanation": "Em inglês, para dizer 'fazer faculdade' ou 'ir para a faculdade', é extremamente comum usar o verbo 'go to' (ir para). A negação 'do not' antecede o verbo. Assim, 'I do not go to university' expressa literalmente 'eu não vou para a universidade', que em nosso dia a dia traduzimos como 'eu não faço faculdade'.",
+    "explanation": "Em inglês, usa-se o verbo 'go' seguido da preposição 'to' para dizer que alguém cursa ou frequenta uma instituição como a faculdade.",
     "breakdown": [
       {
         "word": "I do not go",
-        "meaning": "Eu não vou / Eu não faço — I: eu; do not: não; go: vou/ir."
+        "meaning": "Eu não vou / Eu não frequento — I: eu; do not: negação; go: ir/frequentar."
       },
       {
         "word": "to university",
-        "meaning": "Para a faculdade / Para a universidade — to: para; university: universidade/faculdade."
+        "meaning": "para a faculdade / à universidade — to: para/a; university: universidade/faculdade."
       }
     ],
-    "pronuncia": "Diga 'I do not' como 'ai du nót'. Fale 'go to' como 'gôu tu'. Na palavra 'university', pronuncie 'iu-ni-VÊR-si-ti', curvando a ponta da língua para trás no 'r'.\nLeia: Ai du nót gôu tu iu-ni-vêr-si-ti."
+    "pronuncia": "Fale 'Ái du nót gôu'. Em 'to university', fale 'tu yúu-nı-v3r-sə-ri': em 'nı' use 'ı' curto (queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'); em 'v3r' use '3r' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada; e em 'sə' use 'ə' deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular.\nLeia: Ái du nót gôu tu yúu-nı-v3r-sə-ri."
   },
   "200": {
-    "explanation": "Para perguntar 'tem...?' ou 'existe...?' no sentido de haver algo no local, o inglês inverterá a expressão 'there is' para 'Is there'. Em seguida colocamos 'a library' (uma biblioteca) e 'here' (aqui). Não se usa o verbo ter ('have') para essa ideia de existir.",
+    "explanation": "Para perguntar 'tem?' no sentido de existência de algo, o inglês inverte a estrutura 'there is' para 'Is there'. Note que 'library' significa biblioteca e não livraria.",
     "breakdown": [
       {
         "word": "Is there",
-        "meaning": "Tem...? / Existe...? — forma de perguntar sobre a existência de algo."
+        "meaning": "Existe / Tem — Is there: estrutura interrogativa de 'há / existe'."
       },
       {
-        "word": "a library",
-        "meaning": "Uma biblioteca — a: uma; library: biblioteca."
-      },
-      {
-        "word": "here",
-        "meaning": "Aqui."
+        "word": "a library here",
+        "meaning": "uma biblioteca aqui — a: uma; library: biblioteca; here: aqui."
       }
     ],
-    "pronuncia": "Comece em 'Is' como 'iz'. Para 'there', ponha a língua entre os dentes e solte o ar ('dhêr'), curvando a língua no final. Em 'a library', fale 'â lai-brê-ri'. Conclua em 'here' com som de 'rhîr'.\nLeia: Iz dhêr â lai-brê-ri rhîr."
+    "pronuncia": "Em 'Is', fale 'ız' com o 'ı' curto (queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'). Em 'there', use 'dh' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes ('dhéər'). Em 'a', use 'ə' com a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'library here', diga 'lái-brə-ri híər'.\nLeia: Iz dhéər ə lái-brə-ri híər?"
   },
   "201": {
-    "explanation": "A frase inicia com 'I use' (eu uso) e 'a pen' (uma caneta). Para dizer 'na prova' ou 'para o meu exame', a língua inglesa prefere usar 'for my exam' (para o meu exame). A palavra 'exam' é a forma mais comum e prática no dia a dia para avaliações escolares.",
+    "explanation": "O verbo 'use' indica utilização direta. Em inglês, usa-se a preposição 'for' para indicar a finalidade ou a ocasião ('for my exam' = para a minha prova).",
     "breakdown": [
       {
         "word": "I use",
@@ -364,35 +296,31 @@
       },
       {
         "word": "a pen",
-        "meaning": "Uma caneta — a: uma; pen: caneta."
+        "meaning": "uma caneta — a: uma; pen: caneta."
       },
       {
         "word": "for my exam",
-        "meaning": "Na minha prova / Para meu exame — for: para/em; my: meu/minha; exam: prova/exame."
+        "meaning": "para a minha prova — for: para; my: meu/minha; exam: prova/exame."
       }
     ],
-    "pronuncia": "Diga 'I use' como 'ai iûz'. Junte 'a pen' como 'â pên'. Em 'for my exam', fale 'fór mai', curvando o 'r', e termine com 'êg-zêm', fechando os lábios no 'm' final.\nLeia: Ai iûz â pên fór mai êg-zêm."
+    "pronuncia": "Fale 'Ái yúuz' vibrando o Z no final. Em 'a pen', use 'ə' em 'ə' (mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular) e fale 'pén'. Em 'for my exam', fale 'fór mái', e em 'exam' diga 'ıg-zæm': use 'ı' em 'ıg' (queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i') e use 'æ' em 'zæm' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É', fechando os lábios no M final.\nLeia: Ái yúuz ə pén fór mái ıg-zæm."
   },
   "202": {
-    "explanation": "Esta é a estrutura clássica para perguntar o que alguém estuda. 'What' significa 'o que', o 'do' atua como a marcação necessária de pergunta no presente para 'you' (você), e 'study' é a ação de estudar. A frase segue o padrão ideal de perguntas diretas em inglês.",
+    "explanation": "Para perguntar sobre o que a pessoa estuda no presente, junta-se o 'What' com a estrutura de pergunta 'do you', terminando com o verbo 'study'.",
     "breakdown": [
       {
-        "word": "What",
-        "meaning": "O que / Qual."
-      },
-      {
-        "word": "do you",
-        "meaning": "Você...? — marca inicial de pergunta."
+        "word": "What do you",
+        "meaning": "O que você — What: o que/qual; do: palavra de apoio para perguntas; you: você."
       },
       {
         "word": "study",
-        "meaning": "Estuda / Estudar."
+        "meaning": "estuda — verbo estudar."
       }
     ],
-    "pronuncia": "Diga 'What' como 'uót'. Junte 'do you' de forma fluida como 'du iú'. Na palavra 'study', comece direto no som de 's' sem colocar 'i' antes ('stâ-di').\nLeia: Uót du iú stâ-di."
+    "pronuncia": "Diga 'Wót du yúu'. Em 'study' ('stâ-dı'), comece direto no chiado do S sem colocar 'i' antes, use o 'â' curto na garganta e feche no 'ı' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'.\nLeia: Wót du yúu stâ-dı?"
   },
   "203": {
-    "explanation": "Para dizer 'A sala de aula está fria', usamos 'The classroom' para 'A sala de aula'. Em seguida vem 'is' (está) e a característica 'cold' (fria). Repare como uma única palavra ('classroom') junta a ideia de sala e aula em inglês.",
+    "explanation": "A palavra 'classroom' é formada por 'class' (aula) + 'room' (quarto/sala). O verbo 'is' serve tanto para 'é' quanto para 'está'.",
     "breakdown": [
       {
         "word": "The classroom",
@@ -400,45 +328,41 @@
       },
       {
         "word": "is cold",
-        "meaning": "Está fria — is: está; cold: fria/frio."
+        "meaning": "está fria / é fria — is: está/é; cold: fria/frio."
       }
     ],
-    "pronuncia": "Língua nos dentes em 'The' ('dhê'). Em 'classroom', diga 'klês-rum', curvando a língua no 'r'. Diga 'is' como 'iz' e conclua com 'kould', travando a voz no 'd' sem falar 'di'.\nLeia: Dhê klês-rum iz kould."
+    "pronuncia": "Em 'The', use 'dh' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes com o som neutro 'ə' (mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular). Em 'classroom' ('klæ-srúum'), use 'æ' em 'klæ' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'is', use 'ız' com o 'ı' curto (queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'). Em 'cold', fale 'kôuld' subindo a língua no L sem virar som de U.\nLeia: Dhə klæ-srúum ız kôuld."
   },
   "204": {
-    "explanation": "Quando conectamos dois verbos em inglês, como 'preciso' (need) e 'terminar' (finish), colocamos a palavra 'to' entre eles. A frase continua com 'my work' (meu trabalho), resultando na estrutura exata de 'Eu preciso terminar meu trabalho'.",
+    "explanation": "O verbo 'need' vem seguido da palavra 'to' quando se conecta a outro verbo de ação ('to finish'). A frase expressa a necessidade de concluir uma tarefa.",
     "breakdown": [
       {
         "word": "I need to",
-        "meaning": "Eu preciso — I: eu; need: preciso; to: elemento de ligação entre os verbos."
+        "meaning": "Eu preciso — I: eu; need to: preciso de / preciso fazer algo."
       },
       {
-        "word": "finish",
-        "meaning": "Terminar / Finalizar."
-      },
-      {
-        "word": "my work",
-        "meaning": "Meu trabalho — my: meu; work: trabalho."
+        "word": "finish my work",
+        "meaning": "terminar meu trabalho — finish: terminar; my: meu; work: trabalho."
       }
     ],
-    "pronuncia": "Diga 'I need to' como 'ai nîd tu'. Na palavra 'finish', capriche no som de 'ch' no final ('fí-nich'). Em 'my work', fale 'mai uôrk', curvando a língua no céu da boca para o 'r'.\nLeia: Ai nîd tu fí-nich mai uôrk."
+    "pronuncia": "Fale 'Ái níid tu'. Em 'finish' ('fı-nıch'), use o som 'ı' nas duas sílabas mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'my', fale 'mái'. Em 'work' ('w3rk'), aplique a vogal do R central '3r' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada, cortando a seco no 'k' final.\nLeia: Ái níid tu fı-nıch mái w3rk."
   },
   "205": {
-    "explanation": "Para perguntar se você possui um computador, a pergunta começa com 'Do', que sinaliza o momento da dúvida. Depois vem 'you' (você), a ação 'have' (ter) e o objeto 'a computer' (um computador), mantendo o artigo 'um' antes do objeto.",
+    "explanation": "Para perguntar se alguém possui algo, inicia-se com 'Do you have'. A palavra 'computer' tem o T pronunciado de forma suave entre as vogais no inglês americano.",
     "breakdown": [
       {
         "word": "Do you have",
-        "meaning": "Você tem...? — Do: marca de pergunta; you: você; have: tem/possuir."
+        "meaning": "Você tem — Do: palavra de apoio para perguntas; you: você; have: tem/possuir."
       },
       {
         "word": "a computer",
-        "meaning": "Um computador — a: um; computer: computador."
+        "meaning": "um computador — a: um; computer: computador."
       }
     ],
-    "pronuncia": "Junte 'Do you have' como 'du iú rhév'. Em 'a computer', fale o 'a' como 'â' e emende em 'kâm-piú-têr', curvando a ponta da língua no 'r' final.\nLeia: Du iú rhév â kâm-piú-têr."
+    "pronuncia": "Fale 'Du yúu'. Em 'have', use 'æ' em 'hæv' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'a', fale 'ə' deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'computer' ('kəm-pyúu-rər'), use 'ə' na primeira sílaba e faça o R brando no T entre vogais.\nLeia: Du yúu hæv ə kəm-pyúu-rər?"
   },
   "206": {
-    "explanation": "A frase 'I read the newspaper' significa 'Eu leio o jornal'. Usamos 'I' para 'eu' e o verbo 'read' para 'leio'. A palavra 'newspaper' combina 'news' (notícias) e 'paper' (papel), formando literalmente 'papel de notícias'.",
+    "explanation": "O verbo 'read' tem o som longo de 'i'. A palavra 'newspaper' é composta por 'news' (notícias) + 'paper' (papel), significando literalmente papel de notícias.",
     "breakdown": [
       {
         "word": "I read",
@@ -446,13 +370,13 @@
       },
       {
         "word": "the newspaper",
-        "meaning": "O jornal — the: o; newspaper: jornal."
+        "meaning": "o jornal — the: o; newspaper: jornal."
       }
     ],
-    "pronuncia": "Diga 'I' como 'ai'. Em 'read', curve a língua para trás no 'r' ('rîd'). Para 'the', língua nos dentes ('dhê'). Conclua com 'niûz-pêi-pêr', curvando a língua no 'r' final.\nLeia: Ai rîd dhê niûz-pêi-pêr."
+    "pronuncia": "Fale 'Ái ríid' sustentando o 'ii' longo. Em 'the', use 'dh' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes com o som 'ə' (mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular). Em 'newspaper' ('nyúuz-pêi-pər'), feche em 'pər' enrolando a língua no R.\nLeia: Ái ríid dhə nyúuz-pêi-pər."
   },
   "207": {
-    "explanation": "Em inglês, para descrever alguém como 'trabalhador' ou 'esforçado', costuma-se usar a expressão 'a hard worker'. A palavra 'hard' transmite a ideia de intensidade ou esforço, e vem antes de 'worker' (trabalhador), precedida por 'a' (um).",
+    "explanation": "Em inglês, a expressão 'hard worker' significa literalmente 'trabalhador duro', referente a alguém muito esforçado e dedicado no trabalho.",
     "breakdown": [
       {
         "word": "He is",
@@ -460,27 +384,27 @@
       },
       {
         "word": "a hard worker",
-        "meaning": "Um trabalhador esforçado / Muito trabalhador — a: um; hard: duro/esforçado; worker: trabalhador."
+        "meaning": "um trabalhador dedicado / muito trabalhador — a: um; hard: duro/dedicado; worker: trabalhador."
       }
     ],
-    "pronuncia": "Junte 'He is' como 'rî iz'. Em 'a hard worker', diga 'â rrhárd uôr-kêr', lembrando de curvar a ponta da língua para o céu da boca em ambos os sons de 'r'.\nLeia: Rî iz â rrhárd uôr-kêr."
+    "pronuncia": "Diga 'Hii' e conecte em 'ız' usando o 'ı' curto (queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'). Em 'a', use 'ə' deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'hard', fale 'hárd' com R enrolado. Em 'worker' ('w3r-kər'), use '3r' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada.\nLeia: Hii ız ə hárd w3r-kər."
   },
   "208": {
-    "explanation": "Para dizer 'eu não gosto de...', em inglês usamos 'I do not like'. O 'do not' faz o papel do 'não'. Em seguida vem 'my desk' (minha mesa / minha escrivaninha). O termo 'desk' é usado especificamente para mesas de trabalho ou de estudo.",
+    "explanation": "A palavra 'desk' se refere especificamente a uma mesa de trabalho ou de estudos (escrivaninha), diferente da mesa de jantar que é chamada de 'table'.",
     "breakdown": [
       {
         "word": "I do not like",
-        "meaning": "Eu não gosto — I: eu; do not: não; like: gosto."
+        "meaning": "Eu não gosto da / Eu não gosto de — I: eu; do not: negação; like: gostar."
       },
       {
         "word": "my desk",
-        "meaning": "Minha mesa / Minha escrivaninha — my: minha; desk: mesa de trabalho."
+        "meaning": "minha escrivaninha / minha mesa — my: minha; desk: escrivaninha/mesa."
       }
     ],
-    "pronuncia": "Fale 'I do not' como 'ai du nót'. Diga 'like' como 'laik', com o 'k' bem seco. Para 'my desk', fale 'mai désk', travando o som no 'k' sem adicionar vogal no fim.\nLeia: Ai du nót laik mai désk."
+    "pronuncia": "Fale 'Ái du nót'. Em 'like', diga 'láik' travando a ponta da língua no céu da boca para o L e cortando o K a seco. Em 'my desk', fale 'mái', e em 'desk' diga 'désk' cortando a seco no K final sem acrescentar nenhum som de 'i'.\nLeia: Ái du nót láik mái désk."
   },
   "209": {
-    "explanation": "Quando queremos saber a localização do local de trabalho de alguém, perguntamos 'Where is' (Onde é / Onde fica), seguido por 'your office' (seu escritório). O verbo 'is' faz o papel do nosso 'fica' ou 'é' na pergunta.",
+    "explanation": "A pergunta 'Where is' é usada para saber a localização de um lugar. Em português costumamos dizer 'onde fica', mas em inglês eles usam direto o verbo 'is' (onde é).",
     "breakdown": [
       {
         "word": "Where is",
@@ -488,27 +412,23 @@
       },
       {
         "word": "your office",
-        "meaning": "Seu escritório — your: seu; office: escritório."
+        "meaning": "o seu escritório — your: seu; office: escritório."
       }
     ],
-    "pronuncia": "Junte 'Where is' como 'uêr iz', curvando a língua no 'r'. Em 'your office', fale 'iór ó-fis', mantendo o som de 's' bem limpo no final de 'office'.\nLeia: Uêr iz iór ó-fis."
+    "pronuncia": "Ligue 'Where is' formando 'wéə-rız': use 'ı' em 'rız' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'your office', fale 'yór ó-fıs', usando o 'ı' curto também na última sílaba de 'office' e cortando o som a seco.\nLeia: Wéə-rız yór ó-fıs?"
   },
   "210": {
-    "explanation": "A frase começa com 'The lesson' (A aula / A lição). Como estamos falando de uma coisa no presente ('a aula'), o verbo 'start' ganha um 's' no final, virando 'starts' (começa). A palavra 'now' (agora) fecha a frase indicando o momento exato.",
+    "explanation": "Para o sujeito singular 'the lesson', o verbo ganha um S no final ('starts'). A palavra 'now' indica o momento presente.",
     "breakdown": [
       {
         "word": "The lesson",
-        "meaning": "A aula / A lição — The: a; lesson: aula/lição."
+        "meaning": "A lição / A aula — The: a; lesson: lição/aula."
       },
       {
-        "word": "starts",
-        "meaning": "Começa / Inicia."
-      },
-      {
-        "word": "now",
-        "meaning": "Agora."
+        "word": "starts now",
+        "meaning": "começa agora — starts: começa; now: agora."
       }
     ],
-    "pronuncia": "Ponta da língua nos dentes em 'The' ('dhê'). Diga 'lesson' como 'lé-sân'. Em 'starts', fale 'stárts', curvando a língua no 'r' e terminando com o som de 'ts' bem seco. Conclua em 'now' como 'nau'.\nLeia: Dhê lé-sân stárts nau."
+    "pronuncia": "Em 'The', use 'dh' colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes junto de 'ə' (mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular). Em 'lesson', diga 'lé-sn' travando a língua no N. Em 'starts', engate direto no S sibilante sem 'i' inicial ('stárts'), enrolando a língua no R e travando no S final. Termine com 'náu' em 'now'.\nLeia: Dhə lé-sn stárts náu."
   }
 }

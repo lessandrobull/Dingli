@@ -1,164 +1,128 @@
 {
   "241": {
-    "explanation": "Para dizer 'Eu estou muito feliz hoje', no inglês seguimos uma ordem bem direta. Começamos com quem faz a ação 'I' (eu), seguido de como a pessoa se encontra 'am' (estou), depois a intensidade 'very' (muito), o sentimento 'happy' (feliz) e terminamos indicando o tempo 'today' (hoje).",
+    "explanation": "Para dizer que você está muito feliz hoje, o inglês usa a estrutura direta 'I am very happy today', onde a palavra que indica intensidade vem logo antes do sentimento e o marcador de tempo encerra a frase de forma natural.",
     "breakdown": [
       {
         "word": "I am",
-        "meaning": "Eu estou — I: eu; am: estou / sou."
+        "meaning": "Eu estou — I: eu; am: estou/sou."
       },
       {
-        "word": "very",
-        "meaning": "Muito — intensifica a característica que vem logo depois."
-      },
-      {
-        "word": "happy",
-        "meaning": "Feliz — sentimento de alegria."
+        "word": "very happy",
+        "meaning": "Muito feliz — very: muito; happy: feliz."
       },
       {
         "word": "today",
-        "meaning": "Hoje — to: neste; day: dia."
+        "meaning": "Hoje — marcação de tempo para o dia atual."
       }
     ],
-    "pronuncia": "Comece com 'ai' bem aberto. Em 'am', fale 'ém' soltando o ar levemente pela boca. O 'very' exige que você dobre a ponta da língua para trás no céu da boca para fazer o 'r', ficando 'vé-ri'. Em 'happy', solte um suspiro suave no 'h' inicial, como se estivesse baforando no espelho, dizendo 'rré-pi'. Termine com 'tu-déi', dando mais força no 'déi'.\nLeia: Ai ém vé-ri rré-pi tu-déi."
+    "pronuncia": "Para 'I am', diga 'ái æm', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'very', encoste os dentes no lábio inferior no 'v' e faça o 'r' enrolado ('vé-ri'). Em 'happy', solte um suspiro leve no 'h' e abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' ('hæ-pi'). Em 'today', deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no inicio em 'ə' ('tə-dêi').\nLeia: Ái æm vé-ri hæ-pi tə-dêi."
   },
   "242": {
-    "explanation": "Em inglês, para fazer perguntas no presente com ações como 'gostar', os nativos usam uma palavra de apoio no início, o 'Do', que não tem tradução aqui, mas avisa ao ouvinte que vem uma pergunta por aí. Logo depois vem quem pratica a ação 'you' (você), o verbo 'like' (gostar), seguido de qual filme estamos falando 'this movie' (este filme).",
+    "explanation": "Para perguntar se alguém gosta de um filme, o inglês coloca a palavra de apoio 'Do' no começo para indicar pergunta, e o verbo 'like' conecta direto no objeto sem precisar da preposição 'de'.",
     "breakdown": [
       {
         "word": "Do you",
-        "meaning": "Você... ? — Do: palavra de apoio para perguntas no presente; you: você."
+        "meaning": "Você — Do: indicador de pergunta no presente; you: você."
       },
       {
         "word": "like",
-        "meaning": "Gosta / Gostar de — ação de ter apreço."
+        "meaning": "Gosta de — verbo gostar."
       },
       {
-        "word": "this",
-        "meaning": "Este / Esta — indica algo que está perto."
-      },
-      {
-        "word": "movie",
-        "meaning": "Filme / Cinema — termo usado para filmes de cinema ou TV."
+        "word": "this movie",
+        "meaning": "Deste filme — this: este/isto; movie: filme."
       }
     ],
-    "pronuncia": "Junte 'Do you' de forma suave como 'dú iú'. Na palavra 'like', fale 'láik' e feche a boca no 'k' final sem dizer 'ki'. Em 'this', posicione a ponta da língua entre os dentes da frente para soltar um som de 'D' assoprado, criando um 'dhís'. Termine com 'mú-vi', pronunciando o 'v' bem dente com lábio.\nLeia: Dú iú láik dhís mú-vi?"
+    "pronuncia": "Fale 'dúu yúu' para o início. Em 'like', diga 'láik' cortando a consoante 'k' a seco sem adicionar som de 'i' no fim. Em 'this', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes no 'dh', deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'dhıs'. Finalize em 'movie' pronunciando 'múu-vi'.\nLeia: Dúu yúu láik dhıs múu-vi?"
   },
   "243": {
-    "explanation": "Na hora de dizer que não gosta de algo, o inglês junta a palavra de apoio 'do' com o 'not' (não) logo antes da ação 'like'. Uma diferença importante em relação ao português é que as características vêm antes das coisas: por isso dizemos 'cold weather' (tempo frio, literalmente 'frio tempo'), colocando o clima por último.",
+    "explanation": "Ao negar que gosta de tempo frio, o inglês usa 'do not' antes da ação e posiciona a característica 'cold' antes do substantivo 'weather', mostrando a ordem natural do inglês de descrever as coisas antes de nomeá-las.",
     "breakdown": [
       {
         "word": "I do not",
-        "meaning": "Eu não — I: eu; do not: palavra de apoio juntamente com a negação não."
+        "meaning": "Eu não — I: eu; do not: estrutura de negação no presente."
       },
       {
         "word": "like",
-        "meaning": "Gosto — ação de gostar."
+        "meaning": "Gosto de — verbo gostar."
       },
       {
-        "word": "cold",
-        "meaning": "Frio — característica de temperatura baixa."
-      },
-      {
-        "word": "weather",
-        "meaning": "Tempo / Clima — estado do tempo na atmosfera."
+        "word": "cold weather",
+        "meaning": "Tempo frio — cold: frio; weather: tempo/clima."
       }
     ],
-    "pronuncia": "Diga 'ai' para o eu. O 'do not' pode ser falado separado como 'dú nót', batendo a ponta da língua atrás dos dentes superiores no 't'. Em 'like', fale 'láik' travando a garganta levemente no final. Para 'cold', fale 'kôuld', encostando a língua no céu da boca no 'l' e 'd'. Em 'weather', coloque a ponta da língua levemente entre os dentes para fazer 'uê-dhêr', terminando com a língua enrolada para trás para o 'r'.\nLeia: Ai dú nót láik kôuld uê-dhêr."
+    "pronuncia": "Comece com 'ái dúu nót'. Em 'like', trave o 'k' a seco ('láik'). Em 'cold', suba a ponta da língua no céu da boca para fazer o 'l' sem virar 'u' e trave o 'd' ('kôuld'). Em 'weather', projete os lábios em bico de 'u' no 'w' ('we'), coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh', e deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'ər' ('wé-dhər').\nLeia: Ái dúu nót láik kôuld wé-dhər."
   },
   "244": {
-    "explanation": "Para falar que um objeto tem uma qualidade, o inglês aponta o item primeiro com 'This book' (este livro), conecta com o estado 'is' (é), coloca o intensificador 'very' (muito) e finaliza com a qualidade 'interesting' (interessante). Repare como a estrutura é idêntica à do português, facilitando o raciocínio.",
+    "explanation": "Para descrever um livro como interessante, a frase segue a ordem direta de apresentar o objeto 'This book', o verbo de ligação 'is' e a qualidade com intensidade 'very interesting'.",
     "breakdown": [
       {
-        "word": "This",
-        "meaning": "Este / Esta — indica algo próximo de quem fala."
-      },
-      {
-        "word": "book",
-        "meaning": "Livro — objeto de leitura."
+        "word": "This book",
+        "meaning": "Este livro — This: este/isto; book: livro."
       },
       {
         "word": "is",
-        "meaning": "É / Está — estado ou ser."
+        "meaning": "É — forma do verbo ser/estar no presente."
       },
       {
-        "word": "very",
-        "meaning": "Muito — aumenta o grau do adjetivo."
-      },
-      {
-        "word": "interesting",
-        "meaning": "Interessante — que desperta interesse."
+        "word": "very interesting",
+        "meaning": "Muito interessante — very: muito; interesting: interessante."
       }
     ],
-    "pronuncia": "Comece em 'This' colocando a ponta da língua entre os dentes da frente para fazer 'dhís'. Em 'book', faça um 'búk' rápido, parando o som no 'k'. Enmende o 'is' com 'very' falando 'íz vé-ri', lembrando de enrolar a língua no 'r' de 'very'. A palavra 'interesting' deve ser falada no ritmo 'ÍN-três-ting', cortando levemente uma vogal do meio e terminando no 'ng' nasal seco.\nLeia: Dhís búk íz vé-ri ín-três-ting."
+    "pronuncia": "Em 'This', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dh', e deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'dhıs'. Em 'book', use o som curto 'buk' travando a consoante a seco. Em 'is', mantenha o queixo ligeiramente solto, sem puxar sorriso em 'ız'. Em 'interesting', diga 'ın-trəs-tıng', mantendo o queixo ligeiramente solto, sem puxar sorriso no 'ı' e a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə'.\nLeia: Dhıs buk ız vé-ri ın-trəs-tıng."
   },
   "245": {
-    "explanation": "No inglês, a característica da pessoa vem sempre antes dela. Em vez de dizer 'mulher bonita' como no português, os nativos pensam 'bonita mulher' ('beautiful woman'). A frase começa com o sujeito 'She' (ela), a ligação 'is' (é), o artigo 'a' (uma) e o bloco da qualidade mais a pessoa.",
+    "explanation": "Na frase 'Ela é uma mulher bonita', o inglês coloca a qualidade 'beautiful' antes da pessoa 'woman', usando o artigo 'a' antes do adjetivo.",
     "breakdown": [
       {
         "word": "She is",
-        "meaning": "Ela é — She: ela; is: é / está."
+        "meaning": "Ela é — She: ela; is: é/está."
       },
       {
-        "word": "a",
-        "meaning": "Uma / Um — artigo indefinido para termos no singular."
-      },
-      {
-        "word": "beautiful",
-        "meaning": "Bonita / Bela — característica estética agradável."
+        "word": "a beautiful",
+        "meaning": "Uma bonita — a: uma; beautiful: linda/bonita."
       },
       {
         "word": "woman",
-        "meaning": "Mulher — pessoa do sexo feminino no adulto."
+        "meaning": "Mulher — substantivo feminino singular."
       }
     ],
-    "pronuncia": "Comece com 'chí' suave no 'She'. Junte o 'is' com 'a' criando um som corrido de 'íz ê'. Em 'beautiful', fale 'biú-ti-ful' ou suave como 'biú-ri-ful', deixando o som de 'l' no final bem velado lá no céu da boca. Conclua com 'uú-mân', fazendo o 'w' inicial com os lábios bem arredondados como se fosse soprar.\nLeia: Chí íz ê biú-ri-ful uú-mân."
+    "pronuncia": "Em 'She', faça o chiado suave 'chii'. Em 'is', use o queixo ligeiramente solto, sem puxar sorriso em 'ız'. Em 'beautiful', diga 'byúu-rı-fəl', fazendo o 't' com toque rápido de 'r' e mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə'. Em 'woman', projete o 'w' como 'u' em 'wu-mən', terminando com o 'n' travado nos dentes.\nLeia: Chii ız ə byúu-rı-fəl wu-mən."
   },
   "246": {
-    "explanation": "Os nativos usam 'I think' para expressar opinião (eu acho / eu penso). Logo em seguida, eles usam 'it' para se referir à situação ou coisa sem precisar dar nome a ela, conectando 'it is a' (é uma) e colocando o elogio 'good' (boa) antes de 'idea' (ideia), resultando na ordem 'boa ideia'.",
+    "explanation": "Para dar uma opinião positiva, 'I think it is a good idea' conecta a ação de pensar 'I think' diretamente com o fato 'it is a good idea', omitindo o 'que' conectivo que costumamos usar em português.",
     "breakdown": [
       {
         "word": "I think",
-        "meaning": "Eu acho / Eu penso — I: eu; think: achar / pensar."
+        "meaning": "Eu acho / Eu penso — I: eu; think: achar/pensar."
       },
       {
         "word": "it is",
-        "meaning": "É / Isso é — it: elemento para coisas/ideias; is: é."
+        "meaning": "É — it: ele/isso; is: é."
       },
       {
-        "word": "a",
-        "meaning": "Uma — artigo indefinido."
-      },
-      {
-        "word": "good",
-        "meaning": "Boa / Bom — qualidade positiva."
-      },
-      {
-        "word": "idea",
-        "meaning": "Ideia — conceito ou pensamento."
+        "word": "a good idea",
+        "meaning": "Uma boa ideia — a: uma; good: boa; idea: ideia."
       }
     ],
-    "pronuncia": "Em 'I', fale 'ai'. Na palavra 'think', ponha a pontinha da língua no meio dos dentes e solte o ar num 'thínk' leve sem voz. Junte 'it is a' em uma sequência rápida: 'ít íz ê'. Na palavra 'good', fale 'gúd' travando a língua no 'd' sem soltar um 'di'. Finalize com 'ai-DÍ-ê', dando o tom mais forte na sílaba do meio.\nLeia: Ai thínk ít íz ê gúd ai-dí-ê."
+    "pronuncia": "Em 'think', coloque a ponta da língua entre os dentes da frente e apenas assopre ar, sem vibrar a voz para o 'th', e mantenha o queixo ligeiramente solto, sem puxar sorriso em 'thınk'. Em 'it is', ligue em 'ı-tız' com queixo frouxo. Em 'good', não faça bico longo, diga 'gud' seco. Conclua em 'idea' como 'ái-dí-ə', deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no final.\nLeia: Ái thınk ı-tız ə gud ái-dí-ə."
   },
   "247": {
-    "explanation": "Para fazer perguntas com o estado de alguém, o inglês inverte a ordem normal: a palavra que indica o estado 'Are' (está/são) vem para o primeiro lugar da frase, antes do sujeito 'you' (você). O sentimento 'sad' (triste) entra por último.",
+    "explanation": "Em perguntas diretas sobre o estado de alguém, o verbo 'Are' passa para o começo da frase, vindo antes da pessoa 'you'.",
     "breakdown": [
       {
-        "word": "Are",
-        "meaning": "Está / São / É — forma verbal usada para perguntas no início da frase."
-      },
-      {
-        "word": "you",
-        "meaning": "Você — a pessoa com quem se fala."
+        "word": "Are you",
+        "meaning": "Você está — Are: verbo estar em formato de pergunta; you: você."
       },
       {
         "word": "sad",
-        "meaning": "Triste — sentimento de tristeza."
+        "meaning": "Triste — estado emocional."
       }
     ],
-    "pronuncia": "Inicie enrolando levemente a língua no céu da boca para dizer 'Ár'. Emende direto com 'you' para formar 'ár iú'. Na palavra 'sad', abra bem a boca para falar 'séd', encostando a ponta da língua no céu da boca para travar o 'd' final de forma seca, sem acrescentar som de 'i'.\nLeia: Ár iú séd?"
+    "pronuncia": "Para 'Are', mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o som '3r' em 'ár'. Em 'you', fale 'yúu'. Em 'sad', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'sæd', cortando a consoante 'd' a seco no fim.\nLeia: Ár yúu sæd?"
   },
   "248": {
-    "explanation": "A estrutura segue a ordem direta clássica: quem sente 'I' (eu), como se sente 'am' (estou) e o estado emocional 'bored' (entediado). Uma particularidade é que no inglês a palavra 'bored' termina com um som preso que indica o resultado de ter ficado sem o que fazer.",
+    "explanation": "Para dizer 'Eu estou entediado', o inglês usa 'I am bored', em que a palavra 'bored' é o estado de quem sente o tédio.",
     "breakdown": [
       {
         "word": "I am",
@@ -166,453 +130,329 @@
       },
       {
         "word": "bored",
-        "meaning": "Entediado / Sem nada para fazer — estado de falta de interesse."
+        "meaning": "Entediado — estado de sentir tédio."
       }
     ],
-    "pronuncia": "Diga 'ai' de forma limpa. Para 'am', fale 'ém' fechando levemente os lábios. Na palavra 'bored', enrole a língua para fazer o 'r' forte e termine travando no 'd', formando 'bórd', sem pronunciar nenhuma vogal depois do 'd' e sem dizer 'bo-re-de'.\nLeia: Ai ém bórd."
+    "pronuncia": "Em 'I am', diga 'ái æm', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'bored', mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o som '3r', terminando com o 'd' travado a seco sem soltar 'i' ('bórd').\nLeia: Ái æm bórd."
   },
   "249": {
-    "explanation": "Para dizer que um som ultrapassou o limite, o inglês coloca 'The music' (A música) no começo, o verbo de ligação 'is' (está) no meio, e a palavra 'too' (demais / excessivamente) logo antes da qualidade 'loud' (alta / barulhenta). Isso mostra que 'too' intensifica aquilo que vem logo a seguir.",
+    "explanation": "Para expressar um excesso de volume, 'too' vem logo antes do adjetivo 'loud', funcionando como um intensificador que significa 'demais'.",
     "breakdown": [
       {
         "word": "The music",
         "meaning": "A música — The: a; music: música."
       },
       {
-        "word": "is",
-        "meaning": "Está / É — estado."
-      },
-      {
-        "word": "too",
-        "meaning": "Demais / Excessivamente — indica exagero."
+        "word": "is too",
+        "meaning": "Está demais / está muito — is: está; too: demais/excessivamente."
       },
       {
         "word": "loud",
-        "meaning": "Alta / Barulhenta — volume elevado de som."
+        "meaning": "Alta — referente a som/barulho."
       }
     ],
-    "pronuncia": "Comece em 'The' posicionando a ponta da língua entre os dentes para falar 'dhê'. Em 'music', diga 'MIÚ-zik' com o som de 'z' bem nítido no meio. Junte com 'is' formando 'íz'. Para 'too', fale 'tú' bem esticado. Termine com 'láud', travando a ponta da língua no céu da boca no 'd'.\nLeia: Dhê miú-zik íz tú láud."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dh', e deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'dhə'. Em 'music', fale 'myúu-zık' com o queixo ligeiramente solto no 'ı'. Em 'is', use 'ız'. Em 'too loud', diga 'túu láud' travando o 'd' final sem adicionar vogal.\nLeia: Dhə myúu-zık ız túu láud."
   },
   "250": {
-    "explanation": "Esta frase é totalmente direta e tem exatamente a mesma ordem do português. O 'I' representa o eu, 'love' é o verbo amar, 'my' indica posse (minha) e 'family' é o objeto do afeto (família). É uma das frases mais simples e naturais de se construir.",
+    "explanation": "A declaração 'I love my family' segue uma ordem idêntica ao português: a pessoa 'I', a ação 'love' e o objeto 'my family'.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu — pessoa que fala."
+        "word": "I love",
+        "meaning": "Eu amo — I: eu; love: amar."
       },
       {
-        "word": "love",
-        "meaning": "Amo / Gosto muito — verbo de afeto."
-      },
-      {
-        "word": "my",
-        "meaning": "Minha / Meu — termo de posse."
-      },
-      {
-        "word": "family",
-        "meaning": "Família — grupo familiar."
+        "word": "my family",
+        "meaning": "Minha família — my: minha; family: família."
       }
     ],
-    "pronuncia": "Fale 'ai' para o sujeito. Em 'love', faça o som de 'lâv', encostando os dentes superiores no lábio inferior para o 'v' final seco. Para 'my', diga 'mái'. Na palavra 'family', pronuncie como 'FÉ-mi-li', com o tom forte no 'fé' inicial.\nLeia: Ai lâv mái fé-mi-li."
+    "pronuncia": "Fale 'ái'. Em 'love', solte o som seco da garganta 'lâv' e trave o 'v' nos dentes. Em 'my', diga 'mái'. Em 'family', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' no começo, e use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no meio ('fæ-mə-li').\nLeia: Ái lâv mái fæ-mə-li."
   },
   "251": {
-    "explanation": "Como em inglês não existem frases sem sujeito, usamos o 'It' para preencher o início ao falar do clima ou do tempo. O 'It is' vira 'É', seguido do artigo 'a' (um) e, como a qualidade vem antes do nome em inglês, dizemos 'sunny day' (ensolarado dia) em vez de 'dia ensolarado'.",
+    "explanation": "Para dizer 'É um dia ensolarado', o inglês sempre precisa de um sujeito como 'It' para abrir a frase, seguido da qualidade 'sunny' antes da palavra 'day'.",
     "breakdown": [
       {
         "word": "It is",
-        "meaning": "É / Esta — It: preenche o sujeito neutro; is: é."
+        "meaning": "É / Está — It: sujeito neutro; is: é/está."
       },
       {
-        "word": "a",
-        "meaning": "Um / Uma — artigo."
-      },
-      {
-        "word": "sunny",
-        "meaning": "Ensolarado — com bastante sol."
+        "word": "a sunny",
+        "meaning": "Um ensolarado — a: um; sunny: ensolarado."
       },
       {
         "word": "day",
-        "meaning": "Dia — período do dia."
+        "meaning": "Dia — substantivo de tempo."
       }
     ],
-    "pronuncia": "Junte 'It is a' em uma fala fluida, soando como 'ít íz ê'. Para 'sunny', fale 'SÂ-ni' dando ênfase na primeira parte. Em 'day', fale 'déi' com a voz aberta. O conjunto flui de maneira leve e contínua.\nLeia: Ít íz ê sâ-ni déi."
+    "pronuncia": "Em 'It is', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ı-tız'. Em 'a', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular ('ə'). Em 'sunny', faça o som seco da garganta em 'sâ-ni'. Em 'day', deslize suavemente para 'dêi'.\nLeia: I-tız ə sâ-ni dêi."
   },
   "252": {
-    "explanation": "Para expressar discórdia ou dúvida de forma educada (eu acho que não), o inglês usa a negação 'do not' com a ação 'think' (pensar/achar) e finaliza com a palavra 'so', que funciona como 'assim' ou 'isso'. A tradução real do conjunto é 'eu não penso assim' ou simplesmente 'acho que não'.",
+    "explanation": "A expressão 'I do not think so' é a forma padrão de dizer 'Eu acho que não', onde a palavra 'so' substitui toda a ideia negativa mencionada.",
     "breakdown": [
       {
         "word": "I do not",
         "meaning": "Eu não — I: eu; do not: estrutura de negação."
       },
       {
-        "word": "think",
-        "meaning": "Acho / Penso — verbo de opinião."
-      },
-      {
-        "word": "so",
-        "meaning": "Que não / Assim — substitui a ideia que foi dita anteriormente."
+        "word": "think so",
+        "meaning": "Acho que sim/não (neste caso, com negação anterior) — think: achar; so: assim/isso."
       }
     ],
-    "pronuncia": "Diga 'ai' para o início. Em 'do not', fale 'dú nót' batendo a língua no céu da boca para o 't'. Na palavra 'think', coloque a ponta da língua entre os dentes para soltar um 'thínk' sem voz. Termine com 'sôu' bem suave.\nLeia: Ai dú nót thínk sôu."
+    "pronuncia": "Em 'I do not', fale 'ái dúu nót'. Em 'think', coloque a ponta da língua entre os dentes da frente e apenas assopre ar, sem vibrar a voz para 'th', mantendo o queixo ligeiramente solto, sem puxar sorriso em 'thınk'. Em 'so', deslize os lábios em bico para o som 'sôu'.\nLeia: Ái dúu nót thınk sôu."
   },
   "253": {
-    "explanation": "Para fazer uma pergunta sobre algo ser ou não difícil, o inglês inverte a ordem normal e coloca o verbo 'Is' logo no começo, antes do sujeito neutro 'it'. Depois entra o artigo 'a' (uma), a qualidade 'difficult' (difícil) e o item consultado 'question' (pergunta).",
+    "explanation": "Para perguntar se algo é difícil, o verbo 'Is' abre a frase junto com o sujeito neutro 'it', e o adjetivo 'difficult' antecede o objeto 'question'.",
     "breakdown": [
       {
         "word": "Is it",
-        "meaning": "É... ? — Is: verbo no início para indicar pergunta; it: elemento neutro."
+        "meaning": "É / É isto — Is: verbo ser em pergunta; it: sujeito neutro."
       },
       {
-        "word": "a",
-        "meaning": "Uma — artigo indefinido."
-      },
-      {
-        "word": "difficult",
-        "meaning": "Difícil — que exige esforço ou inteligência."
+        "word": "a difficult",
+        "meaning": "Uma difícil — a: uma; difficult: difícil."
       },
       {
         "word": "question",
-        "meaning": "Pergunta / Questão — dúvida a ser respondida."
+        "meaning": "Pergunta — substantivo."
       }
     ],
-    "pronuncia": "Junte 'Is it a' de uma só vez formando 'íz ít ê'. Na palavra 'difficult', diga 'DÍ-fi-kâlt', deixando a última parte curta. Em 'question', fale 'KUÉs-tchân', abrindo bem no início e terminando com um 'chân' preso no nariz.\nLeia: Íz ít ê dí-fi-kâlt kués-tchân?"
+    "pronuncia": "Em 'Is it', mantenha o queixo ligeiramente solto, sem puxar sorriso em 'ı-zıt'. Em 'a', deixe a mandíbula relaxada caída e língua frouxa em 'ə'. Em 'difficult', use o queixo ligeiramente solto no 'ı' e a mandíbula relaxada caída e língua frouxa no 'ə' ('dı-fı-kəlt'), travando o 't' no fim. Em 'question', diga 'kwés-tchən', travando a língua nos dentes no 'n' final.\nLeia: I-zıt ə dı-fı-kəlt kwés-tchən?"
   },
   "254": {
-    "explanation": "Em português dizemos 'ter medo', mas o inglês pensa isso como 'estar amedrontado', usando 'I am afraid'. Além disso, a palavra que conecta o medo ao objeto é 'of' (de). Por fim, quando falamos de coisas em geral no plural, como aranhas ('spiders'), não se coloca artigo antes.",
+    "explanation": "No inglês, o medo é expressado como um estado de 'estar amedrontado de algo', por isso usa-se 'I am afraid of' seguido do plural 'spiders'.",
     "breakdown": [
       {
-        "word": "I am",
-        "meaning": "Eu tenho / Eu estou — I: eu; am: estou."
-      },
-      {
-        "word": "afraid of",
-        "meaning": "Com medo de / Amedrontado por — afraid: com medo; of: de."
+        "word": "I am afraid of",
+        "meaning": "Eu tenho medo de — I am: eu estou; afraid: com medo/amedrontado; of: de."
       },
       {
         "word": "spiders",
-        "meaning": "Aranhas — plural de aranha."
+        "meaning": "Aranhas — plural do substantivo aranha."
       }
     ],
-    "pronuncia": "Diga 'ai' e junte com 'am' criando 'ai ém'. Em 'afraid of', fale 'ê-FRÉID óv', unindo o som de 'd' final do 'afraid' levemente ao 'of', que soa com 'v'. Para 'spiders', enrole a língua no 'r' do meio para falar 'SPÁI-dêrz', terminando num 'z' suave.\nLeia: Ai ém ê-fréid óv spái-dêrz."
+    "pronuncia": "Fale 'ái æm', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' no 'æ'. Em 'afraid', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no início ('ə-frêid'). Em 'of', ligue em 'əv'. Em 'spiders', comece direto no silvo do S sem colocar vogal antes ('spái-dərz'), usando o som neutro 'ə' antes do 'r' enrolado.\nLeia: Ái æm ə-frêid əv spái-dərz."
   },
   "255": {
-    "explanation": "A estrutura desta frase bate exatamente com a ordem do português: 'She' (Ela), 'is' (é), 'very' (muito) e 'intelligent' (inteligente). O raciocínio é direto e sem inversões, bastando conectar o sujeito à sua qualidade intensificada.",
+    "explanation": "Para descrever a inteligência de alguém, a estrutura 'She is very intelligent' aplica o intensificador 'very' direto antes do adjetivo.",
     "breakdown": [
       {
         "word": "She is",
         "meaning": "Ela é — She: ela; is: é."
       },
       {
-        "word": "very",
-        "meaning": "Muito — intensificador."
-      },
-      {
-        "word": "intelligent",
-        "meaning": "Inteligente — pessoa de grande capacidade mental."
+        "word": "very intelligent",
+        "meaning": "Muito inteligente — very: muito; intelligent: inteligente."
       }
     ],
-    "pronuncia": "Fale 'chí' para o She e conecte ao 'is' formando 'chí íz'. Em 'very', enrole a língua para o 'r' dizendo 'vé-ri'. Na palavra 'intelligent', a ênfase fica na segunda parte: 'in-TÉ-li-djênt', finalizando com a língua travada no céu da boca no 't'.\nLeia: Chí íz vé-ri in-té-li-djênt."
+    "pronuncia": "Em 'She is', diga 'chii ız' com o queixo ligeiramente solto no 'ı'. Em 'very', encoste o dente no lábio em 'vé-ri'. Em 'intelligent', diga 'ın-té-lə-djənt', mantendo o queixo ligeiramente solto no 'ı' do início, e a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular nos dois 'ə', travando a consoante 't' no fim sem som de 'i'.\nLeia: Chii ız vé-ri ın-té-lə-djənt."
   },
   "256": {
-    "explanation": "Para elogiar a comida, os nativos apontam o prato com 'The cake' (O bolo), colocam o estado 'is' (está) e emendam o adjetivo 'delicious' (delicioso). A ordem das palavras é idêntica ao português.",
+    "explanation": "Para elogiar o sabor de algo, 'The cake is delicious' conecta a coisa especificada 'The cake' com o estado 'is' e a qualidade 'delicious'.",
     "breakdown": [
       {
         "word": "The cake",
         "meaning": "O bolo — The: o; cake: bolo."
       },
       {
-        "word": "is",
-        "meaning": "Está / É — estado."
-      },
-      {
-        "word": "delicious",
-        "meaning": "Delicioso / Gostoso — sabor muito bom."
+        "word": "is delicious",
+        "meaning": "Está delicioso — is: está; delicious: delicioso."
       }
     ],
-    "pronuncia": "Em 'The', ponha a ponta da língua entre os dentes para dizer 'dhê'. Na palavra 'cake', fale 'kêik', parando o som no 'k' sem dizer 'ke-ki'. O 'is' vira 'íz'. Finalize 'delicious' pronunciando 'de-LÍ-châs', com som de 'ch' bem suave no final.\nLeia: Dhê kêik íz de-lí-châs."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dh', e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Em 'cake', fale 'kêik' travando o 'k' a seco. Em 'is', use 'ız'. Em 'delicious', diga 'dı-lí-chəs', usando o queixo frouxo no 'ı' e a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'ə'.\nLeia: Dhə kêik ız dı-lí-chəs."
   },
   "257": {
-    "explanation": "Quando os nativos estão empolgados com algum evento futuro, eles dizem 'I am excited' (estou empolgado) e usam a palavra 'about' (sobre/com relação a) para indicar o motivo da empolgação, terminando com 'the party' (a festa).",
+    "explanation": "Quando estamos empolgados com um evento, o inglês usa a preposição 'about' após o adjetivo 'excited', significando 'animado em relação a'.",
     "breakdown": [
       {
-        "word": "I am",
-        "meaning": "Estou / Eu estou — I: eu; am: estou."
+        "word": "I am excited",
+        "meaning": "Estou animado — I am: eu estou; excited: empolgado/animado."
       },
       {
-        "word": "excited",
-        "meaning": "Animado / Empolgado — estado de grande expectativa positiva."
-      },
-      {
-        "word": "about",
-        "meaning": "Para / Com relação a — indica sobre o que se está animado."
-      },
-      {
-        "word": "the party",
-        "meaning": "A festa — the: a; party: festa."
+        "word": "about the party",
+        "meaning": "Para a festa / com a festa — about: sobre/em relação a; the: a; party: festa."
       }
     ],
-    "pronuncia": "Fale 'ai ém' para o início. Em 'excited', pronuncie 'ek-SÁI-têd', batendo o 't' de forma rápida. Para 'about', fale 'ê-BÁUT'. Em 'the party', faça o 'th' de 'the' com a língua nos dentes ('dhê') e enrole a língua no 'r' de 'party' falando 'PÁR-ti'.\nLeia: Ai ém ek-sái-têd ê-báut dhê pár-ti."
+    "pronuncia": "Fale 'ái æm', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'excited', diga 'ık-sái-rıd', usando o 't' com toque rápido de 'r' de arara. Em 'about', deixe a mandíbula relaxada caída e língua frouxa em 'ə-báut'. Em 'the party', fale 'dhə pár-ri', colocando a ponta da língua entre os dentes da frente no 'dh' e usando o 'r' brando no 't' de 'party'.\nLeia: Ái æm ık-sái-rıd ə-báut dhə pár-ri."
   },
   "258": {
-    "explanation": "Para perguntar como alguém se sente, a frase começa com o auxiliador de pergunta 'Do', seguido de 'you' (você), o verbo de sentimento 'feel' (sentir/estar se sentindo) e o estado de raiva 'angry' (com raiva / zangado).",
+    "explanation": "Para perguntar sobre o sentimento de raiva, o inglês pode usar o verbo de sensação 'feel' acompanhado do ajudante de pergunta 'Do you'.",
     "breakdown": [
       {
-        "word": "Do you",
-        "meaning": "Você... ? — Do: marcação de pergunta no presente; you: você."
-      },
-      {
-        "word": "feel",
-        "meaning": "Sente / Está se sentindo — verbo de sensação interna."
+        "word": "Do you feel",
+        "meaning": "Você se sente / Você está — Do: auxiliar de pergunta; you: você; feel: sentir-se."
       },
       {
         "word": "angry",
-        "meaning": "Com raiva / Zangado — estado emocional de irritação."
+        "meaning": "Com raiva / zangado — adjetivo de sentimento."
       }
     ],
-    "pronuncia": "Junte 'Do you' como 'dú iú'. Na palavra 'feel', estique o som do 'e' dizendo 'fíiil' encostando a língua no céu da boca para o 'l'. Em 'angry', dê a força no começo: 'ÊN-gri', enrolando a língua levemente para soltar o 'r'.\nLeia: Dú iú fíiil ên-gri?"
+    "pronuncia": "Em 'Do you feel', diga 'dúu yúu fíil', subindo a ponta da língua no 'l' final sem virar 'u'. Em 'angry', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æng-gri', soltando o 'r' enrolado.\nLeia: Dúu yúu fíil æng-gri?"
   },
   "259": {
-    "explanation": "Frase de estrutura bem simples e idêntica ao nosso idioma. O sujeito 'The movie' (O filme) vem primeiro, seguido de 'is' (é), do intensificador 'very' (muito) e da extensão 'long' (longo / comprido).",
+    "explanation": "A frase 'The movie is very long' atribui a característica de extensão 'long' ao filme usando a ordem direta do adjetivo no fim da afirmação.",
     "breakdown": [
       {
         "word": "The movie",
         "meaning": "O filme — The: o; movie: filme."
       },
       {
-        "word": "is",
-        "meaning": "É / Está — estado."
-      },
-      {
-        "word": "very",
-        "meaning": "Muito — intensificador."
-      },
-      {
-        "word": "long",
-        "meaning": "Longo / Comprido — de grande duração."
+        "word": "is very long",
+        "meaning": "É muito longo — is: é; very: muito; long: longo/comprido."
       }
     ],
-    "pronuncia": "Diga 'dhê' com a língua no meio dos dentes para o 'The'. Em 'movie', fale 'MÚ-vi'. O 'is' soa como 'íz'. Para 'very', diga 'vé-ri' enrolando a língua no 'r'. Termine 'long' com um 'lóng' bem nasal, segurando o som no fundo da boca.\nLeia: Dhê mú-vi íz vé-ri lóng."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dh', e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Em 'movie', diga 'múu-vi'. Em 'is very', fale 'ız vé-ri'. Em 'long', solte a voz pelo fundo da boca em um 'ó' bem aberto em 'lóng', deixando o som morrer no nariz no 'ng' final sem estalar o 'g'.\nLeia: Dhə múu-vi ız vé-ri lóng."
   },
   "260": {
-    "explanation": "O inglês expressa a ideia de 'não ter certeza' dizendo 'eu não estou certo'. A frase junta 'I am' (eu estou), a negação 'not' (não) e a palavra 'sure' (certo/convicto). É uma das formas mais comuns de dizer que não sabe algo com exatidão.",
+    "explanation": "Para dizer 'Eu não tenho certeza', o inglês utiliza 'I am not sure', tratando a certeza como um estado em que a pessoa se encontra.",
     "breakdown": [
       {
         "word": "I am not",
-        "meaning": "Eu não estou / Não tenho — I: eu; am: estou; not: não."
+        "meaning": "Eu não estou / Eu não sou — I: eu; am: estou; not: não."
       },
       {
         "word": "sure",
-        "meaning": "Certeza / Certo — estado de convicção."
+        "meaning": "Certo / Seguro de algo — estado de certeza."
       }
     ],
-    "pronuncia": "Fale 'ai' e junte com 'am not' criando 'ai ém nót'. Para a palavra 'sure', faça um som inicial de 'ch' soprado e enrole a língua para o 'r' final, resultando num 'chúr' limpo e curto, sem dizer 'su-re'.\nLeia: Ai ém nót chúr."
+    "pronuncia": "Fale 'ái æm', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æm'. Em 'not', abra a boca para baixo em 'nót'. Em 'sure', faça o chiado suave inicial e mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o som '3r' em 'chúr'.\nLeia: Ái æm nót chur."
   },
   "261": {
-    "explanation": "Mais uma vez, como o sujeito não é uma pessoa, usa-se 'It is' para dizer 'É'. O artigo 'a' (um) vem em seguida, e como as qualidades antecedem as coisas, o tamanho 'small' (pequeno) fica antes do assunto 'problem' (problema).",
+    "explanation": "Para dizer 'É um problema pequeno', coloca-se o tamanho 'small' antes da palavra 'problem', precedido pelo artigo 'a'.",
     "breakdown": [
       {
-        "word": "It is",
-        "meaning": "É / Trata-se de — It: sujeito neutro; is: é."
+        "word": "It is a",
+        "meaning": "É um / É uma — It: sujeito neutro; is: é; a: um."
       },
       {
-        "word": "a",
-        "meaning": "Um / Uma — artigo."
-      },
-      {
-        "word": "small",
-        "meaning": "Pequeno — tamanho reduzido."
-      },
-      {
-        "word": "problem",
-        "meaning": "Problema — situação a ser resolvida."
+        "word": "small problem",
+        "meaning": "Problema pequeno — small: pequeno; problem: problema."
       }
     ],
-    "pronuncia": "Diga 'ít íz ê' bem corrido. Na palavra 'small', não coloque 'i' no começo, comece direto no som da cobra 'sm' e termine com a língua no céu da boca para o 'l': 'smól'. Em 'problem', fale 'PRÓ-blêm', enrolando a língua no 'r'.\nLeia: Ít íz ê smól pró-blêm."
+    "pronuncia": "Ligue 'It is a' em 'ı-tız ə', mantendo o queixo ligeiramente solto no 'ı' e a mandíbula relaxada caída e língua frouxa em 'ə'. Em 'small', comece direto no silvo do S sem vogal antes ('smól'), subindo a língua no 'l' final sem fazer 'u'. Em 'problem', fale 'pró-bləm', usando o som neutro 'ə' na segunda sílaba e travando o 'm' nos lábios.\nLeia: I-tız ə smól pró-bləm."
   },
   "262": {
-    "explanation": "Na frase 'Eu gosto do seu carro novo', o inglês dispensa a preposição 'do' após o verbo 'like', indo direto para o possuidor 'your' (seu). Em seguida, a qualidade 'new' (novo) entra antes do objeto 'car' (carro), seguindo a regra natural da língua.",
+    "explanation": "Ao elogiar o carro de alguém, as características como 'new' ficam juntas do objeto possuído 'your new car' logo após o verbo 'like'.",
     "breakdown": [
       {
         "word": "I like",
         "meaning": "Eu gosto de — I: eu; like: gostar."
       },
       {
-        "word": "your",
-        "meaning": "Seu / Sua — termo de posse."
-      },
-      {
-        "word": "new",
-        "meaning": "Novo — recém-adquirido ou fabricado."
-      },
-      {
-        "word": "car",
-        "meaning": "Carro / Automóvel — veículo."
+        "word": "your new car",
+        "meaning": "Seu carro novo — your: seu/sua; new: novo; car: carro."
       }
     ],
-    "pronuncia": "Fale 'ai láik' travando levemente o 'k' no fim. Em 'your', diga 'iór' enrolando a língua. Para 'new', fale 'niú'. Na palavra 'car', faça o 'c' bem forte e dobre a língua para trás no céu da boca para o 'r', criando 'kár'.\nLeia: Ai láik iór niú kár."
+    "pronuncia": "Em 'I like', fale 'ái láik' cortando o 'k' a seco no fim. Em 'your', diga 'yór'. Em 'new', fale 'nyúu'. Em 'car', abra a boca em 'kár' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para a vogal com 'r' final.\nLeia: Ái láik yór nyúu kár."
   },
   "263": {
-    "explanation": "A frase aponta o elemento 'The water' (A água), adiciona o verbo 'is' (está) e termina com a temperatura agradável 'warm' (morna / quentinha). A ordem é exatamente a mesma do português.",
+    "explanation": "Para descrever a temperatura da água como morna, usa-se 'The water is warm', em que o adjetivo 'warm' vem ao final da afirmação.",
     "breakdown": [
       {
         "word": "The water",
         "meaning": "A água — The: a; water: água."
       },
       {
-        "word": "is",
-        "meaning": "Está / É — estado."
-      },
-      {
-        "word": "warm",
-        "meaning": "Morna / Agradavelmente quente — temperatura suave."
+        "word": "is warm",
+        "meaning": "Está morna — is: está; warm: morno/aquecido."
       }
     ],
-    "pronuncia": "Em 'The', ponha a língua entre os dentes para dizer 'dhê'. Na palavra 'water', fale 'uó-têr' ou suave como 'uó-rêr', dobrando a língua no final. O 'is' vira 'íz'. Para 'warm', arredonde os lábios no 'w' e enrole a língua para o 'r', terminando em 'uórm'.\nLeia: Dhê uó-rêr íz uórm."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dh', e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Em 'water', projete os lábios em bico no 'w' e use o 't' brando de arara ('wó-rər'). Em 'is', fale 'ız'. Em 'warm', projete os lábios no 'w' e feche os lábios no 'm' final ('wórm').\nLeia: Dhə wó-rər ız wórm."
   },
   "264": {
-    "explanation": "O inglês descreve pessoas colocando o adjetivo antes da pessoa descrita. Por isso, começamos com quem é 'He' (Ele), a conexão 'is' (é), o artigo 'a' (um) e a sequência 'funny man' (engraçado homem), que em português traduzimos como 'homem engraçado'.",
+    "explanation": "Na frase 'Ele é um homem engraçado', o adjetivo 'funny' antecede a pessoa 'man', mantendo o padrão descritivo do inglês.",
     "breakdown": [
       {
         "word": "He is",
         "meaning": "Ele é — He: ele; is: é."
       },
       {
-        "word": "a",
-        "meaning": "Um — artigo."
-      },
-      {
-        "word": "funny",
-        "meaning": "Engraçado / Divertido — que faz rir."
-      },
-      {
-        "word": "man",
-        "meaning": "Homem — pessoa do sexo masculino."
+        "word": "a funny man",
+        "meaning": "Um homem engraçado — a: um; funny: engraçado/divertido; man: homem."
       }
     ],
-    "pronuncia": "Solte um ar leve no 'h' de 'He' para falar 'rrí'. Junte com 'is' e 'a' para formar 'rrí íz ê'. Para 'funny', fale 'FÂ-ni' com a voz bem limpa. Em 'man', abra a boca dizendo 'mên', travando o som com a língua no céu da boca para o 'n'.\nLeia: Rrí íz ê fâ-ni mên."
+    "pronuncia": "Em 'He is', fale 'hii ız' com queixo frouxo no 'ı'. Em 'a', deixe a mandíbula relaxada caída e língua frouxa em 'ə'. Em 'funny', solte o som seco da garganta em 'fâ-ni'. Em 'man', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'mæn', travando a ponta da língua nos dentes no 'n' final.\nLeia: Hii ız ə fâ-ni mæn."
   },
   "265": {
-    "explanation": "Para negar uma preferência no presente, o inglês usa a estrutura de negação 'do not' entre o sujeito 'I' (eu) e a ação 'like' (gostar). Depois, basta colocar o alimento 'pizza' direto sem usar a palavra 'de'.",
+    "explanation": "Para expressar um desgosto simples por uma comida, 'I do not like pizza' nega a ação com 'do not' e conecta direto ao alimento.",
     "breakdown": [
       {
         "word": "I do not",
-        "meaning": "Eu não — I: eu; do not: estrutura para negar no presente."
+        "meaning": "Eu não — I: eu; do not: estrutura de negação no presente."
       },
       {
-        "word": "like",
-        "meaning": "Gosto de / Gostar — ação de ter apreço."
-      },
-      {
-        "word": "pizza",
-        "meaning": "Pizza — prato alimentício."
+        "word": "like pizza",
+        "meaning": "Gosto de pizza — like: gostar; pizza: pizza."
       }
     ],
-    "pronuncia": "Diga 'ai' para o eu. Em 'do not', fale 'dú nót' travando o 't' no final. Para 'like', diga 'láik' sem pronunciar 'ki' no fim. A palavra 'pizza' deve ser pronunciada como 'PÍT-sâ', com o som de 'ts' forte no meio.\nLeia: Ai dú nót láik pít-sâ."
+    "pronuncia": "Em 'I do not', fale 'ái dúu nót'. Em 'like', trave o 'k' a seco ('láik'). Em 'pizza', pronuncie como 'píit-sə', usando o som longo no início e a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no final ('ə').\nLeia: Ái dúu nót láik píit-sə."
   },
   "266": {
-    "explanation": "Em perguntas sobre quem é a pessoa, o verbo 'Is' (É) passa para o primeiro lugar da frase, seguido do sujeito 'she' (ela). Depois vem a posse 'your' (sua), a preferência 'favorite' (favorita) e a profissão/função 'singer' (cantora).",
+    "explanation": "Para perguntar sobre a preferência por uma cantora, o verbo 'Is' passa para a frente da frase, antecedendo o sujeito 'she'.",
     "breakdown": [
       {
         "word": "Is she",
-        "meaning": "Ela é... ? — Is: verbo no início para indicar pergunta; she: ela."
+        "meaning": "Ela é — Is: verbo ser em pergunta; she: ela."
       },
       {
-        "word": "your",
-        "meaning": "Sua / Seu — posse."
-      },
-      {
-        "word": "favorite",
-        "meaning": "Favorita / Preferida — de maior preferência."
-      },
-      {
-        "word": "singer",
-        "meaning": "Cantora / Cantor — pessoa que canta."
+        "word": "your favorite singer",
+        "meaning": "Sua cantora favorita — your: sua; favorite: favorita; singer: cantora."
       }
     ],
-    "pronuncia": "Junte 'Is she' dizendo 'íz chí'. Em 'your', fale 'iór' enrolando a língua. Para 'favorite', fale em três sílabas rápidas 'FÉI-vâ-rit'. Na palavra 'singer', diga 'SÍNG-êr', sem forçar o 'g' e enrolando a língua no 'r' final.\nLeia: Íz chí iór féi-vâ-rit síng-êr?"
+    "pronuncia": "Em 'Is she', diga 'ız chii' com queixo ligeiramente solto no 'ı'. Em 'your', fale 'yór'. Em 'favorite', diga 'fêi-vrıt', mantendo o queixo ligeiramente solto no 'ı' final. Em 'singer', pronuncie 'sıng-ər', usando o queixo ligeiramente solto no 'ı' inicial e a mandíbula relaxada caída e língua frouxa no 'ə' antes do 'r' enrolado.\nLeia: Iz chii yór fêi-vrıt sıng-ər?"
   },
   "267": {
-    "explanation": "A estrutura segue a ordem direta das frases descritivas: 'The city' (A cidade) abre o pensamento, 'is' (é) conecta o estado, 'very' (muito) aumenta o tom e 'noisy' (barulhenta) entrega a característica do lugar.",
+    "explanation": "Para descrever o barulho de um local, 'The city is very noisy' coloca o sujeito 'The city', a ligação 'is' e o adjetivo de som no final.",
     "breakdown": [
       {
         "word": "The city",
         "meaning": "A cidade — The: a; city: cidade."
       },
       {
-        "word": "is",
-        "meaning": "É / Está — estado."
-      },
-      {
-        "word": "very",
-        "meaning": "Muito — intensificador."
-      },
-      {
-        "word": "noisy",
-        "meaning": "Barulhenta — com muito barulho."
+        "word": "is very noisy",
+        "meaning": "É muito barulhenta — is: é; very: muito; noisy: barulhenta."
       }
     ],
-    "pronuncia": "Comece em 'The' com a língua nos dentes ('dhê'). Em 'city', diga 'SÍ-ti' ou 'SÍ-ri', com som leve de 'r' preso. O 'is' soa 'íz'. Para 'very', fale 'vé-ri'. Termine 'noisy' dizendo 'NÓI-zi', fazendo o 'z' bem vibrante no final.\nLeia: Dhê sí-ri íz vé-ri nói-zi."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dh', e deixe a mandíbula relaxada caída em 'dhə'. Em 'city', use a ponta da língua com toque rápido de 'r' de arara em 'sı-rı'. Em 'is very', fale 'ız vé-ri'. Em 'noisy', diga 'nói-zi' com som de 'z' vibrado.\nLeia: Dhə sı-rı ız vé-ri nói-zi."
   },
   "268": {
-    "explanation": "Para expressar cansaço de algo, os nativos dizem 'I am tired' (estou cansado) e usam obrigatoriamente a palavra 'of' (de) para ligar ao motivo, concluindo com 'this game' (deste jogo).",
+    "explanation": "Ao expressar cansaço de algo específico, o inglês diz 'I am tired of' combinando o estado 'tired' com a preposição 'of'.",
     "breakdown": [
       {
-        "word": "I am",
-        "meaning": "Estou / Eu estou — I: eu; am: estou."
+        "word": "I am tired of",
+        "meaning": "Estou cansado de — I am: eu estou; tired: cansado; of: de."
       },
       {
-        "word": "tired of",
-        "meaning": "Cansado de — tired: cansado; of: de."
-      },
-      {
-        "word": "this",
-        "meaning": "Deste / Este — indica o jogo em questão."
-      },
-      {
-        "word": "game",
-        "meaning": "Jogo / Partida — atividade de entretenimento."
+        "word": "this game",
+        "meaning": "Deste jogo — this: este/isto; game: jogo."
       }
     ],
-    "pronuncia": "Diga 'ai ém' no início. Na palavra 'tired', pronuncie 'TÁI-êrd', enrolando o 'r' e travando no 'd'. Emende com 'of' falando 'óv'. Para 'this', coloque a língua entre os dentes ('dhís'). Termine com 'gêim', fechando os lábios no 'm' final.\nLeia: Ai ém tái-êrd óv dhís gêim."
+    "pronuncia": "Fale 'ái æm', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'tired of', diga 'tái-ərd əv', usando a mandíbula relaxada caída e língua frouxa no 'ə'. Em 'this game', coloque a ponta da língua entre os dentes da frente para 'dh' no 'dhıs', e feche os lábios no 'm' final em 'gêim'.\nLeia: Ái æm tái-ərd əv dhıs gêim."
   },
   "269": {
-    "explanation": "Para comentar sobre o dia bom, usa-se 'It is' para representar o 'É'. Em seguida vem o artigo 'a' (um), e a palavra de beleza 'beautiful' (lindo/bonito) aparece antes da palavra 'day' (dia), formando 'lindo dia'.",
+    "explanation": "Para elogiar o dia como um todo, a estrutura 'It is a beautiful day' usa 'It is' para criar a frase e coloca a qualidade 'beautiful' antes da palavra 'day'.",
     "breakdown": [
       {
-        "word": "It is",
-        "meaning": "É / Está — It: sujeito neutro; is: é."
+        "word": "It is a",
+        "meaning": "É um — It: sujeito neutro; is: é; a: um."
       },
       {
-        "word": "a",
-        "meaning": "Um / Uma — artigo."
-      },
-      {
-        "word": "beautiful",
-        "meaning": "Lindo / Bonito — extremamente agradável visualmente."
-      },
-      {
-        "word": "day",
-        "meaning": "Dia — período diurno."
+        "word": "beautiful day",
+        "meaning": "Lindo dia — beautiful: lindo/bonito; day: dia."
       }
     ],
-    "pronuncia": "Conecte o início formando 'ít íz ê'. Para 'beautiful', fale 'biú-ri-ful', deixando a ponta da língua encostar levemente no céu da boca para o 'l' final. Termine com 'déi' de forma clara e limpa.\nLeia: Ít íz ê biú-ri-ful déi."
+    "pronuncia": "Ligue 'It is a' em 'ı-tız ə', mantendo o queixo ligeiramente solto no 'ı' e a mandíbula relaxada caída e língua frouxa em 'ə'. Em 'beautiful', fale 'byúu-rı-fəl', trocando o 't' pelo 'r' brando de arara e usando a mandíbula relaxada caída e língua frouxa no 'ə'. Em 'day', diga 'dêi'.\nLeia: I-tız ə byúu-rı-fəl dêi."
   },
   "270": {
-    "explanation": "Esta é uma pergunta clássica de opinião. Começa com 'What' (O que), traz o auxiliar 'do' que indica pergunta no presente, junta o sujeito 'you' (você) e termina com a ação 'think' (achar / pensar).",
+    "explanation": "Para perguntar a opinião de alguém de forma simples, 'What do you think?' traz a palavra de pergunta 'What' seguida do auxiliar 'do' e da ação 'think'.",
     "breakdown": [
       {
-        "word": "What",
-        "meaning": "O que / Qual — palavra interrogativa."
-      },
-      {
-        "word": "do you",
-        "meaning": "Você... ? — do: marcação de pergunta; you: você."
+        "word": "What do you",
+        "meaning": "O que você — What: o que; do: auxiliar de pergunta; you: você."
       },
       {
         "word": "think",
-        "meaning": "Acha / Pensa — verbo de opinião."
+        "meaning": "Acha / Pensa — verbo achar ou pensar."
       }
     ],
-    "pronuncia": "Em 'What', diga 'uót' travando o som no 't'. Junte 'do you' para soar 'dú iú'. Na palavra 'think', coloque a ponta da língua entre os dentes da frente e solte um ar leve dizendo 'thínk', sem voz, parando o som no 'k'.\nLeia: Uót dú iú thínk?"
+    "pronuncia": "Em 'What do you', projete os lábios em bico no 'w' em 'wót' e diga 'dúu yúu'. Em 'think', coloque a ponta da língua entre os dentes da frente e apenas assopre ar, sem vibrar a voz para 'th', mantendo o queixo ligeiramente solto, sem puxar sorriso no 'ı' em 'thınk', cortando a seco o 'k' final.\nLeia: Wót dúu yúu thınk?"
   }
 }

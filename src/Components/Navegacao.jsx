@@ -63,7 +63,9 @@ export function EscolherTopic({
 
   const [topicosBaixadosLocal, setTopicosBaixadosLocal] = React.useState([]);
   const [baixandoTopicoLocal, setBaixandoTopicoLocal] = React.useState(null);
-  const topicosBaixados = topicosBaixadosProp !== undefined ? topicosBaixadosProp : topicosBaixadosLocal;
+  const topicosBaixados = React.useMemo(() => {
+    return Array.from(new Set([...(topicosBaixadosProp || []), ...topicosBaixadosLocal]));
+  }, [topicosBaixadosProp, topicosBaixadosLocal]);
   const baixandoTopico = baixandoTopicoProp !== undefined ? baixandoTopicoProp : baixandoTopicoLocal;
   const setTopicosBaixados = setTopicosBaixadosLocal;
   const setBaixandoTopico = setBaixandoTopicoLocal;
@@ -78,7 +80,9 @@ export function EscolherTopic({
 
   const baixarTopicoOffline = async (nomeTopico) => {
     if (baixarTopicoOfflineProp) {
-      return await baixarTopicoOfflineProp(nomeTopico);
+      const res = await baixarTopicoOfflineProp(nomeTopico);
+      setTopicosBaixadosLocal(prev => prev.includes(nomeTopico) ? prev : [...prev, nomeTopico]);
+      return res;
     }
     if (baixandoTopico) return;
     setBaixandoTopico(nomeTopico);

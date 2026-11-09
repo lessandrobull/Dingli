@@ -1,10 +1,10 @@
 {
   "31": {
-    "explanation": "Em inglês, as pessoas não dizem que possuem anos de idade, mas sim que 'são' velhas na quantidade daqueles anos. Por isso, em vez do verbo ter, usa-se 'I am' junto com o número e a expressão 'years old' no final para indicar a idade completa.",
+    "explanation": "Em inglês, não dizemos que 'temos' idade com o verbo ter, mas sim que 'somos velhos' um determinado número de anos. Por isso, usa-se 'I am' seguido da quantidade de anos e da expressão 'years old'.",
     "breakdown": [
       {
         "word": "I am",
-        "meaning": "Eu sou / estou — I: eu; am: sou / estou."
+        "meaning": "Eu sou / estou — I: eu; am: sou/estou (verbo ser/estar)."
       },
       {
         "word": "twenty",
@@ -16,519 +16,665 @@
       },
       {
         "word": "old",
-        "meaning": "De idade / velho — indica a quantidade de tempo de vida."
+        "meaning": "De idade / Velho — adjetivo usado para quantificar a idade."
       }
     ],
-    "pronuncia": "Comece em 'I am' falando 'ai ém'. Na palavra 'twenty', diga 'tuên-ti' (ou 'tuên-di' mais suave). Em 'years', faça um som de 'i' inicial prolongado, curve a ponta da língua para trás para fazer o 'r' e termine com som de 'z' ('í-êrz'). Encerre com 'old', onde a língua sobe para o 'l' e encosta no céu da boca para o 'd' sem pronunciar vogal no fim ('ôuld').\nLeia: Ai ém tuên-ti í-êrz ôuld."
+    "pronuncia": "Em 'I am', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'æ' em 'æm'. Em 'twenty', solte o som suavemente. Em 'years', ao fazer o 'ı' curto, lembre-se de deixar o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' ('yırz'), e corte o som da consoante sem colocar 'i' no final. Conclua em 'old' travando a ponta da língua no céu da boca para o 'l' sem deixar virar som de 'u' ('ôuld').\nLeia: Ái æm twén-ti yırz ôuld.",
+    "id": 31
   },
   "32": {
-    "explanation": "Em inglês, a qualidade ou tamanho de algo vem sempre antes do objeto, por isso temos 'small flat' (pequeno apartamento). Além disso, as palavras menores como 'in' e 'a' se fundem na fala rápida para manter a frase fluida.",
+    "explanation": "Para dizer que alguém mora em um lugar pequeno, o inglês coloca o adjetivo 'small' antes do substantivo 'flat'. Além disso, 'flat' é a palavra muito comum no inglês para se referir a um apartamento.",
     "breakdown": [
       {
-        "word": "She lives",
-        "meaning": "Ela mora — She: ela; lives: mora / vive."
+        "word": "She",
+        "meaning": "Ela — pronome pessoal feminino."
       },
       {
-        "word": "in a",
-        "meaning": "Em um / num — in: em; a: um / uma."
+        "word": "lives in",
+        "meaning": "Mora em / Vive em — lives: mora/vive (forma da 3ª pessoa); in: em/dentro de."
+      },
+      {
+        "word": "a",
+        "meaning": "Um / Uma — artigo indefinido."
       },
       {
         "word": "small",
-        "meaning": "Pequeno — tamanho reduzido."
+        "meaning": "Pequeno / Pequena — adjetivo de tamanho."
       },
       {
         "word": "flat",
-        "meaning": "Apartamento — termo comum para moradia em prédio."
+        "meaning": "Apartamento — substantivo (termo muito comum no inglês britânico)."
       }
     ],
-    "pronuncia": "Fale 'She' com chiado suave ('chí'). Em 'lives', termine no som de 'z' sem adicionar vogal no final ('lívz') e emende direto com 'in a', formando 'lív-zi-nâ'. Em 'small', não coloque som de 'e' antes do 's', comece direto soprando o 's' e subindo a língua para o 'l' ('smól'). Termine em 'flat' travando o 't' no céu da boca no final ('flét').\nLeia: Chí lívz i-nâ smól flét."
+    "pronuncia": "Comece com 'She' fazendo o chiado suave de 'chíi'. Em 'lives in', faça o 'ı' curto em 'lıvz' e 'ın' mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i', e conecte direto no som neutro 'ə' de 'a' ('ı-nə'), deixando a mandíbula relaxada caída e língua frouxa com um som curtíssimo e preguiçoso. Em 'small', suba a ponta da língua no céu da boca no 'l' final sem virar 'u' ('smól'). Em 'flat', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' ('flæt'), cortando o 't' a seco.\nLeia: Chíi lıvz ı-nə smól flæt.",
+    "id": 32
   },
   "33": {
-    "explanation": "Para fazer uma pergunta no presente, o inglês coloca a palavra 'Do' antes da pessoa. A palavra 'any' entra para perguntar se a pessoa tem 'algum' ou 'quaisquer' irmãos, tornando a expressão natural no dia a dia.",
+    "explanation": "Para fazer uma pergunta no presente em inglês, usamos o auxiliar 'Do' no início. A palavra 'any' entra para dar o sentido de 'algum' ou 'quaisquer' irmãos no plural.",
     "breakdown": [
       {
         "word": "Do you",
-        "meaning": "Você — Do: sinaliza pergunta no presente; you: você."
+        "meaning": "Você...? — Do: verbo auxiliar de pergunta no presente; you: você."
       },
       {
         "word": "have",
-        "meaning": "Tem / Possui — verbo ter."
+        "meaning": "Tem / Possui — verbo ter na forma base."
       },
       {
         "word": "any",
-        "meaning": "Algum / Quaisquer — indica quantidade em perguntas."
+        "meaning": "Algum / Quaisquer — determinante usado em perguntas."
       },
       {
         "word": "brothers",
-        "meaning": "Irmãos — plural de brother (irmão)."
+        "meaning": "Irmãos — plural de brother (irmão homem)."
       }
     ],
-    "pronuncia": "Diga 'Do you' de forma rápida como 'du iú'. O verbo 'have' começa com um sopro leve de 'r' e termina em 'v' seco ('hév'). Diga 'any' como 'ê-ni'. Em 'brothers', coloque a pontinha da língua entre os dentes da frente no 'th' ('brâ-dhêrz'), curvando a língua no céu da boca para o 'r' e terminando com som de 'z'.\nLeia: Du iú hév ê-ni brâ-dhêrz?"
+    "pronuncia": "Comece com 'Do you' projetando os lábios para frente em 'Dúu yúu'. Em 'have', use o 'æ' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' ('hæv'). Em 'any', fale 'é-ni'. Para 'brothers', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh', seguido do som neutro 'ə' mantendo a mandíbula relaxada caída e língua frouxa ('brâ-dhərz').\nLeia: Dúu yúu hæv é-ni brâ-dhərz?",
+    "id": 33
   },
   "34": {
-    "explanation": "Para dizer 'não' junto de uma ação no presente, os nativos usam 'do not'. Além disso, eles sempre especificam a quantidade usando 'a sister' (uma irmã), em vez de deixar a palavra solta como fazemos em português.",
+    "explanation": "Para negar uma frase simples no presente, o inglês combina o auxiliar 'do' com 'not' antes do verbo principal. O artigo 'a' é usado para dizer 'uma irmã'.",
     "breakdown": [
       {
-        "word": "I do not",
-        "meaning": "Eu não — I: eu; do not: forma de negar no presente."
+        "word": "I",
+        "meaning": "Eu — pronome pessoal."
       },
       {
-        "word": "have a",
-        "meaning": "Tenho uma — have: ter; a: uma."
+        "word": "do not",
+        "meaning": "Não — combinação do auxiliar do com a partícula de negação not."
+      },
+      {
+        "word": "have",
+        "meaning": "Tenho — verbo ter."
+      },
+      {
+        "word": "a",
+        "meaning": "Uma — artigo indefinido."
       },
       {
         "word": "sister",
-        "meaning": "Irmã — membro feminino da família."
+        "meaning": "Irmã — substantivo feminino."
       }
     ],
-    "pronuncia": "Inicie com 'I do not' falando 'ai du nót', travando a língua no céu da boca no 't' final. Grude 'have' e 'a' para soar como 'hé-vâ'. Em 'sister', fale o 's' bem limpo e curve a língua no final para fazer o 'r' caipira ('sís-têr').\nLeia: Ai du nót hé-vâ sís-têr."
+    "pronuncia": "Diga 'Ái dúu nót'. Em 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' ('hæv'). No 'a', use o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa. Em 'sister', faça o 'ı' curto em 'sıs' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i', e termine no som neutro 'ə' em 'tər' ('sıs-tər').\nLeia: Ái dúu nót hæv ə sıs-tər.",
+    "id": 34
   },
   "35": {
-    "explanation": "A ordem das palavras em inglês coloca 'phone' (telefone) antes de 'number' (número) para descrever o tipo de número. Na hora de falar os dígitos, os nativos dizem cada número individualmente para garantir clareza.",
+    "explanation": "No inglês, o tipo de número vem antes da palavra 'number', formando 'phone number' para 'número de telefone'. Ao ditar um número, cada dígito é falado individualmente.",
     "breakdown": [
       {
-        "word": "My phone number",
-        "meaning": "Meu número de telefone — My: meu; phone: telefone; number: número."
+        "word": "My",
+        "meaning": "Meu / Minha — pronome possessivo."
+      },
+      {
+        "word": "phone number",
+        "meaning": "Número de telefone — phone: telefone; number: número."
+      },
+      {
+        "word": "is",
+        "meaning": "É — verbo ser/estar na 3ª pessoa."
+      },
+      {
+        "word": "5550192",
+        "meaning": "5550192 — dígitos pronunciados um por um."
+      }
+    ],
+    "pronuncia": "Em 'My', diga 'mái'. Em 'phone', deslize para o 'ou' em 'fôun'. Em 'number', use o som neutro 'ə' na segunda sílaba deixando a mandíbula relaxada caída e língua frouxa ('nâm-bər'). Em 'is', faça o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido entre 'e' e 'i' com zumbido de 'z' ('ız'). Em seguida, diga cada número pausadamente sem adicionar 'i' no final de 'fáiv' ou 'náin'.\nLeia: Mái fôun nâm-bər ız fáiv fáiv fáiv ôu wân náin túu.",
+    "id": 35
+  },
+  "36": {
+    "explanation": "A pergunta começa com 'What is' (qual é) para pedir uma informação direta, seguida do pronome de posse 'your' e do substantivo 'address'.",
+    "breakdown": [
+      {
+        "word": "What is",
+        "meaning": "Qual é / O que é — What: qual/o que; is: é."
+      },
+      {
+        "word": "your",
+        "meaning": "Seu / Sua — pronome possessivo de 2ª pessoa."
+      },
+      {
+        "word": "address",
+        "meaning": "Endereço — substantivo."
+      }
+    ],
+    "pronuncia": "Comece com 'What' em 'wót'. Em 'is', faça o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' ('ız'). Diga 'yór'. Em 'address', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'æ' ('æ-drés').\nLeia: Wót ız yór æ-drés?",
+    "id": 36
+  },
+  "37": {
+    "explanation": "A estrutura da frase é idêntica ao português: o sujeito 'He' (ele), o verbo 'is' (é/está) e o estado 'married' (casado).",
+    "breakdown": [
+      {
+        "word": "He",
+        "meaning": "Ele — pronome pessoal masculino."
+      },
+      {
+        "word": "is",
+        "meaning": "É / Está — verbo ser/estar."
+      },
+      {
+        "word": "married",
+        "meaning": "Casado — adjetivo que indica estado civil."
+      }
+    ],
+    "pronuncia": "Comece com 'He' soprando um suave 'h' em 'híi'. Em 'is', use o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' ('ız'). Em 'married', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o 'æ' ('mæ'), seguido do 'ı' curto na última sílaba ('mæ-rıd'), cortando o 'd' a seco sem colocar 'i' no final.\nLeia: Híi ız mæ-rıd.",
+    "id": 37
+  },
+  "38": {
+    "explanation": "Para negar com o plural 'Eles', usamos 'They are not', que significa 'Eles não são'. O adjetivo 'married' permanece no singular, pois adjetivos em inglês não mudam para o plural.",
+    "breakdown": [
+      {
+        "word": "They",
+        "meaning": "Eles / Elas — pronome pessoal do plural."
+      },
+      {
+        "word": "are not",
+        "meaning": "Não são / Não estão — are: são/estão; not: partícula de negação."
+      },
+      {
+        "word": "married",
+        "meaning": "Casados — adjetivo de estado civil."
+      }
+    ],
+    "pronuncia": "Em 'They', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh' ('dhêi'). Em 'are', diga 'ár'. Em 'not', corte o 't' a seco ('nót'). Em 'married', faça o 'æ' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É', e o 'ı' curto na segunda sílaba deixando o queixo solto ('mæ-rıd').\nLeia: Dhêi ár nót mæ-rıd.",
+    "id": 38
+  },
+  "39": {
+    "explanation": "Em perguntas com o verbo 'to be', a ordem das palavras inverte: o verbo 'Is' vem antes do sujeito 'she'. Antes da profissão 'doctor', o inglês exige o artigo 'a' (uma).",
+    "breakdown": [
+      {
+        "word": "Is",
+        "meaning": "É / Está — verbo ser/estar no início de pergunta."
+      },
+      {
+        "word": "she",
+        "meaning": "Ela — pronome pessoal feminino."
+      },
+      {
+        "word": "a",
+        "meaning": "Uma — artigo indefinido."
+      },
+      {
+        "word": "doctor",
+        "meaning": "Médica / Médico — substantivo da profissão."
+      }
+    ],
+    "pronuncia": "Inicie com 'Is' fazendo o 'ı' curto com o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido entre 'e' e 'i' ('ız'). Diga 'she' em 'chíi'. No artigo 'a', use o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa. Em 'doctor', pronuncie a última sílaba também com o som neutro 'ə' ('dók-tər').\nLeia: Iz chíi ə dók-tər?",
+    "id": 39
+  },
+  "40": {
+    "explanation": "Sempre que disser sua profissão em inglês, é obrigatório colocar o artigo 'a' (ou 'an') antes do cargo. Diz-se ao pé da letra 'Eu sou um professor'.",
+    "breakdown": [
+      {
+        "word": "I am",
+        "meaning": "Eu sou — I: eu; am: sou/estou."
+      },
+      {
+        "word": "a",
+        "meaning": "Um / Uma — artigo indefinido obrigatório antes de profissões."
+      },
+      {
+        "word": "teacher",
+        "meaning": "Professor / Professora — substantivo da profissão."
+      }
+    ],
+    "pronuncia": "Em 'I am', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o 'æ' em 'æm'. No artigo 'a', solte o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa. Em 'teacher', solte o estalo de 'tíi' e termine com a sílaba neutra 'ə' em 'tchər' ('tíi-tchər').\nLeia: Ái æm ə tíi-tchər.",
+    "id": 40
+  },
+  "41": {
+    "explanation": "Para se referir ao mês do aniversário, o inglês utiliza a preposição 'in' antes de 'May'. A palavra 'birthday' junta 'birth' (nascimento) com 'day' (dia).",
+    "breakdown": [
+      {
+        "word": "My",
+        "meaning": "Meu / Minha — pronome possessivo."
+      },
+      {
+        "word": "birthday",
+        "meaning": "Aniversário — birth: nascimento; day: dia."
       },
       {
         "word": "is",
         "meaning": "É — verbo ser/estar."
       },
       {
-        "word": "5550192",
-        "meaning": "Cinco cinco cinco zero um nove dois — sequência numérica."
+        "word": "in May",
+        "meaning": "Em maio — in: em (usado para meses); May: o mês de maio."
       }
     ],
-    "pronuncia": "Fale 'My' como 'mai'. Em 'phone', comece no 'f' e termine no 'n' seco ('fôun'). Em 'number', o som sai ligeiramente pelo nariz no início e a língua curva no final ('nâm-bêr'). O 'is' tem som de 'z' curto ('iz'). Pronuncie os números pausadamente: 'faiv faiv faiv ôu uan nai-n tu'.\nLeia: Mai fôun nâm-bêr iz faiv faiv faiv ôu uan nai-n tu."
+    "pronuncia": "Diga 'My' em 'mái'. Em 'birthday', para a vogal '3r', mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada, e coloque a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz para o 'th' ('b3rth-dêi'). Em 'is' e 'in', use o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido entre 'e' e 'i' ('ız', 'ın'). Termine em 'mêi'.\nLeia: Mái b3rth-dêi ız ın mêi.",
+    "id": 41
   },
-  "36": {
-    "explanation": "Para perguntar 'qual é', junta-se 'What' (o que / qual) com 'is' (é). A palavra 'your' indica posse ('seu') e vem logo antes da palavra principal 'address' (endereço).",
+  "42": {
+    "explanation": "A pergunta começa com a palavra interrogativa 'When' (quando), seguida da inversão com o verbo 'is' antes de 'your birthday'.",
     "breakdown": [
       {
-        "word": "What is",
-        "meaning": "Qual é — What: o que / qual; is: é."
-      },
-      {
-        "word": "your",
-        "meaning": "Seu / Sua — indica posse."
-      },
-      {
-        "word": "address",
-        "meaning": "Endereço — local de residência ou trabalho."
-      }
-    ],
-    "pronuncia": "Emende 'What' e 'is' fazendo o 't' soar como um 'd' bem leve entre vogais, resultando em 'uó-tiz' ou 'uó-diz'. Em 'your', jogue a língua para trás no céu da boca ('iór'). Na palavra 'address', dê a maior força na segunda parte ('ê-DRÉS'), terminando no 's' limpo.\nLeia: Uó-diz iór ê-drés?"
-  },
-  "37": {
-    "explanation": "Esta frase segue exatamente a mesma lógica do português: junta-se a pessoa 'He' (ele), o verbo 'is' (é) e o estado da pessoa 'married' (casado).",
-    "breakdown": [
-      {
-        "word": "He",
-        "meaning": "Ele — pessoa do sexo masculino."
+        "word": "When",
+        "meaning": "Quando — pronome interrogativo de tempo."
       },
       {
         "word": "is",
-        "meaning": "É — estado presente."
+        "meaning": "É — verbo ser/estar."
       },
       {
-        "word": "married",
-        "meaning": "Casado — estado civil."
+        "word": "your",
+        "meaning": "Seu / Sua — pronome possessivo."
+      },
+      {
+        "word": "birthday",
+        "meaning": "Aniversário — data natalícia."
       }
     ],
-    "pronuncia": "Fale 'He' com um sopro suave de ar ('hí'). O 'is' soa com som de 'z' curto ('iz'). Em 'married', curve bastante a língua para o meio da boca para fazer o 'r' forte e termine travando no 'd' sem soltar som de 'de' no final ('mé-rid').\nLeia: Hí iz mé-rid."
-  },
-  "38": {
-    "explanation": "Em inglês, a palavra 'not' entra logo após o verbo 'are' para criar a negação. A estrutura fica: 'Eles são não casados', mantendo a ordem padrão das frases negativas.",
-    "breakdown": [
-      {
-        "word": "They",
-        "meaning": "Eles / Elas — plural de pessoa."
-      },
-      {
-        "word": "are not",
-        "meaning": "Não são — are: são; not: não."
-      },
-      {
-        "word": "married",
-        "meaning": "Casados — estado civil no plural."
-      }
-    ],
-    "pronuncia": "Comece 'They' encostando a ponta da língua entre os dentes da frente para soltar um 'D' soprado ('dhêi'). Em 'are', abra bem a boca e curve a língua para trás ('ár'). Em 'not', trave a língua no céu da boca no 't' ('nót'). Encerre em 'married' com a língua dobrada no 'r' ('mé-rid').\nLeia: Dhêi ár nót mé-rid."
-  },
-  "39": {
-    "explanation": "Para transformar uma afirmação em pergunta com o verbo ser/estar, os nativos invertem a ordem: o verbo 'Is' vem para o começo da frase. Além disso, no inglês é obrigatório usar 'a' (uma) antes de profissões.",
-    "breakdown": [
-      {
-        "word": "Is she",
-        "meaning": "Ela é? — Is: é; she: ela (ordem invertida para pergunta)."
-      },
-      {
-        "word": "a doctor",
-        "meaning": "Uma médica — a: uma; doctor: médica / médico."
-      }
-    ],
-    "pronuncia": "Diga 'Is she' juntando o som de 'z' do 'is' com o chiado de 'she', formando 'iz-chí'. O 'a' soa como um 'â' curto. Em 'doctor', pronuncie 'dók-tôr', curvando a língua no céu da boca para o 'r' final sem esticar a vogal.\nLeia: Iz chí â dók-tôr?"
-  },
-  "40": {
-    "explanation": "Sempre que você diz sua profissão em inglês, é preciso colocar a palavra 'a' (um / uma) antes do nome da profissão, mesmo que em português a gente não use essa palavra.",
-    "breakdown": [
-      {
-        "word": "I am",
-        "meaning": "Eu sou — I: eu; am: sou."
-      },
-      {
-        "word": "a teacher",
-        "meaning": "Um professor — a: um; teacher: professor / professora."
-      }
-    ],
-    "pronuncia": "Fale 'I am' como 'ai ém'. O 'a' soa como um 'â' leve. Na palavra 'teacher', comece com som de 't' forte, faça o chiado 'tch' no meio e dobre a língua para trás no final para fazer o 'r' ('tí-tchêr').\nLeia: Ai ém â tí-tchêr."
-  },
-  "41": {
-    "explanation": "Para falar de datas e meses, junta-se a palavra 'birthday' (aniversário) com a preposição 'in', que é usada em inglês antes de nomes de meses do ano.",
-    "breakdown": [
-      {
-        "word": "My birthday",
-        "meaning": "Meu aniversário — My: meu; birthday: dia do nascimento."
-      },
-      {
-        "word": "is in",
-        "meaning": "É em — is: é; in: em / no mês de."
-      },
-      {
-        "word": "May",
-        "meaning": "Maio — quinto mês do ano."
-      }
-    ],
-    "pronuncia": "Fale 'My' como 'mai'. Em 'birthday', faça a primeira parte 'bêrth' colocando a língua levemente entre os dentes para soltar o ar no 'th', e termine em 'dei' ('bêrth-dei'). Junte 'is in' com som de 'z' fluido ('i-zin'). Termine em 'May' falando 'mêi'.\nLeia: Mai bêrth-dei i-zin Mêi."
-  },
-  "42": {
-    "explanation": "A palavra 'When' (quando) vem no início da pergunta, seguida de 'is' (é) e 'your' (seu). A frase segue a mesma ordem direta do português para saber uma data especial.",
-    "breakdown": [
-      {
-        "word": "When is",
-        "meaning": "Quando é — When: quando; is: é."
-      },
-      {
-        "word": "your birthday",
-        "meaning": "Seu aniversário — your: seu; birthday: aniversário."
-      }
-    ],
-    "pronuncia": "Junte 'When' e 'is' de forma contínua como 'uê-niz'. Em 'your', jogue a língua para trás no céu da boca ('iór'). Em 'birthday', dobre a língua no 'r', sopre o 'th' com a ponta da língua nos dentes e feche com 'dei' ('bêrth-dei').\nLeia: Uên iz iór bêrth-dei?"
+    "pronuncia": "Em 'When', sopre um 'w' suave em 'wén'. Em 'is', faça o 'ı' curto com o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido entre 'e' e 'i' ('ız'). Diga 'your' em 'yór'. Em 'birthday', mantenha a boca neutra e curve a ponta da língua para trás para a vogal '3r', e coloque a ponta da língua entre os dentes da frente e apenas assopre ar sem vibrar para o 'th' ('b3rth-dêi').\nLeia: Wén ız yór b3rth-dêi?",
+    "id": 42
   },
   "43": {
-    "explanation": "Em inglês, o adjetivo 'big' (grande) vem antes do nome 'family' (família). A ordem é invertida em relação ao português para que a característica descreva o objeto logo em seguida.",
+    "explanation": "O adjetivo 'big' (grande) vem posicionado antes do substantivo 'family'. A estrutura da frase segue a ordem direta: sujeito + verbo + artigo + adjetivo + substantivo.",
     "breakdown": [
       {
-        "word": "I have a",
-        "meaning": "Eu tenho uma — I: eu; have: tenho; a: uma."
+        "word": "I",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "have",
+        "meaning": "Tenho — verbo ter."
+      },
+      {
+        "word": "a",
+        "meaning": "Uma — artigo indefinido."
       },
       {
         "word": "big",
-        "meaning": "Grande — de tamanho ou proporção considerável."
+        "meaning": "Grande — adjetivo de tamanho."
       },
       {
         "word": "family",
-        "meaning": "Família — grupo familiar."
+        "meaning": "Família — substantivo."
       }
     ],
-    "pronuncia": "Junte 'I have a' pronunciando 'ai hé-vâ', com um sopro suave no início. Em 'big', trave o som no 'g' final sem soltar 'gui' ('bíg'). Na palavra 'family', diga 'fé-mi-li' de forma leve e ritmada.\nLeia: Ai hé-vâ bíg fé-mi-li."
+    "pronuncia": "Em 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o 'æ' ('hæv'). No artigo 'a', use o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa. Em 'big', faça o 'ı' curto com o queixo solto ('bıg'). Em 'family', use o 'æ' na primeira sílaba e o som neutro 'ə' no meio ('fæ-mə-li').\nLeia: Ái hæv ə bıg fæ-mə-li.",
+    "id": 43
   },
   "44": {
-    "explanation": "Para fazer uma pergunta sobre outra pessoa ('ele') no presente, usa-se a palavra auxiliar 'does' logo após a palavra de pergunta 'Where' (onde). O verbo principal 'live' (morar) permanece na sua forma simples.",
+    "explanation": "Para fazer uma pergunta sobre onde uma terceira pessoa mora, usa-se 'Where' no início e o auxiliar 'does' antes de 'he'. O verbo principal 'live' permanece sem alterações.",
     "breakdown": [
       {
         "word": "Where",
-        "meaning": "Onde — indica lugar."
+        "meaning": "Onde — pronome interrogativo de lugar."
       },
       {
-        "word": "does he",
-        "meaning": "Ele — does: sinalizador de pergunta para ele/ela; he: ele."
+        "word": "does",
+        "meaning": "Auxiliar de pergunta — usado para ele/ela no presente."
+      },
+      {
+        "word": "he",
+        "meaning": "Ele — pronome pessoal masculino."
       },
       {
         "word": "live",
-        "meaning": "Mora / Vive — verbo morar."
+        "meaning": "Mora / Vive — verbo principal."
       }
     ],
-    "pronuncia": "Fale 'Where' abrindo o som e dobrando a língua para o 'r' ('uêr'). Junte 'does he' suavemente como 'dâz hí'. Em 'live', trave no som de 'v' no final sem colocar 'i' depois ('lív').\nLeia: Uêr dâz hí lív?"
+    "pronuncia": "Comece com 'Where' em 'wéər'. Diga 'does' com som seco em 'dâz'. Em 'he', faça 'híi'. Em 'live', use o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' ('lıv'), e trave os dentes no lábio no 'v' final sem soltar 'i'.\nLeia: Wéər dâz híi lıv?",
+    "id": 44
   },
   "45": {
-    "explanation": "Para negar ações no presente para 'ela', os nativos usam 'does not' antes do verbo 'have'. Além disso, o inglês exige colocar 'a' (um) antes do objeto 'car' para indicar a unidade.",
+    "explanation": "Ao negar uma frase no presente para ela ('she'), usamos o auxiliar 'does not'. O verbo principal volta para a forma base 'have', e adicionamos o artigo 'a' antes de 'car'.",
     "breakdown": [
       {
-        "word": "She does not",
-        "meaning": "Ela não — She: ela; does not: estrutura de negação."
+        "word": "She",
+        "meaning": "Ela — pronome pessoal."
       },
       {
-        "word": "have a",
-        "meaning": "Tem um — have: ter; a: um."
+        "word": "does not",
+        "meaning": "Não — combinação do auxiliar de 3ª pessoa com a negação not."
+      },
+      {
+        "word": "have",
+        "meaning": "Tem — verbo ter na forma base."
+      },
+      {
+        "word": "a",
+        "meaning": "Um — artigo indefinido."
       },
       {
         "word": "car",
-        "meaning": "Carro — automóvel."
+        "meaning": "Carro — substantivo."
       }
     ],
-    "pronuncia": "Diga 'She' com chiado ('chí'). Diga 'does not' como 'dâz nót', travando a língua no céu da boca no 't'. Junte 'have a' como 'hé-vâ'. Em 'car', solte um som de 'k' forte e curve a língua para o céu da boca para fazer o 'r' caipira ('kár').\nLeia: Chí dâz nót hé-vâ kár."
+    "pronuncia": "Diga 'She' em 'chíi' e 'does not' em 'dâz nót'. Em 'have', use o 'æ' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' ('hæv'). No artigo 'a', faça o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa. Termine em 'car' enrolando a língua para o 'r' ('kár').\nLeia: Chíi dâz nót hæv ə kár.",
+    "id": 45
   },
   "46": {
-    "explanation": "A pergunta começa com 'Are you' (você é). A palavra 'from' indica a origem ('de'), e a qualidade 'big' (grande) vem posicionada antes de 'city' (cidade).",
+    "explanation": "Perguntas de origem começam com 'Are you from' (você é de). O adjetivo 'big' se posiciona logo antes do substantivo 'city'.",
     "breakdown": [
       {
         "word": "Are you",
-        "meaning": "Você é / você vem — Are: é / são; you: você."
+        "meaning": "Você é...? — inversão do verbo ser/estar com o sujeito em pergunta."
       },
       {
-        "word": "from a",
-        "meaning": "De uma — from: de / vindo de; a: uma."
+        "word": "from",
+        "meaning": "De / Vindo de — preposição de origem."
       },
       {
-        "word": "big city",
-        "meaning": "Cidade grande — big: grande; city: cidade."
+        "word": "a",
+        "meaning": "Uma — artigo indefinido."
+      },
+      {
+        "word": "big",
+        "meaning": "Grande — adjetivo de dimensão."
+      },
+      {
+        "word": "city",
+        "meaning": "Cidade — substantivo urbano."
       }
     ],
-    "pronuncia": "Diga 'Are you' como 'ár iú'. Em 'from a', feche os lábios no 'm' e emende com 'a', criando 'fróm-â'. Em 'big', trave o 'g' seco ('bíg'). Em 'city', o 't' do meio soa como um 'd' suave no inglês americano, ficando 'sí-di'.\nLeia: Ár iú fróm-â bíg sí-di?"
+    "pronuncia": "Em 'Are you', diga 'ár yúu'. Em 'from', fale 'fróm'. No artigo 'a', use o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa. Em 'big', faça o 'ı' curto com o queixo solto ('bıg'). Em 'city', use o 'ı' curto na primeira sílaba e faça um 'r' brando leve entre as vogais ('sı-rı').\nLeia: Ár yúu fróm ə bıg sı-rı?",
+    "id": 46
   },
   "47": {
-    "explanation": "A característica 'favorite' (favorita) vem logo antes de 'color' (cor). A estrutura em inglês coloca a qualidade da coisa na frente do nome da coisa.",
+    "explanation": "No inglês, o adjetivo 'favorite' qualifica o substantivo 'color' vindo antes dele. A frase se completa com 'is' e a cor correspondente.",
     "breakdown": [
       {
-        "word": "My favorite",
-        "meaning": "Minha favorita — My: minha; favorite: preferida."
+        "word": "My",
+        "meaning": "Minha / Meu — pronome possessivo."
       },
       {
-        "word": "color is",
-        "meaning": "Cor é — color: cor; is: é."
+        "word": "favorite",
+        "meaning": "Favorita / Favorito — adjetivo de preferência."
+      },
+      {
+        "word": "color",
+        "meaning": "Cor — substantivo."
+      },
+      {
+        "word": "is",
+        "meaning": "É — verbo ser/estar."
       },
       {
         "word": "blue",
-        "meaning": "Azul — a cor azul."
+        "meaning": "Azul — adjetivo/substantivo de cor."
       }
     ],
-    "pronuncia": "Diga 'My' como 'mai'. Em 'favorite', fale 'fêi-vrrit', curvando a língua no 'r' e travando o 't' no final. Em 'color is', fale 'kâ-lôr' dobrando a língua e junte o som com 'is', formando 'kâ-lô-riz'. Termine em 'blue' prolongando o som de 'u' ('blú').\nLeia: Mai fêi-vrrit kâ-lô-riz blú."
+    "pronuncia": "Em 'favorite', use o som neutro 'ə' na sílaba do meio e o 'ı' curto no final deixando o queixo solto ('fêi-və-rıt'). Em 'color', use o som neutro 'ə' na segunda sílaba ('kâ-lər'). Em 'is', faça o 'ı' curto com som de 'z' ('ız'). Em 'blue', faça o bico firme do 'u' longo ('blúu').\nLeia: Mái fêi-və-rıt kâ-lər ız blúu.",
+    "id": 47
   },
   "48": {
-    "explanation": "Para perguntar qual é a profissão ou ocupação de alguém, os nativos perguntam de forma direta 'What is' (qual é) 'your job' (seu trabalho).",
+    "explanation": "Para saber a ocupação de alguém de forma simples, pergunta-se 'What is your job?', que significa literalmente 'Qual é o seu emprego/trabalho?'.",
     "breakdown": [
       {
         "word": "What is",
-        "meaning": "Qual é — What: o que / qual; is: é."
+        "meaning": "Qual é — What: qual; is: é."
       },
       {
-        "word": "your job",
-        "meaning": "Seu trabalho — your: seu; job: emprego / trabalho."
+        "word": "your",
+        "meaning": "Seu / Sua — pronome possessivo."
+      },
+      {
+        "word": "job",
+        "meaning": "Trabalho / Emprego — substantivo."
       }
     ],
-    "pronuncia": "Junte 'What' e 'is' fazendo som de 'uó-tiz' ou 'uó-diz'. Em 'your', curve a língua para trás ('iór'). Em 'job', comece com um som de 'dj' forte e encerre travando no 'b' seco sem soltar vogal ('djób').\nLeia: Uó-diz iór djób?"
+    "pronuncia": "Diga 'What' em 'wót'. Em 'is', use o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido entre 'e' e 'i' ('ız'). Diga 'your' em 'yór'. Em 'job', encoste a língua no céu da boca para o estalo de 'd' antes do chiado com voz 'dj' ('djób'), travando o 'b' a seco sem colocar 'i' no final.\nLeia: Wót ız yór djób?",
+    "id": 48
   },
   "49": {
-    "explanation": "A ação 'works' ganha a letra 's' no final porque estamos falando de 'ele' (He) no presente. As palavras 'in' e 'a' se conectam para formar o som de 'em um'.",
+    "explanation": "Para expressar a ação realizada por ele ('he'), o verbo 'work' recebe um 's' final no presente. A preposição 'in' e o artigo 'a' se fundem sonoramente antes de 'bank'.",
     "breakdown": [
       {
-        "word": "He works",
-        "meaning": "Ele trabalha — He: ele; works: trabalha."
+        "word": "He",
+        "meaning": "Ele — pronome pessoal."
+      },
+      {
+        "word": "works",
+        "meaning": "Trabalha — verbo work na 3ª pessoa do singular."
       },
       {
         "word": "in a",
-        "meaning": "Em um / num — in: em; a: um."
+        "meaning": "Em um — in: em; a: um."
       },
       {
         "word": "bank",
         "meaning": "Banco — instituição financeira."
       }
     ],
-    "pronuncia": "Fale 'He' soprando o ar ('hí'). Em 'works', curve a língua para fazer o 'r' e termine no som de 'ks' seco ('uêrks'). Junte 'in a' como 'i-nâ'. Em 'bank', abra o som da vogal e termine travando no 'k' ('bénk').\nLeia: Hí uêrks i-nâ bénk."
+    "pronuncia": "Diga 'He' em 'híi'. Em 'works', para a vogal '3r', mantenha a boca neutra e curve a ponta da língua para trás no céu da boca sem encostar em nada ('w3rks'). Em 'in a', conecte o 'ı' curto com o som neutro 'ə' ('ı-nə'). Em 'bank', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o 'æ' ('bæŋk').\nLeia: Híi w3rks ı-nə bæŋk.",
+    "id": 49
   },
   "50": {
-    "explanation": "Frase direta de descrição pessoal. Liga-se a pessoa 'I' com o verbo 'am' (sou) e o adjetivo 'tall' (alto).",
+    "explanation": "Frase de estrutura simples e direta: o sujeito e verbo 'I am' ligados diretamente ao adjetivo de estatura 'tall'.",
     "breakdown": [
       {
         "word": "I am",
-        "meaning": "Eu sou — I: eu; am: sou."
+        "meaning": "Eu sou / estou — I: eu; am: sou/estou."
       },
       {
         "word": "tall",
-        "meaning": "Alto — referente a estatura física."
+        "meaning": "Alto / Alta — adjetivo de estatura."
       }
     ],
-    "pronuncia": "Diga 'I am' fluidamente como 'ai ém'. Na palavra 'tall', comece com 't' bem marcado, fale o som de 'ó' e suba a ponta da língua para encostar no céu da boca para fazer o 'l' encorpado ('tól').\nLeia: Ai ém tól."
+    "pronuncia": "Em 'I am', use o 'æ' em 'æm' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'tall', pronuncie com som de 'ó' aberto e suba a ponta da língua travando no céu da boca para o 'l' sem virar som de 'u' ('tól').\nLeia: Ái æm tól.",
+    "id": 50
   },
   "51": {
-    "explanation": "Por ser uma pergunta, o verbo 'Is' (está) vem posicionado antes do sujeito 'your father' (seu pai). A expressão 'at home' é o jeito padrão de dizer 'em casa'.",
+    "explanation": "Perguntas com o verbo ser/estar iniciam com 'Is', seguido do sujeito 'your father'. A expressão 'at home' é uma forma fixa para dizer 'em casa'.",
     "breakdown": [
       {
-        "word": "Is your",
-        "meaning": "Seu... está? — Is: está; your: seu."
+        "word": "Is",
+        "meaning": "Está / É — verbo no início de pergunta."
       },
       {
-        "word": "father",
-        "meaning": "Pai — figura paterna."
+        "word": "your father",
+        "meaning": "Seu pai — your: seu; father: pai."
       },
       {
         "word": "at home",
-        "meaning": "Em casa — at: em / no lugar; home: lar / casa."
+        "meaning": "Em casa — at: em/no; home: casa/lar."
       }
     ],
-    "pronuncia": "Junte 'Is your' fazendo som de 'iz iór'. Em 'father', fale 'fá-dhêr', encostando a ponta da língua entre os dentes no 'th' e curvando a língua no final para o 'r'. Junte 'at home' travando o 't' levemente e soprando o 'h', soando como 'ét hôum'.\nLeia: Iz iór fá-dhêr ét hôum?"
+    "pronuncia": "Em 'Is', use o 'ı' curto com o queixo solto ('ız'). Diga 'your' em 'yór'. Em 'father', coloque a ponta da língua entre os dentes da frente soltando a voz para o 'dh', e termine com o som neutro 'ə' ('fá-dhər'). Em 'at home', use o 'æ' em 'æt' abrindo a mandíbula na vertical em 'A' e puxando o canto da boca para 'É', e deslize para o 'ôu' em 'hôum'.\nLeia: Iz yór fá-dhər æt hôum?",
+    "id": 51
   },
   "52": {
-    "explanation": "Em inglês, usa-se 'an' em vez de 'a' quando a palavra seguinte começa com som de vogal, como em 'apartment'. Isso ajuda a frase a fluir sem interrupções de som.",
+    "explanation": "Usamos o artigo 'an' em vez de 'a' porque a palavra seguinte, 'apartment', começa com som de vogal. Na fala natural, 'live in an' conecta-se em uma só emissão de voz.",
     "breakdown": [
       {
-        "word": "We live",
-        "meaning": "Nós moramos — We: nós; live: moramos / vivemos."
+        "word": "We",
+        "meaning": "Nós — pronome pessoal."
       },
       {
-        "word": "in an",
-        "meaning": "Em um — in: em; an: um (usado antes de som de vogal)."
+        "word": "live in",
+        "meaning": "Moramos em / Vivemos em — live: morar; in: em."
+      },
+      {
+        "word": "an",
+        "meaning": "Um — artigo indefinido (usado antes de som de vogal)."
       },
       {
         "word": "apartment",
-        "meaning": "Apartamento — residência em edifício."
+        "meaning": "Apartamento — substantivo."
       }
     ],
-    "pronuncia": "Diga 'We' como 'uí'. Em 'live in an', junte tudo de forma contínua: 'lív-i-nân', mantendo os sons de 'v' e 'n' ligados. Em 'apartment', fale 'â-párt-mênt', curvando a língua no 'r' e travando o 't' no final sem soltar vogal.\nLeia: Uí lív i-nân â-párt-mênt."
+    "pronuncia": "Diga 'We' em 'wii'. Em 'live in', faça o 'ı' curto deixando o queixo ligeiramente solto em 'lı-vın'. Em 'an', use o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa ('ən'). Em 'apartment', inicie com o som neutro 'ə' e termine a última sílaba em 'mənt' sem soltar 'i' no final ('ə-párt-mənt').\nLeia: Wii lı-vın ən ə-párt-mənt.",
+    "id": 52
   },
   "53": {
-    "explanation": "A palavra 'Their' significa 'deles' ou 'delas' e vem no começo para indicar de quem é a casa. A palavra 'very' (muito) intensifica a característica 'old' (antiga).",
+    "explanation": "O pronome possessivo 'Their' indica posse no plural ('deles/delas'). O adjetivo 'old' é intensificado pela palavra 'very' (muito) vindo logo antes.",
     "breakdown": [
       {
-        "word": "Their house",
-        "meaning": "A casa deles — Their: deles/delas; house: casa."
+        "word": "Their",
+        "meaning": "Deles / Delas — pronome possessivo da 3ª pessoa do plural."
       },
       {
-        "word": "is very",
-        "meaning": "É muito — is: é; very: muito."
+        "word": "house",
+        "meaning": "Casa — substantivo."
       },
       {
-        "word": "old",
-        "meaning": "Antiga / Velha — de idade avançada."
+        "word": "is",
+        "meaning": "É — verbo ser/estar."
+      },
+      {
+        "word": "very old",
+        "meaning": "Muito antiga / Muito velha — very: muito; old: antiga/velha."
       }
     ],
-    "pronuncia": "Em 'Their', ponha a ponta da língua entre os dentes da frente ('dhêr') e curve a língua para trás. Em 'house', solte o ar no 'h' e termine com som de 's' ('háus'). Junte 'is very' como 'iz vé-ri'. Termine em 'old' puxando a língua para cima no 'l' e travando o 'd' ('ôuld').\nLeia: Dhêr háus iz vé-ri ôuld."
+    "pronuncia": "Em 'Their', coloque a ponta da língua entre os dentes da frente soltando a voz para o 'dh' ('dhéər'). Sopre o 'h' morno em 'house' ('háus'). Em 'is', faça o 'ı' curto com o queixo solto ('ız'). Diga 'very' em 'vé-ri'. Em 'old', trave a língua no céu da boca para o 'l' sem virar 'u' ('ôuld').\nLeia: Dhéər háus ız vé-ri ôuld.",
+    "id": 53
   },
   "54": {
-    "explanation": "A palavra 'his' significa 'dele'. A expressão para 'sobrenome' em inglês é 'last name', que literalmente significa 'último nome'.",
+    "explanation": "Em inglês, a expressão usual para 'sobrenome' é 'last name' (literalmente 'último nome'). Usa-se 'his' para indicar que o sobrenome pertence a ele.",
     "breakdown": [
       {
         "word": "What is",
-        "meaning": "Qual é — What: o que / qual; is: é."
+        "meaning": "Qual é — What: qual; is: é."
       },
       {
         "word": "his",
-        "meaning": "Dele — indica posse masculina."
+        "meaning": "Dele / Seu — pronome possessivo masculino."
       },
       {
         "word": "last name",
         "meaning": "Sobrenome — last: último; name: nome."
       }
     ],
-    "pronuncia": "Junte 'What is his' em um fluxo só como 'uó-diz hiz'. Em 'last name', fale 'lést néim', travando o 't' de 'last' de forma rápida antes de entrar no 'n' de 'name'.\nLeia: Uó-diz hiz lést néim?"
+    "pronuncia": "Diga 'What is' ligando 'wót' ao 'ı' curto de 'ız' ('wót ız'). Em 'his', sopre o 'h' e use o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido entre 'e' e 'i' ('hız'). Em 'last', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' ('læst'). Termine em 'nêim'.\nLeia: Wót ız hız læst nêim?",
+    "id": 54
   },
   "55": {
-    "explanation": "A negação é feita com 'not' após o verbo 'am'. Assim como em outras profissões, os nativos colocam a palavra 'a' (um / uma) antes de 'nurse' (enfermeiro/a).",
+    "explanation": "Para negar uma profissão ou identidade, coloca-se a palavra 'not' logo após 'I am'. O artigo 'a' continua sendo necessário antes do substantivo 'nurse'.",
     "breakdown": [
       {
         "word": "I am not",
         "meaning": "Eu não sou — I: eu; am: sou; not: não."
       },
       {
-        "word": "a nurse",
-        "meaning": "Um enfermeiro / uma enfermeira — a: um/uma; nurse: enfermeiro(a)."
+        "word": "a",
+        "meaning": "Um / Uma — artigo indefinido antes de profissão."
+      },
+      {
+        "word": "nurse",
+        "meaning": "Enfermeiro / Enfermeira — substantivo da profissão."
       }
     ],
-    "pronuncia": "Diga 'I am not' como 'ai ém nót', travando a língua no céu da boca no 't'. O 'a' soa como 'â'. Em 'nurse', comece no 'n', curve a língua para o meio da boca fazendo o som de 'r' e encerre com som de 's' limpo ('nêrs').\nLeia: Ai ém nót â nêrs."
+    "pronuncia": "Em 'I am not', faça o 'æ' em 'æm' abrindo a mandíbula na vertical em 'A' e puxando o canto para 'É' ('ái æm nót'). No artigo 'a', use o som neutro 'ə' deixando a mandíbula relaxada caída e língua frouxa. Em 'nurse', para a vogal '3r', mantenha a boca neutra e curve a ponta da língua para trás no céu da boca sem encostar em nada ('n3rs').\nLeia: Ái æm nót ə n3rs.",
+    "id": 55
   },
   "56": {
-    "explanation": "Para fazer a pergunta de alternativa, começa-se com 'Are you' (você é), coloca-se as opções 'single' (solteiro) e 'married' (casado) conectadas pela palavra 'or' (ou).",
+    "explanation": "Esta é uma pergunta de alternativa. Inicia-se com 'Are you' (você é), apresentando as duas opções 'single' (solteiro) e 'married' (casado) conectadas pela palavra 'or' (ou).",
     "breakdown": [
       {
         "word": "Are you",
-        "meaning": "Você é? — Are: é/são; you: você."
+        "meaning": "Você é...? — inversão do verbo ser/estar em pergunta."
       },
       {
         "word": "single",
-        "meaning": "Solteiro(a) — estado civil."
+        "meaning": "Solteiro / Solteira — adjetivo de estado civil."
       },
       {
         "word": "or",
-        "meaning": "Ou — conector de opção."
+        "meaning": "Ou — conjunção de alternativa."
       },
       {
         "word": "married",
-        "meaning": "Casado(a) — estado civil."
+        "meaning": "Casado / Casada — adjetivo de estado civil."
       }
     ],
-    "pronuncia": "Fale 'Are you' como 'ár iú'. Em 'single', fale 'sín-gôl', puxando o 'l' com a língua no céu da boca. Diga 'or' dobrando a língua para trás ('ór'). Em 'married', marque bem o 'r' curvado e trave o 'd' final ('mé-rid').\nLeia: Ár iú sín-gôl ór mé-rid?"
+    "pronuncia": "Diga 'Are you' em 'ár yúu'. Em 'single', use o 'ı' curto na primeira sílaba deixando o queixo ligeiramente solto ('sıng-gl'). Diga 'or' em 'ór'. Em 'married', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o 'æ' e use o 'ı' curto na segunda sílaba ('mæ-rıd').\nLeia: Ár yúu sıng-gl ór mæ-rıd?",
+    "id": 56
   },
   "57": {
-    "explanation": "Usa-se 'from' para indicar o país ou local de origem de onde alguém vem. A estrutura é simples e idêntica ao uso em português.",
+    "explanation": "A expressão 'from' indica o país de origem. A frase mantém a ordem direta 'She is' (ela é) seguida da preposição 'from' e o nome do país 'Italy'.",
     "breakdown": [
       {
-        "word": "She is",
-        "meaning": "Ela é — She: ela; is: é."
+        "word": "She",
+        "meaning": "Ela — pronome pessoal."
+      },
+      {
+        "word": "is",
+        "meaning": "É / Está — verbo ser/estar."
       },
       {
         "word": "from",
-        "meaning": "De / Vinda de — indica origem."
+        "meaning": "De — preposição de origem."
       },
       {
         "word": "Italy",
-        "meaning": "Itália — o país."
+        "meaning": "Itália — nome próprio do país."
       }
     ],
-    "pronuncia": "Junte 'She is' com som de 'chí iz'. Em 'from', feche os lábios no 'm' ('fróm'). Na palavra 'Italy', o 't' soa suave como um 'd' leve no inglês americano, resultando em 'Í-dâ-li'.\nLeia: Chí iz fróm Í-dâ-li."
+    "pronuncia": "Diga 'She' em 'chíi'. Em 'is', faça o 'ı' curto deixando o queixo solto com zumbido de 'z' ('ız'). Diga 'from' em 'fróm'. Em 'Italy', use o 'ı' curto no início, seguido do som neutro 'ə' na sílaba do meio deixando a mandíbula relaxada caída e língua frouxa ('ı-tə-li').\nLeia: Chíi ız fróm ı-tə-li.",
+    "id": 57
   },
   "58": {
-    "explanation": "Em inglês, diz-se 'a chef' com a inclusão da palavra 'a' (uma) antes da ocupação profissional. Note também que a palavra 'chef' vem do francês e tem pronúncia com chiado inicial.",
+    "explanation": "No inglês, a palavra 'chef' refere-se especificamente ao profissional de cozinha. Assim como em outras profissões, o artigo 'a' é obrigatório antes do cargo.",
     "breakdown": [
       {
         "word": "My mother",
         "meaning": "Minha mãe — My: minha; mother: mãe."
       },
       {
-        "word": "is a",
-        "meaning": "É uma — is: é; a: uma."
+        "word": "is",
+        "meaning": "É — verbo ser/estar."
+      },
+      {
+        "word": "a",
+        "meaning": "Uma — artigo indefinido."
       },
       {
         "word": "chef",
-        "meaning": "Chef de cozinha — profissional da culinária."
+        "meaning": "Chef de cozinha — substantivo de profissão."
       }
     ],
-    "pronuncia": "Diga 'My' como 'mai'. Em 'mother', coloque a ponta da língua entre os dentes no 'th' ('mâ-dhêr') e dobre a língua para o 'r'. Junte 'is a' como 'i-zâ'. Na palavra 'chef', faça som de chiado suave no início e feche no 'f' seco ('chéf').\nLeia: Mai mâ-dhêr i-zâ chéf."
+    "pronuncia": "Em 'mother', coloque a ponta da língua entre os dentes da frente soltando a voz para o 'dh', e termine com a sílaba neutra 'ə' ('mâ-dhər'). Em 'is', use o 'ı' curto com o queixo solto ('ız'). No artigo 'a', faça o som neutro 'ə' deixando a mandíbula relaxada caída. Em 'chef', faça o chiado suave 'ch' e corte a seco no 'f' ('chéf').\nLeia: Mái mâ-dhər ız ə chéf.",
+    "id": 58
   },
   "59": {
-    "explanation": "A pergunta no presente começa com a palavra auxiliar 'Do' para o grupo 'they' (eles). O objeto 'dog' vem acompanhado de 'a' (um) para indicar a unidade.",
+    "explanation": "Para fazer perguntas sobre posse no presente com o pronome 'they' (eles), usamos o auxiliar 'Do' no começo da frase, mantendo o verbo 'have' na forma simples.",
     "breakdown": [
       {
-        "word": "Do they",
-        "meaning": "Eles... ? — Do: marca de pergunta; they: eles/elas."
+        "word": "Do",
+        "meaning": "Auxiliar de pergunta — indica o presente para o pronome they."
       },
       {
-        "word": "have a",
-        "meaning": "Têm um — have: ter; a: um."
+        "word": "they",
+        "meaning": "Eles / Elas — pronome pessoal."
+      },
+      {
+        "word": "have",
+        "meaning": "Têm / Possuem — verbo ter."
+      },
+      {
+        "word": "a",
+        "meaning": "Um — artigo indefinido."
       },
       {
         "word": "dog",
-        "meaning": "Cachorro — cão de estimação."
+        "meaning": "Cachorro — substantivo."
       }
     ],
-    "pronuncia": "Em 'Do they', coloque a ponta da língua nos dentes da frente para pronunciar 'du dhêi'. Junte 'have a' como 'hé-vâ'. Em 'dog', fale 'dóg', travando o som no 'g' final sem dizer 'gui'.\nLeia: Du dhêi hé-vâ dóg?"
+    "pronuncia": "Diga 'Do' em 'dúu'. Em 'they', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh' ('dhêi'). Em 'have', use o 'æ' abrindo a mandíbula na vertical em 'A' e puxando o canto para 'É' ('hæv'). No artigo 'a', faça o som neutro 'ə'. Em 'dog', fale 'dóg' cortando a seco.\nLeia: Dúu dhêi hæv ə dóg?",
+    "id": 59
   },
   "60": {
-    "explanation": "A palavra 'children' já é o plural natural para crianças ou filhos em inglês (o singular é 'child'). Por isso, não se adiciona 's' ao final da palavra.",
+    "explanation": "A palavra 'children' é a forma plural irregular de 'child' (criança/filho), por isso não é necessário adicionar 's' no final da palavra ao contar 'dois filhos'.",
     "breakdown": [
       {
-        "word": "I have",
-        "meaning": "Eu tenho — I: eu; have: tenho."
+        "word": "I",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "have",
+        "meaning": "Tenho — verbo ter."
       },
       {
         "word": "two",
-        "meaning": "Dois — o número 2."
+        "meaning": "Dois / Duas — número cardinal."
       },
       {
         "word": "children",
-        "meaning": "Filhos / Crianças — plural de child."
+        "meaning": "Filhos / Crianças — plural irregular de child."
       }
     ],
-    "pronuncia": "Diga 'I have' como 'ai hév', soltando ar no 'h' e terminando no 'v' seco. Fale 'two' como 'tú'. Em 'children', comece com chiado 'tchi', dobre a língua no 'r' e feche no som de 'n' pelo nariz ('tchíl-drên').\nLeia: Ai hév tú tchíl-drên."
+    "pronuncia": "Em 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o 'æ' ('hæv'). Em 'two', projete os lábios em bico firme ('túu'). Em 'children', inicie com o estalo 'tch', use o 'ı' curto na primeira sílaba deixando o queixo ligeiramente solto, e finalize com o som neutro 'ə' antes do 'n' travado no dente ('tchıl-drən').\nLeia: Ái hæv túu tchıl-drən.",
+    "id": 60
   }
 }

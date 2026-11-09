@@ -12,20 +12,9 @@ export const VOZES_PT = ["v1", "v2", "v3", "v4"];
 export const VOZES_ZH = ["v1", "v2", "v3", "v4"];
 export const VOZES_PI = VOZES_ZH;
 
-// TABELA CENTRAL DE VERSÕES DE ÁUDIO (Cache Busting silencioso)
-export const VERSOES_AUDIOS = {
-  "35": 2,      // Frase 35 atualizada com dicção humana em todos os idiomas
-  "fr/9_v3": 2, // Frase 9 em francês (voz v3 Charline) corrigida no Audacity
-  "519": 2,     // Frase 519 (24h/24 -> vingt-quatre heures sur vingt-quatre)
-  "1117": 2     // Frase 1117 (24h/24 -> vingt-quatre heures sur vingt-quatre)
-};
-
 export function montarAudioUrl(id, voz = "v1", idioma = "en") {
   const pastaIdioma = idioma === "pi" ? "zh" : idioma;
-  const chaveVoz = `${pastaIdioma}/${id}_${voz}`;
-  const versao = VERSOES_AUDIOS[chaveVoz] || VERSOES_AUDIOS[String(id)] || null;
-  const sufixo = versao ? `?v=${versao}` : "";
-  return `${R2_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3${sufixo}`;
+  return `${R2_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3`;
 }
 
 export async function obterAudioUrl(id, voz = "v1", idioma = "en") {
@@ -263,7 +252,8 @@ export function obterVozesPorIdioma(idioma) {
 
 export async function expurgarAudiosDeIds(ids, idioma = "en") {
   if (!ids || ids.length === 0) return;
-  const vozes = obterVozesPorIdioma(idioma);
+  const pastaIdioma = idioma === "pi" ? "zh" : idioma;
+  const todasVozes = ["v1", "v2", "v3", "v4", "v5", "v6"];
   const temCaches = ("caches" in window);
   let cache = null;
   if (temCaches) {
@@ -271,16 +261,20 @@ export async function expurgarAudiosDeIds(ids, idioma = "en") {
   }
 
   for (const id of ids) {
-    for (const voz of vozes) {
-      const url = montarAudioUrl(id, voz, idioma);
+    for (const voz of todasVozes) {
+      const urlBase = `${R2_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3`;
       if (cache) {
         try {
-          await cache.delete(url);
-          await cache.delete(url, { ignoreSearch: true });
+          await cache.delete(urlBase);
+          await cache.delete(urlBase, { ignoreSearch: true });
+          await cache.delete(`${urlBase}?v=2`);
+          await cache.delete(`${urlBase}?v=3`);
         } catch (e) { }
       }
       try {
-        await removerDoIndexedDB(STORES.AUDIOS, url);
+        await removerDoIndexedDB(STORES.AUDIOS, urlBase);
+        await removerDoIndexedDB(STORES.AUDIOS, `${urlBase}?v=2`);
+        await removerDoIndexedDB(STORES.AUDIOS, `${urlBase}?v=3`);
       } catch (e) { }
     }
   }
@@ -320,7 +314,7 @@ export async function baixarNovosAudiosComProgresso(ids, idioma = "en", onProgre
     await Promise.all(
       lote.map(async (url) => {
         try {
-          const resp = await fetch(url, { mode: "cors" });
+          const resp = await fetch(`${url}?t=${Date.now()}`, { mode: "cors" });
           if (resp.ok) {
             if (cache) {
               await cache.put(url, resp);

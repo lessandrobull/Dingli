@@ -1,214 +1,230 @@
 {
   "151": {
-    "explanation": "Para perguntar o preço de um item no singular, os nativos dizem literalmente 'quanto é esta camisa', usando 'How much is'. Repare como a palavra 'this' mostra que o objeto está pertinho de você, tornando a conversa rápida e direta.",
+    "explanation": "Para perguntar o preço de algo no singular, a estrutura mais comum em inglês é usar 'How much is' (quanto é) acompanhado do item desejado. Em português dizemos 'quanto custa', mas os nativos costumam pensar diretamente em 'quanto é esta camisa'. O termo 'this' aponta para uma peça de roupa que está perto de quem fala.",
     "breakdown": [
       {
         "word": "How much",
-        "meaning": "Quanto — usado para perguntar o valor ou quantidade."
+        "meaning": "Quanto / Qual o valor — How: como; much: muito."
       },
       {
         "word": "is",
-        "meaning": "é / custa."
+        "meaning": "é / custa — forma do verbo ser/estar no presente."
       },
       {
         "word": "this",
-        "meaning": "esta — para algo que está perto."
+        "meaning": "esta / esta aqui — demonstrativo para algo no singular perto de você."
       },
       {
         "word": "shirt",
-        "meaning": "camisa."
+        "meaning": "camisa — peça de roupa de manga ou botão."
       }
     ],
-    "pronuncia": "Diga 'How' como 'ráu' e junte com 'much' fazendo um som de 'mátch'. Em 'is this', conecte as duas palavras parecendo 'íz dhís', lembrando de colocar a ponta da língua entre os dentes da frente no 'th'. Em 'shirt', curve a língua para o céu da boca no som do 'r' ('chêrt') e termine a palavra de forma seca, sem acrescentar nenhuma vogal no final.\nLeia: Ráu mátch íz dhís chêrt."
+    "pronuncia": "Em 'How much', solte o 'h' como um suspiro suave sem arranhar a garganta. No termo 'is', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız'. Para 'this', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhıs', mantendo o queixo solto para o 'ı' curto. Em 'shirt', ignore a vogal escrita e mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para fazer o som 'ch3rt', cortando a seco no 't' final sem adicionar 'i'.\nLeia: Háu mâtch ız dhıs ch3rt?"
   },
   "152": {
-    "explanation": "Em inglês, quando você gosta de algo, diz 'I like' direto, sem usar a palavra 'de' que usamos em português. Para falar de vários objetos que estão perto de você, usa-se 'these', esticando o som da vogal para diferenciar do singular.",
+    "explanation": "Para dizer que você gosta de itens no plural que estão por perto, o inglês troca o 'this' por 'these'. O raciocínio em inglês não utiliza nenhuma palavra para 'de'; você diz simplesmente 'eu gosto estes sapatos' de forma direta.",
     "breakdown": [
       {
         "word": "I",
-        "meaning": "Eu."
+        "meaning": "Eu — pronome da primeira pessoa."
       },
       {
         "word": "like",
-        "meaning": "gosto de — usado direto sem preposição."
+        "meaning": "gosto / aprecio — verbo gostar."
       },
       {
         "word": "these",
-        "meaning": "estes / estas — no plural para itens próximos."
+        "meaning": "destes / estes — demonstrativo no plural para coisas próximas."
       },
       {
         "word": "shoes",
-        "meaning": "sapatos."
+        "meaning": "sapatos / calçados — substantivo no plural."
       }
     ],
-    "pronuncia": "Fale 'I' como 'ái'. Em 'like', corte a palavra no som do 'k' ('láik'), sem falar 'láiki'. Para 'these', ponha a ponta da língua entre os dentes da frente e faça um som vibrado sorrindo ('dhíiz'). Em 'shoes', comece chiando como em 'chá' e termine com o som de 'z' suave ('chúuz').\nLeia: Ái láik dhíiz chúuz."
+    "pronuncia": "Comece com 'Ái' e emende em 'láik', cortando o 'k' a seco sem dizer 'láiki'. Na palavra 'these', é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh', seguido de um sorriso firme com 'ii' longo em 'dhíiz'. Conclua em 'shoes' soltando o chiado suave em 'chúuz' com zumbido de 'z' no final.\nLeia: Ái láik dhíiz chúuz."
   },
   "153": {
-    "explanation": "Para fazer perguntas no presente, o inglês usa a palavra 'Do' no início para avisar que é uma pergunta. Para dizer 'maior', eles pegam a palavra 'big' (grande) e acrescentam o final '-ger', formando 'bigger' de maneira simples e prática.",
+    "explanation": "Para fazer uma pergunta no presente sobre ter algo, usa-se a palavra 'Do' no início apenas para sinalizar a interrogação. Para dizer 'maior', em inglês acrescenta-se a terminação '-er' à palavra 'big' (grande), formando 'bigger' (literalmente 'mais grande'), um padrão natural do idioma.",
     "breakdown": [
       {
-        "word": "Do",
-        "meaning": "Palavra que indica pergunta no presente (não tem tradução direta)."
-      },
-      {
-        "word": "you have",
-        "meaning": "você tem — you: você; have: ter."
-      },
-      {
-        "word": "a",
-        "meaning": "um / uma."
-      },
-      {
-        "word": "bigger",
-        "meaning": "maior — formato ampliado de big (grande)."
-      },
-      {
-        "word": "size",
-        "meaning": "tamanho."
-      }
-    ],
-    "pronuncia": "Comece com 'Do you' juntando como 'dú iú'. A palavra 'have' se conecta com 'a', parecendo 'rê-vê'. Em 'bigger', fale 'bí-guêr' curvando a língua para dentro no 'r'. Em 'size', faça um 'z' bem definido e termine no 'z' seco sem inventar vogal no fim ('sáiz').\nLeia: Dú iú rê-vê bí-guêr sáiz."
-  },
-  "154": {
-    "explanation": "Para negar em inglês, junta-se o 'do not' antes da ação de ter. A palavra 'any' é usada para reforçar a ideia de 'nenhum' ou 'nada', garantindo que a frase fique natural para um falante nativo.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu."
-      },
-      {
-        "word": "do not",
-        "meaning": "não — combinação para negar ações no presente."
+        "word": "Do you",
+        "meaning": "Você — Do: palavra que indica pergunta no presente; you: você."
       },
       {
         "word": "have",
-        "meaning": "tenho / ter."
+        "meaning": "tem / possui — verbo ter."
+      },
+      {
+        "word": "a",
+        "meaning": "um / uma — artigo indefinido."
+      },
+      {
+        "word": "bigger",
+        "meaning": "maior / mais grande — comparativo de big."
+      },
+      {
+        "word": "size",
+        "meaning": "tamanho / número — dimensão de vestuário."
+      }
+    ],
+    "pronuncia": "Em 'Do you', fale 'dúu yúu' de forma fluida. Na palavra 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'hæv'. No artigo 'a', deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'ə'. Em 'bigger', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' na primeira sílaba em 'bı-gər'. Termine em 'sáiz' selando o som no 'z'.\nLeia: Dúu yúu hæv ə bı-gər sáiz?"
+  },
+  "154": {
+    "explanation": "No inglês não se faz dupla negação. Em vez de dizer 'não tenho nenhum dinheiro' como no português, a estrutura exige 'I do not have' (eu não tenho) combinado com 'any money' (dinheiro algum). A palavra 'any' entra nas frases negativas para dar o sentido de 'absolutamente nada de'.",
+    "breakdown": [
+      {
+        "word": "I do not",
+        "meaning": "Eu não — I: eu; do: palavra de apoio no presente; not: não."
+      },
+      {
+        "word": "have",
+        "meaning": "tenho / possuo — verbo ter."
       },
       {
         "word": "any",
-        "meaning": "nenhum / qualquer — usado em frases negativas."
+        "meaning": "nenhum / qualquer — usado em frases negativas para indicar ausência total."
       },
       {
         "word": "money",
-        "meaning": "dinheiro."
+        "meaning": "dinheiro — recursos financeiros."
       }
     ],
-    "pronuncia": "Em 'I do not', fale 'ái dú nót'. Conecte 'have any' falando 'rê-vê ê-ni' de forma fluida. Na palavra 'money', fale 'má-ni' com a voz relaxada no final, sem forçar o 'e'.\nLeia: Ái dú nót rê-vê ê-ni má-ni."
+    "pronuncia": "Inicie com 'Ái dúu nót'. Em 'have', é obrigatório abrir a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv'. Em 'any', fale 'é-ni'. Na palavra 'money', o som da primeira sílaba exige deixar a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'mâ-ni'.\nLeia: Ái dúu nót hæv é-ni mâ-ni."
   },
   "155": {
-    "explanation": "Para saber a localização de algo, a estrutura começa com 'Where is' (onde fica ou onde é). Em seguida, vem o objeto ou lugar desejado, mantendo a frase curta e idêntica ao nosso pensamento em português.",
+    "explanation": "Para perguntar a localização de um lugar, a expressão usada é 'Where is' (onde é/fica). Os nativos pensam literalmente 'onde é o supermercado', trocando o nosso verbo 'ficar' pelo verbo ser/estar 'is', e utilizam 'the' antes do nome do local para especificar a busca.",
     "breakdown": [
       {
         "word": "Where is",
-        "meaning": "Onde fica / Onde é — Where: onde; is: é/fica."
+        "meaning": "Onde fica / Onde é — Where: onde; is: é / está."
       },
       {
         "word": "the",
-        "meaning": "o / a."
+        "meaning": "o / a — artigo definido."
       },
       {
         "word": "supermarket",
-        "meaning": "supermercado."
+        "meaning": "supermercado — local de compras de mantimentos."
       }
     ],
-    "pronuncia": "Junte 'Where is' falando 'uêr íz', curvando a língua no céu da boca para o 'r'. Em 'the', coloque a ponta da língua entre os dentes ('dhê'). Em 'supermarket', fale 'sú-pêr-már-kêt', curvando a língua nos dois 'r's e travando a última letra 't' sem soltar vogal.\nLeia: Uêr íz dhê sú-pêr-már-kêt."
+    "pronuncia": "Junte 'Where is' como 'wéər ız', usando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız'. Em 'the', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo em 'dhə'. Em 'supermarket', na sílaba central mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada em 'súu-pər-már-kıt', travando o 't' final a seco.\nLeia: Wéər ız dhə súu-pər-már-kıt?"
   },
   "156": {
-    "explanation": "No inglês, a palavra 'shop' significa loja, e para dizer que algo está em determinado estado (como fechada), usamos o verbo 'is' seguido da característica 'closed'.",
+    "explanation": "Para dizer que um estabelecimento não está atendendo, diz-se 'The shop is closed'. O inglês usa o verbo 'is' (está) seguido da palavra 'closed' com som de 'd' travado no final, que funciona exatamente como o nosso 'fechada'.",
     "breakdown": [
       {
-        "word": "The shop",
-        "meaning": "A loja — The: a; shop: loja."
+        "word": "The",
+        "meaning": "A / O — artigo definido."
+      },
+      {
+        "word": "shop",
+        "meaning": "loja / comércio — estabelecimento comercial."
       },
       {
         "word": "is",
-        "meaning": "está / é."
+        "meaning": "está / é — verbo ser/estar."
       },
       {
         "word": "closed",
-        "meaning": "fechada."
+        "meaning": "fechada / encerrada — estado de não funcionamento."
       }
     ],
-    "pronuncia": "Comece 'The' com a língua entre os dentes da frente ('dhê'). Em 'shop', envie o ar para fora chiando ('chóp') e corte o som no 'p'. Junte com 'is' e emende em 'closed', falando 'klôuzd' com o som de 'z' no meio e terminando direto na letra 'd' sem pronunciar o 'e'.\nLeia: Dhê chóp íz klôuzd."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo em 'dhə'. Em 'shop', abra a boca no 'ó' profundo em 'chóp'. Para 'is', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız'. Termine em 'closed' pronunciando 'klôuzd', colando o som de 'd' no final sem criar a vogal 'e'.\nLeia: Dhə chóp ız klôuzd."
   },
   "157": {
-    "explanation": "Para perguntar se 'existe' ou 'tem' algo no sentido de haver, o inglês inverte a ordem e coloca 'Is there' no começo. Para dizer 'perto daqui', a combinação natural é 'near here'.",
+    "explanation": "Para perguntar se 'tem' ou 'existe' algum lugar, a estrutura padrão é inverter a expressão de existência, ficando 'Is there' (existe/há?). Em seguida, usa-se 'a bank' (um banco) e 'near here' (perto daqui), que é a combinação exata usada pelos nativos para perguntar por proximidade.",
     "breakdown": [
       {
         "word": "Is there",
-        "meaning": "Tem...? / Há...? — usado para perguntar a existência de algo."
+        "meaning": "Tem / Há / Existe — Is: forma invertida para pergunta; there: lá/ali (juntos formam a ideia de existência)."
       },
       {
-        "word": "a bank",
-        "meaning": "um banco — a: um; bank: banco."
+        "word": "a",
+        "meaning": "um / uma — artigo indefinido."
+      },
+      {
+        "word": "bank",
+        "meaning": "banco — instituição financeira."
       },
       {
         "word": "near here",
         "meaning": "perto daqui — near: perto; here: aqui."
       }
     ],
-    "pronuncia": "Para 'Is there', fale 'íz dhêr', encostando a ponta da língua nos dentes superiores no 'th' e curvando a língua no 'r'. Junte 'a bank' como 'ê bénk', parando a voz no 'k'. Em 'near here', curve a língua para o céu da boca em ambas as palavras ('nír ríer').\nLeia: Íz dhêr ê bénk nír ríer."
+    "pronuncia": "Em 'Is', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız'. Na palavra 'there', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhéər'. Em 'a', deixe a mandíbula relaxada caída e língua frouxa para o som 'ə'. Em 'bank', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'bænk'. Finalize em 'níər híər'.\nLeia: Iz dhéər ə bænk níər híər?"
   },
   "158": {
-    "explanation": "Quando você quer fazer algo em inglês, usa 'I want to' antes da ação. O 'to' funciona como a ponte que conecta o desejo (querer) com a ação principal (comprar).",
+    "explanation": "Quando você expressa o desejo de realizar uma ação, a estrutura é 'I want to' (eu quero) seguida do verbo principal. O 'to' conecta a intenção de querer com a ação de comprar ('buy'). A palavra 'hat' refere-se ao chapéu de forma geral.",
     "breakdown": [
       {
-        "word": "I want to",
-        "meaning": "Eu quero — I: eu; want: querer; to: para/elemento de ligação."
+        "word": "I",
+        "meaning": "Eu — pronome da primeira pessoa."
+      },
+      {
+        "word": "want to",
+        "meaning": "quero / desejo — want: querer; to: conector para o próximo verbo."
       },
       {
         "word": "buy",
-        "meaning": "comprar."
-      },
-      {
-        "word": "a hat",
-        "meaning": "um chapéu — a: um; hat: chapéu."
-      }
-    ],
-    "pronuncia": "Fale 'I' como 'ái'. O bloco 'want to' é dito de forma corrida como 'uón-tú' ou 'uó-na'. A palavra 'buy' soa como 'bái'. Em 'a hat', diga 'ê rát', soltando o ar pelo peito no 'h' e terminando no 't' seco.\nLeia: Ái uón-tú bái ê rát."
-  },
-  "159": {
-    "explanation": "Para fazer uma pergunta sobre algo no singular (isto), usamos 'Does' no começo da frase. Em seguida vem a coisa ('this'), o verbo principal ('cost') e o valor.",
-    "breakdown": [
-      {
-        "word": "Does",
-        "meaning": "Palavra de início de pergunta para coisas no singular (sem tradução)."
-      },
-      {
-        "word": "this",
-        "meaning": "isto / este objeto perto."
-      },
-      {
-        "word": "cost",
-        "meaning": "custa / custar."
-      },
-      {
-        "word": "ten pounds",
-        "meaning": "dez libras — ten: dez; pounds: libras (moeda)."
-      }
-    ],
-    "pronuncia": "Fale 'Does' como 'dáz'. Em 'this', posicione a ponta da língua entre os dentes da frente ('dhís'). Na palavra 'cost', diga 'kóst' sem adicionar vogal no final. Em 'ten pounds', diga 'tên páundz', terminando com um som leve de 'z'.\nLeia: Dáz dhís kóst tên páundz."
-  },
-  "160": {
-    "explanation": "A estrutura em inglês coloca a palavra 'credit' (crédito) antes de 'card' (cartão), pois a característica ou tipo de cartão vem primeiro na mente de quem fala inglês.",
-    "breakdown": [
-      {
-        "word": "I have",
-        "meaning": "Eu tenho — I: eu; have: ter."
+        "meaning": "comprar — ação de adquirir algo pago."
       },
       {
         "word": "a",
-        "meaning": "um / uma."
+        "meaning": "um / uma — artigo indefinido."
+      },
+      {
+        "word": "hat",
+        "meaning": "chapéu — acessório de cabeça."
+      }
+    ],
+    "pronuncia": "Fale 'Ái wónt tu bái'. Para o artigo 'a', deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'ə'. Na palavra 'hat', solte o 'h' como um suspiro morno e abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæt', cortando o 't' a seco no final sem acrescentar 'i'.\nLeia: Ái wónt tu bái ə hæt."
+  },
+  "159": {
+    "explanation": "Para perguntar o valor de algo usando um verbo de ação como 'cost' (custar) na terceira pessoa do singular, usa-se o auxiliar 'Does' no começo da frase. O termo 'pounds' significa libras, a moeda oficial do Reino Unido.",
+    "breakdown": [
+      {
+        "word": "Does",
+        "meaning": "Palavra de apoio — usada para abrir perguntas no presente para a terceira pessoa."
+      },
+      {
+        "word": "this",
+        "meaning": "isto / este item — demonstrativo de algo próximo."
+      },
+      {
+        "word": "cost",
+        "meaning": "custa / tem o preço de — verbo custar."
+      },
+      {
+        "word": "ten",
+        "meaning": "dez — numeral."
+      },
+      {
+        "word": "pounds",
+        "meaning": "libras — moeda britânica."
+      }
+    ],
+    "pronuncia": "Em 'Does', fale 'dâz'. Em 'this', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhıs', mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'cost', diga 'kóst'. Em 'ten', trave o 'n' com a língua no céu da boca em 'tén'. Finalize em 'páundz' travando a consoante no final.\nLeia: Dâz dhıs kóst tén páundz?"
+  },
+  "160": {
+    "explanation": "Para dizer que possui um cartão de crédito, diz-se 'I have a credit card'. Em inglês, o tipo de cartão vem antes da palavra cartão, por isso 'credit' (crédito) antecede 'card' (cartão), ao contrário da ordem em português.",
+    "breakdown": [
+      {
+        "word": "I have",
+        "meaning": "Eu tenho / Eu possuo — I: eu; have: ter."
+      },
+      {
+        "word": "a",
+        "meaning": "um / uma — artigo indefinido."
       },
       {
         "word": "credit card",
         "meaning": "cartão de crédito — credit: crédito; card: cartão."
       }
     ],
-    "pronuncia": "Diga 'I' como 'ái' e junte com 'have a' fazendo 'rê-vê'. Em 'credit card', fale 'kré-dêt kárd', curvando a língua para dentro no 'r' de ambas as palavras e finalizando no 'd' seco sem falar 'kárdi'.\nLeia: Ái rê-vê kré-dêt kárd."
+    "pronuncia": "Na palavra 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv'. Em 'a', deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo em 'ə'. Em 'credit', use o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' na primeira sílaba em 'kré-dıt'. Finalize com 'kárd', curvando a língua para trás no 'r' sem tocar o céu da boca.\nLeia: Ái hæv ə kré-dıt kárd."
   },
   "161": {
-    "explanation": "Para expressar que algo é muito caro, usamos 'very' (muito) seguido da palavra 'expensive' (caro). A ordem das palavras segue a mesma lógica simples do português.",
+    "explanation": "Ao descrever uma peça de roupa como 'muito cara', a ordem das palavras é a mesma do português: o artigo 'the' (o/a), a peça 'dress' (vestido), o verbo 'is' (é) e o intensificador 'very' (muito) antes do adjetivo 'expensive' (caro).",
     "breakdown": [
       {
         "word": "The dress",
@@ -216,67 +232,75 @@
       },
       {
         "word": "is",
-        "meaning": "é / está."
+        "meaning": "é / está — verbo ser/estar."
       },
       {
-        "word": "very expensive",
-        "meaning": "muito caro — very: muito; expensive: caro."
+        "word": "very",
+        "meaning": "muito — intensificador de qualidade."
+      },
+      {
+        "word": "expensive",
+        "meaning": "caro / de alto custo — adjetivo de valor."
       }
     ],
-    "pronuncia": "Em 'The', use a língua levemente entre os dentes ('dhê'). Em 'dress', curve a língua para o som do 'r' ('drés'). Junte com 'is' ('íz') e siga para 'very expensive' pronunciando 'vé-ri iks-pên-siv', travando a voz no som de 'v' final.\nLeia: Dhê drés íz vé-ri iks-pên-siv."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Em 'dress', fale 'drés'. Para 'is', mantenha o queixo ligeiramente solto, sem puxar sorriso em 'ız'. Em 'very', encoste o dente no lábio em 'vé-ri'. Em 'expensive', mantenha o queixo solto para o som curto 'ık-spén-sıv'.\nLeia: Dhə drés ız vé-ri ık-spén-sıv."
   },
   "162": {
-    "explanation": "Como no inglês toda frase precisa de um sujeito, usamos a palavra 'It' para nos referirmos ao objeto que estamos criticando. A negação 'not' vem logo após o verbo 'is'.",
+    "explanation": "Para dizer 'não é barato', usa-se o pronome neutro 'It' para indicar a coisa sobre a qual se fala, seguido de 'is not' (não é) e do adjetivo 'cheap' (barato). Em inglês, é obrigatório usar um pronome como 'It' como sujeito da frase.",
     "breakdown": [
       {
         "word": "It is not",
-        "meaning": "Não é — It: objeto/coisa neutra; is: é; not: não."
+        "meaning": "Não é / Isto não é — It: objeto citado; is: é; not: não."
       },
       {
         "word": "cheap",
-        "meaning": "barato."
+        "meaning": "barato / de baixo custo — adjetivo de preço."
       }
     ],
-    "pronuncia": "Junte 'It is not' como 'ít íz nót', cortando a letra 't' de forma rápida. Em 'cheap', faça o som de chiado no começo ('tch') e termine prendendo o ar nos lábios no som do 'p' ('tchíip'), sem dizer 'tchípi'.\nLeia: Ít íz nót tchíip."
+    "pronuncia": "Em 'It' e 'is', mantenha em ambos o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i', resultando em 'ıt ız'. Em 'not', abra a boca no 'ó' cavernoso em 'nót'. Em 'cheap', faça o estalo seco em 'tchíip', esticando bem o sorriso para o 'ii' longo e travando o 'p' no final sem emitir 'i'.\nLeia: It ız nót tchíip."
   },
   "163": {
-    "explanation": "Para perguntar onde é possível fazer uma compra, usa-se 'Where' (onde) acompanhado de 'can I' (posso eu). A palavra da ação 'buy' vem logo depois de quem vai realizar a ação.",
+    "explanation": "Para perguntar onde se pode adquirir algum alimento, usa-se 'Where can I buy' (onde posso eu comprar). O verbo auxiliar 'can' (poder/conseguir) vem antes do pronome 'I' para formar a estrutura correta de pergunta.",
     "breakdown": [
       {
         "word": "Where",
-        "meaning": "Onde."
+        "meaning": "Onde — pronome de lugar."
       },
       {
         "word": "can I",
-        "meaning": "posso eu / eu posso — can: poder; I: eu."
+        "meaning": "posso eu / eu posso — can: posso/consigo; I: eu."
       },
       {
-        "word": "buy milk",
-        "meaning": "comprar leite — buy: comprar; milk: leite."
+        "word": "buy",
+        "meaning": "comprar — verbo adquirir."
+      },
+      {
+        "word": "milk",
+        "meaning": "leite — bebida/alimento."
       }
     ],
-    "pronuncia": "Fale 'Where' curvando a língua no fim ('uêr'). Conecte 'can I' formando uma palavra só: 'kê-nái'. Diga 'buy' como 'bái' e termine em 'milk' com 'mílk', encostando o céu da boca com a língua no 'l' e parando no 'k'.\nLeia: Uêr kê-nái bái mílk."
+    "pronuncia": "Comece em 'Wéər'. Na palavra 'can', é obrigatório abrir a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'kæn', emendando em 'Ái'. Em 'buy', fale 'bái'. Em 'milk', mantenha o queixo ligeiramente solto, sem puxar sorriso para o 'ı' curto em 'mılk', e lembre-se de subir a ponta da língua no céu da boca para o 'l' sem deixar virar som de 'u'.\nLeia: Wéər kæn ái bái mılk?"
   },
   "164": {
-    "explanation": "Para perguntar sobre um serviço ou venda, iniciamos a pergunta com 'Do you' (vocês / você). A palavra 'newspapers' junta a palavra notícia (news) com papéis (papers).",
+    "explanation": "Para perguntar se um comerciante vende determinado produto no plural, usa-se o auxiliar 'Do' seguido de 'you sell' (você vende / vocês vendem) e do item no plural 'newspapers' (jornais).",
     "breakdown": [
       {
         "word": "Do you",
-        "meaning": "Você / Vocês (em tom de pergunta)."
+        "meaning": "Você / Vocês — indicador de pergunta no presente acompanhado do pronome."
       },
       {
         "word": "sell",
-        "meaning": "vendem / vender."
+        "meaning": "vendem / vende — verbo vender."
       },
       {
         "word": "newspapers",
-        "meaning": "jornais — news: notícias; papers: papéis."
+        "meaning": "jornais — publicação periódica impressa."
       }
     ],
-    "pronuncia": "Fale 'Do you' como 'dú iú'. A palavra 'sell' soa como 'sél', segurando a língua no céu da boca. Em 'newspapers', fale 'niúz-pêi-pêrz', curvando a língua no 'r' e terminando num 'z' suave.\nLeia: Dú iú sél niúz-pêi-pêrz."
+    "pronuncia": "Fale 'Dúu yúu'. Em 'sell', encoste os dentes superiores no lábio inferior para o som de 'v' e suba a língua no céu da boca no 'l' final em 'sél'. Em 'newspapers', fale 'nyúuz-pêi-pərz', mantendo a língua curvada para trás na última sílaba sem encostar no céu da boca e finalizando com zumbido de 'z'.\nLeia: Dúu yúu sél nyúuz-pêi-pərz?"
   },
   "165": {
-    "explanation": "A palavra 'some' é usada em inglês antes de objetos para indicar uma quantidade não definida, equivalente a dizer 'algumas' ou simplesmente 'preciso de roupas'.",
+    "explanation": "Para dizer 'preciso de roupas novas', a estrutura em inglês usa 'I need' (eu preciso), seguido de 'some' (algumas/um pouco de) para dar fluidez à frase, e a característica 'new' (novas) antes do objeto 'clothes' (roupas).",
     "breakdown": [
       {
         "word": "I need",
@@ -284,35 +308,35 @@
       },
       {
         "word": "some",
-        "meaning": "algumas / um pouco de (usado para dar sentido natural)."
+        "meaning": "algumas / um pouco de — quantificador indeterminado."
       },
       {
         "word": "new clothes",
-        "meaning": "roupas novas — new: novas; clothes: roupas."
+        "meaning": "roupas novas — new: novas; clothes: roupas/vestuário."
       }
     ],
-    "pronuncia": "Diga 'I need' como 'ái níid'. A palavra 'some' soa como 'sám'. Em 'new clothes', fale 'níu klôudhz', colocando a ponta da língua entre os dentes no 'th' e terminando com um leve chiado/z seco.\nLeia: Ái níid sám níu klôudhz."
+    "pronuncia": "Em 'I need', fale 'Ái níid' esticando o sorriso no 'ii' longo e cortando o 'd' a seco. Em 'some', solte o som neutro da garganta em 'sâm'. Em 'new', fale 'nyúu'. Na palavra 'clothes', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'klôudhz', terminando no som vibrado de 'z'.\nLeia: Ái níid sâm nyúu klôudhz."
   },
   "166": {
-    "explanation": "A expressão 'with cash' significa 'com dinheiro vivo/em espécie'. Para pedir permissão ao fazer o pagamento, invertemos para 'Can I' no início da frase.",
+    "explanation": "Para perguntar se é possível pagar com dinheiro vivo, usa-se 'Can I pay' (posso eu pagar) seguido da preposição 'with' (com) e do termo 'cash' (dinheiro em espécie). No inglês, a palavra 'cash' refere-se especificamente a papel-moeda ou moedas físicas.",
     "breakdown": [
       {
         "word": "Can I",
-        "meaning": "Posso eu / Eu posso (pergunta)."
+        "meaning": "Posso eu / Posso — Can: posso; I: eu."
       },
       {
         "word": "pay",
-        "meaning": "pagar."
+        "meaning": "pagar — verbo efetuar pagamento."
       },
       {
         "word": "with cash",
-        "meaning": "com dinheiro em espécie — with: com; cash: dinheiro físico/vivo."
+        "meaning": "com dinheiro em espécie — with: com; cash: dinheiro vivo."
       }
     ],
-    "pronuncia": "Emende 'Can I' como 'kê-nái'. A palavra 'pay' soa como 'pêi'. Em 'with', coloque a ponta da língua entre os dentes da frente ('uíth'). Termine em 'cash' com som de chiado suave ('kéch').\nLeia: Kê-nái pêi uíth kéch."
+    "pronuncia": "Na palavra 'Can', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'kæn', ligando em 'Ái'. Em 'pay', faça o som escorregado 'pêi'. Em 'with', coloque a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz em 'wıth'. Na palavra 'cash', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' e solte o chiado suave em 'kæch'.\nLeia: Kæn ái pêi wıth kæch?"
   },
   "167": {
-    "explanation": "Em inglês, você identifica o objeto ('This bag') e em seguida atribui a qualidade dele usando o verbo 'is' junto do intensificador 'very' (muito) e 'small' (pequeno).",
+    "explanation": "Ao qualificar um objeto como pequeno, o inglês coloca o demonstrativo 'This' (esta), a peça 'bag' (bolsa), o verbo 'is' (é) e o intensificador 'very' (muito) antes do adjetivo 'small' (pequena). A ordem dos qualificadores é idêntica à do português.",
     "breakdown": [
       {
         "word": "This bag",
@@ -320,63 +344,71 @@
       },
       {
         "word": "is",
-        "meaning": "é / está."
+        "meaning": "é / está — verbo ser/estar."
       },
       {
         "word": "very small",
         "meaning": "muito pequena — very: muito; small: pequena."
       }
     ],
-    "pronuncia": "Comece 'This' com a língua entre os dentes ('dhís'). Em 'bag', fale 'bég' travando o som no 'g'. Junte com 'is' ('íz') e emende em 'very small', dizendo 'vé-ri smól' com a língua no céu da boca ao final do 'l'.\nLeia: Dhís bég íz vé-ri smól."
+    "pronuncia": "Em 'This', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e mantenha o queixo ligeiramente solto em 'dhıs'. Em 'bag', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'bæg'. Em 'is', mantenha o queixo solto em 'ız'. Em 'very small', fale 'vé-ri smól', lembrando que em 'small' a ponta da língua deve subir ao céu da boca sem virar som de 'u'.\nLeia: Dhıs bæg ız vé-ri smól."
   },
   "168": {
-    "explanation": "Para dizer que não gosta de algo, a estrutura completa é 'I do not like'. Depois, basta colocar o objeto de que não gosta, no caso 'this color' (esta cor).",
+    "explanation": "Para expressar que não gosta de determinada cor, a estrutura negativa no presente exige 'I do not like' (eu não gosto) acompanhado do demonstrativo 'this' (esta) e do substantivo 'color' (cor). Lembre-se de que não se usa a preposição 'de' após o verbo 'like'.",
     "breakdown": [
       {
         "word": "I do not like",
         "meaning": "Eu não gosto — I: eu; do not: não; like: gostar."
       },
       {
-        "word": "this color",
-        "meaning": "desta cor — this: esta; color: cor."
+        "word": "this",
+        "meaning": "desta / esta — demonstrativo para itens no singular próximos."
+      },
+      {
+        "word": "color",
+        "meaning": "cor — tonalidade ou tom."
       }
     ],
-    "pronuncia": "Fale 'I do not' como 'ái dú nót'. A palavra 'like' soa como 'láik', cortando a voz no 'k'. Em 'this', use a ponta da língua entre os dentes ('dhís'). Finalize em 'color' dizendo 'ká-lôr', curvando bem a língua para dentro no 'r'.\nLeia: Ái dú nót láik dhís ká-lôr."
+    "pronuncia": "Fale 'Ái dúu nót láik'. Na palavra 'this', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e mantenha o queixo ligeiramente solto em 'dhıs'. Em 'color', a segunda sílaba exige deixar a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'kâ-lər', curvando a língua para o 'r' final.\nLeia: Ái dúu nót láik dhıs kâ-lər."
   },
   "169": {
-    "explanation": "Assim como na pergunta sobre a existência de lugares, para perguntar se há ou existe um desconto, usa-se 'Is there' no início da frase.",
+    "explanation": "Para perguntar se há um abatimento de preço, a frase começa com a forma invertida 'Is there' (há / existe?). A palavra 'discount' significa desconto, e vem precedida do artigo 'a' (um).",
     "breakdown": [
       {
         "word": "Is there",
-        "meaning": "Tem...? / Há...? — usado para perguntar se algo existe."
+        "meaning": "Tem / Há / Existe — estrutura invertida para criar pergunta sobre existência."
       },
       {
-        "word": "a discount",
-        "meaning": "um desconto — a: um; discount: desconto."
+        "word": "a",
+        "meaning": "um / algum — artigo indefinido."
+      },
+      {
+        "word": "discount",
+        "meaning": "desconto / abatimento — redução de preço."
       }
     ],
-    "pronuncia": "Para 'Is there', fale 'íz dhêr', colocando a ponta da língua nos dentes superiores no 'th'. Junte 'a discount' pronunciando 'ê dís-káunt', terminando a palavra no 't' sem colocar som de 'i' no fim.\nLeia: Íz dhêr ê dís-káunt."
+    "pronuncia": "Em 'Is', mantenha o queixo ligeiramente solto, sem puxar sorriso em 'ız'. Na palavra 'there', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhéər'. No artigo 'a', deixe a mandíbula relaxada caída e língua frouxa para soltar 'ə'. Em 'discount', mantenha o queixo solto para o 'ı' da primeira sílaba em 'dıs-káunt', travando a consoante no final.\nLeia: Iz dhéər ə dıs-káunt?"
   },
   "170": {
-    "explanation": "A palavra 'mall' é usada no inglês para se referir ao shopping center. A estrutura é simples: o objeto ('The mall'), seguido do verbo 'is' e do tamanho ('very big').",
+    "explanation": "Para descrever o centro comercial como muito grande, usa-se 'The mall' (o shopping) seguido de 'is very big' (é muito grande). A palavra 'mall' é a forma mais comum nos Estados Unidos para referir-se a um shopping center.",
     "breakdown": [
       {
         "word": "The mall",
-        "meaning": "O shopping — The: o; mall: shopping center."
+        "meaning": "O shopping / O centro comercial — The: o; mall: shopping."
       },
       {
         "word": "is",
-        "meaning": "é / está."
+        "meaning": "é / está — verbo ser/estar."
       },
       {
         "word": "very big",
         "meaning": "muito grande — very: muito; big: grande."
       }
     ],
-    "pronuncia": "Diga 'The' com a língua entre os dentes ('dhê'). Em 'mall', fale 'mól' puxando o 'l' com a língua no céu da boca. Junte com 'is' ('íz') e termine em 'very big', dizendo 'vé-ri bíg' com o 'g' seco.\nLeia: Dhê mól íz vé-ri bíg."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Em 'mall', abra a boca no 'ó' profundo e trave o 'l' no céu da boca em 'mól'. Em 'is', mantenha o queixo solto em 'ız'. Em 'very big', encoste dente no lábio em 'vé-ri' e use o queixo ligeiramente solto, sem puxar sorriso em 'bıg', sem colocar 'i' no final de 'big'.\nLeia: Dhə mól ız vé-ri bıg."
   },
   "171": {
-    "explanation": "Em inglês, a cor da roupa vem sempre antes da peça. Por isso, dizemos 'blue jacket' (azul jaqueta) em vez de jaqueta azul, mantendo essa ordem natural da língua.",
+    "explanation": "Para pedir um item específico que está afastado ou apontado, diz-se 'I want that' (eu quero aquele/aquela). Em inglês, a cor 'blue' (azul) deve vir antes do objeto 'jacket' (jaqueta), seguindo a regra de posicionar características antes do substantivo.",
     "breakdown": [
       {
         "word": "I want",
@@ -384,81 +416,85 @@
       },
       {
         "word": "that",
-        "meaning": "aquela / aquele."
+        "meaning": "aquela / aquele — demonstrativo para algo mais distante."
       },
       {
         "word": "blue jacket",
-        "meaning": "jaqueta azul — blue: azul; jacket: jaqueta."
+        "meaning": "jaqueta azul — blue: azul; jacket: jaqueta/casaco."
       }
     ],
-    "pronuncia": "Fale 'I want' como 'ái uónt'. Em 'that', posicione a ponta da língua entre os dentes da frente ('dhét'). A palavra 'blue' soa como 'blú' e 'jacket' soa como 'djá-kêt', terminando no 't' sem som de vogal no final.\nLeia: Ái uónt dhét blú djá-kêt."
+    "pronuncia": "Fale 'Ái wónt'. Na palavra 'that', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'dhæt'. Em 'blue', faça 'blúu'. Em 'jacket', abra a mandíbula na vertical em 'A', puxando os cantos da boca para os lados em 'djæ-kıt', cortando o 't' a seco.\nLeia: Ái wónt dhæt blúu djæ-kıt."
   },
   "172": {
-    "explanation": "Quando perguntamos se alguém tem determinado objeto no plural, a palavra 'any' entra para dar o sentido de 'alguma' ou 'quaisquer', soando super natural.",
+    "explanation": "Para perguntar se um estabelecimento possui canetas à venda de forma genérica, usa-se 'Do you have' (você tem) acompanhado da palavra 'any' para indicar 'alguma' ou 'quaisquer', seguida do substantivo no plural 'pens' (canetas).",
     "breakdown": [
       {
         "word": "Do you have",
-        "meaning": "Você tem...? — Do: marcador de pergunta; you: você; have: ter."
+        "meaning": "Você tem / Vocês têm — Do: auxiliar de pergunta; you: você; have: ter."
       },
       {
-        "word": "any pens",
-        "meaning": "algumas canetas / canetas — any: algumas/nenhuma; pens: canetas."
+        "word": "any",
+        "meaning": "algumas / quaisquer — usado em perguntas para plural indeterminado."
+      },
+      {
+        "word": "pens",
+        "meaning": "canetas — instrumentos de escrita."
       }
     ],
-    "pronuncia": "Junte 'Do you have' como 'dú iú rê-vê'. A palavra 'any' soa como 'ê-ni'. Em 'pens', fale 'pênz', esticando ligeiramente o som de 'z' no final.\nLeia: Dú iú rê-vê ê-ni pênz."
+    "pronuncia": "Fale 'Dúu yúu'. Na palavra 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv'. Em 'any', fale 'é-ni'. Na palavra 'pens', diga 'pénz', lembrando de colar a ponta da língua no céu da boca para o 'n' e terminar com a vibração de 'z'.\nLeia: Dúu yúu hæv é-ni pénz?"
   },
   "173": {
-    "explanation": "A frase afirma o estado do local. Começa com 'The supermarket' (o supermercado) e termina com o estado de funcionamento 'is open' (está aberto).",
+    "explanation": "Para dizer que o mercado está em horário de funcionamento, diz-se 'The supermarket is open'. O termo 'open' funciona como o adjetivo 'aberto', posicionado logo após o verbo de estado 'is' (está).",
     "breakdown": [
       {
         "word": "The supermarket",
         "meaning": "O supermercado — The: o; supermarket: supermercado."
       },
       {
-        "word": "is open",
-        "meaning": "está aberto — is: está; open: aberto."
+        "word": "is",
+        "meaning": "está / é — verbo ser/estar."
+      },
+      {
+        "word": "open",
+        "meaning": "aberto / em funcionamento — adjetivo de estado."
       }
     ],
-    "pronuncia": "Diga 'The' colocando a ponta da língua nos dentes ('dhê'). Em 'supermarket', fale 'sú-pêr-már-kêt', curvando a língua para dentro no som do 'r'. Junte 'is open' falando 'íz ôu-pên' de forma contínua.\nLeia: Dhê sú-pêr-már-kêt íz ôu-pên."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Em 'supermarket', curvamos a língua para trás em 'súu-pər-már-kıt'. Para 'is', mantenha o queixo solto em 'ız'. Na palavra 'open', a segunda sílaba exige deixar a mandíbula relaxada caída e língua frouxa em 'ôu-pən', travando a língua no 'n' final.\nLeia: Dhə súu-pər-már-kıt ız ôu-pən."
   },
   "174": {
-    "explanation": "Em inglês, quando você gasta dinheiro com algo, usa-se a palavra 'on' depois de dinheiro, criando a combinação 'spend money on' para indicar a categoria do gasto.",
+    "explanation": "No inglês, quando você despende recursos em alguma categoria, a preposição usada após o verbo gastar ('spend') é 'on'. Por isso, diz-se 'I spend money on books', que significa literalmente 'eu gasto dinheiro SOBRE livros'.",
     "breakdown": [
       {
         "word": "I spend",
-        "meaning": "Eu gasto — I: eu; spend: gastar."
+        "meaning": "Eu gasto — I: eu; spend: gastar/despender."
       },
       {
         "word": "money",
-        "meaning": "dinheiro."
+        "meaning": "dinheiro — recursos financeiros."
       },
       {
         "word": "on books",
         "meaning": "com livros / em livros — on: sobre/em; books: livros."
       }
     ],
-    "pronuncia": "Fale 'I spend' como 'ái spênd', travando o 'd' final. A palavra 'money' soa como 'má-ni'. Junte com 'on books' pronunciando 'ón búks', parando a voz no som seco do 'ks'.\nLeia: Ái spênd má-ni ón búks."
+    "pronuncia": "Em 'I spend', comece direto no silvo do 's' em 'spénd' sem dizer 'is-pend'. Na palavra 'money', deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo em 'mâ-ni'. Em 'on', abra a boca no 'ó' profundo em 'ón'. Em 'books', faça o 'u' curto com a boca relaxada em 'buks', travando o 'k' e o 's' a seco no final sem colocar 'i'.\nLeia: Ái spénd mâ-ni ón buks."
   },
   "175": {
-    "explanation": "Como 'laranjas' está no plural, a pergunta 'quanto custa' muda de 'How much is' para 'How much are', ajustando o verbo para combinar com vários itens.",
+    "explanation": "Para perguntar o preço de itens no plural, a estrutura muda de 'How much is' para 'How much are' (quanto são/custa as...). Em seguida coloca-se o artigo 'the' e o produto no plural, no caso 'oranges' (laranjas).",
     "breakdown": [
       {
-        "word": "How much",
-        "meaning": "Quanto / Qual o valor."
-      },
-      {
-        "word": "are",
-        "meaning": "são / custam (usado para o plural)."
+        "word": "How much are",
+        "meaning": "Quanto custam / Quanto são — How much: quanto; are: são/estão."
       },
       {
         "word": "the oranges",
         "meaning": "as laranjas — the: as; oranges: laranjas."
       }
     ],
-    "pronuncia": "Diga 'How much' como 'ráu mátch'. Conecte com 'are' fazendo o som 'ár', curvando a língua no céu da boca. Em 'the oranges', fale 'dhi ó-rind-jêz', ligando as palavras de forma fluida.\nLeia: Ráu mátch ár dhi ó-rind-jêz."
+    "pronuncia": "Em 'How much', fale 'Háu mâtch'. Em 'are', enrole a língua para trás em 'ár'. Na palavra 'the' antes de vogal, fale 'dhı' com o queixo solto ou 'dhə', colocando a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes. Em 'oranges', deixe a mandíbula relaxada caída e língua frouxa na sílaba final em 'ó-rın-djəz'.\nLeia: Háu mâtch ár dhı ó-rın-djəz?"
   },
   "176": {
-    "explanation": "Para dizer que não tem o recibo ou nota fiscal, usa-se a estrutura de negação 'I do not have' seguida do item 'a receipt'. Note que a letra 'p' na palavra 'receipt' não é pronunciada.",
+    "explanation": "Para informar que não possui a nota fiscal de uma compra, diz-se 'I do not have a receipt'. Repare que a palavra 'receipt' tem a letra 'p' totalmente muda na pronúncia, focando o som no final seco.",
     "breakdown": [
       {
         "word": "I do not have",
@@ -466,69 +502,77 @@
       },
       {
         "word": "a receipt",
-        "meaning": "um recibo / nota fiscal — a: um; receipt: recibo."
+        "meaning": "um recibo / nota fiscal — a: um; receipt: recibo/comprovante."
       }
     ],
-    "pronuncia": "Fale 'I do not' como 'ái dú nót'. Conecte com 'have a' dizendo 'rê-vê'. Em 'receipt', ignore totalmente a letra 'p' e diga 'ri-síit', parando o som seco na letra 't'.\nLeia: Ái dú nót rê-vê ri-síit."
+    "pronuncia": "Fale 'Ái dúu nót'. Na palavra 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv'. Em 'a', deixe a mandíbula relaxada caída e língua frouxa para soltar 'ə'. Na palavra 'receipt', ignore a letra 'p' e use o queixo ligeiramente solto, sem puxar sorriso para a sílaba final em 'rı-síit', esticando o sorriso no 'ii' longo e cortando o 't' a seco.\nLeia: Ái dúu nót hæv ə rı-síit."
   },
   "177": {
-    "explanation": "A combinação 'try on' significa experimentar uma roupa ou acessório. Para perguntar se você pode experimentar, a expressão 'this' (isto) fica exatamente no meio: 'try this on'.",
+    "explanation": "Para perguntar se pode provar uma peça de roupa, usa-se a expressão 'try on' separada pelo objeto 'this' (isto). A pergunta fica 'Can I try this on?' (posso eu provar isto?), que é a forma padrão falada em lojas de roupas.",
     "breakdown": [
       {
         "word": "Can I",
-        "meaning": "Posso eu / Posso (pedindo permissão)."
+        "meaning": "Posso eu / Posso — Can: posso; I: eu."
       },
       {
         "word": "try this on",
-        "meaning": "experimentar isto — try... on: experimentar (roupa/acessório); this: isto/esta peça."
+        "meaning": "provar isto — try... on: provar vestuário; this: isto/esta peça."
       }
     ],
-    "pronuncia": "Conecte 'Can I' para soar como 'kê-nái'. Em 'try', curve a língua para fazer o som do 'r' ('trái'). Em 'this', ponha a língua entre os dentes ('dhís'). Termine em 'on' com som de 'ón'.\nLeia: Kê-nái trái dhís ón."
+    "pronuncia": "Na palavra 'Can', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'kæn', emendando em 'Ái'. Em 'try', fale 'trái'. Na palavra 'this', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e mantenha o queixo ligeiramente solto em 'dhıs'. Termine em 'ón' com a boca aberta em 'ó'.\nLeia: Kæn ái trái dhıs ón?"
   },
   "178": {
-    "explanation": "Para dizer que um lugar fica 'ao lado de' outro, a língua inglesa usa a expressão fixa 'next to'. Depois dela, basta colocar o local de referência.",
+    "explanation": "Para indicar que um estabelecimento fica ao lado do outro, usa-se a combinação 'next to' (ao lado de / junto a). Na frase 'The store is next to the pharmacy', a estrutura de localização é direta e clara.",
     "breakdown": [
       {
         "word": "The store",
-        "meaning": "A loja — The: a; store: loja."
+        "meaning": "A loja — The: a; store: loja/estabelecimento."
       },
       {
         "word": "is next to",
-        "meaning": "fica ao lado de / é perto de — is: é/fica; next to: ao lado de."
+        "meaning": "fica ao lado de / é próxima a — is: é/fica; next to: ao lado de."
       },
       {
         "word": "the pharmacy",
         "meaning": "a farmácia — the: a; pharmacy: farmácia."
       }
     ],
-    "pronuncia": "Em 'The store', fale 'dhê stór', curvando a língua no 'r'. Junte 'is next to' parecendo 'íz néks-tú'. Em 'the pharmacy', coloque a ponta da língua nos dentes em 'the' ('dhê') e fale 'fár-mê-si', curvando a língua no 'r'.\nLeia: Dhê stór íz néks-tú dhê fár-mê-si."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Comece 'store' direto no silvo do 's' em 'stór'. Em 'is', mantenha o queixo solto em 'ız'. Fale 'nékst tu'. Repita 'dhə' com a língua entre os dentes. Em 'pharmacy', fale 'fár-mə-si', usando o som neutro na sílaba do meio.\nLeia: Dhə stór ız nékst tu dhə fár-mə-si."
   },
   "179": {
-    "explanation": "Quando você precisa ir a algum lugar, o inglês junta a necessidade ('I need to go') com o destino ('to the bank'), usando duas vezes a palavra 'to' de maneira totalmente natural.",
+    "explanation": "Para expressar a necessidade de se deslocar a algum lugar, a estrutura é 'I need to go to' (eu preciso ir para/ao). O primeiro 'to' conecta o verbo precisar com o ir, e o segundo 'to' indica a direção até o local 'the bank'.",
     "breakdown": [
       {
-        "word": "I need to go",
-        "meaning": "Eu preciso ir — I: eu; need: precisar; to: de; go: ir."
+        "word": "I need to",
+        "meaning": "Eu preciso — I: eu; need: precisar; to: conector verbal."
       },
       {
-        "word": "to the bank",
-        "meaning": "ao banco — to: a/para; the: o; bank: banco."
+        "word": "go to",
+        "meaning": "ir ao / ir para — go: ir; to: preposição de direção."
+      },
+      {
+        "word": "the bank",
+        "meaning": "o banco — the: o; bank: banco."
       }
     ],
-    "pronuncia": "Fale 'I need to go' encadeado como 'ái níid tú gôu'. Em seguida, fale 'to the bank' como 'tú dhê bénk', lembrando de colocar a ponta da língua entre os dentes no 'dhê' e parando a voz no 'k' de 'bank'.\nLeia: Ái níid tú gôu tú dhê bénk."
+    "pronuncia": "Fale 'Ái níid tu gôu tu'. Na palavra 'the', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Na palavra 'bank', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'bænk', travando o som do 'k' no final.\nLeia: Ái níid tu gôu tu dhə bænk."
   },
   "180": {
-    "explanation": "Para saber onde ficam os provadores, usa-se 'Where are' (onde ficam) seguido do termo 'changing rooms', que significa literalmente 'salas de troca'.",
+    "explanation": "Para perguntar onde ficam as cabines de provador no plural, usa-se 'Where are' (onde estão/ficam) seguido de 'the changing rooms' (os provadores). A expressão 'changing rooms' significa literalmente 'salas de troca'.",
     "breakdown": [
       {
         "word": "Where are",
-        "meaning": "Onde ficam / Onde estão — Where: onde; are: estão/ficam (plural)."
+        "meaning": "Onde ficam / Onde estão — Where: onde; are: estão/ficam."
       },
       {
-        "word": "the changing rooms",
-        "meaning": "os provadores — the: os; changing: de troca/mudar; rooms: salas/quartos."
+        "word": "the",
+        "meaning": "os / as — artigo definido."
+      },
+      {
+        "word": "changing rooms",
+        "meaning": "os provadores — changing: troca/mudança de roupa; rooms: salas/quartos."
       }
     ],
-    "pronuncia": "Junte 'Where are' curvando a língua no céu da boca para o som do 'r' ('uêr ár'). Em 'the', use a língua nos dentes da frente ('dhê'). Para 'changing rooms', diga 'tchêin-djing rúumz', caprichando no 'r' bem enrolado e terminando no 'z' suave.\nLeia: Uêr ár dhê tchêin-djing rúumz."
+    "pronuncia": "Junte 'Where are' como 'Wéər ár'. Na palavra 'the', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes e deixe a mandíbula relaxada caída e língua frouxa em 'dhə'. Em 'changing', fale 'tchêin-djıng'. Em 'rooms', faça o 'u' longo em 'rúumz', selando os lábios no 'm' e terminando no zumbido de 'z'.\nLeia: Wéər ár dhə tchêin-djıng rúumz?"
   }
 }

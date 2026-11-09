@@ -1021,8 +1021,6 @@ function App() {
     if (nivelEfetivo !== nivelAtivo) setNivelAtivo(nivelEfetivo);
     const { data } = await dataService.getSentencesByTopic(nivelEfetivo, idiomaEstudo, colTopicOrigem, nomeTopico);
     if (data) {
-      const vozes = (idiomaEstudo === "pi" || idiomaEstudo === "zh") ? VOZES_ZH : (idiomaEstudo === "pt" ? VOZES_PT : (idiomaEstudo === "ge" ? VOZES_GE : (idiomaEstudo === "it" ? VOZES_IT : (idiomaEstudo === "fr" ? VOZES_FR : (idiomaEstudo === "es" ? VOZES_ES : VOZES_EN)))));
-      precarregarAudios(data, idiomaEstudo, vozes);
       if (!topicosBaixados.includes(nomeTopico)) {
         baixarTopicoOffline(nomeTopico, nivelEfetivo);
       }
@@ -1425,47 +1423,55 @@ function App() {
 
         // 4. SINCRONIZAÇÃO COMPLETA EM SEGUNDO PLANO (Áudios, Palavras e Explicações)
         const sincronizarSegundoPlano = async () => {
-          // a. Áudios das frases completas
-          const idsEstudados = idsRevisao.filter(id => {
-            const item = frasesMaestria[id];
-            const rank = typeof item === 'object' ? (item?.rank || 0) : (item || 0);
-            return rank > 0;
-          });
-          const idsParaBaixar = idsEstudados.length > 0 ? idsEstudados : idsRevisao.slice(0, 10);
-          const promessaAudios = baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo);
+          try {
+            const { data: sentencasNovas } = await dataService.getSentencesByIds(idsRevisao);
+            if (!sentencasNovas || sentencasNovas.length === 0) return;
 
-          // b. Vocabulário de palavras isoladas e Explicações JSON dos tópicos afetados
-          const promessaVocabularioEExplicacoes = (async () => {
-            try {
-              const { data: sentencasNovas } = await dataService.getSentencesByIds(idsRevisao);
-              if (!sentencasNovas || sentencasNovas.length === 0) return;
+            const colTopicOrigem = `topic_${idiomaOrigem}`;
 
-              // Palavras isoladas
-              const todasPalavras = [];
-              sentencasNovas.forEach(item => {
-                const txt = (idiomaEstudo === 'pi' && item.zh) ? item.zh : (item[idiomaEstudo] || item.texto || "");
-                txt.split(/\s+/).forEach(w => {
-                  const limpa = w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim();
-                  if (limpa) todasPalavras.push(limpa);
-                });
+            // Filtra estritamente sentenças de tópicos já baixados ou já praticadas pelo aluno
+            const sentencasParaBaixar = sentencasNovas.filter(item => {
+              const tp = item[colTopicOrigem];
+              const m = frasesMaestria[item.id];
+              const rank = typeof m === 'object' ? (m?.rank || 0) : (m || 0);
+              const topicoJaBaixado = tp && topicosBaixados.includes(tp);
+              const jaEstudada = rank > 0;
+              return topicoJaBaixado || jaEstudada;
+            });
+
+            // Se nenhum dos tópicos afetados estiver salvo no aparelho, encerra sem downloads prematuros
+            if (sentencasParaBaixar.length === 0) return;
+
+            // a. Áudios das frases completas (todas as afetadas nos tópicos baixados, sem cortes artificiais)
+            const idsParaBaixar = sentencasParaBaixar.map(s => Number(s.id));
+            const promessaAudios = baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo);
+
+            // b. Palavras isoladas apenas das sentenças a atualizar
+            const todasPalavras = [];
+            sentencasParaBaixar.forEach(item => {
+              const txt = (idiomaEstudo === 'pi' && item.zh) ? item.zh : (item[idiomaEstudo] || item.texto || "");
+              txt.split(/\s+/).forEach(w => {
+                const limpa = w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim();
+                if (limpa) todasPalavras.push(limpa);
               });
-              if (todasPalavras.length > 0) {
-                await precarregarPalavras(todasPalavras, idiomaEstudo);
+            });
+            const promessaPalavras = todasPalavras.length > 0
+              ? precarregarPalavras(todasPalavras, idiomaEstudo)
+              : Promise.resolve();
+
+            // c. Explicações JSON apenas dos tópicos que estão no aparelho
+            const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+            const paresTopicos = new Map();
+
+            sentencasParaBaixar.forEach(item => {
+              const n = item.level || "A1";
+              const tp = item[colTopicOrigem];
+              if (tp && topicosBaixados.includes(tp) && !paresTopicos.has(`${n}_${tp}`)) {
+                paresTopicos.set(`${n}_${tp}`, { nivel: n, topico: tp });
               }
+            });
 
-              // Explicações JSON
-              const colTopicOrigem = `topic_${idiomaOrigem}`;
-              const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
-              const paresTopicos = new Map();
-
-              sentencasNovas.forEach(item => {
-                const n = item.level || "A1";
-                const tp = item[colTopicOrigem];
-                if (tp && !paresTopicos.has(`${n}_${tp}`)) {
-                  paresTopicos.set(`${n}_${tp}`, { nivel: n, topico: tp });
-                }
-              });
-
+            const promessaExplicacoes = (async () => {
               for (const { nivel: nTopico, topico: nomeTopico } of paresTopicos.values()) {
                 const chaveCache = `${parIdiomas}_${nTopico}_${nomeTopico}`;
                 delete cacheExplicacoesTopico.current[chaveCache];
@@ -1494,7 +1500,7 @@ function App() {
                     let mapa = await resposta.json();
                     if (Array.isArray(mapa)) {
                       mapa = Object.assign({}, ...mapa);
-                    } else if (mapa && typeof mapa === 'object' && !mapa[String(sentencasNovas[0]?.id)]) {
+                    } else if (mapa && typeof mapa === 'object' && !mapa[String(sentencasParaBaixar[0]?.id)]) {
                       const chaves = Object.keys(mapa);
                       if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
                         const interno = mapa[chaves[0]];
@@ -1507,12 +1513,12 @@ function App() {
                   console.warn(`[App] Falha ao atualizar explicação do tópico '${nomeTopico}':`, errJson);
                 }
               }
-            } catch (errSentencas) {
-              console.warn("[App] Falha ao sincronizar vocabulário e explicações atualizadas:", errSentencas);
-            }
-          })();
+            })();
 
-          await Promise.all([promessaAudios, promessaVocabularioEExplicacoes]);
+            await Promise.all([promessaAudios, promessaPalavras, promessaExplicacoes]);
+          } catch (errSentencas) {
+            console.warn("[App] Falha na sincronização completa em segundo plano:", errSentencas);
+          }
         };
 
         sincronizarSegundoPlano().catch(err => {
@@ -4240,7 +4246,9 @@ export function EscolherTopic({
 
   const [topicosBaixadosLocal, setTopicosBaixadosLocal] = React.useState([]);
   const [baixandoTopicoLocal, setBaixandoTopicoLocal] = React.useState(null);
-  const topicosBaixados = topicosBaixadosProp !== undefined ? topicosBaixadosProp : topicosBaixadosLocal;
+  const topicosBaixados = React.useMemo(() => {
+    return Array.from(new Set([...(topicosBaixadosProp || []), ...topicosBaixadosLocal]));
+  }, [topicosBaixadosProp, topicosBaixadosLocal]);
   const baixandoTopico = baixandoTopicoProp !== undefined ? baixandoTopicoProp : baixandoTopicoLocal;
   const setTopicosBaixados = setTopicosBaixadosLocal;
   const setBaixandoTopico = setBaixandoTopicoLocal;
@@ -4255,7 +4263,9 @@ export function EscolherTopic({
 
   const baixarTopicoOffline = async (nomeTopico) => {
     if (baixarTopicoOfflineProp) {
-      return await baixarTopicoOfflineProp(nomeTopico);
+      const res = await baixarTopicoOfflineProp(nomeTopico);
+      setTopicosBaixadosLocal(prev => prev.includes(nomeTopico) ? prev : [...prev, nomeTopico]);
+      return res;
     }
     if (baixandoTopico) return;
     setBaixandoTopico(nomeTopico);
@@ -6497,7 +6507,7 @@ export const dataService = {
         .order('id', { ascending: true });
 
       if (resposta && resposta.data && resposta.data.length > 0) {
-        await salvarNoIndexedDB(STORES.TOPICS, cacheKey, resposta.data);
+        await salvarNoIndexedDB(STORES.SENTENCES, cacheKey, resposta.data);
         return resposta;
       }
       throw new Error("Sem dados na nuvem");
@@ -6811,20 +6821,9 @@ export const VOZES_PT = ["v1", "v2", "v3", "v4"];
 export const VOZES_ZH = ["v1", "v2", "v3", "v4"];
 export const VOZES_PI = VOZES_ZH;
 
-// TABELA CENTRAL DE VERSÕES DE ÁUDIO (Cache Busting silencioso)
-export const VERSOES_AUDIOS = {
-  "35": 2,      // Frase 35 atualizada com dicção humana em todos os idiomas
-  "fr/9_v3": 2, // Frase 9 em francês (voz v3 Charline) corrigida no Audacity
-  "519": 2,     // Frase 519 (24h/24 -> vingt-quatre heures sur vingt-quatre)
-  "1117": 2     // Frase 1117 (24h/24 -> vingt-quatre heures sur vingt-quatre)
-};
-
 export function montarAudioUrl(id, voz = "v1", idioma = "en") {
   const pastaIdioma = idioma === "pi" ? "zh" : idioma;
-  const chaveVoz = `${pastaIdioma}/${id}_${voz}`;
-  const versao = VERSOES_AUDIOS[chaveVoz] || VERSOES_AUDIOS[String(id)] || null;
-  const sufixo = versao ? `?v=${versao}` : "";
-  return `${R2_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3${sufixo}`;
+  return `${R2_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3`;
 }
 
 export async function obterAudioUrl(id, voz = "v1", idioma = "en") {
@@ -7062,7 +7061,8 @@ export function obterVozesPorIdioma(idioma) {
 
 export async function expurgarAudiosDeIds(ids, idioma = "en") {
   if (!ids || ids.length === 0) return;
-  const vozes = obterVozesPorIdioma(idioma);
+  const pastaIdioma = idioma === "pi" ? "zh" : idioma;
+  const todasVozes = ["v1", "v2", "v3", "v4", "v5", "v6"];
   const temCaches = ("caches" in window);
   let cache = null;
   if (temCaches) {
@@ -7070,16 +7070,20 @@ export async function expurgarAudiosDeIds(ids, idioma = "en") {
   }
 
   for (const id of ids) {
-    for (const voz of vozes) {
-      const url = montarAudioUrl(id, voz, idioma);
+    for (const voz of todasVozes) {
+      const urlBase = `${R2_AUDIO_BASE}/${pastaIdioma}/${id}_${voz}.mp3`;
       if (cache) {
         try {
-          await cache.delete(url);
-          await cache.delete(url, { ignoreSearch: true });
+          await cache.delete(urlBase);
+          await cache.delete(urlBase, { ignoreSearch: true });
+          await cache.delete(`${urlBase}?v=2`);
+          await cache.delete(`${urlBase}?v=3`);
         } catch (e) { }
       }
       try {
-        await removerDoIndexedDB(STORES.AUDIOS, url);
+        await removerDoIndexedDB(STORES.AUDIOS, urlBase);
+        await removerDoIndexedDB(STORES.AUDIOS, `${urlBase}?v=2`);
+        await removerDoIndexedDB(STORES.AUDIOS, `${urlBase}?v=3`);
       } catch (e) { }
     }
   }
@@ -7119,7 +7123,7 @@ export async function baixarNovosAudiosComProgresso(ids, idioma = "en", onProgre
     await Promise.all(
       lote.map(async (url) => {
         try {
-          const resp = await fetch(url, { mode: "cors" });
+          const resp = await fetch(`${url}?t=${Date.now()}`, { mode: "cors" });
           if (resp.ok) {
             if (cache) {
               await cache.put(url, resp);
@@ -7362,7 +7366,7 @@ export function tocarAudioPalavraMetronomo(palavra, idioma = "en", onSomComecou 
 ### 📄 ARQUIVO: ./src/services/offlineStorage.js
 // offlineStorage.js - Armazenamento local persistente com IndexedDB nativo
 const DB_NAME = "dingli_offline_db";
-const DB_VERSION = 3;
+const DB_VERSION = 4;
 const STORES = {
   TOPICS: "topics_cache",
   SENTENCES: "sentences_cache",
@@ -7383,6 +7387,9 @@ function abrirDB() {
       }
       if (!db.objectStoreNames.contains(STORES.SENTENCES)) {
         db.createObjectStore(STORES.SENTENCES, { keyPath: "key" });
+      }
+      if (!db.objectStoreNames.contains(STORES.AUDIOS)) {
+        db.createObjectStore(STORES.AUDIOS, { keyPath: "key" });
       }
     };
     request.onsuccess = () => resolve(request.result);

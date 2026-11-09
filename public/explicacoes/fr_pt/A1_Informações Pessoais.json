@@ -1,490 +1,630 @@
 {
   "31": {
-    "explanation": "Em francês, para dizer a idade, usarmos o verbo ter exatamente como no português. O 'Je' (eu) se junta com 'ai' (tenho) formando 'J'ai'. Para ligar o número 'vingt' com a palavra 'ans' (anos), os nativos emendam o som final do número direto na vogal seguinte, criando um fluxo único na fala.",
+    "explanation": "Para dizer a sua idade em francês, o raciocínio é exatamente o mesmo do português: usa-se o verbo ter ('avoir') em vez de ser ou estar. A primeira pessoa 'Je' perde a vogal e se funde ao verbo 'ai' virando 'J'ai', que significa literalmente 'eu tenho'. O número vinte 'vingt' possui letras mudas no final, mas quando dizemos 'vingt ans', a consoante final é ativada para se conectar diretamente à palavra 'ans', fazendo a frase fluir em um único bloco.",
     "breakdown": [
       {
         "word": "J'ai",
-        "meaning": "Eu tenho — J': eu; ai: tenho."
+        "meaning": "Eu tenho — junção do pronome Je (eu) com ai (tenho)."
       },
       {
         "word": "vingt",
-        "meaning": "Vinte — o número 20."
+        "meaning": "Vinte — número 20 em francês."
       },
       {
         "word": "ans",
-        "meaning": "Anos — quantidade de anos de idade."
+        "meaning": "Anos — plural de an (ano)."
       }
     ],
-    "pronuncia": "Comece em 'J'ai' com um som suave de 'jê'. Em 'vingt ans', o som sai pelo nariz e emenda o 't' do número diretamente na palavra 'ans', sem pausa, formando um som de 'vãn-tãn' com a língua relaxada no fundo da boca.\nLeia: Jê vãn-tãn"
+    "pronuncia": "Comece em 'J'ai' fazendo o som suave e sonoro do 'j' com tom de 'jê'. Na palavra 'vingt', o som isolado seria a nasal aberta 'vã', mas como 'ans' começa com vogal, o 't' final acorda e se conecta na palavra seguinte. Na palavra 'ans', posicione a boca para emitir a nasal posterior 'ón' projetando um 'ó' nasal escuro e profundo para o nariz, mantendo a língua relaxada sem tocar nos dentes. Conecte tudo sem pausas.\nLeia: Jê-vã-tón."
   },
   "32": {
-    "explanation": "Para dizer que alguém mora em um lugar, o francês usa o verbo 'vivre' (viver) ou 'habiter'. Aqui usaram 'vit' (mora/vive). Repare que a qualidade do lugar ('petit', pequeno) vem antes do nome ('appartement', apartamento), o que é super comum em francês para palavras curtas de tamanho.",
+    "explanation": "Em francês, a ordem das palavras para descrever o lugar onde alguém mora muda ligeiramente em relação ao português: o adjetivo de tamanho 'petit' vem posicionado antes do substantivo 'appartement'. A preposição 'dans' significa literalmente 'dentro de' e é a escolha natural para dizer que alguém mora em um apartamento. O verbo 'vit' tem a consoante 't' final totalmente muda.",
     "breakdown": [
       {
         "word": "Elle",
-        "meaning": "Ela — pessoa do feminino."
+        "meaning": "Ela — pronome pessoal feminino."
       },
       {
         "word": "vit",
-        "meaning": "Mora / Vive — ação de residir."
+        "meaning": "Mora / Vive — forma conjugada do verbo vivre."
       },
       {
         "word": "dans",
-        "meaning": "Em / Dentro de — indica localização."
+        "meaning": "Em / Dentro de — preposição de lugar."
+      },
+      {
+        "word": "un",
+        "meaning": "Um — artigo indefinido masculino."
+      },
+      {
+        "word": "petit",
+        "meaning": "Pequeno — adjetivo masculino."
+      },
+      {
+        "word": "appartement",
+        "meaning": "Apartamento — substantivo masculino."
+      }
+    ],
+    "pronuncia": "Comece com 'Elle vit' dizendo 'él' seco e 'ví' sem pronunciar o 't' final. Na palavra 'dans', faça o som nasal posterior 'dón' projetado para o nariz e ligue o 's' com som de 'z' no artigo 'un', que é pronunciado como a nasal aberta 'ã', formando 'dón-zã'. Na palavra 'petit', para o som ə de 'pe', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'pə', e solte o 't' seco em 'tí'. Grude o 't' final de 'petit' abrindo a palavra 'appartement', que termina na nasal posterior 'món' sem pronunciar o 't' final.\nLeia: Él ví dón-zã pə-ti-ta-par-tə-món."
+  },
+  "33": {
+    "explanation": "Para fazer uma pergunta formal em francês, invertermos a posição do verbo com o pronome, transformando 'tu as' (você tem) em 'As-tu'. A palavra 'des' é um artigo indefinido plural que precisa estar obrigatoriamente presente antes de 'frères', algo que no português nós costumamos omitir ao perguntar 'você tem irmãos?'.",
+    "breakdown": [
+      {
+        "word": "As-tu",
+        "meaning": "Você tem — inversão de tu as (tu tens / você tem) para formar pergunta."
+      },
+      {
+        "word": "des",
+        "meaning": "Irmãos / Uns — artigo plural indeterminado."
+      },
+      {
+        "word": "frères",
+        "meaning": "Irmãos — plural de frère (irmão)."
+      }
+    ],
+    "pronuncia": "Na inversão 'As-tu', faça a ligação do 's' com som de 'z' em 'a-zü'. Para a letra U em 'tu', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('tü'). Na palavra 'des', fale 'dê' fechado. Em 'frères', abra a vogal em 'frér', produzindo um leve arranhado suave no fundo da garganta para o 'r' e mantendo a letra 's' final completamente muda.\nLeia: A-zü dê frér."
+  },
+  "34": {
+    "explanation": "A negação em francês é construída em duas partes que abraçam o verbo: a partícula 'ne' (que perde a vogal virando 'n'' diante de 'ai') e a palavra 'pas'. Em frases negativas, o artigo 'une' (uma) é substituído pela preposição 'de', resultando na estrutura literal 'Eu não tenho de irmã', que equivale ao nosso 'Eu não tenho irmã'.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "n'ai pas",
+        "meaning": "Não tenho — estrutura de negação ne + ai (tenho) + pas."
+      },
+      {
+        "word": "de",
+        "meaning": "De / Nenhuma — substituto do artigo em frases negativas."
+      },
+      {
+        "word": "sœur",
+        "meaning": "Irmã — substantivo feminino."
+      }
+    ],
+    "pronuncia": "Na palavra 'Je', para o som ə, é OBRIGATÓRIO deixar a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado ('jə'). O bloco 'n'ai pas' soa como 'né-pá' com o 's' mudo. Na palavra 'de', aplique a mesma regra do som ə soltando 'də'. Na palavra 'sœur', para o som œ, é OBRIGATÓRIO posicionar a língua para falar É bem aberto arredondando os lábios no formato de Ó ('sœr'), finalizando com o 'r' arranhado suavemente na garganta.\nLeia: Jə né pá də sœr."
+  },
+  "35": {
+    "explanation": "Para dizer o número de telefone em francês, a estrutura é idêntica à do português, com a adição do artigo 'le' antes de ditar a sequência de números ('est le...'). O possessivo 'Mon' (meu) concorda com o substantivo masculino 'numéro', e as palavras são conectadas de forma natural com a preposição 'de'.",
+    "breakdown": [
+      {
+        "word": "Mon",
+        "meaning": "Meu — pronome possessivo masculino."
+      },
+      {
+        "word": "numéro",
+        "meaning": "Número — substantivo masculino."
+      },
+      {
+        "word": "de",
+        "meaning": "De — preposição."
+      },
+      {
+        "word": "téléphone",
+        "meaning": "Telefone — substantivo masculino."
+      },
+      {
+        "word": "est le",
+        "meaning": "É o — est (verbo ser) + le (artigo definido masculino)."
+      }
+    ],
+    "pronuncia": "Em 'Mon', emita o som nasal arredondado 'mon' com os lábios em círculo fechado sem deixá-los se tocar no final. Na palavra 'numéro', para a letra U em 'nu', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('nü-mê-rô'). Na palavra 'de', para o som ə, deixe a boca 100% relaxada e mandíbula caída soltando um som neutro em 'də'. Em 'téléphone', fale 'tê-lê-fón' com a nasal posterior 'ón'. Termine o bloco em 'é lə'.\nLeia: Mon nü-mê-rô də tê-lê-fón é lə sãk sãk sãk zê-rô ã ka-trə-vã-du-z."
+  },
+  "36": {
+    "explanation": "A palavra 'adresse' (endereço) é feminina em francês, por isso usa o pronome interrogativo feminino 'Quelle'. No entanto, para dizer 'seu endereço', usa-se o possessivo masculino 'ton' em vez de 'ta' para evitar o choque fonético desagradável de duas vogais juntas ('ta adresse'). A consoante 'n' de 'ton' se liga diretamente à vogal de 'adresse'.",
+    "breakdown": [
+      {
+        "word": "Quelle",
+        "meaning": "Qual — pronome interrogativo feminino."
+      },
+      {
+        "word": "est",
+        "meaning": "É — terceira pessoa do verbo être."
+      },
+      {
+        "word": "ton",
+        "meaning": "Seu / Teu — possessivo masculino usado antes de vogal."
+      },
+      {
+        "word": "adresse",
+        "meaning": "Endereço — substantivo feminino em francês."
+      }
+    ],
+    "pronuncia": "Conecte 'Quelle est' fazendo o som limpo 'kél é'. Na palavra 'ton', ao se juntar com a palavra seguinte que começa por vogal, o som nasal se abre e o 'n' passa para a sílaba seguinte na ligação fonética, gerando o bloco fluido 'tô-na-drés'. Termine a palavra 'adresse' travando o som no 's' seco, sem adicionar nenhum 'i' no final.\nLeia: Kél é tô-na-drés."
+  },
+  "37": {
+    "explanation": "Esta frase segue a mesma ordem direta e simples do português: sujeito 'Il' (ele), verbo 'est' (é) e adjetivo 'marié' (casado). Na fala fluida do dia a dia, a consoante 'l' do pronome 'Il' se conecta diretamente na vogal do verbo 'est', fazendo os dois soarem como uma palavra só.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele — pronome pessoal masculino."
+      },
+      {
+        "word": "est",
+        "meaning": "É — terceira pessoa do verbo être."
+      },
+      {
+        "word": "marié",
+        "meaning": "Casado — adjetivo masculino."
+      }
+    ],
+    "pronuncia": "Junte o pronome 'Il' com o verbo 'est' em um único golpe de voz pronunciando 'i-lé'. Na palavra 'marié', produza o leve arranhado suave no fundo da garganta para a letra 'r', articulando o final com o som de 'ê' fechado em meio sorriso firme ('ma-ri-ê').\nLeia: I-lé ma-ri-ê."
+  },
+  "38": {
+    "explanation": "Para dizer 'eles não são casados', o francês aplica a negação dupla 'ne... pas' ao redor do verbo 'sont' (são). O pronome 'Ils' e o adjetivo 'mariés' levam a letra 's' no final para marcar o plural na escrita, mas essa consoante é completamente muda na pronúncia.",
+    "breakdown": [
+      {
+        "word": "Ils",
+        "meaning": "Eles — pronome pessoal masculino plural."
+      },
+      {
+        "word": "ne sont pas",
+        "meaning": "Não são — ne + sont (são) + pas (negação)."
+      },
+      {
+        "word": "mariés",
+        "meaning": "Casados — adjetivo no plural."
+      }
+    ],
+    "pronuncia": "Na palavra 'Ils', corte o 's' final mantendo apenas 'il'. Na palavra 'ne', para o som ə, deixe a boca 100% relaxada e mandíbula caída soltando o som neutro 'nə'. Em 'sont', faça o som nasal arredondado 'son' mantendo os lábios em círculo fechado sem se tocarem. Em 'pas', corte o 's' mudo ficando 'pá'. Finalize com 'mariés' em 'ma-ri-ê'.\nLeia: Il nə son pá ma-ri-ê."
+  },
+  "39": {
+    "explanation": "No francês formal, a pergunta é construída invertendo o verbo com o pronome sujeito, formando 'Est-elle' (é ela). Diferente do português, não se coloca artigo antes de nomes de profissão quando eles aparecem diretamente após o verbo de ligação.",
+    "breakdown": [
+      {
+        "word": "Est-elle",
+        "meaning": "Ela é — inversão de elle est (ela é) para formar pergunta."
+      },
+      {
+        "word": "médecin",
+        "meaning": "Médica / Médico — substantivo de profissão."
+      }
+    ],
+    "pronuncia": "No bloco 'Est-elle', a consoante 't' do verbo se conecta diretamente ao pronome 'elle', gerando o som 'és-tél'. Na palavra 'médecin', pronuncie a primeira sílaba como 'méd' e feche a palavra com a nasal anterior aberta 'sã', mantendo a língua relaxada no chão da boca.\nLeia: És-tél méd-sã."
+  },
+  "40": {
+    "explanation": "Assim como em português, ao dizer a sua própria profissão em francês não se usa artigo entre o verbo e o substantivo: diz-se diretamente 'Je suis professeur' (Eu sou professor). O verbo 'suis' tem a consoante 's' final completamente muda.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "suis",
+        "meaning": "Sou — primeira pessoa do verbo être."
+      },
+      {
+        "word": "professeur",
+        "meaning": "Professor — substantivo masculino."
+      }
+    ],
+    "pronuncia": "Na palavra 'Je', para o som ə, deixe a boca 100% relaxada e mandíbula caída no som neutro 'jə'. Em 'suis', arme o bico fechado do U francês e deslize rápido para o I em 'süí', sem pronunciar o 's' final. Na palavra 'professeur', para o som œ em 'eur', é OBRIGATÓRIO posicionar a língua para falar É bem aberto arredondando os lábios no formato de Ó ('prô-fê-sœr'), com o 'r' suave arranhado na garganta.\nLeia: Jə süí prô-fê-sœr."
+  },
+  "41": {
+    "explanation": "A frase segue uma estrutura muito próxima do português. O possessivo 'Mon' (meu) se une à palavra 'anniversaire' (aniversário) por ligação fonética porque a palavra começa com vogal. A preposição 'en' é a forma padrão usada antes de meses do ano.",
+    "breakdown": [
+      {
+        "word": "Mon",
+        "meaning": "Meu — possessivo masculino."
+      },
+      {
+        "word": "anniversaire",
+        "meaning": "Aniversário — substantivo masculino."
+      },
+      {
+        "word": "est",
+        "meaning": "É — terceira pessoa do verbo être."
+      },
+      {
+        "word": "en",
+        "meaning": "Em — preposição usada antes de meses."
+      },
+      {
+        "word": "mai",
+        "meaning": "Maio — mês do ano."
+      }
+    ],
+    "pronuncia": "Na palavra 'Mon', o 'n' se projeta para a vogal seguinte de 'anniversaire', abrindo o som para 'mo-na-ni-vér-sér'. Em 'est', pronuncie 'é'. Na preposição 'en', posicione a boca para emitir a nasal posterior 'ón' projetada para o nariz. Em 'mai', pronuncie o som puro de 'mé' fechado.\nLeia: Mo-na-ni-vér-sér é ón mé."
+  },
+  "42": {
+    "explanation": "No francês falado no dia a dia, é extremamente comum iniciar perguntas com a expressão 'C'est quand' (Literalmente: 'É quando') seguida do objeto da pergunta. O possessivo 'ton' se liga diretamente a 'anniversaire', criando uma pronúncia contínua.",
+    "breakdown": [
+      {
+        "word": "C'est",
+        "meaning": "É / Isto é — contração de ce (isto) + est (é)."
+      },
+      {
+        "word": "quand",
+        "meaning": "Quando — advérbio interrogativo."
+      },
+      {
+        "word": "ton",
+        "meaning": "Seu / Teu — possessivo masculino."
+      },
+      {
+        "word": "anniversaire",
+        "meaning": "Aniversário — substantivo masculino."
+      }
+    ],
+    "pronuncia": "Em 'C'est', fale 'sé' cortando o 't' a seco. Na palavra 'quand', emita a nasal posterior 'kón' com a boca aberta em 'ó' nasal escuro e profundo, sem pronunciar o 'd' final. Na junção de 'ton' com 'anniversaire', a nasal se abre e o 'n' abre a sílaba seguinte em 'tô-na-ni-vér-sér'.\nLeia: Sé kón tô-na-ni-vér-sér."
+  },
+  "43": {
+    "explanation": "Em francês, o adjetivo 'grande' é posicionado antes do substantivo 'famille', invertendo a ordem habitual do português. A palavra 'famille' é feminina, exigindo o artigo 'une', e possui uma terminação especial em 'ille' que soa como um 'i' prolongado sem som de 'L'.",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho — contração de Je (eu) + ai (tenho)."
+      },
+      {
+        "word": "une",
+        "meaning": "Uma — artigo indefinido feminino."
+      },
+      {
+        "word": "grande",
+        "meaning": "Grande — adjetivo feminino."
+      },
+      {
+        "word": "famille",
+        "meaning": "Família — substantivo feminino."
+      }
+    ],
+    "pronuncia": "Em 'J'ai', fale 'jê'. Na palavra 'une', para a letra U, é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('ü-n'). Em 'grande', emita a nasal posterior 'grón' e solte o 'd' seco em 'grón-d'. Em 'famille', a terminação 'ille' gera a transição líquida suave 'fa-mí-y'.\nLeia: Jê ü-n grón-d fa-mí-y."
+  },
+  "44": {
+    "explanation": "Esta é uma estrutura interrogativa curta e elegante. A palavra 'Où' significa 'onde' (com acento grave para não confundir com 'ou' que significa 'ou'). O verbo 'vit' e o pronome 'il' são invertidos e conectados obrigatoriamente por um hífen, fazendo o 't' soar na ligação.",
+    "breakdown": [
+      {
+        "word": "Où",
+        "meaning": "Onde — pronome interrogativo de lugar."
+      },
+      {
+        "word": "vit-il",
+        "meaning": "Mora ele / Vive ele — inversão de il vit para formar pergunta."
+      }
+    ],
+    "pronuncia": "A palavra 'Où' é pronunciada com o som puro de 'u' do português. No bloco 'vit-il', a consoante 't' do verbo é ativada na ligação e se gruda diretamente no pronome 'il', resultando na pronúncia 'ví-tíl'.\nLeia: U ví-tíl."
+  },
+  "45": {
+    "explanation": "Para dizer que alguém não tem determinado objeto, o francês usa a negação 'n'a pas' (não tem) e substitui o artigo indefinido pelo conector 'de'. A palavra 'voiture' (carro) é um substantivo feminino em francês, diferente do português que é masculino.",
+    "breakdown": [
+      {
+        "word": "Elle",
+        "meaning": "Ela — pronome pessoal."
+      },
+      {
+        "word": "n'a pas",
+        "meaning": "Não tem — estrutura negativa n' + a (tem) + pas."
+      },
+      {
+        "word": "de",
+        "meaning": "De / Nenhum — substituto do artigo após a negação."
+      },
+      {
+        "word": "voiture",
+        "meaning": "Carro — substantivo feminino em francês."
+      }
+    ],
+    "pronuncia": "Em 'Elle', diga 'él'. Em 'n'a pas', pronuncie 'ná pá'. Na palavra 'de', para o som ə, deixe a boca 100% relaxada e mandíbula caída soltando o som neutro 'də'. Em 'voiture', a junção 'oi' faz 'uá', e para a letra U em 'ture', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('vua-tür'), arranhando o 'r' no final.\nLeia: Él ná pá də vua-tür."
+  },
+  "46": {
+    "explanation": "O francês utiliza o verbo 'venir' (vir) na pergunta 'Viens-tu d'une...?' para saber a origem de alguém, equivalendo ao nosso 'você é de...?'. O adjetivo 'grande' antecede o substantivo 'ville'. A palavra 'ville' é uma exceção à regra geral e pronuncia o som de 'L' de forma articulada.",
+    "breakdown": [
+      {
+        "word": "Viens-tu",
+        "meaning": "Vens tu / Você é (vem) — inversão do verbo venir com tu."
+      },
+      {
+        "word": "d'une",
+        "meaning": "De uma — contração da preposição de com o artigo une."
+      },
+      {
+        "word": "grande",
+        "meaning": "Grande — adjetivo feminino."
+      },
+      {
+        "word": "ville",
+        "meaning": "Cidade — substantivo feminino."
+      }
+    ],
+    "pronuncia": "No bloco 'Viens-tu', a terminação 'iens' faz o som 'viã'. Para a letra U em 'tu', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('viã-tü'). Em 'd'une', aplique a mesma regra do U em 'dü-n'. Em 'grande', faça a nasal posterior 'grón-d'. Em 'ville', suba a ponta da língua no céu da boca para o L seco em 'ví-l'.\nLeia: Viã-tü dü-n grón-d ví-l."
+  },
+  "47": {
+    "explanation": "A palavra 'couleur' (cor) é feminina em francês, por isso recebe o possessivo 'Ma' (minha) e o adjetivo com terminação feminina 'préférée'. Porém, para indicar a cor 'azul' como conceito geral, usa-se o artigo masculino 'le' antes do adjetivo de cor 'bleu'.",
+    "breakdown": [
+      {
+        "word": "Ma",
+        "meaning": "Minha — possessivo feminino."
+      },
+      {
+        "word": "couleur",
+        "meaning": "Cor — substantivo feminino em francês."
+      },
+      {
+        "word": "préférée",
+        "meaning": "Favorita / Preferida — adjetivo feminino."
+      },
+      {
+        "word": "est le",
+        "meaning": "É o — verbo être + artigo masculino le."
+      },
+      {
+        "word": "bleu",
+        "meaning": "Azul — substantivo/cor masculina."
+      }
+    ],
+    "pronuncia": "Em 'Ma', fale 'ma'. Na palavra 'couleur', para o som œ em 'eur', é OBRIGATÓRIO posicionar a língua para falar É bem aberto arredondando os lábios no formato de Ó ('ku-lœr'). Em 'préférée', fale 'prê-fê-rê'. Em 'est le', diga 'é lə' com o 'le' neutro. Para a palavra 'bleu', para o som ø, é OBRIGATÓRIO posicionar a boca para falar Ê com os lábios projetados em bico redondo e fechado de Ô ('blø').\nLeia: Ma ku-lœr prê-fê-rê é lə blø."
+  },
+  "48": {
+    "explanation": "Uma forma direta e comum de perguntar a profissão ou ocupação de alguém. A palavra 'travail' é um substantivo masculino, exigindo o pronome interrogativo masculino 'Quel' e o possessivo 'ton' (seu/teu). A consoante 'l' de 'Quel' se conecta à vogal do verbo 'est'.",
+    "breakdown": [
+      {
+        "word": "Quel",
+        "meaning": "Qual — pronome interrogativo masculino."
+      },
+      {
+        "word": "est",
+        "meaning": "É — terceira pessoa do verbo être."
+      },
+      {
+        "word": "ton",
+        "meaning": "Seu / Teu — possessivo masculino."
+      },
+      {
+        "word": "travail",
+        "meaning": "Trabalho — substantivo masculino."
+      }
+    ],
+    "pronuncia": "Em 'Quel est', faça a ligação do 'l' com o verbo formando 'kê-lé'. Na palavra 'ton', emita o som nasal arredondado 'ton' sem tocar os lábios no final. Na palavra 'travail', arranhe o 'r' no fundo da garganta e termine no som de 'ai' limpo em 'tra-vái'.\nLeia: Kê-lé ton tra-vái."
+  },
+  "49": {
+    "explanation": "A palavra 'banque' (banco) é feminina em francês, por isso usa-se o artigo indefinido 'une'. A preposição 'dans' transmite a ideia de trabalhar 'dentro de' uma empresa ou instituição, e sua consoante final conecta com o artigo seguinte.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele — pronome pessoal."
+      },
+      {
+        "word": "travaille",
+        "meaning": "Trabalha — forma do verbo travailler."
+      },
+      {
+        "word": "dans",
+        "meaning": "Em / Dentro de — preposição."
+      },
+      {
+        "word": "une",
+        "meaning": "Uma — artigo indefinido feminino."
+      },
+      {
+        "word": "banque",
+        "meaning": "Banco — substantivo feminino em francês."
+      }
+    ],
+    "pronuncia": "Em 'Il travaille', fale 'il tra-vá-y'. Na palavra 'dans', posicione a boca para a nasal posterior 'dón' e ligue o 's' com som de 'z' no artigo 'une', lembrando que para a letra U de 'une', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('dó-nü-n'). Em 'banque', faça a nasal posterior 'bón-k' cortando a consoante 'k' a seco.\nLeia: Il tra-vá-y dó-nü-n bón-k."
+  },
+  "50": {
+    "explanation": "A palavra 'grand' em francês é versátil: serve tanto para dizer que algo é 'grande' quanto para dizer que uma pessoa é 'alta'. A frase segue a ordem direta sujeito + verbo + adjetivo, e a consoante 'd' final de 'grand' não é pronunciada.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "suis",
+        "meaning": "Sou — primeira pessoa do verbo être."
+      },
+      {
+        "word": "grand",
+        "meaning": "Alto / Grande — adjetivo masculino."
+      }
+    ],
+    "pronuncia": "Na palavra 'Je', para o som ə, deixe a boca 100% relaxada e mandíbula caída soltando o som neutro 'jə'. Em 'suis', arme o bico fechado do U francês e vá direto para o I em 'süí', sem emitir o 's'. Em 'grand', abra a boca na nasal posterior 'grón' projetada para o nariz, cortando o som sem pronunciar o 'd' final.\nLeia: Jə süí grón."
+  },
+  "51": {
+    "explanation": "Quando o sujeito da pergunta é um substantivo específico ('Ton père'), o francês formal mantém o substantivo no início e retoma-o logo após o verbo com o pronome correspondente ('est-il'). A expressão 'à la maison' é o modo padrão de dizer 'em casa'.",
+    "breakdown": [
+      {
+        "word": "Ton père",
+        "meaning": "Seu pai — ton (seu) + père (pai)."
+      },
+      {
+        "word": "est-il",
+        "meaning": "Está ele — inversão do verbo être com o pronome de retomada il."
+      },
+      {
+        "word": "à la maison",
+        "meaning": "Em casa — à (em) + la maison (a casa)."
+      }
+    ],
+    "pronuncia": "Em 'Ton père', fale 'ton pér' com a nasal 'ton' arredondada. Em 'est-il', ligue o 't' seco de 'est' no pronome 'il', gerando 'és-tíl'. Em 'à la maison', fale 'a la mê-zon', fazendo o 's' intervocálico com som de 'z' e a nasal 'zon' arredondada sem fechar os lábios.\nLeia: Ton pér és-tíl a la mê-zon."
+  },
+  "52": {
+    "explanation": "O pronome 'Nous' (nós) exige a terminação verbal '-ons' no verbo 'vivons'. A preposição 'dans' é usada para o interior do apartamento e se liga foneticamente ao artigo 'un', criando um fluxo sonoro contínuo e sem interrupções.",
+    "breakdown": [
+      {
+        "word": "Nous",
+        "meaning": "Nós — pronome pessoal."
+      },
+      {
+        "word": "vivons",
+        "meaning": "Moramos / Vivemos — verbo vivre na 1ª pessoa do plural."
+      },
+      {
+        "word": "dans",
+        "meaning": "Em / Dentro de — preposição de lugar."
       },
       {
         "word": "un",
         "meaning": "Um — artigo masculino."
       },
       {
-        "word": "petit",
-        "meaning": "Pequeno — característica de tamanho."
-      },
-      {
         "word": "appartement",
-        "meaning": "Apartamento — o local de moradia."
+        "meaning": "Apartamento — substantivo masculino."
       }
     ],
-    "pronuncia": "Diga 'Elle' como 'él'. Em 'vit', o 't' final morre em silêncio. Em 'dans un', o som sai totalmente pelo nariz ('dãn-zẽn'). Em 'petit appartement', o 't' final de 'petit' gruda no início de 'appartement', soando 'pê-ti-ta-par-tê-mãn' com o 'R' arranhado bem de leve na garganta.\nLeia: Él vi dãn-zẽn pê-ti-ta-par-tê-mãn"
-  },
-  "33": {
-    "explanation": "Para fazer perguntas em francês formal ou escrito, é muito comum inverter a ordem do verbo com a pessoa, usando um hífen entre eles ('As-tu'). A palavra 'des' serve para indicar o plural genérico de algo que não estamos contando um por um, equivalente ao nosso 'irmãos' em geral.",
-    "breakdown": [
-      {
-        "word": "As-tu",
-        "meaning": "Você tem? / Tens tu? — As: tem; tu: você."
-      },
-      {
-        "word": "des",
-        "meaning": "Uns / Uns quantos — marcador de plural."
-      },
-      {
-        "word": "frères",
-        "meaning": "Irmãos — plural de frère."
-      }
-    ],
-    "pronuncia": "Em 'As-tu', fale o 'as' curto e emenda no 'tu', que exige um biquinho bem fechado nos lábios enquanto tenta falar o som de 'i' ('á-tiu'). Em 'des frères', o 's' de 'des' fica mudo e 'frères' tem um 'R' arranhado no fundo da garganta, terminando sem soltar vogal no 's' final ('dê frêr').\nLeia: Á-tiu dê frêr"
-  },
-  "34": {
-    "explanation": "Para negar algo em francês, a estrutura padrão usa duas partes ao redor da ação: 'ne' antes e 'pas' depois. Mas como a ação 'ai' começa com vogal, o 'ne' vira apenas 'n''. Quando negamos a existência de algo, o 'uma' ou 'uns' vira simplesmente 'de', significando 'nenhuma irmã'.",
-    "breakdown": [
-      {
-        "word": "Je n'ai pas",
-        "meaning": "Eu não tenho — Je: eu; n'... pas: estrutura de negação; ai: tenho."
-      },
-      {
-        "word": "de",
-        "meaning": "De / Nenhuma — substitui o artigo na negação."
-      },
-      {
-        "word": "sœur",
-        "meaning": "Irmã — membro da família."
-      }
-    ],
-    "pronuncia": "Em 'Je n'ai pas', grude tudo em 'jê-nê-pá'. Em 'de sœur', o 'de' é dito com lábios projetados para frente ('dê') e em 'sœur' faça boca de 'ó' tentando dizer 'é' com o 'R' arranhado e suave no fim ('sœr').\nLeia: Jê-nê-pá dê sœr"
-  },
-  "35": {
-    "explanation": "Em francês, ao falar um número de telefone, é muito comum colocar a palavra 'le' (o) antes de ditar os dígitos. O raciocínio é 'o meu número é o...', seguido da sequência numérica.",
-    "breakdown": [
-      {
-        "word": "Mon numéro de",
-        "meaning": "Meu número de — Mon: meu; numéro: número; de: de."
-      },
-      {
-        "word": "téléphone",
-        "meaning": "Telefone — aparelho ou linha telefônica."
-      },
-      {
-        "word": "est le",
-        "meaning": "É o — est: é; le: o."
-      },
-      {
-        "word": "5550192",
-        "meaning": "5550192 — os dígitos do telefone."
-      }
-    ],
-    "pronuncia": "Em 'Mon numéro', o 'Mon' é nasal ('mõn') e 'numéro' é falado de forma limpa ('nú-mê-ró'). Em 'de téléphone', fale 'dê tê-lê-fónn'. O 'est le' soa 'ê lê'. Os números em sequência saem como 'sãng-sãng-sãng-zê-ró-ũn-nõvf-dœ'.\nLeia: Mõn nú-mê-ró dê tê-lê-fónn ê lê sãng-sãng-sãng-zê-ró-ũn-nõvf-dœ"
-  },
-  "36": {
-    "explanation": "Para perguntar 'Qual é', o francês escolhe 'Quelle' porque a palavra 'adresse' (endereço) é considerada feminina em francês. Além disso, usa-se 'ton' (seu) em vez de 'ta' porque 'adresse' começa com vogal, facilitando a sonoridade para os nativos.",
-    "breakdown": [
-      {
-        "word": "Quelle est",
-        "meaning": "Qual é — Quelle: qual (feminino); est: é."
-      },
-      {
-        "word": "ton adresse",
-        "meaning": "O seu endereço — ton: seu; adresse: endereço."
-      }
-    ],
-    "pronuncia": "Em 'Quelle est', grude os sons formando 'kê-lé'. Em 'ton adresse', o 'n' de 'ton' se conecta diretamente na primeira vogal de 'adresse', criando um bloco contínuo que soa 'tõn-na-drês' com o 'R' bem suave.\nLeia: Kê-lé tõn-na-drês"
-  },
-  "37": {
-    "explanation": "Esta frase segue exatamente a mesma estrutura do português: pessoa ('Il'), estado/verbo ('est') e característica ('marié'). A letra 't' de 'est' fica em silêncio quando a frase termina de forma simples assim.",
-    "breakdown": [
-      {
-        "word": "Il est",
-        "meaning": "Ele é / Ele está — Il: ele; est: é."
-      },
-      {
-        "word": "marié",
-        "meaning": "Casado — estado civil masculino."
-      }
-    ],
-    "pronuncia": "Junte 'Il' e 'est' em um som único e fluido de 'i-lé'. Na palavra 'marié', arranhe levemente o 'R' na garganta e termine com um 'é' bem aberto e limpo ('ma-ri-é').\nLeia: I-lé ma-ri-é"
-  },
-  "38": {
-    "explanation": "Para negar no plural, colocamos a dupla 'ne ... pas' ao redor do verbo 'sont' (são). O 's' no final de 'Ils' normalmente não se fala, mas o 's' no final de 'mariés' também fica mudo na fala cotidiana.",
-    "breakdown": [
-      {
-        "word": "Ils ne sont pas",
-        "meaning": "Eles não são — Ils: eles; ne... pas: não; sont: são."
-      },
-      {
-        "word": "mariés",
-        "meaning": "Casados — estado civil plural."
-      }
-    ],
-    "pronuncia": "Em 'Ils ne sont pas', fale 'il nê sõn pá', com o som de 'sont' saindo pelo nariz. Em 'mariés', diga 'ma-ri-é', exatamente como no singular, pois o 's' do plural é completamente mudo.\nLeia: Il nê sõn pá ma-ri-é"
-  },
-  "39": {
-    "explanation": "Aqui a pergunta foi montada invertendo a ordem da ação ('Est') com a pessoa ('elle'). Em francês, não se usa o artigo 'uma' antes de profissões quando dizemos o que a pessoa é; fala-se diretamente 'médica'.",
-    "breakdown": [
-      {
-        "word": "Est-elle",
-        "meaning": "É ela? / Ela é? — Est: é; elle: ela."
-      },
-      {
-        "word": "médecin",
-        "meaning": "Médica / Médico — profissão da área da saúde."
-      }
-    ],
-    "pronuncia": "Junte 'Est-elle' diretamente para soar como 'ês-tél'. Na palavra 'médecin', o som final sai pelo nariz sem bater a língua no céu da boca, soando como 'méd-sẽn'.\nLeia: Ês-tél méd-sẽn"
-  },
-  "40": {
-    "explanation": "Para dizer sua profissão em francês, você diz diretamente 'Eu sou' seguido da profissão, sem colocar o artigo 'um' ou 'uma'. O raciocínio prático é ir direto ao ponto da ocupação.",
-    "breakdown": [
-      {
-        "word": "Je suis",
-        "meaning": "Eu sou — Je: eu; suis: sou."
-      },
-      {
-        "word": "professeur",
-        "meaning": "Professor — profissão de quem ensina."
-      }
-    ],
-    "pronuncia": "Em 'Je suis', fale 'jê süí' fazendo um biquinho bem fechado na transição do som. Em 'professeur', arranhe o 'R' bem suave e termine com a boca redonda soltando o som de 'prô-fê-sœr'.\nLeia: Jê süí prô-fê-sœr"
-  },
-  "41": {
-    "explanation": "Para indicar o mês do aniversário, os nativos usam a palavra 'en' antes do mês. Repare que 'anniversaire' gruda com o verbo 'est' e o 'en' gruda na fala com o mês 'mai'.",
-    "breakdown": [
-      {
-        "word": "Mon anniversaire",
-        "meaning": "Meu aniversário — Mon: meu; anniversaire: aniversário."
-      },
-      {
-        "word": "est en mai",
-        "meaning": "É em maio — est: é; en: em; mai: maio."
-      }
-    ],
-    "pronuncia": "Em 'Mon anniversaire', o 'n' de 'Mon' se conecta à vogal seguinte, soando 'mõn-na-ni-vêr-sêr'. Em 'est en mai', o 't' gruda no 'en' e o som nasal se conecta a 'mai', soando 'ê-tãn-mê'.\nLeia: Mõn-na-ni-vêr-sêr ê-tãn-mê"
-  },
-  "42": {
-    "explanation": "Essa é a forma mais descontraída e comum de perguntar o aniversário no dia a dia. Começa-se com 'C'est' (É) seguido de 'quand' (quando) e depois a coisa perguntada 'ton anniversaire' (seu aniversário).",
-    "breakdown": [
-      {
-        "word": "C'est quand",
-        "meaning": "É quando — C'est: é / isso é; quand: quando."
-      },
-      {
-        "word": "ton anniversaire",
-        "meaning": "O seu aniversário — ton: seu; anniversaire: aniversário."
-      }
-    ],
-    "pronuncia": "Diga 'C'est quand' como 'sê kãn', soltando o som pelo nariz. Em 'ton anniversaire', emende o 'n' na vogal seguinte para formar 'tõn-na-ni-vêr-sêr' de forma contínua e leve.\nLeia: Sê kãn tõn-na-ni-vêr-sêr"
-  },
-  "43": {
-    "explanation": "Diferente do português onde costumamos dizer 'família grande', em francês o adjetivo de tamanho 'grande' vem antes do nome 'famille'. O 'Je' encurta para 'J'' porque se junta com a ação 'ai' (tenho).",
-    "breakdown": [
-      {
-        "word": "J'ai",
-        "meaning": "Eu tenho — J': eu; ai: tenho."
-      },
-      {
-        "word": "une grande",
-        "meaning": "Uma grande — une: uma; grande: grande."
-      },
-      {
-        "word": "famille",
-        "meaning": "Família — grupo familiar."
-      }
-    ],
-    "pronuncia": "Diga 'J'ai' como 'jê'. Em 'une grande', fale 'ün grãnd' fazendo o biquinho no 'ün' e soltando o som nasal em 'grãnd'. Termine em 'famille' soando como 'fa-mí-i', sem pronunciar som de 'L' duro.\nLeia: Jê ün grãnd fa-mí-i"
-  },
-  "44": {
-    "explanation": "Para perguntar onde alguém mora de forma direta e elegante, usa-se a palavra de lugar 'Où' (onde), junta-se com a ação 'vit' (mora) e depois a pessoa 'il' (ele), separados por um hífen.",
-    "breakdown": [
-      {
-        "word": "Où",
-        "meaning": "Onde — palavra para perguntar localização."
-      },
-      {
-        "word": "vit-il",
-        "meaning": "Ele mora? / Vive ele? — vit: mora; il: ele."
-      }
-    ],
-    "pronuncia": "A palavra 'Où' tem som puro de 'u'. No bloco 'vit-il', o 't' de 'vit' se conecta ao 'il', criando o som fluido de 'vi-til'.\nLeia: U vi-til"
-  },
-  "45": {
-    "explanation": "Na negação 'n'a pas', a ação 'a' (tem) fica no meio. Como ela não tem carro, o 'um carro' vira 'de voiture', que é a regra do francês quando negamos a existência de algo totalmente.",
-    "breakdown": [
-      {
-        "word": "Elle n'a pas",
-        "meaning": "Ela não tem — Elle: ela; n'... pas: não; a: tem."
-      },
-      {
-        "word": "de voiture",
-        "meaning": "Carro / Nenhum carro — de: de/nenhum; voiture: carro."
-      }
-    ],
-    "pronuncia": "Fale 'Elle n'a pas' tudo junto como 'él-ná-pá'. Em 'de voiture', o 'de' é curto ('dê') e 'voiture' soa como 'vua-tür', terminando com o biquinho no 'u' e o 'R' arranhado suavemente.\nLeia: Él-ná-pá dê vua-tür"
-  },
-  "46": {
-    "explanation": "Aqui a pergunta foi formada invertendo o verbo vir 'Viens' com a pessoa 'tu'. A expressão 'd'une' é a junção da origem 'de' com o artigo 'une' (uma), vindo logo antes de 'grande ville' (cidade grande).",
-    "breakdown": [
-      {
-        "word": "Viens-tu",
-        "meaning": "Você vem? / Vens tu? — Viens: vem; tu: você."
-      },
-      {
-        "word": "d'une grande",
-        "meaning": "De uma grande — d': de; une: uma; grande: grande."
-      },
-      {
-        "word": "ville",
-        "meaning": "Cidade — município ou centro urbano."
-      }
-    ],
-    "pronuncia": "Em 'Viens-tu', o 'Viens' tem som nasal e se conecta ao 'tu' com biquinho ('viẽn-tiu'). Em 'd'une grande ville', fale 'dün grãnd vil', sem prolongar a última vogal.\nLeia: Viẽn-tiuün grãnd vil"
-  },
-  "47": {
-    "explanation": "A estrutura é idêntica ao português: 'Minha cor favorita é...'. Em francês, adiciona-se o 'le' (o) antes do nome da cor azul ('bleu'), tratando a cor como um conceito masculino.",
-    "breakdown": [
-      {
-        "word": "Ma couleur",
-        "meaning": "Minha cor — Ma: minha; couleur: cor."
-      },
-      {
-        "word": "préférée",
-        "meaning": "Favorita / Preferida — característica de preferência."
-      },
-      {
-        "word": "est le bleu",
-        "meaning": "É o azul — est: é; le: o; bleu: azul."
-      }
-    ],
-    "pronuncia": "Diga 'Ma couleur' como 'ma ku-lœr' arranhando o 'R' no final. 'Préférée' soa limpo como 'prê-fê-rê'. Em 'est le bleu', o 'est' soa 'ê' e 'bleu' exige os lábios arredondados para frente ('blœ').\nLeia: Ma ku-lœr prê-fê-rê ê lê blœ"
-  },
-  "48": {
-    "explanation": "Para perguntar a profissão ou ocupação de forma direta, os nativos dizem 'Quel est' (Qual é) seguido de 'ton travail' (seu trabalho). É uma pergunta simples e muito comum no cotidiano.",
-    "breakdown": [
-      {
-        "word": "Quel est",
-        "meaning": "Qual é — Quel: qual; est: é."
-      },
-      {
-        "word": "ton travail",
-        "meaning": "O seu trabalho — ton: seu; travail: trabalho / emprego."
-      }
-    ],
-    "pronuncia": "Em 'Quel est', conecte o som do 'l' na vogal seguinte formando 'kê-lé'. Em 'ton travail', fale 'tõn tra-vái' com o som nasal em 'ton' e o 'R' suave no meio da palavra.\nLeia: Kê-lé tõn tra-vái"
-  },
-  "49": {
-    "explanation": "Dizemos 'Il travaille' (ele trabalha) e usamos a combinação 'dans une' para dizer 'em um' ou 'em uma'. Em francês, a palavra 'banque' (banco) é feminina, por isso usa-se 'une'.",
-    "breakdown": [
-      {
-        "word": "Il travaille",
-        "meaning": "Ele trabalha — Il: ele; travaille: trabalha."
-      },
-      {
-        "word": "dans une",
-        "meaning": "Em uma / Dentro de uma — dans: em; une: uma."
-      },
-      {
-        "word": "banque",
-        "meaning": "Banco — instituição financeira."
-      }
-    ],
-    "pronuncia": "Diga 'Il travaille' como 'il tra-vái'. Em 'dans une', faça a ligação do som nasal com o 'z', soando 'dãn-zün'. Termine em 'banque' com som nasal forte fechando em 'bãn-k'.\nLeia: Il tra-vái dãn-zün bãn-k"
-  },
-  "50": {
-    "explanation": "Frase curta e direta. 'Je suis' significa 'eu sou' e a característica 'grand' significa 'alto' quando aplicada a pessoas. A letra 'd' no final da palavra 'grand' não é pronunciada.",
-    "breakdown": [
-      {
-        "word": "Je suis",
-        "meaning": "Eu sou — Je: eu; suis: sou."
-      },
-      {
-        "word": "grand",
-        "meaning": "Alto / Grande — característica física masculina."
-      }
-    ],
-    "pronuncia": "Em 'Je suis', diga 'jê süí' projetando os lábios no meio. Em 'grand', o som sai totalmente pelo nariz, e a letra 'd' no final morre em silêncio sem soltar nenhuma vogal ('grãn').\nLeia: Jê süí grãn"
-  },
-  "51": {
-    "explanation": "Para perguntar se alguém está em um lugar de forma elegante, o francês menciona a pessoa 'Ton père' (Seu pai) e logo em seguida reforça a pergunta com 'est-il' (está ele?). A expressão 'à la maison' significa 'em casa'.",
-    "breakdown": [
-      {
-        "word": "Ton père",
-        "meaning": "O seu pai — Ton: seu; père: pai."
-      },
-      {
-        "word": "est-il",
-        "meaning": "Está ele? / Ele está? — est: está; il: ele."
-      },
-      {
-        "word": "à la maison",
-        "meaning": "Em casa / Na casa — à: em; la: a; maison: casa."
-      }
-    ],
-    "pronuncia": "Em 'Ton père', fale 'tõn pêr' com o 'R' bem suave. Em 'est-il', grude formando 'ês-til'. Em 'à la maison', diga 'a la mê-zõn' com o som final bem nasalizado.\nLeia: Tõn pêr ês-til a la mê-zõn"
-  },
-  "52": {
-    "explanation": "Nós usamos 'Nous vivons' para dizer 'nós moramos/vivemos'. A palavra 'dans' juntas com 'un' formam a ideia de 'em um'. O 's' final de 'dans' se conecta na vogal de 'un', criando um som contínuo.",
-    "breakdown": [
-      {
-        "word": "Nous vivons",
-        "meaning": "Nós moramos / Nós vivemos — Nous: nós; vivons: moramos."
-      },
-      {
-        "word": "dans un",
-        "meaning": "Em um — dans: em; un: um."
-      },
-      {
-        "word": "appartement",
-        "meaning": "Apartamento — residência."
-      }
-    ],
-    "pronuncia": "Diga 'Nous vivons' como 'nu vi-võn' com som nasal no final. Em 'dans un appartement', grude tudo fazendo 'dãn-zẽn-na-par-tê-mãn', deixando o som fluir sem interrupções.\nLeia: Nu vi-võn dãn-zẽn-na-par-tê-mãn"
+    "pronuncia": "Em 'Nous', o 'ou' faz som de 'nu' com 's' mudo. Em 'vivons', faça a nasal arredondada 'vi-von'. No bloco 'dans un appartement', ligue o 's' de 'dans' como 'z' no 'un' (nasal aberta 'ã') e o 'n' de 'un' na vogal de 'appartement', gerando 'dón-zã-na-par-tə-món'.\nLeia: Nu vi-von dón-zã-na-par-tə-món."
   },
   "53": {
-    "explanation": "Para dizer 'a casa deles', o francês usa 'Leur maison' (sua/deles casa). A palavra 'très' significa 'muito' e vem logo antes da característica 'vieille' (velha/antiga).",
+    "explanation": "O possessivo 'Leur' significa 'deles' ou 'delas' e não varia com o gênero do objeto possuído, apenas com a quantidade. Como 'maison' é uma palavra feminina, o adjetivo 'vieille' (antiga/velha) entra na sua forma feminina correspondente.",
     "breakdown": [
       {
-        "word": "Leur maison",
-        "meaning": "A casa deles — Leur: deles/delas; maison: casa."
+        "word": "Leur",
+        "meaning": "Deles / Delas / Sua — possessivo de terceira pessoa do plural."
       },
       {
-        "word": "est très",
-        "meaning": "É muito — est: é; très: muito."
+        "word": "maison",
+        "meaning": "Casa — substantivo feminino."
+      },
+      {
+        "word": "est",
+        "meaning": "É — verbo être."
+      },
+      {
+        "word": "très",
+        "meaning": "Muito — advérbio de intensidade."
       },
       {
         "word": "vieille",
-        "meaning": "Velha / Antiga — característica feminina."
+        "meaning": "Antiga / Velha — adjetivo feminino."
       }
     ],
-    "pronuncia": "Em 'Leur maison', fale 'lœr mê-zõn' arranhando levemente o 'R'. Em 'est très vieille', o 'est' soa 'ê', o 'très' traz um 'R' suave e 'vieille' soa como 'vi-êi'.\nLeia: Lœr mê-zõn ê trê vi-êi"
+    "pronuncia": "Na palavra 'Leur', para o som œ, é OBRIGATÓRIO posicionar a língua para falar É bem aberto arredondando os lábios no formato de Ó ('lœr'), arranhando o 'r' na garganta. Em 'maison', fale 'mê-zon' com 'z' intervocálico. Em 'est', fale 'é'. Em 'très', abra o som em 'tré' com 's' mudo. Em 'vieille', faça o som líquido 'vié-y'.\nLeia: Lœr mê-zon é tré vié-y."
   },
   "54": {
-    "explanation": "A expressão em francês para 'sobrenome' é literalmente 'nome de família' ('nom de famille'). A pergunta começa com 'Quel est' (Qual é) seguido de 'son' (dele/seu).",
+    "explanation": "Em francês, a expressão para 'sobrenome' é 'nom de famille' (literalmente 'nome de família'). O possessivo 'son' concorda com a palavra masculina 'nom' e é usado tanto para 'dele' quanto para 'dela'. O verbo e o pronome interrogativo 'Quel est' se conectam na pronúncia.",
     "breakdown": [
       {
-        "word": "Quel est",
-        "meaning": "Qual é — Quel: qual; est: é."
+        "word": "Quel",
+        "meaning": "Qual — pronome interrogativo masculino."
       },
       {
-        "word": "son nom de famille",
-        "meaning": "O sobrenome dele — son: dele; nom: nome; de: de; famille: família."
+        "word": "est",
+        "meaning": "É — verbo être."
+      },
+      {
+        "word": "son",
+        "meaning": "Seu / Dele — possessivo masculino."
+      },
+      {
+        "word": "nom de famille",
+        "meaning": "Sobrenome — expressão formada por nom (nome) + de + famille (família)."
       }
     ],
-    "pronuncia": "Em 'Quel est', conecte os sons formando 'kê-lé'. Em 'son nom de famille', o 'son' e o 'nom' são nasais, soando 'sõn nõn dê fa-mí-i'.\nLeia: Kê-lé sõn nõn dê fa-mí-i"
+    "pronuncia": "Conecte 'Quel est' em 'kê-lé'. Em 'son', emita a nasal arredondada 'son' sem encostar os lábios. No bloco 'nom de famille', pronuncie 'non', use a boca 100% relaxada e mandíbula caída para o som neutro 'də' e finalize na transição líquida 'fa-mí-y'.\nLeia: Kê-lé son non də fa-mí-y."
   },
   "55": {
-    "explanation": "Estrutura negativa com 'Je ne suis pas' (Eu não sou). Assim como em outras profissões, não se usa a palavra 'um' antes do nome da ocupação 'infirmier' (enfermeiro).",
+    "explanation": "A negação completa 'ne... pas' envolve o verbo 'suis'. A palavra 'infirmier' (enfermeiro) entra diretamente após o bloco negativo sem a necessidade de nenhum artigo antecedente, seguindo a regra geral das profissões em francês.",
     "breakdown": [
       {
-        "word": "Je ne suis pas",
-        "meaning": "Eu não sou — Je: eu; ne... pas: não; suis: sou."
+        "word": "Je",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "ne suis pas",
+        "meaning": "Não sou — estrutura de negação ne + suis (sou) + pas."
       },
       {
         "word": "infirmier",
-        "meaning": "Enfermeiro — profissão da área da saúde."
+        "meaning": "Enfermeiro — substantivo/profissão masculina."
       }
     ],
-    "pronuncia": "Diga 'Je ne suis pas' em um bloco rápido como 'jê nê süí pá'. A palavra 'infirmier' começa nasal e termina com som limpo de 'ê', soando 'ẽn-fir-mi-ê'.\nLeia: Jê nê süí pá ẽn-fir-mi-ê"
+    "pronuncia": "Na palavra 'Je', para o som ə, deixe a boca 100% relaxada e mandíbula caída soltando 'jə'. Aplique a mesma boca relaxada para o 'ne' ('nə'). Em 'suis', arme o bico do U francês e vá para o I em 'süí'. Em 'pas', corte o 's' mudo ('pá'). Em 'infirmier', abra com a nasal 'ã', seguida de 'fír-mi-ê', sem pronunciar o 'r' final.\nLeia: Jə nə süí pá ã-fír-mi-ê."
   },
   "56": {
-    "explanation": "A pergunta é feita de forma direta invertendo a ação e a pessoa 'Es-tu' (Você é?). A palavra 'ou' em francês significa exatamente 'ou' em português e tem som de 'u' puro.",
+    "explanation": "Uma Pergunta de alternativa simples feita com a inversão 'Es-tu' (És tu / Você é). A consoante 's' do verbo 'es' se conecta ao pronome 'tu' produzindo um som de 'z'. O conector 'ou' (ou) une os dois adjetivos de estado civil.",
     "breakdown": [
       {
         "word": "Es-tu",
-        "meaning": "Você é? / És tu? — Es: é; tu: você."
+        "meaning": "Você é — inversão de tu es (tu és / você é)."
       },
       {
         "word": "célibataire",
-        "meaning": "Solteiro(a) — estado civil."
+        "meaning": "Solteiro — adjetivo."
       },
       {
-        "word": "ou marié",
-        "meaning": "Ou casado — ou: ou; marié: casado."
+        "word": "ou",
+        "meaning": "Ou — conjunção alternativa."
+      },
+      {
+        "word": "marié",
+        "meaning": "Casado — adjetivo masculino."
       }
     ],
-    "pronuncia": "Em 'Es-tu', fale 'ê-tiu' com biquinho forte. Em 'célibataire', fale 'sê-li-ba-têr'. Em 'ou marié', o 'ou' soa 'u' puro e 'marié' termina limpo em 'u ma-ri-é'.\nLeia: Ê-tiu sê-li-ba-têr u ma-ri-é"
+    "pronuncia": "No bloco 'Es-tu', faça a ligação do 's' com som de 'z' em 'é-zü'. Para a letra U em 'tu', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('tü'). Em 'célibataire', fale 'sê-li-ba-tér' arranhando o 'r'. Em 'ou', emita o 'u' puro do português. Em 'marié', termine em 'ma-ri-ê'.\nLeia: É-zü sê-li-ba-tér u ma-ri-ê."
   },
   "57": {
-    "explanation": "Para dizer de onde alguém vem ou é originário, usa-se o verbo 'venir' (vir). Aqui, 'Elle vient' significa 'Ela vem' ou 'Ela é', e a preposição 'de' encurta para 'd'' antes de 'Italie'.",
+    "explanation": "Para dizer a origem de alguém em relação a um país feminino como a Itália ('Italie'), o francês utiliza o verbo 'venir' seguido da preposição 'de', que perde a vogal e ganha apóstrofo ('d'Italie'). A estrutura literal é 'Ela vem da Itália'.",
     "breakdown": [
       {
-        "word": "Elle vient",
-        "meaning": "Ela vem / Ela é — Elle: ela; vient: vem."
+        "word": "Elle",
+        "meaning": "Ela — pronome pessoal."
+      },
+      {
+        "word": "vient",
+        "meaning": "Vem — terceira pessoa do verbo venir."
       },
       {
         "word": "d'Italie",
-        "meaning": "Da Itália — d': de; Italie: Itália."
+        "meaning": "Da Itália — contração de de + Italie."
       }
     ],
-    "pronuncia": "Em 'Elle vient', o 'Elle' soa 'él' e 'vient' tem som nasal 'viẽn'. Em 'd'Italie', grude o som formando 'di-ta-lí'.\nLeia: Él viẽn di-ta-lí"
+    "pronuncia": "Em 'Elle', fale 'él'. Na palavra 'vient', a junção 'ient' forma o bloco sonoro nasal 'viã' sem pronunciar o 't' final. No bloco 'd'Italie', grude o 'd' seco diretamente na vogal inicial da palavra, pronunciando 'di-ta-lí'.\nLeia: Él viã di-ta-lí."
   },
   "58": {
-    "explanation": "Dizemos 'Ma mère' para 'Minha mãe'. O verbo 'est' significa 'é' e a palavra 'chef' é usada diretamente para indicar a profissão de chefe de cozinha, sem necessidade de artigo no meio.",
+    "explanation": "Em francês, a palavra 'chef' usada sozinha já significa especificamente 'chef de cozinha' ou 'cozinheiro chefe'. O possessivo 'Ma' concorda com a palavra feminina 'mère' (mãe), e a profissão vem posicionada logo após o verbo sem artigo.",
     "breakdown": [
       {
         "word": "Ma mère",
-        "meaning": "Minha mãe — Ma: minha; mère: mãe."
+        "meaning": "Minha mãe — ma (minha) + mère (mãe)."
       },
       {
-        "word": "est chef",
-        "meaning": "É chef / É cozinheira — est: é; chef: chef de cozinha."
+        "word": "est",
+        "meaning": "É — verbo être."
+      },
+      {
+        "word": "chef",
+        "meaning": "Chef de cozinha — substantivo de profissão."
       }
     ],
-    "pronuncia": "Em 'Ma mère', diga 'ma mêr' com o 'R' bem suave. Em 'est chef', o 'est' soa 'ê' e 'chef' soa 'chêf' com o 'f' pronunciado no final.\nLeia: Ma mêr ê chêf"
+    "pronuncia": "Em 'Ma mère', diga 'ma mér' arranhando suavemente o 'r' na garganta. Em 'est', fale 'é'. Na palavra 'chef', pronuncie o 'ch' de forma suave como em chuva e trave a consoante 'f' a seco no final, sem adiantar nenhum 'i' de apoio ('chéf').\nLeia: Ma mér é chéf."
   },
   "59": {
-    "explanation": "Pergunta formada invertendo a ação ter ('Ont') com a pessoa ('ils'). A letra 't' de 'Ont' gruda no som de 'ils' para facilitar a fala, formando um bloco só antes da palavra 'un chien' (um cachorro).",
+    "explanation": "Na inversão interrogativa do verbo 'avoir' com 'ils' ('Ont-ils'), a consoante 't' do verbo ganha vida e se conecta ao pronome para facilitar a pronúncia. O artigo indefinido 'un' (um) antecede o substantivo masculino 'chien' (cachorro).",
     "breakdown": [
       {
         "word": "Ont-ils",
-        "meaning": "Eles têm? / Têm eles? — Ont: têm; ils: eles."
+        "meaning": "Têm eles — inversão de ils ont (eles têm) para formar pergunta."
       },
       {
-        "word": "un chien",
-        "meaning": "Um cachorro — un: um; chien: cão/cachorro."
+        "word": "un",
+        "meaning": "Um — artigo indefinido masculino."
+      },
+      {
+        "word": "chien",
+        "meaning": "Cachorro — substantivo masculino."
       }
     ],
-    "pronuncia": "Em 'Ont-ils', o som nasal de 'Ont' se conecta no 'ils' formando 'õn-til'. Em 'un chien', o 'un' é nasal ('ẽn') e 'chien' soa 'chiẽn', também saindo pelo nariz.\nLeia: Õn-til ẽn chiẽn"
+    "pronuncia": "No bloco 'Ont-ils', pronuncie a nasal arredondada 'on' e conecte o 't' direto no 'ils', gerando 'on-tíl'. Na palavra 'un', faça o som nasal aberto 'ã'. Na palavra 'chien', a terminação 'ien' gera o bloco sonoro nasal 'chiã'.\nLeia: On-tíl ã chiã."
   },
   "60": {
-    "explanation": "Para dizer 'Eu tenho', usa-se 'J'ai'. O número dois em francês é 'deux'. Quando ele vem antes da palavra 'enfants' (crianças/filhos), o som do final do número gruda na vogal do nome com som de 'z'.",
+    "explanation": "A palavra 'enfants' serve em francês tanto para 'crianças' quanto para 'filhos'. O número dois 'deux' termina com a letra 'x', que normalmente é muda, mas que aqui se liga obrigatoriamente à vogal inicial de 'enfants' assumindo um som fluido de 'z'.",
     "breakdown": [
       {
         "word": "J'ai",
-        "meaning": "Eu tenho — J': eu; ai: tenho."
+        "meaning": "Eu tenho — contração de Je (eu) + ai (tenho)."
       },
       {
-        "word": "deux enfants",
-        "meaning": "Dois filhos / Duas crianças — deux: dois; enfants: filhos/crianças."
+        "word": "deux",
+        "meaning": "Dois — número 2."
+      },
+      {
+        "word": "enfants",
+        "meaning": "Filhos / Crianças — plural de enfant."
       }
     ],
-    "pronuncia": "Fale 'J'ai' como 'jê'. Na junção de 'deux' com 'enfants', o som vira um 'z' de ligação, soando 'dœ-zãn-fãn', com as duas sílabas de 'enfants' saindo bem pelo nariz.\nLeia: Jê dœ-zãn-fãn"
+    "pronuncia": "Em 'J'ai', diga 'jê'. Na palavra 'deux', para o som ø, é OBRIGATÓRIO posicionar a boca para falar Ê com os lábios projetados em bico redondo e fechado de Ô ('dø'). Ligue o 'x' com som de 'z' na palavra 'enfants', gerando 'dø-zón-fón'. Em 'enfants', ambas as sílabas utilizam a nasal posterior 'ón' projetada com a boca aberta em 'ó' nasal escuro e profundo.\nLeia: Jê dø-zón-fón."
   }
 }

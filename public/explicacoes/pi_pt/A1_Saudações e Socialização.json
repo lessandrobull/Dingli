@@ -1,346 +1,390 @@
 {
   "1": {
-    "explanation": "Para \"Olá\", o mandarim usa 你好 (Nǐ hǎo), que significa literalmente \"você bem\". A expressão \"meu nome é\" é traduzida por 我叫 (wǒ jiào), onde o primeiro termo é \"eu\" e o segundo é \"chamar-se\". Por fim, o nome próprio Dìnglì aparece como 定力 (Dìnglì).",
+    "explanation": "Para dizer 'olá', os chineses juntam 'você' 你 (nǐ) com 'bem' 好 (hǎo), formando uma saudação que deseja o seu bem-estar. Para dizer o próprio nome, usa-se 我 (wǒ) para 'eu' e o verbo 叫 (jiào), que significa 'chamar-se', seguido diretamente pelo nome 定力 (Dìnglì).",
     "breakdown": [
       {
-        "word": "你好 (Nǐ hǎo)",
-        "meaning": "Olá — 你 (nǐ): você; 好 (hǎo): bem / bom. Sentido literal: 'você bem'."
+        "word": "你好 (nǐ hǎo)",
+        "meaning": "Olá — 你 (nǐ): você; 好 (hǎo): bem. Sentido literal: 'você bem'."
       },
       {
-        "word": "我叫 (wǒ jiào)",
-        "meaning": "Eu me chamo / Meu nome é — 我 (wǒ): eu; 叫 (jiào): chamar / chamar-se. Sentido literal: 'eu me chamo'."
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
+      },
+      {
+        "word": "叫 (jiào)",
+        "meaning": "Chamar-se / Atender por."
       },
       {
         "word": "定力 (Dìnglì)",
-        "meaning": "Dìnglì — 定 (dìng): fixo / calmo; 力 (lì): força. Sentido literal: 'força de estabilidade'."
+        "meaning": "Dingli (nome próprio) — 定 (dìng): estável; 力 (lì): força. Sentido literal: 'firmeza'."
       }
     ],
-    "pronuncia": "Comece em 你好 (Nǐ hǎo) subindo o tom em \"ní\" e descendo e subindo em \"rǎo\". Em 我叫 (wǒ jiào), diga \"uǒ\" suave e solte um \"tchiáo\" caindo a voz com força. Em 定力 (Dìnglì), fale \"tīng-lì\" caindo o tom de forma seca em ambas as sílabas.\nLeia: Ní rǎo uǒ tchiáo Tīng-lì."
+    "pronuncia": "Em 你好 (Nǐ hǎo), como temos dois sons graves seguidos, o primeiro sobe rápido como uma pergunta em \"ní\" e o segundo mergulha fundo na garganta em \"rrǎo\". Depois, afunde a voz em 我 (wǒ) dizendo \"uǒ\". No verbo 叫 (jiào), estique os dentes em sorriso e solte um estalo seco para baixo em \"djiáo\". Para o nome 定力 (Dìnglì), dê dois golpes secos e enfáticos para baixo: \"Dìng-lì\".\nLeia: Ní-rrǎo, uǒ djiáo Dìng-lì."
   },
   "2": {
-    "explanation": "O termo \"você\" é expressado por 你 (nǐ). A palavra \"hoje\" vem logo em seguida como 今天 (jīntiān), que literalmente significa \"o dia de agora\". Para perguntar \"como está\", utiliza-se 怎么样 (zěnmeyàng), que significa ao pé da letra \"de que maneira\".",
+    "explanation": "A estrutura mental do mandarim coloca a pessoa 你 (nǐ) no início, seguida pelo tempo 今天 (jīntiān) que é 'hoje', e termina com a pergunta 怎么样 (zěnmeyàng), que significa literalmente 'de que jeito está a forma', funcionando como o nosso 'como você está'.",
     "breakdown": [
       {
-        "word": "你 (Nǐ)",
-        "meaning": "Você — 你 (nǐ): você."
+        "word": "你 (nǐ)",
+        "meaning": "Você."
       },
       {
         "word": "今天 (jīntiān)",
-        "meaning": "Hoje — 今 (jīn): agora / atual; 天 (tiān): dia / céu. Sentido literal: 'dia atual'."
+        "meaning": "Hoje — 今 (jīn): atual; 天 (tiān): dia. Sentido literal: 'dia atual'."
       },
       {
         "word": "怎么样 (zěnmeyàng)",
-        "meaning": "Como está / Que tal — 怎 (zěn): como; 么 (me): elemento de pergunta; 样 (yàng): forma / maneira. Sentido literal: 'de que forma'."
+        "meaning": "Como está / Que tal — 怎么 (zěnme): como; 样 (yàng): forma / estado."
       }
     ],
-    "pronuncia": "Comece em 你 (Nǐ) descendo e subindo a voz em \"nǐ\". Passe para 今天 (jīntiān) fazendo o \"jīn\" como \"tchin\" alto e reto e o \"tiān\" como \"thiēn\" também alto e contínuo. Finalize em 怎么样 (zěnmeyàng) com \"dzên\" subindo leve, \"mê\" curto e \"yàng\" caindo forte como \"iâng\".\nLeia: Nǐ tchin-thiēn dzên-mê-iâng?"
+    "pronuncia": "Comece em 你 (nǐ) mergulhando a voz no ponto grave da garganta. Em 今天 (jīntiān), estique os lábios em sorriso e sustente a voz bem alta e reta em \"djīn-tiēn\". Para 怎么样 (zěnmeyàng), faça o estalo seco \"tsân\" com a língua atrás dos dentes, passe pelo \"ma\" frouxo e rápido, e desça com força no \"iàng\".\nLeia: Nǐ djīn-tiēn tsân-ma-iàng?"
   },
   "3": {
-    "explanation": "Para dizer \"eu\", usa-se 我 (wǒ). A ideia de \"estou bem\" é transmitida por 很好 (hěn hǎo), que significa ao pé da letra \"muito bem\". O agradecimento \"obrigado\" é expresso pela repetição 谢谢 (xièxie).",
+    "explanation": "Para dizer que está bem, o falante de mandarim conecta o 'eu' 我 (wǒ) diretamente à qualidade 'muito bem' 很好 (hěn hǎo), sem usar verbo de ligação. Em seguida, adiciona-se 谢谢 (xièxie) para agradecer de forma polida.",
     "breakdown": [
       {
-        "word": "我 (Wǒ)",
-        "meaning": "Eu — 我 (wǒ): eu."
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
       },
       {
         "word": "很好 (hěn hǎo)",
-        "meaning": "Estou bem / Muito bem — 很 (hěn): muito; 好 (hǎo): bem / bom. Sentido literal: 'muito bem'."
+        "meaning": "Muito bem — 很 (hěn): muito; 好 (hǎo): bem."
       },
       {
         "word": "谢谢 (xièxie)",
-        "meaning": "Obrigado — 谢 (xiè): agradecer; 谢 (xie): agradecer. Sentido literal: 'agradecer agradecer'."
+        "meaning": "Obrigado / Obrigada — 绝大部分 (xiè): agradecer."
       }
     ],
-    "pronuncia": "Em 我 (Wǒ), fale \"uǒ\" com o tom calmo. Ao dizer 很好 (hěn hǎo), mude a primeira palavra para \"rên\" subindo o tom e a segunda para \"rǎo\" caindo e subindo bem fundo. Para 谢谢 (xièxie), diga \"chiê-chiê\", sendo o primeiro \"chiê\" forte caindo e o segundo bem leve e curto.\nLeia: Uǒ rên rǎo, chiê-chiê."
+    "pronuncia": "Em 我 (wǒ), afunde a voz em \"uǒ\". Como em 很好 (hěn hǎo) existem duas sílabas graves juntas, a primeira sobe em \"rrên\" (como uma pergunta) e a segunda cai bem fundo em \"rrǎo\". Em 谢谢 (xièxie), estique a boca em sorriso tenso: a primeira sílaba cai seca em \"xiè\" e a segunda morre curta e leve em \"xie\".\nLeia: Uǒ rrên-rrǎo, xiè-xie."
   },
   "4": {
-    "explanation": "A expressão \"muito alegre\" é 很高兴 (hěn gāoxìng), que traduz o sentimento de prazer. A palavra \"conhecer\" é 认识 (rènshi), que ao pé da letra é \"reconhecer saber\". No final da frase, vem o termo \"você\", representado por 你 (nǐ).",
+    "explanation": "A lógica aqui é expressar primeiro a sua emoção de alegria 很高兴 (hěn gāoxìng), que significa 'muito feliz', e depois acrescentar o ato de conhecer 认识 (rènshi) a pessoa 你 (nǐ).",
     "breakdown": [
       {
         "word": "很高兴 (hěn gāoxìng)",
-        "meaning": "Muito alegre / Muito contente — 很 (hěn): muito; 高 (gāo): alto; 兴 (xìng): empolgação. Sentido literal: 'muita alta empolgação'."
+        "meaning": "Muito feliz — 很 (hěn): muito; 高 (gāo): alto; 兴 (xìng): alegria. Sentido literal: 'elevado em alegria'."
       },
       {
         "word": "认识 (rènshi)",
-        "meaning": "Conhecer — 认 (rèn): reconhecer; 识 (shi): saber / conhecer. Sentido literal: 'reconhecer e saber'."
+        "meaning": "Conhecer — 认 (rèn): reconhecer; 识 (shi): saber."
       },
       {
         "word": "你 (nǐ)",
-        "meaning": "Você — 你 (nǐ): você."
+        "meaning": "Você."
       }
     ],
-    "pronuncia": "Em 很高兴 (hěn gāoxìng), fale \"rên\" subindo a voz, \"gāo\" alto e reto e \"xìng\" caindo firme como \"chīng\". Em 认识 (rènshi), enrole a língua no céu da boca para o \"rèn\" soar como \"jên\" caindo forte e solte o \"shi\" como um \"chí\" suave e apagado. Termine em 你 (nǐ) descendo e subindo o tom em \"nǐ\".\nLeia: Rên gāo-chīng jên-chí nǐ."
+    "pronuncia": "Diga 很高兴 (hěn gāoxìng) afundando a voz em \"rrên\", sustentando a nota alta em \"gā\" e caindo seco com o sorriso esticado em \"xìng\". Em 认识 (rènshi), enrole a ponta da língua para trás para soltar um \"jên\" seco caindo firme e um \"chï\" frouxo e leve. Termine afundando a voz no grave em 你 (nǐ).\nLeia: Rrên gā-xìng jên-chï nǐ."
   },
   "5": {
-    "explanation": "O termo para \"todos\" ou \"todo mundo\" é 大家 (dàjiā), que significa ao pé da letra \"grande família\". O período \"pela manhã\" é 早上 (zǎoshang), e a palavra \"bom\" é 好 (hǎo), formando juntos a saudação de bom dia.",
+    "explanation": "A saudação direciona-se primeiro ao grupo 大家 (dàjiā), que significa ao pé da letra 'a grande família' ou 'todos', seguido pelo período do dia 早上 (zǎoshang), que é a 'manhã', e encerra com 好 (hǎo) para desejar um bom dia.",
     "breakdown": [
       {
-        "word": "大家 (Dàjiā)",
-        "meaning": "Todos / Todo mundo — 大 (dà): grande; 家 (jiā): família / casa. Sentido literal: 'grande família'."
+        "word": "大家 (dàjiā)",
+        "meaning": "Todos / Pessoal — 大 (dà): grande; 家 (jiā): família / casa."
       },
       {
         "word": "早上 (zǎoshang)",
-        "meaning": "Manhã — 早 (zǎo): cedo; 上 (shang): acima / início. Sentido literal: 'início do cedo'."
+        "meaning": "Manhã — 早 (zǎo): cedo; 上 (shàng): início / topo."
       },
       {
         "word": "好 (hǎo)",
-        "meaning": "Bom / Bem — 好 (hǎo): bom."
+        "meaning": "Bom / Bem."
       }
     ],
-    "pronuncia": "Em 大家 (Dàjiā), diga \"tâ\" caindo a voz e \"tchiā\" alto e reto. Para 早上 (zǎoshang), faça um \"dzǎo\" descendo e subindo com o som da língua nos dentes da frente e um \"châng\" curto com a língua no céu da boca. Termine em 好 (hǎo) descendo e subindo a voz bem grave como \"rǎo\".\nLeia: Tâ-tchiā dzǎo-châng rǎo."
+    "pronuncia": "Em 大家 (dàjiā), dê um estalo seco com a língua no dente em \"dà\" e abra o sorriso mantendo o tom alto em \"djiā\". Para 早上 (zǎoshang), faça o estalo \"tsǎo\" mergulhando no tom grave e deixe o \"chāng\" soar bem leve e curto. Feche com 好 (hǎo) afundando a voz no grave em \"rrǎo\".\nLeia: Dà-djiā tsǎo-chāng rrǎo."
   },
   "6": {
-    "explanation": "A estrutura começa com \"você é\", dita como 你是 (nǐ shì). A pergunta \"onde\" ou \"qual lugar\" vem em seguida com 哪里 (nǎlǐ). No final, acrescenta-se a palavra \"pessoa\", que é 人 (rén), para perguntar literalmente \"você é pessoa de onde?\".",
+    "explanation": "Para saber a nacionalidade, a estrutura do mandarim diz 你 (nǐ) para 'você', o verbo 是 (shì) para 'ser', a pergunta 哪里 (nǎlǐ) para 'onde' e finaliza com 人 (rén), que significa 'pessoa'. Ao pé da letra: 'você é pessoa de onde?'.",
     "breakdown": [
       {
-        "word": "你是 (Nǐ shì)",
-        "meaning": "Você é — 你 (nǐ): você; 是 (shì): ser."
+        "word": "你 (nǐ)",
+        "meaning": "Você."
+      },
+      {
+        "word": "是 (shì)",
+        "meaning": "Ser."
       },
       {
         "word": "哪里 (nǎlǐ)",
-        "meaning": "Onde / Qual lugar — 哪 (nǎ): qual; 里 (lǐ): dentro / lugar. Sentido literal: 'qual lugar'."
+        "meaning": "Onde — 哪 (nǎ): qual; 里 (lǐ): dentro / lugar."
       },
       {
         "word": "人 (rén)",
-        "meaning": "Pessoa — 人 (rén): pessoa / humano."
+        "meaning": "Pessoa / Nativo."
       }
     ],
-    "pronuncia": "Em 你是 (Nǐ shì), fale \"nǐ\" descendo e subindo e empurre o ar com a língua no céu da boca para o \"shì\" soar como \"chí\" caindo seco. Em 哪里 (nǎlǐ), diga \"ná\" subindo o tom e \"lǐ\" descendo e subindo. Para 人 (rén), enrole levemente a língua no céu da boca soltando um \"jên\" que sobe o tom como numa pergunta.\nLeia: Nǐ chí ná-lǐ jên?"
+    "pronuncia": "Mergulhe a voz no 你 (nǐ) em \"nǐ\". Em 是 (shì), enrole a língua para trás no céu da boca e dê um golpe seco em \"chí\". Em 哪里 (nǎlǐ), por serem dois tons graves, a voz sobe em \"ná\" e afunda em \"lǐ\". Encerre em 人 (rén) enrolando a língua como um \"j\" caipira e subindo o tom em \"ján\".\nLeia: Nǐ chí ná-lǐ ján?"
   },
   "7": {
-    "explanation": "A palavra para \"eu\" é 我 (wǒ). A expressão \"vir de\" ou \"proceder de\" é 来自 (láizì). O nome do país \"Espanha\" é traduzido foneticamente como 西班牙 (Xībānyá).",
+    "explanation": "Em vez de dizer apenas 'sou de', a frase usa o verbo composto 来自 (láizì), que significa 'vir de' ou 'originar-se de'. A estrutura junta 'eu' 我 (wǒ), o verbo 'vir de' 来自 (láizì) e o nome do país 西班牙 (Xībānyá).",
     "breakdown": [
       {
-        "word": "我 (Wǒ)",
-        "meaning": "Eu — 我 (wǒ): eu."
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
       },
       {
         "word": "来自 (láizì)",
-        "meaning": "Vir de / Ser de — 来 (lái): vir; 自 (zì): desde / a partir de. Sentido literal: 'vir a partir de'."
+        "meaning": "Vir de — 来 (lái): vir; 自 (zì): desde / de."
       },
       {
         "word": "西班牙 (Xībānyá)",
-        "meaning": "Espanha — 西 (xī): oeste; 班 (bān): grupo; 牙 (yá): dente (usados pelo som). Sentido literal: 'Espanha'."
+        "meaning": "Espanha — Fonética adaptada para o nome do país."
       }
     ],
-    "pronuncia": "Fale 我 (Wǒ) como \"uǒ\" calmo e baixo. Em 来自 (láizì), diga \"lái\" subindo o tom e \"dzì\" caindo firme com a língua atrás dos dentes da frente. Em 西班牙 (Xībānyá), faça o \"xī\" como \"chī\" alto e reto, o \"bān\" como \"bān\" plano e finalize o \"yá\" subindo a voz como \"iá\".\nLeia: Uǒ lái-dzì chī-bān-iá."
+    "pronuncia": "Afunde a voz no 我 (wǒ) em \"uǒ\". Em 来自 (láizì), suba o tom em \"lái\" e solte um estalo seco com a língua nos dentes em \"tsài\". Em 西班牙 (Xībānyá), estique os dentes em sorriso no \"xī\" reto e alto, faça o estalo seco sem ar no \"bā\" reto, e suba a entonação no \"iá\".\nLeia: Uǒ lái-tsài Xī-bā-iá."
   },
   "8": {
-    "explanation": "A afirmação \"você é\" é expressa por 你是 (nǐ shì). A palavra para \"estudante\" é 学生 (xuéshēng), que significa literalmente \"aprender a vida\". No final, o elemento de pergunta 吗 (ma) serve para transformar a frase em uma pergunta.",
+    "explanation": "Para transformar uma frase afirmativa em pergunta de sim ou não, o mandarim mantém a ordem inteira — 你 (nǐ) 'você', 是 (shì) 'é', 学生 (xuéshēng) 'estudante' — e apenas pendura a partícula 吗 (ma) no final.",
     "breakdown": [
       {
-        "word": "你是 (Nǐ shì)",
-        "meaning": "Você é — 你 (nǐ): você; 是 (shì): ser."
+        "word": "你 (nǐ)",
+        "meaning": "Você."
+      },
+      {
+        "word": "是 (shì)",
+        "meaning": "Ser."
       },
       {
         "word": "学生 (xuéshēng)",
-        "meaning": "Estudante / Aluno — 学 (xué): estudar / aprender; 生 (shēng): nascer / viver. Sentido literal: 'o que aprende a viver'."
+        "meaning": "Estudante / Aluno — 学 (xué): estudar; 生 (shēng): nascer / aluno."
       },
       {
         "word": "吗 (ma)",
-        "meaning": "Termo de pergunta — 吗 (ma): indica que a frase é uma pergunta."
+        "meaning": "Partícula de pergunta."
       }
     ],
-    "pronuncia": "Diga 你是 (Nǐ shì) com \"nǐ\" descendo e subindo e \"chí\" caindo firme com a língua enrolada no céu da boca. Em 学生 (xuéshēng), fale \"chuê\" subindo a voz como quem pergunta e \"chēng\" com o tom alto e reto. Solte o 吗 (ma) bem curto e leve como \"mâ\".\nLeia: Nǐ chí chuê-chēng mâ?"
+    "pronuncia": "Afunde a voz em 你 (nǐ). Curve a língua para o céu da boca em 是 (shì) caindo seco em \"chí\". Em 学生 (xuéshēng), faça um bico de \"ü\" com sorriso e suba o tom em \"xüé\", mantendo a língua virada para trás no \"chêng\" reto e alto. Termine com o \"ma\" bem curto, leve e frouxo.\nLeia: Nǐ chí xüé-chêng ma?"
   },
   "9": {
-    "explanation": "Para dizer \"ele\", usa-se 他 (tā). A expressão \"não é\" é dita como 不是 (bùshì). A posse \"meu\" é indicada por 我的 (wǒ de), unindo \"eu\" ao conector de posse. A palavra para \"irmão mais velho\" é 哥哥 (gēge).",
+    "explanation": "A negação do verbo 'ser' é feita colocando 不 (bù) antes de 是 (shì). Por ser seguida de tom descendente, a palavra 不 muda para tom ascendente. A posse é formada por 我 (wǒ) mais a partícula 的 (de), ligando ao irmão mais velho 哥哥 (gēge).",
     "breakdown": [
       {
-        "word": "他 (Tā)",
-        "meaning": "Ele — 他 (tā): ele."
+        "word": "他 (tā)",
+        "meaning": "Ele."
       },
       {
-        "word": "不是 (bùshì)",
+        "word": "不是 (búshì)",
         "meaning": "Não é — 不 (bù): não; 是 (shì): ser."
       },
       {
         "word": "我的 (wǒ de)",
-        "meaning": "Meu / Minha — 我 (wǒ): eu; 的 (de): conector de posse."
+        "meaning": "Meu — 我 (wǒ): eu; 的 (de): conector de posse."
       },
       {
         "word": "哥哥 (gēge)",
-        "meaning": "Irmão mais velho — 哥 (gē): irmão mais velho; 哥 (ge): irmão mais velho."
+        "meaning": "Irmão mais velho."
       }
     ],
-    "pronuncia": "Comece em 他 (Tā) com um \"thā\" bem soprado e tom alto. Em 不是 (bùshì), diga \"bú\" subindo o tom e \"chí\" caindo firme. Em 我的 (wǒ de), faça um \"uǒ\" suave descendo e subindo, com um \"dê\" fraco e curto. Termine em 哥哥 (gēge) dizendo \"gūe-gûe\", sendo a primeira parte firme e a segunda fraquinha.\nLeia: Thā bú-chí uǒ-dê gūe-gûe."
+    "pronuncia": "Em 他 (tā), solte um forte sopro de ar com tom alto em \"tā\". Em 不是 (búshì), suba o tom de pergunta no \"bú\" e cai seco no \"chí\". Para 我的 (wǒ de), mergulhe em \"uǒ\" e solte o \"de\" frouxo e rápido como \"da\". Em 哥哥 (gēge), faça o estalo seco de garganta \"gā\" e feche com um \"ga\" leve e apagado.\nLeia: Tā bú-chì uǒ da gā-ga."
   },
   "10": {
-    "explanation": "A palavra para \"ela\" é 她 (tā). O termo \"é\" vem como 是 (shì). A expressão \"minha\" é 我的 (wǒ de). Para dizer \"melhor\", usa-se 最好 (zuì hǎo), que significa ao pé da letra \"mais bom\". Por fim, a palavra \"amigo\" é 朋友 (péngyou).",
+    "explanation": "Para dizer 'melhor amigo', junta-se 最 (zuì) que significa 'o mais', 好 (hǎo) que é 'bom', a partícula 的 (de) para conectar a característica, e a palavra 朋友 (péngyou) para 'amigo'. A frase começa com 她 (tā) 'ela' e o verbo 是 (shì) 'é'.",
     "breakdown": [
       {
-        "word": "她 (Tā)",
-        "meaning": "Ela — 她 (tā): ela."
+        "word": "她 (tā)",
+        "meaning": "Ela."
       },
       {
         "word": "是 (shì)",
-        "meaning": "É / Ser — 是 (shì): ser."
+        "meaning": "Ser."
       },
       {
-        "word": "我的 (wǒ de)",
-        "meaning": "Minha — 我 (wǒ): eu; 的 (de): conector de posse."
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
       },
       {
         "word": "最好 (zuì hǎo)",
-        "meaning": "Melhor / O mais bom — 最 (zuì): o mais; 好 (hǎo): bom. Sentido literal: 'o mais bom'."
+        "meaning": "Melhor / O mais bom — 最 (zuì): mais / o máximo; 好 (hǎo): bom."
+      },
+      {
+        "word": "的 (de)",
+        "meaning": "Conector de posse ou qualidade."
       },
       {
         "word": "朋友 (péngyou)",
-        "meaning": "Amigo — 朋 (péng): parceiro; 友 (you): companheiro. Sentido literal: 'parceiro e companheiro'."
+        "meaning": "Amigo — 朋 (péng): companheiro; 友 (you): amigo."
       }
     ],
-    "pronuncia": "Comece com 她 (Tā) soprando um \"thā\" alto e reto, e 是 (shì) caindo forte como \"chí\". Em 我的 (wǒ de), fale \"uǒ\" e um \"dê\" levinho. Em 最好 (zuì hǎo), diga \"dzuì\" caindo a voz e \"rǎo\" descendo e subindo bem fundo. Feche em 朋友 (péngyou) com um \"pông\" soprado subindo o tom e um \"ióu\" suave e curto.\nLeia: Thā chí uǒ-dê dzuì-rǎo pông-ióu."
+    "pronuncia": "Dispare um sopro de ar em 他 (tā) em tom alto. Curve a língua em 是 (shì) caindo seco em \"chí\". Afunde em 我 (wǒ) em \"uǒ\". Em 最好 (zuì hǎo), solte o estalo de dente \"tsuèi\" seco e mergulhe no grave em \"rrǎo\". O 的 (de) soa como um \"da\" rápido e frouxo. Feche com 朋友 (péngyou) disparando ar no \"póng\" e soltando o \"iôu\" leve.\nLeia: Tā chí uǒ tsuèi-rrǎo da póng-iôu."
   },
   "11": {
-    "explanation": "A estrutura começa com \"você chama-se\", representada por 你叫 (nǐ jiào). A palavra para \"qual\" ou \"o que\" é 什么 (shénme). No final, o termo \"nome\" vem como 名字 (míngzi), formando literalmente \"você se chama que nome?\".",
+    "explanation": "A pergunta sobre o nome usa a estrutura: você 你 (nǐ), chama-se 叫 (jiào), o que 什么 (shénme) e nome 名字 (míngzi). Ao pé da letra, o mandarim pergunta: 'você se chama que nome?'.",
     "breakdown": [
       {
-        "word": "你叫 (Nǐ jiào)",
-        "meaning": "Você se chama — 你 (nǐ): você; 叫 (jiào): chamar / chamar-se."
+        "word": "你 (nǐ)",
+        "meaning": "Você."
+      },
+      {
+        "word": "叫 (jiào)",
+        "meaning": "Chamar-se."
       },
       {
         "word": "什么 (shénme)",
-        "meaning": "O que / Qual — 什 (shén): o que; 么 (me): elemento de pergunta."
+        "meaning": "O que / Qual — 什 (shén): o que; 么 (me): partícula."
       },
       {
         "word": "名字 (míngzi)",
-        "meaning": "Nome — 名 (míng): nome / fama; 字 (zi): caractere / letra. Sentido literal: 'caractere de nome'."
+        "meaning": "Nome — 名 (míng): nome; 字 (zi): caractere."
       }
     ],
-    "pronuncia": "Diga 你 (Nǐ) descendo e subindo a voz e 叫 (jiào) caindo forte como \"tchiáo\". Em 什么 (shénme), enrole a língua para o \"shén\" soar como \"chên\" subindo a voz e o \"me\" como um \"mê\" fraco. Em 名字 (míngzi), diga \"míng\" subindo o tom e o \"zi\" seco com a língua atrás dos dentes da frente como \"dzí\".\nLeia: Nǐ tchiáo chên-mê míng-dzí?"
+    "pronuncia": "Mergulhe em 你 (nǐ). Dê um golpe seco com sorriso em 叫 (jiào) dizendo \"djiáo\". Em 什么 (shénme), fale \"chán\" subindo a voz e solte a segunda parte como um \"ma\" frouxo e apagado. Para 名字 (míngzi), suba o tom em \"míng\" e faça o estalo de dente seco e leve em \"tsï\".\nLeia: Nǐ djiáo chán-ma míng-tsï?"
   },
   "12": {
-    "explanation": "A palavra para \"eu\" é 我 (wǒ). A ideia de \"saber fazer\" ou \"ter a habilidade\" vem com 会 (huì). O verbo \"falar\" é 说 (shuō). A expressão \"um pouco\" é 一点 (yīdiǎn) e o idioma \"inglês\" é 英语 (Yīngyǔ).",
+    "explanation": "A capacidade adquirida por estudo usa o verbo 会 (huì), que significa 'saber' ou 'ter a habilidade de'. A frase junta 'eu' 我 (wǒ), 'sei' 会 (huì), 'falar' 说 (shuō), 'um pouco' 一点 (yìdiǎn) e a língua inglesa 英语 (Yīngyǔ).",
     "breakdown": [
       {
-        "word": "我 (Wǒ)",
-        "meaning": "Eu — 我 (wǒ): eu."
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
       },
       {
-        "word": "会说 (huì shuō)",
-        "meaning": "Saber falar — 会 (huì): saber / ter habilidade; 说 (shuō): falar. Sentido literal: 'saber falar'."
-      },
-      {
-        "word": "一点 (yīdiǎn)",
-        "meaning": "Um pouco — 一 (yī): um; 点 (diǎn): gota / ponto. Sentido literal: 'um ponto / uma gota'."
-      },
-      {
-        "word": "英语 (Yīngyǔ)",
-        "meaning": "Língua inglesa — 英 (yīng): herói / Inglaterra; 语 (yǔ): língua / idioma. Sentido literal: 'idioma da Inglaterra'."
-      }
-    ],
-    "pronuncia": "Fale 我 (Wǒ) como \"uǒ\" calmo. Em 会说 (huì shuō), diga \"rùe\" caindo o tom e \"chōu\" alto e reto com a língua enrolada no céu da boca. Em 一点 (yīdiǎn), faça \"yī\" alto e \"diǎn\" descendo e subindo como \"tiǎn\". Para 英语 (Yīngyǔ), diga \"yīng\" alto e plano e faça um \"yǔ\" descendo e subindo a voz arredondando os lábios como \"iǚ\".\nLeia: Uǒ rùe chōu yī-tiǎn Yīng-iǚ."
-  },
-  "13": {
-    "explanation": "Começa com \"você sabe falar\", dito como 你会说 (nǐ huì shuō). A palavra para o idioma \"inglês\" é 英语 (Yīngyǔ). Para transformar a afirmação em uma pergunta de sim ou não, adiciona-se o termo de pergunta 吗 (ma) ao final.",
-    "breakdown": [
-      {
-        "word": "你会说 (Nǐ huì shuō)",
-        "meaning": "Você sabe falar — 你 (nǐ): você; 会 (huì): saber; 说 (shuō): falar."
-      },
-      {
-        "word": "英语 (Yīngyǔ)",
-        "meaning": "Inglês — 英 (yīng): Inglaterra; 语 (yǔ): idioma. Sentido literal: 'idioma inglês'."
-      },
-      {
-        "word": "吗 (ma)",
-        "meaning": "Termo de pergunta — 吗 (ma): indica pergunta."
-      }
-    ],
-    "pronuncia": "Em 你 (Nǐ), diga \"nǐ\" descendo e subindo. Passe para 会说 (huì shuō) com \"rùe\" caindo o tom e \"chōu\" mantendo a voz alta e reta. Em 英语 (Yīngyǔ), fale \"yīng\" alto e plano e \"yǔ\" arredondando a boca como \"iǚ\" descendo e subindo. Feche com 吗 (ma) suave e curto como \"mâ\".\nLeia: Nǐ rùe chōu Yīng-iǚ mâ?"
-  },
-  "14": {
-    "explanation": "O termo \"eu\" é 我 (wǒ). A negação \"não\" é 不 (bù). A palavra para \"entender\" ou \"compreender claramente\" é 明白 (míngbai), que ao pé da letra significa \"ficar claro e brilhante\".",
-    "breakdown": [
-      {
-        "word": "我 (Wǒ)",
-        "meaning": "Eu — 我 (wǒ): eu."
-      },
-      {
-        "word": "不 (bù)",
-        "meaning": "Não — 不 (bù): não."
-      },
-      {
-        "word": "明白 (míngbai)",
-        "meaning": "Entender / Compreender — 明 (míng): claro / brilhante; 白 (bái): branco / claro. Sentido literal: 'ficar claro'."
-      }
-    ],
-    "pronuncia": "Fale 我 (Wǒ) de forma tranquila como \"uǒ\". A negação 不 (bù) aqui sobe o tom como \"bú\". Na palavra 明白 (míngbai), faça o \"míng\" subindo a voz como uma pergunta e solte o \"bai\" bem levinho e curto como \"bai\".\nLeia: Uǒ bú míng-bai."
-  },
-  "15": {
-    "explanation": "A palavra de cortesia \"por favor\" é 请 (qǐng). O verbo \"falar\" é 说 (shuō). A palavra \"devagar\" vem como 慢 (màn). A expressão \"um pouco\" é 一点 (yīdiǎn), formando juntas a frase para pedir uma fala mais pausada.",
-    "breakdown": [
-      {
-        "word": "请 (Qǐng)",
-        "meaning": "Por favor / Convidar — 请 (qǐng): por favor."
+        "word": "会 (huì)",
+        "meaning": "Saber / Ter habilidade."
       },
       {
         "word": "说 (shuō)",
-        "meaning": "Falar — 说 (shuō): falar."
+        "meaning": "Falar."
       },
       {
-        "word": "慢一点 (màn yīdiǎn)",
-        "meaning": "Um pouco mais devagar — 慢 (màn): devagar; 一 (yī): um; 点 (diǎn): ponto / pouco. Sentido literal: 'devagar um ponto'."
+        "word": "一点 (yìdiǎn)",
+        "meaning": "Um pouco — 一 (yī): um; 点 (diǎn): gota / ponto."
+      },
+      {
+        "word": "英语 (Yīngyǔ)",
+        "meaning": "Língua inglesa — 英 (yīng): Inglaterra / herói; 语 (yǔ): idioma."
       }
     ],
-    "pronuncia": "Em 请 (Qǐng), solte bastante ar com som de \"tchīng\" descendo e subindo o tom. Em 说 (shuō), enrole a língua no céu da boca para soar \"chōu\" alto e reto. Em 慢 (màn), caia a voz forte com \"màn\". Finalize em 一点 (yīdiǎn) com um \"yī\" alto e um \"tiǎn\" descendo e subindo a voz.\nLeia: Tchīng chōu màn yī-tiǎn."
+    "pronuncia": "Afunde a voz no 我 (wǒ). Em 会 (huì), dê um golpe seco para baixo em \"rruèi\". Em 说 (shuō), enrole a língua para trás mantendo a nota alta em \"chōu\". Em 一点 (yìdiǎn), o \"yī\" cai seco em \"yì\" e o \"diǎn\" afunda no grave em \"diên\". Encerre 英语 (Yīngyǔ) com sorriso no \"īng\" alto e bico de \"ü\" no \"yǔ\" grave.\nLeia: Uǒ rruèi chōu yì-diên Īng-yǔ."
   },
-  "16": {
-    "explanation": "O termo \"aquele\" ou \"isso\" é 那个 (nàge). A pergunta \"como\" vem representada por 怎么 (zěnme). O verbo \"soletrar\" ou \"juntar sons\" é 拼 (pīn).",
+  "13": {
+    "explanation": "Para perguntar se alguém fala um idioma, coloca-se a pessoa 你 (nǐ), o verbo de habilidade 会 (huì) 'saber', o verbo 说 (shuō) 'falar', o nome da língua 英语 (Yīngyǔ) 'inglês' e a partícula de pergunta 吗 (ma) no final.",
     "breakdown": [
       {
-        "word": "那个 (Nàge)",
-        "meaning": "Aquele / Isso — 那 (nà): aquele; 个 (ge): elemento genérico."
+        "word": "你 (nǐ)",
+        "meaning": "Você."
+      },
+      {
+        "word": "会 (huì)",
+        "meaning": "Saber / Conseguir."
+      },
+      {
+        "word": "说 (shuō)",
+        "meaning": "Falar."
+      },
+      {
+        "word": "英语 (Yīngyǔ)",
+        "meaning": "Língua inglesa."
+      },
+      {
+        "word": "吗 (ma)",
+        "meaning": "Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Afunde a voz em 你 (nǐ). Em 会 (huì), desça a voz seco em \"rruèi\". Enrole a língua em 说 (shuō) mantendo a voz alta em \"chōu\". Em 英语 (Yīngyǔ), mantenha a nota alta em \"īng\" e afunde em bico no \"yǔ\". Termine com o \"ma\" frouxo e rápido.\nLeia: Nǐ rruèi chōu Īng-yǔ ma?"
+  },
+  "14": {
+    "explanation": "A negação de entendimento é formada pelo 'eu' 我 (wǒ), pela palavra de negação 不 (bù) e pelo verbo 明白 (míngbai), que significa literalmente 'estar claro' ou 'compreender com clareza'.",
+    "breakdown": [
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
+      },
+      {
+        "word": "不 (bù)",
+        "meaning": "Não."
+      },
+      {
+        "word": "明白 (míngbai)",
+        "meaning": "Entender / Compreender — 明 (míng): claro / brilhante; 白 (bái): claro / puro."
+      }
+    ],
+    "pronuncia": "Afunde a voz em 我 (wǒ) em \"uǒ\". Dê um golpe seco para baixo na negação 不 (bù) dizendo \"bù\". Em 明白 (míngbai), suba o tom em \"míng\" como uma pergunta e deixe a segunda sílaba soar leve, frouxa e curta em \"bai\".\nLeia: Uǒ bù míng-bai."
+  },
+  "15": {
+    "explanation": "Pedidos educados começam com 请 (qǐng), que é 'por favor'. Em seguida vem o verbo 说 (shuō) 'falar', o adjetivo 慢 (màn) 'devagar' e a expressão 一点 (yìdiǎn) 'um pouco', resultando em 'por favor, fale um pouco mais devagar'.",
+    "breakdown": [
+      {
+        "word": "请 (qǐng)",
+        "meaning": "Por favor / Pedir educadamente."
+      },
+      {
+        "word": "说 (shuō)",
+        "meaning": "Falar."
+      },
+      {
+        "word": "慢 (màn)",
+        "meaning": "Devagar / Lento."
+      },
+      {
+        "word": "一点 (yìdiǎn)",
+        "meaning": "Um pouco — 一 (yī): um; 点 (diǎn): ponto."
+      }
+    ],
+    "pronuncia": "Em 请 (qǐng), estique o sorriso e dispare ar afundando a voz no tom grave em \"tchǐng\". Enrole a língua no céu da boca para o 说 (shuō) em tom alto \"chōu\". Em 慢 (màn), cai com força no 4º tom em \"màn\". Feche em 一点 (yìdiǎn) com um \"yì\" seco caindo e um \"diên\" afundando no grave.\nLeia: Tchǐng chōu màn yì-diên."
+  },
+  "16": {
+    "explanation": "Para perguntar como algo é soletrado, aponta-se para o objeto com 那个 (nàge) 'aquele/isso', usa-se 怎么 (zěnme) para 'de que jeito/como' e termina-se com o verbo 拼 (pīn), que significa 'juntar pedaços' ou 'soletrar'.",
+    "breakdown": [
+      {
+        "word": "那个 (nàge)",
+        "meaning": "Aquele / Isso — 那 (nà): aquele; 个 (gè): termo genérico."
       },
       {
         "word": "怎么 (zěnme)",
-        "meaning": "Como / De que jeito — 怎 (zěn): como; 么 (me): elemento de pergunta."
+        "meaning": "Como / De que jeito — 怎 (zěn): como; 么 (me): partícula."
       },
       {
         "word": "拼 (pīn)",
-        "meaning": "Soletrar / Decompor som — 拼 (pīn): juntar / soletrar."
+        "meaning": "Soletrar / Juntar peças."
       }
     ],
-    "pronuncia": "Comece em 那个 (Nàge) com o \"nà\" caindo seco e o \"ge\" levinho como \"gê\". Em 怎么 (zěnme), faça um \"dzên\" subindo leve o tom e um \"mê\" bem curto. Feche em 拼 (pīn) soltando um vento forte pelos lábios no som de \"pīn\" em tom alto e reto.\nLeia: Nâ-gê dzên-mê pīn?"
+    "pronuncia": "Em 那个 (nàge), desça o tom em \"nà\" e solte a segunda sílaba como um \"ga\" frouxo e rápido. Em 怎么 (zěnme), faça o estalo seco \"tsân\" com a língua no dente e solte o \"ma\" leve. Feche em 拼 (pīn) disparando um forte sopro de ar mantendo a nota alta em \"pīn\".\nLeia: Nà-ga tsân-ma pīn?"
   },
   "17": {
-    "explanation": "A despedida padrão \"tchau\" é 再见 (zàijiàn), que significa ao pé da letra \"ver novamente\". A expressão \"até mais tarde\" é 回头见 (huítóu jiàn), que significa literalmente \"ver-se ao virar a cabeça\".",
+    "explanation": "Duas formas cotidianas de despedida são combinadas aqui: 再见 (zàijiàn), que significa literalmente 'ver novamente', e 回头见 (huítóu jiàn), que expressa 'ver-se ao virar a cabeça', equivalente ao nosso 'até mais tarde'.",
     "breakdown": [
       {
-        "word": "再见 (Zàijiàn)",
-        "meaning": "Tchau / Até logo — 再 (zài): novamente; 见 (jiàn): ver. Sentido literal: 'ver novamente'."
+        "word": "再见 (zàijiàn)",
+        "meaning": "Tchau / Adeus — 再 (zài): novamente; 见 (jiàn): ver."
       },
       {
         "word": "回头见 (huítóu jiàn)",
-        "meaning": "Até mais tarde — 回 (huí): voltar; 头 (tóu): cabeça; 见 (jiàn): ver. Sentido literal: 'ver-se ao voltar a cabeça'."
+        "meaning": "Até mais tarde — 回头 (huítóu): virar a cabeça / daqui a pouco; 见 (jiàn): ver."
       }
     ],
-    "pronuncia": "Em 再见 (Zàijiàn), fale \"dzài\" caindo forte com a língua nos dentes da frente e \"tchiên\" caindo com força. Em 回头见 (huítóu jiàn), faça o \"ruí\" subindo o tom, o \"thóu\" soprado subindo o tom como pergunta e encerre com o \"tchiên\" caindo o tom firme.\nLeia: Dzài-tchiên, ruí-thóu tchiên."
+    "pronuncia": "Em 再见 (zàijiàn), solte o estalo seco de dente \"tsài\" caindo firme e desça a voz de novo no \"djiàn\" com sorriso esticado. Em 回头见 (huítóu jiàn), suba o tom em \"rruéi\", suba a voz no \"tóu\" e dê um golpe seco para baixo no \"djiàn\".\nLeia: Tsài-djiàn, rruéi-tóu djiàn."
   },
   "18": {
-    "explanation": "A palavra de desejo \"desejar\" é 祝 (zhù). O termo \"você\" é 你 (nǐ). A palavra \"hoje\" é 今天 (jīntiān). A expressão \"passar o tempo\" é 过得 (guò de), e a palavra \"agradável\" é 愉快 (yúkuài).",
+    "explanation": "Para desejar um bom dia, a frase usa o verbo 祝 (zhù) 'desejar', a pessoa 你 (nǐ) 'você', o tempo 今天 (jīntiān) 'hoje', a estrutura 过得 (guò de) 'vivenciar/passar' e a qualidade 愉快 (yúkuài), que significa 'agradável' ou 'feliz'.",
     "breakdown": [
       {
-        "word": "祝你 (Zhù nǐ)",
-        "meaning": "Desejo a você — 祝 (zhù): desejar; 你 (nǐ): você."
+        "word": "祝 (zhù)",
+        "meaning": "Desejar."
+      },
+      {
+        "word": "你 (nǐ)",
+        "meaning": "Você."
       },
       {
         "word": "今天 (jīntiān)",
-        "meaning": "Hoje — 今 (jīn): agora; 天 (tiān): dia."
+        "meaning": "Hoje."
       },
       {
-        "word": "过得愉快 (guò de yúkuài)",
-        "meaning": "Passar de forma agradável — 过 (guò): passar; 得 (de): modo como se passa; 愉快 (yúkuài): feliz / agradável. Sentido literal: 'passar o dia feliz'."
+        "word": "过得 (guò de)",
+        "meaning": "Passar / Vivenciar — 过 (guò): passar; 得 (de): conector de modo."
+      },
+      {
+        "word": "愉快 (yúkuài)",
+        "meaning": "Agradável / Feliz — 愉 (yú): alegre; 快 (kuài): rápido / satisfeito."
       }
     ],
-    "pronuncia": "Diga 祝 (Zhù) enrolando a língua no céu da boca com um \"djù\" bem seco e caindo a voz, seguido de 你 (nǐ) descendo e subindo. Em 今天 (jīntiān), faça \"tchin-thiēn\" alto e reto. Em 过得愉快 (guò de yúkuài), fale \"guò\" caindo a voz, \"dê\" fraco, \"yú\" subindo como \"iú\" e \"kuài\" caindo seco como \"kuài\".\nLeia: Djù nǐ tchin-thiēn guò-dê iú-kuài."
+    "pronuncia": "Curve a língua em 祝 (zhù) caindo seco em \"djù\". Afunde em 你 (nǐ). Mantenha 今天 (jīntiān) em notas altas e retas em \"djīn-tiēn\". Em 过得 (guò de), desça o tom em \"guò\" e solte o \"de\" frouxo e rápido como \"da\". Feche em 愉快 (yúkuài) subindo em bico de \"yú\" e disparando ar no \"kuài\" seco.\nLeia: Djù nǐ djīn-tiēn guò da yú-kuài."
   },
   "19": {
-    "explanation": "A indicação \"este\" é 这 (zhè). O verbo \"é\" vem como 是 (shì). A expressão \"meu\" é 我的 (wǒ de). A palavra para \"professor\" é 老师 (lǎoshī), que ao pé da letra significa \"mestre antigo\".",
+    "explanation": "Para apresentar alguém perto de você, usa-se 这是 (zhè shì) que é 'este é', seguido pela posse 我的 (wǒ de) 'meu' e finalizando com o título do profissional 老师 (lǎoshī), que significa 'professor'.",
     "breakdown": [
       {
-        "word": "这是 (Zhè shì)",
-        "meaning": "Este é — 这 (zhè): este / isto; 是 (shì): ser."
+        "word": "这是 (zhè shì)",
+        "meaning": "Este é / Isto é — 这 (zhè): este; 是 (shì): ser."
       },
       {
         "word": "我的 (wǒ de)",
@@ -348,207 +392,239 @@
       },
       {
         "word": "老师 (lǎoshī)",
-        "meaning": "Professor — 老 (lǎo): velho / respeitável; 师 (shī): mestre. Sentido literal: 'mestre respeitável'."
+        "meaning": "Professor — 老 (lǎo): respeitável / antigo; 师 (shī): mestre."
       }
     ],
-    "pronuncia": "Em 这是 (Zhè shì), enrole a língua no céu da boca e diga \"djè-chí\" caindo a voz com firmeza nas duas palavras. Em 我的 (wǒ de), diga \"uǒ\" suave e \"dê\" fraco. Em 老师 (lǎoshī), faça \"lǎo\" descendo e subindo a voz e \"chī\" com a língua enrolada no céu da boca em tom alto e reto.\nLeia: Djè-chí uǒ-dê lǎo-chī."
+    "pronuncia": "Em 这是 (zhè shì), enrole a língua no céu da boca e dê dois golpes secos para baixo: \"djè-chí\". Em 我的 (wǒ de), afunde em \"uǒ\" e solte o \"de\" frouxo como \"da\". Para 老师 (lǎoshī), mergulhe a voz na garganta em \"lǎo\" e enrole a língua para um \"chī\" reto e alto.\nLeia: Djè-chí uǒ da lǎo-chī."
   },
   "20": {
-    "explanation": "A palavra para \"eles\" é 他们 (tāmen). A negação \"não são\" é 不是 (bùshì). A expressão \"proceder de\" ou \"vir de\" é 来自 (láizì). O nome da cidade \"Londres\" é traduzido foneticamente como 伦敦 (Lúndūn).",
+    "explanation": "O plural 'eles' é formado por 他们 (tāmen). A negação 'não são' vira 不是 (búshì), e o ponto de origem é dado por 来自 (láizì) 'vir de', seguido do nome da cidade 伦敦 (Lúndūn) 'Londres'.",
     "breakdown": [
       {
-        "word": "他们 (Tāmen)",
-        "meaning": "Eles — 他 (tā): ele; 们 (men): indicador de plural."
+        "word": "他们 (tāmen)",
+        "meaning": "Eles — 他 (tā): ele; 们 (men): partícula de plural."
       },
       {
-        "word": "不是 (bùshì)",
+        "word": "不是 (búshì)",
         "meaning": "Não são — 不 (bù): não; 是 (shì): ser."
       },
       {
         "word": "来自 (láizì)",
-        "meaning": "Vir de — 来 (lái): vir; 自 (zì): a partir de."
+        "meaning": "Vir de."
       },
       {
         "word": "伦敦 (Lúndūn)",
-        "meaning": "Londres — 伦 (lún): ordem; 敦 (dūn): honesto (usados foneticamente)."
+        "meaning": "Londres — Nome adaptado para o mandarim."
       }
     ],
-    "pronuncia": "Comece em 他们 (Tāmen) com o \"thā\" alto e soprado e um \"mên\" bem levinho. Em 不是 (bùshì), diga \"bú\" subindo o tom e \"chí\" caindo seco. Em 来自 (láizì), fale \"lái\" subindo o tom e \"dzì\" caindo firme. Feche em 伦敦 (Lúndūn) com \"lún\" subindo a voz e \"dūn\" reto e plano.\nLeia: Thā-mên bú-chí lái-dzì lún-dūn."
+    "pronuncia": "Dispare um sopro de ar em 他 (tā) alto e solte o \"man\" leve. Em 不是 (búshì), suba o tom no \"bú\" e cai seco no \"chí\". Em 来自 (láizì), suba a voz no \"lái\" e faça o estalo seco \"tsài\". Feche 伦敦 (Lúndūn) subindo em \"lún\" e caindo seco no \"dūn\".\nLeia: Tā-man bú-chì lái-tsài Lún-dūn."
   },
   "21": {
-    "explanation": "A frase começa com \"ele é\", dita como 他是 (tā shì). A posse \"seu\" é indicada por 你的 (nǐ de). A palavra para \"amigo\" é 朋友 (péngyou). O termo de pergunta 吗 (ma) ao final transforma a afirmação em pergunta.",
+    "explanation": "A pergunta sobre amizade junta a pessoa 他 (tā) 'ele', o verbo 是 (shì) 'é', a posse 你的 (nǐ de) 'seu', a palavra 朋友 (péngyou) 'amigo' e a partícula 吗 (ma) no final para indicar dúvida.",
     "breakdown": [
       {
-        "word": "他是 (Tā shì)",
-        "meaning": "Ele é — 他 (tā): ele; 是 (shì): ser."
+        "word": "他 (tā)",
+        "meaning": "Ele."
+      },
+      {
+        "word": "是 (shì)",
+        "meaning": "Ser."
       },
       {
         "word": "你的 (nǐ de)",
-        "meaning": "Seu / Sua — 你 (nǐ): você; 的 (de): conector de posse."
+        "meaning": "Seu / Sua — 你 (nǐ): você; 的 (de): conector."
       },
       {
         "word": "朋友 (péngyou)",
-        "meaning": "Amigo — 朋 (péng): parceiro; 友 (you): companheiro."
+        "meaning": "Amigo."
       },
       {
         "word": "吗 (ma)",
-        "meaning": "Termo de pergunta — 吗 (ma): indica pergunta."
+        "meaning": "Partícula de pergunta."
       }
     ],
-    "pronuncia": "Em 他是 (Tā shì), fale \"thā\" soprado e plano e \"chí\" caindo firme com a língua enrolada. Em 你的 (nǐ de), diga \"nǐ\" descendo e subindo e \"dê\" fraco. Em 朋友 (péngyou), faça \"pông\" soprado subindo o tom e \"ióu\" suave. Termine em 吗 (ma) com um \"mâ\" curto.\nLeia: Thā chí nǐ-dê pông-ióu mâ?"
+    "pronuncia": "Dispare ar em 他 (tā) mantendo a voz alta. Curve a língua em 是 (shì) caindo seco em \"chí\". Afunde a voz em 你 (nǐ) e solte o \"de\" frouxo como \"da\". Em 朋友 (péngyou), suba o tom no sopro \"póng\" e deixe o \"iôu\" leve. Feche com o \"ma\" curto e apagado.\nLeia: Tā chí nǐ da póng-iôu ma?"
   },
   "22": {
-    "explanation": "A palavra para \"bem-vindo\" é 欢迎 (huānyíng). A expressão de chegada \"chegar a\" é 来到 (lái dào). A palavra \"nossa\" vem como 我们 (wǒmen), e a palavra para \"casa\" ou \"lar\" é 家 (jiā).",
+    "explanation": "A recepção calorosa usa 欢迎 (huānyíng) para 'bem-vindo', o composto 来到 (lái dào) para 'chegar a' e a expressão 我们家 (wǒmen jiā), que significa literalmente 'nossa casa'.",
     "breakdown": [
       {
-        "word": "欢迎 (Huānyíng)",
-        "meaning": "Bem-vindo — 欢 (huān): alegre; 迎 (yíng): recepcionar. Sentido literal: 'recepcionar com alegria'."
+        "word": "欢迎 (huānyíng)",
+        "meaning": "Bem-vindo — 欢 (huān): alegre; 迎 (yíng): receber."
       },
       {
         "word": "来到 (lái dào)",
-        "meaning": "Chegar a — 来 (lái): vir; 到 (dào): chegar. Sentido literal: 'vir e chegar'."
+        "meaning": "Chegar a / Vir para — 来 (lái): vir; 到 (dào): chegar."
       },
       {
         "word": "我们家 (wǒmen jiā)",
-        "meaning": "Nossa casa — 我 (wǒ): eu; 们 (men): plural; 家 (jiā): casa / família. Sentido literal: 'casa do nosso grupo'."
+        "meaning": "Nossa casa — 我们 (wǒmen): nós; 家 (jiā): casa / família."
       }
     ],
-    "pronuncia": "Em 欢迎 (Huānyíng), fale \"ruān\" alto e reto e \"yíng\" subindo a voz como quem faz pergunta. Em 来到 (lái dào), diga \"lái\" subindo o tom e \"tào\" caindo forte. Em 我们家 (wǒmen jiā), faça \"uǒ\" descendo e subindo, \"mên\" levinho e \"tchiā\" alto e longo.\nLeia: Ruān-yíng lái-tào uǒ-mên tchiā."
+    "pronuncia": "Em 欢迎 (huānyíng), fale \"rruān\" em nota alta e suba a voz no \"yíng\". Em 来自 (lái dào), suba o tom no \"lái\" e dê um golpe seco com a língua no dente em \"dào\". Em 我们家 (wǒmen jiā), afunde no \"uǒ\", fale \"man\" leve, e abra o sorriso em tom alto no \"djiā\".\nLeia: Rruān-yíng lái dào uǒ-man djiā."
   },
   "23": {
-    "explanation": "A expressão de pedido de licença é 打扰一下 (dǎrǎo yīxià), que significa ao pé da letra \"incomodar um pouco\". A palavra \"agora\" é 现在 (xiànzài). A pergunta \"que horas são\" vem como 几点了 (jǐ diǎn le), que pergunta literalmente quantos pontos de horas já se passaram.",
+    "explanation": "Para pedir licença e perguntar a hora, usa-se 打扰一下 (dǎrǎo yīxià) 'desculpe incomodar um pouco', a palavra 现在 (xiànzài) 'agora', a pergunta 几点 (jǐ diǎn) 'quantas horas' e a partícula 了 (le) que marca o momento atual.",
     "breakdown": [
       {
-        "word": "打扰一下 (Dǎrǎo yīxià)",
-        "meaning": "Com licença / Desculpe incomodar — 打扰 (dǎrǎo): incomodar; 一下 (yīxià): um pouco. Sentido literal: 'incomodar um pouco'."
+        "word": "打扰一下 (dǎrǎo yīxià)",
+        "meaning": "Com licença / Desculpe incomodar — 打扰 (dǎrǎo): incomodar; 一下 (yīxià): um pouco."
       },
       {
         "word": "现在 (xiànzài)",
-        "meaning": "Agora — 现 (xiàn): presente; 在 (zài): estar no momento. Sentido literal: 'momento presente'."
+        "meaning": "Agora — 现 (xiàn): presente; 在 (zài): estar em."
       },
       {
-        "word": "几点了 (jǐ diǎn le)",
-        "meaning": "Que horas são — 几 (jǐ): quantos; 点 (diǎn): horas / pontos; 了 (le): marca de mudança de estado. Sentido literal: 'quantos pontos já são'."
+        "word": "几点 (jǐ diǎn)",
+        "meaning": "Que horas / Quantos pontos de hora — 几 (jǐ): quantos; 点 (diǎn): hora / ponto."
+      },
+      {
+        "word": "了 (le)",
+        "meaning": "Partícula de mudança de estado."
       }
     ],
-    "pronuncia": "Em 打扰一下 (Dǎrǎo yīxià), faça o \"dǎ\" subindo o tom, \"rǎo\" caindo e subindo, \"yī\" caindo firme e \"chià\" caindo seco. Em 现在 (xiànzài), fale \"chiên-dzài\" caindo a voz com força nas duas sílabas. Em 几点了 (jǐ diǎn le), mude o \"jǐ\" para subindo o tom como \"tchí\", o \"diǎn\" descendo e subindo como \"tiǎn\" e encerre com o \"lê\" bem murcho e curto.\nLeia: Dá-rǎo yī-chià, chiên-dzài tchí tiǎn lê?"
+    "pronuncia": "Em 打扰一下 (dǎrǎo yīxià), afunde o \"dǎ\", suba o \"rǎo\", suba o \"yí\" e cai seco no \"xià\". Em 现在 (xiànzài), desça o tom duas vezes com força: \"xiàn-tsài\". Em 几点 (jǐ diǎn), por serem dois tons graves, a voz sobe no \"jí\" e afunda no \"diên\". O 了 (le) soa leve e apagado como \"la\".\nLeia: Dǎ-rǎo yí-xià, xiàn-tsài jí diên la?"
   },
   "24": {
-    "explanation": "O pedido de desculpas \"sinto muito\" é 对不起 (duìbuqǐ). O termo \"eu\" é 我 (wǒ). O verbo \"vir\" é 来 (lái), e a palavra \"atrasado\" ou \"tarde\" é 晚了 (wǎn le).",
+    "explanation": "O pedido de desculpas começa com 对不起 (duìbuqǐ), que significa 'sinto muito'. Em seguida vem o sujeito 我 (wǒ) 'eu', o verbo 来 (lái) 'chegar/vir' e a palavra 晚了 (wǎn le), que significa 'atrasado'.",
     "breakdown": [
       {
-        "word": "对不起 (Duìbuqǐ)",
-        "meaning": "Sinto muito / Desculpe — 对 (duì): correto; 不 (bu): não; 起 (qǐ): erguer. Sentido literal: 'não conseguir encarar de frente'."
+        "word": "对不起 (duìbuqǐ)",
+        "meaning": "Sinto muito / Desculpe — 对 (duì): correto; 不 (bù): não; 起 (qǐ): levantar."
       },
       {
-        "word": "我来晚了 (wǒ lái wǎn le)",
-        "meaning": "Cheguei atrasado — 我 (wǒ): eu; 来 (lái): vir; 晚 (wǎn): tarde; 了 (le): concretização da ação. Sentido literal: 'eu vim tarde'."
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
+      },
+      {
+        "word": "来 (lái)",
+        "meaning": "Vir / Chegar."
+      },
+      {
+        "word": "晚了 (wǎn le)",
+        "meaning": "Atrasado — 晚 (wǎn): tarde; 了 (le): partícula de mudança."
       }
     ],
-    "pronuncia": "Em 对不起 (Duìbuqǐ), fale \"duì\" caindo forte, \"bû\" bem fraquinho e curto, e \"tchǐ\" soprado descendo e subindo a voz. Em 我来晚了 (wǒ lái wǎn le), diga \"uǒ\" calmo, \"lái\" subindo o tom como pergunta, \"uǎn\" descendo e subindo o tom, e finalize com \"lê\" bem solto e fraco.\nLeia: Duì-bû-tchǐ, uǒ lái uǎn lê."
+    "pronuncia": "Em 对不起 (duìbuqǐ), desça o tom no \"duèi\", faça o \"bu\" frouxo e dispare ar afundando no sorriso em \"tchǐ\". Afunde em 我 (wǒ). Suba a voz no 来 (lái) em \"lái\". Em 晚了 (wǎn le), afunde no grave em \"uǎn\" e solte o \"de\" frouxo e rápido como \"la\".\nLeia: Duèi-bu-tchǐ, uǒ lái uǎn la."
   },
   "25": {
-    "explanation": "A palavra \"por favor\" é 请 (qǐng). O verbo \"ajudar\" aparece duplicado como 帮帮 (bāng bāng) para tornar o pedido mais gentil. O termo \"mim\" é 我 (wǒ). A expressão final 好吗 (hǎo ma) pergunta \"tudo bem?\" ou \"pode ser?\".",
+    "explanation": "A solicitação de ajuda começa com 请 (qǐng) 'por favor', duplica o verbo 帮 (bāng) em 帮帮 (bāng bāng) para suavizar o pedido de 'ajudar', adiciona 我 (wǒ) 'eu' e fecha com a confirmação polida 好吗 (hǎo ma) 'está bem?'.",
     "breakdown": [
       {
-        "word": "请 (Qǐng)",
-        "meaning": "Por favor — 请 (qǐng): por favor."
+        "word": "请 (qǐng)",
+        "meaning": "Por favor."
       },
       {
-        "word": "帮帮我 (bāng bāng wǒ)",
-        "meaning": "Me ajude — 帮 (bāng): ajudar; 帮 (bāng): ajudar; 我 (wǒ): eu / mim. Sentido literal: 'dar uma ajuda a mim'."
+        "word": "帮帮 (bāng bāng)",
+        "meaning": "Dar uma ajuda — 帮 (bāng): ajudar."
+      },
+      {
+        "word": "我 (wǒ)",
+        "meaning": "Eu."
       },
       {
         "word": "好吗 (hǎo ma)",
-        "meaning": "Pode ser? / Tudo bem? — 好 (hǎo): bom; 吗 (ma): pergunta. Sentido literal: 'está bom?'."
+        "meaning": "Tudo bem? / Pode ser? — 好 (hǎo): bom; 吗 (ma): pergunta."
       }
     ],
-    "pronuncia": "Em 请 (Qǐng), solte um \"tchīng\" soprado descendo e subindo o tom. Em 帮帮我 (bāng bāng wǒ), diga \"bāng-bāng\" em tom alto e plano e mude o \"wǒ\" para subindo a voz como \"uó\". Em 好吗 (hǎo ma), faça o \"hǎo\" descendo e subindo como \"rǎo\" e termine com o \"mâ\" fraquinho.\nLeia: Tchīng bāng-bāng uó rǎo mâ?"
+    "pronuncia": "Estique o sorriso e dispare ar afundando a voz em 请 (qǐng) \"tchǐng\". Fale 帮帮 (bāng bāng) com estalo seco nos lábios em notas altas \"bāng-bāng\". Afunde em 我 (wǒ) \"uǒ\". Em 好吗 (hǎo ma), mergulhe no grave em \"rrǎo\" e solte o \"ma\" leve e curto.\nLeia: Tchǐng bāng-bāng uǒ rrǎo ma?"
   },
   "26": {
-    "explanation": "A expressão \"muito alegre\" é 很高兴 (hěn gāoxìng). A palavra para \"encontrar\" ou \"ver\" é 见到 (jiàn dào). O termo no final é \"você\", representado por 你 (nǐ).",
+    "explanation": "Uma variante elegante para dizer prazer em conhecer junta 很高兴 (hěn gāoxìng) 'muito feliz', o verbo composto 见到 (jiàn dào) 'conseguir ver/encontrar' e o objeto 你 (nǐ) 'você'.",
     "breakdown": [
       {
-        "word": "很高兴 (Hěn gāoxìng)",
-        "meaning": "Muito contente — 很 (hěn): muito; 高 (gāo): alto; 兴 (xìng): empolgação."
+        "word": "很高兴 (hěn gāoxìng)",
+        "meaning": "Muito feliz."
       },
       {
-        "word": "见到你 (jiàn dào nǐ)",
-        "meaning": "Encontrar você — 见 (jiàn): ver; 到 (dào): alcançar / chegar; 你 (nǐ): você. Sentido literal: 'alcançar ver você'."
+        "word": "见到 (jiàn dào)",
+        "meaning": "Encontrar / Ver — 见 (jiàn): ver; 到 (dào): alcançar."
+      },
+      {
+        "word": "你 (nǐ)",
+        "meaning": "Você."
       }
     ],
-    "pronuncia": "Em 很高兴 (Hěn gāoxìng), fale \"rên\" subindo o tom, \"gāo\" alto e plano e \"chīng\" caindo seco. Em 见到你 (jiàn dào nǐ), diga \"tchiên\" caindo o tom, \"tào\" caindo o tom firme, e termine em \"nǐ\" descendo e subindo suavemente.\nLeia: Rên gāo-chīng tchiên-tào nǐ."
+    "pronuncia": "Diga 很高兴 (hěn gāoxìng) afundando em \"rrên\", sustentando o \"gā\" alto e caindo seco em \"xìng\". Em 见到 (jiàn dào), dê dois golpes secos para baixo: \"djiàn-dào\". Encerre afundando a voz no tom grave no 你 (nǐ) em \"nǐ\".\nLeia: Rrên gā-xìng djiàn-dào nǐ."
   },
   "27": {
-    "explanation": "A indicação \"aquele homem\" é dita como 那个男人 (nàge nánrén). O verbo \"é\" é 是 (shì). A pergunta \"quem\" é expressa por 是谁 (shì shéi) ou apenas 谁 (shéi).",
+    "explanation": "A pergunta sobre a identidade de alguém começa apontando com 那个 (nàge) 'aquele', especifica a pessoa com 男人 (nánrén) 'homem', usa o verbo 是 (shì) 'é' e fecha com a palavra de pergunta 谁 (shéi) 'quem'.",
     "breakdown": [
       {
-        "word": "那个 (Nàge)",
-        "meaning": "Aquele — 那 (nà): aquele; 个 (ge): elemento genérico."
+        "word": "那个 (nàge)",
+        "meaning": "Aquele / Aquela."
       },
       {
         "word": "男人 (nánrén)",
-        "meaning": "Homem — 男 (nán): masculino; 人 (rén): pessoa. Sentido literal: 'pessoa masculina'."
+        "meaning": "Homem — 男 (nán): masculino; 人 (rén): pessoa."
       },
       {
-        "word": "是谁 (shì shéi)",
-        "meaning": "É quem — 是 (shì): ser; 谁 (shéi): quem."
+        "word": "是 (shì)",
+        "meaning": "Ser."
+      },
+      {
+        "word": "谁 (shéi)",
+        "meaning": "Quem."
       }
     ],
-    "pronuncia": "Em 那个 (Nàge), diga \"nà\" caindo a voz e \"gê\" curto. Em 男人 (nánrén), faça \"nán\" subindo o tom como pergunta e enrole a língua para o \"rén\" soar como \"jên\" subindo a voz. Em 是谁 (shì shéi), fale \"chí\" caindo forte e \"chuéi\" subindo o tom com a língua virada para o céu da boca.\nLeia: Nâ-gê nán-jên chí chuéi?"
+    "pronuncia": "Em 那个 (nàge), cai seco no \"nà\" e solte a segunda sílaba como um \"ga\" leve. Em 男人 (nánrén), suba o tom duas vezes: \"nán-ján\" (com o r enrolado na língua). Curve a língua em 是 (shì) caindo seco em \"chí\". Termine subindo a voz em 谁 (shéi) em \"chuéi\".\nLeia: Nà-ga nán-ján chí chuéi?"
   },
   "28": {
-    "explanation": "O termo para \"nós\" é 我们 (wǒmen). A palavra para \"hoje\" é 今天 (jīntiān). A expressão de alegria \"estamos muito felizes\" vem como 很高兴 (hěn gāoxìng), que ao pé da letra é \"muito alegres\".",
+    "explanation": "A declaração de felicidade em grupo coloca o sujeito 我们 (wǒmen) 'nós' no início, seguido pela indicação de tempo 今天 (jīntiān) 'hoje' e pelo estado emocional 很高兴 (hěn gāoxìng) 'muito felizes'.",
     "breakdown": [
       {
-        "word": "我们 (Wǒmen)",
-        "meaning": "Nós — 我 (wǒ): eu; 们 (men): indicador de plural."
+        "word": "我们 (wǒmen)",
+        "meaning": "Nós — 我 (wǒ): eu; 们 (men): partícula de plural."
       },
       {
         "word": "今天 (jīntiān)",
-        "meaning": "Hoje — 今 (jīn): agora; 天 (tiān): dia."
+        "meaning": "Hoje."
       },
       {
         "word": "很高兴 (hěn gāoxìng)",
-        "meaning": "Muito felizes — 很 (hěn): muito; 高 (gāo): alto; 兴 (xìng): empolgação. Sentido literal: 'muita alta empolgação'."
+        "meaning": "Muito felizes / Muito alegres."
       }
     ],
-    "pronuncia": "Em 我们 (Wǒmen), diga \"uǒ\" descendo e subindo a voz e \"mên\" fraco. Em 今天 (jīntiān), diga \"tchin-thiēn\" alto e constante nas duas sílabas. Em 很高兴 (hěn gāoxìng), fale \"rên\" subindo o tom, \"gāo\" reto e alto, e \"chīng\" caindo a voz com firmeza.\nLeia: Uǒ-mên tchin-thiēn rên gāo-chīng."
+    "pronuncia": "Em 我们 (wǒmen), afunde no \"uǒ\" e solte a segunda parte frouxa como \"man\". Em 今天 (jīntiān), mantenha as duas sílabas retas e altas em \"djīn-tiēn\". Para 很高兴 (hěn gāoxìng), afunde em \"rrên\", sustente a nota alta em \"gā\" e cai seco no \"xìng\".\nLeia: Uǒ-man djīn-tiēn rrên gā-xìng."
   },
   "29": {
-    "explanation": "A frase começa com \"eles são\", expressa por 他们是 (tāmen shì). A posse \"seus\" é indicada por 你的 (nǐ de). A palavra para \"pais\" é 父母 (fùmǔ), reunindo pai e mãe. O termo de pergunta 吗 (ma) encerra fazendo a pergunta.",
+    "explanation": "Para perguntar sobre os pais de alguém, junta-se o pronome 他们 (tāmen) 'eles', o verbo 是 (shì) 'são', a posse 你的 (nǐ de) 'seus', a palavra composta 父母 (fùmǔ) 'pais' (pai e mãe) e a partícula 吗 (ma).",
     "breakdown": [
       {
-        "word": "他们是 (Tāmen shì)",
-        "meaning": "Eles são — 他 (tā): ele; 们 (men): plural; 是 (shì): ser."
+        "word": "他们 (tāmen)",
+        "meaning": "Eles."
+      },
+      {
+        "word": "是 (shì)",
+        "meaning": "Ser."
       },
       {
         "word": "你的 (nǐ de)",
-        "meaning": "Seus — 你 (nǐ): você; 的 (de): conector de posse."
+        "meaning": "Seus / Suas."
       },
       {
         "word": "父母 (fùmǔ)",
-        "meaning": "Pais / Pai e mãe — 父 (fù): pai; 母 (mǔ): mãe. Sentido literal: 'pai e mãe'."
+        "meaning": "Pais — 父 (fù): pai; 母 (mǔ): mãe."
       },
       {
         "word": "吗 (ma)",
-        "meaning": "Termo de pergunta — 吗 (ma): indica pergunta."
+        "meaning": "Partícula de pergunta."
       }
     ],
-    "pronuncia": "Diga 他们是 (Tāmen shì) com \"thā\" alto e soprado, \"mên\" levinho e \"chí\" caindo seco com a língua enrolada. Em 你的 (nǐ de), faça \"nǐ\" descendo e subindo e \"dê\" fraco. Em 父母 (fùmǔ), fale \"fù\" caindo a voz e \"mǔ\" descendo e subindo bem fundo. Encerre com 吗 (ma) sendo um \"mâ\" curto.\nLeia: Thā-mên chí nǐ-dê fù-mǔ mâ?"
+    "pronuncia": "Dispare ar em 他们 (tāmen) com tom alto no \"tā\" e solte o \"man\" leve. Curve a língua em 是 (shì) caindo seco em \"chí\". Afunde em 你 (nǐ) e solte o \"de\" frouxo como \"da\". Em 父母 (fùmǔ), desça firme no \"fù\" e afunde no grave em \"mǔ\". Feche com o \"ma\" leve.\nLeia: Tā-man chí nǐ da fù-mǔ ma?"
   },
   "30": {
-    "explanation": "A palavra para \"extremamente\" ou \"muito\" é 非常 (fēicháng). O termo para \"agradecer\" ou \"obrigado\" é 感谢 (gǎnxiè), formando juntas a expressão de agradecimento profundo.",
+    "explanation": "Um agradecimento mais profundo e intenso combina a palavra 非常 (fēicháng), que significa 'extremamente' ou 'muito', com o verbo de gratidão 感谢 (gǎnxiè), que significa 'agradecido'.",
     "breakdown": [
       {
-        "word": "非常 (Fēicháng)",
-        "meaning": "Extremamente / Muito — 非 (fēi): não comum / extraordinário; 常 (cháng): comum. Sentido literal: 'fora do comum'."
+        "word": "非常 (fēicháng)",
+        "meaning": "Muito / Extremamente — 非 (fēi): não comum / extraordinário; 常 (cháng): comum."
       },
       {
         "word": "感谢 (gǎnxiè)",
-        "meaning": "Agradecer / Gratidão — 感 (gǎn): sentir; 谢 (xiè): agradecer. Sentido literal: 'sentir gratidão'."
+        "meaning": "Agradecer / Gratidão — 感 (gǎn): sentir; 谢 (xiè): agradecer."
       }
     ],
-    "pronuncia": "Em 非常 (Fēicháng), fale \"fēi\" alto e reto e \"tcháng\" subindo o tom com a língua enrolada no céu da boca. Em 感谢 (gǎnxiè), faça o \"gǎn\" descendo e subindo o tom como \"gǎn\" e solte o \"xiè\" caindo com força e soprando suavemente como \"chiê\".\nLeia: Fēi-tcháng gǎn-chiê."
+    "pronuncia": "Em 非常 (fēicháng), fale \"fēi\" em nota alta e reta, e suba a voz em \"tcháng\" enrolando a língua. Para 感谢 (gǎnxiè), afunde a voz no tom grave no \"gǎn\" com a língua no dente, e estique os dentes em sorriso dando um golpe seco para baixo no \"xiè\".\nLeia: Fēi-tcháng gǎn-xiè."
   }
 }

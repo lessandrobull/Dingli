@@ -1,6 +1,6 @@
 // offlineStorage.js - Armazenamento local persistente com IndexedDB nativo
 const DB_NAME = "dingli_offline_db";
-const DB_VERSION = 3;
+const DB_VERSION = 4;
 const STORES = {
   TOPICS: "topics_cache",
   SENTENCES: "sentences_cache",
@@ -21,6 +21,9 @@ function abrirDB() {
       }
       if (!db.objectStoreNames.contains(STORES.SENTENCES)) {
         db.createObjectStore(STORES.SENTENCES, { keyPath: "key" });
+      }
+      if (!db.objectStoreNames.contains(STORES.AUDIOS)) {
+        db.createObjectStore(STORES.AUDIOS, { keyPath: "key" });
       }
     };
     request.onsuccess = () => resolve(request.result);

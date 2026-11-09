@@ -25,7 +25,7 @@ export const dataService = {
         .order('id', { ascending: true });
 
       if (resposta && resposta.data && resposta.data.length > 0) {
-        await salvarNoIndexedDB(STORES.TOPICS, cacheKey, resposta.data);
+        await salvarNoIndexedDB(STORES.SENTENCES, cacheKey, resposta.data);
         return resposta;
       }
       throw new Error("Sem dados na nuvem");

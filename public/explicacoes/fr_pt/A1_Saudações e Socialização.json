@@ -1,6 +1,6 @@
 {
   "1": {
-    "explanation": "Para cumprimentar e se apresentar, o francês começa com 'Bonjour' (bom dia ou olá) e junta 'je' (eu) com 'm'appelle', que significa literalmente 'me chamo'. É a estrutura direta e natural para dizer o seu nome.",
+    "explanation": "No francês do dia a dia, a saudação 'Bonjour' junta 'bom' e 'dia' em uma só palavra usada até o fim da tarde. Para dizer como você se chama, a estrutura natural é 'je m'appelle', que significa ao pé da letra 'eu me chamo', exatamente como dizemos em português.",
     "breakdown": [
       {
         "word": "Bonjour",
@@ -15,32 +15,32 @@
         "meaning": "Dìnglì — nome próprio."
       }
     ],
-    "pronuncia": "Em 'Bonjour', faça som de 'bõn-júr' soltando o ar pelo nariz na primeira parte e raspe suavemente o 'R' no final da garganta. Em 'je m'appelle', diga 'jê ma-pèl', sem pronunciar a letra final, mantendo o som limpo. Por fim, diga o nome 'Dìnglì'.\nLeia: Bõn-júr, jê ma-pèl Dìnglì."
+    "pronuncia": "Em 'Bonjour', abra com o som nasal arredondado 'bon' fazendo um círculo fechado com os lábios sem encostá-los no final, e feche em 'jur' com o som de 'j' suave e o 'r' arranhado de leve na garganta. Em 'je', mantenha a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'jə'. Termine em 'm'appelle' juntando de forma fluida em 'ma-pél'.\nLeia: Bon-jur, jə ma-pél Dìn-glì."
   },
   "2": {
-    "explanation": "Na pergunta sobre como a pessoa está hoje, o francês junta 'Comment' (como) com 'vas-tu' (vai você), invertendo a ordem das palavras para indicar pergunta direta, e fecha com 'aujourd'hui', que significa literalmente 'no dia de hoje'.",
+    "explanation": "Para perguntar como alguém está em um contexto amigável, os nativos invertem a ordem da ação e do pronome formando 'vas-tu', que é a forma direta de 'vai você'. A palavra 'aujourd'hui' junta 'no dia de hoje' para dizer simplesmente 'hoje'.",
     "breakdown": [
       {
         "word": "Comment",
-        "meaning": "Como — palavra usada para fazer perguntas sobre modo."
+        "meaning": "Como — palavra usada para fazer perguntas de modo ou estado."
       },
       {
         "word": "vas-tu",
-        "meaning": "Vai você / Você vai — vas: vai; tu: você."
+        "meaning": "Você vai / Como você está — vas: vai; tu: você."
       },
       {
         "word": "aujourd'hui",
-        "meaning": "Hoje — ao pé da letra: no dia de hoje."
+        "meaning": "Hoje — literalmente 'no dia de hoje'."
       }
     ],
-    "pronuncia": "Comece com 'Comment', dizendo 'kô-mãn' com som nasal e sem falar o 't' final, e emende o som do 't' no 'tu' formando 'va-tú', fazendo um bico bem fechado para falar o 'u'. Em 'aujourd'hui', fale 'ô-jur-du-í' raspando o 'R' bem suave no meio.\nLeia: Kô-mãn va-tú ô-jur-du-í ?"
+    "pronuncia": "Inicie em 'Comment' com a primeira sílaba limpa 'ko' e a segunda em 'món', projetando um som de 'ó' nasal aberto, escuro e profundo para o nariz sem fechar os lábios. Em 'vas-tu', fale a sílaba 'va' e arme o bico fechado e firme de U dizendo som agudo de I para soltar o 'tü' com a ponta da língua rasteira e o 't' seco. Em 'aujourd'hui', faça o 'ô' fechado de bico redondo, o 'jur' arranhado no fundo da boca e dispare a semivogal com 'düí', mantendo o bico firme do 'ü' antes de disparar o 'i'.\nLeia: Ko-món va-tü ô-jur-düí?"
   },
   "3": {
-    "explanation": "Para responder que está bem, o francês diz 'Je vais bien', usando 'Je' (eu) com 'vais' (vou), indicando 'eu vou bem', acompanhado de 'merci' para agradecer.",
+    "explanation": "Os franceses dizem 'Je vais bien' para 'estou bem', usando literalmente o verbo ir ('eu vou bem'). Essa é a forma mais comum e natural de responder sobre como você está antes de agradecer com 'merci'.",
     "breakdown": [
       {
         "word": "Je vais",
-        "meaning": "Eu vou / Eu estou — je: eu; vais: vou / estou."
+        "meaning": "Eu vou / Estou — je: eu; vais: vou."
       },
       {
         "word": "bien",
@@ -48,129 +48,153 @@
       },
       {
         "word": "merci",
-        "meaning": "Obrigado / Obrigada — palavra de agradecimento."
+        "meaning": "Obrigado / Obrigada — agradecimento padrão."
       }
     ],
-    "pronuncia": "Diga 'jê vê' com o 'j' suave e som limpo de 'ê'. Depois fale 'biẽn', com o som nasal saindo bem pelo nariz no final sem encostar a língua no céu da boca. Feche com 'mêr-sí', arranhando suavemente o 'R' na garganta.\nLeia: Jê vê biẽn, mêr-sí."
+    "pronuncia": "Em 'Je', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'jə'. Em 'vais', solte um 'vé' aberto e limpo. Na palavra 'bien', junte o 'bi' rápido com o som nasal aberto de 'ã', criando o bloco único 'biã'. Feche em 'merci' soltando o 'mér' com a língua baixa arranhando suavemente a garganta no 'r' e o 'sí' bem seco.\nLeia: Jə vé biã, mér-sí."
   },
   "4": {
-    "explanation": "A palavra 'Enchanté' equivale ao nosso 'Prazer em te conhecer'. Os nativos usam essa única palavra de forma prática para expressar a satisfação ao conhecer alguém.",
+    "explanation": "A palavra 'Enchanté' equivale ao nosso 'Prazer em te conhecer'. Ela é na verdade um adjetivo que significa 'encantado', mas os nativos usam de forma isolada como a saudação mais elegante e comum ao conhecer alguém.",
     "breakdown": [
       {
         "word": "Enchanté",
-        "meaning": "Encantado / Prazer em te conhecer — expressa satisfação ao ser apresentado."
+        "meaning": "Prazer em conhecer / Encantado — expressão de cortesia ao se apresentar."
       }
     ],
-    "pronuncia": "O 'En' inicial sai pelo nariz como 'ãn'. A segunda sílaba 'chan' também é nasal, 'chãn'. Termine com 'tê' limpo. Tudo junto soa como um fluxo contínuo.\nLeia: Ãn-chãn-tê."
+    "pronuncia": "Para falar 'Enchanté', repita o mesmo som nasal profundo duas vezes nas primeiras sílabas: abra a boca e solte um som de 'ó' nasal aberto, escuro e profundo projetado para o nariz em 'ón-chón', mantendo o 'ch' suave como em chuva. Feche a palavra com a língua no dente superior para soltar um 'tê' fechado sem adicionar som de 'i' no fim.\nLeia: Ón-chón-tê."
   },
   "5": {
-    "explanation": "Para desejar bom dia a um grupo, o francês junta 'Bonjour' (bom dia) com a expressão 'à tous', onde 'à' significa 'a/para' e 'tous' significa 'todos'.",
+    "explanation": "Para saudar um grupo de pessoas, os nativos dizem 'Bonjour à tous'. A preposição 'à' funciona como o nosso 'a' ou 'para', e a palavra 'tous' ganha o som da consoante final para indicar a totalidade de 'todos'.",
     "breakdown": [
       {
         "word": "Bonjour",
-        "meaning": "Bom dia / Olá — bon: bom; jour: dia."
+        "meaning": "Bom dia / Olá — saudação inicial."
       },
       {
         "word": "à tous",
-        "meaning": "A todos / Para todos — à: a/para; tous: todos."
+        "meaning": "A todos — à: a/para; tous: todos."
       }
     ],
-    "pronuncia": "Em 'Bonjour', diga 'bõn-júr' arranhando o 'R' no final. Em 'à tous', fale 'a tús', pronunciando claramente o 's' no final da palavra 'tous'.\nLeia: Bõn-júr a tús."
+    "pronuncia": "Fale 'Bonjour' projetando o som nasal arredondado 'bon' com lábios em círculo fechado sem se tocarem, seguido do 'jur' suave com o 'r' de garganta. Em 'à tous', diga a vogal 'a' limpa e emende em 'tus' com som de 'u' normal e estalando o 's' final bem limpo.\nLeia: Bon-jur a tus."
   },
   "6": {
-    "explanation": "Para perguntar a origem de alguém, o francês junta 'D'où' (de onde) com 'viens-tu' (vêm você), colocando a ação antes da pessoa para formar a pergunta direta.",
+    "explanation": "A pergunta 'D'où viens-tu ?' significa literalmente 'De onde vens você?'. O francês junta 'de' e 'où' formando 'd'où' para facilitar o fluxo da fala, e inverte a posição do verbo com o pronome para marcar a pergunta.",
     "breakdown": [
       {
         "word": "D'où",
-        "meaning": "De onde — d': de; où: onde."
+        "meaning": "De onde — de: de; où: onde."
       },
       {
         "word": "viens-tu",
-        "meaning": "Vens você / Você vem — viens: vem; tu: você."
+        "meaning": "Você vem / Vens — viens: vem; tu: você."
       }
     ],
-    "pronuncia": "Junte 'D'où' dizendo 'dú'. Na sequência, 'viens' sai nasalizado como 'viẽn' e 'tu' exige o bico bem fechado nos lábios, saindo 'tú'.\nLeia: Dú viẽn-tú ?"
+    "pronuncia": "Junte 'D'où' em uma única sílaba direta 'du' com o som de 'u' habitual. Na palavra 'viens-tu', solte o bloco nasal 'viã' usando o som aberto de 'ã' e conecte imediatamente no 'tü', onde você deve armar o bico fechado e firme de U dizendo som agudo de I com a ponta da língua travada atrás dos dentes inferiores.\nLeia: Du viã-tü?"
   },
   "7": {
-    "explanation": "Para dizer de onde você vem, usa-se 'Je viens' (eu venho) seguido da preposição encurtada 'd'' junto com o nome do país 'Espagne' (Espanha).",
+    "explanation": "Para dizer sua origem, a estrutura francesa é 'Je viens d'Espagne', que significa 'Eu venho da Espanha'. A preposição 'de' perde a vogal diante de uma palavra que começa com vogal, criando um som contínuo e sem pausas.",
     "breakdown": [
       {
         "word": "Je viens",
-        "meaning": "Eu venho / Eu sou — je: eu; viens: venho."
+        "meaning": "Eu venho — je: eu; viens: venho."
       },
       {
         "word": "d'Espagne",
-        "meaning": "Da Espanha — d': de; Espagne: Espanha."
+        "meaning": "Da Espanha — de: de; Espagne: Espanha."
       }
     ],
-    "pronuncia": "Fale 'jê viẽn' soltando o som nasal no nariz. Em 'd'Espagne', junte tudo falando 'dès-págn' sem deixar a letra final 'e' soar.\nLeia: Jê viẽn dès-págn."
+    "pronuncia": "Em 'Je', mantenha a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'jə'. Em 'viens', fale o som nasal aberto 'viã'. Na palavra 'd'Espagne', junte o 'd' direto na sílaba 'és', faça o 'pá' limpo e termine com o som suave de 'nh' em 'dês-pá-nh', parando o som a seco sem soltar 'i' no final.\nLeia: Jə viã dês-pá-nh."
   },
   "8": {
-    "explanation": "Para perguntar sobre o papel ou estudo de alguém, o francês inverte a ordem e coloca 'Es-tu' (é você) antes da palavra 'étudiant' (estudante).",
+    "explanation": "Em perguntas diretas, a inversão 'Es-tu' coloca o verbo ser antes do pronome você, significando 'És você estudante?'. No francês, quando dizemos a profissão ou ocupação de alguém logo após o verbo ser, não se usa artigo antes da palavra.",
     "breakdown": [
       {
         "word": "Es-tu",
-        "meaning": "Você é / É você — es: é/está; tu: você."
+        "meaning": "Você é / És — es: é/és; tu: você."
       },
       {
         "word": "étudiant",
-        "meaning": "Estudante / Aluno — pessoa que estuda."
+        "meaning": "Estudante — ocupação / profissão."
       }
     ],
-    "pronuncia": "Em 'Es-tu', diga 'ê-tú' com bico nos lábios para a letra 'u'. Em 'étudiant', diga 'ê-tú-di-ãn', fazendo o bico no meio e soltando a última parte pelo nariz sem falar o 't' final.\nLeia: Ê-tú ê-tú-di-ãn ?"
+    "pronuncia": "Em 'Es-tu', diga o 'ê' fechado e conecte no 'tü', armando o bico fechado e firme de U dizendo som agudo de I. Na palavra 'étudiant', mantenha o mesmo bico na segunda sílaba com 'ê-tü-di' e termine em 'ón', soltando um som de 'ó' nasal aberto, escuro e profundo projetado para o nariz sem pronunciar a consoante final.\nLeia: Ê-tü ê-tü-dión?"
   },
   "9": {
-    "explanation": "Para negar algo, o francês envolve a ação entre duas peças, 'n'' e 'pas'. Aqui temos 'Ce n'est pas' (isso não é) seguido por 'mon frère' (meu irmão).",
+    "explanation": "Para negar uma afirmação, o francês abraça o verbo entre as palavras 'ne' e 'pas'. Como o verbo começa com vogal, 'ne' vira 'n'est', resultando na estrutura 'Ce n'est pas mon frère', que significa 'Isto não é meu irmão'.",
     "breakdown": [
       {
-        "word": "Ce n'est pas",
-        "meaning": "Isso não é / Ele não é — ce: isso/ele; n'... pas: não; est: é."
+        "word": "Ce",
+        "meaning": "Este / Isto — pronome demonstrativo."
       },
       {
-        "word": "mon frère",
-        "meaning": "Meu irmão — mon: meu; frère: irmão."
+        "word": "n'est pas",
+        "meaning": "Não é — estrutura de negação ao redor do verbo ser."
+      },
+      {
+        "word": "mon",
+        "meaning": "Meu — indicador de posse masculino."
+      },
+      {
+        "word": "frère",
+        "meaning": "Irmão — grau de parentesco."
       }
     ],
-    "pronuncia": "Junte 'Ce n'est pas' num único bloco dizendo 'sê nè pá'. Em 'mon frère', diga 'mõn' pelo nariz e depois 'frêr' arranhando o 'R' suavemente na garganta.\nLeia: Sê nè pá mõn frêr."
+    "pronuncia": "Em 'Ce', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'sə'. Fale 'n'est pas' como 'né pa', cortando a consoante final a seco. Em 'mon', projete o som nasal arredondado 'mon' com os lábios em círculo fechado sem deixá-los se tocar. Feche em 'frère' arranhando o 'r' na garganta e abrindo o 'é'.\nLeia: Sə né pa mon frér."
   },
   "10": {
-    "explanation": "Para apresentar uma amiga especial, o francês usa 'C'est' (é / esta é) seguido de 'ma' (minha) e 'meilleure amie' (melhor amiga).",
+    "explanation": "A expressão 'C'est' é a forma mais natural do francês para dizer 'É' ou 'Esta é'. Ao falar de uma amiga, coloca-se a palavra de posse feminina 'ma' seguida da palavra 'meilleure', construindo 'C'est ma meilleure amie' (Esta é minha melhor amiga).",
     "breakdown": [
       {
         "word": "C'est",
-        "meaning": "É / Esta é — c': isto/esta; est: é."
+        "meaning": "É / Esta é — combinação de 'ce' (isto) com 'est' (é)."
       },
       {
-        "word": "ma meilleure",
-        "meaning": "Minha melhor — ma: minha; meilleure: melhor."
+        "word": "ma",
+        "meaning": "Minha — indicador de posse feminino."
+      },
+      {
+        "word": "meilleure",
+        "meaning": "Melhor — adjetivo de qualidade superior."
       },
       {
         "word": "amie",
-        "meaning": "Amiga — palavra para amiga no feminino."
+        "meaning": "Amiga — pessoa próxima do sexo feminino."
       }
     ],
-    "pronuncia": "Fale 'sè' para 'C'est'. Em 'ma meilleure amie', junte tudo suavemente: 'ma mè-iêr a-mí', arranhando de leve o 'R' em 'meilleure' e terminando com o som limpo de 'mí'.\nLeia: Sè ma mè-iêr a-mí."
+    "pronuncia": "Comece em 'C'est ma' com som de 'sé ma'. Na palavra 'meilleure', posicione a língua para falar É bem aberto arredondando os lábios no formato de Ó para emitir o bloco 'mê-yœr', fazendo o som de 'y' deslizar suavemente. Conecte com 'amie' em 'a-mí' com a consoante 'm' bem marcada e o 'i' limpo.\nLeia: Sé ma mê-yœr a-mí."
   },
   "11": {
-    "explanation": "A pergunta 'Quel est ton nom ?' usa 'Quel' (qual), 'est' (é) e 'ton nom' (seu nome), funcionando de modo muito similar ao português.",
+    "explanation": "Para perguntar o nome de alguém de forma direta e amigável, o francês pergunta 'Quel est ton nom ?', que é literalmente 'Qual é teu nome?'. As palavras se conectam na fala parecendo um único bloco contínuo.",
     "breakdown": [
       {
-        "word": "Quel est",
-        "meaning": "Qual é — quel: qual; est: é."
+        "word": "Quel",
+        "meaning": "Qual — palavra interrogativa."
       },
       {
-        "word": "ton nom",
-        "meaning": "Seu nome — ton: teu/seu; nom: nome."
+        "word": "est",
+        "meaning": "É — forma do verbo ser."
+      },
+      {
+        "word": "ton",
+        "meaning": "Teu / Seu — posse masculina."
+      },
+      {
+        "word": "nom",
+        "meaning": "Nome — identificação pessoal."
       }
     ],
-    "pronuncia": "Junte 'Quel est' dizendo 'kèl ê'. Em 'ton nom', faça som nasal de 'tõn nõm' soltando a voz pelo nariz e sem fechar os lábios com força no final.\nLeia: Kèl ê tõn nõm ?"
+    "pronuncia": "Grude 'Quel' e 'est' transferindo a consoante 'l' para o verbo, soando 'ké-lê'. Nas duas palavras seguintes 'ton nom', mantenha os lábios em círculo bem fechado para soltar o som nasal arredondado 'ton non', garantindo que os lábios nunca se toquem no final de nenhuma das palavras.\nLeia: Ké-lê ton non?"
   },
   "12": {
-    "explanation": "Para dizer o idioma que fala e a quantidade, o francês estrutura 'Je parle' (eu falo), 'un peu' (um pouco) e 'anglais' (inglês) logo em seguida.",
+    "explanation": "Em 'Je parle un peu anglais', a ordem das palavras segue a mesma lógica do português: 'Eu falo um pouco de inglês'. A expressão 'un peu' significa 'um pouco' e conecta diretamente no idioma sem necessidade de preposição intermediária.",
     "breakdown": [
       {
-        "word": "Je parle",
-        "meaning": "Eu falo — je: eu; parle: falo."
+        "word": "Je",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "parle",
+        "meaning": "Falo — forma do verbo falar."
       },
       {
         "word": "un peu",
@@ -178,189 +202,237 @@
       },
       {
         "word": "anglais",
-        "meaning": "Inglês — idioma ou nacionalidade."
+        "meaning": "Inglês — idioma."
       }
     ],
-    "pronuncia": "Fale 'jê párl' arranhando levemente o 'R'. Para 'un peu', diga 'ũn pø' com bico nos lábios. Em 'anglais', solte o 'ãn' pelo nariz e feche com 'glê'.\nLeia: Jê párl ũn pø ãn-glê."
+    "pronuncia": "Em 'Je', mantenha a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'jə'. Em 'parle', arranhe o 'r' na garganta sem soltar 'i' no final ('parl'). Na palavra 'un', faça o som nasal aberto de 'ã'. Na palavra 'peu', posicione a boca para falar Ê com os lábios projetados em bico redondo e fechado de Ô para soltar 'pø'. Feche em 'anglais' soltando 'ón' com a boca em 'ó' nasal escuro e profundo e 'glé' com som de 'é' aberto.\nLeia: Jə parl ã pø ón-glé."
   },
   "13": {
-    "explanation": "Para perguntar se a pessoa fala um idioma, inverter 'Parles-tu' (fala você) é a forma natural de marcar a pergunta em francês.",
+    "explanation": "A pergunta 'Parles-tu anglais ?' usa a inversão formal-amigável do verbo com o pronome, significando 'Falas você inglês?'. É uma maneira muito clara e natural que os franceses usam no cotidiano.",
     "breakdown": [
       {
         "word": "Parles-tu",
-        "meaning": "Fala você / Você fala — parles: fala; tu: você."
+        "meaning": "Você fala / Falas — parles: fala; tu: você."
       },
       {
         "word": "anglais",
-        "meaning": "Inglês — o idioma inglês."
+        "meaning": "Inglês — idioma."
       }
     ],
-    "pronuncia": "Em 'Parles-tu', diga 'párl-tú' arranhando o 'R' e fazendo bico no 'tú'. Em 'anglais', fale 'ãn-glê' com som nasal no começo e sem pronunciar o 's' final.\nLeia: Párl-tú ãn-glê ?"
+    "pronuncia": "Em 'Parles-tu', trave a primeira sílaba em 'parl' e arme o bico fechado e firme de U dizendo som agudo de I para pronunciar a segunda em 'tü'. Na palavra 'anglais', abra com o som de 'ó' nasal aberto, escuro e profundo projetado para o nariz em 'ón' e conclua com 'glé' seco.\nLeia: Parl-tü ón-glé?"
   },
   "14": {
-    "explanation": "A negação completa usa 'ne' e 'pas' ao redor da ação 'comprends' (entendo). Assim, 'Je ne comprends pas' significa literalmente 'Eu não entendo'.",
+    "explanation": "Para dizer 'Eu não entendo', os nativos usam o par de negação 'ne ... pas' envolvendo o verbo compreender: 'Je ne comprends pas'. Na fala rápida do dia a dia, é muito comum o 'ne' ser pronunciado bem curtinho.",
     "breakdown": [
       {
-        "word": "Je ne",
-        "meaning": "Eu não — je: eu; ne: parte da negação."
+        "word": "Je",
+        "meaning": "Eu — pronome sujeito."
       },
       {
-        "word": "comprends pas",
-        "meaning": "Entendo não / Não entendo — comprends: entendo; pas: parte que completa a negação."
+        "word": "ne",
+        "meaning": "Não — primeira parte da negação."
+      },
+      {
+        "word": "comprends",
+        "meaning": "Compreendo / Entendo — verbo compreender."
+      },
+      {
+        "word": "pas",
+        "meaning": "Não — segunda parte que fecha a negação."
       }
     ],
-    "pronuncia": "Fale 'jê nê'. A palavra 'comprends' sai totalmente pelo nariz como 'kõn-prãn', sem falar as letras 'd' e 's' finais. Feche com 'pá'.\nLeia: Jê nê kõn-prãn pá."
+    "pronuncia": "Nas duas primeiras palavras 'Je ne', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em ambas ('jə nə'). Na palavra 'comprends', faça o som nasal arredondado 'kon' na primeira sílaba sem encostar os lábios e passe para 'prón' na segunda com um 'ó' nasal aberto, escuro e profundo projetado para o nariz. Feche com 'pa' limpo.\nLeia: Jə nə kon-prón pa."
   },
   "15": {
-    "explanation": "Para pedir gentileza e calma, a expressão 'S'il te plaît' significa 'por favor' (ao pé da letra: 'se a você agrada') e é seguida por 'parle lentement' (fale devagar).",
+    "explanation": "A expressão 'S'il te plaît' é a forma amigável de dizer 'Por favor', que significa literalmente 'Se te agrada'. A palavra 'lentement' junta a ideia de lento com a terminação equivalente ao nosso '-mente'.",
     "breakdown": [
       {
         "word": "S'il te plaît",
-        "meaning": "Por favor — ao pé da letra: se te agrada."
+        "meaning": "Por favor — expressão de cortesia informal."
       },
       {
         "word": "parle",
-        "meaning": "Fale — ação de falar dirigida a você."
+        "meaning": "Fale — ordem ou pedido amigável."
       },
       {
         "word": "lentement",
-        "meaning": "Devagar / Lentamente — de forma lenta."
+        "meaning": "Devagar / Lentamente — modo de ação."
       }
     ],
-    "pronuncia": "Diga 'sil tô plê' para o pedido de favor. Em 'parle', diga 'párl' arranhando o 'R'. Para 'lentement', solte duas partes nasais saindo pelo nariz: 'lãn-tê-mãn', sem falar a letra 't' final.\nLeia: Sil tô plê, párl lãn-tê-mãn."
+    "pronuncia": "Em 'S'il te plaît', diga 'sil', passe por 'tə' deixando a boca 100% relaxada e mandíbula caída no som neutro, e feche em 'plé' com som aberto. Em 'parle', fale 'parl' travando o som no 'l'. Na palavra 'lentement', aplique o som de 'ó' nasal aberto, escuro e profundo projetado para o nariz nas duas pontas, intercalado por um 'tə' neutro em 'lón-tə-món'.\nLeia: Sil tə plé, parl lón-tə-món."
   },
   "16": {
-    "explanation": "A pergunta sobre a grafia de algo usa 'Comment' (como) e 'ça s'écrit' (isso se escreve), significando 'Como se escreve isso?'.",
+    "explanation": "Para perguntar como algo se escreve ou soletra, o francês usa 'Comment ça s'écrit ?', que se traduz literalmente como 'Como isso se escreve?'. O pronome 'ça' aponta para a palavra em questão.",
     "breakdown": [
       {
         "word": "Comment",
-        "meaning": "Como — palavra de pergunta."
+        "meaning": "Como — palavra interrogativa."
       },
       {
-        "word": "ça s'écrit",
-        "meaning": "Isso se escreve — ça: isso; s'écrit: se escreve."
+        "word": "ça",
+        "meaning": "Isso / Isto — pronome demonstrativo informal."
+      },
+      {
+        "word": "s'écrit",
+        "meaning": "Se escreve — s': se; écrit: escreve."
       }
     ],
-    "pronuncia": "Fale 'kô-mãn' com a parte final saindo pelo nariz. Em 'ça s'écrit', diga 'sa sê-krí' raspando o 'R' suavemente na garganta e sem pronunciar o 't' final.\nLeia: Kô-mãn sa sê-krí ?"
+    "pronuncia": "Em 'Comment', solte 'ko' e passe para 'món', usando o som de 'ó' nasal aberto, escuro e profundo projetado para o nariz sem encostar os lábios no final. Conecte com 'ça' em 'sa' e termine em 's'écrit' pronunciando 'sê-krí' com o 't' final completamente mudo.\nLeia: Ko-món sa sê-krí?"
   },
   "17": {
-    "explanation": "Para se despedir, os nativos usam 'Au revoir' (até a vista/tchau) combinado com 'à plus tard' (até mais tarde).",
+    "explanation": "'Au revoir' é a expressão clássica para 'Tchau' ou 'Até logo' (literalmente 'Ao rever'). Para complementar com 'até mais tarde', usa-se 'à plus tard', onde o 's' da palavra 'plus' não é pronunciado.",
     "breakdown": [
       {
         "word": "Au revoir",
-        "meaning": "Tchau / Até logo — ao pé da letra: até rever."
+        "meaning": "Tchau / Até a vista — au: ao; revoir: rever."
       },
       {
         "word": "à plus tard",
         "meaning": "Até mais tarde — à: até; plus: mais; tard: tarde."
       }
     ],
-    "pronuncia": "Diga 'ô rvóar' arranhando o 'R' da garganta. Em 'à plus tard', fale 'a plú tár' sem falar o 'd' no final da palavra 'tard'.\nLeia: Ô rvóar, a plú tár."
+    "pronuncia": "Em 'Au revoir', faça 'ô' fechado de bico redondo, passe por 'rə' deixando a boca 100% relaxada e mandíbula caída no som neutro, e emende no bloco 'vuár'. Em 'à plus tard', fale 'a', passe por 'plü' armando o bico fechado e firme de U dizendo som agudo de I, e finalize em 'tár' arranhando o 'r' na garganta e cortando o 'd' final a seco.\nLeia: Ô rə-vuár, a plü tár."
   },
   "18": {
-    "explanation": "A expressão 'Bonne journée' junta 'Bonne' (boa) com 'journée' (dia / jornada) para desejar que o dia da outra pessoa seja excelente.",
+    "explanation": "Para desejar 'Tenha um bom dia', os franceses usam 'Bonne journée'. Note que como a palavra 'journée' é feminina, usa-se 'bonne', o que faz a nasalização do 'o' ser cancelada e a consoante 'n' ser falada de forma limpa.",
     "breakdown": [
       {
         "word": "Bonne",
-        "meaning": "Boa — feminino de bom."
+        "meaning": "Boa — forma feminina de bom."
       },
       {
         "word": "journée",
-        "meaning": "Dia / Jornada — o período do dia."
+        "meaning": "Dia / Jornada — período do dia."
       }
     ],
-    "pronuncia": "Em 'Bonne', fale 'bón' com o som limpo da letra 'n'. Em 'journée', fale 'jur-nê' arranhando levemente o 'R' no meio e terminando no som de 'ê'.\nLeia: Bón jur-nê."
+    "pronuncia": "Na palavra 'Bonne', desnasalize totalmente a vogal: emita o 'O' como um 'ó' aberto oral puro e limpo e articule o 'N' na consoante seguinte ('bó-n'), sem anasalar como no português. Em 'journée', faça o 'j' suave em 'jur' e termine em 'nê' fechado.\nLeia: Bó-n jur-nê."
   },
   "19": {
-    "explanation": "Para apresentar o professor, junta-se 'C'est' (este é) com 'mon professeur' (meu professor).",
+    "explanation": "A estrutura 'C'est' (Este é) combina com a palavra 'mon' (meu) para apresentar alguém. Assim, 'C'est mon professeur' traduz-se diretamente como 'Este é o meu professor'.",
     "breakdown": [
       {
         "word": "C'est",
-        "meaning": "Este é / É — c': isto; est: é."
+        "meaning": "Este é / É — apresentação direta."
       },
       {
-        "word": "mon professeur",
-        "meaning": "Meu professor — mon: meu; professeur: professor."
+        "word": "mon",
+        "meaning": "Meu — indicador de posse."
+      },
+      {
+        "word": "professeur",
+        "meaning": "Professor — profissão ou função."
       }
     ],
-    "pronuncia": "Fale 'sè' para 'C'est'. Em 'mon professeur', fale 'mõn' pelo nariz e depois 'prô-fê-sœr', arranhando o 'R' no final da garganta.\nLeia: Sè mõn prô-fê-sœr."
+    "pronuncia": "Abra com 'C'est' em 'sé'. Em 'mon', projete os lábios para a frente em círculo bem fechado para soltar o som nasal arredondado 'mon' sem encostar os lábios no fim. Na palavra 'professeur', fale 'prô-fê' e posicione a língua para falar É bem aberto arredondando os lábios no formato de Ó para fechar a última sílaba em 'sœr'.\nLeia: Sé mon prô-fê-sœr."
   },
   "20": {
-    "explanation": "Na negação no plural, usa-se 'Ils' (eles), 'ne sont pas' (não são) e 'de Londres' (de Londres).",
+    "explanation": "Para negar no plural, usa-se o pronome 'Ils' (Eles) com a negação abraçando o verbo 'sont' (são). A frase 'Ils ne sont pas de Londres' significa literalmente 'Eles não são de Londres'.",
     "breakdown": [
       {
-        "word": "Ils ne sont pas",
-        "meaning": "Eles não são — ils: eles; ne... pas: não; sont: são."
+        "word": "Ils",
+        "meaning": "Eles — pronome plural masculino."
+      },
+      {
+        "word": "ne sont pas",
+        "meaning": "Não são — estrutura de negação no plural."
       },
       {
         "word": "de Londres",
-        "meaning": "De Londres — de: de; Londres: a cidade de Londres."
+        "meaning": "De Londres — origem geográfica."
       }
     ],
-    "pronuncia": "Fale 'il nê sõn pá', soltando o 'sõn' bem pelo nariz. Em 'de Londres', diga 'dê lõn-dr' raspando o 'R' final sem deixar a vogal escapar.\nLeia: Il nê sõn pá dê lõn-dr."
+    "pronuncia": "Comece em 'Ils' cortando o 's' final para soar 'il'. Em 'ne', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'nə'. Em 'sont', faça o som nasal arredondado 'son' com lábios em círculo fechado. Feche em 'de Londres' dizendo 'də' neutro e 'lon-dr', cortando o som a seco no 'r'.\nLeia: Il nə son pa də lon-dr."
   },
   "21": {
-    "explanation": "Uma maneira simples e falada de perguntar 'Ele é seu amigo?' em francês é dizer 'C'est' (é/ele é) seguido de 'ton ami' (seu amigo).",
+    "explanation": "No francês falado do cotidiano, você pode transformar uma afirmação em pergunta apenas mudando a entonação da voz. Por isso, 'C'est ton ami ?' é a forma mais simples de perguntar 'Ele é seu amigo?'.",
     "breakdown": [
       {
         "word": "C'est",
-        "meaning": "É / Ele é — c': isto/ele; est: é."
+        "meaning": "É / Ele é — estrutura de identificação."
       },
       {
-        "word": "ton ami",
-        "meaning": "Seu amigo — ton: teu/seu; ami: amigo."
+        "word": "ton",
+        "meaning": "Teu / Seu — posse masculina."
+      },
+      {
+        "word": "ami",
+        "meaning": "Amigo — pessoa próxima."
       }
     ],
-    "pronuncia": "Em 'C'est ton ami', junte o som do 't' no final de 'ton' diretamente na palavra 'ami', dizendo 'sè tõ-na-mí'.\nLeia: Sè tõ-na-mí ?"
+    "pronuncia": "Inicie com 'C'est' em 'sé'. Para as palavras 'ton ami', junte a consoante final de 'ton' diretamente na vogal de 'ami', desnasalizando o som em um fluxo contínuo que soa 'to-na-mí', subindo o tom da voz no final para marcar a pergunta.\nLeia: Sé to-na-mí?"
   },
   "22": {
-    "explanation": "Para acolher alguém na residência, o francês junta 'Bienvenue' (bem-vindo) com 'dans notre maison' (em nossa casa).",
+    "explanation": "A saudação 'Bienvenue' significa 'Bem-vindo'. Para dizer 'em nossa casa', o francês usa a preposição 'dans' (dentro de) seguida de 'notre maison' (nossa casa), criando a imagem de acolhimento para dentro do lar.",
     "breakdown": [
       {
         "word": "Bienvenue",
-        "meaning": "Bem-vindo / Bem-vinda — recepção acolhedora."
+        "meaning": "Bem-vindo / Bem-vinda — recepção."
       },
       {
-        "word": "dans notre maison",
-        "meaning": "Em nossa casa / Na nossa casa — dans: em/dentro; notre: nossa; maison: casa."
+        "word": "dans",
+        "meaning": "Em / Dentro de — preposição de lugar."
+      },
+      {
+        "word": "notre",
+        "meaning": "Nossa / Nosso — posse coletiva."
+      },
+      {
+        "word": "maison",
+        "meaning": "Casa — moradia."
       }
     ],
-    "pronuncia": "Fale 'biẽn-vê-nú' fazendo bico no 'nú'. Em 'dans notre maison', fale 'dãn' pelo nariz, 'nótr' arranhando o 'R', e 'mê-zõn' fechando com som nasal.\nLeia: Biẽn-vê-nú dãn nótr mê-zõn."
+    "pronuncia": "Na palavra 'Bienvenue', junte o bloco 'biã', passe por 'və' com som neutro de boca relaxada e termine em 'nü' armando o bico fechado e firme de U dizendo som agudo de I. Em 'dans', solte 'dón' com som de 'ó' nasal aberto, escuro e profundo. Conclua em 'notre maison' dizendo 'nó-tr' e 'mê-zon', fazendo o 's' entre vogais vibrar com som de 'z' e o 'on' arredondado nos lábios.\nLeia: Biã-və-nü dón nó-tr mê-zon."
   },
   "23": {
-    "explanation": "Para pedir licença e perguntar a hora, usa-se 'Excusez-moi' (desculpe-me/com licença) e a pergunta pronta 'quelle heure est-il ?' (que horas são?).",
+    "explanation": "A forma cortês 'Excusez-moi' significa 'Com licença' ou 'Desculpe-me'. Para perguntar as horas, usa-se a expressão fixa 'quelle heure est-il ?', que se traduz como 'que hora é ela?', conectando todas as palavras na pronúncia.",
     "breakdown": [
       {
         "word": "Excusez-moi",
-        "meaning": "Com licença / Desculpe-me — excusez: desculpe; moi: mim/eu."
+        "meaning": "Com licença / Desculpe-me — pedido de licença cortês."
       },
       {
-        "word": "quelle heure est-il",
-        "meaning": "Que horas são — quelle: qual; heure: hora; est-il: é ele/são."
+        "word": "quelle",
+        "meaning": "Qual / Que — palavra interrogativa feminina."
+      },
+      {
+        "word": "heure",
+        "meaning": "Hora — unidade de tempo."
+      },
+      {
+        "word": "est-il",
+        "meaning": "É ela / São — inversão para pergunta de tempo."
       }
     ],
-    "pronuncia": "Diga 'èks-kú-zê-moá'. Em 'quelle heure est-il', junte os sons de forma fluida: 'kèl œr ê-tíl', raspando o 'R' em 'heure'.\nLeia: Èks-kú-zê-moá, kèl œr ê-tíl ?"
+    "pronuncia": "Em 'Excusez-moi', fale 'éks', arme o bico fechado e firme de U dizendo som agudo de I em 'kü', passe por 'zê' e termine no bloco 'muá'. Na expressão 'quelle heure', junte o 'l' de 'quelle' direto na palavra 'heure', onde você deve posicionar a língua para falar É bem aberto arredondando os lábios no formato de Ó em 'œr'. Feche conectando o 't' seco em 'est-il' ('ê-tíl').\nLeia: Éks-kü-zê-muá, kél œr ê-tíl?"
   },
   "24": {
-    "explanation": "Para se desculpar pelo atraso, diz-se 'Je suis désolé' (estou triste/desculpe) seguido de 'd'être en retard' (de estar atrasado).",
+    "explanation": "Para pedir desculpas pelo atraso, os nativos dizem 'Je suis désolé d'être en retard', que significa literalmente 'Eu estou sentido de estar em atraso'. É a fórmula padrão e muito respeitosa para essa situação.",
     "breakdown": [
       {
-        "word": "Je suis désolé",
-        "meaning": "Sinto muito / Estou desolado — je: eu; suis: estou; désolé: desolado/sinto muito."
+        "word": "Je suis",
+        "meaning": "Eu estou / Eu sou — je: eu; suis: estou."
       },
       {
-        "word": "d'être en retard",
-        "meaning": "De estar atrasado — d'être: de estar; en retard: em atraso / atrasado."
+        "word": "désolé",
+        "meaning": "Sinto muito / Desolado — pedido de desculpas."
+      },
+      {
+        "word": "d'être",
+        "meaning": "De estar — de: de; être: estar."
+      },
+      {
+        "word": "en retard",
+        "meaning": "Atrasado / Em atraso — en: em; retard: atraso."
       }
     ],
-    "pronuncia": "Fale 'jê súi dê-zô-lê'. Em 'd'être en retard', diga 'dê-trãn rê-tár', arranhando o 'R' nas duas últimas palavras e omitindo a última letra 'd'.\nLeia: Jê súi dê-zô-lê dê-trãn rê-tár."
+    "pronuncia": "Em 'Je', solte o som neutro 'jə' com a boca relaxada. Em 'suis', arme os lábios no bico fechado do U francês 'ü' e deslize imediatamente para o 'i' no bloco 'süí'. Fale 'désolé' como 'dê-zô-lê' e 'd'être' como 'dê-tr'. Em 'en retard', projete 'ón' com som de 'ó' nasal escuro e profundo, passe por 'rə' neutro e termine em 'tár' arranhando a garganta sem pronunciar o 'd' final.\nLeia: Jə süí dê-zô-lê dê-tr ón rə-tár."
   },
   "25": {
-    "explanation": "Para pedir ajuda, você pode perguntar 'Peux-tu m'aider' (pode você me ajudar) e acrescentar 's'il te plaît' (por favor).",
+    "explanation": "Ao pedir ajuda a um amigo, usa-se 'Peux-tu m'aider, s'il te plaît ?', que significa 'Podes tu me ajudar, se te agrada?'. A inversão do verbo 'pouvoir' (poder) com o pronome 'tu' deixa a pergunta direta e clara.",
     "breakdown": [
       {
         "word": "Peux-tu",
-        "meaning": "Você pode / Pode você — peux: pode; tu: você."
+        "meaning": "Você pode / Podes — peux: pode; tu: você."
       },
       {
         "word": "m'aider",
@@ -368,27 +440,35 @@
       },
       {
         "word": "s'il te plaît",
-        "meaning": "Por favor — expressão de cortesia."
+        "meaning": "Por favor — fórmula informal de cortesia."
       }
     ],
-    "pronuncia": "Em 'Peux-tu', faça bico em ambas as sílabas: 'pø-tú'. Em 'm'aider', diga 'mê-dê'. Finalize com 'sil tô plê'.\nLeia: Pø-tú mê-dê, sil tô plê ?"
+    "pronuncia": "Na palavra 'Peux', posicione a boca para falar Ê com os lábios projetados em bico redondo e fechado de Ô para soltar 'pø'. Na palavra 'tu', arme o bico fechado e firme de U dizendo som agudo de I em 'tü'. Em 'm'aider', fale 'mé-dê' com consoantes secas. Em 's'il te plaît', fale 'sil', passe pelo 'tə' neutro de boca relaxada e conclua em 'plé'.\nLeia: Pø-tü mé-dê, sil tə plé?"
   },
   "26": {
-    "explanation": "Para demonstrar gentileza ao conhecer alguém, diz-se 'C'est un plaisir' (é um prazer) seguido de 'de te rencontrer' (de te encontrar/conhecer).",
+    "explanation": "A frase 'C'est un plaisir de te rencontrer' expressa a alegria de encontrar alguém, traduzindo-se literalmente como 'É um prazer de te encontrar'. A preposição 'de' liga a sensação ao ato de conhecer a pessoa.",
     "breakdown": [
       {
-        "word": "C'est un plaisir",
-        "meaning": "É um prazer — c'est: é; un: um; plaisir: prazer."
+        "word": "C'est un",
+        "meaning": "É um — c'est: é; un: um."
       },
       {
-        "word": "de te rencontrer",
-        "meaning": "De te conhecer — de: de; te: te; rencontrer: encontrar/conhecer."
+        "word": "plaisir",
+        "meaning": "Prazer — sentimento de satisfação."
+      },
+      {
+        "word": "de te",
+        "meaning": "De te — de: de; te: te/você."
+      },
+      {
+        "word": "rencontrer",
+        "meaning": "Encontrar / Conhecer — verbo de ação social."
       }
     ],
-    "pronuncia": "Junte 'C'est un plaisir' dizendo 'sè tũn plê-zír'. Em 'de te rencontrer', fale 'dê tô rãn-kõn-trê', soltando os sons nasais pelo nariz e raspando o 'R' inicial.\nLeia: Sè tũn plê-zír dê tô rãn-kõn-trê."
+    "pronuncia": "Conecte 'C'est un' em um único bloco 'sé-tã', usando o som nasal aberto de 'ã'. Em 'plaisir', diga 'plê-zír' fazendo o 's' vibrar como 'z'. Em 'de te', repita o som neutro 'də tə' deixando a boca 100% relaxada e mandíbula caída em ambos. Em 'rencontrer', faça a primeira sílaba em 'rón' com 'ó' nasal escuro e a segunda em 'kon' com 'on' arredondado, fechando em 'trê'.\nLeia: Sé-tã plê-zír də tə rón-kon-trê."
   },
   "27": {
-    "explanation": "Para perguntar sobre um homem próximo, a estrutura é 'Qui est' (quem é) junto com 'cet homme' (este homem).",
+    "explanation": "Para perguntar sobre a identidade de alguém, usa-se 'Qui est cet homme ?', que significa 'Quem é este homem?'. O demonstrativo 'ce' ganha um 't' final ('cet') porque a palavra seguinte começa com um 'h' que não tem som.",
     "breakdown": [
       {
         "word": "Qui est",
@@ -399,52 +479,60 @@
         "meaning": "Este homem — cet: este; homme: homem."
       }
     ],
-    "pronuncia": "Junte a frase inteira de forma contínua: 'ki ê sè-tóm', emendando o som do 't' de 'cet' diretamente na palavra 'homme', que não pronuncia a letra 'h'.\nLeia: Ki ê sè-tóm ?"
+    "pronuncia": "Fale 'Qui est' de forma limpa como 'ki ê'. Nas duas palavras seguintes 'cet homme', faça a ligação direta da consoante 't' na vogal seguinte, formando a sequência contínua 'sê-tóm', cortando a palavra a seco no 'm' sem soltar 'i' de apoio.\nLeia: Ki ê sê-tóm?"
   },
   "28": {
-    "explanation": "Para dizer que o grupo está feliz, o francês usa 'Nous sommes' (nós estamos), 'très heureux' (muito felizes) e 'aujourd'hui' (hoje).",
+    "explanation": "Em 'Nous sommes très heureux aujourd'hui', a frase se traduz como 'Nós estamos muito felizes hoje'. O som do 's' final das palavras se conecta às palavras seguintes para manter a fala fluida e contínua.",
     "breakdown": [
       {
         "word": "Nous sommes",
-        "meaning": "Nós estamos / Nós somos — nous: nós; sommes: estamos/somos."
+        "meaning": "Nós estamos / Somos — nous: nós; sommes: estamos/somos."
       },
       {
-        "word": "très heureux",
-        "meaning": "Muito felizes — très: muito; heureux: felizes."
+        "word": "très",
+        "meaning": "Muito — intensificador."
+      },
+      {
+        "word": "heureux",
+        "meaning": "Felizes — estado de espírito no plural."
       },
       {
         "word": "aujourd'hui",
-        "meaning": "Hoje — no dia de hoje."
+        "meaning": "Hoje — momento atual."
       }
     ],
-    "pronuncia": "Fale 'nú sóm'. Em 'très heureux', junte as palavras formando 'trè-zø-rø', com o 'R' arranhado na garganta. Finalize com 'ô-jur-du-í'.\nLeia: Nú sóm trè-zø-rø ô-jur-du-í."
+    "pronuncia": "Fale 'Nous sommes' como 'nu sóm'. Para conectar 'très heureux', faça o 's' final virar um zumbido de 'z' na ligação: posicione a boca para falar Ê com os lábios projetados em bico redondo e fechado de Ô em ambas as sílabas da palavra, resultando em 'trê-zø-rø'. Finalize em 'aujourd'hui' com 'ô-jur-düí'.\nLeia: Nu sóm trê-zø-rø ô-jur-düí."
   },
   "29": {
-    "explanation": "Para perguntar se algumas pessoas são os pais de alguém, usa-se 'Ce sont' (são estes/esses) e 'tes parents' (seus pais).",
+    "explanation": "Para perguntar sobre os pais de alguém no plural, o francês troca 'C'est' por 'Ce sont', resultando em 'Ce sont tes parents ?' (São estes os teus pais?). A palavra 'tes' indica a posse no plural.",
     "breakdown": [
       {
         "word": "Ce sont",
-        "meaning": "São estes / Eles são — ce: estes; sont: são."
+        "meaning": "São estes / São — forma no plural de c'est."
       },
       {
-        "word": "tes parents",
-        "meaning": "Seus pais — tes: teus/seus; parents: pais."
+        "word": "tes",
+        "meaning": "Teus / Seus — posse no plural."
+      },
+      {
+        "word": "parents",
+        "meaning": "Pais — pai e mãe."
       }
     ],
-    "pronuncia": "Fale 'sê sõn' soltando o ar pelo nariz na segunda palavra. Em 'tes parents', diga 'tê pá-rãn', soltando a última parte pelo nariz sem falar o 't' e o 's' finais.\nLeia: Sê sõn tê pá-rãn ?"
+    "pronuncia": "Em 'Ce', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'sə'. Na palavra 'sont', faça o som nasal arredondado 'son' com os lábios em círculo fechado sem encostá-los. Fale 'tes' como 'tê' fechado e finalize 'parents' em 'pa-rón', soltando um som de 'ó' nasal aberto, escuro e profundo projetado para o nariz.\nLeia: Sə son tê pa-rón?"
   },
   "30": {
-    "explanation": "A forma mais comum de expressar grande gratidão em francês é juntar 'Merci' (obrigado/obrigada) com 'beaucoup' (muito).",
+    "explanation": "A forma mais clássica e intensa de agradecer em francês é 'Merci beaucoup', que se traduz literalmente como 'Obrigado muito'. A palavra 'beaucoup' junta as ideias de 'belo' e 'golpe' para significar 'muito'.",
     "breakdown": [
       {
         "word": "Merci",
-        "meaning": "Obrigado / Obrigada — expressão de agradecimento."
+        "meaning": "Obrigado / Obrigada — agradecimento."
       },
       {
         "word": "beaucoup",
-        "meaning": "Muito — indica quantidade ou intensidade."
+        "meaning": "Muito — intensidade."
       }
     ],
-    "pronuncia": "Em 'Merci', fale 'mêr-sí' arranhando o 'R' suavemente na garganta. Em 'beaucoup', diga 'bô-kú', sem pronunciar o 'p' final.\nLeia: Mêr-sí bô-kú."
+    "pronuncia": "Em 'Merci', fale 'mér' arranhando o 'r' no fundo da garganta e conclua com 'sí' seco. Na palavra 'beaucoup', projete os lábios em círculo redondo firme para emitir um 'bô' bem fechado e termine com 'ku' seco, cortando o som da consoante final a seco e sem adicionar som de 'i'.\nLeia: Mér-sí bô-ku."
   }
 }

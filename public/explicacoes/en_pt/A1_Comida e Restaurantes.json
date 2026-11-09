@@ -1,236 +1,240 @@
 {
   "121": {
-    "explanation": "Em inglês, você não 'está com fome', você 'é ou está faminto'. Por isso usamos 'I am' para dizer 'eu sou ou estou' e a palavra 'hungry' para descrever esse estado, ligando a pessoa diretamente ao adjetivo de fome.",
+    "explanation": "Em inglês, você não diz que 'está com' fome como no português, mas sim afirma literalmente 'eu sou/estou faminto'. Usamos o bloco 'I am' para indicar o estado presente seguido do adjetivo que descreve a fome.",
     "breakdown": [
       {
         "word": "I",
-        "meaning": "Eu"
+        "meaning": "Eu."
       },
       {
         "word": "am",
-        "meaning": "Estou / Sou — forma do verbo ser/estar para 'eu'."
+        "meaning": "Estou / Sou."
       },
       {
         "word": "hungry",
-        "meaning": "Com fome / Faminto — adjetivo que descreve a sensação de fome."
+        "meaning": "Com fome / Faminto."
       }
     ],
-    "pronuncia": "Para falar 'I', diga 'ái' com clareza. Emende com 'am' falando 'ém'. Na palavra 'hungry', faça o som do 'h' como um suspiro suave e curve a ponta da língua para trás no céu da boca para fazer o 'r' caipira ('hân-gri'), finalizando em um 'i' bem limpo.\nLeia: Ái ém hân-gri."
+    "pronuncia": "Comece em 'I' pronunciando 'ái'. Na palavra 'am', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'æ' e feche os lábios no 'm'. Em 'hungry', solte o 'h' como um suspiro morno do peito, enrole a língua para trás no 'r' e não coloque 'i' extra no fim.\nLeia: Ái æm hâng-gri."
   },
   "122": {
-    "explanation": "Para fazer perguntas no presente em inglês, os nativos colocam a palavra 'Do' logo no início para sinalizar quem ouve que vem uma dúvida por aí. Além disso, note que eles dizem 'like pizza' direto, sem precisar colocar a palavra 'de' antes do alimento.",
+    "explanation": "Para fazer uma pergunta no presente em inglês, os nativos colocam a palavra de apoio 'Do' antes da pessoa 'you'. Em vez de apenas mudar a entonação da voz como fazemos em português, essa palavra avisa logo no início que uma pergunta está sendo feita.",
     "breakdown": [
       {
         "word": "Do",
-        "meaning": "Palavra que indica início de pergunta no presente (não tem tradução direta aqui)."
+        "meaning": "Palavra de apoio para indicar pergunta no presente."
       },
       {
         "word": "you",
-        "meaning": "Você"
+        "meaning": "Você."
       },
       {
         "word": "like",
-        "meaning": "Gosta / Gostar"
+        "meaning": "Gosta / Gosta de."
       },
       {
         "word": "pizza",
-        "meaning": "Pizza"
+        "meaning": "Pizza."
       }
     ],
-    "pronuncia": "Comece em 'Do' falando 'dú' e emende em 'you' formando 'dú iú'. Na palavra 'like', termine travando o ar na garganta no som de 'k', sem dizer 'láiki'. A palavra 'pizza' soa exatamente como 'pít-sa'.\nLeia: Dú iú láik pít-sa?"
+    "pronuncia": "Em 'Do you', faça bico firme nos lábios para o 'úu' em 'dúu' e 'yúu'. Na palavra 'like', corte o som a seco na consoante 'k' sem dizer 'láiki'. Em 'pizza', fale 'píit-sə' deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no final.\nLeia: Dúu yúu láik píit-sə?"
   },
   "123": {
-    "explanation": "Para negar uma ação no presente, os nativos colocam 'do not' antes do verbo. A estrutura segue de forma bem direta para a ação de comer ('eat') e o alimento ('meat'), sem complicação.",
+    "explanation": "Para dizer que não faz algo no dia a dia, o inglês junta a palavra de apoio 'do' com o 'not' para formar a negação antes da ação. O verbo 'eat' significa comer e vem direto antes do alimento 'meat', sem precisar de artigos.",
     "breakdown": [
       {
         "word": "I",
-        "meaning": "Eu"
+        "meaning": "Eu."
       },
       {
         "word": "do not",
-        "meaning": "Não — junção da palavra de apoio 'do' com a negação 'not'."
+        "meaning": "Não — do: apoio do presente; not: negação."
       },
       {
         "word": "eat",
-        "meaning": "Como / Comer"
+        "meaning": "Como / Comer."
       },
       {
         "word": "meat",
-        "meaning": "Carne"
+        "meaning": "Carne."
       }
     ],
-    "pronuncia": "Fale 'Ái' para o 'I'. Em 'do not', diga 'dú nót' travando a ponta da língua no céu da boca no 't'. Em 'eat', faça um 'ít' curto e seco. Finalize 'meat' como 'mít', também travando a língua no 't' final sem soltar vogal extra.\nLeia: Ái dú nót ít mít."
+    "pronuncia": "Fale 'ái' e emende em 'dúu nót'. Em 'eat' e 'meat', abra um sorriso firme com os cantos da boca bem esticados para o som 'ii' e trave o ar a seco no 't' final sem adicionar som de 'i' no fim de nenhuma das duas palavras.\nLeia: Ái dúu nót íit míit."
   },
   "124": {
-    "explanation": "Esta frase segue a mesma ordem que usamos no português. Usamos 'A' para 'uma', 'table' para 'mesa' e 'for two' para 'para dois'. O 'please' entra no final da frase para manter a cortesia no atendimento.",
+    "explanation": "Ao pedir algo em um restaurante, o inglês usa 'A' para 'uma', a palavra 'table' para mesa e 'for two' para o número de pessoas. A estrutura é idêntica ao português e termina com o pedido educado 'please'.",
     "breakdown": [
       {
         "word": "A",
-        "meaning": "Uma / Um"
+        "meaning": "Uma / Um."
       },
       {
         "word": "table",
-        "meaning": "Mesa"
+        "meaning": "Mesa."
       },
       {
-        "word": "for two",
-        "meaning": "Para dois — for: para; two: dois."
+        "word": "for",
+        "meaning": "Para."
+      },
+      {
+        "word": "two",
+        "meaning": "Dois."
       },
       {
         "word": "please",
-        "meaning": "Por favor"
+        "meaning": "Por favor."
       }
     ],
-    "pronuncia": "O 'A' soa como um 'â' suave. Em 'table', fale 'têi-bôl', encostando a ponta da língua no céu da boca no final. Em 'for', curve a língua para fazer o 'r' ('fór') e sopre o 't' em 'two' ('tú'). Termine 'please' como 'plíz', esticando o som do 'i'.\nLeia: Â têi-bôl fór tú, plíz."
+    "pronuncia": "Comece com 'ə' mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'table', faça 'têi-bl' subindo a ponta da língua no céu da boca. Em 'for', enrole a língua no 'r'. Em 'two', faça bico firme em 'túu'. Em 'please', estique o sorriso em 'plíiz' e zumba o 'z' no final.\nLeia: Ə têi-bl fór túu, plíiz."
   },
   "125": {
-    "explanation": "Para pedir algo de forma muito educada, o inglês coloca 'Can' (posso) no começo da frase. O 'I' (eu) vem logo depois, formando o bloco 'Can I' que soa como uma palavra só, seguido da ação 'see' (ver) e do objeto.",
+    "explanation": "Para pedir autorização ou solicitar algo educadamente, os nativos começam com 'Can I', que significa 'posso eu'. Em seguida colocam a ação 'see' (ver) e o objeto desejado 'the menu' (o cardápio).",
     "breakdown": [
       {
         "word": "Can I",
-        "meaning": "Posso eu / Posso — Can: posso/posso fazer; I: eu."
+        "meaning": "Posso eu / Posso — Can: poder; I: eu."
       },
       {
         "word": "see",
-        "meaning": "Ver / Enxergar"
+        "meaning": "Ver."
       },
       {
-        "word": "the menu",
-        "meaning": "O cardápio — the: o; menu: cardápio / menu."
+        "word": "the",
+        "meaning": "O / A."
+      },
+      {
+        "word": "menu",
+        "meaning": "Cardápio / Menu."
       }
     ],
-    "pronuncia": "Junte 'Can' e 'I' em um som único de 'kê-nai'. Para 'see', faça um 'sí' sorridente e longo. Em 'the', encoste levemente a ponta da língua entre os dentes da frente para soltar um 'dhê'. Conclua 'menu' falando 'MÉN-iú'.\nLeia: Kê-nai sí dhê mén-iú?"
+    "pronuncia": "Em 'Can I', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'kæn' e emende com 'ái' formando 'kæ-nái'. Em 'see', faça o 'i' longo sorrindo. Em 'the', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o som 'dhə'. Em 'menu', diga 'mé-nyúu'.\nLeia: Kæ-nái sii dhə mé-nyúu?"
   },
   "126": {
-    "explanation": "Em inglês, a característica do sabor vem antes do item principal, por isso dizemos 'orange juice' (suco de laranja). Usamos a palavra 'an' em vez de 'a' antes de 'orange' simplesmente porque 'orange' começa com som de vogal, facilitando a fala.",
+    "explanation": "No inglês, quando a palavra seguinte começa com som de vogal como 'orange', o artigo 'a' ganha um 'n' virando 'an'. Isso facilita a emenda sonora direta entre 'an' e 'orange', soando como um bloco único de fala.",
     "breakdown": [
       {
         "word": "I want",
-        "meaning": "Eu quero — I: eu; want: quero / querer."
+        "meaning": "Eu quero — I: eu; want: querer."
       },
       {
-        "word": "an orange",
-        "meaning": "Uma laranja — an: um/uma; orange: laranja."
+        "word": "an",
+        "meaning": "Um / Uma (usado antes de som de vogal)."
+      },
+      {
+        "word": "orange",
+        "meaning": "Laranja."
       },
       {
         "word": "juice",
-        "meaning": "Suco"
+        "meaning": "Suco."
       }
     ],
-    "pronuncia": "Fale 'Ái uónt'. Junte o final de 'an' com o começo de 'orange' dizendo 'â-nó-rindj', sem pronunciar o 'e' final de 'orange'. Para a palavra 'juice', fale 'djús', parando no som do 's' sem colocar vogal depois.\nLeia: Ái uónt â-nó-rindj djús."
+    "pronuncia": "Fale 'ái' e projete os lábios em bico para o 'w' de 'wónt'. Emende o 'n' de 'wónt æn' com 'orange' falando 'ó-rındj', mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'ı'. Em 'juice', estale o 'dj' no início e corte a seco no 's' final ('djúus').\nLeia: Ái wónt æn ó-rındj djúus."
   },
   "127": {
-    "explanation": "Quando perguntamos algo sobre 'ele' (he) ou 'ela' (she), trocamos o auxiliar 'Do' por 'Does' no começo da frase. Observe também que a palavra que descreve a comida ('spicy' - apimentada) vem antes da palavra comida ('food').",
+    "explanation": "Quando a pergunta é sobre 'ele' (he), a palavra de apoio muda de 'do' para 'Does'. Como o 'Does' já avisa que estamos falando dele no presente, o verbo 'like' permanece na sua forma normal sem nenhuma alteração.",
     "breakdown": [
       {
-        "word": "Does",
-        "meaning": "Sinalizador de pergunta no presente para ele/ela."
-      },
-      {
-        "word": "he",
-        "meaning": "Ele"
+        "word": "Does he",
+        "meaning": "Ele (em pergunta) — Does: apoio para ele/ela; he: ele."
       },
       {
         "word": "like",
-        "meaning": "Gosta de / Gostar"
+        "meaning": "Gosta de / Gosta."
       },
       {
-        "word": "spicy food",
-        "meaning": "Comida apimentada — spicy: apimentada/temperada; food: comida."
+        "word": "spicy",
+        "meaning": "Apimentada / Com especiarias."
+      },
+      {
+        "word": "food",
+        "meaning": "Comida."
       }
     ],
-    "pronuncia": "Comece com 'Dâz' e junte com 'hí' ('dâz hí'). Em 'like', diga 'láik' travando a voz no 'k'. Na palavra 'spicy', comece direto no chiado do 's' sem colocar 'e' antes ('spái-si'). Termine em 'food' fazendo um 'fúd' com som de 'u' prolongado.\nLeia: Dâz hí láik spái-si fúd?"
+    "pronuncia": "Em 'Does', diga 'dâz' com som neutro de garganta e zumbido de 'z'. Em 'he', solte o suspiro do peito 'hii'. Em 'like', corte a seco no 'k'. Em 'spicy', comece direto no silvo do 's' sem colocar 'is-' antes ('spái-si'). Em 'food', faça bico longo de 'úu' e trave o 'd' final a seco ('fúud').\nLeia: Dâz hii láik spái-si fúud?"
   },
   "128": {
-    "explanation": "A ordem da frase é idêntica à do português: temos a pessoa ('We'), a ação ('eat'), o alimento ('rice') e a frequência ('every day'), que significa ao pé da letra 'cada dia' ou 'todos os dias'.",
+    "explanation": "Em inglês, a frase segue a ordem direta: quem faz ('We'), a ação ('eat'), o objeto ('rice') e a frequência ('every day'). A palavra 'every' junta-se a 'day' para expressar o sentido prático de 'todos os dias'.",
     "breakdown": [
       {
         "word": "We",
-        "meaning": "Nós"
+        "meaning": "Nós."
       },
       {
         "word": "eat",
-        "meaning": "Comemos / Comer"
+        "meaning": "Comemos / Comer."
       },
       {
         "word": "rice",
-        "meaning": "Arroz"
+        "meaning": "Arroz."
       },
       {
         "word": "every day",
-        "meaning": "Todos os dias — every: todo/cada; day: dia."
+        "meaning": "Todos os dias — every: cada/todos; day: dia."
       }
     ],
-    "pronuncia": "Fale 'Uí' para 'We'. Em 'eat', faça um 'ít' seco. Para 'rice', curve a língua para o som de 'r' caipira e termine em 's' ('ráis'). Na expressão 'every day', diga 'Év-ri dêi', pulando a letra 'e' do meio de 'every'.\nLeia: Uí ít ráis év-ri dêi."
+    "pronuncia": "Projete os lábios para o 'w' de 'wii' esticando o sorriso no 'ii'. Em 'eat', trave o 't' a seco sem colocar 'i' no fim. Em 'rice', enrole a língua para o 'r' e feche em 'ráis'. Em 'every day', fale 'év-ri dêi' escorregando o som de 'dêi' suavemente para o 'i'.\nLeia: Wii íit ráis év-ri dêi."
   },
   "129": {
-    "explanation": "Estrutura direta e equivalente ao português. O 'The' faz o papel de 'A', 'water' é a 'água', 'is' representa 'está' e 'cold' é o adjetivo 'gelada' ou 'fria'.",
+    "explanation": "A expressão 'The water' significa 'a água'. Em inglês americano, a letra 't' de 'water' fica entre duas vogais, então a língua apenas dá um toque rápido no céu da boca, soando idêntico ao nosso 'r' brando em palavras como 'arara'.",
     "breakdown": [
       {
-        "word": "The",
-        "meaning": "A / O"
-      },
-      {
-        "word": "water",
-        "meaning": "Água"
+        "word": "The water",
+        "meaning": "A água — The: a; water: água."
       },
       {
         "word": "is",
-        "meaning": "Está / É"
+        "meaning": "Está / É."
       },
       {
         "word": "cold",
-        "meaning": "Gelada / Fria"
+        "meaning": "Gelada / Fria."
       }
     ],
-    "pronuncia": "Coloque a ponta da língua entre os dentes em 'The' para fazer 'dhê'. No inglês americano, 'water' soa como 'uó-têr', curvando bem a língua no 'r'. Junte 'is cold' como 'íz kôuld', travando o 'd' final no céu da boca.\nLeia: Dhê uó-têr íz kôuld."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dhə'. Em 'water', projete o 'w' e faça o toque rápido de 'r' brando em 'wó-rər'. Em 'is', diga 'ız' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'cold', escorregue 'kôuld' e suba a língua para travar o 'l' e o 'd'.\nLeia: Dhə wó-rər ız kôuld."
   },
   "130": {
-    "explanation": "Para dizer que não gosta de algo em inglês, inserimos a expressão 'do not' entre quem fala ('I') e a ação de gostar ('like'). Lembrando que os nativos não usam nenhuma palavra para traduzir o nosso 'de' antes do objeto.",
+    "explanation": "Para dizer 'eu não gosto', a estrutura padrão é 'I do not like'. Em seguida coloca-se a palavra 'milk' diretamente. Note que no 'L' final de 'milk', os nativos não transformam o som em 'U' como fazemos no português.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "do not",
-        "meaning": "Não"
+        "word": "I do not",
+        "meaning": "Eu não — I: eu; do not: negação no presente."
       },
       {
         "word": "like",
-        "meaning": "Gosto de / Gostar"
+        "meaning": "Gosto de / Gostar."
       },
       {
         "word": "milk",
-        "meaning": "Leite"
+        "meaning": "Leite."
       }
     ],
-    "pronuncia": "Diga 'Ái dú nót'. Na palavra 'like', faça 'láik' parando o som no 'k'. Em 'milk', pronuncie 'mílk', subindo a língua para o 'l' e travando no 'k', sem soltar um 'i' no final.\nLeia: Ái dú nót láik mílk."
+    "pronuncia": "Diga 'ái dúu nót láik'. Na palavra 'milk', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' para o 'ı', e suba a ponta da língua travando no céu da boca para o 'l' em 'mılk', sem virar som de 'u' nem colocar 'i' no final.\nLeia: Ái dúu nót láik mılk."
   },
   "131": {
-    "explanation": "Em inglês, para perguntar se 'tem' ou 'existe' algo, invertemos a expressão padrão e usamos 'Is there'. A palavra 'any' entra na pergunta para dar o sentido de 'algum' ou 'qualquer quantidade de' açúcar.",
+    "explanation": "Para perguntar se 'tem' ou 'existe' algo, o inglês inverte a estrutura 'there is' para 'Is there'. A palavra 'any' entra para dar o sentido de 'algum' ou 'qualquer quantidade de' açúcar.",
     "breakdown": [
       {
         "word": "Is there",
-        "meaning": "Tem / Existe — estrutura para perguntar sobre a existência de algo."
+        "meaning": "Tem? / Há? / Existe? — Is: verbo ser/estar invertido; there: lá/ali."
       },
       {
         "word": "any",
-        "meaning": "Algum / Qualquer"
+        "meaning": "Algum / Qualquer / Alguma quantidade de."
       },
       {
         "word": "sugar",
-        "meaning": "Açúcar"
+        "meaning": "Açúcar."
       }
     ],
-    "pronuncia": "Comece com 'Íz'. Em 'there', ponha a ponta da língua entre os dentes e encerre curvando a língua para o 'r' ('dhêr'). Fale 'é-ni' em 'any'. Para 'sugar', faça um som de 'ch' suave no começo e termine em 'gêr': 'chú-gêr'.\nLeia: Íz dhêr é-ni chú-gêr?"
+    "pronuncia": "Em 'Is', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'ız'. Em 'there', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhêər'. Em 'any', fale 'é-ni'. Em 'sugar', faça som de chiado suave em 'chú-gər' enrolando a língua no 'r' final.\nLeia: Iz dhêər é-ni chú-gər?"
   },
   "132": {
-    "explanation": "A ordem segue exatamente a ideia do português: quem tem ('I have'), o objeto que possui ('an apple' - onde se usa 'an' porque 'apple' começa com som de vogal) e onde ele está ('in my bag').",
+    "explanation": "A frase usa 'I have' para 'eu tenho', seguido de 'an apple' (uma maçã), onde o 'an' é usado porque 'apple' começa com vogal. A localização 'na minha bolsa' é expressa por 'in my bag'.",
     "breakdown": [
       {
         "word": "I have",
-        "meaning": "Eu tenho — I: eu; have: tenho / ter."
+        "meaning": "Eu tenho — I: eu; have: ter."
       },
       {
         "word": "an apple",
@@ -238,201 +242,185 @@
       },
       {
         "word": "in my bag",
-        "meaning": "Na minha bolsa — in: em/dentro; my: minha; bag: bolsa."
+        "meaning": "Na minha bolsa — in: em/dentro de; my: minha; bag: bolsa."
       }
     ],
-    "pronuncia": "Fale 'Ái hév', encostando os dentes nos lábios no 'v'. Junte 'an apple' dizendo 'ê-nê-pôl'. Na parte final, fale 'in mái bég', parando a voz no 'g' sem falar 'bégi'.\nLeia: Ái hév ê-nê-pôl in mái bég."
+    "pronuncia": "Em 'have', 'apple' e 'bag', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'æ' (hæv, æ-pl, bæg). Em 'in', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'ın'. Trave as consoantes finais sem 'i'.\nLeia: Ái hæv æn æ-pl ın mái bæg."
   },
   "133": {
-    "explanation": "A frase começa com 'What is' (Qual é), passa para 'your' (sua) e coloca a qualidade 'favorite' (favorita) antes do objeto 'food' (comida), exatamente na ordem inversa do que fazemos no português nessa parte final.",
+    "explanation": "A pergunta começa com 'What is' (qual é), que nativos costumam emendar na fala. Em seguida temos 'your favorite food', onde a ordem coloca o adjetivo 'favorite' antes do substantivo 'food'.",
     "breakdown": [
       {
         "word": "What is",
-        "meaning": "Qual é — What: o que / qual; is: é."
+        "meaning": "Qual é — What: o que/qual; is: é."
       },
       {
         "word": "your",
-        "meaning": "Sua / Seu"
+        "meaning": "Sua / Seu."
       },
       {
         "word": "favorite",
-        "meaning": "Favorita / Preferida"
+        "meaning": "Favorita / Favorito."
       },
       {
         "word": "food",
-        "meaning": "Comida / Alimento"
+        "meaning": "Comida."
       }
     ],
-    "pronuncia": "Junte 'What is' como 'uó-tíz'. Fale 'iór' curvando a língua para trás no 'r'. Em 'favorite', diga 'féi-vri-t', pulando o som do 'o' do meio. Termine com 'fúd', segurando a ponta da língua no céu da boca no 'd'.\nLeia: Uó-tíz iór féi-vri-t fúd?"
+    "pronuncia": "Junte 'What is' fazendo o toque rápido de 'r' brando no 't' ('wó-rız'). Em 'your', enrole o 'r' em 'yór'. Em 'favorite', fale 'fêi-vrıt' mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'ı'. Em 'food', faça bico longo em 'fúud' travando no 'd'.\nLeia: Wó-rız yór fêi-vrıt fúud?"
   },
   "134": {
-    "explanation": "Estrutura idêntica ao português. O 'The' representa o nosso artigo 'A', 'soup' é a palavra para 'sopa', 'is' equivale a 'está' e 'hot' indica a temperatura 'quente'.",
+    "explanation": "Para dizer 'A sopa está quente', o inglês usa 'The soup' para o sujeito, 'is' para o verbo estar e 'hot' para o estado de temperatura. O 'ó' de 'hot' é pronunciado bem aberto e cavernoso no fundo da boca.",
     "breakdown": [
       {
-        "word": "The",
-        "meaning": "A"
-      },
-      {
-        "word": "soup",
-        "meaning": "Sopa"
+        "word": "The soup",
+        "meaning": "A sopa — The: a; soup: sopa."
       },
       {
         "word": "is",
-        "meaning": "Está / É"
+        "meaning": "Está / É."
       },
       {
         "word": "hot",
-        "meaning": "Quente"
+        "meaning": "Quente."
       }
     ],
-    "pronuncia": "Encoste a língua levemente nos dentes em 'The' para falar 'dhê'. Em 'soup', faça um 'súp' sem prolongar a última letra. Junte 'is hot' como 'íz hót', com o 'h' bem suave como um suspiro e travando o 't' no fim.\nLeia: Dhê súp íz hót."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhə'. Em 'soup', faça bico em 'súup'. Em 'is', diga 'ız' mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'hot', solte o suspiro no 'h' e corte a seco no 't' em 'hót'.\nLeia: Dhə súup ız hót."
   },
   "135": {
-    "explanation": "Esta é a maneira mais comum e natural de pedir a conta em estabelecimentos em países de língua inglesa. A palavra 'bill' é usada para se referir à conta do restaurante ou despesas.",
+    "explanation": "Esta é a forma mais direta e comum de pedir a conta em um restaurante nos países de língua inglesa. 'The bill' significa literalmente 'a conta' e é acompanhada de 'please' por educação.",
     "breakdown": [
       {
         "word": "The bill",
-        "meaning": "A conta — The: a; bill: conta / fatura."
+        "meaning": "A conta — The: a; bill: conta/fatura."
       },
       {
         "word": "please",
-        "meaning": "Por favor"
+        "meaning": "Por favor."
       }
     ],
-    "pronuncia": "Fale 'dhê' com a ponta da língua entre os dentes. Em 'bill', diga 'bíl', enrolando levemente a ponta da língua até o céu da boca para o 'l'. Conclua com 'plíz', esticando o 'i' e terminando com som de 'z'.\nLeia: Dhê bíl, plíz."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhə'. Em 'bill', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'bıl' e suba a língua no céu da boca para o 'l' sem virar 'u'. Em 'please', estique o sorriso em 'plíiz'.\nLeia: Dhə bıl, plíiz."
   },
   "136": {
-    "explanation": "A pergunta começa com 'Do you' para indicar a dúvida, traz a ação 'have' (ter) e usa a palavra 'any' antes de 'bread' para passar a ideia de 'algum pão' ou 'qualquer quantidade de pão'.",
+    "explanation": "A pergunta usa a palavra de apoio 'Do' no início. A palavra 'any' antes de 'bread' é usada em perguntas para passar a ideia de 'algum pão' ou 'qualquer quantidade de pão', algo natural no dia a dia dos nativos.",
     "breakdown": [
       {
         "word": "Do you have",
-        "meaning": "Você tem — Do: palavra de apoio; you: você; have: tem/ter."
+        "meaning": "Você tem? — Do: apoio de pergunta; you: você; have: ter."
       },
       {
-        "word": "any bread",
-        "meaning": "Pão / Algum pão — any: algum/qualquer; bread: pão."
+        "word": "any",
+        "meaning": "Algum / Qualquer / Um pouco de."
+      },
+      {
+        "word": "bread",
+        "meaning": "Pão."
       }
     ],
-    "pronuncia": "Junte o início falando 'Dú iú hév'. A palavra 'any' soa como 'é-ni'. Para 'bread', curve a língua para o 'r' caipira e trave a voz no 'd' no final ('bréd').\nLeia: Dú iú hév é-ni bréd?"
+    "pronuncia": "Diga 'dúu yúu'. Em 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para fazer 'hæv' com o 'h' aspirado do peito. Fale 'é-ni' para 'any'. Em 'bread', enrole o 'r' e corte o 'd' a seco em 'bréd' sem adicionar 'i' no final.\nLeia: Dúu yúu hæv é-ni bréd?"
   },
   "137": {
-    "explanation": "Quando contamos sobre uma ação que 'ela' (she) faz no presente, adicionamos a letra 's' ao final do verbo, transformando 'drink' em 'drinks'. A palavra 'with' faz a ligação da bebida com o acompanhamento.",
+    "explanation": "Como o sujeito é 'She' (ela), o verbo 'drink' recebe um 's' no final no presente, virando 'drinks'. A combinação 'with lemon' usa a preposição 'with' para indicar o acompanhamento do chá.",
     "breakdown": [
       {
-        "word": "She",
-        "meaning": "Ela"
-      },
-      {
-        "word": "drinks",
-        "meaning": "Toma / Bebe — forma do verbo para ela/ele no presente."
+        "word": "She drinks",
+        "meaning": "Ela toma / Ela bebe — She: ela; drinks: toma/bebe."
       },
       {
         "word": "tea",
-        "meaning": "Chá"
+        "meaning": "Chá."
       },
       {
         "word": "with lemon",
         "meaning": "Com limão — with: com; lemon: limão."
       }
     ],
-    "pronuncia": "Comece em 'She' com o som de 'Chí'. Em 'drinks', solte o som do 's' final de leve ('drínks'). Fale 'tí' para 'tea'. Em 'with', ponha a ponta da língua nos dentes ('uíz'). Finalize 'lemon' dizendo 'lé-mân'.\nLeia: Chí drínks tí uíz lé-mân."
+    "pronuncia": "Em 'She', faça som suave de 'chíi'. Em 'drinks', use o 'ı' curto mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'drınks'. Em 'tea', estique o sorriso em 'tíi'. Em 'with', coloque a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz no 'th' de 'wıth'. Em 'lemon', diga 'lé-mən' deixando a mandíbula relaxada caída e língua frouxa no 'ə'.\nLeia: Chíi drınks tíi wıth lé-mən."
   },
   "138": {
-    "explanation": "Usamos a combinação 'do not' antes da ação 'want' (querer) para formar a negação 'não quero'. Logo em seguida entra a palavra 'dessert' (sobremesa), sem precisar de artigos no meio.",
+    "explanation": "Para dizer que não quer algo, usaria-se 'I do not want'. A palavra 'dessert' significa sobremesa e tem a tônica na segunda sílaba, diferente da palavra para 'deserto' que tem a tônica na primeira.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "do not",
-        "meaning": "Não"
-      },
-      {
-        "word": "want",
-        "meaning": "Quero / Querer"
+        "word": "I do not want",
+        "meaning": "Eu não quero — I: eu; do not: não; want: querer."
       },
       {
         "word": "dessert",
-        "meaning": "Sobremesa"
+        "meaning": "Sobremesa."
       }
     ],
-    "pronuncia": "Fale 'Ái dú nót uónt'. Na palavra 'dessert', coloque a força na segunda parte e curve a língua para o 'r' ('di-ZÊRT'), travando o som da última letra 't'.\nLeia: Ái dú nót uónt di-zêrt."
+    "pronuncia": "Diga 'ái dúu nót wónt'. Na palavra 'dessert', a força está no final: mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'dı-z3rt', onde a boca fica neutra e curva a ponta da língua para trás no céu da boca sem encostar em nada para o '3r', cortando o 't' a seco.\nLeia: Ái dúu nót wónt dı-z3rt."
   },
   "139": {
-    "explanation": "Para perguntar como algo está, o inglês inverte a posição e traz o verbo 'Is' (está) para antes do sujeito 'the food' (a comida), terminando a frase com a qualidade 'good' (boa).",
+    "explanation": "Para saber se a comida está boa, o verbo 'Is' vem para a frente da frase perguntando 'está?'. O bloco 'the food' significa 'a comida' e a palavra 'good' indica a qualidade.",
     "breakdown": [
       {
-        "word": "Is",
-        "meaning": "Está / É"
+        "word": "Is the",
+        "meaning": "Está a? / É a? — Is: está/é; the: a/o."
       },
       {
-        "word": "the food",
-        "meaning": "A comida — the: a; food: comida."
+        "word": "food",
+        "meaning": "Comida."
       },
       {
         "word": "good",
-        "meaning": "Boa / Gostosa"
+        "meaning": "Boa / Gostosa."
       }
     ],
-    "pronuncia": "Comece em 'Íz'. Em 'the food', coloque a ponta da língua nos dentes para 'dhê' e diga 'fúd' travando o 'd'. Em 'good', fale um 'gúd' curto, travando a língua no céu da boca.\nLeia: Íz dhê fúd gúd?"
+    "pronuncia": "Em 'Is', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız'. Em 'the', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhə'. Em 'food', faça 'fúud' com bico longo. Em 'good', mantenha a boca relaxada para o 'u' curto e trave no 'd' em 'gud'.\nLeia: Iz dhə fúud gud?"
   },
   "140": {
-    "explanation": "Em inglês, você usa 'I like' diretamente antes da palavra no plural 'vegetables', sem precisar colocar a palavra 'de' entre o verbo e o alimento como fazemos em português.",
+    "explanation": "A expressão 'I like' significa 'eu gosto de'. Em inglês, não se coloca preposição após 'like' quando nos referimos a uma categoria geral de coisas, então 'vegetables' vem logo em seguida.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "like",
-        "meaning": "Gosto de / Gostar"
+        "word": "I like",
+        "meaning": "Eu gosto de / Eu me amarro em — I: eu; like: gostar."
       },
       {
         "word": "vegetables",
-        "meaning": "Legumes / Verduras"
+        "meaning": "Legumes / Vegetais."
       }
     ],
-    "pronuncia": "Fale 'Ái láik', travando o 'k' sem soltar um 'i'. Na palavra 'vegetables', o segredo é pronunciar com o ritmo 'VÉDJ-tê-bôlz', pulando a segunda letra 'e' e enrolando a língua no 'l' final.\nLeia: Ái láik védj-tê-bôlz."
+    "pronuncia": "Fale 'ái láik' cortando a seco no 'k'. Na palavra 'vegetables', a tônica é no início: fale 'védj-tə-blz', mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə', e subindo a ponta da língua para travar no 'l' e 'z' final sem colocar 'i'.\nLeia: Ái láik védj-tə-blz."
   },
   "141": {
-    "explanation": "A frase apresenta quem faz a ação ('They'), o verbo ('eat'), o alimento ('fish') e a refeição ('for dinner'). Os nativos usam muito a palavra 'for' antes do nome da refeição para dizer 'no jantar' ou 'para o jantar'.",
+    "explanation": "Para indicar a refeição em que algo é consumido, o inglês usa a preposição 'for'. Portanto, 'for dinner' traduz-se como 'no jantar' ou 'para o jantar'.",
     "breakdown": [
       {
-        "word": "They",
-        "meaning": "Eles / Elas"
-      },
-      {
-        "word": "eat",
-        "meaning": "Comem / Comer"
+        "word": "They eat",
+        "meaning": "Eles comem — They: eles; eat: comer."
       },
       {
         "word": "fish",
-        "meaning": "Peixe"
+        "meaning": "Peixe."
       },
       {
         "word": "for dinner",
         "meaning": "No jantar / Para o jantar — for: para/no; dinner: jantar."
       }
     ],
-    "pronuncia": "Em 'They', coloque a ponta da língua nos dentes da frente e diga 'dhêi'. Fale 'ít' em 'eat'. Em 'fish', faça um 'fích' bem suave. Para 'for dinner', fale 'fór dí-nêr', curvando a língua para trás nos dois 'r's.\nLeia: Dhêi ít fích fór dí-nêr."
+    "pronuncia": "Em 'They', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhêi'. Em 'eat', sorria no 'ii' e trave o 't'. Em 'fish', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'fıch'. Em 'dinner', diga 'dı-nər' enrolando a língua no 'r'.\nLeia: Dhêi íit fıch fór dı-nər."
   },
   "142": {
-    "explanation": "A forma mais comum e natural de pedir coisas em um restaurante em inglês é perguntar 'Can I have...?' (Literalmente: Posso eu ter...?). O 'some' entra para indicar 'um pouco de' sal.",
+    "explanation": "No inglês, pedir algo à mesa usando 'Can I have...' é uma forma extremamente natural e cortês de dizer 'pode me dar' ou 'você me vê'. O termo 'some salt' significa 'um pouco de sal'.",
     "breakdown": [
       {
         "word": "Can I have",
-        "meaning": "Pode me dar / Posso ter — forma cortês de pedir algo."
+        "meaning": "Pode me dar? / Posso pegar? — Can: poder; I: eu; have: ter/receber."
       },
       {
-        "word": "some salt",
-        "meaning": "Um pouco de sal / Sal — some: um pouco de; salt: sal."
+        "word": "some",
+        "meaning": "Um pouco de / Algum."
+      },
+      {
+        "word": "salt",
+        "meaning": "Sal."
       }
     ],
-    "pronuncia": "Junte a primeira parte como 'kê-nai hév'. Em 'some', fale 'sâm' fechando bem os lábios. Para 'salt', diga 'sólt', levantando a ponta da língua até o céu da boca no 'l' e travando no 't'.\nLeia: Kê-nai hév sâm sólt?"
+    "pronuncia": "Junte 'Can I' em 'kæ-nái' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É'. Em 'have', fale 'hæv'. Em 'some', solte 'sâm' da garganta e feche os lábios no 'm'. Em 'salt', abra a boca no 'ó' aberto em 'sólt' e suba a língua travando no 'l' e no 't' sem virar 'sóutu'.\nLeia: Kæ-nái hæv sâm sólt?"
   },
   "143": {
-    "explanation": "A palavra 'busy' é usada pelos nativos tanto para descrever pessoas 'ocupadas' quanto para dizer que um lugar ou estabelecimento está 'movimentado' ou 'cheio' de gente.",
+    "explanation": "A palavra 'busy' é muito usada em inglês para dizer que um lugar está 'movimentado' ou 'cheio de gente'. Assim, 'The restaurant is very busy' significa 'o restaurante está muito cheio'.",
     "breakdown": [
       {
         "word": "The restaurant",
@@ -440,71 +428,71 @@
       },
       {
         "word": "is",
-        "meaning": "Está"
+        "meaning": "Está / É."
       },
       {
         "word": "very busy",
-        "meaning": "Muito cheio / Muito movimentado — very: muito; busy: ocupado/cheio."
+        "meaning": "Muito cheio / Muito movimentado — very: muito; busy: ocupado/movimentado."
       }
     ],
-    "pronuncia": "Diga 'dhê' com a ponta da língua entre os dentes. Em 'restaurant', fale 'RÉS-trânt', encurtando a palavra e curvando a língua no 'r'. Conclua dizendo 'íz vé-ri BÍ-zi'.\nLeia: Dhê rés-trânt íz vé-ri bí-zi."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhə'. Em 'restaurant', fale 'rés-trənt' deixando a mandíbula relaxada caída e língua frouxa no 'ə'. Em 'is', diga 'ız'. Em 'very busy', vibre o 'v' em 'vé-ri' e faça 'bı-zi' com queixo solto no 'ı'.\nLeia: Dhə rés-trənt ız vé-ri bı-zi."
   },
   "144": {
-    "explanation": "A negação 'do not' vem logo entre o sujeito ('I') e a ação ('drink'). A palavra 'alcohol' (álcool) completa o sentido da frase sem mistério na ordem.",
+    "explanation": "Dizer 'I do not drink' é a estrutura completa para 'eu não bebo'. A palavra 'alcohol' vem em seguida e tem a tônica logo na primeira sílaba.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "do not",
-        "meaning": "Não"
+        "word": "I do not",
+        "meaning": "Eu não — I: eu; do not: negação no presente."
       },
       {
         "word": "drink",
-        "meaning": "Bebo / Beber"
+        "meaning": "Bebo / Beber."
       },
       {
         "word": "alcohol",
-        "meaning": "Álcool"
+        "meaning": "Álcool / Bebida alcoólica."
       }
     ],
-    "pronuncia": "Fale 'Ái dú nót'. Em 'drink', curve a língua para o 'r' e trave o 'k' no final ('drínk'). Para 'alcohol', fale 'ÉL-kô-hôl', subindo a ponta da língua até o céu da boca no final.\nLeia: Ái dú nót drínk él-kô-hôl."
+    "pronuncia": "Fale 'ái dúu nót'. Em 'drink', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'drınk' e trave o 'k' a seco. Em 'alcohol', diga 'æl-kə-hól' abrindo a boca no 'æ' no início e deixando a mandíbula relaxada caída no 'ə' do meio.\nLeia: Ái dúu nót drınk æl-kə-hól."
   },
   "145": {
-    "explanation": "Começamos a pergunta com 'Do you' e a ação 'want'. A palavra 'some' é adicionada antes de 'fruit' para deixar a oferta mais natural, equivalente a oferecer 'um pouco de fruta' ou 'uma fruta'.",
+    "explanation": "Ao oferecer algo a alguém, o inglês costuma colocar 'some' antes do alimento. A pergunta 'Do you want some fruit?' significa literalmente 'você quer um pouco de fruta?'.",
     "breakdown": [
       {
         "word": "Do you want",
-        "meaning": "Você quer — Do: palavra de apoio; you: você; want: quer."
+        "meaning": "Você quer? — Do: apoio de pergunta; you: você; want: querer."
       },
       {
-        "word": "some fruit",
-        "meaning": "Fruta / Um pouco de fruta — some: um pouco de; fruit: fruta."
+        "word": "some",
+        "meaning": "Um pouco de / Alguma."
+      },
+      {
+        "word": "fruit",
+        "meaning": "Fruta."
       }
     ],
-    "pronuncia": "Diga 'Dú iú uónt'. Em 'some', fale 'sâm' encostando os lábios. Na palavra 'fruit', curve a ponta da língua para o 'r' e trave o ar no 't' final ('frút'), sem falar 'frúti'.\nLeia: Dú iú uónt sâm frút?"
+    "pronuncia": "Fale 'dúu yúu wónt'. Em 'some', solte um som curto da garganta 'sâm' e feche os lábios no 'm'. Em 'fruit', enrole a língua para o 'r' e faça 'frúut' com bico de 'u' longo, travando no 't' final sem colocar nenhum 'i' de apoio.\nLeia: Dúu yúu wónt sâm frúut?"
   },
   "146": {
-    "explanation": "Quando conectamos dois verbos em inglês no presente, usamos a palavra 'to' entre eles: 'like' (gostar) + 'to' + 'cook' (cozinhar/fazer). 'Pasta' é a palavra genérica usada para massas e macarrão.",
+    "explanation": "No inglês, o verbo 'cook' significa preparar comida ou cozinhar. Para conectar a ação 'gostar' (like) com a ação 'cozinhar' (cook), usa-se a palavra 'to' entre os dois verbos.",
     "breakdown": [
       {
-        "word": "I like",
-        "meaning": "Eu gosto — I: eu; like: gosto."
+        "word": "I like to",
+        "meaning": "Eu gosto de — I: eu; like: gostar; to: elemento de ligação entre verbos."
       },
       {
-        "word": "to cook",
-        "meaning": "De cozinhar / De fazer — to: elemento de ligação; cook: cozinhar/preparar."
+        "word": "cook",
+        "meaning": "Cozinhar / Fazer comida."
       },
       {
         "word": "pasta",
-        "meaning": "Macarrão / Massa"
+        "meaning": "Macarrão / Massa."
       }
     ],
-    "pronuncia": "Diga 'Ái láik'. Para 'to cook', fale 'tú kúk', travando o som no 'k'. Em 'pasta', pronuncie 'PÁS-tâ', deixando o som final bem suave e relaxado.\nLeia: Ái láik tú kúk pás-tâ."
+    "pronuncia": "Diga 'ái láik tu'. Em 'cook', mantenha os lábios entreabertos sem fazer bico para o 'u' curto e trave o 'k' a seco em 'kuk'. Em 'pasta', abra a boca em 'pá-stə' deixando a mandíbula relaxada caída e língua frouxa no 'ə' final.\nLeia: Ái láik tu kuk pá-stə."
   },
   "147": {
-    "explanation": "A palavra 'too' colocada logo antes da característica 'sweet' (doce) serve para dar a ideia de exagero ou excesso, significando 'doce demais'.",
+    "explanation": "A palavra 'too' posicionada antes de um adjetivo como 'sweet' indica excesso, significando 'demais' ou 'excessivamente'. A frase descreve que a quantidade de açúcar no café passou do ponto ideal.",
     "breakdown": [
       {
         "word": "The coffee",
@@ -512,63 +500,67 @@
       },
       {
         "word": "is",
-        "meaning": "Está"
+        "meaning": "Está / É."
       },
       {
         "word": "too sweet",
-        "meaning": "Doce demais — too: demais/em excesso; sweet: doce."
+        "meaning": "Doce demais — too: demais/excessivamente; sweet: doce."
       }
     ],
-    "pronuncia": "Fale 'dhê' com a ponta da língua entre os dentes. Em 'coffee', diga 'KÓ-fi'. Junte o final dizendo 'íz tú suít', travando o 't' no céu da boca no final de 'sweet'.\nLeia: Dhê kó-fi íz tú suít."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhə'. Em 'coffee', fale 'kó-fi'. Em 'is', diga 'ız' com queixo solto. Em 'too sweet', faça bico em 'túu' e sorria em 'swíit' cortando o 't' a seco.\nLeia: Dhə kó-fi ız túu swíit."
   },
   "148": {
-    "explanation": "A pergunta começa com 'What' (O que), traz o auxiliar 'do' junto de 'you' para montar a estrutura de dúvida e conecta os dois verbos seguintes com 'to' ('want to eat' - quer comer).",
+    "explanation": "Para perguntar o que alguém quer comer, a estrutura começa com 'What do you' (o que você). O segundo verbo 'eat' vem conectado ao verbo 'want' através da partícula 'to'.",
     "breakdown": [
       {
-        "word": "What",
-        "meaning": "O que / Qual"
+        "word": "What do you",
+        "meaning": "O que você? — What: o que; do: apoio de pergunta; you: você."
       },
       {
-        "word": "do you",
-        "meaning": "Você — estrutura de pergunta."
+        "word": "want to",
+        "meaning": "Quer — want: querer; to: conector para o próximo verbo."
       },
       {
-        "word": "want to eat",
-        "meaning": "Quer comer — want: quer; to: de/para; eat: comer."
+        "word": "eat",
+        "meaning": "Comer."
       }
     ],
-    "pronuncia": "Fale 'Uót dú iú'. No dia a dia, a expressão 'want to eat' soa bem rápida e unida como 'uó-nâ-ít' ou 'uón-tú-ít', travando o 't' no final no céu da boca.\nLeia: Uót dú iú uón-tú-ít?"
+    "pronuncia": "Junte a fala em 'Wót dúu yúu wónt tu'. Em 'eat', abra um sorriso esticado para o som de 'ii' e trave a ponta da língua no dente para cortar o 't' a seco sem soltar 'i' no final da palavra.\nLeia: Wót dúu yúu wónt tu íit?"
   },
   "149": {
-    "explanation": "A frase usa 'We' para 'nós', 'have' para 'temos' e insere 'some' antes da palavra 'cheese' para indicar uma quantidade não especificada ('um pouco de queijo' ou 'algum queijo').",
+    "explanation": "Usamos 'We have' para 'nós temos'. A palavra 'some' é usada aqui para indicar 'um pouco de' ou 'uma quantidade indefinida de' queijo, o que soa muito mais natural do que apenas dizer o nome do alimento solto.",
     "breakdown": [
       {
         "word": "We have",
-        "meaning": "Nós temos — We: nós; have: temos/ter."
+        "meaning": "Nós temos — We: nós; have: ter."
       },
       {
-        "word": "some cheese",
-        "meaning": "Um pouco de queijo / Queijo — some: um pouco de; cheese: queijo."
+        "word": "some",
+        "meaning": "Um pouco de / Algum."
+      },
+      {
+        "word": "cheese",
+        "meaning": "Queijo."
       }
     ],
-    "pronuncia": "Diga 'Uí hév', travando o som no 'v'. Em 'some cheese', fale 'sâm chíz', esticando ligeiramente o som do 'i' e terminando com um som suave de 'z'.\nLeia: Uí hév sâm chíz."
+    "pronuncia": "Projete os lábios em bico de 'u' para 'wii'. Em 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv'. Em 'some', solte 'sâm' do peito. Em 'cheese', faça o estalo de 'tch' e sorria no 'i' longo zumbindo o 'z' em 'tchíiz'.\nLeia: Wii hæv sâm tchíiz."
   },
   "150": {
-    "explanation": "A palavra em inglês para 'café da manhã' é 'breakfast'. A preposição 'for' é usada antes do nome da refeição para passar a ideia de 'no café da manhã' ou 'para o café da manhã'.",
+    "explanation": "Em inglês, para dizer que come algo 'no café da manhã', usa-se a preposição 'for'. A palavra 'breakfast' é uma palavra composta que junta 'break' (quebrar) e 'fast' (jejum), significando a refeição que quebra o jejum da noite.",
     "breakdown": [
       {
         "word": "I eat",
-        "meaning": "Eu como — I: eu; eat: como/comer."
+        "meaning": "Eu como — I: eu; eat: comer."
       },
       {
         "word": "eggs",
-        "meaning": "Ovos"
+        "meaning": "Ovos."
       },
       {
         "word": "for breakfast",
-        "meaning": "No café da manhã / Para o café da manhã — for: para/no; breakfast: café da manhã."
+        "meaning": "No café da manhã — for: no/para o; breakfast: café da manhã."
       }
     ],
-    "pronuncia": "Diga 'Ái ít'. Em 'eggs', fale 'égs' de forma rápida. Para 'for breakfast', curve a língua em 'fór' e fale 'BRÉK-fâst', travando o som no final sem soltar vogal extra.\nLeia: Ái ít égs fór brék-fâst."
+    "pronuncia": "Diga 'ái íit'. Em 'eggs', abra a boca em 'é' e termine com som de 'z' em 'égz'. Em 'for', enrole a língua no 'r'. Em 'breakfast', fale 'brék-fəst' mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə' final.\nLeia: Ái íit égz fór brék-fəst."
   }
 }

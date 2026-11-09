@@ -1,0 +1,562 @@
+{
+  "1": {
+    "explanation": "No italiano, a palavra 'ciao' é usada informalmente tanto para dizer olá quanto tchau na chegada e na saída. Para dizer seu nome, em vez de 'meu nome é', os nativos preferem a estrutura 'eu me chamo', representada por 'mi chiamo', mantendo a frase curta e natural.",
+    "breakdown": [
+      {
+        "word": "Ciao",
+        "meaning": "Olá / Tchau — cumprimento informal."
+      },
+      {
+        "word": "mi chiamo",
+        "meaning": "me chamo — mi: me; chiamo: chamo (do verbo chiamarsi)."
+      },
+      {
+        "word": "Dìnglì",
+        "meaning": "Dìnglì — nome próprio."
+      }
+    ],
+    "pronuncia": "Comece em 'Ciao' fazendo o 'c' com estalo seco de 'tch', como em 'tchau' ('tcháo'). Em 'mi chiamo', a letra 'ch' tem som estrito de 'k' duro, sem chiar ('mi kiá-mo'). O nome próprio 'Dìnglì' mantém sua fala natural. Lembre-se de terminar as vogais com a boca aberta e sem transformar o 'o' final em som de 'u'.\nLeia: Tcháo, mi kiá-mo Dìng-lì."
+  },
+  "2": {
+    "explanation": "A pergunta 'como você está hoje?' é construída exatamente no mesmo raciocínio do português com 'Come stai oggi?'. O verbo vem ajustado para 'você' sem precisar dizer o pronome, e a palavra 'oggi' traz uma consoante dobrada no meio que exige uma pausa rápida na voz para soar natural.",
+    "breakdown": [
+      {
+        "word": "Come",
+        "meaning": "Como — forma de perguntar o estado ou maneira."
+      },
+      {
+        "word": "stai",
+        "meaning": "você está — forma do verbo stare para a segunda pessoa."
+      },
+      {
+        "word": "oggi",
+        "meaning": "hoje — termo de tempo."
+      }
+    ],
+    "pronuncia": "Pronuncie 'Come' cravando o 'e' final em 'ê' fechado, sem deixar virar 'i' ('kô-me'). Em 'stai', comece direto no sopro do 's' sem colocar um 'i' antes ('stái'). Na palavra 'oggi', segure o ar por uma fração de segundo na consoante dupla com estalo de 'dj' antes de soltar o 'i' final seco ('ôd-dji').\nLeia: Kô-me stái ôd-dji?"
+  },
+  "3": {
+    "explanation": "Em italiano, ao responder que está bem, o nativo encurta 'eu estou' para apenas 'sto'. A palavra 'grazie' funciona como nosso 'obrigado', mas sua pronúncia traz o som característico de um estalo seco com 'ts', muito comum na língua.",
+    "breakdown": [
+      {
+        "word": "Sto",
+        "meaning": "Estou — forma encurtada de eu estou (verbo stare)."
+      },
+      {
+        "word": "bene",
+        "meaning": "bem — estado de bem-estar."
+      },
+      {
+        "word": "grazie",
+        "meaning": "obrigado / graças — expressão de agradecimento."
+      }
+    ],
+    "pronuncia": "Em 'Sto', fale o 'o' cravado e fechado ('stô'). Na palavra 'bene', abra a boca no primeiro 'e' e termine no 'ê' fechado ('bé-ne'), mantendo a voz 100% oral sem anasalar a vogal antes do 'n'. Em 'grazie', faça o 'z' com estalo seco de 'ts' de prato de bateria ('grát-tsie'), nunca com som de zumbido de abelha.\nLeia: Stô bé-ne, grát-tsie."
+  },
+  "4": {
+    "explanation": "A expressão 'piacere di conoscerti' equivale diretamente ao nosso 'prazer em te conhecer'. A palavra 'piacere' traz a ideia de prazer, ligada pela preposição 'di' ao ato de conhecer, que no final já carrega a palavra 'ti' encostada no verbo para indicar a pessoa com quem se fala.",
+    "breakdown": [
+      {
+        "word": "Piacere",
+        "meaning": "Prazer — sensação agradável / cumprimento de cortesia."
+      },
+      {
+        "word": "di",
+        "meaning": "de / em — elemento de ligação."
+      },
+      {
+        "word": "conoscerti",
+        "meaning": "te conhecer — conoscere: conhecer; ti: te / você."
+      }
+    ],
+    "pronuncia": "Fale 'Piacere' fazendo o 'c' com estalo seco de 'tch' e terminando no 'ê' fechado ('pia-tchê-re'). Em 'di', encoste a ponta da língua nos dentes da frente sem chiar como 'dji' ('di'). Em 'conoscerti', o 'sc' antes de 'e' chia suave como 'ch', o 'r' vibra no céu da boca e o 'ti' final é seco com a língua no dente ('kô-nô-chêr-ti').\nLeia: Pia-tchê-re di kô-nô-chêr-ti."
+  },
+  "5": {
+    "explanation": "Para dar 'bom dia a todos', os italianos juntam 'buono' (bom) e 'giorno' (dia) em uma palavra só: 'buongiorno'. A ligação com 'a tutti' faz com que a consoante da palavra seguinte ganhe um impulso extra de força na fala cotidiana.",
+    "breakdown": [
+      {
+        "word": "Buongiorno",
+        "meaning": "Bom dia — buon: bom; giorno: dia."
+      },
+      {
+        "word": "a",
+        "meaning": "a / para — preposição de direção."
+      },
+      {
+        "word": "tutti",
+        "meaning": "todos — referência ao grupo completo."
+      }
+    ],
+    "pronuncia": "Em 'Buongiorno', pronuncie o 'gior' com estalo de 'dj' e mantenha a vogal limpa pela boca sem puxar para o nariz ('buôn-djór-no'). Ao ligar 'a' com 'tutti', cole os sons e dobre a pressão no 't' duplo ('at-tút-ti'), terminando com o 'ti' seco sem chiar como 'tchi'.\nLeia: Buôn-djór-no at-tút-ti."
+  },
+  "6": {
+    "explanation": "A pergunta 'de onde você é?' em italiano é montada como 'Di dove sei?'. A palavra 'di' indica a origem (de), 'dove' significa onde, e 'sei' é a forma do verbo que já indica 'você é', eliminando a necessidade de usar o pronome na frase.",
+    "breakdown": [
+      {
+        "word": "Di",
+        "meaning": "De — indica origem."
+      },
+      {
+        "word": "dove",
+        "meaning": "onde — indica lugar."
+      },
+      {
+        "word": "sei",
+        "meaning": "você é / tu és — forma do verbo essere."
+      }
+    ],
+    "pronuncia": "Em 'Di', toque a ponta da língua reta atrás dos dentes da frente sem soltar ar chiado ('di'). Fale 'dove' terminando cravado em 'ê' fechado ('dô-ve'). Conclua com 'sei' pronunciando a combinação de vogais de forma limpa e estável ('sêi').\nLeia: Di dô-ve sêi?"
+  },
+  "7": {
+    "explanation": "Para dizer 'eu sou da Espanha', o italiano costuma usar o verbo 'vengo' (venho) combinado com 'dalla Spagna' (da Espanha). A palavra 'dalla' é a união de 'de' com 'a', e o nome do país exige uma atenção especial para não colocar uma vogal antes do 's'.",
+    "breakdown": [
+      {
+        "word": "Vengo",
+        "meaning": "Venho / Eu venho — forma do verbo venire."
+      },
+      {
+        "word": "dalla",
+        "meaning": "da — junção da preposição da (de) com o artigo la (a)."
+      },
+      {
+        "word": "Spagna",
+        "meaning": "Espanha — nome do país."
+      }
+    ],
+    "pronuncia": "Em 'Vengo', a vogal 'e' sai totalmente oral pela boca antes da língua subir para o 'n' ('vên-gô'). Fale 'dalla' segurando a musculatura no 'll' dobrado ('dál-la'). Em 'Spagna', inicie o som direto no sopro do 's' sem inventar um 'i' antes, e faça o 'gn' com o som de 'nh' bem firme ('spá-nha').\nLeia: Vên-gô dál-la spá-nha."
+  },
+  "8": {
+    "explanation": "A pergunta 'você é estudante?' é dita simplesmente como 'Sei uno studente?'. Como o verbo 'sei' já mostra quem pratica a ação, o italiano dispensa o pronome 'você' e usa a palavra 'uno' como um artigo que se encaixa perfeitamente antes de palavras que começam com 's'.",
+    "breakdown": [
+      {
+        "word": "Sei",
+        "meaning": "Você é / Tu és — forma do verbo essere."
+      },
+      {
+        "word": "uno",
+        "meaning": "um — artigo usado antes de certas consoantes."
+      },
+      {
+        "word": "studente",
+        "meaning": "estudante — pessoa que estuda."
+      }
+    ],
+    "pronuncia": "Fale 'Sei' de forma limpa ('sêi') e 'uno' terminando em 'ô' fechado ('ú-nô'). Na palavra 'studente', não coloque a vogal 'i' no começo: inicie direto no sopro fino do 's', mantenha a voz oral sem anasalar no 'en' e termine com a ponta da língua no dente no 'te' seco ('stu-dên-te').\nLeia: Sêi ú-nô stu-dên-te?"
+  },
+  "9": {
+    "explanation": "Para negar que alguém é seu irmão, o italiano coloca o 'non' (não) bem no início da frase, seguido pelo verbo 'è' (é) e por 'mio fratello' (meu irmão). A palavra 'fratello' traz uma consoante dobrada no final que dá o ritmo típico da língua.",
+    "breakdown": [
+      {
+        "word": "Non",
+        "meaning": "Não — partícula de negação."
+      },
+      {
+        "word": "è",
+        "meaning": "é — forma do verbo essere."
+      },
+      {
+        "word": "mio",
+        "meaning": "meu — possessivo masculino."
+      },
+      {
+        "word": "fratello",
+        "meaning": "irmão — membro da família."
+      }
+    ],
+    "pronuncia": "Em 'Non', feche a saída de ar encostando a língua no céu da boca sem mandar som pelo nariz ('nôn'). O 'è' deve ser pronunciado bem aberto com a mandíbula para baixo ('è'). Em 'mio', fale 'mí-ô'. Na palavra 'fratello', segure a retenção do 'll' dobrado antes de soltar o 'o' fechado ('fra-tél-lô').\nLeia: Nôn è mí-ô fra-tél-lô."
+  },
+  "10": {
+    "explanation": "Em 'Ela é minha melhor amiga', o italiano mantém uma ordem idêntica ao português: 'È la mia migliore amica'. A diferença é que a palavra 'melhor' vira 'migliore', que usa uma combinação de letras típica para fazer o som equivalente ao nosso 'lh'.",
+    "breakdown": [
+      {
+        "word": "È",
+        "meaning": "É — forma do verbo essere."
+      },
+      {
+        "word": "la mia",
+        "meaning": "a minha — la: a; mia: minha."
+      },
+      {
+        "word": "migliore",
+        "meaning": "melhor — grau de comparação."
+      },
+      {
+        "word": "amica",
+        "meaning": "amiga — pessoa com vínculo de amizade."
+      }
+    ],
+    "pronuncia": "Abra bem a boca no 'È' ('è') e fale 'la mia' soltando as vogais de forma limpa ('la mí-a'). Em 'migliore', espalme o meio da língua no céu da boca para fazer o som do 'gli' como 'lh' ('mi-lhó-re'). Termine em 'amica' com a letra 'a' final bem aberta e limpa ('a-mí-ka').\nLeia: È la mí-a mi-lhó-re a-mí-ka."
+  },
+  "11": {
+    "explanation": "A pergunta 'qual é o seu nome?' é pensada pelos italianos como 'como você se chama?', que em italiano vira 'Come ti chiami?'. O termo 'chiami' usa duas letras no meio que travam o som para soar bem duro e seco.",
+    "breakdown": [
+      {
+        "word": "Come",
+        "meaning": "Como — forma de interrogação."
+      },
+      {
+        "word": "ti",
+        "meaning": "te / você — pronome de ligação."
+      },
+      {
+        "word": "chiami",
+        "meaning": "se chama / você chama — forma de chiamarsi."
+      }
+    ],
+    "pronuncia": "Fale 'Come' com o 'e' final cravado em 'ê' fechado ('kô-me'). Em 'ti', toque a ponta da língua reta atrás dos dentes sem chiar ('ti'). Na palavra 'chiami', a combinação 'ch' soa estritamente com o som duro de 'k' ('kiá-mi'), sem jamais chiar como no português.\nLeia: Kô-me ti kiá-mi?"
+  },
+  "12": {
+    "explanation": "Para dizer 'eu falo um pouco de inglês', a frase fica 'Parlo un po' di inglese'. A expressão 'un po'' é uma forma encurtada do dia a dia para 'um pouco', e a palavra 'inglese' termina com um som suave no meio que se parece com o nosso 'z'.",
+    "breakdown": [
+      {
+        "word": "Parlo",
+        "meaning": "Falo / Eu falo — forma do verbo parlare."
+      },
+      {
+        "word": "un po'",
+        "meaning": "um pouco — un: um; po': encurtamento de poco (pouco)."
+      },
+      {
+        "word": "di",
+        "meaning": "de — preposição."
+      },
+      {
+        "word": "inglese",
+        "meaning": "inglês — idioma ou nacionalidade."
+      }
+    ],
+    "pronuncia": "Em 'Parlo', vibre a ponta da língua no 'r' e encoste no dente para o 'l' ('pár-lô'). Na expressão 'un po'', o 'n' faz o selamento na língua e a vogal 'o' sai aberta ('un pó'). Em 'di', mantenha o 'd' seco. Conclua em 'inglese' com voz oral sem anasalar o 'in' e faça o 's' entre vogais com zumbido de 'z' ('in-glê-ze').\nLeia: Pár-lô un pó di in-glê-ze."
+  },
+  "13": {
+    "explanation": "Para perguntar 'você fala inglês?', os italianos usam 'Parli inglese?'. A troca da vogal final do verbo de 'o' para 'i' já mostra que a pergunta é para a pessoa com quem você está falando, dispensando o uso do pronome 'você'.",
+    "breakdown": [
+      {
+        "word": "Parli",
+        "meaning": "Você fala / Tu falas — forma do verbo parlare."
+      },
+      {
+        "word": "inglese",
+        "meaning": "inglês — o idioma."
+      }
+    ],
+    "pronuncia": "Em 'Parli', vibre a ponta da língua no 'r' e suba a ponta da língua até o céu da boca para formar o 'l' ('pár-li'). Na palavra 'inglese', solte a voz limpa e oral sem mandar ar pelo nariz, e pronuncie o 's' entre vogais como 'z' ('in-glê-ze').\nLeia: Pár-li in-glê-ze?"
+  },
+  "14": {
+    "explanation": "A frase 'eu não entendo' vira 'Non capisco' em italiano. A negação 'non' vem primeiro e o verbo 'capisco' já carrega em si a ideia de que é 'eu' quem não está entendendo, mantendo a fala direta e expressiva.",
+    "breakdown": [
+      {
+        "word": "Non",
+        "meaning": "Não — partícula de negação."
+      },
+      {
+        "word": "capisco",
+        "meaning": "entendo / eu entendo — forma do verbo capire."
+      }
+    ],
+    "pronuncia": "Fale 'Non' mantendo a voz 100% oral e encostando a ponta da língua atrás dos dentes para fechar o 'n' sem anasalar ('nôn'). Em 'capisco', o 'c' inicial é seco e o conjunto 'sc' antes da vogal 'o' soa duro como 'sk' ('ka-pís-ko').\nLeia: Nôn ka-pís-ko."
+  },
+  "15": {
+    "explanation": "A expressão 'por favor, fale devagar' é traduzida como 'Per favore, parla lentamente'. A expressão de cortesia 'per favore' equivale ao nosso por favor, e o verbo 'parla' instrui a outra pessoa a falar com mais calma.",
+    "breakdown": [
+      {
+        "word": "Per favore",
+        "meaning": "Por favor — per: por; favore: favor."
+      },
+      {
+        "word": "parla",
+        "meaning": "fale / fala — forma do verbo parlare."
+      },
+      {
+        "word": "lentamente",
+        "meaning": "devagar / lentamente — modo de execução."
+      }
+    ],
+    "pronuncia": "Em 'Per favore', vibre a língua no 'r' e mantenha a força na penúltima sílaba ('pêr fa-vó-re'). Em 'parla', marque o 'r' e o 'l' sem criar vogais no meio ('pár-la'). Na palavra 'lentamente', pronuncie as vogais de forma limpa pela boca e termine com o 'te' seco com a língua no dente ('lên-ta-mên-te').\nLeia: Pêr fa-vó-re, pár-la lên-ta-mên-te."
+  },
+  "16": {
+    "explanation": "Para perguntar 'como se soletra isso?' ou 'como se escreve isso?', o italiano usa 'Come si scrive?'. O raciocínio é idêntico ao português, usando 'come' (como), 'si' (se) e 'scrive' (escreve).",
+    "breakdown": [
+      {
+        "word": "Come",
+        "meaning": "Como — forma de perguntar o modo."
+      },
+      {
+        "word": "si",
+        "meaning": "se — partícula reflexiva/imessoal."
+      },
+      {
+        "word": "scrive",
+        "meaning": "escreve — forma do verbo scrivere."
+      }
+    ],
+    "pronuncia": "Fale 'Come' terminando cravado no 'ê' fechado ('kô-me'). Em 'si', solte o sopro fino do 's' sem chiar ('si'). Na palavra 'scrive', não adicione nenhuma vogal antes: inicie direto no som duro do 'sc' que soa como 'sk' e termine no 'ê' fechado ('skrí-ve').\nLeia: Kô-me si skrí-ve?"
+  },
+  "17": {
+    "explanation": "A despedida 'tchau, até mais tarde' vira 'Arrivederci, a dopo' em italiano. A palavra 'arrivederci' é uma forma mais formal ou cortês de dizer até logo, enquanto 'a dopo' se refere especificamente a se ver mais tarde.",
+    "breakdown": [
+      {
+        "word": "Arrivederci",
+        "meaning": "Até logo / Tchau — forma de despedida."
+      },
+      {
+        "word": "a",
+        "meaning": "até / a — preposição de tempo."
+      },
+      {
+        "word": "dopo",
+        "meaning": "depois / mais tarde — indicação de tempo."
+      }
+    ],
+    "pronuncia": "Em 'Arrivederci', segure o tremor do 'rr' duplo na ponta da língua, mantenha o 'd' seco e faça a última sílaba com estalo de 'tchi' ('ar-ri-ve-dêr-tchi'). Em 'a dopo', fale de forma fluida terminando em 'ô' fechado ('a dô-pô').\nLeia: Ar-ri-ve-dêr-tchi, a dô-pô."
+  },
+  "18": {
+    "explanation": "Para desejar 'tenha um bom dia', os italianos dizem 'Buona giornata'. Diferente de 'buongiorno', que é o cumprimento usado ao chegar, 'buona giornata' é a expressão usada especificamente na despedida para desejar que o resto do dia seja bom.",
+    "breakdown": [
+      {
+        "word": "Buona",
+        "meaning": "Boa — forma feminina de buono."
+      },
+      {
+        "word": "giornata",
+        "meaning": "dia / jornada — o período do dia ao longo do tempo."
+      }
+    ],
+    "pronuncia": "Fale 'Buona' pronunciando o 'u' bem articulado antes do 'o' ('buô-na'). Em 'giornata', faça a primeira sílaba com estalo de 'dj', vibre a ponta da língua no 'r' e termine com a letra 'a' final bem aberta e límpida ('djôr-ná-ta').\nLeia: Buô-na djôr-ná-ta."
+  },
+  "19": {
+    "explanation": "A frase 'este é o meu professor' é dita como 'Questo è il mio insegnante'. O termo 'questo' (este) indica algo próximo, 'il mio' significa 'o meu' e 'insegnante' é a palavra usada para professor ou instrutor.",
+    "breakdown": [
+      {
+        "word": "Questo",
+        "meaning": "Este / Isto — pronome demonstrativo."
+      },
+      {
+        "word": "è",
+        "meaning": "é — forma do verbo essere."
+      },
+      {
+        "word": "il mio",
+        "meaning": "o meu — il: o; mio: meu."
+      },
+      {
+        "word": "insegnante",
+        "meaning": "professor / ensinante — aquele que ensina."
+      }
+    ],
+    "pronuncia": "Em 'Questo', pronuncie o 'ku' de forma clara e audível ('kuês-to'). O 'è' deve soar bem aberto ('è'). Fale 'il mio' com o 'l' tocando no céu da boca ('il mí-ô'). Em 'insegnante', faça o 'gn' com som de 'nh' bem sustentado e termine no 'te' seco com a língua no dente ('in-se-nhán-te').\nLeia: Kuês-to è il mí-ô in-se-nhán-te."
+  },
+  "20": {
+    "explanation": "Para dizer 'eles não são de Londres', a estrutura em italiano é 'Loro non sono di Londra'. A palavra 'loro' representa eles, 'non' faz a negação antes do verbo 'sono' (são), e 'di' indica a origem geográfica.",
+    "breakdown": [
+      {
+        "word": "Loro",
+        "meaning": "Eles / Elas — pronome pessoal."
+      },
+      {
+        "word": "non",
+        "meaning": "não — negação."
+      },
+      {
+        "word": "sono",
+        "meaning": "são / estão — forma do verbo essere para loro."
+      },
+      {
+        "word": "di",
+        "meaning": "de — indicação de origem."
+      },
+      {
+        "word": "Londra",
+        "meaning": "Londres — nome da cidade."
+      }
+    ],
+    "pronuncia": "Em 'Loro', vibre suavemente a ponta da língua no 'r' ('lô-rô'). Na expressão 'non sono', mantenha a voz 100% oral e sele o 'n' com a língua no céu da boca sem nasalizar ('nôn sô-nô'). Fale 'di' seco e conclua 'Londra' mantendo a clareza do 'n' e o 'a' final bem aberto ('lôn-dra').\nLeia: Lô-rô nôn sô-nô di Lôn-dra."
+  },
+  "21": {
+    "explanation": "A pergunta 'ele é seu amigo?' vira 'È il tuo amico?' em italiano. Note que antes da palavra 'seu' (tuo), o italiano costuma colocar o artigo 'o' (il), algo muito comum na construção de frases de posse.",
+    "breakdown": [
+      {
+        "word": "È",
+        "meaning": "É — forma do verbo essere."
+      },
+      {
+        "word": "il tuo",
+        "meaning": "o teu / o seu — il: o; tuo: teu/seu."
+      },
+      {
+        "word": "amico",
+        "meaning": "amigo — pessoa com quem se tem amizade."
+      }
+    ],
+    "pronuncia": "Abra bem a boca para dizer 'È' ('è'). Fale 'il tuo' encostando a ponta da língua no céu da boca para o 'l' e fazendo o 't' seco no dente ('il tú-ô'). Em 'amico', termine a palavra cravando o som final em 'ô' fechado ('a-mí-ko'), sem deixar virar 'u'.\nLeia: È il tú-ô a-mí-ko?"
+  },
+  "22": {
+    "explanation": "Para dar boas-vindas dizendo 'bem-vindo à nossa casa', a frase italiana é 'Benvenuti a casa nostra'. A palavra 'benvenuti' se ajusta ao plural, e o elemento 'a' conecta diretamente à casa, fazendo a fala soar encadeada e fluida.",
+    "breakdown": [
+      {
+        "word": "Benvenuti",
+        "meaning": "Bem-vindos — saudação de acolhimento."
+      },
+      {
+        "word": "a",
+        "meaning": "a / para — preposição de lugar."
+      },
+      {
+        "word": "casa nostra",
+        "meaning": "nossa casa — casa: casa; nostra: nossa."
+      }
+    ],
+    "pronuncia": "Em 'Benvenuti', mantenha a voz oral no 'ben' e termine com 'ti' seco no dente ('ben-ve-nú-ti'). Ao ligar 'a' com 'casa', empurre mais força na consoante da palavra 'casa' ('ak-ká-za'), lembrando que o 's' entre vogais ganha som de 'z'. Termine em 'nostra' com a voz bem estável ('nôs-tra').\nLeia: Ben-ve-nú-ti ak-ká-za nôs-tra."
+  },
+  "23": {
+    "explanation": "Ao pedir licença para perguntar as horas, diz-se 'Scusi, che ore sono?'. A palavra 'scusi' é a forma cortês de pedir licença, 'che' significa que/quais, e 'ore sono' significa 'horas são'.",
+    "breakdown": [
+      {
+        "word": "Scusi",
+        "meaning": "Com licença / Desculpe — pedido de atenção respeitoso."
+      },
+      {
+        "word": "che",
+        "meaning": "que / quais — termo interrogativo."
+      },
+      {
+        "word": "ore",
+        "meaning": "horas — tempo no relógio."
+      },
+      {
+        "word": "sono",
+        "meaning": "são — forma do verbo essere."
+      }
+    ],
+    "pronuncia": "Em 'Scusi', pronuncie o 'sc' antes de 'u' com som duro de 'sk' e o 's' do meio com som de 'z' ('skú-zi'). Em 'che', a combinação 'ch' tem som estrito de 'k' duro ('kê'). Vibre o 'r' em 'ore' ('ô-re') e termine em 'sono' cravando o 'ô' fechado ('sô-nô').\nLeia: Skú-zi, kê ô-re sô-nô?"
+  },
+  "24": {
+    "explanation": "A expressão 'sinto muito pelo atraso' é construída em italiano como 'Mi dispiace, sono in ritardo'. O trecho 'mi dispiace' indica o lamento ou pedido de desculpas, enquanto 'sono in ritardo' significa literalmente 'estou em atraso'.",
+    "breakdown": [
+      {
+        "word": "Mi dispiace",
+        "meaning": "Sinto muito / Me desculpe — mi: me; dispiace: desagrada / causa pena."
+      },
+      {
+        "word": "sono",
+        "meaning": "estou — forma do verbo essere."
+      },
+      {
+        "word": "in ritardo",
+        "meaning": "atrasado / em atraso — in: em; ritardo: atraso."
+      }
+    ],
+    "pronuncia": "Em 'Mi dispiace', mantenha o 'd' seco e pronuncie o 'c' com estalo de 'tch' antes do 'e' fechado ('mi dis-piá-tchê'). Fale 'sono' com vogais fechadas ('sô-nô'). Em 'in ritardo', faça a voz oral no 'in' e vibre a ponta da língua no 'r' inicial de 'ritardo' ('in rri-tár-dô').\nLeia: Mi dis-piá-tchê, sô-nô in rri-tár-dô."
+  },
+  "25": {
+    "explanation": "A pergunta 'você pode me ajudar, por favor?' vira 'Puoi aiutarmi, per favore?'. O verbo 'puoi' significa 'você pode', e a palavra 'aiutarmi' junta o verbo ajudar (aiutare) com a palavra 'me' (mi) fixada logo no final.",
+    "breakdown": [
+      {
+        "word": "Puoi",
+        "meaning": "Você pode / Tu podes — forma do verbo potere."
+      },
+      {
+        "word": "aiutarmi",
+        "meaning": "me ajudar — aiutare: ajudar; mi: me."
+      },
+      {
+        "word": "per favore",
+        "meaning": "por favor — expressão de cortesia."
+      }
+    ],
+    "pronuncia": "Fale 'Puoi' soltando o som das vogais de forma contínua ('puói'). Em 'aiutarmi', faça o 't' seco no dente, vibre a ponta da língua no 'r' e termine em 'mi' ('a-iu-tár-mi'). Conclua 'per favore' mantendo a força da voz na penúltima sílaba ('pêr fa-vó-re').\nLeia: Puói a-iu-tár-mi, pêr fa-vó-re?"
+  },
+  "26": {
+    "explanation": "A frase 'é um prazer te conhecer' é montada como 'È un piacere conoscerti'. A palavra 'piacere' traz a ideia de prazer, e 'conoscerti' combina o ato de conhecer com a palavra 'ti' (te/você) colada ao final do verbo.",
+    "breakdown": [
+      {
+        "word": "È",
+        "meaning": "É — forma do verbo essere."
+      },
+      {
+        "word": "un",
+        "meaning": "um — artigo indefinido."
+      },
+      {
+        "word": "piacere",
+        "meaning": "prazer — sensação agradável."
+      },
+      {
+        "word": "conoscerti",
+        "meaning": "te conhecer — conoscere: conhecer; ti: te."
+      }
+    ],
+    "pronuncia": "Pronuncie 'È' com som bem aberto e 'un' com a voz 100% oral ('è un'). Em 'piacere', faça o 'c' com estalo de 'tch' ('pia-tchê-re'). Na palavra 'conoscerti', o 'sc' antes de 'e' chia suavemente como 'ch', o 'r' vibra na ponta da língua e o 'ti' final é seco ('kô-nô-chêr-ti').\nLeia: È un pia-tchê-re kô-nô-chêr-ti."
+  },
+  "27": {
+    "explanation": "Para perguntar 'quem é aquele homem?', o italiano junta 'Chi' (quem), 'è' (é) e 'quell'uomo' (aquele homem). A palavra 'quello' perde a vogal final para se conectar perfeitamente à palavra 'uomo', criando uma fala rápida e natural.",
+    "breakdown": [
+      {
+        "word": "Chi",
+        "meaning": "Quem — pronome interrogativo."
+      },
+      {
+        "word": "è",
+        "meaning": "é — forma do verbo essere."
+      },
+      {
+        "word": "quell'uomo",
+        "meaning": "aquele homem — junção de quello (aquele) com uomo (homem)."
+      }
+    ],
+    "pronuncia": "Em 'Chi', a combinação 'ch' tem som estrito de 'k' duro ('ki'). Abra a boca para o 'è' ('è'). Na expressão 'quell'uomo', articule bem o 'ku', segure a pausa muscular da consoante dupla 'll' e termine cravado no 'ô' fechado ('kuêl-luô-mô').\nLeia: Ki è kuêl-luô-mô?"
+  },
+  "28": {
+    "explanation": "A frase 'estamos muito felizes hoje' se traduz como 'Siamo molto felici oggi'. O verbo 'siamo' já indica 'nós estamos', 'molto' significa muito, e 'felici' ajusta a palavra feliz para o plural no italiano.",
+    "breakdown": [
+      {
+        "word": "Siamo",
+        "meaning": "Estamos / Somos — forma do verbo essere para nós."
+      },
+      {
+        "word": "molto",
+        "meaning": "muito — intensidade."
+      },
+      {
+        "word": "felici",
+        "meaning": "felizes — plural de felice."
+      },
+      {
+        "word": "oggi",
+        "meaning": "hoje — indicação de tempo."
+      }
+    ],
+    "pronuncia": "Fale 'Siamo' terminando no 'ô' fechado ('siá-mo'). Em 'molto', suba a ponta da língua para formar o 'l' e faça o 't' seco ('môl-to'). Em 'felici', o 'c' antes de 'i' traz o estalo de 'tchi' ('fe-lí-tchi'). Em 'oggi', segure o tempo da consoante dobrada com som de 'dj' ('ôd-dji').\nLeia: Siá-mo môl-to fe-lí-tchi ôd-dji."
+  },
+  "29": {
+    "explanation": "Para perguntar 'eles são seus pais?', os italianos dizem 'Sono i tuoi genitori?'. O verbo 'sono' serve para 'eles são', 'i tuoi' quer dizer 'os seus', e a palavra 'genitori' é a forma usada para se referir aos pais.",
+    "breakdown": [
+      {
+        "word": "Sono",
+        "meaning": "São / Eles são — forma do verbo essere."
+      },
+      {
+        "word": "i tuoi",
+        "meaning": "os teus / os seus — i: os; tuoi: teus/seus."
+      },
+      {
+        "word": "genitori",
+        "meaning": "pais / genitores — pai e mãe."
+      }
+    ],
+    "pronuncia": "Fale 'Sono' com vogais fechadas e cravadas ('sô-nô'). Ligue de forma fluida em 'i tuoi' ('i tuói'). Na palavra 'genitori', inicie a primeira sílaba com estalo de 'dj', mantenha o 't' seco sem chiar no 'ti' e vibre a ponta da língua no 'ri' final ('dje-ni-tó-ri').\nLeia: Sô-nô i tuói dje-ni-tó-ri?"
+  },
+  "30": {
+    "explanation": "A expressão 'muito obrigado' é dita em italiano como 'Grazie mille'. Literalmente significa 'mil graças', combinando a palavra de agradecimento 'grazie' com 'mille' (mil), sendo a forma mais comum de demonstrar grande gratidão.",
+    "breakdown": [
+      {
+        "word": "Grazie",
+        "meaning": "Obrigado / Graças — agradecimento."
+      },
+      {
+        "word": "mille",
+        "meaning": "mil / muito — quantidade usada para reforçar a gratidão."
+      }
+    ],
+    "pronuncia": "Em 'Grazie', pronuncie a letra 'z' com o estalo seco característico de 'ts' ('grát-tsie'), sem fazer som de abelha. Na palavra 'mille', segure a musculatura da boca na consoante dupla 'll' por um momento antes de liberar o 'ê' fechado final ('míl-le').\nLeia: Grát-tsie míl-le."
+  }
+}

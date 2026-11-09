@@ -1,662 +1,518 @@
 {
   "61": {
-    "explanation": "Em inglês, para dizer que se levanta da cama, usamos a combinação 'get up'. O 'at' serve para apontar o horário exato, e a expressão 'o'clock' é usada apenas para horas cheias, sem minutos, funcionando como o nosso 'em ponto'.",
+    "explanation": "Para dizer 'eu me levanto às sete horas', em inglês dizemos 'I get up at seven o'clock'. A junção 'get up' significa literalmente levantar da cama, e a palavra 'at' marca o horário exato, enquanto 'o'clock' é usado para indicar horas cheias.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
+        "word": "I get up",
+        "meaning": "Eu me levanto — I: eu; get up: levantar-se / sair da cama."
       },
       {
-        "word": "get up",
-        "meaning": "levantar-se / sair da cama"
-      },
-      {
-        "word": "at",
-        "meaning": "às (usado para horas)"
-      },
-      {
-        "word": "seven",
-        "meaning": "sete"
+        "word": "at seven",
+        "meaning": "Às sete — at: em / às (usado para horas); seven: sete."
       },
       {
         "word": "o'clock",
-        "meaning": "em ponto / horas exatas"
+        "meaning": "Em ponto / horas — indicação para hora exata na parte inteira."
       }
     ],
-    "pronuncia": "Comece com 'Ai'. No 'get up', grude o final do 't' no 'u', falando 'gué-tap'. O 'at' é um 'ét' bem curto. Em 'seven', diga 'sé-vên'. Termine com 'o'clock' falando 'ô-clók', travando o som no 'k' final.\nLeia: Ai gué-tap ét sé-vên ô-clók."
+    "pronuncia": "Comece com 'I', puxando um som limpo em 'ái'. Em 'get up', emende a consoante 't' no 'u' fazendo um toque rápido da língua no céu da boca em 'gé-tâp', usando no 'u' um som curto vindo do fundo da garganta. Para 'at', é obrigatório abrir a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para fazer o 'æt', travando a consoante final sem soltar som de 'i'. Em 'seven', use o som neutro deixando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'vən', travando a ponta da língua nos dentes superiores no 'n'. Finalize em 'o'clock' com um 'ó' bem aberto e travando o 'k' a seco no fim.\nLeia: Ái gé-tâp æt sé-vən ə-klók."
   },
   "62": {
-    "explanation": "Para fazer perguntas sobre hábitos, o inglês coloca a palavra 'Do' no início da frase para avisar que é uma dúvida. A expressão 'in the morning' é o jeito padrão de dizer 'de manhã' ou 'pela manhã'.",
-    "breakdown": [
-      {
-        "word": "Do",
-        "meaning": "Marcador de pergunta (não tem tradução aqui)"
-      },
-      {
-        "word": "you",
-        "meaning": "você"
-      },
-      {
-        "word": "drink",
-        "meaning": "bebe"
-      },
-      {
-        "word": "coffee",
-        "meaning": "café"
-      },
-      {
-        "word": "in the morning",
-        "meaning": "de manhã / pela manhã"
-      }
-    ],
-    "pronuncia": "Diga 'Du iú'. No 'drink', curve a língua para trás para fazer o 'r' ('drink'). Em 'coffee', fale 'có-fi'. Para 'in the', coloque a ponta da língua nos dentes da frente para o 'the' ('in dhê'). Termine com 'morning' curvando a língua no 'r' e parando antes do 'g' ('mór-nin').\nLeia: Du iú drink có-fi in dhê mór-nin?"
-  },
-  "63": {
-    "explanation": "Quando negamos algo sobre 'ele' ou 'ela', usamos 'does not' em vez de apenas 'not'. A expressão 'eat breakfast' é a forma natural de dizer 'tomar café da manhã', literalmente 'comer o desjejum'.",
-    "breakdown": [
-      {
-        "word": "He",
-        "meaning": "Ele"
-      },
-      {
-        "word": "does not",
-        "meaning": "não (usado para ele/ela)"
-      },
-      {
-        "word": "eat",
-        "meaning": "come / toma"
-      },
-      {
-        "word": "breakfast",
-        "meaning": "café da manhã"
-      }
-    ],
-    "pronuncia": "O 'He' tem som de 'rrí'. Em 'does not', fale 'dâz nót'. O 'eat' é um 'it' esticado. Em 'breakfast', diga 'brék-fást', sem soltar vogal depois do 't' final.\nLeia: Rrí dâz nót it brék-fást."
-  },
-  "64": {
-    "explanation": "Para falar de 'ela', o verbo 'go' (ir) ganha um som extra e vira 'goes'. Quando usamos meios de transporte como ônibus ou trem, o inglês usa a palavra 'by' antes do veículo.",
-    "breakdown": [
-      {
-        "word": "She",
-        "meaning": "Ela"
-      },
-      {
-        "word": "goes",
-        "meaning": "vai"
-      },
-      {
-        "word": "to work",
-        "meaning": "para o trabalho"
-      },
-      {
-        "word": "by bus",
-        "meaning": "de ônibus"
-      }
-    ],
-    "pronuncia": "Comece com 'Chí'. O 'goes' tem som de 'gôuz'. Em 'to work', curve a língua no 'r' ('tu uôrk'). Termine com 'by bus' falando 'bai bâs'.\nLeia: Chí gôuz tu uôrk bai bâs."
-  },
-  "65": {
-    "explanation": "Nesta pergunta, o primeiro 'do' serve apenas para indicar que é uma pergunta, enquanto o segundo 'do' é a ação de 'fazer'. 'Every day' é a expressão para 'todos os dias'.",
-    "breakdown": [
-      {
-        "word": "What",
-        "meaning": "O que"
-      },
-      {
-        "word": "do you",
-        "meaning": "você (em perguntas)"
-      },
-      {
-        "word": "do",
-        "meaning": "faz"
-      },
-      {
-        "word": "every day",
-        "meaning": "todos os dias / todo dia"
-      }
-    ],
-    "pronuncia": "Diga 'uót'. Junte 'do you do' como 'du iú du'. Em 'every', fale 'é-vri' bem rápido. Termine com 'day' soando como 'dei'.\nLeia: Uót du iú du é-vri dei?"
-  },
-  "66": {
-    "explanation": "O inglês diferencia o início da noite ('evening') do final da noite ou hora de dormir ('night'). 'In the evening' é usado para atividades que fazemos quando ainda estamos acordados e ativos.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "study",
-        "meaning": "estudo"
-      },
-      {
-        "word": "English",
-        "meaning": "inglês"
-      },
-      {
-        "word": "in the evening",
-        "meaning": "à noite / no início da noite"
-      }
-    ],
-    "pronuncia": "Diga 'Ai'. Em 'study', não coloque 'e' no começo, comece direto no 's' ('stâ-di'). 'English' é 'ín-glich'. Para 'in the evening', coloque a língua nos dentes no 'the' e fale 'in dhê ív-nin'.\nLeia: Ai stâ-di ín-glich in dhê ív-nin."
-  },
-  "67": {
-    "explanation": "Usamos 'at night' para falar do período da noite de forma geral. O verbo 'watch' é usado especificamente para quando assistimos algo com atenção, como TV ou um filme.",
-    "breakdown": [
-      {
-        "word": "We",
-        "meaning": "Nós"
-      },
-      {
-        "word": "watch",
-        "meaning": "assistimos"
-      },
-      {
-        "word": "TV",
-        "meaning": "TV / televisão"
-      },
-      {
-        "word": "at night",
-        "meaning": "à noite"
-      }
-    ],
-    "pronuncia": "Diga 'Uí'. O 'watch' soa como 'uótch'. 'TV' é 'ti-ví'. Termine com 'at night' falando 'ét nait', parando o som do 't' seco na garganta.\nLeia: Uí uótch ti-ví ét nait."
-  },
-  "68": {
-    "explanation": "Para perguntar sobre 'ele', iniciamos com 'Does'. Uma regra importante é que, para dias da semana, o inglês sempre usa a palavra 'on' antes, nunca 'in' ou 'at'.",
-    "breakdown": [
-      {
-        "word": "Does",
-        "meaning": "Marcador de pergunta (para ele)"
-      },
-      {
-        "word": "he",
-        "meaning": "ele"
-      },
-      {
-        "word": "play",
-        "meaning": "joga"
-      },
-      {
-        "word": "football",
-        "meaning": "futebol"
-      },
-      {
-        "word": "on Sundays",
-        "meaning": "aos domingos"
-      }
-    ],
-    "pronuncia": "Diga 'Dâz rrí'. 'Play' é 'plei'. Em 'football', fale 'fút-ból'. Para 'on Sundays', diga 'ón sân-deiz'.\nLeia: Dâz rrí plei fút-ból ón sân-deiz?"
-  },
-  "69": {
-    "explanation": "Para negar um gosto, usamos 'do not like'. Em inglês, os dias da semana sempre começam com letra maiúscula e, para falar de rotina, usamos o dia no plural.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "do not",
-        "meaning": "não"
-      },
-      {
-        "word": "like",
-        "meaning": "gosto de"
-      },
-      {
-        "word": "Mondays",
-        "meaning": "segundas-feiras"
-      }
-    ],
-    "pronuncia": "Diga 'Ai du nót'. O 'like' termina no som de 'k' ('laik'). Para 'Mondays', fale 'mân-deiz'.\nLeia: Ai du nót laik mân-deiz."
-  },
-  "70": {
-    "explanation": "A expressão 'go to bed' é a forma mais comum de dizer 'ir dormir'. 'Early' é o contrário de tarde, indicando que a ação acontece cedo.",
-    "breakdown": [
-      {
-        "word": "They",
-        "meaning": "Eles"
-      },
-      {
-        "word": "go to bed",
-        "meaning": "vão para a cama / vão dormir"
-      },
-      {
-        "word": "early",
-        "meaning": "cedo"
-      }
-    ],
-    "pronuncia": "Em 'They', coloque a língua nos dentes ('dhêi'). 'Go to' vira 'gôu tu'. 'Bed' termina seco no 'd'. Em 'early', curve bem a língua para o 'r' ('êr-li').\nLeia: Dhêi gôu tu béd êr-li."
-  },
-  "71": {
-    "explanation": "A palavra 'When' é usada para perguntar 'quando'. Em inglês, não dizemos apenas 'tomar banho', mas sim 'tomar um banho' (take a shower).",
-    "breakdown": [
-      {
-        "word": "When",
-        "meaning": "Quando"
-      },
-      {
-        "word": "do you",
-        "meaning": "você (em perguntas)"
-      },
-      {
-        "word": "take a shower",
-        "meaning": "toma banho (de chuveiro)"
-      }
-    ],
-    "pronuncia": "Diga 'Uén du iú'. Junte 'take a' falando 'tei-kâ'. Em 'shower', comece com som de 'ch' e curve a língua no final ('cháu-êr').\nLeia: Uén du iú tei-kâ cháu-êr?"
-  },
-  "72": {
-    "explanation": "O verbo 'cook' significa cozinhar ou preparar a comida. 'Dinner' é o jantar, e usamos 'for' para indicar para quem a refeição é feita.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "cook",
-        "meaning": "cozinho / preparo"
-      },
-      {
-        "word": "dinner",
-        "meaning": "jantar"
-      },
-      {
-        "word": "for",
-        "meaning": "para"
-      },
-      {
-        "word": "my family",
-        "meaning": "minha família"
-      }
-    ],
-    "pronuncia": "Diga 'Ai cúk'. Em 'dinner', curve a língua no 'r' final ('dí-nêr'). 'For' é 'fôr'. Termine com 'my family' falando 'mai fé-mi-li'.\nLeia: Ai cúk dí-nêr fôr mai fé-mi-li."
-  },
-  "73": {
-    "explanation": "Como estamos falando de 'ela', o verbo 'read' ganha um 's' no final. 'Before bed' é uma expressão curta e natural para dizer 'antes de ir deitar'.",
-    "breakdown": [
-      {
-        "word": "She",
-        "meaning": "Ela"
-      },
-      {
-        "word": "reads",
-        "meaning": "lê"
-      },
-      {
-        "word": "a book",
-        "meaning": "um livro"
-      },
-      {
-        "word": "before bed",
-        "meaning": "antes de dormir / antes da cama"
-      }
-    ],
-    "pronuncia": "Diga 'Chí'. Em 'reads', curve a língua no 'r' e faça som de 'z' no fim ('rridz'). 'A book' é 'â búk'. Termine com 'before bed' falando 'bi-fôr béd'.\nLeia: Chí rridz â búk bi-fôr béd."
-  },
-  "74": {
-    "explanation": "Em inglês, quem ouve, sempre 'ouve para' algo, por isso usamos 'listen to'. Note que a letra 't' na palavra 'listen' não é pronunciada.",
-    "breakdown": [
-      {
-        "word": "Do",
-        "meaning": "Marcador de pergunta"
-      },
-      {
-        "word": "they",
-        "meaning": "eles"
-      },
-      {
-        "word": "listen to",
-        "meaning": "ouvem"
-      },
-      {
-        "word": "music",
-        "meaning": "música"
-      }
-    ],
-    "pronuncia": "Diga 'Du'. Em 'they', língua nos dentes ('dhêi'). 'Listen' é 'lí-sên' (sem o 't'). Termine com 'tu miú-zic'.\nLeia: Du dhêi lí-sên tu miú-zic?"
-  },
-  "75": {
-    "explanation": "Para falar do clima, o inglês exige o uso do 'It' no começo, pois a frase não pode começar direto com o verbo. 'A lot' é a forma comum de dizer 'muito'.",
-    "breakdown": [
-      {
-        "word": "It",
-        "meaning": "Marcador de sujeito (clima)"
-      },
-      {
-        "word": "rains",
-        "meaning": "chove"
-      },
-      {
-        "word": "a lot",
-        "meaning": "muito"
-      },
-      {
-        "word": "in winter",
-        "meaning": "no inverno"
-      }
-    ],
-    "pronuncia": "Diga 'It'. Em 'rains', curve a língua no 'r' e faça som de 'z' no fim ('rreinz'). 'A lot' é 'â lót'. Termine com 'in winter' falando 'in uín-têr'.\nLeia: It rreinz â lót in uín-têr."
-  },
-  "76": {
-    "explanation": "O verbo 'wash' serve para lavar qualquer coisa. 'Every morning' indica uma rotina que acontece todas as manhãs.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "wash",
-        "meaning": "lavo"
-      },
-      {
-        "word": "my face",
-        "meaning": "meu rosto"
-      },
-      {
-        "word": "every morning",
-        "meaning": "todas as manhãs"
-      }
-    ],
-    "pronuncia": "Diga 'Ai uóch'. 'My face' é 'mai fêis'. Em 'every', fale 'é-vri'. Termine com 'morning' curvando a língua no 'r' ('mór-nin').\nLeia: Ai uóch mai fêis é-vri mór-nin."
-  },
-  "77": {
-    "explanation": "Para negar ações de 'ele', usamos 'does not'. Lembre-se que para dias da semana como 'Saturdays', usamos sempre a palavra 'on' antes.",
-    "breakdown": [
-      {
-        "word": "He",
-        "meaning": "Ele"
-      },
-      {
-        "word": "does not",
-        "meaning": "não"
-      },
-      {
-        "word": "work",
-        "meaning": "trabalha"
-      },
-      {
-        "word": "on Saturdays",
-        "meaning": "aos sábados"
-      }
-    ],
-    "pronuncia": "Diga 'Rrí dâz nót'. Em 'work', curve bem a língua para o 'r' ('uôrk'). Termine com 'on Saturdays' falando 'ón sé-têr-deiz'.\nLeia: Rrí dâz nót uôrk ón sé-têr-deiz."
-  },
-  "78": {
-    "explanation": "A expressão 'What time' é a forma padrão para perguntar 'a que horas'. 'Finish work' significa terminar o trabalho ou o expediente.",
-    "breakdown": [
-      {
-        "word": "What time",
-        "meaning": "A que horas"
-      },
-      {
-        "word": "do you",
-        "meaning": "você (em perguntas)"
-      },
-      {
-        "word": "finish",
-        "meaning": "termina"
-      },
-      {
-        "word": "work",
-        "meaning": "trabalho / expediente"
-      }
-    ],
-    "pronuncia": "Diga 'uót taim'. Junte 'do you' como 'du iú'. 'Finish' é 'fí-nich'. Termine com 'work' curvando a língua no 'r' ('uôrk').\nLeia: Uót taim du iú fí-nich uôrk?"
-  },
-  "79": {
-    "explanation": "A expressão 'go shopping' é usada para o ato de ir às compras. 'Once a week' é o jeito de dizer 'uma vez por semana'.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "go shopping",
-        "meaning": "faço compras / vou às compras"
-      },
-      {
-        "word": "once",
-        "meaning": "uma vez"
-      },
-      {
-        "word": "a week",
-        "meaning": "por semana"
-      }
-    ],
-    "pronuncia": "Diga 'Ai gôu'. 'Shopping' é 'chó-pin'. Junte 'once a' falando 'uân-sâ'. Termine com 'week' falando 'uík'.\nLeia: Ai gôu chó-pin uân-sâ uík."
-  },
-  "80": {
-    "explanation": "Em inglês, 'eat lunch' é a forma de dizer 'almoçar'. 'Noon' é a palavra específica para 'meio-dia', e usamos 'at' antes dela.",
-    "breakdown": [
-      {
-        "word": "We",
-        "meaning": "Nós"
-      },
-      {
-        "word": "eat lunch",
-        "meaning": "almoçamos"
-      },
-      {
-        "word": "at noon",
-        "meaning": "ao meio-dia"
-      }
-    ],
-    "pronuncia": "Diga 'Uí it'. 'Lunch' tem som de 'lântch'. Termine com 'at noon' falando 'ét nun'.\nLeia: Uí it lântch ét nun."
-  },
-  "81": {
-    "explanation": "Para perguntar sobre 'ela', usamos 'Does' no início. 'Exercise' pode ser tanto o exercício físico quanto a ação de se exercitar.",
-    "breakdown": [
-      {
-        "word": "Does",
-        "meaning": "Marcador de pergunta (para ela)"
-      },
-      {
-        "word": "she",
-        "meaning": "ela"
-      },
-      {
-        "word": "exercise",
-        "meaning": "se exercita / faz exercício"
-      },
-      {
-        "word": "in the morning",
-        "meaning": "de manhã"
-      }
-    ],
-    "pronuncia": "Diga 'Dâz chí'. Em 'exercise', fale 'ék-sêr-saiz'. Para 'in the morning', língua nos dentes no 'the' ('in dhê mór-nin').\nLeia: Dâz chí ék-sêr-saiz in dhê mór-nin?"
-  },
-  "82": {
-    "explanation": "A palavra 'always' (sempre) deve vir logo antes da ação que você pratica. Em inglês, o 't' de 'water' muitas vezes soa como um 'd' suave.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "always",
-        "meaning": "sempre"
-      },
-      {
-        "word": "drink",
-        "meaning": "bebo"
-      },
-      {
-        "word": "water",
-        "meaning": "água"
-      }
-    ],
-    "pronuncia": "Diga 'Ai ól-ueiz'. Em 'drink', curve a língua no 'r' ('drink'). Termine com 'water' falando 'uó-dêr'.\nLeia: Ai ól-ueiz drink uó-dêr."
-  },
-  "83": {
-    "explanation": "A palavra 'never' (nunca) vem antes da ação 'arrive' (chegar). 'Late' é o estado de estar atrasado.",
-    "breakdown": [
-      {
-        "word": "They",
-        "meaning": "Eles"
-      },
-      {
-        "word": "never",
-        "meaning": "nunca"
-      },
-      {
-        "word": "arrive",
-        "meaning": "chegam"
-      },
-      {
-        "word": "late",
-        "meaning": "atrasados"
-      }
-    ],
-    "pronuncia": "Em 'They', língua nos dentes ('dhêi'). 'Never' é 'né-vêr'. 'Arrive' é 'â-rráiv'. Termine com 'late' falando 'leit'.\nLeia: Dhêi né-vêr â-rráiv leit."
-  },
-  "84": {
-    "explanation": "Usamos 'Do' para perguntar sobre 'você'. 'Clean' é o verbo limpar e 'your room' refere-se ao seu quarto ou qualquer cômodo da casa.",
+    "explanation": "Para perguntar 'você toma café de manhã?', o inglês coloca a palavra de apoio 'Do' no começo para indicar que é uma pergunta. Usamos o verbo 'drink' para tomar líquidos, e a expressão 'in the morning' significa literalmente 'na manhã'.",
     "breakdown": [
       {
         "word": "Do you",
-        "meaning": "Você (em perguntas)"
+        "meaning": "Você — Do: palavra de apoio para perguntas; you: você."
       },
       {
-        "word": "clean",
-        "meaning": "limpa"
+        "word": "drink coffee",
+        "meaning": "Toma café — drink: beber / tomar; coffee: café."
       },
       {
-        "word": "your room",
-        "meaning": "seu quarto"
+        "word": "in the morning",
+        "meaning": "De manhã — in: em / de; the: o / a; morning: manhã."
       }
     ],
-    "pronuncia": "Diga 'Du iú clin'. 'Your' é 'iór'. Termine com 'room' curvando a língua no 'r' ('rrúm').\nLeia: Du iú clin iór rrúm?"
+    "pronuncia": "Em 'Do you', diga 'dúu yúu' projetando os lábios bem para a frente em bico. Para 'drink', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'drınk', travando o 'n' no fundo da boca sem acrescentar 'i' no 'k'. Em 'coffee', faça 'kó-fi' com o 'ó' bem aberto e 'fi' com sorriso esticado. Em 'in the morning', no 'the' é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dhə', mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'morning', puxe o 'r' enrolado sem encostar a língua no céu da boca.\nLeia: Dúu yúu drınk kó-fi ın dhə mór-nıng?"
   },
-  "85": {
-    "explanation": "Para negar que você faz algo, usamos 'do not'. A expressão 'at home' é o jeito fixo de dizer 'em casa'.",
-    "breakdown": [
-      {
-        "word": "I",
-        "meaning": "Eu"
-      },
-      {
-        "word": "do not",
-        "meaning": "não"
-      },
-      {
-        "word": "use",
-        "meaning": "uso"
-      },
-      {
-        "word": "a computer",
-        "meaning": "um computador"
-      },
-      {
-        "word": "at home",
-        "meaning": "em casa"
-      }
-    ],
-    "pronuncia": "Diga 'Ai du nót iúz'. 'A computer' é 'â côm-piú-têr'. Termine com 'at home' falando 'ét rrôum'.\nLeia: Ai du nót iúz â côm-piú-têr ét rrôum."
-  },
-  "86": {
-    "explanation": "Quando falamos de 'ela', o verbo 'brush' (escovar) ganha um som de 'iz' no final. 'Her teeth' significa 'os dentes dela'.",
-    "breakdown": [
-      {
-        "word": "She",
-        "meaning": "Ela"
-      },
-      {
-        "word": "brushes",
-        "meaning": "escova"
-      },
-      {
-        "word": "her",
-        "meaning": "dela / seus"
-      },
-      {
-        "word": "teeth",
-        "meaning": "dentes"
-      }
-    ],
-    "pronuncia": "Diga 'Chí'. 'Brushes' é 'brâ-chiz'. 'Her' é 'rrêr'. Termine com 'teeth' colocando a língua entre os dentes para o som final ('títh').\nLeia: Chí brâ-chiz rrêr títh."
-  },
-  "87": {
-    "explanation": "Para 'ele', o verbo 'walk' ganha um 's'. Note que a letra 'l' em 'walks' é totalmente muda, você pula do 'a' direto para o 'k'.",
+  "63": {
+    "explanation": "Para dizer 'ele não toma café da manhã', o inglês junta 'does not' para negar a ação no presente para ele. O verbo 'eat' é usado para a refeição, e a palavra 'breakfast' é o nome da refeição da manhã.",
     "breakdown": [
       {
         "word": "He",
-        "meaning": "Ele"
+        "meaning": "Ele — pessoa de quem se fala."
       },
       {
-        "word": "walks",
-        "meaning": "caminha"
+        "word": "does not",
+        "meaning": "Não — does: palavra de apoio para ele/ela; not: não."
       },
       {
-        "word": "to the park",
-        "meaning": "até o parque"
+        "word": "eat breakfast",
+        "meaning": "Toma / come o café da manhã — eat: comer / tomar; breakfast: café da manhã."
       }
     ],
-    "pronuncia": "Diga 'Rrí uóks' (sem som de 'l'). Para 'to the', língua nos dentes no 'the' ('tu dhê'). Termine com 'park' curvando a língua no 'r' ('párk').\nLeia: Rrí uóks tu dhê párk."
+    "pronuncia": "Em 'He', solte um suspiro suave no 'h' fazendo 'híi'. Em 'does not', diga 'dâz nót' com som seco de garganta em 'dâz' e 'ó' aberto em 'nót', cortando a consoante no fim sem colocar 'i'. Em 'eat', abra um sorriso firme para o 'i' longo em 'íit' travando o 't' a seco. Para 'breakfast', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'brék-fəst', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'fəst', travando o 't' no final sem som extra.\nLeia: Híi dâz nót íit brék-fəst."
   },
-  "88": {
-    "explanation": "A palavra 'What' inicia a pergunta como 'O que'. Em inglês, usamos 'for lunch' para indicar o que se come 'no' almoço.",
+  "64": {
+    "explanation": "Para expressar 'ela vai para o trabalho de ônibus', o inglês usa 'goes' para indicar a ação de ir para ela, 'to work' para ir ao trabalho, e 'by bus' para indicar o meio de transporte de ônibus.",
+    "breakdown": [
+      {
+        "word": "She goes",
+        "meaning": "Ela vai — She: ela; goes: vai (forma usada para ele ou ela)."
+      },
+      {
+        "word": "to work",
+        "meaning": "Para o trabalho — to: para / em direção a; work: trabalho / trabalhar."
+      },
+      {
+        "word": "by bus",
+        "meaning": "De ônibus — by: por / de (meio de transporte); bus: ônibus."
+      }
+    ],
+    "pronuncia": "Comece em 'She' soltando um chiado suave e contínuo em 'chíi'. Em 'goes', faça o 'gôuz' deslizando a vogal do 'o' para o 'u' com zumbido de 'z' no fim. Para 'work', é obrigatório manter a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para a vogal do R central em 'w3rk', cortando a consoante 'k' a seco. Em 'by bus', diga 'bái' e em 'bus' deixe a boca entreaberta de forma totalmente neutra soltando o som de garganta 'bâs', travando o 's' final sem acrescentar 'i'.\nLeia: Chíi gôuz tu w3rk bái bâs."
+  },
+  "65": {
+    "explanation": "Para dizer 'o que você faz todos os dias?', a estrutura em inglês usa 'What' para 'o que', a palavra de apoio 'do' para armar a pergunta, seguida do 'you' e do verbo 'do' (fazer), terminando com 'every day' que significa 'todos os dias'.",
     "breakdown": [
       {
         "word": "What",
-        "meaning": "O que"
+        "meaning": "O que / Qual — palavra usada para fazer perguntas sobre coisas."
+      },
+      {
+        "word": "do you do",
+        "meaning": "Você faz — do (1º): palavra de apoio para a pergunta; you: você; do (2º): verbo fazer."
+      },
+      {
+        "word": "every day",
+        "meaning": "Todos os dias — every: todo / cada; day: dia."
+      }
+    ],
+    "pronuncia": "Em 'What', abra o 'ó' profundo soltando a voz pelo fundo da boca e ligue suavemente no 'do' fazendo 'wót dúu'. Em 'you do', solte 'yúu dúu' com bico de 'u' longo. Para 'every day', encurte 'every' para duas sílabas em 'év-ri', e em 'day' comece no 'ê' fechado e deslize a boca abrindo um sorriso suave em direção ao 'i' formando 'dêi'.\nLeia: Wót dúu yúu dúu év-ri dêi?"
+  },
+  "66": {
+    "explanation": "Para dizer 'eu estudo inglês à noite', o inglês usa 'I study' para a ação de estudar, 'English' para o idioma, e a expressão 'in the evening' para indicar o período do início da noite.",
+    "breakdown": [
+      {
+        "word": "I study",
+        "meaning": "Eu estudo — I: eu; study: estudar."
+      },
+      {
+        "word": "English",
+        "meaning": "Inglês — o idioma."
+      },
+      {
+        "word": "in the evening",
+        "meaning": "À noite / no início da noite — in: em / à; the: o / a; evening: noite (início da noite)."
+      }
+    ],
+    "pronuncia": "Para 'I', diga 'ái'. Na palavra 'study', é proibido colocar som de 'e' ou 'i' no começo: inicie direto no silvo do S em 'stâ-dı', deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'dı'. Em 'English', fale 'ıng-glıch' mantendo o queixo solto para o 'ı' curto. Em 'in the evening', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhə', mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'dhə', e diga 'íiv-nıng' travando a ponta da língua sem falar 'i' no final.\nLeia: Ái stâ-dı ıng-glıch ın dhə íiv-nıng."
+  },
+  "67": {
+    "explanation": "Para 'nós assistimos TV à noite', o inglês coloca o sujeito 'We', a ação 'watch' (assistir), a sigla 'TV', e usa a preposição 'at' combinada com 'night' para indicar o período de tempo da noite.",
+    "breakdown": [
+      {
+        "word": "We watch",
+        "meaning": "Nós assistimos — We: nós; watch: assistir / observar."
+      },
+      {
+        "word": "TV",
+        "meaning": "TV / televisão — sigla para television."
+      },
+      {
+        "word": "at night",
+        "meaning": "À noite — at: em / à; night: noite."
+      }
+    ],
+    "pronuncia": "Em 'We', projete os lábios para a frente em bico de 'u' para 'wíi'. Para 'watch', trave a língua no céu da boca e libere um estalo seco com chiado em 'wótch' com 'ó' aberto. Diga 'tíi-víi' para 'TV'. Em 'at night', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para 'æt', e diga 'náit', cortando a consoante 't' a seco no fim de ambas as palavras sem adicionar 'i'.\nLeia: Wii wótch tíi-víi æt náit."
+  },
+  "68": {
+    "explanation": "Para perguntar 'ele joga futebol aos domingos?', o inglês inicia com 'Does' para armar a pergunta para ele, seguido do verbo 'play', do esporte 'football' e da expressão 'on Sundays' para indicar os dias em que a ação acontece.",
+    "breakdown": [
+      {
+        "word": "Does he",
+        "meaning": "Ele — Does: palavra de apoio para perguntas com ele; he: ele."
+      },
+      {
+        "word": "play football",
+        "meaning": "Joga futebol — play: jogar / brincar; football: futebol."
+      },
+      {
+        "word": "on Sundays",
+        "meaning": "Aos domingos — on: em / aos (usado para dias da semana); Sundays: domingos."
+      }
+    ],
+    "pronuncia": "Em 'Does he', diga 'dâz híi' soltando o suspiro suave do 'h'. Em 'play', deslize do 'ê' para o 'i' em 'plêi'. Para 'football', deixe os lábios entreabertos sem fazer bico para o 'u' curto em 'fut-ból', travando a ponta da língua no céu da boca para o 'l' sem virar 'u'. Em 'on Sundays', diga 'ón' com 'ó' profundo e em 'Sundays' use o som de garganta em 'sân-dêiz', terminando com o zumbido de 'z' no fim.\nLeia: Dâz híi plêi fut-ból ón sân-dêiz?"
+  },
+  "69": {
+    "explanation": "Para dizer 'eu não gosto de segunda-feira', o inglês usa 'I do not like' para negar o gosto no presente, e coloca a palavra no plural 'Mondays' para indicar que não gosta de nenhuma segunda-feira em geral.",
+    "breakdown": [
+      {
+        "word": "I do not",
+        "meaning": "Eu não — I: eu; do: palavra de apoio; not: não."
+      },
+      {
+        "word": "like",
+        "meaning": "Gosto de — gostar."
+      },
+      {
+        "word": "Mondays",
+        "meaning": "Segundas-feiras — plural de segunda-feira."
+      }
+    ],
+    "pronuncia": "Diga 'ái' para 'I'. Em 'do not', fale 'dúu nót' travando o 't' a seco. Para 'like', fale 'láik' sem soltar nenhum 'i' no 'k' final. Em 'Mondays', use o som seco de garganta em 'mân-dêiz' com deslizamento para 'i' na segunda sílaba e finalizando com o zumbido vibrado da letra 'z'.\nLeia: Ái dúu nót láik mân-dêiz."
+  },
+  "70": {
+    "explanation": "Para transmitir 'eles vão para a cama cedo', a frase em inglês usa 'They' para eles, a ação 'go to bed' que é a expressão natural para ir dormir ou deitar, e a palavra 'early' para indicar o horário cedo.",
+    "breakdown": [
+      {
+        "word": "They go",
+        "meaning": "Eles vão — They: eles / elas; go: ir."
+      },
+      {
+        "word": "to bed",
+        "meaning": "Para a cama / deitar — to: para; bed: cama."
+      },
+      {
+        "word": "early",
+        "meaning": "Cedo — no início do período."
+      }
+    ],
+    "pronuncia": "Em 'They', é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para fazer 'dhêi'. Para 'go', deslize a vogal do 'o' para o 'u' em 'gôu'. Em 'to bed', fale 'tu béd' travando o 'd' a seco no final. Em 'early', mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para fazer a vogal do R central em '3r-li'.\nLeia: Dhêi gôu tu béd 3r-li."
+  },
+  "71": {
+    "explanation": "Para perguntar 'quando você toma banho?', a estrutura usa 'When' (quando), a palavra de apoio 'do' com 'you' (você), e a expressão 'take a shower', que é a forma padrão para tomar um banho de chuveiro.",
+    "breakdown": [
+      {
+        "word": "When",
+        "meaning": "Quando — palavra para perguntar sobre tempo."
       },
       {
         "word": "do you",
-        "meaning": "você (em perguntas)"
+        "meaning": "Você — do: palavra de apoio; you: você."
       },
       {
-        "word": "eat",
-        "meaning": "come"
-      },
-      {
-        "word": "for lunch",
-        "meaning": "no almoço / para o almoço"
+        "word": "take a shower",
+        "meaning": "Toma banho — take: tomar / pegar; a: um; shower: banho de chuveiro."
       }
     ],
-    "pronuncia": "Diga 'uót du iú it'. 'For' é 'fôr'. Termine com 'lunch' falando 'lântch'.\nLeia: Uót du iú it fôr lântch?"
+    "pronuncia": "Em 'When', projete os lábios em bico de 'u' para 'wén', travando o 'n' nos dentes superiores. Diga 'dúu yúu' em 'do you'. Em 'take a', emende o 'k' seco na vogal formando 'têi-kə', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə'. Em 'shower', solte o chiado suave em 'cháu-ər' enrolando o 'r' no fim.\nLeia: Wén dúu yúu têi-kə cháu-ər?"
   },
-  "89": {
-    "explanation": "A palavra 'sometimes' (às vezes) indica frequência. 'Cinema' é usado para o local onde se vê filmes, assim como no português.",
+  "72": {
+    "explanation": "Para dizer 'eu faço o jantar para minha família', o inglês usa o verbo 'cook' (cozinhar/preparar), a palavra 'dinner' (jantar), e o termo 'for my family' para indicar a quem se destina a refeição.",
     "breakdown": [
       {
-        "word": "We",
-        "meaning": "Nós"
+        "word": "I cook",
+        "meaning": "Eu me preparo / cozinho — I: eu; cook: cozinhar / preparar comida."
       },
       {
-        "word": "sometimes",
-        "meaning": "às vezes"
+        "word": "dinner",
+        "meaning": "Jantar — a refeição da noite."
       },
       {
-        "word": "go to",
-        "meaning": "vamos ao"
-      },
-      {
-        "word": "the cinema",
-        "meaning": "o cinema"
+        "word": "for my family",
+        "meaning": "Para minha família — for: para; my: minha; family: família."
       }
     ],
-    "pronuncia": "Diga 'Uí sâm-taimz'. 'Go to' é 'gôu tu'. Para 'the cinema', língua nos dentes no 'the' ('dhê sí-nê-mâ').\nLeia: Uí sâm-taimz gôu tu dhê sí-nê-mâ."
+    "pronuncia": "Diga 'ái' para 'I'. Em 'cook', mantenha os lábios entreabertos sem fazer bico para o 'u' curto em 'kuk', cortando o 'k' a seco sem som de 'i'. Em 'dinner', encoste a língua nos dentes superiores no 'd' seco em 'dı-nər', deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'dı'. Em 'for my family', fale 'fór mái' e em 'family' abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para fazer 'fæ-mə-li'.\nLeia: Ái kuk dı-nər fór mái fæ-mə-li."
   },
-  "90": {
-    "explanation": "A palavra 'usually' é usada para descrever algo que você faz 'geralmente'. 'Stay' é o verbo para ficar ou permanecer em um lugar.",
+  "73": {
+    "explanation": "Para expressar 'ela lê um livro antes de dormir', o inglês usa 'She reads' (ela lê), 'a book' (um livro), e a expressão 'before bed', que significa literalmente 'antes da cama' ou antes de se deitar.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu"
+        "word": "She reads",
+        "meaning": "Ela lê — She: ela; reads: lê (ação para ele ou ela)."
       },
       {
-        "word": "usually",
-        "meaning": "geralmente"
+        "word": "a book",
+        "meaning": "Um livro — a: um; book: livro."
       },
       {
-        "word": "stay",
-        "meaning": "fico"
+        "word": "before bed",
+        "meaning": "Antes de dormir — before: antes de; bed: cama / deitar."
+      }
+    ],
+    "pronuncia": "Para 'She reads', solte o chiado suave em 'chíi' e abra o sorriso em 'ríidz' com zumbido de 'z' no final. Em 'a book', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'ə', e diga 'buk' com lábios entreabertos sem bico, cortando o 'k' a seco. Em 'before bed', fale 'bı-fór béd', travando o 'd' final a seco sem soltar 'i'.\nLeia: Chíi ríidz ə buk bı-fór béd."
+  },
+  "74": {
+    "explanation": "Para perguntar 'eles ouvem música?', o inglês usa o auxílio 'Do' no início para indicar pergunta, o sujeito 'They' (eles), o verbo 'listen' acompanhado sempre de 'to' para escutar algo, e 'music' para música.",
+    "breakdown": [
+      {
+        "word": "Do they",
+        "meaning": "Eles — Do: palavra de apoio para pergunta; they: eles / elas."
+      },
+      {
+        "word": "listen to",
+        "meaning": "Ouvem / escutam — listen: ouvir; to: a / para (conecta o verbo ao objeto)."
+      },
+      {
+        "word": "music",
+        "meaning": "Música — a arte dos sons."
+      }
+    ],
+    "pronuncia": "Em 'Do', fale 'dúu'. Na palavra 'they', é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para fazer 'dhêi'. Em 'listen to', use em 'lı-sn' o 'ı' curto deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i', e diga 'tu'. Em 'music', fale 'myúu-zık' terminando no 'k' travado a seco.\nLeia: Dúu dhêi lı-sn tu myúu-zık?"
+  },
+  "75": {
+    "explanation": "Para dizer 'chove muito no inverno', o inglês usa 'It' como sujeito neutro obrigatório para o clima, o verbo 'rains' (chove), a expressão 'a lot' para muito, e 'in winter' para indicar a estação do inverno.",
+    "breakdown": [
+      {
+        "word": "It rains",
+        "meaning": "Chove — It: sujeito neutro para o tempo; rains: chove."
+      },
+      {
+        "word": "a lot",
+        "meaning": "Muito — a lot: bastante / muito."
+      },
+      {
+        "word": "in winter",
+        "meaning": "No inverno — in: em / no; winter: inverno."
+      }
+    ],
+    "pronuncia": "Em 'It rains', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ıt', cortando o 't' a seco, e diga 'rêinz' com deslizamento vocálico e som de 'z'. Em 'a lot', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə', e fale 'lót' com 'ó' aberto. Em 'in winter', diga 'ın wın-tər' usando o queixo solto para os dois 'ı' curtos e bico de 'u' no 'w'.\nLeia: Ít rêinz ə lót ın wın-tər."
+  },
+  "76": {
+    "explanation": "Para 'eu lavo meu rosto todas as manhãs', usamos 'I wash' para a ação de lavar, 'my face' para o meu rosto, e a expressão 'every morning' que equivale a todas as manhãs.",
+    "breakdown": [
+      {
+        "word": "I wash",
+        "meaning": "Eu lavo — I: eu; wash: lavar."
+      },
+      {
+        "word": "my face",
+        "meaning": "Meu rosto — my: meu; face: rosto."
+      },
+      {
+        "word": "every morning",
+        "meaning": "Todas as manhãs — every: todas as / cada; morning: manhã."
+      }
+    ],
+    "pronuncia": "Em 'I wash', diga 'ái' e para 'wash' abra o 'ó' profundo soltando um chiado suave no fim em 'wóch'. Em 'my face', fale 'mái fêis' com deslizamento para 'i' e 's' sibilante no final, sem soltar 'i' extra. Para 'every morning', diga 'év-ri' em duas sílabas e fale 'mór-nıng' puxando o 'r' enrolado e deixando o queixo solto no 'ı' final.\nLeia: Ái wóch mái fêis év-ri mór-nıng."
+  },
+  "77": {
+    "explanation": "Para expressar 'ele não trabalha aos sábados', o inglês nega com 'does not', usa o verbo 'work' (trabalhar), e indica os sábados com 'on Saturdays' no plural.",
+    "breakdown": [
+      {
+        "word": "He does not",
+        "meaning": "Ele não — He: ele; does: palavra de apoio para ele; not: não."
+      },
+      {
+        "word": "work",
+        "meaning": "Trabalha — trabalhar."
+      },
+      {
+        "word": "on Saturdays",
+        "meaning": "Aos sábados — on: em / aos; Saturdays: sábados."
+      }
+    ],
+    "pronuncia": "Diga 'híi' com suspiro para 'He'. Em 'does not', fale 'dâz nót' com som de garganta em 'dâz' e 'ó' aberto em 'nót'. Em 'work', é obrigatório manter a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para a vogal do R central em 'w3rk'. Em 'on Saturdays', diga 'ón' e em 'Saturdays' fale 'sæ-tər-dêiz', abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o 'sæ', terminando com zumbido de 'z'.\nLeia: Híi dâz nót w3rk ón sæ-tər-dêiz."
+  },
+  "78": {
+    "explanation": "Para perguntar 'a que horas você termina o trabalho?', a estrutura em inglês começa com 'What time' (qual horário / que horas), o auxiliar 'do', o sujeito 'you', a ação 'finish' (terminar) e o objeto 'work' (trabalho).",
+    "breakdown": [
+      {
+        "word": "What time",
+        "meaning": "A que horas / qual horário — What: qual/que; time: tempo / hora."
+      },
+      {
+        "word": "do you",
+        "meaning": "Você — do: palavra de apoio para pergunta; you: você."
+      },
+      {
+        "word": "finish work",
+        "meaning": "Termina o trabalho — finish: terminar / concluir; work: trabalho."
+      }
+    ],
+    "pronuncia": "Em 'What time', fale 'wót táim' unindo a consoante 't' e selando totalmente os lábios no 'm' final. Diga 'dúu yúu' em 'do you'. Em 'finish', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' para os dois 'ı' curtos em 'fı-nıch', terminando com o chiado suave 'ch'. Para 'work', use a vogal do R central em 'w3rk' curvando a língua para trás sem encostar.\nLeia: Wót táim dúu yúu fı-nıch w3rk?"
+  },
+  "79": {
+    "explanation": "Para dizer 'eu faço compras uma vez por semana', o inglês usa a expressão 'go shopping' para fazer compras, e 'once a week' para indicar a frequência de uma vez por semana.",
+    "breakdown": [
+      {
+        "word": "I go shopping",
+        "meaning": "Eu faço compras — I: eu; go: ir; shopping: compras / ir às compras."
+      },
+      {
+        "word": "once a week",
+        "meaning": "Uma vez por semana — once: uma vez; a: por / uma; week: semana."
+      }
+    ],
+    "pronuncia": "Diga 'ái gôu' para 'I go'. Em 'shopping', abra a boca no 'ó' profundo e solte o chiado em 'chó-pıng', deixando o queixo ligeiramente solto no 'ı' sem soltar 'g' duro no fim. Em 'once a week', diga 'wâns' com som de garganta, use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə' em 'wân-sə', e finalize em 'wíik' prolongando o 'ii' com sorriso esticado e travando o 'k' a seco.\nLeia: Ái gôu chó-pıng wân-sə wíik."
+  },
+  "80": {
+    "explanation": "Para 'nós almoçamos ao meio-dia', o inglês usa 'We eat lunch', onde 'eat lunch' é a forma comum de dizer comer/tomar almoço, e 'at noon' especifica o horário exato do meio-dia.",
+    "breakdown": [
+      {
+        "word": "We eat lunch",
+        "meaning": "Nós almoçamos — We: nós; eat: comer; lunch: almoço."
+      },
+      {
+        "word": "at noon",
+        "meaning": "Ao meio-dia — at: em / ao; noon: meio-dia."
+      }
+    ],
+    "pronuncia": "Em 'We eat', abra o sorriso em 'wíi íit' travando o 't' a seco. Para 'lunch', deixe a boca entreaberta de forma totalmente neutra para o som de garganta 'lânch', fazendo o estalo de 't' junto com o chiado. Em 'at noon', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æt', e diga 'núun' fazendo bico de 'u' longo e travando a ponta da língua no dente no 'n' final.\nLeia: Wii íit lânch æt núun."
+  },
+  "81": {
+    "explanation": "Para perguntar 'ela se exercita de manhã?', a frase começa com 'Does' para a pergunta com ela, o sujeito 'she', a ação 'exercise' (exercitar-se), e a indicação de tempo 'in the morning'.",
+    "breakdown": [
+      {
+        "word": "Does she",
+        "meaning": "Ela — Does: palavra de apoio para pergunta com ela; she: ela."
+      },
+      {
+        "word": "exercise",
+        "meaning": "Se exercita — exercitar-se / praticar exercícios."
+      },
+      {
+        "word": "in the morning",
+        "meaning": "De manhã — in: em / de; the: o / a; morning: manhã."
+      }
+    ],
+    "pronuncia": "Em 'Does she', fale 'dâz chíi' com som de garganta em 'dâz' e chiado suave em 'chíi'. Em 'exercise', diga 'ék-sər-sáiz' enrolando o 'r' e terminando no zumbido de 'z'. Para 'in the morning', no 'the' é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhə', mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular, e termine em 'mór-nıng' com o queixo solto no 'ı'.\nLeia: Dâz chíi ék-sər-sáiz ın dhə mór-nıng?"
+  },
+  "82": {
+    "explanation": "Para transmitir 'eu sempre bebo água', colocamos o sujeito 'I', a palavra de frequência 'always' (sempre) antes da ação, o verbo 'drink' (beber) e o líquido 'water' (água).",
+    "breakdown": [
+      {
+        "word": "I always",
+        "meaning": "Eu sempre — I: eu; always: sempre."
+      },
+      {
+        "word": "drink water",
+        "meaning": "Bebo água — drink: beber; water: água."
+      }
+    ],
+    "pronuncia": "Diga 'ái' em 'I'. Em 'always', fale 'ól-wêiz' travando a ponta da língua no céu da boca para o 'l' sem virar 'u', e deslizando do 'ê' para 'i' com 'z' no fim. Em 'drink', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'drınk', sem acrescentar 'i' no 'k'. Em 'water', toque a ponta da língua no céu da boca de forma rápida como um 'r' brando em 'wó-rər'.\nLeia: Ái ól-wêiz drınk wó-rər."
+  },
+  "83": {
+    "explanation": "Para 'eles nunca chegam atrasados', a ordem em inglês coloca 'They' (eles), a palavra 'never' (nunca) antecedendo a ação, o verbo 'arrive' (chegar) e o estado 'late' (atrasados).",
+    "breakdown": [
+      {
+        "word": "They never",
+        "meaning": "Eles nunca — They: eles / elas; never: nunca."
+      },
+      {
+        "word": "arrive late",
+        "meaning": "Chegam atrasados — arrive: chegar; late: atrasado / tarde."
+      }
+    ],
+    "pronuncia": "Na palavra 'They', é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhêi'. Em 'never', fale 'né-vər' apoiando os dentes superiores no lábio inferior no 'v'. Em 'arrive late', fale 'ə-ráiv' usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə' inicial, e diga 'lêit' deslizando o 'ê' para 'i' e cortando o 't' a seco no final.\nLeia: Dhêi né-vər ə-ráiv lêit."
+  },
+  "84": {
+    "explanation": "Para perguntar 'você limpa seu quarto?', iniciamos com 'Do' para fazer a pergunta, seguido de 'you' (você), o verbo 'clean' (limpar), e 'your room' (seu quarto).",
+    "breakdown": [
+      {
+        "word": "Do you",
+        "meaning": "Você — Do: palavra de apoio para pergunta; you: você."
+      },
+      {
+        "word": "clean",
+        "meaning": "Limpa — limpar / higienizar."
+      },
+      {
+        "word": "your room",
+        "meaning": "Seu quarto — your: seu / sua; room: quarto / cômodo."
+      }
+    ],
+    "pronuncia": "Diga 'dúu yúu' em 'Do you'. Para 'clean', abra um sorriso esticado para o 'ii' longo e trave a ponta da língua no céu da boca para o 'n' em 'klíin'. Em 'your room', fale 'yór' e em 'room' projete os lábios para a frente em bico de 'u' longo em 'rúum', selando completamente os lábios no 'm' final.\nLeia: Dúu yúu klíin yór rúum?"
+  },
+  "85": {
+    "explanation": "Para dizer 'eu não uso computador em casa', o inglês nega com 'I do not use', adiciona o artigo 'a' antes de 'computer', e finaliza com a expressão fixa 'at home' para indicar o ambiente de casa.",
+    "breakdown": [
+      {
+        "word": "I do not use",
+        "meaning": "Eu não uso — I: eu; do: palavra de apoio; not: não; use: usar."
+      },
+      {
+        "word": "a computer",
+        "meaning": "Um computador — a: um; computer: computador."
       },
       {
         "word": "at home",
-        "meaning": "em casa"
+        "meaning": "Em casa — at: em; home: casa / lar."
       }
     ],
-    "pronuncia": "Diga 'Ai'. 'Usually' é 'iú-ju-â-li'. 'Stay' é 'stei'. Termine com 'at home' falando 'ét rrôum'.\nLeia: Ai iú-ju-â-li stei ét rrôum."
+    "pronuncia": "Diga 'ái dúu nót' cortando o 't' de 'nót'. Em 'use', fale 'yúuz' com som de 'z'. Para 'a computer', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə', e fale 'kəm-pyúu-rər' tocando a ponta da língua rápido no céu da boca para o 't' entre vogais. Em 'at home', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æt', cortando a consoante 't', e diga 'hôum' soltando o suspiro suave do 'h' e selando os lábios no 'm'.\nLeia: Ái dúu nót yúuz ə kəm-pyúu-rər æt hôum."
+  },
+  "86": {
+    "explanation": "Para expressar 'ela escova os dentes', o inglês usa 'She brushes' (ela escova), o termo de posse 'her' (dela / seus), e a palavra no plural 'teeth' (dentes).",
+    "breakdown": [
+      {
+        "word": "She brushes",
+        "meaning": "Ela escova — She: ela; brushes: escova (ação para ele ou ela)."
+      },
+      {
+        "word": "her teeth",
+        "meaning": "Os dentes dela / seus dentes — her: dela / seu; teeth: dentes."
+      }
+    ],
+    "pronuncia": "Em 'She brushes', solte o chiado suave em 'chíi' e fale 'brâ-chəz' usando som seco de garganta em 'brâ' e terminando com a sílaba extra com zumbido de 'z'. Em 'her', diga 'h3r' mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para a vogal do R central. Na palavra 'teeth', abra um sorriso esticado no 'tíith' e no final é obrigatório colocar a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz.\nLeia: Chíi brâ-chəz h3r tíith."
+  },
+  "87": {
+    "explanation": "Para dizer 'ele caminha até o parque', o inglês usa 'He walks' (ele caminha), a preposição 'to' (para / até), e 'the park' (o parque).",
+    "breakdown": [
+      {
+        "word": "He walks",
+        "meaning": "Ele caminha — He: ele; walks: caminha / anda."
+      },
+      {
+        "word": "to the park",
+        "meaning": "Até o parque — to: para / até; the: o; park: parque."
+      }
+    ],
+    "pronuncia": "Em 'He walks', solte o suspiro em 'híi' e fale 'wóks' com 'ó' aberto profundo e 's' no fim, sem pronunciar a letra 'l'. Em 'to the park', diga 'tu' e para 'the' é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhə', mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular. Em 'park', diga 'párk' enrolando o 'r' e cortando o 'k' a seco sem som de 'i'.\nLeia: Híi wóks tu dhə párk."
+  },
+  "88": {
+    "explanation": "Para perguntar 'o que você come no almoço?', a frase começa com 'What' (o que), o auxiliar 'do' com 'you' (você), o verbo 'eat' (comer), e a preposição 'for' acompanhada de 'lunch' (almoço).",
+    "breakdown": [
+      {
+        "word": "What do you",
+        "meaning": "O que você — What: o que; do: palavra de apoio para pergunta; you: você."
+      },
+      {
+        "word": "eat",
+        "meaning": "Come — comer."
+      },
+      {
+        "word": "for lunch",
+        "meaning": "No / para o almoço — for: para / no; lunch: almoço."
+      }
+    ],
+    "pronuncia": "Em 'What do you', diga 'wót dúu yúu' abrindo o 'ó' em 'wót'. Em 'eat', abra um sorriso firme no 'íit' e trave o 't' a seco. Em 'for lunch', fale 'fór' enrolando o 'r', e em 'lunch' use a boca entreaberta de forma totalmente neutra para o som de garganta em 'lânch', estalando o 't' com o chiado no final.\nLeia: Wót dúu yúu íit fór lânch?"
+  },
+  "89": {
+    "explanation": "Para transmitir 'nós às vezes vamos ao cinema', colocamos o sujeito 'We' (nós), a frequência 'sometimes' (às vezes), a ação 'go to' (ir para), e 'the cinema' (o cinema).",
+    "breakdown": [
+      {
+        "word": "We sometimes",
+        "meaning": "Nós às vezes — We: nós; sometimes: às vezes / de vez em quando."
+      },
+      {
+        "word": "go to",
+        "meaning": "Vamos para — go: ir; to: a / para."
+      },
+      {
+        "word": "the cinema",
+        "meaning": "O cinema — the: o; cinema: cinema."
+      }
+    ],
+    "pronuncia": "Diga 'wíi' em 'We'. Em 'sometimes', fale 'sâm-táimz' com som de garganta na primeira sílaba e selando os lábios no 'm' antes de fechar no zumbido de 'z'. Em 'go to', diga 'gôu tu'. Para 'the cinema', em 'the' é obrigatório colocar a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para 'dhə', mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular, e fale 'sı-nə-mə' deixando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'sı'.\nLeia: Wii sâm-táimz gôu tu dhə sı-nə-mə."
+  },
+  "90": {
+    "explanation": "Para dizer 'eu geralmente fico em casa', usamos 'I' (eu), a palavra de frequência 'usually' (geralmente), o verbo 'stay' (ficar/permanecer), e a expressão 'at home' (em casa).",
+    "breakdown": [
+      {
+        "word": "I usually",
+        "meaning": "Eu geralmente — I: eu; usually: geralmente / normalmente."
+      },
+      {
+        "word": "stay",
+        "meaning": "Fico — ficar / permanecer."
+      },
+      {
+        "word": "at home",
+        "meaning": "Em casa — at: em; home: casa / lar."
+      }
+    ],
+    "pronuncia": "Diga 'ái' para 'I'. Em 'usually', fale 'yúu-ju-ə-li' com som de 'j' suave e zumbido. Na palavra 'stay', é proibido acrescentar som de 'e' ou 'i' no começo: inicie direto no silvo do S em 'stêi', deslizando do 'ê' para 'i'. Em 'at home', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æt', cortando a consoante 't', e diga 'hôum' soltando o suspiro suave do 'h' e selando os lábios no 'm'.\nLeia: Ái yúu-ju-ə-li stêi æt hôum."
   }
 }

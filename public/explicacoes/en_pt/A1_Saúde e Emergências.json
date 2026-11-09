@@ -1,566 +1,538 @@
 {
   "211": {
-    "explanation": "Em inglês, quando queremos dizer como estamos nos sentindo fisicamente, usamos 'I feel' seguido diretamente do estado, sem precisar de palavras extras como o nosso 'me'. A palavra 'sick' é o jeito mais comum de dizer que você não está bem ou está doente.",
+    "explanation": "Em inglês, dizemos diretamente 'eu sinto doente' (I feel sick) sem precisar da palavra 'me' como no português. O termo 'sick' cobre tanto estar doente quanto estar enjoado ou se sentindo mal no momento.",
     "breakdown": [
       {
         "word": "I",
-        "meaning": "Eu."
+        "meaning": "Eu"
       },
       {
         "word": "feel",
-        "meaning": "Sinto / Me sinto."
+        "meaning": "Sinto / Me sinto — verbo sentir"
       },
       {
         "word": "sick",
-        "meaning": "Doente / Mal / Enjoado."
+        "meaning": "Doente / Mal — estado de saúde ruim"
       }
     ],
-    "pronuncia": "Diga o 'I' como 'Ai'. No 'feel', estique bem o som do 'i' e termine com a ponta da língua tocando o céu da boca para o 'l'. Em 'sick', o 'i' é bem curto e seco, terminando com um estalo de 'k' no fundo da garganta. \nLeia: Ai fíl sík."
+    "pronuncia": "No 'I feel', sorria esticando os cantos da boca no som longo 'fíil', travando a ponta da língua no céu da boca para o 'l' sem virar som de 'u'. Na palavra 'sick', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'sık', e corte o som da consoante final a seco sem colocar nenhum 'i' no fim.\nLeia: Ái fíil sık."
   },
   "212": {
-    "explanation": "Para perguntar a localização de algo, os nativos começam com 'Where is' (Onde é/fica) e emendam com o objeto. Note que 'hospital' se escreve igual ao português, mas o som do 'h' inicial é como um suspiro, bem diferente do nosso.",
+    "explanation": "Para perguntar 'Onde fica o hospital?', o inglês usa o verbo estar 'is', ficando literalmente 'Onde está o hospital?'. A palavra 'hospital' é escrita exatamente igual, mas o 'h' no início sai como um suspiro macio de ar quente.",
     "breakdown": [
       {
         "word": "Where",
-        "meaning": "Onde."
+        "meaning": "Onde"
       },
       {
         "word": "is",
-        "meaning": "é / fica / está."
+        "meaning": "Está / Fica — verbo ser/estar"
       },
       {
         "word": "the",
-        "meaning": "o / a."
+        "meaning": "O — artigo definido"
       },
       {
         "word": "hospital",
-        "meaning": "hospital."
+        "meaning": "Hospital — local de atendimento médico"
       }
     ],
-    "pronuncia": "No 'Where', faça um biquinho para o 'u' e curve a língua para trás no final ('uér'). O 'is' tem som de 'z' no final. No 'the', coloque a pontinha da língua entre os dentes ('dhê'). Em 'hospital', solte um arzinho no início como se estivesse suspirando ('hós') e termine com o 'l' no céu da boca. \nLeia: Uér íz dhê hós-pí-tál."
+    "pronuncia": "Em 'Where is', emende o 'r' enrolado de 'Wéər' no 'ız', mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i'. Em 'the', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para fazer 'dh', mantendo a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə' em 'dhə'. Em 'hospital', bafore o 'h' como um suspiro e suba a ponta da língua no céu da boca para o 'l' final.\nLeia: Wéər ız dhə hós-pı-tl?"
   },
   "213": {
-    "explanation": "Diferente do português onde dizemos 'preciso DE um', no inglês o verbo 'need' já carrega esse sentido, então você pula direto para o 'a doctor'. É um pensamento muito mais direto.",
+    "explanation": "Quando você precisa de um médico em inglês, diz 'I need a doctor'. Não se usa a preposição 'de' após o verbo precisar; o nativo conecta o verbo diretamente no objeto, dizendo literalmente 'eu preciso um médico'.",
     "breakdown": [
       {
         "word": "I",
-        "meaning": "Eu."
+        "meaning": "Eu"
       },
       {
         "word": "need",
-        "meaning": "Preciso."
+        "meaning": "Preciso — verbo precisar"
       },
       {
         "word": "a",
-        "meaning": "um / uma."
+        "meaning": "Um / Uma — artigo indefinido"
       },
       {
         "word": "doctor",
-        "meaning": "médico."
+        "meaning": "Médico / Doutor"
       }
     ],
-    "pronuncia": "Fale 'Ai'. No 'need', o som do 'i' é longo e o 'd' final é bem seco, quase sem som. O 'a' soa como um 'ê' bem relaxado. Em 'doctor', o 'r' final pede que você curve a língua para o céu da boca sem encostar em nada. \nLeia: Ai níd ê dóc-tôr."
+    "pronuncia": "Em 'need a', faça o som de 'i' longo com sorriso em 'níid' e emende o 'd' seco no 'a', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə' para soar 'níi-də'. Em 'doctor', abra bem a boca no 'ó' profundo e termine com o 'r' caipira enrolado no céu da boca.\nLeia: Ái níi-də dók-tər."
   },
   "214": {
-    "explanation": "Para fazer perguntas de 'você tem', o inglês usa o ajudante 'Do' no começo. A palavra 'any' entra para dar a ideia de 'algum' ou 'qualquer', sendo essencial em perguntas sobre quantidades ou objetos.",
+    "explanation": "Para perguntar se alguém tem algo em inglês, usa-se a palavra 'Do' no começo para indicar que é uma pergunta no presente. A palavra 'any' entra para expressar 'algum' ou 'qualquer', formando a estrutura natural 'Você tem algum remédio?'.",
     "breakdown": [
       {
         "word": "Do you",
-        "meaning": "Você (em formato de pergunta)."
+        "meaning": "Você — 'Do' é o indicador de pergunta no presente"
       },
       {
         "word": "have",
-        "meaning": "tem / possui."
+        "meaning": "Tem / Possui — verbo ter"
       },
       {
         "word": "any",
-        "meaning": "algum / qualquer."
+        "meaning": "Algum / Alguma"
       },
       {
         "word": "medicine",
-        "meaning": "remédio / medicamento."
+        "meaning": "Remédio / Medicamento"
       }
     ],
-    "pronuncia": "Comece com 'Du iú'. No 'have', solte um arzinho no 'h' e termine com o som de 'v' encostando os dentes nos lábios. 'Any' soa como 'é-ni'. Em 'medicine', o final 'cine' morre num som de 's' com 'n', sem falar o 'e' final. \nLeia: Du iú hév é-ni mé-dí-sên."
+    "pronuncia": "Em 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para fazer o 'æ' em 'hæv', e trave a boca no 'v' sem 'i' no final. Na palavra 'medicine', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' nas sílabas com 'ı' em 'mé-dı-sın', travando a ponta da língua nos dentes para o 'n' final.\nLeia: Dúu yúu hæv é-ni mé-dı-sın?"
   },
   "215": {
-    "explanation": "Nativos pensam primeiro na parte do corpo que é 'dona' da dor. Por isso dizem 'Minha cabeça dói'. O verbo 'hurts' já indica que algo está machucando ou causando dor naquele momento.",
+    "explanation": "Para dizer que sua cabeça dói, os nativos dizem 'My head hurts', que significa literalmente 'Minha cabeça dói'. O verbo 'hurt' ganha a letra 's' no final porque a frase está na terceira pessoa no presente (a cabeça).",
     "breakdown": [
       {
         "word": "My",
-        "meaning": "Minha."
+        "meaning": "Minha"
       },
       {
         "word": "head",
-        "meaning": "cabeça."
+        "meaning": "Cabeça"
       },
       {
         "word": "hurts",
-        "meaning": "dói / machuca."
+        "meaning": "Dói / Machuca — verbo doer"
       }
     ],
-    "pronuncia": "Fale 'Mai'. No 'head', solte o ar no 'h' e termine com um 'd' bem curto. Em 'hurts', curve a língua para trás para fazer o 'r' e termine com o som de 'ts' como se estivesse pedindo silêncio. \nLeia: Mai héd hãrts."
+    "pronuncia": "Em 'head', bafore o 'h' com um suspiro suave e trave a consoante 'd' a seco no final sem soltar 'i'. Em 'hurts', mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o som '3r' em 'h3rts', cortando a palavra no som de 's' final sem vogal de apoio.\nLeia: Mái héd h3rts."
   },
   "216": {
-    "explanation": "Aqui usamos o 'I am' para 'Eu estou'. A palavra 'tired' é interessante porque, embora tenha muitas letras, os nativos a pronunciam de forma bem enxuta, focando no som do 'r' curvado.",
+    "explanation": "Em inglês, 'Eu estou muito cansado' vira 'I am very tired'. A palavra 'very' intensifica a característica, e o estado de estar cansado é expresso por 'tired', que combina o som inicial de 'tai' com uma terminação enrolada pelo 'r'.",
     "breakdown": [
       {
         "word": "I am",
-        "meaning": "Eu estou."
+        "meaning": "Eu estou — verbo ser/estar"
       },
       {
         "word": "very",
-        "meaning": "muito."
+        "meaning": "Muito"
       },
       {
         "word": "tired",
-        "meaning": "cansado."
+        "meaning": "Cansado"
       }
     ],
-    "pronuncia": "Fale 'Ai ém'. No 'very', trema levemente os dentes no lábio para o 'v' e curve a língua no 'r'. Em 'tired', diga 'tái' e emende com a língua curvada para o 'r' e um 'd' seco no final. \nLeia: Ai ém vé-ri tái-êrd."
+    "pronuncia": "Em 'am', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æm' e sele os lábios no 'm'. Em 'very', encoste os dentes de cima no lábio inferior para o 'v'. Em 'tired', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə' entre o 'tai' e o 'r', terminando com o 'd' seco em 'tái-ərd'.\nLeia: Ái æm vé-ri tái-ərd."
   },
   "217": {
-    "explanation": "Em emergências, o inglês é muito direto. 'Call' serve tanto para chamar quanto para ligar. Usamos 'an' antes de 'ambulance' porque a palavra seguinte começa com som de vogal, facilitando a fala fluida.",
+    "explanation": "Para pedir 'Chame uma ambulância!', usa-se 'Call an ambulance!'. A palavra 'an' substitui 'a' porque 'ambulance' começa com som de vogal, permitindo que a frase flua numa leitura contínua e sem tropeços.",
     "breakdown": [
       {
         "word": "Call",
-        "meaning": "Chame / Ligue para."
+        "meaning": "Chame / Ligue para — verbo chamar"
       },
       {
         "word": "an",
-        "meaning": "uma."
+        "meaning": "Uma — artigo indefinido antes de vogal"
       },
       {
         "word": "ambulance",
-        "meaning": "ambulância."
+        "meaning": "Ambulância"
       }
     ],
-    "pronuncia": "No 'Call', faça um som de 'k' e termine com a língua no céu da boca. Emende o 'n' de 'an' direto na próxima palavra. Em 'ambulance', o som é 'ém-biu-lêns', terminando com um som de 's' bem nítido. \nLeia: Kól én ém-biu-lêns."
+    "pronuncia": "Em 'Call', abra a boca no 'ó' e trave a ponta da língua no céu da boca para o 'l' sem virar 'u' ('kól'). Em 'an ambulance', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æn' e no início de 'æm-byə-ləns', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular para o som neutro 'ə' nas sílabas do meio de 'æm-byə-ləns'.\nLeia: Kól æn æm-byə-ləns!"
   },
   "218": {
-    "explanation": "Para perguntar se 'tem' algo no sentido de existir, invertemos o 'there is' para 'is there'. A palavra 'nearby' é uma forma muito natural de dizer 'aqui por perto' ou 'nas proximidades'.",
+    "explanation": "Para perguntar 'Tem uma farmácia por perto?', o inglês não usa o verbo ter, mas a inversão 'Is there', que significa 'Existe/Há'. A palavra 'nearby' combina o sentido de 'perto' (near) com 'junto' (by) para indicar proximidade física.",
     "breakdown": [
       {
         "word": "Is there",
-        "meaning": "Tem / Existe (pergunta)."
+        "meaning": "Tem / Existe — estrutura para perguntar sobre existência"
       },
       {
         "word": "a",
-        "meaning": "uma."
+        "meaning": "Uma"
       },
       {
         "word": "pharmacy",
-        "meaning": "farmácia."
+        "meaning": "Farmácia"
       },
       {
         "word": "nearby",
-        "meaning": "por perto / nas proximidades."
+        "meaning": "Por perto / Nas proximidades"
       }
     ],
-    "pronuncia": "No 'Is', use som de 'z'. No 'there', língua entre os dentes e curve o final ('dhér'). 'Pharmacy' começa com som de 'f' e termina em 'si'. Em 'nearby', curve a língua no meio da palavra e termine com 'bai'. \nLeia: Íz dhér ê fár-mê-si nír-bai."
+    "pronuncia": "Em 'Is', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız'. Em 'there', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para fazer o 'dh' em 'dhɛər'. Em 'a', deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'ə'. Em 'pharmacy', use o som de 'f' puro em 'fár-mə-si'.\nLeia: Iz dhɛər ə fár-mə-si níər-bái?"
   },
   "219": {
-    "explanation": "Em inglês, você não 'está' resfriado, você 'tem' um resfriado. Por isso usamos 'I have a cold'. A palavra 'cold' também significa frio, então literalmente você 'tem um frio'.",
+    "explanation": "Para dizer 'Eu estou resfriado', o nativo fala literalmente 'Eu tenho um resfriado' (I have a cold). A palavra 'cold', que também significa frio, funciona como o substantivo que dá nome ao resfriado comum.",
     "breakdown": [
       {
         "word": "I have",
-        "meaning": "Eu tenho."
+        "meaning": "Eu tenho / Eu estou com"
       },
       {
         "word": "a",
-        "meaning": "um."
+        "meaning": "Um"
       },
       {
         "word": "cold",
-        "meaning": "resfriado / frio."
+        "meaning": "Resfriado — literalmente 'um frio'"
       }
     ],
-    "pronuncia": "Fale 'Ai hév'. O 'a' soa como 'ê'. Em 'cold', comece com o 'k', faça um som de 'ôu', suba a língua para o 'l' e termine com um 'd' bem curtinho. \nLeia: Ai hév ê côuld."
+    "pronuncia": "Em 'have a', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv', e ligue no 'a' com a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular ('hæ-və'). Em 'cold', comece no 'k', deslize o 'ô' para o 'u' em 'kôuld' e suba a ponta da língua no céu da boca para o 'l' antes de travar no 'd' final.\nLeia: Ái hæ-və kôuld."
   },
   "220": {
-    "explanation": "Para dizer que alguém não está bem, usamos a estrutura 'is not feeling well'. O 'well' é o 'bem' de saúde ou estado geral, enquanto 'good' seria mais para bom de caráter ou qualidade.",
+    "explanation": "A frase 'Ele não está se sentindo bem' traduz-se como 'He is not feeling well'. A negação 'not' fica logo depois do verbo 'is', e a palavra 'well' entra no final para indicar a qualidade da saúde ou do bem-estar.",
     "breakdown": [
       {
-        "word": "He is not",
-        "meaning": "Ele não está."
+        "word": "He is",
+        "meaning": "Ele está"
+      },
+      {
+        "word": "not",
+        "meaning": "Não"
       },
       {
         "word": "feeling",
-        "meaning": "sentindo."
+        "meaning": "Sentindo — verbo sentir em ação contínua"
       },
       {
         "word": "well",
-        "meaning": "bem."
+        "meaning": "Bem"
       }
     ],
-    "pronuncia": "Diga 'Hí íz nót'. No 'feeling', estique o 'i' e termine com um som de 'n' suave. Em 'well', comece com o biquinho do 'u' e termine com a língua lá no céu da boca para o 'l'. \nLeia: Hí íz nót fí-lín uél."
+    "pronuncia": "Em 'He', faça o 'i' longo sorrindo em 'híi'. Em 'is' e no final de 'feeling', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız' e 'fíi-lıng'. Em 'well', abra levemente a boca e trave a ponta da língua no céu da boca no 'l' final sem deixar o som virar 'u'.\nLeia: Híi ız nót fíi-lıng wel."
   },
   "221": {
-    "explanation": "Esta é a pergunta mais comum para checar o estado de alguém. O 'Are' vem para a frente para indicar a pergunta, e o 'okay' é universal para 'tudo bem'.",
+    "explanation": "Para perguntar 'Você está bem?', o inglês coloca o verbo 'are' no início da frase: 'Are you okay?'. É a forma mais simples e direta de checar a situação de alguém no dia a dia.",
     "breakdown": [
       {
         "word": "Are you",
-        "meaning": "Você está (pergunta)."
+        "meaning": "Você está — estrutura de pergunta no presente"
       },
       {
         "word": "okay",
-        "meaning": "bem / ok."
+        "meaning": "Bem / Certo / Ok"
       }
     ],
-    "pronuncia": "No 'Are', curve a língua para trás ('ár'). O 'you' soa como 'iú'. O 'okay' deve ter o 'o' bem aberto e o 'kay' como o nosso 'quêi'. \nLeia: Ár iú ôu-kêi."
+    "pronuncia": "Em 'Are', enrole a ponta da língua para trás sem encostar no céu da boca para o 'r' caipira em 'ár'. Em 'okay', comece no 'ôu' escorregando o som e termine deslizando a boca em sorriso para o som de 'êi' em 'ôu-kêi'.\nLeia: Ár yúu ôu-kêi?"
   },
   "222": {
-    "explanation": "Ao pedir algo como água, os nativos costumam colocar o 'some' (um pouco de) para soar mais natural e menos exigente, mesmo que a gente não traduza isso sempre no português.",
+    "explanation": "'I need some water' significa 'Eu preciso de água'. A palavra 'some' é usada antes de coisas incontáveis como líquidos para indicar 'um pouco de' ou cobrir a ponta da preposição 'de' que usamos em português.",
     "breakdown": [
       {
         "word": "I need",
-        "meaning": "Eu preciso."
+        "meaning": "Eu preciso"
       },
       {
         "word": "some",
-        "meaning": "um pouco de / algo de."
+        "meaning": "De / Um pouco de"
       },
       {
         "word": "water",
-        "meaning": "água."
+        "meaning": "Água"
       }
     ],
-    "pronuncia": "Fale 'Ai níd'. O 'some' soa como 'sâm', fechando os lábios no final. Em 'water', os americanos costumam transformar o 't' num som de 'r' suave, como em 'arara', e curvar a língua no final. \nLeia: Ai níd sâm uó-têr."
+    "pronuncia": "Em 'need', estique o sorriso em 'níid'. Em 'some', deixe a boca entreaberta de forma neutra em 'sâm', soltando um som curto da garganta e selando os lábios no 'm'. Em 'water', toque a ponta da língua rapidamente no céu da boca para fazer o 't' com som de 'r' brando, usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no final ('wó-rər').\nLeia: Ái níid sâm wó-rər."
   },
   "223": {
-    "explanation": "Um pedido de socorro clássico. O 'me' vem logo após a ação 'help'. O 'please' no final é a etiqueta básica para qualquer pedido, mesmo em situações urgentes.",
+    "explanation": "'Me ajude, por favor!' é traduzido diretamente por 'Help me, please!'. O verbo 'help' vem no início por ser um pedido direto de socorro, seguido de quem recebe a ajuda ('me') e do pedido educado ('please').",
     "breakdown": [
       {
         "word": "Help",
-        "meaning": "Ajude."
+        "meaning": "Ajude / Socorro — verbo ajudar"
       },
       {
         "word": "me",
-        "meaning": "me / a mim."
+        "meaning": "Me / A mim"
       },
       {
         "word": "please",
-        "meaning": "por favor."
+        "meaning": "Por favor"
       }
     ],
-    "pronuncia": "No 'Help', solte o ar no 'h', suba a língua no 'l' e feche os lábios no 'p'. Diga 'mí'. Em 'please', o 'ea' tem som de 'i' longo e o 's' final tem som de 'z'. \nLeia: Hélp mí plíz."
+    "pronuncia": "Em 'Help', bafore o 'h' macio, suba a ponta da língua no céu da boca para o 'l' e corte o 'p' a seco sem soltar 'i' ('help'). Em 'me' e 'please', dê um sorriso esticado mantendo o som de 'i' longo em 'míi' e 'plíiz', travando a voz em tom de zumbido de 'z' no fim de 'plíiz'.\nLeia: Help míi, plíiz!"
   },
   "224": {
-    "explanation": "Para falar de algo que aconteceu no passado, como perder um objeto, usamos 'lost'. O raciocínio é direto: Quem + Ação no passado + O que foi perdido.",
+    "explanation": "Para dizer 'Eu perdi minha bolsa', usa-se 'I lost my bag'. O verbo 'lost' é a forma no passado de perder, e a palavra 'bag' serve para qualquer tipo de bolsa, sacola ou mochila pequena.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu."
-      },
-      {
-        "word": "lost",
-        "meaning": "perdi."
+        "word": "I lost",
+        "meaning": "Eu perdi — passado do verbo perder"
       },
       {
         "word": "my",
-        "meaning": "minha."
+        "meaning": "Minha"
       },
       {
         "word": "bag",
-        "meaning": "bolsa / sacola / mala."
+        "meaning": "Bolsa / Mala"
       }
     ],
-    "pronuncia": "Fale 'Ai'. No 'lost', o 'o' é aberto e o 't' final é seco. Diga 'mai'. Em 'bag', o 'a' é mais aberto, quase um 'é', e o 'g' final é um som de garganta que para de repente. \nLeia: Ai lóst mai bég."
+    "pronuncia": "Em 'lost', abra a boca no 'ó' profundo e trave a consoante 't' a seco no final. Em 'bag', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'æ' em 'bæg', cortando o som da letra 'g' sem soltar vogal depois.\nLeia: Ái lóst mái bæg."
   },
   "225": {
-    "explanation": "Em inglês, 'delegacia' é chamada de 'estação de polícia'. O 'there' no final indica que o lugar está visível ou em um ponto específico distante de quem fala.",
+    "explanation": "Em inglês, 'delegacia' é chamada de 'police station' (estação de polícia). A frase 'The police station is there' coloca a palavra de localização 'there' (ali/lá) no final da frase para indicar onde o lugar fica.",
     "breakdown": [
       {
-        "word": "The",
-        "meaning": "A."
-      },
-      {
-        "word": "police station",
-        "meaning": "delegacia (estação de polícia)."
+        "word": "The police station",
+        "meaning": "A delegacia de polícia — police: polícia; station: posto/estação"
       },
       {
         "word": "is",
-        "meaning": "fica / está."
+        "meaning": "Está / Fica"
       },
       {
         "word": "there",
-        "meaning": "ali / lá."
+        "meaning": "Lá / Ali"
       }
     ],
-    "pronuncia": "Faça o 'dhê' com a língua nos dentes. 'Police' soa como 'pô-lís'. 'Station' soa como 'stêi-chân'. O 'is' tem som de 'z'. Termine com 'there', língua nos dentes e curve para o 'r'. \nLeia: Dhê pô-lís stêi-chân íz dhér."
+    "pronuncia": "Em 'The' e 'there', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dh', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'dhə'. Em 'police', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no início ('pə-líis'). Em 'station', faça o chiado suave de 'ch' com a língua travada no dente no 'n' em 'stêi-chən'.\nLeia: Dhə pə-líis stêi-chən ız dhɛər."
   },
   "226": {
-    "explanation": "Esta é uma alternativa para 'I feel sick'. Usar o 'do not' (ou a contração 'don't') é a forma padrão de negar uma sensação ou ação no presente.",
+    "explanation": "'Eu não me sinto bem' fica 'I do not feel good'. A estrutura usa 'do not' para negar o verbo no presente, e a palavra 'good' entra para expressar o estado físico ou de bem-estar da pessoa.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu."
-      },
-      {
-        "word": "do not",
-        "meaning": "não."
+        "word": "I do not",
+        "meaning": "Eu não — 'do' auxilia a negação no presente"
       },
       {
         "word": "feel",
-        "meaning": "sinto."
+        "meaning": "Sinto / Me sinto"
       },
       {
         "word": "good",
-        "meaning": "bem / bom."
+        "meaning": "Bem / Bom"
       }
     ],
-    "pronuncia": "Fale 'Ai du nót'. No 'feel', estique o 'i'. Em 'good', o som do 'oo' é curto, como em 'pulo', e o 'd' final é apenas um toque seco da língua. \nLeia: Ai du nót fíl gúd."
+    "pronuncia": "Em 'feel', abra um sorriso para o 'i' longo em 'fíil' e trave a língua no céu da boca para o 'l'. Em 'good', deixe a boca quase neutra, mandíbula relaxada, lábios entreabertos sem armar bico, soltando o som seco de 'u' curto em 'gud' e travando a consoante 'd' no final.\nLeia: Ái dúu nót fíil gud."
   },
   "227": {
-    "explanation": "A estrutura é idêntica ao português: 'Minha perna está quebrada'. A palavra 'broken' vem de quebrar e é usada para ossos, máquinas ou objetos em geral.",
+    "explanation": "'Minha perna está quebrada' é dito como 'My leg is broken'. A palavra 'broken' vem da ação de quebrar e descreve o estado de um osso fraturado ou de um objeto partido.",
     "breakdown": [
       {
-        "word": "My",
-        "meaning": "Minha."
-      },
-      {
-        "word": "leg",
-        "meaning": "perna."
+        "word": "My leg",
+        "meaning": "Minha perna"
       },
       {
         "word": "is",
-        "meaning": "está."
+        "meaning": "Está"
       },
       {
         "word": "broken",
-        "meaning": "quebrada."
+        "meaning": "Quebrada — estado fraturado"
       }
     ],
-    "pronuncia": "Fale 'Mai lég'. O 'is' tem som de 'z'. Em 'broken', comece com 'brôu', e o final 'ken' soa como um 'k' seguido de um 'n' rápido, quase sem vogal. \nLeia: Mai lég íz brôu-kên."
+    "pronuncia": "Em 'leg', fale o 'e' bem aberto e trave o 'g' seco no fim. Em 'is', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ız'. Em 'broken', comece no 'brôu' e use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə' da última sílaba ('brôu-kən').\nLeia: Mái lég ız brôu-kən."
   },
   "228": {
-    "explanation": "Ao pedir um curativo, usamos 'bandage'. Lembre-se que para perguntas de 'você tem', o 'Do' sempre abre o caminho da frase.",
+    "explanation": "A pergunta 'Você tem um curativo?' em inglês fica 'Do you have a bandage?'. A palavra 'bandage' serve tanto para pequenos curativos adesivos de cortar o dedo quanto para faixas medicinais de enfaixar.",
     "breakdown": [
       {
         "word": "Do you have",
-        "meaning": "Você tem (pergunta)."
+        "meaning": "Você tem — estrutura de pergunta"
       },
       {
         "word": "a",
-        "meaning": "um."
+        "meaning": "Um / Uma"
       },
       {
         "word": "bandage",
-        "meaning": "curativo / atadura / faixa."
+        "meaning": "Curativo / Bandagem"
       }
     ],
-    "pronuncia": "Diga 'Du iú hév ê'. Em 'bandage', fale 'bén-dêidj', com o final soando como o 'j' de 'jeito', mas bem curtinho e seco. \nLeia: Du iú hév ê bén-dêidj."
+    "pronuncia": "Em 'have' e no início de 'bandage', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para fazer o som 'æ' ('hæv' e 'bæn-dıdj'). Na sílaba final de 'bandage', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'dıdj' e encoste a língua no céu da boca soltando o estalo com voz do 'dj'.\nLeia: Dúu yúu hæ-və bæn-dıdj?"
   },
   "229": {
-    "explanation": "Para dizer que tem alergia, o nativo diz 'Eu sou alérgico A'. Esse 'a' em inglês é o 'to'. Note que 'cats' está no plural porque a alergia costuma ser ao animal em geral.",
+    "explanation": "'Eu sou alérgico a gatos' é traduzido por 'I am allergic to cats'. Em inglês, quem tem alergia é alérgico 'para' algo ('allergic to'), diferente do português onde usamos a preposição 'a'.",
     "breakdown": [
       {
         "word": "I am",
-        "meaning": "Eu sou."
+        "meaning": "Eu sou / Eu estou"
       },
       {
         "word": "allergic",
-        "meaning": "alérgico."
+        "meaning": "Alérgico / Alérgica"
       },
       {
         "word": "to",
-        "meaning": "a / para."
+        "meaning": "A / Para"
       },
       {
         "word": "cats",
-        "meaning": "gatos."
+        "meaning": "Gatos"
       }
     ],
-    "pronuncia": "Fale 'Ai ém'. Em 'allergic', a ênfase está no 'ler', curvando a língua ('ê-lêr-djík'). O 'to' soa como 'tu'. Termine com 'kéts', com um 's' bem marcado. \nLeia: Ai ém ê-lêr-djík tu kéts."
+    "pronuncia": "Em 'am' e 'cats', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æm' e 'kæts'. Em 'allergic', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no início em 'ə', mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o '3r' do meio ('ə-l3r-djık').\nLeia: Ái æm ə-l3r-djık tə kæts."
   },
   "230": {
-    "explanation": "Usamos o 'is coming' para algo que está acontecendo agora ou em progresso. É a forma de dizer que o socorro ou o profissional já está a caminho.",
+    "explanation": "'O médico está vindo' traduz-se como 'The doctor is coming'. A combinação do verbo 'is' com a ação terminada em '-ing' mostra que a vinda do médico está em andamento neste momento.",
     "breakdown": [
       {
-        "word": "The",
-        "meaning": "O."
-      },
-      {
-        "word": "doctor",
-        "meaning": "médico."
+        "word": "The doctor",
+        "meaning": "O médico — doctor: médico"
       },
       {
         "word": "is coming",
-        "meaning": "está vindo."
+        "meaning": "Está vindo — coming: vindo (ação em andamento)"
       }
     ],
-    "pronuncia": "Faça o 'dhê' com a língua nos dentes. No 'doctor', curve a língua no 'r'. O 'is' tem som de 'z'. Em 'coming', o 'o' soa como 'â' e o final 'ing' é um som de 'n' que morre na garganta. \nLeia: Dhê dóc-tôr íz ká-mín."
+    "pronuncia": "Em 'The', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular em 'dhə' e na última sílaba de 'dók-tər'. Em 'coming', solte um som de 'â' seco vindo do fundo da garganta no 'kâm', e deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' na terminação 'mıng'.\nLeia: Dhə dók-tər ız kâ-mıng."
   },
   "231": {
-    "explanation": "Em locais públicos, procurar pela 'emergency exit' é vital. Note que quando o 'the' vem antes de uma palavra que começa com som de vogal (como emergency), ele soa como 'dhí' em vez de 'dhê'.",
+    "explanation": "'Onde fica a saída de emergência?' vira 'Where is the emergency exit?'. O termo 'emergência' (emergency) é colocado antes da palavra 'saída' (exit) para descrever a função específica daquela porta.",
     "breakdown": [
       {
         "word": "Where is",
-        "meaning": "Onde fica / está."
+        "meaning": "Onde fica / Onde está"
       },
       {
-        "word": "the",
-        "meaning": "a."
-      },
-      {
-        "word": "emergency",
-        "meaning": "emergência."
-      },
-      {
-        "word": "exit",
-        "meaning": "saída."
+        "word": "the emergency exit",
+        "meaning": "A saída de emergência — emergency: emergência; exit: saída"
       }
     ],
-    "pronuncia": "Diga 'Uér íz dhí'. Em 'emergency', fale 'í-mêr-djên-si', curvando a língua no 'r'. Em 'exit', o som é 'ég-zít', com o 't' final bem seco. \nLeia: Uér íz dhí í-mêr-djên-si ég-zít."
+    "pronuncia": "Em 'is', 'emergency' e 'exit', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' para as sílabas com 'ı'. Em 'emergency', mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o som '3r' ('ı-m3r-djən-si'), usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə' antes do 'n'.\nLeia: Wéər ız dhi ı-m3r-djən-si ég-zıt?"
   },
   "232": {
-    "explanation": "Assim como no resfriado, em inglês você 'tem' uma febre. A palavra 'fever' é muito parecida com o português, facilitando a memorização.",
+    "explanation": "Para dizer 'Eu estou com febre', em inglês fala-se literalmente 'Eu tenho uma febre' (I have a fever). É obrigatório incluir a palavra 'a' (uma) antes da febre.",
     "breakdown": [
       {
         "word": "I have",
-        "meaning": "Eu tenho."
+        "meaning": "Eu tenho / Eu estou com"
       },
       {
         "word": "a",
-        "meaning": "uma."
+        "meaning": "Uma"
       },
       {
         "word": "fever",
-        "meaning": "febre."
+        "meaning": "Febre"
       }
     ],
-    "pronuncia": "Fale 'Ai hév ê'. Em 'fever', comece com o 'f', faça o 'v' encostando os dentes no lábio e termine curvando a língua para o 'r' ('fí-vêr'). \nLeia: Ai hév ê fí-vêr."
+    "pronuncia": "Em 'have', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv'. Em 'a' e na sílaba final de 'fever', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə', sorrindo com 'i' longo na primeira sílaba de 'fíi-vər'.\nLeia: Ái hæ-və fíi-vər."
   },
   "233": {
-    "explanation": "Quando um médico ou alguém ajudando quer localizar a dor, eles usam 'Does it hurt...'. O 'it' serve para representar 'a dor' ou 'o lugar', já que em inglês toda frase precisa de um sujeito.",
+    "explanation": "A pergunta 'Dói aqui?' fica 'Does it hurt here?'. A palavra 'Does' inicia a pergunta para uma coisa (o ponto da dor), o 'it' representa a região dolorida e 'hurt' é o verbo doer.",
     "breakdown": [
       {
         "word": "Does it",
-        "meaning": "Isso (em pergunta)."
+        "meaning": "Isso — 'Does' indica pergunta; 'it' refere-se ao local da dor"
       },
       {
         "word": "hurt",
-        "meaning": "dói / machuca."
+        "meaning": "Dói / Machuca"
       },
       {
         "word": "here",
-        "meaning": "aqui."
+        "meaning": "Aqui"
       }
     ],
-    "pronuncia": "O 'Does' soa como 'dâz'. O 'it' é um 'i' curto com 't' seco. No 'hurt', curve a língua para o 'r' e solte o 't'. Em 'here', solte o ar no 'h' e curve a língua no final. \nLeia: Dâz ít hãrt hír."
+    "pronuncia": "Em 'Does', solte o som seco de 'â' vindo do fundo da garganta sem fazer bico em 'dâz'. Em 'it', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ıt'. Em 'hurt', mantenha a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o som '3r' em 'h3rt', baforando o 'h' como um suspiro macio no início de 'h3rt' e 'híər'.\nLeia: Dâ-zıt h3rt híər?"
   },
   "234": {
-    "explanation": "O verbo 'sentar' em inglês geralmente vem acompanhado de 'down' (para baixo), formando 'sit down'. É o jeito natural de descrever o movimento de se acomodar em uma cadeira.",
+    "explanation": "'Eu preciso me sentar' traduz-se como 'I need to sit down'. Nativos costumam combinar o verbo 'sit' (sentar) com a palavra 'down' (para baixo) para indicar a ação completa de se acomodar.",
     "breakdown": [
       {
         "word": "I need",
-        "meaning": "Eu preciso."
+        "meaning": "Eu preciso"
       },
       {
         "word": "to sit down",
-        "meaning": "me sentar / sentar-se."
+        "meaning": "Me sentar — sit: sentar; down: para baixo"
       }
     ],
-    "pronuncia": "Diga 'Ai níd tu'. No 'sit', o 'i' é curto e o 't' é seco. No 'down', o 'ow' soa como 'áu' e termina com o som de 'n' com a língua no céu da boca. \nLeia: Ai níd tu sít dáun."
+    "pronuncia": "Em 'need', estique o sorriso no som longo de 'níid'. Em 'sit', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'sıt', cortando a consoante 't' a seco. Em 'down', trave a ponta da língua no céu da boca no 'n' final sem deixar o som ficar nasal solto.\nLeia: Ái níid tə sıt dáun."
   },
   "235": {
-    "explanation": "Para pedir calma, usamos 'Stay calm'. O 'stay' passa a ideia de 'permanecer' ou 'ficar' em um estado. O 'l' em 'calm' é mudo para muitos nativos, soando quase como 'cám'.",
+    "explanation": "'Fique calmo, por favor' é expressado como 'Stay calm, please'. O verbo 'stay' significa permanecer num estado, e a palavra 'calm' perde o som da letra L na pronúncia natural, soando como um 'kám' suave.",
     "breakdown": [
       {
         "word": "Stay",
-        "meaning": "Fique / Permaneça."
+        "meaning": "Fique / Permaneça — verbo ficar"
       },
       {
         "word": "calm",
-        "meaning": "calmo / tranquilo."
+        "meaning": "Calmo / Tranquilo"
       },
       {
         "word": "please",
-        "meaning": "por favor."
+        "meaning": "Por favor"
       }
     ],
-    "pronuncia": "Diga 'Stêi'. No 'calm', ignore o 'l' e diga 'kám', fechando bem os lábios no final. Termine com 'plíz', com som de 'z' no final. \nLeia: Stêi kám plíz."
+    "pronuncia": "Em 'Stay', comece direto no sibilar do 's' sem colocar 'is-' ou 'es-' antes, deslizando a vogal para o som 'êi' ('stêi'). Em 'calm', fale um 'á' limpo e feche completamente os lábios selando a boca no 'm' final ('kám'). Em 'please', dê um sorriso em 'plíiz' terminando com o zumbido de 'z'.\nLeia: Stêi kám, plíiz."
   },
   "236": {
-    "explanation": "Em uma emergência, perguntamos se a pessoa 'está respirando'. O 'Is' vem na frente por ser uma pergunta, e o 'ing' no final de 'breathing' mostra que a ação está acontecendo agora.",
+    "explanation": "Para perguntar 'Ele está respirando?', o inglês inverte a ordem das palavras para 'Is he breathing?'. O verbo 'breathe' ganha o final '-ing' para deixar claro que a respiração está acontecendo agora.",
     "breakdown": [
       {
         "word": "Is he",
-        "meaning": "Ele está (pergunta)."
+        "meaning": "Ele está — inversão de pergunta"
       },
       {
         "word": "breathing",
-        "meaning": "respirando."
+        "meaning": "Respirando — ação contínua de respirar"
       }
     ],
-    "pronuncia": "Diga 'Íz hí'. Em 'breathing', o 'th' é aquele som com a língua entre os dentes, mas aqui ele vibra um pouco ('brí-dhín'). O 'g' final não é pronunciado. \nLeia: Íz hí brí-dhín."
+    "pronuncia": "Em 'Is' e na última sílaba de 'breathing', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' para as vogais 'ı'. Em 'he' e no meio de 'breathing', faça o 'i' longo sorrindo em 'híi' e 'bríi'. No meio de 'breathing', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh'.\nLeia: Iz híi bríi-dhıng?"
   },
   "237": {
-    "explanation": "Para dizer que esqueceu algo, usamos 'forgot'. É o passado de 'forget'. A frase segue a ordem: Quem + Esqueceu + O quê.",
+    "explanation": "'Eu esqueci meu remédio' é 'I forgot my medicine'. O verbo 'forgot' já é a forma no passado de esquecer, e a palavra 'medicine' serve tanto para remédios genéricos quanto controlados.",
     "breakdown": [
       {
-        "word": "I",
-        "meaning": "Eu."
-      },
-      {
-        "word": "forgot",
-        "meaning": "esqueci."
+        "word": "I forgot",
+        "meaning": "Eu esqueci — passado do verbo esquecer"
       },
       {
         "word": "my",
-        "meaning": "meu."
+        "meaning": "Meu / Minha"
       },
       {
         "word": "medicine",
-        "meaning": "remédio."
+        "meaning": "Remédio / Medicamento"
       }
     ],
-    "pronuncia": "Fale 'Ai'. No 'forgot', curve a língua no 'r' e termine com um 't' seco ('fôr-gót'). Diga 'mai'. Em 'medicine', fale 'mé-dí-sên', com o final bem suave. \nLeia: Ai fôr-gót mai mé-dí-sên."
+    "pronuncia": "Em 'forgot', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular na primeira sílaba ('fər'), e abra a boca no 'ó' profundo em 'gót'. Em 'medicine', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' nas sílabas com 'ı' em 'mé-dı-sın', travando o 'n' no dente.\nLeia: Ái fər-gót mái mé-dı-sın."
   },
   "238": {
-    "explanation": "Para dizer que alguém está 'no' hospital, usamos 'in the'. Diferente de outros lugares onde se usa 'at', para hospitais o 'in' é muito comum para indicar que a pessoa está internada ou lá dentro.",
+    "explanation": "'Ela está no hospital' traduz-se como 'She is in the hospital'. Usamos a preposição 'in' porque a pessoa se encontra fisicamente no interior das instalações do hospital.",
     "breakdown": [
       {
         "word": "She is",
-        "meaning": "Ela está."
+        "meaning": "Ela está"
       },
       {
-        "word": "in the",
-        "meaning": "no / dentro do."
-      },
-      {
-        "word": "hospital",
-        "meaning": "hospital."
+        "word": "in the hospital",
+        "meaning": "No hospital — in: dentro de; the: o; hospital: hospital"
       }
     ],
-    "pronuncia": "Diga 'Chí íz ín dhê'. No 'hospital', lembre-se do 'h' como um suspiro e do 'l' final com a língua no céu da boca. \nLeia: Chí íz ín dhê hós-pí-tál."
+    "pronuncia": "Em 'She', faça o chiado suave de 'ch' com o 'i' longo em 'chíi'. Nas palavras 'is', 'in' e no meio de 'hospital', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' para o 'ı'. Em 'the', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhə', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə'.\nLeia: Chíi ız ın dhə hós-pı-tl."
   },
   "239": {
-    "explanation": "Quando a ajuda não pode esperar, adicionamos 'immediately' no final. É uma palavra longa, mas essencial em situações críticas para mostrar urgência total.",
+    "explanation": "'Eu preciso de ajuda imediatamente' vira 'I need help immediately'. Note que o verbo 'need' se conecta diretamente com a palavra 'help' sem nenhuma preposição no meio.",
     "breakdown": [
       {
         "word": "I need",
-        "meaning": "Eu preciso de."
+        "meaning": "Eu preciso"
       },
       {
         "word": "help",
-        "meaning": "ajuda."
+        "meaning": "De ajuda / Socorro"
       },
       {
         "word": "immediately",
-        "meaning": "imediatamente."
+        "meaning": "Imediatamente"
       }
     ],
-    "pronuncia": "Diga 'Ai níd hélp'. Em 'immediately', foque no ritmo: 'í-mí-di-êt-li'. O final 'ly' soa como um 'li' bem leve. \nLeia: Ai níd hélp í-mí-di-êt-li."
+    "pronuncia": "Em 'need' e no meio de 'immediately', sorria bastante para o 'i' longo em 'níid' e 'ı-míi-di-ət-li'. Na primeira sílaba de 'immediately', deixe o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ı', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no som neutro 'ə' antes do 't'. Em 'help', trave a ponta da língua no céu da boca para o 'l'.\nLeia: Ái níid help ı-míi-di-ət-li."
   },
   "240": {
-    "explanation": "Esta é a expressão padrão para dizer 'Cuidado!'. Literalmente significa 'olhe para fora', mas é usada sempre que alguém está em perigo imediato ou prestes a bater em algo.",
+    "explanation": "A expressão de aviso 'Cuidado!' em situações de perigo repentino é dita como 'Watch out!'. Ela junta a ideia de vigiar ou olhar (watch) com a área ao redor (out) para evitar um choque ou acidente.",
     "breakdown": [
       {
-        "word": "Watch out",
-        "meaning": "Cuidado! / Preste atenção!"
+        "word": "Watch",
+        "meaning": "Olhe / Preste atenção"
+      },
+      {
+        "word": "out",
+        "meaning": "Fora / Para fora — junta-se a watch para formar 'Cuidado!'"
       }
     ],
-    "pronuncia": "No 'Watch', faça o som de 'uótch' (como o final de 'tchau'). Emende direto no 'out', que soa como 'áut', com o 't' final bem curto. \nLeia: Uótch áut."
+    "pronuncia": "Em 'Watch', abra a boca no 'ó' profundo e prepare o estalo de 't' antes de chiar o 'ch' ('wótch'). Emende a consoante final direto na palavra seguinte, soltando o bloco único 'Wó-tcháut' e cortando o som do 't' final a seco sem inventar nenhum 'i'.\nLeia: Wó-tcháut!"
   }
 }
