@@ -5,6 +5,7 @@ Snapshot técnico gerado com estrutura de arquivos e código-fonte da aplicaçã
 ./.gitignore
 ./backups/historico_revisoes.md
 ./DINGLI_EXPLICACOES.md
+./DINGLI_EXPLICACOES_L1PT.md
 ./DINGLI_MASTER.md
 ./eslint.config.js
 ./ffmpeg.exe
@@ -4780,14 +4781,14 @@ export function ExplicacaoIA({
                 overflowY: 'auto',
                 WebkitOverflowScrolling: 'touch'
               }}>
-               {/* Frase L2 + Hanzi (se mandarim) */}
-                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '32px' /* <-- Espaço superior para o ícone flutuar acima da 1ª letra */ }}>
+                {/* Frase L2 + Hanzi (se mandarim) */}
+                <div style={{ textAlign: 'center', marginBottom: '4px', marginTop: '42px' /* <-- Espaço superior para o ícone flutuar acima da 1ª letra */ }}>
                   {/* Frase L2 grifada com o ícone ancorado acima da 1ª letra */}
                   <h2 style={{ color: temas[idiomaEstudo].bg, fontWeight: '800', fontSize: '1.25rem', margin: 0, lineHeight: '1.35', width: '100%' }}>
                     {(frase?.[idiomaEstudo] || "").split(/\s+/).filter(Boolean).map((word, i) => {
                       const ehPrimeiraPalavra = i === 0;
 
-                      return (
+                      const elementoPalavra = (
                         <span
                           key={i}
                           onClick={() => tocarAudioPalavra(word, idiomaEstudo)}
@@ -4797,7 +4798,6 @@ export function ExplicacaoIA({
                             marginRight: '6px',
                             cursor: 'pointer',
                             userSelect: 'none',
-                            position: ehPrimeiraPalavra ? 'relative' : 'static',
                             borderBottom: `2.5px solid ${(temas[idiomaEstudo]?.bg || '#4f46e5')}55`, /* <-- [Grifado] Espessura e opacidade da linha */
                             paddingBottom: '1px', /* <-- Distância entre a letra e a linha grifada */
                             transition: 'transform 0.1s ease, border-color 0.2s ease'
@@ -4805,65 +4805,81 @@ export function ExplicacaoIA({
                           onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.92)'; }}
                           onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
                         >
-                          {ehPrimeiraPalavra && (
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                handleOuvirFrase();
-                              }}
-                              title={t?.normal || "Ouvir"}
-                              style={{
-                                position: 'absolute',
-                                bottom: '100%',
-                                left: '0px',
-                                marginBottom: '2px',  /* <-- Distância entre o ícone e o topo da 1ª letra */
-                                marginLeft: '-2px',   /* <-- Positivo empurra p/ direita, negativo p/ esquerda */
-                                background: 'none',
-                                border: 'none',
-                                outline: 'none',
-                                boxShadow: 'none',
-                                WebkitTapHighlightColor: 'transparent',
-                                padding: '2px',
-                                cursor: 'pointer',
-                                color: corBgPrincipal,
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                lineHeight: 1,
-                                flexShrink: 0
-                              }}
-                              onMouseDown={(e) => {
-                                e.stopPropagation();
-                                e.currentTarget.style.transform = 'scale(0.9)';
-                              }}
-                              onMouseUp={(e) => {
-                                e.stopPropagation();
-                                e.currentTarget.style.transform = 'scale(1)';
-                              }}
-                            >
-                              <svg width="22" height="22" viewBox="0 0 256 256" fill="none" stroke="currentColor" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M152,32V224L80,168H32a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8H80Z" />
-                                <path d="M192,106a32,32,0,0,1,0,44" />
-                                <path d="M221.7,78a72,72,0,0,1,0,100" />
-                              </svg>
-                            </button>
-                          )}
                           {word}
+                        </span>
+                      );
+
+                      if (!ehPrimeiraPalavra) {
+                        return elementoPalavra;
+                      }
+
+                      return (
+                        <span
+                          key={i}
+                          style={{
+                            position: 'relative',
+                            display: 'inline-block'
+                          }}
+                        >
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleOuvirFrase();
+                            }}
+                            title={t?.normal || "Ouvir"}
+                            style={{
+                              position: 'absolute',
+                              bottom: '100%',
+                              left: '0px',
+                              marginBottom: '6px',  /* <-- Distância entre o ícone e o topo da 1ª letra */
+                              marginLeft: '-2px',   /* <-- Positivo empurra p/ direita, negativo p/ esquerda */
+                              background: 'none',
+                              border: 'none',
+                              outline: 'none',
+                              boxShadow: 'none',
+                              padding: '2px',
+                              cursor: 'pointer',
+                              color: corBgPrincipal,
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              lineHeight: 1,
+                              flexShrink: 0,
+                              transition: 'transform 0.1s ease, opacity 0.1s ease'
+                            }}
+                            onMouseDown={(e) => {
+                              e.stopPropagation();
+                              e.currentTarget.style.transform = 'scale(0.85)';
+                              e.currentTarget.style.opacity = '0.4';
+                            }}
+                            onMouseUp={(e) => {
+                              e.stopPropagation();
+                              e.currentTarget.style.transform = 'scale(1)';
+                              e.currentTarget.style.opacity = '1';
+                            }}
+                          >
+                            <svg width="24" height="24" viewBox="0 0 256 256" fill="none" stroke="currentColor" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M152,32V224L80,168H32a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8H80Z" />
+                              <path d="M192,106a32,32,0,0,1,0,44" />
+                              <path d="M221.7,78a72,72,0,0,1,0,100" />
+                            </svg>
+                          </button>
+                          {elementoPalavra}
                         </span>
                       );
                     })}
                   </h2>
 
                   {idiomaEstudo === 'pi' && frase?.zh && (
-                    <div style={{ color: '#64748b', fontSize: '1.15rem', marginTop: '4px', fontWeight: '600' }}>
+                    <div style={{ color: '#64748b', fontSize: '1.15rem', marginTop: '6px', fontWeight: '600' }}>
                       {frase.zh}
                     </div>
                   )}
                 </div>
 
                 {/* Tradução L1 */}
-                <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.3', margin: '4px 0 18px 0', textAlign: 'center', fontStyle: 'italic' }}>
+                <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.3', margin: '6px 0 20px 0', textAlign: 'center', fontStyle: 'italic' }}>
                   {idiomaOrigem === 'pi' ? (frase?.zh || frasesFiltradas[indice]?.zh) : (frase?.[idiomaOrigem] || frase?.traducao || frasesFiltradas[indice]?.[idiomaOrigem])}
                 </p>
 

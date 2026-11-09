@@ -72,6 +72,7 @@ Esta seção documenta as dependências que residem fora do repositório local e
   - **Administrador (`Perfil.jsx`):** autenticação via e-mail e senha (`supabase.auth.signInWithPassword`) em modal acionado por 4 toques consecutivos (janela de `1500ms`) na frase inspiracional (ou pelo botão `Adm` em ambiente `DEV`), definindo `userRole = 'adm'`, abrindo a tela `adm` e autenticando a sessão para exclusão de registros em `reports_frases` sob política RLS restrita ao papel `authenticated`.
 - Banco de dados relacional com as tabelas:
   - `sentences`: base curricular das 1.200 frases em todos os idiomas, tópicos por idioma de origem (`topic_{lang}`) e frases inspiracionais.
+  - `matriz_pares`: inteligência pedagógica, regras fonéticas homologadas e padrão ouro universal (Frase 1171) consumidos dinamicamente pela esteira em nuvem do Google Apps Script via REST API.
   - `curso_revisoes`: controle de versionamento independente por idioma (`versao`, `ids_alterados`, `descricao`, `tipo`), permitindo invalidação seletiva de cache e reset cirúrgico apenas das frases atualizadas (`tipo = 'texto'`) ou preservação integral de progresso e ranks (`tipo = 'audio'`).
   - `user_progress`: persistência de progresso e maestria em nuvem (`user_id`, `idioma`, `maestria`) com regras de degradação por inatividade.
   - `reports_frases`: telemetria de reportes manuais dos alunos (`TelaEstudo.jsx` e `Dinglab.jsx`), quarentenas automáticas do Dìnglab (3 erros vocais), superações na Prova de Fogo e reportes manuais de auditoria de áudio (`public/auditor.html`), gerenciáveis (marcar resolvido, inspecionar no card e excluir) pelo painel administrativo (`Adm.jsx`).
@@ -92,7 +93,7 @@ Esta seção documenta as dependências que residem fora do repositório local e
 ### D. Web Speech API, MediaRecorder e Explicações Estáticas Locais
 - **Web Speech API:** Reconhecimento de voz contínuo executado nativamente no navegador (`continuous = true`, `interimResults = true`) com limiar adaptativo (`>= 75%` geral e `>= 50%` para frases de até 2 palavras), confirmação rápida de acerto em `750ms` e tolerância de silêncio (VAD) de `1,3s`, além de normalização fonética e conversão de numerais por extenso (`NUMEROS_EXTENSO` e `normalizarMandarimNumeros`).
 - **MediaRecorder API:** Gravação local em tempo real da voz do aluno (`audio/webm`) no Modo Espelho do Dìnglab para reprodução comparativa imediata ("Ouvir gravação").
-- **Base Estática de Explicações (`/public/explicacoes/`) e Player de Frase com Palavras Interativas (`Relatorios.jsx`):** Explicações didáticas estruturadas e *breakdowns* pré-gerados offline em arquivos JSON estáticos (`/public/explicacoes/{estudo}_{origem}/{nivel}_{topico}.json`) via esteira automatizada em nuvem no Google Apps Script (`Motor.gs`, `MatrizPares.gs`, documentados em `DINGLI_EXPLICACOES.md`), consumidos com cache em memória (`cacheExplicacoesTopico`), persistência offline no Cache Storage e blindagem de formato contra arrays aninhados. Na interface, conta com botão de áudio ancorado acima da 1ª letra da sentença L2 com reprodução da frase completa no rodízio oficial e palavras grifadas clicáveis para audição individual do vocabulário via `tocarAudioPalavra`.
+- **Base Estática de Explicações (`/public/explicacoes/`) e Player de Frase com Palavras Interativas (`Relatorios.jsx`):** Explicações didáticas estruturadas e *breakdowns* pré-gerados offline em arquivos JSON estáticos (`/public/explicacoes/{estudo}_{origem}/{nivel}_{topico}.json`) via esteira automatizada em nuvem no Google Apps Script (`Motor.gs`, consumindo `matriz_pares` do Supabase e documentados em `DINGLI_EXPLICACOES.md`), consumidos com cache em memória (`cacheExplicacoesTopico`), persistência offline no Cache Storage e blindagem de formato contra arrays aninhados. Na interface, conta com botão de áudio ancorado acima da 1ª letra da sentença L2 com reprodução da frase completa no rodízio oficial e palavras grifadas clicáveis para audição individual do vocabulário via `tocarAudioPalavra`.
 - **Pacote Unificado de Download Offline do Tópico (`App.jsx`):** A rotina `baixarTopicoOffline` consolida em uma única operação atômica o download dos registros no IndexedDB (`sentences_cache`), dos arquivos `.mp3` de frases em todas as vozes oficiais (`precarregarAudios`), do vocabulário léxico de palavras isoladas tratadas com pré-delay (`precarregarPalavras`) e do arquivo JSON de explicações didáticas no Cache Storage, acionado voluntariamente pelo ícone de nuvem no Deck, automaticamente na seleção de tópico não baixado ou no Game ao sugerir carta inédita (Rank 0).
 
 ---
@@ -153,7 +154,7 @@ find . -type f \
   -not -name "*.env*" \
   -not -name "$OUTPUT_CORE" \
   -not -name "$OUTPUT_SCRIPTS" \
-  -not -name "DINGLI_EXPLICACOES.md" \
+  -not -name "DINGLI_EXPLICACOES*.md" \
   -not -name "auditor.html" \
   -not -name "*.exe" \
   -not -name "*.dll" \
@@ -186,7 +187,7 @@ echo "# 🛠️ DINGLI_DUMPER_SCRIPTS.md" > "$OUTPUT_SCRIPTS"
 echo "Snapshot técnico de scripts de automação, ferramentas de auditoria e governança de dados do Dìnglì." >> "$OUTPUT_SCRIPTS"
 
 echo -e "\n## 1. CÓDIGO FONTE DE SCRIPTS E FERRAMENTAS" >> "$OUTPUT_SCRIPTS"
-find ./scripts ./public/auditor.html ./backups/historico_revisoes.md ./DINGLI_EXPLICACOES.md -type f 2>/dev/null \
+find ./scripts ./public/auditor.html ./backups/historico_revisoes.md ./DINGLI_EXPLICACOES.md ./DINGLI_EXPLICACOES_L1PT.md -type f 2>/dev/null \
   -not -name "*.pyc" \
   -not -name "__pycache__" | sort | while read -r file; do
   if [ -f "$file" ]; then
@@ -317,11 +318,11 @@ Aplicado quando o texto permanece 100% idêntico e apenas as gravações de áud
 
 O ecossistema oficial de produção de explicações didáticas opera de forma 100% autônoma e em nuvem via **Google Apps Script (GAS)**, integrado diretamente à API REST do **Supabase** e com gravação direta no **Google Drive** (`Explicacoes_Prontas`), eliminando a necessidade de prompts manuais no chat e de scripts locais legados.
 
-A documentação operacional completa, proibições de jargões técnicos, regras por arquétipo (ideográfico/tonal vs. alfabético) e o código integral do motor (`Config.gs`, `MatrizPares.gs` e `Motor.gs`) residem no arquivo **`DINGLI_EXPLICACOES.md`** (mantido no `DINGLI_DUMPER_SCRIPTS.md`).
+A esteira processa tópicos em lote único de 30 frases utilizando o modelo `gemini-3.5-flash` com alternância multi-chave (`GEMINI_API_KEYS`), 5 tentativas de resiliência e auto-recuperação de tarefas pendentes. A documentação operacional e o código de produção (`Config.gs` e `Motor.gs`) residem no arquivo **`DINGLI_EXPLICACOES.md`**, enquanto o compêndio exaustivo de regras fonéticas homologadas para falantes de português reside em **`DINGLI_EXPLICACOES_L1PT.md`** (ambos mantidos no `DINGLI_DUMPER_SCRIPTS.md`).
 
 ### Diretriz para o Assistente AI:
 Sempre que o usuário solicitar novos pares, ajustes de motor ou auditoria da esteira de explicações:
-1. **Fonte Única da Verdade:** A governança pedagógica e o código-fonte da esteira pertencem estritamente ao documento `DINGLI_EXPLICACOES.md`.
-2. **Cadastro em `MatrizPares.gs`:** A inclusão de novos pares é feita adicionando a chave correspondente (ex: `en_pt`, `fr_pt`) no objeto `MATRIZ_PARES`, seguindo o esqueleto padronizado (`nomeEstudo`, `nomeOrigem`, `instrucaoGeral` e `exemploMestre`) com proibições absolutas de jargões gramaticais/fonéticos e exemplo padrão ouro validado.
-3. **Planilha de Controle (`Controle_Geracao`):** A esteira monitora as tarefas via colunas: `ID_Lote`, `Par`, `Nivel`, `Topico`, `Status` (`Pendente`, `Em Processamento`, `Concluído`, `Erro`), `Inicio` (`DD/MM/AAAA HH:mm:ss`), `Duracao` (`Xm Ys` ou `Xs`) e `Nome_Arquivo_Final`.
+1. **Fonte Única da Verdade:** A governança operacional da esteira pertence a `DINGLI_EXPLICACOES.md`, e as regras fonéticas para alunos de língua portuguesa pertencem a `DINGLI_EXPLICACOES_L1PT.md`.
+2. **Cadastro no Supabase (`matriz_pares`):** A inclusão de novos pares é feita diretamente na tabela `matriz_pares` do Supabase via SQL (`INSERT INTO matriz_pares ...`), preenchendo `par`, `nome_estudo`, `nome_origem`, `instrucao_geral`, `regras_foneticas` e `exemplo_mestre` (Frase 1171 em JSONB), sem alterar código no Apps Script.
+3. **Planilha de Controle (`Controle_Geracao`):** A esteira monitora as tarefas via colunas: `ID_Lote`, `Par`, `Nivel`, `Topico`, `Status` (`Pendente`, `Em Processamento`, `Concluído`, `Pendente` [#f4cccc]), `Data_Inicio`, `Duracao` e `Nome_Arquivo_Final`.
 4. **Scripts Locais Descontinuados:** Os arquivos `scripts/gerarExplicacoes.mjs`, `scripts/extrair.mjs` e `prompt_gerar.txt` pertencem ao método manual antigo e foram descontinuados em favor da automação em nuvem via GAS.
