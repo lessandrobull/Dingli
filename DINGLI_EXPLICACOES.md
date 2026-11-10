@@ -185,60 +185,132 @@ const CONFIG = {
 function chamarGeminiCascata(payload, tInicio) {
   const modelCandidate = CONFIG.GEMINI_MODELS[0];
   const chaves = CONFIG.GEMINI_API_KEYS || [CONFIG.GEMINI_API_KEY];
+  const props = PropertiesService.getScriptProperties();
 
-  for (let attempt = 1; attempt <= 5; attempt++) {
-    if (new Date() - tInicio > 360000) {
-      throw new Error("Tempo limite de 6 minutos atingido");
+  // Alternância inicial: começa pela chave oposta à que teve sucesso na execução anterior
+  let lastIndex = parseInt(props.getProperty("LAST_USED_KEY_INDEX") || "1", 10);
+  let keyIndex = (lastIndex + 1) % chaves.length;
+
+  const ultimosDisparos = {}; // Timestamp do último disparo de cada chave
+  const ultimosStatus = {};   // Último HTTP code retornado por cada chave
+  let tentativasRedeRestantes = 2;
+
+  // Trava de segurança: limite rígido de 5 minutos (300s)
+  while (Date.now() - tInicio < 300000) {
+    const numChave = keyIndex + 1;
+    const chaveAtual = chaves[keyIndex];
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelCandidate}:generateContent?key=${encodeURIComponent(chaveAtual)}`;
+
+    // 1. Checa o timer da chave que vai disparar agora (ancorado no último disparo dela)
+    const agora = Date.now();
+    const ultimoDisparo = ultimosDisparos[keyIndex] || 0;
+    const decorrido = agora - ultimoDisparo;
+    const statusAnterior = ultimosStatus[keyIndex];
+
+    let tempoNecessario = 0;
+    if (statusAnterior === 429) {
+      tempoNecessario = 61000; // 61s se o último erro dela foi cota
+    } else if (statusAnterior === 503) {
+      tempoNecessario = 10000; // 10s se o último erro dela foi sobrecarga
     }
 
-    let todasCom429 = true;
-
-    for (let k = 0; k < chaves.length; k++) {
-      const chaveAtual = chaves[k];
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelCandidate}:generateContent?key=${encodeURIComponent(chaveAtual)}`;
-
-      Logger.log(`[GEMINI] Testando Chave ${k + 1}/${chaves.length} com ${modelCandidate} (Ciclo ${attempt})...`);
-
-      try {
-        const response = UrlFetchApp.fetch(url, {
-          method: "post",
-          contentType: "application/json",
-          payload: JSON.stringify(payload),
-          muteHttpExceptions: true
-        });
-
-        const code = response.getResponseCode();
-
-        if (code === 200) {
-          const json = JSON.parse(response.getContentText());
-          let rawText = json.candidates[0].content.parts[0].text.trim();
-          rawText = rawText.replace(/^```json\s*/i, "").replace(/```$/i, "").trim();
-          
-          // Remove vírgulas sobressalentes (trailing commas)
-          rawText = rawText.replace(/,(\s*[\}\]])/g, "$1");
-
-          Logger.log(`[GEMINI SUCESSO] Resposta gerada via Chave ${k + 1}.`);
-          return JSON.parse(rawText);
-        } else if (code === 429) {
-          Logger.log(`[GEMINI 429] Chave ${k + 1} sem cota ou bloqueada (HTTP 429). Alternando para a próxima...`);
-        } else {
-          todasCom429 = false;
-          Logger.log(`[GEMINI] Chave ${k + 1} retornou HTTP ${code}.`);
-        }
-      } catch (e) {
-        todasCom429 = false;
-        Logger.log(`[GEMINI] Falha na Chave ${k + 1}: ${e.message}`);
+    // Se o intervalo da chave-alvo ainda não venceu, aguarda apenas a diferença restante
+    if (decorrido < tempoNecessario) {
+      const espera = tempoNecessario - decorrido;
+      if ((Date.now() + espera) - tInicio > 300000) {
+        Logger.log("[GAS] Limite de 5 minutos seria ultrapassado durante espera. Encerrando.");
+        break;
       }
+      Logger.log(`[TIMER] Aguardando ${Math.ceil(espera / 1000)}s para cumprir cooldown da Chave ${numChave}...`);
+      Utilities.sleep(espera);
     }
 
-    // Se passou por todas as chaves da lista e nenhuma funcionou
-    if (attempt < 5) {
-      Logger.log(`[GEMINI] Todas as chaves falharam no ciclo ${attempt}. Pausando 60s antes de tentar novamente...`);
-      Utilities.sleep(60000);
+    // Registra o disparo e executa a requisição
+    ultimosDisparos[keyIndex] = Date.now();
+    Logger.log(`[GEMINI] Disparando requisição com Chave ${numChave}/${chaves.length}...`);
+
+    let response, code;
+
+    try {
+      response = UrlFetchApp.fetch(url, {
+        method: "post",
+        contentType: "application/json",
+        payload: JSON.stringify(payload),
+        muteHttpExceptions: true
+      });
+      code = response.getResponseCode();
+    } catch (e) {
+      Logger.log(`[REDE] Falha de conexão na Chave ${numChave}: ${e.message}`);
+      tentativasRedeRestantes--;
+      if (tentativasRedeRestantes <= 0) {
+        Logger.log("[REDE] Falha persistente de rede. Mantendo tópico na fila.");
+        return null;
+      }
+      Utilities.sleep(3000);
+      keyIndex = (keyIndex + 1) % chaves.length;
+      continue;
     }
+
+    ultimosStatus[keyIndex] = code;
+
+    // HTTP 200: Sucesso absoluto
+    if (code === 200) {
+      const json = JSON.parse(response.getContentText());
+      let rawText = json.candidates[0].content.parts[0].text.trim();
+      rawText = rawText.replace(/^```json\s*/i, "").replace(/```$/i, "").trim();
+      rawText = rawText.replace(/,(\s*[\}\]])/g, "$1");
+
+      Logger.log(`[GEMINI SUCESSO] Resposta gerada via Chave ${numChave}.`);
+      props.setProperty("LAST_USED_KEY_INDEX", String(keyIndex));
+      return JSON.parse(rawText);
+    }
+
+    // HTTP 429: Cota esgotada (pula imediatamente para a outra chave)
+    if (code === 429) {
+      Logger.log(`[GEMINI 429] Chave ${numChave} sem cota. Alternando para a outra chave...`);
+      keyIndex = (keyIndex + 1) % chaves.length;
+      continue;
+    }
+
+    // HTTP 503: Servidor do Google sobrecarregado
+    if (code === 503) {
+      Logger.log(`[GEMINI 503] Sobrecarga temporária na Chave ${numChave}.`);
+      const outraChaveIndex = (keyIndex + 1) % chaves.length;
+      const statusOutra = ultimosStatus[outraChaveIndex];
+      const decorridoOutra = Date.now() - (ultimosDisparos[outraChaveIndex] || 0);
+
+      // Se a outra chave tomou 429 e ainda não completou os 61s dela:
+      if (statusOutra === 429 && decorridoOutra < 61000) {
+        const restanteOutra = Math.ceil((61000 - decorridoOutra) / 1000);
+        Logger.log(`[GEMINI 503] Outra chave presa no 429 (${restanteOutra}s restantes). Mantendo na Chave ${numChave} respeitando 10s...`);
+        // Mantém keyIndex na mesma chave
+      } else {
+        // Se a outra chave não está presa em 429 (está livre ou com 503), alterna para ela
+        Logger.log(`[GEMINI 503] Alternando para Chave ${outraChaveIndex + 1}...`);
+        keyIndex = outraChaveIndex;
+      }
+      continue;
+    }
+
+    // HTTP 500 / Erro de servidor interno
+    if (code >= 500) {
+      Logger.log(`[GEMINI ${code}] Erro de servidor. Aguardando 3s antes de alternar...`);
+      tentativasRedeRestantes--;
+      if (tentativasRedeRestantes <= 0) {
+        Logger.log("[GEMINI] Limite de tentativas de erro 500 esgotado. Mantendo tópico na fila.");
+        return null;
+      }
+      Utilities.sleep(3000);
+      keyIndex = (keyIndex + 1) % chaves.length;
+      continue;
+    }
+
+    // Erros não recuperáveis (400, 403, etc.)
+    Logger.log(`[GEMINI ERRO ${code}] Chave ${numChave} retornou erro não recuperável. Alternando.`);
+    keyIndex = (keyIndex + 1) % chaves.length;
   }
 
-  Logger.log(`[GEMINI ERRO CRÍTICO] Nenhuma chave de API conseguiu gerar a resposta.`);
+  Logger.log(`[GEMINI ERRO CRÍTICO] Tempo limite de 5 minutos atingido sem sucesso.`);
   return null;
 }
 
@@ -369,8 +441,8 @@ function processarProximoTopico() {
     let jsonFinal = {};
 
     for (let b = 0; b < frasesLote.length; b += TAMANHO_BLOCO) {
-      if (new Date() - tInicio > 360000) {
-        throw new Error("Tempo limite de 6 minutos atingido");
+      if (new Date() - tInicio > 300000) {
+        throw new Error("Tempo limite de segurança (5 minutos) atingido");
       }
 
       const blocoFrases = frasesLote.slice(b, b + TAMANHO_BLOCO);

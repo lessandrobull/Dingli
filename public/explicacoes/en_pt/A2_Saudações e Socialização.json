@@ -1,0 +1,543 @@
+{
+  "301": {
+    "explanation": "Para perguntar como alguém tem passado ultimamente, os nativos dizem 'How have you been lately?', usando a combinação de ter sido ou estado até agora ('have you been') em vez de perguntar diretamente no presente ou no passado simples. Na prática, significa 'Como você tem estado ultimamente?' ou 'Como tem passado?'.",
+    "breakdown": [
+      {
+        "word": "How",
+        "meaning": "Como — palavra usada para fazer perguntas sobre o modo ou estado."
+      },
+      {
+        "word": "have you been",
+        "meaning": "Você tem estado / Tem passado — combinação para falar de algo que vem acontecendo do passado até o presente."
+      },
+      {
+        "word": "lately",
+        "meaning": "Ultimamente / Recentemente — indica o período recente."
+      }
+    ],
+    "pronuncia": "Em 'How', projete o som de 'h' como um suspiro morno do peito ('hóu'). Em 'have', use o queixo solto com a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'æ', selando os dentes de cima no lábio inferior no 'v' ('hæv'). Em 'been', use o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'bın'. Finalize em 'lately' com 'lêit-lı', travando o 't' a seco sem colocar 'i' depois.\nLeia: Hóu hæv yuu bın lêit-lı?"
+  },
+  "302": {
+    "explanation": "Em inglês, para dizer 'Eu gostaria de apresentar meu colega', usa-se 'I would like to introduce my colleague'. A estrutura 'would like to' é a forma educada de dizer 'gostaria de', seguida da ação principal de apresentar. Note que 'colleague' refere-se especificamente a um parceiro de trabalho ou estudo.",
+    "breakdown": [
+      {
+        "word": "I would like to",
+        "meaning": "Eu gostaria de — forma cortês de expressar um desejo ou intenção."
+      },
+      {
+        "word": "introduce",
+        "meaning": "Apresentar — introduzir alguém a outra pessoa."
+      },
+      {
+        "word": "my colleague",
+        "meaning": "Meu colega — my: meu/minha; colleague: colega de trabalho ou profissão."
+      }
+    ],
+    "pronuncia": "Em 'I would like to', o 'would' tem som de 'w' projetado em bico ('wud') com 'l' mudo. Em 'like', corte a seco no 'k' sem dizer 'láiki'. Na palavra 'introduce', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular para o som neutro 'ə' na sílaba central ('ın-trə-dyúus'). Em 'my colleague', fale 'mái kó-liig', travando o 'g' final no fundo da garganta sem soltar 'gi'.\nLeia: Ái wud láik tə ın-trə-dyúus mái kó-liig.",
+    "id": 302
+  },
+  "303": {
+    "explanation": "Para pedir a alguém que fale mais sobre si mesmo, os nativos dizem 'Can you tell me more about yourself?'. A palavra 'yourself' funciona como 'você mesmo', trazendo o foco totalmente para a história ou vida da outra pessoa de forma amigável.",
+    "breakdown": [
+      {
+        "word": "Can you",
+        "meaning": "Você pode / Você poderia — forma direta e amigável de fazer um pedido."
+      },
+      {
+        "word": "tell me",
+        "meaning": "Me contar / Me dizer — tell: contar; me: para mim."
+      },
+      {
+        "word": "more about",
+        "meaning": "Mais sobre — more: mais; about: sobre / a respeito de."
+      },
+      {
+        "word": "yourself",
+        "meaning": "Você mesmo / Sua pessoa — termo que refere-se diretamente ao interlocutor."
+      }
+    ],
+    "pronuncia": "Comece em 'Can' abrindo a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para fazer o 'kæn', e trave a língua no dente no 'n'. Em 'tell me', suba a ponta da língua no céu da boca para o 'l' em 'tel' sem virar 'u'. Em 'about', mantenha a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no início ('ə-báut'). Conclua com 'yourself' ('yər-sélf'), cortando o 'f' a seco no final sem acrescentar 'i'.\nLeia: Kæn yuu tel mii ə-báut yər-sélf?",
+    "id": 303
+  },
+  "304": {
+    "explanation": "Para dizer 'Foi bom conversar com você ontem', o inglês usa 'It was nice talking to you yesterday'. Nativos usam o verbo no formato de ação continuada 'talking' após 'nice' para descrever a experiência fluida de ter batido um papo.",
+    "breakdown": [
+      {
+        "word": "It was nice",
+        "meaning": "Foi bom / Foi legal — It: pronome neutro; was: foi/era; nice: agradável."
+      },
+      {
+        "word": "talking to you",
+        "meaning": "Conversar com você — talking: conversando; to: com/para; you: você."
+      },
+      {
+        "word": "yesterday",
+        "meaning": "Ontem — o dia anterior ao dia de hoje."
+      }
+    ],
+    "pronuncia": "Em 'It was', o 'It' usa o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'ıt', emendando no 'wâz'. Em 'nice', corte no 's' ('náis'). Em 'talking', o 'l' é mudo, soando 'tó-kıng' com a ressonância do 'ng' presa na garganta. Finalize com 'to you yesterday' ('tə yuu yés-tər-dêi'), puxando a ponta da língua para trás sem encostar no céu da boca no 'r' de 'yesterday'.\nLeia: It wâz náis tó-kıng tə yuu yés-tər-dêi.",
+    "id": 304
+  },
+  "305": {
+    "explanation": "Ao perguntar 'Você teve um bom fim de semana?', o inglês inicia com o auxiliar de passado 'Did you', que nativos frequentemente conectam soando como 'di-djum'. A pergunta literalmente significa 'Você fez/teve um bom final de semana?'.",
+    "breakdown": [
+      {
+        "word": "Did you have",
+        "meaning": "Você teve / Você passou — Did: indicador de pergunta no passado; you: você; have: ter."
+      },
+      {
+        "word": "a good",
+        "meaning": "Um bom — a: um; good: bom/agradável."
+      },
+      {
+        "word": "weekend",
+        "meaning": "Fim de semana — junção de week (semana) e end (fim)."
+      }
+    ],
+    "pronuncia": "Em 'Did', mantenha o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' ('dıd') com 'd' seco sem chiar. Conecte com 'you' gerando 'dı-djə'. Em 'have', use a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' ('hæv'). Em 'good', mantenha a boca sem bico no 'u' curto ('gud'). Em 'weekend', estique o sorriso em 'wíik' e trave o 'd' final em 'end'.\nLeia: Dı-djə hæv ə gud wíi-kend?",
+    "id": 305
+  },
+  "306": {
+    "explanation": "Para expressar 'Sinto muito, não entendi seu nome', nativos usam 'I am sorry, I didn't catch your name'. O verbo 'catch' (que literalmente é pegar/capturar) é usado no sentido prático de 'ouvir com clareza' ou 'captar'.",
+    "breakdown": [
+      {
+        "word": "I am sorry",
+        "meaning": "Sinto muito / Peço desculpas — I: eu; am: estou; sorry: arrependido/com sentimento."
+      },
+      {
+        "word": "I didn't catch",
+        "meaning": "Eu não peguei / Não entendi — didn't: não (passado); catch: pegar/captar."
+      },
+      {
+        "word": "your name",
+        "meaning": "Seu nome — your: seu/sua; name: nome."
+      }
+    ],
+    "pronuncia": "Em 'I am sorry', fale 'ái æm só-ri', abrindo a mandíbula no 'æ'. Em 'didn't', use o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'dı-dnt'. Em 'catch', estale a língua com o 'tch' no final em 'kætch'. Em 'your name', diga 'yər nêim', selando bem os lábios no 'm' final sem abrir a boca.\nLeia: Ái æm só-ri, ái dı-dnt kætch yər nêim.",
+    "id": 306
+  },
+  "307": {
+    "explanation": "Para pedir 'Você poderia repetir isso mais devagar?', a frase em inglês é 'Could you repeat that more slowly?'. O uso de 'Could you' é extremamente educado, equivalente ao nosso 'Você poderia'.",
+    "breakdown": [
+      {
+        "word": "Could you",
+        "meaning": "Você poderia — forma gentil para fazer solicitações."
+      },
+      {
+        "word": "repeat that",
+        "meaning": "Repetir isso — repeat: repetir; that: isso/aquilo."
+      },
+      {
+        "word": "more slowly",
+        "meaning": "Mais devagar — more: mais; slowly: lentamente."
+      }
+    ],
+    "pronuncia": "Em 'Could you', conecte o 'd' com 'y' fazendo 'ku-djə'. Em 'repeat', use o 't' seco no final ('rı-píit'). Em 'that', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh', abrindo em 'æ' ('dhæt'). Em 'more slowly', fale 'mór slôu-li', deslizando o 'o' para 'u' em 'slôu' sem adicionar 'i' no começo do 's'.\nLeia: Ku-djə rı-píit dhæt mór slôu-li?",
+    "id": 307
+  },
+  "308": {
+    "explanation": "A frase 'We haven't met before, have we?' equivale a 'Nós não nos conhecemos antes, não é?'. O inglês usa uma confirmação no final chamada tag question ('have we?'), que repete o verbo da primeira parte para pedir a concordância da outra pessoa.",
+    "breakdown": [
+      {
+        "word": "We haven't met",
+        "meaning": "Nós não nos conhecemos — We: nós; haven't met: não encontramos/conhecemos."
+      },
+      {
+        "word": "before",
+        "meaning": "Antes / Em momento anterior."
+      },
+      {
+        "word": "have we",
+        "meaning": "Nós já / Não é — estrutura de confirmação no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'We haven't', projete 'wii' em bico e use 'hæ-vnt' com a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æ'. Em 'met', corte o 't' a seco ('met'). Em 'before', fale 'bı-fór'. Em 'have we', repita o suspiro macio em 'hæv' e feche em 'wii'.\nLeia: Wii hæ-vnt met bı-fór, hæv wii?",
+    "id": 308
+  },
+  "309": {
+    "explanation": "Para dizer 'Espero ver você de novo em breve', o inglês estrutura 'I hope to see you again soon'. O verbo 'hope' expressa a expectativa positiva de reencontrar a pessoa, e 'again soon' traz a ideia de 'em breve novamente'.",
+    "breakdown": [
+      {
+        "word": "I hope to",
+        "meaning": "Eu espero / Tenho a expectativa de — I: eu; hope: esperar/desejar; to: para."
+      },
+      {
+        "word": "see you",
+        "meaning": "Ver você / Encontrar você — see: ver; you: você."
+      },
+      {
+        "word": "again soon",
+        "meaning": "De novo em breve — again: novamente; soon: em breve/logo."
+      }
+    ],
+    "pronuncia": "Em 'I hope', solte o suspiro morno no 'h' de 'hôup' com o som escorregado de 'ou'. Em 'to see you', faça 'tə sii yuu', sorrindo em 'sii'. Em 'again', mantenha a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no início ('ə-gén'), travando a língua no 'n'. Em 'soon', projete os lábios em bico longo ('súun') e trave o 'n'.\nLeia: Ái hôup tə sii yuu ə-gén súun.",
+    "id": 309
+  },
+  "310": {
+    "explanation": "Para convidar alguém dizendo 'Você gostaria de se juntar a nós para um café?', a expressão usada é 'Would you like to join us for coffee?'. É um convite cortês e amigável muito comum no dia a dia social ou de trabalho.",
+    "breakdown": [
+      {
+        "word": "Would you like to",
+        "meaning": "Você gostaria de — estrutura padrão e educada de convite."
+      },
+      {
+        "word": "join us",
+        "meaning": "Juntar-se a nós — join: unir-se/juntar-se; us: nós."
+      },
+      {
+        "word": "for coffee",
+        "meaning": "Para um café — for: para; coffee: café."
+      }
+    ],
+    "pronuncia": "Em 'Would you', conecte o som formando 'wu-djə'. Em 'like to', trave o 'k' e diga 'láik tə'. Em 'join us', comece no 'd' com chiado em 'djoin' e conecte direto no 'âs' de 'join-âs'. Em 'for coffee', mantenha a boca neutra e curve a ponta da língua para trás no céu da boca sem encostar em nada para o '3r' em 'fór', finalizando em 'kó-fi' com o 'o' bem aberto.\nLeia: Wu-djə láik tə djoin-âs fór kó-fi?",
+    "id": 310
+  },
+  "311": {
+    "explanation": "A pergunta 'O que você gosta de fazer no seu tempo livre?' é traduzida como 'What do you like to do in your free time?'. O inglês usa 'What do you' para formular a pergunta sobre hábitos pessoais no presente.",
+    "breakdown": [
+      {
+        "word": "What do you",
+        "meaning": "O que você — What: o que; do: auxiliar de pergunta; you: você."
+      },
+      {
+        "word": "like to do",
+        "meaning": "Gosta de fazer — like: gostar; to do: fazer."
+      },
+      {
+        "word": "in your free time",
+        "meaning": "No seu tempo livre — in: em/no; your: seu; free: livre; time: tempo."
+      }
+    ],
+    "pronuncia": "Em 'What do you', corte o 't' levemente e fale 'wót du yuu'. Em 'like to do', fale 'láik tə dúu'. Em 'in your', use o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' para o 'ın', conectando em 'yər'. Em 'free time', estique o sorriso em 'frii' e feche em 'táim' selando os lábios no 'm' final sem abrir a boca.\nLeia: Wót du yuu láik tə dúu ın yər frii táim?",
+    "id": 311
+  },
+  "312": {
+    "explanation": "Para dizer 'Estou feliz em ver você de novo', o inglês usa 'I am glad to see you again'. A palavra 'glad' é uma alternativa muito comum e calorosa para 'happy', significando contente ou satisfeito.",
+    "breakdown": [
+      {
+        "word": "I am glad to",
+        "meaning": "Estou feliz em / Contente por — I: eu; am: estou; glad: contente/feliz; to: em."
+      },
+      {
+        "word": "see you again",
+        "meaning": "Ver você de novo — see: ver; you: você; again: novamente."
+      }
+    ],
+    "pronuncia": "Em 'I am glad', abra a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' para o som 'æ' em 'æm' e 'glæd', travando o 'd' a seco. Em 'to see you', fale 'tə sii yuu'. Em 'again', deixe a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə' de 'ə-gén'.\nLeia: Ái æm glæd tə sii yuu ə-gén.",
+    "id": 312
+  },
+  "313": {
+    "explanation": "A expressão 'Por favor, sinta-se em casa' é dita em inglês como 'Please make yourself at home'. A expressão 'make yourself at home' significa ao pé da letra 'faça a si mesmo em casa', sendo a forma padrão de acolher visitas.",
+    "breakdown": [
+      {
+        "word": "Please",
+        "meaning": "Por favor — termo de cortesia."
+      },
+      {
+        "word": "make yourself",
+        "meaning": "Sinta-se / Coloque-se — make: fazer/deixar; yourself: você mesmo."
+      },
+      {
+        "word": "at home",
+        "meaning": "Em casa — at: em; home: lar/casa."
+      }
+    ],
+    "pronuncia": "Em 'Please', estique o sorriso em 'pliiz' vibrando o 'z'. Em 'make yourself', corte o 'k' em 'mêik' e fale 'yər-sélf' cortando o 'f' a seco. Em 'at home', abra a mandíbula em 'æt' com o som 'æ' e conecte no suspiro suave de 'hôum', selando os lábios no 'm' final sem soltar 'i'.\nLeia: Pliiz mêik yər-sélf æt hôum.",
+    "id": 313
+  },
+  "314": {
+    "explanation": "Para perguntar 'Posso te oferecer algo para beber?', nativos costumam dizer 'Can I get you anything to drink?'. O verbo 'get' aqui é usado no sentido de pegar, trazer ou oferecer algo para a pessoa.",
+    "breakdown": [
+      {
+        "word": "Can I get you",
+        "meaning": "Posso te trazer / Posso te dar — Can: posso; I: eu; get you: trazer para você."
+      },
+      {
+        "word": "anything",
+        "meaning": "Algo / Qualquer coisa — termo genérico para ofertas."
+      },
+      {
+        "word": "to drink",
+        "meaning": "Para beber — to: para; drink: beber."
+      }
+    ],
+    "pronuncia": "Em 'Can I get you', fale 'kæ-náik gé-tchum', abrindo a mandíbula no 'æ' em 'Can' e emendando o 't' com 'you' em som de 'tch'. Em 'anything', coloque a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz para o 'th' em 'é-nı-thıng', usando o 'ı' curto com o queixo solto. Em 'drink', fale 'drıngk' com o 'ı' curto e travando no 'k' final sem dizer 'drínki'.\nLeia: Kæ-náik gé-tchum é-nı-thıng tə drıngk?",
+    "id": 314
+  },
+  "315": {
+    "explanation": "Para perguntar 'Como vai sua família?', o inglês usa 'How is your family doing?'. Acrescentar o verbo 'doing' ao final é a forma natural e carinhosa de perguntar como as pessoas estão indo na vida.",
+    "breakdown": [
+      {
+        "word": "How is",
+        "meaning": "Como vai / Como está — How: como; is: está."
+      },
+      {
+        "word": "your family",
+        "meaning": "Sua família — your: sua; family: família."
+      },
+      {
+        "word": "doing",
+        "meaning": "Indo / Passando — forma contínua do verbo do (fazer/ir)."
+      }
+    ],
+    "pronuncia": "Em 'How is', conecte as palavras em 'hóu-ız', usando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'ız'. Em 'your family', diga 'yər fæ-mı-li', abrindo a mandíbula no 'æ' de 'fæ'. Em 'doing', fale 'dúu-ıng', terminando no som preso no fundo da garganta sem soltar 'gui'.\nLeia: Hóu-ız yər fæ-mı-li dúu-ıng?",
+    "id": 315
+  },
+  "316": {
+    "explanation": "A frase 'Acho que ainda não nos conhecemos' é traduzida como 'I don't think we have met yet'. O uso de 'I don't think' (literalmente 'eu não acho') é a forma padrão e educada em inglês para dizer 'acho que não'.",
+    "breakdown": [
+      {
+        "word": "I don't think",
+        "meaning": "Acho que não / Não creio que — I: eu; don't: não; think: acho/penso."
+      },
+      {
+        "word": "we have met",
+        "meaning": "Nós nos conhecemos — we: nós; have met: nos encontramos/conhecemos."
+      },
+      {
+        "word": "yet",
+        "meaning": "Ainda — indica algo que não aconteceu até o momento presente."
+      }
+    ],
+    "pronuncia": "Em 'I don't', diga 'ái dôunt'. Em 'think', coloque a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz para o 'th' surdo em 'thınk', com o queixo solto no 'ı' curto. Em 'we have met yet', diga 'wii hæv met yet', abrindo a boca no 'æ' de 'hæv' e cortando o 't' a seco em 'met' e 'yet'.\nLeia: Ái dôunt thınk wii hæv met yet.",
+    "id": 316
+  },
+  "317": {
+    "explanation": "Para dizer 'Obrigado por me convidar para sua festa', o inglês usa 'Thank you for inviting me to your party'. Depois da preposição 'for', o verbo 'invite' obrigatoriamente ganha a forma 'inviting'.",
+    "breakdown": [
+      {
+        "word": "Thank you",
+        "meaning": "Obrigado a você — agradecimento direto."
+      },
+      {
+        "word": "for inviting me",
+        "meaning": "Por me convidar — for: por; inviting: convidando; me: a mim."
+      },
+      {
+        "word": "to your party",
+        "meaning": "Para sua festa — to: para; your: sua; party: festa."
+      }
+    ],
+    "pronuncia": "Em 'Thank you', coloque a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz no 'th' de 'thænkyuu', usando a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'æ'. Em 'for inviting me', fale 'fór ın-vái-rıng mii', trocando o 't' pelo 'r' brando entre vogais. Em 'to your party', faça 'tə yər pár-ri'.\nLeia: Thænk yuu fór ın-vái-rıng mii tə yər pár-ri.",
+    "id": 317
+  },
+  "318": {
+    "explanation": "A frase 'É muita gentileza sua ajudar' é expressa como 'It is very kind of you to help'. A estrutura 'kind of you' significa literalmente 'gentil da sua parte', sendo o jeito natural de agradecer o favor de alguém.",
+    "breakdown": [
+      {
+        "word": "It is",
+        "meaning": "É / Isto é — combina o pronome neutro It com o verbo is."
+      },
+      {
+        "word": "very kind of you",
+        "meaning": "Muita gentileza sua — very: muito; kind: gentil; of you: da sua parte."
+      },
+      {
+        "word": "to help",
+        "meaning": "Ajudar — to: para; help: ajudar."
+      }
+    ],
+    "pronuncia": "Em 'It is', conecte em 'ı-tız', mantendo o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em ambos os 'ı'. Em 'very kind of you', aperte os dentes no lábio em 'vé-ri', trave o 'n' em 'káınd' e diga 'əv yuu'. Em 'to help', solte o suspiro no 'h' de 'help' e trave a língua no céu da boca para o 'l' sem virar 'u'.\nLeia: I-tız vé-ri káınd əv yuu tə help.",
+    "id": 318
+  },
+  "319": {
+    "explanation": "Para perguntar 'O que te traz aqui hoje?', os nativos dizem exatamente a mesma imagem em inglês: 'What brings you here today?'. É uma forma simpática e comum de iniciar uma conversa ao encontrar alguém.",
+    "breakdown": [
+      {
+        "word": "What brings you",
+        "meaning": "O que te traz — What: o que; brings: traz; you: você."
+      },
+      {
+        "word": "here today",
+        "meaning": "Aqui hoje — here: aqui; today: hoje."
+      }
+    ],
+    "pronuncia": "Em 'What brings you', corte o 't' em 'wót' e fale 'brıngz yuu', usando o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' no 'ı' de 'brıngz', vibrando o 'z' no final. Em 'here today', solte o suspiro morno no 'h' em 'híər' e finalize com 'tə-dêi'.\nLeia: Wót brıngz yuu híər tə-dêi?",
+    "id": 319
+  },
+  "320": {
+    "explanation": "A pergunta 'Você está gostando do evento até agora?' é traduzida como 'Are you enjoying the event so far?'. A expressão 'so far' é o jeito exato em inglês para dizer 'até agora' ou 'até o momento'.",
+    "breakdown": [
+      {
+        "word": "Are you enjoying",
+        "meaning": "Você está gostando — Are you: você está; enjoying: aproveitando/gostando."
+      },
+      {
+        "word": "the event",
+        "meaning": "O evento — the: o; event: evento."
+      },
+      {
+        "word": "so far",
+        "meaning": "Até agora / Até o momento — expressão fixa para esse sentido."
+      }
+    ],
+    "pronuncia": "Em 'Are you enjoying', fale 'ár yuu ın-djói-ıng', usando o estalo de 'd' com chiado em 'dj' e o queixo solto no 'ı'. Em 'the event', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes para o 'dh' em 'dhi ı-vént'. Em 'so far', diga 'sôu fár', mantendo a boca neutra e curvar a ponta da língua para trás no céu da boca sem encostar em nada para o '3r' final.\nLeia: Ár yuu ın-djói-ıng dhi ı-vént sôu fár?",
+    "id": 320
+  },
+  "321": {
+    "explanation": "Para dizer 'Receio que tenha que ir agora', usa-se 'I am afraid I have to go now'. A expressão 'I am afraid' é usada como uma forma delicada e educada de dar uma notícia ou avisar que precisa se retirar.",
+    "breakdown": [
+      {
+        "word": "I am afraid",
+        "meaning": "Receio que / Infelizmente — forma polida de introduzir uma despedida."
+      },
+      {
+        "word": "I have to",
+        "meaning": "Eu tenho que / Eu preciso — I: eu; have to: ter que/precisar."
+      },
+      {
+        "word": "go now",
+        "meaning": "Ir agora — go: ir; now: agora."
+      }
+    ],
+    "pronuncia": "Em 'I am afraid', fale 'ái æm ə-frêid', usando a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no 'ə' de 'ə-frêid'. Em 'I have to', use a mandíbula na vertical em 'A', mas puxando os cantos da boca para os lados na posição de 'É' em 'hæv tə'. Em 'go now', escorregue a vogal para 'gôu' e projete 'náu'.\nLeia: Ái æm ə-frêid ái hæv tə gôu náu.",
+    "id": 321
+  },
+  "322": {
+    "explanation": "A expressão 'Vamos manter contato' é dita em inglês como 'Let’s keep in touch'. A palavra 'touch' significa contato/toque, e a frase é o padrão informal mais comum para se despedir prometendo falar depois.",
+    "breakdown": [
+      {
+        "word": "Let's",
+        "meaning": "Vamos — contração de let us, usada para propor uma ação conjunta."
+      },
+      {
+        "word": "keep in touch",
+        "meaning": "Manter contato — keep: manter; in touch: em contato."
+      }
+    ],
+    "pronuncia": "Em 'Let's', trave o 's' seco em 'lets'. Em 'keep in touch', estique o sorriso em 'kiip', conecte no 'ın' feito com o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i', e termine em 'tâtch' soltando o estalo do 'tch' sem colocar 'i' depois.\nLeia: Lets kiip ın tâtch.",
+    "id": 322
+  },
+  "323": {
+    "explanation": "Para perguntar 'Você tem um cartão de visitas?', a frase em inglês é 'Do you have a business card?'. O termo 'business card' é a combinação exata usada para se referir a cartões profissionais.",
+    "breakdown": [
+      {
+        "word": "Do you have",
+        "meaning": "Você tem — Do: auxiliar de pergunta; you: você; have: ter."
+      },
+      {
+        "word": "a business card",
+        "meaning": "Um cartão de visitas — a: um; business: negócios; card: cartão."
+      }
+    ],
+    "pronuncia": "Em 'Do you have', fale 'du yuu hæv', abrindo a mandíbula no 'æ' de 'hæv'. Em 'business card', pronuncie 'bız-nəs kárd', usando o queixo ligeiramente solto no 'ı' de 'bız', a mandíbula relaxada caída e língua frouxa para o som neutro 'ə' no 'nəs', e puxando o 'r' retroflexo em 'kárd' com 'd' seco no final.\nLeia: Du yuu hæv ə bız-nəs kárd?",
+    "id": 323
+  },
+  "324": {
+    "explanation": "A frase 'Dê lembranças aos seus pais' é traduzida como 'Give my regards to your parents'. A palavra 'regards' é usada especificamente nesse contexto para transmitir saudações ou respeitos a outra pessoa.",
+    "breakdown": [
+      {
+        "word": "Give my regards",
+        "meaning": "Dê minhas lembranças / Mande saudações — Give: dar; my: minhas; regards: saudações/lembranças."
+      },
+      {
+        "word": "to your parents",
+        "meaning": "Aos seus pais — to: para; your: seus; parents: pais (pai e mãe)."
+      }
+    ],
+    "pronuncia": "Em 'Give my', use o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' para 'gıv', e diga 'mái'. Em 'regards', fale 'rı-gárdz', vibrando o 'z' no final. Em 'to your parents', faça 'tə yər pé-rənts', usando a mandíbula relaxada caída e língua frouxa para o som neutro 'ə' no 'rənts' e travando no 'ts'.\nLeia: Gıv mái rı-gárdz tə yər pé-rənts.",
+    "id": 324
+  },
+  "325": {
+    "explanation": "Para dizer 'Eu realmente agradeço seu conselho', o inglês usa 'I really appreciate your advice'. O verbo 'appreciate' expressa um agradecimento profundo por algo recebido, como uma ajuda ou recomendação.",
+    "breakdown": [
+      {
+        "word": "I really",
+        "meaning": "Eu realmente / De fato — I: eu; really: realmente."
+      },
+      {
+        "word": "appreciate",
+        "meaning": "Agradeço / Aprecio — demonstrar gratidão valorizando algo."
+      },
+      {
+        "word": "your advice",
+        "meaning": "Seu conselho — your: seu; advice: conselho/orientação."
+      }
+    ],
+    "pronuncia": "Em 'I really', fale 'ái ríi-li'. Na palavra 'appreciate', use a mandíbula relaxada caída e língua frouxa, soltando um som curtíssimo, preguiçoso e quase sem força muscular no início em 'ə-príi-chi-êit'. Em 'your advice', fale 'yər əd-váis', cortando o 's' a seco no final sem dizer 'adváisi'.\nLeia: Ái ríi-li ə-príi-chi-êit yər əd-váis.",
+    "id": 325
+  },
+  "326": {
+    "explanation": "A pergunta 'Foi difícil encontrar o lugar?' é formulada em inglês como 'Was it difficult to find the place?'. A ordem começa com 'Was it' para perguntar sobre um estado no passado.",
+    "breakdown": [
+      {
+        "word": "Was it",
+        "meaning": "Foi / Era — pergunta no passado sobre uma situação."
+      },
+      {
+        "word": "difficult to find",
+        "meaning": "Difícil de encontrar — difficult: difícil; to find: encontrar."
+      },
+      {
+        "word": "the place",
+        "meaning": "O lugar — the: o; place: lugar/local."
+      }
+    ],
+    "pronuncia": "Em 'Was it', conecte em 'wâ-zıt', usando o queixo solto no 'ı'. Em 'difficult', fale 'dı-fı-kâlt', com dois sons curtos de 'ı' e travando a ponta da língua no céu da boca para o 'l'. Em 'to find', trave o 'nd' seco em 'fáınd'. Em 'the place', coloque a ponta da língua entre os dentes da frente soltando a voz, fazendo a língua vibrar com zumbido nos dentes em 'dhə' e termine em 'plêis'.\nLeia: Wâ-zıt dı-fı-kâlt tə fáınd dhə plêis?",
+    "id": 326
+  },
+  "327": {
+    "explanation": "Para fazer um elogio como 'Você está ótimo hoje!', os nativos dizem 'You look great today!'. O verbo 'look' é usado para se referir à aparência visual da pessoa no momento.",
+    "breakdown": [
+      {
+        "word": "You look",
+        "meaning": "Você está / Sua aparência é — You: você; look: aparentar/parecer."
+      },
+      {
+        "word": "great today",
+        "meaning": "Ótimo hoje — great: excelente/ótimo; today: hoje."
+      }
+    ],
+    "pronuncia": "Em 'You look', projete 'yuu' e mantenha a boca sem bico no 'u' curto em 'luk', travando o 'k' a seco sem dizer 'lúki'. Em 'great today', fale 'grêit tə-dêi', cortando o primeiro 't' a seco e deslizando a vogal final em 'dêi'.\nLeia: Yuu luk grêit tə-dêi!",
+    "id": 327
+  },
+  "328": {
+    "explanation": "A frase 'Sinto muito pelo mal-entendido' é traduzida como 'I am sorry for the misunderstanding'. A palavra 'misunderstanding' é formada pela junção de 'mis' (erro/mal) com 'understanding' (entendimento).",
+    "breakdown": [
+      {
+        "word": "I am sorry for",
+        "meaning": "Sinto muito por / Peço desculpas por — expressão de lamento."
+      },
+      {
+        "word": "the misunderstanding",
+        "meaning": "O mal-entendido — the: o; misunderstanding: mal-entendido/confusão."
+      }
+    ],
+    "pronuncia": "Em 'I am sorry for', diga 'ái æm só-ri fór', abrindo a mandíbula no 'æ' de 'æm'. Em 'the misunderstanding', faça 'dhə' com a língua nos dentes. Na palavra 'misunderstanding', use o queixo ligeiramente solto, sem puxar sorriso, soltando um som rápido e frouxo entre 'e' e 'i' em 'mıs', e mantenha a mandíbula relaxada caída e língua frouxa para o som neutro 'ə' no 'stæn-dıng' ('mıs-ân-dər-stæn-dıng').\nLeia: Ái æm só-ri fór dhə mıs-ân-dər-stæn-dıng.",
+    "id": 328
+  },
+  "329": {
+    "explanation": "Para perguntar 'Posso te ajudar com suas malas?', o inglês usa 'Can I help you with your bags?'. O termo 'bags' é a forma comum e geral para se referir a bolsas, mochilas ou malas de viagem.",
+    "breakdown": [
+      {
+        "word": "Can I help you",
+        "meaning": "Posso te ajudar — Can I: posso eu; help: ajudar; you: você."
+      },
+      {
+        "word": "with your bags",
+        "meaning": "Com suas malas — with: com; your: suas; bags: malas/bolsas."
+      }
+    ],
+    "pronuncia": "Em 'Can I help you', fale 'kæ-náik help yuu', abrindo a mandíbula em 'æ' no 'Can' e subindo a língua para o 'l' em 'help'. Em 'with', coloque a ponta da língua entre os dentes da frente e apenas assoprar ar, sem vibrar a voz para o 'th' surdo em 'wıth', usando o 'ı' curto. Em 'your bags', fale 'yər bægz', abrindo a mandíbula no 'æ' e vibrando o 'z' no final de 'bægz'.\nLeia: Kæ-náik help yuu wıth yər bægz?",
+    "id": 329
+  },
+  "330": {
+    "explanation": "Para desejar 'Tenha uma boa viagem para casa', nativos dizem 'Have a safe trip home'. A palavra 'safe' significa literalmente 'segura', então a frase expressa o desejo de que a pessoa viaje em segurança até chegar em casa.",
+    "breakdown": [
+      {
+        "word": "Have a",
+        "meaning": "Tenha uma — Have: ter; a: uma."
+      },
+      {
+        "word": "safe trip",
+        "meaning": "Viagem segura / Boa viagem — safe: segura; trip: viagem."
+      },
+      {
+        "word": "home",
+        "meaning": "Para casa / Ao seu lar — indica o destino final de acolhimento."
+      }
+    ],
+    "pronuncia": "Em 'Have a', conecte em 'hæ-və', abrindo a mandíbula em 'æ' em 'hæv' e usando a mandíbula relaxada caída e língua frouxa para o som neutro 'ə' no 'a'. Em 'safe trip', fale 'sêif trıp', usando o 'ı' curto com o queixo solto em 'trıp' e cortando o 'p' a seco. Em 'home', solte o suspiro morno no 'h' em 'hôum', selando completamente os lábios no 'm' final.\nLeia: Hæ-və sêif trıp hôum.",
+    "id": 330
+  }
+}
