@@ -1,0 +1,562 @@
+{
+  "181": {
+    "explanation": "Para dizer 'eu sou estudante', os nativos dizem 'Je suis étudiant', juntando o pronome 'Je' com o verbo 'suis' e colocando a profissão diretamente, sem usar o artigo 'um'. A ordem das palavras é exatamente a mesma que usamos em português.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu — pronome pessoal."
+      },
+      {
+        "word": "suis",
+        "meaning": "Sou / estou — forma do verbo ser/estar."
+      },
+      {
+        "word": "étudiant",
+        "meaning": "Estudante — pessoa que estuda."
+      }
+    ],
+    "pronuncia": "Em 'Je', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado ('jə'). Em 'suis', arme o bico fechado e firme de U dizendo som agudo de I ('süí'). Em 'étudiant', faça o 't' seco sem chiar, repita o bico fechado e firme de U dizendo som agudo de I no 'tü' e encerre com o som de ó nasal aberto, escuro e profundo projetado para o nariz ('é-tü-di-ón'), conectando o 's' final em som de 'z' na ligação.\nLeia: Jə süí zé-tü-di-ón"
+  },
+  "182": {
+    "explanation": "Para perguntar 'onde você trabalha?', o francês coloca a palavra de pergunta 'Où' (onde) no início e inverte o verbo 'travailles' com o pronome 'tu' (você), unindo-os por um hífen. Essa inversão é a maneira natural e direta de montar perguntas.",
+    "breakdown": [
+      {
+        "word": "Où",
+        "meaning": "Onde — indica lugar."
+      },
+      {
+        "word": "travailles",
+        "meaning": "Trabalhas / trabalha — forma do verbo trabalhar."
+      },
+      {
+        "word": "tu",
+        "meaning": "Você / tu — pronome informal."
+      }
+    ],
+    "pronuncia": "Em 'Où', faça o som natural de 'u'. Em 'travailles', arranhe a garganta suavemente no 'r' ('tra') e termine com o som líquido 'vá-y', sem pronunciar as letras L no final. Em 'tu', arme o bico fechado e firme de U dizendo som agudo de I ('tü') mantendo o 't' seco.\nLeia: U tra-vá-y-tü"
+  },
+  "183": {
+    "explanation": "Para expressar 'eu trabalho em um escritório', a estrutura francesa é muito parecida com a nossa: 'Je travaille' (eu trabalho) seguido de 'dans' (em/dentro de), 'un' (um) e 'bureau' (escritório). A palavra 'dans' traz a ideia física de estar no interior do ambiente.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu — sujeito."
+      },
+      {
+        "word": "travaille",
+        "meaning": "Trabalho — forma do verbo trabalhar."
+      },
+      {
+        "word": "dans",
+        "meaning": "Em / dentro de — preposição."
+      },
+      {
+        "word": "un",
+        "meaning": "Um — artigo indefinido."
+      },
+      {
+        "word": "bureau",
+        "meaning": "Escritório / mesa de trabalho — local de trabalho."
+      }
+    ],
+    "pronuncia": "Comece em 'Je' deixando a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado ('jə'). Em 'travaille', arranhe o 'r' na garganta e termine no som líquido ('tra-vá-y'). Em 'dans un', solte o som de ó nasal aberto, escuro e profundo projetado para o nariz em 'dón' e ligue no som nasal 'ã' ('dón-zã'). Em 'bureau', arme o bico fechado e firme de U dizendo som agudo de I em 'bü' e feche no 'rô'.\nLeia: Jə tra-vá-y dón-zã bü-rô"
+  },
+  "184": {
+    "explanation": "Para dizer 'ele não tem emprego', o francês abraça o verbo ter ('a') com as duas partes da negação 'n' ... pas'. Além disso, troca-se a palavra 'um' pela partícula 'de' após a negação, soando literalmente como 'ele não tem nada de trabalho'.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele — pronome sujeito."
+      },
+      {
+        "word": "n'a pas",
+        "meaning": "Não tem — estrutura negativa com o verbo ter."
+      },
+      {
+        "word": "de",
+        "meaning": "De / nenhum — usado após negações."
+      },
+      {
+        "word": "travail",
+        "meaning": "Trabalho / emprego — ocupação."
+      }
+    ],
+    "pronuncia": "Em 'Il n'a pas', fale em um fluxo contínuo 'il-na-pá'. Em 'de', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado ('də'). Em 'travail', arranhe o 'r' na garganta e encerre no som líquido de 'i' ('tra-vái') sem deixar virar som de 'u'.\nLeia: Il na pá də tra-vái"
+  },
+  "185": {
+    "explanation": "Na frase 'você gosta do seu chefe?', o verbo 'Aimes' vem primeiro unido por hífen ao 'tu', formando a estrutura de pergunta. Logo em seguida, 'ton patron' significa exatamente 'teu chefe' ou 'seu patrão'.",
+    "breakdown": [
+      {
+        "word": "Aimes-tu",
+        "meaning": "Você gosta / gostas tu — inversão para pergunta."
+      },
+      {
+        "word": "ton",
+        "meaning": "Seu / teu — pronome possessivo masculino."
+      },
+      {
+        "word": "patron",
+        "meaning": "Chefe / patrão — superior no trabalho."
+      }
+    ],
+    "pronuncia": "Em 'Aimes-tu', solte 'ém' e arme o bico fechado e firme de U dizendo som agudo de I no 'tü' com 't' seco ('ém-tü'). Em 'ton patron', faça o som de 'on' arredondado com lábios em círculo fechado sem que eles se toquem no final, tanto em 'ton' quanto no fim de 'pa-tron'.\nLeia: Ém-tü ton pa-tron"
+  },
+  "186": {
+    "explanation": "Para expressar 'ela estuda todos os dias', o francês utiliza 'Elle étudie' (ela estuda) e complementa com 'tous les jours', que corresponde palavra por palavra ao nosso 'todos os dias'.",
+    "breakdown": [
+      {
+        "word": "Elle",
+        "meaning": "Ela — sujeito."
+      },
+      {
+        "word": "étudie",
+        "meaning": "Estuda — forma do verbo estudar."
+      },
+      {
+        "word": "tous les jours",
+        "meaning": "Todos os dias — expressão de frequência."
+      }
+    ],
+    "pronuncia": "Fale 'Elle' como 'él'. Em 'étudie', abra o 'é', mantenha o 't' seco e arme o bico fechado e firme de U dizendo som agudo de I no 'tü-dí'. Em 'tous les jours', diga 'tu lê jur', fazendo o 'j' suave e arranhando o 'r' no final.\nLeia: Él é-tü-dí tu lê jur"
+  },
+  "187": {
+    "explanation": "Para dizer 'a escola é muito grande', junta-se o artigo 'L'' com 'école' para formar 'L'école' (a escola). A sequência seguinte 'est très grande' é totalmente idêntica ao português: 'é muito grande'.",
+    "breakdown": [
+      {
+        "word": "L'école",
+        "meaning": "A escola — junção do artigo com o substantivo."
+      },
+      {
+        "word": "est",
+        "meaning": "É — verbo ser."
+      },
+      {
+        "word": "très",
+        "meaning": "Muito — intensificador."
+      },
+      {
+        "word": "grande",
+        "meaning": "Grande — adjetivo."
+      }
+    ],
+    "pronuncia": "Junte 'L'école est' em uma emissão única 'lé-kól é'. Em 'très', abra o 'é' e arranhe o 'r' ('tré'). Em 'grande', solte o som de ó nasal aberto, escuro e profundo projetado para o nariz em 'grón' e articule a consoante 'd' a seco no final ('grón-d').\nLeia: Lé-kól é tré grón-d"
+  },
+  "188": {
+    "explanation": "Para 'eu tenho caneta e papel', o francês junta 'Je' com 'ai' formando 'J'ai' (eu tenho). Como em francês as coisas contáveis pedem artigo, usa-se 'un stylo' (uma caneta) e 'du papier' (papel / um pouco de papel).",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho — junção de Je (eu) e ai (tenho)."
+      },
+      {
+        "word": "un",
+        "meaning": "Um / uma — artigo indefinido."
+      },
+      {
+        "word": "stylo",
+        "meaning": "Caneta — objeto de escrita."
+      },
+      {
+        "word": "et",
+        "meaning": "E — conector."
+      },
+      {
+        "word": "du papier",
+        "meaning": "Papel / um pouco de papel — du: artigo partitivo; papier: papel."
+      }
+    ],
+    "pronuncia": "Em 'J'ai un', ligue o 'j' suave com o 'ã' nasal ('jé-ã'). Em 'stylo', arme o bico fechado e firme de U dizendo som agudo de I em 'stü-lô'. Em 'et du papier', diga 'ê', arme o bico fechado e firme de U dizendo som agudo de I em 'dü' e termine em 'pa-piê' com som de 'ê' fechado sem pronunciar o 'r'.\nLeia: Jé-ã stü-lô ê dü pa-piê"
+  },
+  "189": {
+    "explanation": "Para perguntar 'os deveres de casa são difíceis?', a frase começa com 'Les devoirs' (os deveres) e 'sont' (são). Para formar a pergunta formal, adiciona-se '-ils' após o verbo, soando como 'os deveres são eles difíceis?'.",
+    "breakdown": [
+      {
+        "word": "Les devoirs",
+        "meaning": "Os deveres / as tarefas — Les: os; devoirs: deveres."
+      },
+      {
+        "word": "sont-ils",
+        "meaning": "São eles — inversão de pergunta no plural."
+      },
+      {
+        "word": "difficiles",
+        "meaning": "Difíceis — adjetivo plural."
+      }
+    ],
+    "pronuncia": "Em 'Les devoirs', solte 'lê' e deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'də' ('də-vuár'). Em 'sont-ils', faça o som de 'on' arredondado em 'son' e conecte no 'tíl' ('son-tíl'). Em 'difficiles', mantenha os 'i' limpos ('di-fi-síl').\nLeia: Lê də-vuár son-tíl di-fi-síl"
+  },
+  "190": {
+    "explanation": "Na frase 'eu não entendo a lição', o pronome 'Je' vem no início e a negação envolve o verbo em 'ne comprends pas' (não entendo). No final, 'la leçon' traz o sentido direto de 'a lição' ou 'a aula'.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu — sujeito."
+      },
+      {
+        "word": "ne ... pas",
+        "meaning": "Não — negação em duas partes."
+      },
+      {
+        "word": "comprends",
+        "meaning": "Entendo / compreendo — verbo compreender."
+      },
+      {
+        "word": "la leçon",
+        "meaning": "A lição — la: a; leçon: lição."
+      }
+    ],
+    "pronuncia": "Em 'Je ne', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em ambos ('jə nə'). Em 'comprends pas', faça o som de 'on' arredondado em 'kon', solte o som de ó nasal aberto, escuro e profundo projetado para o nariz em 'prón' e corte as consoantes finais antes de 'pá'. Em 'la leçon', deixe a boca 100% relaxada e mandíbula caída em 'lə' e encerre no som de 'on' arredondado em 'son'.\nLeia: Jə nə kon-prón pá la lə-son"
+  },
+  "191": {
+    "explanation": "Para perguntar 'qual é a sua profissão?', utiliza-se 'Quelle' (qual, no feminino), o verbo 'est' (é) e 'ta profession' (sua profissão). A palavra 'ta' é usada porque 'profession' é um substantivo feminino em francês.",
+    "breakdown": [
+      {
+        "word": "Quelle",
+        "meaning": "Qual — termo interrogativo feminino."
+      },
+      {
+        "word": "est",
+        "meaning": "É — verbo ser."
+      },
+      {
+        "word": "ta",
+        "meaning": "Sua / tua — possessivo feminino."
+      },
+      {
+        "word": "profession",
+        "meaning": "Profissão — área de trabalho."
+      }
+    ],
+    "pronuncia": "Conecte 'Quelle est' diretamente formando 'kél-é'. Em 'ta profession', diga 'ta', arranhe o 'r' na garganta e faça o som de 'on' arredondado com lábios em círculo fechado sem encostá-los no final ('prô-fé-sion').\nLeia: Kél-é ta prô-fé-sion"
+  },
+  "192": {
+    "explanation": "Para a ideia de 'ele é um médico famoso', o francês usa 'C'est' (é / ele é) para apresentar a pessoa. Em seguida vem 'un médecin' (um médico) e o adjetivo 'célèbre' (famoso), posicionado logo após o nome.",
+    "breakdown": [
+      {
+        "word": "C'est",
+        "meaning": "É / ele é — expressão de apresentação."
+      },
+      {
+        "word": "un médecin",
+        "meaning": "Um médico — un: um; médecin: médico."
+      },
+      {
+        "word": "célèbre",
+        "meaning": "Famoso / célebre — adjetivo."
+      }
+    ],
+    "pronuncia": "Junte 'C'est un' ligando o 't' seco ('sê-tã'). Em 'médecin', solte 'mê', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado no 'də' ('də') e finalize com o som nasal 'sã'. Em 'célèbre', diga 'sê-lé-br' travando o som no 'b' e no 'r' sem adicionar vogal no fim.\nLeia: Sê-tã mê-dəsã sê-lé-br"
+  },
+  "193": {
+    "explanation": "Em 'nós estudamos inglês juntos', o sujeito 'Nous' (nós) vem com a forma verbal 'étudions' (estudamos). A expressão 'l'anglais' (o inglês) e o advérbio 'ensemble' (juntos) completam a frase exatamente na mesma ordem do português.",
+    "breakdown": [
+      {
+        "word": "Nous",
+        "meaning": "Nós — pronome do plural."
+      },
+      {
+        "word": "étudions",
+        "meaning": "Estudamos — verbo estudar."
+      },
+      {
+        "word": "l'anglais",
+        "meaning": "O inglês — l': o; anglais: inglês."
+      },
+      {
+        "word": "ensemble",
+        "meaning": "Juntos — advérbio de companhia."
+      }
+    ],
+    "pronuncia": "Conecte 'Nous étudions' com som de 'z' ('nu-zê-tü-di-on'), armando o bico fechado e firme de U dizendo som agudo de I no 'tü' e fechando no som de 'on' arredondado. Em 'l'anglais ensemble', use o som de ó nasal aberto, escuro e profundo projetado para o nariz tanto em 'lón-glé' quanto em 'ón-són-bl'.\nLeia: Nu-zê-tü-di-on lón-glé ón-són-bl"
+  },
+  "194": {
+    "explanation": "Para perguntar 'você trabalha aos fins de semana?', o verbo 'Travailles' abre a frase invertido com 'tu'. A expressão 'le week-end' equivale a 'no fim de semana' ou 'aos fins de semana'.",
+    "breakdown": [
+      {
+        "word": "Travailles-tu",
+        "meaning": "Trabalhas você / você trabalha — inversão verbal."
+      },
+      {
+        "word": "le week-end",
+        "meaning": "O fim de semana — le: o; week-end: fim de semana."
+      }
+    ],
+    "pronuncia": "Em 'Travailles-tu', arranhe a garganta no 'r', solte o som líquido 'tra-vá-y' e arme o bico fechado e firme de U dizendo som agudo de I em 'tü' ('tra-vá-y-tü'). Em 'le week-end', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'lə' ('lə') e termine com 'uí-kén-d'.\nLeia: Tra-vá-y-tü lə uí-kén-d"
+  },
+  "195": {
+    "explanation": "Para expressar 'eu tenho uma reunião às dez', usa-se 'J'ai' (eu tenho), 'une réunion' (uma reunião) e a indicação de hora 'à dix heures' (às dez horas). Em francês, a palavra 'heures' é obrigatória no final para indicar horas.",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho — J' (eu) + ai (tenho)."
+      },
+      {
+        "word": "une réunion",
+        "meaning": "Uma reunião — une: uma; réunion: reunião."
+      },
+      {
+        "word": "à dix heures",
+        "meaning": "Às dez horas — à: às; dix: dez; heures: horas."
+      }
+    ],
+    "pronuncia": "Em 'J'ai une', ligue o 'j' suave no 'ün' armando o bico fechado e firme de U dizendo som agudo de I ('jé-ün'). Em 'réunion', repita o bico fechado e firme de U dizendo som agudo de I em 'rê-ü-ni-on' com o som de 'on' arredondado. Em 'à dix heures', faça a ligação com som de 'z' e posicione a língua para falar É bem aberto arredondando os lábios no formato de Ó para soltar 'a di-zœr'.\nLeia: Jé-ün rê-ü-ni-on a di-zœr"
+  },
+  "196": {
+    "explanation": "A frase 'o professor é muito gentil' segue a ordem exata do português: 'Le professeur' (o professor), 'est' (é), 'très' (muito) e 'gentil' (gentil/simpático). A consoante final de 'gentil' não é pronunciada.",
+    "breakdown": [
+      {
+        "word": "Le professeur",
+        "meaning": "O professor — Le: o; professeur: professor."
+      },
+      {
+        "word": "est",
+        "meaning": "É — verbo ser."
+      },
+      {
+        "word": "très",
+        "meaning": "Muito — intensificador."
+      },
+      {
+        "word": "gentil",
+        "meaning": "Gentil / simpático — adjetivo."
+      }
+    ],
+    "pronuncia": "Em 'Le professeur', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'lə' ('lə') e posicione a língua para falar É bem aberto arredondando os lábios no formato de Ó em 'fœs' ('prô-fé-sœr'). Ligue 'est très' ('é tré'). Em 'gentil', faça o 'j' suave com o som de ó nasal aberto, escuro e profundo projetado para o nariz em 'jón' e feche no 'tí' seco sem pronunciar a letra L ('jón-tí').\nLeia: Lə prô-fé-sœr é tré jón-tí"
+  },
+  "197": {
+    "explanation": "Para dizer 'eu escrevo no meu caderno', o francês junta 'Je' com 'écris' formando 'J'écris' (eu escrevo). Em seguida usa 'dans' (em/dentro de) e 'mon cahier' (meu caderno), dando a ideia de escrever nas páginas do caderno.",
+    "breakdown": [
+      {
+        "word": "J'écris",
+        "meaning": "Eu escrevo — J' (eu) + écris (escrevo)."
+      },
+      {
+        "word": "dans",
+        "meaning": "Em / dentro de — preposição."
+      },
+      {
+        "word": "mon cahier",
+        "meaning": "Meu caderno — mon: meu; cahier: caderno."
+      }
+    ],
+    "pronuncia": "Em 'J'écris', diga 'jé-krí' arranhando a garganta no 'r' e cortando o 's' final. Em 'dans mon cahier', faça o som de ó nasal aberto, escuro e profundo projetado para o nariz em 'dón', junte com o som de 'on' arredondado em 'mon' e encerre com 'ka-iê' em som de 'ê' fechado.\nLeia: Jé-krí dón mon ka-iê"
+  },
+  "198": {
+    "explanation": "Em 'ela fala três idiomas', o francês usa 'Elle parle' (ela fala), seguido do numeral 'trois' (três) e de 'langues' (línguas/idiomas). A estrutura é direta e muito intuitiva para falantes de português.",
+    "breakdown": [
+      {
+        "word": "Elle parle",
+        "meaning": "Ela fala — Elle: ela; parle: fala."
+      },
+      {
+        "word": "trois",
+        "meaning": "Três — numeral."
+      },
+      {
+        "word": "langues",
+        "meaning": "Línguas / idiomas — substantivo plural."
+      }
+    ],
+    "pronuncia": "Em 'Elle parle', fale 'él parl' travando a consoante 'l' e arranhando o 'r'. Em 'trois', faça o bico rápido de 'u' e abra em 'a' com 'r' arranhado ('truá'). Em 'langues', solte o som de ó nasal aberto, escuro e profundo projetado para o nariz em 'lón' e trave o 'g' seco no fim ('lón-g').\nLeia: Él parl truá lón-g"
+  },
+  "199": {
+    "explanation": "Para a ideia de 'eu não faço faculdade' (ou 'eu não vou à universidade'), o francês usa 'Je ne vais pas' (eu não vou) com a negação abraçando o verbo, e completa com 'à l'université' (à universidade).",
+    "breakdown": [
+      {
+        "word": "Je ne vais pas",
+        "meaning": "Eu não vou — negação com o verbo ir."
+      },
+      {
+        "word": "à l'université",
+        "meaning": "À universidade / para a faculdade — à: a; l'université: universidade."
+      }
+    ],
+    "pronuncia": "Em 'Je ne', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em ambos ('jə nə'). Em 'vais pas', fale 'vé pá'. Em 'à l'université', diga 'a lü-ni-vér-si-tê', armando o bico fechado e firme de U dizendo som agudo de I em 'lü' e mantendo os 't' secos sem chiar.\nLeia: Jə nə vé pá a lü-ni-vér-si-tê"
+  },
+  "200": {
+    "explanation": "Para perguntar 'tem uma biblioteca aqui?', usa-se a forma formal invertida de 'há/tem': 'Y a-t-il'. A letra '-t-' entre as palavras serve apenas para conectar os sons. Depois vem 'une bibliothèque' (uma biblioteca) e 'ici' (aqui).",
+    "breakdown": [
+      {
+        "word": "Y a-t-il",
+        "meaning": "Há? / Tem? — estrutura formal de pergunta de existência."
+      },
+      {
+        "word": "une bibliothèque",
+        "meaning": "Uma biblioteca — une: uma; bibliothèque: biblioteca."
+      },
+      {
+        "word": "ici",
+        "meaning": "Aqui — advérbio de lugar."
+      }
+    ],
+    "pronuncia": "Diga 'Y a-t-il' em um único bloco 'i-a-tíl' com 't' seco. Em 'une bibliothèque', arme o bico fechado e firme de U dizendo som agudo de I no 'ün' ('ün') e solte 'bi-bli-ô-ték' travando o 'k' seco no fim. Termine com 'i-sí'.\nLeia: I-a-tíl ün bi-bli-ô-ték i-sí"
+  },
+  "201": {
+    "explanation": "Para dizer 'eu uso caneta na minha prova', o francês usa 'J'utilose' (eu uso/utilizo) com 'un stylo' (uma caneta). Em seguida vem 'pour' (para) e 'mon examen' (minha prova / meu exame).",
+    "breakdown": [
+      {
+        "word": "J'utilise",
+        "meaning": "Eu uso / eu utilizo — J' (eu) + utilise (uso)."
+      },
+      {
+        "word": "un stylo",
+        "meaning": "Uma caneta — un: um; stylo: caneta."
+      },
+      {
+        "word": "pour",
+        "meaning": "Para / em — preposição."
+      },
+      {
+        "word": "mon examen",
+        "meaning": "Minha prova / meu exame — mon: meu; examen: exame/prova."
+      }
+    ],
+    "pronuncia": "Em 'J'utilise', arme o bico fechado e firme de U dizendo som agudo de I em 'jü' ('jü-ti-líz') com 't' seco. Em 'un stylo', faça a nasal 'ã' e mande o bico fechado e firme de U dizendo som agudo de I em 'stü-lô'. Em 'pour mon examen', faça a nasal arredondada em 'mon', ligue no 'examen' com som de 'z' e termine na nasal 'ã' ('pur mon-nê-gza-mã').\nLeia: Jü-ti-líz ã stü-lô pur mon-nê-gza-mã"
+  },
+  "202": {
+    "explanation": "Para perguntar 'o que você estuda?', o francês une 'Que' (o que) ao verbo 'étudies' formando 'Qu'étudies'. O pronome 'tu' (você) vem em seguida ligado por hífen para indicar a pergunta por inversão.",
+    "breakdown": [
+      {
+        "word": "Qu'étudies",
+        "meaning": "O que estuda — Qu' (o que) + étudies (estudas)."
+      },
+      {
+        "word": "tu",
+        "meaning": "Você / tu — pronome informal."
+      }
+    ],
+    "pronuncia": "Fale 'Qu'étudies-tu' de forma fluida: diga 'kê-tü-dí-tü', mantendo o 'k' seco e armando o bico fechado e firme de U dizendo som agudo de I tanto no primeiro 'tü' quanto no 'tü' final, sem chiar a consoante 't'.\nLeia: Kê-tü-dí-tü"
+  },
+  "203": {
+    "explanation": "Na frase 'a sala de aula está fria', os nativos dizem 'La salle de classe' (a sala de aula), seguido de 'est' (está) e do adjetivo no feminino 'froide' (fria).",
+    "breakdown": [
+      {
+        "word": "La salle de classe",
+        "meaning": "A sala de aula — La: a; salle: sala; de: de; classe: classe/aula."
+      },
+      {
+        "word": "est",
+        "meaning": "Está / é — verbo estar/ser."
+      },
+      {
+        "word": "froide",
+        "meaning": "Fria — adjetivo feminino."
+      }
+    ],
+    "pronuncia": "Em 'La salle de classe', fale 'la sál', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado no 'də' ('də') e encerre em 'klás'. Em 'est froide', diga 'é fruád', arranhando o 'r' na garganta e travando o 'd' no final.\nLeia: La sál də klás é fruád"
+  },
+  "204": {
+    "explanation": "Para a ideia de 'eu preciso terminar meu trabalho', o francês usa 'Je dois' (eu devo / eu tenho que), seguido do verbo no infinitivo 'finir' (terminar) e do complemento 'mon travail' (meu trabalho).",
+    "breakdown": [
+      {
+        "word": "Je dois",
+        "meaning": "Eu devo / eu preciso — Je: eu; dois: devo."
+      },
+      {
+        "word": "finir",
+        "meaning": "Terminar / concluir — verbo no infinitivo."
+      },
+      {
+        "word": "mon travail",
+        "meaning": "Meu trabalho — mon: meu; travail: trabalho."
+      }
+    ],
+    "pronuncia": "Em 'Je dois', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'jə' ('jə') e faça o som rápido de 'uá' em 'duá'. Em 'finir', diga 'fi-nír'. Em 'mon travail', faça a nasal arredondada 'mon' e termine na consoante líquida 'tra-vái'.\nLeia: Jə duá fi-nír mon tra-vái"
+  },
+  "205": {
+    "explanation": "Para perguntar 'você tem computador?', o verbo ter ('As') é colocado antes do 'tu' com um hífen. Em seguida vem 'un ordinateur' (um computador), formando a estrutura clássica de pergunta.",
+    "breakdown": [
+      {
+        "word": "As-tu",
+        "meaning": "Tens tu / você tem — inversão verbal."
+      },
+      {
+        "word": "un ordinateur",
+        "meaning": "Um computador — un: um; ordinateur: computador."
+      }
+    ],
+    "pronuncia": "Em 'As-tu', diga 'á' e arme o bico fechado e firme de U dizendo som agudo de I em 'tü' ('á-tü'). Em 'un ordinateur', ligue o 'ã' no 'o' ('ã-nôr-di-na-tœr') e posicione a língua para falar É bem aberto arredondando os lábios no formato de Ó no 'tœr', arranhando a garganta no 'r' final.\nLeia: Á-tü ã-nôr-di-na-tœr"
+  },
+  "206": {
+    "explanation": "Para dizer 'eu leio o jornal', a frase em francês é muito simples: 'Je' (eu), 'lis' (leio), 'le' (o) e 'journal' (jornal). O verbo 'lis' não pronuncia a letra 's' no final.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu — sujeito."
+      },
+      {
+        "word": "lis",
+        "meaning": "Leio — verbo ler."
+      },
+      {
+        "word": "le journal",
+        "meaning": "O jornal — le: o; journal: jornal."
+      }
+    ],
+    "pronuncia": "Em 'Je lis', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado em 'jə' ('jə') e fale 'lí'. Em 'le journal', repita o som relaxado em 'lə' ('lə') e fale 'jur-nál' colando a língua no céu da boca no 'l' final sem virar 'u'.\nLeia: Jə lí lə jur-nál"
+  },
+  "207": {
+    "explanation": "Para dizer 'ele é muito trabalhador', o francês usa a expressão 'C'est un travailleur acharné', que significa ao pé da letra 'ele é um trabalhador dedicado/obstinado', descrevendo quem se dedica com garra ao trabalho.",
+    "breakdown": [
+      {
+        "word": "C'est un",
+        "meaning": "Ele é um — c'est: é; un: um."
+      },
+      {
+        "word": "travailleur",
+        "meaning": "Trabalhador — aquele que trabalha."
+      },
+      {
+        "word": "acharné",
+        "meaning": "Dedicado / trabalhador dedicado — que se empenha muito."
+      }
+    ],
+    "pronuncia": "Ligue 'C'est un' com som de 't' seco ('sê-tã'). Em 'travailleur', arranhe o 'r', solte o som líquido 'vá-y' e posicione a língua para falar É bem aberto arredondando os lábios no formato de Ó em 'œr' ('tra-va-yœr'). Em 'acharné', fale 'a-char-nê' com 'ê' fechado.\nLeia: Sê-tã tra-va-yœr a-char-nê"
+  },
+  "208": {
+    "explanation": "Para dizer 'eu não gosto da minha mesa' ou 'do meu escritório', coloca-se a negação 'n' ... pas' ao redor do verbo gostar em 'Je n'aime pas'. Depois adiciona-se 'mon bureau' (meu escritório / minha mesa).",
+    "breakdown": [
+      {
+        "word": "Je n'aime pas",
+        "meaning": "Eu não gosto — negação com o verbo gostar."
+      },
+      {
+        "word": "mon bureau",
+        "meaning": "Meu escritório / minha mesa — mon: meu; bureau: escritório."
+      }
+    ],
+    "pronuncia": "Em 'Je n'aime pas', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado no 'jə' ('jə') e diga 'nêm pá'. Em 'mon bureau', solte a nasal arredondada 'mon', arme o bico fechado e firme de U dizendo som agudo de I em 'bü' e feche em 'rô' ('mon bü-rô').\nLeia: Jə nêm pá mon bü-rô"
+  },
+  "209": {
+    "explanation": "Em 'onde fica o seu escritório?', a palavra 'Où' significa 'onde', acompanhada de 'est' (é/fica) e 'ton bureau' (seu escritório/sua mesa), mantendo a mesma ordem do português.",
+    "breakdown": [
+      {
+        "word": "Où est",
+        "meaning": "Onde é / onde fica — Où: onde; est: é/fica."
+      },
+      {
+        "word": "ton bureau",
+        "meaning": "Seu escritório / sua mesa — ton: seu; bureau: escritório."
+      }
+    ],
+    "pronuncia": "Conecte 'Où est' em um som único 'u-é'. Em 'ton bureau', faça a nasal arredondada 'ton', arme o bico fechado e firme de U dizendo som agudo de I em 'bü' e encerre no 'rô' ('ton bü-rô').\nLeia: U-é ton bü-rô"
+  },
+  "210": {
+    "explanation": "Para 'a aula começa agora', o francês utiliza 'La leçon' (a lição / a aula), o verbo 'commence' (começa) e o advérbio 'maintenant' (agora), organizando as ideias de forma direta.",
+    "breakdown": [
+      {
+        "word": "La leçon",
+        "meaning": "A aula / a lição — La: a; leçon: lição."
+      },
+      {
+        "word": "commence",
+        "meaning": "Começa — verbo começar."
+      },
+      {
+        "word": "maintenant",
+        "meaning": "Agora — advérbio de tempo."
+      }
+    ],
+    "pronuncia": "Em 'La leçon', fale 'la', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado no 'lə' e feche na nasal arredondada em 'son' ('lə-son'). Em 'commence', fale 'kó-móns' com o som de ó nasal aberto, escuro e profundo. Em 'maintenant', fale a nasal 'mã', deixe a boca 100% relaxada no 'tə' ('mã-tə-nón') e termine no som de ó nasal aberto, escuro e profundo 'nón'.\nLeia: La lə-son kó-móns mã-tə-nón"
+  }
+}

@@ -834,6 +834,26 @@ Grafia no Leia:: ông (djông, dông, rrông) e iông (yông, tchiông).
 Como fazer: Quando uma sílaba recebe o sufixo coloquial -r, não se cria uma nova sílaba. No final da vogal base, curve bruscamente a ponta da língua para trás em direção ao céu da boca em um único movimento contínuo de expiração. Se a palavra original terminar em -n ou -i, esse som final cai e a língua curva diretamente a partir da vogal.
 Trava da L1: Nunca tente pronunciar como uma sílaba separada ("huá-ér") e nunca use o som raspado da garganta do português ("huá-rr"). Trata-se de uma flexão rápida da ponta da língua para trás no final da própria palavra.
 Grafia no Leia:: sílaba fundida terminada em r com a língua curvada (rruár, yì-diêr, nǎr, uár).
+41. As Consoantes M, N, L, F e a Trava da L1 (mā, nǐ, lái, fàn)
+Como fazer: Articule M e F nos lábios, e N e L apoiando a ponta da língua firme nos alvéolos superiores (atrás dos dentes da frente). O ataque deve ser seco, firme e limpo, entrando direto na vogal seguinte sem hesitação muscular. No mandarim, a consoante L é sempre dental/alveolar e nunca ocorre em final de sílaba.
+Trava da L1: O falante brasileiro tende a criar vogais de apoio imaginárias antes ou depois das consoantes ("mi-", "ni-") ou relaxar o ataque. Mantenha o disparo consonantal limpo e direto.
+Grafia no Leia:: m, n, l, f diretos sem nenhuma vogal de apoio (mā, nǐ, lái, fàn).
+42. As Semivogais de Abertura W e Y (wǒ, wán, yě, yī, yào)
+Como fazer: No Pinyin, W e Y não são consoantes duras; são marcas ortográficas para indicar que a sílaba começa com o som de "u" (/w/) ou de "i" (/j/) sem ter uma consoante antes. Articule o W projetando os lábios diretamente na semivogal "u" (wǒ = uǒ), e o Y esticando a boca na semivogal "i" (yě = ié, yī = som puro de "i").
+Trava da L1: Nunca leia o W com som de "V" e sob hipótese alguma leia o Y com o som de "J" chiado do português (yào nunca é "já-o", é "iáo"). São semivogais puras de deslize labial e palatal.
+Grafia no Leia:: u para W (uǒ, uán) e i para Y (iē, ié, yī, iào).
+43. A Rima -IE com Som de "É" Aberto vs. -IA / -IAO (bié, xiè, tiē vs. jiā, xiǎo)
+Como fazer:
+  - -ie: inicie na semivogal "i" e abra imediatamente para a vogal "é" aberta e frontal (soa exatamente como "ié", com o "é" idêntico ao de café ou pé).
+  - -ia / -iao: deslize suavemente do "i" para o "a" límpido e aberto ("iá", "iáo").
+Trava da L1: Em -ie, o brasileiro olha a letra E e tenta ler com som de "ê" fechado ou ditongo "ei" (bi-ê, xi-ei). No mandarim, a terminação de I com E isolado abre sempre em som de "É" límpido e frontal.
+Grafia no Leia:: ié com marcação de som aberto (bié, xiè, tiē) vs. iā / iǎo (djiā, xiǎo).
+44. A Rima -UO com Transição Labial vs. -UA / -UAI (duō, suǒ, zuò vs. huā, kuài)
+Como fazer:
+  - -uo: projete os lábios em bico redondo de "u" e abra em um som redondo de "ô" / "ó" fechado, formando o ditongo fluido "uô".
+  - -ua / -uai: saia do bico do "u" e abra imediatamente para o "a" límpido ("uá", "uái").
+Trava da L1: Em -uo, o falante tende a ignorar o "u" e ler apenas "dó", "só", ou quebrar a palavra em duas sílabas soltas ("du-ó"). A transição labial de "u" para "ô" é um bloco único e contínuo.
+Grafia no Leia:: uô (duō, suǒ, tsuò) vs. uā / uài (rruā, kuài).
 45. O Apóstrofo Divisor Silábico (Xī'ān, tiān'ānmén, pí'ǎo)
 Como fazer: Quando uma sílaba iniciada pelas vogais a, o, e vem imediatamente após outra sílaba sem consoante entre elas, o Pinyin usa um apóstrofo. Faça uma pausa milimétrica com corte de ar na garganta antes de iniciar a vogal seguinte, sem colar os sons.
 Trava da L1: O falante de português aglutina tudo em uma corrida só: lê Xī'ān como se fosse uma sílaba única (xiēn), ou junta a consoante final na vogal seguinte em tiān'ān. A pausa curta é obrigatória para não fundir palavras distintas.

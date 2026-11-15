@@ -1,0 +1,542 @@
+{
+  "211": {
+    "explanation": "Para expressar 'Estou me sentindo mal', os franceses dizem 'Je me sens malade', que se traduz diretamente como 'Eu me sinto doente'. Em vez de usar um advérbio de modo como 'mal', é mais natural em francês referir-se ao estado de saúde com o adjetivo 'malade' junto ao verbo sentir-se.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu."
+      },
+      {
+        "word": "me sens",
+        "meaning": "Me sinto — verbo sentir na primeira pessoa."
+      },
+      {
+        "word": "malade",
+        "meaning": "Doente / indisposto."
+      }
+    ],
+    "pronuncia": "Em 'Je', deixe a boca 100% relaxada e mandíbula caída, soltando um som neutro curtíssimo e apagado 'jə'. Faça o mesmo em 'me' ('mə'). Na palavra 'sens', corte o 's' final e emita o som nasal aberto 'sã'. Finalize em 'malade' cortando a palavra a seco na consoante 'd' sem soltar som de 'i'.\nLeia: Jə mə sã ma-lád."
+  },
+  "212": {
+    "explanation": "Para perguntar 'Onde fica o hospital?', o francês utiliza 'Où est l'hôpital ?', que significa literalmente 'Onde está o hospital?'. A vogal do artigo 'le' se junta à palavra seguinte com apóstrofo porque 'hôpital' começa com um H que não é pronunciado, funcionando foneticamente como se fosse uma vogal.",
+    "breakdown": [
+      {
+        "word": "Où",
+        "meaning": "Onde."
+      },
+      {
+        "word": "est",
+        "meaning": "Está / fica — terceira pessoa do verbo ser/estar."
+      },
+      {
+        "word": "l'hôpital",
+        "meaning": "O hospital — junção de le (o) com hôpital."
+      }
+    ],
+    "pronuncia": "Em 'Où', faça o som natural de 'u'. A palavra 'est' tem som aberto de 'é'. Conecte 'est' com 'l'hôpital' fazendo a ligação fluida, e garanta que o 'l' final de 'hôpital' termine com a ponta da língua encostando no céu da boca, sem virar som de 'u'.\nLeia: U é lô-pi-tál."
+  },
+  "213": {
+    "explanation": "Em francês, a expressão para 'precisar de algo' é ter necessidade de algo ('avoir besoin de'). Por isso, 'Eu preciso de um médico' vira 'J'ai besoin d'un médecin', que significa ao pé da letra 'Eu tenho necessidade de um médico'.",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho — contração de Je (eu) e ai (tenho)."
+      },
+      {
+        "word": "besoin",
+        "meaning": "Necessidade."
+      },
+      {
+        "word": "d'un",
+        "meaning": "De um — contração da preposição de com un (um)."
+      },
+      {
+        "word": "médecin",
+        "meaning": "Médico."
+      }
+    ],
+    "pronuncia": "Em 'J'ai', emita um 'j' suave com som de 'é' aberto ('jé'). Em 'besoin', comece com 'bə' deixando a boca 100% relaxada e mandíbula caída no som neutro, e faça o biquinho de 'u' que abre em 'ã' nasal ('bə-zuã'). Em 'd'un', faça a nasal aberta 'dã'. Em 'médecin', pronuncie o 'é' fechado e finalize com a nasal aberta 'méd-sã'.\nLeia: Jé bə-zuã dã méd-sã."
+  },
+  "214": {
+    "explanation": "A pergunta 'Você tem algum remédio?' é montada como 'As-tu des médicaments ?', invertendo a ordem do verbo e do pronome. O termo 'des' é um artigo partitivo que indica uma quantidade indefinida no plural, equivalente a 'alguns' ou 'remédios em geral'.",
+    "breakdown": [
+      {
+        "word": "As-tu",
+        "meaning": "Tens tu / Você tem — inversão de tu as (você tem)."
+      },
+      {
+        "word": "des",
+        "meaning": "De / alguns — artigo indefinido no plural."
+      },
+      {
+        "word": "médicaments",
+        "meaning": "Remédios / medicamentos."
+      }
+    ],
+    "pronuncia": "Em 'As-tu', faça o 'a' limpo e no 'tu' é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I ('a-tü'). No 'des', pronuncie 'dê' fechado. Em 'médicaments', feche a primeira sílaba em 'mê', use o som de 'k' seco ('di-ka') e termine com o som nasal posterior 'món' com a boca aberta em 'ó' nasal escuro e profundo, sem pronunciar o 'ts' final.\nLeia: A-tü dê mô-di-ka-món."
+  },
+  "215": {
+    "explanation": "Para dizer 'Minha cabeça dói', o francês usa a estrutura 'J'ai mal à la tête', que significa ao pé da letra 'Eu tenho mal na cabeça'. Em francês, dores no corpo são sempre expressas pelo verbo 'ter' ('avoir') somado à palavra 'mal' e à localização do corpo.",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho."
+      },
+      {
+        "word": "mal",
+        "meaning": "Dor / mal."
+      },
+      {
+        "word": "à la",
+        "meaning": "Na / à — preposição à + artigo feminino la."
+      },
+      {
+        "word": "tête",
+        "meaning": "Cabeça."
+      }
+    ],
+    "pronuncia": "Comece com 'J'ai' fazendo 'jé'. Em 'mal', a ponta da língua deve subir no céu da boca para o 'l' sem virar 'u'. Conecte com 'à la' ('má-la-la'). Em 'tête', use o 't' seco com 'é' bem aberto e trave na consoante 't' no final sem som de 'i'.\nLeia: Jé má-la-la tét."
+  },
+  "216": {
+    "explanation": "Para 'Eu estou muito cansado', diz-se 'Je suis très fatigué'. A estrutura segue exatamente a mesma ordem do português, usando o verbo ser/estar ('suis') seguido do intensificador 'très' (muito) e do adjetivo 'fatigué'.",
+    "breakdown": [
+      {
+        "word": "Je",
+        "meaning": "Eu."
+      },
+      {
+        "word": "suis",
+        "meaning": "Sou / estou — primeira pessoa do verbo être."
+      },
+      {
+        "word": "très",
+        "meaning": "Muito."
+      },
+      {
+        "word": "fatigué",
+        "meaning": "Cansado."
+      }
+    ],
+    "pronuncia": "Em 'Je', deixe a boca 100% relaxada e mandíbula caída no som neutro 'jə'. Em 'suis', arme os lábios no bico fechado do U francês (ü) e deslize imediatamente para o I ('süí'). Em 'très', arranhe o 'r' suavemente e faça o 'é' aberto ('tré'). Em 'fatigué', pronuncie 'fa-ti-gê' com o 't' seco e o 'é' fechado no fim.\nLeia: Jə süí tré fa-ti-gê."
+  },
+  "217": {
+    "explanation": "A frase imperativa 'Chame uma ambulância!' é dita como 'Appelez une ambulance !'. Utiliza-se a forma do tratamento formal 'vous' no verbo ('Appelez') para dar uma ordem polida e urgente a qualquer pessoa ou socorrista.",
+    "breakdown": [
+      {
+        "word": "Appelez",
+        "meaning": "Chame / chamem — forma imperativa do verbo appeler."
+      },
+      {
+        "word": "une",
+        "meaning": "Uma — artigo indefinido feminino."
+      },
+      {
+        "word": "ambulance",
+        "meaning": "Ambulância."
+      }
+    ],
+    "pronuncia": "Em 'Appelez', faça 'a-plê' com o 'z' final mudo e 'ê' fechado. Em 'une', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I para o 'ü', articulando o 'n' na sequência ('ün'). Em 'ambulance', capriche nos dois sons nasais posteriores 'ón' (boca aberta em 'ó' nasal escuro e profundo) e feche travando o 's' final sem som de 'i' ('ón-bü-lóns'). Conecte tudo com fluidez.\nLeia: A-plê-zü-nón-bü-lóns."
+  },
+  "218": {
+    "explanation": "Para perguntar 'Tem uma farmácia por perto?', usa-se 'Y a-t-il une pharmacie à proximité ?'. O bloco 'Y a-t-il' é a forma interrogativa formal de 'il y a' (há / tem), com a letra 't' inserida apenas para ligar a pronúncia das vogais de forma fluida.",
+    "breakdown": [
+      {
+        "word": "Y a-t-il",
+        "meaning": "Há / tem? — estrutura interrogativa de haver/ter."
+      },
+      {
+        "word": "une",
+        "meaning": "Uma."
+      },
+      {
+        "word": "pharmacie",
+        "meaning": "Farmácia."
+      },
+      {
+        "word": "à proximité",
+        "meaning": "Nas proximidades / por perto — à: em/a; proximité: proximidade."
+      }
+    ],
+    "pronuncia": "Em 'Y a-t-il', pronuncie 'i-a-tíl' com o 't' e o 'l' bem secos. Em 'une', arme o bico fechado e firme de U dizendo som agudo de I ('ün'). Em 'pharmacie', faça 'far-ma-sí'. Em 'à proximité', grude 'a prôk-si-mi-tê' com o 't' final bem seco e som de 'ê' fechado.\nLeia: I-a-tíl ün far-ma-sí a prôk-si-mi-tê."
+  },
+  "219": {
+    "explanation": "Em francês, ter um resfriado é considerado algo que você 'possui' fisicamente. Em vez de dizer 'estou resfriado', a frase 'J'ai un rhume' significa literalmente 'Eu tenho um resfriado'.",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho."
+      },
+      {
+        "word": "un",
+        "meaning": "Um."
+      },
+      {
+        "word": "rhume",
+        "meaning": "Resfriado."
+      }
+    ],
+    "pronuncia": "Em 'J'ai', fale 'jé'. Conecte com 'un' fazendo a ligação fonética no som nasal aberto 'ã' ('jé-zã'). Em 'rhume', o 'h' é totalmente mudo; arranhe o 'r' suavemente no fundo da garganta e é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I para o 'ü', terminando a seco no 'm' ('rüm').\nLeia: Jé-zã rüm."
+  },
+  "220": {
+    "explanation": "A frase 'Ele não está se sentindo bem' vira 'Il ne se sent pas bien'. A negação básica em francês envolve o verbo entre as duas palavras 'ne' e 'pas', e a expressão 'se sentir bem' usa o advérbio 'bien' no final.",
+    "breakdown": [
+      {
+        "word": "Il",
+        "meaning": "Ele."
+      },
+      {
+        "word": "ne",
+        "meaning": "Não — primeira parte da negação."
+      },
+      {
+        "word": "se sent",
+        "meaning": "Se sente — verbo sentir na terceira pessoa."
+      },
+      {
+        "word": "pas",
+        "meaning": "Não — segunda parte da negação."
+      },
+      {
+        "word": "bien",
+        "meaning": "Bem."
+      }
+    ],
+    "pronuncia": "Em 'Il', a língua sobe para o 'l'. Em 'ne' e 'se', deixe a boca 100% relaxada e mandíbula caída no som neutro 'nə' e 'sə'. Em 'sent', corte a consoante final e fale a nasal aberta 'sã'. O 'pas' tem som de 'pa' limpo. Termine em 'bien' articulando o som rápido de 'i' e desemboque no nasal aberto 'ã' ('biã').\nLeia: Il nə sə sã pa biã."
+  },
+  "221": {
+    "explanation": "Para perguntar 'Você está bem?', a forma mais comum e amigável em francês é 'Est-ce que ça va ?'. O bloco 'Est-ce que' é o marcador padrão de perguntas e 'ça va' significa literalmente 'isso vai?'.",
+    "breakdown": [
+      {
+        "word": "Est-ce que",
+        "meaning": "Será que / marcador de pergunta."
+      },
+      {
+        "word": "ça va",
+        "meaning": "Vai tudo bem? / Isso vai? — ça: isso; va: vai."
+      }
+    ],
+    "pronuncia": "No bloco 'Est-ce que', pronuncie 'ês-kə', lembrando de deixar a boca 100% relaxada e mandíbula caída no som neutro 'ə' da última sílaba. Em 'ça va', solte o som suave de 'sa va' com a boca bem aberta.\nLeia: Ês-kə sa va."
+  },
+  "222": {
+    "explanation": "A frase 'Eu preciso de água' traduz-se como 'J'ai besoin d'un peu d'eau', que significa literalmente 'Eu tenho necessidade de um pouco de água'. Adicionar 'un peu de' é o jeito natural que os nativos usam para pedir líquidos.",
+    "breakdown": [
+      {
+        "word": "J'ai besoin",
+        "meaning": "Eu preciso / Tenho necessidade."
+      },
+      {
+        "word": "d'un peu",
+        "meaning": "De um pouco — d': de; un: um; peu: pouco."
+      },
+      {
+        "word": "d'eau",
+        "meaning": "De água — d': de; eau: água."
+      }
+    ],
+    "pronuncia": "Em 'J'ai besoin', fale 'jé bə-zuã' com o 'ə' neutro relaxado. Em 'd'un', fale a nasal aberta 'dã'. Em 'peu', é OBRIGATÓRIO posicionar a boca para falar Ê com os lábios projetados em bico redondo e fechado de Ô ('pø'). Em 'd'eau', feche os lábios no som de 'ô' puro ('dô').\nLeia: Jé bə-zuã dã pø dô."
+  },
+  "223": {
+    "explanation": "Para pedir 'Me ajude, por favor!', usa-se 'Aidez-moi, s'il vous plaît !'. 'Aidez-moi' é a ordem imperativa direta no modo formal ('ajudem-me/ajude-me') e 's'il vous plaît' é a expressão clássica de cortesia que significa 'se vos agrada'.",
+    "breakdown": [
+      {
+        "word": "Aidez-moi",
+        "meaning": "Ajude-me / Ajudem-me — aidez: ajude; moi: mim/me."
+      },
+      {
+        "word": "s'il vous plaît",
+        "meaning": "Por favor — literalmente: se isso vos agrada."
+      }
+    ],
+    "pronuncia": "Em 'Aidez-moi', faça 'ê-dê-muá' com o 'ê' fechado e o 'oi' virando 'uá'. Em 's'il vous plaît', fale 'sil vu plé', terminando com o 'é' bem aberto e travando o 't' sem som de 'i'.\nLeia: Ê-dê-muá sil vu plé."
+  },
+  "224": {
+    "explanation": "Para dizer 'Eu perdi minha bolsa', o francês usa o tempo composto do passado 'J'ai perdu mon sac', que significa ao pé da letra 'Eu tenho perdido minha bolsa'. 'Mon' é usado para bolsa ('sac') porque em francês essa palavra é masculina.",
+    "breakdown": [
+      {
+        "word": "J'ai perdu",
+        "meaning": "Eu perdi — J'ai: tenho; perdu: perdido."
+      },
+      {
+        "word": "mon",
+        "meaning": "Meu / minha — possessivo masculino."
+      },
+      {
+        "word": "sac",
+        "meaning": "Bolsa / saco."
+      }
+    ],
+    "pronuncia": "Em 'J'ai perdu', fale 'jé pér-dü'. Lembre que no 'dü' é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I. Em 'mon', faça o som nasal arredondado 'mon' com os lábios em círculo fechado sem fechá-los no final. Em 'sac', pronuncie o 'k' seco sem soltar um 'i' no fim ('sak').\nLeia: Jé pér-dü mon sak."
+  },
+  "225": {
+    "explanation": "A frase 'A delegacia de polícia fica ali' traduz-se como 'Le commissariat est là-bas'. O termo 'commissariat' é a palavra usada para delegacias em países francófonos, e 'là-bas' indica um local distante ('ali/lá').",
+    "breakdown": [
+      {
+        "word": "Le commissariat",
+        "meaning": "A delegacia de polícia — le: o; commissariat: delegacia."
+      },
+      {
+        "word": "est",
+        "meaning": "É / fica."
+      },
+      {
+        "word": "là-bas",
+        "meaning": "Ali / lá."
+      }
+    ],
+    "pronuncia": "Em 'Le', deixe a boca 100% relaxada e mandíbula caída no som neutro 'lə'. Em 'commissariat', pronuncie 'kô-mi-sa-ria' sem pronunciar o 't' final. Conecte com 'est' no som de 'é' e termine em 'là-bas' como 'la-bá' com o 's' mudo.\nLeia: Lə kô-mi-sa-ria é la-bá."
+  },
+  "226": {
+    "explanation": "Para 'Eu não me sinto bem', a frase em francês é 'Je ne me sens pas bien'. Esta é a forma negativa exata de 'Je me sens bien', colocando a negação 'ne... pas' ao redor do bloco do verbo refletido 'me sens'.",
+    "breakdown": [
+      {
+        "word": "Je ne",
+        "meaning": "Eu não — Je: eu; ne: primeira parte da negação."
+      },
+      {
+        "word": "me sens pas",
+        "meaning": "Me sinto não — me sens: me sinto; pas: segunda parte da negação."
+      },
+      {
+        "word": "bien",
+        "meaning": "Bem."
+      }
+    ],
+    "pronuncia": "Em 'Je', 'ne' e 'me', todas as três palavras devem ser faladas deixando a boca 100% relaxada e mandíbula caída no som neutro 'jə nə mə'. Em 'sens pas', fale 'sã pa' com a nasal aberta em 'sã'. Termine em 'bien' com o som de 'biã'.\nLeia: Jə nə mə sã pa biã."
+  },
+  "227": {
+    "explanation": "No francês, em vez de dizer 'Minha perna está quebrada', é mais comum e natural dizer 'J'ai la jambe cassée', que significa 'Eu tenho a perna quebrada'. Usa-se o artigo 'la' em vez do possessivo quando nos referimos a partes do próprio corpo.",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho."
+      },
+      {
+        "word": "la jambe",
+        "meaning": "A perna."
+      },
+      {
+        "word": "cassée",
+        "meaning": "Quebrada."
+      }
+    ],
+    "pronuncia": "Em 'J'ai', fale 'jé'. Em 'la jambe', capriche no som nasal posterior 'jónb', lembrando que o 'an' soa como 'ó' nasal escuro e profundo projetado para o nariz, e a palavra termina na consoante 'b' a seco ('jónb'). Em 'cassée', faça o 's' limpo e termine com o 'ê' fechado ('ka-sê').\nLeia: Jé la jónb ka-sê."
+  },
+  "228": {
+    "explanation": "A pergunta 'Você tem um curativo?' diz-se 'As-tu un bandage ?'. A palavra 'bandage' serve para curativos, ataduras e faixas em geral, e a pergunta usa a inversão informal e direta do verbo com o pronome 'tu'.",
+    "breakdown": [
+      {
+        "word": "As-tu",
+        "meaning": "Tens tu / Você tem?"
+      },
+      {
+        "word": "un",
+        "meaning": "Um."
+      },
+      {
+        "word": "bandage",
+        "meaning": "Curativo / atadura."
+      }
+    ],
+    "pronuncia": "Em 'As-tu', é OBRIGATÓRIO armar o bico fechado e firme de U dizendo som agudo de I no 'tü' ('a-tü'). Conecte com 'un' fazendo a nasal aberta 'ã'. Em 'bandage', faça a nasal posterior no 'bón' (boca aberta em 'ó' nasal escuro) e termine em 'dáj' com o 'j' suave ('bón-dáj').\nLeia: A-tü ã bón-dáj."
+  },
+  "229": {
+    "explanation": "Para dizer 'Eu sou alérgico a gatos', a frase correta é 'Je suis allergique aux chats'. A preposição 'aux' é a fusão de 'à' (a/para) com o artigo plural 'les' (os), significando 'aos'.",
+    "breakdown": [
+      {
+        "word": "Je suis",
+        "meaning": "Eu sou / estou."
+      },
+      {
+        "word": "allergique",
+        "meaning": "Alérgico."
+      },
+      {
+        "word": "aux chats",
+        "meaning": "Aos gatos — aux: a + os; chats: gatos."
+      }
+    ],
+    "pronuncia": "Em 'Je', boca relaxada no 'jə'. Em 'suis', faça 'süí' travando o bico do 'ü'. Conecte com 'allergique' fazendo 'a-lér-jík' com o 'k' seco no fim. Em 'aux chats', junte tudo no som de 'ô chá', onde a letra 'x' e a letra 's' final são totalmente mudas.\nLeia: Jə süí a-lér-jík ô chá."
+  },
+  "230": {
+    "explanation": "A frase 'O médico está vindo' é dita como 'Le médecin arrive'. Em francês, o presente simples do verbo chegar ('arrive') é usado para indicar que uma ação está acontecendo neste exato momento.",
+    "breakdown": [
+      {
+        "word": "Le médecin",
+        "meaning": "O médico — le: o; médecin: médico."
+      },
+      {
+        "word": "arrive",
+        "meaning": "Chega / está vindo — terceira pessoa do verbo arriver."
+      }
+    ],
+    "pronuncia": "Em 'Le', deixe a boca 100% relaxada no 'lə'. Em 'médecin', faça 'méd-sã' com a nasal aberta no final. Conecte com 'arrive' arranhando o 'r' suavemente e travando no 'v' final sem adicionar som de 'i' ('a-rív').\nLeia: Lə méd-sã a-rív."
+  },
+  "231": {
+    "explanation": "Para perguntar 'Onde fica a saída de emergência?', diz-se 'Où est la sortie de secours ?'. A palavra 'secours' significa 'socorro/emergência' e compõe a expressão fixa 'sortie de secours' (saída de emergência).",
+    "breakdown": [
+      {
+        "word": "Où est",
+        "meaning": "Onde está / onde fica."
+      },
+      {
+        "word": "la sortie",
+        "meaning": "A saída."
+      },
+      {
+        "word": "de secours",
+        "meaning": "De emergência / de socorro."
+      }
+    ],
+    "pronuncia": "Em 'Où est', faça 'u é'. Em 'la sortie', pronuncie 'la sor-tí' com o 't' seco. Em 'de secours', faça 'də' com a boca relaxada e junte com 'sə-kúr', arranhando o 'r' no final e ignorando o 's' mudo.\nLeia: U é la sor-tí də sə-kúr."
+  },
+  "232": {
+    "explanation": "Assim como com a dor de cabeça, o francês usa o verbo ter ('avoir') para estados febris. Por isso, 'Eu estou com febre' vira 'J'ai de la fièvre', que significa literalmente 'Eu tenho febre'.",
+    "breakdown": [
+      {
+        "word": "J'ai",
+        "meaning": "Eu tenho."
+      },
+      {
+        "word": "de la",
+        "meaning": "De / alguma — artigo partitivo feminino."
+      },
+      {
+        "word": "fièvre",
+        "meaning": "Febre."
+      }
+    ],
+    "pronuncia": "Em 'J'ai', fale 'jé'. Em 'de la', pronuncie 'də la' com a boca relaxada no 'də'. Em 'fièvre', faça a transição de 'fi-évr' com o 'é' bem aberto e travando o som no 'v' e no 'r' de garganta a seco.\nLeia: Jé də la fi-évr."
+  },
+  "233": {
+    "explanation": "A pergunta 'Dói aqui?' traduz-se como 'Est-ce que ça fait mal ici ?'. A expressão 'faire mal' significa literalmente 'fazer mal' ou 'causar dor', sendo o padrão para perguntar sobre dor física localizada.",
+    "breakdown": [
+      {
+        "word": "Est-ce que",
+        "meaning": "Marcador de pergunta."
+      },
+      {
+        "word": "ça fait",
+        "meaning": "Isso faz — ça: isso; fait: faz."
+      },
+      {
+        "word": "mal",
+        "meaning": "Dor / mal."
+      },
+      {
+        "word": "ici",
+        "meaning": "Aqui."
+      }
+    ],
+    "pronuncia": "No bloco 'Est-ce que', fale 'ês-kə' com o 'ə' neutro relaxado. Em 'ça fait', diga 'sa fé' com o 'é' bem aberto. Conecte 'mal' e 'ici' fazendo a ponta da língua subir no 'l' e ligando direto ('má-li-sí').\nLeia: Ês-kə sa fé má-li-sí."
+  },
+  "234": {
+    "explanation": "Para expressar 'Eu preciso me sentar', o francês usa 'J'ai besoin de m'asseoir'. O verbo 'asseoir' é reflexivo (sentar-se), por isso o pronome 'me' aparece encurtado para 'm'' antes do verbo que começa com vogal.",
+    "breakdown": [
+      {
+        "word": "J'ai besoin de",
+        "meaning": "Eu preciso de / Tenho necessidade de."
+      },
+      {
+        "word": "m'asseoir",
+        "meaning": "Me sentar — m': me; asseoir: sentar."
+      }
+    ],
+    "pronuncia": "Em 'J'ai besoin de', fale 'jé bə-zuã də' deixando a boca relaxada nos sons neutros de 'ə'. Em 'm'asseoir', faça o 's' limpo e pronuncie o encontro 'oi' como 'uá', terminando no 'r' arranhado ('ma-suár').\nLeia: Jé bə-zuã də ma-suár."
+  },
+  "235": {
+    "explanation": "O pedido 'Fique calmo, por favor' vira 'Restez calme, s'il vous plaît'. A forma verbal 'Restez' vem do verbo 'rester' (permanecer/ficar) conjugado no modo imperativo formal com a pessoa 'vous'.",
+    "breakdown": [
+      {
+        "word": "Restez",
+        "meaning": "Fique / Permaneça — forma imperativa de rester."
+      },
+      {
+        "word": "calme",
+        "meaning": "Calmo / tranquila."
+      },
+      {
+        "word": "s'il vous plaît",
+        "meaning": "Por favor."
+      }
+    ],
+    "pronuncia": "Em 'Restez', arranhe o 'r' e feche em 'rês-tê' com o 'ê' fechado. Em 'calme', a língua sobe para tocar o céu da boca no 'l' e termina seco no 'm' ('kálm'). Finalize em 's'il vous plaît' ('sil vu plé').\nLeia: Rês-tê kálm sil vu plé."
+  },
+  "236": {
+    "explanation": "A Pergunta 'Ele está respirando?' é dita como 'Est-ce qu'il respire ?'. O marcador de pergunta 'Est-ce que' se junta ao pronome 'il' (ele), virando 'Est-ce qu'il' de forma contínua.",
+    "breakdown": [
+      {
+        "word": "Est-ce qu'il",
+        "meaning": "Será que ele / Ele... ? — união de est-ce que + il."
+      },
+      {
+        "word": "respire",
+        "meaning": "Respira / está respirando — verbo respirer."
+      }
+    ],
+    "pronuncia": "No bloco 'Est-ce qu'il', conecte as palavras no som seco de 'ês-kíl'. Em 'respire', fale 'rês-pír' arranhando levemente a garganta no primeiro e no último 'r', cortando o som a seco na consoante final.\nLeia: Ês-kíl rês-pír."
+  },
+  "237": {
+    "explanation": "Para dizer 'Eu esqueci meu remédio', o francês usa 'J'ai oublié mes médicaments'. A ação no passado usa 'J'ai oublié' (eu esqueci), e o plural 'mes' concorda com a palavra 'médicaments'.",
+    "breakdown": [
+      {
+        "word": "J'ai oublié",
+        "meaning": "Eu esqueci — J'ai: tenho; oublié: esquecido."
+      },
+      {
+        "word": "mes",
+        "meaning": "Meus / minhas — possessivo plural."
+      },
+      {
+        "word": "médicaments",
+        "meaning": "Remédios / medicamentos."
+      }
+    ],
+    "pronuncia": "Em 'J'ai oublié', fale 'jé u-bli-ê' com som final fechado. Em 'mes', pronuncie 'mê'. Em 'médicaments', feche a primeira sílaba 'mê-di-ka' e capriche no som nasal posterior 'món' (boca aberta em 'ó' nasal escuro e profundo), cortando o 'ts' final.\nLeia: Jé u-bli-ê mê mô-di-ka-món."
+  },
+  "238": {
+    "explanation": "A frase 'Ela está no hospital' traduz-se como 'Elle est à l'hôpital'. A preposição 'à' se junta ao artigo 'l'' antes da palavra 'hôpital', que tem o H totalmente mudo.",
+    "breakdown": [
+      {
+        "word": "Elle",
+        "meaning": "Ela."
+      },
+      {
+        "word": "est",
+        "meaning": "Está / é."
+      },
+      {
+        "word": "à l'hôpital",
+        "meaning": "No hospital — à: em/no; l'hôpital: o hospital."
+      }
+    ],
+    "pronuncia": "Em 'Elle est', grude a consoante 'l' direto na vogal seguinte fazendo 'é-lé'. Conecte com 'à l'hôpital' em um fluxo único 'a lô-pi-tál', garantindo que o 'l' final termine com a língua encostando no céu da boca.\nLeia: É-lé a lô-pi-tál."
+  },
+  "239": {
+    "explanation": "Para pedir 'Eu preciso de ajuda imediatamente', usa-se 'J'ai besoin d'aide immédiatement'. O substantivo 'aide' (ajuda) gruda na preposição 'de', virando 'd'aide'.",
+    "breakdown": [
+      {
+        "word": "J'ai besoin",
+        "meaning": "Eu preciso / Tenho necessidade."
+      },
+      {
+        "word": "d'aide",
+        "meaning": "De ajuda — d': de; aide: ajuda."
+      },
+      {
+        "word": "immédiatement",
+        "meaning": "Imediatamente."
+      }
+    ],
+    "pronuncia": "Em 'J'ai besoin', fale 'jé bə-zuã' com o 'ə' neutro e a nasal 'uã'. Em 'd'aide', fale 'déd' cortando no 'd'. Em 'immédiatement', faça 'i-mê-diat-món', caprichando no som nasal posterior 'món' com a boca aberta em 'ó' nasal escuro e profundo no final.\nLeia: Jé bə-zuã déd i-mê-diat-món."
+  },
+  "240": {
+    "explanation": "O aviso de emergência 'Cuidado!' é dito simplesmente como 'Attention !'. É o termo padrão absoluto em francês para alertar sobre qualquer perigo iminente ou pedir atenção imediata.",
+    "breakdown": [
+      {
+        "word": "Attention",
+        "meaning": "Atenção / Cuidado."
+      }
+    ],
+    "pronuncia": "Em 'Attention', abra a primeira sílaba com a nasal posterior 'ón' (boca aberta em 'ó' nasal escuro e profundo), faça o 't' seco no meio e termine com o som nasal arredondado 'sion' com os lábios em círculo sem fechá-los no final.\nLeia: Ón-tan-sion."
+  }
+}

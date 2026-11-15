@@ -1,0 +1,682 @@
+{
+  "1081": {
+    "explanation": "Para dizer quanto tempo você trabalha em um lugar, o italiano costuma dizer 'sou empregado' (Sono impiegato) e usa a palavra 'da' para indicar o tempo que vem correndo até hoje, o que equivale ao nosso 'há' ou 'desde'. Repare que 'empresa' é 'azienda', e em vez de 'trabalho nesta empresa há quase cinco anos', eles pensam 'estou empregado nesta empresa desde quase cinco anos'.",
+    "breakdown": [
+      {
+        "word": "Sono impiegato",
+        "meaning": "Sou contratado / trabalho (literalmente: estou empregado)"
+      },
+      {
+        "word": "in questa azienda",
+        "meaning": "nesta empresa — in: em; questa: esta; azienda: empresa"
+      },
+      {
+        "word": "da quasi",
+        "meaning": "há quase / desde quase — da: há/desde; quasi: quase"
+      },
+      {
+        "word": "cinque anni",
+        "meaning": "cinco anos — cinque: cinco; anni: anos"
+      }
+    ],
+    "pronuncia": "Em 'Sono impiegato', mantenha o 'o' final fechado em 'sô-no' e pronuncie 'impiegato' com som oral limpo sem anasalar o 'im', fazendo 'im-pie-gá-to' com o 't' bem seco na ponta da língua. Na expressão 'in questa azienda', marque o 'n' com a língua no céu da boca, fale o 'qu' com som de 'ku' soltando o 'u' limpo ('kuês-ta') e faça o 'z' de 'azienda' com estalo sonoro de 'dz' ('a-dziên-da'). Termine com 'da quasi cinque anni': o 'cinque' tem som de 'tch' inicial ('tchín-kue') e o 'anni' exige segurar o 'nn' dobrado por um momento extra antes da vogal final.\nLeia: Sô-no im-pie-gá-to in kuês-ta a-dziên-da da kuá-zi tchín-kue án-ni."
+  },
+  "1082": {
+    "explanation": "Em italiano, a palavra 'master' é usada diretamente para se referir a cursos de pós-graduação e especialização. Em vez de dizer 'cursando', eles dizem literalmente 'seguindo um master' (seguendo un master). Note também o uso de 'diritto' para a área do Direito, com as consoantes dobradas bem marcadas no meio da palavra.",
+    "breakdown": [
+      {
+        "word": "Attualmente",
+        "meaning": "Atualmente — attual: atual; -mente: sufixo '-mente'"
+      },
+      {
+        "word": "lei sta seguendo",
+        "meaning": "ela está cursando / seguindo — lei: ela; sta: está; seguendo: seguindo/cursando"
+      },
+      {
+        "word": "un master",
+        "meaning": "uma pós-graduação / mestrado — un: um/uma; master: pós-graduação"
+      },
+      {
+        "word": "in diritto ambientale",
+        "meaning": "em direito ambiental — in: em; diritto: direito; ambientale: ambiental"
+      }
+    ],
+    "pronuncia": "Inicie em 'Attualmente' retendo o 'tt' dobrado com a língua firme atrás dos dentes antes de soltar a voz ('at-tual-mên-te'), mantendo o 'e' final fechado. Em 'lei sta seguendo', fale o 's' impuro direto sem colocar 'i' na frente ('sta') e mantenha o 'g' suave com som de 'gu' antes de 'e' em 'se-guên-do', sem chiar a vogal oral. Na palavra 'diritto', segure a retenção do 'tt' dobrado e pronuncie o 't' seco ('di-rít-to'). Em 'ambientale', a vogal 'a' inicial e o 'am' devem sair limpos pela boca, selando os lábios no 'm' sem anasalar ('am-bien-tá-le').\nLeia: At-tual-mên-te lêi sta se-guên-do un más-ter in di-rít-to am-bien-tá-le."
+  },
+  "1083": {
+    "explanation": "O jeito amigável e educado de pedir a opinião de alguém em italiano é usar 'Mi chiedevo' (eu me perguntava), que soa muito mais natural do que uma pergunta direta. A palavra 'feedback' é usada assim mesmo no ambiente profissional, e a combinação 'sul' junta a preposição 'sobre' com o artigo 'o' (sobre o meu trabalho).",
+    "breakdown": [
+      {
+        "word": "Mi chiedevo",
+        "meaning": "Eu me perguntava / estava me perguntando — mi: me; chiedevo: perguntava/indagava"
+      },
+      {
+        "word": "se potessi darmi",
+        "meaning": "se você pudesse me dar — se: se; potessi: pudesse; darmi: me dar"
+      },
+      {
+        "word": "un feedback",
+        "meaning": "um feedback / um retorno"
+      },
+      {
+        "word": "sul mio lavoro",
+        "meaning": "sobre o meu trabalho — sul: sobre o; mio: meu; lavoro: trabalho"
+      }
+    ],
+    "pronuncia": "Em 'Mi chiedevo', lembre-se de que o 'ch' antes de 'i' tem som duro de 'k' ('ki-ê-de-vo'), terminando em 'o' fechado. Em 'se potessi darmi', marque o 'ss' dobrado com um sopro sustentado ('po-tés-si') e fale o 'd' de 'darmi' seco no dente. Na palavra 'feedback', faça a transição direta sem inventar vogais no meio. Encerre com 'sul mio lavoro' subindo a ponta da língua no céu da boca para o 'l' de 'sul' sem deixar virar som de 'u' ('sul mí-o la-vó-ro').\nLeia: Mi ki-ê-de-vo se po-tés-si dár-mi un fíd-bèk sul mí-o la-vó-ro."
+  },
+  "1084": {
+    "explanation": "Em italiano, o prazo final ou data limite é chamado de 'scadenza'. Para dizer 'algumas semanas', eles usam a expressão 'un paio di settimane', que significa literalmente 'um par de semanas', algo extremamente comum no dia a dia. Repare também que 'adiada' se diz 'posticipata' (adiada no tempo).",
+    "breakdown": [
+      {
+        "word": "La scadenza",
+        "meaning": "O prazo / a data limite — la: a; scadenza: prazo/vencimento"
+      },
+      {
+        "word": "per il progetto",
+        "meaning": "para o projeto — per: para; il: o; progetto: projeto"
+      },
+      {
+        "word": "è stata posticipata",
+        "meaning": "foi adiada — è stata: foi (literalmente: foi estado); posticipata: adiada"
+      },
+      {
+        "word": "di un paio di",
+        "meaning": "em algumas / um par de — di: de; un paio: um par; di: de"
+      },
+      {
+        "word": "settimane",
+        "meaning": "semanas — plural de settimana"
+      }
+    ],
+    "pronuncia": "Em 'La scadenza', o 'sc' antes de 'a' soa 'sk' duro ('ska-dên-tsa') e o 'z' tem estalo seco de 'ts'. Em 'il progetto', faça o 'g' antes de 'e' com estalo de 'dj' e segure o 'tt' dobrado ('pro-djét-to'). Na palavra 'posticipata', articule o 'c' com som de 'tch' seco antes do 'i' ('pos-ti-tchi-pá-ta'). Finalize com 'di un paio di settimane', mantendo o 'd' e o 't' secos sem chiar e travando a retenção do 'tt' duplo em 'set-ti-má-ne'.\nLeia: La ska-dên-tsa per il pro-djét-to è stá-ta pos-ti-tchi-pá-ta di un pái-o di set-ti-má-ne."
+  },
+  "1085": {
+    "explanation": "Para dizer 'inteiramente' ou 'completamente', os italianos usam a expressão 'del tutto' (literalmente 'do tudo'). O termo 'soddisfatto' (satisfeito) traz consoantes dobradas no 'dd' e no 'tt', exigindo aquela pausa firme na pronúncia. A estrutura 'direzione dell'azienda' encaixa 'da atual' diretamente nas palavras com apóstrofo para a fala fluir rápido.",
+    "breakdown": [
+      {
+        "word": "Non sono",
+        "meaning": "Não estou / não sou — non: não; sono: estou/sou"
+      },
+      {
+        "word": "del tutto",
+        "meaning": "inteiramente / totalmente — del: do; tutto: tudo"
+      },
+      {
+        "word": "soddisfatto",
+        "meaning": "satisfeito — de soddisfare"
+      },
+      {
+        "word": "dell'attuale direzione",
+        "meaning": "da atual direção — dell': da; attuale: atual; direzione: direção"
+      },
+      {
+        "word": "dell'azienda",
+        "meaning": "da empresa — dell': da; azienda: empresa"
+      }
+    ],
+    "pronuncia": "Comece em 'Non sono' com voz limpa e oral sem anasalar o 'on' ('nôn sô-no'). Em 'del tutto soddisfatto', suba o 'l' de 'del' até o céu da boca, retenha a musculatura no 'tt' de 'tút-to', faça o 'dd' com travamento muscular e o 'tt' duplo no final ('sod-dis-fát-to'). Em 'dell'attuale direzione', ligue as palavras retendo o 'll' e o 'tt' ('del-lat-tuá-le') e faça o 'z' de 'direzione' com estalo seco de 'ts' ('di-re-tsiô-ne'). Termine em 'dell'azienda' dobrando o 'll' e estalando o 'z' sonoro ('del-la-dziên-da').\nLeia: Nôn sô-no del tút-to sod-dis-fát-to del-lat-tuá-le di-re-tsiô-ne del-la-dziên-da."
+  },
+  "1086": {
+    "explanation": "No mundo corporativo italiano, 'chefe' ou 'gestor' de uma área é frequentemente chamado de 'responsabile' (o responsável). O cargo ou vaga é referido como 'posizione'. Assim, 'chefe de comunicações' vira a expressão direta 'responsabile della comunicazione'.",
+    "breakdown": [
+      {
+        "word": "È stato selezionato",
+        "meaning": "Ele foi selecionado — è stato: foi (literalmente: é estado); selezionato: selecionado"
+      },
+      {
+        "word": "per la posizione",
+        "meaning": "para a vaga / posição — per: para; la: a; posizione: posição/cargo"
+      },
+      {
+        "word": "di responsabile",
+        "meaning": "de chefe / responsável — di: de; responsabile: responsável"
+      },
+      {
+        "word": "della comunicazione",
+        "meaning": "da comunicação — della: da; comunicazione: comunicação"
+      }
+    ],
+    "pronuncia": "Em 'È stato selezionato', não coloque 'i' no início de 'stato' ('stá-to') e faça o 'z' de 'selezionato' com estalo seco de 'ts' ('se-le-tsio-ná-to'), com o 't' final bem seco. Em 'per la posizione', o 'z' também soa 'ts' seco ('po-zi-tsiô-ne'). Na palavra 'responsabile', mantenha as vogais 'e' e 'o' abertas/fechadas conforme a norma e termine em 'le' limpo. Encerre com 'della comunicazione': segure o 'll' dobrado ('dél-la') e articule o 'c' e o 't' de forma bem marcada e oral ('ko-mu-ni-ka-tsiô-ne').\nLeia: È stá-to se-le-tsio-ná-to per la po-zi-tsiô-ne di res-pon-sá-bi-le dél-la ko-mu-ni-ka-tsiô-ne."
+  },
+  "1087": {
+    "explanation": "A pergunta começa com 'Pensi che sia' (Você pensa que seja/é). O termo 'fattibile' significa exatamente algo que se pode fazer (viável/praticável). Para 'tempo integral', eles dizem 'a tempo pieno', que significa literalmente 'a tempo cheio'.",
+    "breakdown": [
+      {
+        "word": "Pensi che sia",
+        "meaning": "Você acha que é — pensi: você pensa/acha; che: que; sia: seja/é"
+      },
+      {
+        "word": "fattibile",
+        "meaning": "viável / praticável — fattibile: viável"
+      },
+      {
+        "word": "completare il corso",
+        "meaning": "concluir o curso — completare: concluir/completar; il: o; corso: curso"
+      },
+      {
+        "word": "lavorando",
+        "meaning": "trabalhando — gerúndio de lavorare"
+      },
+      {
+        "word": "a tempo pieno",
+        "meaning": "em tempo integral — a: em; tempo: tempo; pieno: cheio/integral"
+      }
+    ],
+    "pronuncia": "Em 'Pensi che sia', o 'n' de 'pensi' é oral limpo selado na língua, o 'che' tem som duro de 'k' ('kê') e o 's' de 'sia' é sibilante puro ('sí-a'). Na palavra 'fattibile', segure o ar no 'tt' dobrado por um instante antes da vogal ('fat-tí-bi-le'). Em 'completare il corso', faça o 't' seco e o 'l' de 'il' encostando no céu da boca. Encerre com 'lavorando a tempo pieno': o ' tempo' tem o 'e' aberto e 'pieno' faz o ditongo 'piê-no' fluído, terminando em 'o' fechado.\nLeia: Pên-si kê sí-a fat-tí-bi-le kom-ple-tá-re il kór-so la-vo-rán-do a tém-po piê-no."
+  },
+  "1088": {
+    "explanation": "Em vez de um verbo único como 'planejar', os italianos usam muito 'Ho intenzione di' (tenho intenção de). Para 'me matricular', eles dizem 'iscrivermi' (me inscrever). Note a palavra 'sviluppo' para desenvolvimento, que traz o 'pp' dobrado bem forte.",
+    "breakdown": [
+      {
+        "word": "Ho intenzione di",
+        "meaning": "Tenho intenção de / planejo — ho: tenho; intenzione: intenção; di: de"
+      },
+      {
+        "word": "iscrivermi a",
+        "meaning": "me matricular em — iscrivermi: me inscrever; a: em/a"
+      },
+      {
+        "word": "una serie di workshop",
+        "meaning": "uma série de workshops — una: uma; serie: série; di: de; workshop: workshop"
+      },
+      {
+        "word": "di sviluppo professionale",
+        "meaning": "de desenvolvimento profissional — di: de; sviluppo: desenvolvimento; professionale: profissional"
+      }
+    ],
+    "pronuncia": "O 'H' de 'Ho' é 100% mudo ('ô'). Em 'intenzione', mantenha as vogais orais limpas e faça o 'z' com estalo seco de 'ts' ('in-ten-tsiô-ne'). Na palavra 'iscrivermi', não ponha vogal antes do 's' impuro ('is-krí-ver-mi'). Em 'sviluppo', pronuncie o 's' suave antes de 'v' ('zvi-lúp-po'), retendo a musculatura nos dous 'p'. Termine em 'professionale' retendo o 'ss' dobrado com sopro fino ('pro-fes-sio-ná-le').\nLeia: Ô in-ten-tsiô-ne di is-krí-ver-mi a ú-na sê-rie di uórk-chôp di zvi-lúp-po pro-fes-sio-ná-le."
+  },
+  "1089": {
+    "explanation": "A expressão 'con largo anticipo' é a forma perfeita em italiano para 'bem antes do prazo' ou 'com bastante antecedência'. O termo 'rapporto' é a palavra usada para relatório de trabalho. Repare que 'para surpresa de todos' vira literalmente 'com surpresa de todos' (con sorpresa di tutti).",
+    "breakdown": [
+      {
+        "word": "Il rapporto",
+        "meaning": "O relatório — il: o; rapporto: relatório"
+      },
+      {
+        "word": "è stato completato",
+        "meaning": "foi concluído — è stato: foi; completato: concluído/completado"
+      },
+      {
+        "word": "con largo anticipo",
+        "meaning": "bem antes do prazo / com grande antecedência — con: com; largo: amplo/grande; anticipo: antecedência"
+      },
+      {
+        "word": "con sorpresa di tutti",
+        "meaning": "para surpresa de todos — con: com; sorpresa: surpresa; di: de; tutti: todos"
+      }
+    ],
+    "pronuncia": "Em 'Il rapporto', suba a ponta da língua no 'l' e retenha o 'pp' dobrado de 'rap-pór-to'. Em 'è stato completato', mantenha o 't' seco de 'stá-to' e 'kom-ple-tá-to' sem chiar a ponta da língua. Na expressão 'con largo anticipo', faça o 'c' de 'anticipo' com som de 'tch' seco ('an-tí-tchi-po'). Encerre com 'con sorpresa di tutti': o 's' de 'sorpresa' soa como 'z' entre vogais ('sor-prê-za') e 'tutti' exige reter o 'tt' dobrado com 't' seco no final ('tút-ti').\nLeia: Il rap-pór-to è stá-ta kom-ple-tá-to kon lár-go an-tí-tchi-po kon sor-prê-za di tút-ti."
+  },
+  "1090": {
+    "explanation": "O verbo 'valutare' (avaliar/analisar) é o termo mais natural que os nativos usam quando estão 'explorando' ou 'considerando' uma ideia. A expressão para 'trabalhar remotamente' é 'lavorare da remoto', usando a preposição 'da'.",
+    "breakdown": [
+      {
+        "word": "Sto valutando",
+        "meaning": "Estou avaliando / explorando — sto: estou; valutando: avaliando/considerando"
+      },
+      {
+        "word": "la possibilità di",
+        "meaning": "a possibilidade de — la: a; possibilità: possibilidade; di: de"
+      },
+      {
+        "word": "lavorare da remoto",
+        "meaning": "trabalhar remotamente / à distância — lavorare: trabalhar; da remoto: remotamente"
+      },
+      {
+        "word": "in modo permanente",
+        "meaning": "de forma permanente — in: em; modo: modo/forma; permanente: permanente"
+      }
+    ],
+    "pronuncia": "Comece em 'Sto valutando' sem colocar 'i' antes do 's' impuro ('stô va-lu-tán-do') e com a vogal 'a' bem aberta. Em 'la possibilità', retenha o 'ss' dobrado com sopro fino e termine no 'à' acentuado e aberto ('pos-si-bi-li-tá'). Em 'lavorare da remoto', faça o 'r' vibrando na ponta da língua e pronuncie 're-mô-to' com 'o' final fechado. Termine em 'in modo permanente' mantendo as vogais orais e a ponta da língua selada no 'n' ('per-ma-nên-te').\nLeia: Stô va-lu-tán-do la pos-si-bi-li-tá di la-vo-rá-re da re-mô-to in mô-do per-ma-nên-te."
+  },
+  "1091": {
+    "explanation": "Em italiano, 'área' de atuação profissional é frequentemente chamada de 'campo'. A palavra 'esperte' é o plural feminino para especialistas. A construção 'una delle' junta a preposição 'di' com o artigo 'le' (uma das).",
+    "breakdown": [
+      {
+        "word": "È ampiamente considerata",
+        "meaning": "Ela é amplamente considerada — è: é; ampiamente: amplamente; considerata: considerada"
+      },
+      {
+        "word": "una delle esperte",
+        "meaning": "uma das especialistas (feminino) — una: uma; delle: das; esperte: especialistas"
+      },
+      {
+        "word": "più talentuose",
+        "meaning": "mais talentosas — più: mais; talentuose: talentosas"
+      },
+      {
+        "word": "nel suo campo",
+        "meaning": "em sua área / campo — nel: no/em seu; suo: seu; campo: campo/área"
+      }
+    ],
+    "pronuncia": "Em 'È ampiamente considerata', o 'h' não existe; fale a vogal 'a' oral e limpa selando o 'm' no lábio ('am-pia-mên-te') e faça o 't' seco em 'kon-si-de-rá-ta'. Em 'una delle esperte', segure a retenção do 'll' dobrado ('dél-le') e pronuncie 'es-pêr-te' com 't' seco no final. Em 'più talentuose', marque a força no 'ù' acentuado ('piú') e faça o 's' de 'talentuose' com som de 'z' entre vogais ('ta-len-tuô-ze'). Termine em 'nel suo campo' com 'o' final fechado em 'kám-po'.\nLeia: È am-pia-mên-te kon-si-de-rá-ta ú-na dél-le es-pêr-te piú ta-len-tuô-ze nel sú-o kám-po."
+  },
+  "1092": {
+    "explanation": "O verbo 'definire' é usado no sentido de 'definir' ou 'finalizar/arrematar' pendências. A palavra 'dettagli' traz o som líquido 'gli' (lh) e o 'tt' dobrado. Repare que 'antes da' vira 'prima della', unindo a preposição com o artigo.",
+    "breakdown": [
+      {
+        "word": "Devo definire",
+        "meaning": "Preciso finalizar / definir — devo: devo/preciso; definire: definir/finalizar"
+      },
+      {
+        "word": "i dettagli",
+        "meaning": "os detalhes — i: os; dettagli: detalhes"
+      },
+      {
+        "word": "della presentazione",
+        "meaning": "da apresentação — della: da; presentazione: apresentação"
+      },
+      {
+        "word": "prima della riunione",
+        "meaning": "antes da reunião — prima: antes; della: da; riunione: reunião"
+      }
+    ],
+    "pronuncia": "Em 'Devo definire', articule o 'd' seco com a língua no dente e o 'e' fechado ('dê-vo de-fi-ní-re'). Na palavra 'i dettagli', retenha o 'tt' dobrado e pronuncie o 'gli' com o som do nosso 'lh' ('det-tá-lhi'). Em 'della presentazione', segure o 'll' de 'dél-la' e faça o 'z' com estalo seco de 'ts' ('pre-zen-ta-tsiô-ne'). Encerre em 'prima della riunione' fazendo o 'r' vibrar no início de 'ri-u-niô-ne' com 'e' final fechado.\nLeia: Dê-vo de-fi-ní-re i det-tá-lhi dél-la pre-zen-ta-tsiô-ne prí-ma dél-la ri-u-niô-ne."
+  },
+  "1093": {
+    "explanation": "Lidar com tarefas ou processos em italiano se diz 'gestire' (gerenciar/administrar). O termo para o cargo ou 'função' que você ocupa na empresa é 'ruolo' (literalmente 'papel'). A pergunta tem uma estrutura direta e muito natural.",
+    "breakdown": [
+      {
+        "word": "Devi gestire",
+        "meaning": "Você tem que lidar com / gerenciar — devi: você deve/tem que; gestire: gerenciar/lidar com"
+      },
+      {
+        "word": "molta burocrazia",
+        "meaning": "muita burocracia — molta: muita; burocrazia: burocracia"
+      },
+      {
+        "word": "nel tuo ruolo attuale",
+        "meaning": "em sua função atual — nel: no; tuo: seu/sua; ruolo: papel/função; attuale: atual"
+      }
+    ],
+    "pronuncia": "Em 'Devi gestire', pronuncie o 'd' seco ('dê-vi') e faça o 'g' de 'gestire' com estalo de 'dj' antes do 'e' ('dje-stí-re'). Na palavra 'molta burocrazia', encoste a ponta da língua no 'l' de 'mól-ta' sem deixar virar 'u', e faça o 'z' de 'burocrazia' com estalo seco de 'ts' ('bu-ro-kra-tsí-a'). Termine em 'nel tuo ruolo attuale': não anasale o 'nel', faça a retenção do 'tt' dobrado em 'at-tuá-le' e encerre com o 'e' final fechado.\nLeia: Dê-vi dje-stí-re mól-ta bu-ro-kra-tsí-a nel tú-o ruô-lo at-tuá-le?"
+  },
+  "1094": {
+    "explanation": "Eles usam 'abituato a' para 'acostumado a'. A palavra 'compiti' refere-se a tarefas, deveres ou atribuições a cumprir. A palavra longa 'contemporaneamente' significa exatamente 'ao mesmo tempo' ou 'simultaneamente'.",
+    "breakdown": [
+      {
+        "word": "Non sono abituato a",
+        "meaning": "Não estou acostumado a — non: não; sono: estou; abituato: acostumado; a: a"
+      },
+      {
+        "word": "dover gestire",
+        "meaning": "ter que lidar com — dover: dever/ter que; gestire: gerenciar/lidar"
+      },
+      {
+        "word": "così tanti compiti",
+        "meaning": "tantas tarefas / deveres — così: tão; tanti: tantos/tantas; compiti: tarefas/atividades"
+      },
+      {
+        "word": "diversi contemporaneamente",
+        "meaning": "diferentes ao mesmo tempo — diversi: diferentes; contemporaneamente: simultaneamente/ao mesmo tempo"
+      }
+    ],
+    "pronuncia": "Inicie em 'Non sono abituato a' mantendo as vogais orais e o 't' seco em 'a-bi-tuá-to'. Em 'dover gestire', articule o 'g' como 'dj' suave ('dje-stí-re'). Na expressão 'così tanti compiti', ponha o acento no 'ì' de 'ko-sí', o 't' seco em 'tán-ti' e a força na primeira sílaba de 'kóm-pi-ti'. Encerre com 'diversi contemporaneamente': faça o 'd' seco em 'di-vêr-si' e fale 'kon-tem-po-ra-ne-a-mên-te' sem puxar o som para o nariz.\nLeia: Nôn sô-no a-bi-tuá-to a do-vêr dje-stí-re ko-sí tán-ti kóm-pi-ti di-vêr-si kon-tem-po-ra-ne-a-mên-te."
+  },
+  "1095": {
+    "explanation": "Para 'treinamento', o italiano usa muito o termo 'formazione' (formação profissional). Dizer que alguém está 'passando por' um treinamento se expressa como 'sta seguendo un periodo di formazione' (está seguindo um período de formação).",
+    "breakdown": [
+      {
+        "word": "Attualmente",
+        "meaning": "Atualmente / neste momento"
+      },
+      {
+        "word": "lui sta seguendo",
+        "meaning": "ele está passando por / seguindo — lui: ele; sta: está; seguendo: seguindo"
+      },
+      {
+        "word": "un periodo di",
+        "meaning": "um período de — un: um; periodo: período; di: de"
+      },
+      {
+        "word": "formazione intensiva",
+        "meaning": "treinamento intensivo / formação — formazione: formação/capacitação; intensiva: intensiva"
+      },
+      {
+        "word": "per il nuovo ruolo",
+        "meaning": "para a nova função — per: para; il: o; nuovo: novo; ruolo: papel/função"
+      }
+    ],
+    "pronuncia": "Em 'Attualmente', segure o 'tt' duplo no início ('at-tual-mên-te'). Em 'lui sta seguendo', faça o 's' impuro de 'sta' sem 'i' inicial e mantenha o 'g' limpo em 'se-guên-do'. Na palavra 'periodo', marque o 'd' seco ('pe-rí-o-do'). Em 'formazione intensiva', faça o 'z' com som seco de 'ts' ('for-ma-tsiô-ne') e articule o 'v' em 'in-ten-sí-va'. Encerre em 'per il nuovo ruolo' soltando o 'u' audível em 'nuô-vo' e 'ruô-lo'.\nLeia: At-tual-mên-te lú-i sta se-guên-do un pe-rí-o-do di for-ma-tsiô-ne in-ten-sí-va per il nuô-vo ruô-lo."
+  },
+  "1096": {
+    "explanation": "A expressão 'ao longo dos anos' vira literalmente 'no curso dos anos' (nel corso degli anni). Desafios se diz 'sfide' (plural de sfida). Repare na combinação 'degli anni', onde 'degli' junta a preposição com o artigo plural masculino.",
+    "breakdown": [
+      {
+        "word": "Ho imparato molto",
+        "meaning": "Aprendi muito — ho imparato: aprendi (tenho aprendido); molto: muito"
+      },
+      {
+        "word": "dalle sfide",
+        "meaning": "com os desafios — dalle: das/com as; sfide: desafios"
+      },
+      {
+        "word": "che ho affrontato",
+        "meaning": "que enfrentei — che: que; ho affrontato: enfrentei (tenho enfrentado)"
+      },
+      {
+        "word": "nel corso degli anni",
+        "meaning": "ao longo dos anos — nel corso: no curso/ao longo; degli: dos; anni: anos"
+      }
+    ],
+    "pronuncia": "O 'H' de 'Ho' é mudo ('ô'). Em 'imparato molto', pronuncie a vogal oral limpa em 'im-pa-rá-to' e termine 'mól-to' com 't' seco e 'o' fechado. Em 'dalle sfide', segure o 'll' de 'dál-le' e faça o 's' suave de 'sfide' ('zfí-de'). Na expressão 'che ho affrontato', fale o 'che' com som de 'k' duro ('kê ô'), retendo o 'ff' e o 'tt' dobrados ('af-fron-tá-to'). Encerre com 'nel corso degli anni': faça o 'gli' com som de 'lh' ('dé-lhi') e retenha o 'nn' em 'án-ni'.\nLeia: Ô im-pa-rá-to mól-to dál-le zfí-de kê ô af-fron-tá-to nel kór-so dé-lhi án-ni."
+  },
+  "1097": {
+    "explanation": "O adjetivo 'impegnativo' é a palavra-chave em italiano para algo que exige muito tempo, foco ou esforço (exigente/desafiador). Repare na junção com o dígrafo 'gn' que tem o nosso som de 'nh'.",
+    "breakdown": [
+      {
+        "word": "Qual è",
+        "meaning": "Qual é — qual: qual; è: é"
+      },
+      {
+        "word": "l'aspetto più impegnativo",
+        "meaning": "o aspecto mais exigente — l'aspetto: o aspecto; più: mais; impegnativo: exigente/desafiador"
+      },
+      {
+        "word": "dei tuoi studi",
+        "meaning": "dos seus estudos — dei: dos; tuoi: seus; studi: estudos"
+      }
+    ],
+    "pronuncia": "Inicie em 'Qual è' encostando a ponta da língua para o 'l' de 'kual'. Em 'l'aspetto più impegnativo', segure o 'tt' de 'as-pét-to', marque o 'ù' forte em 'piú' e pronuncie 'impegnativo' com o som de 'nh' bem presente no 'gn' ('im-pe-nha-tí-vo'), sem anasalar a vogal. Termine em 'dei tuoi studi' sem colocar 'i' antes do 's' impuro de 'stú-di' e mantendo o 'd' seco.\nLeia: Kuál è las-pét-to piú im-pe-nha-tí-vo dêi tú-oi stú-di?"
+  },
+  "1098": {
+    "explanation": "No meio acadêmico e de pesquisa, 'subsídio' ou 'bolsa de estudos' é chamado de 'borsa di studio'. 'Pesquisa' em italiano é 'ricerca'. O verbo 'richiedere' significa formalmente solicitar ou requisitar.",
+    "breakdown": [
+      {
+        "word": "Sto pensando di",
+        "meaning": "Estou pensando em — sto: estou; pensando: pensando; di: de/em"
+      },
+      {
+        "word": "richiedere una borsa di studio",
+        "meaning": "solicitar um subsídio/bolsa de estudo — richiedere: solicitar/pedir; una borsa di studio: uma bolsa de estudo"
+      },
+      {
+        "word": "per finanziare",
+        "meaning": "para financiar — per: para; finanziare: financiar"
+      },
+      {
+        "word": "il mio progetto di ricerca",
+        "meaning": "meu projeto de pesquisa — il mio: o meu; progetto: projeto; ricerca: pesquisa"
+      }
+    ],
+    "pronuncia": "Comece em 'Sto pensando di' com o 's' impuro direto ('stô pen-sán-do di'). Em 'richiedere una borsa di studio', faça o 'r' inicial vibrando na ponta da língua ('ri-kiê-de-re') e pronuncie 'stú-dio' com 'd' seco sem chiar. Na palavra 'finanziare', faça o 'z' com estalo seco de 'ts' ('fi-nan-tsiá-re'). Encerre em 'il mio progetto di ricerca': segure o 'tt' em 'pro-djét-to' e articule o 'c' final de 'ri-tchêr-ka' como 'tch' suave no início e 'k' duro no fim.\nLeia: Stô pen-sán-do di ri-kiê-de-re ú-na bór-sa di stú-dio per fi-nan-tsiá-re il mí-o pro-djét-to di ri-tchêr-ka."
+  },
+  "1099": {
+    "explanation": "Para 'layout' ou organização do espaço, os italianos usam 'disposizione'. Em vez de uma palavra longa para 'colaborativo', eles usam a expressão super natural 'lavoro di squadra' (trabalho de equipe). Note também que 'escritório' é 'ufficio'.",
+    "breakdown": [
+      {
+        "word": "La nuova disposizione",
+        "meaning": "O novo layout / arranjo — la nuova: a nova; disposizione: disposição/disposição espacial"
+      },
+      {
+        "word": "dell'ufficio",
+        "meaning": "do escritório — dell': do; ufficio: escritório"
+      },
+      {
+        "word": "è molto più favorevole",
+        "meaning": "é muito mais propício / favorável — è: é; molto: muito; più: mais; favorevole: favorável/propício"
+      },
+      {
+        "word": "al lavoro di squadra",
+        "meaning": "ao trabalho colaborativo / em equipe — al lavoro: ao trabalho; di squadra: de equipe"
+      }
+    ],
+    "pronuncia": "Em 'La nuova disposizione', solte o 'u' em 'nuô-va' e pronuncie 'disposizione' com o 's' entre vogais som de 'z' e o 'z' com som seco de 'ts' ('dis-po-zi-tsiô-ne'). Em 'dell'ufficio', segure o 'ff' e o 'll' dobrados e faça o 'c' antes de 'i' com som de 'tch' ('del-luf-fí-tchio'). Em 'molto più favorevole', encoste o 'l' no céu da boca e marque o 'v' suave. Termine em 'al lavoro di squadra': articule o 'qu' com som de 'ku' soltando a vogal ('skuá-dra').\nLeia: La nuô-va dis-po-zi-tsiô-ne del-luf-fí-tchio è mól-to piú fa-vo-rê-vo-le al la-vó-ro di skuá-dra."
+  },
+  "1100": {
+    "explanation": "A expressão corporativa 'dar continuidade' ou 'fazer o acompanhamento' de uma mensagem se diz 'dare seguito' (dar seguimento). A combinação 'ho già dato seguito' é o padrão perfeito para indicar que a pendência foi tratada.",
+    "breakdown": [
+      {
+        "word": "Ho già dato seguito",
+        "meaning": "Já dei continuidade / acompanhamento — ho: tenho; già: já; dato: dado; seguito: seguimento/continuidade"
+      },
+      {
+        "word": "all'e-mail",
+        "meaning": "ao e-mail — all': ao"
+      },
+      {
+        "word": "che ho inviato",
+        "meaning": "que enviei — che: que; ho inviato: enviei"
+      },
+      {
+        "word": "al cliente",
+        "meaning": "ao cliente — al: ao; cliente: cliente"
+      },
+      {
+        "word": "la settimana scorsa",
+        "meaning": "na semana passada — la settimana: a semana; scorsa: passada"
+      }
+    ],
+    "pronuncia": "O 'H' de 'Ho' é mudo ('ô'). Em 'già dato seguito', faça o 'g' de 'già' com estalo de 'dj' ('djá') e pronuncie 'sê-gui-to' com 'g' duro de gato. Em 'che ho inviato', o 'che' soa 'kê' duro ('kê ô in-viá-to') com vogais orais limpas. Na palavra 'cliente', mantenha o 't' seco no final ('kli-ên-te'). Termine em 'la settimana scorsa': segure a retenção do 'tt' duplo em 'set-ti-má-ne' e fale 'skór-sa' com 'sc' duro antes de 'o'.\nLeia: Ô djá dá-to sê-gui-to al-le-mêil kê ô in-viá-to al kli-ên-te la set-ti-má-na skór-sa."
+  },
+  "1101": {
+    "explanation": "Depois de 'pensi' (você acha/pensa), o italiano costuma usar a estrutura 'di essere' (ser/que é). O termo 'produttivo' traz a consoante dupla 'tt'. A palavra em inglês 'team' é usada correntemente na Itália para equipes de trabalho.",
+    "breakdown": [
+      {
+        "word": "Pensi di essere",
+        "meaning": "Você acha que é / pensa ser — pensi: você pensa; di essere: de ser"
+      },
+      {
+        "word": "più produttivo",
+        "meaning": "mais produtivo — più: mais; produttivo: produtivo"
+      },
+      {
+        "word": "quando lavori",
+        "meaning": "quando você trabalha — quando: quando; lavori: você trabalha"
+      },
+      {
+        "word": "in team",
+        "meaning": "em equipe — in: em; team: equipe"
+      }
+    ],
+    "pronuncia": "Em 'Pensi di essere', mantenha a voz oral em 'pên-si', faça o 'd' seco em 'di' e segure o 'ss' dobrado com sopro fino em 'és-se-re'. Na palavra 'più produttivo', marque a tônica em 'piú' e retenha o 'tt' duplo em 'pro-dut-tí-vo'. Em 'quando lavori', solte o 'u' em 'kuán-do' e fale 'la-vó-ri' com 'r' vibrante na ponta da língua. Encerre com 'in team' selando a língua para o 'n' sem anasalar a vogal.\nLeia: Pên-si di és-se-re piú pro-dut-tí-vo kuán-do la-vó-ri in tím."
+  },
+  "1102": {
+    "explanation": "Para dizer 'para resolver', eles usam a preposição articulada 'nel risolvere' (literalmente 'no resolver'). A palavra 'conflitti' traz o 'tt' dobrado. As preposições 'tra' ou 'fra' significam 'entre'.",
+    "breakdown": [
+      {
+        "word": "Lei ha",
+        "meaning": "Ela tem — lei: ela; ha: tem"
+      },
+      {
+        "word": "un vero talento",
+        "meaning": "um verdadeiro talento — un: um; vero: verdadeiro; talento: talento"
+      },
+      {
+        "word": "nel risolvere",
+        "meaning": "em resolver / para resolver — nel: no; risolvere: resolver"
+      },
+      {
+        "word": "i conflitti",
+        "meaning": "os conflitos — i: os; conflitti: conflitos"
+      },
+      {
+        "word": "tra i membri del team",
+        "meaning": "entre os membros da equipe — tra: entre; i: os; membri: membros; del team: da equipe"
+      }
+    ],
+    "pronuncia": "O 'H' de 'ha' não se pronuncia ('lêi á'). Em 'un vero talento', faça o 'r' de 'vê-ro' vibrar na ponta da língua e termine 'ta-lên-to' com 't' seco no dente. Na palavra 'nel risolvere', mantenha o 'l' no céu da boca e faça o 's' de 'risolvere' com som de 'z' entre vogais ('ri-zôl-ve-re'). Em 'i conflitti', segure o 'tt' duplo com firmeza ('kon-flít-ti'). Termine em 'tra i membri del team' mantendo o 'e' de 'mêm-bri' fechado e oral.\nLeia: Lêi á un vê-ro ta-lên-to nel ri-zôl-ve-re i kon-flít-ti tra i mêm-bri del tím."
+  },
+  "1103": {
+    "explanation": "Em vez do termo abstrato 'oratória', os italianos usam a expressão verbal simples e direta 'parlare in pubblico' (falar em público). O verbo 'migliorare' (melhorar) traz o som líquido 'gli' (lh). 'Habilidades' é expresso por 'capacità'.",
+    "breakdown": [
+      {
+        "word": "Devo lavorare",
+        "meaning": "Preciso trabalhar — devo: devo/preciso; lavorare: trabalhar"
+      },
+      {
+        "word": "per migliorare",
+        "meaning": "para melhorar — per: para; migliorare: melhorar"
+      },
+      {
+        "word": "le mie capacità",
+        "meaning": "minhas habilidades — le mie: as minhas; capacità: capacidades/habilidades"
+      },
+      {
+        "word": "di parlare in pubblico",
+        "meaning": "de falar em público / oratória — di parlare: de falar; in pubblico: em público"
+      },
+      {
+        "word": "e di presentazione",
+        "meaning": "e de apresentação — e: e; di: de; presentazione: apresentação"
+      }
+    ],
+    "pronuncia": "Inicie em 'Devo lavorare' com o 'd' seco ('dê-vo la-vo-rá-re'). Na palavra 'migliorare', articule o 'gli' com som de 'lh' ('mi-lho-rá-re'). Em 'le mie capacità', fale o 'c' como 'k' e termine no 'à' aberto e acentuado ('ka-pa-tchi-tá'). Em 'di parlare in pubblico', marque o 't' seco em 'di' e mantenha o 'u' limpo em 'púb-bli-ko'. Encerre em 'e di presentazione' fazendo o 'z' com estalo seco de 'ts' ('pre-zen-ta-tsiô-ne').\nLeia: Dê-vo la-vo-rá-re per mi-lho-rá-re le mí-e ka-pa-tchi-tá di par-lá-re in púb-bli-ko e di pre-zen-ta-tsiô-ne."
+  },
+  "1104": {
+    "explanation": "Uma tarefa profissional ou missão atribuída a alguém é chamada de 'incarico'. Para a comparação 'do que eu esperava', o italiano usa 'di quanto mi aspettassi', empregando a consoante dupla no 'ss' de 'aspettassi'.",
+    "breakdown": [
+      {
+        "word": "I criteri",
+        "meaning": "Os critérios — i: os; criteri: critérios"
+      },
+      {
+        "word": "per l'incarico",
+        "meaning": "para a tarefa / encargo — per: para; l'incarico: a tarefa/o encargo"
+      },
+      {
+        "word": "sono molto più rigorosi",
+        "meaning": "são muito mais rigorosos — sono: são; molto: muito; più: mais; rigorosi: rigorosos"
+      },
+      {
+        "word": "di quanto mi aspettassi",
+        "meaning": "do que eu esperava — di quanto: do que; mi aspettassi: eu esperava (que eu me esperasse)"
+      }
+    ],
+    "pronuncia": "Em 'I criteri', pronuncie o 'c' como 'k' duro ('kri-tê-ri'). Em 'per l'incarico', não anasale o 'in' ('lin-ká-ri-ko'). Na expressão 'sono molto più rigorosi', suba o 'l' em 'mól-to', marque a tônica em 'piú' e faça o 's' de 'rigorosi' com som de 'z' entre vogais ('ri-go-ró-zi'). Termine em 'di quanto mi aspettassi': solte o 'u' de 'kuán-to', fale o 's' impuro de 'aspettassi' sem 'i' inicial ('as-pet-tás-si') e retenha o 'tt' e o 'ss' dobrados.\nLeia: I kri-tê-ri per lin-ká-ri-ko sô-no mól-to piú ri-go-ró-zi di kuán-to mi as-pet-tás-si."
+  },
+  "1105": {
+    "explanation": "O verbo 'snellire' é uma palavra fantástica em italiano: significa literalmente 'enxugar' ou 'tornar mais ágil/enxuto', sendo o termo exato para 'otimizar' processos burocráticos. 'Sto cercando di' é a forma natural para 'tenho tentado'.",
+    "breakdown": [
+      {
+        "word": "Sto cercando di",
+        "meaning": "Tenho tentado / estou procurando — sto: estou; cercando: procurando/tentando; di: de"
+      },
+      {
+        "word": "trovare un modo",
+        "meaning": "encontrar uma maneira — trovare: encontrar; un modo: um modo/uma maneira"
+      },
+      {
+        "word": "per snellire",
+        "meaning": "de otimizar / agilizar — per: para; snellire: agilizar/enxugar/otimizar"
+      },
+      {
+        "word": "i nostri processi interni",
+        "meaning": "nossos processos internos — i nostri: os nossos; processi: processos; interni: internos"
+      }
+    ],
+    "pronuncia": "Inicie em 'Sto cercando di' sem 'i' antes do 's' impuro ('stô'), faça os dous 'c' de 'cercando' com som de 'tch' e 'k' ('tcher-kán-do') e termine em 'di' seco. Em 'trovare un modo', faça o 'r' vibrante. Na palavra 'snellire', inicie no sopro direto do 's' suave ('znel-lí-re') e segure o 'll' dobrado. Encerre em 'i nostri processi interni': retenha o 'ss' dobrado com sopro sibilante em 'pro-tchés-si' e mantenha o 'e' de 'in-têr-ni' fechado.\nLeia: Stô tcher-kán-do di tro-vá-re un mô-do per znel-lí-re i nôs-tri pro-tchés-si in-têr-ni."
+  },
+  "1106": {
+    "explanation": "Em vez de apenas 'carreira', os italianos usam frequentemente 'percorso professionale' (trajetória/caminho profissional). Para 'escolheu', eles dizem 'hai scelto', usando o dígrafo 'sc' que diante do 'e' tem o nosso som suave de 'ch'.",
+    "breakdown": [
+      {
+        "word": "Qual è",
+        "meaning": "Qual é — qual: qual; è: é"
+      },
+      {
+        "word": "la parte più gratificante",
+        "meaning": "a parte mais gratificante — la parte: a parte; più: mais; gratificante: gratificante"
+      },
+      {
+        "word": "del percorso professionale",
+        "meaning": "da carreira / trajetória profissional — del percorso: da trajetória/caminho; professionale: profissional"
+      },
+      {
+        "word": "che hai scelto",
+        "meaning": "que você escolheu — che: que; hai scelto: escolheu (tem escolhido)"
+      }
+    ],
+    "pronuncia": "Em 'Qual è', faça o 'l' subindo no céu da boca ('kuál è'). Em 'la parte più gratificante', marque o 'ù' acentuado de 'piú', o 't' seco de 'gra-ti-fi-kán-te' e o 'e' final fechado. Na expressão 'del percorso professionale', encoste a língua no 'l' de 'del', faça o 'sc' antes de 'o' duro ('per-kór-so') e segure o 'ss' de 'pro-fes-sio-ná-le'. Termine em 'che hai scelto': fale 'che' como 'kê' duro, o 'h' de 'hai' é mudo ('ái') e 'scelto' chia suave no início ('chêl-to').\nLeia: Kuál è la pár-te piú gra-ti-fi-kán-te del per-kór-so pro-fes-sio-ná-le kê ái chêl-to?"
+  },
+  "1107": {
+    "explanation": "Em italiano, 'não tenho certeza' se traduz literalmente por 'não estou seguro' (Non sono sicuro di). Para dizer 'querer continuar', eles cortam o 'e' final de 'volere' na fala fluida, virando 'voler continuare'.",
+    "breakdown": [
+      {
+        "word": "Non sono sicuro di",
+        "meaning": "Não tenho certeza se / de — non: não; sono: estou/sou; sicuro: seguro/certo; di: de"
+      },
+      {
+        "word": "voler continuare a",
+        "meaning": "querer continuar a — voler: querer; continuare: continuar; a: a"
+      },
+      {
+        "word": "lavorare",
+        "meaning": "trabalhar — trabalhar"
+      },
+      {
+        "word": "nel settore privato",
+        "meaning": "no setor privado — nel: no; settore: setor; privato: privado"
+      }
+    ],
+    "pronuncia": "Em 'Non sono sicuro di', mantenha as vogais limpas e orais ('nôn sô-no'), fale o 'c' de 'si-kú-ro' como 'k' duro e faça o 'd' seco em 'di'. Em 'voler continuare a', toque a ponta da língua no céu da boca para o 'l' e o 'r' e articule o 'u' em 'kon-ti-nuá-re'. Termine em 'nel settore privato': segure a retenção do 'tt' dobrado em 'set-tó-re' e pronuncie 'pri-vá-to' com o 'o' final fechado.\nLeia: Nôn sô-no si-kú-ro di vo-lêr kon-ti-nuá-re a la-vo-rá-re nel set-tó-re pri-vá-to."
+  },
+  "1108": {
+    "explanation": "Em italiano, o substantivo 'supervisione' (supervisão) é usado no lugar do verbo para dizer 'supervisionar'. Repare como a estrutura encadeia as conexões com apóstrofos e preposições dobradas ('della', 'dell'azienda') para manter a frase fluindo com ritmo.",
+    "breakdown": [
+      {
+        "word": "È l'unico responsabile",
+        "meaning": "Ele é o único responsável — è: é; l'unico: o único; responsabile: responsável"
+      },
+      {
+        "word": "della supervisione",
+        "meaning": "por supervisionar / da supervisão — della: da; supervisione: supervisão"
+      },
+      {
+        "word": "della strategia digitale",
+        "meaning": "da estratégia digital — della: da; strategia: estratégia; digitale: digital"
+      },
+      {
+        "word": "dell'azienda",
+        "meaning": "da empresa — dell': da; azienda: empresa"
+      }
+    ],
+    "pronuncia": "Inicie em 'È l'unico responsabile' falando 'lú-ni-ko' com 'k' duro e 'res-pon-sá-bi-le' com o 's' sibilante e 'e' final fechado. Em 'della supervisione', segure o 'll' de 'dél-la' e faça o 's' de 'su-per-vi-ziô-ne' com som de 'z' entre vogais. Em 'della strategia digitale', marque o 'g' antes de 'i' com estalo de 'dj' em 'stra-te-djí-a' e 'di-dji-tá-le'. Termine em 'dell'azienda' dobrando o 'll' e fazendo o 'z' sonoro ('del-la-dziên-da').\nLeia: È lú-ni-ko res-pon-sá-bi-le dél-la su-per-vi-ziô-ne dél-la stra-te-djí-a di-dji-tá-le del-la-dziên-da."
+  },
+  "1109": {
+    "explanation": "Entrevista de emprego em italiano se diz 'colloquio' (literalmente um colóquio/diálogo formal). Repare que quem é convidado é 'invitato a partecipare' (convidado a participar), usando a preposição 'a'.",
+    "breakdown": [
+      {
+        "word": "Sono stato invitato a",
+        "meaning": "Fui convidado a — sono stato: fui (estive); invitato: convidado; a: a"
+      },
+      {
+        "word": "partecipare a",
+        "meaning": "participar de — partecipare: participar; a: a"
+      },
+      {
+        "word": "un secondo colloquio",
+        "meaning": "uma segunda entrevista — un: um; secondo: segundo; colloquio: entrevista/colóquio"
+      },
+      {
+        "word": "per la posizione",
+        "meaning": "para a vaga / posição — per: para; la: a; posizione: posição/cargo"
+      }
+    ],
+    "pronuncia": "Em 'Sono stato invitato a', pronuncie 'stá-to' sem 'i' inicial e faça o 't' seco de 'in-vi-tá-to'. Na expressão 'partecipare a', faça o 'c' antes de 'e' com som de 'tch' ('par-te-tchi-pá-re'). Na palavra 'un secondo colloquio', segure a retenção muscular no 'll' dobrado ('kol-lô-kuio') e pronuncie o 'qu' com som de 'ku' audível. Encerre em 'per la posizione' fazendo o 'z' de 'po-zi-tsiô-ne' com estalo seco de 'ts'.\nLeia: Sô-no stá-to in-vi-tá-to a par-te-tchi-pá-re a un se-kôn-do kol-lô-kuio per la po-zi-tsiô-ne."
+  },
+  "1110": {
+    "explanation": "Em vez de 'esclarecedor', o italiano utiliza com frequência a palavra 'interessante' no sentido de enriquecedor. Para 'em que pensar', eles usam a linda estrutura 'su cui riflettere' (sobre o qual refletir). Note a consoante dupla 'tt' em 'riflettere'.",
+    "breakdown": [
+      {
+        "word": "Il seminario è stato",
+        "meaning": "O seminário foi — il seminario: o seminário; è stato: foi"
+      },
+      {
+        "word": "incredibilmente interessante",
+        "meaning": "incrivelmente esclarecedor / interessante — incredibilmente: incrivelmente; interessante: interessante/esclarecedor"
+      },
+      {
+        "word": "e mi ha dato",
+        "meaning": "e me deu — e: e; mi: me; ha dato: deu (tem dado)"
+      },
+      {
+        "word": "molto su cui riflettere",
+        "meaning": "muito em que pensar / sobre o que refletir — molto: muito; su cui: sobre o qual/em que; riflettere: refletir/pensar"
+      }
+    ],
+    "pronuncia": "Em 'Il seminario è stato', suba a língua no 'l' e não coloque 'i' antes de 'stá-to'. Em 'incredibilmente interessante', mantenha as vogais orais em 'in-kre-dí-bil-mên-te' e segure o 'ss' dobrado com 't' seco em 'in-te-res-sán-te'. Na expressão 'e mi ha dato', o 'h' é mudo ('mi á dá-to'). Termine em 'molto su cui riflettere': articule o 'u' em 'kui' e segure o 'tt' duplo no final de 'ri-flêt-te-re'.\nLeia: Il se-mi-ná-rio è stá-to in-kre-dí-bil-mên-te in-te-res-sán-te e mi á dá-to mól-to su kui ri-flêt-te-re."
+  }
+}

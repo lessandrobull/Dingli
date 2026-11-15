@@ -1,0 +1,518 @@
+{
+  "241": {
+    "explanation": "Para dizer 'Eu estou muito feliz hoje', no espanhol costuma-se omitir o 'eu' e falar diretamente 'Estoy muy feliz hoy'. A palavra 'hoy' traz a letra 'h' totalmente muda, enquanto 'feliz' termina com som de 's' bem seco.",
+    "breakdown": [
+      {
+        "word": "Estoy",
+        "meaning": "Estou — forma do verbo estar para a primeira pessoa."
+      },
+      {
+        "word": "muy",
+        "meaning": "Muito — usado para intensificar adjetivos."
+      },
+      {
+        "word": "feliz",
+        "meaning": "Feliz — com o final em som de 's' limpo."
+      },
+      {
+        "word": "hoy",
+        "meaning": "Hoje — palavra com a letra 'h' totalmente muda."
+      }
+    ],
+    "pronuncia": "Em 'Estoy', mantenha a vogal 'E' fechada no início ('ês-tôi'). Em 'muy', junte o som de forma direta sem chiar. Na palavra 'feliz', a letra 'z' soa como um 's' seco e sibilante, sem vibrar a garganta ('fê-lis'). Termine em 'hoy', onde a letra 'h' não tem som e a voz começa direto no 'o' fechado ('ôi').\nLeia: Ês-tôi mu-i fê-lis ôi"
+  },
+  "242": {
+    "explanation": "No espanhol, para perguntar 'Você gosta deste filme?', a estrutura literal é 'Te agrada este filme?'. Usa-se 'película' para filme e a palavra 'esta' mantém o 'e' inicial bem fechado e o 'a' final bem claro.",
+    "breakdown": [
+      {
+        "word": "Te gusta",
+        "meaning": "Você gosta / Te agrada — Te: a você; gusta: agrada."
+      },
+      {
+        "word": "esta",
+        "meaning": "Esta / Deste — palavra para indicar algo próximo."
+      },
+      {
+        "word": "película",
+        "meaning": "Filme — palavra equivalente a filme ou película de cinema."
+      }
+    ],
+    "pronuncia": "Em 'Te gusta', pronuncie o 't' bem seco encostando a língua atrás dos dentes da frente ('tê gús-ta'). Na palavra 'esta', não abra o 'e' ('ês-ta'). Conclua em 'película' garantindo que o 'e' inicial seja fechado e o 'a' final saia limpo e aberto ('pê-lí-ku-la').\nLeia: Tê gús-ta ês-ta pê-lí-ku-la"
+  },
+  "243": {
+    "explanation": "Para expressar 'Eu não gosto de tempo frio', o espanhol diz 'No me gusta el clima frío', onde 'clima' substitui 'tempo' no sentido de tempo meteorológico, e 'frío' traz um 'd' suave se falado entre vogais.",
+    "breakdown": [
+      {
+        "word": "No me gusta",
+        "meaning": "Não me agrada / Não gosto — No: não; me: a mim; gusta: agrada."
+      },
+      {
+        "word": "el clima",
+        "meaning": "O clima / O tempo — El: o; clima: tempo ou clima."
+      },
+      {
+        "word": "frío",
+        "meaning": "Frio — estado de baixa temperatura."
+      }
+    ],
+    "pronuncia": "Em 'No me gusta', mantenha o 'o' e o 'e' bem fechados ('nô mê gús-ta'). Em 'el clima', suba a língua para fazer o 'l' de 'êl' e solte o 'a' bem aberto em 'kli-ma'. Finalize em 'frío' com um toque rápido da ponta da língua no céu da boca para o 'r' ('frí-ô').\nLeia: Nô mê gús-ta êl kli-ma frí-ô"
+  },
+  "244": {
+    "explanation": "A frase 'Este livro é muito interessante' em espanhol é 'Este libro es muy interesante'. O 'd' do português não está aqui, e o 'r' em 'libro' é um toque simples com a ponta da língua, sem raspar a garganta.",
+    "breakdown": [
+      {
+        "word": "Este libro",
+        "meaning": "Este livro — Este: este; libro: livro."
+      },
+      {
+        "word": "es",
+        "meaning": "É — forma do verbo ser."
+      },
+      {
+        "word": "muy interesante",
+        "meaning": "Muito interessante — muy: muito; interesante: interessante."
+      }
+    ],
+    "pronuncia": "Em 'Este libro', não deixe o 'e' final virar 'i' ('ês-tê li-brô'), fazendo o 'r' com a ponta da língua. Em 'es muy', mantenha o 's' seco ('ês mu-i'). Em 'interesante', solte a voz limpa pela boca no 'in' sem anasalar e sustente o 'e' final fechado ('in-tê-rê-san-tê').\nLeia: Ês-tê li-brô ês mu-i in-tê-rê-san-tê"
+  },
+  "245": {
+    "explanation": "Para dizer 'Ela é uma mulher bonita', usa-se 'Ella es una mujer hermosa'. A palavra 'hermosa' vem com a letra 'h' totalmente muda no início e o 's' com som seco de 'ss', sem vibrar como zumbido.",
+    "breakdown": [
+      {
+        "word": "Ella es",
+        "meaning": "Ela é — Ella: ela; es: é."
+      },
+      {
+        "word": "una mujer",
+        "meaning": "Uma mulher — una: uma; mujer: mulher."
+      },
+      {
+        "word": "hermosa",
+        "meaning": "Bonita / Formosa — adjetivo para descrever beleza."
+      }
+    ],
+    "pronuncia": "Em 'Ella es', faça o som de 'y' para 'Ella' ('ê-ya ês'). Na palavra 'mujer', pronuncie a letra 'j' soltando um suspiro suave do peito ('mu-hêr') com o 'r' final tocando o céu da boca. Em 'hermosa', o 'h' é mudo e o 's' é sibilante ('êr-mô-sa').\nLeia: Ê-ya ês u-na mu-hêr êr-mô-sa"
+  },
+  "246": {
+    "explanation": "Em vez de dizer 'Eu acho que...', os nativos costumam usar 'Creo que...', que significa literalmente 'Creio que...'. É a forma mais natural e comum de dar uma opinião no dia a dia.",
+    "breakdown": [
+      {
+        "word": "Creo que",
+        "meaning": "Acho que / Creio que — Creo: creio/acho; que: que."
+      },
+      {
+        "word": "es una",
+        "meaning": "É uma — es: é; una: uma."
+      },
+      {
+        "word": "buena idea",
+        "meaning": "Boa ideia — buena: boa; idea: ideia."
+      }
+    ],
+    "pronuncia": "Em 'Creo que', mantenha o 'o' e o 'e' fechados ('krê-ô kê'). Em 'es una', conecte o 's' seco ao 'u' sem pausar ('ê-su-na'). Em 'buena idea', pronuncie o 'b' firme em 'buê-na' e passe para 'i-dê-a' com a vogal 'e' bem fechada e o 'd' suave.\nLeia: Krê-ô kê ês u-na buê-na i-dê-a"
+  },
+  "247": {
+    "explanation": "Para perguntar 'Você está triste?', basta dizer '¿Estás triste?'. O pronome 'você' costuma ser omitido e a palavra 'triste' exige um 't' bem seco e a preservação do 'e' no final.",
+    "breakdown": [
+      {
+        "word": "Estás",
+        "meaning": "Está / Você está — forma do verbo estar para a segunda pessoa."
+      },
+      {
+        "word": "triste",
+        "meaning": "Triste — estado emocional."
+      }
+    ],
+    "pronuncia": "Em 'Estás', inicie com o 'e' fechado e solte o 's' sibilante no fim ('ês-tás'). Na palavra 'triste', dê uma batida seca da ponta da língua atrás dos dentes no 't' ('tris') e termine obrigatoriamente no 'tê' fechado, sem chiar para 'tchi'.\nLeia: Ês-tás tris-tê"
+  },
+  "248": {
+    "explanation": "Para dizer 'Eu estou entediado', o espanhol utiliza 'Estoy aburrido'. Repare no 'rr' duplo, que exige um tremor da ponta da língua no céu da boca, exatamente como um motorzinho.",
+    "breakdown": [
+      {
+        "word": "Estoy",
+        "meaning": "Estou — forma do verbo estar."
+      },
+      {
+        "word": "aburrido",
+        "meaning": "Entediado / Aborrecido — estado de tédio."
+      }
+    ],
+    "pronuncia": "Em 'Estoy', pronuncie o 'e' fechado ('ês-tôi'). Em 'aburrido', faça o 'b' suave entre vogais ('a-bu-'), trema a ponta da língua no 'rr' duplo ('-rrí-') e encoste a língua levemente nos dentes para o 'd' suave, terminando no 'ô' fechado ('-dô').\nLeia: Ês-tôi a-bu-rrí-dô"
+  },
+  "249": {
+    "explanation": "Para 'A música está alta demais', o espanhol usa 'La música está demasiado alta'. A palavra 'demasiado' significa 'demais' ou 'excessivamente' e traz a letra 's' sem som de zumbido.",
+    "breakdown": [
+      {
+        "word": "La música",
+        "meaning": "A música — La: a; música: música."
+      },
+      {
+        "word": "está",
+        "meaning": "Está — forma do verbo estar."
+      },
+      {
+        "word": "demasiado alta",
+        "meaning": "Alta demais — demasiado: demais/excessivamente; alta: alta."
+      }
+    ],
+    "pronuncia": "Em 'La música', solte o 's' limpo e seco em 'mú-si-ka', sem fazer som de abelha. Em 'está', fale 'ês-tá'. Em 'demasiado', faça o 'd' leve e o 's' seco ('dê-ma-si-a-dô'). Termine em 'alta' subindo a ponta da língua no 'l' ('al-ta').\nLeia: La mú-si-ka ês-tá dê-ma-si-a-dô al-ta"
+  },
+  "250": {
+    "explanation": "No espanhol, quando amamos alguém ou pessoas queridas, acrescentamos a letra 'a' antes do objeto. Por isso, 'Eu amo minha família' vira 'Amo a mi familia'.",
+    "breakdown": [
+      {
+        "word": "Amo",
+        "meaning": "Amo — forma do verbo amar."
+      },
+      {
+        "word": "a mi familia",
+        "meaning": "A minha família — a: preposição de afeto; mi: minha; familia: família."
+      }
+    ],
+    "pronuncia": "Em 'Amo', solte o 'a' limpo e limite a saída pelo nariz, fechando no 'ô' ('a-mô'). Junte com 'a mi' de forma fluida ('a-mô-a-mi'). Em 'familia', pronuncie todas as vogais abertas e claras, sem chiar o 'l' ('fa-mí-li-a').\nLeia: A-mô a mi fa-mí-li-a"
+  },
+  "251": {
+    "explanation": "A expressão 'É um dia ensolarado' se traduz como 'Es un día soleado'. Note que 'día' exige um 'd' bem seco no início e 'soleado' mantém o 'e' e o 'o' bem fechados.",
+    "breakdown": [
+      {
+        "word": "Es un",
+        "meaning": "É um — Es: é; un: um."
+      },
+      {
+        "word": "día",
+        "meaning": "Dia — período diurno."
+      },
+      {
+        "word": "soleado",
+        "meaning": "Ensolarado — ensolarado / com sol."
+      }
+    ],
+    "pronuncia": "Em 'Es un', ligue o 's' seco ao 'u' sem nasalizar ('ê-sun'). Em 'día', apoie a ponta da língua reta atrás dos dentes da frente sem chiar para 'dji' ('dí-a'). Em 'soleado', mantenha os sons fechados de 'e' e 'o' ('sô-lê-a-dô').\nLeia: Ê-sun dí-a sô-lê-a-dô"
+  },
+  "252": {
+    "explanation": "Para dizer 'Eu acho que não', a estrutura nativa mais natural é 'No lo creo', que significa literalmente 'Não o creio'. O pronome 'lo' retoma a ideia sobre a qual se está opinando.",
+    "breakdown": [
+      {
+        "word": "No",
+        "meaning": "Não — advérbio de negação."
+      },
+      {
+        "word": "lo",
+        "meaning": "O / Isso — pronome que se refere à ideia dita."
+      },
+      {
+        "word": "creo",
+        "meaning": "Acho / Creio — forma do verbo creer."
+      }
+    ],
+    "pronuncia": "Fale todas as palavras com as vogais 'o' e 'e' cravadas e fechadas. Em 'No lo creo', junte o bloco num ritmo contínuo: 'nô' com o 'o' fechado, 'lô' com o 'l' na ponta da língua, e 'krê-ô' fazendo o 'r' tremer levemente na ponta.\nLeia: Nô lô krê-ô"
+  },
+  "253": {
+    "explanation": "Para perguntar 'É uma pergunta difícil?', diz-se '¿Es una pregunta difícil?'. Em espanhol, a palavra 'difícil' termina com o 'l' tocando o céu da boca, sem virar som de 'u'.",
+    "breakdown": [
+      {
+        "word": "Es una",
+        "meaning": "É uma — Es: é; una: uma."
+      },
+      {
+        "word": "pregunta",
+        "meaning": "Pergunta — palavra para questionamento."
+      },
+      {
+        "word": "difícil",
+        "meaning": "Difícil — adjetivo de complexidade."
+      }
+    ],
+    "pronuncia": "Ligue 'Es una' de forma contínua ('ê-su-na'). Em 'pregunta', emita a vogal limpa sem nasalizar o 'un' ('prê-gun-ta'). Em 'difícil', faça o 'd' seco no início ('di-') e cole a ponta da língua no céu da boca no 'l' final ('-fí-sil').\nLeia: Ê-su-na prê-gun-ta di-fí-sil"
+  },
+  "254": {
+    "explanation": "Para a frase 'Eu tenho medo de aranha', o espanhol diz 'Tengo miedo a las arañas'. Usa-se a preposição 'a' depois de 'miedo', e o 'r' de 'arañas' é tocado suavemente com a ponta da língua.",
+    "breakdown": [
+      {
+        "word": "Tengo miedo",
+        "meaning": "Tenho medo — Tengo: tenho; miedo: medo."
+      },
+      {
+        "word": "a las",
+        "meaning": "De / Às — a: a/de; las: as."
+      },
+      {
+        "word": "arañas",
+        "meaning": "Aranhas — plural do inseto/arácnede."
+      }
+    ],
+    "pronuncia": "Em 'Tengo miedo', encoste a língua no dente para o 't' seco ('tên-gô') e faça o 'd' suave em 'miê-dô'. Ligue com 'a las' ('a las'). Em 'arañas', faça o 'r' com um toque rápido da língua e a letra 'ñ' com som de 'nh' ('a-ra-nhas').\nLeia: Tên-gô miê-dô a las a-ra-nhas"
+  },
+  "255": {
+    "explanation": "A frase 'Ela é muito inteligente' se traduz como 'Ella es muy inteligente'. Repare que em 'inteligente' a letra 'g' tem som de suspiro morno solto pelo peito, como ao embaçar um espelho.",
+    "breakdown": [
+      {
+        "word": "Ella es",
+        "meaning": "Ela é — Ella: ela; es: é."
+      },
+      {
+        "word": "muy",
+        "meaning": "Muito — intensificador."
+      },
+      {
+        "word": "inteligente",
+        "meaning": "Inteligente — adjetivo de capacidade mental."
+      }
+    ],
+    "pronuncia": "Em 'Ella es', pronuncie 'ê-ya ês'. Em 'muy', fale 'mu-i'. Na palavra 'inteligente', solte a voz limpa em 'in-', suba o 'l' em 'tê-li-', suspire o 'g' como 'h' em '-hên-' e termine no 'tê' fechado e seco ('in-tê-li-hên-tê').\nLeia: Ê-ya ês mu-i in-tê-li-hên-tê"
+  },
+  "256": {
+    "explanation": "Para 'O bolo está delicioso', diz-se 'El pastel está delicioso'. A palavra 'pastel' em espanhol significa 'bolo' ou 'torta doce', e o 'l' final precisa tocar a ponta da língua no céu da boca.",
+    "breakdown": [
+      {
+        "word": "El pastel",
+        "meaning": "O bolo — El: o; pastel: bolo/torta doce."
+      },
+      {
+        "word": "está",
+        "meaning": "Está — forma do verbo estar."
+      },
+      {
+        "word": "delicioso",
+        "meaning": "Delicioso — saboroso."
+      }
+    ],
+    "pronuncia": "Em 'El pastel', trave o 'l' no dente em 'êl' e termine 'pas-têl' com o 'l' colado no céu da boca. Em 'está', diga 'ês-tá'. Em 'delicioso', faça o 'd' seco no início ('dê-'), o 'c' com som de 's' seco ('-li-si-') e termine no 'ô' fechado ('-ô-sô').\nLeia: Êl pas-têl ês-tá dê-li-si-ô-sô"
+  },
+  "257": {
+    "explanation": "Para expressar 'Estou animado para a festa', usa-se 'Estoy emocionado por la fiesta'. A palavra 'emocionado' é a forma padrão para dizer 'animado' ou 'empolgado'.",
+    "breakdown": [
+      {
+        "word": "Estoy",
+        "meaning": "Estou — primeira pessoa do verbo estar."
+      },
+      {
+        "word": "emocionado",
+        "meaning": "Animado / Empolgado — estado de emoção positiva."
+      },
+      {
+        "word": "por la fiesta",
+        "meaning": "Para a festa / Pela festa — por: por/para; la: a; fiesta: festa."
+      }
+    ],
+    "pronuncia": "Em 'Estoy', diga 'ês-tôi'. Em 'emocionado', faça o 'c' com som de 's' seco ('ê-mô-si-ô-') e o 'd' suave encostando levemente a língua no dente ('-na-dô'). Termine em 'por la fiesta' mantendo o 'e' fechado em 'fiês-ta'.\nLeia: Ês-tôi ê-mô-si-ô-na-dô pôr la fiês-ta"
+  },
+  "258": {
+    "explanation": "Para perguntar 'Você está com raiva?', o espanhol diz literalmente 'Você se sente zangado?': '¿Te sientes enojado?'. A palavra 'enojado' usa a letra 'j' com o som de suspiro suave de ar.",
+    "breakdown": [
+      {
+        "word": "Te sientes",
+        "meaning": "Você se sente / Sente-se — Te: te/se; sientes: sente."
+      },
+      {
+        "word": "enojado",
+        "meaning": "Com raiva / Zangado — estado de irritação."
+      }
+    ],
+    "pronuncia": "Em 'Te sientes', dê uma batida seca no 't' em 'tê' e solte o 's' seco sem chiar em 'siên-tês'. Em 'enojado', solte a voz limpa no 'e', suspire o 'j' como a letra 'h' e faça o 'd' suave no fim ('ê-nô-ha-dô').\nLeia: Tê siên-tês ê-nô-ha-dô"
+  },
+  "259": {
+    "explanation": "A frase 'O filme é muito longo' vira 'La película es muy larga' em espanhol. Como a palavra 'película' é feminina, o adjetivo 'larga' (longo/comprido) também concorda no feminino.",
+    "breakdown": [
+      {
+        "word": "La película",
+        "meaning": "O filme — La: a; película: filme."
+      },
+      {
+        "word": "es",
+        "meaning": "É — verbo ser."
+      },
+      {
+        "word": "muy larga",
+        "meaning": "Muito longo / muito comprido — muy: muito; larga: longa/comprida."
+      }
+    ],
+    "pronuncia": "Em 'La película', fale 'la pê-lí-ku-la' sem chiar. Ligue com 'es muy' ('ês mu-i'). Em 'larga', toque a ponta da língua no céu da boca para o 'r' e solte o 'g' suave e macio com a boca aberta ('lar-ga').\nLeia: La pê-lí-ku-la ês mu-i lar-ga"
+  },
+  "260": {
+    "explanation": "Para dizer 'Eu não tenho certeza', o espanhol utiliza 'No estoy seguro'. O adjetivo 'seguro' traz a letra 's' bem sibilante e limpa, sem vibrar a garganta como o 'z' do português.",
+    "breakdown": [
+      {
+        "word": "No estoy",
+        "meaning": "Não estou — No: não; estoy: estou."
+      },
+      {
+        "word": "seguro",
+        "meaning": "Certo / Seguro — estado de certeza."
+      }
+    ],
+    "pronuncia": "Em 'No estoy', mantenha o 'o' e o 'e' bem fechados ('nô ês-tôi'). Na palavra 'seguro', pronuncie a letra 's' bem seca como 'sê-', faça o 'g' suave entre vogais ('-gu-') e trema a ponta da língua levemente no 'r' ('-rô').\nLeia: Nô ês-tôi sê-gu-rô"
+  },
+  "261": {
+    "explanation": "A frase 'É um problema pequeno' é dita como 'Es un problema pequeño'. Repare na palavra 'pequeño', que traz a letra 'ñ' com o som idêntico ao nosso 'nh' em 'pesadinho'.",
+    "breakdown": [
+      {
+        "word": "Es un",
+        "meaning": "É um — Es: é; un: um."
+      },
+      {
+        "word": "problema",
+        "meaning": "Problema — situação a resolver."
+      },
+      {
+        "word": "pequeño",
+        "meaning": "Pequeno — de menor tamanho."
+      }
+    ],
+    "pronuncia": "Ligue 'Es un' como 'ê-sun'. Em 'problema', faça o 'b' suave entre os lábios e feche em 'prô-blê-ma' com o 'a' final bem aberto. Em 'pequeño', diga 'pê-kê-nhô', mantendo as vogais 'e' e 'o' cravadas e fechadas.\nLeia: Ê-sun prô-blê-ma pê-kê-nhô"
+  },
+  "262": {
+    "explanation": "Para 'Eu gosto do seu carro novo', o espanhol usa 'Me gusta tu coche nuevo'. A palavra 'coche' é muito usada para carro e traz o 'ch' com um estalo forte de 'tch'.",
+    "breakdown": [
+      {
+        "word": "Me gusta",
+        "meaning": "Gosto / Me agrada — Me: a mim; gusta: agrada."
+      },
+      {
+        "word": "tu coche",
+        "meaning": "Seu carro — tu: seu; coche: carro."
+      },
+      {
+        "word": "nuevo",
+        "meaning": "Novo — recém-adquirido."
+      }
+    ],
+    "pronuncia": "Em 'Me gusta', fale 'mê gús-ta'. Em 'tu coche', faça a trava do 't' em 'tchu' se quisesse, mas aqui é 'tu' seco, e em 'coche' dê o estalo seco em 'kô-tche'. Conclua em 'nuevo' usando som de 'b' suave na letra 'v' ('nuê-bô').\nLeia: Mê gús-ta tu kô-tche nuê-bô"
+  },
+  "263": {
+    "explanation": "A frase 'A água está morna' se traduz como 'El agua está tibia'. Em espanhol, usa-se o artigo masculino 'El' antes de 'agua' para facilitar a fala, mas a palavra continua sendo feminina.",
+    "breakdown": [
+      {
+        "word": "El agua",
+        "meaning": "A água — El: o (usado antes de água); agua: água."
+      },
+      {
+        "word": "está",
+        "meaning": "Está — forma do verbo estar."
+      },
+      {
+        "word": "tibia",
+        "meaning": "Morna / Tépida — temperatura agradável."
+      }
+    ],
+    "pronuncia": "Em 'El agua', suba a ponta da língua no 'l' ('êl') e faça o 'g' de 'agua' bem suave e deslizante ('á-gua'). Em 'está', diga 'ês-tá'. Em 'tibia', dê uma batida seca no 't' sem chiar para 'tchi' e faça o 'b' suave ('ti-bi-a').\nLeia: Êl á-gua ês-tá ti-bi-a"
+  },
+  "264": {
+    "explanation": "Para 'Ele é um homem engraçado', o espanhol diz 'Él es un hombre divertido'. A palavra 'hombre' traz a letra 'h' mudo e 'divertido' usa a letra 'v' com som de 'b'.",
+    "breakdown": [
+      {
+        "word": "Él es un",
+        "meaning": "Ele é um — Él: ele; es: é; un: um."
+      },
+      {
+        "word": "hombre",
+        "meaning": "Homem — ser humano masculino."
+      },
+      {
+        "word": "divertido",
+        "meaning": "Engraçado / Divertido — que causa riso ou entretenimento."
+      }
+    ],
+    "pronuncia": "Ligue 'Él es un' como 'ê-lê-sun'. Em 'hombre', o 'h' é mudo; fale 'ôm-brê' com o 'e' bem fechado. Em 'divertido', fale a letra 'v' com som de 'b' seco ('di-bêr-tí-dô'), mantendo o 'd' final suave.\nLeia: Ê-lê-sun ôm-brê di-bêr-tí-dô"
+  },
+  "265": {
+    "explanation": "Para dizer 'Eu não gosto de pizza', diz-se 'No me gusta la pizza'. A palavra 'pizza' é pronunciada no espanhol com um pequeno estalo a seco entre as consoantes.",
+    "breakdown": [
+      {
+        "word": "No me gusta",
+        "meaning": "Não me agrada / Não gosto — No: não; me: a mim; gusta: agrada."
+      },
+      {
+        "word": "la pizza",
+        "meaning": "A pizza — La: a; pizza: pizza."
+      }
+    ],
+    "pronuncia": "Em 'No me gusta', mantenha todas as vogais 'o' e 'e' bem fechadas ('nô mê gús-ta'). Em 'la pizza', fale 'la' com o 'a' aberto e pronuncie 'pit-sa', cortando o som a seco no 't' antes do 's'.\nLeia: Nô mê gús-ta la pit-sa"
+  },
+  "266": {
+    "explanation": "Para perguntar 'Ela é sua cantora favorita?', a frase fica '¿Ella es tu cantante favorita?'. A palavra 'cantante' serve tanto para homem quanto para mulher e termina no 'e' fechado.",
+    "breakdown": [
+      {
+        "word": "Ella es",
+        "meaning": "Ela é — Ella: ela; es: é."
+      },
+      {
+        "word": "tu cantante",
+        "meaning": "Sua cantora — tu: sua; cantante: cantora."
+      },
+      {
+        "word": "favorita",
+        "meaning": "Favorita — preferida."
+      }
+    ],
+    "pronuncia": "Em 'Ella es', fale 'ê-ya ês'. Em 'tu cantante', dê uma batida seca no 't' sem chiar ('tu kan-tan-tê'). Em 'favorita', faça a letra 'v' com som de 'b' suave entre os lábios e o 't' seco ('fa-bô-rí-ta').\nLeia: Ê-ya ês tu kan-tan-tê fa-bô-rí-ta"
+  },
+  "267": {
+    "explanation": "A frase 'A cidade é muito barulhenta' se traduz como 'La ciudad es muy ruidosa'. Repare que 'ciudad' termina com um 'd' bem suave que quase morre no ar.",
+    "breakdown": [
+      {
+        "word": "La ciudad",
+        "meaning": "A cidade — La: a; ciudad: cidade."
+      },
+      {
+        "word": "es muy",
+        "meaning": "É muito — es: é; muy: muito."
+      },
+      {
+        "word": "ruidosa",
+        "meaning": "Barulhenta — que faz muito ruído."
+      }
+    ],
+    "pronuncia": "Em 'La ciudad', faça o 'c' com som de 's' seco ('siu-dad') cortando o 'd' final a seco. Em 'es muy', diga 'ês mu-i'. Em 'ruidosa', trema a ponta da língua no 'r' inicial ('rrui-dô-sa') e solte o 's' seco sem som de 'z'.\nLeia: La siu-dad ês mu-i rrui-dô-sa"
+  },
+  "268": {
+    "explanation": "Para dizer 'Estou cansado deste jogo', usa-se 'Estoy cansado de este juego'. A palavra 'juego' usa a letra 'j' com som de suspiro suave solto diretamente do peito.",
+    "breakdown": [
+      {
+        "word": "Estoy cansado",
+        "meaning": "Estou cansado — Estoy: estou; cansado: cansado."
+      },
+      {
+        "word": "de este",
+        "meaning": "Deste / De este — de: de; este: este."
+      },
+      {
+        "word": "juego",
+        "meaning": "Jogo — brincadeira ou partida."
+      }
+    ],
+    "pronuncia": "Em 'Estoy cansado', diga 'ês-tôi kan-sa-dô' com o 'd' suave. Em 'de este', junte os sons mantendo os 'e' fechados ('dê-ês-tê'). Em 'juego', suspire a letra 'j' como um 'h' leve e faça o 'g' suave ('huê-gô').\nLeia: Ês-tôi kan-sa-dô dê-ês-tê huê-gô"
+  },
+  "269": {
+    "explanation": "Para a frase 'É um dia lindo', o espanhol usa 'Es un día hermoso'. A palavra 'hermoso' começa com 'h' mudo, traz a vogal 'e' bem fechada e o 's' totalmente seco.",
+    "breakdown": [
+      {
+        "word": "Es un",
+        "meaning": "É um — Es: é; un: um."
+      },
+      {
+        "word": "día",
+        "meaning": "Dia — período do dia."
+      },
+      {
+        "word": "hermoso",
+        "meaning": "Lindo / Bonito — adjetivo de beleza."
+      }
+    ],
+    "pronuncia": "Ligue 'Es un' como 'ê-sun'. Em 'día', apoie a língua no dente para o 'd' seco sem chiar ('dí-a'). Na palavra 'hermoso', ignore o 'h' inicial e fale 'êr-mô-sô', garantindo que o 's' seja seco e o 'o' final bem fechado.\nLeia: Ê-sun dí-a êr-mô-sô"
+  },
+  "270": {
+    "explanation": "Para perguntar 'O que você acha?', o espanhol diz literalmente 'O que você pensa?': '¿Qué piensas?'. O pronome 'você' fica subentendido na terminação do verbo.",
+    "breakdown": [
+      {
+        "word": "Qué",
+        "meaning": "O que / Que — pronome interrogativo."
+      },
+      {
+        "word": "piensas",
+        "meaning": "Você pensa / Acha — forma do verbo pensar."
+      }
+    ],
+    "pronuncia": "Em 'Qué', diga 'kê' com a vogal 'e' bem fechada e firme. Em 'piensas', não chiie o 'p' nem o 's', pronunciando 'piên-sas' com a voz limpa e oral, sem nasalizar o 'en' e terminando com o 's' seco.\nLeia: Kê piên-sas"
+  }
+}

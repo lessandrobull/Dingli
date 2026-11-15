@@ -12,6 +12,9 @@ import {
 
 const normalizarFrase = (str) => (str || "").replace(/\s+([?!:;.,，。！？；：、])/g, "$1").trim();
 
+// Cor de erro exclusiva do Dìnglab (ajuste manual aqui)
+const COR_ERRO_DINGLAB = '#ef4444';
+
 const obterOpcoesReporte = (t) => [
   t?.reportAudio || "Áudio",
   t?.reportSentence || "Frase do exercício",
@@ -174,15 +177,10 @@ export default function Dinglab({
         if (!modoProvaRef.current) {
           // ==================== MODO ESPELHO (TREINO LIVRE) ====================
           setResultadoFeedback(resultado);
-          if (resultado === 'acerto') {
-            setFeedbackMensagem(t?.dinglabSuccessMirror || "Boa pronúncia, parabéns!");
-          } else {
-            setFeedbackMensagem(t?.dinglabFailMirror || "Mais atenção no som! Treine livremente.");
-          }
+          setFeedbackMensagem("");
 
           timerFeedbackRef.current = setTimeout(() => {
             setResultadoFeedback(null);
-            setFeedbackMensagem("");
             setTranscricaoFixa("");
             if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
             if (setStatusVoz) setStatusVoz('IDLE');
@@ -191,9 +189,8 @@ export default function Dinglab({
         } else {
           // ==================== PROVA DE FOGO (DECISÃO FINAL) ====================
           if (resultado === 'acerto') {
-            setToastVisible(false);
             setResultadoFeedback('acerto');
-            setFeedbackMensagem("");
+            setFeedbackMensagem(t?.dinglabRetornoDingloop || "Boa pronúncia! A frase voltou para o Dìngloop.");
 
             const idAtual = fraseAtual.id;
             const rankObj = frasesMaestria[idAtual];
@@ -260,44 +257,20 @@ export default function Dinglab({
               falar(alvoAudio, false);
             }
 
-            // Tempo calculado idêntico ao TelaEstudo.jsx / App.jsx
-            const tempoAudio = Math.max(textoEstudo.split(" ").length * 600, 1500);
-
-            // Aguarda o áudio terminar para avançar para o próximo card ou retornar ao Dìngloop
-            timerFeedbackRef.current = setTimeout(() => {
-              const ehPitstop = sessionStorage.getItem('dinglab_modo_pitstop') === 'true';
-              sessionStorage.removeItem('dinglab_modo_pitstop');
-              if (ehPitstop) {
-                if (rotacionarBandeja) {
-                  rotacionarBandeja(idAtual, false);
-                }
-                if (jogarDominiumInteligente) {
-                  jogarDominiumInteligente();
-                }
-                return;
-              }
-
-              setLista(novaLista);
-              setModoProva(false);
-              setResultadoFeedback(null);
-              setFeedbackMensagem("");
-              setTranscricaoFixa("");
-              setAudioGravadoUrl(null);
-              if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
-              if (setStatusVoz) setStatusVoz('IDLE');
-              if (indice > novaLista.length) {
-                setIndice(Math.max(0, novaLista.length));
-              }
-            }, tempoAudio);
+            if (setStatusVoz) setStatusVoz('IDLE');
 
           } else {
-            // Reprovação na Prova de Fogo: ZERO punição e mantém a mensagem em vermelho fixa na tela
-            setToastVisible(false);
+            // Reprovação na Prova de Fogo: ZERO punição (retorna ao neutro após 3s)
             setResultadoFeedback('erro');
-            setFeedbackMensagem(t?.dinglabFailChallenge || "Quase lá! Treine mais um pouco no modo espelho e tente de novo.");
+            setFeedbackMensagem("");
             setModoProva(false);
             if (setStatusVoz) setStatusVoz('IDLE');
             if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
+
+            timerFeedbackRef.current = setTimeout(() => {
+              setResultadoFeedback(null);
+              setTranscricaoFixa("");
+            }, 3000);
           }
         }
       };
@@ -396,37 +369,18 @@ export default function Dinglab({
     }
   }, [audioLento, fraseAtual, idiomaEstudo, textoEstudo, falar]);
 
-  // Botão Falar Agora (Modo Espelho Livre)
+  // Botão Falar Agora (Prova de Fogo oficial)
   const handleFalarAgora = useCallback(() => {
     if (!fraseAtual) return;
     if (statusVoz === 'RECORDING') {
       if (pararEAvaliarVoz) pararEAvaliarVoz();
     } else if (statusVoz === 'IDLE') {
-      setModoProva(false);
+      setModoProva(true);
+      modoProvaRef.current = true;
       setResultadoFeedback(null);
       setFeedbackMensagem("");
       setTranscricaoFixa("");
       if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
-
-      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
-          audioChunksRef.current = [];
-          const mr = new MediaRecorder(stream);
-          mediaRecorderRef.current = mr;
-          mr.ondataavailable = (e) => {
-            if (e.data && e.data.size > 0) audioChunksRef.current.push(e.data);
-          };
-          mr.onstop = () => {
-            const blob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-            const url = URL.createObjectURL(blob);
-            setAudioGravadoUrl(url);
-            stream.getTracks().forEach(track => track.stop());
-          };
-          mr.start(100);
-        }).catch(err => {
-          console.warn("[Dinglab] MediaRecorder não iniciado:", err);
-        });
-      }
 
       const alvoVoz = {
         ...fraseAtual,
@@ -519,20 +473,13 @@ export default function Dinglab({
     setFeedbackMensagem("");
     setTranscricaoFixa("");
     if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
-    setToastVisible(true);
 
-    setTimeout(() => {
-      setToastVisible(false);
-    }, 2800);
-
-    setTimeout(() => {
-      const alvoVoz = {
-        ...fraseAtual,
-        [idiomaEstudo]: textoEstudo,
-        texto: textoEstudo
-      };
-      iniciarReconhecimentoVoz(alvoVoz);
-    }, 400);
+    const alvoVoz = {
+      ...fraseAtual,
+      [idiomaEstudo]: textoEstudo,
+      texto: textoEstudo
+    };
+    iniciarReconhecimentoVoz(alvoVoz);
   }, [statusVoz, iniciarReconhecimentoVoz, fraseAtual, idiomaEstudo, textoEstudo, setTranscricaoAoVivo]);
 
   // Modal de Reporte
@@ -575,6 +522,49 @@ export default function Dinglab({
       setEnviandoReporte(false);
     }
   }, [fraseAtual, idiomaEstudo, idiomaOrigem, opcoesSelecionadas, outroTexto]);
+
+  const handleAvancarAposAcerto = useCallback(() => {
+    if (timerFeedbackRef.current) {
+      clearTimeout(timerFeedbackRef.current);
+      timerFeedbackRef.current = null;
+    }
+
+    const ehPitstop = sessionStorage.getItem('dinglab_modo_pitstop') === 'true';
+    if (ehPitstop) {
+      sessionStorage.removeItem('dinglab_modo_pitstop');
+      if (rotacionarBandeja && fraseAtual) {
+        rotacionarBandeja(fraseAtual.id, false);
+      }
+      if (jogarDominiumInteligente) {
+        jogarDominiumInteligente();
+      }
+      return;
+    }
+
+    let novaLista = [];
+    try {
+      const salvo = localStorage.getItem(chaveDinglab);
+      novaLista = salvo ? JSON.parse(salvo) : [];
+    } catch (e) {
+      novaLista = [];
+    }
+
+    setLista(novaLista);
+    setModoProva(false);
+    modoProvaRef.current = false;
+    setResultadoFeedback(null);
+    setFeedbackMensagem("");
+    setTranscricaoFixa("");
+    setAudioGravadoUrl(null);
+    if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
+    if (setStatusVoz) setStatusVoz('IDLE');
+
+    if (novaLista.length === 0) {
+      setIndice(0);
+    } else if (indice > novaLista.length) {
+      setIndice(novaLista.length);
+    }
+  }, [chaveDinglab, fraseAtual, rotacionarBandeja, jogarDominiumInteligente, indice, setIndice, setTranscricaoAoVivo, setStatusVoz]);
 
   const handleVoltarAoDingloop = useCallback(() => {
     sessionStorage.removeItem('dinglab_modo_pitstop');
@@ -652,7 +642,7 @@ export default function Dinglab({
             border: '2px solid',
             borderColor: resultadoFeedback === 'acerto'
               ? COR_ACERTO
-              : (resultadoFeedback === 'erro' ? '#ef4444' : 'rgba(255, 255, 255, 0.45)'),
+              : (resultadoFeedback === 'erro' ? COR_ERRO_DINGLAB : 'rgba(255, 255, 255, 0.45)'),
             boxShadow: '0 12px 32px rgba(0, 0, 0, 0.16)',
             position: 'relative',
             margin: '0 auto',
@@ -662,31 +652,6 @@ export default function Dinglab({
             transition: 'border-color 0.25s ease, box-shadow 0.25s ease'
           }}
         >
-          {/* TOAST ANIMADO DA PROVA DE FOGO */}
-          {toastVisible && (
-            <div
-              style={{
-                position: 'absolute',
-                top: '12px',
-                left: '12px',
-                right: '12px',
-                backgroundColor: '#1e293b',
-                color: '#ffffff',
-                padding: '12px 16px',
-                borderRadius: '14px',
-                boxShadow: '0 8px 24px rgba(0,0,0,0.25)',
-                zIndex: 50,
-                textAlign: 'center',
-                fontSize: '0.88rem',
-                fontWeight: '800',
-                lineHeight: '1.4',
-                boxSizing: 'border-box'
-              }}
-            >
-              🔥 {t?.dinglabToast || "Agora é pra valer! Diga a frase corretamente para ela voltar ao Dìngloop!"}
-            </div>
-          )}
-
           {/* Bandeirinha ⚑ */}
           {!ehCardZero && (
             <button
@@ -933,17 +898,16 @@ export default function Dinglab({
               </div>
 
               {/* Centro do Card */}
-              <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: '10px 0', overflow: 'auto' }}>
-                <div style={{ textAlign: 'center', width: '100%' }}>
+              <div style={{ ...styles.areaFraseCentralFlex, flex: 1, padding: '10px 0', overflow: 'visible' }}>
+                <div style={{ textAlign: 'center', width: '100%', position: 'relative' }}>
                   <p style={{ ...styles.textoFrasePrincipal, color: '#0f172a' }}>
-                    {resultadoFeedback === 'acerto' ? (
-                      <span style={{ color: COR_ACERTO }}>{textoEstudo}</span>
-                    ) : (() => {
+                    {(() => {
                       let currentZhIndex = 0;
                       const zhLimpo = fraseAtual?.zh ? fraseAtual.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
                       const estaEmFeedbackOuGravacao = statusVoz === 'RECORDING' || resultadoFeedback !== null;
                       const falaEfetiva = estaEmFeedbackOuGravacao ? (transcricaoAoVivo || transcricaoFixa || "") : "";
                       const tLimpa = falaEfetiva.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
+                      const ehAcertoTotal = resultadoFeedback === 'acerto';
 
                       return textoEstudo.split(" ").map((word, i) => {
                         const normalizarPalavra = (term) => (term || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
@@ -955,13 +919,13 @@ export default function Dinglab({
                           currentZhIndex += numSyllables;
                         }
 
-                        const estaNaFala = pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa));
+                        const estaNaFala = ehAcertoTotal || (pLimpa && pLimpa.length > 0 && (idiomaEstudo === 'pi' ? pLimpa.split('').every(char => tLimpa.includes(char)) : tLimpa.includes(pLimpa)));
 
                         let cor = '#0f172a';
                         if (estaNaFala) {
                           cor = COR_ACERTO;
                         } else if (resultadoFeedback === 'erro') {
-                          cor = '#ef4444';
+                          cor = COR_ERRO_DINGLAB;
                         }
 
                         const ehPalavraAtivaRepeticao = palavraAtivaRepeticao === i;
@@ -971,12 +935,14 @@ export default function Dinglab({
                           if (faseRepeticao === 'ouvir') {
                             estiloRepeticao = {
                               backgroundColor: corDinamica,
-                              color: '#ffffff'
+                              color: '#ffffff',
+                              borderRadius: '4px'
                             };
                           } else if (faseRepeticao === 'repetir') {
                             estiloRepeticao = {
                               backgroundColor: '#ffffff',
-                              color: '#0f172a'
+                              color: '#0f172a',
+                              borderRadius: '4px'
                             };
                           }
                         }
@@ -989,10 +955,8 @@ export default function Dinglab({
                             style={{
                               color: cor,
                               backgroundColor: 'transparent',
-                              borderRadius: '6px',
-                              padding: '2px 5px',
                               display: 'inline-block',
-                              marginRight: '3px',
+                              marginRight: '5px',
                               cursor: 'pointer',
                               userSelect: 'none',
                               transition: 'background-color 0.15s ease, color 0.15s ease',
@@ -1008,15 +972,33 @@ export default function Dinglab({
                     })()}
                   </p>
 
-                  {feedbackMensagem ? (
-                    <div style={{ marginTop: '12px', fontSize: '0.92rem', fontWeight: '800', color: resultadoFeedback === 'acerto' ? COR_ACERTO : '#ef4444', textAlign: 'center', padding: '0 10px' }}>
-                      {feedbackMensagem}
+                  <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#334155', fontWeight: '700', textAlign: 'center' }}>
+                    {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
+                  </div>
+
+                  {resultadoFeedback === 'acerto' && (
+                    <div
+                      style={{
+                        position: 'absolute',
+                        left: '50%',
+                        top: '100%',
+                        transform: 'translateX(-50%)',
+                        marginTop: '10px',
+                        backgroundColor: COR_TOM_CLARO,
+                        color: corDinamica,
+                        fontSize: 'clamp(1.2rem, 7vw, 1.53rem)',
+                        fontWeight: '900',
+                        padding: '6px 18px',
+                        borderRadius: '12px',
+                        boxShadow: '0 4px 14px rgba(0, 0, 0, 0.12)',
+                        whiteSpace: 'nowrap',
+                        zIndex: 20,
+                        pointerEvents: 'none'
+                      }}
+                    >
+                      {t?.dinglabBoaPronuncia || "Boa pronúncia!"}
                     </div>
-                  ) : resultadoFeedback !== 'acerto' ? (
-                    <div style={{ marginTop: '12px', fontSize: '0.84rem', color: '#334155', fontWeight: '700', textAlign: 'center' }}>
-                      {t?.touchToListen || "Toque na palavra para ouvir a pronúncia"}
-                    </div>
-                  ) : null}
+                  )}
                 </div>
               </div>
 
@@ -1236,7 +1218,31 @@ export default function Dinglab({
               boxSizing: 'border-box'
             }}
           >
-            {modoPitstop ? (
+            {resultadoFeedback === 'acerto' ? (
+              <button
+                type="button"
+                onClick={handleAvancarAposAcerto}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: '12px',
+                  border: 'none',
+                  backgroundColor: ns.bg,
+                  color: ns.txt,
+                  fontWeight: '800',
+                  fontSize: 'clamp(0.82rem, 3.6vw, 0.92rem)',
+                  cursor: 'pointer',
+                  minHeight: '44px',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  whiteSpace: 'nowrap'
+                }}
+              >
+                {t?.dinglabFraseVoltouProxima || "A frase voltou ao Dìngloop! Próxima →"}
+              </button>
+            ) : modoPitstop ? (
               <button
                 type="button"
                 onClick={handleVoltarAoDingloop}
