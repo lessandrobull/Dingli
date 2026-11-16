@@ -1,0 +1,638 @@
+{
+  "841": {
+    "explanation": "No mandarim, para dar uma opinião pessoal comparando duas coisas, você começa dizendo quem está avaliando 'eu acho' (wǒ juéda), depois coloca a primeira coisa 'o filme' (diànyǐng), seguida da palavra de comparação 'mais do que' (bǐ), o ponto de referência 'o livro original' (yuánzhù) e por fim o resultado 'muito mais bonito de ver' (hǎokàn duō la). A lógica chinesa coloca a pessoa no topo, o objeto principal e o elemento comparativo antes do resultado final.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — o sujeito que fala."
+      },
+      {
+        "word": "觉得",
+        "meaning": "juéda — Achar / Sentir — jué: perceber; da: partícula de ação (que soa 'da')."
+      },
+      {
+        "word": "电影",
+        "meaning": "diànyǐng — Filme / Cinema — diàn: elétrico; yǐng: sombra."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Em comparação com / Mais que — estabelece a ponte comparativa."
+      },
+      {
+        "word": "原著",
+        "meaning": "yuánzhù — Obra original / Livro original — yuán: origem; zhù: obra escrita."
+      },
+      {
+        "word": "好看",
+        "meaning": "hǎokàn — Bonito de ver / Interessante — hǎo: bom; kàn: olhar."
+      },
+      {
+        "word": "多了",
+        "meaning": "duō la — Muito mais / De longe — duō: muito; la: partícula de mudança (que soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ juéda', mergulhe a voz no 3º tom em 'wǒ', abra um sorriso tenso em 'djiué' subindo no 2º tom e termine na partícula frouxa 'da' sem falar 'dê'. Em 'diànyǐng', golpeie seco em 'dièn' travando a língua no dente e jogue a voz para o fundo da garganta subindo no 3º tom em 'yǐng'. Para 'bǐ yuánzhù', dê um estalo seco sem ar em 'bǐ' afundando a voz, monte o bico em 'yüén' subindo no 2º tom e enrole a língua para trás em 'djù' no 4º tom seco. Em 'hǎokàn duō la', afunde a voz em 'rrǎo', assopre um jato forte de ar em 'kàn' no 4º tom seco com corte no dente, sustente 'duō' plano no 1º tom e finalize leve em 'la'.\nLeia: Wǒ djüé-da dièn-yǐng bǐ yüén-djù rrǎo-kàn duō la."
+  },
+  "842": {
+    "explanation": "Para concordar com alguém em mandarim, a ideia vem na ordem direta: 'eu' (wǒ) mais o grau da concordância 'completamente' (wánquán), seguido da ação 'concordar' (tóngyì) e por último o objeto 'seu ponto de vista' (nǐ da guāndiǎn). A partícula 'da' entra ligando 'você' ao 'ponto de vista' para indicar de quem é a ideia.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — o sujeito."
+      },
+      {
+        "word": "完全",
+        "meaning": "wánquán — Completamente / Totalmente — wán: completo; quán: inteiro."
+      },
+      {
+        "word": "同意",
+        "meaning": "tóngyì — Concordar / Estar de acordo — tóng: igual; yì: ideia."
+      },
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Seu / De você — nǐ: você; de: partícula de posse (que soa 'da')."
+      },
+      {
+        "word": "观点",
+        "meaning": "guāndiǎn — Ponto de vista / Opinião — guān: observar; diǎn: ponto."
+      }
+    ],
+    "pronuncia": "Comece em 'Wǒ' afundando no 3º tom grave. Em 'wánquán', suba no 2º tom com 'uán' cortado no dente e abra um sorriso tenso soltando um jato forte de ar em 'tchüén' no 2º tom. Em 'tóngyì', assopre ar em 'tông' subindo no 2º tom e dê um golpe seco em 'yì' no 4º tom. Em 'nǐ da', afunde a voz em 'nǐ' e solte a partícula frouxa 'da' sem falar 'dê'. Finalize em 'guāndiǎn' sustentando 'guān' plano e alto no 1º tom com a língua no dente e mergulhe a voz em 'diǎn' no 3º tom grave.\nLeia: Wǒ uán-tchüén tông-yì nǐ da guān-diǎn."
+  },
+  "843": {
+    "explanation": "Ao expressar dúvida com polidez, os chineses costumam suavizar a frase colocando primeiro um aviso de sinceridade 'falando a verdade' (shuō shíhuà), seguido de 'eu acho' (wǒ juéda) e uma inversão atenuante 'ao contrário' (dào) antes da negação 'não necessariamente' (bù yīdìng). Essa estrutura mostra honestidade sem soar confrontativa.",
+    "breakdown": [
+      {
+        "word": "说实话",
+        "meaning": "shuō shíhuà — Para ser honesto / Falando a verdade — shuō: falar; shí: real; huà: palavra."
+      },
+      {
+        "word": "我觉得",
+        "meaning": "wǒ juéde — Eu acho / Sinto — wǒ: eu; juéde: achar/sentir (que soa 'juéda')."
+      },
+      {
+        "word": "倒",
+        "meaning": "dào — Pelo contrário / Na verdade — marca uma reviravolta suave na ideia."
+      },
+      {
+        "word": "不一定",
+        "meaning": "bù yīdìng — Não necessariamente / Não é certeza — bù: não; yīdìng: com certeza."
+      }
+    ],
+    "pronuncia": "Em 'Shuō shíhuà', enrole a língua para trás para mandar o som plano no 1º tom em 'chuō', suba no 2º tom com a língua virada em 'jí' e raspe a garganta em 'rruà' caindo seco no 4º tom. Em 'wǒ juéda', afunde em 'wǒ', abra sorriso tenso em 'djüé' subindo no 2º tom e solte 'da' leve. Em 'dào', dê um estalo seco sem ar no 4º tom. Em 'bù yīdìng', note a mutação: o 'bù' vira 2º tom ascendente 'bú' antes do 4º tom de 'yí', ficando 'bú yí-dìng', caindo seco no estalo 'dìng'.\nLeia: Chuō jí-rruà, wǒ djüé-da dào bú yí-dìng."
+  },
+  "844": {
+    "explanation": "Para perguntar a opinião de alguém sobre o melhor método em mandarim, a ordem lógica é: 'você acha' (nǐ juéda), seguido do tema 'aprender inglês' (xué Yīngyǔ), depois o qualificador 'o melhor método' (zuì hǎo da fāngfǎ) e o fechamento interrogativo 'é o quê?' (shì chán-ma). No mandarim, a pergunta não muda a ordem das palavras, ela apenas coloca 'o quê' no lugar do objeto.",
+    "breakdown": [
+      {
+        "word": "你觉得",
+        "meaning": "nǐ juéde — Você acha — nǐ: você; juéde: achar (que soa 'juéda')."
+      },
+      {
+        "word": "学英语",
+        "meaning": "xué Yīngyǔ — Aprender inglês — xué: estudar; Yīngyǔ: língua inglesa."
+      },
+      {
+        "word": "最好的",
+        "meaning": "zuì hǎo de — O melhor — zuì: o mais; hǎo: bom; de: partícula de ligação (que soa 'da')."
+      },
+      {
+        "word": "方法",
+        "meaning": "fāngfǎ — Método / Maneira — fāng: direção; fǎ: lei/modo."
+      },
+      {
+        "word": "是什么",
+        "meaning": "shì shénme — É o quê? — shì: ser; shénme: o quê (que soa 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ juéda', afunde em 'nǐ', suba em sorriso tenso em 'djüé' e solte 'da' leve. Em 'xué Yīngyǔ', faça o chiado fino com sorriso em 'xüé' subindo no 2º tom, sustente 'Yīng' alto no 1º tom na garganta e arme o bico em 'yǔ' no 3º tom grave. Em 'zuì hǎo da', estale 'tsuì' seco no 4º tom, afunde a voz em 'rrǎo' e solte 'da' neutro. Em 'fāngfǎ', lance 'fāng' alto e plano, e afunde em 'fǎ'. Termine em 'shì chán-ma': enrole a língua para trás em 'chì' no 4º tom seco, e diga 'chán-ma' leve e rápido.\nLeia: Nǐ djüé-da xüé Yīng-yǔ tsuì rrǎo da fāng-fǎ chì chán-ma?"
+  },
+  "845": {
+    "explanation": "Em mandarim, sentimentos sobre como fomos tratados usam o padrão 'eu em relação a X posição/atitude estou muito decepcionado'. Primeiro vem 'eu' (wǒ), depois a ponte 'em relação a' (duì), a outra parte 'eles' (tāmen), a ação 'tratar' (duìdài), 'nós' (wǒmen), a ligação 'da' e a atitude (tàidù), concluindo com o estado emocional 'extremamente decepcionado' (fēicháng shìwàng).",
+    "breakdown": [
+      {
+        "word": "我对他们",
+        "meaning": "wǒ duì tāmen — Eu em relação a eles — wǒ: eu; duì: em relação a; tāmen: eles."
+      },
+      {
+        "word": "对待我们的",
+        "meaning": "duìdài wǒmen de — Tratar o nosso — duìdài: tratar; wǒmen: nós; de: partícula de ligação (que soa 'da')."
+      },
+      {
+        "word": "态度",
+        "meaning": "tàidù — Atitude / Comportamento — tài: postura; dù: medida."
+      },
+      {
+        "word": "非常",
+        "meaning": "fēicháng — Extremamente / Muito — fēi: não comum; cháng: frequente."
+      },
+      {
+        "word": "失望",
+        "meaning": "shìwàng — Decepcionado — shì: perder; wàng: esperança."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ duì tāmen', afunde a voz em 'wǒ', estale o 'd' seco sem ar em 'duêi' no 4º tom, assopre 'tā' plano no 1º tom e diga 'man' leve. Em 'duìdài wǒmen da', mande dois golpes secos sem ar em 'duêi-dài', afunde em 'wǒ', solte 'man' e a partícula 'da' frouxa. Em 'tàidù', assopre um jato forte em 'tài' no 4º tom e estale o 'd' seco sem ar em 'dù'. Em 'fēicháng', lance 'fēi' alto no 1º tom e enrole a língua para chiar em 'tcháng' subindo no 2º tom com ar. Conclua em 'shìwàng' enrolando a língua em 'chì' no 4º tom e caindo seco em 'uàng'.\nLeia: Wǒ duêi tā-man duêi-dài wǒ-man da tài-dù fēi-tcháng chì-uàng."
+  },
+  "846": {
+    "explanation": "Nativos expressam entusiasmo por eventos futuros conectando o pensamento com a ideia 'assim que penso em X, eu fico Y'. A estrutura começa com 'um pensar sobre' (yī xiǎngdào), a possibilidade 'talvez vá' (kěnéng huì), a ação 'mudar de casa' (bānjiā), seguida do gatilho 'então eu' (wǒ jiù) e o estado emocional 'especialmente animado' (tèbié xīngfèn).",
+    "breakdown": [
+      {
+        "word": "一想到",
+        "meaning": "yī xiǎngdào — Assim que penso em — yī: assim que; xiǎngdào: pensar/chegar à ideia."
+      },
+      {
+        "word": "可能会",
+        "meaning": "kěnéng huì — Talvez vá / Ser possível — kěnéng: possível; huì: ir/haver chance."
+      },
+      {
+        "word": "搬家",
+        "meaning": "bānjiā — Mudar de casa — bān: mover; jiā: casa."
+      },
+      {
+        "word": "我就",
+        "meaning": "wǒ jiù — Eu então — wǒ: eu; jiù: então/imediatamente."
+      },
+      {
+        "word": "特别",
+        "meaning": "tèbié — Especialmente / Muito — tè: especial; bié: outro."
+      },
+      {
+        "word": "兴奋",
+        "meaning": "xīngfèn — Animado / Excitado — xīng: erguer; fèn: impulsionar."
+      }
+    ],
+    "pronuncia": "Em 'Yī xiǎngdào', o numeral 'yī' vira 4º tom 'yì' antes de 3º tom: diga 'yì', faça o chiado de sorriso em 'xiǎng' afundando no 3º tom e estale o 'd' seco em 'dào' no 4º tom. Em 'kěnéng huì', assopre 'kǎ' gutural subindo no 2º tom, diga 'náng' subindo no 2º tom e caia seco em 'rruêi' no 4º tom. Em 'bānjiā', estale 'bān' plano com corte no dente e abra sorriso tenso em 'djiā' no 1º tom. Em 'wǒ jiù', afunde em 'wǒ' e estale em sorriso seco no 4º tom em 'djiôu'. Em 'tèbié', assopre 'tè' seco no 4º tom e estale 'bié' subindo no 2º tom. Termine com sorriso sibilante alto em 'xīng' no 1º tom e golpe seco com corte dental em 'fèn' no 4º tom.\nLeia: Yì xiǎng-dào kǎ-náng rruêi bān-djiā, wǒ djiôu tè-bié xīng-fèn."
+  },
+  "847": {
+    "explanation": "Para expressar um julgamento moral ou opinião ética em mandarim, você começa com 'eu acho' (wǒ juéda), depois insere a expressão fixa de quatro ideogramas 'usar a aparência para julgar pessoas' (yǐmàoqǔrén), fechando com a afirmação 'é muito não correto' (shì hěn bù duì da). A ordem chinesa apresenta a atitude como um bloco inteiro antes de dar a sentença moral.",
+    "breakdown": [
+      {
+        "word": "我觉得",
+        "meaning": "wǒ juéde — Eu acho — wǒ: eu; juéde: achar (que soa 'juéda')."
+      },
+      {
+        "word": "以貌取人",
+        "meaning": "yǐmàoqǔrén — Julgar pessoas pela aparência — yǐ: usar; mào: aparência; qǔ: pegar/julgar; rén: pessoa."
+      },
+      {
+        "word": "是很不对的",
+        "meaning": "shì hěn bù duì de — É muito errado — shì: ser; hěn: muito; bù duì: não correto; de: partícula de confirmação (que soa 'da')."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ juéda', afunde a voz em 'wǒ', abra sorriso em 'djüé' subindo no 2º tom e solte 'da' leve. Em 'yǐmàoqǔrén', afunde em 'yǐ', dê golpe seco no 4º tom em 'mào', projete o bico soltando um jato forte de ar com sorriso tenso em 'tchǚ' no 3º tom grave e enrole a língua para vibrar 'jên' subindo no 2º tom com corte no dente. Em 'shì hěn bù duì da', enrole a língua em 'chì' no 4º tom seco, afunde a voz em 'rrěn', note a mutação de negação: 'bù' antes de 4º tom vira 2º tom 'bú', estale o 'd' seco em 'duêi' no 4º tom e conclua na partícula frouxa 'da' sem falar 'dê'.\nLeia: Wǒ djüé-da yǐ-mào-tchǚ-jên chì rrěn bú duêi da."
+  },
+  "848": {
+    "explanation": "A estrutura para falar de interesses em mandarim segue o padrão fixo 'eu desde sempre em relação a X sou muito interessado'. Começa com 'eu' (wǒ), 'desde sempre' (yīzhí), o indicador de alvo 'em relação a' (duì), o tópico 'romances históricos' (lìshǐ xiǎoshuō), o intensificador 'muito' (hěn) e o bloco final 'sentir interesse' (gǎn xìngqù).",
+    "breakdown": [
+      {
+        "word": "我一直",
+        "meaning": "wǒ yīzhí — Eu desde sempre — wǒ: eu; yīzhí: continuamente/sempre."
+      },
+      {
+        "word": "对历史小说",
+        "meaning": "duì lìshǐ xiǎoshuō — Em relação a romances históricos — duì: em relação a; lìshǐ: história; xiǎoshuō: romance/ficção."
+      },
+      {
+        "word": "感兴趣",
+        "meaning": "gǎn xìngqù — Sentir interesse / Ter interesse — gǎn: sentir; xìngqù: interesse."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ yīzhí', o 3º tom de 'wǒ' vira subida leve antes de outro 3º tom: faça 'wó', o numeral 'yī' vira 2º tom 'yí' antes do 2º tom 'jí' (com língua enrolada para trás). Em 'duì lìshǐ xiǎoshuō', dê golpe seco em 'duêi' no 4º tom, golpeie 'lì' no 4º tom, enrole a língua para chiar em 'chǐ' no 3º tom, faça o chiado de sorriso em 'xiǎo' afundando no 3º tom e enrole a língua para chiar alto e plano no 1º tom em 'chuō'. Em 'gǎn xìngqù', estale o 'g' seco sem ar em 'gǎn' com a língua no dente, faça o chiado sibilante de sorriso no 4º tom em 'xìng' ressoando na garganta e arme o bico com sorriso tenso soltando um jato forte de ar em 'tchù' no 4º tom seco.\nLeia: Wó yí-jí duêi lì-chǐ xiǎo-chuō gǎn xìng-tchù."
+  },
+  "849": {
+    "explanation": "No mandarim, a ordem temporal situa o evento que desencadeou a emoção antes do próprio sentimento. A frase começa com 'ela' (tā), a percepção 'ouvir esta notícia' (tīngdào zhèga xiāoxi), o momento no tempo 'quando' (da shíhou) e fecha com a emoção 'ficou muito chateada/triste' (hěn nánguò).",
+    "breakdown": [
+      {
+        "word": "她听到",
+        "meaning": "tā tīngdào — Ela ouviu / Ao escutar — tā: ela; tīngdào: escutar."
+      },
+      {
+        "word": "这个消息",
+        "meaning": "zhège xiāoxi — Esta notícia — zhège: este (que soa 'zhèga'); xiāoxi: notícia."
+      },
+      {
+        "word": "的时候",
+        "meaning": "de shíhou — Na hora de / Quando — de: partícula (que soa 'da'); shíhou: tempo/momento."
+      },
+      {
+        "word": "很难过",
+        "meaning": "hěn nánguò — Muito triste / Chateada — hěn: muito; nánguò: triste."
+      }
+    ],
+    "pronuncia": "Em 'Tā tīngdào', assopre 'tā' no 1º tom alto, assopre 'tīng' no 1º tom e estale o 'd' seco em 'dào' no 4º tom. Em 'zhèga xiāoxi', enrole a língua em 'djè' no 4º tom seco, use 'ga' gutural aberto sem falar 'gê', e faça o chiado fino de sorriso em 'xiāo' no 1º tom com 'xi' átono leve. Em 'da shíhou', solte 'da' neutro, enrole a língua para vibrar 'jí' subindo no 2º tom e 'rrou' suave. Conclua em 'hěn nánguò' afundando 'rrěn' com a língua no dente, subindo em 'nán' no dente e caindo no 4º tom em 'guò'.\nLeia: Tā tīng-dào djè-ga xiāo-xi da jí-rrou rrěn nán-guò."
+  },
+  "850": {
+    "explanation": "Para expressar que você realmente rejeita uma ideia ou não quer fazer algo, o mandarim usa a partícula enfática 'kě' antes da negação 'não quero' (bù xiǎng), criando o sentido de 'eu realmente não estou fim de'. Em seguida vem o período de tempo 'fim de semana' (zhōumò) e por último a ação 'fazer hora extra' (jiābān). A indicação do tempo sempre antecede o verbo.",
+    "breakdown": [
+      {
+        "word": "我可不想",
+        "meaning": "wǒ kě bù xiǎng — Eu realmente não quero — wǒ: eu; kě: certamente/realmente (ênfase); bù: não; xiǎng: querer."
+      },
+      {
+        "word": "周末",
+        "meaning": "zhōumò — Fim de semana — zhōu: ciclo/semana; mò: final."
+      },
+      {
+        "word": "加班",
+        "meaning": "jiābān — Trabalhar hora extra — jiā: adicionar; bān: turno."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ kě bù xiǎng', note a sequência de 3ºs tons: 'wǒ' vira subida suave 'wó', assopre o som gutural em 'kě' afundando no 3º tom, 'bù' muda para o 2º tom 'bú' pela fluência antes de 'xiǎng' que afunda no 3º tom grave com sorriso espalmado. Em 'zhōumò', enrole a língua para trás em 'djōu' sustentando o 1º tom alto e faça a transição labial 'muò' caindo no 4º tom seco. Termine em 'jiābān': abra sorriso tenso estalando sem ar em 'djiā' no 1º tom alto e estale o 'b' seco sem ar com corte dental em 'bān' no 1º tom.\nLeia: Wó kě bú xiǎng djōu-muò djiā-bān."
+  },
+  "851": {
+    "explanation": "Nas comparações de estado pessoal ao longo do tempo, o mandarim coloca primeiro o sujeito 'eu' (wǒ), a marca comparativa 'mais do que' (bǐ), a referência de tempo 'um ano atrás' (yī nián qián), a palavra de intensidade 'ainda mais' (gèng) e a característica 'ter confiança' (yǒu xìnxīn), terminando com 'la' para marcar o ganho desse novo estado.",
+    "breakdown": [
+      {
+        "word": "我比",
+        "meaning": "wǒ bǐ — Eu em comparação com — wǒ: eu; bǐ: comparar/mais que."
+      },
+      {
+        "word": "一年前",
+        "meaning": "yī nián qián — Um ano atrás — yī: um; nián: ano; qián: antes/atrás."
+      },
+      {
+        "word": "更有",
+        "meaning": "gèng yǒu — Ainda mais ter — gèng: ainda mais; yǒu: ter."
+      },
+      {
+        "word": "信心了",
+        "meaning": "xìnxīn le — Confiança — xìn: acreditar; xīn: coração; le: partícula de estado (que soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ bǐ', duas sílabas de 3º tom juntas: 'wǒ' vira 2º tom 'wó', e 'bǐ' afunda no 3º tom grave com 'b' seco. Em 'yī nián qián', o numeral 'yī' antecede 2º tom e vira 4º tom 'yì': diga 'yì', suba 'nién' com corte dental e suba em 'tchién' com sorriso tenso disparando ar. Em 'gèng yǒu', estale o 'g' seco no 4º tom em 'gèng' ressoando na garganta e afunde a voz em 'yǒu'. Em 'xìnxīn le', faça o chiado fino de sorriso caindo seco no 4º tom em 'xìn' com corte no dente, sustente 'xīn' plano e limpo no 1º tom e finalize na partícula frouxa 'la' sem falar 'lê'.\nLeia: Wó bǐ yì nién tchién gèng yǒu xìn-xīn la."
+  },
+  "852": {
+    "explanation": "Para fazer uma pergunta sobre a dificuldade de algo, a estrutura chinesa apresenta o sujeito 'você' (nǐ), a avaliação 'acha' (juéda), a ação descrita 'expressar os sentimentos internos' (biǎodá nèixīn gǎnshòu), o grau 'muito difícil' (hěn nán) e a partícula interrogativa final 'ma'. A pergunta inteira mantém a ordem das palavras de uma afirmação, apenas acrescentando a partícula no fim.",
+    "breakdown": [
+      {
+        "word": "你觉得",
+        "meaning": "nǐ juéde — Você acha — nǐ: você; juéde: achar (que soa 'juéda')."
+      },
+      {
+        "word": "表达",
+        "meaning": "biǎodá — Expressar / Manifestar — biǎo: exteriorizar; dá: alcançar."
+      },
+      {
+        "word": "内心感受",
+        "meaning": "nèi xīn gǎn shòu — Sentimentos internos — nèi: interno; xīn: coração; gǎn: sentir; shòu: receber."
+      },
+      {
+        "word": "很难吗",
+        "meaning": "hěn nán ma — É muito difícil? — hěn: muito; nán: difícil; ma: partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ juéda', afunde em 'nǐ', suba em sorriso tenso em 'djüé' e solte 'da' leve. Em 'biǎodá', afunde em 'biǎo' e estale o 'd' seco subindo no 2º tom em 'dá'. Em 'nèi xīn gǎn shòu', dê golpe seco em 'nèi', sustente 'xīn' alto e plano no 1º tom em sorriso, afunde em 'gǎn' travando a língua no dente e enrole a língua para trás caindo seco em 'chôu' no 4º tom. Em 'hěn nán ma', a sequência de 3º tom 'hěn' vira subida suave 'rrěn' antes de 'nán' que sobe no 2º tom cortando no dente, terminando com 'ma' leve e frouxo sem força.\nLeia: Nǐ djüé-da biǎo-dá nèi-xīn gǎn-chôu rrěn nán ma?"
+  },
+  "853": {
+    "explanation": "A expressão de expectativa otimista em mandarim coloca o sujeito 'eu' (wǒ) no início, o grau 'muito' (hěn), o verbo 'aguardar com expectativa' (qīdài) e o evento esperado substantivado 'a chegada das férias' (jiàqī da dàolái). A ordem do pensamento chinês especifica primeiro a atitude emocional e depois a manifestação do evento.",
+    "breakdown": [
+      {
+        "word": "我很期待",
+        "meaning": "wǒ hěn qīdài — Eu aguardo muito — wǒ: eu; hěn: muito; qīdài: aguardar com expectativa."
+      },
+      {
+        "word": "假期的",
+        "meaning": "jiàqī de — Das férias — jiàqī: período de férias; de: partícula de ligação (que soa 'da')."
+      },
+      {
+        "word": "到来",
+        "meaning": "dàolái — Chegada / Vinda — dào: chegar; lái: vir."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ hěn qīdài', duas sílabas de 3º tom juntas fazem 'wǒ' virar 2º tom 'wó': diga 'wó', afunde em 'rrěn' com a língua no dente, abra sorriso tenso soltando um jato forte de ar no 1º tom em 'tchī' e dê um golpe seco em 'dài' no 4º tom. Em 'jiàqī da', dê golpe seco no 4º tom com sorriso tenso em 'djià', sustente 'tchī' plano no 1º tom com ar e solte 'da' neutro sem falar 'dê'. Finalize em 'dàolái': estale o 'd' seco caindo no 4º tom em 'dào' e suba a entonação no 2º tom em 'lái'.\nLeia: Wó rrěn tchī-dài djià-tchī da dào-lái."
+  },
+  "854": {
+    "explanation": "Ao propor uma mudança de atitude em grupo, os chineses estruturam a frase com 'eu acho' (wǒ juéda), o sujeito coletivo 'nós' (wǒmen), o verbo dever 'deveríamos' (yīnggāi), a orientação de ação 'olhar mais para' (duō kàn) e o aspecto alvo 'o lado positivo' (jījí da yīmiàn). A preferência 'olhar mais' vem sempre antes do objeto a ser observado.",
+    "breakdown": [
+      {
+        "word": "我觉得",
+        "meaning": "wǒ juéde — Eu acho — wǒ: eu; juéde: achar (que soa 'juéda')."
+      },
+      {
+        "word": "我们应该",
+        "meaning": "wǒmen yīnggāi — Nós deveríamos — wǒmen: nós; yīnggāi: dever."
+      },
+      {
+        "word": "多看",
+        "meaning": "duō kàn — Olhar mais — duō: mais/bastante; kàn: olhar/ver."
+      },
+      {
+        "word": "积极的一面",
+        "meaning": "jījí de yīmiàn — O lado positivo — jījí: positivo/ativo; de: partícula (que soa 'da'); yīmiàn: um lado."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ juéda', afunde em 'wǒ', suba em 'djüé' com sorriso tenso e solte 'da' neutro. Em 'wǒmen yīnggāi', afunde 'wǒ', diga 'man' leve, sustente 'yīng' no 1º tom na garganta e estale o 'g' seco sem ar no 1º tom plano em 'gāi'. Em 'duō kàn', sustente 'duō' plano no 1º tom e assopre um jato forte em 'kàn' no 4º tom seco. Em 'jījí da yīmiàn', estale 'djī' em sorriso no 1º tom, suba 'djí' no 2º tom, diga 'da' leve, o numeral 'yī' vira 4º tom 'yì' antes de 4º tom e termine no estalo seco 'mièn' travando a língua no dente.\nLeia: Wǒ djüé-da wǒ-man yīng-gāi duō kàn djī-djí da yì-mièn."
+  },
+  "855": {
+    "explanation": "Para expressar surpresa com a reação de alguém, o mandarim usa a estrutura de causa e efeito 'X em relação a Y reação fez com que eu ficasse Z'. Começa com ele 'ele' (tā), o conector 'em relação a' (duì), 'esta notícia' (zhèga xiāoxi), 'da' (ligando à reação fǎnyìng), o verbo causativo 'fazer/deixar' (ràng), a pessoa 'eu' (wǒ) e o resultado 'bastante inesperado' (tǐng yìwài da).",
+    "breakdown": [
+      {
+        "word": "他对这个消息的",
+        "meaning": "tā duì zhège xiāoxi de — A reação dele a esta notícia — tā: ele; duì: em relação a; zhège: esta (que soa 'zhèga'); xiāoxi: notícia; de: partícula (que soa 'da')."
+      },
+      {
+        "word": "反应",
+        "meaning": "fǎnyìng — Reação / Resposta — fǎn: voltar; yìng: responder."
+      },
+      {
+        "word": "让我挺意外的",
+        "meaning": "ràng wǒ tǐng yìwài de — Me deixou bastante surpreso — ràng: fazer/deixar; wǒ: eu; tǐng: bastante; yìwài: surpreendente/inesperado; de: partícula final (que soa 'da')."
+      }
+    ],
+    "pronuncia": "Em 'Tā duì zhèga xiāoxi da', assopre 'tā' no 1º tom, estale 'duêi' no 4º tom, enrole a língua em 'djè' no 4º tom seco, solte 'ga' gutural sem falar 'gê', faça a sílaba 'xiāo' no 1º tom com sorriso, 'xi' leve e a partícula frouxa 'da'. Em 'fǎnyìng', afunde em 'fǎn' com corte no dente e dê golpe seco em 'yìng' ressoando na garganta. Em 'ràng wǒ tǐng yìwài da', dê golpe seco enrolando a língua em 'jàng' no 4º tom, afunde 'wǒ', afunde 'tǐng' na garganta, dê dois golpes secos no 4º tom em 'yì-uài' e termine na partícula frouxa 'da' sem falar 'dê'.\nLeia: Tā duêi djè-ga xiāo-xi da fǎn-yìng jàng wǒ tǐng yì-uài da."
+  },
+  "856": {
+    "explanation": "A insatisfação com um serviço é expressa em mandarim com a fórmula 'eu em relação ao serviço fornecido aqui não estou muito satisfeito'. A sequência inicia com 'eu' (wǒ), 'em relação a' (duì), a localização 'aqui' (zhèlǐ), o verbo de oferta 'fornecer' (tígōng), o objeto 'serviço' (fúwù), e termina na negação qualificada 'não muito satisfeito' (bù tài mǎnyì).",
+    "breakdown": [
+      {
+        "word": "我对这里提供的",
+        "meaning": "wǒ duì zhèlǐ tígōng de — Eu em relação ao fornecido aqui — wǒ: eu; duì: em relação a; zhèlǐ: aqui; tígōng: fornecer; de: partícula (que soa 'da')."
+      },
+      {
+        "word": "服务",
+        "meaning": "fúwù — Serviço — fú: servir; wù: tarefa."
+      },
+      {
+        "word": "不太满意",
+        "meaning": "bù tài mǎnyì — Não muito satisfeito — bù: não; tài: muito/demais; mǎnyì: satisfeito."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ duì zhèlǐ', afunde em 'wǒ', estale 'duêi' seco no 4º tom, enrole a língua em 'djè' no 4º tom e afunde a voz em 'lǐ'. Em 'tígōng da', assopre 'tí' subindo no 2º tom, estale o 'g' seco sem ar em 'gōng' no 1º tom alto com bico de 'ô' fechado e solte 'da' neutro. Em 'fúwù', suba a entonação no 2º tom em 'fú' e caia seco em 'uù' no 4º tom. Em 'bù tài mǎnyì', a negação 'bù' vira 2º tom 'bú' antes do 4º tom 'tài' (bú-tài), afunde a voz em 'mǎn' com a língua travando no dente e dê um golpe seco no 4º tom em 'yì'.\nLeia: Wǒ duêi djè-lǐ tí-gōng da fú-uù bú tài mǎn-yì."
+  },
+  "857": {
+    "explanation": "Para expressar um princípio geral sobre manter o otimismo diante de adversidades, a ordem chinesa coloca a condição problemática no início 'quando as coisas não correm bem' (shìqing bù shùnlì da shíhou), seguida da ação recomendada 'manter o otimismo' (bǎochí lèguān) e o valor final 'é muito importante' (hěn zhòngyào). A condição temporal precede a conclusão do valor.",
+    "breakdown": [
+      {
+        "word": "事情不顺利的时候",
+        "meaning": "shìqing bù shùnlì de shíhou — Quando as coisas não vão bem — shìqing: coisas/assuntos; bù shùnlì: não fluído/suave; de shíhou: na hora de/quando (de soa 'da')."
+      },
+      {
+        "word": "保持乐观",
+        "meaning": "bǎochí lèguān — Manter o otimismo — bǎochí: manter; lèguān: otimista."
+      },
+      {
+        "word": "很重要",
+        "meaning": "hěn zhòngyào — É muito importante — hěn: muito; zhòngyào: importante."
+      }
+    ],
+    "pronuncia": "Em 'Shìqing bù shùnlì da shíhou', enrole a língua em 'chì' no 4º tom seco, 'qing' leve sem acento, 'bù' no 4º tom, enrole a língua para chiar em 'chuèn' no 4º tom com corte dental, 'lì' seco no 4º tom, solte a partícula 'da' leve, enrole a língua para vibrar 'jí' subindo no 2º tom e 'rrou' leve. Em 'bǎochí lèguān', afunde em 'bǎo' com 'b' seco, enrole a língua assoprando 'tchí' subindo no 2º tom, use o som gutural aberto 'là' caindo no 4º tom sem falar 'lê', e sustente 'guān' alto e plano no 1º tom com corte no dente. Em 'hěn zhòngyào', afunde em 'rrěn', enrole a língua em 'djông' caindo seco no 4º tom ressoando na garganta e dê golpe seco no 4º tom em 'iào'.\nLeia: Chì-qing bù chuèn-lì da jí-rrou bǎo-tchí là-guān rrěn djông-iào."
+  },
+  "858": {
+    "explanation": "Para expressar que uma condição é suficiente para você não se importar com o tempo de espera, o mandarim usa a conjunção condicional 'desde que' (zhǐyào) no início, seguida do requisito 'ter livros para ler' (yǒu shū kàn), o sujeito 'eu' (wǒ), a negação do incômodo 'não me importo' (bù jièyì) e a ação de espera 'esperar mais um pouco' (duō děng huìr).",
+    "breakdown": [
+      {
+        "word": "只要",
+        "meaning": "zhǐyào — Desde que / Contanto que — zhǐ: apenas; yào: querer/precisar."
+      },
+      {
+        "word": "有书看",
+        "meaning": "yǒu shū kàn — Ter livros para ler — yǒu: ter; shū: livro; kàn: ler/olhar."
+      },
+      {
+        "word": "我不介意",
+        "meaning": "wǒ bù jièyì — Eu não me importo — wǒ: eu; bù: não; jièyì: importar-se."
+      },
+      {
+        "word": "多等会儿",
+        "meaning": "duō děng huìr — Esperar mais um pouco — duō: mais; děng: esperar; huìr: um momento (com erhua)."
+      }
+    ],
+    "pronuncia": "Em 'Zhǐyào', enrole a língua para trás em 'djǐ' afundando a voz no 3º tom e dê um golpe seco no 4º tom em 'iào'. Em 'yǒu shū kàn', afunde a voz em 'yǒu', enrole a língua para chiar alto e plano no 1º tom em 'chū' e assopre um jato forte de ar em 'kàn' caindo seco no 4º tom com corte no dente. Em 'wǒ bù jièyì', a negação 'bù' vira 2º tom 'bú' antes de 4º tom 'jiè': faça 'wǒ bú djiè-yì' com dois golpes secos no 4º tom em sorriso tenso. Em 'duō děng huìr', sustente 'duō' plano no 1º tom, afunde a voz no 3º tom no som gutural aberto 'dǎng' ressoando na garganta e enrole o final da frase na língua curvada para trás em 'rruêir'.\nLeia: Djǐ-iào yǒu chū kàn, wǒ bú djiè-yì duō dǎng rruêir."
+  },
+  "859": {
+    "explanation": "A expressão de uma crença de vida em mandarim abre com o sujeito 'eu' (wǒ), o marcador temporal 'desde sempre' (yīzhí), o verbo de crença 'acreditar' (xiāngxìn) e a afirmação do valor moral 'a honestidade é extremamente importante' (chéngshí fēicháng zhòngyào). A convicção pessoal atua como o motor que introduz a verdade geral.",
+    "breakdown": [
+      {
+        "word": "我一直相信",
+        "meaning": "wǒ yīzhí xiāngxìn — Eu sempre acreditei — wǒ: eu; yīzhí: continuamente; xiāngxìn: acreditar."
+      },
+      {
+        "word": "诚实",
+        "meaning": "chéngshí — Honestidade / Sincero — chéng: sincero; shí: real."
+      },
+      {
+        "word": "非常重要",
+        "meaning": "fēicháng zhòngyào — Extremamente importante — fēicháng: muito/extremamente; zhòngyào: importante."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ yīzhí xiāngxìn', a sequência de 3º tom faz 'wǒ' virar subida 'wó', o numeral 'yī' vira 2º tom 'yí' antes de 2º tom 'jí' (com língua enrolada para trás), faça o chiado de sorriso alto no 1º tom em 'xiāng' e dê um golpe seco com corte dental no 4º tom em 'xìn'. Em 'chéngshí', enrole a língua assoprando 'tchéng' subindo no 2º tom ressoando na garganta e enrole a língua para vibrar 'jí' subindo no 2º tom. Em 'fēicháng zhòngyào', lance 'fēi' plano no 1º tom, enrole a língua em 'tcháng' subindo no 2º tom, enrole a língua em 'djông' caindo no 4º tom e dê um golpe seco em 'iào' no 4º tom.\nLeia: Wó yí-jí xiāng-xìn tchéng-jí fēi-tcháng djông-iào."
+  },
+  "860": {
+    "explanation": "Para pedir a opinião alheia sobre um estado de coisas presente, a frase começa apontando para a pessoa 'você' (nǐ), seguida do foco de atenção 'em relação à situação atual' (duì mùqián da júshì) e encerra com a expressão interrogativa prática 'como vê?' (zěnma kàn). A estrutura fixa 'duì... zěnma kàn' equivale a 'qual sua opinião sobre...'.",
+    "breakdown": [
+      {
+        "word": "你对目前的",
+        "meaning": "nǐ duì mùqián de — Você em relação à atual — nǐ: você; duì: em relação a; mùqián: atual/momento presente; de: partícula (que soa 'da')."
+      },
+      {
+        "word": "局势",
+        "meaning": "júshì — Situação / Conjuntura — jú: estrutura; shì: tendência/força."
+      },
+      {
+        "word": "怎么看",
+        "meaning": "zěnme kàn — Como vê? — zěnme: como (que soa 'zěnma'); kàn: olhar/ver."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ duì mùqián da', afunde em 'nǐ', estale 'duêi' no 4º tom seco, dê golpe seco em 'mù' no 4º tom, abra sorriso tenso assoprando ar em 'tchién' subindo no 2º tom com a língua no dente e solte 'da' neutro sem falar 'dê'. Em 'júshì', abra sorriso tenso em bico 'djú' subindo no 2º tom e enrole a língua para chiar em 'chì' caindo seco no 4º tom. Termine em 'zěnma kàn': estale 'tsěn' no 3º tom afundando com corte no dente, solte 'ma' leve sem acento e assopre um jato forte de ar em 'kàn' no 4º tom seco cortando no dente.\nLeia: Nǐ duêi mù-tchién da djú-chì tsěn-ma kàn?"
+  },
+  "861": {
+    "explanation": "Expressar apreensão sobre um tema amplo segue o padrão 'eu em relação a X futuro estou um pouco preocupado'. A frase coloca 'eu' (wǒ), 'em relação a' (duì), o tema 'o futuro da Terra' (dìqiú da wèilái), o grau leve 'um pouco' (yǒudiǎn) e a atitude mental 'preocupado' (dānxīn). A área de preocupação precede a especificação da emoção.",
+    "breakdown": [
+      {
+        "word": "我对地球的",
+        "meaning": "wǒ duì dìqiú de — Eu em relação à Terra — wǒ: eu; duì: em relação a; dìqiú: planeta Terra; de: partícula (que soa 'da')."
+      },
+      {
+        "word": "未来",
+        "meaning": "wèilái — Futuro — wèi: ainda não; lái: vir."
+      },
+      {
+        "word": "有点担心",
+        "meaning": "yǒudiǎn dānxīn — Um pouco preocupado — yǒudiǎn: um pouco; dānxīn: preocupar-se (dān: carregar; xīn: coração)."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ duì dìqiú da', afunde a voz em 'wǒ', estale o 'd' seco no 4º tom em 'duêi', estale o 'd' seco em 'dì' no 4º tom, faça o som de 'o' oculto com sorriso tenso assoprando ar em 'tchiôu' subindo no 2º tom e solte 'da' neutro sem falar 'dê'. Em 'wèilái', dê um golpe seco no 4º tom em 'uèi' e suba a entonação no 2º tom em 'lái'. Em 'yǒudiǎn dānxīn', a sequência de 3º tom faz 'yǒu' virar subida 'yóu': faça 'yóu', afunde em 'diǎn' travando no dente, estale o 'd' seco sem ar no 1º tom em 'dān' cortado no dente e faça o chiado fino de sorriso alto e plano no 1º tom em 'xīn'.\nLeia: Wǒ duêi dì-tchiôu da uèi-lái yóu-diǎn dān-xīn."
+  },
+  "862": {
+    "explanation": "Ao relatar o orgulho de uma conquista concluída, o mandarim estabelece a ação finalizada como marcador de tempo inicial 'ao terminar de correr a maratona' (pǎowán mǎlāsōng da shíhou), e só então introduz a avaliação pessoal interna 'eu me senti extremamente orgulhoso' (wǒ gǎndào fēicháng zìháo). A experiência concluída antecede o sentimento resultante.",
+    "breakdown": [
+      {
+        "word": "跑完马拉松的",
+        "meaning": "pǎowán mǎlāsōng de — Ao terminar de correr a maratona — pǎo: correr; wán: terminar; mǎlāsōng: maratona; de: partícula (que soa 'da')."
+      },
+      {
+        "word": "时候",
+        "meaning": "shíhou — Quando / Momento em que — shí: tempo; hou: período."
+      },
+      {
+        "word": "我感到",
+        "meaning": "wǒ gǎndào — Eu senti / Experimentei — wǒ: eu; gǎndào: sentir/perceber."
+      },
+      {
+        "word": "非常自豪",
+        "meaning": "fēicháng zìháo — Extremamente orgulhoso — fēicháng: muito; zìháo: orgulhoso de si."
+      }
+    ],
+    "pronuncia": "Em 'Pǎowán mǎlāsōng da shíhou', assopre um jato forte em 'pǎo' afundando no 3º tom, suba 'uán' no 2º tom cortado no dente, afunde 'mǎ', lance 'lā' alto no 1º tom, projete os lábios no bico de 'ô' abafado em 'sōng' no 1º tom, solte 'da' neutro, enrole a língua para vibrar 'jí' subindo no 2º tom e 'rrou' leve. Em 'wǒ gǎndào', afunde 'wǒ', estale o 'g' seco sem ar em 'gǎn' no 3º tom travando a língua no dente e estale o 'd' seco no 4º tom em 'dào'. Em 'fēicháng zìháo', lance 'fēi' plano no 1º tom, enrole a língua em 'tcháng' subindo no 2º tom, estale 'tsì' seco sem ar na vogal travada no 4º tom e raspe a garganta em 'rráo' subindo no 2º tom.\nLeia: Pǎo-uán mǎ-lā-sōng da jí-rrou wǒ gǎn-dào fēi-tcháng tsì-rráo."
+  },
+  "863": {
+    "explanation": "Para questionar a resistência a mudanças com tom de contestação, a lógica chinesa diz 'eu não entendo por qual razão nós não podemos tentar algo um pouco diferente'. A frase encadeia 'eu não entendo' (wǒ bù míngbai), a pergunta de causa 'por quê' (wèichán-ma), a impossibilidade 'nós não podemos' (wǒmen bù néng), o verbo 'experimentar' (chángshì) e a quantidade/qualidade 'um pouco não igual' (diǎn bù yīyàng da).",
+    "breakdown": [
+      {
+        "word": "我不明白",
+        "meaning": "wǒ bù míngbai — Eu não entendo — wǒ: eu; bù: não; míngbai: entender/claro."
+      },
+      {
+        "word": "为什么",
+        "meaning": "wèishénme — Por quê — wèi: por; shénme: o quê (que soa 'chán-ma')."
+      },
+      {
+        "word": "我们不能",
+        "meaning": "wǒmen bù néng — Nós não podemos — wǒmen: nós; bù: não; néng: poder."
+      },
+      {
+        "word": "尝试点",
+        "meaning": "chángshì diǎn — Tentar um pouco — chángshì: tentar/experimentar; diǎn: um pouco."
+      },
+      {
+        "word": "不一样的",
+        "meaning": "bù yīyàng de — Diferente / Não igual — bù: não; yīyàng: igual; de: partícula (que soa 'da')."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ bù míngbai', afunde 'wǒ', 'bù' no 4º tom seco, suba 'míng' no 2º tom e 'bai' leve sem força. Em 'wèishénme', dê golpe seco no 4º tom em 'uèi' e diga 'chán-ma' leve e rápido sem falar 'chên'. Em 'wǒmen bù néng', afunde 'wǒ', solte 'man' leve, 'bù' no 4º tom seco e suba 'néng' no 2º tom cortando no dente. Em 'chángshì diǎn', enrole a língua assoprando 'tcháng' subindo no 2º tom, enrole a língua em 'chì' no 4º tom seco e afunde a voz no 3º tom em 'diǎn' travando no dente. Em 'bù yīyàng da', a negação 'bù' vira 2º tom 'bú' antes do 4º tom 'yí', e 'yàng' cai no 4º tom ressoando na garganta, terminando na partícula frouxa 'da' sem falar 'dê'.\nLeia: Wǒ bù míng-bai uèi-chán-ma wǒ-man bù néng tcháng-chì diǎn bú yí-yàng da."
+  },
+  "864": {
+    "explanation": "Em mandarim, a relação de causa e efeito em relatos pessoais prefere colocar o motivo externo antes do estado emocional que ele gerou. Assim, diz-se primeiro 'o tempo da palestra foi longo demais' (jiǎngzuò shíjiān tài cháng la), para então concluir com a sensação pessoal 'eu me senti muito entediado' (wǒ juéde hěn wúliáo).",
+    "breakdown": [
+      {
+        "word": "讲座时间",
+        "meaning": "jiǎngzuò shíjiān — O tempo da palestra — jiǎngzuò: palestra/conferência; shíjiān: tempo/duração."
+      },
+      {
+        "word": "太长了",
+        "meaning": "tài cháng le — Longo demais — tài: demais; cháng: longo; le: partícula de excesso (que soa 'la')."
+      },
+      {
+        "word": "我觉得",
+        "meaning": "wǒ juéde — Eu achei / Senti — wǒ: eu; juéde: achar (que soa 'juéda')."
+      },
+      {
+        "word": "很无聊",
+        "meaning": "hěn wúliáo — Muito entediado — hěn: muito; wúliáo: entediante/sem graça."
+      }
+    ],
+    "pronuncia": "Em 'Jiǎngzuò shíjiān', afunde em 'djiǎng' com sorriso tenso, estale 'tsuò' no 4º tom seco, enrole a língua para vibrar 'jí' subindo no 2º tom e feche em 'djiēn' no 1º tom alto com corte no dente. Em 'tài cháng la', assopre 'tài' no 4º tom seco, enrole a língua assoprando 'tcháng' subindo no 2º tom e solte 'la' neutro sem falar 'lê'. Em 'wǒ juéda', afunde em 'wǒ', suba em 'djüé' com sorriso tenso e diga 'da' neutro. Em 'hěn wúliáo', a sequência de 3º tom faz 'hěn' virar subida 'rrěn': faça 'rrěn', passe pela semivogal 'ú' subindo no 2º tom e termine em 'liáo' subindo no 2º tom.\nLeia: Djiǎng-tsuò jí-djiēn tài tcháng la, wǒ djüé-da rrěn wú-liáo."
+  },
+  "865": {
+    "explanation": "A expressão de dúvida sobre a própria capacidade de voltar a confiar em alguém usa o formato 'eu não estou certo se ainda posso ou não posso de novo confiar nele'. A estrutura encadeia 'eu não tenho certeza' (wǒ bù quèdìng), a pergunta embutida de capacidade 'ainda posso ou não posso' (hái néng bù néng), a repetição de tempo 'de novo' (zài), o verbo 'confiar' (xìnrèn) e o objeto 'ele' (tā).",
+    "breakdown": [
+      {
+        "word": "我不确定",
+        "meaning": "wǒ bù quèdìng — Eu não tenho certeza — wǒ: eu; bù: não; quèdìng: ter certeza."
+      },
+      {
+        "word": "还能不能",
+        "meaning": "hái néng bù néng — Se ainda posso ou não — hái: ainda; néng bù néng: poder ou não poder."
+      },
+      {
+        "word": "再信任他",
+        "meaning": "zài xìnrèn tā — Voltar a confiar nele — zài: de novo; xìnrèn: confiar; tā: ele."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ bù quèdìng', afunde em 'wǒ', a negação 'bù' vira 2º tom 'bú' antes de 4º tom 'què': diga 'bú', arme o bico assoprando ar em 'tchüè' no 4º tom seco e estale o 'd' seco no 4º tom em 'dìng'. Em 'hái néng bù néng', raspe a garganta subindo 'rrái' no 2º tom, suba 'néng' no 2º tom cortando no dente, 'bù' leve no 4º tom seco e suba 'néng' no 2º tom. Em 'zài xìnrèn tā', estale 'tsài' seco no 4º tom, faça o chiado de sorriso caindo no 4º tom em 'xìn' com a língua no dente, enrole a língua para vibrar 'jèn' no 4º tom com corte no dente e lance 'tā' alto e plano no 1º tom assoprando ar.\nLeia: Wǒ bú tchüè-dìng rrái néng bù néng tsài xìn-jèn tā."
+  },
+  "866": {
+    "explanation": "Para expressar que um evento traz felicidade, o mandarim utiliza uma frase causativa simples: 'encontrar amigos faz com que eu me sinta muito feliz'. A ordem inicia com a ação 'ver/encontrar os amigos' (jiàndào péngyou), o verbo causativo 'fazer/deixar' (ràng), a pessoa afetada 'eu' (wǒ), o verbo de sensação 'achar/sentir' (juéda) e o estado emocional 'muito feliz' (hěn kāixīn).",
+    "breakdown": [
+      {
+        "word": "见到朋友",
+        "meaning": "jiàndào péngyou — Ver amigos — jiàndào: encontrar/ver; péngyou: amigo."
+      },
+      {
+        "word": "让我",
+        "meaning": "ràng wǒ — Faz com que eu — ràng: fazer/deixar; wǒ: eu."
+      },
+      {
+        "word": "觉得很高兴",
+        "meaning": "juéde hěn kāixīn — Me sinta muito feliz — juéde: achar/sentir (que soa 'juéda'); hěn: muito; kāixīn: feliz/alegre."
+      }
+    ],
+    "pronuncia": "Em 'Jiàndào péngyou', dê um golpe seco no 4º tom com sorriso tenso em 'dièn' travando a língua no dente, estale o 'd' seco no 4º tom em 'dào', assopre um jato forte em 'péng' subindo no 2º tom ressoando na garganta e solte 'you' leve sem acento. Em 'ràng wǒ', enrole a língua para vibrar 'jàng' caindo no 4º tom seco e afunde a voz no 3º tom em 'wǒ'. Em 'juéda hěn kāixīn', suba em sorriso tenso em 'djüé' no 2º tom, solte 'da' neutro, afunde em 'rrěn' com a língua no dente, assopre um jato forte de ar no 1º tom em 'kāi' e faça o chiado fino de sorriso alto e plano no 1º tom em 'xīn'.\nLeia: Dièn-dào péng-you jàng wǒ djüé-da rrěn kāi-xīn."
+  },
+  "867": {
+    "explanation": "Ao falar de um hábito ou preferência contínua de estar em determinado local, o mandarim organiza a frase com 'eu' (wǒ), o marcador de continuidade 'desde sempre' (yīzhí), a intensidade 'muito' (hěn), a preferência 'gostar' (xǐhuan) e a ação de permanência acompanhada do local 'ficar no interior' (dāi zài xiāngxià).",
+    "breakdown": [
+      {
+        "word": "我一直很",
+        "meaning": "wǒ yīzhí hěn — Eu desde sempre muito — wǒ: eu; yīzhí: continuamente; hěn: muito."
+      },
+      {
+        "word": "喜欢待在",
+        "meaning": "xǐhuan dāi zài — Gosto de ficar em — xǐhuan: gostar; dāi: permanecer; zài: em/estar em."
+      },
+      {
+        "word": "乡下",
+        "meaning": "xiāngxià — Campo / Interior — xiāng: vila/campo; xià: baixo/interior."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ yīzhí hěn', três sílabas de 3º tom seguidas mudam o tom: 'wǒ' vira 2º tom 'wó', o numeral 'yī' vira 2º tom 'yí' antes de 2º tom 'jí' (com língua enrolada para trás), e afunde a voz em 'rrěn' com a língua no dente. Em 'xǐhuan dāi zài', afunde em 'xǐ', solte 'rruan' leve sem acento, sustente 'dāi' plano no 1º tom com 'd' seco sem ar e estale 'tsài' seco no 4º tom. Termine em 'xiāngxià': faça o chiado de sorriso alto no 1º tom em 'xiāng' e dê um golpe seco em sorriso tenso no 4º tom em 'xià'.\nLeia: Wó yí-jí rrěn xǐ-rruan dāi tsài xiāng-xià."
+  },
+  "868": {
+    "explanation": "Ao fazer uma pergunta aberta sobre a qualidade mais importante em uma amizade, a ordem lógica chinesa é: 'você acha' (nǐ juéda), a condição de papel 'como amigo / na posição de amigo' (zuòwéi péngyou), o foco principal 'a qualidade mais importante' (zuì zhòngyào da pǐnzhì) e o fechamento interrogativo 'é o quê?' (shì chán-ma).",
+    "breakdown": [
+      {
+        "word": "你觉得",
+        "meaning": "nǐ juéde — Você acha — nǐ: você; juéde: achar (que soa 'juéda')."
+      },
+      {
+        "word": "作为朋友",
+        "meaning": "zuòwéi péngyou — Como amigo / Na condição de amigo — zuòwéi: como/na qualidade de; péngyou: amigo."
+      },
+      {
+        "word": "最重要的品质",
+        "meaning": "zuì zhòngyào de pǐnzhì — A qualidade mais importante — zuì: mais; zhòngyào: importante; de: partícula (que soa 'da'); pǐnzhì: qualidade de caráter."
+      },
+      {
+        "word": "是什么",
+        "meaning": "shì shénme — É o quê? — shì: ser; shénme: o quê (que soa 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ juéda', afunde em 'nǐ', suba em sorriso tenso em 'djüé' e diga 'da' neutro. Em 'zuòwéi péngyou', estale 'tsuò' no 4º tom seco, suba 'uéi' no 2º tom, assopre 'péng' subindo no 2º tom e 'you' leve. Em 'zuì zhòngyào da pǐnzhì', estale 'tsuì' seco no 4º tom, enrole a língua em 'djông' no 4º tom, dê golpe seco em 'iào', diga 'da' neutro, afunde 'pǐn' com sopro forte e a língua no dente, e enrole a língua para vibrar 'djǐ' afundando no 3º tom. Termine em 'shì chán-ma': enrole a língua em 'chì' no 4º tom seco e diga 'chán-ma' leve e rápido sem falar 'chên'.\nLeia: Nǐ djüé-da tsuò-uéi péng-you tsuì djông-iào da pǐn-djǐ chì chán-ma?"
+  },
+  "869": {
+    "explanation": "Para dizer que a atuação de alguém causou uma impressão marcante, o mandarim usa a estrutura formal de resultado 'o desempenho dela para mim deixou uma impressão muito profunda'. A frase começa com 'o desempenho dela' (tā da biǎoyǎn), o benefício/alvo 'para mim' (gěi wǒ), a ação de resultado 'deixar' (liúxià la) e o objeto qualificado 'uma impressão muito profunda' (hěn shēn da yìnxiàng).",
+    "breakdown": [
+      {
+        "word": "她的表演",
+        "meaning": "tā de biǎoyǎn — O desempenho dela — tā: ela; de: partícula (que soa 'da'); biǎoyǎn: apresentação/desempenho."
+      },
+      {
+        "word": "给我留下了",
+        "meaning": "gěi wǒ liúxià le — Deixou para mim — gěi: dar/para; wǒ: eu; liúxià: deixar ficar; le: partícula concluída (que soa 'la')."
+      },
+      {
+        "word": "很深的印象",
+        "meaning": "hěn shēn de yìnxiàng — Uma impressão muito profunda — hěn: muito; shēn: profundo; de: partícula (que soa 'da'); yìnxiàng: impressão."
+      }
+    ],
+    "pronuncia": "Em 'Tā da biǎoyǎn', assopre 'tā' no 1º tom, diga 'da' neutro sem falar 'dê', afunde 'biǎo' no 3º tom e afunde 'yǎn' no 3º tom travando a língua no dente. Em 'gěi wǒ liúxià la', a sequência de 3º tom faz 'gěi' virar subida 'géi': estale o 'g' seco em 'géi' subindo no 2º tom, afunde 'wǒ', faça o som de 'o' oculto subindo no 2º tom em 'liôu', dê um golpe seco no 4º tom em sorriso tenso em 'xià' e solte 'la' neutro sem falar 'lê'. Em 'hěn shēn da yìnxiàng', afunde 'rrěn' com a língua no dente, enrole a língua para chiar alto e plano no 1º tom em 'chēn' com corte no dente, diga 'da' neutro, dê golpe seco no 4º tom em 'yìn' travando no dente e caia no 4º tom seco em 'xiàng'.\nLeia: Tā da biǎo-yǎn géi wǒ liôu-xià la rrěn chēn da yìn-xiàng."
+  },
+  "870": {
+    "explanation": "Para relatar um estado de relaxamento obtido após um período de descanso, a estrutura chinesa coloca o evento concluído e a marcação de tempo primeiro: 'voltar de férias, depois disso' (dùjià huílái yǐhòu). Em seguida, insere o sujeito 'eu' (wǒ), a ação de perceber/sentir 'sinto' (gǎnjué) e o estado final 'especialmente relaxado' (tèbié fàngsōng).",
+    "breakdown": [
+      {
+        "word": "度假回来以后",
+        "meaning": "dùjià huílái yǐhòu — Depois de voltar de férias — dùjià: passar férias; huílái: voltar; yǐhòu: depois de."
+      },
+      {
+        "word": "我感觉",
+        "meaning": "wǒ gǎnjué — Eu sinto / Percebo — wǒ: eu; gǎnjué: sentir/sensação."
+      },
+      {
+        "word": "特别放松",
+        "meaning": "tèbié fàngsōng — Especialmente relaxado — tèbié: especialmente; fàngsōng: relaxar (fàng: soltar; sōng: frouxo)."
+      }
+    ],
+    "pronuncia": "Em 'Dùjià huílái yǐhòu', estale o 'd' seco no 4º tom em 'dù', dê golpe seco no 4º tom com sorriso tenso em 'djià', raspe a garganta subindo 'rruéi' no 2º tom, suba 'lái' no 2º tom, afunde 'yǐ' no 3º tom e dê golpe seco no 4º tom em 'rròu'. Em 'wǒ gǎnjué', afunde 'wǒ', estale o 'g' seco sem ar em 'gǎn' com a língua no dente afundando a voz, e suba a voz em sorriso tenso no 2º tom em 'djüé'. Em 'tèbié fàngsōng', assopre 'tè' seco no 4º tom, estale 'bié' subindo no 2º tom, mande a voz forte no 4º tom em 'fàng' ressoando na garganta e projete os lábios em bico redondo de 'ô' abafado no 1º tom em 'sōng'.\nLeia: Dù-djià rruéi-lái yǐ-rròu, wǒ gǎn-djüé tè-bié fàng-sōng."
+  }
+}

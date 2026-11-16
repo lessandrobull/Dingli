@@ -1,0 +1,646 @@
+{
+  "31": {
+    "explanation": "Para dizer a sua idade em mandarim, a estrutura é super simples e direta: você coloca a pessoa no começo, depois vem o número da sua idade, a palavra 'anos de idade' e termina com a palavra de mudança de estado, que mostra que você atingiu ou completou aquela idade na sua vida.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — a pessoa que está falando."
+      },
+      {
+        "word": "二十",
+        "meaning": "èrshí — Vinte — èr: dois; shí: dez."
+      },
+      {
+        "word": "岁",
+        "meaning": "suì — Anos de idade — palavra usada para contar a idade de pessoas."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Já / Mudança de estado — mostra que você completou essa idade (soa 'la')."
+      }
+    ],
+    "pronuncia": "Comece afundando a voz bem no grave em 'wǒ'. Em seguida, passe para 'èr', enrolando a ponta da língua para trás no céu da boca enquanto solta o som em uma queda seca no 4º tom. Para 'shí', mantenha a língua curvada para trás e suba a entonação rapidamente como em uma pergunta no 2º tom. Em 'suì', faça a transição da vogal oculta soltando o som de 'suêi' com um golpe seco para baixo no 4º tom. Finalize na sílaba 'le', soltando a musculatura da boca completamente relaxada no som neutro 'la', sendo proibido pronunciar 'lê'.\nLeia: wǒ èr-chí suêi la."
+  },
+  "32": {
+    "explanation": "Os nativos do mandarim pensam o lugar como um contêiner ou espaço delimitado: primeiro dizem a ação de morar, depois a palavra de localização, em seguida a quantidade e o tamanho da moradia, a palavra apartamento e, por fim, colocam a palavra 'dentro', mostrando que a pessoa habita o espaço interno do apartamento.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela — a pessoa de quem estamos falando."
+      },
+      {
+        "word": "住在",
+        "meaning": "zhù zài — Mora em / Reside em — zhù: morar (com língua enrolada); zài: estar em."
+      },
+      {
+        "word": "一个",
+        "meaning": "yīgè — Um / Uma — termo de contagem genérico que muda para 'yí-guè'."
+      },
+      {
+        "word": "小",
+        "meaning": "xiǎo — Pequeno — característica do lugar (com sorriso espalmado)."
+      },
+      {
+        "word": "公寓",
+        "meaning": "gōngyù — Apartamento — gōng: público/coletivo; yù: moradia."
+      },
+      {
+        "word": "里",
+        "meaning": "lǐ — Dentro / Em — indica a parte interna do local."
+      }
+    ],
+    "pronuncia": "Inicie com 'tā' bem alto e sustentado no 1º tom. Em 'zhù', curve a ponta da língua para trás no céu da boca e solte um estalo seco sem ar no 4º tom. Passe para 'zài' fazendo um estalo de 'ts' seco sem ar colado nos dentes da frente com queda seca. O numeral 'yīgè' sofre mudança de tom por vir antes de um 4º tom, virando 'yí-guè': suba a voz em 'yí' e corte seco no som gutural 'guè', sem falar 'gê'. Em 'xiǎo', abra os cantos da boca em sorriso tenso e afunde a voz no grave do 3º tom. Em 'gōng', faça o 'g' como um clique seco de 'k' sem ar no topo do 1º tom, e em 'yù' arme os lábios em bico firme de 'U' emitindo o som agudo de 'I' com corte seco no 4º tom. Conclua afundando a voz no 3º tom grave em 'lǐ'.\nLeia: tā djà tsài yí-guè xiǎo gōng-yù lǐ."
+  },
+  "33": {
+    "explanation": "Para fazer uma pergunta sobre possuir algo em mandarim, basta colocar quem possui no início, a palavra de ter no meio, o objeto ou pessoa que se tem e fechar a frase com a palavra mágica de pergunta, transformando a frase afirmativa diretamente em uma dúvida.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você — quem está sendo questionado."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Possuir — verbo de posse (que traz o 'o' oculto 'iôu')."
+      },
+      {
+        "word": "兄弟",
+        "meaning": "xiōngdì — Irmãos — xiōng: irmão mais velho; dì: irmão mais novo."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Pergunta — partícula final para perguntas de sim ou não."
+      }
+    ],
+    "pronuncia": "Como 'nǐ' e 'yǒu' são dois tons graves seguidos, o primeiro vira 2º tom ascendente por regra de mutação, soando 'ní'. Suba a voz em 'ní' e afunde em 'yǒu', aplicando a vogal oculta que soa 'iôu'. Em 'xiōng', estique os cantos dos lábios em sorriso tenso para chiar fino e agudo sustentando a nota alta no 1º tom. Em 'dì', faça a letra D como um estalo dental seco de 't' sem ar e sem chiar, caindo forte no 4º tom. Termine com 'ma' de forma extremamente curta e leve no tom neutro.\nLeia: ní iôu xiōng-tì ma?"
+  },
+  "34": {
+    "explanation": "No mandarim, a negação de posse tem uma palavra própria e fixa: você nunca usa a negação comum para dizer que não tem algo. O raciocínio é colocar a pessoa, a palavra composta que significa 'não ter' e em seguida o membro da família.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — sujeito da frase."
+      },
+      {
+        "word": "没有",
+        "meaning": "méiyǒu — Não ter / Não possuir — méi: negação específica de posse; yǒu: ter."
+      },
+      {
+        "word": "姐妹",
+        "meaning": "jiěmèi — Irmãs — jiě: irmã mais velha; mèi: irmã mais nova."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz bem fundo na garganta para soltar 'wǒ' no 3º tom grave. Em 'méiyǒu', suba a entonação no 2º tom em 'méi' como quem faz uma pergunta rápida, e mergulhe no 3º tom grave em 'yǒu' articulando o som de 'iôu'. Para 'jiěmèi', estique a boca em um sorriso tenso e solte um estalo seco de 'dj' em 'jiě' afundando no grave do 3º tom, e feche em 'mèi' com uma queda seca e firme no 4º tom.\nLeia: wǒ méi-iôu djiě-mèi."
+  },
+  "35": {
+    "explanation": "Para passar informações pessoais como números de telefone, os nativos dizem 'meu' unindo 'eu' com a palavra de ligação, depois dizem a palavra número de telefone, o verbo ser e encadeiam os dígitos um por um. Atenção especial ao número um, que ganha um som totalmente diferente para não ser confundido com o número sete.",
+    "breakdown": [
+      {
+        "word": "我的",
+        "meaning": "wǒ de — Meu / Minha — wǒ: eu; de: partícula de posse (soa 'da')."
+      },
+      {
+        "word": "电话号码",
+        "meaning": "diànhuà hàomǎ — Número de telefone — diànhuà: telefone; hàomǎ: número."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "五五五",
+        "meaning": "wǔ wǔ wǔ — Cinco cinco cinco — repetição do número 5."
+      },
+      {
+        "word": "零",
+        "meaning": "líng — Zero — o número zero."
+      },
+      {
+        "word": "一",
+        "meaning": "yāo — Um — pronúncia especial do número 1 em telefones."
+      },
+      {
+        "word": "九",
+        "meaning": "jiǔ — Nove — o número 9 (com som de 'djiôu')."
+      },
+      {
+        "word": "二",
+        "meaning": "èr — Dois — o número 2."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ' e solte 'de' como 'da' frouxo e leve. Em 'diànhuà', faça o 'd' como um 't' seco em 'dièn' travando a língua no dente na rima 'iên' com queda no 4º tom, e raspe o 'h' na garganta em 'rruà' no 4º tom. Em 'hàomǎ', raspe a garganta em 'rrào' no 4º tom e mergulhe a voz no 3º tom grave em 'mǎ'. Solte 'shì' enrolando a língua para trás em 'chì' no 4º tom. Na sequência de 'wǔ wǔ wǔ', a fala encadeada ajusta os tons para 'wú-wú-wǔ': suba duas vezes no 2º tom e afunde no 3º tom. Suba o 2º tom no nariz em 'líng', sustente a nota alta e reta no 1º tom em 'iāo', mergulhe a voz em 'jiǔ' pronunciando 'djiôu' no 3º tom grave, e termine em 'èr' enrolando a língua para trás no 4º tom seco.\nLeia: wǒ da dièn-rruà rrào-mǎ chì wú-wú-wǔ líng iāo djiôu èr."
+  },
+  "36": {
+    "explanation": "A ordem lógica para perguntar o endereço de alguém em mandarim é montar a ideia 'seu endereço é o quê?'. Você coloca a posse 'seu' no começo, junta com a palavra 'endereço', afirma com o verbo 'ser' e coloca a palavra de pergunta no final da frase.",
+    "breakdown": [
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Seu / Sua — nǐ: você; de: partícula de posse (soa 'da')."
+      },
+      {
+        "word": "地址",
+        "meaning": "dìzhǐ — Endereço — dì: terra/lugar; zhǐ: localização."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Qual — palavra de pergunta (soa estritamente 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'nǐ' e solte a partícula 'de' como um 'da' leve e curto, sem usar som de 'dê'. Em 'dìzhǐ', articule o 'd' como um 't' seco sem ar no 4º tom em 'tì', e enrolando a ponta da língua para trás solte um estalo seco sem ar em 'djǐ' afundando no 3º tom grave. Em 'shì', mantenha a língua curvada para trás no 4º tom seco 'chì'. Finalize em 'shénme' enrolando a língua para chiar 'chán' subindo no 2º tom, e termine no 'ma' neutro e frouxo, sendo obrigatório ler a combinação como 'chán-ma'.\nLeia: nǐ da tì-djǐ chì chán-ma?"
+  },
+  "37": {
+    "explanation": "Para dizer o estado civil de alguém em mandarim, os nativos não usam o verbo ser. Eles pegam o verbo que significa 'casar' e colocam a palavra de mudança de estado logo em seguida, expressando que a pessoa já entrou no estado de casada.",
+    "breakdown": [
+      {
+        "word": "他",
+        "meaning": "tā — Ele — sujeito da frase."
+      },
+      {
+        "word": "结婚",
+        "meaning": "jiéhūn — Casar / Unir-se em matrimônio — jié: unir; hūn: casamento."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Já / Estado concluído — partícula de mudança de estado (soa 'la')."
+      }
+    ],
+    "pronuncia": "Inicie em 'tā' mantendo a nota alta, reta e contínua no topo do 1º tom. Em 'jiéhūn', abra a boca em um sorriso tenso e solte um estalo seco sem ar em 'djié' subindo a voz no 2º tom, e raspe o fundo da garganta em 'rruēn' sustentando o 1º tom com a rima que soa 'uên'. Termine na partícula 'le' com a boca completamente solta e relaxada emitindo o som neutro 'la', sem jamais falar 'lê'.\nLeia: tā djié-rruēn la."
+  },
+  "38": {
+    "explanation": "Para dizer que pessoas não são casadas, os nativos dizem 'eles', usam a palavra de negação de ações passadas ou fatos concretos 'não ter', e adicionam a palavra casar. A ideia literal é que eles não realizaram o ato de se casar.",
+    "breakdown": [
+      {
+        "word": "他们",
+        "meaning": "tāmen — Eles — tā: ele; men: marca de plural (soa 'man')."
+      },
+      {
+        "word": "没有",
+        "meaning": "méiyǒu — Não / Não realizaram — negação de fatos/posse."
+      },
+      {
+        "word": "结婚",
+        "meaning": "jiéhūn — Casar / Casado — união matrimonial."
+      }
+    ],
+    "pronuncia": "Comece alto no 1º tom em 'tā' e descanse a sílaba 'men' de forma curtíssima e frouxa como 'man', proibido usar 'mên'. Em 'méiyǒu', suba a entonação no 2º tom em 'méi' e mergulhe no 3º tom grave em 'iôu'. Em 'jiéhūn', estique os cantos dos lábios em sorriso para o 2º tom ascendente de 'djié', e encerre em 'rruēn' no 1º tom alto raspando o fundo da garganta com corte dental no dente.\nLeia: tā-man méi-iôu djié-rruēn."
+  },
+  "39": {
+    "explanation": "No mandarim, para perguntar a profissão de alguém, a estrutura é idêntica a uma afirmação simples, adicionando apenas a partícula de pergunta no final. A ordem mental é: 'ela + é + médica + né?'.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela — sujeito."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "医生",
+        "meaning": "yīshēng — Médica / Médico — yī: cura/medicina; shēng: profissional."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Pergunta — partícula interrogativa."
+      }
+    ],
+    "pronuncia": "Solte 'tā' no topo da voz no 1º tom mantendo a nota contínua. Em 'shì', curve a ponta da língua para trás no céu da boca e dê um golpe seco no 4º tom em 'chì'. Em 'yīshēng', faça a primeira sílaba como um 'i' puro e reto no 1º tom, e em 'shēng' mantenha a língua curvada para trás para chiar no 1º tom alto com ressonância profunda na garganta. Feche a frase com a partícula 'ma' frouxa e curta no tom neutro.\nLeia: tā chì yī-chēng ma?"
+  },
+  "40": {
+    "explanation": "Dizer a sua profissão em chinês é exatamente como no português falado: você coloca o pronome pessoal, o verbo ser e a palavra da profissão, sem precisar usar nenhum tipo de artigo antes da palavra professor.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — sujeito."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Sou / É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "老师",
+        "meaning": "lǎoshī — Professor / Professora — lǎo: antigo/respeitável; shī: mestre."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz lá no fundo da laringe em 'wǒ' no 3º tom grave. Em 'shì', curve a ponta da língua para trás em direção ao céu da boca sem tocar nos dentes e corte seco no 4º tom 'chì'. Em 'lǎoshī', mergulhe a voz no 3º tom grave em 'lǎo', e em 'shī' mantenha a ponta da língua curvada para trás emitindo um chiado abafado e cavernoso sustentado firme no 1º tom alto.\nLeia: wǒ chì lǎo-chī."
+  },
+  "41": {
+    "explanation": "Em mandarim, os meses não têm nomes próprios como em português, mas sim números seguidos da palavra 'mês'. O mês de maio é literalmente 'mês cinco'. A frase inteira se organiza dizendo 'meu aniversário + é + cinco mês'.",
+    "breakdown": [
+      {
+        "word": "我的",
+        "meaning": "wǒ de — Meu / Minha — wǒ: eu; de: partícula de posse (soa 'da')."
+      },
+      {
+        "word": "生日",
+        "meaning": "shēngrì — Aniversário — shēng: nascer; rì: dia/sol."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "五月",
+        "meaning": "wǔyuè — Maio — wǔ: cinco; yuè: mês/lua (com bico de U)."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'wǒ' e solte 'de' como 'da' frouxo e leve. Em 'shēngrì', curve a ponta da língua para trás em 'chēng' sustentando o 1º tom alto, e em 'rì' mantenha a língua curvada vibrando a voz com corte seco no 4º tom em 'jì'. Em 'shì', dê um golpe seco no 4º tom em 'chì'. Para 'wǔyuè', mergulhe a voz no 3º tom grave em 'wǔ', e em 'yuè' arme os lábios em bico firme de 'U', emita o som de 'I' por dentro abrindo para 'é' em uma queda seca no 4º tom 'yüè'.\nLeia: wǒ da chēng-jì chì wǔ-yüè."
+  },
+  "42": {
+    "explanation": "Para perguntar a data de aniversário de alguém, o pensamento chinês estrutura a frase colocando o tema em destaque no início: 'o seu aniversário + é + qual momento?'. A expressão para dizer 'quando' significa literalmente 'que momento'.",
+    "breakdown": [
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Seu / Sua — nǐ: você; de: partícula de posse (soa 'da')."
+      },
+      {
+        "word": "生日",
+        "meaning": "shēngrì — Aniversário — dia de nascimento."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "什么时候",
+        "meaning": "shénme shíhou — Quando / Que momento — shénme: o que; shíhou: momento."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'nǐ' e solte 'de' como 'da' leve. Em 'shēngrì', sustentação alta em 'chēng' com língua enrolada e corte seco no 4º tom vibrante em 'jì'. Em 'shì', faça 'chì' seco no 4º tom. Em 'shénme shíhou', a primeira palavra exige a leitura estrita 'chán-ma', subindo em 2º tom com língua enrolada e fechando em 'ma' neutro. Em 'shíhou', suba no 2º tom com língua enrolada em 'chí' e termine na partícula frouxa 'rrôu' no tom neutro com atrito de garganta.\nLeia: nǐ da chēng-jì chì chán-ma chí-rrôu?"
+  },
+  "43": {
+    "explanation": "Ao descrever a família em mandarim, a regra de contagem exige colocar uma palavra de contagem entre o número e o objeto. O raciocínio prático da frase é: 'eu + tenho + uma unidade de + grande família'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — sujeito."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Tenho / Possuo — verbo de posse."
+      },
+      {
+        "word": "一个",
+        "meaning": "yīgè — Um / Uma — unidade de contagem que vira 'yí-guè'."
+      },
+      {
+        "word": "大家庭",
+        "meaning": "dà jiātíng — Família grande — dà: grande; jiātíng: família."
+      }
+    ],
+    "pronuncia": "Como 'wǒ' e 'yǒu' são dois 3º tons seguidos, o primeiro vira 2º tom ascendente: fale 'wó' subindo a voz e afunde em 'yǒu' com som de 'iôu'. O numeral 'yīgè' sofre mudança de tom e vira 'yí-guè': suba a voz no 2º tom em 'yí' e dê um golpe seco no 4º tom gutural em 'guè'. Em 'dà', faça o 'd' como um estalo de 't' seco sem ar no 4º tom em 'tà'. Em 'jiātíng', estique a boca em sorriso para soltar 'djiā' no 1º tom alto, e suba a entonação em 'tíng' soltando um sopro forte na letra 't' com ressonância no fundo da garganta.\nLeia: wó iôu yí-guè tà djiā-tíng."
+  },
+  "44": {
+    "explanation": "Em mandarim, as palavras de pergunta não vão para o começo da frase como no português. Elas ficam exatamente no mesmo lugar onde a resposta ficaria. A ordem do pensamento é: 'ele + mora em + qual lugar?'.",
+    "breakdown": [
+      {
+        "word": "他",
+        "meaning": "tā — Ele — sujeito da frase."
+      },
+      {
+        "word": "住在",
+        "meaning": "zhù zài — Mora em / Reside em — zhù: morar; zài: em."
+      },
+      {
+        "word": "哪里",
+        "meaning": "nǎlǐ — Onde / Qual lugar — palavra interrogativa de lugar."
+      }
+    ],
+    "pronuncia": "Sustente a nota alta no 1º tom em 'tā'. Em 'zhù', curve a ponta da língua para trás em direção ao céu da boca sem ar em um golpe seco no 4º tom 'djà'. Em 'zài', faça um estalo seco de 'ts' colado nos dentes da frente cortando seco no 4º tom. Em 'nǎlǐ', como são dois 3º tons seguidos, a primeira palavra muda para o 2º tom ascendente: suba a voz em 'ná' e afunde a voz no grave em 'lǐ'.\nLeia: tā djà tsài ná-lǐ?"
+  },
+  "45": {
+    "explanation": "Para negar a posse de um veículo ou objeto, usamos a negação fixa de posse 'não ter' antes do objeto. Não há necessidade de colocar artigos ou marcadores adicionais.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela — sujeito."
+      },
+      {
+        "word": "没有",
+        "meaning": "méiyǒu — Não tem / Não possui — negação de posse."
+      },
+      {
+        "word": "车",
+        "meaning": "chē — Carro / Veículo — chē (com língua enrolada e sopro de ar)."
+      }
+    ],
+    "pronuncia": "Sustente a nota alta e contínua no 1º tom em 'tā'. Em 'méiyǒu', suba a entonação em 'méi' no 2º tom e afunde no grave em 'yǒu' articulando o 'iôu'. Em 'chē', curve a ponta da língua para trás em direção ao céu da boca e dispare um jato potente de ar soprado mantendo o som vocálico gutural aberto 'tchā' sustentado firme no 1º tom alto.\nLeia: tā méi-iôu tchā."
+  },
+  "46": {
+    "explanation": "A ordem do pensamento chinês para perguntar sobre a origem de alguém é: 'você + vem de + grande cidade + né?'. A palavra que indica a origem vem logo antes do local, e a partícula de dúvida fecha a frase.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você — sujeito."
+      },
+      {
+        "word": "来自",
+        "meaning": "láizì — Vir de / Ser oriundo de — lái: vir; zì: de/desde."
+      },
+      {
+        "word": "大",
+        "meaning": "dà — Grande — adjetivo."
+      },
+      {
+        "word": "城市",
+        "meaning": "chéngshì — Cidade — chéng: cidade; shì: mercado/cidade."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Pergunta — partícula interrogativa."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'nǐ' no 3º tom grave. Em 'láizì', suba a voz em 'lái' no 2º tom, e faça a letra Z como um estalo seco de 'ts' sem ar colado nos dentes da frente com corte seco no 4º tom 'tsì'. Em 'dà', articule a letra D como um 't' seco sem ar em 'tà' no 4º tom. Em 'chéngshì', curve a língua para trás e solte um jato de ar forte em 'tchēng' subindo no 2º tom com ressonância na garganta, e em 'shì' mantenha a língua curvada em 'chì' no 4º tom seco. Termine com a partícula 'ma' leve no tom neutro.\nLeia: nǐ lái-tsì tà tchēng-chì ma?"
+  },
+  "47": {
+    "explanation": "Para expressar a sua preferência por algo no superlativo, a estrutura em mandarim junta o pronome 'eu', a palavra de intensidade máxima 'mais', o verbo 'gostar' e a palavra de ligação. Isso forma o bloco 'o que eu mais gosto', seguido da palavra 'cor', do verbo 'ser' e da cor específica.",
+    "breakdown": [
+      {
+        "word": "我最喜欢的",
+        "meaning": "wǒ zuì xǐhuan de — O que eu mais gosto — zuì: mais; xǐhuan: gostar; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "颜色",
+        "meaning": "yánsè — Cor — palavra geral para cores."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "蓝色",
+        "meaning": "lánsè — Azul / Cor azul — lán: azul; sè: cor (com som gutural)."
+      }
+    ],
+    "pronuncia": "Afunde a voz em 'wǒ' no 3º tom grave. Em 'zuì', faça o estalo seco de 'ts' nos dentes e aplique a rima oculta que soa 'tsuêi' com corte seco no 4º tom. Em 'xǐhuan', estique a boca em sorriso para chiar fino em 'xǐ' afundando no 3º tom, e passe por 'rruan' no tom neutro/leve. Solte a partícula 'de' como 'da' frouxo e leve. Em 'yánsè', suba a voz no 2º tom em 'ién' travando a língua no dente na rima 'iên', e faça 'sè' no 4º tom seco com som vocálico gutural 'ssà'. Em 'shì', faça 'chì' seco no 4º tom com língua enrolada. Conclua em 'lánsè', subindo a voz no 2º tom em 'lán' e cortando seco no 4º tom gutural 'ssà'.\nLeia: wǒ tsuêi xǐ-rruan da ién-ssà chì lán-ssà."
+  },
+  "48": {
+    "explanation": "Para perguntar a profissão ou ocupação de uma pessoa de forma bem natural em mandarim, diz-se literalmente: 'o seu trabalho + é + o quê?'. A estrutura segue a ordem padrão de colocar o objeto de interesse no começo e a dúvida no final.",
+    "breakdown": [
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Seu / Sua — nǐ: você; de: partícula de posse (soa 'da')."
+      },
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalho / Emprego — gōng: trabalho; zuò: fazer."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Qual — palavra de pergunta (soa estritamente 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'nǐ' e solte 'de' como 'da' leve e solto. Em 'gōngzuò', faça o 'g' como um clique seco de 'k' sem ar mantendo a nota alta no 1º tom em 'gōng', e faça 'zuò' com estalo de 'ts' seco no ditongo 'tsuô' com corte seco no 4º tom. Em 'shì', curve a língua para trás no 4º tom seco 'chì'. Finalize em 'shénme' enrolando a língua para chiar 'chán' subindo no 2º tom, e termine no 'ma' neutro e frouxo da mandíbula caída, devendo ler a combinação como 'chán-ma'.\nLeia: nǐ da gōng-tsuô chì chán-ma?"
+  },
+  "49": {
+    "explanation": "No mandarim, a regra de ouro para indicar o local onde uma ação acontece é colocar o lugar ANTES da ação. Em português dizemos 'trabalha no banco', mas o nativo do mandarim pensa estritamente: 'ele + no banco + trabalha'.",
+    "breakdown": [
+      {
+        "word": "他",
+        "meaning": "tā — Ele — sujeito."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Em / No — partícula que indica o local onde se realiza uma ação."
+      },
+      {
+        "word": "银行",
+        "meaning": "yínháng — Banco — yín: prata; háng: estabelecimento comercial."
+      },
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalhar — ação realizada."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' no topo da voz no 1º tom. Em 'zài', faça o estalo seco de 'ts' nos dentes com queda seca no 4º tom 'tsài'. Em 'yínháng', suba no 2º tom em 'yín' travando a ponta da língua nos dentes superiores no corte nasal 'in', e raspe o fundo da garganta em 'rháng' subindo a voz no 2º tom com ressonância profunda. Em 'gōngzuò', faça o 'g' como um clique de 'k' seco no 1º tom 'gōng', e encerre em 'tsuô' no 4º tom seco.\nLeia: tā tsài in-rráng gōng-tsuô."
+  },
+  "50": {
+    "explanation": "Em mandarim, quando ligamos um sujeito diretamente a uma característica ou adjetivo, normalmente não se usa o verbo ser. No lugar dele, coloca-se a palavra de intensidade 'muito' para fazer a ponte natural entre a pessoa e a qualidade.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — sujeito."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito — palavra de ligação usada antes de adjetivos (soa 'rrěn')."
+      },
+      {
+        "word": "高",
+        "meaning": "gāo — Alto — adjetivo de estatura (soa com clique de 'k' seco)."
+      }
+    ],
+    "pronuncia": "Como 'wǒ' e 'hěn' são dois tons graves seguidos (3º tom + 3º tom), a primeira palavra vira 2º tom ascendente por regra de mutação. Suba a voz rapidamente em 'wó' como em uma pergunta, e em 'hěn' afunde a voz no 3º tom grave raspando a garganta e travando a ponta da língua nos dentes superiores para cortar o som em 'rrěn'. Conclua em 'gāo', articulando a letra G como um estalo seco de 'k' sem ar e mantendo a nota alta, reta e sustentada no 1º tom.\nLeia: wó rrěn gāo."
+  },
+  "51": {
+    "explanation": "Para perguntar se alguém está em casa, os nativos dizem a pessoa ou familiar, a palavra que indica presença em um local ('estar em'), o local ('casa') e finalizam com a partícula interrogativa de sim ou não.",
+    "breakdown": [
+      {
+        "word": "你爸爸",
+        "meaning": "nǐ bàba — Seu pai — nǐ: você; bàba: pai."
+      },
+      {
+        "word": "在家",
+        "meaning": "zài jiā — Estar em casa — zài: estar em; jiā: casa/lar."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Pergunta — partícula interrogativa."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'nǐ' no 3º tom grave. Em 'bàba', faça a letra B como um estalo seco de 'p' sem ar e sem voz no 4º tom 'pà', e feche na segunda sílaba leve 'ba' no tom neutro. Em 'zài', solte o estalo seco de 'ts' no 4º tom 'tsài'. Em 'jiā', estique os cantos da boca em um sorriso tenso e solte um estalo seco sem ar em 'djiā' mantendo a nota alta e contínua no 1º tom. Finalize com a partícula 'ma' leve e curta no tom neutro.\nLeia: nǐ pà-ba tsài djiā ma?"
+  },
+  "52": {
+    "explanation": "A ordem do pensamento para falar sobre a moradia de um grupo é colocar o pronome no plural no começo, a combinação de palavras que indica 'morar em', a palavra apartamento e a palavra de posição interna 'dentro'.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: marca de plural (soa 'man')."
+      },
+      {
+        "word": "住在",
+        "meaning": "zhù zài — Moramos em / Residimos em — zhù: morar; zài: em."
+      },
+      {
+        "word": "公寓",
+        "meaning": "gōngyù — Apartamento — gōng: público; yù: moradia."
+      },
+      {
+        "word": "里",
+        "meaning": "lǐ — Dentro / Em — indica a parte interna."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'wǒ' no 3º tom e solte 'men' como 'man' frouxo e leve, sem pronunciar 'mên'. Em 'zhù', curve a ponta da língua para trás em direção ao céu da boca cortando seco no 4º tom 'djà'. Em 'zài', solte o estalo seco de 'ts' nos dentes no 4º tom 'tsài'. Em 'gōngyù', faça o 'g' como clique de 'k' seco no 1º tom 'gōng', e em 'yù' arme os lábios em bico firme de 'U' emitindo o som de 'I' por dentro com corte seco no 4º tom. Termine afundando a voz no 3º tom grave em 'lǐ'.\nLeia: wǒ-man djà tsài gōng-yù lǐ."
+  },
+  "53": {
+    "explanation": "Para descrever a casa de alguém como antiga, a estrutura é: o pronome de posse no plural ('deles'), a palavra casa, a palavra de ligação de intensidade 'muito' (que faz a função de ligar a coisa à qualidade) e a palavra antigo.",
+    "breakdown": [
+      {
+        "word": "他们的",
+        "meaning": "tāmen de — Deles / Das pessoas mencionadas — tāmen: eles; de: posse (soa 'da')."
+      },
+      {
+        "word": "房子",
+        "meaning": "fángzi — Casa / Moradia — fáng: casa; zi: sufixo (soa 'tsi')."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito — ponte entre sujeito e adjetivo (soa 'rrěn')."
+      },
+      {
+        "word": "旧",
+        "meaning": "jiù — Antiga / Velha — adjetivo para objetos (com o oculto 'djiôu')."
+      }
+    ],
+    "pronuncia": "Inicie em 'tā' no 1º tom alto, passe por 'men' frouxo como 'man' e solte 'de' como 'da' leve. Em 'fángzi', suba a entonação no 2º tom em 'fáng' com ressonância ampla no fundo da garganta, e faça 'zi' como um estalo leve de 'ts' sem ar no tom neutro 'tsi'. Em 'hěn', raspe a garganta e afunde a voz no 3º tom grave travando a ponta da língua no dente em 'rrěn'. Em 'jiù', estique a boca em sorriso, inclua a vogal oculta que forma 'djiôu' e dê um golpe seco no 4º tom.\nLeia: tā-man da fáng-tsi rrěn djiôu."
+  },
+  "54": {
+    "explanation": "Na cultura chinesa, o sobrenome é extremamente importante e possui um verbo próprio exclusivo para perguntar ou dizer qual é o seu sobrenome. A frase curta e direta significa literalmente: 'ele + tem como sobrenome + qual?'.",
+    "breakdown": [
+      {
+        "word": "他",
+        "meaning": "tā — Ele — sujeito."
+      },
+      {
+        "word": "姓",
+        "meaning": "xìng — Ter como sobrenome — verbo exclusivo para sobrenomes."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Qual — palavra de pergunta (soa estritamente 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Sustente a nota alta e contínua no 1º tom em 'tā'. Em 'xìng', estique os cantos dos lábios em um sorriso tenso e solte um chiado fino e agudo no 4º tom seco. Em 'shénme', enrolando a ponta da língua para trás, solte o chiado de 'chán' subindo no 2º tom e feche na sílaba leve 'ma' no tom neutro, sendo obrigatório grafar e pronunciar a combinação como 'chán-ma'.\nLeia: tā xìng chán-ma?"
+  },
+  "55": {
+    "explanation": "Para negar o verbo ser em mandarim, a palavra de negação padrão se junta ao verbo. Como a palavra ser é pronunciada com um tom descendente seco, a negação muda de tom e sobe como uma pergunta para a fala fluir com facilidade.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — sujeito."
+      },
+      {
+        "word": "不是",
+        "meaning": "búshì — Não sou / Não é — negação do verbo ser (com mutação para 'bú')."
+      },
+      {
+        "word": "护士",
+        "meaning": "hùshi — Enfermeiro / Enfermeira — hù: proteger; shi: especialista."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz no 3º tom grave em 'wǒ'. Em 'búshì', a palavra 'bù' muda para o 2º tom por vir antes do 4º tom de 'shì': suba a voz no 2º tom em 'bú' e dê um golpe seco no 4º tom com a língua enrolada para trás em 'chì'. Em 'hùshi', raspe o fundo da garganta no 4º tom seco em 'rrù', e termine na sílaba leve 'chi' no tom neutro com a ponta da língua curvada para trás.\nLeia: wǒ bú-chì rrù-chi."
+  },
+  "56": {
+    "explanation": "Ao fazer uma pergunta de alternativa onde a pessoa precisa escolher entre duas opções em mandarim, usa-se uma palavra específica para 'ou' que só serve em perguntas. A estrutura fica: 'você + é + opção A + ou + opção B?'.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você — sujeito."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É / Sou — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "单身",
+        "meaning": "dānshēn — Solteiro — dān: único/só; shēn: corpo/pessoa."
+      },
+      {
+        "word": "还是",
+        "meaning": "háishì — Ou — conjunção usada exclusivamente em perguntas de escolha."
+      },
+      {
+        "word": "已婚",
+        "meaning": "yǐhūn — Casado — yǐ: já; hūn: casamento (soa 'rruēn')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz no 3º tom grave em 'nǐ'. Em 'shì', faça 'chì' no 4º tom seco com a língua enrolada. Em 'dānshēn', faça o 'd' como um estalo de 't' seco em 'dān' travando o dente no 1º tom alto, e curve a língua para chiar em 'chēn' sustentando o 1º tom alto com corte no dente. Em 'háishì', raspe a garganta em 'rrái' subindo no 2º tom e feche em 'chì' no 4º tom seco. Em 'yǐhūn', mergulhe a voz em 'yǐ' no 3º tom, e em 'hūn' raspe o fundo da garganta mantendo o 1º tom alto no ditongo que soa 'rruēn'.\nLeia: nǐ chì dān-chēn rrái-chì yǐ-rruēn?"
+  },
+  "57": {
+    "explanation": "Para dizer a nacionalidade ou país de origem de uma pessoa em mandarim, coloca-se a pessoa, a expressão de origem 'vir de' e em seguida o nome do país adaptado foneticamente para os ideogramas chineses.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela — sujeito."
+      },
+      {
+        "word": "来自",
+        "meaning": "láizì — Vir de / Ser oriunda de — lái: vir; zì: de/desde."
+      },
+      {
+        "word": "意大利",
+        "meaning": "Yìdàlì — Itália — nome do país adaptado ao som do mandarim."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' no 1º tom alto. Em 'láizì', suba a entonação em 'lái' no 2º tom, e faça a letra Z como um estalo seco de 'ts' sem ar colado nos dentes superiores com corte no 4º tom 'tsì'. Em 'Yìdàlì', pronuncie três 4º tons secos em sequência: dê um golpe seco em 'yì', faça a letra D como um estalo seco de 't' sem ar no 4º tom em 'tà', e encerre em 'lì' com mais uma queda seca e firme no 4º tom.\nLeia: tā lái-tsì yì-tà-lì."
+  },
+  "58": {
+    "explanation": "Quando falamos de familiares muito próximos como a mãe, os nativos frequentemente dispensam a palavra de ligação de posse. A estrutura fica direta e fluida: 'minha mãe + é + cozinheira/chef'.",
+    "breakdown": [
+      {
+        "word": "我妈妈",
+        "meaning": "wǒ māma — Minha mãe — wǒ: eu; māma: mãe."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — É — verbo ser (com língua enrolada)."
+      },
+      {
+        "word": "厨师",
+        "meaning": "chúshī — Chef de cozinha / Cozinheiro — chú: cozinha; shī: mestre."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz no 3º tom grave em 'wǒ'. Em 'māma', sustente a nota alta no 1º tom na primeira sílaba 'mā', e deixe a segunda sílaba 'ma' cair leve e frouxa no tom neutro. Em 'shì', faça 'chì' no 4º tom seco com a língua enrolada para trás. Em 'chúshī', curve a ponta da língua para trás e dispare um jato de ar forte em 'tchú' subindo no 2º tom, e em 'shī' mantenha a língua curvada para chiar abafado e cavernoso sustentando o 1º tom alto.\nLeia: wǒ mā-ma chì tchú-chī."
+  },
+  "59": {
+    "explanation": "A ordem do pensamento chinês para perguntar se alguém tem um animal de estimação é a mesma de qualquer pergunta simples: coloca-se o sujeito, o verbo ter, o animal e a partícula de pergunta no final.",
+    "breakdown": [
+      {
+        "word": "他们",
+        "meaning": "tāmen — Eles — tā: ele; men: marca de plural (soa 'man')."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Têm / Possuem — verbo ter (que sofre mutação para 'ióu')."
+      },
+      {
+        "word": "狗",
+        "meaning": "gǒu — Cachorro / Cão — o animal (soa como clique de 'k' seco com 'ôu')."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Pergunta — partícula interrogativa."
+      }
+    ],
+    "pronuncia": "Sustente a nota alta no 1º tom em 'tā' e descanse a sílaba 'men' de forma leve e frouxa como 'man'. Como 'yǒu' e 'gǒu' são dois 3º tons seguidos, o primeiro vira 2º tom ascendente por regra de mutação: suba a voz em 'ióu' como em uma pergunta, e afunde a voz no 3º tom grave em 'gǒu', articulando a letra G como um clique seco de 'k' sem ar no ditongo 'kôu'. Termine com a partícula 'ma' no tom neutro leve.\nLeia: tā-man ióu-gǒu ma?"
+  },
+  "60": {
+    "explanation": "No mandarim, quando precisamos dizer a quantidade 'dois' acompanhada de um contador de coisas ou pessoas, usa-se uma palavra específica para o número dois, diferente daquela usada para contar sequências numéricas. O pensamento é: 'eu + tenho + duas unidades de + filhos'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — sujeito."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Tenho / Possuo — verbo de posse."
+      },
+      {
+        "word": "两个",
+        "meaning": "liǎng gè — Dois / Duas unidades — liǎng: dois (para contagem); gè: classificador (soa 'guè')."
+      },
+      {
+        "word": "孩子",
+        "meaning": "háizi — Filhos / Crianças — hái: criança; zi: sufixo (soa 'tsi')."
+      }
+    ],
+    "pronuncia": "Como 'wǒ' e 'yǒu' são dois 3º tons seguidos, a primeira palavra muda para o 2º tom ascendente: suba a voz em 'wó' e afunde a voz no 3º tom grave em 'yǒu' articulando o som de 'iôu'. Em 'liǎng gè', mergulhe a voz no 3º tom grave em 'liǎng' com a rima aberta, e faça 'gè' como um clique seco de 'k' no som gutural 'guè' no 4º tom seco, sem falar 'gê'. Em 'háizi', raspe o fundo da garganta subindo a voz no 2º tom em 'rrái', e feche em 'zi' soltando um estalo leve de 'ts' sem ar no tom neutro 'tsi'.\nLeia: wó iôu liǎng-guè rrái-tsi."
+  }
+}

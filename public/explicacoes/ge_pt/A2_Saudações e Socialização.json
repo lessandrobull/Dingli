@@ -1,0 +1,506 @@
+{
+  "300": {
+    "explanation": "Quando um alemão te convida para tomar um café, ele usa a combinação de dois verbos no final da frase: 'ir beber' (trinken gehen). A pessoa com quem você vai ('mit uns') fica posicionada logo no começo.",
+    "breakdown": [
+      {
+        "word": "Möchtest du mit uns",
+        "meaning": "Você gostaria com a gente — Möchtest: gostaria; du: você; mit: com; uns: nós / a gente."
+      },
+      {
+        "word": "einen Kaffee",
+        "meaning": "Um café — einen: um; Kaffee: café."
+      },
+      {
+        "word": "trinken gehen",
+        "meaning": "Ir beber — trinken: beber; gehen: ir."
+      }
+    ],
+    "pronuncia": "Em 'Möchtest', arme língua de 'é' com bico de 'ó' ('möch-test'). Em 'einen Kaffee', faça o ditongo 'ai' e pronuncie 'Kaffee' com 'a' aberto e 'f' forte ('káf-fe'). Em 'trinken gehen', faça o 't' seco no dente em 'trin-ken' e o 'h' mudo apenas esticando o 'e' em 'gêe-en'.\nLeia: möch-test dúu mit uns ái-nen káf-fe trin-ken gêe-en?"
+  },
+  "301": {
+    "explanation": "Para perguntar como a pessoa tem passado ultimamente, o alemão usa a estrutura 'como foi para você nos últimos tempos?'. O verbo ir no passado (ging) combinado com 'dir' (para você) cria a ideia de como a vida tem corrido. A palavra para tempo/época é 'Zeit' e junta-se com 'letzter' para dizer 'últimos tempos'.",
+    "breakdown": [
+      {
+        "word": "Wie ging es dir",
+        "meaning": "Como foi para você / Como você tem passado — Wie: como; ging: foi (passado de ir); es: isso; dir: a você."
+      },
+      {
+        "word": "in letzter Zeit",
+        "meaning": "Ultimamente / Nos últimos tempos — in: em; letzter: última; Zeit: tempo."
+      }
+    ],
+    "pronuncia": "Em 'Wie', leia o 'w' com som de 'v' e estique o 'i' longo em sorriso ('víi'). No bloco 'ging es dir', faça a vogal oral limpa antes de fechar o 'ng', desvozeie o 's' final em 'és' e vocalize o 'r' de 'dir' como um 'a' curto e relaxado sem raspar a garganta ('díia'). Em 'in letzter Zeit', corte a seco o 'z' com som de 'ts' estalado ('létst-ta') e repita o estalo em 'Zeit' ('tsáit') com o ditongo 'ai'.\nLeia: víi guing és díia in létst-ta tsáit?"
+  },
+  "302": {
+    "explanation": "Para dizer que quer apresentar alguém, o alemão usa o verbo 'vorstellen', que significa literalmente 'colocar na frente'. Na frase, o verbo principal vai lá para o finalzinho, depois que você já disse quem quer apresentar para quem.",
+    "breakdown": [
+      {
+        "word": "Ich möchte dir",
+        "meaning": "Eu gostaria de te — Ich: eu; möchte: gostaria; dir: a você."
+      },
+      {
+        "word": "meinen Kollegen",
+        "meaning": "Meu colega — meinen: meu; Kollegen: colega."
+      },
+      {
+        "word": "vorstellen",
+        "meaning": "Apresentar — vor: à frente; stellen: colocar. Literalmente 'colocar à frente'."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato no céu da boca ('ích') sem raspar. Em 'möchte', posicione a língua para 'é' mas faça bico de 'ó' ('möch-te'). Em 'dir', vocalize o 'r' final em 'a' relaxado ('díia'). No ditongo de 'meinen', diga 'ái' de praia ('mái-nen'). Em 'vorstellen', leia o 'v' inicial com som estrito de 'f' ('fôor-') e chia o 'st' como 'sht' sem colocar 'i' antes ('fôor-shtel-len').\nLeia: ích möch-te díia mái-nen kol-lêe-guen fôor-shtel-len."
+  },
+  "303": {
+    "explanation": "Nessa pergunta, o alemão coloca a ação de contar (erzählen) bem no final da frase. Eles usam 'erzählen' no sentido de narrar histórias ou novidades sobre si mesmo, em vez de simplesmente usar o verbo falar.",
+    "breakdown": [
+      {
+        "word": "Kannst du mir",
+        "meaning": "Você pode me — Kannst: pode; du: você; mir: me / a mim."
+      },
+      {
+        "word": "mehr über dich",
+        "meaning": "Mais sobre você — mehr: mais; über: sobre; dich: você."
+      },
+      {
+        "word": "erzählen",
+        "meaning": "Contar / Narrar — contar detalhes ou histórias."
+      }
+    ],
+    "pronuncia": "Em 'Kannst', a vogal 'a' sai oral e limpa antes do 'n' sem anasalar ('kanst'). Em 'du', faça o 'd' seco no dente. Em 'mehr', vocalize o 'h' prolongando o 'e' fechado ('mêea'). Em 'über', arme bico de 'u' mas diga 'i' com 'r' final em 'a' ('üü-ba'). Em 'dich', faça o chiado fino de gato ('dích'). Em 'erzählen', o 'z' tem som de estalo seco 'ts' ('ea-tsêe-len').\nLeia: kanst dúu míia mêea üü-ba dích ea-tsêe-len?"
+  },
+  "304": {
+    "explanation": "A palavra 'nett' significa agradável ou simpático e é muito usada para falar de conversas ou encontros legais. Para conectar o verbo no final, o alemão insere a palavrinha 'zu' antes de 'sprechen' (conversar).",
+    "breakdown": [
+      {
+        "word": "Es war nett",
+        "meaning": "Foi agradável / bom — Es: isso; war: foi; nett: agradável / simpático."
+      },
+      {
+        "word": "gestern mit dir",
+        "meaning": "Ontem com você — gestern: ontem; mit: com; dir: você."
+      },
+      {
+        "word": "zu sprechen",
+        "meaning": "Conversar — zu: de / para; sprechen: falar / conversar."
+      }
+    ],
+    "pronuncia": "Em 'Es war nett', faça o 'w' com som de 'v' ('váa') e corte o 't' seco no fim de 'nét'. Em 'gestern', o 'r' final vira 'a' relaxado ('gués-ta'). Em 'zu sprechen', o 'z' faz o estalo seco 'ts' ('tsu'), o 'sp' chia obrigatoriamente como 'shp' ('shpré-') e o 'ch' faz o chiado fino de gato ('-chen').\nLeia: és váa nét, gués-ta mit díia tsu shpré-chen."
+  },
+  "305": {
+    "explanation": "A palavra para fim de semana em alemão é a junção direta das palavras semana (Woche) e fim (Ende). Como a frase é uma pergunta sobre o passado, o verbo ter (Hattest) começa a frase puxando a conversa.",
+    "breakdown": [
+      {
+        "word": "Hattest du",
+        "meaning": "Você teve — Hattest: tinha / teve; du: você."
+      },
+      {
+        "word": "ein schönes",
+        "meaning": "Um bonito / bom — ein: um; schönes: bonito / agradável."
+      },
+      {
+        "word": "Wochenende",
+        "meaning": "Fim de semana — Woche: semana; Ende: fim."
+      }
+    ],
+    "pronuncia": "Em 'Hattest', o 'h' inicial é um suspiro suave vindo do peito ('hát-test'). Em 'schönes', fale o 'sch' com chiado de chuva ('ch'), posicione a língua para 'ê' e lábios em bico de 'ô' ('chöö-nes'). Em 'Wochenende', o 'w' tem som de 'v' e aplique o golpe de glote cortando o ar antes de 'Ende' ('vó-chen-'en-de').\nLeia: hát-test dúu áin chöö-nes vó-chen-'en-de?"
+  },
+  "306": {
+    "explanation": "Em vez de dizer 'não entendi' ou 'não ouvi' seu nome, o alemão usa muito o verbo 'mitbekommen', que significa literalmente 'pegar junto'. É uma forma leve e muito natural de dizer que o nome passou batido.",
+    "breakdown": [
+      {
+        "word": "Entschuldigung",
+        "meaning": "Desculpe / Com licença."
+      },
+      {
+        "word": "ich habe deinen Namen",
+        "meaning": "Eu [tenho] o seu nome — ich: eu; habe: tenho; deinen: seu; Namen: nome."
+      },
+      {
+        "word": "nicht mitbekommen",
+        "meaning": "Não peguei / Não captei — nicht: não; mitbekommen: captar / perceber."
+      }
+    ],
+    "pronuncia": "Em 'Entschuldigung', chia o 'tsch' como 'tch' seco ('ent-shúl-di-gung'). Em 'ich habe', faça o chiado fino ('ích') e o 'h' suspirado ('háa-be'). As vogais de 'Namen' são totalmente orais e limpas ('náa-men'). Em 'nicht mitbekommen', o 'ch' é fino de gato ('nícht') e corte o 't' seco antes de engatar em 'mít-be-kom-men'.\nLeia: ent-shúl-di-gung, ích háa-be dái-nen náa-men nícht mít-be-kom-men."
+  },
+  "307": {
+    "explanation": "O verbo 'wiederholen' significa repetir, mas se você olhar os pedaços, significa 'buscar de novo'. O pedido é feito com muita educação usando 'könntest' (poderia) e o verbo de ação vai direto para o fim da frase.",
+    "breakdown": [
+      {
+        "word": "Könntest du das bitte",
+        "meaning": "Você poderia isso por favor — Könntest: poderia; du: você; das: isso; bitte: por favor."
+      },
+      {
+        "word": "langsamer",
+        "meaning": "Mais devagar — langsam: devagar; -er: mais."
+      },
+      {
+        "word": "wiederholen",
+        "meaning": "Repetir — wieder: de novo; holen: buscar / pegar."
+      }
+    ],
+    "pronuncia": "Em 'Könntest', faça bico de 'ó' e língua de 'é' ('kön-test'). O 's' final em 'das' é seco sibilante ('das'). Em 'langsamer', o 's' zumba como 'z' de abelha e o 'er' final morre em 'a' relaxado ('láng-za-ma'). Em 'wiederholen', leia o 'w' como 'v', vocalize o 'r' do meio ('víi-da-') e solte o 'h' em suspiro morno ('-hôo-len').\nLeia: kön-test dúu das bít-te láng-za-ma víi-da-hôo-len?"
+  },
+  "308": {
+    "explanation": "A palavra 'oder' ao pé da letra é a conjunção 'ou', mas no final de uma frase ela funciona exatamente como o nosso 'né?' ou 'não é?'. A dupla 'noch nicht' expressa o sentido de 'ainda não'.",
+    "breakdown": [
+      {
+        "word": "Wir kennen uns",
+        "meaning": "Nós nos conhecemos — Wir: nós; kennen: conhecemos; uns: nos."
+      },
+      {
+        "word": "noch nicht",
+        "meaning": "Ainda não — noch: ainda; nicht: não."
+      },
+      {
+        "word": "oder",
+        "meaning": "Ou / Não é? — usado como marcação de confirmação no fim da frase."
+      }
+    ],
+    "pronuncia": "Em 'Wir', troque o 'w' por 'v' e vocalize o 'r' em 'a' relaxado ('víia'). As vogais de 'kennen' e 'uns' entram puramente orais antes do 'n' e 'n/s'. Em 'noch', raspe o fundo da garganta pós-O ('nóch'). Em 'nicht', use o chiado fino de gato ('nícht'). Conclua 'oder' vocalizando o 'r' final ('ôo-da').\nLeia: víia kén-nen uns nóch nícht, ôo-da?"
+  },
+  "309": {
+    "explanation": "Para dizer 'espero te rever em breve', o alemão usa o verbo 'wiedersehen' (ver de novo). Quando esse verbo vem combinado com 'hoffen' (esperar), ele recebe a partícula 'zu' no seu meio, virando 'wiederzusehen'.",
+    "breakdown": [
+      {
+        "word": "Ich hoffe",
+        "meaning": "Eu espero — Ich: eu; hoffe: espero."
+      },
+      {
+        "word": "dich bald",
+        "meaning": "Você em breve — dich: te / você; bald: logo / em breve."
+      },
+      {
+        "word": "wiederzusehen",
+        "meaning": "Rever / Ver de novo — wieder: de novo; zu: para; sehen: ver."
+      }
+    ],
+    "pronuncia": "Em 'Ich hoffe', faça o chiado fino de gato em 'ích' e abra o 'o' curto em 'hóf-fe'. Em 'dich bald', use o chiado fino ('dích') e desvozeie o 'd' final de 'bald' em 't' seco ('balt'). Em 'wiederzusehen', leia o 'w' como 'v', vocalize o 'r' em 'a', faça o 'z' com estalo 'ts' e o 's' zumbindo em 'z' ('víi-da-tsu-zêe-en').\nLeia: ích hóf-fe, dích balt víi-da-tsu-zêe-en."
+  },
+  "311": {
+    "explanation": "Em alemão não existe um verbo direto para 'gostar de fazer'. Para expressar isso, eles usam o verbo fazer (machst) acompanhado da palavra 'gerne', que significa 'com prazer'. Tempo livre é a fusão de livre (frei) com tempo (Zeit).",
+    "breakdown": [
+      {
+        "word": "Was machst du gerne",
+        "meaning": "O que você faz com prazer — Was: o que; machst: faz; du: você; gerne: com prazer / de bom grado."
+      },
+      {
+        "word": "in deiner Freizeit",
+        "meaning": "No seu tempo livre — in: em; deiner: seu/sua; Freizeit: tempo livre (Frei = livre, Zeit = tempo)."
+      }
+    ],
+    "pronuncia": "Em 'Was machst', o 'w' tem som de 'v' e o 'ch' raspa o fundo da garganta após 'a' ('vas máchst'). Em 'gerne', o 'g' é limpo e o 'r' é suave ('guér-ne'). Em 'deiner Freizeit', use o ditongo 'ai' em 'dái-na', troque o 'er' por 'a' relaxado e estale o 'z' de 'Freizeit' como 'ts' ('frái-tsait').\nLeia: vas máchst dúu guér-ne in dái-na frái-tsait?"
+  },
+  "312": {
+    "explanation": "A expressão para dizer 'estou feliz' ou 'estou contente' com algo é 'ich freue mich', que significa literalmente 'eu me alegro'. Assim como ao convidar alguém, o verbo rever guarda a partícula 'zu' dentro dele (wiederzusehen).",
+    "breakdown": [
+      {
+        "word": "Ich freue mich",
+        "meaning": "Eu me alegro / estou feliz — Ich: eu; freue: alegro; mich: me."
+      },
+      {
+        "word": "dich wiederzusehen",
+        "meaning": "Te rever / Ver você de novo — dich: você; wiederzusehen: rever."
+      }
+    ],
+    "pronuncia": "Em 'Ich freue mich', faça o chiado fino de gato em 'ích' e 'mích', e pronuncie o 'eu' em 'freue' com o ditongo 'oi' ('frói-e'). Em 'dich wiederzusehen', use o 'w' com som de 'v', o 'r' vocalizado em 'a', o 'z' estalado em 'ts' e o 's' zumbindo como 'z' ('víi-da-tsu-zêe-en').\nLeia: ích frói-e mích, dích víi-da-tsu-zêe-en."
+  },
+  "313": {
+    "explanation": "A expressão 'zu Hause' é um pacote pronto que significa 'em casa' (no seu lar). Para receber alguém com carinho e amizade, o alemão diz literalmente 'sinta-se como em casa'.",
+    "breakdown": [
+      {
+        "word": "Bitte",
+        "meaning": "Por favor."
+      },
+      {
+        "word": "fühl dich",
+        "meaning": "Sinta-se — fühl: sinta; dich: você / te."
+      },
+      {
+        "word": "wie zu Hause",
+        "meaning": "Como em casa — wie: como; zu Hause: em casa (no lar)."
+      }
+    ],
+    "pronuncia": "Em 'Bitte', não transforme o 'e' final em 'i' ('bít-te'). Em 'fühl dich', projete os lábios em bico de 'u' dizendo 'i' para sustentar o 'ü' longo ('füül') e faça o chiado fino de gato ('dích'). Em 'wie zu Hause', leia o 'w' como 'v' ('víi'), estale o 'z' em 'ts' ('tsu') e zumba o 's' de 'Hause' como 'z' ('háu-ze').\nLeia: bít-te füül dích víi tsu háu-ze."
+  },
+  "314": {
+    "explanation": "Em vez de usar o verbo oferecer, os alemães perguntam literalmente 'posso te trazer algo para beber?'. O verbo principal 'bringen' (trazer) é empurrado para a última posição da pergunta.",
+    "breakdown": [
+      {
+        "word": "Kann ich dir",
+        "meaning": "Posso eu te — Kann: posso; ich: eu; dir: a você."
+      },
+      {
+        "word": "etwas zu trinken",
+        "meaning": "Algo para beber — etwas: algo; zu: para; trinken: beber."
+      },
+      {
+        "word": "bringen",
+        "meaning": "Trazer / Oferecer."
+      }
+    ],
+    "pronuncia": "Em 'Kann ich dir', a vogal 'a' é oral pura ('kan'), o 'ch' é fino de gato ('ích') e o 'dir' termina em 'a' relaxado ('díia'). Em 'etwas', troque o 'w' por 'v' ('ét-vas'). Em 'zu trinken bringen', estale o 'z' em 'ts' ('tsu'), faça o 't' seco dental ('trin-ken') e encerre no 'ng' nasal no fundo da boca ('bring-en').\nLeia: kan ích díia ét-vas tsu trin-ken bring-en?"
+  },
+  "315": {
+    "explanation": "A estrutura 'Wie geht es...?' é o padrão clássico para dizer 'como vai...?'. O alemão pergunta literalmente 'como vai isso para a sua família?', conectando o verbo ir (geht) diretamente ao grupo familiar.",
+    "breakdown": [
+      {
+        "word": "Wie geht es",
+        "meaning": "Como vai / Como passa — Wie: como; geht: vai; es: isso."
+      },
+      {
+        "word": "deiner Familie",
+        "meaning": "A sua família — deiner: sua; Familie: família."
+      }
+    ],
+    "pronuncia": "Em 'Wie geht es', o 'w' tem som de 'v' e 'i' longo ('víi'), o 'h' em 'geht' é mudo apenas esticando a vogal 'e' ('guêet') e corte o 's' seco em 'és'. No ditongo de 'deiner', fale 'ái' com 'er' vocalizado em 'a' ('dái-na'). Em 'Familie', pronuncie todas as vogais sem chiar a letra 't' ou 'd' ('fa-míi-li-e').\nLeia: víi guêet és dái-na fa-míi-li-e?"
+  },
+  "316": {
+    "explanation": "O verbo 'glauben' significa crer, mas no cotidiano é usado exatamente como o nosso 'achar' para dar impressões gentis. A dupla 'noch nicht' reforça de forma simpática que o ato de se conhecerem ainda não aconteceu.",
+    "breakdown": [
+      {
+        "word": "Ich glaube",
+        "meaning": "Eu acho / creio — Ich: eu; glaube: creio / acho."
+      },
+      {
+        "word": "wir kennen uns",
+        "meaning": "Nós nos conhecemos — wir: nós; kennen: conhecemos; uns: nos."
+      },
+      {
+        "word": "noch nicht",
+        "meaning": "Ainda não — noch: ainda; nicht: não."
+      }
+    ],
+    "pronuncia": "Em 'Ich glaube', faça o chiado fino ('ích') e use o ditongo 'au' de pau ('gláu-be'). Em 'wir kennen uns', troque o 'w' por 'v' e vocalize o 'r' em 'a' ('víia'), mantendo as vogais de 'kennen' e 'uns' puramente orais. Em 'noch nicht', raspe a garganta no 'och' ('nóch') e assopre fino no 'icht' ('nícht').\nLeia: ích gláu-be, víia kén-nen uns nóch nícht."
+  },
+  "317": {
+    "explanation": "Em vez de usar uma estrutura verbal como 'obrigado por me convidar', o alemão usa o substantivo 'o convite' (die Einladung). Eles dizem literalmente 'obrigado pelo convite para a sua festa'.",
+    "breakdown": [
+      {
+        "word": "Danke für",
+        "meaning": "Obrigado por — Danke: obrigado; für: por / para."
+      },
+      {
+        "word": "die Einladung",
+        "meaning": "O convite — Einladung: convite (ação de convidar para entrar)."
+      },
+      {
+        "word": "zu deiner Party",
+        "meaning": "Para a sua festa — zu: para; deiner: sua; Party: festa."
+      }
+    ],
+    "pronuncia": "Em 'Danke für', o 'a' de 'Danke' nasce limpo e oral antes do 'nk' ('dán-ke') e o 'für' tem bico de 'u' dizendo 'i' com 'r' vocalizado ('füüa'). Em 'Einladung', aplique o golpe de glote cortando o ar antes do ditongo 'ai' ('áin-laa-dung'). Em 'zu deiner', o 'z' estala em 'ts' ('tsu dái-na').\nLeia: dán-ke füüa díi 'áin-laa-dung tsu dái-na pár-ti."
+  },
+  "318": {
+    "explanation": "Esta é uma forma muito calorosa de agradecer uma ajuda. O alemão diz literalmente 'é muito gentil de você ajudar', onde 'von dir' expressa essa ideia de 'da sua parte'. O verbo ajudar fica lá no final com a partícula 'zu'.",
+    "breakdown": [
+      {
+        "word": "Es ist sehr nett",
+        "meaning": "É muito legal / gentil — Es: isso; ist: é; sehr: muito; nett: gentil / simpático."
+      },
+      {
+        "word": "von dir",
+        "meaning": "Da sua parte / De você — von: de; dir: você."
+      },
+      {
+        "word": "zu helfen",
+        "meaning": "Ajudar — zu: de / em; helfen: ajudar."
+      }
+    ],
+    "pronuncia": "Em 'Es ist sehr nett', desvozeie o 's' em 'és' e 'ist', o 'h' em 'sehr' é mudo esticando a vogal com 'r' em 'a' ('zêea') e corte o 't' em 'nét'. Em 'von dir', a letra 'v' soa puramente como 'f' ('fón') e 'dir' termina em 'a' relaxado ('díia'). Em 'zu helfen', estale o 'z' em 'ts' ('tsu') e suspire o 'h' ('hél-fen').\nLeia: és ist zêea nét fón díia, tsu hél-fen."
+  },
+  "319": {
+    "explanation": "O verbo 'führen' significa conduzir ou guiar. Essa frase é um jeito muito elegante e amigável de perguntar o motivo da visita de alguém, significando ao pé da letra 'o que conduz você para cá hoje?'.",
+    "breakdown": [
+      {
+        "word": "Was führt dich",
+        "meaning": "O que te conduz / guia — Was: o que; führt: conduz / guia; dich: te / você."
+      },
+      {
+        "word": "heute hierher",
+        "meaning": "Hoje para cá — heute: hoje; hierher: para cá (hier = aqui, her = para cá)."
+      }
+    ],
+    "pronuncia": "Em 'Was führt dich', o 'w' tem som de 'v' ('vas'), o 'ü' tem bico de 'u' dizendo 'i' ('füürt') e 'dich' usa o chiado fino de gato ('dích'). Em 'heute hierher', pronuncie o 'eu' como 'oi' ('hói-te'), suspire o 'h' em 'hierher' e vocalize ambos os 'r' em 'a' relaxado ('híia-hea').\nLeia: vas füürt dích hói-te híia-hea?"
+  },
+  "320": {
+    "explanation": "No alemão, para saber se a pessoa está gostando de um evento, a pergunta é feita invertida: 'o evento agrada a você?' (Gefällt dir...?). A palavra 'bisher' significa 'até agora' ou 'até o momento'.",
+    "breakdown": [
+      {
+        "word": "Gefällt dir",
+        "meaning": "Agrada a você — Gefällt: agrada; dir: a você."
+      },
+      {
+        "word": "die Veranstaltung",
+        "meaning": "O evento / A realização — Veranstaltung: evento / organização."
+      },
+      {
+        "word": "bisher",
+        "meaning": "Até agora / Até o momento."
+      }
+    ],
+    "pronuncia": "Em 'Gefällt dir', o 'ä' soa como 'é' aberto curto ('gue-félt') e 'dir' vira 'díia'. Em 'Veranstaltung', o 'v' soa como 'f' ('fea-'), aplique o golpe de glote antes de 'Anstaltung', chia o 'st' em 'sht' ('-án-shtal-') e ressoe o 'ung' no fundo. Em 'bisher', o 's' e o 'h' se separam com 'r' final em 'a' ('bis-hêea').\nLeia: gue-félt díia díi fea-'án-shtal-tung bis-hêea?"
+  },
+  "321": {
+    "explanation": "A expressão 'Ich fürchte' significa 'eu receio' ou 'eu temo', e é usada no dia a dia como uma forma muito educada e gentil de avisar que você precisa ir embora. O verbo ir (gehen) vai lá para o final.",
+    "breakdown": [
+      {
+        "word": "Ich fürchte",
+        "meaning": "Eu receio / temo — Ich: eu; fürchte: receio."
+      },
+      {
+        "word": "ich muss jetzt gehen",
+        "meaning": "Eu preciso ir agora — ich: eu; muss: preciso / tenho que; jetzt: agora; gehen: ir / andar."
+      }
+    ],
+    "pronuncia": "Em 'Ich fürchte', use o chiado fino em 'ích' e faça o 'ü' com bico de 'u' dizendo 'i' ('füürch-te'). Em 'ich muss jetzt gehen', corte o 's' seco em 'mus', estale o 'j' como 'y' e o 'z' como 'ts' em 'yétst', e mantenha o 'h' mudo esticando a vogal em 'gêe-en'.\nLeia: ích füürch-te, ích mus yétst gêe-en."
+  },
+  "322": {
+    "explanation": "A expressão 'Lass uns' é o equivalente exato do nosso 'vamos!'. O verbo 'bleiben' significa ficar ou permanecer, então a frase diz ao pé da letra 'deixe a gente ficar em contato'.",
+    "breakdown": [
+      {
+        "word": "Lass uns",
+        "meaning": "Deixe a gente / Vamos — Lass: deixa; uns: nós / a gente."
+      },
+      {
+        "word": "in Kontakt",
+        "meaning": "Em contato — in: em; Kontakt: contato."
+      },
+      {
+        "word": "bleiben",
+        "meaning": "Permanecer / Ficar."
+      }
+    ],
+    "pronuncia": "Em 'Lass uns', a vogal de 'Lass' sai oral limpa e corte o 's' seco sibilante ('las uns'). Em 'in Kontakt', fale a vogal oral limpa antes de travar no 'n' e corte a seco a consoante 't' no final ('kon-tákt'). Em 'bleiben', use o ditongo 'ai' de praia ('blái-ben').\nLeia: las uns in kon-tákt blái-ben."
+  },
+  "323": {
+    "explanation": "A pergunta começa direto no verbo ter (Hast du). A palavra para cartão de visitas é uma fusão direta das palavras 'visita' (Visite) e 'cartão' (Karte).",
+    "breakdown": [
+      {
+        "word": "Hast du",
+        "meaning": "Você tem — Hast: tem; du: você."
+      },
+      {
+        "word": "eine Visitenkarte",
+        "meaning": "Um cartão de visitas — eine: um / uma; Visitenkarte: cartão de visita (Visite = visita, Karte = cartão)."
+      }
+    ],
+    "pronuncia": "Em 'Hast du', suspire o 'h' do peito ('hast') e faça o 'd' seco no dente ('dúu'). Em 'eine Visitenkarte', faça o ditongo 'ai' ('ái-ne'), leia o 'v' em 'Visiten' com som de 'z' zumbindo no início ('vi-zíi-ten-') e vocalize o 'r' de 'Karte' em 'a' relaxado ('-kar-te').\nLeia: hast dúu ái-ne vi-zíi-ten-kar-te?"
+  },
+  "324": {
+    "explanation": "Em alemão você não manda 'lembranças', você manda 'saudações' (Grüß). A frase expressa literalmente a ideia de 'cumprimente seus pais da minha parte'.",
+    "breakdown": [
+      {
+        "word": "Grüß",
+        "meaning": "Cumprimente / Mande saudações — da raiz de saudar."
+      },
+      {
+        "word": "deine Eltern",
+        "meaning": "Seus pais — deine: seus; Eltern: pais."
+      },
+      {
+        "word": "von mir",
+        "meaning": "Da minha parte — von: de; mir: mim."
+      }
+    ],
+    "pronuncia": "Em 'Grüß', projete o bico de 'u' dizendo 'i' para sustentar o 'ü' e feche no 'ß' seco ('grüüs'). Em 'deine Eltern', use o ditongo 'ai' ('dái-ne') e aplique o golpe de glote antes de 'Eltern' cortando a seco no 't' (' 'él-tarn'). Em 'von mir', leia o 'v' com som de 'f' ('fón') e vocalize o 'r' de 'mir' em 'a' ('míia').\nLeia: grüüs dái-ne 'él-tarn fón míia."
+  },
+  "325": {
+    "explanation": "A expressão 'etwas zu schätzen wissen' significa dar muito valor a algo. Em vez de um simples obrigado, esta frase diz ao pé da letra 'eu sei dar valor de verdade ao seu conselho'.",
+    "breakdown": [
+      {
+        "word": "Ich weiß",
+        "meaning": "Eu sei — Ich: eu; weiß: sei."
+      },
+      {
+        "word": "deinen Rat",
+        "meaning": "O seu conselho — deinen: seu; Rat: conselho."
+      },
+      {
+        "word": "wirklich zu schätzen",
+        "meaning": "Realmente dar valor — wirklich: realmente; zu: de; schätzen: estimar / dar valor."
+      }
+    ],
+    "pronuncia": "Em 'Ich weiß', use o chiado fino em 'ích', troque o 'w' por 'v' e termine no 'ß' seco ('váis'). Em 'deinen Rat', faça o ditongo 'ai' ('dái-nen') e raspe suave o 'r' em 'ráat'. Em 'wirklich zu schätzen', use o 'w' como 'v' ('vírk-lich'), estale o 'z' em 'ts' ('tsu') e chia o 'sch' com 'tz' em 'shét-tsen'.\nLeia: ích váis dái-nen ráat vírk-lich tsu shét-tsen."
+  },
+  "326": {
+    "explanation": "A pergunta começa com o verbo no passado 'war es' (foi isso). A ação principal de 'encontrar' (finden) é colocada na ponta final da frase acompanhada do conector 'zu' (zu finden).",
+    "breakdown": [
+      {
+        "word": "War es schwierig",
+        "meaning": "Foi difícil — War: foi; es: isso; schwierig: difícil."
+      },
+      {
+        "word": "den Ort",
+        "meaning": "O lugar / O local — den: o; Ort: lugar."
+      },
+      {
+        "word": "zu finden",
+        "meaning": "Encontrar — zu: de / para; finden: achar / encontrar."
+      }
+    ],
+    "pronuncia": "Em 'War es', troque o 'w' por 'v' ('váa') e desvozeie o 's' em 'és'. Em 'schwierig', chia o 'schw' como 'shv' ('shvíi-') e termine no chiado fino de gato em '-rich'. Em 'den Ort', estique o 'e' fechado ('dêen') e vocalize o 'r' em 'órt'. Em 'zu finden', estale o 'z' em 'ts' ('tsu') e faça o 'd' seco no dente ('fín-den').\nLeia: váa és shvíi-rich, dêen órt tsu fín-den?"
+  },
+  "327": {
+    "explanation": "O verbo para ter boa aparência é 'aussehen', que se separa na frase. A partícula 'aus' vai lá para o finalzinho, enquanto 'siehst' fica junto de você (Du). A frase significa 'você parece ótimo para fora hoje!'.",
+    "breakdown": [
+      {
+        "word": "Du siehst",
+        "meaning": "Você parece / você vê — Du: você; siehst: vê / parece."
+      },
+      {
+        "word": "heute toll",
+        "meaning": "Hoje ótimo — heute: hoje; toll: ótimo / incrível."
+      },
+      {
+        "word": "aus",
+        "meaning": "Para fora (parte que se separou do verbo aussehen)."
+      }
+    ],
+    "pronuncia": "Em 'Du siehst', faça o 'd' seco no dente ('dúu'), zumba o 's' como 'z' e mantenha o 'h' mudo esticando o 'i' com 'st' seco no fim ('zíihst'). Em 'heute toll', fale o ditongo 'oi' em 'hói-te' e não deixe o 'l' de 'tol' virar 'u'. Em 'aus', termine no 's' seco sibilante ('áus').\nLeia: dúu zíihst hói-te tol áus!"
+  },
+  "328": {
+    "explanation": "A palavra para mal-entendido (Missverständnis) junta o prefixo de erro (Miss-) com a palavra entendimento (Verständnis). A expressão 'tut mir leid' significa ao pé da letra 'isso me causa dor', que é a forma padrão de pedir desculpas.",
+    "breakdown": [
+      {
+        "word": "Das Missverständnis",
+        "meaning": "O mal-entendido — Das: o; Missverständnis: mal-entendido."
+      },
+      {
+        "word": "tut mir leid",
+        "meaning": "Me faz sentir muito / me causa pena — tut: faz; mir: a mim; leid: pena / dor."
+      }
+    ],
+    "pronuncia": "Em 'Das Missverständnis', desvozeie o 's' em 'das', o 'v' em 'Verständnis' soa como 'f' ('-fea-') e chia o 'st' como 'sht' com 'd' final desvozeado em 't' ('-shtént-nis'). Em 'tut mir leid', o 'd' final de 'leid' vira 't' seco ('láit') e 'mir' vocaliza o 'r' em 'a' ('míia').\nLeia: das mís-fea-shtént-nis tút míia láit."
+  },
+  "329": {
+    "explanation": "No alemão, a ação de ajudar (helfen) vai para o fim da pergunta. O idioma estabelece a estrutura onde quem ajuda, ajuda 'a alguém com alguma coisa', por isso usamos a preposição 'mit' antes de bolsas/malas (Taschen).",
+    "breakdown": [
+      {
+        "word": "Kann ich dir",
+        "meaning": "Posso eu te — Kann: posso; ich: eu; dir: a você."
+      },
+      {
+        "word": "mit deinen Taschen",
+        "meaning": "Com suas bolsas / malas — mit: com; deinen: suas; Taschen: bolsas / malas."
+      },
+      {
+        "word": "helfen",
+        "meaning": "Ajudar — ação de prestar auxílio."
+      }
+    ],
+    "pronuncia": "Em 'Kann ich dir', a vogal de 'Kann' é pura oral ('kan'), 'ich' tem chiado fino ('ích') e 'dir' morre em 'a' relaxado ('díia'). No ditongo de 'deinen', fale 'ái' ('dái-nen'). Em 'Taschen', o 'sch' chia como chuva ('tás-chen'). Em 'helfen', suspire suavemente o 'h' inicial vindo do peito ('hél-fen').\nLeia: kan ích díia mit dái-nen tás-chen hél-fen?"
+  },
+  "330": {
+    "explanation": "Na hora de se despedir de alguém que está voltando para o seu lar, os alemães não dizem 'tenha uma boa viagem', mas sim 'chegue bem em casa' (Komm gut nach Hause). A palavra 'nach' marca a direção para o lar.",
+    "breakdown": [
+      {
+        "word": "Komm gut",
+        "meaning": "Venha / Chegue bem — Komm: venha / chegue; gut: bem."
+      },
+      {
+        "word": "nach Hause",
+        "meaning": "Para casa — nach: para (em direção a); Hause: casa."
+      }
+    ],
+    "pronuncia": "Em 'Komm gut', o 'o' de 'Komm' é aberto curto ('kom') e desvozeie o 'd' final de 'gut' transformando em 't' seco estalado ('gúut'). Em 'nach Hause', o 'ch' de 'nach' raspa o fundo da garganta após 'a' ('nach'), suspire o 'h' em 'Hause' e zumba o 's' como 'z' de abelha ('háu-ze').\nLeia: kom gúut nach háu-ze."
+  }
+}

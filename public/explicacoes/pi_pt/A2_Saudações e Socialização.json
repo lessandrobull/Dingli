@@ -1,0 +1,822 @@
+{
+  "301": {
+    "explanation": "No mandarim, quando queremos saber como um amigo tem passado ultimamente, a lógica do pensamento chinês coloca a palavra de tempo 'ultimamente' logo após a pessoa 'você', antes do estado de estar bem. A frase fecha com a partícula de pergunta no final, transformando a afirmação 'você está bem' em uma sondagem amigável sobre o período recente.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "最近",
+        "meaning": "zuìjìn — Ultimamente / Recentemente — zuì: o mais; jìn: perto."
+      },
+      {
+        "word": "好",
+        "meaning": "hǎo — Bem / Bom"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta (faz a frase virar uma pergunta de sim ou não)"
+      }
+    ],
+    "pronuncia": "Comece em 'nǐ' mergulhando a voz no ponto grave da garganta no 3º tom. Para 'zuìjìn', faça o estalo seco sem ar em 'tsui' caindo forte no 4º tom, e feche em 'djièn' no 4º tom esticando os cantos da boca em sorriso com corte da língua nos dentes da frente. Em 'hǎo', afunde a voz no 3º tom grave soltando o ar raspado na garganta em 'rrǎo'. Conclua com a partícula 'ma' levinha e curta no tom neutro, sem força muscular.\nLeia: Nǐ tsui-djièn rrǎo ma?"
+  },
+  "302": {
+    "explanation": "Os chineses expressam vontades ou intenções educadas colocando 'eu gostaria' antes da ação principal de apresentar. Para deixar o tom da conversa mais leve e informal, acrescentam a expressão 'um pouco' logo após o verbo, e colocam a posse 'meu' antes do termo 'colega de trabalho', mostrando que o detalhe do relacionamento vem antes da pessoa apresentada.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Gostaria de / Desejo"
+      },
+      {
+        "word": "介绍",
+        "meaning": "jièshào — Apresentar — jiè: intermediar; shào: introduzir."
+      },
+      {
+        "word": "一下",
+        "meaning": "yīxià — Um pouco / Rapidamente — dá um tom leve e educado à ação."
+      },
+      {
+        "word": "我的",
+        "meaning": "wǒ de — Meu / Minha — wǒ: eu; de: partícula de posse que soa 'da'."
+      },
+      {
+        "word": "同事",
+        "meaning": "tóngshì — Colega de trabalho — tóng: junto/mesmo; shì: assunto/trabalho."
+      }
+    ],
+    "pronuncia": "Em 'wǒ xiǎng', afunde a voz no grave em 'uǒ', e faça um sorriso esticado para chiar o 'x' em 'xiěng' mergulhando a voz no 3º tom. Em 'jièshào', faça o estalo seco em sorriso 'djièn' caindo no 4º tom e curve a língua para trás em 'chào' no 4º tom. Em 'yīxià', note que o numeral sobe em 2º tom 'yí' antes de cair seco no 4º tom em 'xià'. Em 'wǒ de', diga 'wǒ' e solte a partícula neutra 'da', sendo proibido falar 'dê'. Feche em 'tóngshì' subindo a voz em 'tsông' no 2º tom e curvando a língua para trás em 'chì' cortando a seco no 4º tom.\nLeia: Wǒ xiěng djiè-chào yí-xià wǒ da tsông-chì."
+  },
+  "303": {
+    "explanation": "Na ordem do pensamento em mandarim, a indicação de companhia 'comigo' e a intensidade 'mais' vêm antes do verbo 'falar/contar'. A repetição do verbo 'falar' é um recurso comum para deixar a frase soar calorosa e descontraída, como pedir para bater um papo sem pressão, fechando com a partícula de pergunta no final.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Pode / Conseguiria"
+      },
+      {
+        "word": "多",
+        "meaning": "duō — Mais / Bastante"
+      },
+      {
+        "word": "跟我",
+        "meaning": "gēn wǒ — Comigo — gēn: com; wǒ: eu."
+      },
+      {
+        "word": "讲讲",
+        "meaning": "jiǎngjiang — Contar / Falar um pouco — repetição amigável do verbo jiǎng."
+      },
+      {
+        "word": "你自己",
+        "meaning": "nǐ zìjǐ — Você mesmo / Sua pessoa — nǐ: você; zìjǐ: próprio."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'nǐ néng', projete 'nǐ' no 3º tom grave e suba a entonação de pergunta em 'nêng' no 2º tom. Em 'duō', mantenha a voz alta e contínua no 1º tom. Em 'gēn wǒ', grafe e pronuncie 'gēn' com o som gutural aberto 'gān' travando a língua no dente, seguido de 'wǒ' grave. Em 'jiǎngjiang', faça o sorriso esticado 'djiǎng' no 3º tom grave e repita 'djiang' de leve. Em 'nǐ zìjǐ', afunde a voz em 'nǐ', faça o estalo dental seco de pizza em 'tsì' no 4º tom e termine no sorriso 'djiǐ'. Conclua com 'ma' leve e frouxo.\nLeia: Nǐ nêng duō gān wǒ djiǎng-djiang nǐ tsì-djiǐ ma?"
+  },
+  "304": {
+    "explanation": "O pensamento em mandarim sempre estabelece o momento do tempo no início da frase, como 'ontem'. Em seguida, apresenta a companhia 'com você' antes da ação de conversar. Para descrever o resultado positivo da conversa, usa-se a partícula de ligação conectando o verbo ao estado de ter ficado muito feliz.",
+    "breakdown": [
+      {
+        "word": "昨天",
+        "meaning": "zuótiān — Ontem — zuó: passado/ontem; tiān: dia."
+      },
+      {
+        "word": "跟你",
+        "meaning": "gēn nǐ — Com você — gēn: com; nǐ: você."
+      },
+      {
+        "word": "聊",
+        "meaning": "liáo — Conversar / Bater papo"
+      },
+      {
+        "word": "得",
+        "meaning": "de — Partícula de ligação de resultado (soa 'da')"
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito"
+      },
+      {
+        "word": "开心",
+        "meaning": "kāixīn — Feliz / Contente — kāi: abrir; xīn: coração."
+      }
+    ],
+    "pronuncia": "Em 'zuótiān', faça o estalo seco 'tsuó' subindo no 2º tom e abra em 'tiēn' sustentado no 1º tom com a língua no dente. Em 'gēn nǐ', grafe 'gēn' obrigatoriamente como 'gān' no som gutural aberto, seguido de 'nǐ' no grave. Suba a voz em 'liáo' no 2º tom e emende na partícula neutra 'da', proibido falar 'dê'. Em 'hěn kāixīn', raspe a garganta em 'rrěn' no 3º tom grave, solte o sopro de ar em 'kāi' no 1º tom e encerre no chiado de sorriso 'xīn' mantendo a voz alta e reta.\nLeia: Tsuó-tiēn gān nǐ liáo da rrěn kāi-xīn."
+  },
+  "305": {
+    "explanation": "Na ordem lógica chinesa, primeiro identificamos a pessoa e o período de tempo falado, como 'você no fim de semana'. Depois vem o verbo 'passar', acompanhado da partícula de ligação que conecta a ação à avaliação de ter sido 'bom', terminando com a partícula que transforma a afirmação em pergunta.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "周末",
+        "meaning": "zhōumò — Fim de semana — zhōu: semana; mò: fim."
+      },
+      {
+        "word": "过",
+        "meaning": "guò — Passar / Transcorrer"
+      },
+      {
+        "word": "得",
+        "meaning": "de — Partícula de ligação de resultado (soa 'da')"
+      },
+      {
+        "word": "好",
+        "meaning": "hǎo — Bem / Bom"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Inicie em 'nǐ' no 3º tom grave. Em 'zhōumò', curve a língua para trás soltando o estalo seco 'djōu' no 1º tom e faça o bico labial 'muô' caindo no 4º tom. Em 'guò de', solte a queda seca em 'guô' no 4º tom e conecte com a partícula frouxa 'da' no tom neutro, sendo proibido falar 'dê'. Finalize afundando a voz no ar raspado de 'rrǎo' no 3º tom grave e solte a partícula 'ma' sem peso muscular.\nLeia: Nǐ djōu-muô guô da rrǎo ma?"
+  },
+  "306": {
+    "explanation": "Ao pedir desculpas por não ter escutado o nome de alguém, o mandarim coloca o pedido de desculpas primeiro. Depois, usa-se a palavra de negação de fatos passados antes da combinação do verbo 'ouvir' com o resultado 'com clareza', mostrando que a percepção do nome não foi concluída com sucesso.",
+    "breakdown": [
+      {
+        "word": "对不起",
+        "meaning": "duìbuqǐ — Desculpe / Sinto muito — duì: correto; bu: não; qǐ: erguer."
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "没",
+        "meaning": "méi — Não (negação de ações que não se concretizaram no passado)"
+      },
+      {
+        "word": "听清",
+        "meaning": "tīngqīng — Ouvir claramente — tīng: ouvir; qīng: limpo/claro."
+      },
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Seu / Sua — nǐ: você; de: partícula de posse que soa 'da'."
+      },
+      {
+        "word": "名字",
+        "meaning": "míngzi — Nome — míng: nome; zi: sufixo de palavra."
+      }
+    ],
+    "pronuncia": "Em 'duìbuqǐ', aplique a vogal oculta 'duêi' caindo no 4º tom, passe por 'bu' leve e solte a explosão de ar em sorriso 'tchǐ' no 3º tom. Em 'wǒ méi', faça 'uǒ' grave e suba a voz em pergunta rápida no 2º tom em 'méi'. Em 'tīngqīng', dê o sopro forte 'tīng' no 1º tom e o sopro em sorriso 'tchīng' no 1º tom. Em 'nǐ de', diga 'nǐ' e finalize na partícula neutra 'da', proibido falar 'dê'. Termine subindo 'míng' no 2º tom e estalando 'tsi' curto no dente.\nLeia: Duêi-bu-tchǐ, wǒ méi tīng-tchīng nǐ da míng-tsi."
+  },
+  "307": {
+    "explanation": "No pensamento em mandarim, o modo como a ação deve ser feita vem antes do verbo principal. Por isso, a instrução 'um pouco mais devagar' é posicionada antes da ordem de 'falar de novo uma vez', mostrando que o ritmo da fala é o filtro prioritário para a repetição do ato.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Pode / Conseguiria"
+      },
+      {
+        "word": "慢一点",
+        "meaning": "màn yīdiǎn — Um pouco mais devagar — màn: lento; yīdiǎn: um pouco."
+      },
+      {
+        "word": "再",
+        "meaning": "zài — Novamente / Outra vez"
+      },
+      {
+        "word": "说",
+        "meaning": "shuō — Falar / Dizer"
+      },
+      {
+        "word": "一遍",
+        "meaning": "yībiàn — Uma vez (sequência completa da ação)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'nǐ néng', afunde a voz em 'nǐ' no 3º tom e suba em 'nêng' no 2º tom. Em 'màn yīdiǎn', caia seco em 'màn' no 4º tom, mude o numeral para o 4º tom 'yì' antes do 3º tom 'diěn' cortado no dente. Em 'zài shuō', faça o estalo seco 'tsài' no 4º tom e curve a língua para trás em 'chōu' sustentado no 1º tom. Em 'yībiàn', mude o numeral para o 2º tom 'yí' antes do 4º tom 'bièn' com a língua no dente. Conclua com 'ma' leve no tom neutro.\nLeia: Nǐ nêng màn yì-diěn tsài chōu yí-bièn ma?"
+  },
+  "308": {
+    "explanation": "Na ordem lógica chinesa, a marca de tempo 'no passado/antes' vem logo depois de 'nós'. Para expressar a ideia de já ter visto alguém, o mandarim combina o verbo ver com o marcador de experiência. A negação 'não' anula essa vivência, e a partícula no final serve para confirmar com suavidade a dúvida do falante.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: partícula de plural (soa 'man')."
+      },
+      {
+        "word": "以前",
+        "meaning": "yǐqián — Antes / No passado — yǐ: desde; qián: frente/antes."
+      },
+      {
+        "word": "没",
+        "meaning": "méi — Não (negação de experiência ou evento passado)"
+      },
+      {
+        "word": "见过",
+        "meaning": "jiànguò — Ter visto / Ter encontrado — jiàn: ver; guò: experiência passada."
+      },
+      {
+        "word": "吧",
+        "meaning": "ba — Partícula de confirmação amigável ('não é?', 'certo?')"
+      }
+    ],
+    "pronuncia": "Em 'wǒmen', faça 'uǒ' grave e solte 'man' átono e frouxo no tom neutro. Em 'yǐqián', afunde 'yǐ' no 3º tom e solte o sopro de ar em sorriso 'tchién' subindo no 2º tom com corte da língua nos dentes. Em 'méi jiànguò', suba a voz em 'méi' no 2º tom, dê um golpe seco em sorriso 'djièn' no 4º tom com corte dental e termine no bico 'guô' no 4º tom. Finalize com a partícula suave 'ba'.\nLeia: Wǒ-man yǐ-tchién méi djièn-guô ba?"
+  },
+  "309": {
+    "explanation": "As frases de desejo no mandarim abrem diretamente com o verbo 'esperar'. Em seguida, a marcação de tempo 'muito em breve' é colocada antes do verbo de capacidade e da ação de 'ver você novamente', organizando os pensamentos do mais abstrato ao reencontro concreto.",
+    "breakdown": [
+      {
+        "word": "希望",
+        "meaning": "xīwàng — Esperar / Desejar — xī: esperar; wàng: olhar para longe/esperar."
+      },
+      {
+        "word": "很快",
+        "meaning": "hěn kuài — Muito em breve / Rápido — hěn: muito; kuài: rápido."
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Poder / Conseguir"
+      },
+      {
+        "word": "再",
+        "meaning": "zài — Novamente / De novo"
+      },
+      {
+        "word": "见到",
+        "meaning": "jiàndào — Encontrar / Ver — jiàn: ver; dào: alcançar o resultado."
+      },
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      }
+    ],
+    "pronuncia": "Em 'xīwàng', faça o chiado agudo de sorriso 'xī' sustentado no 1º tom e caia seco no ar de garganta 'uàng' no 4º tom. Em 'hěn kuài', raspe a garganta em 'rrěn' no 3º tom grave e solte o sopro seco de garganta 'kuài' caindo no 4º tom. Em 'néng zài', suba em 'nêng' no 2º tom e estale o 'tsài' seco no 4º tom. Em 'jiàndào nǐ', dê o golpe em sorriso 'djièn' no 4º tom, caia firme em 'dào' no 4º tom e termine afundando a voz em 'nǐ' no 3º tom grave.\nLeia: Xī-uàng rrěn kuài nêng tsài djièn-dào nǐ."
+  },
+  "310": {
+    "explanation": "A estrutura chinesa posiciona a indicação de companhia 'com a gente juntos' entre o verbo de desejo 'gostaria' e as ações encadeadas 'ir beber café'. O verbo 'ir' antecede o verbo 'beber' para respeitar a ordem física do deslocamento no mundo real antes do ato de consumir a bebida.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Quer / Gostaria de"
+      },
+      {
+        "word": "和",
+        "meaning": "hé — Com / E (soa 'rra' no mandarim falado)"
+      },
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: partícula de plural (soa 'man')."
+      },
+      {
+        "word": "一起",
+        "meaning": "yīqǐ — Juntos — yī: um; qǐ: erguer."
+      },
+      {
+        "word": "去",
+        "meaning": "qù — Ir (soa 'tchü' com bico de U e som de I)"
+      },
+      {
+        "word": "喝",
+        "meaning": "hē — Beber (soa 'rrā' no som gutural aberto)"
+      },
+      {
+        "word": "咖啡",
+        "meaning": "kāfēi — Café"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Devido a dois 3º tons seguidos em 'nǐ xiǎng', mude a primeira para o 2º tom: 'ní xiěng'. Em 'hé', grafe obrigatoriamente como 'rra' subindo a voz no 2º tom. Em 'wǒmen', diga 'uǒ' e solte 'man' átono. Em 'yīqǐ', altere o numeral para o 4º tom 'yì' antes de soltar o sopro em sorriso 'tchǐ' no 3º tom. Arme o bico de U com som interno de I para o sopro 'tchü' no 4º tom em 'qù'. Em 'hē', pronuncie 'rrā' no 1º tom gutural sem falar 'rê'. Finalize em 'kā-fēi' no 1º tom plano e a partícula 'ma'.\nLeia: Ní xiěng rra wǒ-man yì-tchǐ tchü rrā kā-fēi ma?"
+  },
+  "311": {
+    "explanation": "No pensamento em mandarim, estabelece-se a condição de tempo e disponibilidade 'no dia a dia quando tem tempo' logo no início da frase. A preferência 'gostar de fazer' vem em seguida, e a palavra de pergunta 'o que' é colocada exatamente no final, onde ficaria a resposta esperada.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "平时",
+        "meaning": "píngshí — Normally / No dia a dia — píng: comum; shí: tempo."
+      },
+      {
+        "word": "有空",
+        "meaning": "yǒu kòng — Ter tempo livre — yǒu: ter; kòng: espaço/tempo vago."
+      },
+      {
+        "word": "喜欢",
+        "meaning": "xǐhuān — Gostar de — xǐ: gostar; huān: alegre."
+      },
+      {
+        "word": "做",
+        "meaning": "zuò — Fazer"
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Qual coisa (soa estritamente 'chán-ma')"
+      }
+    ],
+    "pronuncia": "Em 'nǐ', afunde a voz no 3º tom grave. Em 'píngshí', suba a voz em 'píng' no 2º tom e curve a língua para trás em 'chí' subindo no 2º tom. Em 'yǒu kòng', faça o mergulho grave em 'iǒu' e dê um golpe seco soprado de garganta em 'kông' no 4º tom. Em 'xǐhuān', faça o sorriso agudo 'xǐ' no 3º tom e abra em 'rruān' no 1º tom. Em 'zuò', faça o estalo seco 'tsuô' no 4º tom. Conclua com 'shénme' grafado obrigatoriamente como 'chán-ma', curvando a língua para trás no 2º tom em 'chán' e soltando 'ma' neutro.\nLeia: Nǐ píng-chí yǒu kông xǐ-rruān tsuô chán-ma?"
+  },
+  "312": {
+    "explanation": "A frase chinesa sintetiza o sentimento abrindo diretamente com a emoção 'muito feliz'. Em seguida, usa-se o advérbio 'novamente' para indicar que a ação de rever alguém é a repetição de algo bom, vindo imediatamente antes da combinação do verbo ver com a pessoa.",
+    "breakdown": [
+      {
+        "word": "很",
+        "meaning": "hěn — Muito"
+      },
+      {
+        "word": "高兴",
+        "meaning": "gāoxìng — Feliz / Alegre — gāo: alto; xìng: entusiasmo."
+      },
+      {
+        "word": "又",
+        "meaning": "yòu — Novamente / Outra vez (para ações repetidas)"
+      },
+      {
+        "word": "见到",
+        "meaning": "jiàndào — Encontrar / Ver — jiàn: ver; dào: alcançar o resultado."
+      },
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      }
+    ],
+    "pronuncia": "Em 'hěn', raspe o fundo da garganta em 'rrěn' afundando a voz no 3º tom grave. Em 'gāoxìng', faça o estalo seco sem ar em 'gāo' sustentado no 1º tom alto e caia seco com a boca em sorriso em 'xìng' no 4º tom. Em 'yòu', aplique a vogal oculta soltando a queda seca em 'iôu' no 4º tom. Em 'jiàndào', solte o golpe em sorriso 'djièn' no 4º tom com corte da língua nos dentes, caia firme em 'dào' no 4º tom e feche em 'nǐ' no 3º tom grave.\nLeia: Rrěn gāo-xìng iôu djièn-dào nǐ."
+  },
+  "313": {
+    "explanation": "Para expressar a hospitalidade de 'sinta-se em casa', o mandarim junta duas frases curtas. A primeira instrui o convidado a 'não fazer cerimônia'. A segunda constrói uma comparação direta mandando a pessoa 'tratar o ambiente igual à sua própria casa', colocando a palavra 'igual' no final da frase.",
+    "breakdown": [
+      {
+        "word": "别",
+        "meaning": "bié — Não (instrução negativa amigável)"
+      },
+      {
+        "word": "客气",
+        "meaning": "kèqi — Ser cerimonioso / Fazer cerimônia — kè: convidado; qi: ar/polidez."
+      },
+      {
+        "word": "当",
+        "meaning": "dàng — Tratar como / Considerar"
+      },
+      {
+        "word": "自己家",
+        "meaning": "zìjǐ jiā — Sua própria casa — zìjǐ: próprio; jiā: casa."
+      },
+      {
+        "word": "一样",
+        "meaning": "yīyàng — Igual / Da mesma forma — yī: um; yàng: forma."
+      }
+    ],
+    "pronuncia": "Em 'bié', suba a voz em 'bié' no 2º tom. Em 'kèqi', pronuncie a vogal gutural posterior em 'kà' caindo no 4º tom, sendo proibido falar 'kê', e solte o sopro de ar em sorriso 'tchi' leve e frouxo no tom neutro. Em 'dàng', caia seco no 4º tom. Em 'zìjǐ jiā', faça o estalo de pizza 'tsì' no 4º tom, afunde 'djiǐ' no 3º tom e abra em 'djiā' sustentado no 1º tom. Em 'yīyàng', mude o numeral para o 2º tom 'yí' antes da queda seca em 'iàng' no 4º tom.\nLeia: Bié kà-tchi, dàng tsì-djiǐ djiā yí-iàng."
+  },
+  "314": {
+    "explanation": "No pensamento chinês, a pergunta sobre oferecer algo para beber é feita sugerindo a ingestão de 'um pouco de alguma coisa'. O verbo 'beber' é seguido diretamente pela quantidade indefinida 'um pouco' e pelo objeto 'o que', terminando com a partícula que transforma a sugestão em pergunta.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Gostaria de / Quer"
+      },
+      {
+        "word": "喝",
+        "meaning": "hē — Beber (soa 'rrā' gutural)"
+      },
+      {
+        "word": "点",
+        "meaning": "diǎn — Um pouco / Algo (forma reduzida de yīdiǎn)"
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Alguma coisa (soa estritamente 'chán-ma')"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Como 'nǐ' e 'xiǎng' são dois 3º tons seguidos, mude a primeira sílaba para o 2º tom: 'ní xiěng'. Em 'hē', solte o som gutural raspado 'rrā' sustentado no 1º tom, sendo proibido falar 'rê'. Em 'diǎn', afunde a voz no 3º tom 'diěn' com corte da língua nos dentes da frente. Em 'shénme', grafe obrigatoriamente 'chán-ma', curvando a língua para trás em 'chán' subindo no 2º tom e soltando 'ma' neutro. Termine com a partícula de pergunta 'ma' curta e sem peso.\nLeia: Ní xiěng rrā diěn chán-ma ma?"
+  },
+  "315": {
+    "explanation": "Em vez de empregar um termo abstrato para 'família', a linguagem cotidiana do mandarim refere-se às 'pessoas dentro de casa'. A frase adiciona o advérbio 'todos' para abarcar cada familiar, perguntando se o grupo inteiro se encontra bem.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Seu / Sua / Você"
+      },
+      {
+        "word": "家里",
+        "meaning": "jiālǐ — Dentro de casa / Família — jiā: casa; lǐ: dentro."
+      },
+      {
+        "word": "人",
+        "meaning": "rén — Pessoas"
+      },
+      {
+        "word": "都",
+        "meaning": "dōu — Todos / Tudo"
+      },
+      {
+        "word": "好",
+        "meaning": "hǎo — Bem / Bons"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'nǐ', afunde a voz no 3º tom grave. Em 'jiālǐ', abra o sorriso 'djiā' sustentado no 1º tom e mergulhe no 3º tom em 'lǐ'. Em 'rén', curve a ponta da língua para trás em direção ao céu da boca sem encostar nos dentes e suba a voz vibrando a garganta em 'jên' no 2º tom. Em 'dōu', solte o estalo seco sem ar em 'dōu' no 1º tom. Em 'hǎo ma', afunde o ar raspado em 'rrǎo' no 3º tom e feche na partícula neutra 'ma'.\nLeia: Nǐ djiā-lǐ jên dōu rrǎo ma?"
+  },
+  "316": {
+    "explanation": "Para soar educado ao abordar um desconhecido, o falante inicia com a expressão 'eu acho que'. Em seguida, junta-se o sujeito 'nós' com o marcador de tempo 'ainda não' e a estrutura de experiência para 'ter se visto', transmitindo com delicadeza a percepção de ser o primeiro contato.",
+    "breakdown": [
+      {
+        "word": "我想",
+        "meaning": "wǒ xiǎng — Acho que / Creio que — wǒ: eu; xiǎng: pensar."
+      },
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: partícula de plural (soa 'man')."
+      },
+      {
+        "word": "还",
+        "meaning": "hái — Ainda"
+      },
+      {
+        "word": "没",
+        "meaning": "méi — Não (negação de acontecimento ou experiência)"
+      },
+      {
+        "word": "见过",
+        "meaning": "jiànguò — Ter se visto / Conhecido — jiàn: ver; guò: experiência passada."
+      }
+    ],
+    "pronuncia": "Em 'wǒ xiǎng', afunde a voz no grave em 'uǒ' e faça a boca em sorriso para 'xiěng' no 3º tom. Em 'wǒmen', diga 'uǒ' e solte 'man' frouxo no tom neutro, proibido falar 'mên'. Em 'hái méi', raspe a garganta subindo em 'rrái' no 2º tom e suba a voz em 'méi' no 2º tom. Em 'jiànguò', dê um golpe seco em sorriso 'djièn' no 4º tom travando a língua no dente e feche no bico 'guô' caindo no 4º tom.\nLeia: Wǒ xiěng wǒ-man rrái méi djièn-guô."
+  },
+  "317": {
+    "explanation": "A ordem das ideias na gratidão chinesa segue uma sequência lógica direta: primeiro expressa-se o agradecimento à pessoa, depois o ato de convidar, a ação de comparecer/participar e, por último, o evento específico em si.",
+    "breakdown": [
+      {
+        "word": "谢谢",
+        "meaning": "xièxie — Obrigado — xiè: agradecer."
+      },
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "邀请",
+        "meaning": "yāoqǐng — Convidar — yāo: convidar; qǐng: pedir/convidar."
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "参加",
+        "meaning": "cānjiā — Participar de — cān: participar; jiā: juntar."
+      },
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Sua / Seu — nǐ: você; de: partícula de posse que soa 'da'."
+      },
+      {
+        "word": "派对",
+        "meaning": "pàiduì — Festa (empréstimo fonético do inglês) — pài: facção/grupo; duì: equipe."
+      }
+    ],
+    "pronuncia": "Em 'xièxie', caia seco no chiado de sorriso 'xiè' no 4º tom e solte o segundo 'xie' frouxo e curto. Diga 'nǐ' no grave. Em 'yāoqǐng', projete 'iāo' sustentado no 1º tom e solte o sopro de ar em sorriso 'tchǐng' no 3º tom. Afunde a voz em 'wǒ'. Em 'cānjiā', dispare o sopro de ar dental 'tsān' no 1º tom com a língua nos dentes e estale 'djiā' no 1º tom. Em 'nǐ de', diga 'nǐ' e solte a partícula neutra 'da'. Finalize soltando o sopro forte 'pài' no 4º tom e o ditongo oculto 'duêi' no 4º tom.\nLeia: Xiè-xie nǐ iāo-tchǐng wǒ tsān-djiā nǐ da pài-duêi."
+  },
+  "318": {
+    "explanation": "Na construção desta frase, o fato de a pessoa 'poder ajudar' é posicionado como o tema inicial. Em seguida vem o julgamento 'é realmente', concluindo com a estrutura de intensidade que envolve a palavra 'bom' para criar o efeito de algo maravilhoso.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Poder / Conseguir"
+      },
+      {
+        "word": "帮忙",
+        "meaning": "bāngmáng — Ajudar / Dar uma mão — bāng: ajudar; máng: ocupado."
+      },
+      {
+        "word": "真是",
+        "meaning": "zhēnshì — Realmente é / De fato — zhēn: verdadeiro; shì: ser."
+      },
+      {
+        "word": "太好了",
+        "meaning": "tài hǎo le — Maravilhoso / Muito bom — tài: demais; hǎo: bom; le: partícula de ênfase (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'nǐ néng', afunde 'nǐ' no 3º tom grave e suba 'nêng' no 2º tom. Em 'bāngmáng', solte o estalo seco sem ar 'bāng' no 1º tom e suba a voz em 'máng' no 2º tom. Em 'zhēnshì', curve a língua para trás em 'djēn' no 1º tom e mantenha a língua curvada para chiar em 'chì' no 4º tom. Em 'tài hǎo le', caia seco no sopro 'tài' no 4º tom, afunde em 'rrǎo' no 3º tom e termine na partícula frouxa 'la' no tom neutro, sendo estritamente proibido falar 'lê'.\nLeia: Nǐ nêng bāng-máng djēn-chì tài rrǎo la."
+  },
+  "319": {
+    "explanation": "Esta expressão idiomática chinesa é equivalente ao nosso 'que vento te trouxe aqui hoje?'. A frase estabelece o tempo 'hoje' e o agente 'que vento' logo no início, utilizando a partícula de manuseio para mostrar que o vento pegou 'você' e o soprou até aqui.",
+    "breakdown": [
+      {
+        "word": "今天",
+        "meaning": "jīntiān — Hoje — jīn: presente; tiān: dia."
+      },
+      {
+        "word": "什么风",
+        "meaning": "shénme fēng — Que vento — shénme: qual/que (soa 'chán-ma'); fēng: vento."
+      },
+      {
+        "word": "把你",
+        "meaning": "bǎ nǐ — Pegou você — bǎ: partícula de manuseio/deslocamento; nǐ: você."
+      },
+      {
+        "word": "吹来了",
+        "meaning": "chuī lái le — Soprou para cá — chuī: soprar; lái: vir; le: partícula de ação concluída (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'jīntiān', faça o sorriso seco 'djīn' no 1º tom e solte o sopro 'tiēn' no 1º tom travando a língua no dente. Em 'shénme fēng', grafe obrigatoriamente 'chán-ma', curvando a língua para trás em 'chán' subindo no 2º tom, 'ma' neutro, e solte o som labial 'fēng' no 1º tom. Em 'bǎ nǐ', como são dois 3º tons, mude para 'bá nǐ'. Em 'chuī lái le', curve a língua para trás soltando o sopro 'tchuī' com vogal oculta 'uêi' no 1º tom, suba em 'lái' no 2º tom e termine na partícula neutra 'la'.\nLeia: Djīn-tiēn chán-ma fēng bá nǐ tchuī lái la?"
+  },
+  "320": {
+    "explanation": "No pensamento em mandarim, o delimitador de tempo 'até o momento' abre o raciocínio. Logo depois entra a opinião pessoal 'você acha', seguida pelo tema específico 'este evento', para só então concluir com a expressão que pede a avaliação sobre o assunto.",
+    "breakdown": [
+      {
+        "word": "目前为止",
+        "meaning": "mùqián wéizhǐ — Até o momento — mùqián: diante dos olhos/atualmente; wéizhǐ: até parar."
+      },
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "觉得",
+        "meaning": "juéde — Achar / Sentir — jué: perceber; de: partícula que soa 'da'."
+      },
+      {
+        "word": "这个",
+        "meaning": "zhège — Este / Esse — zhè: este; ge: unidade (soa 'ga')."
+      },
+      {
+        "word": "活动",
+        "meaning": "huódòng — Evento / Atividade — huó: vivo/mover; dòng: mover."
+      },
+      {
+        "word": "怎么样",
+        "meaning": "zěnmeyàng — O que acha? / Como é? — zěnme: como (soa 'tsěn-ma'); yàng: forma."
+      }
+    ],
+    "pronuncia": "Em 'mùqián wéizhǐ', caia seco em 'mù' no 4º tom, solte o sopro em sorriso 'tchién' no 2º tom, suba em 'uéi' no 2º tom e curve a língua para trás em 'djǐ' no 3º tom. Afunde a voz em 'nǐ'. Em 'juéde', arme o bico de U com som interno de I no estalo seco 'djüé' subindo no 2º tom e feche na partícula neutra 'da', proibido falar 'dê'. Em 'zhège', curve a língua em 'djè' caindo no 4º tom e fale 'ga' no som gutural neutro. Suba 'rruó' no 2º tom e caia seco em 'dòng' no 4º tom. Conclua com 'zěnmeyàng' grafando 'tsěn-ma-iàng'.\nLeia: Mù-tchién uéi-djǐ nǐ djüé-da djè-ga rruó-dòng tsěn-ma-iàng?"
+  },
+  "321": {
+    "explanation": "Para sinalizar a saída de forma educada, o falante começa atenuando a frase com 'eu acho que'. A indicação temporal 'agora' vem posicionada antes do verbo de obrigação 'ter que' e da ação de 'ir embora', finalizando com a partícula que indica que o momento da partida chegou.",
+    "breakdown": [
+      {
+        "word": "我想",
+        "meaning": "wǒ xiǎng — Acho que / Penso que — wǒ: eu; xiǎng: pensar."
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "现在",
+        "meaning": "xiànzài — Agora — xiàn: presente; zài: estar."
+      },
+      {
+        "word": "得",
+        "meaning": "děi — Ter que / Precisar (neste contexto pronuncia-se 'děi')"
+      },
+      {
+        "word": "走了",
+        "meaning": "zǒu le — Ir embora — zǒu: caminhar/ir; le: partícula de mudança de estado (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'wǒ xiǎng', afunde 'uǒ' no grave e abra em sorriso para 'xiěng' no 3º tom. Diga 'uǒ' no 3º tom grave. Em 'xiànzài', faça o chiado de sorriso 'xièn' caindo no 4º tom com corte nos dentes e estale o 'tsài' seco no 4º tom. Diante de dois 3º tons seguidos em 'děi zǒu', altere a pronúncia da primeira palavra para o 2º tom ascendente: 'déi tsǒu'. Finalize com a partícula de mudança de estado 'la' frouxa e sem acento, sendo proibido falar 'lê'.\nLeia: Wǒ xiěng wǒ xièn-tsài déi tsǒu la."
+  },
+  "322": {
+    "explanation": "Esta frase de despedida amigável organiza o pensamento colocando o sujeito 'nós' no comando da ação. O verbo 'manter' vem colado ao objeto 'contato', e a partícula de sugestão é colocada no fim para transmitir o tom de um convite caloroso entre amigos.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: partícula de plural (soa 'man')."
+      },
+      {
+        "word": "保持",
+        "meaning": "bǎochí — Manter / Preservar — bǎo: proteger; chí: segurar."
+      },
+      {
+        "word": "联系",
+        "meaning": "liánxì — Contato / Comunicação — lián: conectar; xì: sistema/ligação."
+      },
+      {
+        "word": "吧",
+        "meaning": "ba — Partícula de sugestão amigável ('vamos')"
+      }
+    ],
+    "pronuncia": "Em 'wǒmen', faça 'uǒ' no 3º tom grave e solte 'man' frouxo no tom neutro, sendo proibido grafar ou falar 'mên'. Em 'bǎochí', afunde a voz no estalo seco sem ar 'bǎo' no 3º tom e curve a ponta da língua para trás para soltar o sopro forte de ar em 'chí' subindo no 2º tom. Em 'liánxì', suba a voz em 'lién' no 2º tom com corte da língua nos dentes e caia seco no chiado de sorriso 'xì' no 4º tom. Termine com a partícula leve 'ba'.\nLeia: Wǒ-man bǎo-chí lién-xì ba."
+  },
+  "323": {
+    "explanation": "A estrutura para perguntar sobre a posse de algo em mandarim é extremamente direta. A frase posiciona o sujeito 'você', o verbo 'ter' e o objeto 'cartão de visitas' em sequência linear, encerrando com a partícula que transforma a afirmação em pergunta.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter"
+      },
+      {
+        "word": "名片",
+        "meaning": "míngpiàn — Cartão de visitas — míng: nome; piàn: fatia/cartão."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Como as palavras 'nǐ' e 'yǒu' são duas sílabas de 3º tom em sequência, a primeira sobe obrigatoriamente para o 2º tom: 'ní iǒu'. Em 'míngpiàn', suba a voz em 'míng' no 2º tom e solte o sopro de ar com lábios fechados em 'pièn' caindo no 4º tom com corte da língua nos dentes da frente. Conclua soltando a partícula 'ma' no tom neutro, sem força muscular.\nLeia: Ní iǒu míng-pièn ma?"
+  },
+  "324": {
+    "explanation": "Para mandar lembranças a alguém no pensamento chinês, a frase começa com a ideia 'em meu nome'. Em seguida, estabelece-se a direção 'para os seus pais' antes de pronunciar a ação de 'mandar cumprimentos', mostrando o caminho que a saudação deve percorrer.",
+    "breakdown": [
+      {
+        "word": "代我",
+        "meaning": "dài wǒ — Em meu nome / Por mim — dài: substituir; wǒ: eu."
+      },
+      {
+        "word": "向",
+        "meaning": "xiàng — Em direção a / Para"
+      },
+      {
+        "word": "你父母",
+        "meaning": "nǐ fùmǔ — Seus pais — nǐ: você; fù: pai; mǔ: mãe."
+      },
+      {
+        "word": "问好",
+        "meaning": "wènhǎo — Mandar lembranças / Cumprimentar — wèn: perguntar; hǎo: bem."
+      }
+    ],
+    "pronuncia": "Em 'dài wǒ', caia seco no estalo 'dài' no 4º tom e afunde 'uǒ' no 3º tom grave. Em 'xiàng', solte o chiado de sorriso caindo no 4º tom em 'xiàng'. Em 'nǐ fùmǔ', afunde 'nǐ' no 3º tom, caia seco no som de lábio com dente 'fù' no 4º tom e afunde 'mǔ' no 3º tom grave. Em 'wènhǎo', aplique a vogal oculta caindo seco em 'uèn' no 4º tom travando a língua no dente e raspe a garganta em 'rrǎo' afundando no 3º tom grave.\nLeia: Dài wǒ xiàng nǐ fù-mǔ uèn-rrǎo."
+  },
+  "325": {
+    "explanation": "Na ordem direta do mandarim, o falante declara sua emoção colocando 'eu muito agradeço' no início. O advérbio 'muito' fica posicionado obrigatoriamente antes do verbo de gratidão, e o objeto do agradecimento, 'sua sugestão', vem logo em seguida para fechar a frase.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito"
+      },
+      {
+        "word": "感谢",
+        "meaning": "gǎnxiè — Agradecer / Estar grato — gǎn: sentir; xiè: agradecer."
+      },
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Seu / Sua — nǐ: você; de: partícula de posse que soa 'da'."
+      },
+      {
+        "word": "建议",
+        "meaning": "jiànyì — Consellho / Sugestão — jiàn: propor; yì: ideia."
+      }
+    ],
+    "pronuncia": "Em 'wǒ hěn gǎnxiè', observe os 3º tons: afunde 'uǒ' no grave, raspe a garganta no grave em 'rrěn', afunde 'gǎn' no 3º tom e caia seco no chiado de sorriso 'xiè' no 4º tom. Em 'nǐ de', diga 'nǐ' no 3º tom e feche na partícula neutra 'da', proibido falar 'dê'. Finalize em 'jiànyì' dando o golpe seco em sorriso 'djièn' no 4º tom com corte dental e caindo firme em 'yì' no 4º tom.\nLeia: Wǒ rrěn gǎn-xiè nǐ da djièn-yì."
+  },
+  "326": {
+    "explanation": "Em vez de perguntar se encontrar o lugar foi algo difícil, a mentalidade chinesa prefere questionar pelo lado positivo: 'este lugar é bom/fácil de achar?'. Ao colocar a palavra 'bom' antes de um verbo, o mandarim transmite a ideia de que a ação é simples ou agradável de ser realizada.",
+    "breakdown": [
+      {
+        "word": "这地方",
+        "meaning": "zhè dìfang — Este lugar — zhè: este; dìfang: lugar/local."
+      },
+      {
+        "word": "好找",
+        "meaning": "hǎo zhǎo — Fácil de achar — hǎo: bom/fácil; zhǎo: procurar/achar."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'zhè dìfang', curve a língua para trás no estalo seco 'djè' caindo no 4º tom, dê um clique seco 'dì' no 4º tom e solte 'fang' leve e frouxo. Em 'hǎo zhǎo', temos dois 3º tons seguidos, portanto a primeira palavra muda obrigatoriamente para o 2º tom ascendente: 'háo', e a segunda palavra curva a ponta da língua para trás no estalo seco 'djǎo' afundando no 3º tom grave. Termine com a partícula 'ma' sem peso muscular.\nLeia: Djè dì-fang háo djǎo ma?"
+  },
+  "327": {
+    "explanation": "Para fazer um elogio sobre o visual de alguém no dia de hoje, o mandarim posiciona a marca temporal 'hoje' logo após a pessoa. Em seguida, entra a expressão de percepção visual 'parecer', concluindo com o adjetivo de intensidade 'muito ótimo'.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "今天",
+        "meaning": "jīntiān — Hoje — jīn: presente; tiān: dia."
+      },
+      {
+        "word": "看起来",
+        "meaning": "kànqǐlai — Parecer / Pelo visto — kàn: olhar; qǐlai: erguer-se/surgir."
+      },
+      {
+        "word": "很棒",
+        "meaning": "hěn bàng — Excelente / Ótimo — hěn: muito; bàng: fantástico/bastão."
+      }
+    ],
+    "pronuncia": "Diga 'nǐ' no 3º tom grave. Em 'jīntiān', solte o estalo de sorriso 'djīn' sustentado no 1º tom alto e o sopro 'tiēn' no 1º tom travando a língua nos dentes. Em 'kànqǐlai', caia seco no sopro de garganta 'kàn' no 4º tom, solte o sopro em sorriso 'tchǐ' no 3º tom e suba a voz em 'lai' no 2º tom. Em 'hěn bàng', raspe a garganta em 'rrěn' afundando a voz no 3º tom e caia seco no estalo sem ar 'bàng' no 4º tom.\nLeia: Nǐ djīn-tiēn kàn-tchǐ-lai rrěn bàng!"
+  },
+  "328": {
+    "explanation": "Em situações mais formais ou educadas, a estrutura da frase chinesa coloca o fato gerador do problema, 'ocorrer mal-entendido', no início como o tópico da conversa. Só depois o falante acrescenta o seu estado pessoal de sentir muito pela situação.",
+    "breakdown": [
+      {
+        "word": "产生",
+        "meaning": "chǎnshēng — Gerar / Ocorrer — chǎn: produzir; shēng: nascer."
+      },
+      {
+        "word": "误会",
+        "meaning": "wùhuì — Mal-entendido — wù: erro; huì: compreender."
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito"
+      },
+      {
+        "word": "抱歉",
+        "meaning": "bàoqiàn — Apologético / Sentir muito — bào: abraçar; qiàn: falta/erro."
+      }
+    ],
+    "pronuncia": "Em 'chǎnshēng', curve a língua para trás disparando o sopro 'tchǎn' no 3º tom e mantenha a língua curvada para chiar em 'chēng' no 1º tom alto. Em 'wùhuì', caia seco no bico 'uù' no 4º tom e aplique o ditongo oculto raspando a garganta em 'rrêi' caindo no 4º tom. Afunde 'uǒ' no grave e raspe a garganta em 'rrěn' no 3º tom. Em 'bàoqiàn', estale os lábios sem ar em 'bào' caindo no 4º tom e dispare o sopro em sorriso 'tchièn' no 4º tom com corte da língua nos dentes.\nLeia: Tchǎn-chēng uù-rrêi wǒ rrěn bào-tchièn."
+  },
+  "329": {
+    "explanation": "Ao se oferecer espontaneamente para ajudar alguém, a expressão 'eu venho' equivale ao nosso 'deixa comigo'. Na sequência vem a ação de 'ajudar você a carregar as malas', terminando com a partícula de sugestão que deixa a oferta extremamente gentil e sem nenhuma imposição.",
+    "breakdown": [
+      {
+        "word": "我来",
+        "meaning": "wǒ lái — Deixa comigo / Eu venho — wǒ: eu; lái: vir."
+      },
+      {
+        "word": "帮您",
+        "meaning": "bāng nǐ — Ajudar você — bāng: ajudar; nǐ: você."
+      },
+      {
+        "word": "拿",
+        "meaning": "ná — Pegar / Carregar"
+      },
+      {
+        "word": "行李",
+        "meaning": "xíngli — Bagagem / Malas — xíng: andar; li: bagagem."
+      },
+      {
+        "word": "吧",
+        "meaning": "ba — Partícula de sugestão gentil"
+      }
+    ],
+    "pronuncia": "Em 'wǒ lái', afunde 'uǒ' no 3º tom grave e suba a voz em 'lái' no 2º tom. Em 'bāng nǐ', solte o estalo labial sem ar 'bāng' no 1º tom alto e diga 'nǐ' no 3º tom grave. Suba a entonação de pergunta em 'ná' no 2º tom. Em 'xíngli', suba o chiado de sorriso 'xíng' no 2º tom com ressonância de fundo e solte 'li' frouxo e curto no tom neutro. Conclua com a partícula leve 'ba'.\nLeia: Wǒ lái bāng nǐ ná xíng-li ba?"
+  },
+  "330": {
+    "explanation": "A recomendação nativa para desejar uma boa viagem de volta para casa começa especificando o local 'no caminho de volta para casa'. Em seguida vem a orientação direta de 'prestar atenção na segurança', que é a maneira afetuosa e prática que os chineses usam para desejar que alguém chegue bem ao seu destino.",
+    "breakdown": [
+      {
+        "word": "回家",
+        "meaning": "huíjiā — Voltar para casa — huí: retornar; jiā: casa."
+      },
+      {
+        "word": "路上",
+        "meaning": "lùshang — No caminho / Na estrada — lù: caminho; shang: sobre."
+      },
+      {
+        "word": "注意",
+        "meaning": "zhùyì — Prestar atenção / Cuidar — zhù: fixar; yì: intenção/mente."
+      },
+      {
+        "word": "安全",
+        "meaning": "ānquán — Segurança / Seguro — ān: paz; quán: inteiro."
+      }
+    ],
+    "pronuncia": "Em 'huíjiā', raspe a garganta em 'rruí' subindo no 2º tom com vogal oculta e abra o sorriso 'djiā' no 1º tom alto. Em 'lùshang', caia seco em 'lù' no 4º tom e curve a língua para trás para chiar 'chang' levemente no tom neutro. Em 'zhùyì', curve a língua no estalo seco 'djù' caindo no 4º tom e caia seco em 'yì' no 4º tom. Em 'ānquán', solte 'ān' no 1º tom travando a língua no dente e dispare o sopro com bico de U e som de I 'tchüén' subindo no 2º tom com corte dental.\nLeia: Rruí-djiā lù-chang djù-yì ān-tchüén."
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "511": {
+    "explanation": "No alemão, a expressão para dizer que você está com dor de cabeça é ter 'dores de cabeça', usando o verbo 'ter' (habe) e unindo as palavras 'cabeça' (Kopf) e 'dores' (Schmerzen) em um único termo composto. O tempo 'hoje' (heute) aparece logo após o verbo, mantendo a ordem natural alemã em que o tempo vem antes da descrição do sintoma.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho / Estou com — Ich: eu; habe: verbo ter no presente."
+      },
+      {
+        "word": "heute",
+        "meaning": "Hoje — indicador de tempo."
+      },
+      {
+        "word": "schreckliche",
+        "meaning": "Terríveis / Horrorosas — adjetivo caracterizando a intensidade das dores."
+      },
+      {
+        "word": "Kopfschmerzen",
+        "meaning": "Dores de cabeça — palavra composta junção de Kopf (cabeça) e Schmerzen (dores)."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre um chiado fino pelo céu da boca como um gato bufando ('ích'). Solte o 'h' de 'habe' como um suspiro morno vindo do peito ('háa-be'). O ditongo 'eu' em 'heute' soa exatamente como 'oi' ('hói-te'). Para 'schreckliche', inicie no chiado 'sh', use 'e' aberto e o chiado fino no 'ch' ('shrék-lı-che'). Em 'Kopfschmerzen', a vogal 'o' é oral e limpa, a junção 'pf' explode nos lábios e o 'z' estala em 'ts' ('kópf-shmêat-tsen').\nLeia: ích háa-be hói-te shrék-lı-che kópf-shmêat-tsen."
+  },
+  "512": {
+    "explanation": "Para dar um conselho como 'você deveria', os nativos usam o verbo auxiliar de recomendação 'solltest' na segunda posição da frase. Isso empurra o verbo de ação principal 'gehen' (ir) para o finalzinho da frase. A palavra 'zum' junta a ideia de 'para' e 'o', conectando a ida diretamente ao médico.",
+    "breakdown": [
+      {
+        "word": "Du solltest",
+        "meaning": "Você deveria — Du: você; solltest: deveria (verbo de conselho/recomendação)."
+      },
+      {
+        "word": "zum",
+        "meaning": "Ao / Para o — contração da preposição zu com o artigo dem."
+      },
+      {
+        "word": "Arzt",
+        "meaning": "Médico — substantivo masculino."
+      },
+      {
+        "word": "gehen",
+        "meaning": "Ir — verbo principal posicionado no infinitivo ao final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Du', use o 'u' longo em bico firme e o 'd' seco sem chiar ('dúu'). Em 'solltest', o 's' zumba como 'z' de abelha e o 'o' é aberto ('zól-test'). Aplique o golpe de glote antes de 'Arzt', vocalize o 'r' em 'a' e estale o 'z' em 'ts' travando no 't' final sem colocar vogal depois ('áatst'). Em 'gehen', o 'h' intermediário é mudo e apenas estica a vogal 'e' ('gêe-en').\nLeia: dúu zól-test tsum 'áatst gêe-en."
+  },
+  "513": {
+    "explanation": "Ao expressar como se sente, o alemão exige a estrutura reflexiva 'eu me sinto' (Ich fühle mich). Para formar o som especial de 'fühle', usa-se a vogal Ü. A palavra de tempo 'agora' (jetzt) entra logo após o pronome reflexivo, e a comparação 'muito melhor' junta 'viel' e 'besser'.",
+    "breakdown": [
+      {
+        "word": "Ich fühle mich",
+        "meaning": "Eu me sinto — Ich: eu; fühle: sinto (do verbo fühlen); mich: me (pronome reflexivo)."
+      },
+      {
+        "word": "jetzt",
+        "meaning": "Agora — marcador de tempo presente."
+      },
+      {
+        "word": "viel besser",
+        "meaning": "Muito melhor — viel: muito; besser: melhor."
+      },
+      {
+        "word": "danke",
+        "meaning": "Obrigado / Obrigada — expressão de agradecimento."
+      }
+    ],
+    "pronuncia": "Para 'fühle', faça bico firme de 'u', mas diga 'i' com a língua para soar o 'ü' longo ('füü-le'). Em 'mich', use o chiado fino de gato no céu da boca ('mích'). A letra 'j' em 'jetzt' tem som de 'y' e o 'z' estala em 'ts' ('yétst'). Lembre-se que o 'v' de 'viel' soa rigorosamente como 'f' ('fíil'), e o '-er' final de 'besser' vira um 'a' curto e relaxado ('bés-sa'). Em 'danke', mantenha o 'a' 100% oral e limpo antes do 'n' ('dán-ke').\nLeia: ích füü-le mích yétst fíil bés-sa, dán-ke."
+  },
+  "514": {
+    "explanation": "Em alemão, os sintomas físicos como dores e tosse são possuídos pelo sujeito através do verbo 'ter' (hat). A palavra para dor de garganta junta 'pescoço/garganta' (Hals) com 'dores' (Schmerzen). Diferente do português, não se usa artigo antes de sintomas isolados nessa estrutura.",
+    "breakdown": [
+      {
+        "word": "Sie hat",
+        "meaning": "Ela tem / Ela está com — Sie: ela; hat: tem (verbo haben)."
+      },
+      {
+        "word": "Halsschmerzen",
+        "meaning": "Dores de garganta — Hals (garganta) + Schmerzen (dores)."
+      },
+      {
+        "word": "und",
+        "meaning": "E — conector."
+      },
+      {
+        "word": "Husten",
+        "meaning": "Tosse — substantivo."
+      }
+    ],
+    "pronuncia": "Em 'Sie', o 's' zumba como 'z' de abelha e o 'i' é longo ('zíi'). Solte o 'h' de 'hat' como um suspiro morno do peito e corte o 't' a seco ('hat'). Em 'Halsschmerzen', mantenha o 'a' oral limpo, chie o 'sch' e estale o 'z' em 'ts' ('háls-shmêat-tsen'). A palavra 'und' desvozeia o 'd' final em 't' seco ('unt'). Em 'Husten', o 'h' sopra suavemente do peito e o 'u' é frouxo ('húos-ten').\nLeia: zíi hat háls-shmêat-tsen unt húos-ten."
+  },
+  "515": {
+    "explanation": "Para fazer perguntas diretas em alemão, basta inverter a posição do verbo com o sujeito. Em vez de 'você toma', a frase começa direto na ação 'toma você?' (Nimmst du?). Os medicamentos não precisam de artigo na pergunta genérica sobre tomar remédios.",
+    "breakdown": [
+      {
+        "word": "Nimmst du",
+        "meaning": "Você toma / Está tomando — Nimmst: toma (forma conjugada de nehmen); du: você."
+      },
+      {
+        "word": "Medikamente",
+        "meaning": "Medicamentos / Remédios — substantivo no plural."
+      }
+    ],
+    "pronuncia": "Em 'Nimmst', a vogal 'i' é curta e o 'i' inicial não anasala a palavra, cortando o som a seco na trava de 'mst' sem vogal de apoio ('nímst'). Em 'du', a língua apoia reta no dente para um 'd' seco sem chiar ('dúu'). Para 'Medikamente', pronuncie todas as vogais limpas, mantendo o 'e' inicial fechado e a terminação '-te' neutra sem virar 'ti' ('me-di-ka-mén-te').\nLeia: nímst dúu me-di-ka-mén-te?"
+  },
+  "516": {
+    "explanation": "Quando você precisa realizar um compromisso como marcar dentista, o alemão usa o verbo 'muss' (preciso) na segunda posição e empurra o verbo de ação 'machen' (fazer/marcar) para o finalzinho. A expressão 'beim Zahnarzt' junta 'com o' mais a palavra composta para dentista ('médico dos dentes').",
+    "breakdown": [
+      {
+        "word": "Ich muss",
+        "meaning": "Eu preciso / Eu devo — Ich: eu; muss: preciso (verbo de necessidade)."
+      },
+      {
+        "word": "einen Termin",
+        "meaning": "Uma consulta / Um compromisso marcado — einen: um; Termin: horário/compromisso."
+      },
+      {
+        "word": "beim Zahnarzt",
+        "meaning": "No / com o dentista — beim: em + o; Zahnarzt: dentista (Zahn = dente, Arzt = médico)."
+      },
+      {
+        "word": "machen",
+        "meaning": "Fazer / Marcar — verbo principal no infinitivo no fim da frase."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino pelo céu da boca ('ích'). Em 'muss', use o 'u' frouxo e curto ('mús'). No ditongo de 'einen', fale 'áin-nen' com 'a' e 'i' abertos. Em 'Termin', apoie o 't' reto no dente sem chiar e alongue o 'i' final ('tea-míin'). Na palavra 'beim', fale 'báim'. Para 'Zahnarzt', o 'z' estala em 'ts' e o 'h' é mudo alongando o 'a' ('tsáan-áatst'). Em 'machen', use o raspado de garganta seco no 'ch' ('má-rren').\nLeia: ích mús ái-nen tea-míin báim tsáan-áatst má-rren."
+  },
+  "517": {
+    "explanation": "Para dizer que alguém quebrou um membro do próprio corpo, os alemães usam uma estrutura reflexiva com o verbo auxiliar no passado ('hat sich ... gebrochen'). O motivo ou atividade entra no meio da estrutura com a preposição 'beim' (ao jogar futebol), e a parte do corpo vem com artigo definido (o braço).",
+    "breakdown": [
+      {
+        "word": "Er hat sich",
+        "meaning": "Ele (se) — Er: ele; hat: verbo auxiliar ter; sich: pronome reflexivo (a si mesmo)."
+      },
+      {
+        "word": "beim Fußballspielen",
+        "meaning": "Ao jogar futebol — beim: ao/durante; Fußballspielen: o ato de jogar futebol."
+      },
+      {
+        "word": "den Arm",
+        "meaning": "O braço — den: o (objeto direto); Arm: braço."
+      },
+      {
+        "word": "gebrochen",
+        "meaning": "Quebrou / Quebrado — particípio do verbo brechen (quebrar)."
+      }
+    ],
+    "pronuncia": "Em 'Er', vocalize o 'r' em 'a' relaxado ('êea'). Solte o 'h' de 'hat' com suspiro morno ('hat'). Em 'sich', use o chiado fino de gato ('zích'). Para 'beim', diga 'báim'. Em 'Fußballspielen', use o 'u' longo em bico firme em 'fúus', o 'l' dental em 'bal' e inicie 'spielen' direto no chiado 'shp' ('fúus-bal-shpíi-len'). Em 'Arm', aplique o golpe de glote antes da vogal ('áam'). Em 'gebrochen', raspe o 'ch' suavemente no fundo ('gue-bró-rren').\nLeia: êea hat zích báim fúus-bal-shpíi-len den 'áam gue-bró-rren."
+  },
+  "518": {
+    "explanation": "Na construção alemã para expressar alergia, o adjetivo 'allergisch' (alérgico) vai obrigatoriamente para o final da frase. A preposição 'gegen' (contra) é a palavra correta para indicar a que ou a qual substância a pessoa tem alergia.",
+    "breakdown": [
+      {
+        "word": "Ich bin",
+        "meaning": "Eu sou / Eu estou — Ich: eu; bin: sou/estou (verbo sein)."
+      },
+      {
+        "word": "gegen",
+        "meaning": "Contra / A — preposição que indica a reação alérgica a algo."
+      },
+      {
+        "word": "einige Medikamente",
+        "meaning": "Alguns medicamentos — einige: alguns; Medikamente: remédios."
+      },
+      {
+        "word": "allergisch",
+        "meaning": "Alérgico — adjetivo posicionado no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Ich', faça o chiado de gato no céu da boca ('ích'). Em 'bin', use o 'i' curto e seco sem anasalar ('bin'). Para 'gegen', pronuncie o 'g' duro e os 'e' fechados sem anasalar o 'n' ('gêe-guen'). Em 'einige', inicie no ditongo 'ái' e termine no chiado fino de gato para o '-ig' final ('ái-nı-che'). Para 'allergisch', aplique o golpe de glote no início e termine no chiado 'sh' ('al-lér-guısh').\nLeia: ích bin gêe-guen ái-nı-che me-di-ka-mén-te 'al-lér-guısh."
+  },
+  "519": {
+    "explanation": "A expressão fixa 'Gibt es' significa 'há' ou 'existe'. Ao fazer uma pergunta, ela vem logo no início. Os alemães adoram criar palavras longas juntando conceitos: '24-Stunden-Apotheke' é literalmente 'farmácia de 24 horas'. A localização 'por perto' é feita por 'in der Nähe'.",
+    "breakdown": [
+      {
+        "word": "Gibt es",
+        "meaning": "Há / Existe — expressão fixa para perguntar sobre a existência de algo."
+      },
+      {
+        "word": "hier in der Nähe",
+        "meaning": "Aqui nas proximidades / Por perto — hier: aqui; in der Nähe: nas proximidades."
+      },
+      {
+        "word": "eine 24-Stunden-Apotheke",
+        "meaning": "Uma farmácia 24 horas — eine: uma; 24-Stunden: de 24 horas; Apotheke: farmácia."
+      }
+    ],
+    "pronuncia": "Em 'Gibt es', corte o 'b' em 'p' seco por desvozeamento ('guípt es'). Em 'hier', vocalize o 'r' em 'a' ('híia'). Aplique o golpe de glote antes de 'in' ('in'). Em 'der Nähe', use o 'ä' longo como 'ê' fechado ('dêea nêe-e'). Para '24-Stunden', fale 'víer-unt-tsván-tsıch shtún-den', lembrando de chiar o 'st' inicial em 'sht'. Em 'Apotheke', dê o golpe de glote inicial, use 't' seco no 'th' e 'e' fechado final (''a-pô-têe-ke').\nLeia: guípt es híia in dêea nêe-e ái-ne víer-unt-tsván-tsıch-shtún-den-'a-pô-têe-ke?"
+  },
+  "520": {
+    "explanation": "Para expressar tontura, o alemão usa a estrutura impessoal 'Mir ist ... schwindelig', que significa ao pé da letra 'para mim está tonto'. Em seguida, conecta a segunda sensação física 'e eu me sinto fraco' (und ich fühle mich schwach), usando o pronome reflexivo 'mich' e o adjetivo 'schwach' no final.",
+    "breakdown": [
+      {
+        "word": "Mir ist",
+        "meaning": "Estou me sentindo / Para mim está — Mir: para mim; ist: está."
+      },
+      {
+        "word": "ein bisschen",
+        "meaning": "Um pouco — expressão fixa de intensidade."
+      },
+      {
+        "word": "schwindelig",
+        "meaning": "Tonto / Com tontura — adjetivo de estado físico."
+      },
+      {
+        "word": "und ich fühle mich",
+        "meaning": "E eu me sinto — und: e; ich: eu; fühle mich: me sinto."
+      },
+      {
+        "word": "schwach",
+        "meaning": "Fraco / Sem forças — adjetivo."
+      }
+    ],
+    "pronuncia": "Em 'Mir', vocalize o 'r' em 'a' relaxado ('míia'). Em 'ist', o 's' é seco ('ist'). Na expressão 'ein bisschen', o 'ch' chia como 'sh' e o 'e' é neutro ('áin bís-chen'). Em 'schwindelig', a letra 'w' tem som de 'v' e o final '-ig' faz o chiado fino de gato ('shvío-de-lı-ch'). Em 'schwach', inicie no chiado 'sh', use o 'w' com som de 'v' e raspe o fundo da garganta no 'ch' ('shvách').\nLeia: míia ist áin bís-chen shvío-de-lı-ch unt ích füü-le mích shvách."
+  },
+  "521": {
+    "explanation": "Ao dar uma instrução sobre repouso, o verbo de obrigação ou necessidade 'musst' (deve/precisa) fica na segunda posição. O verbo 'ausruhen' (descansar) é um verbo separável com o prefixo 'aus-'; nessa frase, ele permanece inteiro e vai direto para o final da sentença.",
+    "breakdown": [
+      {
+        "word": "Du musst dich",
+        "meaning": "Você deve (se) — Du: você; musst: deve/precisa; dich: a si mesmo (reflexivo)."
+      },
+      {
+        "word": "ein paar Tage",
+        "meaning": "Alguns dias — ein paar: alguns/poucos; Tage: dias."
+      },
+      {
+        "word": "ausruhen",
+        "meaning": "Descansar / Repousar — verbo principal posicionado no infinitivo no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Du', use o 'u' longo em bico firme ('dúu'). Em 'musst', use o 'u' frouxo e curto ('múst'). Em 'dich', use o chiado fino de gato ('dích'). Para 'ein paar', fale 'áin páa' com o 'r' vocalizado em 'a'. Em 'Tage', o 't' é seco e a vogal 'a' é longa ('táa-gue'). Em 'ausruhen', aplique o golpe de glote no 'aus', faça o 'r' suave de garganta e o 'h' morno suspirado no peito (''áus-ruu-en').\nLeia: dúu mús-st dích áin páa táa-gue 'áus-ruu-en."
+  },
+  "522": {
+    "explanation": "Na pergunta para localizar a dor, a estrutura alemã usa a expressão verbal composta 'weh tun' (doer/causar dor). O advérbio 'genau' (exatamente) acompanha a palavra interrogativa 'Wo' (onde), e a parte da dor 'weh' vai para o final da frase.",
+    "breakdown": [
+      {
+        "word": "Wo genau",
+        "meaning": "Onde exatamente — Wo: onde; genau: exatamente."
+      },
+      {
+        "word": "tut es",
+        "meaning": "Dói ele / Faz mal — tut: faz/dói (do verbo tun); es: ele/isso (pronome neutro)."
+      },
+      {
+        "word": "weh",
+        "meaning": "Dói / Mal — parte integrante da expressão idiomática 'weh tun'."
+      }
+    ],
+    "pronuncia": "Lembre-se da inversão crítica: a letra 'W' em 'Wo' e em 'weh' soa rigorosamente como 'V' do português ('vôo' e 'vêe'). Em 'genau', o 'g' é duro e o ditongo 'au' soa aberto como em 'pau' ('gue-náu'). Em 'tut', o 't' é totalmente seco no dente sem chiar em 'tchi' ('túut'). Em 'es', o 's' é sibilante e seco ('es').\nLeia: vôo gue-náu túut es vêe?"
+  },
+  "523": {
+    "explanation": "Assim como acontece com a dor de cabeça, o alemão expressa a dor nas costas usando uma única palavra composta formada por 'costas' (Rücken) e 'dores' (Schmerzen). Tudo isso é possuído pelo sujeito através do verbo 'ter' (habe).",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho / Estou com — Ich: eu; habe: verbo ter no presente."
+      },
+      {
+        "word": "Rückenschmerzen",
+        "meaning": "Dores nas costas — junção das palavras Rücken (costas) e Schmerzen (dores)."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino pelo céu da boca ('ích'). Solte o 'h' de 'habe' como um suspiro morno do peito ('háa-be'). Na palavra composta 'Rückenschmerzen', o 'R' inicial raspa suavemente na garganta, o 'ü' é feito em bico de 'u' dizendo 'i' ('rü-ken'), o 'sch' chia em 'sh' e o 'z' final estala em 'ts' ('rü-ken-shmêat-tsen').\nLeia: ích háa-be rü-ken-shmêat-tsen."
+  },
+  "524": {
+    "explanation": "Para perguntar no passado 'Você chamou a polícia?', o alemão usa a estrutura composta com o auxiliar 'Hast du' (Você tem / Você chamou) na primeira posição e empurra a ação final no passado 'gerufen' (chamado) lá para o fim da frase.",
+    "breakdown": [
+      {
+        "word": "Hast du",
+        "meaning": "Você (tem) / Chamou — Hast: forma do verbo haben; du: você."
+      },
+      {
+        "word": "die Polizei",
+        "meaning": "A polícia — die: a; Polizei: polícia."
+      },
+      {
+        "word": "gerufen",
+        "meaning": "Chamado — particípio do verbo rufen (chamar)."
+      }
+    ],
+    "pronuncia": "Solte o 'h' de 'Hast' com ar morno do peito ('hast'). Em 'du', faça o 'd' seco sem chiar ('dúu'). Em 'die', fale 'díi' com 'i' longo. Em 'Polizei', a letra 'z' exige o estalo seco 'ts' colado no ditongo 'ai' ('po-lı-tsái'). Em 'gerufen', o 'g' é duro, o 'r' raspa suavemente na garganta e o 'u' é tenso com bico firme ('gue-rúu-fen').\nLeia: hast dúu díi po-lı-tsái gue-rúu-fen?"
+  },
+  "525": {
+    "explanation": "A palavra alemã para pronto-socorro é a junção composta de 'emergência/socorro' (Not) com 'admissão/recepção' (Aufnahme). O verbo 'ist' (está/é) conecta o sujeito diretamente ao intensificador 'sehr' (muito) e ao adjetivo 'voll' (cheio).",
+    "breakdown": [
+      {
+        "word": "Die Notaufnahme",
+        "meaning": "O pronto-socorro — Die: o/a; Notaufnahme: palavra composta (Not = emergência, Aufnahme = recepção)."
+      },
+      {
+        "word": "ist sehr voll",
+        "meaning": "Está muito cheio — ist: está; sehr: muito; voll: cheio."
+      }
+    ],
+    "pronuncia": "Em 'Die', prolongue o 'i' ('díi'). Em 'Notaufnahme', faça o 'o' longo em 'nôot', aplique o golpe de glote antes da vogal 'a' em 'auf' e pronuncie o 'h' mudo esticando a vogal ('nôot-'auf-naa-me'). Em 'sehr', o 's' zumba como 'z' e o 'r' vira 'a' relaxado ('zêea'). Lembre-se da inversão em 'voll': a letra 'V' tem som estrito de 'F' e o 'L' toca nos dentes ('fól').\nLeia: díi nôot-'auf-naa-me ist zêea fól."
+  },
+  "526": {
+    "explanation": "Quando você quer comprar analgésicos, o verbo modal 'muss' (preciso) fica na segunda posição e o verbo de ação 'kaufen' (comprar) vai para o fim da frase. O termo para analgésicos é a junção direta de 'dor' (Schmerz) com 'remédio/meio' (Mittel).",
+    "breakdown": [
+      {
+        "word": "Ich muss",
+        "meaning": "Eu preciso / Eu devo — Ich: eu; muss: preciso (verbo de necessidade)."
+      },
+      {
+        "word": "Schmerzmittel",
+        "meaning": "Analgésicos / Remédios para dor — junção de Schmerz (dor) e Mittel (meio/remédio)."
+      },
+      {
+        "word": "kaufen",
+        "meaning": "Comprar — verbo principal no infinitivo posicionado no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato no céu da boca ('ích'). Em 'muss', use 'u' frouxo ('mús'). Na palavra 'Schmerzmittel', comece no chiado 'sh', vocalize o 'r' em 'a' relaxado, estale o 'z' em 'ts' e termine com o 'l' dental firme em 't-tel' sem virar som de 'u' ('shméat-ts-mit-tel'). Em 'kaufen', o ditongo 'au' soa como em 'pau' ('káu-fen').\nLeia: ích mús shméat-ts-mit-tel káu-fen."
+  },
+  "527": {
+    "explanation": "A expressão para estar resfriado em alemão é ter uma 'Erkältung'. O adjetivo 'schlimme' (forte/ruim) descreve a gravidade do resfriado. O verbo 'hat' (tem/está com) fica na segunda posição padrão da oração.",
+    "breakdown": [
+      {
+        "word": "Sie hat",
+        "meaning": "Ela tem / Ela está com — Sie: ela; hat: verbo ter no presente."
+      },
+      {
+        "word": "eine schlimme",
+        "meaning": "Uma forte / ruim — eine: uma; schlimme: grave/intensa."
+      },
+      {
+        "word": "Erkältung",
+        "meaning": "Resfriado — substantivo feminino derivado da palavra frio (kalt)."
+      }
+    ],
+    "pronuncia": "Em 'Sie', zumba o 's' como 'z' de abelha ('zíi'). Solte o 'h' de 'hat' com ar morno ('hat'). Em 'schlimme', inicie no chiado 'sh' e mantenha o 'i' seco oral limpo sem anasalar no 'm' ('shlím-me'). Para 'Erkältung', vocalize a primeira sílaba em 'ea-', faça a letra 'ä' como 'é' bem aberto com 'l' dental em '-kélt-' e termine no '-ung' ressoante no fundo sem soltar o 'g' ('ea-kélt-ung').\nLeia: zíi hat ái-ne shlím-me ea-kélt-ung."
+  },
+  "528": {
+    "explanation": "Aqui temos uma ordem imperativa seguida de um aviso. O verbo 'anfassen' (tocar/mexer) é separável: o bloco de comando 'Fass das nicht' (Não toque nisso) deixa a partícula 'an' separada lá no final. A segunda parte explica o motivo usando o adjetivo 'gefährlich' (perigoso).",
+    "breakdown": [
+      {
+        "word": "Fass das nicht an",
+        "meaning": "Não toque nisso — Fass ... an: toca/mexe (imperativo de anfassen); das: isso; nicht: não."
+      },
+      {
+        "word": "das ist",
+        "meaning": "Isso é / Isso está — das: isso; ist: é/está."
+      },
+      {
+        "word": "gefährlich",
+        "meaning": "Perigoso — adjetivo relativo a perigo (Gefahr)."
+      }
+    ],
+    "pronuncia": "Em 'Fass', use o 'a' limpo e o 'ss' seco de sapo ('fas'). Em 'das', corte o 's' a seco ('das'). Em 'nicht', faça o chiado fino de gato no 'ch' ('nícht'). A partícula 'an' exige o golpe de glote inicial (''an'). Em 'gefährlich', o 'g' é duro, o 'ä' soa como 'ê' fechado longo e o final '-ig' faz o chiado fino de gato ('gue-fêea-lı-ch').\nLeia: fas das nícht 'an, das ist gue-fêea-lı-ch!"
+  },
+  "529": {
+    "explanation": "Para dizer que cortou o próprio dedo, o alemão usa o passado perfeito reflexivo 'Ich habe mir ... geschnitten' (Eu me cortei). A ação de fundo vem no meio com a expressão 'beim Kochen' (ao cozinhar / enquanto cozinhava), e a indicação do dedo vem com preposição e artigo ('in den Finger').",
+    "breakdown": [
+      {
+        "word": "Ich habe mir",
+        "meaning": "Eu (me) — Ich: eu; habe: verbo auxiliar ter; mir: a mim mesmo (reflexivo)."
+      },
+      {
+        "word": "beim Kochen",
+        "meaning": "Ao cozinhar / Enquanto cozinhava — beim: no/ao; Kochen: o ato de cozinhar."
+      },
+      {
+        "word": "in den Finger",
+        "meaning": "No dedo — in: em/para dentro; den: o; Finger: dedo."
+      },
+      {
+        "word": "geschnitten",
+        "meaning": "Cortei / Cortado — particípio do verbo schneiden (cortar)."
+      }
+    ],
+    "pronuncia": "Em 'Ich', faça o chiado fino de gato ('ích'). Em 'habe mir', pronuncie 'háa-be míia'. Para 'beim Kochen', fale 'báim kó-rren' raspando o 'ch' no fundo da garganta. Em 'in den Finger', o 'f' é seco, a vogal é oral e a terminação '-er' vira 'a' relaxado ('fing-a'). Em 'geschnitten', comece no chiado 'sh' e corte a seco no 'tt' ('gue-shnít-ten').\nLeia: ích háa-be míia báim kó-rren in den fing-a gue-shnít-ten."
+  },
+  "530": {
+    "explanation": "Esta pergunta usa a voz passiva no passado com 'Wurde ... verletzt?' (Alguém foi ferido / machucou-se?). A causa da lesão fica no meio da pergunta com a expressão 'bei dem Unfall' (no acidente). O pronome 'jemand' (alguém) é o sujeito que sofreu a ação.",
+    "breakdown": [
+      {
+        "word": "Wurde",
+        "meaning": "Foi / Ficou — verbo auxiliar da voz passiva no passado (werden)."
+      },
+      {
+        "word": "bei dem Unfall",
+        "meaning": "No acidente — bei dem: no/durante o; Unfall: acidente."
+      },
+      {
+        "word": "jemand",
+        "meaning": "Alguém — pronome indefinido de pessoa."
+      },
+      {
+        "word": "verletzt",
+        "meaning": "Machucado / Ferido — particípio do verbo verletzen (ferir)."
+      }
+    ],
+    "pronuncia": "Lembre-se da inversão: o 'W' de 'Wurde' soa como 'V' do português ('vúar-de'). Em 'bei dem', diga 'bái dem'. Em 'Unfall', dê o golpe de glote antes do 'u', mantenha a vogal oral e a ponta da língua no dente no 'l' (''ún-fal'). Em 'jemand', a letra 'j' soa como 'y' e o 'd' desvozeia em 't' seco ('yêe-mant'). Em 'verletzt', o 'v' soa como 'f', e o 'z' estala em 'ts' ('fea-létst').\nLeia: vúar-de bái dem 'ún-fal yêe-mant fea-létst?"
+  },
+  "531": {
+    "explanation": "Quando você precisa ir a um médico especialista, o alemão junta as palavras 'especialidade' (Fach) e 'médico' (Arzt) em 'Facharzt'. A preposição 'zu' indica deslocamento até a pessoa do médico, ajustada para 'zu einem' (a um / para um especialista).",
+    "breakdown": [
+      {
+        "word": "Ich muss",
+        "meaning": "Eu preciso / Eu devo — Ich: eu; muss: preciso (verbo modal)."
+      },
+      {
+        "word": "zu einem",
+        "meaning": "A um / Para um — zu: para/até; einem: um (conector de direção a pessoas)."
+      },
+      {
+        "word": "Facharzt",
+        "meaning": "Especialista / Médico especialista — união de Fach (área/especialidade) e Arzt (médico)."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino pelo céu da boca ('ích'). Em 'muss', use o 'u' frouxo ('mús'). Em 'zu einem', fale 'tsúu ái-nem' lembrando do estalo seco 'ts' no 'z'. Na palavra composta 'Facharzt', a letra 'f' é seca, o 'ch' raspa o fundo da garganta após a vogal 'a' ('fách-'), e em 'arzt' aplique o golpe de glote, vocalize o 'r' em 'a' e estale o 'z' em 'ts' finalizando no 't' seco ('áatst').\nLeia: ích mús tsúu ái-nem fách-'áatst."
+  },
+  "532": {
+    "explanation": "Para sugerir um hábito saudável como beber muita água, usa-se o verbo de recomendação 'solltest' (deveria). Como de costume nas frases com verbos auxiliares, o verbo de ação 'trinken' (beber) é empurrado para a última posição da frase.",
+    "breakdown": [
+      {
+        "word": "Du solltest",
+        "meaning": "Você deveria — Du: você; solltest: deveria (conselho/recomendação)."
+      },
+      {
+        "word": "viel Wasser",
+        "meaning": "Muita água — viel: muito; Wasser: água."
+      },
+      {
+        "word": "trinken",
+        "meaning": "Beber — verbo principal no infinitivo posicionado no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Du', use 'd' seco sem chiar ('dúu'). Em 'solltest', o 's' zumba em 'z' de abelha ('zól-test'). Na palavra 'viel', lembre-se que o 'v' tem som estrito de 'f' ('fíil'). Em 'Wasser', a letra 'w' tem som de 'v', o 'ss' é seco e a terminação '-er' vira 'a' relaxado ('vás-sa'). Em 'trinken', o 't' é seco no dente e a vogal 'i' é pura oral sem anasalar ('trín-ken').\nLeia: dúu zól-test fíil vás-sa trín-ken."
+  },
+  "533": {
+    "explanation": "O verbo 'erholen' (recuperar-se) é reflexivo e vem acompanhado do pronome 'sich'. A preposição que indica a origem da recuperação (de uma cirurgia) é 'von', seguida de 'einer Operation'. O verbo fica na segunda posição padrão.",
+    "breakdown": [
+      {
+        "word": "Er erholt sich",
+        "meaning": "Ele se recupera — Er: ele; erholt sich: recupera-se (do verbo erholen)."
+      },
+      {
+        "word": "von einer",
+        "meaning": "De uma — von: de; einer: uma."
+      },
+      {
+        "word": "Operation",
+        "meaning": "Cirurgia / Operação — substantivo feminino de origem latina."
+      }
+    ],
+    "pronuncia": "Em 'Er', vocalize em 'êea'. No verbo 'erholt', aplique o golpe de glote no início, solte o 'h' morno suspirado no peito e encoste a língua no dente no 'l' ('ea-hóolt'). Em 'sich', use o chiado fino de gato ('zích'). Em 'von', a letra 'v' soa como 'f' ('fón'). Em 'einer', diga 'ái-nea'. Para 'Operation', dê o golpe de glote na primeira vogal e estale a terminação '-tion' em 'tsi-ôon' (''o-pe-ra-tsi-ôon').\nLeia: êea ea-hóolt zích fón ái-nea 'o-pe-ra-tsi-ôon."
+  },
+  "534": {
+    "explanation": "Para dizer que está com febre alta, o alemão usa o verbo 'ter' (habe) seguido da combinação direta do adjetivo 'hohes' (alta) com o substantivo 'Fieber' (febre). Não se usa artigo indeterminado nessa expressão clínica cotidiana.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho / Estou com — Ich: eu; habe: verbo ter no presente."
+      },
+      {
+        "word": "hohes Fieber",
+        "meaning": "Febre alta — hohes: alta/elevada; Fieber: febre."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato no céu da boca ('ích'). Solte o 'h' de 'habe' como um suspiro morno vindo do peito ('háa-be'). Na palavra 'hohes', o 'h' inicial sopra suavemente e os 'e' são neutros ('hôo-es'). Em 'Fieber', a letra 'f' é seca, o 'i' é longo e tenso em sorriso, e a terminação '-er' vira 'a' curto e relaxado ('fíi-ba').\nLeia: ích háa-be hôo-es fíi-ba."
+  },
+  "535": {
+    "explanation": "Esta é uma pergunta formal e muito educada para pedir direções. Começa com 'Können Sie mir sagen' (Pode o senhor/a senhora me dizer), seguida de uma oração subordinada 'wo die nächste Klinik ist' (onde fica a clínica mais próxima), que joga o verbo 'ist' para o final absoluto.",
+    "breakdown": [
+      {
+        "word": "Können Sie mir sagen",
+        "meaning": "Pode me dizer / A senhora pode me dizer — Können: poder/conseguir; Sie: o senhor/a senhora; mir: me; sagen: dizer."
+      },
+      {
+        "word": "wo die nächste Klinik",
+        "meaning": "Onde a clínica mais próxima — wo: onde; die: a; nächste: próxima/mais perto; Klinik: clínica/hospital."
+      },
+      {
+        "word": "ist",
+        "meaning": "É / Fica — verbo ser/estar no final da frase subordinada."
+      }
+    ],
+    "pronuncia": "Para 'Können', projete os lábios em bico de 'ó' e diga 'é' para formar o 'ö' breve ('kön-nen'). Em 'Sie', o 's' zumba como 'z' ('zíi'). Em 'sagen', pronuncie 'záa-guen'. Lembre-se que 'Wo' tem som de 'v' ('vôo'). Em 'nächste', o 'ä' soa como 'é' aberto com chiado 'ch' em 'nérch-ste'. Em 'Klinik', alongue o 'i' final em 'klíi-nik'. Encerre no 'ist' seco ('ist').\nLeia: kön-nen zíi míia záa-guen, vôo díi nérch-ste klíi-nık ist?"
+  },
+  "536": {
+    "explanation": "Para pedir a renovação de uma receita na farmácia ou médico, os alemães usam o substantivo composto 'Folgerezept', que junta 'seguimento/continuação' (Folge) e 'receita' (Rezept). O verbo 'brauche' (preciso) fica na segunda posição.",
+    "breakdown": [
+      {
+        "word": "Ich brauche",
+        "meaning": "Eu preciso — Ich: eu; brauche: preciso (do verbo brauchen)."
+      },
+      {
+        "word": "ein Folgerezept",
+        "meaning": "Uma receita de continuação / Nova receita — ein: uma; Folgerezept: palavra composta (Folge = sequência, Rezept = receita)."
+      }
+    ],
+    "pronuncia": "Em 'Ich', faça o chiado fino pelo céu da boca ('ích'). Em 'brauche', o 'r' raspa suavemente na garganta, o ditongo 'au' soa como 'pau' e o 'ch' raspa no fundo ('bráu-rhe'). Em 'ein', fale 'áin'. Para 'Folgerezept', encoste a ponta da língua no dente no 'l' de 'Fól-gue-', e na palavra 'Rezept' raspe o 'r', alongue o 'e' e estale o 'z' em 'ts' finalizando no 't' seco ('re-tsépt').\nLeia: ích bráu-rhe áin fól-gue-re-tsépt."
+  },
+  "537": {
+    "explanation": "Para relatar a chegada recente da ambulância, usa-se a palavra composta 'Krankenwagen' (carro dos doentes). O verbo de ação 'angekommen' (chegou) tem o prefixo separável 'an-'; como a frase está no passado com 'ist', ele vai completo para o final da frase.",
+    "breakdown": [
+      {
+        "word": "Der Krankenwagen",
+        "meaning": "A ambulância — Der: o; Krankenwagen: palavra composta (Kranken = doentes, Wagen = carro/veículo)."
+      },
+      {
+        "word": "ist vor fünf Minuten",
+        "meaning": "Há cinco minutos — ist: verbo auxiliar; vor: atrás/há (tempo); fünf: cinco; Minuten: minutos."
+      },
+      {
+        "word": "angekommen",
+        "meaning": "Chegou / Chegado — particípio do verbo ankommen (chegar)."
+      }
+    ],
+    "pronuncia": "Em 'Krankenwagen', mantenha a vogal oral limpa em 'krán-ken', e lembre-se que 'Wagen' lê-se com 'v' ('váa-guen'). Em 'vor', o 'v' soa estritamente como 'f' ('fóar'). Em 'fünf', arme bico de 'u' e diga 'i' para soar 'fünf'. Em 'Minuten', fale 'mi-núu-ten'. Em 'angekommen', dê o golpe de glote inicial no 'an' e pronuncie 'án-gue-kóm-men'.\nLeia: dêea krán-ken-váa-guen ist fóar fünf mi-núu-ten 'án-gue-kóm-men."
+  },
+  "538": {
+    "explanation": "Para expressar que tem se sentido estressado ultimamente, usa-se o verbo reflexivo 'ich fühle mich' (eu me sinto). A expressão temporal 'in letzter Zeit' significa literalmente 'em último tempo / ultimamente'. O adjetivo 'gestresst' (estressado) vai para o final.",
+    "breakdown": [
+      {
+        "word": "Ich fühle mich",
+        "meaning": "Eu me sinto — Ich: eu; fühle mich: me sinto (verbo reflexivo fühlen)."
+      },
+      {
+        "word": "in letzter Zeit",
+        "meaning": "Ultimamente / Nos últimos tempos — in: em; letzter: último; Zeit: tempo."
+      },
+      {
+        "word": "etwas gestresst",
+        "meaning": "Um pouco estressado — etwas: um pouco/algo; gestresst: estressado."
+      }
+    ],
+    "pronuncia": "Em 'fühle', arme bico de 'u' e diga 'i' em 'füü-le'. Em 'mich', assopre o chiado fino ('mích'). Aplique o golpe de glote antes de 'in' ('in'). Em 'letzter', o 'z' estala em 'ts' e o final vira 'a' ('lét-ts-ta'). Em 'Zeit', o 'z' exige o estalo seco 'ts' colado no 'ai' ('tsáit'). Em 'etwas', fale 'ét-vas'. Para 'gestresst', o encontro inicial 'st' chia como 'sht' ('gue-shtrést').\nLeia: ích füü-le mích in lét-ts-ta tsáit ét-vas gue-shtrést."
+  },
+  "539": {
+    "explanation": "Esta frase dá uma instrução direta: 'Achte darauf' significa 'preste atenção / certifique-se'. A segunda parte usa a estrutura 'um/zu' para indicar finalidade: 'die Wunde sauber zu halten' significa literalmente 'manter a ferida limpa', colocando o verbo 'halten' (manter) no final precedido de 'zu'.",
+    "breakdown": [
+      {
+        "word": "Achte darauf",
+        "meaning": "Certifique-se / Preste atenção nisso — Achte: cuide/preste atenção; darauf: a isso / nisso."
+      },
+      {
+        "word": "die Wunde",
+        "meaning": "A ferida / O machucado — die: a; Wunde: ferida."
+      },
+      {
+        "word": "sauber zu halten",
+        "meaning": "Manter limpa — sauber: limpa; zu: partícula de infinitivo; halten: manter/segurar."
+      }
+    ],
+    "pronuncia": "Em 'Achte', aplique o golpe de glote no 'A' inicial e raspe a garganta no 'ch' ('árr-te'). Em 'darauf', fale 'da-ráuf'. Lembre-se da inversão em 'Wunde': o 'W' soa como 'V' do português ('vún-de'). Em 'sauber', o 's' zumba como 'z' e o '-er' vira 'a' relaxado ('záu-ba'). Em 'halten', a ponta da língua sobe no dente para o 'l' em 'hal-ten'.\nLeia: 'árr-te da-ráuf, díi vún-de záu-ba tsu hal-ten."
+  },
+  "540": {
+    "explanation": "Para dar a ordem de ligar para a emergência, o verbo separável 'anrufen' se divide: a parte de comando 'Ruf' (ligue) vai para o começo da frase e o prefixo separável 'an' fecha a frase lá no final. A expressão 'im Notfall' significa 'no caso de emergência'.",
+    "breakdown": [
+      {
+        "word": "Ruf",
+        "meaning": "Ligue / Chame — forma imperativa do verbo anrufen."
+      },
+      {
+        "word": "im Notfall",
+        "meaning": "Em caso de emergência / No Notfall — im: em + o; Notfall: emergência (Not = necessidade, Fall = caso)."
+      },
+      {
+        "word": "die 112",
+        "meaning": "O 112 — número de emergência na Europa (cento e doze)."
+      },
+      {
+        "word": "an",
+        "meaning": "Para / Ligar — prefixo separável do verbo anrufen posicionado no final."
+      }
+    ],
+    "pronuncia": "Em 'Ruf', raspe o 'r' na garganta e use 'u' tenso ('rúuf'). Aplique o golpe de glote antes de 'im' ('im'). Em 'Notfall', faça 'nôot-' e encoste a língua nos dentes no 'l' duplo em 'fal' ('nôot-fal'). O número 112 pronuncia-se 'hún-dert-tsvöl-f'. A partícula final 'an' exige golpe de glote antes da vogal 'a' (''an').\nLeia: rúuf im nôot-fal díi hún-dert-tsvöl-f 'an."
+  }
+}

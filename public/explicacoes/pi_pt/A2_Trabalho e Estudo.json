@@ -1,0 +1,630 @@
+{
+  "481": {
+    "explanation": "No mandarim, a organização do pensamento sempre coloca o tempo logo no início, logo após quem fala: 'eu hoje'. Em seguida, dizemos a quantidade de tarefas que acumulamos ('tenho muito trabalho') e terminamos com a finalidade do que precisamos fazer ('para fazer').",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu — pronome pessoal."
+      },
+      {
+        "word": "今天",
+        "meaning": "jīntiān — Hoje — jīn: presente / agora; tiān: dia."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / possuir — indica existência ou posse."
+      },
+      {
+        "word": "很多",
+        "meaning": "hěnduō — Muito / muitos — hěn: muito; duō: bastante / numeroso."
+      },
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalho / tarefas profissionais — gōng: trabalho; zuò: fazer."
+      },
+      {
+        "word": "要做",
+        "meaning": "yào zuò — Para fazer / precisar fazer — yào: querer / precisar; zuò: fazer."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ', mergulhe a voz bem fundo na garganta no 3º tom. Em 'jīntiān', sorria esticando os cantos dos lábios e emita o som de 'djiēn' no 1º tom alto e plano, emendando com 'tiēn' mantendo a língua travada nos dentes da frente no 1º tom. Em 'yǒu', faça o deslize suave de 'iôu' caindo no grave do 3º tom. Em 'hěnduō', afunde no 3º tom com som de 'rrěn' com a língua travando no dente e solte 'duō' em 'duō' alto e reto no 1º tom. Em 'gōngzuò', faça o 'g' como um estalo seco de 'k' sem soltar ar em 'gōng' no 1º tom, e feche com o estalo dental 'tsuò' no 4º tom de queda rápida. Finalize em 'yào zuò' soltando 'iào' no 4º tom firme e 'tsuò' no 4º tom cortado a seco.\nLeia: Wǒ djiēn-tiēn iôu rrěn-duō gōng-tsuò iào tsuò."
+  },
+  "482": {
+    "explanation": "Para fazer essa pergunta, os nativos posicionam primeiro a pessoa, depois a localização onde ela estuda ('na escola'), o grau de afeição ('mais gosta') e finalizam especificando o objeto da pergunta ('qual matéria').",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "Nǐ — Você — pronome pessoal."
+      },
+      {
+        "word": "在学校",
+        "meaning": "zài xuéxiào — Na escola — zài: estar em; xuéxiào: escola (xué: aprender; xiào: escola)."
+      },
+      {
+        "word": "最",
+        "meaning": "zuì — Mais / o máximo — indica grau superlativo."
+      },
+      {
+        "word": "喜欢",
+        "meaning": "xǐhuan — Gostar — xǐ: gostar; huan: alegre / satisfeito."
+      },
+      {
+        "word": "哪门课",
+        "meaning": "nǎ mén kè — Qual matéria — nǎ: qual; mén: unidade para matérias; kè: aula / curso."
+      }
+    ],
+    "pronuncia": "Comece em 'Nǐ' mergulhando no 3º tom grave. Em 'zài xuéxiào', estale a língua nos dentes em 'tsài' caindo no 4º tom, faça o bico de 'ü' com sorriso por dentro em 'xüé' subindo no 2º tom, e puxe o sorriso esticado em 'xiào' no 4º tom. Em 'zuì', faça 'tsuêi' com a vogal oculta no centro caindo no 4º tom. Em 'xǐhuan', mergulhe no 3º tom agudo em 'xǐ' com sorriso, e solte 'rróu' leve no tom neutro. Termine em 'nǎ mén kè': afunde no 3º tom em 'nǎ', suba no 2º tom em 'mén' com a língua travando no dente, e solte 'kè' rasgando o ar da garganta no 4º tom seco.\nLeia: Nǐ tsài xüé-xiào tsuêi xǐ-rróu nǎ mén kè."
+  },
+  "483": {
+    "explanation": "No pensamento chinês, o local onde o aprendizado acontece ('na universidade') precisa ser informado antes da ação de estudar a matéria específica ('estudar história').",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "Tā — Ela — pronome pessoal."
+      },
+      {
+        "word": "在大学",
+        "meaning": "zài dàxué — Na universidade — zài: estar em; dàxué: universidade (dà: grande; xué: estudo)."
+      },
+      {
+        "word": "读",
+        "meaning": "dú — Ler / cursar / estudar — ação de ler ou cursar."
+      },
+      {
+        "word": "历史",
+        "meaning": "lǐshǐ — História — lǐ: razão / padrão; shǐ: história."
+      }
+    ],
+    "pronuncia": "Em 'Tā', solte um sopro forte de ar na consoante em 'Tā' alto e sustentado no 1º tom. Em 'zài dàxué', estale 'tsài' no 4º tom, faça o 'd' seco sem ar em 'dà' no 4º tom, e projete o bico em 'xüé' subindo a voz no 2º tom. Em 'dú', estale o 'd' seco sem ar subindo no 2º tom como uma pergunta. Termine em 'lǐshǐ': como são dois tons graves em sequência, o primeiro 'lǐ' sobe virando 'lí' no 2º tom, e 'shǐ' exige curvar a ponta da língua para trás no céu da boca para fazer o som abafado 'chǐ' mergulhando bem fundo no 3º tom.\nLeia: Tā tsài dà-xüé dú lí-chǐ."
+  },
+  "484": {
+    "explanation": "Para dizer que está no meio do processo de procurar algo, o mandarim usa a expressão 'zhèngzài' antes do verbo principal. O tipo de vaga e a quantidade ('uma vaga de meio período') vêm logo depois da busca.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu — pronome pessoal."
+      },
+      {
+        "word": "正在",
+        "meaning": "zhèngzài — Estar no processo de / agora — zhèng: exatamente; zài: no momento."
+      },
+      {
+        "word": "找",
+        "meaning": "zhǎo — Procurar / buscar — verbo de ação."
+      },
+      {
+        "word": "一份",
+        "meaning": "yī fèn — Uma vaga / uma porção — yī: um; fèn: unidade para trabalhos/documentos."
+      },
+      {
+        "word": "兼职",
+        "meaning": "jiānzhí — Trabalho de meio período — jiān: acumular; zhí: cargo."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ', mergulhe a voz no 3º tom grave. Em 'zhèngzài', curve a ponta da língua para trás para dar o estalo seco 'djèng' no 4º tom ressoando no fundo, e solte 'tsài' com a língua no dente no 4º tom. Em 'zhǎo', curve a língua para trás no estalo seco 'djǎo' mergulhando no 3º tom. Em 'yī fèn', a palavra 'yī' vem antes de 4º tom e por isso sobe obrigatoriamente para 2º tom 'yí', seguido de 'fèn' cortando no 4º tom. Termine em 'jiānzhí': estique o sorriso em 'djiēn' no 1º tom alto com língua no dente, e curve a língua para trás em 'djǐ' subindo a voz no 2º tom.\nLeia: Wǒ djèng-tsài djǎo yí fèn djiēn-djǐ."
+  },
+  "485": {
+    "explanation": "A frase estabelece o contexto da rotina primeiro ('ao ir trabalhar'), pergunta sobre a necessidade de vestir uma peça de roupa ('precisa vestir uniforme') e fecha com a partícula de pergunta no final.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "Nǐ — Você — pronome pessoal."
+      },
+      {
+        "word": "上班",
+        "meaning": "shàngbān — Ir ao trabalho / trabalhar — shàng: subir / ir; bān: turno / trabalho."
+      },
+      {
+        "word": "要",
+        "meaning": "yào — Precisar / ter que — verbo auxiliar de necessidade."
+      },
+      {
+        "word": "穿",
+        "meaning": "chuān — Vestir / usar roupa — verbo de ação."
+      },
+      {
+        "word": "工作服",
+        "meaning": "gōngzuòfú — Uniforme de trabalho — gōngzuò: trabalho; fú: roupa."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta — transforma a frase em pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ', afunde a voz no 3º tom grave. Em 'shàngbān', curve a língua para trás chiando 'chàng' no 4º tom, e faça 'bān' com 'b' seco sem ar no 1º tom alto cravando a língua nos dentes. Em 'yào', dê um golpe seco no 4º tom em 'iào'. Em 'chuān', curve a língua para trás e dispare um jato forte de ar em 'tchuēn' no 1º tom alto com final dental. Em 'gōngzuòfú', solte 'gōng' no 1º tom, 'tsuò' no 4º tom e 'fú' subindo no 2º tom. Termine com 'ma' leve e frouxo no tom neutro.\nLeia: Nǐ chàng-bān iào tchuēn gōng-tsuò-fú ma."
+  },
+  "486": {
+    "explanation": "Para fazer comparações, o mandarim coloca a pessoa de referência no meio da frase com a palavra 'bǐ' (em comparação com), finalizando com a intensidade da vantagem ('muito melhor').",
+    "breakdown": [
+      {
+        "word": "他的",
+        "meaning": "Tā de — Dele / o dele — tā: ele; de: partícula de ligação/posse (soa 'da')."
+      },
+      {
+        "word": "数学",
+        "meaning": "shùxué — Matemática — shù: número; xué: estudo."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Em comparação com / do que — marcador de comparação."
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu — pronome pessoal."
+      },
+      {
+        "word": "好得多",
+        "meaning": "hǎo de duō — Muito melhor — hǎo: bom; de: partícula de grau (soa 'da'); duō: muito."
+      }
+    ],
+    "pronuncia": "Em 'Tā de', sopre 'tā' no 1º tom alto e feche no tom neutro 'da' com a boca relaxada, sendo proibido falar 'dê'. Em 'shùxué', curve a língua para trás no chiado 'chù' no 4º tom e projete o bico em 'xüé' subindo no 2º tom. Em 'bǐ wǒ', como são dois 3º tons seguidos, o primeiro vira 'bí' subindo no 2º tom com 'b' seco, e 'wǒ' mergulha no 3º tom grave. Em 'hǎo de duō', afunde 'rrǎo' no 3º tom com atrito de garganta, solte a partícula neutra 'da' (nunca 'dê') e termine em 'duō' plano no 1º tom.\nLeia: Tā da chù-xüé bí wǒ rrǎo da duō."
+  },
+  "487": {
+    "explanation": "Nativos costumam destacar o assunto principal logo no começo da frase ('minha carteira de motorista') para depois declarar o resultado negativo no teste usando 'méi' (não) acompanhado do verbo.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu — pronome pessoal."
+      },
+      {
+        "word": "驾照",
+        "meaning": "jiàzhào — Carteira de motorista — jià: dirigir; zhào: licença."
+      },
+      {
+        "word": "没",
+        "meaning": "méi — Não — negação para ações que não foram concluídas."
+      },
+      {
+        "word": "考过",
+        "meaning": "kǎoguò — Passar na prova — kǎo: prestar exame; guò: passar / atravessar."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ', mergulhe a voz no 3º tom grave. Em 'jiàzhào', puxe o sorriso esticado no estalo seco 'djià' no 4º tom, e curve a ponta da língua para trás no estalo seco 'djào' no 4º tom. Em 'méi', suba a entonação no 2º tom como uma pergunta rápida. Termine em 'kǎoguò': afunde a voz no 3º tom em 'kǎo' disparando um jato de ar da garganta, e faça 'guò' no 4º tom seco com 'g' travado sem ar.\nLeia: Wǒ djià-djào méi kǎo-guò."
+  },
+  "488": {
+    "explanation": "No mandarim, a especificação do momento exato ('hoje à tarde') deve ser posicionada antes da ação de ir à reunião, terminando com a pergunta de confirmação.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "Nǐ — Você — pronome pessoal."
+      },
+      {
+        "word": "今天下午",
+        "meaning": "jīntiān xiàwǔ — Hoje à tarde — jīntiān: hoje; xiàwǔ: tarde."
+      },
+      {
+        "word": "去",
+        "meaning": "qù — Ir — verbo de movimento."
+      },
+      {
+        "word": "开会",
+        "meaning": "kāihuì — Fazer reunião / ir à reunião — kāi: abrir; huì: reunião."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta — transforma a frase em pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ', mergulhe a voz no 3º tom grave. Em 'jīntiān xiàwǔ', faça 'djiēn-tiēn' no 1º tom reto com corte dental, 'xià' no 4º tom com sorriso, e afunde 'wǔ' no 3º tom grave. Em 'qù', arme a boca em bico de 'ü' com sorriso interno e dispare um jato forte de ar em 'tchù' no 4º tom. Em 'kāihuì', sopre ar em 'kāi' no 1º tom, e fale 'rrêu-i' no 4º tom com a vogal oculta 'e' e atrito de garganta. Termine em 'ma' curto e frouxo.\nLeia: Nǐ djiēn-tiēn xià-wǔ tchù kāi-rrêu-i ma."
+  },
+  "489": {
+    "explanation": "A ordem dos elementos é muito próxima do português neste caso: quem precisa ('eu'), o verbo de necessidade ('preciso'), a ação de aprimorar ('elevar') e o objeto que será melhorado ('nível de inglês').",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu — pronome pessoal."
+      },
+      {
+        "word": "需要",
+        "meaning": "xūyào — Precisar / necessitar — xū: precisar; yào: querer."
+      },
+      {
+        "word": "提高",
+        "meaning": "tígāo — Elevar / melhorar — tí: levantar; gāo: alto."
+      },
+      {
+        "word": "英语水平",
+        "meaning": "Yīngyǔ shuǐpíng — Nível de inglês — Yīngyǔ: idioma inglês; shuǐpíng: nível."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ', mergulhe no 3º tom grave. Em 'xūyào', projete o bico de 'ü' com chiado agudo em 'xū' no 1º tom alto, e caia no 4º tom em 'iào'. Em 'tígāo', sopre o 't' com ar subindo no 2º tom em 'tí', e faça 'gāo' no 1º tom com 'g' seco sem ar. Em 'Yīngyǔ shuǐpíng', ressoe 'yīng' no topo, afunde em 'yǔ' no 3º tom, curve a língua para trás em 'chuí' (muta para 2º tom) e suba 'píng' no 2º tom soprando o 'p'.\nLeia: Wǒ xū-iào tí-gāo Yīng-yǔ chuí-píng."
+  },
+  "490": {
+    "explanation": "A regra de ouro do local em mandarim se aplica aqui: informamos primeiro em qual departamento a pessoa se encontra ('no departamento de marketing') para só depois dizer que ela trabalha lá.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "Tā — Ela — pronome pessoal."
+      },
+      {
+        "word": "在市场部",
+        "meaning": "zài shìchǎngbù — No departamento de marketing — zài: estar em; shìchǎng: mercado; bù: departamento."
+      },
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalhar / trabalho — gōng: trabalho; zuò: fazer."
+      }
+    ],
+    "pronuncia": "Em 'Tā', solte um sopro forte no 't' no 1º tom alto. Em 'zài shìchǎngbù', estale 'tsài' no 4º tom, curve a ponta da língua para trás para chiar 'chì' no 4º tom, solte uma explosão de ar com língua curvada em 'tchǎng' no 3º tom, e feche em 'bù' seco no 4º tom sem ar. Termine em 'gōngzuò': solte 'gōng' no 1º tom alto com 'g' seco, e estale 'tsuò' no 4º tom seco com corte de ar.\nLeia: Tā tsài chì-tchǎng-bù gōng-tsuò."
+  },
+  "491": {
+    "explanation": "A frase começa mostrando a consequência presente ('estou cansado') e em seguida introduz a causa ocorrida no passado, posicionando o tempo ('ontem à noite') e finalizando a ação com 'le' (que soa 'la').",
+    "breakdown": [
+      {
+        "word": "我很累",
+        "meaning": "Wǒ hěn lèi — Estou muito cansado — wǒ: eu; hěn: muito; lèi: cansado."
+      },
+      {
+        "word": "因为",
+        "meaning": "yīnwèi — Porque / pois — yīn: causa; wèi: por."
+      },
+      {
+        "word": "我昨晚",
+        "meaning": "wǒ zuówǎn — Eu ontem à noite — wǒ: eu; zuówǎn: ontem à noite (zuó: ontem; wǎn: noite)."
+      },
+      {
+        "word": "加班了",
+        "meaning": "jiābān le — Fiz hora extra — jiābān: fazer hora extra; le: partícula de ação concluída (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ hěn lèi', a sequência de dois 3º tons faz 'Wǒ' virar 'Wó' no 2º tom, 'rrěn' mergulha no 3º tom travando a língua no dente, e 'lè-i' cai seco no 4º tom com vogal oculta. Em 'yīnwèi', emita 'yīn' no 1º tom e 'uèi' no 4º tom. Em 'wǒ zuówǎn', afunde 'wǒ' e faça 'tsuó' subindo no 2º tom e 'uǎn' no 3º tom. Termine em 'jiābān le': puxe o sorriso em 'djiā' no 1º tom, 'bān' no 1º tom e solte 'la' curto e frouxo, sem falar 'lê'.\nLeia: Wó rrěn lè-i yīn-uèi wǒ tsuó-uǎn djiā-bān la."
+  },
+  "492": {
+    "explanation": "Para perguntar o horário de um evento, colocamos o assunto em destaque no início ('a palestra'), seguido do termo interrogativo de horas ('que horas') e do verbo de início.",
+    "breakdown": [
+      {
+        "word": "讲座",
+        "meaning": "Jiǎngzuò — Palestra / conferência — jiǎng: falar / explicar; zuò: assento / sessão."
+      },
+      {
+        "word": "几点",
+        "meaning": "jǐ diǎn — Que horas — jǐ: quantos; diǎn: horas."
+      },
+      {
+        "word": "开始",
+        "meaning": "kāishǐ — Começar / iniciar — kāi: abrir; shǐ: início."
+      }
+    ],
+    "pronuncia": "Em 'Jiǎngzuò', puxe o sorriso tenso estalando 'djiǎng' no 3º tom grave, e faça 'tsuò' no 4º tom seco. Em 'jǐ diǎn', como são dois 3º tons seguidos, o primeiro muda para 2º tom virando 'jí' com sorriso, e 'diǎn' afunde no 3º tom travando a língua nos dentes da frente em 'diěn'. Termine em 'kāishǐ': dispare um jato de ar da garganta no 1º tom em 'kāi', e curve a ponta da língua para trás para chiar 'chǐ' afundando no 3º tom.\nLeia: Djiǎng-tsuò jí diěn kāi-chǐ."
+  },
+  "493": {
+    "explanation": "Para qualificar alguém na turma, o mandarim delimita o grupo primeiro ('na turma'), adiciona o grau mais alto do atributo ('mais inteligente') e conecta tudo à palavra 'pessoa' através da partícula 'de' (que soa 'da').",
+    "breakdown": [
+      {
+        "word": "他是",
+        "meaning": "Tā shì — Ele é — tā: ele; shì: ser."
+      },
+      {
+        "word": "班上",
+        "meaning": "bān shàng — Na turma / na classe — bān: classe; shàng: sobre / em."
+      },
+      {
+        "word": "最聪明的",
+        "meaning": "zuì cōngming de — O mais inteligente — zuì: mais; cōngming: inteligente; de: partícula (soa 'da')."
+      },
+      {
+        "word": "人",
+        "meaning": "rén — Pessoa / ser humano — substantivo."
+      }
+    ],
+    "pronuncia": "Em 'Tā shì', sopre 'tā' no 1º tom e curve a língua para trás para falar 'chì' no 4º tom. Em 'bān shàng', fale 'bān' com 'b' seco sem ar no 1º tom com corte dental, e 'chàng' no 4º tom com língua curvada. Em 'zuì cōngming de', estale 'tsuêi' no 4º tom, dispare ar na língua em 'tsōng' no 1º tom, solte 'ming' leve e feche no tom neutro 'da' (proibido falar 'dê'). Termine em 'rén': curve a ponta da língua para trás vibrando a voz em 'ján' subindo no 2º tom.\nLeia: Tā chì bān chàng tsuêi tsōng-ming da ján."
+  },
+  "494": {
+    "explanation": "Os chineses expressam o desgosto inicial ('eu não gosto'), depois definem a condição incômoda em que a ação ocorre ('sob alta pressão') e por último colocam o verbo 'trabalhar'.",
+    "breakdown": [
+      {
+        "word": "我不喜欢",
+        "meaning": "Wǒ bù xǐhuan — Eu não gosto — wǒ: eu; bù: não; xǐhuan: gostar."
+      },
+      {
+        "word": "在高压下",
+        "meaning": "zài gāoyā xià — Sob alta pressão — zài: em; gāoyā: alta pressão (gāo: alto; yā: pressão); xià: sob."
+      },
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalhar — gōng: trabalho; zuò: fazer."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ bù xǐhuan', afunde 'Wǒ' no 3º tom, solte 'bù' no 4º tom cortado, mergulhe em 'xǐ' no 3º tom com sorriso e termine em 'rróu' leve. Em 'zài gāoyā xià', estale 'tsài' no 4º tom, faça 'gāo' com 'g' seco sem ar no 1º tom, fale 'yā' no 1º tom e caia seco em 'xià' no 4º tom com sorriso esticado. Termine em 'gōngzuò': solte 'gōng' no 1º tom alto e feche em 'tsuò' no 4º tom cortado a seco.\nLeia: Wǒ bù xǐ-rróu tsài gāo-yā xià gōng-tsuò."
+  },
+  "495": {
+    "explanation": "Uma estrutura bem direta em mandarim: pessoa + verbo de ter ('você tem') + a área específica ('experiência em vendas') + a partícula final que transforma a frase em pergunta.",
+    "breakdown": [
+      {
+        "word": "你有",
+        "meaning": "Nǐ yǒu — Você tem — nǐ: você; yǒu: ter."
+      },
+      {
+        "word": "销售经验",
+        "meaning": "xiāoshòu jīngyàn — Experiência em vendas — xiāoshòu: vendas; jīngyàn: experiência."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta — transforma em pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ yǒu', por serem dois 3º tons seguidos, o 'Nǐ' vira 'Ní' subindo no 2º tom e 'yǒu' mergulha no 3º tom grave em 'iôu'. Em 'xiāoshòu jīngyàn', puxe o sorriso em 'xiāo' no 1º tom, curve a língua para trás em 'chòu' no 4º tom, estique o sorriso em 'djīng' no 1º tom reto, e faça 'ièn' no 4º tom fechando com a língua cravada nos dentes. Termine com 'ma' leve e frouxo no tom neutro.\nLeia: Ní iôu xiāo-chòu djīng-ièn ma."
+  },
+  "496": {
+    "explanation": "Quando uma ação é feita para alguém, a estrutura chinesa exige dizer o destinatário primeiro ('para o chefe') antes da ação que está sendo realizada ('escrever relatório').",
+    "breakdown": [
+      {
+        "word": "我正在",
+        "meaning": "Wǒ zhèngzài — Eu estou no processo de — wǒ: eu; zhèngzài: indicador de ação contínua."
+      },
+      {
+        "word": "给老板",
+        "meaning": "gěi lǎobǎn — Para o chefe — gěi: para / dar; lǎobǎn: chefe / patrão."
+      },
+      {
+        "word": "写报告",
+        "meaning": "xiě bàogào — Escrever relatório — xiě: escrever; bàogào: relatório."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ zhèngzài', afunde 'Wǒ' no 3º tom, curve a língua para trás em 'djèng' no 4º tom e estale 'tsài' no 4º tom. Em 'gěi lǎobǎn', como há dois 3º tons em 'lǎobǎn', a expressão toda ajusta os tons: 'gěi' vira 'géi' subindo no 2º tom com 'g' seco sem ar, 'lǎo' vira 'láo' subindo no 2º tom, e 'bǎn' afunde no 3º tom com 'b' seco. Termine em 'xiě bàogào': afunde 'xiě' no 3º tom com sorriso, e solte 'bào-gào' em dois 4º tons descendo firmes.\nLeia: Wǒ djèng-tsài géi láo-bǎn xiě bào-gào."
+  },
+  "497": {
+    "explanation": "No mandarim, a indicação de tempo futuro ('mês que vem') é encaixada logo após o sujeito ('ela'), seguida da intenção e do verbo de ação ('pedir demissão').",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "Tā — Ela — pronome pessoal."
+      },
+      {
+        "word": "下个月",
+        "meaning": "xià gè yuè — Mês que vem / próximo mês — xià: próximo; gè: unidade; yuè: mês."
+      },
+      {
+        "word": "要",
+        "meaning": "yào — Vai / pretender — verbo de intenção."
+      },
+      {
+        "word": "辞职",
+        "meaning": "cízhí — Pedir demissão — cí: despedir-se; zhí: cargo."
+      }
+    ],
+    "pronuncia": "Em 'Tā', solte um sopro forte no 't' no 1º tom alto. Em 'xià gè yuè', puxe o sorriso no 4º tom em 'xià', fale o som gutural aberto 'ga' no tom neutro (sem usar 'gê'), e projete o bico de 'ü' em 'yüè' caindo no 4º tom. Em 'yào', dê um golpe seco no 4º tom em 'iào'. Termine em 'cízhí': dispare um jato de ar com a língua nos dentes em 'tsí' subindo no 2º tom, e curve a ponta da língua para trás em 'djǐ' subindo no 2º tom.\nLeia: Tā xià ga yüè iào tsí-djǐ."
+  },
+  "498": {
+    "explanation": "A regra de tempo permanece constante: dizemos quem somos ('nós'), em seguida especificamos o horário preciso ('dez e meia') e terminamos com o verbo de descanso.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "Wǒmen — Nós — wǒ: eu; men: partícula de plural."
+      },
+      {
+        "word": "十点半",
+        "meaning": "shí diǎn bàn — Dez e meia — shí: dez; diǎn: horas; bàn: metade."
+      },
+      {
+        "word": "休息",
+        "meaning": "xiūxi — Descansar / fazer uma pausa — xiū: descansar; xi: respirar."
+      }
+    ],
+    "pronuncia": "Em 'Wǒmen', mergulhe a voz em 'Wǒ' no 3º tom grave e solte 'man' leve e frouxo no tom neutro. Em 'shí diǎn bàn', curve a língua para trás chiando 'chí' subindo no 2º tom, afunde a voz no 3º tom em 'diěn' com corte dental nos dentes superiores, e caia firme no 4º tom em 'bàn' com 'b' seco sem ar. Termine em 'xiūxi': puxe a vogal oculta em 'xiōu' sustentando no 1º tom alto, e solte 'xi' leve e curto no tom neutro.\nLeia: Wǒ-man chí diěn bàn xiū-xi."
+  },
+  "499": {
+    "explanation": "A frase segue uma ordem muito intuitiva: posiciona a palavra principal ('prova'), usa 'huì' para indicar a probabilidade futura ('vai ser'), o adjetivo ('muito difícil') e a partícula de pergunta no fim.",
+    "breakdown": [
+      {
+        "word": "考试",
+        "meaning": "Kǎoshì — Prova / exame — kǎo: testar; shì: teste."
+      },
+      {
+        "word": "会",
+        "meaning": "huì — Vai / ser provável — verbo auxiliar de possibilidade."
+      },
+      {
+        "word": "很难",
+        "meaning": "hěn nán — Muito difícil — hěn: muito; nán: difícil."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta — transforma em pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Kǎoshì', dispare um jato de ar da garganta afundando no 3º tom em 'kǎo', e curve a ponta da língua para trás para falar 'chì' no 4º tom cortado. Em 'huì', fale 'rrêu-i' no 4º tom seco com a vogal oculta 'e' no meio. Em 'hěn nán', rasgue o ar da garganta em 'rrěn' no 3º tom com a língua travando no dente, e suba a voz no 2º tom em 'nán' com corte dental. Termine com 'ma' suave e curto no tom neutro.\nLeia: Kǎo-chì rrêu-i rrěn nán ma."
+  },
+  "500": {
+    "explanation": "Quando queremos usar um objeto de forma polida e rápida, adicionamos a expressão 'yīxià' (dar uma usadinha rápida) logo após o verbo de usar ('yòng').",
+    "breakdown": [
+      {
+        "word": "我要",
+        "meaning": "Wǒ yào — Eu preciso / eu quero — wǒ: eu; yào: querer / precisar."
+      },
+      {
+        "word": "用一下",
+        "meaning": "yòng yīxià — Usar um pouco — yòng: usar; yīxià: uma vez / rápida ação."
+      },
+      {
+        "word": "打印机",
+        "meaning": "dǎyìnjī — Impressora — dǎyìn: imprimir; jī: máquina."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ yào', afunde 'Wǒ' no 3º tom grave e solte 'iào' no 4º tom. Em 'yòng yīxià', ressoe 'iòng' no 4º tom abafado no fundo da garganta; o numeral 'yī' vem antes do 4º tom e por isso sobe para 2º tom 'yí', seguido de 'xià' no 4º tom com sorriso. Termine em 'dǎyìnjī': afunde 'dǎ' com 'd' seco no 3º tom, caia firme em 'yìn' no 4º tom com corte dental, e puxe o sorriso tenso em 'djī' no 1º tom alto.\nLeia: Wǒ iào iòng yí-xià dǎ-yìn-dji."
+  },
+  "501": {
+    "explanation": "Combinamos o indicador de ação em andamento ('zhèngzài') com o verbo de buscar/lutar por algo ('zhēngqǔ') e colocamos a meta almejada ('promoção') no final.",
+    "breakdown": [
+      {
+        "word": "他正在",
+        "meaning": "Tā zhèngzài — Ele está no processo de — tā: ele; zhèngzài: em andamento."
+      },
+      {
+        "word": "争取",
+        "meaning": "zhēngqǔ — Lutar por / buscar alcançar — zhēng: contender; qǔ: obter."
+      },
+      {
+        "word": "升职",
+        "meaning": "shēngzhí — Promoção de cargo — shēng: subir; zhí: cargo."
+      }
+    ],
+    "pronuncia": "Em 'Tā zhèngzài', sopre 'tā' no 1º tom, curve a língua para trás em 'djèng' no 4º tom ressoando no fundo, e estale 'tsài' no 4º tom. Em 'zhēngqǔ', curve a língua para trás no estalo seco 'djēng' no 1º tom, e arme o bico de 'ü' com sorriso por dentro disparando ar em 'tchǔ' no 3º tom grave. Termine em 'shēngzhí': curve a língua para trás para chiar 'chēng' no 1º tom alto, e curve a língua em 'djǐ' subindo no 2º tom.\nLeia: Tā djèng-tsài djēng-tchǔ chēng-djǐ."
+  },
+  "502": {
+    "explanation": "Para expressar duração de trabalho, a estrutura exige dizer primeiro onde se trabalha ('eu aqui'), a ação ('trabalhar') e o tempo acumulado no final com 'le' (que soa 'la').",
+    "breakdown": [
+      {
+        "word": "我在这里",
+        "meaning": "Wǒ zài zhèlǐ — Eu aqui / eu estou aqui — wǒ: eu; zài: em; zhèlǐ: aqui."
+      },
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalhar — gōng: trabalho; zuò: fazer."
+      },
+      {
+        "word": "六个月了",
+        "meaning": "liù ge yuè le — Há seis meses — liù: seis; ge: unidade; yuè: mês; le: partícula (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ zài zhèlǐ', afunde 'Wǒ' no 3º tom, estale 'tsài' no 4º tom, curve a língua para trás em 'djè' no 4º tom, e afunde 'lǐ' no 3º tom. Em 'gōngzuò', fale 'gōng' no 1º tom com 'g' seco sem ar e 'tsuò' no 4º tom. Em 'liù ge yuè le', use a vogal oculta em 'liôu' no 4º tom, o som gutural aberto 'ga' no tom neutro, projete o bico em 'yüè' no 4º tom, e termine com a partícula neutra 'la' solta e curta, sem falar 'lê'.\nLeia: Wǒ tsài djè-lǐ gōng-tsuò liôu ga yüè la."
+  },
+  "503": {
+    "explanation": "Para oferecer duas opções em uma pergunta de escolha, usamos obrigatoriamente a palavra 'háishì' (ou) ligando a primeira opção ('trabalhar sozinho') à segunda ('trabalho em equipe').",
+    "breakdown": [
+      {
+        "word": "你喜欢",
+        "meaning": "Nǐ xǐhuan — Você gosta de — nǐ: você; xǐhuan: gostar."
+      },
+      {
+        "word": "独立工作",
+        "meaning": "dúlì gōngzuò — Trabalhar de forma independente — dúlì: independente; gōngzuò: trabalhar."
+      },
+      {
+        "word": "还是",
+        "meaning": "háishì — Ou (usado em perguntas) — hái: ainda; shì: ser."
+      },
+      {
+        "word": "团队合作",
+        "meaning": "tuánduì hézuò — Trabalho em equipe — tuánduì: equipe; hézuò: cooperação."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ xǐhuan', afunde 'Nǐ' no 3º tom, 'xǐ' no 3º tom e 'rróu' leve. Em 'dúlì gōngzuò', estale 'dú' subindo no 2º tom com 'd' seco, 'lì' no 4º tom, 'gōng' no 1º tom e 'tsuò' no 4º tom. Em 'háishì', rasgue a garganta em 'rrái' subindo no 2º tom, e curve a língua para trás em 'chì' no 4º tom. Termine em 'tuánduì hézuò': sopre 'tuán' no 2º tom com corte dental, fale 'duêi' no 4º tom, 'rré' subindo no 2º tom com atrito, e 'tsuò' no 4º tom.\nLeia: Nǐ xǐ-rróu dú-lì gōng-tsuò rrái-chì tuán-duêi rré-tsuò."
+  },
+  "504": {
+    "explanation": "Estrutura básica de indicação de lugar: o lugar principal ('escritório') vem em primeiro lugar, seguido pelo verbo de localização 'zài' (estar em) e o ponto focal ('centro da cidade').",
+    "breakdown": [
+      {
+        "word": "办公室",
+        "meaning": "Bàngōngshì — Escritório — bàn: tratar; gōng: público; shì: sala."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em / ficar em — verbo de localização."
+      },
+      {
+        "word": "市中心",
+        "meaning": "shìzhōngxīn — Centro da cidade — shì: cidade; zhōng: centro; xīn: coração."
+      }
+    ],
+    "pronuncia": "Em 'Bàngōngshì', faça 'bàn' no 4º tom com 'b' seco sem ar e corte dental, 'gōng' no 1º tom alto com 'g' seco, e curve a língua para trás chiando 'chì' no 4º tom. Em 'zài', estale a língua nos dentes em 'tsài' caindo no 4º tom seco. Termine em 'shìzhōngxīn': curve a ponta da língua para trás em 'chì' no 4º tom, curve a língua para trás no estalo seco 'djōng' no 1º tom ressoando no fundo, e puxe o sorriso esticado em 'xīn' no 1º tom alto com corte dental.\nLeia: Bàn-gōng-chì tsài chì-djōng-xīn."
+  },
+  "505": {
+    "explanation": "Para expressar que está assistindo a uma aula online agora, usa-se 'zhèngzài' (no processo de) seguido do termo 'shàng wǎngkè', que significa literalmente 'frequentar aula da rede'.",
+    "breakdown": [
+      {
+        "word": "我正在",
+        "meaning": "Wǒ zhèngzài — Eu estou no processo de — wǒ: eu; zhèngzài: indicador de ação em andamento."
+      },
+      {
+        "word": "上网课",
+        "meaning": "shàng wǎngkè — Fazer aula online — shàng: frequentar / ir; wǎngkè: aula pela internet (wǎng: rede; kè: aula)."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ zhèngzài', afunde a voz em 'Wǒ' no 3º tom grave, curve a ponta da língua para trás no estalo seco 'djèng' no 4º tom ressoando na garganta, e estale 'tsài' no 4º tom seco com a língua nos dentes. Termine em 'shàng wǎngkè': curve a língua para trás para chiar 'chàng' no 4º tom caindo firme, projete os lábios em 'uǎng' afundando no 3º tom ressoando no fundo, e solte 'kè' rasgando o ar da garganta no 4º tom seco.\nLeia: Wǒ djèng-tsài chàng uǎng-kè."
+  },
+  "506": {
+    "explanation": "A estrutura com a palavra 'bǎ' é usada para pegar o objeto da conversa ('as coisas/assuntos') e trazê-lo para a frente da ação, mostrando o que é feito com ele ('explicar com clareza').",
+    "breakdown": [
+      {
+        "word": "她很擅长",
+        "meaning": "Tā hěn shàncháng — Ela é muito boa em — tā: ela; hěn: muito; shàncháng: ser perito/bom em."
+      },
+      {
+        "word": "把事情",
+        "meaning": "bǎ shìqing — Pegar os assuntos — bǎ: estrutura de manipulação; shìqing: coisas / assuntos."
+      },
+      {
+        "word": "讲清楚",
+        "meaning": "jiǎng qīngchu — Explicar claramente — jiǎng: falar/explicar; qīngchu: claro / nítido."
+      }
+    ],
+    "pronuncia": "Em 'Tā hěn shàncháng', sopre 'tā' no 1º tom, afunde 'rrěn' no 3º tom com língua no dente, curve a língua para trás em 'chàn' no 4º tom e dispare ar em 'tcháng' subindo no 2º tom. Em 'bǎ shìqing', faça 'bǎ' no 3º tom com 'b' seco, 'chì' no 4º tom chiado e 'tsing' leve. Termine em 'jiǎng qīngchu': puxe o sorriso no 3º tom em 'djiǎng', dispare ar em 'tchīng' no 1º tom, e solte 'tchu' leve no tom neutro com a língua curvada.\nLeia: Tā rrěn chàn-tcháng bǎ chì-tsing djiǎng tchīng-tchu."
+  },
+  "507": {
+    "explanation": "O tempo detalhado ('amanhã de manhã') fica logo após o sujeito ('eu'). Em seguida, afirma-se a existência da compromisso ('ter uma') e especifica-se a atividade ('entrevista de trabalho').",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu — pronome pessoal."
+      },
+      {
+        "word": "明天早上",
+        "meaning": "míngtiān zǎoshang — Amanhã de manhã — míngtiān: amanhã; zǎoshang: manhã."
+      },
+      {
+        "word": "有个",
+        "meaning": "yǒu gè — Ter um / haver um — yǒu: ter; gè: unidade (soa 'ga')."
+      },
+      {
+        "word": "工作面试",
+        "meaning": "gōngzuò miànshì — Entrevista de trabalho — gōngzuò: trabalho; miànshì: entrevista presencial."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ', mergulhe no 3º tom grave. Em 'míngtiān zǎoshang', suba 'míng' no 2º tom com ressonância, fale 'tiēn' no 1º tom com corte dental, afunde 'tsǎo' no 3º tom estalando a língua nos dentes, e solte 'chang' leve no tom neutro com língua curvada. Em 'yǒu gè', afunde em 'iôu' e solte o som gutural aberto 'ga' no tom neutro (sem usar 'gê'). Termine em 'gōngzuò miànshì': faça 'gōng' no 1º tom, 'tsuò' no 4º tom, 'mièn' no 4º tom dental e 'chì' no 4º tom.\nLeia: Wǒ míng-tiēn tsǎo-chang iôu ga gōng-tsuò mièn-chì."
+  },
+  "508": {
+    "explanation": "A pergunta é organizada declarando o tópico da dúvida em primeiro lugar ('as suas principais responsabilidades') e fechando com a expressão de pergunta 'são o quê?' ('shì shénme').",
+    "breakdown": [
+      {
+        "word": "你的",
+        "meaning": "Nǐ de — Seu / sua — nǐ: você; de: partícula de posse (soa 'da')."
+      },
+      {
+        "word": "主要职责",
+        "meaning": "zhǔyào zhízé — Principais responsabilidades — zhǔyào: principal; zhízé: dever / responsabilidade."
+      },
+      {
+        "word": "是什么",
+        "meaning": "shì shénme — É o quê — shì: ser; shénme: o quê (soa 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ de', afunde 'Nǐ' no 3º tom grave e termine na partícula neutra 'da' com a boca relaxada, sendo proibido falar 'dê'. Em 'zhǔyào zhízé', curve a ponta da língua para trás no estalo seco 'djǔ' no 3º tom, fale 'iào' no 4º tom seco, curve a língua no estalo seco 'djí' subindo no 2º tom, e feche em 'tsé' subindo no 2º tom com a língua no dente. Termine em 'shì shénme': curve a língua em 'chì' no 4º tom, e diga 'chán-ma' de forma leve, sem falar 'chên-me'.\nLeia: Nǐ da djǔ-iào djí-tsé chì chán-ma."
+  },
+  "509": {
+    "explanation": "Uma forma muito comum em mandarim é enunciar o projeto ou tema central no início da frase ('este projeto') para então dizer o que se precisa em relação a ele ('eu preciso de alguma ajuda').",
+    "breakdown": [
+      {
+        "word": "这个项目",
+        "meaning": "Zhège xiàngmù — Este projeto — zhège: este (soa 'djè-ga'); xiàngmù: projeto / item."
+      },
+      {
+        "word": "我需要",
+        "meaning": "wǒ xūyào — Eu preciso — wǒ: eu; xūyào: precisar."
+      },
+      {
+        "word": "一些帮助",
+        "meaning": "yīxiē bāngzhù — Alguma ajuda — yīxiē: um pouco / alguns; bāngzhù: ajuda / auxílio."
+      }
+    ],
+    "pronuncia": "Em 'Zhège xiàngmù', curve a língua em 'djè' no 4º tom, solte o som gutural aberto 'ga' (sem falar 'gê'), puxe o sorriso em 'xiàng' no 4º tom e feche em 'mù' no 4º tom. Em 'wǒ xūyào', afunde 'wǒ' no 3º tom, projete o bico de 'ü' em 'xū' no 1º tom e caia em 'iào' no 4º tom. Termine em 'yīxiē bāngzhù': a palavra 'yī' vem antes de 1º tom e por isso cai para 4º tom 'yì', 'xiē' fica no 1º tom com sorriso, 'bān' no 1º tom com 'b' seco e 'djù' no 4º tom seco.\nLeia: Djè-ga xiàng-mù wǒ xū-iào yì-xiē bān-djù."
+  },
+  "510": {
+    "explanation": "A frase define o sujeito principal ('biblioteca'), diz que ela 'é um' ('shì gè') e coloca a característica inteira de ser 'um bom lugar para estudar' antes do substantivo principal 'lugar' ('dìfang').",
+    "breakdown": [
+      {
+        "word": "图书馆",
+        "meaning": "Túshūguǎn — Biblioteca — tú: mapa/imagem; shū: livro; guǎn: estabelecimento."
+      },
+      {
+        "word": "是个",
+        "meaning": "shì gè — É um — shì: ser; gè: unidade (soa 'ga')."
+      },
+      {
+        "word": "学习的好地方",
+        "meaning": "xuéxí de hǎo dìfang — Bom lugar para estudar — xuéxí: estudar; de: partícula (soa 'da'); hǎo: bom; dìfang: lugar."
+      }
+    ],
+    "pronuncia": "Em 'Túshūguǎn', sopre 'tú' subindo no 2º tom, curve a língua para trás para chiar 'chū' no 1º tom alto, e afunde 'guǎn' no 3º tom grave. Em 'shì gè', fale 'chì' no 4º tom com a língua curvada, e diga 'ga' no tom neutro gutural (sem falar 'gê'). Em 'xuéxí de hǎo dìfang', faça 'xüé-xí' subindo nos dois 2º tons com bico de 'ü' e sorriso, diga 'da' neutro (sem usar 'dê'), afunde em 'rrǎo' no 3º tom, estale 'dì' seco no 4º tom e solte 'fang' leve.\nLeia: Tú-chū-guǎn chì ga xüé-xí da rrǎo dì-fang."
+  }
+}

@@ -1,0 +1,790 @@
+{
+  "331": {
+    "explanation": "No mandarim, a ordem lógica do pensamento sempre traz o lugar onde uma ação acontece logo antes ou depois da própria ação. Aqui, os chineses dizem primeiro 'eu nasci', em seguida indicam que isso foi 'em uma' pequena vila, e terminam com a palavra 'dentro' (lǐ) para indicar claramente o espaço interno desse lugar.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "出生",
+        "meaning": "chūshēng — Nascer / vir ao mundo — chū: sair; shēng: nascer / vida."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Em / localizado em."
+      },
+      {
+        "word": "一个小",
+        "meaning": "yīgè xiǎo — Uma pequena — yīgè: um/uma (soa 'yí-guè'); xiǎo: pequeno."
+      },
+      {
+        "word": "村子",
+        "meaning": "cūnzi — Vila / vilarejo / povoado."
+      },
+      {
+        "word": "里",
+        "meaning": "lǐ — Dentro / no interior de."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz no ponto grave em 'wǒ'. Em 'chūshēng', curve a ponta da língua para trás no céu da boca sem tocar nos dentes e solte o ar soprando forte em 'tchū', seguido do chiado abafado em 'chēng' mantendo a nota alta do 1º tom. Solte o estalo seco sem ar em 'tsài' caindo no 4º tom. Faça 'yí-guè' subindo o tom em 'yí' e soltando 'ga' com o 'g' seco de 'k' sem ar e som gutural de 'a', sem falar 'gê'. Afunde a voz em 'xiǎo' esticando os cantos da boca em sorriso. Em 'cūnzi', solte o estalo de 'ts' soprando ar para fora em 'tsūn' travando a língua no dente, e feche em 'tsi' seco. Termine mergulhando a voz em 'lǐ'.\nLeia: wǒ tchū-chēng tsài yí-ga xiǎo tsūn-tsi lǐ."
+  },
+  "332": {
+    "explanation": "Em mandarim, para perguntar onde algo aconteceu, a localização 'onde' vem logo após o sujeito e antes do verbo principal. Na mentalidade chinesa, a frase funciona como: 'Você em onde cresceu?'. O elemento 'de' no final serve para confirmar que a ação de crescer pertence a um fato já concluído no passado.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "在哪里",
+        "meaning": "zài nǎlǐ — Onde / em qual lugar — zài: em; nǎlǐ: onde."
+      },
+      {
+        "word": "长大",
+        "meaning": "zhǎng dà — Crescer / tornar-se adulto — zhǎng: crescer; dà: grande."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de confirmação de fato passado (soa 'da')."
+      }
+    ],
+    "pronuncia": "Em 'nǐ zài nǎlǐ', o 'nǐ' sobe para o 2º tom virando 'ní' por conta do tom de 'nǎ'. Solte 'tsài' seco no 4º tom, faça a pergunta ágil em 'ná' e afunde a voz em 'lǐ'. Em 'zhǎng dà', curve a ponta da língua para trás para dar o estalo seco de 'dj' sem ar no 3º tom grave em 'djǎng', e dê um golpe seco caindo no 4º tom em 'dà' com o 'd' seco sem ar de 't'. Termine no som neutro 'da', soltando a mandíbula frouxa e sem acento, sendo totalmente proibido falar 'dê'.\nLeia: ní tsài ná-lǐ djǎng dà da?"
+  },
+  "333": {
+    "explanation": "A estrutura chinesa para falar de profissão e tempo de serviço coloca primeiro a atuação da pessoa e depois a duração acumulada. A ideia é: 'ela atua como enfermeira, já faz cinco anos'. O 'la' no final sinaliza que essa situação continua firme e válida no presente.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela."
+      },
+      {
+        "word": "当",
+        "meaning": "dāng — Atuar como / exercer a função de."
+      },
+      {
+        "word": "护士",
+        "meaning": "hùshì — Enfermeira — hù: proteger/cuidar; shì: pessoa habilitada."
+      },
+      {
+        "word": "已经",
+        "meaning": "yǐjīng — Já."
+      },
+      {
+        "word": "五年",
+        "meaning": "wǔ nián — Cinco anos — wǔ: cinco; nián: ano."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de mudança ou continuidade de estado (soa 'la')."
+      }
+    ],
+    "pronuncia": "Sustente o 1º tom alto em 'tā' e solte o clique seco de 'd' sem ar em 'dāng'. Em 'hùshì', raspe a garganta no 'rr' em 'rrù' caindo no 4º tom, e curve a ponta da língua para trás para chiar 'chì' cortando seco. Em 'yǐjīng', afunde a voz em 'yǐ' e estique os lábios em sorriso tenso para dar o estalo seco em 'djīng' na nota alta. Em 'wǔ nián', afunde a voz no grave em 'wǔ' e suba a entonação de pergunta em 'nién' travando a língua no dente. Termine no som neutro 'la' curto e relaxado, sem falar 'lê'.\nLeia: tā dāng rrù-chì yǐ-djīng wǔ nién la."
+  },
+  "334": {
+    "explanation": "A comparação em mandarim não usa a estrutura 'mais... do que'. Em vez disso, os chineses organizam o pensamento colocando 'A comparado com B' seguido da qualidade. Fica assim: 'Eu comparado com meu irmão mais velho sou alto'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Comparado a / em comparação com."
+      },
+      {
+        "word": "我哥哥",
+        "meaning": "wǒ gēge — Meu irmão mais velho — wǒ: meu; gēge: irmão mais velho."
+      },
+      {
+        "word": "高",
+        "meaning": "gāo — Alto."
+      }
+    ],
+    "pronuncia": "Como temos sílabas graves em sequência, o 'bǐ' do meio sobe a voz parecendo uma pergunta rápida ('bí'). Em 'wǒ', mergulhe a voz no ponto grave. Em 'gēge', faça o 'g' com som seco de 'k' sem ar e vogal gutural aberta lá do fundo da garganta em 'gā-ga', sem falar 'gê'. Finalize em 'gāo' sustentando a nota mais alta da sua extensão no 1º tom reto.\nLeia: wǒ bí wǒ gā-ga gāo."
+  },
+  "335": {
+    "explanation": "Nesta pergunta, o mandarim coloca o sujeito 'você' em primeiro lugar, seguido da intensidade 'mais' (gèng) e da ação 'gostar' (xǐhuān). O tipo específico de música ('qual tipo de música') é empurrado para a parte final da frase.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "更",
+        "meaning": "gèng — Mais / preferencialmente."
+      },
+      {
+        "word": "喜欢",
+        "meaning": "xǐhuān — Gostar de — xǐ: gostar; huān: alegre."
+      },
+      {
+        "word": "哪种",
+        "meaning": "nǎ zhǒng — Qual tipo / qual espécie — nǎ: qual; zhǒng: tipo/categoria."
+      },
+      {
+        "word": "音乐",
+        "meaning": "yīnyuè — Música — yīn: som; yuè: música."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'nǐ'. Dê um golpe seco no 4º tom em 'gèng' com som de 'k' seco sem ar. Em 'xǐhuān', estique os cantos da boca em sorriso para chiar 'xǐ', e raspe a garganta em 'rruān' com a língua travando no dente. Em 'nǎ zhǒng', mergulhe a voz em 'nǎ' e curve a língua para trás para soltar o estalo seco em 'djǒng'. Em 'yīnyuè', sustente 'yīn' no topo travando o N nos dentes, e projete os lábios em bico firme para soltar 'yüè' abrindo para a vogal 'é' no 4º tom seco.\nLeia: nǐ gèng xǐ-rruān nǎ djǒng yīn-yüè?"
+  },
+  "336": {
+    "explanation": "Para dizer que alguém 'não faz mais' algo acompanhado de outras pessoas, o mandarim junta 'já' (yǐjīng) e a negação 'não' (bù), coloca a companhia 'com os pais' (hé fùmǔ) e só depois indica a ação principal de 'morar junto'. O 'la' no final marca essa nova realidade.",
+    "breakdown": [
+      {
+        "word": "他",
+        "meaning": "tā — Ele."
+      },
+      {
+        "word": "已经",
+        "meaning": "yǐjīng — Já."
+      },
+      {
+        "word": "不",
+        "meaning": "bù — Não."
+      },
+      {
+        "word": "和",
+        "meaning": "hé — Com / e (soa 'rra')."
+      },
+      {
+        "word": "父母",
+        "meaning": "fùmǔ — Pais / pai e mãe — fù: pai; mǔ: mãe."
+      },
+      {
+        "word": "住在",
+        "meaning": "zhù zài — Morar em / viver em."
+      },
+      {
+        "word": "一起",
+        "meaning": "yīqǐ — Junto / juntamente (muda para 'yìqǐ')."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de mudança de situação (soa 'la')."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' no 1º tom alto. Em 'yǐjīng', mergulhe a voz e depois dê o estalo de sorriso seco em 'djīng'. Faça a negação seca no 4º tom em 'bù'. Em 'hé', raspe a garganta soltando a vogal gutural aberta 'rra', sendo proibido falar 'rê'. Em 'fùmǔ', dê um golpe descendente em 'fù' e mergulhe em 'mǔ'. Curve a língua para trás em 'djù' caindo no 4º tom e solte 'tsài' seco. Em 'yìqǐ', dê o golpe seco em 'yì' e estique o sorriso soltando uma forte explosão de ar em 'tchǐ'. Termine em 'la' neutro e relaxado.\nLeia: tā yǐ-djīng bù rra fù-mǔ djù tsài yì-tchi la."
+  },
+  "337": {
+    "explanation": "No pensamento chinês, a marcação do tempo vem logo após o sujeito para situar o ouvinte. A estrutura é: 'Minha irmã mais velha + mês que vem + casar'. O evento em si fica para o encerramento da frase.",
+    "breakdown": [
+      {
+        "word": "我姐姐",
+        "meaning": "wǒ jiějie — Minha irmã mais velha — wǒ: meu; jiějie: irmã mais velha."
+      },
+      {
+        "word": "下个月",
+        "meaning": "xià gè yuè — Próximo mês — xià: próximo/abaixo; gè: unidade; yuè: mês."
+      },
+      {
+        "word": "结婚",
+        "meaning": "jiéhūn — Casar-se — jié: unir; hūn: casamento."
+      }
+    ],
+    "pronuncia": "Em 'wǒ jiějie', mergulhe em 'wǒ' e estique a boca em sorriso tenso no 3º tom grave em 'djiě', deixando a segunda sílaba frouxa em 'djia'. Em 'xià gè yuè', faça o chiado de sorriso 'xià' caindo no 4º tom, solte 'ga' com o 'g' seco de 'k' e som gutural aberto, e projete os lábios em bico firme para 'yüè' abrindo em 'é' no 4º tom. Em 'jiéhūn', suba a entonação de pergunta em 'djié', e raspe a garganta em 'rrēn' com som de 'uên' travando a língua no dente.\nLeia: wǒ djiě-djia xià ga yüè djié-rrēn."
+  },
+  "338": {
+    "explanation": "Em mandarim, primeiro você estabelece o espaço ('na sua casa') e depois utiliza o verbo 'criar/cuidar' (yǎng) em vez de um simples 'ter'. A frase termina com o objeto 'animal de estimação' e o tom de pergunta 'ma'.",
+    "breakdown": [
+      {
+        "word": "你家里",
+        "meaning": "nǐ jiālǐ — Na sua casa / na sua família — nǐ: você; jiā: casa; lǐ: dentro."
+      },
+      {
+        "word": "养",
+        "meaning": "yǎng — Criar / cuidar de animais."
+      },
+      {
+        "word": "宠物",
+        "meaning": "chǒngwù — Animal de estimação — chǒng: mimar; wù: coisa/ser."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula para perguntas diretas de sim/não."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz no 3º tom em 'nǐ'. Estique a boca em sorriso para o 1º tom alto em 'djiā' e mergulhe em 'lǐ'. Em 'yǎng', afunde a voz no ponto grave da garganta. Em 'chǒngwù', curve a ponta da língua para trás e solte um forte sopro de ar em 'tchǒng' no 3º tom, e dê um golpe seco em 'wù' no 4º tom. Termine na partícula 'ma' curta e leve.\nLeia: nǐ djiā-lǐ yǎng tchǒng-wù ma?"
+  },
+  "339": {
+    "explanation": "Os chineses posicionam o período da vida ('quando eu era pequeno') bem no começo da ideia para enquadrar a lembrança. Em seguida vem a frequência ('frequentemente') e por fim a ação física de 'tocar piano'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "小时候",
+        "meaning": "xiǎoshíhou — Na infância / quando pequeno — xiǎo: pequeno; shíhou: tempo/época."
+      },
+      {
+        "word": "经常",
+        "meaning": "jīngcháng — Frequentemente / costumava — jīng: passar; cháng: frequente."
+      },
+      {
+        "word": "弹",
+        "meaning": "tán — Tocar (instrumentos de corda/tecla)."
+      },
+      {
+        "word": "钢琴",
+        "meaning": "gāngqín — Piano — gāng: aço; qín: instrumento musical."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ'. Em 'xiǎoshíhou', faça o sorriso agudo no 3º tom grave em 'xiǎo', curve a língua para trás subindo no 2º tom em 'chí', e relaxe a voz em 'rrôu'. Em 'jīngcháng', dê o estalo de sorriso seco na nota alta em 'djīng', e curve a língua para trás disparando ar em 'tcháng' subindo no 2º tom. Suba o 2º tom com ar soprado em 'tán' com a língua no dente. Em 'gāngqín', faça o 'g' seco sem ar de 'k' no 1º tom reto em 'gāng', e estique o sorriso disparando ar potente em 'tchin' no 2º tom.\nLeia: wǒ xiǎo-chí-rrôu djīng-tcháng tán gāng-tchin."
+  },
+  "340": {
+    "explanation": "Nesta comparação, o mandarim estrutura a ideia como: 'Ela comparada com a aparência exterior é jovem bastante'. A expressão 'de duō' entra no finalzinho para dar o peso de intensidade ('muito mais').",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Comparado a / em relação a."
+      },
+      {
+        "word": "看起来",
+        "meaning": "kànqǐlai — Parecer / ao olhar — kàn: olhar; qǐlai: erguer-se/surgir."
+      },
+      {
+        "word": "年轻",
+        "meaning": "niánqīng — Jovem / nova — nián: ano; qīng: leve/verde."
+      },
+      {
+        "word": "得多",
+        "meaning": "de duō — Muito mais / em grande quantidade (soa 'da duō')."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' no 1º tom alto e afunde a voz em 'bǐ'. Em 'kànqǐlai', dê um golpe seco soprando ar em 'kàn', estique o sorriso disparando ar em 'tchǐ', e suba suavemente em 'lai'. Em 'niánqīng', feche o som em 'nién' com a língua nos dentes subindo a voz, e estique o sorriso soltando ar em 'tchīng' no 1º tom. Finalize no som neutro 'da' leve (sem falar 'dê') seguido da transição labial 'duō' na nota alta do 1º tom.\nLeia: tā bǐ kàn-tchi-lai nién-tchīng da duō."
+  },
+  "341": {
+    "explanation": "No mandarim, a caracterização completa do objeto vem antes dele próprio. A ordem mental é: 'a sua mais bonita de infância memória é o quê?'. A palavra de pergunta fica reservada para o desfecho da frase.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você / sua."
+      },
+      {
+        "word": "最美好",
+        "meaning": "zuì měihǎo — Mais bonita / mais maravilhosa — zuì: o mais; měi: belo; hǎo: bom."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação de característica (soa 'da')."
+      },
+      {
+        "word": "童年",
+        "meaning": "tóngnián — Infância — tóng: criança; nián: ano."
+      },
+      {
+        "word": "回忆",
+        "meaning": "huíyì — Memória / recordação — huí: voltar; yì: pensamento."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / é."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O quê / qual (soa estritamente 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'nǐ'. Faça o 'ts' seco no 4º tom em 'tsuì'. Como temos 'měi' e 'hǎo' juntos, o 'měi' sobe parecendo pergunta em 'méi' e 'hǎo' raspe a garganta no 3º tom grave 'rrǎo'. Solte 'da' neutro. Em 'tóngnián', solte o T soprado em 'tóng' e feche 'nién' no dente. Em 'huíyì', raspe a garganta subindo em 'rruí' e corte seco no 4º tom em 'yì'. Curve a língua para trás para chiar 'chì' no 4º tom. Termine com 'chán-ma', curvando a língua em 'chán' subindo a voz e fechando em 'ma' frouxo, sem falar 'chên-mê'.\nLeia: nǐ tsuì méi-rrǎo da tóng-nién rruí-yì chì chán-ma?"
+  },
+  "342": {
+    "explanation": "Os chineses expressam o superlativo de forma muito enxuta: 'eu sou da casa o mais pequeno'. Não é necessário repetir a palavra 'pessoa', pois a partícula 'da' no final já subentende a referência ao indivíduo.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / sou."
+      },
+      {
+        "word": "家里",
+        "meaning": "jiālǐ — Da família / de casa — jiā: casa/família; lǐ: dentro."
+      },
+      {
+        "word": "最小的",
+        "meaning": "zuì xiǎo de — O mais novo / o menor de todos (soa 'tsuì xiǎo da')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ'. Curve a ponta da língua para trás para chiar 'chì' com um corte seco no 4º tom. Em 'jiālǐ', estique os cantos da boca em sorriso para a nota alta em 'djiā' e mergulhe em 'lǐ'. Em 'zuì xiǎo de', solte o 'ts' seco em 'tsuì' caindo no 4º tom, afunde a voz em 'xiǎo' mantendo o sorriso tenso, e feche no som neutro 'da' sem acento e totalmente frouxo, sendo proibido falar 'dê'.\nLeia: wǒ chì djiā-lǐ tsuì xiǎo da."
+  },
+  "343": {
+    "explanation": "Para dizer que alguém 'não é tão amigável quanto' outra pessoa, o mandarim usa a lógica da negação de posse: a pessoa 'não tem' (méiyǒu) a outra naquele grau de qualidade ('tão amigável').",
+    "breakdown": [
+      {
+        "word": "他",
+        "meaning": "tā — Ele."
+      },
+      {
+        "word": "没有",
+        "meaning": "méiyǒu — Não ter / não ser tanto quanto."
+      },
+      {
+        "word": "他姐姐",
+        "meaning": "tā jiějie — A irmã mais velha dele."
+      },
+      {
+        "word": "那么",
+        "meaning": "nàme — Tão / a esse ponto (soa 'nà-ma')."
+      },
+      {
+        "word": "友好",
+        "meaning": "yǒuhǎo — Amigável / simpático (muda para 'yóu-rrǎo')."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' no 1º tom alto. Em 'méiyǒu', suba a entonação de pergunta em 'méi' e afunde a voz em 'yǒu'. Faça 'tā' reto no topo, estique a boca em sorriso no 3º tom grave em 'djiě', e deixe 'djia' leve. Em 'nàme', dê um golpe seco em 'nà' e solte 'ma' frouxo com vogal gutural, sem falar 'nâ-mê'. Em 'yǒuhǎo', por serem dois 3º tons, o primeiro sobe em 'yóu' e o segundo raspa a garganta afundando no 3º tom grave 'rrǎo'.\nLeia: tā méi-yǒu tā djiě-djia nà-ma yóu-rrǎo."
+  },
+  "344": {
+    "explanation": "A pergunta sobre o tempo de moradia se constrói nesta sequência exata: o sujeito 'você', o lugar 'nesta cidade', a ação já realizada 'morou', a extensão de tempo 'quanto tempo' e a partícula 'la' no fim reforçando a continuidade.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "在这个城市",
+        "meaning": "zài zhège chéngshì — Nesta cidade — zài: em; zhège: esta; chéngshì: cidade."
+      },
+      {
+        "word": "住了",
+        "meaning": "zhù le — Morou / viveu (soa 'djù la')."
+      },
+      {
+        "word": "多久",
+        "meaning": "duōjiǔ — Quanto tempo — duō: muito; jiǔ: longo tempo."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de continuidade / até agora (soa 'la')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz no 3º tom em 'nǐ'. Solte 'tsài' seco no 4º tom. Em 'zhège', curve a língua para o estalo de 'dj' sem ar no 4º tom em 'djè', e faça 'ga' com o 'g' seco e som gutural aberto, sem falar 'gê'. Curve a língua subindo em 'tchéng' e corte seco no 4º tom em 'chì'. Curve a língua para 'djù' caindo no 4º tom e solte 'la' frouxo. Faça 'duō' na nota alta e estique o sorriso mergulhando em 'djiǒu'. Termine no 'la' neutro e leve.\nLeia: nǐ tsài djè-ga tchéng-chì djù la duō-djiǒu la?"
+  },
+  "345": {
+    "explanation": "Para destacar a época exata em que algo aconteceu, o mandarim envolve a informação temporal com a estrutura 'shì... de'. A frase coloca o tempo 'dois anos atrás' bem no centro, antes do verbo de deslocamento 'mudar para cá'.",
+    "breakdown": [
+      {
+        "word": "我是",
+        "meaning": "wǒ shì — Eu sou / foi no meu caso."
+      },
+      {
+        "word": "两年前",
+        "meaning": "liǎng nián qián — Dois anos atrás — liǎng: dois; nián: ano; qián: antes/atrás."
+      },
+      {
+        "word": "搬到",
+        "meaning": "bān dào — Mudar para — bān: mudar; dào: chegar a."
+      },
+      {
+        "word": "这里",
+        "meaning": "zhèlǐ — Aqui / este lugar."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ênfase no fato (soa 'da')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ' e curve a língua para chiar 'chì' no 4º tom. Em 'liǎng nián qián', afunde em 'liǎng', suba a entonação de pergunta em 'nién' com a língua no dente, e estique o sorriso disparando ar em 'tchién'. Em 'bān dào', solte o 'b' seco sem ar em 'bān' no 1º tom, e dê um golpe seco em 'dào' com o 'd' seco sem ar de 't'. Curve a língua em 'djè' caindo no 4º tom e mergulhe a voz em 'lǐ'. Finalize no som neutro 'da' curto e sem acento, sendo proibido falar 'dê'.\nLeia: wǒ chì liǎng nién tchién bān dào djè-lǐ da."
+  },
+  "346": {
+    "explanation": "No mandarim, o interesse por algo é expresso através da estrutura 'em relação a X ter interesse' (duì X gǎn xìngqù). O assunto principal (fotografia) é colocado logo no meio dessa fórmula fixa.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "对",
+        "meaning": "duì — Em relação a / para com (soa 'duêi')."
+      },
+      {
+        "word": "摄影",
+        "meaning": "shèyǐng — Fotografia — shè: tirar foto; yǐng: imagem/sombra."
+      },
+      {
+        "word": "感兴趣",
+        "meaning": "gǎn xìngqù — Ter interesse — gǎn: sentir; xìngqù: interesse."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'nǐ'. Aplique a vogal oculta em 'duì' pronunciando 'duêi' com corte seco no 4º tom. Em 'shèyǐng', curve a língua para trás para chiar 'chè' no 4º tom, e afunde a voz no 3º tom grave em 'yǐng'. Em 'gǎn xìngqù', faça o 'g' seco sem ar em 'gǎn' no 3º tom, estique o sorriso em 'xìng' caindo no 4º tom, e projete os lábios em bico firme de 'ü' disparando ar potente em 'tchù' no 4º tom. Termine em 'ma' leve.\nLeia: nǐ duêi chè-yǐng gǎn xìng-tchù ma?"
+  },
+  "347": {
+    "explanation": "Ao falar de ambições profissionais, o mandarim utiliza o verbo 'dāng' (trabalhar como / assumir a função de). Os chineses dizem 'ela quer atuar como uma arquiteta', inserindo um termo formal indicador de pessoa ('yìmíng') antes do nome da profissão.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela."
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Querer / desejar."
+      },
+      {
+        "word": "当",
+        "meaning": "dāng — Atuar como / ser (profissão)."
+      },
+      {
+        "word": "一名",
+        "meaning": "yīmíng — Um / uma (termo para pessoas; soa 'yì-míng')."
+      },
+      {
+        "word": "建筑师",
+        "meaning": "jiànzhùshī — Arquiteto — jiàn: construir; zhù: edificar; shī: mestre."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' no 1º tom alto. Estique a boca em sorriso tenso afundando a voz no 3º tom grave em 'xiǎng'. Faça o 'd' seco sem ar em 'dāng' no 1º tom. O numeral 'yī' muda para 4º tom antes de 2º tom, soando 'yì', e suba a entonação em 'míng'. Em 'jiànzhùshī', dê o estalo seco de sorriso em 'djièn' no 4º tom com a língua no dente, curve a língua para trás para soltar 'djù' no 4º tom, e mantenha a língua curvada para chiar 'chī' sustentando a nota alta no 1º tom.\nLeia: tā xiǎng dāng yì-míng djièn-djù-chī."
+  },
+  "348": {
+    "explanation": "A expressão de tempo 'ultimamente' vem no início para definir o momento. Para dizer 'não tenho muito tempo', a língua chinesa usa a solução prática de dizer 'não ter qual tempo' (méi shénme), seguida diretamente pelo conceito de 'tempo livre'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "最近",
+        "meaning": "zuìjìn — Ultimamente / recentemente — zuì: o mais; jìn: perto."
+      },
+      {
+        "word": "没",
+        "meaning": "méi — Não ter."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — Qual / algum (soa estritamente 'chán-ma')."
+      },
+      {
+        "word": "空闲时间",
+        "meaning": "kòngxián shíjiān — Tempo livre — kòngxián: livre/vago; shíjiān: tempo."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ'. Em 'zuìjìn', solte o 'ts' seco em 'tsuì' caindo no 4º tom, e estique o sorriso no 'djièn' cortando no 4º tom. Suba a voz em 'méi'. Em 'shénme', curve a língua para chiar 'chán' subindo a voz e solte 'ma' frouxo, sem falar 'chên-mê'. Em 'kòngxián', solte o K soprado no 4º tom em 'kòng', e estique o sorriso subindo em 'xién'. Em 'shíjiān', curve a língua subindo no 2º tom em 'chí', e estique o sorriso no 1º tom alto em 'djiēn' travando a língua nos dentes.\nLeia: wǒ tsuì-djin méi chán-ma kòng-xién chí-djiēn."
+  },
+  "349": {
+    "explanation": "A pergunta sobre a profissão de alguém é extremamente objetiva no pensamento chinês: 'seu pai é fazedor de quê?'. O 'de' no final arremata a frase transformando a ação 'fazer o quê' no próprio papel ocupacional da pessoa.",
+    "breakdown": [
+      {
+        "word": "你爸爸",
+        "meaning": "nǐ bàba — Seu pai — nǐ: você; bàba: pai."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / é."
+      },
+      {
+        "word": "做",
+        "meaning": "zuò — Fazer."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O quê (soa estritamente 'chán-ma')."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de encerramento / atribuição (soa 'da')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'nǐ'. Em 'bàba', dê um golpe seco no 4º tom com o 'b' sem ar em 'bà', e deixe a segunda sílaba frouxa em 'ba'. Curve a língua para chiar 'chì' no 4º tom seco. Solte o estalo de 'ts' sem ar no 4º tom em 'tsuò'. Em 'shénme', curve a língua em 'chán' subindo no 2º tom e solte 'ma' frouxo com vogal gutural, sem falar 'chên-mê'. Termine no som neutro 'da' leve e solto, sendo proibido falar 'dê'.\nLeia: nǐ bà-ba chì tsuò chán-ma da?"
+  },
+  "350": {
+    "explanation": "O mandarim expressa que uma ação está acontecendo no momento atual inserindo a palavra 'zhèngzài' antes do verbo principal. A ordem é: 'nós + em processo de + planejar + uma vez + grande família reunião'.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós (soa 'wǒ-man')."
+      },
+      {
+        "word": "正在",
+        "meaning": "zhèngzài — Em processo de / no meio de."
+      },
+      {
+        "word": "计划",
+        "meaning": "jìhuà — Planejar — jì: calcular; huà: plano."
+      },
+      {
+        "word": "一次",
+        "meaning": "yī cì — Uma vez / uma ocasião (soa 'yí tsì')."
+      },
+      {
+        "word": "大家庭",
+        "meaning": "dà jiātíng — Grande família — dà: grande; jiātíng: família."
+      },
+      {
+        "word": "聚会",
+        "meaning": "jùhuì — Reunião / encontro (soa 'djù-rrêu')."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'wǒ' e solte 'man' frouxo no tom neutro. Em 'zhèngzài', curve a língua para o estalo de 'dj' no 4º tom em 'djèng', e solte 'tsài' seco no 4º tom. Em 'jìhuà', dê o estalo de sorriso no 4º tom em 'djì', e raspe a garganta em 'rruà' caindo no 4º tom. Em 'yī cì', suba a voz em 'yí' e dispare ar potente em 'tsì' no 4º tom. Faça 'dà' seco, estique o sorriso em 'djiā' no topo e suba a voz em 'tíng'. Termine em 'jùhuì' fazendo o bico de 'ü' em 'djù' no 4º tom, e aplicando a vogal oculta 'rrêu' no 4º tom.\nLeia: wǒ-man djèng-tsài djì-rruà yí tsì dà djiā-tíng djù-rrêu."
+  },
+  "351": {
+    "explanation": "Para perguntar sobre a semelhança física de alguém, os chineses usam a combinação 'crescer/aparentar + da + idêntico a' (zhǎng de xiàng). A pessoa com quem se compara é colocada logo em seguida, antes do indicador de pergunta 'ma'.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela."
+      },
+      {
+        "word": "长得",
+        "meaning": "zhǎng de — Aparente / cresceu com o aspecto de (soa 'djǎng da')."
+      },
+      {
+        "word": "像",
+        "meaning": "xiàng — Parecida com / idêntica a."
+      },
+      {
+        "word": "她妈妈",
+        "meaning": "tā māma — A mãe dela — tā: dela; māma: mãe."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' na nota alta do 1º tom. Em 'zhǎng de', curve a ponta da língua para trás para dar o estalo de 'dj' sem ar no 3º tom grave em 'djǎng', e feche na partícula frouxa 'da' com som gutural aberto, sendo totalmente proibido falar 'dê'. Estique os cantos da boca em sorriso para dar um golpe seco em 'xiàng' no 4º tom. Sustente 'tā' e 'mā' altos no 1º tom, deixando o segundo 'ma' leve. Termine em 'ma' frouxo na pergunta.\nLeia: tā djǎng da xiàng tā mā-ma ma?"
+  },
+  "352": {
+    "explanation": "A negação de habilidade no mandarim é feita colocando 'não muito' (bù tài) antes do verbo que indica maestria ou especialidade (shàncháng). O objeto ou área de conhecimento ('esportes') entra logo ao final.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "不太",
+        "meaning": "bù tài — Não muito."
+      },
+      {
+        "word": "擅长",
+        "meaning": "shàncháng — Ser bom em / ter facilidade para."
+      },
+      {
+        "word": "运动",
+        "meaning": "yùndòng — Esporte / exercício físico (soa 'yüèn-dòng')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ'. Em 'bù tài', faça a negação seca no 4º tom em 'bù' e solte o T soprado em 'tài' caindo no 4º tom. Em 'shàncháng', curve a língua para trás para chiar 'chàn' no 4º tom com a língua no dente, e mantenha a língua curvada disparando ar forte em 'tcháng' subindo no 2º tom. Em 'yùndòng', projete os lábios em bico firme de 'ü' pronunciando 'yüèn' com a língua travando nos dentes no 4º tom, e faça o 'd' seco sem ar de 't' em 'dòng' caindo no 4º tom.\nLeia: wǒ bù tài chàng-tcháng yüèn-dòng."
+  },
+  "353": {
+    "explanation": "No mandarim, os avós paternos possuem uma forma carinhosa combinada: 'vovô e vovó' (yéye nǎinai). A frase coloca este sujeito primeiro, seguido do verbo 'morar em' (zhù zài) e finaliza com o destino 'interior/campo'.",
+    "breakdown": [
+      {
+        "word": "我爷爷奶奶",
+        "meaning": "wǒ yéye nǎinai — Meus avós paternos — wǒ: meu; yéye: avô paterno; nǎinai: avó paterna."
+      },
+      {
+        "word": "住在",
+        "meaning": "zhù zài — Morar em / viver em."
+      },
+      {
+        "word": "乡下",
+        "meaning": "xiāngxià — Interior / zona rural — xiāng: vila/campo; xià: baixo/interior."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ'. Em 'yéye', suba a entonação em 'yé' e solte o segundo 'ye' frouxo. Em 'nǎinai', afunde a voz no 3º tom grave em 'nǎi' e deixe o segundo 'nai' leve. Curve a língua para trás em 'djù' caindo no 4º tom seco e solte 'tsài' seco no 4º tom. Em 'xiāngxià', estique a boca em sorriso para sustentá-lo no 1º tom alto em 'xiāng', e dê um golpe seco no 4º tom em 'xià' mantendo o sorriso tenso.\nLeia: wǒ yé-ye nǎi-nai djù tsài xiāng-xià."
+  },
+  "354": {
+    "explanation": "A ordem das frases interrogativas no mandarim segue exatamente a mesma estrutura da afirmação. A ordem é: 'o seu + nome do meio + é + o quê?'. A pergunta não altera a posição das palavras principais.",
+    "breakdown": [
+      {
+        "word": "你的",
+        "meaning": "nǐ de — Seu / sua (soa 'nǐ da')."
+      },
+      {
+        "word": "中间名",
+        "meaning": "zhōngjiānmíng — Nome do meio — zhōng: meio; jiān: espaço; míng: nome."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / é."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O quê (soa estritamente 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'nǐ' e feche na partícula frouxa 'da' com som gutural aberto, sendo proibido falar 'dê'. Em 'zhōngjiānmíng', curve a língua para o estalo de 'dj' no 1º tom reto em 'djông', estique o sorriso para 'djiēn' no 1º tom com a língua no dente, e suba a entonação de pergunta em 'míng'. Curve a língua para chiar 'chì' no 4º tom seco. Termine com 'chán-ma', curvando a língua em 'chán' subindo o tom e soltando 'ma' frouxo.\nLeia: nǐ da djông-djiēn-míng chì chán-ma?"
+  },
+  "355": {
+    "explanation": "Para expressar que você conhece alguém há muito tempo, o mandarim estabelece o marco inicial 'desde o ensino médio' (cóng gāozhōng) antes da ação. A palavra 'jiù' entra para enfatizar que isso já acontece desde aquela época distante.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "从",
+        "meaning": "cóng — Desde / a partir de."
+      },
+      {
+        "word": "高中",
+        "meaning": "gāozhōng — Ensino médio — gāo: alto; zhōng: secundário/meio."
+      },
+      {
+        "word": "就",
+        "meaning": "jiù — Já / desde então (soa 'djiôu')."
+      },
+      {
+        "word": "认识",
+        "meaning": "rènshi — Conhecer alguém — rèn: reconhecer; shi: saber."
+      },
+      {
+        "word": "他",
+        "meaning": "tā — Ele / o."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de fato consumado (soa 'la')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ'. Solte a explosão de ar em 'tsông' com o estalo de 'ts' subindo a voz no 2º tom. Em 'gāozhōng', faça 'gāo' com o 'g' seco sem ar de 'k' no topo, e curve a língua em 'djông' no 1º tom. Aplique a vogal oculta em 'jiù' soltando 'djiôu' no 4º tom seco. Em 'rènshi', curve a língua com vibração de voz em 'rèn' caindo no 4º tom, e chiar suavemente em 'chī'. Sustente 'tā' no 1º tom e termine no 'la' neutro e leve.\nLeia: wǒ tsông gāo-djông djiôu rèn-chī tā la."
+  },
+  "356": {
+    "explanation": "Nesta frase comparativa, o mandarim organiza a informação colocando 'ela comparada com ano passado', fecha com a qualidade de ter ficado 'magra' (shòu) e insere o 'la' no final para mostrar a mudança de estado evidente.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Comparada a."
+      },
+      {
+        "word": "去年",
+        "meaning": "qùnián — Ano passado — qù: ir/passado; nián: ano."
+      },
+      {
+        "word": "瘦",
+        "meaning": "shòu — Magra / emagreceu."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de mudança de estado (soa 'la')."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' na nota alta do 1º tom e afunde a voz no 3º tom grave em 'bǐ'. Em 'qùnián', projete os lábios em bico firme de 'ü' disparando uma forte explosão de ar em 'tchüè' caindo no 4º tom, e suba a voz em 'nién' com a língua nos dentes. Em 'shòu', curve a ponta da língua para trás para chiar 'chôu' dando um golpe seco no 4º tom. Finalize com a partícula 'la' frouxa e curta no som neutro, sem falar 'lê'.\nLeia: tā bǐ tchüè-nién chôu la."
+  },
+  "357": {
+    "explanation": "Os chineses não possuem um termo específico equivalente a 'pessoa matinal'. Em vez disso, a ideia é expressa de forma verbal e prática: 'Você tem o hábito de acordar cedo?', encerrando com a partícula de pergunta 'ma'.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "习惯",
+        "meaning": "xíguàn — Ter o hábito de / estar acostumado a."
+      },
+      {
+        "word": "早起",
+        "meaning": "zǎoqǐ — Acordar cedo — zǎo: cedo; qǐ: levantar."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'nǐ'. Em 'xíguàn', estique a boca em sorriso agudo subindo a voz em 'xí', e projete os lábios em 'guàn' caindo no 4º tom seco com a língua travando no dente. Em 'zǎoqǐ', solte o 'ts' seco sem ar no 3º tom grave em 'tsǎo', e estique os cantos da boca em sorriso disparando ar em 'tchǐ' no 3º tom. Termine com a partícula 'ma' curta e leve.\nLeia: nǐ xí-guàn tsǎo-tchi ma?"
+  },
+  "358": {
+    "explanation": "No mandarim, a ordem da preferência traz em primeiro lugar a frase de contraste: 'comparado ao café' (bǐqǐ kāfēi). Em seguida vem a afirmação principal: 'eu mais gosto de tomar chá'.",
+    "breakdown": [
+      {
+        "word": "比起",
+        "meaning": "bǐqǐ — Comparado a / em comparação com (soa 'bí-tchi')."
+      },
+      {
+        "word": "咖啡",
+        "meaning": "kāfēi — Café."
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "更",
+        "meaning": "gèng — Mais / preferencialmente."
+      },
+      {
+        "word": "喜欢",
+        "meaning": "xǐhuān — Gostar de."
+      },
+      {
+        "word": "喝茶",
+        "meaning": "hē chá — Beber chá (soa 'rra chá')."
+      }
+    ],
+    "pronuncia": "Em 'bǐqǐ', o tom de 'bǐ' sobe virando 'bí' antes do 3º tom de 'qǐ', que explode ar em 'tchi' com sorriso. Em 'kāfēi', solte o K soprado no 1º tom em 'kā' e o F plano em 'fēi'. Mergulhe em 'wǒ'. Dê um golpe seco no 4º tom em 'gèng' com 'g' sem ar. Estique o sorriso em 'xǐ' no 3º tom e raspe a garganta em 'rruān'. Em 'hē chá', raspe a garganta na vogal gutural 'rra' no 1º tom (sem falar 'rê'), e curve a língua disparando ar em 'chá' subindo no 2º tom.\nLeia: bí-tchi kā-fēi, wǒ gèng xǐ-rruān rra chá."
+  },
+  "359": {
+    "explanation": "A estrutura para descrever qualidades de alguém coloca toda a caracterização antes da pessoa. A sequência chinesa é: 'Ele é + um + muito esforçado (ligado por da) + estudante'.",
+    "breakdown": [
+      {
+        "word": "他",
+        "meaning": "tā — Ele."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / é."
+      },
+      {
+        "word": "一个",
+        "meaning": "yīgè — Um (soa 'yí-guè')."
+      },
+      {
+        "word": "很努力的",
+        "meaning": "hěn nǔlì de — Muito esforçado (soa 'rrěn nǔ-lì da')."
+      },
+      {
+        "word": "学生",
+        "meaning": "xuésheng — Estudante / aluno."
+      }
+    ],
+    "pronuncia": "Sustente 'tā' alto no 1º tom e curve a língua para chiar 'chì' no 4º tom. Faça 'yí-guè' subindo em 'yí' e soltando 'ga' com o 'g' seco sem ar de 'k' e som gutural aberto. Em 'hěn nǔlì de', raspe a garganta em 'rrěn' afundando no 3º tom, faça 'nǔ' no 3º tom, dê o golpe seco em 'lì', e feche em 'da' neutro, sem falar 'dê'. Em 'xuésheng', projete os lábios em bico firme de 'ü' abrindo para 'é' em 'xüé' no 2º tom, e chiar em 'chēng' no 1º tom reto.\nLeia: tā chì yí-ga rrěn nǔ-lì da xüé-chēng."
+  },
+  "360": {
+    "explanation": "Os chineses montam o sujeito unindo a posse e a qualidade principal antes de dizer quem é: 'meu mais bom amigo' (wǒ zuì hǎo de péngyou). Só depois dessa caracterização inteira é que a frase traz a ação de morar em outro país.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Meu / minha."
+      },
+      {
+        "word": "最好",
+        "meaning": "zuì hǎo — Melhor / mais bom (soa 'tsuì rrǎo')."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "朋友",
+        "meaning": "péngyou — Amigo (soa 'péng-yôu')."
+      },
+      {
+        "word": "住在",
+        "meaning": "zhù zài — Morar em / viver em."
+      },
+      {
+        "word": "另一个",
+        "meaning": "lìng yīgè — Outro / um outro (soa 'lìng yí-guè')."
+      },
+      {
+        "word": "国家",
+        "meaning": "guójiā — País — guó: país; jiā: lar/nação."
+      }
+    ],
+    "pronuncia": "Mergulhe em 'wǒ'. Solte 'tsuì' seco no 4º tom, raspe a garganta no 3º tom grave em 'rrǎo', e solte 'da' neutro frouxo. Suba a voz no P soprado em 'péng' e aplique a vogal oculta em 'yôu'. Curve a língua em 'djù' caindo no 4º tom e solte 'tsài' seco. Dê o golpe seco em 'lìng' no 4º tom, suba o tom em 'yí' e solte 'ga' com o 'g' seco sem ar de 'k'. Suba a voz em 'guó' e estique o sorriso na nota alta do 1º tom em 'djiā'.\nLeia: wǒ tsuì rrǎo da péng-yôu djù tsài lìng yí-ga guó-djiā."
+  }
+}

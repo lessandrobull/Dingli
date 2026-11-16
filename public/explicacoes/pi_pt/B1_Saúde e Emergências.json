@@ -1,0 +1,680 @@
+{
+  "811": {
+    "explanation": "Em mandarim, a noção de tempo vem bem no início da frase para situar a conversa, antecedendo o verbo ou sensação. Por isso, começamos com 'eu recentemente' (Wǒ zuìjìn), seguido do verbo de sentir 'gǎnjué'. Em seguida, a intensidade 'um pouco' (yǒudiǎn) se posiciona logo antes da qualidade 'indisposto / desconfortável' (bù shūfu), que literalmente significa 'não confortável'. Os chineses pensam primeiro em quem, depois em quando, para só então descrever o estado de saúde de maneira direta.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "最近",
+        "meaning": "zuìjìn — Recentemente / Ultimamente — zuì: o mais; jìn: perto."
+      },
+      {
+        "word": "感觉",
+        "meaning": "gǎnjué — Sentir / Sensação — gǎn: perceber / sentir; jué: notar."
+      },
+      {
+        "word": "有点",
+        "meaning": "yǒudiǎn — Um pouco / Ligeiramente — yǒu: ter; diǎn: ponto / um pouco."
+      },
+      {
+        "word": "不舒服",
+        "meaning": "bù shūfu — Indisposto / Desconfortável — bù: não; shūfu: confortável."
+      }
+    ],
+    "pronuncia": "Comece em 'Wǒ' afundando a voz no grave do 3º tom. Em 'zuìjìn', faça o 'z' como um estalo seco de 'ts' no 4º tom de queda rápida em 'tsuèi', seguido de 'djin' no 4º tom cortando no dente. Para 'gǎnjué', afunde o tom grave na garganta em 'gǎn' e suba rapidamente no 2º tom de pergunta em 'djüé' com lábios em bico. Em 'yǒudiǎn', como são dois tons graves seguidos, suba o primeiro em 2º tom 'ióu' e afunde o segundo em 'diěn' no 3º tom com travamento dental. Em 'bù shūfu', dê um golpe seco no 4º tom em 'bù', enrolando a língua para trás para chiar em 'chū' alto e reto no 1º tom, e termine no tom neutro curto e frouxo 'fu'.\nLeia: Wǒ tsuèi-djin gǎn-djüé ióu-diěn bù chū-fu.",
+    "id": 811
+  },
+  "812": {
+    "explanation": "A lógica aqui começa estabelecendo a condição com 'se' (Rúguǒ), seguida da continuidade da dor 'ainda continuamente doer' (hái yīzhí téng). A recomendação vem na sequência: 'você deveria' (nǐ yīnggāi), seguido da ação 'ir ver médico' (qù kànkan yīshēng). O uso de repetição no verbo 'ver' (kànkan) deixa o tom amigável e informal, sugerindo 'dar uma checada' ou 'fazer uma consulta rápida'.",
+    "breakdown": [
+      {
+        "word": "如果",
+        "meaning": "rúguǒ — Se / Caso — rú: como; guǒ: resultado."
+      },
+      {
+        "word": "还",
+        "meaning": "hái — Ainda."
+      },
+      {
+        "word": "一直",
+        "meaning": "yīzhí — Continuamente / Sem parar — yī: um; zhí: direto."
+      },
+      {
+        "word": "疼",
+        "meaning": "téng — Doer / Sentir dor."
+      },
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "应该",
+        "meaning": "yīnggāi — Deveria / Ter a obrigação de — yīng: dever; gāi: precisar."
+      },
+      {
+        "word": "去看看",
+        "meaning": "qù kànkan — Ir ver um pouco / Ir dar uma olhada — qù: ir; kànkan: dar uma olhada."
+      },
+      {
+        "word": "医生",
+        "meaning": "yīshēng — Médico — yī: cura / medicina; shēng: nascer / pessoa."
+      }
+    ],
+    "pronuncia": "Em 'Rúguǒ', suba o som no 2º tom com a língua curvada para trás em 'jú' e afunde a voz no 3º tom grave em 'guǒ'. Em 'hái', raspando a garganta no 2º tom ascendente em 'rrái'. Em 'yīzhí', note a mudança de tom do numeral para o 4º tom seco 'yì', e enrole a língua para trás no 2º tom subindo em 'djí'. Para 'téng', dispare ar forte no 2º tom em 'téng'. Em 'nǐ yīnggāi', afunde 'nǐ' no grave, mande 'īng' alto e plano no 1º tom, e feche 'gāi' reto no 1º tom com som seco sem ar. Em 'qù kànkan', dê um sopro agudo com sorriso em 'tchù' no 4º tom, seguido de golpe seco em 'kàn' e o segundo 'kan' leve e curto no tom neutro. Termine 'yīshēng' com som alto e contínuo no 1º tom em 'ī-chēng' com a língua virada para trás.\nLeia: Jú-guǒ rrái yì-djí téng, nǐ īng-gāi tchù kàn-kan ī-chēng.",
+    "id": 812
+  },
+  "813": {
+    "explanation": "No mandarim, os compromissos são expressos dizendo primeiro a ação de marcar, depois o horário exato, e por fim o objetivo. A frase começa com 'eu marquei' (wǒ yuē le), onde a conclusão vem marcada por 'le'. Em seguida entra a hora exata 'quatro horas' (sì diǎn), finalizando com a ação de consulta 'ver médico de dente' (kàn yáyī). Essa ordem reflete como o pensamento chinês fixa o tempo e a intenção de forma sequencial.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "约了",
+        "meaning": "yuē le — Marquei / Agendei — yuē: combinar; le: partícula de ação concluída (soa 'la')."
+      },
+      {
+        "word": "四点",
+        "meaning": "sì diǎn — Quatro horas — sì: quatro; diǎn: horas / ponto."
+      },
+      {
+        "word": "看",
+        "meaning": "kàn — Ver / Consultar."
+      },
+      {
+        "word": "牙医",
+        "meaning": "yáyī — Dentista / Médico de dentes — yá: dente; yī: médico."
+      }
+    ],
+    "pronuncia": "Comece afundando em 'Wǒ' no 3º tom grave. Em 'yuē le', estique os lábios em bico e abra para 'yüē' no 1º tom alto e sustentado, seguido da partícula neutra e curta 'la', sendo proibido falar 'lê'. Em 'sì diǎn', faça o estalo dental fino em 'sì' no 4º tom seco e afunde a voz no 3º tom grave em 'diěn' cortando no dente. Para 'kàn', solte um golpe descendente firme em 'kàn' no 4º tom. Finalize 'yáyī' subindo o tom de pergunta em 'iá' no 2º tom e mantendo 'ī' reto e alto no 1º tom.\nLeia: Wǒ yüē-la sì diěn kàn iá-ī.",
+    "id": 813
+  },
+  "814": {
+    "explanation": "A estrutura desta pergunta começa contextualizando a cena principal: 'na hora de viajar' (Lǚxíng shí). Logo em seguida insere a hipótese 'se o passaporte perder' (rúguǒ hùzhào diū le). Ao final, entra a indagação de ação pessoal 'o que eu deveria fazer?' (wǒ gāi zěnme bàn). O mandarim prefere colocar todo o cenário hipotético no início para só então perguntar qual atitude tomar.",
+    "breakdown": [
+      {
+        "word": "旅行时",
+        "meaning": "lǚxíng shí — Na hora de viajar / Durante a viagem — lǚxíng: viajar; shí: tempo / momento."
+      },
+      {
+        "word": "如果",
+        "meaning": "rúguǒ — Se / Caso."
+      },
+      {
+        "word": "护照",
+        "meaning": "hùzhào — Passaporte — hù: proteger; zhào: licença / foto."
+      },
+      {
+        "word": "丢了",
+        "meaning": "diū le — Perder-se / Perdeu — diū: perder; le: partícula de ação concluída (soa 'la')."
+      },
+      {
+        "word": "我该",
+        "meaning": "wǒ gāi — Eu deveria — wǒ: eu; gāi: dever."
+      },
+      {
+        "word": "怎么办",
+        "meaning": "zěnme bàn — Como fazer / O que fazer — zěnme: como; bàn: resolver / fazer."
+      }
+    ],
+    "pronuncia": "Em 'Lǚxíng shí', projete o bico em 'lǚ' mergulhando no 3º tom, faça o chiado fino de sorriso em 'xíng' no 2º tom subindo, e suba no 2º tom enrolando a língua em 'chí'. Em 'rúguǒ', faça 'jú' no 2º tom com língua curvada e 'guǒ' grave no 3º tom. Em 'hùzhào', raspe a garganta no 4º tom em 'rrù' e enrole a língua para trás num estalo seco em 'djào' no 4º tom. Em 'diū le', mande 'diū' alto no 1º tom e feche em 'la' neutro. Em 'wǒ gāi', afunde em 'wǒ' no 3º tom e mande 'gāi' reto no 1º tom. Termine em 'zěnme bàn': faça 'tsǎn' no 3º tom travando o N no dente, passe pela sílaba neutra gutural 'ma' (grafada obrigatoriamente como 'ma') e dê um golpe seco em 'bàn' no 4º tom.\nLeia: Lǚ-xíng chí jú-guǒ rrù-djào diū-la wǒ gāi tsǎn-ma bàn.",
+    "id": 814
+  },
+  "815": {
+    "explanation": "Para expressar alergia em mandarim, usa-se a estrutura fixa 'em relação a algo ser alérgico' (duì māo guòmǐn), em vez de colocar o verbo ter alergia direto. Em seguida, entra a conclusão lógica 'por isso' (suǒyǐ), conectando com o impedimento 'não posso' (bù néng), finalizando com a localização e ação 'morar/ficar na sua casa' (zhù zài nǐ jiā). A causa antecede o efeito de forma rígida no pensamento chinês.",
+    "breakdown": [
+      {
+        "word": "我对猫过敏",
+        "meaning": "wǒ duì māo guòmǐn — Sou alérgico a gatos — wǒ: eu; duì: em relação a; māo: gato; guòmǐn: ter alergia."
+      },
+      {
+        "word": "所以",
+        "meaning": "suǒyǐ — Por isso / Portanto — suǒ: lugar / razão; yǐ: usar / por meio de."
+      },
+      {
+        "word": "不能",
+        "meaning": "bù néng — Não posso / Não ter capacidade — bù: não; néng: poder."
+      },
+      {
+        "word": "住在你家",
+        "meaning": "zhù zài nǐ jiā — Ficar/Morar na sua casa — zhù: morar; zài: estar em; nǐ jiā: sua casa."
+      }
+    ],
+    "pronuncia": "Comece afundando 'Wǒ' no 3º tom. Em 'duì māo', passe pela rima oculta 'duêi' cortando firme no 4º tom, e mande 'māo' alto e plano no 1º tom. Em 'guòmǐn', dê um golpe seco no 4º tom em 'guò' e afunde 'mǐn' no 3º tom travando o N nos dentes. Em 'suǒyǐ', como são dois 3º tons, suba o primeiro em 'suó' no 2º tom e afunde o segundo em 'yǐ'. Em 'bù néng', dê o golpe no 4º tom 'bù' e suba 'néng' no 2º tom. Em 'zhù zài nǐ jiā', enrole a língua no 4º tom 'djù', dê o golpe seco em 'tsài', afunde a voz em 'nǐ' e finalize no sorriso tenso e reto no 1º tom em 'djiā'.\nLeia: Wǒ duêi māo guò-mǐn, suó-yǐ bù néng djù tsài nǐ djiā.",
+    "id": 815
+  },
+  "816": {
+    "explanation": "A ordem das palavras em mandarim para indicar quanto tempo uma dor dura é colocar o local do corpo e a dor no início: 'ela as costas doer' (Tā bèi téng). Em seguida, vem o indicador de conclusão 'le', e a duração aproximada 'já vários semanas' (hǎojǐ ge xīngqī), terminando com outro 'le' no fim da frase. Esse segundo 'le' reforça que a situação continua acontecendo até o presente momento.",
+    "breakdown": [
+      {
+        "word": "她",
+        "meaning": "tā — Ela."
+      },
+      {
+        "word": "背疼了",
+        "meaning": "bèi téng le — Costas doerem / Dor nas costas — bèi: costas; téng: doer; le: partícula (soa 'la')."
+      },
+      {
+        "word": "好几个",
+        "meaning": "hǎojǐ ge — Vários / Várias unidades — hǎo: muito; jǐ: quantos; ge: item (soa 'ga')."
+      },
+      {
+        "word": "星期了",
+        "meaning": "xīngqī le — Semanas — xīngqī: semana; le: partícula de continuidade (soa 'la')."
+      }
+    ],
+    "pronuncia": "Comece em 'Tā' com sopro forte no 1º tom alto. Em 'bèi téng le', solte 'bèi' no 4º tom seco com 'b' sem ar, suba 'téng' com sopro no 2º tom e termine na partícula neutra curta 'la'. Em 'hǎojǐ ge', a sequência de dois 3º tons faz 'hǎo' virar 2º tom subindo 'rráo', 'jǐ' virar 3º tom grave 'djǐ', e o classificador virar a partícula neutra 'ga' (sendo estritamente proibido grafar 'ge'). Em 'xīngqī le', faça o chiado fino de sorriso em 'xīng' no 1º tom, sopre ar forte com sorriso em 'tchī' no 1º tom, e feche na partícula neutra 'la'.\nLeia: Tā bèi téng-la rráo-djǐ ga xīng-tchī la.",
+    "id": 816
+  },
+  "817": {
+    "explanation": "A estrutura de pergunta de localização em mandarim começa perguntando se a pessoa sabe: 'você sabe' (Nǐ zhīdào). Em seguida entra o objeto qualificado: 'o mais próximo pronto-socorro' (zuìjìn de jízhěnshì), unido pela partícula 'de'. Por fim, em vez de colocar o verbo no início como no português, a frase termina perguntando a localização: 'estar em qual lugar?' (zài nǎlǐ ma), finalizando com a partícula de pergunta 'ma'.",
+    "breakdown": [
+      {
+        "word": "你知道",
+        "meaning": "nǐ zhīdào — Você sabe — nǐ: você; zhīdào: saber."
+      },
+      {
+        "word": "最近的",
+        "meaning": "zuìjìn de — O mais próximo / Mais recente — zuì: o mais; jìn: perto; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "急诊室",
+        "meaning": "jízhěnshì — Pronto-socorro / Sala de emergência — jí: urgente; zhěn: examinar; shì: sala."
+      },
+      {
+        "word": "在哪里",
+        "meaning": "zài nǎlǐ — Onde fica / Estar em onde — zài: estar em; nǎlǐ: onde."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ zhīdào', afunde 'nǐ' no grave do 3º tom, enrole a língua para trás em 'djī' alto no 1º tom, e dê o golpe seco em 'dào' no 4º tom. Em 'zuìjìn de', faça 'tsuèi' seco no 4º tom, 'djin' no 4º tom e feche na partícula neutra gutural 'da'. Em 'jízhěnshì', suba 'djí' no 2º tom com sorriso, enrole a língua para afundar no 3º tom grave em 'djěn' travando N no dente, e enrole a língua para o chiado seco no 4º tom em 'chì'. Em 'zài nǎlǐ', faça o golpe seco 'tsài' no 4º tom e afunde a voz no grave em 'nǎ-lǐ'. Termine com a sílaba leve e curta 'ma'.\nLeia: Nǐ djī-dào tsuèi-djin da djí-djěn-chì tsài nǎ-lǐ ma.",
+    "id": 817
+  },
+  "818": {
+    "explanation": "Nesta frase, a intenção vem logo após o sujeito: 'eu decidi' (Wǒ juédìng), seguido da ação 'começar' (kāishǐ). Depois entra o verbo 'comer' (chī) acompanhado do conector de modo 'de', que liga a ação à sua maneira de execução: 'saudável um pouco' (jiànkāng yīdiǎn). A lógica chinesa conecta a ação diretamente com o resultado ou qualidade que se busca atingir.",
+    "breakdown": [
+      {
+        "word": "我决定",
+        "meaning": "wǒ juédìng — Eu decidi — wǒ: eu; juédìng: decidir."
+      },
+      {
+        "word": "开始",
+        "meaning": "kāishǐ — Começar / Iniciar — kāi: abrir; shǐ: começar."
+      },
+      {
+        "word": "吃得",
+        "meaning": "chī de — Comer de forma / Comer de modo que — chī: comer; de: partícula de modo (soa 'da')."
+      },
+      {
+        "word": "健康一点",
+        "meaning": "jiànkāng yīdiǎn — Um pouco mais saudável — jiànkāng: saudável; yīdiǎn: um pouco."
+      }
+    ],
+    "pronuncia": "Comece em 'Wǒ' no grave do 3º tom. Em 'juédìng', projete bico no 2º tom subindo em 'djüé' e dê um golpe seco em 'dīng' no 4º tom. Em 'kāishǐ', solte explosão de ar em 'kāi' alto no 1º tom e enrole a língua para trás afundando no 3º tom grave em 'chǐ'. Em 'chī de', enrole a língua num som alto e sustentado no 1º tom em 'chī' e feche na partícula neutra gutural 'da' (proibido falar 'dê'). Em 'jiànkāng yīdiǎn', faça 'djièn' no 4º tom cortando N no dente, mande 'kāng' alto no 1º tom, faça a mudança para o 4º tom 'yì' no numeral, e afunde 'diěn' no 3º tom grave.\nLeia: Wǒ djüé-dīng kāi-chǐ chī da djièn-kāng yì-diěn.",
+    "id": 818
+  },
+  "819": {
+    "explanation": "A frase começa estabelecendo o estado extremo do sujeito: 'eu demais cansado' (Wǒ tài lèi le), onde o 'le' marca o estado atingido. Em seguida, descreve-se o local onde tudo aconteceu antes do verbo principal: 'no ônibus dentro' (zài gōngjiāochē shàng). A partícula 'jiù' introduz o resultado imediato: 'então peguei no sono' (jiù shuìzháo le), unindo o ambiente à consequência inevitável.",
+    "breakdown": [
+      {
+        "word": "我太累了",
+        "meaning": "wǒ tài lèi le — Eu estava cansado demais — wǒ: eu; tài: demais; lèi: cansado; le: partícula (soa 'la')."
+      },
+      {
+        "word": "在公交车上",
+        "meaning": "zài gōngjiāochē shàng — No ônibus — zài: em; gōngjiāochē: ônibus publico; shàng: em cima / dentro."
+      },
+      {
+        "word": "就睡着了",
+        "meaning": "jiù shuìzháo le — Então adormeci / Peguei no sono — jiù: então; shuìzháo: adormecer; le: partícula (soa 'la')."
+      }
+    ],
+    "pronuncia": "Afunde 'Wǒ' no grave do 3º tom. Em 'tài lèi le', dê golpe com sopro em 'tài' no 4º tom, golpe seco em 'luèi' no 4º tom e feche em 'la' neutro. Em 'zài gōngjiāochē shàng', faça 'tsài' no 4º tom, 'gōng' alto no 1º tom, 'djiā' alto no 1º tom com sorriso, 'tchē' com língua enrolada e sopro de ar no 1º tom, e 'chàng' no 4º tom com língua curvada. Em 'jiù shuìzháo le', faça a rima oculta 'djiôu' no 4º tom, passe por 'chuêi' no 4º tom, suba no 2º tom com língua enrolada em 'djáo', e termine na partícula neutra 'la'.\nLeia: Wǒ tài luèi la, tsài gōng-djiā-tchē chàng djiôu chuêi-djáo la.",
+    "id": 819
+  },
+  "820": {
+    "explanation": "A conversa começa com uma expressão de desculpas bem comum: 'sinto muito / má consideração' (Bù hǎoyìsi). Depois apresenta o motivo de forma direta: 'eu fiquei doente' (wǒ shēngbìng le), com a mudança de estado indicada por 'le'. Na segunda parte vem a consequência: 'não posso ir trabalhar' (bù néng qù shàngbān). A causa (doença) é dita antes da impossibilidade de ir ao trabalho.",
+    "breakdown": [
+      {
+        "word": "不好意思",
+        "meaning": "bù hǎoyìsi — Desculpe / Sinto muito — bù: não; hǎo: bom; yìsi: significado / intenção."
+      },
+      {
+        "word": "我生病了",
+        "meaning": "wǒ shēngbìng le — Fiquei doente — wǒ: eu; shēngbìng: adoecer; le: partícula (soa 'la')."
+      },
+      {
+        "word": "不能",
+        "meaning": "bù néng — Não posso."
+      },
+      {
+        "word": "去上班",
+        "meaning": "qù shàngbān — Ir trabalhar — qù: ir; shàngbān: ir ao trabalho."
+      }
+    ],
+    "pronuncia": "Em 'Bù hǎoyìsi', mande 'bù' no 4º tom, afunde a voz no grave em 'rrǎo' no 3º tom, dê um golpe seco em 'yì' no 4º tom e feche com o silvo fino e leve no tom neutro 'si'. Em 'wǒ shēngbìng le', afunde 'wǒ' no 3º tom, enrole a língua para chiar alto no 1º tom em 'chēng', dê golpe seco no 4º tom em 'bìng' com 'b' sem ar, e solte a partícula neutra 'la'. Em 'bù néng', faça 'bù' no 4º tom e suba 'néng' no 2º tom. Em 'qù shàngbān', sopre ar forte com sorriso em 'tchù' no 4º tom, enrole a língua para chiar no 4º tom em 'chàng', e feche em 'bān' no 1º tom alto com corte N no dente.\nLeia: Bù rrǎo-yì-si, wǒ chēng-bìng la, bù néng tchù chàng-bān.",
+    "id": 820
+  },
+  "821": {
+    "explanation": "A instrução médica em mandarim estabelece primeiro o remédio em questão: 'este tipo de remédio' (Zhèzhǒng yào). Em seguida vem a frequência temporal: 'todos os dias após a refeição' (měitiān fànhòu). Por último entra a ação e dosagem: 'tomar duas vezes' (chī liǎng cì), usando o verbo 'comer' (chī) que também serve para remédios. O tempo e a condição de tomar vêm sempre antes da dose.",
+    "breakdown": [
+      {
+        "word": "这种药",
+        "meaning": "zhèzhǒng yào — Este tipo de remédio — zhè: este; zhǒng: tipo / espécie; yào: remédio."
+      },
+      {
+        "word": "每天",
+        "meaning": "měitiān — Todos os dias — měi: cada; tiān: dia."
+      },
+      {
+        "word": "饭后",
+        "meaning": "fànhòu — Após as refeições — fàn: refeição / comida; hòu: depois."
+      },
+      {
+        "word": "吃两次",
+        "meaning": "chī liǎng cì — Comer/Tomar duas vezes — chī: comer; liǎng: dois; cì: vezes."
+      }
+    ],
+    "pronuncia": "Em 'Zhèzhǒng yào', enrole a língua num golpe seco no 4º tom em 'djè', mantenha a língua curvada para afundar no 3º tom grave em 'djǒng', e dê o golpe no 4º tom em 'iào'. Em 'měitiān', afunde a voz no 3º tom grave em 'měi' e mande 'tiēn' alto e sustentado no 1º tom com rima oculta 'iên'. Em 'fànhòu', dê golpe seco no 4º tom em 'fàn' com corte no dente, e raspe a garganta no 4º tom em 'rrôu'. Em 'chī liǎng cì', enrole a língua alto no 1º tom em 'chī', afunde 'liǎng' no 3º tom grave, e faça o estalo dental com sopro de ar no 4º tom em 'tsài'.\nLeia: Djè-djǒng iào měi-tiēn fàn-rrôu chī liǎng tsài.",
+    "id": 821
+  },
+  "822": {
+    "explanation": "A frase começa destacando o objetivo final com a estrutura 'para o propósito de' (Wèile): 'para passar o verão' (Wèile guò xiàtiān). Depois entra a linha do tempo e constância: 'eu recentemente continuamente' (wǒ zuìjìn yīzhí). A frase conclui com a ação em andamento: 'estar em emagrecer' (zài jiǎnféi). No mandarim, o propósito da ação abre o raciocínio antes da rotina em si.",
+    "breakdown": [
+      {
+        "word": "为了",
+        "meaning": "wèile — Para / Com o propósito de — wèi: para; le: partícula de apoio (soa 'la')."
+      },
+      {
+        "word": "过夏天",
+        "meaning": "guò xiàtiān — Passar o verão — guò: passar; xiàtiān: verão."
+      },
+      {
+        "word": "我最近",
+        "meaning": "wǒ zuìjìn — Eu recentemente — wǒ: eu; zuìjìn: recentemente."
+      },
+      {
+        "word": "一直在",
+        "meaning": "yīzhí zài — Continuamente estar a — yīzhí: continuamente; zài: no processo de."
+      },
+      {
+        "word": "减肥",
+        "meaning": "jiǎnféi — Emagrecer / Perder peso — jiǎn: reduzir; féi: gordura."
+      }
+    ],
+    "pronuncia": "Em 'Wèile', dê um golpe seco no 4º tom em 'uèi' e solte a partícula neutra 'la'. Em 'guò xiàtiān', faça 'guò' no 4º tom seco, 'xià' no 4º tom com sorriso, e 'tiēn' alto e reto no 1º tom cortando N no dente. Em 'wǒ zuìjìn', afunde 'wǒ' no 3º tom, faça 'tsuèi' seco no 4º tom e 'djin' seco no 4º tom. Em 'yīzhí zài', mude o numeral para o 4º tom seco 'yì', suba 'djí' no 2º tom com língua curvada, e dê golpe seco em 'tsài' no 4º tom. Em 'jiǎnféi', como é um 3º tom seguido de 2º tom, afunde 'djiěn' no 3º tom grave com corte no dente, e suba 'féi' no 2º tom ascendente.\nLeia: Uèi-la guò xià-tiēn, wǒ tsuèi-djin yì-djí tsài djiěn-féi.",
+    "id": 822
+  },
+  "823": {
+    "explanation": "A pergunta começa com a capacidade do sujeito: 'eu posso fazer um pouco de quê?' (Wǒ néng zuò diǎn shénme), onde 'shénme' ganha a pronúncia falada nativa de 'chán-ma'. Em seguida, usa-se o verbo causar/fazer 'ràng' (fazer você): 'fazer você ficar um pouco confortável?' (ràng nǐ shūfu yīdiǎn ma). O mandarim estrutura primeiro o que eu posso fazer para depois mostrar o impacto direto no interlocutor.",
+    "breakdown": [
+      {
+        "word": "我能做点什么",
+        "meaning": "wǒ néng zuò diǎn shénme — O que eu posso fazer — wǒ: eu; néng: poder; zuò: fazer; diǎn: um pouco; shénme: o quê (soa 'chán-ma')."
+      },
+      {
+        "word": "让你",
+        "meaning": "ràng nǐ — Fazer você / Permitir que você — ràng: fazer/deixar; nǐ: você."
+      },
+      {
+        "word": "舒服一点",
+        "meaning": "shūfu yīdiǎn — Um pouco mais confortável — shūfu: confortável; yīdiǎn: um pouco."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ néng zuò diǎn shénme', afunde 'wǒ' no 3º tom, suba 'néng' no 2º tom, dê golpe seco em 'tsuò' no 4º tom, afunde 'diěn' no 3º tom grave, e pronuncie a palavra de pergunta obrigatoriamente como 'chán-ma', subindo no 2º tom com língua enrolada e fechando na partícula neutra gutural 'ma'. Em 'ràng nǐ', enrole a língua para dar o golpe seco 'jàng' no 4º tom e afunde 'nǐ' no 3º tom grave. Em 'shūfu yīdiǎn', mande 'chū' alto e reto no 1º tom com língua enrolada, solte 'fu' frouxo e curto no tom neutro, mude o numeral para o 4º tom 'yì' e afunde 'diěn' no 3º tom grave. Termine na partícula neutra leve 'ma'.\nLeia: Wǒ néng tsuò diěn chán-ma jàng nǐ chū-fu yì-diěn ma.",
+    "id": 823
+  },
+  "824": {
+    "explanation": "A construção relata um acontecimento no caminho do trabalho. Começa com a ação de transporte: 'eu andar de bike ir ao trabalho' (Wǒ qíchē qù shàngbān). Depois qualifica esse trajeto com a partícula 'de': 'no caminho de ir ao trabalho' (de lùshang). Por fim, relata o imprevisto: 'aconteceu um pequeno acidente' (chū le diǎn xiǎoyìwài). A circunstância da viagem antecede a descrição do incidente.",
+    "breakdown": [
+      {
+        "word": "我骑车去上班的路上",
+        "meaning": "wǒ qíchē qù shàngbān de lùshang — No meu caminho de bicicleta para o trabalho — qíchē: andar de bike; qù: ir; shàngbān: trabalhar; de: partícula (soa 'da'); lùshang: no caminho."
+      },
+      {
+        "word": "出了点",
+        "meaning": "chū le diǎn — Aconteceu um pouco de — chū: sair/ocorrer; le: partícula (soa 'la'); diǎn: um pouco."
+      },
+      {
+        "word": "小意外",
+        "meaning": "xiǎoyìwài — Pequeno acidente / Imprevisto — xiǎo: pequeno; yìwài: acidente/surpresa."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ qíchē', afunde 'wǒ' no 3º tom, suba 'tchí' no 2º tom com sorriso e sopro, e mande 'tchē' alto no 1º tom com língua enrolada e sopro de ar. Em 'qù shàngbān de lùshang', faça 'tchù' seco no 4º tom, 'chàng' no 4º tom, 'bān' alto no 1º tom, a partícula neutra gutural 'da' (proibido 'dê'), 'lù' seco no 4º tom e 'chang' curto e frouxo no tom neutro. Em 'chū le diǎn', mande 'chū' alto no 1º tom, a partícula neutra 'la', e afunde 'diěn' no 3º tom grave. Em 'xiǎoyìwài', afunde 'xiǎo' no 3º tom grave com sorriso, e dê dois golpes secos no 4º tom em 'yì-uài'.\nLeia: Wǒ tchí-tchē tchù chàng-bān da lù-chang chū-la diěn xiǎo-yì-uài.",
+    "id": 824
+  },
+  "825": {
+    "explanation": "A frase segue uma estrutura de relato simples e direto: primeiro quem falou 'médico sugeriu' (Yīshēng jiànyì), depois o alvo e a necessidade 'eu preciso' (wǒ yào), e finalmente a recomendação prática 'mais exercitar' (duō yùndòng). O advérbio de quantidade 'mais' (duō) vem exatamente antes do verbo da ação, um padrão constante na lógica do mandarim.",
+    "breakdown": [
+      {
+        "word": "医生建议",
+        "meaning": "yīshēng jiànyì — O médico sugeriu / recomendou — yīshēng: médico; jiànyì: sugerir."
+      },
+      {
+        "word": "我要",
+        "meaning": "wǒ yào — Eu preciso / Eu devo — wǒ: eu; yào: precisar/querer."
+      },
+      {
+        "word": "多运动",
+        "meaning": "duō yùndòng — Fazer mais exercícios — duō: mais; yùndòng: exercitar-se."
+      }
+    ],
+    "pronuncia": "Em 'Yīshēng jiànyì', mantenha 'ī' alto no 1º tom, enrole a língua em 'chēng' alto no 1º tom, dê um golpe seco em 'djièn' no 4º tom cortando N no dente, e outro golpe seco no 4º tom em 'yì'. Em 'wǒ yào', afunde a voz no 3º tom grave em 'wǒ' e solte um golpe seco no 4º tom em 'iào'. Em 'duō yùndòng', mande 'duō' alto e reto no 1º tom, passe pela rima oculta 'yüèn' no 4º tom com lábios em bico cortando N no dente, e feche em 'dòng' no 4º tom com 'd' seco sem ar.\nLeia: Ī-chēng djièn-yì wǒ iào duō yüèn-dòng.",
+    "id": 825
+  },
+  "826": {
+    "explanation": "Para fazer comparações de grau, a estrutura em mandarim coloca a frase base no início: 'eu sinto' (Wǒ gǎnjué). Em seguida entra o padrão de comparação 'em comparação ao normal' (bǐ píngshí). Por fim, posiciona-se a qualidade comparada acompanhada da intensidade: 'pressão grande muito mais' (yālì dà duō le). O elemento comparado fica no meio, antes do resultado da comparação.",
+    "breakdown": [
+      {
+        "word": "我感觉",
+        "meaning": "wǒ gǎnjué — Eu sinto / Eu acho — wǒ: eu; gǎnjué: sentir."
+      },
+      {
+        "word": "比平时",
+        "meaning": "bǐ píngshí — Em relação ao normal / Que o habitual — bǐ: comparar; píngshí: em tempos normais."
+      },
+      {
+        "word": "压力大多了",
+        "meaning": "yālì dà duō le — Muito mais estressado / Pressão bem maior — yālì: pressão/estresse; dà: grande; duō: muito; le: partícula (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ gǎnjué', afunde a voz em 'wǒ' no 3º tom, mantenha 'gǎn' no 3º tom grave travando N no dente, e suba 'djüé' no 2º tom com lábios em bico. Em 'bǐ píngshí', afunde 'bǐ' no 3º tom grave com 'b' sem ar, suba 'píng' no 2º tom com sopro forte, e suba 'chí' no 2º tom enrolando a língua. Em 'yālì dà duō le', mantenha 'yā' alto no 1º tom, dê golpe seco em 'lì' no 4º tom, dê golpe seco em 'dà' no 4º tom, sustentando 'duō' alto no 1º tom e finalizando na partícula neutra 'la' (nunca 'lê').\nLeia: Wǒ gǎn-djüé bǐ píng-chí yā-lì dà duō la.",
+    "id": 826
+  },
+  "827": {
+    "explanation": "A pergunta de posse dentro de um espaço físico coloca o local completo primeiro: 'você carro dentro' (Nǐ chē lǐ). Em seguida entra a existência da coisa: 'tem kit de primeiros socorros?' (yǒu jíjiùbāo ma), finalizando com a partícula interrogativa 'ma'. Em vez de perguntar 'você tem no seu carro?', o pensamento chinês especifica a localização física exata no topo da frase.",
+    "breakdown": [
+      {
+        "word": "你车里",
+        "meaning": "nǐ chē lǐ — No seu carro / Dentro do seu carro — nǐ: você; chē: carro; lǐ: dentro."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Existir."
+      },
+      {
+        "word": "急救包",
+        "meaning": "jíjiùbāo — Kit de primeiros socorros — jí: urgente; jiù: salvar; bāo: pacote/bolsa."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ chē lǐ', como 'nǐ' e 'lǐ' são 3º tons separados por 'chē', afunde 'nǐ' no grave, mande 'tchē' alto no 1º tom enrolando a língua e disparando sopro, e afunde 'lǐ' no 3º tom grave. Em 'yǒu', afunde a voz no 3º tom grave. Em 'jíjiùbāo', suba 'djí' no 2º tom com sorriso, passe pela rima oculta 'djiôu' dando um golpe seco no 4º tom, e mande 'bāo' alto e plano no 1º tom com 'b' seco sem ar. Termine na partícula leve 'ma'.\nLeia: Nǐ tchē lǐ yǒu djí-djiôu-bāo ma.",
+    "id": 827
+  },
+  "828": {
+    "explanation": "A frase começa com a necessidade de ação: 'eu preciso procurar' (Wǒ děi zhǎo). Depois vem o classificador de estabelecimentos 'uma empresa/loja' (yī jiā). A característica descritiva da farmácia vem antes do próprio nome, conectada por 'de': 'abrir até muito tarde da' (kāi dào hěn wǎn de), terminando na palavra 'farmácia' (yàodiàn). As qualidades sempre embrulham o objeto principal antes dele ser dito.",
+    "breakdown": [
+      {
+        "word": "我得找",
+        "meaning": "wǒ děi zhǎo — Eu preciso procurar — wǒ: eu; děi: precisar; zhǎo: procurar."
+      },
+      {
+        "word": "一家",
+        "meaning": "yī jiā — Uma (loja/farmácia) — yī: um; jiā: classificador de estabelecimentos."
+      },
+      {
+        "word": "开到很晚的",
+        "meaning": "kāi dào hěn wǎn de — Que fica aberta até muito tarde — kāi: abrir; dào: até; hěn: muito; wǎn: tarde; de: partícula (soa 'da')."
+      },
+      {
+        "word": "药店",
+        "meaning": "yàodiàn — Farmácia / Loja de remédios — yào: remédio; diàn: loja."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ děi zhǎo', com três 3º tons seguidos, suba os dois primeiros e afunde o último: 'wó dé zhǎo' (wó subindo no 2º tom, dé subindo no 2º tom, e djǎo afundando no 3º tom grave com língua enrolada). Em 'yī jiā', a mudança de tom do numeral faz virar 4º tom seco 'yì', seguido de 'djiā' alto no 1º tom com sorriso. Em 'kāi dào hěn wǎn de', mande 'kāi' alto no 1º tom com sopro, golpe seco 'dào' no 4º tom, 'rrěn' subindo no 2º tom, 'uǎn' afundando no 3º tom, e feche na partícula neutra gutural 'da'. Em 'yàodiàn', dê dois golpes secos no 4º tom em 'iào-dièn' travando N no dente.\nLeia: Wó dé djǎo yì djiā kāi dào rrěn-uǎn da iào-dièn.",
+    "id": 828
+  },
+  "829": {
+    "explanation": "Nesta frase composta, a primeira parte marca o evento passado e sua data: 'ela semana passada pegou resfriado' (Tā shàng zhōu gǎnmào le), com a conclusão do resfriado marcada por 'le'. A segunda parte introduz o presente: 'agora em processo de' (xiànzài zhèngzài), finalizando com a melhoria contínua da saúde: 'melhorar' (hǎozhuǎn). O tempo passado abre a fala e o presente conduz à evolução da situação.",
+    "breakdown": [
+      {
+        "word": "她上周",
+        "meaning": "tā shàng zhōu — Ela na semana passada — tā: ela; shàng: passada/acima; zhōu: semana."
+      },
+      {
+        "word": "感冒了",
+        "meaning": "gǎnmào le — Pegou um resfriado — gǎnmào: resfriar-se; le: partícula (soa 'la')."
+      },
+      {
+        "word": "现在正在",
+        "meaning": "xiànzài zhèngzài — Agora está no processo de — xiànzài: agora; zhèngzài: no momento em que."
+      },
+      {
+        "word": "好转",
+        "meaning": "hǎozhuǎn — Melhorar / Recuperar-se — hǎo: bom; zhuǎn: mudar/virar."
+      }
+    ],
+    "pronuncia": "Em 'Tā shàng zhōu', mande 'tā' alto no 1º tom com sopro, enrole a língua no 4º tom em 'chàng', e mantenha a língua enrolada em 'djōu' alto no 1º tom. Em 'gǎnmào le', afunde 'gǎn' no 3º tom grave travando N no dente, dê golpe seco em 'mào' no 4º tom e solte a partícula neutra 'la'. Em 'xiànzài zhèngzài', faça 'xièn' seco no 4º tom com sorriso, golpe seco 'tsài' no 4º tom, enrole a língua no 4º tom 'djèng' e dê golpe seco 'tsài' no 4º tom. Em 'hǎozhuǎn', como são dois 3º tons, suba o primeiro em 'rráo' no 2º tom e afunde o segundo em 'djuǎn' no 3º tom com língua virada para trás.\nLeia: Tā chàng-djōu gǎn-mào la, xièn-tsài djèng-tsài rráo-djuǎn.",
+    "id": 829
+  },
+  "830": {
+    "explanation": "Esta expressão típica chinesa começa marcando a trajetória de vida: 'eu crescer tão grande' (Wǒ zhǎng zhème dà), que equivale a dizer 'na minha vida toda / desde que cresci'. Em seguida entra a negação temporal de experiência: 'ainda desde o início nunca' (hái cónglái méi). Por fim, a ação física de fratura é acompanhada da partícula de experiência 'guo': 'quebrar osso já' (gǔzhé guo).",
+    "breakdown": [
+      {
+        "word": "我长这么大",
+        "meaning": "wǒ zhǎng zhème dà — Desde que cresci / Toda a minha vida — wǒ: eu; zhǎng: crescer; zhème: tão; dà: grande."
+      },
+      {
+        "word": "还从来没",
+        "meaning": "hái cónglái méi — Nunca / Jamais — hái: ainda; cónglái: desde sempre; méi: não."
+      },
+      {
+        "word": "骨折过",
+        "meaning": "gǔzhé guo — Quebrei osso / Passei por fratura — gǔzhé: fraturar osso; guo: partícula de experiência passada."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ zhǎng zhème dà', afunde 'wǒ' no 3º tom, afunde 'djǎng' no 3º tom com língua enrolada, dê golpe seco em 'djè' no 4º tom, passe pela partícula neutra gutural 'ma' (grafada obrigatoriamente como 'ma') e dê golpe seco em 'dà' no 4º tom. Em 'hái cónglái méi', suba 'rrái' no 2º tom com atrito, faça o estalo dental com sopro no 2º tom em 'tsông', suba 'lái' no 2º tom e suba 'méi' no 2º tom. Em 'gǔzhé guo', afunde 'gǔ' no 3º tom grave com 'g' sem ar, suba 'djé' no 2º tom enrolando a língua para trás, e feche na partícula leve átona 'guo'.\nLeia: Wǒ djǎng djè-ma dà rrái tsông-lái méi gǔ-djé guo.",
+    "id": 830
+  },
+  "831": {
+    "explanation": "A estrutura de conselho inicia com o sujeito e a obrigação: 'você deveria' (Nǐ yīnggāi). Depois entra a ação de quantidade: 'mais beber um pouco de água' (duō hē diǎn shuǐ), colocando o advérbio 'mais' antes do verbo beber. A frase termina com a finalidade prática da ação: 'repor umidade / hidratação' (bǔchōng shuǐfèn). A intenção prática final fecha a ordem do pensamento.",
+    "breakdown": [
+      {
+        "word": "你应该",
+        "meaning": "nǐ yīnggāi — Você deveria — nǐ: você; yīnggāi: dever."
+      },
+      {
+        "word": "多喝点水",
+        "meaning": "duō hē diǎn shuǐ — Beber mais água — duō: mais; hē: beber; diǎn: um pouco; shuǐ: água."
+      },
+      {
+        "word": "补充水分",
+        "meaning": "bǔchōng shuǐfèn — Repor água / Hidratar — bǔchōng: repor/complementar; shuǐfèn: hidratação/água."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ yīnggāi', afunde 'nǐ' no 3º tom grave, mande 'īng' alto no 1º tom e 'gāi' alto no 1º tom. Em 'duō hē diǎn shuǐ', mande 'duō' alto no 1º tom, raspe a garganta no 1º tom em 'rrā' (grafado estritamente com som gutural aberto 'rra' em vez de 'e/ê'), e como temos 'diǎn' e 'shuǐ' seguidos, suba o primeiro em 'diěn' no 2º tom e afunde 'chuěi' no 3º tom grave com rima oculta 'uêi'. Em 'bǔchōng shuǐfèn', afunde 'bǔ' no 3º tom, enrole a língua para chiar alto no 1º tom com sopro em 'tchōng', afunde 'chuěi' no 3º tom e dê golpe seco em 'fèn' no 4º tom cortando N no dente.\nLeia: Nǐ īng-gāi duō rrā diěn chuěi bǔ-tchōng chuěi-fèn.",
+    "id": 831
+  },
+  "832": {
+    "explanation": "Nesta construção, o estado de busca contínua é indicado por 'eu estar no processo de procurar' (Wǒ zài zhǎo). O objeto procurado vem acompanhado de uma descrição detalhada da sua localização antes de citar a própria academia: 'uma distante da minha casa perto da' (yī jiā lí wǒ jiā jìn de), conectada por 'de'. No fim, entra o substantivo principal 'academia' (jiànshēnfáng).",
+    "breakdown": [
+      {
+        "word": "我在找",
+        "meaning": "wǒ zài zhǎo — Estou procurando — wǒ: eu; zài: no processo de; zhǎo: procurar."
+      },
+      {
+        "word": "一家",
+        "meaning": "yī jiā — Uma (estabelecimento)."
+      },
+      {
+        "word": "离我家近的",
+        "meaning": "lí wǒ jiā jìn de — Perto da minha casa — lí: em relação a; wǒ jiā: minha casa; jìn: perto; de: partícula (soa 'da')."
+      },
+      {
+        "word": "健身房",
+        "meaning": "jiànshēnfáng — Academia / Sala de fitness — jiànshēn: fazer fitness; fáng: sala/casa."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ zài zhǎo', afunde 'wǒ' no 3º tom grave, dê golpe seco 'tsài' no 4º tom, e afunde 'djǎo' no 3º tom com língua virada para trás. Em 'yī jiā', mude o numeral para o 4º tom seco 'yì' e mande 'djiā' alto no 1º tom com sorriso. Em 'lí wǒ jiā jìn de', suba 'lí' no 2º tom, afunde 'wǒ' no 3º tom, mande 'djiā' no 1º tom, dê golpe seco 'djin' no 4º tom cortando N no dente, e feche na partícula neutra gutural 'da'. Em 'jiànshēnfáng', dê golpe seco 'djièn' no 4º tom com sorriso, enrole a língua para chiar em 'chēng' alto no 1º tom, e suba 'fáng' no 2º tom ascendente.\nLeia: Wǒ tsài djǎo yì djiā lí wǒ djiā djin da djièn-chēng-fáng.",
+    "id": 832
+  },
+  "833": {
+    "explanation": "A frase divide-se em duas partes complementares. A primeira contextualiza a situação no tempo: 'eu ver doença na hora' (Wǒ kànbìng de shíhou), indicando o momento da consulta. A segunda descreve a atitude da enfermeira: 'enfermeira especialmente calorosa' (hùshi tèbié rèqíng). Termina mostrando o resultado prático disso: 'ajudou a mim muito' (bāng le wǒ hěn duō). A experiência temporal abre a frase para depois relatar a boa ação.",
+    "breakdown": [
+      {
+        "word": "我看病的时候",
+        "meaning": "wǒ kànbìng de shíhou — Quando fui me consultar — wǒ: eu; kànbìng: ver médico/doença; de shíhou: na hora de."
+      },
+      {
+        "word": "护士特别热情",
+        "meaning": "hùshi tèbié rèqíng — A enfermeira foi muito atenciosa — hùshi: enfermeira; tèbié: especialmente; rèqíng: calorosa/atenciosa."
+      },
+      {
+        "word": "帮了我很多",
+        "meaning": "bāng le wǒ hěn duō — Me ajudou muito — bāng: ajudar; le: partícula (soa 'la'); wǒ: eu; hěn duō: muito."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ kànbìng de shíhou', afunde 'wǒ' no 3º tom, dê golpe seco 'kàn' no 4º tom, golpe seco 'bìng' no 4º tom, partícula neutra gutural 'da' (nunca 'dê'), suba 'chí' no 2º tom com língua enrolada, e solte 'rrou' leve no tom neutro. Em 'hùshi tèbié rèqíng', dê golpe em 'rrù' no 4º tom, solte 'chi' neutro enrolando a língua, dê golpe seco com sopro em 'tè' no 4º tom, suba 'bié' no 2º tom abrindo em 'é', suba 'jè' no 2º tom com vibração de voz na língua curvada, e suba 'tchīng' no 2º tom com sorriso e sopro. Em 'bāng le wǒ hěn duō', mande 'bāng' alto no 1º tom com 'b' sem ar, solte a partícula neutra 'la', afunde 'wǒ' no 3º tom, suba 'rrěn' no 2º tom e mande 'duō' alto e sustentado no 1º tom.\nLeia: Wǒ kàn-bìng da chí-rrou rrù-chi tè-bié jè-tchīng, bāng-la wǒ rrěn duō.",
+    "id": 833
+  },
+  "834": {
+    "explanation": "No mandarim, os hábitos ou repetições incômodas usam a palavra 'lǎoshi' (sempre/viver fazendo algo). A frase começa com a marcação de tempo: 'eu recentemente' (Wǒ zuìjìn). Em seguida entra o advérbio de frequência incômoda 'sempre / direto' (lǎoshi). O resultado ruim vem no final: 'dormir não bem' (shuì bù hǎo). A ordem mental coloca quem, quando, a frequência e só então o problema do sono.",
+    "breakdown": [
+      {
+        "word": "我最近",
+        "meaning": "wǒ zuìjìn — Eu recentemente — wǒ: eu; zuìjìn: recentemente."
+      },
+      {
+        "word": "老是",
+        "meaning": "lǎoshi — Sempre / Vive (fazendo algo negativo) — lǎo: velho/sempre; shì: ser."
+      },
+      {
+        "word": "睡不好",
+        "meaning": "shuì bù hǎo — Não dormir bem — shuì: dormir; bù: não; hǎo: bem."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ zuìjìn', afunde 'wǒ' no 3º tom grave, dê golpe seco em 'tsuèi' no 4º tom, e dê golpe seco em 'djin' no 4º tom cortando N no dente. Em 'lǎoshi', afunde a voz no 3º tom grave em 'lǎo', e enrole a língua para chiar no 4º tom seco em 'chì'. Em 'shuì bù hǎo', passe pela rima oculta 'chuêi' dando um golpe seco no 4º tom, mande a negação no 4º tom seco em 'bù', e afunde a voz no 3º tom grave em 'rrǎo' com atrito de garganta.\nLeia: Wǒ tsuèi-djin lǎo-chì chuêi bù rrǎo.",
+    "id": 834
+  },
+  "835": {
+    "explanation": "A pergunta começa com o objetivo principal qualificado: 'prevenir resfriado o melhor método' (Yùfáng gǎnmào zuì hǎo de bànfǎ), unindo a qualidade 'melhor' (zuì hǎo) à palavra 'método' (bànfǎ) pela partícula 'de'. Depois de apresentar todo o assunto da conversa, fecha com a pergunta simples: 'é o quê?' (shì shénme), onde 'shénme' soa nativamente como 'chán-ma'.",
+    "breakdown": [
+      {
+        "word": "预防感冒",
+        "meaning": "yùfáng gǎnmào — Prevenir resfriados — yùfáng: prevenir; gǎnmào: resfriado."
+      },
+      {
+        "word": "最好的办法",
+        "meaning": "zuì hǎo de bànfǎ — O melhor método / O melhor jeito — zuì: o mais; hǎo: bom; de: partícula (soa 'da'); bànfǎ: método."
+      },
+      {
+        "word": "是什么",
+        "meaning": "shì shénme — É o quê? — shì: ser; shénme: o quê (soa 'chán-ma')."
+      }
+    ],
+    "pronuncia": "Em 'Yùfáng gǎnmào', dê um golpe seco em 'yù' no 4º tom, suba 'fáng' no 2º tom, afunde 'gǎn' no 3º tom grave travando N no dente, e dê golpe seco em 'mào' no 4º tom. Em 'zuì hǎo de bànfǎ', faça 'tsuèi' seco no 4º tom, afunde 'rrǎo' no 3º tom, solte a partícula neutra gutural 'da', dê golpe seco 'bàn' no 4º tom com 'b' sem ar, e afunde 'fǎ' no 3º tom grave. Em 'shì shénme', enrole a língua no 4º tom seco 'chì', e pronuncie a palavra de pergunta obrigatoriamente como 'chán-ma', subindo no 2º tom em 'chán' com língua curvada e fechando na partícula neutra gutural 'ma'.\nLeia: Yù-fáng gǎn-mào tsuèi rrǎo da bàn-fǎ chì chán-ma.",
+    "id": 835
+  },
+  "836": {
+    "explanation": "A necessidade vem no início: 'eu preciso' (Wǒ xūyào). Em seguida entra a estrutura de benefício ou alvo 'para o meu seguro de saúde' (gěi wǒ de yīliáo bǎoxiǎn), onde as características do seguro são amarradas pela partícula 'de'. A ação verbal principal fica no final da frase: 'renovar / fazer extensão da apólice' (xùbǎo). A ação atua sobre o benefício previamente estabelecido.",
+    "breakdown": [
+      {
+        "word": "我需要",
+        "meaning": "wǒ xūyào — Eu preciso — wǒ: eu; xūyào: precisar."
+      },
+      {
+        "word": "给我的",
+        "meaning": "gěi wǒ de — Para o meu / Em favor do meu — gěi: dar/para; wǒ: eu; de: partícula (soa 'da')."
+      },
+      {
+        "word": "医疗保险",
+        "meaning": "yīliáo bǎoxiǎn — Seguro de saúde / Seguro médico — yīliáo: médico/tratamento; bǎoxiǎn: seguro."
+      },
+      {
+        "word": "续保",
+        "meaning": "xùbǎo — Renovação de apólice / Renovar seguro — xù: continuar/renovar; bǎo: segurar."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ xūyào', afunde 'wǒ' no 3º tom, mande 'xū' alto no 1º tom com sorriso e bico de 'ü', e dê golpe seco em 'iào' no 4º tom. Em 'gěi wǒ de', afunde 'gěi' no 3º tom com 'g' sem ar, afunde 'wǒ' no 3º tom, e feche na partícula neutra gutural 'da' (proibido 'dê'). Em 'yīliáo bǎoxiǎn', mande 'ī' alto no 1º tom, suba 'liáo' no 2º tom, e como temos 'bǎo' e 'xiǎn' seguidos no 3º tom, suba o primeiro em 'báo' no 2º tom com 'b' sem ar e afunde o segundo em 'xiěn' no 3º tom com rima oculta 'iên'. Termine em 'xùbǎo': dê golpe seco no 4º tom em 'xù' com bico de 'ü' e afunde 'bǎo' no 3º tom grave.\nLeia: Wǒ xū-iào gěi wǒ da ī-liáo báo-xiěn xù-bǎo.",
+    "id": 836
+  },
+  "837": {
+    "explanation": "A sequência lógica inicia definindo o momento no tempo: 'exame resultado sair depois' (Jiǎnchá jiéguǒ chūlái hòu). Só após estabelecer que os exames ficaram prontos é que a reação do sujeito é dita: 'eu soltei uma respiração / fiquei aliviado' (wǒ sōng le kǒuqì). A expressão idiomática 'sōng kǒuqì' significa literalmente desapertar a respiração, retratando o alívio de forma bem visual.",
+    "breakdown": [
+      {
+        "word": "检查结果",
+        "meaning": "jiǎnchá jiéguǒ — Resultado dos exames — jiǎnchá: examinar; jiéguǒ: resultado."
+      },
+      {
+        "word": "出来后",
+        "meaning": "chūlái hòu — Depois que saiu — chūlái: sair; hòu: depois."
+      },
+      {
+        "word": "我松了口气",
+        "meaning": "wǒ sōng le kǒuqì — Respirei aliviado / Soltei o ar — wǒ: eu; sōng: soltar; le: partícula (soa 'la'); kǒuqì: hálito/ar."
+      }
+    ],
+    "pronuncia": "Em 'Jiǎnchá jiéguǒ', afunde 'djiěn' no 3º tom grave cortando N no dente, suba 'tchá' no 2º tom enrolando a língua e disparando ar, suba 'djié' no 2º tom com sorriso abrindo em 'é', e afunde 'guǒ' no 3º tom grave. Em 'chūlái hòu', mande 'chū' alto no 1º tom com língua enrolada, suba 'lái' no 2º tom, e raspe a garganta no 4º tom em 'rrôu'. Em 'wǒ sōng le kǒuqì', afunde 'wǒ' no 3º tom, mande 'sōng' alto no 1º tom, solte a partícula neutra 'la', afunde 'kǒu' no 3º tom grave, e dê um golpe seco com sopro forte e sorriso no 4º tom em 'tchù'.\nLeia: Djiěn-tchá djié-guǒ chū-lái rrôu, wǒ sōng-la kǒu-tchù.",
+    "id": 837
+  },
+  "838": {
+    "explanation": "A pergunta começa buscando a opinião do ouvinte: 'você acha' (Nǐ juéde). Em seguida vem a ação em pauta: 'tomar vitaminas' (chī wéishēngsù), usando o verbo 'comer' (chī). A pergunta termina com a avaliação da utilidade da ação: 'ter necessidade?' (yǒu bìyào ma), acompanhada da partícula de dúvida 'ma'. A estrutura coloca a ação no centro antes de questionar sua relevância.",
+    "breakdown": [
+      {
+        "word": "你觉得",
+        "meaning": "nǐ juéde — Você acha / Na sua opinião — nǐ: você; juéde: achar/sentir (soa 'djüé-da')."
+      },
+      {
+        "word": "吃维生素",
+        "meaning": "chī wéishēngsù — Tomar vitaminas — chī: comer; wéishēngsù: vitamina."
+      },
+      {
+        "word": "有必要吗",
+        "meaning": "yǒu bìyào ma — É necessário? / Tem necessidade? — yǒu: ter; bìyào: necessidade; ma: partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Nǐ juéde', afunde 'nǐ' no 3º tom grave, suba 'djüé' no 2º tom com lábios em bico, e feche na partícula neutra gutural 'da' (grafar 'de' é proibido). Em 'chī wéishēngsù', enrole a língua alto no 1º tom em 'chī', suba 'uéi' no 2º tom com rima oculta 'uêi', enrole a língua para chiar alto no 1º tom em 'chēng', e faça o silvo fino no 4º tom seco em 'sù'. Em 'yǒu bìyào ma', afunde 'yǒu' no 3º tom grave, dê dois golpes secos no 4º tom em 'bì-iào' com 'b' sem ar, e termine na partícula neutra leve 'ma'.\nLeia: Nǐ djüé-da chī uéi-chēng-sù yǒu bì-iào ma.",
+    "id": 838
+  },
+  "839": {
+    "explanation": "A estrutura de ponto de partida no tempo abre com 'desde que' (Zìcóng). O hábito iniciado é colocado logo após: 'começar a caminhar depois' (kāishǐ sànbù hòu). Estabelecido o marco temporal inicial, vem o resultado físico sentidamente positivo: 'eu sinto bem muito' (wǒ gǎnjué hǎoduō le). O benefício é apresentado como consequência direta da mudança de hábito.",
+    "breakdown": [
+      {
+        "word": "自从",
+        "meaning": "zìcóng — Desde que / A partir de — zì: desde; cóng: seguir/desde."
+      },
+      {
+        "word": "开始散步后",
+        "meaning": "kāishǐ sànbù hòu — Depois de começar a caminhar — kāishǐ: começar; sànbù: caminhar; hòu: depois."
+      },
+      {
+        "word": "我感觉好多了",
+        "meaning": "wǒ gǎnjué hǎoduō le — Sinto-me muito melhor — wǒ: eu; gǎnjué: sentir; hǎoduō: muito mais/bem melhor; le: partícula (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'Zìcóng', faça o estalo dental seco no 4º tom em 'tsì', e o estalo dental com sopro de ar subindo no 2º tom em 'tsông'. Em 'kāishǐ sànbù hòu', mande 'kāi' alto no 1º tom com sopro, afunde 'chǐ' no 3º tom com língua enrolada, dê golpe seco 'sàn' no 4º tom cortando N no dente, golpe seco 'bù' no 4º tom com 'b' sem ar, e raspe a garganta no 4º tom em 'rrôu'. Em 'wǒ gǎnjué hǎoduō le', afunde 'wǒ' no 3º tom, afunde 'gǎn' no 3º tom travando N no dente, suba 'djüé' no 2º tom com bico, afunde 'rrǎo' no 3º tom grave, mande 'duō' alto no 1º tom e feche em 'la' neutro.\nLeia: Tsì-tsông kāi-chǐ sàn-bù rrôu, wǒ gǎn-djüé rrǎo-duō la.",
+    "id": 839
+  },
+  "840": {
+    "explanation": "A orientação de emergência começa estabelecendo a condição: 'se ver qualquer suspeita situação' (Rúguǒ kàndào rènhé kěyí qíngkuàng). O detalhamento da condição antecede a regra prática. Na parte final entra a recomendação geral de ação imediata sem citar o sujeito de forma explícita: 'deveria chamar a polícia' (yīnggāi bàojǐng). A regra geral vem depois de fixar todos os critérios do alerta.",
+    "breakdown": [
+      {
+        "word": "如果看到",
+        "meaning": "rúguǒ kàndào — Se vir / Caso encontre — rúguǒ: se; kàndào: ver/encontrar."
+      },
+      {
+        "word": "任何可疑情况",
+        "meaning": "rènhé kěyí qíngkuàng — Qualquer situação suspeita — rènhé: qualquer; kěyí: suspeito; qíngkuàng: situação."
+      },
+      {
+        "word": "应该报警",
+        "meaning": "yīnggāi bàojǐng — Deveria chamar a polícia — yīnggāi: dever; bàojǐng: chamar a polícia."
+      }
+    ],
+    "pronuncia": "Em 'Rúguǒ kàndào', suba 'jú' no 2º tom com vibração na língua curvada, afunde 'guǒ' no 3º tom grave, e dê dois golpes secos no 4º tom em 'kàn-dào'. Em 'rènhé kěyí qíngkuàng', dê golpe seco 'jèn' no 4º tom travando N no dente, suba 'rré' no 2º tom com atrito, afunde 'kě' no 3º tom com sopro, suba 'yí' no 2º tom, suba 'tchīng' no 2º tom com sorriso e sopro, e dê golpe seco com sopro em 'kuàng' no 4º tom. Em 'yīnggāi bàojǐng', mande 'īng' alto no 1º tom, 'gāi' alto no 1º tom, dê golpe seco 'bào' no 4º tom com 'b' sem ar, e afunde 'djǐng' no 3º tom grave com sorriso.\nLeia: Jú-guǒ kàn-dào jèn-rré kě-yí tchīng-kuàng, īng-gāi bào-djǐng.",
+    "id": 840
+  }
+}

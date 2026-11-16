@@ -1,0 +1,636 @@
+{
+  "271": {
+    "explanation": "Em mandarim, para dizer que algo é 'muito importante', os chineses colocam o assunto no início como o tópico da frase, '时间' (tempo), e em seguida atribuem o grau de importância com '非常' (extremamente/muito) antes da palavra '重要' (importante), dispensando o uso do verbo 'ser'.",
+    "breakdown": [
+      {
+        "word": "时间",
+        "meaning": "shíjiān — Tempo / Período — shí: tempo/hora; jiān: espaço entre."
+      },
+      {
+        "word": "非常",
+        "meaning": "fēicháng — Muito / Extremamente — fēi: não comum; cháng: frequente."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante / Essencial — zhòng: pesado; yào: querer/importar."
+      }
+    ],
+    "pronuncia": "Em 'Shíjiān', suba o tom de pergunta rápida em 'chí' enrolando a língua para trás e termine com 'djiēn' em sorriso espalmado e tom reto alto. Em 'fēicháng', faça 'fēi' alto e contínuo no 1º tom, e suba 'tcháng' com sopro forte e língua enrolada no 2º tom. Conclua em 'zhòngyào' com dois golpes secos e descendentes do 4º tom: 'djòng' com a língua enrolada e ressonância de fundo, seguido de 'iào' ríspido.\nLeia: Chí-djiēn fēi-tcháng djòng-iào.",
+    "id": 271
+  },
+  "272": {
+    "explanation": "Para expressar um desejo ou meta pessoal, o pensamento chinês usa a estrutura direta 'eu ter um [classificador] sonho', onde '我' (eu) vem acompanhado do verbo ter '有' (yǒu) e da unidade contável '一个' (yīgè) antecedendo o substantivo '梦想' (sonho).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Possuir."
+      },
+      {
+        "word": "一个",
+        "meaning": "yīgè — Um / Uma unidade — yī: um (que muda para 2º tom 'yí'); gè: termo contável geral (que vira 'ga')."
+      },
+      {
+        "word": "梦想",
+        "meaning": "mèngxiǎng — Sonho / Aspiração — mèng: sonho; xiǎng: pensar/desejar."
+      }
+    ],
+    "pronuncia": "Como temos dois 3º tons seguidos em 'Wǒ yǒu', a primeira palavra sobe em 2º tom 'wó' e a segunda afunda no grave 'yǒu'. Na sequência 'yīgè', a regra de mutação do numeral faz o 'yī' subir para o 2º tom 'yí' antes da palavra 'ga' (nunca diga 'gê' ou 'guedê'). Em 'mèngxiǎng', dê um golpe seco em 'mèng' ressoando no fundo e mergulhe no 3º tom grave com sorriso espalmado em 'xiǎng'.\nLeia: Wó iǒu yí-ga mèng-xiǎng.",
+    "id": 272
+  },
+  "273": {
+    "explanation": "No mandarim, para descrever que a vida é boa, a frase não utiliza o verbo 'ser'; em vez disso, junta-se o tópico '生活' (vida/viver) diretamente com um qualificador de intensidade como '很' (muito) seguido da qualidade '美好' (bela/boa), funcionando como uma ligação natural.",
+    "breakdown": [
+      {
+        "word": "生活",
+        "meaning": "shēnghuó — Vida / Cotidiano — shēng: nascer/viver; huó: vivo/fluir."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito / Bastante."
+      },
+      {
+        "word": "美好",
+        "meaning": "měihǎo — Bela / Maravilhosa — měi: bonito; hǎo: bom."
+      }
+    ],
+    "pronuncia": "Em 'Shēnghuó', enrole a língua para trás sustentando o som alto em 'chēng' no 1º tom, e suba a entonação com atrito de garganta em 'rruó' no 2º tom. Em 'hěn měihǎo', ocorre a mutação de tons consecutivos: 'hěn' permanece grave, 'měi' sobe para 2º tom 'méi', e 'hǎo' afunda no 3º tom grave 'rrǎo' com raspado de garganta.\nLeia: Chēng-rruó rěn méi-rrǎo.",
+    "id": 273
+  },
+  "274": {
+    "explanation": "A estrutura chinesa para qualificar algo amplo como o mundo coloca o substantivo '世界' (mundo) no início e usa '很' (muito) como uma ponte obrigatória antes da característica '大' (grande), eliminando a necessidade do verbo 'ser'.",
+    "breakdown": [
+      {
+        "word": "世界",
+        "meaning": "shìjiè — Mundo — shì: era/geração; jiè: limite/fronteira."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito."
+      },
+      {
+        "word": "大",
+        "meaning": "dà — Grande."
+      }
+    ],
+    "pronuncia": "Em 'Shìjiè', mande dois golpes secos e descendentes no 4º tom: 'chì' com a língua enrolada para trás, seguido de 'djiè' com estalo seco sem ar em sorriso espalmado. Em 'hěn dà', afunda a voz no 3º tom grave com atrito de garganta em 'rěn' e finalize com 'dà' em um estalo seco e firme no 4º tom.\nLeia: Chì-djiè rěn dà.",
+    "id": 274
+  },
+  "275": {
+    "explanation": "Nesta frase, a ordem do pensamento chinês marca o tempo no início com '今天' (hoje), usa o verbo de identidade '是' (é), e qualifica o dia com a partícula de ligação '的' (de), formando a sequência exata de 'hoje é o novo de um dia'.",
+    "breakdown": [
+      {
+        "word": "今天",
+        "meaning": "jīntiān — Hoje — jīn: presente/atual; tiān: dia/céu."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "新",
+        "meaning": "xīn — Novo."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação (que soa 'da')."
+      },
+      {
+        "word": "一天",
+        "meaning": "yītiān — Um dia — yī: um (que muda para 4º tom 'yì'); tiān: dia."
+      }
+    ],
+    "pronuncia": "Em 'Jīntiān', mantenha o sorriso espalmado no 1º tom alto em 'djīn' e trave o 'tiēn' com a ponta da língua nos dentes. O verbo 'shì' é dito com a língua curvada para trás em corte seco no 4º tom 'chì'. Em 'xīn de', faça o chiado agudo 'xīn' no 1º tom e solte o 'da' curto e neutro (nunca fale 'dê'). Em 'yītiān', a mutação faz o 'yī' cair em 4º tom seco 'yì', e 'tiān' termina como 'tiēn' alto e contínuo.\nLeia: Djīn-tiēn chì xīn da yì-tiēn.",
+    "id": 275
+  },
+  "276": {
+    "explanation": "Para fazer uma pergunta direta sobre um conceito, os chineses colocam a ideia '爱情' (amor romântico) em primeiro lugar, seguida da qualidade '重要' (importante), e terminam com a partícula interrogativa '吗' (ma) no final de tudo.",
+    "breakdown": [
+      {
+        "word": "爱情",
+        "meaning": "àiqíng — Amor / Afeto romântico — ài: amar; qíng: sentimento."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante — zhòng: pesado; yào: querer."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa final."
+      }
+    ],
+    "pronuncia": "Em 'Àiqíng', solte o 4º tom seco em 'ài' e suba 'tchīng' com um sopro agudo de ar em sorriso espalmado no 2º tom. Em 'zhòngyào', mande dois golpes ríspidos no 4º tom: 'djòng' enrolando a língua para trás e 'iào' descendo forte. Termine com 'ma' leve, curto e frouxo sem acento.\nLeia: Ài-tchīng djòng-iào ma?",
+    "id": 276
+  },
+  "277": {
+    "explanation": "A negação de posse em mandarim é feita exclusivamente com a palavra '没有' (méiyǒu), que significa 'não ter'. O sujeito '我' (eu) vem primeiro, seguido da negação de posse e do recurso que falta, '时间' (tempo).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "没有",
+        "meaning": "méiyǒu — Não ter / Não haver — méi: negação de existência; yǒu: ter."
+      },
+      {
+        "word": "时间",
+        "meaning": "shíjiān — Tempo — shí: hora; jiān: espaço."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ méiyǒu', afunde a voz no 3º tom grave em 'wǒ', suba a entonação no 2º tom de pergunta em 'méi', e mergulhe em 3º tom grave em 'yǒu'. Para 'shíjiān', suba 'chí' enrolando a língua para trás no 2º tom e feche em 'djiēn' no 1º tom alto com a língua travando nos dentes.\nLeia: Wǒ méi-iǒu chí-djiēn.",
+    "id": 277
+  },
+  "278": {
+    "explanation": "O raciocínio chinês para esta afirmação coloca a ação '学知识' (aprender conhecimento) como o assunto principal da frase, conectada ao predicado '好事' (coisa boa) através do verbo de identidade '是' (é).",
+    "breakdown": [
+      {
+        "word": "学",
+        "meaning": "xué — Aprender / Estudar."
+      },
+      {
+        "word": "知识",
+        "meaning": "zhīshi — Conhecimento — zhī: saber; shi: reconhecer (tom neutro)."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "好事",
+        "meaning": "hǎoshì — Coisa boa / Boa ação — hǎo: bom; shì: assunto/coisa."
+      }
+    ],
+    "pronuncia": "Em 'Xué', faça a vogal com bico 'xüé' subindo no 2º tom. Em 'zhīshi', enrole a língua para trás no 1º tom alto em 'djī' e solte 'chi' frouxo e leve no tom neutro. Diga o verbo 'shì' com corte seco no 4º tom em 'chì'. Conclua em 'hǎoshì' mergulhando no grave 'rrǎo' com atrito e soltando o golpe seco 'chì' com a língua virada para trás.\nLeia: Xüé djī-chi chì rrǎo-chì.",
+    "id": 278
+  },
+  "279": {
+    "explanation": "Na lógica do mandarim, para indicar o estado de um momento que ainda não chegou, o tempo '未来' (futuro) fica na frente, seguido pelo advérbio de continuidade '还' (ainda), o reforço de intensidade '很' (muito) e a distância '远' (distante).",
+    "breakdown": [
+      {
+        "word": "未来",
+        "meaning": "wèilái — Futuro / O que virá — wèi: ainda não; lái: vir."
+      },
+      {
+        "word": "还",
+        "meaning": "hái — Ainda."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito (que muda para 2º tom 'héng' antes de 3º tom)."
+      },
+      {
+        "word": "远",
+        "meaning": "yuǎn — Longe / Distante."
+      }
+    ],
+    "pronuncia": "Em 'Wèilái', dê um golpe seco no 4º tom em 'uèi' e suba 'lái' no 2º tom ascendente. O termo 'hái' sobe com atrito de garganta em 'rrái' no 2º tom. Entre 'hěn' e 'yuǎn' ocorre a mutação de dois 3º tons seguidos: 'hěn' sobe para o 2º tom 'rrén', e 'yuǎn' mergulha no 3º tom grave com bico de 'ü' em 'yüǎn'.\nLeia: Uèi-lái rrái rrén yüǎn.",
+    "id": 279
+  },
+  "280": {
+    "explanation": "Para definir uma classificação científica ou factual em mandarim, declara-se o sujeito '太阳' (sol), o verbo '是' (é), o medidor contável específico para corpos celestes '一颗' (uma unidade de objeto redondo), e a categoria '恒星' (estrela fixa).",
+    "breakdown": [
+      {
+        "word": "太阳",
+        "meaning": "tàiyáng — Sol — tài: supremo; yáng: luz/ensolarado."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "一颗",
+        "meaning": "yī kē — Uma (unidade para objetos pequenos/esféricos) — yī: um (muda para 4º tom 'yì'); kē: classificador."
+      },
+      {
+        "word": "恒星",
+        "meaning": "héngxīng — Estrela fixa / Sol — héng: permanente; xīng: estrela."
+      }
+    ],
+    "pronuncia": "Em 'Tàiyáng', solte 'tài' com disparo forte de ar no 4º tom e suba 'iáng' no 2º tom com som nasal de fundo. O verbo 'shì' cai seco no 4º tom 'chì'. Em 'yī kē', o 'yī' vira 4º tom seco 'yì' e 'kē' é dito no 1º tom alto com sopro potente de garganta. Termine em 'héngxīng' subindo 'rréng' no 2º tom e mantendo 'xīng' agudo e reto no 1º tom.\nLeia: Tài-iáng chì yì-kē rréng-xīng.",
+    "id": 280
+  },
+  "281": {
+    "explanation": "Os chineses descrevem cenários naturais posicionando o conceito '大自然' (a grande natureza) como o assunto principal e ligando-o diretamente à beleza com a ponte '很' (muito) e o adjetivo '美' (bela), sem utilizar o verbo 'ser'.",
+    "breakdown": [
+      {
+        "word": "大自然",
+        "meaning": "dàzìrán — Natureza — dà: grande; zìrán: natural/espontâneo."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito."
+      },
+      {
+        "word": "美",
+        "meaning": "měi — Bela / Bonita."
+      }
+    ],
+    "pronuncia": "Em 'Dàzìrán', solte 'dà' seco no 4º tom, passe pelo estalo dental de 'tsì' no 4º tom (sem som de zumbido de Z), e suba 'ján' no 2º tom enrolando a língua para trás com vibração de voz. Em 'hěn měi', ocorre a mutação de tom entre os dois 3º tons: 'hěn' sobe para o 2º tom 'rrén', e 'měi' afunda no 3º tom grave em 'měi'.\nLeia: Dà-tsì-ján rrén měi.",
+    "id": 281
+  },
+  "282": {
+    "explanation": "A negação de equivalência em mandarim usa o bloco fixo '不是' (búshì - não é). A frase coloca o elemento '钱' (dinheiro) no início, seguido da negação e da totalidade '一切' (tudo / o todo).",
+    "breakdown": [
+      {
+        "word": "钱",
+        "meaning": "qián — Dinheiro."
+      },
+      {
+        "word": "不是",
+        "meaning": "bùshì — Não é — bù: não (que vira 2º tom 'bú' antes de 4º tom); shì: ser."
+      },
+      {
+        "word": "一切",
+        "meaning": "yīqiè — Tudo / O todo — yī: um (que vira 2º tom 'yí'); qiè: cortar/absoluto."
+      }
+    ],
+    "pronuncia": "Em 'Qián', abra o sorriso e solte um disparo potente de ar em 'tchién' subindo no 2º tom. Em 'bùshì', a negação 'bù' sofre mutação para 2º tom 'bú' antes do tom descendente 'chì'. Na palavra 'yīqiè', o numeral 'yī' também muda para o 2º tom 'yí' antes do 4º tom seco 'tchiè', pronunciado com sopro agudo e sorriso espalmado.\nLeia: Tchién bú-chì yí-tchiè.",
+    "id": 282
+  },
+  "283": {
+    "explanation": "O pensamento chinês trata a paz como um elemento concreto dentro de uma categoria de eventos, ordenando: '和平' (paz) + '是' (é) + '件' (classificador de eventos) + '好事' (coisa boa).",
+    "breakdown": [
+      {
+        "word": "和平",
+        "meaning": "hépíng — Paz / Harmonia — hé: harmonioso; píng: plano/calmo."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "件",
+        "meaning": "jiàn — Classificador para assuntos, tarefas e eventos."
+      },
+      {
+        "word": "好事",
+        "meaning": "hǎoshì — Coisa boa / Bom evento — hǎo: bom; shì: assunto."
+      }
+    ],
+    "pronuncia": "Em 'Hépíng', suba 'rré' no 2º tom com atrito de garganta e solte 'píng' com sopro labial de ar no 2º tom. Diga 'shì jiàn' mandando dois cortes secos no 4º tom: 'chì' enrolando a língua para trás e 'djièn' com a língua travando no dente em sorriso. Finalize com 'hǎoshì': afunde em 'rrǎo' no 3º tom grave e corte seco em 'chì' no 4º tom.\nLeia: Rré-píng chì djièn rrǎo-chì.",
+    "id": 283
+  },
+  "284": {
+    "explanation": "Para questionar se a verdade é importante, o mandarim dispõe o tópico investigado '真相' (a verdade dos fatos) no começo, a característica '重要' (importante) no meio, e fecha com a partícula de pergunta '吗' (ma).",
+    "breakdown": [
+      {
+        "word": "真相",
+        "meaning": "zhēnxiàng — Verdade / Fato real — zhēn: real/verdadeiro; xiàng: aparência/imagem."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante — zhòng: pesado; yào: querer."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa final."
+      }
+    ],
+    "pronuncia": "Em 'Zhēnxiàng', enrole a língua para trás em 'djēn' no 1º tom alto travando o N no dente, e mande um 4º tom seco em 'xiàng' com chiado fino de sorriso. Em 'zhòngyào', execute dois golpes descendentes do 4º tom: 'djòng' com a língua curvada e 'iào' firme. Termine com a partícula 'ma' curta, frouxa e sem acento.\nLeia: Djēn-xiàng djòng-iào ma?",
+    "id": 284
+  },
+  "285": {
+    "explanation": "Esta frase longa ilustra a estrutura de modificação do mandarim: tudo o que descreve a pergunta vem antes dela. A ordem é: 'eu tenho um [classificador] sobre a vida de pergunta', onde a partícula '的' (de) conecta a especificação ao substantivo final '问题' (pergunta).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter."
+      },
+      {
+        "word": "一个",
+        "meaning": "yīgè — Um / Uma unidade — yī: um (vira 2º tom 'yí'); gè: termo contável (soa 'ga')."
+      },
+      {
+        "word": "关于",
+        "meaning": "guānyú — Sobre / A respeito de — guān: envolver; yú: em relação a."
+      },
+      {
+        "word": "人生",
+        "meaning": "rénshēng — Vida humana — rén: pessoa; shēng: vida."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "问题",
+        "meaning": "wèntí — Pergunta / Questão / Problema — wèn: perguntar; tí: tópico."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ yǒu', a mutação faz virar 'wó' (2º tom) + 'yǒu' (3º tom grave). Em 'yīgè', a mutação gera 'yí-ga' (nunca fale 'gê'). Em 'guānyú', faça 'guān' no 1º tom alto e 'yú' com bico de 'yü' no 2º tom. Em 'rénshēng', suba 'ján' no 2º tom com língua enrolada e sustente 'chēng' no 1º tom alto. Em 'de wèntí', diga a partícula 'da' átona e neutra (nunca 'dê'), mande o golpe seco 'uèn' no 4º tom e suba 'tí' com sopro no 2º tom.\nLeia: Wó iǒu yí-ga guān-yü ján-chēng da uèn-tí.",
+    "id": 285
+  },
+  "286": {
+    "explanation": "Para expressar a cor do céu, o mandarim diz 'o céu é de cor azul'. A palavra para cor '色' (sè) e a partícula de ligação '的' (de) juntam-se ao adjetivo '蓝' (azul) para caracterizar o assunto '天空' (céu).",
+    "breakdown": [
+      {
+        "word": "天空",
+        "meaning": "tiānkōng — Céu — tiān: céu/dia; kōng: espaço vazio."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "蓝色",
+        "meaning": "lánsè — Cor azul — lán: azul; sè: cor."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação (soa 'da')."
+      }
+    ],
+    "pronuncia": "Em 'Tiānkōng', pronuncie 'tiēn' alto no 1º tom com corte nos dentes e 'kōng' no 1º tom com disparo de ar pela garganta. O verbo 'shì' é dito como 'chì' seco no 4º tom. Em 'lánsè de', suba 'lán' no 2º tom, mande 'ssè' seco no 4º tom com silvo dental, e finalize na partícula 'da' curta e frouxa no tom neutro.\nLeia: Tiēn-kōng chì lán-ssè da.",
+    "id": 286
+  },
+  "287": {
+    "explanation": "O pensamento mandarim expressa a diversidade humana usando a totalidade: 'cada pessoa todas não iguais'. A estrutura junta '每个人' (todo mundo), a inclusão '都' (todos/sem exceção) e a negação de igualdade '不同' (diferente).",
+    "breakdown": [
+      {
+        "word": "每个人",
+        "meaning": "měigèrén — Cada pessoa — měi: cada; gè: termo contável (soa 'ga'); rén: pessoa."
+      },
+      {
+        "word": "都",
+        "meaning": "dōu — Todos / Sem exceção."
+      },
+      {
+        "word": "不同",
+        "meaning": "bùtóng — Diferente / Não igual — bù: não; tóng: igual."
+      }
+    ],
+    "pronuncia": "Em 'Měigèrén', afunde a voz em 'měi' no 3º tom, diga o termo contável 'ga' solto no tom neutro (sem som de 'gê') e suba 'ján' no 2º tom com a língua enrolada para trás. Em 'dōu bùtóng', sustente 'dōu' alto no 1º tom sem ar, mande 'bù' seco no 4º tom, e suba 'tóng' no 2º tom com explosão de ar no T.\nLeia: Měi-ga-ján dōu bù-tóng.",
+    "id": 287
+  },
+  "288": {
+    "explanation": "Em mandarim, para dizer que amigos são importantes, o termo '朋友' (amigos) é posicionado como tópico e a ligação com a qualidade '重要' (importante) é feita diretamente pelo advérbio '很' (muito), omitindo o verbo 'ser'.",
+    "breakdown": [
+      {
+        "word": "朋友",
+        "meaning": "péngyou — Amigo / Amigos — péng: amigo; you: companheiro (tom neutro)."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante — zhòng: pesado; yào: querer."
+      }
+    ],
+    "pronuncia": "Em 'Péngyou', suba 'péng' no 2º tom disparando ar nos lábios e solte 'iôu' frouxo e curto no tom neutro. Em 'hěn zhòngyào', afunde 'rrěn' no 3º tom grave com raspado na garganta, e emende dois 4º tons secos: 'djòng' com língua enrolada e 'iào' caindo forte.\nLeia: Péng-iôu rrěn djòng-iào.",
+    "id": 288
+  },
+  "289": {
+    "explanation": "A estrutura desta frase estabelece uma definição formal: o tópico '工作' (trabalho) é conectado ao adjetivo '必要' (necessário) através do verbo '是' (é) e finalizado pela partícula '的' (de), que confirma o estado de necessidade.",
+    "breakdown": [
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalho / Trabalhar — gōng: trabalho; zuò: fazer."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "必要的",
+        "meaning": "bìyào de — Necessário — bì: inevitável; yào: precisar; de: partícula de ligação (soa 'da')."
+      }
+    ],
+    "pronuncia": "Em 'Gōngzuò', sustente 'gōng' no 1º tom alto com 'g' seco sem ar, e mande 'tsuò' no 4º tom seco com estalo dental sem ar. O verbo 'shì' é pronunciado 'chì' no 4º tom. Em 'bìyào de', solte dois cortes descendentes secos em 'bì-iào' e finalize na partícula 'da' frouxa e curta no tom neutro.\nLeia: Gōng-tsuò chì bì-iào da.",
+    "id": 289
+  },
+  "290": {
+    "explanation": "Para dizer que algo é interessante, a língua chinesa usa a expressão fixa '很有意思' (ter muito sentido/interesse). A frase começa com o tema '历史' (história) e atribui a ele a posse de sentido de forma direta.",
+    "breakdown": [
+      {
+        "word": "历史",
+        "meaning": "lìshǐ — História — lì: passar/experiência; shǐ: registros do passado."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito (que muda para 2º tom 'héng' antes de 3º tom)."
+      },
+      {
+        "word": "有意思",
+        "meaning": "yǒu yisi — Interessante / Ter sentido — yǒu: ter; yi: sentido/intenção; si: pensamento (tom neutro)."
+      }
+    ],
+    "pronuncia": "Em 'Lìshǐ', solte o golpe seco no 4º tom em 'lì' e afunde a voz em 'chǐ' no 3º tom grave com a língua enrolada para trás. No bloco 'hěn yǒu', ocorre mutação: 'hěn' sobe para 2º tom 'rrén', 'yǒu' mergulha no 3º tom grave 'yǒu', 'yi' cai no 4º tom seco 'yì', e 'si' fica leve e curto no tom neutro 'ssi'.\nLeia: Lì-chǐ rrén iǒu yì-ssi.",
+    "id": 290
+  },
+  "291": {
+    "explanation": "Para afirmar posse existencial como 'minha vida', o mandarim coloca o possuidor '我' (eu) ligado ao substantivo '生命' (vida) através da partícula '的' (de), formando a frase: 'música é meu de vida'.",
+    "breakdown": [
+      {
+        "word": "音乐",
+        "meaning": "yīnyuè — Música — yīn: som; yuè: alegria/música."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "我的",
+        "meaning": "wǒ de — Meu / Minha — wǒ: eu; de: partícula de posse (soa 'da')."
+      },
+      {
+        "word": "生命",
+        "meaning": "shēngmìng — Vida / Existência — shēng: nascer; mìng: destino/vida."
+      }
+    ],
+    "pronuncia": "Em 'Yīnyuè', sustente 'yīn' no 1º tom alto travando a língua no dente, e solte 'yüè' no 4º tom seco com bico de 'ü'. O verbo 'shì' é 'chì' no 4º tom. Em 'wǒ de', mergulhe em 'wǒ' no 3º tom grave e solte 'da' neutro e frouxo. Conclua em 'shēngmìng' com 'chēng' no 1º tom alto de língua enrolada e 'mìng' cortando seco no 4º tom.\nLeia: Yīn-yüè chì wǒ da chēng-mìng.",
+    "id": 291
+  },
+  "292": {
+    "explanation": "A ordem do pensamento chinês para indicar prioridade coloca a categoria principal '家人' (familiares) em primeiro lugar e associa diretamente o indicador ordinal '第一' (número um / primeiro lugar), dispensando verbos auxiliares.",
+    "breakdown": [
+      {
+        "word": "家人",
+        "meaning": "jiārén — Família / Familiares — jiā: casa/família; rén: pessoa."
+      },
+      {
+        "word": "第一",
+        "meaning": "dì yī — Primeiro lugar / Número um — dì: prefixo ordinal; yī: um."
+      }
+    ],
+    "pronuncia": "Em 'Jiārén', pronuncie 'djiā' no 1º tom alto em sorriso espalmado e suba 'ján' no 2º tom enrolando a língua para trás com vibração de voz. Em 'dì yī', solte o clique seco sem ar no 4º tom em 'dì' e sustente o 1º tom alto e plano na vogal pura 'yī'.\nLeia: Djiā-ján dì-yī.",
+    "id": 292
+  },
+  "293": {
+    "explanation": "Para perguntar se uma resposta está correta, a língua chinesa apresenta a palavra '答案' (resposta), o adjetivo de exatidão '对' (correto/certo) e a partícula interrogativa '吗' (ma) na ponta final da frase.",
+    "breakdown": [
+      {
+        "word": "答案",
+        "meaning": "dá'àn — Resposta — dá: responder; àn: caso/registro."
+      },
+      {
+        "word": "对",
+        "meaning": "duì — Correto / Certo."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa final."
+      }
+    ],
+    "pronuncia": "Em 'Dá'àn', suba o tom de pergunta em 'dá' com 'd' seco sem ar, faça uma pausa milimétrica de apóstrofo na garganta e solte 'àn' no 4º tom seco com a língua nos dentes. A palavra 'duì' é dita como 'duêi' em 4º tom descendente seco. Termine com 'ma' leve e curto no tom neutro.\nLeia: Dá-àn duêi ma?",
+    "id": 293
+  },
+  "294": {
+    "explanation": "No mandarim, a indicação de uma ação em andamento (pensar) é marcada pelo marcador de processo '在' (zài) antes do verbo '想' (pensar/refletir), seguido do objeto do pensamento '未来' (futuro).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Marcador de ação em progresso (estando a fazer)."
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Pensar em / Refletir sobre."
+      },
+      {
+        "word": "未来",
+        "meaning": "wèilái — Futuro — wèi: ainda não; lái: vir."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ zài', mergulhe a voz em 'wǒ' no 3º tom grave e solte 'tsài' em 4º tom seco com estalo dental de TS sem ar. Em 'xiǎng', afunde no 3º tom grave com chiado de sorriso espalmado. Conclua em 'wèilái' dando o golpe seco em 'uèi' no 4º tom e subindo 'lái' no 2º tom ascendente.\nLeia: Wǒ tsài xiǎng uèi-lái.",
+    "id": 294
+  },
+  "295": {
+    "explanation": "Para expressar que um tempo já passou definitivamente, o mandarim usa a repetição enfática do conceito: 'o passado' (过去), 'já' (已经), 'passou' (过去) + a partícula de mudança de estado '了' (le), que confirma a conclusão total.",
+    "breakdown": [
+      {
+        "word": "过去",
+        "meaning": "guòqù — Passado / Ir embora — guò: passar; qù: ir (com bico de 'ü')."
+      },
+      {
+        "word": "已经",
+        "meaning": "yǐjīng — Já — yǐ: já; jīng: passar por."
+      },
+      {
+        "word": "过去了",
+        "meaning": "guòqù le — Passou / Já se foi — guòqù: passar/ir; le: partícula de ação concluída (soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'Guòqù', solte 'guò' seco no 4º tom e 'tchù' com sopro forte de ar em bico de 'ü' no 4º tom. Em 'yǐjīng', afunde 'yǐ' no 3º tom e sustente 'djīng' alto no 1º tom. Repita 'guòqù' em tom mais leve e termine na partícula 'la' frouxa e curta no tom neutro (nunca fale 'lê').\nLeia: Guò-tchù yǐ-djīng guò-tchù la.",
+    "id": 295
+  },
+  "296": {
+    "explanation": "Esta frase de tranquilização usa o sujeito universal '一切' (tudo / todas as coisas) seguido do advérbio de totalidade '都' (todos) e o adjetivo '好' (bom), significando literalmente 'tudo sem exceção está bom'.",
+    "breakdown": [
+      {
+        "word": "一切",
+        "meaning": "yīqiè — Tudo / Todas as coisas — yī: um (muda para 2º tom 'yí'); qiè: absoluto."
+      },
+      {
+        "word": "都",
+        "meaning": "dōu — Todos / Sem exceção."
+      },
+      {
+        "word": "好",
+        "meaning": "hǎo — Bom / Bem."
+      }
+    ],
+    "pronuncia": "Em 'Yīqiè', o numeral 'yī' vira 2º tom 'yí' antes de 'tchiè', pronunciado com sopro forte em sorriso espalmado no 4º tom seco. Em 'dōu hǎo', sustente 'dōu' reto e alto no 1º tom sem ar, e afunde a voz em 'rrǎo' no 3º tom grave com raspado de garganta.\nLeia: Yí-tchiè dōu rrǎo.",
+    "id": 296
+  },
+  "297": {
+    "explanation": "Para perguntar se uma mudança é algo positivo, o mandarim posiciona o conceito '变化' (mudança) no início, o verbo '是' (é), a expressão '好事' (coisa boa) e fecha a frase com a partícula interrogativa '吗' (ma).",
+    "breakdown": [
+      {
+        "word": "变化",
+        "meaning": "biànhuà — Mudança / Transformação — biàn: mudar; huà: transformar."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "好事",
+        "meaning": "hǎoshì — Coisa boa — hǎo: bom; shì: assunto."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa final."
+      }
+    ],
+    "pronuncia": "Em 'Biànhuà', dê dois golpes secos no 4º tom: 'bièn' travando a língua no dente e 'rruà' com atrito de garganta. O verbo 'shì' é 'chì' seco no 4º tom. Em 'hǎoshì', afunde a voz no 3º tom grave 'rrǎo' e corte seco em 'chì' no 4º tom com língua enrolada. Termine com 'ma' leve e neutro.\nLeia: Bièn-rruà chì rrǎo-chì ma?",
+    "id": 297
+  },
+  "298": {
+    "explanation": "No pensamento chinês, ideias são descritas como possuidoras de força. A ordem da frase é: '想法' (ideias/pensamentos) + '很' (muito) + '有力量' (ter força/poder), omitindo o verbo 'ser' do português.",
+    "breakdown": [
+      {
+        "word": "想法",
+        "meaning": "xiǎngfǎ — Ideia / Pensamento — xiǎng: pensar; fǎ: método/modo."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito (que muda para 2º tom 'héng' antes de 3º tom)."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter."
+      },
+      {
+        "word": "力量",
+        "meaning": "lìliàng — Força / Poder — lì: força; liàng: capacidade."
+      }
+    ],
+    "pronuncia": "Na sequência de 3º tons em 'xiǎngfǎ hěn yǒu', a pronúncia flui com mutação: 'xiǎng' sobe em 2º tom 'xiáng', 'fǎ' permanece em 3º tom grave, 'hěn' sobe em 2º tom 'rrén', e 'yǒu' afunde no 3º tom grave 'yǒu'. Conclua em 'lìliàng' mandando dois cortes secos no 4º tom em 'lì-liàng'.\nLeia: Xiáng-fǎ rrén iǒu lì-liàng.",
+    "id": 298
+  },
+  "299": {
+    "explanation": "A expressão da origem do sucesso no mandarim utiliza o verbo de procedência '来自' (vir de). A ordem lógica é: o resultado '成功' (sucesso), de onde ele provém '来自' (vem de), e a fonte '努力' (esforço/trabalho duro).",
+    "breakdown": [
+      {
+        "word": "成功",
+        "meaning": "chénggōng — Sucesso / Ser bem-sucedido — chéng: realizar; gōng: mérito/trabalho."
+      },
+      {
+        "word": "来自",
+        "meaning": "láizì — Vir de / Derivar de — lái: vir; zì: desde/origem."
+      },
+      {
+        "word": "努力",
+        "meaning": "nǔlì — Esforço / Dedicação — nǔ: esforçar-se; lì: força."
+      }
+    ],
+    "pronuncia": "Em 'Chénggōng', suba 'tchēng' no 2º tom com sopro e língua enrolada, e sustente 'gōng' no 1º tom alto com estalo seco de G sem ar. Em 'láizì', suba 'lái' no 2º tom e mande 'tsì' no 4º tom seco com estalo de TS sem zumbido. Em 'nǔlì', afunde 'nǔ' no 3º tom grave e solte 'lì' cortando seco no 4º tom.\nLeia: Tchēng-gōng lái-tsì nǔ-lì.",
+    "id": 299
+  },
+  "300": {
+    "explanation": "Para expressar a vontade de adquirir mais conhecimento, o mandarim estrutura: '我' (eu) + '想' (gostaria de/desejo) + '学' (aprender/estudar) + '更多' (mais quantidade), onde '更' adiciona a ideia de 'ainda mais'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Querer / Desejar."
+      },
+      {
+        "word": "学",
+        "meaning": "xué — Aprender / Estudar."
+      },
+      {
+        "word": "更多",
+        "meaning": "gèng duō — Mais / Quantidade maior — gèng: ainda mais; duō: muito."
+      }
+    ],
+    "pronuncia": "Em 'Wǒ xiǎng', por serem dois 3º tons seguidos, a primeira palavra muda para o 2º tom 'wó' e a segunda afunda no 3º tom grave 'xiǎng'. Em 'xué', suba a entonação no 2º tom com bico de 'ü' em 'xüé'. Conclua em 'gèng duō' dando um golpe seco no 4º tom em 'gèng' (com 'g' seco sem ar) e sustentando 'duō' plano e alto no 1º tom.\nLeia: Wó xiǎng xüé gèng duō.",
+    "id": 300
+  }
+}

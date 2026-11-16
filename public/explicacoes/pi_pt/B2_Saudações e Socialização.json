@@ -1,0 +1,682 @@
+{
+  "901": {
+    "explanation": "No pensamento em mandarim, a gente começa preparando o terreno e descrevendo o contexto prévio, que é 'tanto tempo sem se ver', para só depois expressar o sentimento principal de que é muito bom poder sentar, conversar e relembrar o passado juntos.",
+    "breakdown": [
+      {
+        "word": "这么久",
+        "meaning": "zhème jiǔ — Há tanto tempo / Tanto tempo assim — zhème: assim / tanto; jiǔ: longo tempo / demorado."
+      },
+      {
+        "word": "没见",
+        "meaning": "méi jiàn — Não se ver — méi: não / sem ter; jiàn: ver / encontrar."
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Poder / Ser capaz de."
+      },
+      {
+        "word": "和你",
+        "meaning": "hé nǐ — Com você — hé: com; nǐ: você."
+      },
+      {
+        "word": "叙叙旧",
+        "meaning": "xùxùjiù — Relembrar os velhos tempos / Jogar conversa fora — xù: conversar / relatar; jiù: antigo / passado."
+      },
+      {
+        "word": "真好",
+        "meaning": "zhēn hǎo — É realmente bom — zhēn: realmente / de fato; hǎo: bom."
+      }
+    ],
+    "pronuncia": "Em 'Zhème jiǔ', faça 'zhè' com a língua curvada para trás e termine no som neutro gutural 'ma', sem falar 'mê', caindo no mergulho grave de 'djiǒu'. Em 'méi jiàn', suba o tom em 'méi' como uma pergunta rápida e corte seco no 4º tom em 'djièn', aplicando a rima 'iên' com a língua travando nos dentes. Em 'néng hé nǐ', suba a voz em 'néng' e 'rré', e afunde a voz em 'ní'. Em 'xùxùjiù', abra os cantos da boca em um sorriso tenso para chiar em 'xù', repetindo duas vezes no tom seco para baixo, e feche na rima oculta 'djiôu' no 4º tom. Finalize com 'zhēn hǎo': língua enrolada para trás no 1º tom alto em 'djēn' e mergulho grave de laringe em 'rrǎo'.\nLeia: Djè-ma djiǒu méi djièn, néng rré ní xù-xù-djiôu djēn rrǎo."
+  },
+  "902": {
+    "explanation": "Os chineses demonstram extrema polidez começando a frase com 'não sei se...', o que amacia o pedido. Em seguida colocam a pessoa de respeito 'você' e a opção 'pode ou não pode', criando um espaço muito cortês antes de pedir a introdução ao gerente.",
+    "breakdown": [
+      {
+        "word": "不知",
+        "meaning": "bùzhī — Não sei / Não tenho certeza — bù: não; zhī: saber."
+      },
+      {
+        "word": "您",
+        "meaning": "nín — Você (forma respeitosa e formal)."
+      },
+      {
+        "word": "能否",
+        "meaning": "néngfǒu — Poderia ou não / Seria possível — néng: poder; fǒu: não."
+      },
+      {
+        "word": "帮我",
+        "meaning": "bāng wǒ — Me ajudar / Dar uma mão — bāng: ajudar; wǒ: eu / mim."
+      },
+      {
+        "word": "引荐一下",
+        "meaning": "yǐnjiàn yīxià — Apresentar um pouco / Fazer uma ponte — yǐnjiàn: recomendar / apresentar; yīxià: um pouco / dar uma rápida olhada."
+      },
+      {
+        "word": "你们经理",
+        "meaning": "nǐmen jīnglǐ — O gerente de vocês — nǐmen: vocês; jīnglǐ: gerente."
+      }
+    ],
+    "pronuncia": "Comece em 'bùzhī' com tom descendente firme 'bù' e língua enrolada para trás no 1º tom plano 'djī'. Suba suavemente em 'nín' e 'néng', e mergulhe no grave em 'fǒi'. Em 'bāng wǒ', solte um som nasal amplo no fundo da garganta em 'bāng' no tom alto e afunde em 'uǒ'. Em 'yǐnjiàn yīxià', feche a língua no dente em 'ín', dê o golpe seco no 4º tom em 'djièn' com rima 'iên', e faça 'yí-xià' subindo no 2º tom e caindo no 4º tom. Termine em 'nǐmen jīnglǐ' dizendo 'ní-man' com som neutro de 'man' (sem falar 'mên'), e feche com sorriso espalmado e estalo seco em 'djīng-lǐ'.\nLeia: Bù-djī nín néng-fǒu bāng uǒ ín-djièn yí-xià ní-man djīng-lǐ?"
+  },
+  "903": {
+    "explanation": "Nativos sempre iniciam qualquer interrupção com um pedido de desculpas social. A estrutura coloca o tempo 'agora há pouco' e a condição 'sem intenção' antes de revelar o fato de ter ouvido a conversa de vocês.",
+    "breakdown": [
+      {
+        "word": "不好意思",
+        "meaning": "bù hǎoyìsi — Com licença / Sinto muito / Que vergonha — expressão fixa de polidez."
+      },
+      {
+        "word": "打扰一下",
+        "meaning": "dǎrǎo yīxià — Incomodar um pouco — dǎrǎo: perturbar / incomodar; yīxià: um pouco."
+      },
+      {
+        "word": "我刚才",
+        "meaning": "wǒ gāngcái — Eu agora há pouco — wǒ: eu; gāngcái: agorinha / recém."
+      },
+      {
+        "word": "无意中",
+        "meaning": "wúyì zhōng — Sem querer / Por acaso — wúyì: sem intenção; zhōng: no meio de."
+      },
+      {
+        "word": "听到了",
+        "meaning": "tīngdào le — Escutei / Ouvi — tīngdào: ouvir e captar; le: marcador de ação concluída (som 'la')."
+      },
+      {
+        "word": "你们的",
+        "meaning": "nǐmen de — De vocês — nǐmen: vocês; de: conector de posse (som 'da')."
+      },
+      {
+        "word": "谈话",
+        "meaning": "tánhuà — Conversa / Bate-papo — tán: conversar; huà: fala / palavras."
+      }
+    ],
+    "pronuncia": "Em 'bù hǎoyìsi', suba 'bú' diante do tom grave de 'rrǎo', dão um golpe seco em 'yì' e solte 'si' suave. Em 'dǎrǎo yīxià', faça o mergulho grave em 'dǎ-rǎo' e 'yí-xià' com disparo do 'x' em sorriso. Em 'wǒ gāngcái', faça o 'g' seco sem ar de 'kāng' no 1º tom e 'tsái' com estalo de 'ts' soprando ar para cima. Em 'wúyì zhōng', suba em 'wú', caia em 'yì' e enrole a língua para trás em 'djông'. Em 'tīngdào le', solte um sopro forte de ar no 't' de 'tīng', caia em 'dào' e solte o tom neutro 'la', sendo proibido falar 'lê'. Feche em 'nǐmen de tánhuà' pronunciando 'ní-man da' com vogais abertas e neutras, finalizando com atrito de garganta em 'tán-rruà'.\nLeia: Bú rrǎo-yì-si dǎ-rǎo yí-xià, uǒ kāng-tsái wú-yì djông tīng-dào la ní-man da tán-rruà."
+  },
+  "904": {
+    "explanation": "Em situações formais, a pessoa começa admitindo a falha em não ter respondido a tempo, para em seguida direcionar o respeito até você e expressar com solenidade o pedido sincero de desculpas.",
+    "breakdown": [
+      {
+        "word": "没能",
+        "meaning": "méi néng — Não ter conseguido / Não ter sido capaz de."
+      },
+      {
+        "word": "及时",
+        "meaning": "jíshí — A tempo / Em tempo hábil — jí: alcançar; shí: tempo."
+      },
+      {
+        "word": "回复您",
+        "meaning": "huífù nín — Responder ao senhor/senhora — huífù: responder / retornar; nín: você (formal)."
+      },
+      {
+        "word": "在此",
+        "meaning": "zàicǐ — Aqui / Por meio desta ocasião — zài: em; cǐ: este lugar / este momento."
+      },
+      {
+        "word": "向您",
+        "meaning": "xiàng nín — Para você / Em sua direção — xiàng: voltado para; nín: você (formal)."
+      },
+      {
+        "word": "致以",
+        "meaning": "zhìyǐ — Apresentar / Estender (sentimentos formais)."
+      },
+      {
+        "word": "诚挚的",
+        "meaning": "chéngzhì de — Sinceras / Do fundo do coração — chéngzhì: sincero; de: conector (som 'da')."
+      },
+      {
+        "word": "歉意",
+        "meaning": "qiànyì — Desculpas / Pedido de perdão — qiàn: pedir desculpas; yì: intenção / sentimento."
+      }
+    ],
+    "pronuncia": "Em 'méi néng', suba a entonação rapidamente nas duas sílabas em tom de pergunta. Em 'jíshí', sorria em 'djí' e enrole a língua para trás vibrando a voz no 2º tom em 'chí'. Em 'huífù nín', use a rima oculta 'rr uêi' subindo a voz, caia seco em 'fù' e suba em 'nín'. Em 'zàicǐ', dê o estalo seco sem ar em 'tsài' no 4º tom e solte 'tsǐ' com sopro no 3º tom. Em 'xiàng nín', projete o 'x' em sorriso. Em 'zhìyǐ chéngzhì de qiànyì', enrole a língua em 'djì-yǐ', suba em 'tchéng', dê um golpe seco em 'djì', solte a partícula neutra 'da' (proibido falar 'dê'), e conclua soprando o ar em sorriso tenso em 'tchièn-yì' com rima 'iên'.\nLeia: Méi néng djí-chí rruéi-fù nín, tsài-tsǐ xiàng nín djì-yǐ tchéng-djì da tchièn-yì."
+  },
+  "905": {
+    "explanation": "A saudação clássica chinesa junta o reencontro feliz de 'muito tempo sem se ver' com uma Pergunta amigável focada no momento atual, perguntando em que você anda ocupado ultimamente.",
+    "breakdown": [
+      {
+        "word": "好久不见",
+        "meaning": "hǎojiǔ bùjiàn — Há quanto tempo / Quanto tempo não nos vemos — expressão clássica de reencontro."
+      },
+      {
+        "word": "你最近",
+        "meaning": "nǐ zuìjìn — Você ultimamente — nǐ: você; zuìjìn: recentemente / ultimamente."
+      },
+      {
+        "word": "都在忙",
+        "meaning": "dōu zài máng — Anda ocupado com / Está fazendo — dōu: tudo / todos; zài: no processo de; máng: ocupado."
+      },
+      {
+        "word": "些什么呢",
+        "meaning": "xiē shénme ne — Algumas coisas do quê — xiē: alguns; shénme: o quê (pronunciado 'chán-ma'); ne: partícula de Pergunta."
+      }
+    ],
+    "pronuncia": "Em 'hǎojiǔ bùjiàn', aplique a mudança de tons: 'rráo' vira subida ascendente 'rráo', 'djiǒu' mergulha no grave, 'bú' sobe em 2º tom e 'djièn' dá o golpe seco no 4º tom com rima 'iên'. Em 'nǐ zuìjìn', faça 'ní' subindo, use 'tsuêi' com a rima oculta 'uêi' no 4º tom e feche em 'djin' travando a língua no dente. Em 'dōu zài máng', mantenha 'dōu' alto e reto no 1º tom, caia firme em 'tsài' com estalo de 'ts' e suba a voz em 'máng'. Finalize em 'xiē shénme ne': sorria em 'xiē', e grafe estritamente 'chán-ma' para o som de 'shénme', terminando em 'na' leve e solto.\nLeia: Rráo-djiǒu bú-djièn, ní tsuêi-djin dōu tsài máng xiē chán-ma na?"
+  },
+  "906": {
+    "explanation": "Ao agradecer formalmente, o mandarim isola primeiro o alvo e o escopo do agradecimento ('pelo que você fez por nós'), para somente no final verbalizar a ação direta 'eu expresso profundamente a minha gratidão'.",
+    "breakdown": [
+      {
+        "word": "对您",
+        "meaning": "duì nín — Para com o senhor/senhora / Em relação a você — duì: em relação a; nín: você (formal)."
+      },
+      {
+        "word": "为我们",
+        "meaning": "wèi wǒmen — Por nós / Em nosso favor — wèi: por / para; wǒmen: nós."
+      },
+      {
+        "word": "所做的一切",
+        "meaning": "suǒ zuò de yīqiè — Tudo aquilo que fez — suǒ zuò: o que foi feito; de: conector (som 'da'); yīqiè: tudo / a totalidade."
+      },
+      {
+        "word": "我深表感谢",
+        "meaning": "wǒ shēn biǎo gǎnxiè — Eu expresso profunda gratidão — wǒ: eu; shēn: profundo; biǎo: expressar; gǎnxiè: agradecer."
+      }
+    ],
+    "pronuncia": "Em 'duì nín', use a rima oculta 'duêi' dando o golpe descendente seco e suba suavemente em 'nín'. Em 'wèi wǒmen', caia firme em 'uèi' e solte 'uǒ-man' com som neutro de 'man'. Em 'suǒ zuò de yīqiè', dê o estalo 'tsuò' no 4º tom, solte a partícula neutra 'da' (proibido falar 'dê'), suba o tom em 'yí' e desça abruptamente em 'tchiè' soprando o ar em sorriso esticado. Conclua em 'wǒ shēn biǎo gǎnxiè': afunde a voz em 'uǒ', enrole a língua para trás no 1º tom plano em 'chēn', faça o mergulho grave em 'biǎo' e 'gǎn', e solte 'xiè' em sorriso.\nLeia: Duêi nín uèi uǒ-man tsuǒ da yí-tchiè, uǒ chēn biǎo gǎn-xiè."
+  },
+  "907": {
+    "explanation": "Nativos perguntam delicadamente 'você não se importa se...' antes de pedir para mudar de lugar e interagir, colocando o ato de sentar e vir conversar antes da partícula de confirmação amigável no final.",
+    "breakdown": [
+      {
+        "word": "不介意",
+        "meaning": "bù jièyì — Não se importar / Não se incomodar — bù: não; jièyì: importar-se / levar a mal."
+      },
+      {
+        "word": "我坐过来",
+        "meaning": "wǒ zuò guòlái — Eu me sentar para cá — wǒ: eu; zuò: sentar; guòlái: vir para cá."
+      },
+      {
+        "word": "聊会儿吧",
+        "meaning": "liáo huìr ba — Conversar um pouquinho — liáo: bater papo; huìr: um momento/um instante; ba: partícula de sugestão."
+      }
+    ],
+    "pronuncia": "Em 'bù jièyì', o 'bù' vira 2º tom ascendente 'bú' antes do 4º tom, e 'jièyì' soa como 'djiè-yì' com golpes secos para baixo. Em 'wǒ zuò guòlái', afunde 'uǒ' no 3º tom grave, dê o estalo 'tsuò' no 4º tom e deslize suavemente para 'guò-lái'. Em 'liáo huìr ba', suba em 'liáo' no 2º tom, junte a rima 'rr uêi' curvando a ponta da língua para trás no final da sílaba formando 'rr uêir' em tom descendente, e finalize com 'ba' leve e curto no tom neutro.\nLeia: Bú djiè-yì uǒ tsuò guò-lái liáo rr uêir ba?"
+  },
+  "908": {
+    "explanation": "Em vez de afirmar que não se conhecem, os chineses usam a expressão 'parece que ainda não...' para soar suave, colocando a ação de 'conhecer oficialmente' acompanhada do indicador de experiência prévia.",
+    "breakdown": [
+      {
+        "word": "我们好像",
+        "meaning": "wǒmen hǎoxiàng — Nós parece que / Aparentemente nós — wǒmen: nós; hǎoxiàng: parecer que."
+      },
+      {
+        "word": "还没",
+        "meaning": "hái méi — Ainda não — hái: ainda; méi: não."
+      },
+      {
+        "word": "正式",
+        "meaning": "zhèngshì — Oficialmente / De forma formal — zhèng: correto/oficial; shì: forma."
+      },
+      {
+        "word": "认识过吧",
+        "meaning": "rènshi guò ba — Ter se conhecido antes — rènshi: conhecer; guò: marca de experiência passada; ba: partícula de Pergunta."
+      }
+    ],
+    "pronuncia": "Em 'wǒmen hǎoxiàng', fale 'uǒ-man' com som neutro em 'man', e faça 'rráo-xiàng' caindo no 4º tom com sorriso no 'x'. Em 'hái méi', suba a entonação em tom de Pergunta nas duas palavras com atrito de garganta em 'rrái méi'. Em 'zhèngshì', enrole a ponta da língua para trás para emitir o estalo seco 'djèng' e o chiado abafado 'chì' nos dois 4º tons descendentes. Em 'rènshi guò ba', mantenha a língua virada no 4º tom com vibração de voz em 'jèn', solte 'chi' átono sem tom, caia em 'guò' e feche no 'ba' frouxo e curto.\nLeia: Uǒ-man rráo-xiàng rrái méi djèng-chì jèn-chi guò ba?"
+  },
+  "909": {
+    "explanation": "A ordem do pensamento chinês coloca o sujeito e sua emoção de expectativa 'estou ansioso' bem no início, para depois indicar o ato de ver e o objeto principal, que é o avanço futuro do projeto.",
+    "breakdown": [
+      {
+        "word": "我很期待",
+        "meaning": "wǒ hěn qīdài — Estou muito ansioso / Aguardo muito — wǒ: eu; hěn: muito; qīdài: esperar ansiosamente."
+      },
+      {
+        "word": "看到",
+        "meaning": "kàndào — Ver / Testemunhar — kàn: olhar; dào: alcançar / ver."
+      },
+      {
+        "word": "这个项目的",
+        "meaning": "zhège xiàngmù de — Deste projeto — zhège: este; xiàngmù: projeto / item; de: conector (som 'da')."
+      },
+      {
+        "word": "后续进展",
+        "meaning": "hòuxù jìnzhǎn — Progresso posterior / Desenrolar — hòuxù: subsequente / continuação; jìnzhǎn: progresso / avanço."
+      }
+    ],
+    "pronuncia": "Em 'wǒ hěn qīdài', o 'wǒ' vira 2º tom ascendente 'uó' antes de 'rrěn' que mergulha no 3º tom grave fechando no dente; em seguida, estique a boca em sorriso para soprar o ar em 'tchī' alto e reto, caindo seco em 'dài'. Em 'kàndào', solte a explosão de ar no 'k' de 'kàn' cortando no dente e caia em 'dào'. Em 'zhège xiàngmù de', enrole a língua em 'djè', solte 'ga' gutural (proibido falar 'gê'), projete o 'x' em 'xiàng', caia em 'mù' e termine na partícula 'da' neutra. Conclua 'hòuxù jìnzhǎn' fazendo 'rròu-xù' com bico no 'xü', feche 'djin' travando a língua no dente e enrole a língua para o estalo de 'djǎn'.\nLeia: Uó rrěn tchī-dài kàn-dào djè-ga xiàng-mù da rròu-xù djin-djǎn."
+  },
+  "9010": {
+    "explanation": "A cortesia chinesa pede o favor no começo com 'pode me ajudar', insere a direção 'para as outras pessoas da equipe', e coloca a ação de levar uma lembrança/cumprimento no final da frase.",
+    "breakdown": [
+      {
+        "word": "能帮我",
+        "meaning": "néng bāng wǒ — Pode me ajudar / Você poderia — néng: poder; bāng: ajudar; wǒ: eu."
+      },
+      {
+        "word": "向团队里的",
+        "meaning": "xiàng tuánduì lǐ de — Para a equipe dentro — xiàng: em direção a; tuánduì: equipe; lǐ: dentro; de: conector (som 'da')."
+      },
+      {
+        "word": "其他人",
+        "meaning": "qítā rén — Outras pessoas — qí: outro; tā: ele/ela; rén: pessoa."
+      },
+      {
+        "word": "带个好吗",
+        "meaning": "dài gè hǎo ma — Mandar um abraço / Dar um oi — dài: levar; gè: unidade; hǎo: bom / cumprimento; ma: partícula de Pergunta."
+      }
+    ],
+    "pronuncia": "Em 'néng bāng wǒ', suba a voz em 'néng', solte 'bāng' reto e alto no 1º tom e afunde a voz em 'uǒ'. Em 'xiàng tuánduì lǐ de', projete o 'x' em 'xiàng', soe a rima 'tuén' com corte no dente subindo no 2º tom, use a rima oculta 'duêi' no 4º tom, afunde 'lǐ' e solte 'da' neutro. Em 'qítā rén', sorria e assopre o ar em 'tchí', faça 'tā' reto no topo e enrole a ponta da língua para trás vibrando a voz em 'jén'. Feche em 'dài gè hǎo ma' caindo seco em 'dài', soltando 'ga' gutural aberto no tom neutro, afundando a laringe em 'rrǎo' e terminando no 'ma' suave.\nLeia: Néng bāng uǒ xiàng tuén-duêi lǐ da tchí-tā jén dài ga rráo ma?"
+  },
+  "9011": {
+    "explanation": "A gratidão por uma refeição começa com o agradecimento entusiasmado à pessoa de respeito ('muito obrigado a você'), seguido do ato de ter preparado um jantar abundante e especial.",
+    "breakdown": [
+      {
+        "word": "非常感谢您",
+        "meaning": "fēicháng gǎnxiè nín — Muito obrigado ao senhor/senhora — fēicháng: extremamente; gǎnxiè: agradecer; nín: você (formal)."
+      },
+      {
+        "word": "准备了",
+        "meaning": "zhǔnbèi le — Preparou — zhǔnbèi: preparar; le: marcador de ação concluída (som 'la')."
+      },
+      {
+        "word": "这么丰盛的",
+        "meaning": "zhème fēngshèng de — Tão abundante / Tão farto — zhème: assim/tão; fēngshèng: farto/suntuoso; de: conector (som 'da')."
+      },
+      {
+        "word": "晚餐",
+        "meaning": "wǎncān — Jantar / Ceia — wǎn: noite; cān: refeição."
+      }
+    ],
+    "pronuncia": "Em 'fēicháng gǎnxiè nín', mantenha 'fēi' alto, enrole a língua em 'tcháng' subindo no 2º tom, mergulhe em 'gǎn', solte 'xiè' em sorriso e suba o tom em 'nín'. Em 'zhǔnbèi le', aplique a rima oculta 'djuên' no 3º tom grave com a língua curvada para trás, dê o golpe seco no 4º tom em 'bèi' e solte o tom neutro 'la' (sendo proibido falar 'lê'). Em 'zhème fēngshèng de', fale 'djè-ma' no tom neutro, solte 'fēng-chèng' com a língua virada para trás ressoando no fundo da garganta, e feche em 'da' neutro. Termine em 'wǎncān' afundando a voz em 'uǎn' e dando o estalo de 'ts' soprando um forte jato de ar em 'tsān' no 1º tom alto.\nLeia: Fēi-tcháng gǎn-xiè nín djuên-bèi la djè-ma fēng-chèng da uǎn-tsān."
+  },
+  "9012": {
+    "explanation": "Nativos explicam o fato primeiro ('vir sem avisar com antecedência') antes de expressar a consideração e o desejo sincero de 'esperar não ter atrapalhado você'.",
+    "breakdown": [
+      {
+        "word": "没提前",
+        "meaning": "méi tíqián — Sem antes / Sem antecedência — méi: não ter; tíqián: antecipar / com antecedência."
+      },
+      {
+        "word": "打招呼",
+        "meaning": "dǎ zhāohu — Avisar / Cumprimentar — dǎ: dar; zhāohu: aviso / saudação."
+      },
+      {
+        "word": "就过来",
+        "meaning": "jiù guòlái — E vir direto — jiù: então / logo; guòlái: vir para cá."
+      },
+      {
+        "word": "希望",
+        "meaning": "xīwàng — Esperar / Torcer para — xī: esperar; wàng: desejar."
+      },
+      {
+        "word": "没打扰到你",
+        "meaning": "méi dǎrǎo dào nǐ — Não ter incomodado você — méi: não; dǎrǎo: incomodar; dào: alcançar / chegar a; nǐ: você."
+      }
+    ],
+    "pronuncia": "Em 'méi tíqián', suba a voz em 'méi' e 'tí', e sorria soprando ar na rima 'tchiên' no 2º tom com corte no dente. Em 'dǎ zhāohu', mergulhe a voz em 'dǎ', mantenha 'djāo' alto com língua curvada e solte 'rru' suave. Em 'jiù guòlái', use a rima oculta 'djiôu' caindo no 4º tom e deslize por 'guò-lái'. Em 'xīwàng', sorria em 'xī' no 1º tom alto e caia firme em 'uàng'. Conclua em 'méi dǎrǎo dào nǐ': suba a voz em 'méi', mergulhe grave em 'dǎ-rǎo', dê um golpe seco em 'dào' e afunde a voz em 'ní'.\nLeia: Méi tí-tchiên dǎ djāo-rru djiôu guò-lái, xī-uàng méi dǎ-rǎo dào ní."
+  },
+  "9013": {
+    "explanation": "Para se despedir educadamente de um compromisso, o falante declara sua situação futura ('tenho mais um assunto'), usa a expressão de saída formal 'então vou me ausentar antes', e fecha com a confirmação da mudança de estado.",
+    "breakdown": [
+      {
+        "word": "我接下来",
+        "meaning": "wǒ jiēxiàlái — Eu em seguida / Logo mais — wǒ: eu; jiēxiàlái: a seguir / na sequência."
+      },
+      {
+        "word": "还有点",
+        "meaning": "hái yǒudiǎn — Ainda tenho um pouco de — hái: ainda; yǒudiǎn: ter um pouco de."
+      },
+      {
+        "word": "别的事",
+        "meaning": "bié de shì — Outro assunto / Outra coisa — bié: outro; de: conector (som 'da'); shì: assunto / coisa."
+      },
+      {
+        "word": "就先失陪了",
+        "meaning": "jiù xiān shīpéi le — Então vou me ausentar primeiro — jiù: então; xiān: primeiro; shīpéi: desculpar-se por ausentar-se; le: marca de mudança (som 'la')."
+      }
+    ],
+    "pronuncia": "Em 'wǒ jiēxiàlái', afunde 'uǒ' no 3º tom, sorria em 'djiē' no 1º tom alto, caia em 'xià' e suba em 'lái'. Em 'hái yǒudiǎn', suba a entonação em 'rrái', faça 'yóu' subindo e afunde 'diěn' com a rima 'iên' na ponta da língua. Em 'bié de shì', suba a voz em 'bié', solte 'da' neutro sem falar 'dê', e enrole a língua para trás para dar um golpe seco em 'chì'. Feche em 'jiù xiān shīpéi le': use 'djiôu' no 4º tom, sorria em 'xiēn', enrole a língua para chiar em 'chī' no 1º tom, suba em 'péi' disparando o ar nos lábios e solte 'la' neutro sem falar 'lê'.\nLeia: Uǒ djiē-xià-lái rrái yóu-diěn bié da chì, djiôu xiēn chī-péi la."
+  },
+  "9014": {
+    "explanation": "Esta é uma frase carinhosa de encerramento de papo. O pensamento inicia com o tempo 'no futuro', coloca o reforço de intenção 'precisamos', e fecha com o ato de 'manter contato com frequência' selado por uma partícula afetiva.",
+    "breakdown": [
+      {
+        "word": "我们以后",
+        "meaning": "wǒmen yǐhòu — Nós no futuro / De agora em diante — wǒmen: nós; yǐhòu: daqui para a frente."
+      },
+      {
+        "word": "可要",
+        "meaning": "kě yào — Realmente precisamos / Faz questão de — kě: realmente/com certeza; yào: querer / dever."
+      },
+      {
+        "word": "常联系啊",
+        "meaning": "cháng liánxì a — Manter contato frequentemente — cháng: frequentemente; liánxì: contatar; a: partícula de entusiasmo."
+      }
+    ],
+    "pronuncia": "Em 'wǒmen yǐhòu', diga 'uǒ-man' usando o som neutro 'man', afunde a laringe em 'yǐ' e caia seco com atrito de garganta no 4º tom em 'rròu'. Em 'kě yào', afunde o tom em 'kě' soltando o som gutural aberto na garganta, e dê um golpe descendente e forte em 'iào'. Em 'cháng liánxì a', enrole a ponta da língua para trás soprando ar no 2º tom ascendente em 'tcháng', suba em 'lién' com a língua travada no dente, caia seco no 'x' em sorriso em 'xì', e abra a boca de forma bem relaxada na partícula leve 'a'.\nLeia: Uǒ-man yǐ-rròu kě iào tcháng lién-xì a."
+  },
+  "9015": {
+    "explanation": "Para perguntar se a pessoa tem um tempinho de forma muito polida, o mandarim estabelece a marca temporal 'agora', pergunta sobre a conveniência 'é conveniente?', e insere o ato de conversar por alguns minutinhos.",
+    "breakdown": [
+      {
+        "word": "你现在",
+        "meaning": "nǐ xiànzài — Você agora — nǐ: você; xiànzài: agora neste momento."
+      },
+      {
+        "word": "方便",
+        "meaning": "fāngbiàn — Ser conveniente / Estar livre — fāng: direção; biàn: conveniente."
+      },
+      {
+        "word": "聊几分钟吗",
+        "meaning": "liáo jǐ fēnzhōng ma — Conversar alguns minutos — liáo: conversar; jǐ: alguns; fēnzhōng: minutos; ma: partícula de Pergunta."
+      }
+    ],
+    "pronuncia": "Em 'nǐ xiànzài', afunde a voz no 3º tom grave em 'ní', sorria na rima 'xièn' caindo no 4º tom e dê o estalo seco sem ar em 'tsài'. Em 'fāngbiàn', emita o som nasal limpo no 1º tom alto em 'fāng' e caia no 4º tom descendente com rima 'bièn' travando a língua no dente. Em 'liáo jǐ fēnzhōng ma', suba a entonação em 'liáo', afunde em 'djǐ', trave 'fēn' nos dentes no 1º tom, enrole a ponta da língua para trás e faça o som cavernoso em 'djông' no 1º tom, terminando no 'ma' átono e frouxo.\nLeia: Ní xièn-tsài fāng-bièn liáo djǐ fēn-djông ma?"
+  },
+  "9016": {
+    "explanation": "Esta é uma frase clássica de cortesia corporativa. O ouvinte expressa gratidão profunda no início, introduz o cenário de 'estar extremamente ocupado', e finaliza com a ação gratificante de 'tirar um tempo para me ver'.",
+    "breakdown": [
+      {
+        "word": "非常感谢您",
+        "meaning": "fēicháng gǎnxiè nín — Agradeço muitíssimo ao senhor/senhora — fēicháng: extremamente; gǎnxiè: agradecer; nín: você (formal)."
+      },
+      {
+        "word": "在百忙之中",
+        "meaning": "zài bǎimáng zhī zhōng — No meio de tanta ocupação — zài: em; bǎimáng: cem ocupações / muito ocupado; zhī zhōng: no meio de."
+      },
+      {
+        "word": "抽空见我",
+        "meaning": "chōukòng jiàn wǒ — Tirar um tempo para me ver — chōukòng: arranjar um tempinho; jiàn: ver/encontrar; wǒ: eu."
+      }
+    ],
+    "pronuncia": "Em 'fēicháng gǎnxiè nín', fale 'fēi' alto e reto, enrole a língua em 'tcháng' subindo no 2º tom, mergulhe em 'gǎn', sorria em 'xiè' no 4º tom e suba em 'nín'. Em 'zài bǎimáng zhī zhōng', dê o estalo 'tsài' no 4º tom, mergulhe em 'bǎi', suba em 'máng', enrole a língua para chiar no 1º tom alto em 'djī' e feche em 'djông'. Termine em 'chōukòng jiàn wǒ': enrole a língua e dispare uma rajada de ar no 1º tom em 'tchōu', caia firme no 4º tom em 'kòng', dê o golpe seco em 'djièn' com rima 'iên', e afunde a voz em 'uǒ'.\nLeia: Fēi-tcháng gǎn-xiè nín tsài bǎi-máng djī djông tchōu-kòng djièn uǒ."
+  },
+  "9017": {
+    "explanation": "O falante suaviza a situação pedindo desculpas primeiro, admite com humildade que 'não conseguiu ouvir com total clareza', e especifica o local do mal-entendido: a parte final da sua fala.",
+    "breakdown": [
+      {
+        "word": "不好意思",
+        "meaning": "bù hǎoyìsi — Desculpe-me / Com licença — expressão de polidez."
+      },
+      {
+        "word": "我没太听清",
+        "meaning": "wǒ méi tài tīngqīng — Eu não ouvi muito claramente — wǒ: eu; méi tài: não muito; tīngqīng: ouvir com clareza."
+      },
+      {
+        "word": "你最后说的",
+        "meaning": "nǐ zuìhòu shuō de — O que você disse por último — nǐ: você; zuìhòu: por último; shuō: falar; de: conector (som 'da')."
+      },
+      {
+        "word": "这部分",
+        "meaning": "zhè bùfen — Esta parte — zhè: este; bùfen: parte / trecho."
+      }
+    ],
+    "pronuncia": "Em 'bù hǎoyìsi', fale 'bú rráo-yì-si' subindo 'bú' e caindo seco em 'yì'. Em 'wǒ méi tài tīngqīng', afunde 'uǒ', suba 'méi', caia em 'tài' soprando ar no 't', e sorria no 1º tom alto em 'tīng' e no 'q' que sopra um jato forte em 'tchīng'. Em 'nǐ zuìhòu shuō de', afunde 'ní', fale 'tsuêi-rròu' na rima oculta 'uêi', enrole a língua no 1º tom em 'chuō' e solte 'da' neutro sem falar 'dê'. Feche 'zhè bùfen' dando o golpe seco com a língua virada em 'djè', caindo em 'bù' e soltando 'fan' leve no tom neutro.\nLeia: Bú rráo-yì-si, uǒ méi tài tīng-tchīng ní tsuêi-rròu chuō da djè bù-fan."
+  },
+  "9018": {
+    "explanation": "A estrutura expressa a alegria e a emoção do momento: começa com 'muito feliz', insere a ideia de 'finalmente ter chegado o momento de ver', e aponta para o alvo principal: a sua própria pessoa presencialmente.",
+    "breakdown": [
+      {
+        "word": "很高兴",
+        "meaning": "hěn gāoxìng — Muito feliz / Um grande prazer — hěn: muito; gāoxìng: alegre."
+      },
+      {
+        "word": "终于见到",
+        "meaning": "zhōngyú jiàndào — Finalmente encontrar — zhōngyú: finalmente; jiàndào: ver / encontrar."
+      },
+      {
+        "word": "您本人了",
+        "meaning": "nín běnrén le — O senhor em pessoa — nín: você (formal); běnrén: o próprio / em pessoa; le: partícula de confirmação (som 'la')."
+      }
+    ],
+    "pronuncia": "Em 'hěn gāoxìng', o 'hěn' vira subida ascendente 'rrěn' antes de 'gāo', que soa como 'kāo' seco no 1º tom alto, e caia seco em 'xìng' esticando os cantos da boca em sorriso. Em 'zhōngyú jiàndào', enrole a ponta da língua no 1º tom em 'djông', projete o bico de 'yú' subindo no 2º tom, dê o golpe seco em 'djièn' com rima 'iên' e caia em 'dào'. Conclua em 'nín běnrén le': suba o tom em 'nín', afunde 'bǎn' com som gutural fechado na garganta, enrole a língua vibrando a voz no 2º tom em 'jén', e finalize no tom neutro 'la', sendo totalmente proibido falar 'lê'.\nLeia: Rrěn kāo-xìng djông-yú djièn-dào nín bǎn-jén la."
+  },
+  "9019": {
+    "explanation": "A boa vontade em ajudar coloca o sentimento pessoal 'estou muito feliz/disposto' bem no início, seguido da ação de levar você e passear por dentro do espaço do escritório.",
+    "breakdown": [
+      {
+        "word": "我很乐意",
+        "meaning": "wǒ hěn lèyì — Estou muito feliz em / Terei o maior prazer — wǒ: eu; hěn: muito; lèyì: ter prazer / estar disposto."
+      },
+      {
+        "word": "带你",
+        "meaning": "dài nǐ — Levar você / Acompanhar você — dài: levar; nǐ: você."
+      },
+      {
+        "word": "在办公室",
+        "meaning": "zài bàngōngshì — No escritório — zài: em; bàngōngshì: escritório."
+      },
+      {
+        "word": "转转",
+        "meaning": "zhuànzhuan — Dar uma voltinha / Passear um pouco — repetição relaxada de passear."
+      }
+    ],
+    "pronuncia": "Em 'wǒ hěn lèyì', faça 'uó' subindo a voz no 2º tom, afunde 'rrěn' no 3º tom grave fechando no dente, e dê dois golpes secos e curtos para baixo em 'lè-yì'. Em 'dài nǐ', caia seco no 'd' em 'dài' e afunde a voz em 'ní'. Em 'zài bàngōngshì', faça o estalo seco sem ar 'tsài', solte 'bàn' no 4º tom, use 'gōng' como 'kōng' seco no 1º tom e enrole a língua para chiar em 'chì' no 4º tom. Feche em 'zhuànzhuan': enrole a ponta da língua no 4º tom em 'djuèn' com a rima 'uên', e repita a segunda sílaba de forma leve e frouxa no tom neutro sem acento.\nLeia: Uó rrěn lè-yì dài ní tsài bàn-kōng-chì djuèn-djuan."
+  },
+  "9020": {
+    "explanation": "Na linguagem corporativa de desculpas, os chineses apontam para a causa no começo com 'por conta disso', conectam a consequência 'o inconveniente trazido a você', e terminam com o ato formal de apresentar profundas desculpas.",
+    "breakdown": [
+      {
+        "word": "由此",
+        "meaning": "yóucǐ — Por conta disso / A partir disto — yóu: devido a; cǐ: isto."
+      },
+      {
+        "word": "给您带来的",
+        "meaning": "gěi nín dàilái de — Trazido a você — gěi: dar / para; nín: você (formal); dàilái: trazer; de: conector (som 'da')."
+      },
+      {
+        "word": "不便",
+        "meaning": "bùbiàn — Inconveniente / Transtorno — bù: não; biàn: conveniente."
+      },
+      {
+        "word": "我们深表歉意",
+        "meaning": "wǒmen shēn biǎo qiànyì — Nós expressamos profundas desculpas — wǒmen: nós; shēn: profundo; biǎo: expressar; qiànyì: desculpas."
+      }
+    ],
+    "pronuncia": "Em 'yóucǐ', suba em 'yóu' e faça o estalo de 'ts' soprando ar no 3º tom grave em 'tsǐ'. Em 'gěi nín dàilái de', aplique a rima 'gěi', suba em 'nín', caia em 'dài', suba em 'lái' e solte a partícula neutra 'da' sem falar 'dê'. Em 'bùbiàn', dê dois golpes secos no 4º tom em 'bù-bièn' com a rima 'iên' travando a língua no dente. Feche 'wǒmen shēn biǎo qiànyì': fale 'uǒ-man' com som neutro em 'man', enrole a língua em 'chēn', mergulhe em 'biǎo', e sorria com forte sopro de ar no 'q' em 'tchièn-yì'.\nLeia: Yóu-tsǐ gěi nín dài-lái da bù-bièn, uǒ-man chēn biǎo tchièn-yì."
+  },
+  "9021": {
+    "explanation": "Para perguntar sobre adaptação em um emprego novo, o tema 'novo cargo' é posicionado no início absoluto da frase. Em seguida vem a pessoa 'você' com a pergunta sobre a qualidade da adaptação no final.",
+    "breakdown": [
+      {
+        "word": "新岗位",
+        "meaning": "xīn gǎngwèi — Novo cargo / Nova função — xīn: novo; gǎngwèi: posto de trabalho."
+      },
+      {
+        "word": "你适应得",
+        "meaning": "nǐ shìyìng de — Você se adaptar — nǐ: você; shìyìng: adaptar-se; de: partícula de grau (som 'da')."
+      },
+      {
+        "word": "怎么样了",
+        "meaning": "zěnmeyàng le — Como está indo / O que está achando — zěnmeyàng: como / de que jeito; le: partícula de situação atual (som 'la')."
+      }
+    ],
+    "pronuncia": "Em 'xīn gǎngwèi', estique a boca em sorriso no 1º tom alto em 'xīn', afunde 'gǎng' com som 'kǎng' seco sem ar, e caia firme na rima oculta 'uêi' no 4º tom em 'uèi'. Em 'nǐ shìyìng de', afunde a voz em 'ní', enrole a língua e dê dois golpes secos em 'chì-yìng', terminando na partícula neutra 'da', sendo proibido falar 'dê'. Feche em 'zěnmeyàng le': faça o estalo seco 'tsěn' travando no dente no 3º tom, solte 'ma' no tom neutro, caia firme no 4º tom em 'yàng', e feche com 'la' leve e curto no tom neutro, sem falar 'lê'.\nLeia: Xīn kǎng-uèi ní chì-yìng da tsěn-ma-yàng la?"
+  },
+  "9022": {
+    "explanation": "Ao se despedir de um novo contato, a cortesia chinesa divide a frase em duas metades equilibradas: a alegria de ter conhecido você agora, seguida da expectativa positiva de se cruzar novamente em um futuro próximo.",
+    "breakdown": [
+      {
+        "word": "很高兴",
+        "meaning": "hěn gāoxìng — Muito feliz / Um prazer — hěn: muito; gāoxìng: alegre."
+      },
+      {
+        "word": "结识您",
+        "meaning": "jiéshí nín — Conhecer o senhor/senhora — jiéshí: travar conhecimento; nín: você (formal)."
+      },
+      {
+        "word": "期待",
+        "meaning": "qīdài — Esperar ansiosamente / Torcer por."
+      },
+      {
+        "word": "不久后",
+        "meaning": "bùjiǔ hòu — Em pouco tempo / Em breve — bùjiǔ: não muito tempo; hòu: depois."
+      },
+      {
+        "word": "能再次相遇",
+        "meaning": "néng zàicì xiāngyù — Poder se encontrar de novo — néng: poder; zàicì: mais uma vez; xiāngyù: encontrar-se."
+      }
+    ],
+    "pronuncia": "Em 'hěn gāoxìng', fale 'rrěn kāo-xìng' subindo 'rrěn' e caindo em 'xìng'. Em 'jiéshí nín', suba o tom com sorriso em 'djié', enrole a língua em 'chí' e suba a voz em 'nín'. Em 'qīdài', sorria com forte sopro de ar no 1º tom alto em 'tchī' e caia seco no 4º tom em 'dài'. Em 'bùjiǔ hòu', fale 'bù' caindo no 4º tom, afunde 'djiǔ' no grave e caia em 'rròu'. Feche em 'néng zàicì xiāngyù': suba em 'néng', faça dois estalos de 'ts' no 4º tom e 3º tom em 'tsài-tsǐ', sorria no 1º tom em 'xiāng' e faça o bico firme em 'yù' caindo seco.\nLeia: Rrěn kāo-xìng djié-chí nín, tchī-dài bù-djiǔ rròu néng tsài-tsǐ xiāng-yù."
+  },
+  "9023": {
+    "explanation": "Para propor o adiamento de uma reunião, a estrutura coloca a permissão flexível 'nós podemos ou não podemos' logo no início, insere a ação de empurrar a reunião, e indica o ponto final do novo tempo: a próxima semana.",
+    "breakdown": [
+      {
+        "word": "我们能不能",
+        "meaning": "wǒmen néng bù néng — Nós podemos ou não podemos — wǒmen: nós; néng bù néng: poder ou não."
+      },
+      {
+        "word": "把会议",
+        "meaning": "bǎ huìyì — Puxar a reunião — bǎ: estrutura de manuseio do objeto; huìyì: reunião."
+      },
+      {
+        "word": "推迟到",
+        "meaning": "tuīchí dào — Adiar para / Empurrar até — tuīchí: adiar; dào: até."
+      },
+      {
+        "word": "下周",
+        "meaning": "xià zhōu — Próxima semana — xià: seguinte; zhōu: semana."
+      }
+    ],
+    "pronuncia": "Em 'wǒmen néng bù néng', fale 'uǒ-man' com tom neutro em 'man', suba em 'néng', faça o tom neutro 'bu' e suba novamente em 'néng'. Em 'bǎ huìyì', afunde a voz no 3º tom em 'bǎ', e use a rima oculta 'rr uêi' caindo no 4º tom junto com 'yì' em 'rr uèi-yì'. Em 'tuīchí dào', dispare um jato potente de ar no 't' da rima 'tuēi' no 1º tom, enrole a ponta da língua para trás subindo no 2º tom em 'tchí', e caia em 'dào'. Termine em 'xià zhōu' dando o golpe seco em 'xià' com sorriso e enrolando a língua no 1º tom alto em 'djōu'.\nLeia: Uǒ-man néng bu néng bǎ rr uèi-yì tuēi-tchí dào xià djōu?"
+  },
+  "9024": {
+    "explanation": "A garantia profissional chinesa coloca a firmeza da promessa no início com 'eu com certeza vou', introduz a situação tratada como um objeto de repasse, e finaliza apontando o destinatário correto: o responsável pelo assunto.",
+    "breakdown": [
+      {
+        "word": "我一定会",
+        "meaning": "wǒ yīdìng huì — Eu com certeza vou — wǒ: eu; yīdìng: com certeza / sem falta; huì: vai / ser capaz de."
+      },
+      {
+        "word": "把这个情况",
+        "meaning": "bǎ zhège qíngkuàng — Pegar esta situação — bǎ: marcador de manuseio; zhège: este; qíngkuàng: situação / caso."
+      },
+      {
+        "word": "转达给",
+        "meaning": "zhuǎndá gěi — Repassar para — zhuǎndá: transmitir / repassar; gěi: dar / para."
+      },
+      {
+        "word": "相关负责人",
+        "meaning": "xiāngguān fùzérén — O responsável relevante — xiāngguān: relevante / envolvido; fùzérén: pessoa encarregada."
+      }
+    ],
+    "pronuncia": "Em 'wǒ yīdìng huì', afunde 'uǒ', suba o tom em 'yí', caia seco no 4º tom em 'dìng' e use a rima oculta 'rr uêi' em 'rr uèi'. Em 'bǎ zhège qíngkuàng', mergulhe em 'bǎ', fale 'djè-ga' com som neutro em 'ga', sorria assoprando o ar em 'tchíng' subindo no 2º tom, e caia seco em 'kuàng'. Em 'zhuǎndá gěi', enrole a língua no 3º tom em 'djuǎn', suba em 'dá' e afunde 'gěi'. Feche em 'xiāngguān fùzérén': sorria em 'xiāng', faça 'guān' plano, caia em 'fù', enrole a língua em 'tsé' no 2º tom e termine vibrando a voz em 'jén'.\nLeia: Uǒ yí-dìng rr uèi bǎ djè-ga tchíng-kuàng djuǎn-dá gěi xiāng-guān fù-tsé-jén."
+  },
+  "9025": {
+    "explanation": "Para desejar uma boa estadia e trabalho, a frase inicia com o verbo de votos 'desejo a você', coloca a boa vivência no local no meio, e encadeia desejos duplos de sucesso e colheita abundante no final.",
+    "breakdown": [
+      {
+        "word": "祝你",
+        "meaning": "zhù nǐ — Desejo a você — zhù: desejar; nǐ: você."
+      },
+      {
+        "word": "在这里过得愉快",
+        "meaning": "zài zhèlǐ guò de yúkuài — Passar o tempo aqui com alegria — zài zhèlǐ: aqui; guò: passar o tempo; de: conector (som 'da'); yúkuài: alegre."
+      },
+      {
+        "word": "工作顺利",
+        "meaning": "gōngzuò shùnlì — Trabalho fluir bem — gōngzuò: trabalho; shùnlì: suave / sem percalços."
+      },
+      {
+        "word": "收获满满",
+        "meaning": "shōuhuò mǎnmǎn — Colheita cheia / Fazer bom proveito — shōuhuò: colheita / ganhos; mǎnmǎn: cheio / transbordante."
+      }
+    ],
+    "pronuncia": "Em 'zhù nǐ', enrole a ponta da língua no 4º tom caindo seco em 'djù' e afunde a voz em 'ní'. Em 'zài zhèlǐ guò de yúkuài', fale 'tsài djè-lǐ', caia seco em 'guò', solte 'da' neutro sem falar 'dê', suba em 'yú' com bico de 'ü' e caia no 4º tom em 'kuài'. Em 'gōngzuò shùnlì', diga 'kōng-tsuò' com tom plano e queda seca, e enrole a língua em 'chuên-lì' usando a rima oculta 'uên'. Termine em 'shōuhuò mǎnmǎn': enrole a língua em 'chōu' no 1º tom alto, caia em 'rr uò', e afunde o tom nas duas repetições em 'mǎn-mǎn' com corte de língua nos dentes.\nLeia: Djù ní tsài djè-lǐ guò da yú-kuài, kāng-tsuò chuên-lì, chōu-rr uò mǎn-mǎn."
+  },
+  "9026": {
+    "explanation": "O agradecimento por paciência foca primeiro no agradecimento caloroso, delimita o tempo de convivência ('durante este período'), e aponta diretamente para a atitude generosa da outra pessoa para comigo.",
+    "breakdown": [
+      {
+        "word": "非常感谢你",
+        "meaning": "fēicháng gǎnxiè nǐ — Muito obrigado a você — fēicháng: extremamente; gǎnxiè: agradecer; nǐ: você."
+      },
+      {
+        "word": "在此期间",
+        "meaning": "zàicǐ qījiān — Durante este período / Neste meio-tempo — zàicǐ: aqui / neste; qījiān: período de tempo."
+      },
+      {
+        "word": "对我的",
+        "meaning": "duì wǒ de — Para comigo / Em relação a mim — duì: em relação a; wǒ: eu; de: conector (som 'da')."
+      },
+      {
+        "word": "耐心包容",
+        "meaning": "nàixīn bāoróng — Paciência e compreensão — nàixīn: paciência; bāoróng: tolerância / acolhimento."
+      }
+    ],
+    "pronuncia": "Em 'fēicháng gǎnxiè nǐ', fale 'fēi-tcháng' subindo no 2º tom com língua curvada, mergulhe em 'gǎn', solte 'xiè' em sorriso e afunde em 'ní'. Em 'zàicǐ qījiān', faça o estalo 'tsài', o sopro de 'tsǐ', e estique a boca em sorriso para os dois 1º tons altos em 'tchī-djiên' com a rima 'iên'. Em 'duì wǒ de', use a rima oculta 'duêi' no 4º tom, afunde 'uǒ' e solte a partícula neutra 'da' sem falar 'dê'. Feche em 'nàixīn bāoróng': caia no 4º tom em 'nài', trave 'xīn' nos dentes no 1º tom, fale 'bāo' plano no topo e termine em 'róng' subindo o tom com a língua curvada vibrando a voz.\nLeia: Fēi-tcháng gǎn-xiè ní tsài-tsǐ tchī-djiên duêi uǒ da nài-xīn bāo-róng."
+  },
+  "9027": {
+    "explanation": "Nativos narram o momento quase síncrono dizendo o que estavam prestes a fazer ('eu estava prestes a te ligar'), e usam a palavra 'então' para ligar o evento imediato de ter visto a mensagem chegar.",
+    "breakdown": [
+      {
+        "word": "我正准备",
+        "meaning": "wǒ zhèng zhǔnbèi — Eu estava prestes a / Eu estava justamente preparando — wǒ: eu; zhèng: justamente; zhǔnbèi: preparar-se para."
+      },
+      {
+        "word": "给你打电话",
+        "meaning": "gěi nǐ dǎ diànhuà — Fazer uma ligação para você — gěi: para; nǐ: você; dǎ diànhuà: ligar / fazer chamada."
+      },
+      {
+        "word": "就看到",
+        "meaning": "jiù kàndào — Aí vi / Então enxerguei — jiù: então; kàndào: ver."
+      },
+      {
+        "word": "你的消息了",
+        "meaning": "nǐ de xiāoxi le — A sua mensagem — nǐ: você; de: conector (som 'da'); xiāoxi: mensagem / notícia; le: partícula de confirmação (som 'la')."
+      }
+    ],
+    "pronuncia": "Em 'wǒ zhèng zhǔnbèi', afunde 'uǒ', enrole a língua no 4º tom em 'djèng', continue com a língua virada em 'djuên' no 3º tom grave e caia em 'bèi'. Em 'gěi nǐ dǎ diànhuà', suba 'géi' antes de 'ní', mergulhe em 'dǎ', dê o golpe seco em 'dièn' com a rima 'iên' no dente e solte atrito de garganta em 'rruà'. Em 'jiù kàndào', use 'djiôu' no 4º tom, e caia seco soprando ar no 'k' em 'kàn-dào'. Conclua 'nǐ de xiāoxi le': fale 'ní da' usando o tom neutro 'da', sorria em 'xiāo', solte 'xi' leve sem tom e feche na partícula neutra 'la', sendo proibido falar 'lê'.\nLeia: Uǒ djèng djuên-bèi géi ní dǎ dièn-rruà, djiôu kàn-dào ní da xiāo-xi la."
+  },
+  "9028": {
+    "explanation": "A expressão de alívio por esclarecer as coisas coloca o sentimento positivo 'estou muito feliz' em primeiro lugar, seguido do fato de termos tido a oportunidade de falar abertamente e alinhar os fatos.",
+    "breakdown": [
+      {
+        "word": "我很高兴",
+        "meaning": "wǒ hěn gāoxìng — Eu estou muito feliz — wǒ: eu; hěn: muito; gāoxìng: alegre / satisfeito."
+      },
+      {
+        "word": "我们有机会",
+        "meaning": "wǒmen yǒu jīhuì — Nós termos a oportunidade — wǒmen: nós; yǒu: ter; jīhuì: oportunidade."
+      },
+      {
+        "word": "把话说开",
+        "meaning": "bǎ huà shuōkāi — Falar abertamente / Esclarecer tudo — bǎ: marcador de manuseio; huà: palavras; shuōkāi: abrir a fala / esclarecer."
+      }
+    ],
+    "pronuncia": "Em 'wǒ hěn gāoxìng', fale 'uǒ', suba a entonação em 'rrěn', diga 'kāo' seco no 1º tom alto e caia em 'xìng' com sorriso esticado. Em 'wǒmen yǒu jīhuì', fale 'uǒ-man' com o som neutro 'man', mergulhe a voz em 'yǒu', sorria em 'djī' no 1º tom alto e caia na rima oculta 'rr uêi' no 4º tom em 'rr uèi'. Termine em 'bǎ huà shuōkāi': afunde a voz no 3º tom em 'bǎ', dê um golpe seco em 'rruà', enrole a língua no 1º tom em 'chuō' e abra a boca soprando um forte jato de ar em 'kāi' no 1º tom plano.\nLeia: Uǒ rrěn kāo-xìng uǒ-man yǒu djī-rr uèi bǎ rruà chuō-kāi."
+  },
+  "9029": {
+    "explanation": "Esta oferta de ajuda condicional começa com a hipótese 'se ainda houver outros lugares que precisam de apoio', coloca a cortesia 'por favor, a qualquer momento', e encerra com a ação de me avisar.",
+    "breakdown": [
+      {
+        "word": "如果还有",
+        "meaning": "rúguǒ hái yǒu — Se ainda houver — rúguǒ: se / caso; hái: ainda; yǒu: ter."
+      },
+      {
+        "word": "其他需要协助的",
+        "meaning": "qítā xūyào xiézhù de — Outras coisas que precisem de ajuda — qítā: outros; xūyào: precisar; xiézhù: ajudar; de: conector (som 'da')."
+      },
+      {
+        "word": "地方",
+        "meaning": "dìfang — Pontos / Aspectos / Lugares — dì: lugar; fang: lado."
+      },
+      {
+        "word": "请随时告诉我",
+        "meaning": "qǐng suíshí gàosu wǒ — Por favor me avise a qualquer momento — qǐng: por favor; suíshí: a qualquer momento; gàosu: contar/avisar; wǒ: eu."
+      }
+    ],
+    "pronuncia": "Em 'rúguǒ hái yǒu', enrole a língua vibrando a voz em 'jú', afunde 'guǒ', suba em 'rrái' e mergulhe em 'yǒu'. Em 'qítā xūyào xiézhù de', sorria em 'tchí-tā', faça bico no 'x' para pronunciar 'xū', caia em 'iào', suba em 'xié', enrole a língua caindo seco em 'djù' e solte 'da' neutro sem falar 'dê'. Em 'dìfang', caia seco no 'd' em 'dì' e solte 'fang' leve. Termine 'qǐng suíshí gàosu wǒ': sorria soprando ar em 'tchǐng', use a rima oculta 'suêi' subindo o tom, enrole a língua em 'chí', diga 'gào-su' como 'kào-su' caindo seco, e afunde a voz em 'uǒ'.\nLeia: Jú-guǒ rrái yǒu tchí-tā xū-iào xié-djù da dì-fang, tchǐng suêi-chí kào-su uǒ."
+  },
+  "9030": {
+    "explanation": "Esta marcação de encontro entusiasmada coloca a partícula de transição 'então' no início, usa o termo amigável 'nós juntos', introduz o dia e local exatos 'quinta-feira na reunião', e fecha com o verbo de se ver.",
+    "breakdown": [
+      {
+        "word": "那咱们",
+        "meaning": "nà zánmen — Então nós juntos / Então a gente — nà: então; zánmen: nós (incluindo o ouvinte)."
+      },
+      {
+        "word": "周四",
+        "meaning": "zhōusì — Quinta-feira — zhōu: semana; sì: quatro."
+      },
+      {
+        "word": "会上见",
+        "meaning": "huì shàng jiàn — Se ver na reunião — huì: reunião; shàng: em / sobre; jiàn: ver."
+      }
+    ],
+    "pronuncia": "Em 'nà zánmen', dê um golpe descendente no 4º tom em 'nà', e faça 'tsán-man' com estalo de 'ts' subindo no 2º tom e fechando no tom neutro 'man' (sem falar 'mên'). Em 'zhōusì', enrole a ponta da língua para trás para falar 'djōu' no 1º tom alto e reto, e faça o silvo de 's' bem plano e reto nos dentes em 'sì' caindo no 4º tom descendente. Feche em 'huì shàng jiàn': use a rima oculta 'rr uêi' caindo no 4º tom em 'rr uèi', enrole a língua para chiar em 'chàng' no 4º tom, e dê o golpe seco em 'djièn' com a rima 'iên' caindo firme para baixo.\nLeia: Nà tsán-man djōu-sì rr uèi chàng djièn!"
+  }
+}

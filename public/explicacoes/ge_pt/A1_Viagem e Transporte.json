@@ -1,0 +1,550 @@
+{
+  "91": {
+    "explanation": "Para perguntar onde fica um lugar em alemão, diz-se diretamente 'Onde está a estação de ônibus?'. A palavra 'Busbahnhof' é uma combinação perfeita de 'Bus' (ônibus) e 'Bahnhof' (estação). O verbo 'ist' (está/fica) vem sempre logo no início, na segunda posição, da mesma forma como fazemos em português ao perguntar onde algo fica.",
+    "breakdown": [
+      {
+        "word": "Wo",
+        "meaning": "Onde"
+      },
+      {
+        "word": "ist",
+        "meaning": "está / fica"
+      },
+      {
+        "word": "der Busbahnhof",
+        "meaning": "a rodoviária / estação de ônibus — der: o; Bus: ônibus; Bahnhof: estação."
+      }
+    ],
+    "pronuncia": "Em 'Wo', lembre-se de que a letra 'W' soa obrigatoriamente como 'V' do português ('vôo'). Em 'ist', faça o 's' e o 't' bem secos nos dentes sem chiado ('íst'). Em 'der', vocalize o 'r' final em um 'a' suave ('dêea'). Em 'Busbahnhof', pronuncie o 'u' de 'Bus' de forma frouxa e curta ('bʊs'), solte o 'h' de 'Bahnhof' como um suspiro vindo do peito sem raspar a garganta ('báan-'), e encerre no '-hof' com o 'f' limpo ('-hôof').\nLeia: Vôo íst dêea bʊs-báan-hôof?"
+  },
+  "92": {
+    "explanation": "O alemão usa a palavra 'möchte' para dizer 'gostaria' ou 'quero' de forma bastante educada ao fazer um pedido em guichês ou restaurantes. A palavra para passagem, 'Fahrkarte', junta o verbo 'fahren' (ir de veículo/viajar) com 'Karte' (cartão/bilhete). Além disso, para indicar destino a cidades e países sem artigo, usa-se a preposição 'nach', que equivale ao nosso 'para'.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu"
+      },
+      {
+        "word": "möchte",
+        "meaning": "gostaria / quero (de forma educada)"
+      },
+      {
+        "word": "eine Fahrkarte",
+        "meaning": "uma passagem — eine: uma; Fahrkarte: bilhete de viagem."
+      },
+      {
+        "word": "nach London",
+        "meaning": "para Londres — nach: para (cidades/países); London: Londres."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato pelo céu da boca sem raspar a garganta ('ích'). Em 'möchte', faça o bico arredondado de 'Ó' com a língua em 'É' para o 'ö' e corte seco no 't' ('mölch-te'). Em 'eine', use o ditongo 'ai' ('ái-ne'). Em 'Fahrkarte', a letra 'h' é muda esticando a vogal 'a' ('fáa-'), o 'r' vira 'a' relaxado e o 't' é seco ('fáa-káa-te'). Em 'nach', raspe o fundo da garganta no 'ch' ('narr') e em 'London' mantenha o 'o' oral puro e limpo ('lón-don').\nLeia: Ích mölch-te ái-ne fáa-káa-te narr lón-don."
+  },
+  "93": {
+    "explanation": "Para fazer uma pergunta em alemão, o verbo 'Fährt' (vai/viaja) vem em primeiro lugar na frase. O verbo mudar de 'fahren' para 'fährt' indica a ação de ir sobre rodas ou trilhos. A combinação 'zum Flughafen' une a ideia de 'para o' com a palavra do aeroporto, que significa literalmente 'porto de aviões' (Flug = voo, Hafen = porto).",
+    "breakdown": [
+      {
+        "word": "Fährt",
+        "meaning": "Vai / Viaja (de trem/carro)"
+      },
+      {
+        "word": "dieser Zug",
+        "meaning": "este trem — dieser: este; Zug: trem."
+      },
+      {
+        "word": "zum Flughafen",
+        "meaning": "para o aeroporto — zum: para o; Flughafen: aeroporto."
+      }
+    ],
+    "pronuncia": "Em 'Fährt', leia o 'ä' como 'ê' fechado prolongado com o 'r' vocalizado em 'a' ('fêat'). Em 'dieser', puxe o 'i' longo em sorriso ('díi-za'). Em 'Zug', marque o 'z' com estalo seco de 'ts', use o 'u' longo e desligue a voz no 'g' final transformando-o em 'k' seco ('tsúuk'). Em 'zum', use o 'z' de 'ts' ('tsʊm'). Em 'Flughafen', solte o 'h' como suspiro suave no peito ('flúuk-háa-fen').\nLeia: Fêat díi-za tsúuk tsʊm flúuk-háa-fen?"
+  },
+  "94": {
+    "explanation": "A palavra de negação 'nicht' vem logo depois do verbo 'ist' para negar a localização 'hier' (aqui). Em alemão, 'Taxi' é acompanhado do artigo neutro 'Das'. Repare que a palavra 'hier' usa o grupo 'ie' para produzir um som de 'i' bem limpo e esticado.",
+    "breakdown": [
+      {
+        "word": "Das Taxi",
+        "meaning": "O táxi — Das: o (neutro); Taxi: táxi."
+      },
+      {
+        "word": "ist nicht",
+        "meaning": "não está — ist: está; nicht: não."
+      },
+      {
+        "word": "hier",
+        "meaning": "aqui"
+      }
+    ],
+    "pronuncia": "Em 'Das', o 's' é seco como em sapo ('das'). Em 'Taxi', soa com 't' seco nos dentes ('ták-síi'). Em 'ist', faça o 's' e 't' colados ('íst'). Em 'nicht', o 'ch' é o chiado fino de gato ('nícht'). Em 'hier', solte o 'h' morno do peito, estique o 'i' em sorriso e vocalize o 'r' final como um 'a' suave relaxado ('híia').\nLeia: Das ták-síi íst nícht híia."
+  },
+  "95": {
+    "explanation": "A pergunta 'quanto custa' é feita pela combinação 'Wie viel kostet', onde 'Wie viel' significa literalmente 'como muito'. É fundamental lembrar que a letra 'v' na palavra 'viel' soa exatamente como o nosso 'f', e o verbo 'kostet' vem posicionado logo após o bloco da pergunta.",
+    "breakdown": [
+      {
+        "word": "Wie viel",
+        "meaning": "Quanto — Wie: como; viel: muito."
+      },
+      {
+        "word": "kostet",
+        "meaning": "custa"
+      },
+      {
+        "word": "eine Fahrkarte",
+        "meaning": "uma passagem — eine: uma; Fahrkarte: bilhete."
+      }
+    ],
+    "pronuncia": "Em 'Wie', a letra 'W' tem som de 'V' e o 'ie' é um 'i' longo ('víi'). Em 'viel', a letra 'V' soa como 'F' com 'i' esticado ('fíil'). Em 'kostet', o 'o' é aberto e o 't' final é seco ('kós-tet'). Em 'eine', fale 'ái-ne'. Em 'Fahrkarte', o 'h' é mudo esticando o 'a' ('fáa-'), o 'r' vira 'a' relaxado e o 't' é seco ('fáa-káa-te').\nLeia: Víi fíil kós-tet ái-ne fáa-káa-te?"
+  },
+  "96": {
+    "explanation": "Em alemão, o meio de transporte utilizado vem acompanhado da preposição 'mit' (com), dizendo-se ao pé da letra 'Eu viajo com o avião'. A palavra 'Flugzeug' é uma composição muito transparente de 'Flug' (voo) e 'Zeug' (coisa/ferramenta), formando a 'ferramenta de voar'.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu"
+      },
+      {
+        "word": "reise",
+        "meaning": "viajo"
+      },
+      {
+        "word": "mit dem",
+        "meaning": "de / com o — mit: com; dem: o."
+      },
+      {
+        "word": "Flugzeug",
+        "meaning": "avião — Flug: voo; Zeug: coisa/aparelho."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino frontal ('ích'). Em 'reise', o 'r' é raspado suavemente na garganta, o 'ei' soa 'ai' e o 's' tem som de 'z' de abelha ('rái-ze'). Em 'mit dem', faça o 't' seco sem chiar ('mit dêm'). Em 'Flugzeug', feche o 'g' em 'k' seco ('flúuk-') e leia o 'z' com estalo de 'ts' acompanhado do ditongo 'eu' que soa 'oi' ('-tsóik'), desvozeando o 'g' final em 'k'.\nLeia: Ích rái-ze mit dêm flúuk-tsóik."
+  },
+  "97": {
+    "explanation": "Por ser uma pergunta direta que espera 'sim' ou 'não', a frase começa direto com o verbo 'Ist' (está). A palavra 'geöffnet' é o jeito natural de dizer 'aberto', vinda do verbo 'öffnen' (abrir), trazendo a vogal com trema 'ö'.",
+    "breakdown": [
+      {
+        "word": "Ist",
+        "meaning": "Está"
+      },
+      {
+        "word": "das Museum",
+        "meaning": "o museu — das: o; Museum: museu."
+      },
+      {
+        "word": "geöffnet",
+        "meaning": "aberto"
+      }
+    ],
+    "pronuncia": "Comece com 'Ist' seco ('íst'). Em 'das', use 's' sibilante ('das'). Em 'Museum', a consoante 's' entre vogais tem som de 'z' de abelha e o 'u' é tenso ('mu-zêe-ʊm'). Em 'geöffnet', aplique o golpe de glote no 'ö' projetando lábios de 'Ó' com língua em 'É', e encerre no 't' seco ('gue-'öf-net').\nLeia: Íst das mu-zêe-ʊm gue-'öf-net?"
+  },
+  "98": {
+    "explanation": "Ao pé da letra, o alemão diz 'Onde encontro eu um mapa da cidade?'. A palavra 'Stadtplan' junta 'Stadt' (cidade) e 'Plan' (mapa/plano). O verbo 'finde' vem na segunda posição da pergunta, e a pessoa 'ich' entra logo em seguida.",
+    "breakdown": [
+      {
+        "word": "Wo",
+        "meaning": "Onde"
+      },
+      {
+        "word": "finde ich",
+        "meaning": "encontro eu / posso encontrar — finde: encontro; ich: eu."
+      },
+      {
+        "word": "einen Stadtplan",
+        "meaning": "um mapa — einen: um; Stadtplan: mapa da cidade (Stadt = cidade; Plan = plano/mapa)."
+      }
+    ],
+    "pronuncia": "Em 'Wo', a letra 'W' soa como 'V' ('vôo'). Em 'finde', o 'i' é oral puro e o 'd' é seco nos dentes ('fín-de'). Em 'ich', use o chiado fino ('ích'). Em 'einen', fale 'ái-nen'. Em 'Stadtplan', a letra 'ST' inicial chia obrigatoriamente como 'sht' sem vogal 'i' antes ('shtat-'), o 'd' desvozea em 't', e 'plan' tem o 'a' oral puro sem anasalar ('shtat-plaan').\nLeia: Vôo fín-de ích ái-nen shtat-plaan?"
+  },
+  "99": {
+    "explanation": "A expressão 'in der Nähe' significa 'na proximidade / perto'. Para dizer 'da estação', o alemão altera o artigo para 'des' e acrescenta a letra '-s' no final da palavra 'Bahnhof' ('des Bahnhofs'), marcando que o lugar pertence à estação.",
+    "breakdown": [
+      {
+        "word": "Das Hotel",
+        "meaning": "O hotel — Das: o; Hotel: hotel."
+      },
+      {
+        "word": "ist",
+        "meaning": "está / fica"
+      },
+      {
+        "word": "in der Nähe",
+        "meaning": "perto — in der: na; Nähe: proximidade."
+      },
+      {
+        "word": "des Bahnhofs",
+        "meaning": "da estação — des: do/da; Bahnhofs: estação de trem."
+      }
+    ],
+    "pronuncia": "Em 'Hotel', o 'h' é um suspiro morno do peito ('hô-tél'). Em 'ist', faça o 's' e 't' secos ('íst'). Em 'in der', vocalize o 'r' em 'a' ('in dêea'). Em 'Nähe', o 'ä' soa como 'ê' fechado e o 'h' é mudo ('nêe-e'). Em 'des Bahnhofs', leia 'dês báan-hôofs' soltando o 'h' de 'Bahnhofs' como suspiro e terminando no 's' seco.\nLeia: Das hô-tél íst in dêea nêe-e dês báan-hôofs."
+  },
+  "100": {
+    "explanation": "Em vez de usar a palavra 'não' sozinha, os nativos alemães preferem negar o próprio objeto usando a palavra 'keinen' antes de 'Reisepass'. Diz-se literalmente 'Eu tenho nenhum passaporte de viagem'. 'Reisepass' une 'Reise' (viagem) e 'Pass' (passaporte).",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho — Ich: eu; habe: tenho."
+      },
+      {
+        "word": "keinen",
+        "meaning": "nenhum / não (usado antes de substantivos)"
+      },
+      {
+        "word": "Reisepass",
+        "meaning": "passaporte — Reise: viagem; Pass: passaporte."
+      }
+    ],
+    "pronuncia": "Em 'Ich', fale o chiado fino de gato ('ích'). Em 'habe', solte o 'h' suave do peito ('háa-be'). Em 'keinen', use o ditongo 'ai' ('kái-nen'). Em 'Reisepass', raspe o 'r' na garganta, leia o primeiro 's' com zumbido de 'z' ('rái-ze-') e o 'ss' final com 's' seco de sapo ('-pas').\nLeia: Ích háa-be kái-nen rái-ze-pas."
+  },
+  "101": {
+    "explanation": "Em perguntas diretas entre amigos, o verbo 'Hast' (tem) assume o primeiro lugar na frase, vindo antes da pessoa 'du' (você). A mala é chamada de 'Koffer', e por ser uma palavra masculina, recebe 'einen' quando é objeto da frase.",
+    "breakdown": [
+      {
+        "word": "Hast du",
+        "meaning": "Você tem — Hast: tens / tem; du: você."
+      },
+      {
+        "word": "einen Koffer",
+        "meaning": "uma mala — einen: uma; Koffer: mala."
+      }
+    ],
+    "pronuncia": "Em 'Hast du', corte o 't' seco nos dentes sem chiar ('hast dʊ'). Em 'einen', pronuncie 'ái-nen'. Em 'Koffer', o 'o' é aberto, o 'ff' é curto e a terminação '-er' vocaliza em um 'a' relaxado solto, sem enrolar a língua ('kóf-fa').\nLeia: Hast dʊ ái-nen kóf-fa?"
+  },
+  "102": {
+    "explanation": "A palavra para carro em alemão é 'Auto', um substantivo neutro acompanhado de 'Das'. A palavra 'sehr' significa 'muito', e 'schnell' é 'rápido'. O grupo de três letras 'SCH' no começo de 'schnell' produz o chiado idêntico ao nosso 'ch'.",
+    "breakdown": [
+      {
+        "word": "Das Auto",
+        "meaning": "O carro — Das: o; Auto: carro."
+      },
+      {
+        "word": "ist",
+        "meaning": "é"
+      },
+      {
+        "word": "sehr",
+        "meaning": "muito"
+      },
+      {
+        "word": "schnell",
+        "meaning": "rápido"
+      }
+    ],
+    "pronuncia": "Em 'Das Auto', faça o 's' seco em 'das', aplique o golpe de glote no 'Auto' sem emendar as palavras ('das 'áu-tôo'), garantindo que o 'o' final fique 'ô' bem fechado. Em 'ist', faça 'íst'. Em 'sehr', o 's' zumba como 'z' de abelha e o 'r' vira 'a' relaxado ('zêea'). Em 'schnell', chie o 'sch' como 'ch' e suba a ponta da língua no 'l' dental sem virar 'u' ('shnél').\nLeia: Das 'áu-tôo íst zêea shnél."
+  },
+  "103": {
+    "explanation": "A estrutura 'Wo ist' significa 'Onde fica / Onde está'. A palavra para banheiro, 'Toilette', é feminina em alemão e utiliza o artigo 'die'. Trata-se de um termo bastante comum e prático para o dia a dia de viagens.",
+    "breakdown": [
+      {
+        "word": "Wo",
+        "meaning": "Onde"
+      },
+      {
+        "word": "ist",
+        "meaning": "fica / está"
+      },
+      {
+        "word": "die Toilette",
+        "meaning": "o banheiro — die: a; Toilette: banheiro/lavabo."
+      }
+    ],
+    "pronuncia": "Em 'Wo', a letra 'W' soa como 'V' ('vôo'). Em 'ist', faça o 's' e 't' secos ('íst'). Em 'die', puxe o 'i' longo em sorriso ('díi'). Em 'Toilette', pronuncie o início como 'toa-' ou 'toi-' de forma leve, mantendo o 't' final seco no 'e' neutro ('toa-lét-te').\nLeia: Vôo íst díi toa-lét-te?"
+  },
+  "104": {
+    "explanation": "Para perguntar sobre distância, o alemão usa 'Ist es' (É / Está isso) seguido do adjetivo 'weit' (longe). A preposição 'von' significa 'de', e junta-se com 'hier' (aqui) para formar o sentido de 'daqui'.",
+    "breakdown": [
+      {
+        "word": "Ist es",
+        "meaning": "É / Está — Ist: é/está; es: isso."
+      },
+      {
+        "word": "weit",
+        "meaning": "longe"
+      },
+      {
+        "word": "von hier",
+        "meaning": "daqui — von: de; hier: aqui."
+      }
+    ],
+    "pronuncia": "Em 'Ist es', faça 'íst és'. Em 'weit', lembre-se de que a letra 'W' soa obrigatoriamente como 'V' e o 'ei' vira 'ai', terminando no 't' seco ('váit'). Em 'von', a letra 'V' soa puramente como 'F' ('fón'). Em 'hier', solte o 'h' suave do peito e vocalize o 'r' em 'a' relaxado ('híia').\nLeia: Íst és váit fón híia?"
+  },
+  "105": {
+    "explanation": "O verbo utilizado para dobrar ou virar a esquina é 'abbiegen', que se divide em dois pedaços: a parte principal 'Biegen' fica no começo e a cauda 'ab' vai para o final da frase. A expressão 'an der Ecke' significa 'na esquina' e 'links' indica 'à esquerda'.",
+    "breakdown": [
+      {
+        "word": "Biegen Sie",
+        "meaning": "Vire você — Biegen: virar/dobrar; Sie: o senhor / a senhora / você."
+      },
+      {
+        "word": "an der Ecke",
+        "meaning": "na esquina — an der: na; Ecke: esquina."
+      },
+      {
+        "word": "links",
+        "meaning": "à esquerda"
+      },
+      {
+        "word": "ab",
+        "meaning": "pedaço que se separa do verbo virar"
+      }
+    ],
+    "pronuncia": "Em 'Biegen', puxe o 'i' longo em 'bíi-gen'. Em 'Sie', faça o 's' zumbir como 'z' de abelha ('zíi'). Em 'an der', vocalize o 'r' ('an dêea'). Em 'Ecke', aplique o golpe de glote no início (' 'ék-ke'). Em 'links', mantenha o 'i' oral limpo sem anasalar e o 'k' seco ('links'). Em 'ab', desvozea o 'b' final em 'p' seco ('ap').\nLeia: Bíi-gen zíi an dêea 'ék-ke links ap."
+  },
+  "106": {
+    "explanation": "Para dar uma instrução formal e educada, o verbo 'Gehen' (ir/caminhar) vem em primeiro lugar, seguido por 'Sie' (você/o senhor). A palavra 'geradeaus' junta 'gerade' (reto) e 'aus' (para fora), significando 'em frente / direto'.",
+    "breakdown": [
+      {
+        "word": "Gehen Sie",
+        "meaning": "Siga você / Vá — Gehen: ir/caminhar; Sie: você (formal)."
+      },
+      {
+        "word": "geradeaus",
+        "meaning": "em frente / direto — gerade: reto; aus: para fora."
+      }
+    ],
+    "pronuncia": "Em 'Gehen', a letra 'h' entre vogais é mudo esticando a vogal anterior ('gêe-en'). Em 'Sie', o 's' zumba em 'z' com 'i' longo ('zíi'). Em 'geradeaus', raspe levemente o 'r', faça o 'd' seco e aplique o golpe de glote antes da parte 'aus', pronunciando o ditongo 'au' e o 's' seco de sapo ('gue-ráa-de-'áus').\nLeia: Gêe-en zíi gue-ráa-de-'áus."
+  },
+  "107": {
+    "explanation": "A palavra para parque em alemão é 'Park', que é masculina e usa o artigo 'Der'. A preposição 'hinter' significa 'atrás de', e ao indicar onde um lugar se encontra parado, altera a forma de 'escola' para 'der Schule'.",
+    "breakdown": [
+      {
+        "word": "Der Park",
+        "meaning": "O parque — Der: o; Park: parque."
+      },
+      {
+        "word": "ist",
+        "meaning": "está / fica"
+      },
+      {
+        "word": "hinter",
+        "meaning": "atrás de"
+      },
+      {
+        "word": "der Schule",
+        "meaning": "da escola — der: da; Schule: escola."
+      }
+    ],
+    "pronuncia": "Em 'Der', vocalize o 'r' em 'a' ('dêea'). Em 'Park', corte o 'k' seco no final ('park'). Em 'ist', faça 'íst'. Em 'hinter', solte o 'h' como suspiro suave do peito e termine a sílaba '-ter' vocalizando em 'a' ('hín-ta'). Em 'der Schule', leia 'dêea shúu-le', chianndo o 'SCH' como 'ch' e sustentando o 'u' longo.\nLeia: Dêea park íst hín-ta dêea shúu-le."
+  },
+  "108": {
+    "explanation": "O alemão usa a palavra 'im' como uma redução prática de 'in dem', significando 'dentro do'. A palavra 'jetzt' significa 'agora' e apresenta o estalo 'ts' no final. O verbo 'bin' (estou) vem na segunda posição da oração.",
+    "breakdown": [
+      {
+        "word": "Ich bin",
+        "meaning": "Eu estou — Ich: eu; bin: estou."
+      },
+      {
+        "word": "jetzt",
+        "meaning": "agora"
+      },
+      {
+        "word": "im Bus",
+        "meaning": "no ônibus — im: no; Bus: ônibus."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino frontal ('ích'). Em 'bin', fale o 'i' frouxo seco sem chiar o 'b' ('bin'). Em 'jetzt', a letra 'J' soa como 'Y' de iogurte e o 'tz' termina em estalo de 'ts' seco colado no 't' ('yétst'). Em 'im Bus', leia 'im bʊs' com 'u' frouxo e 's' sibilante.\nLeia: Ích bin yétst im bʊs."
+  },
+  "109": {
+    "explanation": "A pergunta 'Quando o voo sai?' usa o verbo 'gehen' (ir), dizendo-se literalmente 'Quando vai o voo?'. A palavra 'Wann' significa 'quando', e 'Flug' é o substantivo masculino usado para 'voo'.",
+    "breakdown": [
+      {
+        "word": "Wann",
+        "meaning": "Quando"
+      },
+      {
+        "word": "geht",
+        "meaning": "vai / sai"
+      },
+      {
+        "word": "der Flug",
+        "meaning": "o voo — der: o; Flug: voo."
+      }
+    ],
+    "pronuncia": "Em 'Wann', troque o 'W' pelo som de 'V', com o 'a' oral limpo sem anasalar ('van'). Em 'geht', o 'h' é mudo prolongando o 'e' fechado e o 't' é seco ('gêet'). Em 'der', vocalize em 'a' ('dêea'). Em 'Flug', sustente o 'u' longo e desvozea a letra 'g' final em 'k' seco ('flúuk').\nLeia: Van gêet dêea flúuk?"
+  },
+  "110": {
+    "explanation": "Para expressar que não gosta de fazer uma ação, o alemão usa o verbo principal ('reise') seguido de 'nicht gerne' (não com prazer). A expressão 'mit dem Schiff' significa literalmente 'com o barco', sendo o jeito padrão de dizer 'de barco'.",
+    "breakdown": [
+      {
+        "word": "Ich reise",
+        "meaning": "Eu viajo — Ich: eu; reise: viajo."
+      },
+      {
+        "word": "nicht gerne",
+        "meaning": "não de bom grado / não gosto — nicht: não; gerne: de bom grado."
+      },
+      {
+        "word": "mit dem Schiff",
+        "meaning": "de barco / navio — mit: com; dem: o; Schiff: navio/barco."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino ('ích'). Em 'reise', raspe o 'r' e faça o 's' zumbir em 'z' ('rái-ze'). Em 'nicht', use o chiado fino ('nícht'). Em 'gerne', raspe levemente o 'r' e mantenha o 'e' neutro ('gér-ne'). Em 'mit dem', corte o 't' seco ('mit dêm'). Em 'Schiff', chie o 'SCH' como 'ch' e feche no 'f' seco ('shíf').\nLeia: Ích rái-ze nícht gér-ne mit dêm shíf."
+  },
+  "111": {
+    "explanation": "A expressão 'Gibt es' é a forma padrão em alemão para dizer 'Existe?' ou 'Tem?'. Por ser uma pergunta, o verbo vem em primeiro lugar. A palavra 'Restaurant' é vinda do francês, e a expressão 'im Hotel' significa 'no hotel'.",
+    "breakdown": [
+      {
+        "word": "Gibt es",
+        "meaning": "Tem? / Há? — Gibt: dá/existe; es: isso."
+      },
+      {
+        "word": "ein Restaurant",
+        "meaning": "um restaurante — ein: um; Restaurant: restaurante."
+      },
+      {
+        "word": "im Hotel",
+        "meaning": "no hotel — im: no; Hotel: hotel."
+      }
+    ],
+    "pronuncia": "Em 'Gibt es', corte o 't' seco no 'Gibt' ('gípt és'). Em 'ein', fale 'áin'. Em 'Restaurant', marque o 'r' raspado no início e termine suavemente na consoante oral ('res-tô-rán'). Em 'im Hotel', solte o 'h' de 'Hotel' como suspiro suave do peito ('im hô-tél').\nLeia: Gípt és áin res-tô-rán im hô-tél?"
+  },
+  "112": {
+    "explanation": "A pergunta começa com 'Wo ist' (Onde fica). O posto de turismo é chamado por uma palavra composta longa, 'Tourismusbüro', que une 'Tourismus' (turismo) com 'Büro' (escritório/posto), trazendo a vogal com trema 'ü'.",
+    "breakdown": [
+      {
+        "word": "Wo ist",
+        "meaning": "Onde fica — Wo: onde; ist: está/fica."
+      },
+      {
+        "word": "das Tourismusbüro",
+        "meaning": "o posto de turismo — das: o; Tourismus: turismo; Büro: escritório."
+      }
+    ],
+    "pronuncia": "Em 'Wo', use 'V' no lugar de 'W' ('vôo'). Em 'ist', faça 'íst'. Em 'das', use 's' sibilante ('das'). Em 'Tourismusbüro', fale 'tô-rís-mʊs-', marque o 'b' e projete os lábios em bico de 'U' dizendo 'I' para o 'ü', terminando com o 'o' bem fechado ('-bü-rôo').\nLeia: Vôo íst das tô-rís-mʊs-bü-rôo?"
+  },
+  "113": {
+    "explanation": "O verbo 'brauche' significa 'preciso de' e se conecta diretamente a 'ein Taxi' sem precisar de preposição intermediária. A palavra de cortesia 'bitte' (por favor) entra no meio da frase para fazer um pedido muito amigável.",
+    "breakdown": [
+      {
+        "word": "Ich brauche",
+        "meaning": "Eu preciso (de) — Ich: eu; brauche: preciso."
+      },
+      {
+        "word": "bitte",
+        "meaning": "por favor"
+      },
+      {
+        "word": "ein Taxi",
+        "meaning": "um táxi — ein: um; Taxi: táxi."
+      }
+    ],
+    "pronuncia": "Em 'Ich', fale o chiado fino ('ích'). Em 'brauche', raspe o 'r', use o ditongo 'au' e raspe o fundo da garganta no 'ch' pelo Ach-Laut ('bráu-rre'). Em 'bitte', faça o 'i' frouxo e o 't' seco sem chiar ('bít-te'). Em 'ein Taxi', aplique o golpe de glote no 'ein' (' 'áin ták-síi').\nLeia: Ích bráu-rre bít-te 'áin ták-síi."
+  },
+  "114": {
+    "explanation": "Em vez de dizer que o trem 'está' atrasado, os alemães dizem literalmente que o trem 'tem atraso hoje' ('hat heute Verspätung'). A palavra 'Verspätung' é o termo padrão para indicar atrasos de transportes públicos.",
+    "breakdown": [
+      {
+        "word": "Der Zug",
+        "meaning": "O trem — Der: o; Zug: trem."
+      },
+      {
+        "word": "hat",
+        "meaning": "tem"
+      },
+      {
+        "word": "heute",
+        "meaning": "hoje"
+      },
+      {
+        "word": "Verspätung",
+        "meaning": "atraso (termo usado em transportes)"
+      }
+    ],
+    "pronuncia": "Em 'Der', vocalize em 'a' ('dêea'). Em 'Zug', estale o 'z' em 'ts' e feche a letra 'g' em 'k' seco ('tsúuk'). Em 'hat', corte a seco no 't' ('hat'). Em 'heute', solte o 'h' suave e leia o 'eu' como 'oi' ('hói-te'). Em 'Verspätung', lembre-se de que o prefixo 'Ver-' soa 'fea-' com 'V' lido como 'F', o 'SP' inicial chia em 'shp', o 'ä' soa 'ê' fechado e a terminação '-ung' ressoa sem soltar a letra 'g' final ('fea-shpêe-tʊng').\nLeia: Dêea tsúuk hat hói-te fea-shpêe-tʊng."
+  },
+  "115": {
+    "explanation": "Não existe um verbo isolado em alemão para 'gostar de viajar'. A ideia é expressa juntando o verbo de viajar ('reisen') com a palavra 'gerne' (com prazer). Como é uma pergunta, o verbo 'Reist' vem para o começo da frase.",
+    "breakdown": [
+      {
+        "word": "Reist",
+        "meaning": "Viajas / Viaja"
+      },
+      {
+        "word": "du",
+        "meaning": "você"
+      },
+      {
+        "word": "gerne",
+        "meaning": "de bom grado / com prazer (indica gostar da ação)"
+      }
+    ],
+    "pronuncia": "Em 'Reist', raspe o 'r' na garganta, leia o 'ei' como 'ai' e feche no 'st' seco ('ráist'). Em 'du', use o 'd' seco sem chiar ('dʊ'). Em 'gerne', raspe levemente o 'r' e mantenha o 'e' final neutro ('gér-ne').\nLeia: Ráist dʊ gér-ne?"
+  },
+  "116": {
+    "explanation": "O verbo 'übernachten' significa especificamente 'pernoitar / passar a noite'. Para dizer 'em um hotel pequeno', o alemão adiciona pequenos encaixes no final das palavras envolvidas ('in einem kleinen Hotel').",
+    "breakdown": [
+      {
+        "word": "Ich übernachte",
+        "meaning": "Eu pernoito / fico — Ich: eu; übernachte: pernoito."
+      },
+      {
+        "word": "in einem",
+        "meaning": "em um"
+      },
+      {
+        "word": "kleinen Hotel",
+        "meaning": "hotel pequeno — kleinen: pequeno; Hotel: hotel."
+      }
+    ],
+    "pronuncia": "Em 'Ich', faça o chiado fino ('ích'). Em 'übernachte', aplique o golpe de glote no 'ü' projetando bico de 'U' com língua em 'I' (' 'üü-ba-nar-te'), vocalizando o 'r' em 'a' e raspando o fundo da garganta no 'ch'. Em 'in einem', leia 'in 'ái-nem'. Em 'kleinen Hotel', fale 'klái-nen' com 'ai' e solte o 'h' de 'Hotel' como um suspiro morno ('hô-tél').\nLeia: Ích 'üü-ba-nar-te in 'ái-nem klái-nen hô-tél."
+  },
+  "117": {
+    "explanation": "A estrutura mais comum para pedir direções até um lugar é 'Wie komme ich zum...' (Como chego eu para o...). A palavra para praia é 'Strand', que começa com as letras 'ST', trazendo o chiado característico de 'sht'.",
+    "breakdown": [
+      {
+        "word": "Wie komme ich",
+        "meaning": "Como chego eu — Wie: como; komme: venho/chego; ich: eu."
+      },
+      {
+        "word": "zum Strand",
+        "meaning": "à praia / para a praia — zum: para o; Strand: praia."
+      }
+    ],
+    "pronuncia": "Em 'Wie', a letra 'W' tem som de 'V' e o 'ie' é longo ('víi'). Em 'komme', mantenha a vogal 'o' oral limpa e aberta ('kóm-me'). Em 'ich', assopre o chiado fino ('ích'). Em 'zum', estale o 'z' em 'ts' ('tsʊm'). Em 'Strand', chie o 'ST' como 'sht' sem por 'i' antes e desvozea a letra 'd' final em 't' seco ('shtrant').\nLeia: Víi kóm-me ích tsʊm shtrant?"
+  },
+  "118": {
+    "explanation": "A palavra para ponto de ônibus em alemão é a junção perfeita de 'Bus' (ônibus) e 'Haltestelle' (parada). A expressão 'dort drüben' combina 'dort' (lá) e 'drüben' (acolá/ali), apontando para um lugar visível.",
+    "breakdown": [
+      {
+        "word": "Die Bushaltestelle",
+        "meaning": "O ponto de ônibus — Die: o/a; Bushaltestelle: parada de ônibus."
+      },
+      {
+        "word": "ist",
+        "meaning": "fica / está"
+      },
+      {
+        "word": "dort drüben",
+        "meaning": "logo ali / lá do outro lado — dort: lá; drüben: ali/acolá."
+      }
+    ],
+    "pronuncia": "Em 'Die', puxe o 'i' longo ('díi'). Em 'Bushaltestelle', fale 'bʊs-', solte o 'h' de 'halte' como suspiro suave ('-hal-te-'), e chie o 'ST' em '-shte-le' sem por 'i' antes ('bʊs-hal-te-shte-le'). Em 'ist', faça 'íst'. Em 'dort', vocalize levemente o 'r' ('dort'). Em 'drüben', monte o bico de 'U' dizendo 'I' para o 'ü' ('drüü-ben').\nLeia: Díi bʊs-hal-te-shte-le íst dort drüü-ben."
+  },
+  "119": {
+    "explanation": "Em perguntas, o verbo 'Sind' (estamos) passa para o começo da frase, seguido pela pessoa 'wir' (nós). A expressão 'am Flughafen' junta a palavra 'em' com o artigo do aeroporto, significando 'no aeroporto'.",
+    "breakdown": [
+      {
+        "word": "Sind wir",
+        "meaning": "Estamos nós? — Sind: estamos; wir: nós."
+      },
+      {
+        "word": "am Flughafen",
+        "meaning": "no aeroporto — am: no; Flughafen: aeroporto."
+      }
+    ],
+    "pronuncia": "Em 'Sind', o 'S' zumba como 'z' de abelha e o 'd' final desvozea em 't' seco ('zint'). Em 'wir', troque o 'W' por 'V' e vocalize o 'r' final em 'a' relaxado ('víia'). Em 'am Flughafen', aplique o golpe de glote em 'am' (' 'am'), feche o 'g' em 'k' em 'flúuk-' e solte o 'h' de 'hafen' em suspiro morno ('-háa-fen').\nLeia: Zint víia 'am flúuk-háa-fen?"
+  },
+  "120": {
+    "explanation": "Ao usar a expressão de desejo 'möchte' (gostaria/quero), o verbo principal da ação, que é 'besuchen' (visitar), é jogado obrigatoriamente para o finalzinho da oração em sua forma original de dicionário.",
+    "breakdown": [
+      {
+        "word": "Ich möchte",
+        "meaning": "Eu quero / gostaria — Ich: eu; möchte: gostaria."
+      },
+      {
+        "word": "Paris",
+        "meaning": "Paris"
+      },
+      {
+        "word": "besuchen",
+        "meaning": "visitar"
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino ('ích'). Em 'möchte', projete bico de 'Ó' com língua em 'É' para o 'ö' e corte seco no 't' ('mölch-te'). Em 'Paris', faça o 'r' suave na garganta e o 's' seco ('pa-ríis'). Em 'besuchen', o prefixo 'be-' é fraco ('be-'), o 's' tem som de 'z' de abelha com 'u' longo e o 'ch' raspe no fundo da garganta pelo Ach-Laut após a vogal 'u' ('be-zúu-rren').\nLeia: Ích mölch-te pa-ríis be-zúu-rren."
+  }
+}

@@ -1,0 +1,686 @@
+{
+  "421": {
+    "explanation": "Em mandarim, o raciocínio começa com quem deseja a ação (eu gostaria), seguido da ação principal de reservar e, ao final, o objeto completo descrito com detalhes. Na mente chinesa, em vez de dizer apenas 'uma mesa para quatro pessoas', a pessoa descreve a mesa diretamente como 'uma folha de mesa de quatro pessoas', usando uma palavra de contagem específica para superfícies planas como mesas.",
+    "breakdown": [
+      {
+        "word": "我想",
+        "meaning": "wǒ xiǎng — Eu gostaria de / Eu quero — wǒ: eu; xiǎng: querer / desejar."
+      },
+      {
+        "word": "预订",
+        "meaning": "yùdìng — Reservar / Fazer uma reserva — yù: antecipado; dìng: fixar / decidir."
+      },
+      {
+        "word": "一张",
+        "meaning": "yì zhāng — Uma (unidade para superfícies planas como mesas) — yì: um; zhāng: termo de contagem para objetos planos."
+      },
+      {
+        "word": "四人桌",
+        "meaning": "sì rén zhuō — Mesa para quatro pessoas — sì: quatro; rén: pessoa; zhuō: mesa."
+      }
+    ],
+    "pronuncia": "Em 'wǒ xiǎng', por ter dois tons baixos seguidos, o primeiro sobe rápido como pergunta 'uó' e o segundo mergulha grave em 'xiǎng', esticando os dentes em um sorriso. Em 'yùdìng', dê dois golpes secos e enfáticos para baixo, sem soltar ar. Para 'yì zhāng', o numeral cai firme no 4º tom em 'yì' e 'zhāng' é sustentado no topo da voz com a língua enrolada para trás. Termine em 'sì rén zhuō' fazendo 'tsì' seco com os dentes fechados, suba em 'jén' enrolando a língua para trás e sustente a nota alta em 'djuō'.\nLeia: uó-xiǎng yǜ-dìng yì-djuāng tsì-jén-djuō."
+  },
+  "422": {
+    "explanation": "No mandarim, a ordem lógica coloca o local primeiro e depois o que existe nele. Os nativos pensam literalmente 'no menu tem prato vegetariano?' em vez de perguntar 'tem algo vegetariano no cardápio?'. Para transformar essa afirmação direta em pergunta, basta acrescentar a partícula interrogativa no final da frase sem alterar nenhuma palavra.",
+    "breakdown": [
+      {
+        "word": "菜单上",
+        "meaning": "càidān shàng — No cardápio — cài: prato; dān: lista; shàng: em cima / sobre."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Haver."
+      },
+      {
+        "word": "素菜",
+        "meaning": "sùcài — Prato vegetariano — sù: vegetariano / simples; cài: prato / comida."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta (equivale ao ponto de interrogação falado)."
+      }
+    ],
+    "pronuncia": "Comece em 'càidān shàng' dando um estalo seco com explosão de ar em 'tsài', feche 'dān' no 1º tom colando a língua no dente, e mande 'chàng' caindo forte com a língua enrolada no céu da boca. Em 'yǒu', mergulhe a voz grave no som de 'yôu'. Para 'sùcài', solte o 's' limpo caindo seco em 'sù' e solte um jato potente de ar no estalo 'tsài'. Finalize no tom neutro e leve 'ma'.\nLeia: tsài-dān chàng yôu sù-tsài ma."
+  },
+  "423": {
+    "explanation": "Para fazer comparações em mandarim, a estrutura coloca o primeiro item, a palavra de comparação (que significa 'em relação a'), o segundo item e por fim a qualidade. A mente chinesa pensa literalmente 'Eu sinto que o bife em relação ao frango é mais gostoso'. A palavra de sentir/achar traz junto uma terminação neutra que deve soar leve e sem força.",
+    "breakdown": [
+      {
+        "word": "我觉得",
+        "meaning": "wǒ juéde — Eu acho / Eu sinto que — wǒ: eu; juéde: achar / sentir (soa 'djüé-da')."
+      },
+      {
+        "word": "牛排",
+        "meaning": "niúpái — Bife de boi — niú: boi; pái: bife / filete."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Em comparação a / Do que."
+      },
+      {
+        "word": "鸡肉",
+        "meaning": "jīròu — Carne de frango — jī: galinha; ròu: carne."
+      },
+      {
+        "word": "好吃",
+        "meaning": "hǎochī — Gostoso / Saboroso — hǎo: bom; chī: comer."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'wǒ' e suba 'djüé' com dentes em sorriso puxado para 'ü', terminando no som leve 'da' com a boca relaxada, sendo proibido falar 'dê'. Em 'niúpái', passe pela vogal oculta 'iôu' subindo a voz e solte um jato de ar forte em 'pái'. Em 'bǐ', mergulhe no grave sem ar. Em 'jīròu', estale 'djī' no sorriso sem ar no topo e suba 'jòu' enrolando a língua para trás com vibração de voz. Em 'hǎochī', raspe a garganta em 'rrǎo' no 3º tom e sustente 'tchī' plano soprando ar com a língua curvada.\nLeia: uǒ djüé-da niôu-pái bǐ dji-jòu rrǎo-tchī."
+  },
+  "424": {
+    "explanation": "Ao pedir algo educadamente, os nativos colocam a palavra de cortesia (por favor) no início, seguida do direcionamento do favor (para nós), a ação de servir e o objeto. A expressão chinesa usa 'água morna/temperatura ambiente' como padrão para servir, e a frase termina com um agradecimento natural, dobrando a palavra de agradecer e deixando o segundo pedaço leve.",
+    "breakdown": [
+      {
+        "word": "请",
+        "meaning": "qǐng — Por favor / Convidar."
+      },
+      {
+        "word": "给我们",
+        "meaning": "gěi wǒmen — Para nós — gěi: dar / para (soa 'géi'); wǒmen: nós."
+      },
+      {
+        "word": "倒点",
+        "meaning": "dào diǎn — Servir um pouco de — dào: despejar / servir; diǎn: um pouco."
+      },
+      {
+        "word": "温水",
+        "meaning": "wēnshuǐ — Água morna ou em temperatura ambiente — wēn: morno; shuǐ: água."
+      },
+      {
+        "word": "谢谢",
+        "meaning": "xièxie — Obrigado / Agradeço."
+      }
+    ],
+    "pronuncia": "Estique os cantos da boca em sorriso para dar um sopro de ar agudo em 'Tchǐng' no 3º tom. Em 'gěi wǒmen', a sequência de tons graves faz a primeira palavra subir como 'géi', seguida de 'uǒ' grave e 'man' leve. Para 'dào diǎn', dê um golpe seco em 'dào' e afunde em 'diǎn' colando a língua nos dentes. Em 'wēnshuǐ', feche 'uēn' no dente e enrole a língua para trás soltando a vogal oculta 'chuěi'. Finalize em 'xièxie' no sorriso esticado com queda seca no primeiro e o segundo leve.\nLeia: Tchǐng géi uǒ-man dào diǎn uēn-chuěi, xiè-xie."
+  },
+  "425": {
+    "explanation": "Na construção chinesa para perguntar o modo de preparo de um prato, o ingrediente principal é colocado em destaque bem no início como o tema da frase. A estrutura pensa literalmente 'O ovo de galinha, você quer como fazer?'. Essa ordem direto ao ponto é a maneira mais natural de cozinhar ou pedir comida na China.",
+    "breakdown": [
+      {
+        "word": "鸡蛋",
+        "meaning": "jīdàn — Ovo de galinha — jī: galinha; dàn: ovo."
+      },
+      {
+        "word": "你想",
+        "meaning": "nǐ xiǎng — Você quer / Você gostaria — nǐ: você (soa 'ní'); xiǎng: desejar / querer."
+      },
+      {
+        "word": "怎么做",
+        "meaning": "zěnme zuò — Como fazer / De que maneira preparar — zěnme: como (soa 'zǎn-ma'); zuò: fazer."
+      }
+    ],
+    "pronuncia": "Em 'jīdàn', dê um estalo seco com a boca em sorriso em 'djī' no 1º tom e caia seco em 'dàn' colando a língua no dente. Na sequência 'nǐ xiǎng', como são dois 3º tons, o primeiro sobe como pergunta 'ní' e o segundo afunde grave em 'xiǎng' no sorriso. Em 'zěnme zuò', faça o estalo dental 'zǎn' e solte 'ma' leve no som gutural aberto, sem dizer 'mê', finalizando em 'tsuò' com golpe seco sem ar.\nLeia: dji-dàn ní-xiǎng zǎn-ma tsuò."
+  },
+  "426": {
+    "explanation": "Para expressar alergias em mandarim, usa-se o padrão 'Eu em relação a [alérgeno] sou alérgico'. O item alérgico fica ensanduichado entre a palavra de direcionamento e a palavra de alergia. Os nativos usam uma palavra que junta as ideias de 'ultrapassar' e 'sensibilidade' para indicar o estado de alérgico.",
+    "breakdown": [
+      {
+        "word": "我对",
+        "meaning": "wǒ duì — Eu em relação a / Para mim — wǒ: eu; duì: em relação a / para."
+      },
+      {
+        "word": "坚果",
+        "meaning": "jiānguǒ — Nozes / Castanhas — jiān: duro / firme; guǒ: fruta / semente."
+      },
+      {
+        "word": "和",
+        "meaning": "hé — E / Junto de (soa 'rra')."
+      },
+      {
+        "word": "海鲜",
+        "meaning": "hǎixiān — Frutos do mar — hǎi: mar; xiān: fresco."
+      },
+      {
+        "word": "过敏",
+        "meaning": "guòmǐn — Ser alérgico / Alergia — guò: passar / exceder; mǐn: sensível."
+      }
+    ],
+    "pronuncia": "Afunde a voz no grave em 'wǒ' e caia seco sem ar em 'duêi'. Em 'jiānguǒ', estale o 'dj' no sorriso plano em 'djiēn' com corte no dente e mergulhe em 'guǒ'. Em 'hé', use o som gutural aberto 'rra' subindo a voz no 2º tom, sem falar 'rê'. Em 'hǎixiān', raspe a garganta em 'rrǎi' no grave e abra um sorriso agudo terminando no dente em 'xiēn'. Termine em 'guòmǐn' caindo em 'guò' e travando a língua no dente em 'mǐn'.\nLeia: uǒ duêi djiēn-guǒ rra rrǎi-xiēn guò-mǐn."
+  },
+  "427": {
+    "explanation": "A frase estrutura o sujeito conectando o estabelecimento ao seu serviço por meio de uma partícula de posse que atua como um 'do/da'. Na mente chinesa, a frase se organiza como 'Esta loja de restaurante da o serviço é extremamente bom'. O verbo 'ser' é omitido antes da palavra de intensidade com a qualidade.",
+    "breakdown": [
+      {
+        "word": "这家餐厅",
+        "meaning": "zhè jiā cāntīng — Este restaurante — zhè: este; jiā: termo de contagem para lojas; cāntīng: restaurante."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação / posse (soa 'da')."
+      },
+      {
+        "word": "服务",
+        "meaning": "fúwù — Serviço / Atendimento — fú: servir; wù: negócio / tarefa."
+      },
+      {
+        "word": "非常好",
+        "meaning": "fēicháng hǎo — Excelente / Extremamente bom — fēicháng: muito / extraordinário; hǎo: bom."
+      }
+    ],
+    "pronuncia": "Em 'zhè jiā cāntīng', caia seco com a língua curvada em 'djè', estale 'djiā' no sorriso, solte ar forte no 'ts' de 'tsān' colando no dente e sustente 'tīng' no 1º tom. Em 'de', pronuncie o som leve e gutural 'da', proibido dizer 'dê'. Para 'fúwù', suba no 2º tom em 'fú' e caia seco em 'uù'. Em 'fēicháng hǎo', sustente 'fēn' alto, suba 'tcháng' com a língua enrolada e ressonância no fundo, e afunde grave raspando a garganta em 'rrǎo'.\nLeia: djè djiā tsān-tīng da fú-uù fēn-tcháng rrǎo."
+  },
+  "428": {
+    "explanation": "Para perguntar sobre o prato do dia, os chineses dizem 'Vocês têm o prato de característica de hoje?'. A palavra que indica a data vem antes da palavra de característica, todas conectadas pela partícula de posse que amarra o grupo de ideias antes do prato em si, finalizando com a partícula de pergunta.",
+    "breakdown": [
+      {
+        "word": "你们",
+        "meaning": "nǐmen — Vocês — nǐ: você; men: indicador de plural."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Haver."
+      },
+      {
+        "word": "今天的",
+        "meaning": "jīntiān de — De hoje — jīntiān: hoje; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "特色菜",
+        "meaning": "tèsè cài — Prato especial / Especialidade da casa — tèsè: característica especial; cài: prato."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'nǐmen', afunde a voz em 'nǐ' e solte 'man' leve. Em 'yǒu', faça o tom grave em 'yôu'. Para 'jīntiān de', estale o 'dj' no sorriso plano em 'djin', mande 'tiēn' com sopro forte travando no dente e feche na partícula leve 'da', sem falar 'dê'. Em 'tèsè cài', solte um sopro forte em 'tè', passe pelo 's' de 'sè' e dê um golpe com explosão de ar no 'ts' de 'tsài'. Finalize no 'ma' leve.\nLeia: nǐ-man yôu djin-tiēn da tè-sè tsài ma."
+  },
+  "429": {
+    "explanation": "Em mandarim, para dizer que não gosta de comida muito apimentada, a estrutura nega primeiro o verbo de gostar e depois qualifica o tipo de comida. A qualidade 'apimentado demais' recebe a partícula de ligação para funcionar como um adjetivo que descreve o prato que vem logo depois.",
+    "breakdown": [
+      {
+        "word": "我不喜欢",
+        "meaning": "wǒ bù xǐhuān — Eu não gosto — wǒ: eu; bù: não; xǐhuān: gostar (xǐ: gostar; huān: alegre)."
+      },
+      {
+        "word": "太辣的",
+        "meaning": "tài là de — Apimentado demais / Muito picante — tài: demais; là: picante; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "菜",
+        "meaning": "cài — Prato / Comida."
+      }
+    ],
+    "pronuncia": "Em 'wǒ bù xǐhuān', afunde a voz em 'uǒ', dê um golpe seco em 'bù', mergulhe em 'xǐ' no sorriso e sustente 'rruān' alto travando a língua nos dentes da frente. Em 'tài là de', solte ar forte no 't' de 'tài', caia seco em 'là' e termine na partícula neutra gutural 'da', estritamente proibido dizer 'dê'. Finalize em 'cài' dando um golpe enfático com estalo de 'ts' e explosão de ar.\nLeia: uǒ bù xǐ-rruān tài là da tsài."
+  },
+  "430": {
+    "explanation": "Para propor dividir a conta, a linguagem falada chinesa coloca a palavra de permissão 'podemos', seguida da ação de separar e do ato de fechar a conta. A expressão para fechar a conta vem da ideia literal de dar um nó ou liquidar um livro de registros contábeis.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: indicador de plural."
+      },
+      {
+        "word": "可以",
+        "meaning": "kěyǐ — Poder / Ser possível — kěyǐ (soa 'ké-yi')."
+      },
+      {
+        "word": "分开",
+        "meaning": "fēnkāi — Separadamente / Dividir — fēn: separar; kāi: abrir."
+      },
+      {
+        "word": "结账",
+        "meaning": "jiézhàng — Pagar a conta / Acertar — jié: amarrar/liquidar; zhàng: conta/registro."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'wǒmen', afunde a voz em 'uǒ' e deixe 'man' leve. Em 'kěyǐ', a sequência de tons graves faz a primeira palavra subir como 'ké' e a segunda mergulhar leve em 'yi'. Para 'fēnkāi', sustente 'fēn' no alto cortando no dente e solte ar forte no 'k' de 'kāi'. Em 'jiézhàng', suba a voz com o sorriso de 'djié' e caia seco em 'djàng' com a língua virada para trás. Finalize na gota leve 'ma'.\nLeia: uǒ-man ké-yi fēn-kāi djié-djàng ma."
+  },
+  "431": {
+    "explanation": "Ao pedir a recomendação de um prato principal, o prato é antecipado como o foco principal da conversa. A mente chinesa diz 'Prato principal, você tem qual recomendação?'. A palavra para 'o que/qual' soa de maneira aberta e informal, ligando o verbo de ter à ação de recomendar.",
+    "breakdown": [
+      {
+        "word": "主菜",
+        "meaning": "zhǔcài — Prato principal — zhǔ: principal; cài: prato."
+      },
+      {
+        "word": "你有",
+        "meaning": "nǐ yǒu — Você tem — nǐ: você (soa 'ní'); yǒu: ter."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Qual — shénme (soa estritamente 'chán-ma')."
+      },
+      {
+        "word": "推荐",
+        "meaning": "tuījiàn — Recomendação / Indicação — tuī: empurrar; jiàn: apresentar."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'zhǔcài', mergulhe a voz com a língua curvada para trás em 'djǔ' e caia seco em 'tsài' com sopro forte. Em 'nǐ yǒu', faça 'ní' subindo a voz e 'yôu' afundando no grave. Para 'shénme', fale estritamente 'chán-ma' subindo o tom em 'chán' com a língua atrás e deixando 'ma' frouxo, sem pronunciar 'chên-mê'. Em 'tuījiàn', use a vogal oculta 'tuêi' no 1º tom e caia seco em 'djièn' no sorriso colando no dente. Termine em 'ma'.\nLeia: djǔ-tsài ní yôu chán-ma tuêi-djièn ma."
+  },
+  "432": {
+    "explanation": "Para expressar que a comida está um pouco fora do ponto do seu gosto, a estrutura insere o ponto de vista ('para mim') logo após o sujeito principal. A frase constrói o pensamento como 'Esta sopa para mim tem um pouquinho de salgada', suavizando o tom da reclamação ao usar o termo de quantidade leve.",
+    "breakdown": [
+      {
+        "word": "这汤",
+        "meaning": "zhè tāng — Esta sopa — zhè: este; tāng: sopa."
+      },
+      {
+        "word": "对我来说",
+        "meaning": "duì wǒ lái shuō — Para mim / No meu ponto de vista — duì: para/em relação a; wǒ: eu; lái shuō: no que diz respeito."
+      },
+      {
+        "word": "有一点",
+        "meaning": "yǒu yīdiǎn — Tem um pouco / Está um pouco — yǒu: ter; yīdiǎn: um pouco (soa 'yì-diěr')."
+      },
+      {
+        "word": "咸",
+        "meaning": "xián — Salgado."
+      }
+    ],
+    "pronuncia": "Em 'zhè tāng', dê um golpe seco em 'djè' enrolando a língua para trás e sustente 'tāng' no topo soltando um jato forte de ar. Em 'duì wǒ lái shuō', caia seco em 'duêi', mergulhe em 'uǒ', suba em 'lái' e sustente 'chuō' no alto com a língua enrolada. Para 'yǒu yīdiǎn', afunde em 'yôu', dê o golpe em 'yì' e faça o encaixe leve 'diěr'. Em 'xián', suba a voz no sorriso espalmado terminando no dente em 'xién'.\nLeia: djè tāng duêi uǒ lái chuō yôu yì-diěr xién."
+  },
+  "433": {
+    "explanation": "Quando uma ação já foi concluída, a ordem em mandarim coloca a palavra de tempo 'já' antes do verbo, e une ao verbo uma terminação de término acompanhada da partícula de mudança de estado. A ideia literal é 'Eu já comi até acabar'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "已经",
+        "meaning": "yǐjīng — Já — yǐ: já; jīng: passar por."
+      },
+      {
+        "word": "吃完",
+        "meaning": "chī wán — Terminar de comer — chī: comer; wán: terminar / acabar."
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de ação concluída (soa 'la')."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz grave em 'wǒ'. Em 'yǐjīng', mergulhe a voz em 'yǐ' e sustente 'djīng' reto no topo com os cantos da boca em sorriso tenso. Para 'chī wán', sustente 'tchī' alto com a língua enrolada para trás soltando ar, e suba 'uán' no 2º tom com corte no dente. Termine na partícula neutra frouxa 'la' com som gutural, proibido dizer 'lê'.\nLeia: uǒ yǐ-djīng tchī uán la."
+  },
+  "434": {
+    "explanation": "Ao perguntar se o cliente está pronto para pedir, o garçom coloca o momento atual ('agora') bem no começo, seguido da ideia de 'estar pronto', o ato de pedir a comida e a partícula final de confirmação de mudança combinada com pergunta.",
+    "breakdown": [
+      {
+        "word": "你们",
+        "meaning": "nǐmen — Vocês — nǐ: você; men: indicador de plural."
+      },
+      {
+        "word": "现在",
+        "meaning": "xiànzài — Agora / Neste momento — xiàn: presente; zài: estar."
+      },
+      {
+        "word": "准备好",
+        "meaning": "zhǔnbèi hǎo — Estar pronto / Preparado — zhǔn: preparar; bèi: aprontar; hǎo: bom / concluído."
+      },
+      {
+        "word": "点菜",
+        "meaning": "diǎncài — Pedir a comida / Fazer o pedido — diǎn: escolher/pedir; cài: prato."
+      },
+      {
+        "word": "了吗",
+        "meaning": "le ma — Já? — le: partícula de ação concluída (soa 'la'); ma: partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'nǐmen', mergulhe em 'nǐ' e solte 'man' frouxo. Em 'xiànzài', dê dois golpes secos: 'xièn' no sorriso tenso e 'tsài' com o estalo dos dentes da frente. Para 'zhǔnbèi hǎo', use a vogal oculta 'djuǎn' com a língua enrolada, caia seco em 'bèi' e raspe a garganta no grave em 'rrǎo'. Em 'diǎncài', afunde em 'diǎn' colando a língua no dente e caia seco em 'tsài' com sopro. Termine na sequência leve 'la ma'.\nLeia: nǐ-man xièn-tsài djuǎn-bèi rrǎo diǎn-tsài la ma."
+  },
+  "435": {
+    "explanation": "Para solicitar uma localização específica de mesa, os chineses juntam os verbos de querer e desejar, seguidos da quantidade de mesas e da característica da mesa antes do nome do móvel. Literalmente pensa-se 'Eu quero uma folha de encostada na janela mesa'.",
+    "breakdown": [
+      {
+        "word": "我想要",
+        "meaning": "wǒ xiǎng yào — Eu gostaria de / Eu quero — wǒ: eu; xiǎng: desejar; yào: querer."
+      },
+      {
+        "word": "一张",
+        "meaning": "yì zhāng — Uma (unidade para mesas) — yì: um (soa 'yì'); zhāng: termo de contagem para superfícies."
+      },
+      {
+        "word": "靠窗的",
+        "meaning": "kàochuāng de — Perto da janela — kào: encostado/próximo; chuāng: janela; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "桌子",
+        "meaning": "zhuōzi — Mesa — zhuō: mesa; zi: sufixo neutro (soa 'tsi')."
+      }
+    ],
+    "pronuncia": "Em 'wǒ xiǎng yào', a sequência de tons graves faz a primeira palavra subir como 'uó', 'xiǎng' afundar grave e 'iào' cair seco no 4º tom. Em 'yì zhāng', dê o golpe seco em 'yì' e sustente 'djuāng' alto com a língua virada para trás. Em 'kàochuāng de', solte ar forte em 'kào', enrole a língua soprando ar em 'tchuāng' e feche no som leve 'da', sem falar 'dê'. Termine em 'djuō-tsi' sustendo o tom alto e soltando o zumbido leve.\nLeia: uó-xiǎng iào yì-djuāng kào-tchuāng da djuō-tsi."
+  },
+  "436": {
+    "explanation": "Para expressar um superlativo com entusiasmo sobre algo que já experimentou, o mandarim estrutura a frase como 'Este é o mais gostoso bolo que eu já comi'. O elemento que marca a experiência passada vem grudado no verbo de comer, e o marcador de superlativo qualifica a palavra 'gostoso' antes da partícula de ligação.",
+    "breakdown": [
+      {
+        "word": "这是",
+        "meaning": "zhè shì — Este é — zhè: este; shì: ser."
+      },
+      {
+        "word": "我吃过",
+        "meaning": "wǒ chīguo — Que eu já comi — wǒ: eu; chī: comer; guo: partícula de experiência passada (soa 'guô')."
+      },
+      {
+        "word": "最好吃的",
+        "meaning": "zuì hǎochī de — O mais gostoso / O mais delicioso — zuì: o mais; hǎochī: gostoso; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "蛋糕",
+        "meaning": "dàngāo — Bolo — dàn: ovo; gāo: bolo/massa."
+      }
+    ],
+    "pronuncia": "Em 'zhè shì', dê dois golpes secos e firmes com a língua curvada para trás no céu da boca. Em 'wǒ chīguo', afunde em 'uǒ', sustente 'tchī' alto com a língua enrolada e deixe 'guô' leve. Para 'zuì hǎochī de', dê o golpe em 'tsuêi', raspe a garganta no grave em 'rrǎo', sustente 'tchī' alto e termine no som frouxo 'da', estritamente proibido dizer 'dê'. Finalize em 'dàngāo' caindo em 'dàn' no dente e sustentando 'gāo' no topo sem ar.\nLeia: djè chì uǒ tchī-guô tsuêi rrǎo-tchī da dàn-gāo."
+  },
+  "437": {
+    "explanation": "Ao perguntar se há suco natural disponível, a expressão chinesa junta a ideia de 'espremido na hora' com 'suco de fruta'. A estrutura é direta: 'Vocês têm espremido na hora suco de fruta?', usando a partícula interrogativa tradicional no fim.",
+    "breakdown": [
+      {
+        "word": "你们",
+        "meaning": "nǐmen — Vocês — nǐ: você; men: indicador de plural."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Haver."
+      },
+      {
+        "word": "鲜榨",
+        "meaning": "xiānzhà — Espremido na hora / Fresco — xiān: fresco; zhà: espremer / prensar."
+      },
+      {
+        "word": "果汁",
+        "meaning": "guǒzhī — Suco de fruta — guǒ: fruta; zhī: suco / caldo."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'nǐmen', afunde a voz em 'nǐ' e solte 'man' leve. Em 'yǒu', faça o mergulho grave em 'yôu'. Para 'xiānzhà', sustente 'xiēn' alto no sorriso colando no dente e dê um golpe seco em 'djà' com a língua enrolada para trás sem soltar ar. Em 'guǒzhī', afunde a voz no 3º tom em 'guǒ' e sustente 'djī' plano no topo com a língua virada para trás. Termine na partícula leve 'ma'.\nLeia: nǐ-man yôu xiēn-djà guǒ-djī ma."
+  },
+  "438": {
+    "explanation": "Para negar a fome no momento, o advérbio de tempo vem logo no início, seguido da negação modificada pelo advérbio de intensidade. A palavra de negação muda seu tom original para um tom ascendente de pergunta porque a palavra seguinte (demais/muito) tem tom descendente seco.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "现在",
+        "meaning": "xiànzài — Agora / Neste momento — xiàn: presente; zài: estar."
+      },
+      {
+        "word": "不太",
+        "meaning": "bú tài — Não muito / Não demasiado — bù: não (soa 'bú'); tài: demais."
+      },
+      {
+        "word": "饿",
+        "meaning": "è — Com fome / Ter fome."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz grave em 'wǒ'. Em 'xiànzài', dê dois golpes secos para baixo: 'xièn' no sorriso tenso e 'tsài' com o estalo dos dentes da frente. Na sequência 'bù tài', a palavra de negação muda obrigatoriamente para o tom ascendente de pergunta 'bú' antes da queda seca de 'tài', que leva sopro de ar. Finalize em 'è' com um tom seco e gutural lá no fundo da garganta.\nLeia: uǒ xièn-tsài bú-tài è."
+  },
+  "439": {
+    "explanation": "Para descrever a satisfação com a refeição da noite, a estrutura coloca o sujeito 'nós', o momento 'hoje à noite', o verbo 'comer' acompanhado da partícula de modo que descreve como a ação aconteceu, e o estado de espírito 'muito feliz/satisfeito'.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: indicador de plural."
+      },
+      {
+        "word": "今晚",
+        "meaning": "jīnwǎn — Hoje à noite / O jantar de hoje — jīn: atual; wǎn: noite."
+      },
+      {
+        "word": "吃得",
+        "meaning": "chī de — Comer de forma que / A ação de comer (soa 'tchī da')."
+      },
+      {
+        "word": "很开心",
+        "meaning": "hěn kāixīn — Muito feliz / Muito satisfeito — hěn: muito; kāixīn: alegre/feliz."
+      }
+    ],
+    "pronuncia": "Em 'wǒmen', afunde em 'uǒ' e solte 'man' frouxo. Em 'jīnwǎn', sustente 'djin' no topo com o sorriso tenso e afunde em 'uǎn' colando a língua no dente. Para 'chī de', sustente 'tchī' alto com a língua enrolada para trás e solte o som gutural leve 'da', sendo estritamente proibido falar 'dê'. Em 'hěn kāixīn', raspe a garganta em 'rrěn' cortando no dente, solte ar forte em 'kāi' e abra o sorriso em 'xin'.\nLeia: uǒ-man djin-uǎn tchī da rrěn kāi-xin."
+  },
+  "440": {
+    "explanation": "Ao perguntar se aceita cartão de crédito, a língua falada reduz a frase ao essencial: a permissão 'pode', o verbo 'passar/raspar' e o nome do objeto 'cartão de crédito'. A mente chinesa diz literalmente 'Pode passar cartão de crédito?' sem necessidade de colocar o sujeito.",
+    "breakdown": [
+      {
+        "word": "可以",
+        "meaning": "kěyǐ — Poder / Ser possível — kěyǐ (soa 'ké-yi')."
+      },
+      {
+        "word": "刷",
+        "meaning": "shuā — Passar (cartão) / Raspar."
+      },
+      {
+        "word": "信用卡",
+        "meaning": "xìnyòngkǎ — Cartão de crédito — xìn: confiança; yòng: usar; kǎ: cartão."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'kěyǐ', como são dois 3º tons seguidos, a primeira palavra sobe obrigatoriamente como pergunta 'ké' e a segunda afunde suave em 'yi'. Em 'shuā', projete o som alto e plano enrolando a ponta da língua para trás no céu da boca. Para 'xìnyòngkǎ', dê o golpe seco em 'xin' no sorriso, caia em 'yòng' no fundo e mergulhe em 'kǎ' soltando ar. Termine no 'ma' leve.\nLeia: ké-yi chuā xin-yòng-kǎ ma."
+  },
+  "441": {
+    "explanation": "Para relatar que o atendimento cometeu um esquecimento, a ordem das palavras coloca o garçom no início, o verbo esquecer com a partícula de ação concluída, o direcionamento 'para nós' e a ação de trazer/servir as bebidas à mesa.",
+    "breakdown": [
+      {
+        "word": "服务员",
+        "meaning": "fúwùyuán — Garçom / Atendente — fú: servir; wù: tarefa; yuán: funcionário (soa 'fú-uù-yüén')."
+      },
+      {
+        "word": "忘了",
+        "meaning": "wàng le — Esqueceu — wàng: esquecer; le: partícula de ação concluída (soa 'la')."
+      },
+      {
+        "word": "给我们",
+        "meaning": "gěi wǒmen — Para nós — gěi: dar/para (soa 'géi'); wǒmen: nós."
+      },
+      {
+        "word": "上",
+        "meaning": "shàng — Servir / Trazer à mesa / Subir."
+      },
+      {
+        "word": "饮料",
+        "meaning": "yǐnliào — Bebidas — yǐn: beber; liào: ingrediente/material."
+      }
+    ],
+    "pronuncia": "Em 'fúwùyuán', suba 'fú', caia seco em 'uù' e suba 'yüén' com bico nos lábios e corte no dente. Em 'wàng le', caia seco em 'uàng' e solte o som neutro 'la', sem falar 'lê'. Em 'gěi wǒmen', faça 'géi' subindo a voz, 'uǒ' no grave e 'man' frouxo. Para 'shàng', dê um golpe seco com a língua curvada para trás. Finalize em 'yǐnliào' afundando em 'yǐn' no dente e caindo em 'liào' com a vogal oculta 'iôu'.\nLeia: fú-uù-yüén uàng la géi uǒ-man chàng yǐn-liào."
+  },
+  "442": {
+    "explanation": "Para pedir a mesma escolha de outra pessoa na mesa, a ordem coloca 'eu', a conjunção 'e', 'meu amigo', o verbo 'querer' e o adjetivo 'igual' acompanhado da partícula de ligação. Os chineses pensam literalmente 'Eu e meu amigo queremos do mesmo tipo'.",
+    "breakdown": [
+      {
+        "word": "我和我朋友",
+        "meaning": "wǒ hé wǒ péngyou — Eu e meu amigo — wǒ: eu; hé: e (soa 'rrá'); péngyou: amigo."
+      },
+      {
+        "word": "要",
+        "meaning": "yào — Querer / Pedir."
+      },
+      {
+        "word": "一样的",
+        "meaning": "yīyàng de — A mesma coisa / Igual — yīyàng: igual (soa 'yí-yàng'); de: partícula de ligação (soa 'da')."
+      }
+    ],
+    "pronuncia": "Em 'wǒ hé wǒ péngyou', afunde em 'uǒ', suba a voz no tom gutural 'rrá' sem falar 'rê', mergulhe em 'uǒ', suba 'péng' e solte 'you' leve. Em 'yào', dê um golpe seco no 4º tom em 'iào'. Para 'yīyàng de', a palavra de número sobe no 2º tom como 'yí' antes da queda seca de 'yàng', finalizando no som leve gutural 'da', sendo estritamente proibido dizer 'dê'.\nLeia: uǒ rrá uǒ péng-you iào yí-yàng da."
+  },
+  "443": {
+    "explanation": "Para saber se a gorjeta está embutida no valor total, a estrutura coloca o local ('dentro do preço'), o verbo 'incluir', o objeto 'gorjeta' e a partícula interrogativa no final. Na visão chinesa, pergunta-se 'Preço dentro inclui gorjeta?'.",
+    "breakdown": [
+      {
+        "word": "价格里",
+        "meaning": "jiàgé lǐ — Dentro do preço — jiàgé: preço (jià: valor; gé: norma); lǐ: dentro."
+      },
+      {
+        "word": "包含",
+        "meaning": "bāohán — Incluir / Conter — bāo: embrulhar; hán: conter."
+      },
+      {
+        "word": "小费",
+        "meaning": "xiǎofèi — Gorjeta — xiǎo: pequeno; fèi: custo/gasto."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'jiàgé lǐ', dê um golpe seco no sorriso em 'djià', use o som gutural aberto 'gá' sem voz e afunde a voz no grave em 'lǐ'. Em 'bāohán', sustente 'bāo' alto sem soltar ar e suba 'rrán' raspando a garganta e travando no dente. Para 'xiǎofèi', mergulhe em 'xiǎo' no sorriso e caia seco na vogal oculta 'fèi'. Termine na gota leve 'ma'.\nLeia: djià-gá lǐ bāo-rrán xiǎo-fèi ma."
+  },
+  "444": {
+    "explanation": "Ao perguntar o preço de um item específico, o mandarim coloca a descrição completa do objeto no início ('uma garrafa grande de água') e encerra com a expressão fixa para 'quanto custa', que significa literalmente 'quanto dinheiro'.",
+    "breakdown": [
+      {
+        "word": "一大瓶水",
+        "meaning": "yī dà píng shuǐ — Uma garrafa grande de água — yī: um (soa 'yí'); dà: grande; píng: garrafa; shuǐ: água."
+      },
+      {
+        "word": "多少钱",
+        "meaning": "duōshao qián — Quanto custa / Quanto dinheiro — duō: muito; shao: pouco (soa 'chao'); qián: dinheiro."
+      }
+    ],
+    "pronuncia": "Em 'yī dà píng shuǐ', o numeral vira 2º tom ascendente 'yí' antes do 4º tom 'dà', suba 'píng' no 2º tom e mergulhe em 'chuěi' enrolando a língua para trás com a vogal oculta 'uêi'. Em 'duōshao qián', sustente 'duō' no topo, solte 'chao' leve e suba 'tchién' com explosão de ar no sorriso espalmado, travando a língua nos dentes da frente.\nLeia: yí dà píng chuěi duō-chao tchién."
+  },
+  "445": {
+    "explanation": "Ao expor uma restrição alimentar por motivo religioso, o raciocínio chinês abre a frase com a causa ('porque motivos religiosos'), seguida da pessoa e da ação negativa de comer o alimento. A expressão pensa literalmente 'Por causa de religião razão, eu não como carne de porco'.",
+    "breakdown": [
+      {
+        "word": "因为",
+        "meaning": "yīnwèi — Porque / Devido a — yīn: causa; wèi: para/por."
+      },
+      {
+        "word": "宗教原因",
+        "meaning": "zōngjiào yuányīn — Motivos religiosos — zōngjiào: religião; yuányīn: causa/motivo."
+      },
+      {
+        "word": "我不吃",
+        "meaning": "wǒ bù chī — Eu não como — wǒ: eu; bù: não; chī: comer."
+      },
+      {
+        "word": "猪肉",
+        "meaning": "zhūròu — Carne de porco — zhū: porco; ròu: carne."
+      }
+    ],
+    "pronuncia": "Em 'yīnwèi', trave 'yīn' no dente e caia seco em 'uèi'. Em 'zōngjiào yuányīn', faça 'tsōng' no fundo da garganta, caia seco em 'djiào', suba 'yüén' com bico nos lábios travando no dente e sustente 'yīn' no topo. Em 'wǒ bù chī', mergulhe em 'uǒ', dê o golpe em 'bù' e sustente 'tchī' alto com a língua enrolada soltando ar. Termine em 'zhūròu' sustentando 'djū' alto e subindo 'jòu' com a língua virada para trás.\nLeia: yīn-uèi tsōng-djiào yüén-yīn uǒ bù tchī djū-jòu."
+  },
+  "446": {
+    "explanation": "Para pedir uma reposição de alimento de forma delicada, usa-se o verbo de capacidade ('pode') no início, seguido da marcação de repetição ('mais/novamente'), do verbo de auxílio ('nos ajudar'), da ação de adicionar e do objeto.",
+    "breakdown": [
+      {
+        "word": "能",
+        "meaning": "néng — Poder / Ser possível."
+      },
+      {
+        "word": "再",
+        "meaning": "zài — Mais / Novamente."
+      },
+      {
+        "word": "帮我们",
+        "meaning": "bāng wǒmen — Nos ajudar / Fazer por nós — bāng: ajudar; wǒmen: nós."
+      },
+      {
+        "word": "加点",
+        "meaning": "jiā diǎn — Adicionar um pouco de — jiā: adicionar; diǎn: um pouco."
+      },
+      {
+        "word": "面包",
+        "meaning": "miànbāo — Pão — miàn: farinha/massa; bāo: pão/embrulho."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'néng', suba a voz no 2º tom com ressonância lá no fundo da garganta. Em 'zài', dê um golpe seco no estalo dental 'tsài'. Para 'bāng wǒmen', sustente 'bāng' no alto, afunde em 'uǒ' e solte 'man' frouxo. Em 'jiā diǎn', estale 'djiā' no sorriso e afunde em 'diǎn' travando a língua no dente. Em 'miànbāo', caia seco na vogal oculta 'mièn' e sustente 'bāo' no topo sem ar. Termine na partícula leve 'ma'.\nLeia: néng tsài bāng uǒ-man djiā diǎn mièn-bāo ma."
+  },
+  "447": {
+    "explanation": "Ao descrever um ambiente desfavorável para conversa, a frase divide-se em duas partes ligadas por consequência lógica: primeiro o local e a reclamação do barulho ('o restaurante é barulhento demais'), e depois a impossibilidade da ação ('não tem como conversar').",
+    "breakdown": [
+      {
+        "word": "饭店太吵了",
+        "meaning": "fàndiàn tài chǎo le — O restaurante está barulhento demais — fàndiàn: restaurante; tài: demais; chǎo: barulhento; le: partícula (soa 'la')."
+      },
+      {
+        "word": "没法",
+        "meaning": "méifǎ — Não ter como / Ser impossível — méi: não ter; fǎ: meio/método."
+      },
+      {
+        "word": "聊天",
+        "meaning": "liáotiān — Conversar / Bate-papo — liáo: conversar; tiān: dia/céu."
+      }
+    ],
+    "pronuncia": "Em 'fàndiàn tài chǎo le', dê o golpe em 'fàn' e na vogal oculta 'dièn' colando a língua no dente, caia seco com sopro em 'tài', afunde em 'tchǎo' com a língua enrolada e solte o som gutural leve 'la', estritamente proibido falar 'lê'. Em 'méifǎ', suba 'méi' no 2º tom e afunde 'fǎ' no 3º tom. Termine em 'liáotiān' subindo 'liáo' e sustentando 'tiēn' alto com forte sopro de ar travando nos dentes.\nLeia: fàn-dièn tài tchǎo la, méi-fǎ liáo-tiēn."
+  },
+  "448": {
+    "explanation": "Para expressar a vontade de degustar iguarias regionais, o mandarim junta o desejo de provar em forma duplicada ('provar-provar', que suaviza a ação para 'dar uma experimentada') com a expressão para 'da terra/local' e a palavra para 'comida deliciosa'.",
+    "breakdown": [
+      {
+        "word": "我想",
+        "meaning": "wǒ xiǎng — Eu gostaria de / Eu quero — wǒ: eu (soa 'uó'); xiǎng: desejar."
+      },
+      {
+        "word": "尝尝",
+        "meaning": "chángchang — Provar / Experimentar — cháng: provar."
+      },
+      {
+        "word": "当地的",
+        "meaning": "dāngdì de — Local / Da região — dāngdì: local; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "美食",
+        "meaning": "měishí — Comida deliciosa / Culinária especial — měi: belo/delicioso; shí: comida."
+      }
+    ],
+    "pronuncia": "Em 'wǒ xiǎng', por serem dois tons graves, a primeira palavra sobe como 'uó' e a segunda afunda em 'xiǎng' no sorriso. Em 'chángchang', suba 'tcháng' com a língua enrolada soltando ar e deixe o segundo 'chang' leve. Para 'dāngdì de', sustente 'dāng' no topo, caia seco em 'dì' e feche no som leve 'da', sendo proibido dizer 'dê'. Em 'měishí', afunde em 'měi' e suba 'chí' com a língua virada para trás.\nLeia: uó-xiǎng tcháng-chang dāng-dì da měi-chí."
+  },
+  "449": {
+    "explanation": "Ao checar se um acompanhamento vem junto do prato, a mente chinesa simplifica colocando a identificação do prato no início, o verbo de acompanhar ('vir acompanhado de') e o nome do acompanhamento, finalizando com a partícula de pergunta.",
+    "breakdown": [
+      {
+        "word": "这道菜",
+        "meaning": "zhè dào cài — Este prato — zhè: este; dào: termo de contagem para pratos; cài: prato/comida."
+      },
+      {
+        "word": "配",
+        "meaning": "pèi — Acompanhar / Vir com."
+      },
+      {
+        "word": "沙拉",
+        "meaning": "shālā — Salada — shā: areia; lā: puxar (empréstimo fonético para salada)."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'zhè dào cài', dê três golpes secos seguidos: 'djè' com a língua enrolada para trás, 'dào' sem ar, e 'tsài' com estalo nos dentes e explosão de ar. Em 'pèi', dê outro golpe seco projetando um sopro forte de ar nos lábios. Para 'shālā', sustente 'chā' alto com a língua enrolada para trás e 'lā' reto no topo sem tom. Termine na partícula frouxa 'ma'.\nLeia: djè dào tsài pèi chā-lā ma."
+  },
+  "450": {
+    "explanation": "Para indicar uma ação em andamento como procurar um lugar, o mandarim insere o marcador de tempo presente ('estamos no processo de') logo após o sujeito. Em seguida vem a ação de buscar, o termo de quantidade para estabelecimentos e a adjetivação 'tranquilo/silencioso' ligada à palavra café.",
+    "breakdown": [
+      {
+        "word": "我们正在",
+        "meaning": "wǒmen zhèngzài — Nós estamos (fazendo agora) — wǒmen: nós; zhèngzài: no processo de."
+      },
+      {
+        "word": "找",
+        "meaning": "zhǎo — Procurar / Buscar."
+      },
+      {
+        "word": "一家",
+        "meaning": "yī jiā — Um / Uma (para estabelecimentos) — yī: um (soa 'yì'); jiā: termo para lojas."
+      },
+      {
+        "word": "安静的",
+        "meaning": "ānjìng de — Tranquilo / Silencioso — ānjìng: calmo/quieto; de: partícula de ligação (soa 'da')."
+      },
+      {
+        "word": "咖啡馆",
+        "meaning": "kāfēiguǎn — Cafeteria / Café — kāfēi: café; guǎn: estabelecimento."
+      }
+    ],
+    "pronuncia": "Em 'wǒmen zhèngzài', afunde em 'uǒ', solte 'man' frouxo, e dê dois golpes secos em 'djèng' (língua curvada) e 'tsài' (estalo dental). Em 'zhǎo', afunde a voz no 3º tom enrolando a língua. Para 'yī jiā', dê o golpe seco em 'yì' e sustente 'djiā' no topo. Em 'ānjìng de', trave 'an' no dente, caia seco em 'djìng' no sorriso e feche no som leve 'da', proibido falar 'dê'. Finalize em 'kāfēiguǎn' sustentando 'kāi' com ar, 'fēn' alto e afundando em 'guǎn'.\nLeia: uǒ-man djèng-tsài djǎo yì-djiā an-djìng da kā-fēi-guǎn."
+  }
+}

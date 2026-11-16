@@ -1,0 +1,974 @@
+{
+  "751": {
+    "explanation": "O chinês expressa a ação em andamento colocando '在' (zài) antes do verbo, exatamente como o nosso 'estou procurando'. Depois vem o detalhe do que está sendo buscado: 'um par' (yī shuāng) de 'sapatos' (xié). A qualidade do sapato, que é ser 'confortável ao usar' (chuānzhe shūfu), é ligada à palavra principal através da partícula '的' (de), fazendo toda essa característica vir antes do objeto final.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Em processo de / no momento"
+      },
+      {
+        "word": "找",
+        "meaning": "zhǎo — Procurar / buscar"
+      },
+      {
+        "word": "一双",
+        "meaning": "yī shuāng — Um par (yī: um; shuāng: par de sapatos/luvas)"
+      },
+      {
+        "word": "穿着",
+        "meaning": "chuānzhe — Ao calçar / ao vestir (chuān: calçar; zhe: estado contínuo)"
+      },
+      {
+        "word": "舒服的",
+        "meaning": "shūfu de — Confortável (shūfu: confortável; de: partícula de ligação 'da')"
+      },
+      {
+        "word": "鞋",
+        "meaning": "xié — Sapatos / calçado"
+      }
+    ],
+    "pronuncia": "Comece em 'Wǒ' afundando a voz no 3º tom grave, dê um golpe seco no 4º tom em 'tsài', e afunde novamente em 'zhǎo'. Em 'yī shuāng', o numeral muda para o 4º tom seco 'yì' antes de 'tchuāng', pronunciado no 1º tom alto com a ponta da língua curvada para trás no céu da boca. Passe por 'chuānzhe' enrolando a língua em 'tchuān' e soltando 'zha' curto no tom neutro, sem falar 'zhê'. Em 'shūfu de', mantenha 'chū' no 1º tom alto com língua enrolada, solte 'fu' leve e finalize na partícula 'da' átona e relaxada, sendo proibido falar 'dê'. Termine em 'xié' subindo a entonação em 2º tom com os cantos da boca esticados em sorriso.\nLeia: Wǒ-tsài-zhǎo yì-tchuāng tchuān-zha chū-fu da xié."
+  },
+  "752": {
+    "explanation": "Para comparar coisas em mandarim, a estrutura é 'A 比 B + qualidade' (A em relação a B é mais...). Aqui, 'este' (zhège) é comparado a 'ele/este outro' (tā) usando '比' (bǐ), seguido da qualidade 'maior um número/tamanho' (dà yī hào). A partícula '吗' (ma) entra no final de tudo para transformar a afirmação em uma pergunta direta.",
+    "breakdown": [
+      {
+        "word": "这个",
+        "meaning": "zhège — Este / esta coisa (zhè: este; ge: partícula geral 'ga')"
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / possuir"
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Em comparação a / mais que"
+      },
+      {
+        "word": "它",
+        "meaning": "tā — Ele / isso"
+      },
+      {
+        "word": "大一号的",
+        "meaning": "dà yī hào de — Um tamanho maior (dà: grande; yī hào: um número; de: partícula 'da')"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'zhège', curve a ponta da língua para trás para soltar 'djè' no 4º tom seco e feche no tom neutro 'ga', sendo proibido falar 'gê'. Afunde a voz em 'yǒu' e 'bǐ' no 3º tom grave. Em 'tā', dispare uma rajada forte de ar soprado mantendo a nota alta do 1º tom. Solte 'dà' com clique seco no 4º tom. Em 'yī hào', o numeral muda para o 2º tom ascendente 'yí' (como uma pergunta rápida) antes da queda seca de 4º tom em 'rrào'. Termine com a partícula 'da' neutra e curta, e feche em 'ma'.\nLeia: Djè-ga yǒu bǐ tā dà yí-rrào da ma."
+  },
+  "753": {
+    "explanation": "No pensamento chinês, o tempo 'recentemente' (zuìjìn) vem logo após o sujeito. O termo '一直' (yīzhí) acrescenta o sentido de algo mantido 'o tempo todo', seguido por '在' (zài) para marcar a ação em andamento. O verbo 'comprar' (mǎi) traz o termo de contagem de aparelhos '台' (tái) antes do objeto final 'notebook novo' (xīn bǐjìběn diànnǎo).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "最近",
+        "meaning": "zuìjìn — Recentemente / ultimamente (zuì: mais; jìn: perto)"
+      },
+      {
+        "word": "一直",
+        "meaning": "yīzhí — Direto / o tempo todo (yī: um; zhí: direto)"
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Em processo de"
+      },
+      {
+        "word": "考虑",
+        "meaning": "kǎolǜ — Considerar / pensar sobre (kǎo: examinar; lǜ: refletir/pensar)"
+      },
+      {
+        "word": "买",
+        "meaning": "mǎi — Comprar"
+      },
+      {
+        "word": "台",
+        "meaning": "tái — Termo de contagem para eletrônicos e máquinas"
+      },
+      {
+        "word": "新",
+        "meaning": "xīn — Novo"
+      },
+      {
+        "word": "笔记本电脑",
+        "meaning": "bǐjìběn diànnǎo — Notebook / computador portátil (bǐjìběn: caderno; diànnǎo: computador)"
+      }
+    ],
+    "pronuncia": "Mergulhe a voz em 'Wǒ' no 3º tom grave. Em 'zuìjìn', use a vogal oculta 'uêi' em 'tsuèi' no 4º tom e solte 'djin' seco no 4º tom. No numeral 'yīzhí', ele muda para o 4º tom seco 'yì' antes de 'djí' (2º tom subindo com a língua enrolada para trás). Em 'kǎolǜ', dispare um sopro forte de ar na garganta em 'kǎo' no 3º tom, e em 'lǜ' projete os lábios em bico firme de 'U' emitindo o som de 'I' por dentro no 4º tom seco. Passe por 'mǎi' no 3º tom, 'tái' subindo com sopro de ar, 'xīn' no 1º tom alto com sorriso espalmado, e termine em 'bǐ-djì-bǎn dièn-nǎo' travando a ponta da língua nos dentes superiores ao final das sílabas nasais.\nLeia: Wǒ tsuèi-djin yì-djí tsài kǎo-lǜ mǎi tái xīn bǐ-djì-bǎn dièn-nǎo."
+  },
+  "754": {
+    "explanation": "A frase começa com o verbo de opinião '觉得' (juéde, achar/sentir). Em seguida entra o momento 'agora' (xiànzài). A expressão chinesa para 'não ter capacidade financeira de comprar algo' é feita por '买不起' (mǎibuqǐ), onde a negação '不' fica presa entre o verbo comprar e a palavra de capacidade, mostrando que o bolso não alcança o preço.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "觉得",
+        "meaning": "juéde — Achar / sentir que (jué: sentir; de: partícula 'da')"
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "现在",
+        "meaning": "xiànzài — Agora / no momento (xiàn: presente; zài: estar)"
+      },
+      {
+        "word": "还",
+        "meaning": "hái — Ainda"
+      },
+      {
+        "word": "买不起",
+        "meaning": "mǎibuqǐ — Não poder pagar / não ter dinheiro para comprar (mǎi: comprar; bu: não; qǐ: alcançar)"
+      },
+      {
+        "word": "那个",
+        "meaning": "nàge — Aquele / aquilo (nà: aquele; ge: partícula 'ga')"
+      }
+    ],
+    "pronuncia": "Inicie no 3º tom grave em 'Wǒ'. Em 'juéde', projete os lábios em bico de 'U' mantendo o som agudo de 'I' por dentro em 'djüé' no 2º tom ascendente, e finalize na partícula neutra 'da', sendo proibido falar 'dê'. Em 'xiànzài', aplique a rima oculta 'iên' em 'xièn' no 4º tom seco e 'tsài' no 4º tom. Em 'hái', suba a entonação no 2º tom com atrito de garganta em 'rrái'. Na estrutura 'mǎibuqǐ', faça o mergulho grave em 'mǎi', passe pela negação curta e leve 'ba', e dispare um sopro potente de ar com sorriso espalmado em 'tchǐ' no 3º tom. Feche em 'nà-ga' no 4º tom caindo para o tom neutro 'ga'.\nLeia: Wǒ djüé-da wǒ xièn-tsài rrái mǎi-ba-tchǐ nà-ga."
+  },
+  "755": {
+    "explanation": "A condição de hipótese 'se' vem logo na abertura com '如果' (rúguǒ). A mudança de ideia é traduzida literalmente como 'alterar a intenção principal' (gǎibiàn zhǔyi), recebendo a partícula '了' (le) para indicar que a alteração ocorreu. A pergunta sobre a possibilidade de devolução usa '可以' (kěyǐ, ser possível) e o verbo '退款' (tuìkuǎn, devolver dinheiro).",
+    "breakdown": [
+      {
+        "word": "如果",
+        "meaning": "rúguǒ — Se / caso (rú: como; guǒ: resultado)"
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "改变",
+        "meaning": "gǎibiàn — Alterar / mudar (gǎi: alterar; biàn: transformar)"
+      },
+      {
+        "word": "主意",
+        "meaning": "zhǔyi — Ideia / intenção (zhǔ: principal; yi: ideia)"
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de mudança de estado (soa 'la')"
+      },
+      {
+        "word": "可以",
+        "meaning": "kěyǐ — Poder / ser possível (kě: poder; yǐ: usar)"
+      },
+      {
+        "word": "退款",
+        "meaning": "tuìkuǎn — Reembolsar / devolver dinheiro (tuì: devolver; kuǎn: quantia)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'Rúguǒ', suba a voz no 2º tom em 'jú' enrolando a língua para trás, e afunde em 'guǒ'. Passe por 'wǒ' e por 'gǎibiàn', onde 'biàn' soa 'bièn' no 4º tom caindo seco com corte da língua nos dentes superiores. Em 'zhǔyi', curve a ponta da língua para trás para soltar 'djǔ' no 3º tom e solte a partícula 'la' frouxa e curta, sendo proibido falar 'lê'. Na palavra 'kěyǐ', como são dois 3º tons seguidos, a primeira sílaba muda para o 2º tom ascendente com sopro de ar 'ké', enquanto a segunda afunda no 3º tom 'yǐ'. Em 'tuìkuǎn', use a vogal oculta 'uêi' no 4º tom em 'tuêi' e solte uma explosão de ar em 'kuǎn'. Termine na partícula 'ma'.\nLeia: Jú-guǒ wǒ gǎi-bièn djǔ-yi la ké-yǐ tuêi-kuǎn ma."
+  },
+  "756": {
+    "explanation": "No mandarim, a intenção ou objetivo é colocado em destaque na frente: '为了...' (wèile, com a finalidade de...). Em seguida vem a ação do sujeito: 'eu' (wǒ), o marcador de tempo em andamento '正' (zhèng), a atitude de 'fazer o máximo possível' (jìnliàng) e a ação prática de 'poupar um pouco de dinheiro' (duō shěng diǎn qián).",
+    "breakdown": [
+      {
+        "word": "为了",
+        "meaning": "wèile — Para / com o objetivo de (wèi: por causa de; le: partícula 'la')"
+      },
+      {
+        "word": "这次",
+        "meaning": "zhè cì — Esta vez / esta ocasião (zhè: este; cì: vez)"
+      },
+      {
+        "word": "旅行",
+        "meaning": "lǚxíng — Viagem / viajar (lǚ: viajar; xíng: caminhar/ir)"
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "正",
+        "meaning": "zhèng — Exatamente no processo de"
+      },
+      {
+        "word": "尽量",
+        "meaning": "jìnliàng — Ao máximo / fazer o possível (jìn: esgotar; liàng: capacidade)"
+      },
+      {
+        "word": "多",
+        "meaning": "duō — Mais / em maior quantidade"
+      },
+      {
+        "word": "省",
+        "meaning": "shěng — Economizar / poupar"
+      },
+      {
+        "word": "点",
+        "meaning": "diǎn — Um pouco / quantia (soa 'dièn')"
+      },
+      {
+        "word": "钱",
+        "meaning": "qián — Dinheiro (soa 'tchién')"
+      }
+    ],
+    "pronuncia": "Em 'Wèile', solte o 4º tom seco 'uèi' e feche na partícula neutra 'la', sendo proibido falar 'lê'. Em 'zhè cì', enrola a língua para trás em 'djè' no 4º tom e dispare um sopro forte com estalo dental em 'tsì' no 4º tom. Em 'lǚxíng', arme os lábios em bico de 'U' mantendo o som agudo de 'I' em 'lǚ' no 3º tom, e suba no 2º tom com sorriso esticado em 'xíng'. Passe por 'wǒ' e 'djèng' (4º tom com língua enrolada). Em 'jìnliàng', dê dois golpes secos no 4º tom. Mantenha 'duō' no 1º tom alto, afunde a voz em 'chěng' enrolando a língua, diga 'dièn' travando o N nos dentes, e termine subindo no 2º tom em 'tchién' com sorriso e sopro de ar.\nLeia: Uèi-la djè-tsì lǚ-xíng wǒ djèng djin-liàng duō chěng dièn tchién."
+  },
+  "757": {
+    "explanation": "A causa do problema é apresentada em primeiro lugar: 'dentro da loja' (diàn lǐ) 'tinha gente demais' (rén tài duō le). Em seguida, vem o resultado lógico com a conexão '就' (jiù, então/por isso), mostrando que o sujeito 'primeiro foi embora' (xiān zǒu le) sem perder tempo.",
+    "breakdown": [
+      {
+        "word": "店里",
+        "meaning": "diàn lǐ — Dentro da loja (diàn: loja; lǐ: dentro)"
+      },
+      {
+        "word": "人",
+        "meaning": "rén — Pessoas / gente"
+      },
+      {
+        "word": "太多了",
+        "meaning": "tài duō le — Em excesso / demais (tài: muito; duō: bastante; le: partícula 'la')"
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "就",
+        "meaning": "jiù — Então / por consequência (soa 'djiôu')"
+      },
+      {
+        "word": "先",
+        "meaning": "xiān — Primeiro / antes (soa 'xiēn')"
+      },
+      {
+        "word": "走了",
+        "meaning": "zǒu le — Ir embora / sair (zǒu: andar/sair; le: partícula 'la')"
+      }
+    ],
+    "pronuncia": "Em 'Diàn lǐ', use a rima oculta 'dièn' no 4º tom seco e afunde a voz em 'lǐ'. Suba o 2º tom ascendente em 'jên' enrolando a ponta da língua para trás no céu da boca. Em 'tài duō le', dê um golpe seco em 'tài' com sopro de ar, sustente 'duō' no 1º tom alto plano e conclua na partícula neutra 'la', sem falar 'lê'. Passe por 'wǒ' no 3º tom. Em 'jiù', aplique a vogal oculta 'djiôu' caindo no 4º tom seco. Diga 'xiēn' no 1º tom plano com sorriso, e conclua em 'tsǒu la' soltando o estalo dental 'ts' no 3º tom grave e finalizando na partícula frouxa 'la'.\nLeia: Dièn lǐ jên tài duō la wǒ djiôu xiēn tsǒu la."
+  },
+  "758": {
+    "explanation": "No pensamento chinês, o possuidor e o período temporal vêm antes do objeto possuído: 'meu este mês de orçamento' (wǒ zhège yuè de yùsuàn). Depois entra a indicação temporal 'já' (yǐjīng) e o verbo de consumo final 'usar até esgotar' (yòngguāng le).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "这个月",
+        "meaning": "zhège yuè — Este mês (zhè: este; ge: partícula 'ga'; yuè: mês)"
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de posse (soa 'da')"
+      },
+      {
+        "word": "预算",
+        "meaning": "yùsuàn — Orçamento (yù: prévio; suàn: calcular)"
+      },
+      {
+        "word": "已经",
+        "meaning": "yǐjīng — Já (yǐ: já; jīng: passar)"
+      },
+      {
+        "word": "用光了",
+        "meaning": "yòngguāng le — Gastar tudo / esgotar (yòng: usar; guāng: vazio/limpo; le: partícula 'la')"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ'. Em 'zhège yuè', solte 'djè' no 4º tom seco com a língua enrolada para trás, passe pelo tom neutro 'ga', e arme o bico de 'U' com som de 'I' por dentro em 'yüè' no 4º tom. Conecte com a partícula 'da' neutra. Em 'yùsuàn', dê dois golpes secos no 4º tom. Em 'yǐjīng', afunde a voz no 3º tom em 'yǐ' e sustente 'djīng' no 1º tom alto com sorriso espalmado. Em 'yòngguāng le', solte 'yòng' no 4º tom, 'guāng' no 1º tom alto e termine na partícula frouxa 'la', sendo proibido falar 'lê'.\nLeia: Wǒ djè-ga yüè da yù-suàn yǐ-djīng yòng-guāng la."
+  },
+  "759": {
+    "explanation": "Para pedir uma informação espacial, a estrutura é 'você sabe' (nǐ zhīdào) + 'o item/local procurado' (zuìjìn de yóujú, o correio mais próximo) + 'onde fica?' (zài nǎlǐ ma?). A palavra que representa a dúvida fica no exato local onde a resposta seria dada.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você"
+      },
+      {
+        "word": "知道",
+        "meaning": "zhīdào — Saber (zhī: saber; dào: caminho/razão)"
+      },
+      {
+        "word": "最近的",
+        "meaning": "zuìjìn de — O mais próximo (zuì: mais; jìn: perto; de: partícula 'da')"
+      },
+      {
+        "word": "邮局",
+        "meaning": "yóujú — Agência de correios (yóu: correios; jú: escritório)"
+      },
+      {
+        "word": "在哪里",
+        "meaning": "zài nǎlǐ — Ficar onde (zài: estar em; nǎlǐ: onde)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'Nǐ', afunde a voz no 3º tom. Em 'zhīdào', enrola a língua para trás em 'djī' no 1º tom alto e solte 'dào' no 4º tom seco. Em 'zuìjìn de', use a vogal oculta 'uêi' em 'tsuèi' no 4º tom, diga 'djin' no 4º tom com a língua no dente e feche na partícula neutra 'da', sem falar 'dê'. Em 'yóujú', suba a voz no 2º tom em 'yóu' e em 'djú' (com bico de 'U' e som de 'I' por dentro). Em 'zài nǎlǐ', dê um golpe seco em 'tsài', e na combinação 'nǎlǐ' de dois 3º tons, a primeira sílaba sobe para o 2º tom 'ná' e a segunda afunda em 'lǐ'. Conclua com a partícula 'ma'.\nLeia: Nǐ djī-dào tsuèi-djin da yóu-djú tsài ná-lǐ ma."
+  },
+  "760": {
+    "explanation": "O mandarim usa a estrutura '把' (bǎ) para pegar o objeto de interesse ('esta camisa', zhè jiàn chènshān) e colocá-lo em evidência antes de mostrar o resultado da ação: 'trocar até transformar em' (huànchéng) 'uma de tamanho menor' (xiǎohào de).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Gostaria de / querer"
+      },
+      {
+        "word": "把",
+        "meaning": "bǎ — Partícula de manipulação do objeto"
+      },
+      {
+        "word": "这件",
+        "meaning": "zhè jiàn — Esta peça (zhè: este; jiàn: termo de contagem para roupas)"
+      },
+      {
+        "word": "衬衫",
+        "meaning": "chènshān — Camisa (chèn: forro/camisa; shān: roupa)"
+      },
+      {
+        "word": "换成",
+        "meaning": "huànchéng — Trocar para / transformar em (huàn: trocar; chéng: virar)"
+      },
+      {
+        "word": "小号的",
+        "meaning": "xiǎohào de — Tamanho menor (xiǎo: pequeno; hào: número; de: partícula 'da')"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ' e 'xiǎng'. Faça o mergulho grave em 'bǎ'. Em 'zhè jiàn', solte 'djè' no 4º tom seco com a língua enrolada para trás, e aplique a rima 'djièn' no 4º tom. Em 'chènshān', curve a ponta da língua para trás para disparar ar soprado em 'tchèn' no 4º tom, e sustente 'chān' no 1º tom alto com chiado abafado. Em 'huànchéng', dê um golpe seco no 4º tom em 'huàn' e suba o 2º tom ascendente em 'tchéng' com a língua enrolada. Em 'xiǎohào de', afunde a voz em 'xiǎo', solte 'rrào' no 4º tom e termine na partícula neutra 'da', sendo proibido falar 'dê'.\nLeia: Wǒ xiǎng bǎ djè djièn tchèn-chān huàn-tchéng xiǎo-rrào da."
+  },
+  "761": {
+    "explanation": "O assunto principal 'preço' (jiàgé) vem na frente. A comparação é feita usando '比' (bǐ, em relação a) + 'o que eu imaginava' (wǒ xiǎngxiàng de). A qualidade 'barato' (piányi) ganha intensidade no final com a expressão 'muito mais' (duō le).",
+    "breakdown": [
+      {
+        "word": "价格",
+        "meaning": "jiàgé — Preço (jià: valor; gé: padrão/grade)"
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Em comparação a / mais que"
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "想象的",
+        "meaning": "xiǎngxiàng de — O que eu esperava/imaginava (xiǎngxiàng: imaginar; de: partícula 'da')"
+      },
+      {
+        "word": "便宜",
+        "meaning": "piányi — Barato (pián: conveniente; yi: leve/átono)"
+      },
+      {
+        "word": "多了",
+        "meaning": "duō le — Muito mais (duō: muito; le: partícula 'la')"
+      }
+    ],
+    "pronuncia": "Em 'Jiàgé', solte 'djià' no 4º tom seco com sorriso espalmado, e suba 'gá' no 2º tom com som gutural sem voz. Afunde a voz em 'bǐ' e 'wǒ' no 3º tom grave. Em 'xiǎngxiàng de', faça 'xiǎng' no 3º tom, 'xiàng' no 4º tom seco com sorriso espalmado, e feche na partícula neutra 'da', sem falar 'dê'. Em 'piányi', suba o 2º tom em 'pién' disparando um sopro forte de ar e feche com a sílaba leve 'yi'. Em 'duō le', sustente 'duō' no 1º tom alto e finalize na partícula frouxa 'la', sem falar 'lê'.\nLeia: Djià-gá bǐ wǒ xiǎng-xiàng da pién-yi duō la."
+  },
+  "762": {
+    "explanation": "No mandarim, a indicação de tempo antecede a ação: 'antes de eu comprar coisas' (wǒ mǎi dōngxi qián). Depois entra o costume 'geralmente' (tōngcháng), o verbo auxiliar de tendência 'vai/costuma' (huì), 'primeiro' (xiān), a localização 'na internet' (zài wǎngshàng) e o ato repetido de 'comparar preços' (bǐbijia).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "买东西",
+        "meaning": "mǎi dōngxi — Comprar coisas (mǎi: comprar; dōngxi: coisas)"
+      },
+      {
+        "word": "前",
+        "meaning": "qián — Antes de (soa 'tchién')"
+      },
+      {
+        "word": "通常",
+        "meaning": "tōngcháng — Geralmente / habitualmente (tōng: comum; cháng: frequente)"
+      },
+      {
+        "word": "会",
+        "meaning": "huì — Costumar / ir fazer (soa 'rruêi')"
+      },
+      {
+        "word": "先",
+        "meaning": "xiān — Primeiro / antes (soa 'xiēn')"
+      },
+      {
+        "word": "在网上",
+        "meaning": "zài wǎngshàng — Na internet (zài: em; wǎngshàng: na rede/online)"
+      },
+      {
+        "word": "比比价",
+        "meaning": "bǐbijia — Comparar preços (bǐ: comparar; jià: preço)"
+      }
+    ],
+    "pronuncia": "Inicie em 'Wǒ' no 3º tom grave. Diga 'mǎi' no 3º tom, 'dōng' no 1º tom e 'xi' leve. Em 'qián', suba o 2º tom em 'tchién' com sorriso e sopro de ar. Em 'tōngcháng', solte 'tōng' com sopro forte no 1º tom, e suba 'tcháng' no 2º tom com a língua enrolada para trás. Em 'huì', use a vogal oculta 'rruêi' no 4º tom. Diga 'xiēn' no 1º tom alto com sorriso. Em 'zài wǎngshàng', dê um golpe seco em 'tsài', afunde a voz em 'uǎng' e solte 'chàng' no 4º tom enrolando a língua. Termine em 'bǐ-bi-djià' dando o mergulho grave em 'bǐ', o toque leve em 'bi' e caindo seco em 'djià'.\nLeia: Wǒ mǎi dōng-xi tchién tōng-tcháng rruêi xiēn tsài uǎng-chàng bǐ-bi-djià."
+  },
+  "763": {
+    "explanation": "Os grupos que recebem a vantagem ('estudantes ou idosos', xuéshēng huò lǎorén) são colocados como o tema principal no início. A pergunta se completa de forma direta: 'têm' (yǒu) 'desconto/benefício' (yōuhuì) 'partícula de pergunta' (ma).",
+    "breakdown": [
+      {
+        "word": "学生",
+        "meaning": "xuéshēng — Estudante / aluno (xué: estudar; shēng: nascer/pessoa)"
+      },
+      {
+        "word": "或",
+        "meaning": "huò — Ou"
+      },
+      {
+        "word": "老人",
+        "meaning": "lǎorén — Idoso / pessoa idosa (lǎo: velho; rén: pessoa)"
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / haver"
+      },
+      {
+        "word": "优惠",
+        "meaning": "yōuhuì — Desconto / benefício (yōu: excelente; huì: benefício)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'xuéshēng', projete os lábios em bico de 'U' mantendo a voz aguda de 'I' por dentro em 'xüé' no 2º tom ascendente, e sustente 'chēng' no 1º tom alto com a ponta da língua enrolada para trás. Em 'huò', solte o 4º tom seco 'rruò'. Em 'lǎorén', afunde a voz em 'lǎo' no 3º tom e suba em 'jên' no 2º tom enrolando a língua como um R caipira vibrado. Afunde a voz em 'yǒu' no 3º tom. Em 'yōuhuì', sustente 'iōu' no 1º tom alto e caia seco no 4º tom em 'rruêi' (usando a vogal oculta 'uêi'). Termine na partícula 'ma'.\nLeia: Xüé-chēng rruò lǎo-jên yǒu iōu-rruêi ma."
+  },
+  "764": {
+    "explanation": "A situação que ocorreu é apresentada em primeiro lugar: 'meu recibo' (wǒ de xiǎopiào) 'foi perdido' (diū le). Em seguida vem a dúvida prática sobre o futuro: 'ainda' (hái) 'é possível' (néng) 'devolver a mercadoria' (tuìhuò) 'partícula de pergunta' (ma).",
+    "breakdown": [
+      {
+        "word": "我的",
+        "meaning": "wǒ de — Meu / minha (wǒ: eu; de: partícula 'da')"
+      },
+      {
+        "word": "小票",
+        "meaning": "xiǎopiào — Recibo / cupom fiscal (xiǎo: pequeno; piào: bilhete)"
+      },
+      {
+        "word": "丢了",
+        "meaning": "diū le — Perdeu / foi perdido (diū: perder; le: partícula 'la')"
+      },
+      {
+        "word": "还",
+        "meaning": "hái — Ainda"
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Poder / ser capaz"
+      },
+      {
+        "word": "退货",
+        "meaning": "tuìhuò — Devolver mercadoria (tuì: devolver; huò: produto)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'Wǒ de', afunde a voz em 'wǒ' e passe pela partícula neutra 'da', sendo proibido falar 'dê'. Em 'xiǎopiào', afunde a voz no 3º tom em 'xiǎo' e solte 'piào' no 4º tom seco com uma explosão de ar nos lábios. Em 'diū le', sustente 'diū' no 1º tom alto e feche na partícula frouxa 'la', sem falar 'lê'. Suba a voz no 2º tom ascendente com atrito de garganta em 'rrái' e suba 'néng' no 2º tom. Em 'tuìhuò', use a vogal oculta 'uêi' no 4º tom seco em 'tuêi' e solte 'rruò' no 4º tom. Termine com a partícula 'ma'.\nLeia: Wǒ da xiǎo-piào diū la rrái néng tuêi-rruò ma."
+  },
+  "765": {
+    "explanation": "A frase começa com o abrandamento de opinião 'eu acho que' (wǒ juéde). O sujeito 'esta cor' (zhège yánsè) é seguido pelas atenuações 'parece que' (hǎoxiàng) e 'não muito' (bù tài). Por fim entra o verbo 'combinar/adequar-se' (shìhé) e o pronome 'mim' (wǒ). A negação 'bù' vira 2º tom 'bú' antes de outro 4º tom.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "觉得",
+        "meaning": "juéde — Achar / sentir que (jué: sentir; de: partícula 'da')"
+      },
+      {
+        "word": "这个",
+        "meaning": "zhège — Este / esta (zhè: este; ge: partícula 'ga')"
+      },
+      {
+        "word": "颜色",
+        "meaning": "yánsè — Cor (yán: cor de rosto; sè: cor)"
+      },
+      {
+        "word": "好像",
+        "meaning": "hǎoxiàng — Parecer / aparentemente (hǎo: bom; xiàng: parecer)"
+      },
+      {
+        "word": "不太",
+        "meaning": "bù tài — Não muito (bù vira bú antes de 4º tom tài)"
+      },
+      {
+        "word": "适合",
+        "meaning": "shìhé — Combinar com / adequar-se (shì: servir; hé: juntar)"
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      }
+    ],
+    "pronuncia": "Inicie no 3º tom grave em 'Wǒ'. Em 'juéde', projete os lábios em bico de 'U' mantendo o som agudo de 'I' em 'djüé' no 2º tom, e feche na partícula neutra 'da', sem falar 'dê'. Em 'zhège', solte 'djè' no 4º tom enrolando a língua e passe pela partícula neutra 'ga'. Em 'yánsè', suba 'ién' no 2º tom e solte 'sè' no 4º tom. Passe por 'hǎoxiàng' (3º tom em 'rrǎo' e 4º tom seco em 'xiàng'). Na negação 'bù tài', o tom muda obrigatoriamente para o 2º tom ascendente em 'bú' antes da queda seca de 'tài' (com sopro de ar). Em 'shìhé', enrola a língua em 'chì' no 4º tom e suba 'rré' no 2º tom com atrito de garganta. Feche em 'wǒ'.\nLeia: Wǒ djüé-da djè-ga ién-sè rrǎo-xiàng bú tài chì-rré wǒ."
+  },
+  "766": {
+    "explanation": "O modelo do produto 'este modelo' (zhè kuǎn) fica em destaque logo no início da frase. A pergunta busca saber se 'ainda' (hái) 'possui' (yǒu) 'estoque disponível / produto em mãos' (xiànhuò), finalizando com a partícula de pergunta '吗' (ma).",
+    "breakdown": [
+      {
+        "word": "这款",
+        "meaning": "zhè kuǎn — Este modelo / este estilo (zhè: este; kuǎn: modelo)"
+      },
+      {
+        "word": "还",
+        "meaning": "hái — Ainda"
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / haver"
+      },
+      {
+        "word": "现货",
+        "meaning": "xiànhuò — Estoque disponível / produto em mãos (xiàn: atual/presente; huò: mercadoria)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'zhè kuǎn', solte 'djè' no 4º tom seco enrolando a ponta da língua para trás no céu da boca, e em 'kuǎn' afunde a voz no 3º tom grave disparando uma rajada de ar soprado pela garganta. Em 'hái', suba a entonação no 2º tom ascendente com atrito de garganta em 'rrái'. Afunde a voz em 'yǒu' no 3º tom. Em 'xiànhuò', dê dois golpes secos no 4º tom: 'xièn' (com a rima oculta que trava a língua nos dentes superiores) e 'rruò' (com atrito de garganta). Conclua com a partícula interrogativa neutra 'ma'.\nLeia: Djè kuǎn rrái yǒu xièn-rruò ma."
+  },
+  "767": {
+    "explanation": "O item específico 'este cartão de crédito' (zhè zhāng xìnyòngkǎ) é destacado no começo. Depois vem quem realiza a ação ('eu', wǒ), a indicação de tempo decorrido 'já' (yǐjīng), o verbo 'usar' (yòng) e o período de duração 'por muito tempo' (hěnjiǔ le).",
+    "breakdown": [
+      {
+        "word": "这张",
+        "meaning": "zhè zhāng — Este (zhè: este; zhāng: termo de contagem para superfícies planas/cartões)"
+      },
+      {
+        "word": "信用卡",
+        "meaning": "xìnyòngkǎ — Cartão de crédito (xìn: confiança; yòng: usar; kǎ: cartão)"
+      },
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "已经",
+        "meaning": "yǐjīng — Já (yǐ: já; jīng: passar)"
+      },
+      {
+        "word": "用",
+        "meaning": "yòng — Usar"
+      },
+      {
+        "word": "很久了",
+        "meaning": "hěnjiǔ le — Por muito tempo (hěn: muito; jiǔ: longo tempo; le: partícula 'la')"
+      }
+    ],
+    "pronuncia": "Em 'zhè zhāng', enrola a língua para trás em 'djè' no 4º tom seco e sustente 'djāng' no 1º tom alto. Em 'xìnyòngkǎ', dê dois golpes secos no 4º tom em 'xìn' e 'yòng', e afunde a voz no 3º tom em 'kǎ' com sopro forte de ar. Passe por 'wǒ' no 3º tom. Em 'yǐjīng', afunde 'yǐ' no 3º tom e sustente 'djīng' no 1º tom alto com sorriso espalmado. Diga 'yòng' no 4º tom. Na expressão 'hěnjiǔ', por serem dois 3º tons seguidos, a primeira sílaba sobe no 2º tom com atrito de garganta em 'rrén', e a segunda afunde no 3º tom em 'djiôu' (usando a vogal oculta 'iôu'). Termine na partícula frouxa 'la', sem falar 'lê'.\nLeia: Djè djāng xìn-yòng-kǎ wǒ yǐ-djīng yòng rrén-djiôu la."
+  },
+  "768": {
+    "explanation": "A vontade 'eu gostaria de' (wǒ xiǎng) abre a frase. No mandarim, a indicação de companhia ou interlocutor 'com o gerente' (hé jīnglǐ) vem antes do verbo principal 'conversar' (tántan). Por fim, acrescenta-se o tema do assunto: 'este problema' (zhège wèntí).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Gostaria de / querer"
+      },
+      {
+        "word": "和",
+        "meaning": "hé — Com (soa 'rrá' gutural)"
+      },
+      {
+        "word": "经理",
+        "meaning": "jīnglǐ — Gerente / administrador (jīng: gerenciar; lǐ: organizar)"
+      },
+      {
+        "word": "谈谈",
+        "meaning": "tántan — Conversar um pouco / discutir (tán: conversar; repetição atenua a ação)"
+      },
+      {
+        "word": "这个",
+        "meaning": "zhège — Este (zhè: este; ge: partícula 'ga')"
+      },
+      {
+        "word": "问题",
+        "meaning": "wèntí — Problema / questão (wèi: perguntar; tí: assunto)"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ' e 'xiǎng'. Em 'hé', suba a entonação no 2º tom com som gutural aberto 'rrá', sem pronunciar 'rê'. Em 'jīnglǐ', sustente 'djīng' no 1º tom alto com sorriso espalmado e afunde a voz em 'lǐ' no 3º tom. Em 'tántan', suba o 2º tom em 'tán' disparando uma rajada de ar soprado e diga a segunda sílaba 'tan' de forma leve e átona. Em 'zhège', solte 'djè' no 4º tom enrolando a língua e passe pela partícula neutra 'ga'. Termine em 'wèntí' dando um golpe seco no 4º tom em 'uèi' e subindo no 2º tom com sopro em 'tí'.\nLeia: Wǒ xiǎng rrá djīng-lǐ tán-tan djè-ga uèi-tí."
+  },
+  "769": {
+    "explanation": "O assunto sob avaliação é 'a qualidade dos produtos' (chǎnpǐn de zhìliàng). A estrutura para dizer que algo é inferior ao passado usa '不如' (bùrú, não ser tão bom quanto) seguido de 'antigamente/antes' (yǐqián). A partícula '了' (le) no final destaca a percepção dessa mudança em relação ao passado.",
+    "breakdown": [
+      {
+        "word": "产品",
+        "meaning": "chǎnpǐn — Produto (chǎn: produzir; pǐn: item/qualidade)"
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação/posse (soa 'da')"
+      },
+      {
+        "word": "质量",
+        "meaning": "zhìliàng — Qualidade (zhì: substância; liàng: medida)"
+      },
+      {
+        "word": "不如",
+        "meaning": "bùrú — Não ser tão bom quanto / inferior a (bù: não; rú: como)"
+      },
+      {
+        "word": "以前了",
+        "meaning": "yǐqián le — Antes / antigamente (yǐ: desde; qián: antes; le: partícula 'la')"
+      }
+    ],
+    "pronuncia": "Em 'chǎnpǐn', a sequência de dois 3º tons faz a primeira sílaba subir no 2º tom 'tchán' (com a língua enrolada para trás e sopro forte de ar) e a segunda afundar no 3º tom 'pǐn'. Conecte com a partícula neutra 'da', sendo proibido falar 'dê'. Em 'zhìliàng', dê dois golpes secos no 4º tom enrolando a língua em 'djì'. Em 'bùrú', solte o 4º tom seco 'bù' e suba 'jú' no 2º tom enrolando a língua como um R caipira vibrado. Em 'yǐqián le', afunde 'yǐ' no 3º tom, suba 'tchién' no 2º tom com sorriso e sopro de ar, e termine na partícula frouxa 'la', sem falar 'lê'.\nLeia: Tchán-pǐn da djì-liàng bù-jú yǐ-tchién la."
+  },
+  "770": {
+    "explanation": "A intenção 'eu gostaria de escolher' (wǒ xiǎng tiāo) precede o objeto da ação. O mandarim usa o par de conectores '既...又...' (jì... yòu..., tanto... quanto...) para unir duas características positivas: 'útil/prático' (shíyòng) e 'bonito' (hǎokàn), descrevendo o 'presente' (lǐwù) através da partícula '的' (de).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Gostaria de / querer"
+      },
+      {
+        "word": "挑",
+        "meaning": "tiāo — Escolher / selecionar"
+      },
+      {
+        "word": "一件",
+        "meaning": "yī jiàn — Uma peça / um item (yī: um; jiàn: termo de contagem)"
+      },
+      {
+        "word": "既",
+        "meaning": "jì — Tanto / além de (soa 'djì')"
+      },
+      {
+        "word": "实用",
+        "meaning": "shíyòng — Prático / útil (shí: real; yòng: uso)"
+      },
+      {
+        "word": "又",
+        "meaning": "yòu — Também / quanto (soa 'iôu')"
+      },
+      {
+        "word": "好看的",
+        "meaning": "hǎokàn de — Bonito (hǎo: bom; kàn: olhar; de: partícula 'da')"
+      },
+      {
+        "word": "礼物",
+        "meaning": "lǐwù — Presente / lembrança (lǐ: cortesia; wù: coisa)"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ' e 'xiǎng'. Sustente 'tiāo' no 1º tom alto disparando um sopro de ar. No numeral 'yī jiàn', ele muda para o 2º tom ascendente 'yí' antes da queda seca de 4º tom em 'djièn'. Solte 'djì' no 4º tom seco com sorriso espalmado. Em 'shíyòng', suba 'chí' no 2º tom enrolando a língua para trás e solte 'yòng' no 4º tom seco. Em 'yòu', use a vogal oculta 'iôu' no 4º tom. Em 'hǎokàn de', afunde 'rrǎo' no 3º tom, solte 'kàn' no 4º tom com sopro de ar e feche na partícula neutra 'da', sem falar 'dê'. Termine em 'lǐ-ù' afundando no 3º tom em 'lǐ' e caindo seco no 4º tom em 'ù'.\nLeia: Wǒ xiǎng tiāo yí-djièn djì chí-yòng iôu rrǎo-kàn da lǐ-ù."
+  },
+  "771": {
+    "explanation": "O modo de compra em lote ou atacado '批量买' (pīliàng mǎi) é posicionado no início. Em seguida entram os elementos da pergunta: a previsão 'será que / vai' (huì), a marcação de comparativo 'mais' (gèng), a qualidade 'barato' (piányi) e a partícula interrogativa '吗' (ma).",
+    "breakdown": [
+      {
+        "word": "批量",
+        "meaning": "pīliàng — Em lote / atacado (pī: lote; liàng: quantidade)"
+      },
+      {
+        "word": "买",
+        "meaning": "mǎi — Comprar"
+      },
+      {
+        "word": "会",
+        "meaning": "huì — Vai / seria (soa 'rruêi')"
+      },
+      {
+        "word": "更",
+        "meaning": "gèng — Mais (marca de comparativo)"
+      },
+      {
+        "word": "便宜",
+        "meaning": "piányi — Barato (pián: conveniente; yi: leve)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'pīliàng', sustente 'pī' no 1º tom alto disparando uma forte explosão de ar nos lábios, e solte 'liàng' no 4º tom seco. Afunde a voz no 3º tom grave em 'mǎi'. Em 'huì', use a vogal oculta 'rruêi' caindo no 4º tom seco. Solte 'gèng' no 4º tom com estalo seco de K sem ar na garganta. Em 'piányi', suba a entonação no 2º tom em 'pién' com sopro de ar e sorriso espalmado, feche com a sílaba leve 'yi', e conclua com a partícula 'ma'.\nLeia: Pī-liàng mǎi rruêi gèng pién-yi ma."
+  },
+  "772": {
+    "explanation": "O sujeito 'eu' (wǒ) apresenta a decisão tomada: 'decidi' (juédìng). A indicação de tempo futuro 'de agora em diante' (yǐhòu) vem logo em seguida. A desistência é indicada por 'bù zài' (não mais), acompanhada pelo verbo 'comprar' (mǎi) e o objeto 'coisas desnecessárias' (bù xūyào de dōngxi), terminando na partícula de mudança de atitude '了' (le).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "决定",
+        "meaning": "juédìng — Decidir (jué: decidir; dìng: fixar)"
+      },
+      {
+        "word": "以后",
+        "meaning": "yǐhòu — De agora em diante / no futuro (yǐ: desde; hòu: depois)"
+      },
+      {
+        "word": "不再",
+        "meaning": "bù zài — Não mais (bù vira bú antes de 4º tom zài)"
+      },
+      {
+        "word": "买",
+        "meaning": "mǎi — Comprar"
+      },
+      {
+        "word": "不需要的",
+        "meaning": "bù xūyào de — Desnecessárias (bù: não; xūyào: precisar; de: partícula 'da')"
+      },
+      {
+        "word": "东西",
+        "meaning": "dōngxi — Coisas / objetos"
+      },
+      {
+        "word": "了",
+        "meaning": "le — Partícula de mudança de estado (soa 'la')"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ'. Em 'juédìng', projete os lábios em bico de 'U' com som de 'I' por dentro em 'djüé' no 2º tom ascendente, e solte 'dìng' no 4º tom seco. Em 'yǐhòu', afunde 'yǐ' no 3º tom e solte 'rròu' no 4º tom com atrito de garganta. Na negação 'bù zài', a palavra 'bù' vira 2º tom ascendente 'bú' antes de 'tsài' (4º tom seco com estalo de 'ts'). Afunde 'mǎi' no 3º tom. Diga 'bù' no 4º tom, sustente 'xū' no 1º tom alto com bico de 'U', solte 'iào' no 4º tom, e feche na partícula neutra 'da', sem falar 'dê'. Diga 'dōngxi' (1º tom alto e leve) e termine na partícula frouxa 'la', sem falar 'lê'.\nLeia: Wǒ djüé-dìng yǐ-rròu bú tsài mǎi bù xū-iào da dōng-xi la."
+  },
+  "773": {
+    "explanation": "O sujeito plural 'vocês' (nǐmen) abre a frase. Em seguida entra o verbo 'dar suporte a / aceitar' (zhīchí). O método de pagamento procurado é 'pagamento por celular' (shǒujī zhīfù), que junta 'celular' (shǒujī) e 'pagar' (zhīfù), fechando com a partícula interrogativa '吗' (ma).",
+    "breakdown": [
+      {
+        "word": "你们",
+        "meaning": "nǐmen — Vocês (nǐ: você; men: plural 'man')"
+      },
+      {
+        "word": "支持",
+        "meaning": "zhīchí — Aceitar / dar suporte a (zhī: manter; chí: sustentar)"
+      },
+      {
+        "word": "手机",
+        "meaning": "shǒujī — Celular / telefone móvel (shǒu: mão; jī: máquina)"
+      },
+      {
+        "word": "支付",
+        "meaning": "zhīfù — Pagamento / pagar (zhī: pagar; fù: entregar)"
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta"
+      }
+    ],
+    "pronuncia": "Em 'nǐmen', afunde a voz no 3º tom em 'nǐ' e passe por 'man' curto no tom neutro, sendo proibido falar 'mên'. Em 'zhīchí', curve a ponta da língua para trás para sustentar 'djī' no 1º tom alto e suba 'tchí' no 2º tom disparando um jato de ar soprado. Em 'shǒujī', afunde 'chǒu' no 3º tom com a língua enrolada e sustente 'djī' no 1º tom alto com sorriso espalmado. Em 'zhīfù', sustente 'djī' no 1º tom enrolando a língua e solte 'fù' no 4º tom seco. Conclua com a partícula 'ma'.\nLeia: Nǐ-man djī-tchí chǒu-djī djī-fù ma."
+  },
+  "774": {
+    "explanation": "A ação em andamento é marcada por '在' (zài) colocada logo antes do verbo 'esperar' (děng). O evento aguardado é 'o início da liquidação de verão' (xiàjì cùxiāo kāishǐ), onde a época do ano 'estação de verão' (xiàjì) e a promoção 'cùxiāo' aparecem antes do verbo de ação 'começar' (kāishǐ).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Em processo de"
+      },
+      {
+        "word": "等",
+        "meaning": "děng — Esperar"
+      },
+      {
+        "word": "夏季",
+        "meaning": "xiàjì — Verão / estação de verão (xià: verão; jì: estação)"
+      },
+      {
+        "word": "促销",
+        "meaning": "cùxiāo — Promoção / liquidação (cù: impulsionar; xiāo: vender)"
+      },
+      {
+        "word": "开始",
+        "meaning": "kāishǐ — Começar / iniciar (kāi: abrir; shǐ: começar)"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ'. Dê um golpe seco no 4º tom em 'tsài', e afunde a voz no 3º tom grave em 'děng'. Em 'xiàjì', dê dois golpes secos no 4º tom com sorriso espalmado em 'xià-djì'. Em 'cùxiāo', solte 'tsù' no 4º tom seco disparando uma explosão de ar com a ponta da língua nos dentes superiores, e sustente 'xiāo' no 1º tom alto com sorriso. Em 'kāishǐ', solte 'kāi' no 1º tom alto com sopro forte de ar na garganta, e afunde a voz no 3º tom grave em 'chǐ' enrolando a ponta da língua para trás.\nLeia: Wǒ tsài děng xià-djì tsù-xiāo kāi-chǐ."
+  },
+  "775": {
+    "explanation": "O sujeito 'loja' (diàn) abre a frase. A combinação de '就' (jiù, bem/exatamente) com '在' (zài, estar em) serve para enfatizar que a localização é muito próxima e óbvia. Em seguida vêm os indicadores de direção: 'na frente' (qiánmiàn) e o ponto exato 'na curva da esquina' (zhuǎnjiǎochù).",
+    "breakdown": [
+      {
+        "word": "店",
+        "meaning": "diàn — Loja / estabelecimento (soa 'dièn')"
+      },
+      {
+        "word": "就",
+        "meaning": "jiù — Exatamente / bem (soa 'djiôu')"
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em"
+      },
+      {
+        "word": "前面",
+        "meaning": "qiánmiàn — Na frente / adiante (qián: frente; miàn: lado)"
+      },
+      {
+        "word": "转角处",
+        "meaning": "zhuǎnjiǎochù — Na curva da esquina (zhuǎn: virar; jiǎo: canto; chù: lugar)"
+      }
+    ],
+    "pronuncia": "Em 'Diàn', solte o 4º tom seco 'dièn' com corte da língua nos dentes superiores. Em 'jiù', use a vogal oculta 'djiôu' no 4º tom seco. Diga 'tsài' no 4º tom seco. Em 'qiánmiàn', suba a entonação no 2º tom em 'tchién' com sorriso espalmado e sopro de ar, e solte 'mièn' no 4º tom. Em 'zhuǎnjiǎochù', enrola a língua para trás em 'djuǎn' no 3º tom, diga 'djiǎo' no 3º tom grave, e solte 'tchù' no 4º tom seco enrolando a ponta da língua para trás e disparando ar soprado.\nLeia: Dièn djiôu tsài tchién-mièn djuǎn-djiǎo-tchù."
+  },
+  "776": {
+    "explanation": "O sujeito 'eu' (wǒ) é seguido pelo local abrangente 'em todo lugar' (dàochù). A palavra '都' (dōu) entra para enfatizar a totalidade ('sem exceção'), enquanto '在找' (zài zhǎo) mostra a ação contínua de procurar. Por fim, entra o livro específico procurado: 'este [exemplar de] livro' (zhè běn shū).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "到处",
+        "meaning": "dàochù — Por toda parte / em todo lugar (dào: chegar; chù: lugar)"
+      },
+      {
+        "word": "都",
+        "meaning": "dōu — Todos / em todos os casos"
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Em processo de"
+      },
+      {
+        "word": "找",
+        "meaning": "zhǎo — Procurar / buscar"
+      },
+      {
+        "word": "这本",
+        "meaning": "zhè běn — Este (zhè: este; běn: termo de contagem para livros)"
+      },
+      {
+        "word": "书",
+        "meaning": "shū — Livro"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ'. Em 'dàochù', solte 'dào' no 4º tom e em 'tchù' dê um golpe seco no 4º tom enrolando a ponta da língua para trás e disparando ar soprado. Sustente 'dōu' no 1º tom alto contínuo. Diga 'tsài' no 4º tom seco. Afunde a voz no 3º tom grave em 'djǎo' enrolando a língua. Em 'zhè běn', solte 'djè' no 4º tom seco com a língua enrolada para trás e afunde a voz em 'bǎn' (com som gutural posterior, sem pronunciar 'bên'). Termine sustentando 'chū' no 1º tom alto com o chiado abafado da língua virada para trás.\nLeia: Wǒ dào-tchù dōu tsài djǎo djè-bǎn chū."
+  },
+  "777": {
+    "explanation": "No pensamento chinês, a localização da posse vem primeiro: 'o dinheiro em espécie no meu corpo' (wǒ shēnshang de xiànjīn). Em seguida vem a frase de insuficiência 'não é suficiente para' (bù gòu), o verbo 'pagar' (fù) e a tarifa específica 'corrida de táxi' (chūzūchē fèi).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "身上",
+        "meaning": "shēnshang — No corpo / comigo (shēn: corpo; shang: em/sobre)"
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação (soa 'da')"
+      },
+      {
+        "word": "现金",
+        "meaning": "xiànjīn — Dinheiro vivo / em espécie (xiàn: presente; jīn: dinheiro)"
+      },
+      {
+        "word": "不够",
+        "meaning": "bù gòu — Não ser suficiente (bù: não; gòu: suficiente)"
+      },
+      {
+        "word": "付",
+        "meaning": "fù — Pagar"
+      },
+      {
+        "word": "出租车费",
+        "meaning": "chūzūchē fèi — Tarifa de táxi (chūzūchē: táxi; fèi: taxa/custo)"
+      }
+    ],
+    "pronuncia": "Afunde a voz em 'Wǒ' no 3º tom. Em 'shēnshang', sustente 'chēn' no 1º tom alto com a língua enrolada para trás e solte 'chang' leve. Conecte com a partícula neutra 'da', sendo proibido falar 'dê'. Em 'xiànjīn', solte 'xièn' no 4º tom seco com a língua no dente e sustente 'djin' no 1º tom alto com sorriso. Dê dois golpes secos no 4º tom em 'bù gòu' e um golpe em 'fù'. Em 'chūzūchē', curve a língua para trás em 'tchū' (1º tom com sopro), solte 'tsū' (1º tom com estalo nos dentes) e diga 'tchā' (1º tom com língua enrolada e som gutural aberto, sem falar 'tchê'). Termine em 'fèui' caindo no 4º tom.\nLeia: Wǒ chēn-chang da xièn-djin bù gòu fù tchū-tsū-tchā fèi."
+  },
+  "778": {
+    "explanation": "A abordagem educada abre a frase com 'por favor, pergunto' (qǐngwèn). Em seguida entra o nome do local procurado: 'o provador de roupas' (shìyījiān). A pergunta de localização é feita no final com a estrutura simples 'fica onde?' (zài nǎr?).",
+    "breakdown": [
+      {
+        "word": "请问",
+        "meaning": "qǐngwèn — Por favor, me diga / com licença (qǐng: convidar/por favor; wèn: perguntar)"
+      },
+      {
+        "word": "试衣间",
+        "meaning": "shìyījiān — Provador / cabine de vestir (shì: provar; yī: roupa; jiān: sala)"
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em"
+      },
+      {
+        "word": "哪儿",
+        "meaning": "nǎr — Onde (com sufixo enrolado de língua)"
+      }
+    ],
+    "pronuncia": "Em 'Qǐngwèn', afunde a voz no 3º tom em 'tchǐng' disparando um sopro de ar com sorriso espalmado, e solte 'uèn' no 4º tom seco com corte nos dentes. Em 'shìyījiān', enrola a língua em 'chì' no 4º tom, sustente 'yī' no 1º tom alto e 'djiēn' no 1º tom alto com corte dental. Diga 'tsài' no 4º tom seco. Termine em 'nǎr' afundando a voz no 3º tom grave enquanto enrola a ponta da língua bruscamente para trás no céu da boca em um único movimento.\nLeia: Tchǐng-uèn chì-yī-djiēn tsài nǎr."
+  },
+  "779": {
+    "explanation": "O sujeito 'eu' (wǒ) é seguido da atenuação de negação 'não muito' (bù tài). Lembrando que a palavra de negação 'bù' vira 2º tom ascendente 'bú' quando fica logo antes do 4º tom 'tài'. Em seguida entra a expressão de habilidade 'ser especialista/bom em' (shàncháng) e o tema 'gerenciar finanças' (lǐcái).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "不太",
+        "meaning": "bù tài — Não muito (bù vira bú antes de 4º tom tài)"
+      },
+      {
+        "word": "擅长",
+        "meaning": "shàncháng — Ser bom em / especialista em (shàn: bom em; cháng: mestre)"
+      },
+      {
+        "word": "理财",
+        "meaning": "lǐcái — Administrar dinheiro / finanças (lǐ: organizar; cái: riqueza)"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ'. Na negação 'bù tài', a voz precisa obrigatoriamente subir no 2º tom ascendente em 'bú' (como quem faz uma pergunta) antes da queda seca no 4º tom em 'tài' (com sopro forte de ar). Em 'shàncháng', dê um golpe seco no 4º tom em 'chàn' enrolando a língua para trás, e suba a entonação no 2º tom em 'tcháng' com a língua enrolada e sopro de ar. Em 'lǐcái', afunde a voz no 3º tom em 'lǐ', e suba a entonação no 2º tom em 'tsái' disparando um estalo dental com forte explosão de ar.\nLeia: Wǒ bú tài chàn-tcháng lǐ-tsái."
+  },
+  "780": {
+    "explanation": "A intenção 'eu gostaria de' (wǒ xiǎng) vem em primeiro lugar. No mandarim, o local onde a ação vai acontecer precisa ser dito antes do verbo: 'neste banco' (zài zhè jiā yínháng). Depois vem a ação principal de 'abrir um/uma' (kāi gè) e o tipo de conta desejado: 'conta poupança' (chǔxù zhànghù).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu"
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Gostaria de / querer"
+      },
+      {
+        "word": "在这家",
+        "meaning": "zài zhè jiā — Neste (zài: em; zhè: este; jiā: termo de contagem para estabelecimentos)"
+      },
+      {
+        "word": "银行",
+        "meaning": "yínháng — Banco (yín: prata; háng: casa comercial)"
+      },
+      {
+        "word": "开个",
+        "meaning": "kāi gè — Abrir um (kāi: abrir; gè: termo geral 'ga')"
+      },
+      {
+        "word": "储蓄账户",
+        "meaning": "chǔxù zhànghù — Conta poupança (chǔxù: poupança; zhànghù: conta)"
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'Wǒ' e 'xiǎng'. Diga 'tsài' no 4º tom seco, solte 'djè' no 4º tom com a língua enrolada para trás, e sustente 'djiā' no 1º tom alto com sorriso. Em 'yínháng', suba a entonação no 2º tom em 'yín' travando o N no dente, e suba no 2º tom em 'rráng' com atrito de garganta. Em 'kāi gè', sustente 'kāi' no 1º tom alto disparando um sopro de ar na garganta, e passe pelo tom neutro 'ga', sendo proibido falar 'gê'. Em 'chǔxù', afunde 'tchǔ' no 3º tom enrolando a língua com sopro, e solte 'xù' no 4º tom com bico de 'U' e som de 'I' por dentro. Termine com dois golpes secos no 4º tom em 'djàng-rrù'.\nLeia: Wǒ xiǎng tsài djè djiā yín-rráng kāi ga tchǔ-xù djàng-rrù."
+  }
+}

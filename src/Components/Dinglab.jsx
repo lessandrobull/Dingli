@@ -260,12 +260,21 @@ export default function Dinglab({
             if (setStatusVoz) setStatusVoz('IDLE');
 
           } else {
-            // Reprovação na Prova de Fogo: ZERO punição (retorna ao neutro após 3s)
+            // Reprovação na Prova de Fogo: ZERO punição (toca correção e retorna ao neutro após 3s)
             setResultadoFeedback('erro');
             setFeedbackMensagem("");
             setModoProva(false);
             if (setStatusVoz) setStatusVoz('IDLE');
             if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
+
+            if (falar) {
+              falar({
+                id: fraseAtual.id,
+                texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo,
+                dinglab: true,
+                sortearDiferente: true
+              }, false);
+            }
 
             timerFeedbackRef.current = setTimeout(() => {
               setResultadoFeedback(null);
@@ -983,7 +992,7 @@ export default function Dinglab({
                         left: '50%',
                         top: '100%',
                         transform: 'translateX(-50%)',
-                        marginTop: '10px',
+                        marginTop: '22px',
                         backgroundColor: COR_TOM_CLARO,
                         color: corDinamica,
                         fontSize: 'clamp(1.2rem, 7vw, 1.53rem)',
@@ -1003,204 +1012,228 @@ export default function Dinglab({
               </div>
 
               {/* BARRA DE 6 BOTÕES */}
-              <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {(() => {
+                const ehAcertoTravado = resultadoFeedback === 'acerto';
+                const estiloDesativadoAcerto = {
+                  border: '1px solid rgba(0, 0, 0, 0.12)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.35)',
+                  color: '#64748b',
+                  cursor: 'not-allowed',
+                  opacity: 0.5,
+                  boxShadow: 'none'
+                };
 
-                {/* 3 BOTÕES SUPERIORES DE APOIO */}
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
-                  {/* Botão 1: Ouvir gravação */}
-                  <button
-                    type="button"
-                    disabled={!audioGravadoUrl || tocandoMinhaVoz}
-                    onClick={handleReproduzirMinhaVoz}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: '1px solid rgba(0, 0, 0, 0.12)',
-                      backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.85)' : 'rgba(255, 255, 255, 0.35)',
-                      color: audioGravadoUrl ? '#0f172a' : '#64748b',
-                      fontSize: '0.8rem',
-                      fontWeight: '800',
-                      cursor: audioGravadoUrl ? 'pointer' : 'not-allowed',
-                      opacity: audioGravadoUrl ? 1 : 0.5,
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px',
-                      boxShadow: audioGravadoUrl ? '0 1px 4px rgba(0,0,0,0.08)' : 'none'
-                    }}
-                  >
-                    {tocandoMinhaVoz ? "Reproduzindo..." : "Ouvir gravação"}
-                  </button>
+                return (
+                  <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, display: 'flex', flexDirection: 'column', gap: '8px' }}>
 
-                  {/* Botão 2: Praticar repetição */}
-                  <button
-                    type="button"
-                    onClick={handlePraticarRepeticao}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: '1px solid rgba(0, 0, 0, 0.12)',
-                      backgroundColor: tocandoRepeticao ? corDinamica : 'rgba(255, 255, 255, 0.85)',
-                      color: tocandoRepeticao ? '#ffffff' : '#0f172a',
-                      fontSize: '0.8rem',
-                      fontWeight: '800',
-                      cursor: 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px',
-                      boxShadow: '0 1px 4px rgba(0,0,0,0.08)'
-                    }}
-                  >
-                    {tocandoRepeticao ? "Parar repetição" : "Repetição"}
-                  </button>
+                    {/* 3 BOTÕES SUPERIORES DE APOIO */}
+                    <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
+                      {/* Botão 1: Ouvir gravação */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado || !audioGravadoUrl || tocandoMinhaVoz}
+                        onClick={handleReproduzirMinhaVoz}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: '1px solid rgba(0, 0, 0, 0.12)',
+                          backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.85)' : 'rgba(255, 255, 255, 0.35)',
+                          color: audioGravadoUrl ? '#0f172a' : '#64748b',
+                          fontSize: '0.8rem',
+                          fontWeight: '800',
+                          cursor: audioGravadoUrl ? 'pointer' : 'not-allowed',
+                          opacity: audioGravadoUrl ? 1 : 0.5,
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          boxShadow: audioGravadoUrl ? '0 1px 4px rgba(0,0,0,0.08)' : 'none',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {tocandoMinhaVoz ? "Reproduzindo..." : "Ouvir gravação"}
+                      </button>
 
-                  {/* Botão 3: Pronto (Disparo da Prova de Fogo) */}
-                  <button
-                    type="button"
-                    onClick={handleDispararPronto}
-                    disabled={statusVoz !== 'IDLE'}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: 'none',
-                      backgroundColor: temas[idiomaEstudo]?.bg || '#4d6395',
-                      color: '#ffffff',
-                      fontSize: '0.82rem',
-                      fontWeight: '900',
-                      cursor: statusVoz !== 'IDLE' ? 'not-allowed' : 'pointer',
-                      opacity: statusVoz !== 'IDLE' ? 0.6 : 1,
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px',
-                      boxShadow: '0 2px 6px rgba(0,0,0,0.14)'
-                    }}
-                  >
-                    {t?.dinglab_ready || "Pronto"}
-                  </button>
-                </div>
+                      {/* Botão 2: Praticar repetição */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado}
+                        onClick={handlePraticarRepeticao}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: '1px solid rgba(0, 0, 0, 0.12)',
+                          backgroundColor: tocandoRepeticao ? corDinamica : 'rgba(255, 255, 255, 0.85)',
+                          color: tocandoRepeticao ? '#ffffff' : '#0f172a',
+                          fontSize: '0.8rem',
+                          fontWeight: '800',
+                          cursor: 'pointer',
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {tocandoRepeticao ? "Parar repetição" : "Repetição"}
+                      </button>
 
-                {/* 3 BOTÕES INFERIORES PRINCIPAIS */}
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
-                  {/* Botão 1: Explicação */}
-                  <button
-                    type="button"
-                    onClick={() => explicarFraseIA(fraseAtual?.id, fraseAtual)}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: 'none',
-                      backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a',
-                      color: COR_TOM_CLARO,
-                      fontSize: '0.82rem',
-                      fontWeight: '800',
-                      cursor: 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px'
-                    }}
-                  >
-                    {t?.askAi || "Explicação"}
-                  </button>
+                      {/* Botão 3: Pronto (Disparo da Prova de Fogo) */}
+                      <button
+                        type="button"
+                        onClick={handleDispararPronto}
+                        disabled={ehAcertoTravado || statusVoz !== 'IDLE'}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: temas[idiomaEstudo]?.bg || '#4d6395',
+                          color: '#ffffff',
+                          fontSize: '0.82rem',
+                          fontWeight: '900',
+                          cursor: statusVoz !== 'IDLE' ? 'not-allowed' : 'pointer',
+                          opacity: statusVoz !== 'IDLE' ? 0.6 : 1,
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          boxShadow: '0 2px 6px rgba(0,0,0,0.14)',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {t?.dinglab_ready || "Pronto"}
+                      </button>
+                    </div>
 
-                  {/* Botão 2: Ouvir / Lento */}
-                  <button
-                    type="button"
-                    onMouseDown={(e) => e.preventDefault()}
-                    onClick={handleOuvirClick}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      backgroundColor: 'rgba(255, 255, 255, 0.75)',
-                      color: ns.bg,
-                      border: `1px solid ${temas[idiomaEstudo]?.bg}`,
-                      fontSize: '0.82rem',
-                      fontWeight: '800',
-                      cursor: 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px'
-                    }}
-                  >
-                    {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
-                  </button>
+                    {/* 3 BOTÕES INFERIORES PRINCIPAIS */}
+                    <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
+                      {/* Botão 1: Explicação */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado}
+                        onClick={() => explicarFraseIA(fraseAtual?.id, fraseAtual)}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a',
+                          color: COR_TOM_CLARO,
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: 'pointer',
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {t?.askAi || "Explicação"}
+                      </button>
 
-                  {/* Botão 3: Falar agora */}
-                  <button
-                    type="button"
-                    onClick={handleFalarAgora}
-                    disabled={statusVoz === 'EVALUATING'}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: 'none',
-                      backgroundColor: statusVoz === 'RECORDING' ? '#ef4444' : ns.bg,
-                      color: ns.txt,
-                      fontSize: '0.82rem',
-                      fontWeight: '800',
-                      cursor: statusVoz === 'EVALUATING' ? 'not-allowed' : 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px'
-                    }}
-                  >
-                    {statusVoz === 'RECORDING' ? (t?.check || 'Verificar') : statusVoz === 'EVALUATING' ? '...' : (t?.speakNow || 'Falar agora')}
-                  </button>
-                </div>
+                      {/* Botão 2: Ouvir / Lento */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado}
+                        onMouseDown={(e) => e.preventDefault()}
+                        onClick={handleOuvirClick}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          backgroundColor: 'rgba(255, 255, 255, 0.75)',
+                          color: ns.bg,
+                          border: `1px solid ${temas[idiomaEstudo]?.bg}`,
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: 'pointer',
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                      </button>
 
-              </div>
+                      {/* Botão 3: Falar agora */}
+                      <button
+                        type="button"
+                        onClick={handleFalarAgora}
+                        disabled={ehAcertoTravado || statusVoz === 'EVALUATING'}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: ns.bg,
+                          color: ns.txt,
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: statusVoz === 'EVALUATING' ? 'not-allowed' : 'pointer',
+                          opacity: statusVoz === 'EVALUATING' ? 0.5 : 1,
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {statusVoz === 'RECORDING' ? (t?.check || 'Verificar') : statusVoz === 'EVALUATING' ? '...' : (t?.speakNow || 'Falar agora')}
+                      </button>
+                    </div>
+
+                  </div>
+                );
+              })()}
             </>
           )}
 

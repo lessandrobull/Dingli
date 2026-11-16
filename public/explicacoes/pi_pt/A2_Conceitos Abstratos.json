@@ -1,0 +1,878 @@
+{
+  "571": {
+    "explanation": "No mandarim, a gente começa montando a frase dizendo quem tem a opinião 'eu acho' (wǒ juéde), seguido imediatamente pelo assunto principal 'a tecnologia' (kējì). Para indicar que algo está acontecendo exatamente neste momento, usamos a palavra 'zhèngzài' antes da ação 'mudar' (gǎibiàn). No finalzinho da frase fica o objeto que está sofrendo a mudança: 'nossa vida' (wǒmen de shēnghuó), onde a união de 'nós' com a partícula de posse cria o sentido de 'nosso'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu — pronome pessoal reto."
+      },
+      {
+        "word": "觉得",
+        "meaning": "juéde — Achar / Sentir / Ter a impressão — jué: perceber; de: partícula que soa 'da'."
+      },
+      {
+        "word": "科技",
+        "meaning": "kējì — Tecnologia / Ciência e técnica — kē: ciência; jì: habilidade/técnica."
+      },
+      {
+        "word": "正在",
+        "meaning": "zhèngzài — Estar no processo de / Em andamento — zhèng: exatamente; zài: no momento."
+      },
+      {
+        "word": "改变",
+        "meaning": "gǎibiàn — Mudar / Alterar / Transformar — gǎi: alterar; biàn: mudar."
+      },
+      {
+        "word": "我们的",
+        "meaning": "wǒmen de — Nosso / De nós — wǒmen: nós; de: partícula de posse que soa 'da'."
+      },
+      {
+        "word": "生活",
+        "meaning": "shēnghuó — Vida / Cotidiano — shēng: nascer/viver; huó: vida."
+      }
+    ],
+    "pronuncia": "Comece em 'Wǒ' afundando a voz lá no grave no 3º tom. Em 'juéde', faça o 'j' com a boca em sorriso puxando a voz para cima em 'djüé' no 2º tom e termine na partícula frouxa 'da' sem força. Em 'kējì', fale 'kē' alto e contínuo no 1º tom e 'jì' caindo seco no 4º tom. Fale 'zhèngzài' enrolando a ponta da língua para trás em 'djèng' no 4º tom curto e seco, seguido de 'tsài' também caindo no 4º tom. Em 'gǎibiàn', mergulhe a voz em 'gǎi' no 3º tom e dê um golpe seco em 'bièn' usando o som de iên com a língua travando no dente. Para 'wǒmen de', fale 'wǒ' grave, 'man' leve e 'da' neutro frouxo (proibido falar 'dê'). Conclua enrolando a língua para trás em 'chēng' reto no 1º tom e subindo a entonação com atrito de garganta em 'rruó' no 2º tom.\nLeia: Wǒ djüé-da kē-jì djèng-tsài gǎi-bièn wǒ-man da chēng-rruó."
+  },
+  "572": {
+    "explanation": "A ordem de pensamento dos nativos coloca a condição de fundo logo no início da frase: 'afastar-se do celular' (líkāi shǒujī). Depois disso vem a dúvida sobre a capacidade de manter o estado normal com 'ainda é possível' (hái néng) viver 'de forma normal' (zhèngcháng shēnghuó). A frase inteira é transformada em uma pergunta simples apenas adicionando a partícula 'ma' bem no final.",
+    "breakdown": [
+      {
+        "word": "离开",
+        "meaning": "Líkāi — Afastar-se de / Deixar / Sair de — lí: distanciar; kāi: abrir/separar."
+      },
+      {
+        "word": "手机",
+        "meaning": "shǒujī — Celular / Telefone móvel — shǒu: mão; jī: aparelho/máquina."
+      },
+      {
+        "word": "还",
+        "meaning": "hái — Ainda / Além disso."
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Ser capaz de / Poder / Conseguir."
+      },
+      {
+        "word": "正常",
+        "meaning": "zhèngcháng — Normal / De forma regular — zhèng: correto; cháng: frequente."
+      },
+      {
+        "word": "生活",
+        "meaning": "shēnghuó — Viver / Vida — shēng: viver; huó: vida."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula para perguntas diretas de sim ou não."
+      }
+    ],
+    "pronuncia": "Em 'Líkāi', suba a voz em 'Lí' no 2º tom e sustente 'kāi' alto e plano no 1º tom. Em 'shǒujī', curve a ponta da língua para trás em 'chǒu' mergulhando no 3º tom grave e estique os cantos da boca em sorriso para soltar 'dji' alto no 1º tom. Solte 'hái' como 'rái' subindo a voz no 2º tom com atrito na garganta. Fale 'néng' como 'náng' com som gutural puxando para cima no 2º tom. Em 'zhèngcháng', enrole a língua para trás em 'djèng' caindo seco no 4º tom e solte 'tcháng' subindo no 2º tom com uma rajada forte de ar soprado. Em 'shēnghuó', mantenha a língua curvada em 'chēng' no 1º tom e suba a voz em 'rruó' no 2º tom. Feche com 'ma' de forma leve, curta e frouxa.\nLeia: Lí-kāi chǒu-dji rái náng djèng-tcháng chēng-rruó ma?"
+  },
+  "573": {
+    "explanation": "No mandarim, você apresenta primeiro o tema central 'o meio ambiente' (huánjìng) e em seguida estabelece o alvo do assunto usando a estrutura 'em relação ao nosso futuro' (duì wǒmen de wèilái). A intensidade e a qualidade da ideia 'muito importante' (fēicháng zhòngyào) ficam reservadas para o final da frase, mostrando como um elemento se conecta diretamente ao outro.",
+    "breakdown": [
+      {
+        "word": "环境",
+        "meaning": "Huánjìng — Meio ambiente / Entorno — huán: cercar; jìng: limite/meio."
+      },
+      {
+        "word": "对",
+        "meaning": "duì — Para / Em relação a / Diante de."
+      },
+      {
+        "word": "我们的",
+        "meaning": "wǒmen de — Nosso / De nós — wǒmen: nós; de: partícula de posse que soa 'da'."
+      },
+      {
+        "word": "未来",
+        "meaning": "wèilái — Futuro — wèi: ainda não; lái: vir."
+      },
+      {
+        "word": "非常",
+        "meaning": "fēicháng — Extremamente / Muito — fēi: não; cháng: comum."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante — zhòng: pesado; yào: querer/exigir."
+      }
+    ],
+    "pronuncia": "Em 'Huánjìng', suba a voz no 2º tom com atrito de garganta em 'Rruán' travando a língua no dente e caia seco em 'djìng' no 4º tom com sorriso tenso. Fale 'duì' usando a vogal oculta 'uêi' no 4º tom seco. Em 'wǒmen de', mergulhe a voz em 'wǒ', solte 'man' levinho e termine em 'da' neutro sem peso. Fale 'wèilái' caindo no 4º tom em 'uèi' e subindo no 2º tom em 'lái'. Fale 'fēicháng' com 'fēi' alto e contínuo no 1º tom e 'tcháng' subindo no 2º tom com a língua curvada para trás e sopro potente de ar. Conclua em 'zhòngyào' enrolando a língua em 'djòng' no 4º tom seco e caindo em 'iào' firme no 4º tom.\nLeia: Rruán-djìng duêi wǒ-man da uèi-lái fēi-tcháng djòng-iào."
+  },
+  "574": {
+    "explanation": "A frase começa definindo o grupo responsável 'nós' (wǒmen), seguido do dever moral de agir 'deveríamos' (yīnggāi). Antes de falar a ação propriamente dita, os nativos colocam a atitude mental 'ao máximo / tentando o máximo' (jìnliàng). Depois vem a ação de 'proteger' (bǎohù) e finalmente o elemento protegido 'a grande natureza' (dàzìrán).",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "Wǒmen — Nós — wǒ: eu; men: sufixo de plural que soa 'man'."
+      },
+      {
+        "word": "应该",
+        "meaning": "yīnggāi — Dever / Ter a obrigação de — yīng: dever; gāi: precisar."
+      },
+      {
+        "word": "尽量",
+        "meaning": "jìnliàng — Ao máximo / Fazer o possível — jìn: esgotar; liàng: capacidade."
+      },
+      {
+        "word": "保护",
+        "meaning": "bǎohù — Proteger / Guardar — bǎo: cuidar; hù: proteger."
+      },
+      {
+        "word": "大自然",
+        "meaning": "dàzìrán — Natureza / Mãe natureza — dà: grande; zìrán: natureza/natural."
+      }
+    ],
+    "pronuncia": "Comece em 'Wǒmen' fazendo 'wǒ' grave no 3º tom e 'man' frouxo sem força. Fale 'yīnggāi' sustentando 'īng' e 'gāi' altos e planos no 1º tom, sem ar no 'g'. Em 'jìnliàng', estique os cantos da boca em sorriso para soltar 'djìn' caindo seco no 4º tom com corte no dente e caia em 'liàng' também no 4º tom. Em 'bǎohù', fale 'bǎo' no 3º tom mergulhado com estalo seco de 'b' e caia em 'rrù' no 4º tom com atrito de garganta. Para 'dàzìrán', solte 'dà' no 4º tom seco, 'tsì' no 4º tom travado com estalo dental sem ar, e encerre em 'ján' subindo no 2º tom com a ponta da língua curvada para trás e voz vibrando.\nLeia: Wǒ-man īng-gāi djìn-liàng bǎo-rrù dà-tsì-ján."
+  },
+  "575": {
+    "explanation": "Para perguntar o significado de algo, a lógica chinesa aponta primeiro o objeto exato sobre o qual se quer saber: 'esta palavra' (zhège cí). Em seguida coloca o verbo ser 'é' (shì) e encerra com o termo de dúvida 'que sentido/significado' (shénme yisi). A ordem literal equivale a 'Esta palavra é que significado?'.",
+    "breakdown": [
+      {
+        "word": "这个",
+        "meaning": "Zhège — Este / Esta / Isto — zhè: este; ge: partícula genérica que soa 'ga'."
+      },
+      {
+        "word": "词",
+        "meaning": "cí — Palavra / Termo / Vocábulo."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Qual — obrigatoriamente pronunciado como 'chán-ma'."
+      },
+      {
+        "word": "意思",
+        "meaning": "yisi — Significado / Sentido / Intenção — yì: ideia; si: pensamento."
+      }
+    ],
+    "pronuncia": "Em 'Zhège', curve a ponta da língua para trás para soltar 'Djè' caindo no 4º tom seco e passe por 'ga' de forma leve no tom neutro, sem falar 'gê'. Em 'cí', faça um estalo de 'ts' atrás dos dentes da frente subindo a voz no 2º tom em 'tsí'. Fale 'shì' como 'chì' enrolando a língua para trás no 4º tom descendente. Fale 'shénme' estritamente como 'chán-ma', subindo em 'chán' no 2º tom e soltando 'ma' frouxo. Conclua 'yisi' dando um golpe seco no 4º tom em 'yì' e travando a vogal na consoante dental em 'tsï' de forma curta e sem acento.\nLeia: Djè-ga tsí chì chán-ma yì-tsï?"
+  },
+  "576": {
+    "explanation": "No mandarim, a negação da opinião é feita logo no início da frase dizendo 'Eu não acho' (wǒ bù juéde). Todo o resto do pensamento é encadeado de forma direta logo em seguida: 'o dinheiro' (qián) 'pode' (néng) 'comprar e alcançar' (mǎidào) 'a felicidade' (xìngfú).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu."
+      },
+      {
+        "word": "不",
+        "meaning": "bù — Não — partícula de negação."
+      },
+      {
+        "word": "觉得",
+        "meaning": "juéde — Achar / Sentir — jué: perceber; de: partícula que soa 'da'."
+      },
+      {
+        "word": "钱",
+        "meaning": "qián — Dinheiro / Moeda."
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Poder / Ser capaz de."
+      },
+      {
+        "word": "买到",
+        "meaning": "mǎidào — Conseguir comprar / Alcançar comprando — mǎi: comprar; dào: alcançar."
+      },
+      {
+        "word": "幸福",
+        "meaning": "xìngfú — Felicidade / Bem-estar — xìng: sorte; fú: bênção."
+      }
+    ],
+    "pronuncia": "Fale 'Wǒ' afundando no 3º tom grave e 'bù' caindo firme no 4º tom seco. Em 'juéde', estique a boca em sorriso para soltar 'djüé' subindo a voz no 2º tom e termine na partícula curta 'da'. Em 'qián', abra um sorriso tenso e solte uma explosão potente de ar em 'tchién' subindo no 2º tom com corte no dente. Fale 'néng' como 'náng' gutural subindo no 2º tom. Em 'mǎidào', afunde em 'mǎi' no 3º tom grave e caia seco em 'dào' no 4º tom com 'd' seco sem ar. Finalize 'xìngfú' chiando agudo em sorriso tenso no 4º tom em 'xìng' e subindo suave em 'fú' no 2º tom.\nLeia: Wǒ bù djüé-da tchién náng mǎi-dào xìng-fú."
+  },
+  "577": {
+    "explanation": "A frase segue a estrutura direta de definição: o sujeito 'educação' (jiàoyù) vem em primeiro lugar, seguido do verbo ser 'é' (shì). A expressão 'chave do sucesso' é construída colocando o elemento possuidor 'sucesso' (chénggōng) ligado à palavra 'chave/ponto crucial' (guānjiàn) por meio da partícula de ligação 'de'.",
+    "breakdown": [
+      {
+        "word": "教育",
+        "meaning": "Jiàoyù — Educação / Ensino — jiào: ensinar; yù: cultivar."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "成功",
+        "meaning": "chénggōng — Sucesso / Êxito — chéng: realizar; gōng: trabalho."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação/posse que soa 'da'."
+      },
+      {
+        "word": "关键",
+        "meaning": "guānjiàn — Chave / Ponto crucial / Elemento decisivo — guān: fechar/passagem; jiàn: peça."
+      }
+    ],
+    "pronuncia": "Em 'Jiàoyù', faça 'Djiào' no 4º tom caindo seco com sorriso tenso e junte com 'yǜ' fazendo bico firme de 'u' com som interno de 'i' no 4º tom. Fale 'shì' como 'chì' enrolando a língua para trás no 4º tom. Em 'chénggōng', enrole a língua para trás disparando ar em 'tcháng' subindo no 2º tom e solte 'gōng' no 1º tom alto sem ar no 'g'. Passe por 'da' frouxo no tom neutro. Conclua em 'guānjiàn' mantendo 'guān' plano e reto no 1º tom com corte no dente e caindo em 'djièn' no 4º tom com som de iên e sorriso tenso.\nLeia: Djiào-yǜ chì tcháng-gōng da guān-djièn."
+  },
+  "578": {
+    "explanation": "O mandarim possui uma estrutura comparativa muito elegante para descrever mudanças graduais: 'um ano compara com um ano' (yīnián bǐ yīnián), que significa 'a cada ano que passa' ou 'ano após ano'. O tema da frase 'o clima/tempo' (tiānqì) vem logo no começo, e a qualidade final 'quente' (rè) fecha a ideia.",
+    "breakdown": [
+      {
+        "word": "天气",
+        "meaning": "Tiānqì — Tempo / Clima — tiān: céu; qì: ar/atmosfera."
+      },
+      {
+        "word": "一年",
+        "meaning": "yīnián — Um ano — por regra de tom, fala-se 'yì-nién'."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Em comparação com / Comparado a."
+      },
+      {
+        "word": "一年",
+        "meaning": "yīnián — Um ano — por regra de tom, fala-se 'yì-nién'."
+      },
+      {
+        "word": "热",
+        "meaning": "rè — Quente / Calor."
+      }
+    ],
+    "pronuncia": "Em 'Tiānqì', fale 'tiēn' sustentando o som alto no 1º tom com rima fechada em 'iên' e solte 'tchì' no 4º tom seco disparando um jato potente de ar em sorriso. Fale 'yīnián' como 'yì-nién', caindo seco em 'yì' no 4º tom e subindo em 'nién' no 2º tom com corte dental. Em 'bǐ', afunde a voz no 3º tom grave com 'b' seco sem ar. Repita 'yì-nién' com a mesma oscilação de tom. Finalize em 'rè' pronunciando 'jè' com a ponta da língua curvada para trás e caindo de forma firme no 4º tom seco.\nLeia: Tiēn-tchì yì-nién bǐ yì-nién jè."
+  },
+  "579": {
+    "explanation": "A frase coloca o foco na atividade bem no início: 'aprender' (xué), seguida do objeto completo 'uma nova língua' (yī mén xīn yǔyán). A estrutura de pergunta não exige mudar nenhuma palavra de lugar; basta adicionar o adjetivo 'difícil' (nán) e fechar a frase com a partícula interrogativa 'ma'.",
+    "breakdown": [
+      {
+        "word": "学",
+        "meaning": "Xué — Aprender / Estudar."
+      },
+      {
+        "word": "一门",
+        "meaning": "yī mén — Uma (para disciplinas/idiomas) — fala-se 'yì mén'."
+      },
+      {
+        "word": "新",
+        "meaning": "xīn — Novo / Nova."
+      },
+      {
+        "word": "语言",
+        "meaning": "yǔyán — Língua / Idioma — yǔ: linguagem; yán: fala."
+      },
+      {
+        "word": "难",
+        "meaning": "nán — Difícil / Complicado."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa para perguntas diretas."
+      }
+    ],
+    "pronuncia": "Em 'Xué', monte o bico firme em 'xüé' abrindo para o 'é' e suba a voz no 2º tom. Fale 'yī mén' como 'yì mén', dando um golpe seco em 'yì' no 4º tom e subindo em 'mén' no 2º tom com som de 'mên'. Fale 'xīn' com um sorriso tenso e limpo no 1º tom alto travando a língua no dente. Em 'yǔyán', mergulhe em 'yǔ' no 3º tom grave com bico de 'ü' e suba em 'ián' no 2º tom. Fale 'nán' subindo a voz no 2º tom com a ponta da língua cravada nos dentes da frente. Conclua com a partícula 'ma' curta e solta.\nLeia: Xüé yì mén xīn yǔ-ián nán ma?"
+  },
+  "580": {
+    "explanation": "A ordem dos pensamentos em mandarim estabelece primeiro o estado de contexto: 'ao ficar ocupado' (máng qǐlái). Em seguida traz o elemento principal 'o tempo' (shíjiān) e a maneira como ele realiza a ação 'passar muito rápido' (guò de hěn kuài), onde o 'de' funciona como uma ponte ligando a ação ao modo como ela acontece.",
+    "breakdown": [
+      {
+        "word": "忙",
+        "meaning": "Máng — Ocupado / Atarefado."
+      },
+      {
+        "word": "起来",
+        "meaning": "qǐlai — Começar a / Tornar-se — qǐ: levantar; lai: vir."
+      },
+      {
+        "word": "时间",
+        "meaning": "shíjiān — Tempo / Duração — shí: momento; jiān: intervalo."
+      },
+      {
+        "word": "过得",
+        "meaning": "guò de — Passar de tal modo — guò: passar; de: partícula de modo que soa 'da'."
+      },
+      {
+        "word": "很快",
+        "meaning": "hěn kuài — Muito rápido — hěn: muito; kuài: rápido."
+      }
+    ],
+    "pronuncia": "Em 'Máng', suba a voz no 2º tom ressoando no fundo. Fale 'qǐlai' soltando 'tchǐ' no 3º tom com sopro de ar em sorriso e 'lái' subindo leve no 2º tom. Em 'shíjiān', enrole a língua para trás em 'chì' subindo no 2º tom e junte com 'djiēn' no 1º tom alto com rima em 'iên' e sorriso tenso. Fale 'guò' caindo no 4º tom seco e solte a partícula 'da' de forma frouxa e sem acento. Em 'hěn kuài', afunde a voz no 3º tom grave em 'rrěn' com atrito de garganta e dê um golpe seco caindo no 4º tom em 'kuài'.\nLeia: Máng-tchǐ-lái chì-djiēn guò da rrěn kuài."
+  },
+  "581": {
+    "explanation": "A frase é montada em uma sequência bem lógica e direta: 'Eu tenho' (wǒ yǒu), seguido do atributo descritivo 'diferente' (bùtóng) conectado pela partícula 'de' ao substantivo 'ponto de vista/opinião' (kànfǎ). Em mandarim, as características sempre vêm colocadas antes da palavra que elas estão descrevendo.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Possuir."
+      },
+      {
+        "word": "不同",
+        "meaning": "bùtóng — Diferente / Não igual — bù: não; tóng: igual."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação que soa 'da'."
+      },
+      {
+        "word": "看法",
+        "meaning": "kànfǎ — Ponto de vista / Opinião / Visão — kàn: olhar; fǎ: modo/método."
+      }
+    ],
+    "pronuncia": "Fale 'Wǒ' mergulhando no 3º tom grave e 'yǒu' como 'iǒu' fazendo a curva grave do 3º tom. Em 'bùtóng', dê um golpe seco em 'bù' no 4º tom sem ar no 'b' e suba a voz em 'tóng' no 2º tom soltando uma rajada potente de ar. Passe pela partícula 'da' no tom neutro de forma leve e relaxada. Em 'kànfǎ', solte 'kàn' caindo seco no 4º tom com sopro forte na garganta e feche em 'fǎ' mergulhando no 3º tom grave.\nLeia: Wǒ iǒu bù-tóng da kàn-fǎ."
+  },
+  "582": {
+    "explanation": "Em chinês, uma ação completa pode funcionar diretamente como o assunto da frase: 'obedecer às regras' (zūnshǒu guīzé). Depois disso, não se usa o verbo 'ser'; adiciona-se diretamente a qualidade 'muito importante' (hěn zhòngyào), pois o adjetivo em mandarim já traz consigo o sentido de estar naquele estado.",
+    "breakdown": [
+      {
+        "word": "遵守",
+        "meaning": "Zūnshǒu — Obedecer / Respeitar / Seguir — zūn: honrar; shǒu: guardar."
+      },
+      {
+        "word": "规则",
+        "meaning": "guīzé — Regras / Normas / Regulamento — guī: norma; zé: padrão."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito / Bastante."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante — zhòng: pesado; yào: querer."
+      }
+    ],
+    "pronuncia": "Em 'Zūnshǒu', faça 'tsūn' plano e alto no 1º tom com estalo seco de 'ts' atrás dos dentes sem ar, e junte com 'chǒu' mergulhando no 3º tom grave com a língua curvada para trás. Em 'guīzé', fale 'guī' alto no 1º tom sem ar e suba a voz em 'tsé' no 2º tom com estalo seco nos dentes. Fale 'hěn' como 'rrěn' afundando a voz no 3º tom grave. Conclua 'zhòngyào' enrolando a língua em 'djòng' caindo seco no 4º tom e caindo firme em 'iào' também no 4º tom.\nLeia: Tsūn-chǒu guī-tsé rrěn djòng-iào."
+  },
+  "583": {
+    "explanation": "A frase começa mostrando a intenção inicial: 'Nós precisamos encontrar' (wǒmen xūyào zhǎodào). Toda a explicação sobre o tipo de método vem colocada antes da palavra 'método': 'o método (bànfǎ) de (de) resolver este problema (jiějué zhège wèntí)', criando um encadeamento muito claro e preciso.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "Wǒmen — Nós — wǒ: eu; men: sufixo de plural que soa 'man'."
+      },
+      {
+        "word": "需要",
+        "meaning": "xūyào — Precisar / Necessitar — xū: necessitar; yào: querer."
+      },
+      {
+        "word": "找到",
+        "meaning": "zhǎodào — Encontrar / Achar — zhǎo: procurar; dào: alcançar."
+      },
+      {
+        "word": "解决",
+        "meaning": "jiějué — Resolver / Solucionar — jiě: desatar; jué: decidir."
+      },
+      {
+        "word": "这个",
+        "meaning": "zhège — Este / Esta — zhè: este; ge: partícula que soa 'ga'."
+      },
+      {
+        "word": "问题",
+        "meaning": "wèntí — Problema / Questão — wèi: perguntar; tí: tópico."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação que soa 'da'."
+      },
+      {
+        "word": "办法",
+        "meaning": "bànfǎ — Método / Solução / Jeito — bàn: fazer; fǎ: maneira."
+      }
+    ],
+    "pronuncia": "Em 'Wǒmen', fale 'wǒ' grave e 'man' frouxo. Fale 'xūyào' chiando agudo em 'xū' no 1º tom com bico e caindo em 'iào' no 4º tom. Em 'zhǎodào', enrole a língua em 'djǎo' no 3º tom e caia seco em 'dào' no 4º tom sem ar no 'd'. Em 'jiějué', fale 'djiě' no 3º tom e suba em 'djüé' no 2º tom com sorriso e bico. Passe por 'djè-ga' (4º tom seco + neutro 'ga'). Fale 'wèilái' ou 'wèntí' caindo no 4º tom em 'uèi' e subindo em 'tí' no 2º tom com sopro no 't'. Passe por 'da' neutro. Feche em 'bànfǎ' caindo no 4º tom seco em 'bàn' e mergulhando no 3º tom em 'fǎ'.\nLeia: Wǒ-man xū-iào djǎo-dào djiě-djüé djè-ga uèi-tí da bàn-fǎ."
+  },
+  "584": {
+    "explanation": "A ordem das palavras em mandarim aponta primeiro os objetos de comparação: 'estes dois' (zhè liǎng ge). Em seguida, faz-se a pergunta de maneira simples e direta: 'têm que diferença?' (yǒu shénme qūbié), mantendo a ordem natural sem precisar trocar o sujeito de lugar com o verbo.",
+    "breakdown": [
+      {
+        "word": "这两个",
+        "meaning": "Zhè liǎng ge — Estes dois / Estas duas — zhè: este; liǎng: dois; ge: partícula que soa 'ga'."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Existir."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — Qual / O que — pronunciado obrigatoriamente como 'chán-ma'."
+      },
+      {
+        "word": "区别",
+        "meaning": "qūbié — Diferença / Distinção — qū: distinguir; bié: outro."
+      }
+    ],
+    "pronuncia": "Em 'Zhè liǎng ge', curve a língua para trás em 'Djè' caindo no 4º tom seco, fale 'liǎng' mergulhando a voz no 3º tom grave e solte 'ga' leve no tom neutro. Fale 'yǒu' como 'iǒu' fazendo a curva do 3º tom grave. Em 'shénme', fale estritamente 'chán-ma', subindo em 'chán' no 2º tom e soltando 'ma' frouxo. Conclua em 'qūbié' esticando os cantos da boca em sorriso tenso e fazendo bico de 'u' para soltar 'tchü' alto no 1º tom com sopro potente de ar, juntando com 'bié' subindo no 2º tom com som de ié.\nLeia: Djè liǎng ga iǒu chán-ma tchü-bié?"
+  },
+  "585": {
+    "explanation": "A declaração começa com a convicção pessoal 'Eu acredito' (wǒ xiāngxìn). Para dizer 'todos', o mandarim duplica a palavra pessoa 'rren' criando 'rénrren' e adiciona a palavra 'dōu' para reforçar o sentido de 'sem exceção'. Por fim, junta-se o dever e o estado: 'deveriam ser iguais' (yīnggāi píngděng).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu."
+      },
+      {
+        "word": "相信",
+        "meaning": "xiāngxìn — Acreditar / Confiar — xiāng: mútuo; xìn: confiar."
+      },
+      {
+        "word": "人人",
+        "meaning": "rénrén — Todos / Cada pessoa — duplicativo de rén (pessoa)."
+      },
+      {
+        "word": "都",
+        "meaning": "dōu — Todos / Sem exceção."
+      },
+      {
+        "word": "应该",
+        "meaning": "yīnggāi — Dever / Deveriam."
+      },
+      {
+        "word": "平等",
+        "meaning": "píngděng — Iguais / Igualdade — píng: plano/igual; děng: nível."
+      }
+    ],
+    "pronuncia": "Fale 'Wǒ' afundando a voz no 3º tom grave. Em 'xiāngxìn', abra um sorriso tenso chiando agudo em 'xiāng' no 1º tom alto e caindo seco em 'xìn' no 4º tom. Em 'rénrén', enrole a ponta da língua para trás subindo a voz no 2º tom duas vezes em 'jên-jên'. Fale 'dōu' alto e sustentado no 1º tom sem ar no 'd'. Em 'yīnggāi', sustente 'īng' e 'gāi' planos no 1º tom. Conclua 'píngděng' subindo a voz em 'píng' no 2º tom com disparo de ar no 'p' e afundando em 'dǎi' no 3º tom grave sem ar no 'd'.\nLeia: Wǒ xiāng-xìn jên-jên dōu īng-gāi píng-dǎi."
+  },
+  "586": {
+    "explanation": "A frase coloca o tema principal 'o futuro' (wèilái) no início. Em seguida usa um par clássico de conectores para criar o contraste 'embora... mas...' (suīrán... dàn...). A primeira metade descreve a incerteza 'embora repleto de desconhecido' (suīrán chōngmǎn wèizhī), e a segunda metade fecha com o sentimento positivo 'mas faz a gente esperar com ansiedade' (dàn lìngrén qīdài).",
+    "breakdown": [
+      {
+        "word": "未来",
+        "meaning": "Wèilái — Futuro — wèi: ainda não; lái: vir."
+      },
+      {
+        "word": "虽然",
+        "meaning": "suīrán — Embora / Apesar de — suī: embora; rán: assim."
+      },
+      {
+        "word": "充满",
+        "meaning": "chōngmǎn — Estar cheio de / Repleto — chōng: encher; mǎn: cheio."
+      },
+      {
+        "word": "未知",
+        "meaning": "wèizhī — Desconhecido / O que não se sabe — wèi: não; zhī: saber."
+      },
+      {
+        "word": "但",
+        "meaning": "dàn — Mas / Porém."
+      },
+      {
+        "word": "令人",
+        "meaning": "lìngrén — Fazer as pessoas / Causar — lìng: fazer; rén: pessoa."
+      },
+      {
+        "word": "期待",
+        "meaning": "qīdài — Expectativa / Empolgante / Esperar ancioso — qī: período; dài: esperar."
+      }
+    ],
+    "pronuncia": "Em 'Wèilái', caia no 4º tom em 'uèi' e suba no 2º tom em 'lái'. Fale 'suīrán' com 'suī' plano no 1º tom e 'ján' subindo no 2º tom com a língua curvada para trás. Em 'chōngmǎn', enrole a língua para soltar 'tchōng' no 1º tom com sopro de ar e mergulhe em 'mǎn' no 3º tom grave. Em 'wèizhī', caia em 'uèi' no 4º tom e fale 'djī' plano no 1º tom com a língua virada para trás. Dê um golpe seco em 'dàn' no 4º tom. Fale 'lìngrén' com 'lìng' no 4º tom caindo e 'jên' subindo no 2º tom. Conclua em 'qīdài' chiando agudo em sorriso tenso em 'tchī' no 1º tom com sopro e caindo em 'dài' no 4º tom.\nLeia: Uèi-lái suī-ján tchōng-mǎn uèi-djī, dàn lìng-jên tchī-dài."
+  },
+  "587": {
+    "explanation": "O sujeito 'você' (nǐ) abre a pergunta, acompanhado do modo como a ação foi tomada 'decidir desta forma' (zhème juédìng). Depois vem a pergunta principal 'tem algum motivo?' (yǒu shénme yuányīn), e a partícula 'ma' no finalzinho fecha a frase transformando tudo em uma dúvida amigável.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "Nǐ — Você."
+      },
+      {
+        "word": "这么",
+        "meaning": "zhème — Desta forma / Assim — zhè: este; me: sufixo que soa 'ma'."
+      },
+      {
+        "word": "决定",
+        "meaning": "juédìng — Decidir / Decisão — jué: decidir; dìng: fixar."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Existir."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — Algum / Qual / O que — pronunciado como 'chán-ma'."
+      },
+      {
+        "word": "原因",
+        "meaning": "yuányīn — Motivo / Razão / Causa — yuán: origem; yīn: causa."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa."
+      }
+    ],
+    "pronuncia": "Fale 'Nǐ' afundando no 3º tom grave. Em 'zhème', enrole a língua em 'djè' caindo seco no 4º tom e passe por 'ma' leve no tom neutro. Em 'juédìng', arme o bico de 'ü' com sorriso tenso para soltar 'djüé' subindo no 2º tom e caia seco em 'dìng' no 4º tom. Fale 'yǒu' como 'iǒu' no 3º tom grave. Fale 'shénme' estritamente como 'chán-ma' (2º tom subindo + neutro). Em 'yuányīn', faça a rima 'üên' em 'yüén' subindo no 2º tom com bico e sustente 'īn' plano no 1º tom. Feche com 'ma' leve e frouxo.\nLeia: Nǐ djè-ma djüé-dìng iǒu chán-ma yüén-īn ma?"
+  },
+  "588": {
+    "explanation": "A frase começa com o sujeito 'eu' (wǒ), acompanhado da palavra 'zài' antes do verbo para mostrar que a ação está acontecendo neste exato instante 'estou pensando/refletindo' (zài sīkǎo). O objeto do pensamento vem colocado no final: 'o sentido (yìyì) da (de) vida humana (rénshēng)'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar no processo de / Em andamento."
+      },
+      {
+        "word": "思考",
+        "meaning": "sīkǎo — Refletir / Pensar profundamente — sī: pensar; kǎo: examinar."
+      },
+      {
+        "word": "人生",
+        "meaning": "rénshēng — Vida humana / Existência — rén: pessoa; shēng: vida."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação que soa 'da'."
+      },
+      {
+        "word": "意义",
+        "meaning": "yìyì — Sentido / Significado — yì: ideia; yì: intenção."
+      }
+    ],
+    "pronuncia": "Fale 'Wǒ' mergulhando no 3º tom grave e caia seco em 'zài' como 'tsài' no 4º tom com estalo dental sem ar. Em 'sīkǎo', solte um zumbido fino de 's' em 'ssī' no 1º tom alto com dentes quase encostados e mergulhe em 'kǎo' no 3º tom grave com sopro de garganta. Em 'rénshēng', enrole a ponta da língua para trás em 'jên' subindo no 2º tom e 'chēng' plano no 1º tom. Passe por 'da' frouxo no tom neutro. Conclua 'yìyì' dando dois golpes secos e enfáticos no 4º tom descendente em 'yì-yì'.\nLeia: Wǒ tsài ssī-kǎo jên-chēng da yì-yì."
+  },
+  "589": {
+    "explanation": "Para fazer comparações diretas de superioridade, o mandarim estabelece primeiro o elemento principal 'o conhecimento' (zhīshi), a palavra de comparação 'em relação a' (bǐ), o segundo elemento 'a força' (lìliàng), o intensificador 'ainda mais' (gèng) e o adjetivo final 'poderoso' (qiángdà).",
+    "breakdown": [
+      {
+        "word": "知识",
+        "meaning": "Zhīshi — Conhecimento / Saber — zhī: saber; shi: reconhecer."
+      },
+      {
+        "word": "比",
+        "meaning": "bǐ — Em comparação com / Comparado a."
+      },
+      {
+        "word": "力量",
+        "meaning": "lìliàng — Força / Poder — lì: força; liàng: capacidade."
+      },
+      {
+        "word": "更",
+        "meaning": "gèng — Ainda mais."
+      },
+      {
+        "word": "强大",
+        "meaning": "qiángdà — Poderoso / Forte / Imponente — qiáng: forte; dà: grande."
+      }
+    ],
+    "pronuncia": "Em 'Zhīshi', enrole a ponta da língua para trás para soltar 'djī' plano no 1º tom e 'chì' leve no tom neutro com a língua travada no céu da boca. Fale 'bǐ' mergulhando a voz no 3º tom grave com 'b' seco sem ar. Em 'lìliàng', dê dois golpes secos caindo no 4º tom em 'lì-liàng'. Fale 'gèng' como 'gàng' com som gutural caindo firme no 4º tom sem ar no 'g'. Conclua em 'qiángdà' esticando os cantos da boca em sorriso tenso para soltar 'tchiáng' subindo no 2º tom com explosão de ar e caindo em 'dà' no 4º tom seco.\nLeia: Djī-chì bǐ lì-liàng gàng tchiáng-dà."
+  },
+  "590": {
+    "explanation": "A frase começa apresentando uma condição como o tema principal: 'ter muitos sonhos' (yǒu hěnduō mèngxiǎng). Em seguida, define essa condição com o verbo ser 'é' (shì) e a expressão 'uma coisa boa' (jiàn hǎoshì), usando a palavra de contagem 'jiàn' própria para eventos e fatos.",
+    "breakdown": [
+      {
+        "word": "有",
+        "meaning": "Yǒu — Ter / Existir."
+      },
+      {
+        "word": "很多",
+        "meaning": "hěnduō — Muitos / Bastantes — hěn: muito; duō: bastante."
+      },
+      {
+        "word": "梦想",
+        "meaning": "mèngxiǎng — Sonhos / Aspirações — mèng: sonho; xiǎng: imaginar."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "件",
+        "meaning": "jiàn — Palavra de contagem para coisas/eventos/assuntos."
+      },
+      {
+        "word": "好事",
+        "meaning": "hǎoshì — Coisa boa / Bom acontecimento — hǎo: bom; shì: coisa/assunto."
+      }
+    ],
+    "pronuncia": "Fale 'Yǒu' como 'iǒu' mergulhando no 3º tom grave. Em 'hěnduō', fale 'rrěn' afundando no 3º tom grave com atrito de garganta e 'duō' plano no 1º tom sem ar no 'd'. Em 'mèngxiǎng', caia em 'mèng' no 4º tom seco e fale 'xiǎng' no 3º tom grave chiando agudo em sorriso. Fale 'shì' como 'chì' enrolando a língua para trás no 4º tom. Fale 'jiàn' como 'djièn' caindo seco no 4º tom com som de iên e sorriso tenso. Conclua 'hǎoshì' mergulhando em 'rrǎo' no 3º tom e enrolando a língua para caindo em 'chì' no 4º tom.\nLeia: Iǒu rrěn-duō mèng-xiǎng chì djièn rrǎo-chì."
+  },
+  "591": {
+    "explanation": "A estrutura de pergunta em mandarim começa com o grupo atingido 'nós' (wǒmen), seguido da busca pela maneira 'como' (zěnyàng). A palavra 'cái' indica 'só assim / só então', que junta com 'néng' (ser capaz). Por fim vem o verbo de ação 'melhorar' (gǎishàn) e a meta final 'a sociedade' (shèhuì).",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "Wǒmen — Nós — wǒ: eu; men: sufixo de plural que soa 'man'."
+      },
+      {
+        "word": "怎样",
+        "meaning": "zěnyàng — Como / De que maneira — zěn: como; yàng: modo."
+      },
+      {
+        "word": "才",
+        "meaning": "cái — Só então / Apenas assim."
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Poder / Ser capaz de."
+      },
+      {
+        "word": "改善",
+        "meaning": "gǎishàn — Melhorar / Aprimorar — gǎi: mudar; shàn: bom."
+      },
+      {
+        "word": "社会",
+        "meaning": "shèhuì — Sociedade — shè: comunidade; huì: união."
+      }
+    ],
+    "pronuncia": "Em 'Wǒmen', fale 'wǒ' grave no 3º tom e 'man' frouxo. Em 'zěnyàng', faça um estalo seco de 'ts' atrás dos dentes em 'tsǎn' mergulhando no 3º tom e caia em 'iàng' no 4º tom. Fale 'cái' como 'tsái' subindo a voz no 2º tom com estalo dental disparando ar. Fale 'néng' como 'náng' gutural subindo no 2º tom. Em 'gǎishàn', afunde a voz em 'gǎi' no 3º tom sem ar no 'g' e enrole a língua para soltar 'chàn' no 4º tom seco. Conclua 'shèhuì' caindo em 'chè' no 4º tom com língua enrolada e 'rruèi' no 4º tom com som de uêi e atrito de garganta.\nLeia: Wǒ-man tsǎn-iàng tsái náng gǎi-chàn chè-rruèi?"
+  },
+  "592": {
+    "explanation": "O raciocínio chinês monta primeiro o cenário onde tudo acontece: 'entre amigos' usando a estrutura de moldura 'zài... zhījiān' ao redor da palavra 'amigos' (péngyou). Em seguida, traz a atitude principal 'o respeito mútuo' (hùxiāng zūnzhòng) e fecha a ideia apontando que isso 'é muito importante' (hěn zhòngyào).",
+    "breakdown": [
+      {
+        "word": "在",
+        "meaning": "Zài — Em / No meio de."
+      },
+      {
+        "word": "朋友",
+        "meaning": "péngyou — Amigos — péng: amigo; you: companheiro."
+      },
+      {
+        "word": "之间",
+        "meaning": "zhījiān — Entre / No meio de — zhī: de; jiān: espaço."
+      },
+      {
+        "word": "互相",
+        "meaning": "hùxiāng — Mutuamente / Um ao outro — hù: mútuo; xiāng: mútuo."
+      },
+      {
+        "word": "尊重",
+        "meaning": "zūnzhòng — Respeitar / Ter respeito — zūn: honrar; zhòng: pesado."
+      },
+      {
+        "word": "很",
+        "meaning": "hěn — Muito."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante — zhòng: pesado; yào: querer."
+      }
+    ],
+    "pronuncia": "Fale 'Zài' como 'tsài' caindo no 4º tom seco. Em 'péngyou', suba a voz em 'póng' no 2º tom disparando ar nos lábios e solte 'iǒu' leve no tom neutro. Em 'zhījiān', enrole a língua em 'djī' no 1º tom plano e junte com 'djiēn' no 1º tom plano com som iên e sorriso tenso. Fale 'hùxiāng' caindo em 'rrù' no 4º tom com atrito de garganta e 'xiāng' no 1º tom alto em sorriso. Em 'zūnzhòng', fale 'tsūn' alto no 1º tom com estalo dental sem ar e 'djòng' caindo no 4º tom com língua enrolada. Fale 'hěn' como 'rrěn' no 3º tom grave. Feche 'zhòngyào' com dois 4º tons descendentes em 'djòng-iào'.\nLeia: Tsài póng-iǒu djī-djiēn, rrù-xiāng tsūn-djòng rrěn djòng-iào."
+  },
+  "593": {
+    "explanation": "A frase começa negando a compreensão 'Eu não entendo' (wǒ bù míngbai). Em seguida, vem o bloco que descreve a dúvida: 'o objetivo (mùdì) de (de) fazer assim (zhèyàng zuò)', finalizando com a pergunta direta sobre esse objetivo 'é o quê?' (shì shénme).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "Wǒ — Eu."
+      },
+      {
+        "word": "不",
+        "meaning": "bù — Não."
+      },
+      {
+        "word": "明白",
+        "meaning": "míngbai — Entender / Compreender — míng: claro; bai: claro."
+      },
+      {
+        "word": "这样做",
+        "meaning": "zhèyàng zuò — Fazer assim / Agir deste modo — zhèyàng: assim; zuò: fazer."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação que soa 'da'."
+      },
+      {
+        "word": "目的",
+        "meaning": "mùdì — Objetivo / Propósito / Alvo — mù: olho; dì: alvo."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "什么",
+        "meaning": "shénme — O que / Qual — obrigatoriamente pronunciado como 'chán-ma'."
+      }
+    ],
+    "pronuncia": "Fale 'Wǒ' grave no 3º tom e 'bù' caindo seco no 4º tom. Em 'míngbai', suba em 'míng' no 2º tom e solte 'bai' frouxo no tom neutro. Em 'zhèyàng zuò', enrole a língua em 'djè' caindo no 4º tom, caia em 'iàng' no 4º tom e solte 'tsuò' no 4º tom com estalo dental sem ar. Passe por 'da' neutro frouxo. Fale 'mùdì' com dois golpes secos no 4º tom em 'mù-dì' com 'd' sem ar. Fale 'shì' como 'chì' caindo no 4º tom com língua enrolada. Conclua 'shénme' estritamente como 'chán-ma' (2º tom subindo + neutro 'ma').\nLeia: Wǒ bù míng-bai djè-iàng tsuò da mù-dì chì chán-ma."
+  },
+  "594": {
+    "explanation": "A ação principal vem bem no início da fala: 'contar uma pequena mentira' (shuō gè xiǎo huǎng). Em seguida, em vez de montar uma pergunta longa, o mandarim encaixa diretamente a dúvida de forma muito curta e direta: 'tem erro?' (yǒu cuò ma), criando uma expressão muito natural e fluida.",
+    "breakdown": [
+      {
+        "word": "说",
+        "meaning": "Shuō — Falar / Contar / Dizer."
+      },
+      {
+        "word": "个",
+        "meaning": "gè — Um / Uma (classificador genérico que soa 'ga')."
+      },
+      {
+        "word": "小谎",
+        "meaning": "xiǎo huǎng — Pequena mentira — xiǎo: pequeno; huǎng: mentira."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Existir."
+      },
+      {
+        "word": "错",
+        "meaning": "cuò — Errado / Erro / Culpa."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula de pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Shuō', curve a ponta da língua para trás para soltar 'chuō' plano e alto no 1º tom. Passe por 'ga' frouxo no tom neutro, sem falar 'gê'. Em 'xiǎo huǎng', estique a boca em sorriso para fazer 'xiǎo' mergulhando no 3º tom grave e junte com 'rruǎng' no 3º tom com atrito de garganta. Fale 'yǒu' como 'iǒu' mergulhando no 3º tom grave. Em 'cuò', solte 'tsuò' caindo seco no 4º tom com estalo dental disparando um jato forte de ar. Termine com a partícula 'ma' leve e curta.\nLeia: Chuō ga xiǎo rruǎng iǒu tsuò ma?"
+  },
+  "595": {
+    "explanation": "A frase começa definindo o sujeito 'o mundo' (shìjiè), acompanhado do verbo ser 'é' (shì). Toda a caracterização que qualifica esse lugar é empilhada antes do substantivo principal 'lugar': 'um (yī gè) muito interessante (hěn yǒu yisi) lugar (dìfang)', usando a partícula 'de' para amarrar tudo.",
+    "breakdown": [
+      {
+        "word": "世界",
+        "meaning": "Shìjiè — Mundo / Universo — shì: geração/mundo; jiè: limite."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "一个",
+        "meaning": "yī gè — Um / Uma — por regra de tom, fala-se 'yí-ga'."
+      },
+      {
+        "word": "很有意思",
+        "meaning": "hěn yǒu yisi — Muito interessante — hěn: muito; yǒu: ter; yisi: sentido."
+      },
+      {
+        "word": "的",
+        "meaning": "de — Partícula de ligação que soa 'da'."
+      },
+      {
+        "word": "地方",
+        "meaning": "dìfang — Lugar / Local — dì: terra; fang: direção/lugar."
+      }
+    ],
+    "pronuncia": "Em 'Shìjiè', enrole a língua em 'chì' caindo no 4º tom e junte com 'djiè' caindo no 4º tom em sorriso tenso. Fale 'shì' como 'chì' no 4º tom. Fale 'yī gè' como 'yí-ga', subindo em 'yí' no 2º tom e soltando 'ga' neutro. Em 'hěn yǒu yisi', como 'hěn' e 'yǒu' são dois 3º tons seguidos, o primeiro sobe: fale 'rrén' subindo no 2º tom, 'iǒu' mergulhando no 3º tom grave, 'yì' caindo seco no 4º tom e 'tsï' travado no dente sem acento. Passe por 'da' neutro. Feche 'dìfang' caindo no 4º tom seco em 'dì' com 'd' sem ar e soltando 'fang' leve no tom neutro.\nLeia: Chì-djiè chì yí-ga rrén iǒu yì-tsï da dì-fang."
+  },
+  "596": {
+    "explanation": "A ordem da frase começa com 'Nós podemos' (wǒmen kěyǐ). Em seguida, os nativos apontam a fonte de onde a experiência é retirada usando a estrutura 'a partir de / de dentro dos erros' (cóng cuòwù zhōng). No finalzinho da frase vêm o verbo de absorção e o resultado: 'extrair lição' (xīqǔ jiàoxùn).",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "Wǒmen — Nós — wǒ: eu; men: sufixo de plural que soa 'man'."
+      },
+      {
+        "word": "可以",
+        "meaning": "kěyǐ — Poder / Conseguir — por regra de tom 3+3, fala-se 'ké-yi'."
+      },
+      {
+        "word": "从",
+        "meaning": "cóng — A partir de / De / Desde."
+      },
+      {
+        "word": "错误",
+        "meaning": "cuòwù — Erros / Enganos — cuò: errado; wù: erro."
+      },
+      {
+        "word": "中",
+        "meaning": "zhōng — Dentro / No meio de."
+      },
+      {
+        "word": "吸取",
+        "meaning": "xīqǔ — Absorver / Extrair / Aprender — xī: inspirar; qǔ: pegar."
+      },
+      {
+        "word": "教训",
+        "meaning": "jiàoxùn — Lição / Ensinamento — jiào: ensinar; xùn: instruir."
+      }
+    ],
+    "pronuncia": "Em 'Wǒmen', fale 'wǒ' grave e 'man' frouxo. Fale 'kěyǐ' como 'ké-yi', subindo a voz em 'ké' no 2º tom e afundando em 'yi' no 3º tom grave. Fale 'cóng' como 'tsông' subindo no 2º tom com estalo dental e sopro de ar. Em 'cuòwù', solte 'tsuò' caindo seco no 4º tom com sopro forte de ar e caia em 'uù' no 4º tom. Fale 'zhōng' como 'djōng' plano no 1º tom com língua enrolada e sem ar. Em 'xīqǔ', chie agudo em sorriso em 'xī' no 1º tom alto e junte com 'tchǔ' no 3º tom grave em bico de 'ü' disparando ar. Feche 'jiàoxùn' caindo em 'djiào' no 4º tom e 'xùn' no 4º tom seco em bico.\nLeia: Wǒ-man ké-yi tsông tsuò-uù djōng xī-tchǔ djiào-xùn."
+  },
+  "597": {
+    "explanation": "Em mandarim, a ideia abstrata de 'honestidade' é expressa de forma muito prática como a conduta de 'ao agir como pessoa, ser honesto' (zuòrén chéngshí). Depois de apresentar este princípio de conduta, adiciona-se diretamente a avaliação moral de encerramento 'é o mais importante' (zuì zhòngyào).",
+    "breakdown": [
+      {
+        "word": "做人",
+        "meaning": "Zuòrén — Conduta humana / Ser uma pessoa — zuò: fazer; rén: pessoa."
+      },
+      {
+        "word": "诚实",
+        "meaning": "chéngshí — Honesto / Sincero — chéng: sincero; shí: real."
+      },
+      {
+        "word": "最",
+        "meaning": "zuì — O mais / Extremamente."
+      },
+      {
+        "word": "重要",
+        "meaning": "zhòngyào — Importante — zhòng: pesado; yào: querer."
+      }
+    ],
+    "pronuncia": "Em 'Zuòrén', solte 'tsuò' caindo seco no 4º tom com estalo dental sem ar e junte com 'jên' subindo no 2º tom com a língua virada para trás. Em 'chéngshí', enrole a língua para trás disparando ar em 'tcháng' subindo no 2º tom e junte com 'chì' subindo no 2º tom com a língua curvada no céu da boca. Fale 'zuì' como 'tsuì' caindo seco no 4º tom com estalo dental sem ar. Conclua em 'zhòngyào' enrolando a língua em 'djòng' caindo seco no 4º tom e caindo firme em 'iào' também no 4º tom.\nLeia: Tsuò-jên tcháng-chì tsuì djòng-iào."
+  },
+  "598": {
+    "explanation": "A pergunta começa com o pronome interrogativo 'o quê' (shénme). A inclusão da palavra 'cái' traz a ideia de 'o que afinal'. Em seguida vem a cadeia de causa e efeito: 'pode fazer/permitir' (néng ràng) 'as pessoas' (rén) ficarem 'verdadeiramente' (zhēnzhèng) 'felizes' (kuàilè).",
+    "breakdown": [
+      {
+        "word": "什么",
+        "meaning": "Shénme — O que / Qual — pronunciado estritamente como 'chán-ma'."
+      },
+      {
+        "word": "才",
+        "meaning": "cái — Afinal / Só então."
+      },
+      {
+        "word": "能",
+        "meaning": "néng — Poder / Ser capaz de."
+      },
+      {
+        "word": "让",
+        "meaning": "ràng — Fazer / Permitir / Deixar."
+      },
+      {
+        "word": "人",
+        "meaning": "rén — Pessoa / As pessoas."
+      },
+      {
+        "word": "真正",
+        "meaning": "zhēnzhèng — Verdadeiramente / De fato — zhēn: real; zhèng: correto."
+      },
+      {
+        "word": "快乐",
+        "meaning": "kuàilè — Feliz / Alegre — kuài: rápido/alegre; lè: alegria."
+      }
+    ],
+    "pronuncia": "Fale 'shénme' estritamente como 'chán-ma', subindo em 'chán' no 2º tom e soltando 'ma' frouxo. Fale 'cái' como 'tsái' subindo no 2º tom com estalo dental e disparo de ar. Fale 'néng' como 'náng' gutural subindo no 2º tom. Fale 'ràng' como 'jàng' caindo seco no 4º tom com a ponta da língua virada para trás. Fale 'rén' como 'jên' subindo a voz no 2º tom com língua enrolada. Em 'zhēnzhèng', enrole a língua para soltar 'djēn' no 1º tom plano e 'djèng' caindo no 4º tom seco sem ar. Conclua 'kuàilè' caindo seco em 'kuài' no 4º tom e 'là' no 4º tom com som gutural aberto.\nLeia: Chán-ma tsái náng jàng jên djēn-djèng kuài-là?"
+  },
+  "599": {
+    "explanation": "Toda a ação descritiva 'trabalhar duro/esforçar-se no trabalho' (nǔlì gōngzuò) é colocada no início da frase para servir como o sujeito principal. O verbo ser 'é' (shì) conecta este sujeito ao adjetivo 'necessário' (bìyào), finalizando com a partícula 'de' que dá o tom de afirmação convicta.",
+    "breakdown": [
+      {
+        "word": "努力",
+        "meaning": "Nǔlì — Esforçar-se / Trabalhar duro — nǔ: esforço; lì: força."
+      },
+      {
+        "word": "工作",
+        "meaning": "gōngzuò — Trabalho / Trabalhar — gōng: trabalho; zuò: fazer."
+      },
+      {
+        "word": "是",
+        "meaning": "shì — Ser / É."
+      },
+      {
+        "word": "必要的",
+        "meaning": "bìyào de — Necessário / Indispensável — bì: certamente; yào: precisar; de: partícula que soa 'da'."
+      }
+    ],
+    "pronuncia": "Em 'Nǔlì', afunde a voz em 'Nǔ' no 3º tom grave e caia seco em 'lì' no 4º tom. Em 'gōngzuò', fale 'gōng' plano e alto no 1º tom sem ar no 'g' e solte 'tsuò' caindo seco no 4º tom com estalo dental sem ar. Fale 'shì' como 'chì' caindo seco no 4º tom com a língua curvada para trás. Em 'bìyào de', dê dois golpes secos no 4º tom descendente em 'bì-iào' e termine na partícula frouxa 'da' no tom neutro, sendo proibido falar 'dê'.\nLeia: Nǔ-lì gōng-tsuò chì bì-iào da."
+  },
+  "600": {
+    "explanation": "A frase apresenta o assunto 'a vida' (shēnghuó) logo no início. Em seguida vem o verbo 'estar repleto / encher' (chōngmǎn) acompanhado da partícula 'le' (que soa 'la'), indicando que o estado de estar cheio é uma realidade já concretizada. A palavra de encerramento é o tipo de preenchimento: 'surpresas' (jīngxǐ).",
+    "breakdown": [
+      {
+        "word": "生活",
+        "meaning": "Shēnghuó — Vida / Cotidiano — shēng: nascer/viver; huó: vida."
+      },
+      {
+        "word": "充满了",
+        "meaning": "chōngmǎn le — Estar cheio de / Repleto de — chōng: encher; mǎn: cheio; le: partícula concluída que soa 'la'."
+      },
+      {
+        "word": "惊喜",
+        "meaning": "jīngxǐ — Surpresas agradáveis / Alegrias inesperadas — jīng: maravilhar; xǐ: alegria."
+      }
+    ],
+    "pronuncia": "Em 'Shēnghuó', enrole a ponta da língua para trás para soltar 'chēng' plano e alto no 1º tom e suba a voz em 'rruó' no 2º tom com atrito de garganta. Em 'chōngmǎn le', mantenha a língua virada para trás soltando 'tchōng' no 1º tom com sopro de ar, afunde a voz em 'mǎn' no 3º tom grave e solte a partícula 'la' de forma curta e frouxa no tom neutro, sem falar 'lê'. Conclua em 'jīngxǐ' esticando a boca em sorriso tenso para falar 'djīng' alto no 1º tom sem ar e mergulhar em 'xǐ' no 3º tom grave com chiado agudo.\nLeia: Chēng-rruó tchōng-mǎn la djīng-xǐ."
+  }
+}

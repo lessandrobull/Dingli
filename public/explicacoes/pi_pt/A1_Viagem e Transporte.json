@@ -1,0 +1,626 @@
+{
+  "91": {
+    "explanation": "No mandarim, a ordem lógica da frase coloca primeiro a coisa sobre a qual queremos saber (o ponto de ônibus) e depois pergunta a localização (está em onde). Isso ajuda quem escuta a entender imediatamente o assunto principal antes de processar a pergunta.",
+    "breakdown": [
+      {
+        "word": "公共汽车",
+        "meaning": "gōnggòng qìchē — Ônibus público — gōnggòng: público; qìchē: carro a gás/vapor (automóvel)."
+      },
+      {
+        "word": "站",
+        "meaning": "zhàn — Estação / Ponto de parada."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em / Localizado em."
+      },
+      {
+        "word": "在哪里",
+        "meaning": "nǎlǐ — Onde / Em qual lugar — nǎ: qual; lǐ: dentro/lugar."
+      }
+    ],
+    "pronuncia": "Comece em 'Gōnggòng' sustentando o som alto no 1º tom em 'gōng' e caindo seco no 4º tom em 'gòng'. Para 'qìchē', abra a boca em sorriso espalmado disparando um forte jato de ar em 'tchì' no 4º tom e curve a língua para trás para falar 'chē' no 1º tom plano. Enrole a ponta da língua para trás em 'zhàn' caindo seco no 4º tom. Solte 'zài' como um estalo de 'ts' sem ar no 4º tom. Termine em 'nǎlǐ' aplicando a mudança de tom: suba a voz como pergunta em 'ná' no 2º tom e afunde no 3º tom grave em 'li'.\nLeia: Gōng-gòng tchì-chē djàn tsài ná-li?"
+  },
+  "92": {
+    "explanation": "No mandarim, a característica ou destino de algo vem sempre antes do objeto principal. Por isso, 'que vai para Londres' (qù Lúndūn de) fica posicionado antes da palavra 'passagem' (piào), usando a partícula de ligação 'de' para unir a descrição ao objeto.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "要",
+        "meaning": "yào — Querer / Desejar."
+      },
+      {
+        "word": "一张",
+        "meaning": "yī zhāng — Uma (unidade plana) — yī: um; zhāng: termo para objetos planos como papéis e bilhetes."
+      },
+      {
+        "word": "去伦敦的",
+        "meaning": "qù Lúndūn de — Que vai para Londres — qù: ir; Lúndūn: Londres; de: partícula de ligação (que soa 'da')."
+      },
+      {
+        "word": "票",
+        "meaning": "piào — Passagem / Bilhete."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'wǒ'. Dê um golpe seco no 4º tom em 'yào'. No numeral 'yī' antes do 1º tom de 'zhāng', caia firme em 4º tom descendente em 'yì', e curve a língua para trás em 'zhāng' no 1º tom plano. Em 'qù', arme bico de 'u' mas diga 'i' por dentro soltando ar em 'tchù'. Em 'Lúndūn', faça 'Lún' subindo no 2º tom com corte nasal no dente e 'dūn' curto com 'uên' no 1º tom. Solte a partícula 'da' leve e átona, sem falar 'dê'. Finalize em 'piào' com disparo de ar caindo seco no 4º tom.\nLeia: Wǒ iào yì-djāng tchù Lún-duēn da piào."
+  },
+  "93": {
+    "explanation": "Os chineses constroem a pergunta identificando o transporte específico (este trem), a ação e destino (ir ao aeroporto), e simplesmente colocam a partícula 'ma' no final para transformar toda a afirmação em uma pergunta direta.",
+    "breakdown": [
+      {
+        "word": "这趟",
+        "meaning": "zhè tàng — Este / Esta viagem — zhè: este; tàng: termo de contagem para viagens e trajetos."
+      },
+      {
+        "word": "火车",
+        "meaning": "huǒchē — Trem — huǒ: fogo; chē: veículo."
+      },
+      {
+        "word": "去",
+        "meaning": "qù — Ir para."
+      },
+      {
+        "word": "机场",
+        "meaning": "jīchǎng — Aeroporto — jī: máquina; chǎng: pátio/local amplo."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa de fim de frase."
+      }
+    ],
+    "pronuncia": "Curve a ponta da língua para trás em 'zhè' no 4º tom seco. Em 'tàng', solte um sopro forte de ar caindo no 4º tom. Para 'huǒchē', mergulhe a voz no 3º tom grave em 'rruǒ' e curve a língua para chiar alto no 1º tom em 'chē'. Em 'qù', faça o bico de 'ü' soprando ar seco no 4º tom 'tchù'. Em 'jīchǎng', faça um estalo seco com sorriso espalmado em 'djī' no 1º tom e afunde a voz no 3º tom em 'chǎng' com a língua enrolada para trás. Termine leve e solto no tom neutro 'ma'.\nLeia: Djè tàng rruǒ-chē tchù djī-chǎng ma?"
+  },
+  "94": {
+    "explanation": "A negação de estar presente é feita colocando a palavra de negação 'não' diretamente antes da palavra de localização 'estar em'. O sujeito vem primeiro, seguido de 'não está neste lugar'.",
+    "breakdown": [
+      {
+        "word": "出租车",
+        "meaning": "chūzūchē — Táxi — chū: sair; zū: alugar; chē: veículo."
+      },
+      {
+        "word": "不在",
+        "meaning": "bù zài — Não estar em / Não localizado em — bù: não; zài: estar em."
+      },
+      {
+        "word": "这里",
+        "meaning": "zhèlǐ — Aqui / Este lugar — zhè: este; lǐ: dentro/lugar."
+      }
+    ],
+    "pronuncia": "Em 'chūzūchē', curve a língua para trás disparando ar em 'tchū' no 1º tom, faça o estalo seco 'tsū' sem ar no 1º tom, e feche chiando com a língua curvada em 'chē' no 1º tom. Repare na negação 'bù': diante do 4º tom de 'zài', ela muda obrigatoriamente para 2º tom ascendente em 'bú', e 'zài' cai seco no 4º tom 'tsài'. Termine em 'zhèlǐ' caindo no 4º tom com a língua curvada em 'djè' e afundando a voz no 3º tom grave em 'li'.\nLeia: Tchū-tsū-chē bú-tsài djè-li."
+  },
+  "95": {
+    "explanation": "Para perguntar o preço, os nativos dizem primeiro a quantidade do item que querem comprar ('uma passagem') e em seguida adicionam a expressão 'quanto dinheiro' (duōshao qián). É a estrutura direta e padrão de compras.",
+    "breakdown": [
+      {
+        "word": "一张票",
+        "meaning": "yī zhāng piào — Uma passagem — yī: um; zhāng: termo para bilhetes; piào: passagem."
+      },
+      {
+        "word": "多少",
+        "meaning": "duōshao — Quanto / Quantos — duō: muito; shao: pouco (no tom neutro/leve)."
+      },
+      {
+        "word": "钱",
+        "meaning": "qián — Dinheiro."
+      }
+    ],
+    "pronuncia": "O numeral 'yī' antes do 1º tom vira 4º tom caindo seco em 'yì', seguido de 'zhāng' com a língua curvada no 1º tom alto, e 'piào' caindo no 4º tom com sopro de ar. Em 'duōshao', faça o 'd' seco sem ar em 'duō' no 1º tom e solte 'chao' leve no tom neutro. Em 'qián', estique os cantos da boca em sorriso tenso, solte um sopro forte de ar em 'tchiên' e suba a entonação no 2º tom como uma pergunta, travando a língua nos dentes da frente no final.\nLeia: Yì-djāng piào duō-chao tchién?"
+  },
+  "96": {
+    "explanation": "No chinês, o meio de transporte é visto como uma ação que você realiza para se locomover. Em vez de dizer 'de avião', a frase diz literalmente 'eu sento no avião para viajar', colocando o meio de transporte antes do verbo principal.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "坐",
+        "meaning": "zuò — Sentar / Ir de (transporte)."
+      },
+      {
+        "word": "飞机",
+        "meaning": "fēijī — Avião — fēi: voar; jī: máquina."
+      },
+      {
+        "word": "旅行",
+        "meaning": "lǚxíng — Viajar / Viagem — lǚ: viagem; xíng: andar/ir."
+      }
+    ],
+    "pronuncia": "Mergulhe a voz no 3º tom grave em 'wǒ'. Faça um estalo seco de 'ts' caindo no 4º tom em 'tsuò'. Em 'fēijī', projete o som labial limpo em 'fēi' no 1º tom plano, e faça 'djī' no 1º tom com um sorriso espalmado tenso sem ar. Para 'lǚxíng', monte bico firme em 'lǚ' emitindo 'i' por dentro no 3º tom grave, e suba a voz no 2º tom em 'xíng' com sorriso tenso e chiado fino agudo ressoando na garganta.\nLeia: Wǒ tsuò fēi-djī lǚ-xíng."
+  },
+  "97": {
+    "explanation": "A expressão para perguntar se um local está aberto usa a imagem literal de 'abrir a porta'. Você diz o nome do local (o museu), diz que ele 'abre a porta' (kāimén) e adiciona a partícula de pergunta 'ma' no fim.",
+    "breakdown": [
+      {
+        "word": "博物馆",
+        "meaning": "bówùguǎn — Museu — bó: amplo/extenso; wù: coisas/objetos; guǎn: estabelecimento."
+      },
+      {
+        "word": "开门",
+        "meaning": "kāimén — Abrir as portas (estar aberto) — kāi: abrir; mén: porta."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa de fim de frase."
+      }
+    ],
+    "pronuncia": "Em 'bówùguǎn', faça 'bó' subindo no 2º tom com 'b' seco sem ar, caia no 4º tom em 'uù', e afunde a voz no 3º tom grave em 'guǎn' travando a língua nos dentes da frente no final. Em 'kāimén', solte uma explosão de ar potente pela garganta em 'kāi' no 1º tom plano, e suba a entonação no 2º tom em 'mén' travando a língua nos dentes. Termine na partícula leve e curta 'ma'.\nLeia: Bó-uù-guǎn kāi-mén ma?"
+  },
+  "98": {
+    "explanation": "Nesta pergunta, o lugar onde se busca algo vem bem no início ('em onde'). A estrutura segue com o verbo de capacidade 'poder' (kěyǐ) e a combinação de encontrar + chegar (zhǎodào), terminando com o objeto (o mapa).",
+    "breakdown": [
+      {
+        "word": "哪里",
+        "meaning": "nǎlǐ — Onde / Em qual lugar."
+      },
+      {
+        "word": "可以",
+        "meaning": "kěyǐ — Poder / Ser possível."
+      },
+      {
+        "word": "找到",
+        "meaning": "zhǎodào — Encontrar / Achar com sucesso — zhǎo: procurar; dào: alcançar."
+      },
+      {
+        "word": "地图",
+        "meaning": "dìtú — Mapa — dì: terra; tú: desenho/figura."
+      }
+    ],
+    "pronuncia": "Atenção às mutações de tom! Em 'nǎlǐ', o primeiro tom subirá para 2º tom em 'ná', afundando no 3º tom grave em 'lǐ'. Em 'kěyǐ', a mesma regra se aplica: suba em 2º tom com sopro de ar em 'ké', e afunde no 3º tom em 'yi'. Em 'zhǎodào', afunde no 3º tom em 'djǎo' com a língua curvada para trás e caia seco no 4º tom em 'dào'. Termine em 'dìtú' com um 'd' seco no 4º tom 'dì' e um 't' com sopro forte subindo no 2º tom 'tú'.\nLeia: Ná-li ké-yi djǎo-dào dì-tú?"
+  },
+  "99": {
+    "explanation": "Para expressar localização relativa no mandarim, você menciona o local principal (o hotel), o verbo de estar (zài), o ponto de referência (a estação de trem) e por fim a palavra de posição (nas proximidades). É como dizer 'o hotel está na estação-nas-proximidades'.",
+    "breakdown": [
+      {
+        "word": "酒店",
+        "meaning": "jiǔdiàn — Hotel — jiǔ: vinho/bebida (hospedaria); diàn: loja/estabelecimento."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em / Localizado em."
+      },
+      {
+        "word": "火车站",
+        "meaning": "huǒchēzhàn — Estação de trem — huǒchē: trem; zhàn: estação."
+      },
+      {
+        "word": "附近",
+        "meaning": "fùjìn — Proximidades / Perto — fù: anexar; jìn: perto."
+      }
+    ],
+    "pronuncia": "Em 'jiǔdiàn', pronuncie o 'o' oculto em 'djiôu' afundando no 3º tom grave e caia seco no 4º tom em 'dièn' com a língua no dente. Solte 'zài' no 4º tom com estalo de 'ts'. Para 'huǒchēzhàn', afunde em 'rruǒ' no 3º tom, curve a língua para chiar em 'chē' no 1º tom e dê um golpe seco em 'djàn' no 4º tom. Finalize em 'fùjìn' caindo no 4º tom em 'fù' e dando outro golpe seco com sorriso espalmado em 'djìn' travando a língua nos dentes.\nLeia: Djiôu-dièn tsài rruǒ-chē-djàn fù-djìn."
+  },
+  "100": {
+    "explanation": "No mandarim, existe uma palavra específica para negar a posse ou existência de algo, que é 'méiyǒu' (não ter). Basta colocar 'eu' no início, a negação de posse no meio e o objeto (passaporte) no final.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "没有",
+        "meaning": "méiyǒu — Não ter / Não haver — méi: negação de existência; yǒu: ter."
+      },
+      {
+        "word": "护照",
+        "meaning": "hùzhào — Passaporte — hù: proteger; zhào: licença/foto."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'wǒ'. Em 'méiyǒu', suba a entonação no 2º tom como uma pergunta em 'méi' e mergulhe a voz no 3º tom grave em 'yǒu'. Em 'hùzhào', raspe o fundo da garganta caindo seco no 4º tom em 'rruù', e curve a ponta da língua para trás para dar outro golpe seco no 4º tom em 'djào'.\nLeia: Wǒ méi-iǒu rruù-djào."
+  },
+  "101": {
+    "explanation": "Para perguntar se alguém tem determinado objeto, usa-se a estrutura direta: você + ter + objeto + partícula de pergunta 'ma'. Não há necessidade de alterar a ordem das palavras ou usar verbos auxiliares.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Possuir."
+      },
+      {
+        "word": "行李箱",
+        "meaning": "xínglǐxiāng — Mala de viagem — xíng: caminhar; lǐ: bagagem; xiāng: caixa."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa de fim de frase."
+      }
+    ],
+    "pronuncia": "Diante do 3º tom de 'yǒu', a palavra 'nǐ' sobe para o 2º tom virando 'ní'. Depois afunde a voz no 3º tom grave em 'yǒu'. Em 'xínglǐxiāng', faça 'xíng' subindo no 2º tom com sorriso tenso, mergulhe em 'lǐ' no 3º tom grave, e estique os cantos da boca em 'xiāng' no 1º tom alto com ressonância de garganta. Termine na partícula leve 'ma'.\nLeia: Ní iǒu xíng-li-xiāng ma?"
+  },
+  "102": {
+    "explanation": "No chinês, adjetivos como 'rápido' geralmente vem acompanhados de uma palavra de intensidade como 'hěn' (muito), que funciona como uma ponte natural ligando o objeto ao seu estado, sem precisar do verbo 'ser'.",
+    "breakdown": [
+      {
+        "word": "这辆",
+        "meaning": "zhè liàng — Este / Esta (para veículos) — zhè: este; liàng: termo de contagem para carros."
+      },
+      {
+        "word": "车",
+        "meaning": "chē — Carro / Veículo."
+      },
+      {
+        "word": "很快",
+        "meaning": "hěn kuài — Muito rápido — hěn: muito; kuài: rápido."
+      }
+    ],
+    "pronuncia": "Curve a língua para trás em 'zhè' caindo no 4º tom 'djè', e faça 'liàng' caindo no 4º tom com corte nasal no fundo da garganta. Em 'chē', curve a língua para chiar alto no 1º tom plano. Em 'hěn kuài', raspe o fundo da garganta em 'rrěn' afundando no 3º tom grave com corte no dente, e feche disparando um sopro forte de ar em 'kuài' caindo seco no 4º tom.\nLeia: Djè liàng chē rrěn kuài."
+  },
+  "103": {
+    "explanation": "Frase essencial de viagem onde o local de interesse (o banheiro) é colocado em primeiro lugar na sentença, seguido imediatamente pela pergunta de localização 'está em onde' (zài nǎlǐ).",
+    "breakdown": [
+      {
+        "word": "洗手间",
+        "meaning": "xǐshǒujiān — Banheiro — xǐ: lavar; shǒu: mãos; jiān: cômodo/sala."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em / Localizado em."
+      },
+      {
+        "word": "在哪里",
+        "meaning": "nǎlǐ — Onde / Em qual lugar."
+      }
+    ],
+    "pronuncia": "Em 'xǐshǒujiān', a primeira sílaba 'xǐ' vira 2º tom 'xí' antes do 3º tom de 'shǒu' ('chǒu' afundando no grave com a língua curvada); feche em 'djiēn' no 1º tom alto com sorriso espalmado e a língua no dente. Solte 'zài' no 4º tom seco 'tsài'. Em 'nǎlǐ', a primeira sílaba sobe em 2º tom virando 'ná' e a segunda afunda no 3º tom grave em 'li'.\nLeia: Xí-chǒu-djiēn tsài ná-li?"
+  },
+  "104": {
+    "explanation": "Para perguntar a distância a partir de um ponto de referência, usa-se a palavra 'lí' (em relação a / a partir de), seguida da referência ('aqui'), da palavra 'longe' (yuǎn) e da partícula de pergunta 'ma'.",
+    "breakdown": [
+      {
+        "word": "离",
+        "meaning": "lí — A partir de / Distante de."
+      },
+      {
+        "word": "这里",
+        "meaning": "zhèlǐ — Aqui / Este lugar."
+      },
+      {
+        "word": "远",
+        "meaning": "yuǎn — Longe / Distante."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa de fim de frase."
+      }
+    ],
+    "pronuncia": "Suba a voz no 2º tom em 'lí'. Em 'zhèlǐ', curve a língua para trás no 4º tom seco em 'djè', e afunde a voz no 3º tom grave em 'li'. Em 'yuǎn', monte os lábios em bico de 'ü' e abra em 'üên' afundando no 3º tom grave com corte nasal no dente da frente. Finalize com a partícula leve 'ma'.\nLeia: Lí djè-li yüěn ma?"
+  },
+  "105": {
+    "explanation": "A instrução de direção no mandarim estabelece primeiro o ponto onde a ação acontece ('na esquina') e depois indica o movimento que deve ser feito ('virar à esquerda').",
+    "breakdown": [
+      {
+        "word": "在拐角处",
+        "meaning": "zài guǎijiǎochù — Na esquina — zài: em; guǎijiǎo: esquina/curva; chù: lugar."
+      },
+      {
+        "word": "左转",
+        "meaning": "zuǒzhuǎn — Virar à esquerda — zuǒ: esquerda; zhuǎn: virar/girar."
+      }
+    ],
+    "pronuncia": "Solte 'zài' no 4º tom seco 'tsài'. Em 'guǎijiǎo', a primeira sílaba sobe para 2º tom virando 'guái' antes do 3º tom grave de 'djiǎo'. Curve a ponta da língua para chiar em 'chù' caindo no 4º tom com sopro de ar. Em 'zuǒzhuǎn', solte 'tsuǒ' no 3º tom grave e curve a ponta da língua para trás em 'djuǎn' afundando no 3º tom com corte nasal no dente.\nLeia: Tsài guái-djiǎo-chù tsuǒ-djuǎn."
+  },
+  "106": {
+    "explanation": "Para dar a indicação de ir reto, a língua chinesa diz 'continuamente / direto' (yīzhí), depois 'em direção à frente' (xiàng qián) e finalmente o verbo 'andar' (zǒu).",
+    "breakdown": [
+      {
+        "word": "一直",
+        "meaning": "yīzhí — Reto / Continuamente — yī: um; zhí: reto/direto."
+      },
+      {
+        "word": "向前",
+        "meaning": "xiàng qián — Em direção à frente — xiàng: em direção a; qián: frente."
+      },
+      {
+        "word": "走",
+        "meaning": "zǒu — Andar / Caminhar."
+      }
+    ],
+    "pronuncia": "No numeral 'yī' antes do 2º tom de 'zhí', a pronúncia muda para 4º tom descendente em 'yì'; em 'zhí', curve a língua para trás subindo no 2º tom em 'djí'. Em 'xiàng qián', dê um golpe seco no 4º tom em 'xiàng' com sorriso espalmado, e suba no 2º tom em 'tchién' com sopro de ar e a língua travando no dente. Termine em 'zǒu' com estalo seco de 'ts' afundando no 3º tom grave em 'tsǒu'.\nLeia: Yì-djí xiàng tchién tsǒu."
+  },
+  "107": {
+    "explanation": "Para descrever que algo fica atrás de um lugar, os chineses dizem: sujeito (o parque) + verbo de estar (zài) + ponto de referência (a escola) + palavra de posição 'atrás' (hòumiàn).",
+    "breakdown": [
+      {
+        "word": "公园",
+        "meaning": "gōngyuán — Parque — gōng: público; yuán: jardim."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em / Localizado em."
+      },
+      {
+        "word": "学校",
+        "meaning": "xuéxiào — Escola — xué: estudar; xiào: instituição."
+      },
+      {
+        "word": "后面",
+        "meaning": "hòumiàn — Atrás / Lado de trás — hòu: atrás; miàn: lado/face."
+      }
+    ],
+    "pronuncia": "Em 'gōngyuán', faça 'gōng' no 1º tom alto com som de 'g' seco sem ar, e monte bico em 'yüén' subindo no 2º tom com corte nos dentes. Solte 'zài' no 4º tom seco 'tsài'. Em 'xuéxiào', monte bico em 'xüé' subindo no 2º tom com sorriso interno, e caia seco no 4º tom em 'xiào'. Finalize em 'hòumiàn' raspando a garganta em 'rròu' no 4º tom e dando outro golpe seco no 4º tom em 'mièn' com a língua colada no dente.\nLeia: Gōng-yüén tsài xüé-xiào rròu-mièn."
+  },
+  "108": {
+    "explanation": "A indicação de tempo ('agora') vem logo após o sujeito 'eu'. Em seguida, usa-se o verbo 'estar' (zài), o meio de transporte (ônibus) e a palavra de posição 'em cima' (shàng), significando literalmente 'eu agora estou no ônibus'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "现在",
+        "meaning": "xiànzài — Agora — xiàn: presente; zài: momento."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em."
+      },
+      {
+        "word": "公共汽车",
+        "meaning": "gōnggòng qìchē — Ônibus público."
+      },
+      {
+        "word": "上",
+        "meaning": "shàng — Em cima / Dentro de um transporte."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'wǒ'. Em 'xiànzài', caia seco no 4º tom em 'xièn' com a língua no dente, e dê outro golpe seco em 'tsài'. Solte 'zài' novamente no 4º tom 'tsài'. Para 'gōnggòng qìchē', faça 'gōng-gòng' (1º tom alto e 4º tom seco), solte ar em 'tchì' no 4º tom e curve a língua em 'chē' no 1º tom. Termine em 'shàng' curvando a língua para chiar caindo no 4º tom 'chàng'.\nLeia: Wǒ xièn-tsài tsài gōng-gòng tchì-chē chàng."
+  },
+  "109": {
+    "explanation": "Nesta pergunta de horário, o tema principal ('o voo') vem bem no início. Em seguida vem a expressão de tempo 'quando' (shénme shíhou) e o verbo da ação de decolar (qǐfēi).",
+    "breakdown": [
+      {
+        "word": "航班",
+        "meaning": "hángbān — Voo agendado — háng: navegar/linha; bān: turma/ordem."
+      },
+      {
+        "word": "什么时候",
+        "meaning": "shénme shíhou — Quando / Que momento — shénme: que (chán-ma); shíhou: tempo/momento."
+      },
+      {
+        "word": "起飞",
+        "meaning": "qǐfēi — Decolar — qǐ: erguer; fēi: voar."
+      }
+    ],
+    "pronuncia": "Em 'hángbān', raspe a garganta subindo no 2º tom em 'rráng' e faça 'bān' com 'b' seco no 1º tom travando a língua no dente. Lembre-se da proibição de grafar 'e' no tom neutro: 'shénme' vira obrigatoriamente 'chán-ma' com som gutural leve, seguido de 'chí-rrou' subindo no 2º tom. Em 'qǐfēi', faça o sorriso espalmado com sopro de ar afundando no 3º tom grave em 'tchǐ', e termine em 'fēi' sustentando o 1º tom plano.\nLeia: Rráng-bān chán-ma chí-rrou tchǐ-fēi?"
+  },
+  "110": {
+    "explanation": "A estrutura de gosto negativo coloca o 'não' (bù) diretamente antes do verbo 'gostar' (xǐhuān). Depois vem a ação completa: o meio de transporte usado (sentar no barco) seguido do objetivo (viajar).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "不喜欢",
+        "meaning": "bù xǐhuān — Não gostar — bù: não; xǐhuān: gostar."
+      },
+      {
+        "word": "坐船",
+        "meaning": "zuò chuán — Ir de barco / Sentar no barco — zuò: sentar/ir de; chuán: barco."
+      },
+      {
+        "word": "旅行",
+        "meaning": "lǚxíng — Viajar."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'wǒ'. Em 'bù xǐhuān', solte 'bù' caindo no 4º tom, afunde em 'xǐ' no 3º tom grave com sorriso espalmado, e faça 'rruēn' no 1º tom alto com atrito de garganta e língua nos dentes. Em 'zuò chuán', solte 'tsuò' no 4º tom seco e suba a voz no 2º tom em 'tchuán' disparando ar com a língua enrolada para trás. Finalize em 'lǚxíng' com bico em 'lǚ' no 3º tom e 'xíng' subindo no 2º tom.\nLeia: Wǒ bù xǐ-rruēn tsuò tchuán lǚ-xíng."
+  },
+  "111": {
+    "explanation": "Para perguntar sobre a existência de algo em um local, a ordem é: o lugar (hotel), a palavra de interior 'dentro' (lǐ), o verbo de existência 'ter' (yǒu), o objeto buscado (restaurante) e a partícula 'ma'.",
+    "breakdown": [
+      {
+        "word": "酒店里",
+        "meaning": "jiǔdiàn lǐ — Dentro do hotel — jiǔdiàn: hotel; lǐ: dentro."
+      },
+      {
+        "word": "有",
+        "meaning": "yǒu — Ter / Haver."
+      },
+      {
+        "word": "餐厅",
+        "meaning": "cāntīng — Restaurante — cān: refeição; tīng: salão."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa de fim de frase."
+      }
+    ],
+    "pronuncia": "Em 'jiǔdiàn lǐ', a sílaba 'jiǔ' afunda no 3º tom em 'djiôu', 'diàn' cai seco no 4º tom em 'dièn', e 'lǐ' mergulha no 3º tom grave em 'li'. Em 'yǒu', afunde a voz no 3º tom grave. Em 'cāntīng', faça um estalo de 'ts' disparando um jato forte de ar no 1º tom plano em 'tsān' com corte no dente, e solte outro jato de ar em 'tīng' no 1º tom plano. Termine na partícula leve 'ma'.\nLeia: Djiôu-dièn li iǒu tsān-tīng ma?"
+  },
+  "112": {
+    "explanation": "O centro de turismo é posicionado no começo da pergunta como o assunto principal. Em seguida, adiciona-se a estrutura 'zài nǎlǐ' (está em onde) para saber sua localização.",
+    "breakdown": [
+      {
+        "word": "游客中心",
+        "meaning": "yóukè zhōngxīn — Centro de atendimento ao turista — yóukè: turista; zhōngxīn: centro."
+      },
+      {
+        "word": "在哪里",
+        "meaning": "nǎlǐ — Onde / Em qual lugar."
+      }
+    ],
+    "pronuncia": "Em 'yóukè', suba no 2º tom em 'ióu' com som de 'o' oculto, e caia seco no 4º tom em 'kè' disparando ar pela garganta. Em 'zhōngxīn', curve a língua para trás em 'djông' no 1º tom alto, e faça 'xīn' no 1º tom alto com sorriso espalmado e língua nos dentes. Em 'nǎlǐ', aplique a alteração de tom: suba no 2º tom em 'ná' e afunde no 3º tom grave em 'li'.\nLeia: Ióu-kè djông-xīn tsài ná-li?"
+  },
+  "113": {
+    "explanation": "Ao pedir um serviço de forma educada, começa-se com 'por favor' (qǐng), seguido da expressão 'ajudar a mim' (bāng wǒ), o verbo chamar (jiào) e a quantidade e tipo de transporte (um táxi).",
+    "breakdown": [
+      {
+        "word": "请",
+        "meaning": "qǐng — Por favor / Pedir educadamente."
+      },
+      {
+        "word": "帮我",
+        "meaning": "bāng wǒ — Me ajude / Ajude a mim — bāng: ajudar; wǒ: eu."
+      },
+      {
+        "word": "叫",
+        "meaning": "jiào — Chamar."
+      },
+      {
+        "word": "一辆",
+        "meaning": "yī liàng — Um (veículo) — yī: um; liàng: termo para veículos."
+      },
+      {
+        "word": "出租车",
+        "meaning": "chūzūchē — Táxi."
+      }
+    ],
+    "pronuncia": "Estique a boca em sorriso espalmado disparando ar em 'tchǐng' afundando no 3º tom grave. Em 'bāng wǒ', faça 'bāng' no 1º tom com 'b' seco sem ar, e afunde a voz em 'wǒ' no 3º tom. Caia seco no 4º tom em 'djiào'. O numeral 'yī' antes do 4º tom de 'liàng' vira 2º tom ascendente em 'yí', e 'liàng' cai no 4º tom. Termine em 'chū-tsū-chē' sustentando todas as sílabas retas no 1º tom com a língua curvada em tchū e chē.\nLeia: Tchǐng bāng wǒ djiào yí-liàng tchū-tsū-chē."
+  },
+  "114": {
+    "explanation": "A ordem temporal exige que o momento ('hoje') venha logo após o assunto ('o trem'). Em seguida vem a palavra 'atrasou' (wǎndiǎn) acompanhada da partícula 'le' no final para marcar o fato consumado.",
+    "breakdown": [
+      {
+        "word": "火车",
+        "meaning": "huǒchē — Trem."
+      },
+      {
+        "word": "今天",
+        "meaning": "jīntiān — Hoje — jīn: presente; tiān: dia."
+      },
+      {
+        "word": "晚点了",
+        "meaning": "wǎndiǎn le — Atrasou / Está atrasado — wǎndiǎn: atrasar; le: partícula de fato ocorrido (que soa 'la')."
+      }
+    ],
+    "pronuncia": "Em 'huǒchē', mergulhe a voz em 'rruǒ' no 3º tom grave e chiar alto em 'chē' no 1º tom com a língua curvada para trás. Em 'jīntiān', faça 'djīn' no 1º tom com sorriso espalmado e 'tiēn' no 1º tom com sopro de ar e a língua travando no dente. Em 'wǎndiǎn le', faça 'wǎn' no 3º tom grave, 'diǎn' afundando no 3º tom com 'd' seco sem ar, e termine na partícula frouxa 'la', sendo proibido falar 'lê'.\nLeia: Rruǒ-chē djīn-tiēn uǎn-diǎn la."
+  },
+  "115": {
+    "explanation": "Uma pergunta pessoal simples: sujeito (você), verbo gostar (xǐhuān), objeto da ação (viajar) e a partícula interrogativa 'ma' no fim da frase para transformar a afirmação em pergunta.",
+    "breakdown": [
+      {
+        "word": "你",
+        "meaning": "nǐ — Você."
+      },
+      {
+        "word": "喜欢",
+        "meaning": "xǐhuān — Gostar de — xǐ: ter prazer; huān: alegre."
+      },
+      {
+        "word": "旅行",
+        "meaning": "lǚxíng — Viajar."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa de fim de frase."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'nǐ'. Em 'xǐhuān', faça 'xǐ' afundando no 3º tom grave com sorriso espalmado, e 'rruēn' no 1º tom plano com atrito de garganta e corte nos dentes. Em 'lǚxíng', monte bico em 'lǚ' no 3º tom grave e suba no 2º tom em 'xíng' com chiado fino agudo. Termine na partícula leve 'ma'.\nLeia: Nǐ xǐ-rruēn lǚ-xíng ma?"
+  },
+  "116": {
+    "explanation": "No mandarim, a expressão 'morar em' ou 'ficar hospedado em' junta o verbo morar (zhù) com a palavra de localização (zài). Toda a descrição da quantidade e tamanho ('uma pequena hospedaria') vem antes da palavra principal 'hotel'.",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "住在",
+        "meaning": "zhù zài — Morar em / Ficar em — zhù: morar/residir; zài: em."
+      },
+      {
+        "word": "一家",
+        "meaning": "yī jiā — Uma (estabelecimento) — yī: um; jiā: termo para lojas e hotéis."
+      },
+      {
+        "word": "小酒店",
+        "meaning": "xiǎo jiǔdiàn — Hotel pequeno — xiǎo: pequeno; jiǔdiàn: hotel."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'wǒ'. Em 'zhù zài', caia seco no 4º tom em 'djù' com a língua curvada para trás e dê outro golpe seco em 'tsài'. No numeral 'yī' antes do 1º tom de 'jiā', pronuncie 4º tom caindo seco em 'yì', e 'djiā' no 1º tom plano com sorriso espalmado. Em 'xiǎo jiǔdiàn', a palavra 'xiǎo' vira 2º tom 'xiáo' antes do 3º tom grave de 'djiôu', e termine em 'dièn' caindo seco no 4º tom com a língua no dente.\nLeia: Wǒ djù tsài yì-djiā xiáo djiôu-dièn."
+  },
+  "117": {
+    "explanation": "Para perguntar como chegar a algum lugar, a estrutura coloca o sujeito 'eu', a palavra de método 'como' (zěnme), o verbo 'ir' (qù) e o destino final ('a praia').",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "怎么",
+        "meaning": "zěnme — Como / De que maneira — zěn: como; me: sufixo."
+      },
+      {
+        "word": "去",
+        "meaning": "qù — Ir para."
+      },
+      {
+        "word": "海滩",
+        "meaning": "hǎitān — Praia — hǎi: mar; tān: praia/areal."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'wǒ'. Em 'zěnme', faça um estalo de 'ts' afundando no 3º tom grave em 'tsěn' com corte no dente, e solte 'ma' leve no tom neutro. Em 'qù', arme bico de 'u' e solte 'tchù' caindo no 4º tom com sopro de ar. Em 'hǎitān', afunde em 'rrǎi' no 3º tom grave com atrito de garganta, e solte um jato de ar no 1º tom plano em 'tān' travando a língua nos dentes.\nLeia: Wǒ tsěn-ma tchù rrǎi-tān?"
+  },
+  "118": {
+    "explanation": "Para indicar a localização de um ponto, mensiona-se a instalação (ponto de ônibus) + a palavra de localização (zài) + o demonstrativo de distância 'ali' (nàbiān).",
+    "breakdown": [
+      {
+        "word": "公共汽车站",
+        "meaning": "gōnggòng qìchēzhàn — Ponto de ônibus público."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em / Localizado em."
+      },
+      {
+        "word": "那边",
+        "meaning": "nàbiān — Ali / Aquele lado — nà: aquele; biān: lado."
+      }
+    ],
+    "pronuncia": "Em 'gōnggòng qìchēzhàn', diga 'gōng-gòng' (1º tom alto e 4º tom seco com 'g' sem ar), solte ar em 'tchì' no 4º tom, chiar em 'chē' no 1º tom, e caia seco no 4º tom em 'djàn'. Solte 'zài' no 4º tom seco 'tsài'. Finalize em 'nàbiān' caindo seco no 4º tom em 'nà' e sustentando 'biēn' no 1º tom plano com 'b' seco sem ar e corte nasal no dente.\nLeia: Gōng-gòng tchì-chē-djàn tsài nà-biēn."
+  },
+  "119": {
+    "explanation": "Pergunta simples sobre localização do grupo: nós (wǒmen) + verbo de estar (zài) + o local (aeroporto) + a partícula de pergunta 'ma' no final.",
+    "breakdown": [
+      {
+        "word": "我们",
+        "meaning": "wǒmen — Nós — wǒ: eu; men: sufixo de plural."
+      },
+      {
+        "word": "在",
+        "meaning": "zài — Estar em."
+      },
+      {
+        "word": "机场",
+        "meaning": "jīchǎng — Aeroporto."
+      },
+      {
+        "word": "吗",
+        "meaning": "ma — Partícula interrogativa de fim de frase."
+      }
+    ],
+    "pronuncia": "Afunde a voz no 3º tom grave em 'wǒ' e solte 'man' leve no tom neutro. Solte 'zài' caindo no 4º tom seco 'tsài'. Em 'jīchǎng', faça 'djī' no 1º tom alto com sorriso espalmado sem ar, e afunde em 'chǎng' no 3º tom grave com a ponta da língua curvada para trás e ressonância na garganta. Termine na partícula leve 'ma'.\nLeia: Wǒ-man tsài djī-chǎng ma?"
+  },
+  "120": {
+    "explanation": "A expressão de desejo ou intenção 'gostaria de / pretendo' (xiǎng) fica posicionada logo após o sujeito 'eu'. Depois segue a ação completa de ir ao destino (ir a Paris) e o motivo da viagem (turismo).",
+    "breakdown": [
+      {
+        "word": "我",
+        "meaning": "wǒ — Eu."
+      },
+      {
+        "word": "想",
+        "meaning": "xiǎng — Gostaria de / Pensar em fazer."
+      },
+      {
+        "word": "去",
+        "meaning": "qù — Ir para."
+      },
+      {
+        "word": "巴黎",
+        "meaning": "Bālí — Paris — bā: fonética 'pa'; lí: fonética 'ris'."
+      },
+      {
+        "word": "旅游",
+        "meaning": "lǚyóu — Hacer turismo / Viajar a passeio — lǚ: viagem; yóu: passear."
+      }
+    ],
+    "pronuncia": "Diante do 3º tom de 'xiǎng', a palavra 'wǒ' sobe para o 2º tom virando 'wó'. Depois afunde a voz em 'xiǎng' no 3º tom grave com sorriso espalmado e ressonância no fundo. Em 'qù', arme bico de 'u' e diga 'tchù' caindo no 4º tom. Em 'Bālí', faça 'Bā' no 1º tom plano com 'b' seco sem ar, e suba a voz no 2º tom em 'lí'. Finalize em 'lǚyóu' com bico em 'lǚ' no 3º tom grave e 'ióu' subindo no 2º tom com som de 'o' oculto.\nLeia: Wó xiǎng tchù Bā-lí lǚ-ióu."
+  }
+}

@@ -461,12 +461,15 @@ ${JSON.stringify(blocoFrases, null, 2)}`;
     const seg = duracaoSegundos % 60;
     const duracaoFormatada = min > 0 ? `${min}m ${seg}s` : `${seg}s`;
 
-    planilha.getRange(linhaAlvo, 5).setValue("Pendente").setBackground("#f4cccc");
+   const ehErroDados = err.message.includes("Nenhuma frase retornada") || err.message.includes("não encontrado");
+    const novoStatus = ehErroDados ? "Erro" : "Pendente";
+
+    planilha.getRange(linhaAlvo, 5).setValue(novoStatus).setBackground("#f4cccc");
     planilha.getRange(linhaAlvo, 7).setValue(`Erro: ${err.message} (${duracaoFormatada})`);
   } finally {
-    // 3. Checagem final garantida: qualquer status diferente de "Concluído" permanece como "Pendente" (#f4cccc)
+    // 3. Checagem final garantida: qualquer status diferente de "Concluído" e "Erro" permanece como "Pendente" (#f4cccc)
     const statusFinal = planilha.getRange(linhaAlvo, 5).getValue();
-    if (statusFinal !== "Concluído") {
+    if (statusFinal !== "Concluído" && statusFinal !== "Erro") {
       planilha.getRange(linhaAlvo, 5).setValue("Pendente").setBackground("#f4cccc");
     }
   }

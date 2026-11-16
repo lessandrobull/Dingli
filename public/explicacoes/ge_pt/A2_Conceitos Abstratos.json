@@ -1,0 +1,562 @@
+{
+  "571": {
+    "explanation": "Em alemão, quando você diz 'eu acho que...' usando a palavra 'dass', a frase sofre um empurrãozinho e a ação principal 'verändert' é jogada para o final absoluto da frase. Além disso, note que os nativos costumam usar 'nossa vida' no singular ('unser Leben') para indicar o modo de vida geral, enquanto no Brasil dizemos 'nossas vidas' no plural.",
+    "breakdown": [
+      {
+        "word": "Ich denke",
+        "meaning": "Eu acho / Eu penso — Ich: eu; denke: penso/acho."
+      },
+      {
+        "word": "dass die Technologie",
+        "meaning": "que a tecnologia — dass: que; die: a; Technologie: tecnologia."
+      },
+      {
+        "word": "unser Leben",
+        "meaning": "nossa vida — unser: nossa; Leben: vida."
+      },
+      {
+        "word": "verändert",
+        "meaning": "muda / altera — forma do verbo verändern (transformar)."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre um chiado fino de gato pelo céu da boca sem raspar a garganta ('ích'). Em 'denke', use o 'e' aberto e o 'n' limpo sem anasalar ('dén-ke'). A palavra 'dass' tem o 'a' oral puro e 's' seco ('das'). Na palavra 'Technologie', o 'ch' chia fino como gato e o 'ie' final sustenta um 'i' longo ('tech-nô-lô-gíi'). Em 'unser', o 'u' é frouxo e a terminação '-er' morre como 'a' suave ('ún-za'). Em 'Leben', o 'e' é longo e fechado ('lêe-ben'). Para 'verändert', a primeira sílaba tem som de 'f' com 'r' vocalizado ('fea-'), o 'ä' soa como 'é' aberto com corte do golpe de glote ('fea-'én-dərt') e o 't' final morre seco nos dentes.\nLeia: ích dén-ke, das díi tech-nô-lô-gíi ún-za lêe-ben fea-'én-dərt."
+  },
+  "572": {
+    "explanation": "Para fazer uma pergunta direta em alemão, basta começar a frase direto pelo verbo 'Ist' (É). Na segunda metade da frase, a combinação para dizer 'viver sem celular' organiza as palavras colocando a ação 'zu leben' bem no encerramento da frase. A palavra 'Handy' é uma expressão criada no alemão moderno especificamente para celular.",
+    "breakdown": [
+      {
+        "word": "Ist es möglich",
+        "meaning": "É possível — Ist: é; es: isto/ele; möglich: possível."
+      },
+      {
+        "word": "ohne Handy",
+        "meaning": "sem celular — ohne: sem; Handy: celular / telefone móvel."
+      },
+      {
+        "word": "zu leben",
+        "meaning": "viver — zu: de / para (usado junto da ação); leben: viver."
+      }
+    ],
+    "pronuncia": "Comece em 'Ist es' com 'i' frouxo e corte seco no 't' final ('ist es'). Na palavra 'möglich', arme os lábios em bico redondo de 'ó' mas diga 'é' para fazer o ö breve ('mög-lich') e termine no chiado fino de gato em '-lich'. Em 'ohne', solte o 'h' suspirado direto do peito ('hôo-ne'). Na palavra 'Handy', o 'h' é suspirado, o 'a' é oral limpo e o 'y' soa como 'i' ('hén-di'). Em 'zu leben', faça o 'z' com estalo seco de 'ts' em 'tsúu', e use 'e' fechado e longo em 'leben' ('lêe-ben').\nLeia: ist es mög-lich, hôo-ne hén-di tsúu lêe-ben?"
+  },
+  "573": {
+    "explanation": "A palavra alemã para 'meio ambiente' é 'Umwelt', que é a fusão de 'Um' (ao redor) e 'Welt' (mundo), ou seja, 'o mundo ao nosso redor'. Da mesma forma, 'Zukunft' (futuro) traz o sentido literal do 'que vem pela frente'. A ordem das palavras é bem intuitiva e direta em comparação com o português.",
+    "breakdown": [
+      {
+        "word": "Die Umwelt",
+        "meaning": "O meio ambiente — Die: o/a; Umwelt: meio ambiente."
+      },
+      {
+        "word": "ist sehr wichtig",
+        "meaning": "é muito importante — ist: é; sehr: muito; wichtig: importante."
+      },
+      {
+        "word": "für unsere Zukunft",
+        "meaning": "para o nosso futuro — für: para; unsere: nosso/nossa; Zukunft: futuro."
+      }
+    ],
+    "pronuncia": "Em 'Die Umwelt', faça 'díi' longo, dê o golpe de glote antes de 'Umwelt' com 'u' frouxo e desligue a voz no 't' final ('úm-velt'). Na palavra 'ist', corte o 't' a seco. Em 'sehr', o 's' vibra como 'z' de abelha e o 'r' vocaliza em 'a' ('zêea'). Em 'wichtig', a letra 'w' tem som de 'v' e a terminação '-ig' chia fino como gato ('vích-tích'). Em 'für', arme o bico de 'u' e diga 'i' para o ü longo, soltando 'a' no final ('füü-a'). Em 'unsere', fale 'ún-ze-re'. Em 'Zukunft', o 'z' estoura em 'ts' seco, o 'u' é frouxo e o 't' final morre seco ('tsúu-kunft').\nLeia: díi 'úm-velt ist zêea vích-tích füü-a ún-ze-re tsúu-kunft."
+  },
+  "574": {
+    "explanation": "No alemão, para fazer uma recomendação amigável ou conselho, usa-se 'Wir sollten' (Nós deveríamos). Quando a frase junta a intenção de tentar algo com uma ação específica, o verbo 'versuchen' entra logo após o sujeito e a ação principal 'proteger' fica guardada para o fim da frase com a partícula 'zu schützen'.",
+    "breakdown": [
+      {
+        "word": "Wir sollten",
+        "meaning": "Nós deveríamos / devemos — Wir: nós; sollten: deveríamos."
+      },
+      {
+        "word": "versuchen",
+        "meaning": "tentar / procurar — verbo de intenção para buscar ou tentar algo."
+      },
+      {
+        "word": "die Natur",
+        "meaning": "a natureza — die: a; Natur: natureza."
+      },
+      {
+        "word": "zu schützen",
+        "meaning": "proteger — zu: de / para; schützen: proteger."
+      }
+    ],
+    "pronuncia": "Em 'Wir', o 'w' vira 'v' e o 'r' vocaliza como 'a' suave ('víia'). Em 'sollten', o 's' vibra como 'z' de abelha e o 't' é seco ('zól-ten'). Na palavra 'versuchen', a primeira sílaba soa como 'f' com 'a' vocalizado ('fea-'), o 's' zumba em 'z' e o 'ch' é raspado no fundo da garganta ('fea-tsúu-chen'). Em 'die Natur', fale 'díi' com 'd' seco nos dentes, e 'Natur' tem 'a' puro e 'r' vocalizado em 'a' ('na-túua'). Em 'zu schützen', o 'z' faz estalo de 'ts' ('tsúu') e 'schützen' começa com o chiado 'sh', trazendo o ü breve e corte seco no 'tz' ('shüt-tsen').\nLeia: víia zól-ten fea-tsúu-chen, díi na-túua tsúu shüt-tsen."
+  },
+  "575": {
+    "explanation": "O alemão usa a pergunta 'O que é o significado' ('Was ist die Bedeutung') onde no Brasil costumamos dizer 'Qual é o significado'. A relação de posse 'desta palavra' é indicada naturalmente pela terminação modificada em 'dieses Wortes'.",
+    "breakdown": [
+      {
+        "word": "Was ist",
+        "meaning": "O que é / Qual é — Was: o que; ist: é."
+      },
+      {
+        "word": "die Bedeutung",
+        "meaning": "o significado — die: o; Bedeutung: sentido / significado."
+      },
+      {
+        "word": "dieses Wortes",
+        "meaning": "desta palavra — dieses: desta; Wortes: palavra."
+      }
+    ],
+    "pronuncia": "Em 'Was', o 'w' tem som de 'v' e o 's' é seco ('vas'). Em 'ist', desvozeie o 't' a seco. Na palavra 'Bedeutung', a primeira sílaba é fraca ('be-'), 'deu' usa o ditongo 'oi' ('dói-tung') e o final '-ung' ressoa pelo nariz sem soltar a letra 'g'. Em 'dieses Wortes', 'dieses' traz 'd' seco nos dentes e 's' zumbado em 'z' ('díi-zes'), enquanto 'Wortes' troca 'w' por 'v', vocaliza o 'r' e termina em 't' e 's' secos ('vór-tes').\nLeia: vas ist díi be-dói-tung díi-zes vór-tes?"
+  },
+  "576": {
+    "explanation": "Para dizer 'não acho que', os alemães usam a expressão literal 'Eu acredito não, que...'. A palavra 'man' serve para indicar 'a gente' ou 'qualquer pessoa em geral'. Na segunda parte da frase, repare que o verbo de ação 'comprar' e o verbo de poder 'kann' vão em dupla para o final da oração.",
+    "breakdown": [
+      {
+        "word": "Ich glaube nicht",
+        "meaning": "Eu não acredito / não acho — Ich: eu; glaube: acredito; nicht: não."
+      },
+      {
+        "word": "dass man",
+        "meaning": "que a gente / que se — dass: que; man: a gente / a pessoa."
+      },
+      {
+        "word": "mit Geld",
+        "meaning": "com dinheiro — mit: com; Geld: dinheiro."
+      },
+      {
+        "word": "Glück kaufen kann",
+        "meaning": "possa comprar felicidade — Glück: felicidade; kaufen: comprar; kann: pode."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato ('ích'). Em 'glaube', use o ditongo 'au' em 'gláu-be'. Em 'nicht', o 'ch' chia como gato e o 't' desvozeia a seco ('nícht'). Em 'dass', o 'a' é oral limpo ('das'). Em 'man', o 'a' sai oral limpo sem anasalar ('man'). Em 'mit Geld', fale 'mit' seco, e em 'Geld' o 'l' toca os dentes e o 'd' final vira 't' seco ('guélt'). Em 'Glück', arme bico de 'u' e fale 'i' para o ü breve cortando no 'k' ('glük'). Em 'kaufen', use ditongo 'au' ('káu-fen'). Em 'kann', fale com 'a' oral ('kan').\nLeia: ích gláu-be nícht, das man mit guélt glük káu-fen kan."
+  },
+  "577": {
+    "explanation": "A ordem das palavras nesta frase é idêntica ao português: 'A educação é a chave para o sucesso'. A palavra 'Bildung' carrega a ideia de formação cultural e de conhecimento. O termo 'zum' é a contração amigável de 'zu dem', significando 'para o'.",
+    "breakdown": [
+      {
+        "word": "Bildung ist",
+        "meaning": "A educação é — Bildung: educação / formação de conhecimento; ist: é."
+      },
+      {
+        "word": "der Schlüssel",
+        "meaning": "a chave — der: o/a; Schlüssel: chave."
+      },
+      {
+        "word": "zum Erfolg",
+        "meaning": "para o sucesso — zum: para o; Erfolg: sucesso."
+      }
+    ],
+    "pronuncia": "Na palavra 'Bildung', o 'i' é frouxo, o 'l' encosta nos dentes da frente e o '-ung' ressoa no fundo sem soltar 'g' ('bíl-dung'). Em 'ist', corte o 't' a seco. Em 'der Schlüssel', fale 'dêea' com 'r' vocalizado; em 'Schlüssel', comece no chiado 'sh', arme bico de 'u' com língua no 'i' para o ü breve e termine no 'l' dental ('shlüs-sel'). Em 'zum Erfolg', o 'z' estoura em 'ts' ('tsum'), dê golpe de glote antes de 'Erfolg' com 'e' aberto, 'r' de garganta suave e 'g' final desvozeado em 'k' seco ('ea-fólk').\nLeia: bíl-dung ist dêea shlüs-sel tsum 'ea-fólk."
+  },
+  "578": {
+    "explanation": "Para dizer que algo está 'ficando' mais quente ou mudando de estado com o tempo, o alemão usa o verbo 'wird'. Para dizer 'mais quente', eles apenas acrescentam uma terminação na palavra 'warm', que virar 'wärmer'. A frase fica estruturada como 'O tempo fica a cada ano mais quente'.",
+    "breakdown": [
+      {
+        "word": "Das Wetter",
+        "meaning": "O tempo / O clima — Das: o; Wetter: tempo/clima."
+      },
+      {
+        "word": "wird jedes Jahr",
+        "meaning": "fica a cada ano — wird: torna-se/fica; jedes: cada; Jahr: ano."
+      },
+      {
+        "word": "wärmer",
+        "meaning": "mais quente — palavra warm (quente) com encaixe que indica comparação."
+      }
+    ],
+    "pronuncia": "Em 'Das Wetter', troque o 'w' por 'v' em 'Wetter' e morra a última sílaba no 'a' vocalizado ('das vét-ta'). Em 'wird', troque 'w' por 'v' e desvozeie o 'd' final em 't' seco ('virt'). Em 'jedes Jahr', o 'j' soa como 'y' de iogurte ('yêe-des'), e 'Jahr' tem o 'h' mudo esticando a vogal 'a' com 'r' vocalizado ('yáa'). Em 'wärmer', troque 'w' por 'v', abra a boca no 'ä' como 'é' e termine a última sílaba em 'a' relaxado ('vér-ma').\nLeia: das vét-ta virt yêe-des yáa vér-ma."
+  },
+  "579": {
+    "explanation": "Por se tratar de uma pergunta, a frase abre direto pelo verbo 'Ist' (É). Na construção de frases que expressam 'é difícil [fazer algo]', o alemão coloca a ação principal de 'aprender' no encerramento da frase acompanhada da partícula 'zu' ('zu lernen').",
+    "breakdown": [
+      {
+        "word": "Ist es schwierig",
+        "meaning": "É difícil — Ist: é; es: isto; schwierig: difícil."
+      },
+      {
+        "word": "eine neue Sprache",
+        "meaning": "um novo idioma — eine: uma; neue: nova; Sprache: língua/idioma."
+      },
+      {
+        "word": "zu lernen",
+        "meaning": "aprender — zu: de / para; lernen: aprender."
+      }
+    ],
+    "pronuncia": "Em 'Ist es', desvozeie o 't' a seco. Em 'schwierig', comece com chiado 'sh', troque o 'w' por 'v', estique o 'i' longo ('shvíi-rich') e termine com o chiado fino de gato em '-ig'. Em 'eine neue Sprache', 'eine' tem ditongo 'ai' ('ái-ne'), 'neue' traz o ditongo 'oi' ('nói-e'); 'Sprache' começa com o chiado 'shp', traz 'a' puro e 'ch' raspado no fundo da garganta ('shpráa-che'). Em 'zu lernen', o 'z' estoura em 'ts' ('tsúu') e 'lernen' fecha no 'n' nos dentes ('lér-nen').\nLeia: ist es shvíi-rich, ái-ne nói-e shpráa-che tsúu lér-nen?"
+  },
+  "580": {
+    "explanation": "A primeira parte da frase funciona de forma bem parecida com o português: 'O tempo passa muito rápido'. Na segunda metade, iniciada por 'wenn' (quando), o alemão aplica uma regra importante e empurra o verbo 'ist' (está) para o ponto final absoluto da frase.",
+    "breakdown": [
+      {
+        "word": "Die Zeit",
+        "meaning": "O tempo — Die: o; Zeit: tempo (cronológico)."
+      },
+      {
+        "word": "vergeht sehr schnell",
+        "meaning": "passa muito rápido — vergeht: passa/decorre; sehr: muito; schnell: rápido."
+      },
+      {
+        "word": "wenn man",
+        "meaning": "quando a gente / quando se — wenn: quando; man: a gente / a pessoa."
+      },
+      {
+        "word": "beschäftigt ist",
+        "meaning": "está ocupado — beschäftigt: ocupado; ist: está."
+      }
+    ],
+    "pronuncia": "Em 'Die Zeit', fale 'díi' longo e faça o 'z' com estalo seco de 'ts' em 'tsáit'. Em 'vergeht', a primeira sílaba soa como 'f' com 'a' vocalizado ('fea-'), o 'g' traz 'e' fechado sem som no 'h' ('fea-gêet') e fecha no 't' seco. Em 'sehr schnell', o 's' de 'sehr' zumba em 'z' ('zêea') e 'schnell' chia em 'sh' terminando no 'l' dental ('shnél'). Em 'wenn man', troque 'w' por 'v' ('ven') e use 'a' oral limpo em 'man'. Em 'beschäftigt ist', 'beschäftigt' chia no 'sh', abre o 'ä' como 'é' e termina no chiado fino de gato ('be-shéf-tích'); 'ist' morre no 't' seco.\nLeia: díi tsáit fea-gêet zêea shnél, ven man be-shéf-tích ist."
+  },
+  "581": {
+    "explanation": "A estrutura desta frase é simples e idêntica ao português: 'Eu tenho um outro ponto de vista'. A palavra 'Standpunkt' é uma combinação direta de 'Stand' (postura / posição em pé) com 'Punkt' (ponto), significando exatamente o ponto de vista que alguém assume.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho — Ich: eu; habe: tenho."
+      },
+      {
+        "word": "einen anderen",
+        "meaning": "um outro / um diferente — einen: um; anderen: outro."
+      },
+      {
+        "word": "Standpunkt",
+        "meaning": "ponto de vista — junção de Stand (posição/postura) e Punkt (ponto)."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato ('ích'). Em 'habe', solte o 'h' suspirado do peito ('háa-be'). Em 'einen anderen', fale 'ái-nen' com ditongo 'ai' e 'án-da-ren' com 'a' oral limpo sem anasalar. Na palavra 'Standpunkt', a consoante 'st-' inicial chia obrigatoriamente como 'sht', o 'd' do meio vira 't' seco ('shtant-') e 'punkt' traz 'u' frouxo cortando no 'kt' final ('shtánt-punkt').\nLeia: ích háa-be ái-nen án-da-ren shtánt-punkt."
+  },
+  "582": {
+    "explanation": "Seguindo o padrão de frases que expressam uma avaliação, o alemão abre com 'É importante', coloca o objeto 'as regras' ('die Regeln') no meio e joga a ação final de 'obedecer/seguir' para o encerramento acompanhada da partícula 'zu befolgen'.",
+    "breakdown": [
+      {
+        "word": "Es ist wichtig",
+        "meaning": "É importante — Es: isto; ist: é; wichtig: importante."
+      },
+      {
+        "word": "die Regeln",
+        "meaning": "as regras — die: as; Regeln: regras."
+      },
+      {
+        "word": "zu befolgen",
+        "meaning": "seguir / obedecer — zu: de / para; befolgen: seguir/obedecer."
+      }
+    ],
+    "pronuncia": "Em 'Es ist', desvozeie o 't' a seco. Em 'wichtig', a letra 'w' tem som de 'v' e o final '-ig' chia fino como gato ('vích-tích'). Em 'die Regeln', fale 'díi' longo e use 'r' suave de garganta em 'Regeln' com 'l' dental no final ('rêe-geln'). Em 'zu befolgen', o 'z' estoura em 'ts' ('tsúu'), a primeira sílaba de 'befolgen' é fraca ('be-') e o 'l' encosta nos dentes superiores ('be-fól-gen').\nLeia: es ist vích-tích, díi rêe-geln tsúu be-fól-gen."
+  },
+  "583": {
+    "explanation": "Quando usamos o verbo de necessidade 'müssen' (precisar/ter que), o alemão exige que o verbo da ação principal ('finden' - encontrar) seja empurrado para o final da frase. Todas as informações sobre o que precisa ser encontrado ficam recheadas no meio.",
+    "breakdown": [
+      {
+        "word": "Wir müssen",
+        "meaning": "Nós precisamos / temos que — Wir: nós; müssen: precisar/dever."
+      },
+      {
+        "word": "eine Lösung",
+        "meaning": "uma solução — eine: uma; Lösung: solução."
+      },
+      {
+        "word": "für dieses Problem",
+        "meaning": "para este problema — für: para; dieses: este/esse; Problem: problema."
+      },
+      {
+        "word": "finden",
+        "meaning": "encontrar — verbo no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Wir', troque 'w' por 'v' e vocalize o 'r' em 'a' ('víia'). Em 'müssen', arme bico de 'u' e diga 'i' para o ü breve com 's' seco ('müs-sen'). Em 'eine Lösung', fale 'ái-ne', e para 'Lösung' posicione a língua no 'ê' e lábios em bico de 'ô' para o ö longo ('löö-zung'). Em 'für', use bico de 'u' e língua no 'i' para ü longo ('füü-a'). Em 'dieses Problem', fale 'díi-zes' e dê golpe de glote antes de 'Problem' ('prô-blêem'). Em 'finden', mantenha o 'i' frouxo e feche no 'n' nos dentes ('fin-den').\nLeia: víia müs-sen ái-ne löö-zung füü-a díi-zes prô-blêem fin-den."
+  },
+  "584": {
+    "explanation": "Para perguntar a diferença entre duas coisas, o alemão começa com 'Was ist der Unterschied' (literalmente: O que é a diferença). A palavra 'Unterschied' é composta por 'Unter' (entre) e 'Schied' (divisão), significando a distinção feita entre duas coisas.",
+    "breakdown": [
+      {
+        "word": "Was ist",
+        "meaning": "O que é / Qual é — Was: o que; ist: é."
+      },
+      {
+        "word": "der Unterschied",
+        "meaning": "a diferença — der: o/a; Unterschied: diferença."
+      },
+      {
+        "word": "zwischen diesen beiden",
+        "meaning": "entre estes dois — zwischen: entre; diesen: estes; beiden: dois/ambos."
+      }
+    ],
+    "pronuncia": "Em 'Was ist', fale 'vas' trocando 'w' por 'v' e desvozeie o 't' em 'ist'. Em 'der Unterschied', fale 'dêea', dê golpe de glote em 'Unterschied', vocalize o 'r' em 'a' ('ún-ta-'), chia no 'sch' e termine no 't' seco ('ún-ta-shíit'). Em 'zwischen', a letra 'z' estoura em 'ts', o 'w' vira 'v' e o 'sch' chia ('tsví-shen'). Em 'diesen beiden', fale 'díi-zen' com 'z' zumbado e 'bái-den' com ditongo 'ai'.\nLeia: vas ist dêea 'ún-ta-shíit tsví-shen díi-zen bái-den?"
+  },
+  "585": {
+    "explanation": "A palavra 'doss' (que) conecta a frase e empurra o verbo de intenção 'sollten' (deveriam) para o encerramento absoluto da frase. O bloco final 'iguais ser deveriam' organiza os verbos de forma invertida em comparação com o português.",
+    "breakdown": [
+      {
+        "word": "Ich glaube",
+        "meaning": "Eu acredito / acho — Ich: eu; glaube: acredito."
+      },
+      {
+        "word": "dass alle",
+        "meaning": "que todos — dass: que; alle: todos."
+      },
+      {
+        "word": "gleich sein sollten",
+        "meaning": "deveriam ser iguais — gleich: igual; sein: ser; sollten: deveriam."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato ('ích'). Em 'glaube', use o ditongo 'au' ('gláu-be'). Em 'dass alle', 'dass' é seco ('das'), e 'alle' tem golpe de glote inicial com 'a' oral limpo ('ál-le'). Em 'gleich', o ditongo é 'ai' e termina com o chiado fino de gato ('gláich'). Em 'sein', a letra 's' zumba como 'z' de abelha e o ditongo é 'ai' ('záin'). Em 'sollten', o 's' zumba em 'z', o 'o' é aberto e o 't' é seco ('zól-ten').\nLeia: ích gláu-be, das 'ál-le gláich záin zól-ten."
+  },
+  "586": {
+    "explanation": "A ordem da frase é muito parecida com o português: 'O futuro é incerto, mas empolgante'. A palavra 'ungewiss' usa o encaixe inicial 'un-' para negar a certeza de algo, enquanto 'spannend' transmite a ideia de um suspense empolgante.",
+    "breakdown": [
+      {
+        "word": "Die Zukunft",
+        "meaning": "O futuro — Die: o; Zukunft: futuro."
+      },
+      {
+        "word": "ist ungewiss",
+        "meaning": "é incerto — ist: é; ungewiss: incerto."
+      },
+      {
+        "word": "aber spannend",
+        "meaning": "mas empolgante — aber: mas; spannend: empolgante/emocionante."
+      }
+    ],
+    "pronuncia": "Em 'Die Zukunft', fale 'díi', estoure o 'z' em 'ts' com 'u' frouxo e corte o 't' final a seco ('tsúu-kunft'). Em 'ist', faça o 't' seco. Em 'ungewiss', dê golpe de glote antes do 'u' oral limpo, troque 'w' por 'v' e termine no 's' seco ('ún-ge-vis'). Em 'aber', dê golpe de glote no 'a' aberto e vocalize o '-er' em 'a' (''áa-ba'). Em 'spannend', a consoante 'sp-' chia como 'shp' ('shpán-nent'), com 'a' oral puro e 'd' final desvozeado em 't' seco.\nLeia: díi tsúu-kunft ist 'ún-ge-vis, 'áa-ba shpán-nent."
+  },
+  "587": {
+    "explanation": "A expressão 'Gibt es' é a forma padrão do alemão para dizer 'Existe' ou 'Há'. Como é uma pergunta, a estrutura começa invertida por essa expressão. A palavra 'Entscheidung' vem da ideia de cortar opções e chegar a uma decisão.",
+    "breakdown": [
+      {
+        "word": "Gibt es",
+        "meaning": "Existe / Há — Gibt: dá/existe; es: isto."
+      },
+      {
+        "word": "einen Grund",
+        "meaning": "um motivo / uma razão — einen: um; Grund: razão/motivo."
+      },
+      {
+        "word": "für deine Entscheidung",
+        "meaning": "para sua decisão — für: para; deine: sua; Entscheidung: decisão."
+      }
+    ],
+    "pronuncia": "Em 'Gibt es', desvozeie o 'b' em 'p' seco em 'gípt' ('gípt es'). Em 'einen Grund', fale 'ái-nen' com ditongo 'ai', e em 'Grund' use 'u' frouxo desvozeando o 'd' final em 't' seco ('grunt'). Em 'für', arme bico de 'u' com língua no 'i' para o ü longo ('füü-a'). Em 'deine', use o ditongo 'ai' ('dái-ne'). Na palavra 'Entscheidung', dê golpe de glote no início ('ent-'), chia no 'sch' ('shái-dung') com ditongo 'ai' e ressoe o '-ung' no fundo da boca.\nLeia: gípt es ái-nen grunt füü-a dái-ne 'ent-shái-dung?"
+  },
+  "588": {
+    "explanation": "O verbo para 'refletir' ou 'pensar a fundo sobre algo' é 'nachdenken'. No presente, a parte principal 'denke' fica na posição normal da frase e o pedacinho destacado 'nach' é arremessado lá para o finalzinho. A posse 'da vida' é indicada pela alteração natural em 'des Lebens'.",
+    "breakdown": [
+      {
+        "word": "Ich denke nach",
+        "meaning": "Estou pensando / reflito — partes do verbo nachdenken (refletir)."
+      },
+      {
+        "word": "über den Sinn",
+        "meaning": "sobre o sentido — über: sobre; den: o; Sinn: sentido."
+      },
+      {
+        "word": "des Lebens",
+        "meaning": "da vida — des: da/do; Lebens: vida."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado de gato ('ích'). Em 'denke', use 'e' aberto e 'n' limpo ('dén-ke'). Em 'über', dê golpe de glote, arme o bico de 'u' com língua no 'i' para o ü longo e vocalize a última sílaba em 'a' (''üü-ba'). Em 'den Sinn', em 'Sinn' zumba o 's' como 'z' de abelha ('zin'). Em 'des Lebens', fale 'des' e 'lêe-bens' com 'e' fechado longo. Termine no 'nach' com 'ch' bem raspado no fundo da garganta ('narr').\nLeia: ích dén-ke 'üü-ba den zin des lêe-bens narr."
+  },
+  "589": {
+    "explanation": "A ordem da frase é idêntica ao português: 'O saber é mais poderoso do que a força'. A palavra 'Wissen' vem da ação de saber/conhecer. A terminação '-er' encaixada em 'mächtig' cria a comparação 'mais poderoso', e 'als' faz o papel de 'do que'.",
+    "breakdown": [
+      {
+        "word": "Wissen ist",
+        "meaning": "O conhecimento é — Wissen: conhecimento / saber; ist: é."
+      },
+      {
+        "word": "mächtiger als",
+        "meaning": "mais poderoso do que — mächtiger: mais poderoso; als: do que."
+      },
+      {
+        "word": "Stärke",
+        "meaning": "força / poder — Stärke: força."
+      }
+    ],
+    "pronuncia": "Na palavra 'Wissen', troque o 'w' por 'v', use 'i' frouxo e 's' seco ('vís-sen'). Em 'ist', desvozeie o 't' seco. Em 'mächtiger', abra a boca no 'ä' como 'é', raspe o 'ch' no fundo da garganta, o '-ig-' chia como gato e o '-er' morre em 'a' vocalizado ('méch-tı-ga'). Em 'als', encoste a língua nos dentes sem som de 'u' ('als'). Na palavra 'Stärke', o 'st-' inicial chia obrigatoriamente como 'sht', o 'ä' soa como 'é' aberto e vocaliza o 'r' ('shtér-ke').\nLeia: vís-sen ist méch-tı-ga als shtér-ke."
+  },
+  "590": {
+    "explanation": "O alemão abre a ideia dizendo 'É bom', coloca a quantidade de objetos 'muitos sonhos' ('viele Träume') no meio e reserva a ação de 'ter' para o fechamento acompanhada da partícula 'zu haben'.",
+    "breakdown": [
+      {
+        "word": "Es ist gut",
+        "meaning": "É bom — Es: isto; ist: é; gut: bom."
+      },
+      {
+        "word": "viele Träume",
+        "meaning": "muitos sonhos — viele: muitos; Träume: sonhos."
+      },
+      {
+        "word": "zu haben",
+        "meaning": "ter — zu: de / para; haben: ter."
+      }
+    ],
+    "pronuncia": "Em 'Es ist gut', desvozeie o 't' em 'ist' e em 'gut' estique o 'u' tenso desvozeando o 't' final ('gúut'). Em 'viele', lembre da inversão obrigatória: a letra 'v' nativa soa puramente como 'f' com 'i' longo ('fíi-le'). Na palavra 'Träume', raspe o 'r' suavemente e use o ditongo 'oi' para a letra 'äu' ('trói-me'). Em 'zu haben', faça o 'z' com estalo seco de 'ts' em 'tsúu', e solte o 'h' suspirado do peito em 'haben' ('háa-ben').\nLeia: es ist gúut, fíi-le trói-me tsúu háa-ben."
+  },
+  "591": {
+    "explanation": "Em perguntas iniciadas por 'como' ('Wie'), o verbo de poder 'können' (podemos) vem logo na segunda posição da frase. A palavra 'Gesellschaft' traz a ideia de uma comunidade de pessoas unidas. A ação de 'melhorar' ('verbessern') fecha a pergunta lá no fim.",
+    "breakdown": [
+      {
+        "word": "Wie können wir",
+        "meaning": "Como podemos nós — Wie: como; können: podemos; wir: nós."
+      },
+      {
+        "word": "unsere Gesellschaft",
+        "meaning": "nossa sociedade — unsere: nossa; Gesellschaft: sociedade."
+      },
+      {
+        "word": "verbessern",
+        "meaning": "melhorar — verbo melhorar."
+      }
+    ],
+    "pronuncia": "Em 'Wie', fale 'víi' trocando 'w' por 'v'. Em 'können', arme a língua no 'é' com lábios arredondados de 'ó' para o ö breve ('kön-nen'). Em 'wir', vocalize o 'r' em 'a' ('víia'). Em 'unsere', fale 'ún-ze-re' com 'u' oral puro. Na palavra 'Gesellschaft', a primeira sílaba é fraca ('ge-'), chia no 'sch' ('-zel-'), encosta o 'l' nos dentes e termina no 'ft' seco ('ge-zél-shaft'). Em 'verbessern', a primeira sílaba tem som de 'f' com 'a' vocalizado ('fea-') e o final '-ern' morre em 'a' relaxado ('fea-bés-sern').\nLeia: víi kön-nen víia ún-ze-re ge-zél-shaft fea-bés-sern?"
+  },
+  "592": {
+    "explanation": "A ordem da frase é totalmente equivalente ao português: 'Respeito é em uma amizade muito importante'. A palavra 'Freundschaft' junta 'Freund' (amigo) com o sufixo que indica uma relação ou laço humano.",
+    "breakdown": [
+      {
+        "word": "Respekt ist",
+        "meaning": "O respeito é — Respekt: respeito; ist: é."
+      },
+      {
+        "word": "in einer Freundschaft",
+        "meaning": "em uma amizade — in: em; einer: uma; Freundschaft: amizade."
+      },
+      {
+        "word": "sehr wichtig",
+        "meaning": "muito importante — sehr: muito; wichtig: importante."
+      }
+    ],
+    "pronuncia": "Na palavra 'Respekt', raspe o 'r' suavemente, lembre que o 'sp' chia obrigatoriamente como 'shp' e desvozeie o 't' final ('re-shpékt'). Em 'ist', faça o 't' seco. Em 'in einer', use 'in' curto e 'ái-ner' com ditongo 'ai'. Em 'Freundschaft', use o ditongo 'oi' em 'eu', desvozeie o 'd' em 't' seco e chia no 'sch' ('froint-shaft'). Em 'sehr wichtig', o 's' de 'sehr' zumba em 'z' ('zêea') e 'wichtig' troca 'w' por 'v' e termina com o chiado fino de gato em '-ig' ('vích-tích').\nLeia: re-shpékt ist in 'ái-na froint-shaft zêea vích-tích."
+  },
+  "593": {
+    "explanation": "Para negar a compreensão de algo completo, a palavra 'nicht' (não) costuma ser mandada lá para o final da frase. O verbo 'verstehen' traz a ideia de 'compreender/entender' e a palavra 'Zweck' refere-se ao propósito prático de algo.",
+    "breakdown": [
+      {
+        "word": "Ich verstehe",
+        "meaning": "Eu entendo / compreendo — Ich: eu; verstehe: entendo."
+      },
+      {
+        "word": "den Zweck davon",
+        "meaning": "o propósito disso — den: o; Zweck: propósito; davon: disso."
+      },
+      {
+        "word": "nicht",
+        "meaning": "não — negação no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato ('ích'). Na palavra 'verstehe', a primeira sílaba soa como 'f' com 'a' vocalizado ('fea-'), o 'st-' chia em 'sht' e não se pronuncia a letra 'h' ('fea-shtêe-e'). Em 'den Zweck', fale 'den', e em 'Zweck' a letra 'z' estoura em 'ts', o 'w' vira 'v' e corta seco no 'ck' ('tsvek'). Em 'davon', o 'd' é seco e a letra 'v' nativa soa como 'f' ('da-fón'). Termine em 'nicht' com chiado fino de gato ('nícht').\nLeia: ích fea-shtêe-e den tsvek da-fón nícht."
+  },
+  "594": {
+    "explanation": "Como se trata de uma pergunta, a estrutura abre direto pelo verbo 'Ist' (É). A palavra 'Notlüge' é uma combinação muito expressiva de 'Not' (emergência/necessidade) com 'Lüge' (mentira), referente àquela mentirinha inofensiva dita para evitar um problema maior. A ação de 'contar' encerra a frase acompanhada de 'zu erzählen'.",
+    "breakdown": [
+      {
+        "word": "Ist es falsch",
+        "meaning": "É errado — Ist: é; es: isto; falsch: errado."
+      },
+      {
+        "word": "eine Notlüge",
+        "meaning": "uma mentirinha de emergência — eine: uma; Notlüge: mentira por necessidade."
+      },
+      {
+        "word": "zu erzählen",
+        "meaning": "contar / narrar — zu: de / para; erzählen: contar."
+      }
+    ],
+    "pronuncia": "Em 'Ist es', corte o 't' a seco. Em 'falsch', fale com 'f' inicial, 'l' encostando nos dentes superiores e chiado 'sch' no final ('falsh'). Em 'eine Notlüge', fale 'ái-ne', em 'Not' feche o 'o' longo com 't' seco ('nôot'), e em 'Lüge' arme o bico de 'u' e diga 'i' para o ü longo ('lüü-ge'). Em 'zu erzählen', o 'z' de 'zu' faz estalo de 'ts' ('tsúu'), e em 'erzählen' dê golpe de glote inicial, vocalize o 'r', estoure o 'z' em 'ts', abra o 'ä' como 'é' longo sem som no 'h' e termine em 'n' ('ea-tsêe-len').\nLeia: ist es falsh, ái-ne nôot-lüü-ge tsúu 'ea-tsêe-len?"
+  },
+  "595": {
+    "explanation": "A ordem das palavras é idêntica ao português: 'O mundo é um lugar muito interessante'. No alemão, o adjetivo 'interessante' vem posicionado logo antes da palavra 'lugar' ('Ort') e ganha uma adaptação natural na sua terminação.",
+    "breakdown": [
+      {
+        "word": "Die Welt",
+        "meaning": "O mundo — Die: o; Welt: mundo."
+      },
+      {
+        "word": "ist ein sehr",
+        "meaning": "é um muito — ist: é; ein: um; sehr: muito."
+      },
+      {
+        "word": "interessanter Ort",
+        "meaning": "lugar interessante — interessanter: interessante; Ort: lugar."
+      }
+    ],
+    "pronuncia": "Em 'Die Welt', fale 'díi' longo, troque 'w' por 'v' em 'Welt', use 'e' aberto, encoste o 'l' nos dentes e corte o 't' seco ('velt'). Em 'ist ein', fale 'ist' seco e dê golpe de glote antes do 'ein' com ditongo 'ai' (''áin'). Em 'sehr', o 's' zumba em 'z' ('zêea'). Em 'interessanter', dê golpe de glote inicial (''in-te-res-sán-ta') e vocalize a última sílaba em 'a'. Em 'Ort', dê golpe de glote no 'o' aberto, vocalize o 'r' em 'a' e desvozeie o 't' seco (''óat').\nLeia: díi velt ist 'áin zêea 'in-te-res-sán-ta 'óat."
+  },
+  "596": {
+    "explanation": "Com o verbo de capacidade 'können' (podemos), o alemão manda o verbo principal da ação ('lernen' - aprender) para o ponto final da frase. A preposição 'aus' traz o sentido de retirar um aprendizado de dentro da experiência com os erros.",
+    "breakdown": [
+      {
+        "word": "Wir können",
+        "meaning": "Nós podemos — Wir: nós; können: poder."
+      },
+      {
+        "word": "aus unseren Fehlern",
+        "meaning": "com nossos erros — aus: a partir de; meieren: nossos; Fehlern: erros."
+      },
+      {
+        "word": "lernen",
+        "meaning": "aprender — verbo no final da frase."
+      }
+    ],
+    "pronuncia": "Em 'Wir', troque 'w' por 'v' e vocalize o 'r' em 'a' ('víia'). Em 'können', arme a língua no 'é' com lábios em bico de 'ó' para o ö breve ('kön-nen'). Em 'aus', use o ditongo 'au' com 's' seco ('áus'). Em 'unseren', fale 'ún-ze-ren' com 'u' frouxo e 'z' zumbado. Na palavra 'Fehlern', fale 'f', use 'e' fechado longo sem pronunciar o 'h' e vocalize o 'r' intermediário em 'a' ('fêe-lern'). Em 'lernen', vocalize levemente o 'r' em 'a' ('lér-nen').\nLeia: víia kön-nen áus ún-ze-ren fêe-lern lér-nen."
+  },
+  "597": {
+    "explanation": "Esta é uma expressão idiomática clássica em alemão. Ao pé da letra, significa 'Agir com honestidade dura mais tempo' (o que é sincero prevalece). Ela corresponde exatamente ao nosso ditado popular 'A honestidade é a melhor política'.",
+    "breakdown": [
+      {
+        "word": "Ehrlich",
+        "meaning": "Honestamente / A honestidade — de ehrlich (honesto)."
+      },
+      {
+        "word": "währt",
+        "meaning": "dura / permanece — do verbo währen (durar no tempo)."
+      },
+      {
+        "word": "am längsten",
+        "meaning": "por mais tempo / o mais longo — am: o mais; längsten: longo."
+      }
+    ],
+    "pronuncia": "Na palavra 'Ehrlich', dê golpe de glote inicial, use o 'e' fechado sem som na letra 'h', vocalize o 'r' e termine com o chiado fino de gato em '-lich' ('êea-lich'). Em 'währt', troque o 'w' por 'v', abra o 'ä' como 'é' longo sem som de 'h', vocalize o 'r' e desvozeie o 't' seco ('vêert'). Em 'am', fale 'am' com 'a' oral limpo sem anasalar. Na palavra 'längsten', abra a boca no 'ä' como 'é' aberto, ressoe o 'ng' no fundo da boca e corte a seco no 'st' ('léng-sten').\nLeia: 'êea-lich vêert am léng-sten."
+  },
+  "598": {
+    "explanation": "A pergunta significa 'O que torna uma pessoa realmente feliz?'. O verbo 'machen' (fazer) é empregado com o sentido de 'transformar/tornar'. A palavra 'Mensch' faz referência à pessoa ou ser humano de modo abrangente.",
+    "breakdown": [
+      {
+        "word": "Was macht",
+        "meaning": "O que faz / o que torna — Was: o que; macht: faz."
+      },
+      {
+        "word": "einen Menschen",
+        "meaning": "uma pessoa / um ser humano — einen: um; Menschen: pessoa."
+      },
+      {
+        "word": "wirklich glücklich",
+        "meaning": "verdadeiramente feliz — wirklich: realmente; glücklich: feliz."
+      }
+    ],
+    "pronuncia": "Em 'Was macht', fale 'vas' trocando 'w' por 'v', e em 'macht' use 'a' oral raspando o 'ch' no fundo da garganta com 't' seco ('marrt'). Em 'einen Menschen', fale 'ái-nen' e em 'Menschen' use 'e' aberto com chiado 'sch' ('mén-shen'). Na palavra 'wirklich', troque o 'w' por 'v', estique o 'i', encoste o 'l' nos dentes e termine com o chiado fino de gato ('vírk-lich'). Em 'glücklich', arme bico de 'u' e fale 'i' para o ü breve, corte o 'k' seco e termine com o chiado de gato ('glük-lich').\nLeia: vas marrt ái-nen mén-shen vírk-lich glük-lich?"
+  },
+  "599": {
+    "explanation": "O alemão monta a estrutura dizendo 'É necessário', e em seguida joga a ação de 'trabalhar duro' para o encerramento da frase acompanhada de 'zu arbeiten'. A palavra 'notwendig' indica algo indispensável para aliviar uma necessidade.",
+    "breakdown": [
+      {
+        "word": "Es ist notwendig",
+        "meaning": "É necessário — Es: isto; ist: é; notwendig: necessário."
+      },
+      {
+        "word": "hart",
+        "meaning": "duro / intensamente — hart: duro/com esforço."
+      },
+      {
+        "word": "zu arbeiten",
+        "meaning": "trabalhar — zu: de / para; arbeiten: trabalhar."
+      }
+    ],
+    "pronuncia": "Em 'Es ist', desvozeie o 't' seco. Na palavra 'notwendig', o 'o' é fechado ('nôot-'), o 'w' vira 'v' ('-ven-') e a terminação '-ig' chia fino como gato ('nôot-ven-dích'). Em 'hart', solte o 'h' suspirado do peito, vocalize o 'r' em 'a' e corte o 't' seco ('háat'). Em 'zu arbeiten', fale 'tsúu' com estalo de 'ts', dê golpe de glote em 'arbeiten' soltando o 'a' aberto com 't' seco dental ('tsúu 'áar-bai-ten').\nLeia: es ist nôot-ven-dích, háat tsúu 'áar-bai-ten."
+  },
+  "600": {
+    "explanation": "A estrutura da frase é igualzinha ao português: 'A vida é cheia de surpresas'. O termo 'voller' traz o sentido de estar repleto ou transbordando de algo, e 'Überraschungen' vem do verbo surpreender.",
+    "breakdown": [
+      {
+        "word": "Das Leben",
+        "meaning": "A vida — Das: o/a; Leben: vida."
+      },
+      {
+        "word": "ist voller",
+        "meaning": "é cheia de — ist: é; voller: cheia de."
+      },
+      {
+        "word": "Überraschungen",
+        "meaning": "surpresas — plural de Überraschung (surpresa)."
+      }
+    ],
+    "pronuncia": "Em 'Das Leben', fale 'das' com 's' seco, e 'Leben' com 'e' fechado longo ('lêe-ben'). Em 'ist', desvozeie o 't' seco. Em 'voller', lembre da inversão obrigatória: a letra 'v' nativa soa puramente como 'f' com 'o' aberto e final '-er' em 'a' vocalizado ('fól-la'). Na palavra 'Überraschungen', dê golpe de glote inicial, arme o bico de 'u' e diga 'i' para o ü longo ('üül-ba-'), raspe o 'r' suave, chia no 'sch' ('-ra-shung-') e ressoe a última sílaba no fundo da boca ('üü-ba-rá-shung-en').\nLeia: das lêe-ben ist fól-la 'üü-ba-rá-shung-en."
+  }
+}

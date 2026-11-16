@@ -1,0 +1,506 @@
+{
+  "241": {
+    "explanation": "Em alemão, para dizer 'estou muito feliz hoje', é muito comum colocar a indicação de tempo ('hoje') logo após o verbo principal ('estou'), ficando literalmente 'Eu estou hoje muito feliz'. A palavra 'glücklich' vem de 'Glück' (sorte ou felicidade), então para o nativo, estar 'glücklich' significa estar preenchido por esse sentimento positivo no momento.",
+    "breakdown": [
+      {
+        "word": "Ich bin",
+        "meaning": "Eu estou / Eu sou — Ich: eu; bin: estou/sou."
+      },
+      {
+        "word": "heute",
+        "meaning": "Hoje — indicação de tempo para o dia de hoje."
+      },
+      {
+        "word": "sehr",
+        "meaning": "Muito — intensificador que vem antes do adjetivo."
+      },
+      {
+        "word": "glücklich",
+        "meaning": "Feliz / Afortunado — de Glück (sorte/felicidade)."
+      }
+    ],
+    "pronuncia": "Comece em 'Ich' fazendo o chiado fino de gato assoprado no céu da boca sem raspar a garganta ('ích'). Em 'bin', fale o 'i' curto e apoie a língua atrás do dente superior no 'n' sem anasalar a vogal. Em 'heute', leia o ditongo 'eu' como 'oi' e solte o suspiro morno no 'h' ('hói-te'). Em 'sehr', zumba o 's' inicial como 'z' de abelha e vocalize o 'r' em 'a' relaxado ('zêea'). Em 'glücklich', monte os lábios em bico de 'u' enquanto fala a língua de 'i' para o 'ü', e termine a palavra com o chiado fino de gato ('glük-lích').\nLeia: ích bın hói-te zêea glük-lích."
+  },
+  "242": {
+    "explanation": "Para fazer uma pergunta direta em alemão como 'Você gosta deste filme?', a ordem das palavras se inverte: o verbo 'Magst' vem logo em primeiro lugar, seguido da pessoa 'du'. É exatamente a mesma lógica de perguntar 'Gostas tu deste filme?'. O termo 'diesen' indica que você está apontando para um filme específico.",
+    "breakdown": [
+      {
+        "word": "Magst du",
+        "meaning": "Você gosta? — Magst: gosta (forma para 'você'); du: você."
+      },
+      {
+        "word": "diesen Film",
+        "meaning": "Este filme — diesen: este; Film: filme."
+      }
+    ],
+    "pronuncia": "Comece em 'Magst' abrindo bem o 'a' sem anasalar e termine com o estalo seco 'gst' sem colocar vogal no final ('mákst'). Em 'du', faça o 'd' seco com a língua no dente superior sem chiar ('dúu'). Em 'diesen', zumba o 's' do meio como 'z' de abelha e estique o 'i' longo ('díi-zen'). Em 'Film', mantenha a ponta da língua firme no dente superior para o 'l' sem deixar virar som de 'u' ('film').\nLeia: mákst dúu díi-zen film?"
+  },
+  "243": {
+    "explanation": "No alemão, quando você quer negar a ideia completa da frase ou dizer do que não gosta, a palavra de negação 'nicht' é colocada bem no final da frase. A estrutura pensa no seguinte padrão: 'Eu gosto de tempo frio não'. A palavra 'Wetter' serve para falar sobre o tempo do clima.",
+    "breakdown": [
+      {
+        "word": "Ich mag",
+        "meaning": "Eu gosto — Ich: eu; mag: gosto."
+      },
+      {
+        "word": "kaltes Wetter",
+        "meaning": "Tempo frio / Clima frio — kaltes: frio; Wetter: tempo/clima."
+      },
+      {
+        "word": "nicht",
+        "meaning": "Não — palavra que nega a frase, posicionada ao final."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino de gato pelo céu da boca ('ích'). Em 'mag', a consoante final sofre desvozeamento e soa como 'k' seco ('mák'). Em 'kaltes', faça o 'l' tocar o dente sem virar 'u' e solte o 's' seco ('kál-tes'). Em 'Wetter', leia o 'w' obrigatoriamente com som de 'v' do português e vocalize a terminação em 'a' relaxado ('vét-ta'). Em 'nicht', repita o chiado fino de gato e estale o 't' final ('nícht').\nLeia: ích mák kál-tes vét-ta nícht."
+  },
+  "244": {
+    "explanation": "A construção alemã para 'Este livro é muito interessante' segue uma lógica muito próxima do português. A palavra 'Buch' é a raiz histórica de livro em alemão, e o adjetivo 'interessant' fica posicionado no final da frase depois do intensificador 'sehr'.",
+    "breakdown": [
+      {
+        "word": "Dieses Buch",
+        "meaning": "Este livro — Dieses: este; Buch: livro."
+      },
+      {
+        "word": "ist sehr",
+        "meaning": "É muito — ist: é; sehr: muito."
+      },
+      {
+        "word": "interessant",
+        "meaning": "Interessante — palavra idêntica ao português no sentido."
+      }
+    ],
+    "pronuncia": "Em 'Dieses', zumba o 's' do meio como 'z' de abelha e encerre com 's' seco ('díi-zes'). Em 'Buch', raspe o fundo da garganta com um som seco após o 'u' longo ('búurr'). Em 'ist', faça o 's' e 't' secos ('íst'). Em 'sehr', zumba o 's' e solte o 'r' vocalizado em 'a' ('zêea'). Em 'interessant', aplique o golpe de glote inicial, pronuncie as vogais orais sem anasalar e estale o 't' final ('ın-te-res-sánt').\nLeia: díi-zes búurr íst zêea 'ın-te-res-sánt."
+  },
+  "245": {
+    "explanation": "Em alemão, ao descrever uma pessoa ou coisa, a qualidade ('schöne') sempre vem antes do nome ('Frau'), funcionando literalmente como 'uma bonita mulher'. A palavra 'Frau' é usada tanto para 'mulher' quanto para 'senhora' ou 'esposa'.",
+    "breakdown": [
+      {
+        "word": "Sie ist",
+        "meaning": "Ela é — Sie: ela; ist: é."
+      },
+      {
+        "word": "eine schöne",
+        "meaning": "Uma bonita — eine: uma; schöne: bonita/bela."
+      },
+      {
+        "word": "Frau",
+        "meaning": "Mulher / Senhora — palavra usada para mulher ou esposa."
+      }
+    ],
+    "pronuncia": "Comece em 'Sie' zumbindo o 's' inicial como 'z' de abelha e esticando o 'i' ('zíi'). Em 'ist', diga 'íst'. Em 'eine', pronuncie o ditongo 'ei' como 'ai' ('ái-ne'). Em 'schöne', chia o 'sch' e monte a boca em bico redondo de 'ô' com língua de 'ê' para o 'ö' ('shöö-ne'). Em 'Frau', raspe o 'r' suavemente e faça o ditongo 'au' ('fráu').\nLeia: zíi íst ái-ne shöö-ne fráu."
+  },
+  "246": {
+    "explanation": "O verbo 'denken' significa literalmente 'pensar', mas os nativos usam a expressão 'Ich denke' exatamente como dizemos 'Eu acho' para dar uma opinião. O bloco 'das ist' junta a frase dando o sentido de 'isso é uma boa ideia'.",
+    "breakdown": [
+      {
+        "word": "Ich denke",
+        "meaning": "Eu acho / Eu penso — Ich: eu; denke: penso/acho."
+      },
+      {
+        "word": "das ist",
+        "meaning": "Isso é / Isso representa — das: isso/isto; ist: é."
+      },
+      {
+        "word": "eine gute Idee",
+        "meaning": "Uma boa ideia — eine: uma; gute: boa; Idee: ideia."
+      }
+    ],
+    "pronuncia": "Diga 'Ich' com o chiado fino de gato pelo céu da boca ('ích'). Em 'denke', não anasale a vogal 'e', pronunciando 'dén-ke' de forma limpa. Em 'das', solte o 's' seco ('das'). Em 'gute', faça o 'u' tenso e o 't' seco no dente ('gúu-te'). Em 'Idee', dê o golpe de glote inicial com um corte seco antes da vogal e estique o 'e' longo no final (' 'ı-dêe').\nLeia: ích dén-ke, das íst ái-ne gúu-te 'ı-dêe."
+  },
+  "247": {
+    "explanation": "Nas perguntas diretas, o alemão inverte a ordem e coloca o verbo 'Bist' na frente da pessoa 'du'. A palavra 'traurig' vem da mesma raiz de 'Trauer' (luto ou tristeza profunda), significando estar tomado por essa emoção.",
+    "breakdown": [
+      {
+        "word": "Bist du",
+        "meaning": "Você está? — Bist: está (forma para 'você'); du: você."
+      },
+      {
+        "word": "traurig",
+        "meaning": "Triste — de Trauer (luto/tristeza)."
+      }
+    ],
+    "pronuncia": "Em 'Bist', faça o 't' seco com a língua no dente sem chiar ('bíst'). Em 'du', a língua apoia de forma reta no dente superior ('dúu'). Em 'traurig', raspe o 'r' suavemente na garganta, faça o ditongo 'au' e termine a terminação '-ig' obrigatoriamente com o chiado fino de gato ('tráu-rích').\nLeia: bíst dúu tráu-rích?"
+  },
+  "248": {
+    "explanation": "Os alemães não dizem 'eu estou entediado' de forma direta. Eles usam uma estrutura onde o sentimento acontece em relação à pessoa, dizendo ao pé da letra 'Para mim o tempo está longo' (Mir ist langweilig). A palavra combina 'lang' (longo) e 'Weile' (momento/tempo).",
+    "breakdown": [
+      {
+        "word": "Mir ist",
+        "meaning": "Para mim está / Sinto-me — Mir: para mim; ist: está."
+      },
+      {
+        "word": "langweilig",
+        "meaning": "Entediante / Chato — lang: longo; weilig: relativo à passagem do tempo."
+      }
+    ],
+    "pronuncia": "Em 'Mir', estique o 'i' longo e vocalize o 'r' em 'a' relaxado ('míia'). Em 'ist', fale 'íst'. Em 'langweilig', pronuncie o 'a' de 'lang' oral puro sem anasalar, leia a letra 'w' com som de 'v' no pedaço 'wei' ('vái') e encerre a terminação '-ig' com o chiado fino de gato ('lang-vái-lích').\nLeia: míia íst lang-vái-lích."
+  },
+  "249": {
+    "explanation": "Para expressar que algo está em um nível exagerado ou 'demais', os alemães usam a palavra 'zu' logo antes do adjetivo. Então 'zu laut' significa literalmente 'excessivamente barulhenta' ou 'alta demais' para o volume do som.",
+    "breakdown": [
+      {
+        "word": "Die Musik",
+        "meaning": "A música — Die: a; Musik: música."
+      },
+      {
+        "word": "ist zu",
+        "meaning": "Está demais — ist: está; zu: demais / em excesso."
+      },
+      {
+        "word": "laut",
+        "meaning": "Alta / Barulhenta — referente a volume sonoro elevado."
+      }
+    ],
+    "pronuncia": "Em 'Die', estique o 'i' ('díi'). Em 'Musik', zumba o 's' do meio como 'z' de abelha e arme os lábios em bico de 'u' com língua de 'i' para o 'ü' ('mu-zíik'). Em 'zu', estale a letra 'z' obrigatoriamente com som seco de 'ts' ('tsúu'). Em 'laut', solte o ditongo 'au' e trave o 't' seco nos dentes ('láut').\nLeia: díi mu-zíik íst tsúu láut."
+  },
+  "250": {
+    "explanation": "A ordem das palavras nesta frase é idêntica à do português. O verbo 'lieben' é usado pelos nativos para expressar afeto profundo, carinho e amor por familiares, parceiros ou coisas que você ama de coração.",
+    "breakdown": [
+      {
+        "word": "Ich liebe",
+        "meaning": "Eu amo — Ich: eu; liebe: amo."
+      },
+      {
+        "word": "meine Familie",
+        "meaning": "Minha família — meine: minha; Familie: família."
+      }
+    ],
+    "pronuncia": "Assopre 'Ich' com o chiado fino pelo céu da boca ('ích'). Em 'liebe', estique o 'i' e mantenha o 'b' suave entre vogais ('líi-be'). Em 'meine', diga 'mái-ne' mantendo a vogal 'a' oral e limpa. Em 'Familie', fale as vogais 'a' e 'i' sem anasalar e termine a palavra com 'i' esticado ('fa-míi-li-e').\nLeia: ích líi-be mái-ne fa-míi-li-e."
+  },
+  "251": {
+    "explanation": "Para descrever as condições do dia ou do clima, o alemão utiliza o sujeito neutro 'Es ist' (É/Está). O adjetivo 'sonniger' vem da palavra 'Sonne' (sol). Repare que no final da palavra 'Tag', a consoante 'g' desvozeia e soa com estalo seco de 'k'.",
+    "breakdown": [
+      {
+        "word": "Es ist",
+        "meaning": "É / Isso é — Es: isso/ele (neutro); ist: é."
+      },
+      {
+        "word": "ein sonniger",
+        "meaning": "Um ensolarado — ein: um; sonniger: ensolarado (derivado de Sonne = sol)."
+      },
+      {
+        "word": "Tag",
+        "meaning": "Dia — palavra masculina para o período do dia."
+      }
+    ],
+    "pronuncia": "Em 'Es ist', diga 'es íst'. Em 'ein', fale 'áin'. Em 'sonniger', zumba o 's' inicial em 'z', pronuncie o 'o' aberto limpo sem anasalar ('zón-ni-ga') e vocalize a terminação em 'a'. Em 'Tag', abra o 'a' longo e termine com o desvozeamento do 'g' em 'k' seco ('táak').\nLeia: es íst áin zón-ni-ga táak."
+  },
+  "252": {
+    "explanation": "A frase começa com 'Das' (Isso) para destacar e dar peso à ideia que você está rejeitando. Como 'Das' ocupa a primeira posição, o verbo 'glaube' (acredito) tem que vir logo em seguida, empurrando a pessoa 'ich' para depois dele. A lógica é 'Nisso não acredito eu'.",
+    "breakdown": [
+      {
+        "word": "Das glaube",
+        "meaning": "Isso acredito / Nisso creio — Das: isso; glaube: acredito/acho."
+      },
+      {
+        "word": "ich nicht",
+        "meaning": "Eu não — ich: eu; nicht: não."
+      }
+    ],
+    "pronuncia": "Em 'Das', solte o 's' seco ('das'). Em 'glaube', solte o ditongo 'au' de forma bem limpa ('gláu-be'). Em 'ich', faça o chiado fino de gato no céu da boca ('ích'). Em 'nicht', repita o chiado fino e encerre com o 't' seco nos dentes ('nícht').\nLeia: das gláu-be ích nícht."
+  },
+  "253": {
+    "explanation": "Por ser uma pergunta direta, o verbo 'Ist' abre a frase antes do sujeito 'das'. O adjetivo 'schwierige' é derivado de 'Schwierigkeit' (dificuldade) e fica posicionado exatamente antes do substantivo 'Frage' (pergunta).",
+    "breakdown": [
+      {
+        "word": "Ist das",
+        "meaning": "É isso? / Isso é? — Ist: é; das: isso."
+      },
+      {
+        "word": "eine schwierige",
+        "meaning": "Uma difícil — eine: uma; schwierige: difícil/complicada."
+      },
+      {
+        "word": "Frage",
+        "meaning": "Pergunta / Questão — derivada de fragen (perguntar)."
+      }
+    ],
+    "pronuncia": "Em 'Ist das', faça 'íst das'. Em 'schwierige', chia o pedaço 'schw-' lendo a letra 'w' com som de 'v' ('shvíi-ri-ge'), raspe o 'r' de leve e mantenha o 'i' longo. Em 'Frage', raspe o 'r' na garganta e abra a vogal 'a' bem esticada ('fráa-ge').\nLeia: íst das ái-ne shvíi-ri-ge fráa-ge?"
+  },
+  "254": {
+    "explanation": "A palavra 'Angst' expressa um sentimento forte de medo ou ansiedade. A preposição que os alemães usam junto com medo é 'vor', que literalmente significa 'diante de'. A lógica alemã pensa: 'Eu tenho medo diante de aranhas'.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho — Ich: eu; habe: tenho."
+      },
+      {
+        "word": "Angst vor",
+        "meaning": "Medo de / Medo diante de — Angst: medo/angústia; vor: diante de / de."
+      },
+      {
+        "word": "Spinnen",
+        "meaning": "Aranhas — forma no plural para o animal."
+      }
+    ],
+    "pronuncia": "Assopre 'Ich' com chiado fino ('ích'). Em 'habe', solte o suspiro morno no 'h' ('háa-be'). Em 'Angst', dê o golpe de glote inicial com um microbloqueio de ar na garganta, mantenha o 'a' oral limpo e trave no estalo 'ngst' (' 'angst'). Em 'vor', leia a letra 'v' obrigatoriamente com som de 'f' ('fôoa'). Em 'Spinnen', chia o 'sp-' inicial como 'shp-' ('shpín-nen').\nLeia: ích háa-be 'angst fôoa shpín-nen."
+  },
+  "255": {
+    "explanation": "A ordem e a estrutura desta frase correspondem exatamente ao português. A palavra 'intelligent' é transparente e vem da mesma raiz latina usada em vários idiomas.",
+    "breakdown": [
+      {
+        "word": "Sie ist",
+        "meaning": "Ela é — Sie: ela; ist: é."
+      },
+      {
+        "word": "sehr",
+        "meaning": "Muito — intensificador."
+      },
+      {
+        "word": "intelligent",
+        "meaning": "Inteligente — palavra idêntica no sentido."
+      }
+    ],
+    "pronuncia": "Em 'Sie', zumba a letra 's' como 'z' de abelha e estique o 'i' ('zíi'). Em 'ist', diga 'íst'. Em 'sehr', zumba o 's' e vocalize o 'r' em 'a' relaxado ('zêea'). Em 'intelligent', aplique o golpe de glote na vogal inicial, pronuncie o 'i' e o 'e' sem anasalar e termine com o estalo seco 'nt' ('ın-te-li-guént').\nLeia: zíi íst zêea 'ın-te-li-guént."
+  },
+  "256": {
+    "explanation": "O adjetivo 'köstlich' é a palavra elegante que os alemães usam para dizer que algo comestível está excepcionalmente refinado, gostoso e saboroso. A estrutura da frase é simples e direta.",
+    "breakdown": [
+      {
+        "word": "Der Kuchen",
+        "meaning": "O bolo — Der: o; Kuchen: bolo/torta."
+      },
+      {
+        "word": "ist",
+        "meaning": "Está / É — verbo ser/estar."
+      },
+      {
+        "word": "köstlich",
+        "meaning": "Delicioso / Saboroso — palavra usada para comida saborosa."
+      }
+    ],
+    "pronuncia": "Em 'Der', vocalize o 'r' em 'a' relaxado ('dêea'). Em 'Kuchen', fale o 'u' longo e raspe o fundo da garganta com som seco no 'ch' após a vogal 'u' ('kúu-rren'). Em 'ist', fale 'íst'. Em 'köstlich', posicione a língua para 'é' mas faça bico redondo de 'ó' para o 'ö', solte o 's' seco e termine a palavra com o chiado fino de gato ('köst-lích').\nLeia: dêea kúu-rren íst köst-lích."
+  },
+  "257": {
+    "explanation": "Para dizer que está animado ou ansioso por algo de bom que vai acontecer no futuro, o alemão usa a expressão fixa 'sich freuen auf'. Ao pé da letra, o raciocínio é 'Eu me me me alegro em direção à festa'.",
+    "breakdown": [
+      {
+        "word": "Ich freue mich",
+        "meaning": "Eu me alegro / Estou ansioso por — freue mich: me alegro."
+      },
+      {
+        "word": "auf die Party",
+        "meaning": "Pela festa / Para a festa — auf: para/sobre; die Party: a festa."
+      }
+    ],
+    "pronuncia": "Diga 'Ich' com chiado fino ('ích'). Em 'freue', raspe o 'r' na garganta e solte o ditongo 'eu' com som de 'oi' ('frói-e'). Em 'mich', faça o 'i' frouxo e termine com o chiado fino de gato ('mích'). Em 'auf', solte o ditongo 'au' e o 'f' seco ('áuf'). Em 'die Party', fale 'díi pái-ti'.\nLeia: ích frói-e mích áuf díi pái-ti."
+  },
+  "258": {
+    "explanation": "Nas perguntas, o verbo 'Bist' se desloca para o início da frase antes da pessoa 'du'. O adjetivo 'wütend' é derivado de 'Wut' (fúria ou raiva intensa), significando estar tomado por essa reação.",
+    "breakdown": [
+      {
+        "word": "Bist du",
+        "meaning": "Você está? — Bist: está; du: você."
+      },
+      {
+        "word": "wütend",
+        "meaning": "Com raiva / Furioso — de Wut (fúria/raiva)."
+      }
+    ],
+    "pronuncia": "Em 'Bist', faça o 't' seco no dente ('bíst'). Em 'du', encoste a língua reta atrás do dente superior ('dúu'). Em 'wütend', leia a letra 'w' com som de 'v', projete os lábios em bico de 'u' com língua de 'i' para o 'ü' longo ('vüü-tent') e desvozeie o 'd' final para 't' seco.\nLeia: bíst dúu vüü-tent?"
+  },
+  "259": {
+    "explanation": "A ordem das palavras nesta frase segue o mesmo padrão do português. No final da palavra 'lang', a consoante 'g' desvozeia levemente, gerando um estalo seco parecido com 'k'.",
+    "breakdown": [
+      {
+        "word": "Der Film",
+        "meaning": "O filme — Der: o; Film: filme."
+      },
+      {
+        "word": "ist sehr",
+        "meaning": "É muito — ist: é; sehr: muito."
+      },
+      {
+        "word": "lang",
+        "meaning": "Longo / Comprido — referente à duração ou extensão."
+      }
+    ],
+    "pronuncia": "Em 'Der', vocalize a terminação em 'a' relaxado ('dêea'). Em 'Film', mantenha a ponta da língua firme no dente superior no 'l' sem virar 'u' ('film'). Em 'ist', diga 'íst'. Em 'sehr', zumba o 's' inicial e vocalize o 'r' ('zêea'). Em 'lang', a vogal 'a' deve sair 100% oral e limpa antes de fechar a ressonância 'ngk' seca ('langk').\nLeia: dêea film íst zêea langk."
+  },
+  "260": {
+    "explanation": "Em alemão, a ideia de ter certeza é vista como estar em um estado de segurança em relação a si mesmo. Por isso, em vez de dizer 'tenho certeza', o nativo diz literalmente 'Eu não estou seguro para mim mesmo' (Ich bin mir nicht sicher).",
+    "breakdown": [
+      {
+        "word": "Ich bin mir",
+        "meaning": "Eu estou para mim — Ich: eu; bin: estou; mir: para mim."
+      },
+      {
+        "word": "nicht sicher",
+        "meaning": "Não seguro / Não certo — nicht: não; sicher: seguro/certeza."
+      }
+    ],
+    "pronuncia": "Fale 'Ich' com chiado fino ('ích'). Em 'bin', fale o 'i' breve ('bın'). Em 'mir', vocalize o 'r' em 'a' ('míia'). Em 'nicht', assopre o chiado fino e estale o 't' ('nícht'). Em 'sicher', zumba o 's' inicial em 'z', faça o chiado fino no 'ch' e vocalize a terminação '-er' em 'a' relaxado ('zí-cha').\nLeia: ích bın míia nícht zí-cha."
+  },
+  "261": {
+    "explanation": "O adjetivo 'kleines' (pequeno) fica posicionado antes do nome 'Problem'. A expressão de abertura 'Es ist' serve para introduzir a frase de forma neutra, como 'Isso é um problema pequeno'.",
+    "breakdown": [
+      {
+        "word": "Es ist",
+        "meaning": "É / Isto é — Es: isto; ist: é."
+      },
+      {
+        "word": "ein kleines",
+        "meaning": "Um pequeno — ein: um; kleines: pequeno."
+      },
+      {
+        "word": "Problem",
+        "meaning": "Problema — palavra com o mesmo sentido do português."
+      }
+    ],
+    "pronuncia": "Em 'Es ist', fale 'es íst'. Em 'ein', diga 'áin'. Em 'kleines', pronuncie o ditongo 'ei' como 'ai' e solte o 's' seco ('klái-nes'). Em 'Problem', dê o golpe de glote inicial no 'P', abra o 'o' longo e não anasale o 'e' antes da letra 'm' ('prô-blêem').\nLeia: es íst áin klái-nes prô-blêem."
+  },
+  "262": {
+    "explanation": "Nesta frase, a característica 'neues' (novo) vem posicionada imediatamente antes do objeto 'Auto' (carro). A palavra 'Auto' é uma forma encurtada de automóvel amplamente usada no dia a dia.",
+    "breakdown": [
+      {
+        "word": "Ich mag",
+        "meaning": "Eu gosto de — Ich: eu; mag: gosto."
+      },
+      {
+        "word": "dein neues Auto",
+        "meaning": "Seu carro novo — dein: seu; neues: novo; Auto: carro."
+      }
+    ],
+    "pronuncia": "Diga 'Ich' com chiado fino ('ích'). Em 'mag', desvozeie a consoante 'g' para 'k' seco ('mák'). Em 'dein', fale o ditongo 'ei' como 'ai' sem anasalar ('dáin'). Em 'neues', leia o ditongo 'eu' como 'oi' ('nói-es'). Em 'Auto', aplique o golpe de glote no 'A', leia o ditongo 'au' e mantenha a vogal 'o' final limpa e fechada sem virar 'u' (' 'áu-tôo').\nLeia: ích mák dáin nói-es 'áu-tôo."
+  },
+  "263": {
+    "explanation": "No alemão, a palavra 'warm' é usada para descrever uma temperatura agradavelmente morna ou quentinha. Para indicar que algo está fervendo ou muito quente, usa-se outro termo ('heiß'). A ordem da frase é direta.",
+    "breakdown": [
+      {
+        "word": "Das Wasser",
+        "meaning": "A água — Das: a; Wasser: água."
+      },
+      {
+        "word": "ist",
+        "meaning": "Está — verbo ser/estar."
+      },
+      {
+        "word": "warm",
+        "meaning": "Morna / Quente — temperatura agradável ou morna."
+      }
+    ],
+    "pronuncia": "Em 'Das', solte o 's' seco ('das'). Em 'Wasser', leia o 'w' com som de 'v', mantenha o 'ss' seco e vocalize o '-er' final em 'a' curto ('vás-sa'). Em 'ist', diga 'íst'. Em 'warm', leia o 'w' com som de 'v', abra o 'a' oral puro e encoste os dentes/lábios no 'm' sem anasalar a vogal ('varm').\nLeia: das vás-sa íst varm."
+  },
+  "264": {
+    "explanation": "O adjetivo 'lustiger' vem de 'Lust' (alegria ou vontade de fazer algo divertido). A qualidade vem posicionada antes do nome 'Mann' (homem), formando 'um homem divertido/engraçado'.",
+    "breakdown": [
+      {
+        "word": "Er ist",
+        "meaning": "Ele é — Er: ele; ist: é."
+      },
+      {
+        "word": "ein lustiger",
+        "meaning": "Um engraçado / divertido — ein: um; lustiger: engraçado (de Lust)."
+      },
+      {
+        "word": "Mann",
+        "meaning": "Homem / Esposo — palavra masculina para homem."
+      }
+    ],
+    "pronuncia": "Em 'Er', vocalize o 'r' em 'a' relaxado ('êea'). Em 'ist', fale 'íst'. Em 'ein', diga 'áin'. Em 'lustiger', mantenha o 'u' frouxo, solte o 's' e 't' secos e vocalize o final em 'a' ('lús-ti-ga'). Em 'Mann', a vogal 'a' deve sair 100% oral e aberta antes de fechar os lábios no 'm' ('man').\nLeia: êea íst áin lús-ti-ga man."
+  },
+  "265": {
+    "explanation": "No alemão, para negar um substantivo diretamente (como 'pizza'), utiliza-se a palavra negativa 'keine' em vez de 'nicht'. Ao pé da letra, a cabeça do nativo pensa na estrutura: 'Eu gosto de nenhuma pizza'.",
+    "breakdown": [
+      {
+        "word": "Ich mag",
+        "meaning": "Eu gosto de — Ich: eu; mag: gosto."
+      },
+      {
+        "word": "keine Pizza",
+        "meaning": "Nenhuma pizza / Pizza não — keine: nenhuma; Pizza: pizza."
+      }
+    ],
+    "pronuncia": "Diga 'Ich' com chiado fino ('ích'). Em 'mag', desvozeie o 'g' para 'k' seco ('mák'). Em 'keine', diga o ditongo 'ei' como 'ai' sem anasalar ('kái-ne'). Em 'Pizza', estale o 'z' duplo obrigatoriamente com som seco de 'ts' ('pít-tsa').\nLeia: ích mák kái-ne pít-tsa."
+  },
+  "266": {
+    "explanation": "Os alemães têm o costume de juntar palavras para criar conceitos específicos. Em vez de dizer 'cantora favorita', eles unem 'Lieblings' (favorito) com 'Sängerin' (cantora), formando uma única palavra longa: 'Lieblingssängerin'.",
+    "breakdown": [
+      {
+        "word": "Ist sie",
+        "meaning": "É ela? / Ela é? — Ist: é; sie: ela."
+      },
+      {
+        "word": "deine",
+        "meaning": "Sua — forma de posse para 'você'."
+      },
+      {
+        "word": "Lieblingssängerin",
+        "meaning": "Cantora favorita — fusão de Lieblings (favorita) com Sängerin (cantora)."
+      }
+    ],
+    "pronuncia": "Em 'Ist sie', fale 'íst zíi' com a letra 's' de 'sie' zumbindo como 'z'. Em 'deine', diga 'dái-ne'. Em 'Lieblingssängerin', estique o 'i' em 'líib', trave a ressonância nasal no fundo em 'lings' sem soltar som de 'g', abra o 'ä' em 'é' aberto ('zén-ga-rın') e encerre no 'n' seco.\nLeia: íst zíi dái-ne líip-lings-zén-ga-rın?"
+  },
+  "267": {
+    "explanation": "A palavra 'Stadt' (cidade) começa com o encontro 'St-', que em alemão chia obrigatoriamente como 'sht-'. A frase afirma de forma direta que 'A cidade é muito barulhenta'.",
+    "breakdown": [
+      {
+        "word": "Die Stadt",
+        "meaning": "A cidade — Die: a; Stadt: cidade."
+      },
+      {
+        "word": "ist sehr",
+        "meaning": "É muito — ist: é; sehr: muito."
+      },
+      {
+        "word": "laut",
+        "meaning": "Barulhenta / Ruidosa — que gera volume elevado."
+      }
+    ],
+    "pronuncia": "Em 'Die', estique o 'i' ('díi'). Em 'Stadt', chia o 'st-' inicial como 'sht-', mantenha o 'a' oral limpo e trave a consoante 't' seca nos dentes ('shtat'). Em 'ist', diga 'íst'. Em 'sehr', zumba o 's' e vocalize o 'r' em 'a' ('zêea'). Em 'laut', fale o ditongo 'au' e encerre no 't' seco ('láut').\nLeia: díi shtat íst zêea láut."
+  },
+  "268": {
+    "explanation": "A palavra 'satt' originalmente significa estar com a barriga cheia após uma refeição. A expressão idiomática 'etwas satt haben' é usada exatamente como o nosso 'estar de saco cheio' ou 'estar farto' de algo ou de uma situação.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho — Ich: eu; habe: tenho."
+      },
+      {
+        "word": "dieses Spiel",
+        "meaning": "Este jogo — dieses: este; Spiel: jogo/partida."
+      },
+      {
+        "word": "satt",
+        "meaning": "Farto / Saciado — usado na expressão para 'estar de saco cheio'."
+      }
+    ],
+    "pronuncia": "Diga 'Ich' com chiado fino ('ích'). Em 'habe', solte o 'h' morno ('háa-be'). Em 'dieses', zumba o 's' do meio como 'z' de abelha ('díi-zes'). Em 'Spiel', chia o 'sp-' inicial como 'shp-', estique o 'i' e toque o 'l' no dente ('shpmıil'). Em 'satt', zumba o 's' inicial em 'z' e corte no 't' seco ('zat').\nLeia: ích háa-be díi-zes shpíil zat."
+  },
+  "269": {
+    "explanation": "A palavra 'wunderschöner' junta 'Wunder' (maravilha) com 'schön' (bonito), significando algo incrivelmente belo ou maravilhoso. É a expressão mais comum para elogiar um dia perfeito e agradável.",
+    "breakdown": [
+      {
+        "word": "Es ist",
+        "meaning": "É / Isto é — Es: isto; ist: é."
+      },
+      {
+        "word": "ein wunderschöner",
+        "meaning": "Um maravilhosamente bonito — wunder: maravilha; schöner: bonito."
+      },
+      {
+        "word": "Tag",
+        "meaning": "Dia — palavra masculina para dia."
+      }
+    ],
+    "pronuncia": "Em 'Es ist', diga 'es íst'. Em 'ein', fale 'áin'. Em 'wunderschöner', leia o 'w' como 'v' ('vún-da-'), chia o 'sch' e arme os lábios em bico de 'ô' com língua de 'ê' para o 'ö' ('shöö-na'). Em 'Tag', abra o 'a' longo e desvozeie o 'g' final para 'k' seco ('táak').\nLeia: es íst áin vún-da-shöö-na táak."
+  },
+  "270": {
+    "explanation": "Esta é a pergunta padrão em alemão para pedir a opinião de alguém sobre algo. Em vez de perguntar 'O que você acha?', o nativo diz literalmente 'O que pensas tu?' utilizando o verbo 'denken' (pensar).",
+    "breakdown": [
+      {
+        "word": "Was",
+        "meaning": "O que / Qual coisa — palavra interrogativa."
+      },
+      {
+        "word": "denkst",
+        "meaning": "Pensa / Acha — forma de denken para a pessoa 'você'."
+      },
+      {
+        "word": "du",
+        "meaning": "Você — pessoa do discurso."
+      }
+    ],
+    "pronuncia": "Em 'Was', leia o 'w' obrigatoriamente com som de 'v' e termine com o 's' seco ('vas'). Em 'denkst', a vogal 'e' deve sair oral limpa sem anasalar e a palavra termina no estalo seco 'kst' ('dénkst'). Em 'du', encoste a língua reta no dente superior para o 'd' ('dúu').\nLeia: vas dénkst dúu?"
+  }
+}

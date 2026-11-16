@@ -1,0 +1,578 @@
+{
+  "181": {
+    "explanation": "Em alemão, quando você diz a sua profissão ou ocupação, como 'eu sou estudante', você não precisa colocar a palavra 'um' antes. A frase é montada direto como 'eu sou estudante', exatamente como dizemos de forma simples em português.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "bin",
+        "meaning": "sou / estou — forma do verbo ser/estar para a primeira pessoa."
+      },
+      {
+        "word": "Student",
+        "meaning": "estudante (masculino) — em alemão não se usa a palavra 'um' antes de ocupações."
+      }
+    ],
+    "pronuncia": "Em 'Ich', solte um chiado bem fino pelo céu da boca, como um gato bufando, sem raspar a garganta ('ích'). Em 'bin', fale a vogal de forma rápida e frouxa, cortando direto no 'n' dente a dente ('bín'). Em 'Student', comece a palavra com o chiado forte de 'shp', sem colocar 'i' antes, e estale o 't' final bem seco nos dentes da frente ('shpʊ-dént').\nLeia: ích bín shpʊ-dént"
+  },
+  "182": {
+    "explanation": "Para fazer uma pergunta com uma palavra de dúvida como 'onde', o alemão coloca essa palavra em primeiro lugar, seguida imediatamente pelo verbo 'trabalha' e só depois pela pessoa 'você'. Essa inversão entre verbo e pessoa é o padrão natural do idioma.",
+    "breakdown": [
+      {
+        "word": "Wo",
+        "meaning": "Onde — palavra usada para perguntar por um lugar."
+      },
+      {
+        "word": "arbeitest",
+        "meaning": "trabalha — forma do verbo trabalhar para 'você'."
+      },
+      {
+        "word": "du",
+        "meaning": "você — forma de tratamento amigável."
+      }
+    ],
+    "pronuncia": "Na palavra 'Wo', faça o som de 'v' usando a denteira superior no lábio de baixo ('vôo'). Em 'arbeitest', corte a vogal inicial com um toque seco na garganta, apoie a língua no céu da boca para o 't' bem seco sem chiar como 'tchi' (''áar-bai-test'). Em 'du', solte um 'u' firme e tenso projetando os lábios ('dúu').\nLeia: vôo 'áar-bai-test dúu"
+  },
+  "183": {
+    "explanation": "A ordem das palavras aqui é idêntica ao português: 'Eu trabalho em um escritório'. O destaque fica para a palavra 'Büro', que usa aquela vogal com dois pontinhos, onde você faz o bico de 'u' mas tenta dizer 'i'.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "arbeite",
+        "meaning": "trabalho — ação na primeira pessoa."
+      },
+      {
+        "word": "in einem",
+        "meaning": "em um — junção da ideia de 'em' com 'um'."
+      },
+      {
+        "word": "Büro",
+        "meaning": "escritório / gabinete."
+      }
+    ],
+    "pronuncia": "Faça o chiado de gato fino em 'Ich' ('ích'). Dê um micro-corte na garganta antes do 'a' de 'arbeite' e fale os 't's bem secos sem chiar (''áar-bai-te'). Em 'in einem', fale a vogal oral e limpa sem anasalar pelo nariz ('in 'áin-nem'). Em 'Büro', arme os lábios em bico firme de 'u', mas posicione a língua para falar 'i' na primeira sílaba, esticando o 'o' final fechado ('bü-rôo').\nLeia: ích 'áar-bai-te in 'áin-nem bü-rôo"
+  },
+  "184": {
+    "explanation": "Em vez de dizer 'ele não tem um trabalho' com a palavra 'não', o alemão usa uma palavra específica de negação 'keine', que funciona como dizer 'ele tem nenhum trabalho'. É o jeito padrão de negar coisas que não se tem.",
+    "breakdown": [
+      {
+        "word": "Er",
+        "meaning": "Ele — pessoa masculina."
+      },
+      {
+        "word": "hat",
+        "meaning": "tem — do verbo ter/haver."
+      },
+      {
+        "word": "keine",
+        "meaning": "nenhum / nenhuma / não tem — negação aplicada diretamente à palavra seguinte."
+      },
+      {
+        "word": "Arbeit",
+        "meaning": "trabalho / emprego."
+      }
+    ],
+    "pronuncia": "Em 'Er', vocalize o 'r' final transformando em um 'a' curto e relaxado ('êea'). Solte o 'h' de 'hat' como um suspiro morno vindo do peito e estale o 't' seco ('hat'). Em 'keine', faça o ditongo 'ai' límpido ('kái-ne'). Em 'Arbeit', dê o toque seco na garganta antes do 'a' e termine com o 't' bem seco (''áar-bait').\nLeia: êea hat kái-ne 'áar-bait"
+  },
+  "185": {
+    "explanation": "Quando fazemos uma pergunta de sim ou não em alemão, o verbo 'gosta' vai direto para o primeiro lugar da frase, seguido imediatamente pela pessoa 'você'. É como perguntar 'Gosta você do seu chefe?'.",
+    "breakdown": [
+      {
+        "word": "Magst",
+        "meaning": "Gosta — forma do verbo gostar para a pessoa 'você'."
+      },
+      {
+        "word": "du",
+        "meaning": "você — pessoa a quem se pergunta."
+      },
+      {
+        "word": "deinen Chef",
+        "meaning": "seu chefe — deinen: seu; Chef: chefe / superior."
+      }
+    ],
+    "pronuncia": "Em 'Magst', faça a vogal oral aberta e termine travando no 'gst' seco com som de 'k' e 's' ('mákst'). Em 'du', projete o bico de 'u' tenso ('dúu'). Em 'deinen', leia o 'ei' como 'ai' bem claro ('dái-nen'). Em 'Chef', use o chiado suave de 'ch' como na nossa palavra 'chuva' e corte no 'f' seco ('shéf').\nLeia: mákst dúu dái-nen shéf"
+  },
+  "186": {
+    "explanation": "A expressão 'jeden Tag' significa literalmente 'cada dia'. Os nativos usam essa combinação para dizer 'todos os dias', mantendo a frase simples: 'Ela estuda cada dia'.",
+    "breakdown": [
+      {
+        "word": "Sie",
+        "meaning": "Ela — pessoa feminina."
+      },
+      {
+        "word": "lernt",
+        "meaning": "estuda / aprende — ação no presente."
+      },
+      {
+        "word": "jeden Tag",
+        "meaning": "todos os dias — jeden: cada / todo; Tag: dia."
+      }
+    ],
+    "pronuncia": "Em 'Sie', faça a letra 's' zumbir como 'z' de abelha e estique a vogal em um 'i' longo ('zíi'). Em 'lernt', fale a vogal aberta e termine no 't' seco sem chiar ('lérnt'). Em 'jeden', a letra 'j' tem som de 'i' de iogurte ('yêe-den'). Em 'Tag', desligue a voz no final transformando a letra 'g' num 'k' seco ('táak').\nLeia: zíi lérnt yêe-den táak"
+  },
+  "187": {
+    "explanation": "A estrutura é idêntica ao português. O destaque fica para a palavra 'sehr', que tem o 'h' mudo servindo apenas para deixar a vogal mais longa, e 'groß', que usa o caractere especial 'ß' que nada mais é do que um 's' duplo seco.",
+    "breakdown": [
+      {
+        "word": "Die Schule",
+        "meaning": "A escola — Die: a; Schule: escola."
+      },
+      {
+        "word": "ist",
+        "meaning": "é / está — forma do verbo ser/estar."
+      },
+      {
+        "word": "sehr groß",
+        "meaning": "muito grande — sehr: muito; groß: grande."
+      }
+    ],
+    "pronuncia": "Em 'Die Schule', faça o 'd' seco em 'díi' e aponte o bico para chiar o 'sch' em 'shúu-le'. Em 'ist', trave a sílaba no 'st' seco ('íst'). Em 'sehr', faça o 's' zumbir como 'z' no começo, não raspe a garganta no 'h' e vocalize o 'r' num 'a' curto ('zêea'). Em 'groß', raspe o 'r' na garganta e feche num 's' seco longo ('grôos').\nLeia: díi shúu-le íst zêea grôos"
+  },
+  "188": {
+    "explanation": "A frase segue o mesmo raciocínio do português. Repare que a palavra 'Stift' começa com 'st-', e por isso os nativos dizem esse início com um chiado forte de 'sht', sem colocar um 'i' antes.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "habe",
+        "meaning": "tenho — forma do verbo ter."
+      },
+      {
+        "word": "Stift",
+        "meaning": "caneta / lápis."
+      },
+      {
+        "word": "und",
+        "meaning": "e — conector."
+      },
+      {
+        "word": "Papier",
+        "meaning": "papel."
+      }
+    ],
+    "pronuncia": "Assopre o chiado de gato fino em 'Ich' ('ích'). Respire suave pelo peito no 'h' de 'habe' ('háa-be'). Em 'Stift', comece direto no chiado 'sht' e feche no 'ft' seco ('shtíft'). Em 'und', desligue a voz na letra 'd' final emitindo um 't' estalado ('unt'). Em 'Papier', feche com a vogal 'i' longa esticada, vocalizando o 'r' final em 'a' relaxado ('pa-píia').\nLeia: ích háa-be shtíft unt pa-píia"
+  },
+  "189": {
+    "explanation": "Para perguntar 'A lição de casa é difícil?', o alemão usa o verbo 'são' no plural no início da frase, porque a palavra para 'tarefas de casa' no alemão é usada no plural. A ordem fica: 'São as tarefas de casa difíceis?'.",
+    "breakdown": [
+      {
+        "word": "Sind",
+        "meaning": "São / Estão / É — verbo no início para indicar pergunta."
+      },
+      {
+        "word": "die Hausaufgaben",
+        "meaning": "as lições de casa — die: as; Hausaufgaben: lições/tarefas de casa (Haus = casa; Aufgaben = tarefas)."
+      },
+      {
+        "word": "schwierig",
+        "meaning": "difícil / complicada."
+      }
+    ],
+    "pronuncia": "Em 'Sind', zumba o 's' como 'z' e termine no 't' seco desligando a voz ('zınt'). Em 'Hausaufgaben', junte 'háus' com o toque seco na garganta antes de 'auf' e termine em 'gáa-ben' ('háus-'auf-gáa-ben'). Em 'schwierig', leia o 'w' com som de 'v' ('shvíi-rich') e termine o '-ig' com o chiado fino de gato.\nLeia: zınt díi háus-'auf-gáa-ben shvíi-rich"
+  },
+  "190": {
+    "explanation": "No alemão, a palavra 'não' (nicht) tem o costume de ir para o final da frase para negar toda a ação. Então, em vez de 'eu não entendo a aula', a estrutura pensada pelo nativo é 'eu entendo a aula não'.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "verstehe",
+        "meaning": "entendo / compreendo — verbo entender."
+      },
+      {
+        "word": "den Unterricht",
+        "meaning": "a aula / a lição de ensino."
+      },
+      {
+        "word": "nicht",
+        "meaning": "não — palavra de negação."
+      }
+    ],
+    "pronuncia": "Faça o chiado de gato em 'Ich' ('ích'). Em 'verstehe', o 'v' tem som de 'f' puro, o 'st' chia como 'sht', a força tônica cai na sílaba do meio e o 'h' é mudo ('fea-shtêe-e'). Em 'Unterricht', dê o toque seco na garganta antes do 'u', feche o 'd' de 'den' em 't' seco e termine 'Unterricht' com o chiado fino em 'ch' (''ún-ta-rích-t'). Em 'nicht', assopre o chiado de gato fino ('nícht').\nLeia: ích fea-shtêe-e den 'ún-ta-rích-t nícht"
+  },
+  "191": {
+    "explanation": "A frase é montada exatamente como 'O que é a sua profissão?'. O alemão usa a palavra 'Was' (o que) para perguntar a ocupação de alguém.",
+    "breakdown": [
+      {
+        "word": "Was",
+        "meaning": "O que / Qual — palavra de pergunta."
+      },
+      {
+        "word": "ist",
+        "meaning": "é — verbo ser."
+      },
+      {
+        "word": "dein Beruf",
+        "meaning": "sua profissão — dein: seu/sua; Beruf: profissão/trabalho."
+      }
+    ],
+    "pronuncia": "Na palavra 'Was', leia o 'w' com som de 'v' e feche no 's' seco ('vas'). Em 'ist', fale com 'i' curto frouxo ('íst'). Em 'dein', pronuncie a combinação 'ei' como 'ai' límpido ('dáin'). Em 'Beruf', dê o peso da voz na última sílaba 'rúuf' com o 'u' bem longo e tenso ('be-rúuf').\nLeia: vas íst dáin be-rúuf"
+  },
+  "192": {
+    "explanation": "A ordem das palavras é idêntica ao português: 'Ele é um médico famoso', colocando a qualidade 'famoso' antes do nome 'médico', que é a ordem padrão para adjetivos em alemão.",
+    "breakdown": [
+      {
+        "word": "Er",
+        "meaning": "Ele — pessoa masculina."
+      },
+      {
+        "word": "ist",
+        "meaning": "é — verbo ser."
+      },
+      {
+        "word": "ein berühmter",
+        "meaning": "um famoso — ein: um; berühmter: famoso (para palavra masculina)."
+      },
+      {
+        "word": "Arzt",
+        "meaning": "médico / doutor."
+      }
+    ],
+    "pronuncia": "Em 'Er', vocalize o 'r' em 'a' solto ('êea'). Em 'ist', feche no 'st' seco ('íst'). Em 'berühmter', faça a primeira sílaba fraca ('be-'), faça a vogal em bico de 'ü' longo com 'h' mudo ('rüü-m-ta') e termine com o 'r' vocalizado em 'a'. Em 'Arzt', dê um corte seco na garganta antes do 'a', enfileire as consoantes a seco sem colocar 'i' no meio (''áatst').\nLeia: êea íst 'áin be-rüü-m-ta 'áatst"
+  },
+  "193": {
+    "explanation": "Em alemão, a palavra 'juntos' (gemeinsam) vem logo após o verbo principal 'estudamos', e o nome do idioma 'inglês' fica no final da frase. O raciocínio é 'Nós estudamos juntos inglês'.",
+    "breakdown": [
+      {
+        "word": "Wir",
+        "meaning": "Nós — grupo que inclui quem fala."
+      },
+      {
+        "word": "lernen",
+        "meaning": "estudamos / aprendemos — verbo no presente."
+      },
+      {
+        "word": "gemeinsam",
+        "meaning": "juntos / em conjunto."
+      },
+      {
+        "word": "Englisch",
+        "meaning": "inglês — a língua inglesa."
+      }
+    ],
+    "pronuncia": "Em 'Wir', leia o 'w' com som de 'v' e vocalize o 'r' final em 'a' relaxado ('víia'). Em 'lernen', não anasale o 'e' e fale o 'n' no dente ('lér-nen'). Em 'gemeinsam', faça o 'ei' como 'ai' e o 's' com zumbido de 'z' ('ge-máin-zam'). Em 'Englisch', faça a entrada do 'e' oral pura e termine no chiado suave de 'sch' (''éng-lish').\nLeia: víia lér-nen ge-máin-zam 'éng-lish"
+  },
+  "194": {
+    "explanation": "Por ser uma pergunta direta, o verbo 'trabalha' vem em primeiro lugar. A palavra 'Wochenende' é a junção perfeita das palavras 'semana' e 'fim', formando 'fim de semana' em um único bloco.",
+    "breakdown": [
+      {
+        "word": "Arbeitest",
+        "meaning": "Trabalha — verbo no início da pergunta."
+      },
+      {
+        "word": "du",
+        "meaning": "você — sujeito da frase."
+      },
+      {
+        "word": "am Wochenende",
+        "meaning": "no fim de semana — am: no/em o; Wochenende: fim de semana (Woche = semana; Ende = fim)."
+      }
+    ],
+    "pronuncia": "Em 'Arbeitest', dê o micro-corte na garganta antes do 'a' e estale os 't's bem secos sem chiar (''áar-bai-test'). Em 'du', faça o bico firme de 'u' ('dúu'). Em 'am Wochenende', leia a letra 'w' com som de 'v', raspe o 'ch' no fundo da garganta por vir depois de 'o', e aplique o toque seco na garganta antes do 'e' em 'Ende' ('am vó-rren-'en-de').\nLeia: 'áar-bai-test dúu am vó-rren-'en-de"
+  },
+  "195": {
+    "explanation": "Em alemão, o horário vem logo em seguida do verbo 'tenho'. Por isso a frase se organiza como 'Eu tenho às dez horas uma reunião', colocando a indicação do tempo antes da coisa principal.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho — Ich: eu; habe: tenho."
+      },
+      {
+        "word": "um zehn Uhr",
+        "meaning": "às dez horas — um: às/em ponto; zehn: dez; Uhr: horas."
+      },
+      {
+        "word": "eine Besprechung",
+        "meaning": "uma reunião — eine: uma; Besprechung: reunião/encontro de trabalho."
+      }
+    ],
+    "pronuncia": "Em 'Ich habe', use o chiado fino ('ích') e o suspiro morno no 'h' ('háa-be'). Em 'um zehn Uhr', fale o 'm' oral, faça o 'z' de 'zehn' com o estalo seco de 'ts' ('tsêen') e vocalize o 'r' de 'Uhr' ('úua'). Em 'Besprechung', a força da voz cai na sílaba do meio, o 'sp' chia como 'shp' e a terminação '-ung' ressoa limpa no nariz ('be-shprêe-chung').\nLeia: ích háa-be 'um tsêen 'úua 'ái-ne be-shprêe-chung"
+  },
+  "196": {
+    "explanation": "A estrutura é exatamente igual ao português. A palavra 'Lehrer' vem do verbo ensinar/aprender, significando literalmente 'aquele que ensina'.",
+    "breakdown": [
+      {
+        "word": "Der Lehrer",
+        "meaning": "O professor — Der: o; Lehrer: professor."
+      },
+      {
+        "word": "ist",
+        "meaning": "é — verbo ser."
+      },
+      {
+        "word": "sehr nett",
+        "meaning": "muito gentil / muito simpático — sehr: muito; nett: gentil/agradável."
+      }
+    ],
+    "pronuncia": "Em 'Der Lehrer', vocalize o 'r' de 'Der' em 'a' ('dêea'). Em 'Lehrer', estique o 'e' longo fechado ('lêe-') e vocalize o final em 'a' solto ('lêe-ra'). Em 'ist', faça o 'i' curto ('íst'). Em 'sehr nett', zumba o 's' de 'sehr' ('zêea') e abra bem a vogal de 'nett', travando no 't' seco ('nét').\nLeia: dêea lêe-ra íst zêea nét"
+  },
+  "197": {
+    "explanation": "A palavra 'Notizbuch' é uma palavra composta tipicamente alemã que une 'anotação' com 'livro', criando a ideia de 'livro de anotações' ou simplesmente 'caderno'.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "schreibe",
+        "meaning": "escrevo — verbo escrever."
+      },
+      {
+        "word": "in mein",
+        "meaning": "em meu / no meu — in: em; mein: meu."
+      },
+      {
+        "word": "Notizbuch",
+        "meaning": "caderno de anotações — Notiz: anotação; Buch: livro."
+      }
+    ],
+    "pronuncia": "Faça o chiado fino em 'Ich' ('ích'). Em 'schreibe', comece no chiado 'sh', raspe o 'r' suave e faça o ditongo 'ai' ('shrái-be'). Em 'in mein', fale o 'ei' como 'ai' ('in máin'). Em 'Notizbuch', faça a letra 'z' estalar como 'ts' seco ('nô-tíis-') e raspe a garganta no 'ch' de 'Buch' por vir depois do 'u' ('búurr').\nLeia: ích shrái-be in máin nô-tíis-búurr"
+  },
+  "198": {
+    "explanation": "A frase segue a mesma ordem do português: 'Ela fala três idiomas'. Note como as palavras para 'fala' e 'idiomas' começam com o encontro de letras 'spr-', que os nativos sempre pronunciam com chiado inicial 'shp'.",
+    "breakdown": [
+      {
+        "word": "Sie",
+        "meaning": "Ela — pessoa feminina."
+      },
+      {
+        "word": "spricht",
+        "meaning": "fala — forma do verbo falar para ela."
+      },
+      {
+        "word": "drei",
+        "meaning": "três — número 3."
+      },
+      {
+        "word": "Sprachen",
+        "meaning": "idiomas / línguas — plural da palavra língua."
+      }
+    ],
+    "pronuncia": "Em 'Sie', zumba a letra 's' em 'z' e estique o 'i' ('zíi'). Em 'spricht', chia o 'sp' como 'shp', use o 'i' frouxo e assopre o chiado de gato no 'ch' ('shprícht'). Em 'drei', faça o ditongo 'ai' ('drái'). Em 'Sprachen', chia o 'sp' inicial ('shpráa-') e raspe o 'ch' no fundo da garganta por vir após a vogal 'a' ('shpráa-rren').\nLeia: zíi shprícht drái shpráa-rren"
+  },
+  "199": {
+    "explanation": "No alemão, a ideia de 'fazer faculdade' é expressa dizendo 'ir para a universidade' (gehe zur Universität). A palavra de negação 'nicht' fica posicionada logo após o verbo.",
+    "breakdown": [
+      {
+        "word": "Ich gehe",
+        "meaning": "Eu vou / Eu frequento — Ich: eu; gehe: vou/caminho."
+      },
+      {
+        "word": "nicht",
+        "meaning": "não — negação."
+      },
+      {
+        "word": "zur Universität",
+        "meaning": "para a universidade — zur: para a; Universität: faculdade/universidade."
+      }
+    ],
+    "pronuncia": "Faça o chiado fino em 'Ich' ('ích'). Em 'gehe', o 'h' entre vogais é mudo, apenas esticando o 'e' ('gêe-e'). Em 'nicht', use o chiado de gato ('nícht'). Em 'zur', estale a letra 'z' em 'ts' seco ('tsúua'). Em 'Universität', pronuncie o 'v' com som de 'f', faça o 'z' com estalo de 'ts' no meio e estale o 't' final bem seco ('u-ni-vea-zi-têet').\nLeia: ích gêe-e nícht tsúua 'u-ni-vea-zi-têet"
+  },
+  "200": {
+    "explanation": "Para perguntar 'Tem...?' no sentido de haver algo no local, os alemães usam a combinação fixa 'Gibt es...?' no começo da frase. A tradução ao pé da letra seria 'Dá isso aqui uma biblioteca?'.",
+    "breakdown": [
+      {
+        "word": "Gibt es",
+        "meaning": "Tem / Há / Existe — expressão fixa para haver ou existir algo."
+      },
+      {
+        "word": "hier",
+        "meaning": "aqui — indicação de lugar."
+      },
+      {
+        "word": "eine Bibliothek",
+        "meaning": "uma biblioteca — eine: uma; Bibliothek: biblioteca."
+      }
+    ],
+    "pronuncia": "Em 'Gibt es', corte o 'b' em 'p' seco ('gípt') e junte com o 'es' sem emendar ('gípt 'es'). Em 'hier', solte o 'h' morno do peito e vocalize o 'r' final em 'a' ('híia'). Em 'eine Bibliothek', fale a vogal pura sem anasalar e sustente o 'e' e o 'o' longos (''ái-ne bi-bli-ô-têek').\nLeia: gípt 'es híia 'ái-ne bi-bli-ô-têek"
+  },
+  "201": {
+    "explanation": "A ordem das palavras reflete exatamente a ideia de 'Eu uso uma caneta para a minha prova'. O verbo 'benutze' é muito comum para expressar o uso prático de um instrumento ou ferramenta.",
+    "breakdown": [
+      {
+        "word": "Ich benutze",
+        "meaning": "Eu uso / Eu utilizo — Ich: eu; benutze: uso."
+      },
+      {
+        "word": "einen Stift",
+        "meaning": "uma caneta — einen: um/uma; Stift: caneta/lápis."
+      },
+      {
+        "word": "für meine Prüfung",
+        "meaning": "para a minha prova — für: para; meine: minha; Prüfung: exame/prova."
+      }
+    ],
+    "pronuncia": "Assopre o chiado fino em 'Ich' ('ích'). Em 'benutze', faça o estalo seco de 'ts' na letra 'z' ('be-nú-tse'). Em 'einen Stift', chia o 'st' como 'sht' (''ái-nen shtíft'). Em 'für', projete os lábios em bico firme de 'u' enquanto fala 'i' ('füüa'). Em 'Prüfung', faça o mesmo bico de 'ü' e termine ressoando limpa no nariz ('prüü-fung').\nLeia: ích be-nú-tse 'ái-nen shtíft füüa mái-ne prüü-fung"
+  },
+  "202": {
+    "explanation": "O verbo 'studieren' é usado especificamente para cursos superiores ou faculdade. Para a pergunta, o verbo 'estuda' vem em segundo lugar, logo após a palavra de pergunta 'Was'.",
+    "breakdown": [
+      {
+        "word": "Was",
+        "meaning": "O que — palavra de pergunta."
+      },
+      {
+        "word": "studierst",
+        "meaning": "estuda — forma do verbo estudar para você."
+      },
+      {
+        "word": "du",
+        "meaning": "você — pessoa a quem se pergunta."
+      }
+    ],
+    "pronuncia": "Em 'Was', leia o 'w' com som de 'v' e feche no 's' seco ('vas'). Em 'studierst', chia o 'st' inicial como 'sht', use a vogal em bico firme de 'u' e estale o 't' final sem chiar ('shtʊ-díia-st'). Em 'du', projete o bico tenso em 'u' ('dúu').\nLeia: vas shtʊ-díia-st dúu"
+  },
+  "203": {
+    "explanation": "A palavra para 'sala de aula' em alemão é a fusão de duas ideias: a palavra para 'turmas/aulas' (Klassen) com a palavra para 'quarto/cômodo' (Zimmer). A frase inteira segue a mesma ordem do português.",
+    "breakdown": [
+      {
+        "word": "Das Klassenzimmer",
+        "meaning": "A sala de aula — Das: a; Klassenzimmer: sala de aula (Klassen = turmas/aulas; Zimmer = quarto/sala)."
+      },
+      {
+        "word": "ist",
+        "meaning": "está — verbo ser/estar."
+      },
+      {
+        "word": "kalt",
+        "meaning": "fria / gelada."
+      }
+    ],
+    "pronuncia": "Em 'Das', fale o 's' seco ('das'). Em 'Klassenzimmer', mantenha as vogais orais puras e estale a letra 'z' como 'ts' seco ('klás-sen-tsím-ma'). Em 'ist', use o 'i' curto ('íst'). Em 'kalt', faça a ponta da língua subir até a gengiva para falar o 'l' sem virar 'u', e corte no 't' seco ('kalt').\nLeia: das klás-sen-tsím-ma íst kalt"
+  },
+  "204": {
+    "explanation": "Quando você usa o verbo de obrigação 'preciso' (muss), o alemão obriga você a jogar o outro verbo ('terminar') lá para o finalzinho da frase. O raciocínio dos nativos é 'Eu preciso o meu trabalho terminar'.",
+    "breakdown": [
+      {
+        "word": "Ich muss",
+        "meaning": "Eu preciso / Eu tenho que — Ich: eu; muss: preciso/devo."
+      },
+      {
+        "word": "meine Arbeit",
+        "meaning": "meu trabalho — meine: meu/minha; Arbeit: trabalho."
+      },
+      {
+        "word": "beenden",
+        "meaning": "terminar / concluir."
+      }
+    ],
+    "pronuncia": "Faça o chiado fino em 'Ich' ('ích'). Em 'muss', use o 'u' curto e frouxo travando no 's' seco ('mʊs'). Em 'meine Arbeit', fale 'mái-ne' e dê o toque seco na garganta antes da palavra 'Arbeit' (''áar-bait'). Em 'beenden', aplique um toque seco na garganta entre os dois 'e's para separar as sílabas com clareza ('be-'én-den').\nLeia: ích mʊs mái-ne 'áar-bait be-'én-den"
+  },
+  "205": {
+    "explanation": "Para perguntar 'Você tem um computador?', o verbo 'tem' abre a frase por se tratar de uma pergunta direta. O objeto 'um computador' vem logo após o pronome 'você'.",
+    "breakdown": [
+      {
+        "word": "Hast",
+        "meaning": "Tem — forma do verbo ter no início da pergunta."
+      },
+      {
+        "word": "du",
+        "meaning": "você — pessoa a quem se pergunta."
+      },
+      {
+        "word": "einen Computer",
+        "meaning": "um computador — einen: um; Computer: computador."
+      }
+    ],
+    "pronuncia": "Em 'Hast', solte o 'h' suave vindo do peito e feche no 'st' seco ('hast'). Em 'du', projete o bico de 'u' firme ('dúu'). Em 'einen Computer', fale 'ái-nen' limpo e pronuncie a palavra 'Computer' com a letra 'c' soando como 'k' e o final vocalizado em 'a' ('kom-pýuu-ta').\nLeia: hast dúu 'ái-nen kom-pýuu-ta"
+  },
+  "206": {
+    "explanation": "A frase segue exatamente a mesma estrutura do português: 'Eu leio o jornal'. Note que o verbo 'lesen' faz a letra 's' zumbir como a nossa letra 'z' porque está no meio de duas vogais.",
+    "breakdown": [
+      {
+        "word": "Ich",
+        "meaning": "Eu — pessoa que fala."
+      },
+      {
+        "word": "lese",
+        "meaning": "leio — verbo ler."
+      },
+      {
+        "word": "die Zeitung",
+        "meaning": "o jornal — die: o/a; Zeitung: jornal."
+      }
+    ],
+    "pronuncia": "Assopre o chiado fino em 'Ich' ('ích'). Em 'lese', puxe os cantos da boca num meio sorriso para o 'e' longo e zumba a letra 's' como 'z' ('lêe-ze'). Em 'die Zeitung', fale 'díi', estale o 'z' inicial em 'ts' seco ('tsái-tung') e encerre com a ressonância limpa pelo nariz.\nLeia: ích lêe-ze díi tsái-tung"
+  },
+  "207": {
+    "explanation": "A palavra 'fleißig' é o adjetivo que os alemães usam para descrever alguém que se dedica muito aos estudos ou ao trabalho. O 'ß' no meio soa como um 's' seco e o '-ig' final tem aquele chiado fino característico.",
+    "breakdown": [
+      {
+        "word": "Er",
+        "meaning": "Ele — pessoa masculina."
+      },
+      {
+        "word": "ist",
+        "meaning": "é — verbo ser."
+      },
+      {
+        "word": "sehr fleißig",
+        "meaning": "muito trabalhador / muito dedicado — sehr: muito; fleißig: dedicado/aplicado."
+      }
+    ],
+    "pronuncia": "Vocalize o 'r' de 'Er' em 'a' curto ('êea'). Em 'ist', faça a trava seca no 'st' ('íst'). Em 'sehr', zumba a letra 's' no início e vocalize o 'r' em 'a' ('zêea'). Em 'fleißig', pronuncie o ditongo 'ei' como 'ai' seco ('flái-') e termine o '-ig' com o chiado fino de gato pelo céu da boca ('flái-sich').\nLeia: êea íst zêea flái-sich"
+  },
+  "208": {
+    "explanation": "Como a negação 'nicht' nega a frase inteira, os nativos empurram a palavra 'não' para o fim. A estrutura fica: 'Eu gosto da minha mesa de trabalho não'. A palavra 'Schreibtisch' significa literalmente 'mesa de escrever'.",
+    "breakdown": [
+      {
+        "word": "Ich mag",
+        "meaning": "Eu gosto — Ich: eu; mag: gosto."
+      },
+      {
+        "word": "meinen Schreibtisch",
+        "meaning": "minha escrivaninha / minha mesa de trabalho — meinen: meu/minha; Schreibtisch: escrivaninha (schreiben = escrever; Tisch = mesa)."
+      },
+      {
+        "word": "nicht",
+        "meaning": "não — palavra de negação."
+      }
+    ],
+    "pronuncia": "Faça o chiado fino em 'Ich' ('ích'). Em 'mag', desligue a voz no 'g' final transformando em 'k' seco ('mák'). Em 'meinen Schreibtisch', pronuncie 'mái-nen', chia o 'sch' em 'sh' ('shrái-p-tish') e corte o 'b' em 'p' seco. Em 'nicht', assopre o chiado fino de gato pelo céu da boca ('nícht').\nLeia: ích mák mái-nen shrái-p-tish nícht"
+  },
+  "209": {
+    "explanation": "A ordem das palavras é perfeita em relação ao português: 'Onde é o seu escritório?'. O verbo vem em segundo lugar, bem entre a palavra de pergunta e o local procurado.",
+    "breakdown": [
+      {
+        "word": "Wo",
+        "meaning": "Onde — palavra de pergunta."
+      },
+      {
+        "word": "ist",
+        "meaning": "é / fica — verbo ser/estar."
+      },
+      {
+        "word": "dein Büro",
+        "meaning": "seu escritório — dein: seu; Büro: escritório."
+      }
+    ],
+    "pronuncia": "Em 'Wo', leia o 'w' com som de 'v' ('vôo'). Em 'ist', fale o 'i' curto travando no 'st' seco ('íst'). Em 'dein', leia o 'ei' como 'ai' ('dáin'). Em 'Büro', projete o bico firme de 'u' com a língua posicionada para falar 'i' na primeira sílaba ('bü-rôo').\nLeia: vôo íst dáin bü-rôo"
+  },
+  "210": {
+    "explanation": "A estrutura é exatamente como em português: 'A aula começa agora'. O verbo 'beginnt' ocupa a segunda posição da frase e o advérbio de tempo 'jetzt' vem logo em seguida.",
+    "breakdown": [
+      {
+        "word": "Der Unterricht",
+        "meaning": "A aula / O ensino — Der: o; Unterricht: aula/ensino."
+      },
+      {
+        "word": "beginnt",
+        "meaning": "começa / inicia — verbo começar."
+      },
+      {
+        "word": "jetzt",
+        "meaning": "agora — momento atual."
+      }
+    ],
+    "pronuncia": "Em 'Der Unterricht', vocalize o 'r' de 'Der' em 'a' ('dêea'), dê o toque seco na garganta antes do 'u' em 'Unterricht' e termine com o chiado fino em 'ch' e 't' seco (''ún-ta-rích-t'). Em 'beginnt', fale a vogal pura sem anasalar ('be-gínt'). Em 'jetzt', a letra 'j' soa como 'y' de iogurte e o 'z' faz um estalo seco em 'ts' colado no 't' ('yétst').\nLeia: dêea 'ún-ta-rích-t be-gínt yétst"
+  }
+}

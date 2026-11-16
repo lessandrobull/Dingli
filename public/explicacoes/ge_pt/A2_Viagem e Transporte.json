@@ -1,0 +1,574 @@
+{
+  "391": {
+    "explanation": "No alemão, para perguntar de qual plataforma sai o trem, eles usam 'Von welchem Gleis' que significa literalmente 'de qual trilho'. O verbo principal 'fahren' significa andar ou ir de veículo e vem logo no começo da pergunta, enquanto a ação de partir fica dividida, jogando a pontinha 'ab' lá no finalzinho da frase.",
+    "breakdown": [
+      {
+        "word": "Von welchem Gleis",
+        "meaning": "De qual plataforma — Von: de; welchem: qual; Gleis: trilho / plataforma."
+      },
+      {
+        "word": "fährt",
+        "meaning": "vai / parte — forma do verbo fahren (andar de veículo)."
+      },
+      {
+        "word": "der Zug",
+        "meaning": "o trem."
+      },
+      {
+        "word": "ab",
+        "meaning": "de partida — pedaço que completa o sentido de sair/partir."
+      }
+    ],
+    "pronuncia": "Em 'Von', o 'v' tem som puro de 'f' do português, sem anasalar o 'o'. Em 'welchem', faça o 'w' com som de 'v' e o 'ch' assoprado fino no céu da boca, como um gato bufando. Em 'Gleis', o 'ei' soa como 'ai' e o 's' termina seco. Para 'fährt', abra a boca no 'é' com 'r' curto. Em 'Zug', a letra 'z' soa como estalo de 'ts' seco e o 'g' final vira 'k' no corte. Em 'ab', desligue a voz para fechar no 'p' seco.\nLeia: fón vél-chem gláis fêat dêea tsúuk 'ap?"
+  },
+  "392": {
+    "explanation": "Para dizer que perdeu o ônibus por estar atrasado, o alemão usa a estrutura de passado onde o verbo ter 'habe' fica no meio e a ação de perder 'verpasst' vai para o fim da primeira parte. Na segunda parte, a palavra de ligação 'weil' exige que o verbo de estado 'war' seja empurrado para o final da frase.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho — Ich: eu; habe: tenho."
+      },
+      {
+        "word": "den Bus",
+        "meaning": "o ônibus."
+      },
+      {
+        "word": "verpasst",
+        "meaning": "perdi / deixei passar."
+      },
+      {
+        "word": "weil ich",
+        "meaning": "porque eu — weil: porque; ich: eu."
+      },
+      {
+        "word": "zu spät dran war",
+        "meaning": "estava atrasado — zu: demais; spät: tarde; dran war: estava na situação."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o chiado fino pelo céu da boca. Em 'habe', solte o 'h' em suspiro morno direto do peito. No 'Bus', o 'u' é frouxo e o 's' é seco. Em 'verpasst', o 'v' soa como 'f' puro e a palavra termina a seco no 't'. Na palavra 'spät', comece direto no chiado 'shp' sem colocar 'i' antes. Em 'war', leia o 'w' com som de 'v' e vocalize o 'r' em 'a' relaxado.\nLeia: ích háa-be den bus fea-pást, váil ích tsú shpêet dran váa."
+  },
+  "393": {
+    "explanation": "Em perguntas diretas sem palavra de pergunta, o alemão começa diretamente pelo verbo 'Buchst' (reservar/comprar). O pronome 'du' vem logo depois, seguido do objeto 'die Tickets' e do advérbio 'online' no final da frase.",
+    "breakdown": [
+      {
+        "word": "Buchst du",
+        "meaning": "Você reserva — Buchst: reserva; du: você."
+      },
+      {
+        "word": "die Tickets",
+        "meaning": "as passagens / os ingressos."
+      },
+      {
+        "word": "online",
+        "meaning": "online / pela internet."
+      }
+    ],
+    "pronuncia": "Em 'Buchst', raspe o 'ch' no fundo da garganta após a vogal 'u' e junte com 'st' seco sem vogal de apoio no meio. Em 'Tickets', feche o 't' seco no dente da frente e corte a seco. Em 'online', solte a primeira vogal limpa com golpe de glote e leia a terminação com som claro de 'ain'.\nLeia: búurrst dúu díi tí-kets 'on-láin?"
+  },
+  "394": {
+    "explanation": "A expressão 'teurer, als ich dachte' compara dois elementos usando a palavra 'als' no sentido de 'do que'. O verbo de pensamento 'dachte' fica posicionado no final da frase de comparação, seguindo a lógica natural do idioma.",
+    "breakdown": [
+      {
+        "word": "Der Flug war",
+        "meaning": "O voo foi — Der Flug: o voo; war: foi / estava."
+      },
+      {
+        "word": "teurer",
+        "meaning": "mais caro — comparativo da palavra teuer (caro)."
+      },
+      {
+        "word": "als ich dachte",
+        "meaning": "do que eu pensava — als: do que; ich: eu; dachte: pensava."
+      }
+    ],
+    "pronuncia": "Em 'Flug', o 'g' final perde a voz e soa como 'k' seco. Em 'war', use 'v' para a letra 'w' e relaxe o 'r' final em 'a'. Em 'teurer', o 'eu' soa como 'oi' e o final termina em 'a' solto. Em 'dachte', raspe o 'ch' no fundo da garganta e feche no 'e' neutro.\nLeia: dêea flúuk váa tói-ra, 'als ích dárr-te."
+  },
+  "395": {
+    "explanation": "O verbo 'übernachten' significa literalmente 'pernoitar' ou passar a noite. A expressão 'in Strandnähe' combina a palavra praia (Strand) com proximidade (Nähe), criando a ideia direta de 'perto da praia'.",
+    "breakdown": [
+      {
+        "word": "Wir übernachten",
+        "meaning": "Nós pernoitamos / ficamos — Wir: nós; übernachten: passar a noite."
+      },
+      {
+        "word": "in einer Pension",
+        "meaning": "em uma pousada."
+      },
+      {
+        "word": "in Strandnähe",
+        "meaning": "perto da praia — Strand: praia; Nähe: proximidade."
+      }
+    ],
+    "pronuncia": "Em 'Wir', troque o 'w' pelo som de 'v' e vocalize o 'r'. Em 'übernachten', faça bico firme de 'u' enquanto diz 'i' para o 'ü', raspe a garganta no 'ch' e corte no 't' seco. Em 'Strandnähe', comece no chiado 'sht', troque o 'd' por 't' seco e solte o 'h' suave no meio.\nLeia: víia üü-ba-nárr-ten in 'ái-na pen-si-ôon in shtránt-nêe-e."
+  },
+  "396": {
+    "explanation": "Para perguntar a duração de um trajeto, os alemães usam 'Wie lange dauert es' (Quanto tempo dura). A segunda parte introduz o sujeito genérico 'man' (a gente / uma pessoa) e joga o verbo 'ist' lá no fim.",
+    "breakdown": [
+      {
+        "word": "Wie lange",
+        "meaning": "Quanto tempo — Wie: quão; lange: longo."
+      },
+      {
+        "word": "dauert es",
+        "meaning": "dura / leva — dauert: dura; es: isso."
+      },
+      {
+        "word": "bis man",
+        "meaning": "até a gente — bis: até; man: a gente / se."
+      },
+      {
+        "word": "im Stadtzentrum ist",
+        "meaning": "estar no centro da cidade — Stadtzentrum: centro urbano; ist: está."
+      }
+    ],
+    "pronuncia": "Em 'Wie', use 'v' sem som de 'u'. Em 'dauert', feche o 'au' e vocalize o 'er' em 'a'. Em 'bis', o 's' é seco de sapo. Em 'Stadtzentrum', comece no chiado 'sht', termine 'Stadt' com 't' seco sem 'i' no meio, e estale o 'z' com som de 'ts'.\nLeia: víi láng-e dÁu-at 'es, bis man im shtát-tsen-trum 'ist?"
+  },
+  "397": {
+    "explanation": "Para expressar 'nunca estive', a língua alemã junta o reforço 'noch' (ainda) com 'nie' (nunca), formando 'noch nie' (ainda nunca). A ordem é direta: eu estava ainda nunca na Itália.",
+    "breakdown": [
+      {
+        "word": "Ich war",
+        "meaning": "Eu estava / estive."
+      },
+      {
+        "word": "noch nie",
+        "meaning": "nunca / ainda nunca — noch: ainda; nie: nunca."
+      },
+      {
+        "word": "in Italien",
+        "meaning": "na Itália."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o gato bufando no céu da boca. Em 'war', fale 'v' e vocalize o 'r' final em 'a'. Em 'noch', raspe o 'ch' no fundo da garganta após a vogal 'o'. Em 'Italien', marque a primeira vogal com golpe de glote e solte as sílabas com 't' seco no dente.\nLeia: ích váa nórr níi in 'i-táa-li-en."
+  },
+  "398": {
+    "explanation": "A expressão 'Gibt es' é o jeito padrão de dizer 'existe' ou 'há'. A palavra composta 'Autovermietung' une carro (Auto) com aluguel (Vermietung). O local fica indicado por 'in der Nähe des Flughafens' (na proximidade do aeroporto).",
+    "breakdown": [
+      {
+        "word": "Gibt es",
+        "meaning": "Existe / Há."
+      },
+      {
+        "word": "eine Autovermietung",
+        "meaning": "uma empresa de aluguel de carros."
+      },
+      {
+        "word": "in der Nähe",
+        "meaning": "nas proximidades / perto."
+      },
+      {
+        "word": "des Flughafens",
+        "meaning": "do aeroporto."
+      }
+    ],
+    "pronuncia": "Em 'Gibt', desvogue o 'b' final para 'p' seco. Em 'Autovermietung', troque a letra 'v' por 'f' puro em 'fea-míi-tung' e termine no 'ng' ressoando sem soltar 'g'. Em 'Flughafens', solte o 'h' em suspiro morno na segunda parte da palavra.\nLeia: gípt 'es 'ái-ne 'áu-tôo-fea-míi-tung in dêea nêe-e des flúuk-haa-fens?"
+  },
+  "399": {
+    "explanation": "O verbo 'solltest' traz a ideia de conselho ou recomendação (deveria). O verbo de ação 'abschließen' (fechar/contratar) é mandado para a última posição da frase no formato original.",
+    "breakdown": [
+      {
+        "word": "Du solltest",
+        "meaning": "Você deveria — Du: você; solltest: deveria."
+      },
+      {
+        "word": "eine Reiseversicherung",
+        "meaning": "um seguro de viagem — Reise: viagem; Versicherung: seguro."
+      },
+      {
+        "word": "abschließen",
+        "meaning": "contratar / fechar."
+      }
+    ],
+    "pronuncia": "Em 'solltest', abra o 'o' e corte no 't' seco. Em 'Reiseversicherung', leia o 'v' com som de 'f' puro em '-fea-', faça o 's' com zumbido de 'z' em 'zí-che-rung' e não solte a letra 'g' no final. Em 'abschließen', desvogue o 'b' para 'p' seco e chie o 'schl'.\nLeia: dúu zól-test 'ái-ne rái-ze-fea-zí-che-rung 'áp-shlíi-tsen."
+  },
+  "400": {
+    "explanation": "A palavra 'nächste' significa mais próxima ou seguinte. A palavra 'U-Bahn-Station' junta metrô (U-Bahn) com estação (Station). O verbo 'ist' vem logo após a palavra de pergunta 'Wo'.",
+    "breakdown": [
+      {
+        "word": "Wo ist",
+        "meaning": "Onde fica / Onde está."
+      },
+      {
+        "word": "die nächste",
+        "meaning": "a mais próxima / a seguinte."
+      },
+      {
+        "word": "U-Bahn-Station",
+        "meaning": "estação de metrô."
+      }
+    ],
+    "pronuncia": "Em 'Wo', troque o 'w' pelo som de 'v' vibrante. Em 'nächste', abra o 'ä' em 'é' e assopre o 'ch' fino antes do 'st'. Em 'U-Bahn', sustente o 'u' longo e feche o 'a' esticado sem som de 'h'. Em 'Station', chie no meio com som de 'sht-a-tsi-ôon'.\nLeia: vôo 'ist díi néch-ste úu-báan-shta-tsi-ôon?"
+  },
+  "401": {
+    "explanation": "O verbo 'suche' indica a ação de procurar. A palavra 'Abflughalle' é uma combinação perfeita que junta a partida (Abflug) com o salão ou saguão (Halle).",
+    "breakdown": [
+      {
+        "word": "Ich suche",
+        "meaning": "Eu procuro — Ich: eu; suche: procuro."
+      },
+      {
+        "word": "die Abflughalle",
+        "meaning": "a sala de embarque / o saguão de partidas."
+      }
+    ],
+    "pronuncia": "Em 'Ich', assopre o gato bufando no céu da boca. Em 'suche', comence o 's' com zumbido de abelha em 'z' e chie o 'ch' suave. Em 'Abflughalle', desligue o 'b' para 'p' seco, desvogue o 'g' para 'k' e solte o 'h' em suspiro morno no meio.\nLeia: ích zúu-che díi 'áp-flúuk-hal-le."
+  },
+  "402": {
+    "explanation": "A expressão 'daran gedacht' conecta o verbo pensar com o conteúdo do pensamento (nisso). Na segunda metade, o verbo 'einzupacken' (embalar/guardar na mala) vai para o final com o pedacinho 'zu' encaixado no meio dele.",
+    "breakdown": [
+      {
+        "word": "Hast du",
+        "meaning": "Você lembrou / Você tem — Hast: tem; du: você."
+      },
+      {
+        "word": "daran gedacht",
+        "meaning": "disso / nisso pensado — daran: nisso; gedacht: pensado."
+      },
+      {
+        "word": "deine Zahnbürste",
+        "meaning": "sua escova de dentes — deine: sua; Zahnbürste: escova de dentes."
+      },
+      {
+        "word": "einzupacken",
+        "meaning": "guardar na mala / embalar."
+      }
+    ],
+    "pronuncia": "Em 'Hast', solte o 'h' suspirado. Em 'gedacht', raspe o 'ch' no fundo da garganta. Em 'Zahnbürste', estale o 'z' inicial em 'ts', não leia o 'h' do meio e faça bico de 'u' falando 'i' para o 'ü'. Em 'einzupacken', estale o 'z' e corte no 'k'.\nLeia: hast dúu da-rán guê-dárr-t, dái-ne tsáan-bük-ste 'áin-tsu-pa-ken?"
+  },
+  "403": {
+    "explanation": "Para fazer comparações de igualdade negativa, o alemão usa 'nicht so ... wie' (não tão ... quanto). A palavra 'letzte' significa 'último' e fecha a estrutura de comparação de maneira simples.",
+    "breakdown": [
+      {
+        "word": "Das Hotel war",
+        "meaning": "O hotel era / estava."
+      },
+      {
+        "word": "nicht so komfortabel",
+        "meaning": "não tão confortável."
+      },
+      {
+        "word": "wie das letzte",
+        "meaning": "quanto o último."
+      }
+    ],
+    "pronuncia": "Em 'Hotel', dê o golpe de glote inicial e acentue a última sílaba. Em 'nicht', faça o chiado fino de gato. Em 'komfortabel', leia com 'o' aberto e termine o 'l' com a ponta da língua no dente superior. Em 'letzte', estale o 'z' com som de 'ts'.\nLeia: das hô-tél váa nícht zôo kom-for-táa-bel víi das létst-te."
+  },
+  "404": {
+    "explanation": "A ordem da pergunta coloca o verbo de possibilidade 'Kannst' no começo, seguido do pronome 'du' e do receptor 'mir'. A ação principal 'zeigen' (mostrar) é arremessada para o final absoluto da frase.",
+    "breakdown": [
+      {
+        "word": "Kannst du mir",
+        "meaning": "Você pode me — Kannst: pode; du: você; mir: me / para mim."
+      },
+      {
+        "word": "den Weg",
+        "meaning": "o caminho."
+      },
+      {
+        "word": "auf dieser Karte",
+        "meaning": "neste mapa — auf: em; dieser: neste; Karte: mapa."
+      },
+      {
+        "word": "zeigen",
+        "meaning": "mostrar."
+      }
+    ],
+    "pronuncia": "Em 'Kannst', mantenha o 'a' 100% oral e limpo antes do 'n'. Em 'Weg', use 'v' para o 'w' e desvogue o 'g' final em 'k' seco. Em 'Karte', vocalize o 'r' em 'a' suave. Em 'zeigen', estale o 'z' inicial como 'ts' e zumba o 'g' interno.\nLeia: kanst dúu míia den vêek 'auf díi-za káa-te tsái-guen?"
+  },
+  "405": {
+    "explanation": "A estrutura de decisão usa 'haben uns entschieden' no passado. A expressão 'anstatt mit dem Auto' significa 'em vez de ir de carro', usando a preposição 'mit' para indicar o meio de transporte.",
+    "breakdown": [
+      {
+        "word": "Wir haben uns entschieden",
+        "meaning": "Nós decidimos / Nós nos decidimos."
+      },
+      {
+        "word": "mit dem Zug zu fahren",
+        "meaning": "ir de trem — mit: de/com; Zug: trem; zu fahren: ir/andar."
+      },
+      {
+        "word": "anstatt mit dem Auto",
+        "meaning": "em vez de ir de carro — anstatt: em vez de; Auto: carro."
+      }
+    ],
+    "pronuncia": "Em 'entschieden', chie o 'sch' com lábios para a frente. Em 'Zug', estale o 'z' e termine em 'k'. Em 'fahren', solte o 'h' suspirado. Em 'anstatt', chie o 'st' inicial como 'sht' e feche no 't' seco. Em 'Auto', sustente o 'ô' final sem virar 'u'.\nLeia: víia háa-ben 'uns ent-shíi-den, mit dem tsúuk tsu fáa-ren, 'an-shtát mit dem 'áu-tôo."
+  },
+  "406": {
+    "explanation": "Para perguntar se algo é mais barato, usa-se a forma comparativa 'billiger'. A palavra 'Reisebus' especifica o ônibus de viagem ou excursão, e a ação 'zu fahren' completa a frase no final.",
+    "breakdown": [
+      {
+        "word": "Ist es billiger",
+        "meaning": "É mais barato — Ist: é; es: isso; billiger: mais barato."
+      },
+      {
+        "word": "mit dem Reisebus",
+        "meaning": "de ônibus de viagem."
+      },
+      {
+        "word": "zu fahren",
+        "meaning": "viajar / ir."
+      }
+    ],
+    "pronuncia": "Em 'billiger', leia o final '-ger' com o chiado fino de gato ('rích-tích'). Em 'Reisebus', zumba o 's' de 'Reise' em 'z' e feche 'bus' com 's' seco de sapo. Em 'fahren', solte o 'h' suspirado e feche no 'n' seco nos dentes.\nLeia: 'ist 'es bíl-li-ga, mit dem rái-ze-bus tsu fáa-ren?"
+  },
+  "407": {
+    "explanation": "A expressão 'zu Hause' significa fixamente 'em casa'. O verbo de passado 'vergessen' (esquecido) vai para o término da oração, enquanto o verbo auxiliar 'habe' sustenta o tempo verbal no meio.",
+    "breakdown": [
+      {
+        "word": "Ich habe",
+        "meaning": "Eu tenho / Eu."
+      },
+      {
+        "word": "meinen Reisepass",
+        "meaning": "meu passaporte — meinen: meu; Reisepass: passaporte de viagem."
+      },
+      {
+        "word": "zu Hause",
+        "meaning": "em casa."
+      },
+      {
+        "word": "vergessen",
+        "meaning": "esqueci / esquecido."
+      }
+    ],
+    "pronuncia": "Em 'meinen', mantenha as vogais orais sem anasalar. Em 'Reisepass', zumba o 's' do meio em 'z' e termine em 's' seco de sapo. Em 'zu Hause', estale o 'z' em 'ts' e solte o 'h' suspirado em 'Hause'. Em 'vergessen', troque o 'v' por 'f' puro.\nLeia: ích háa-be mái-nen rái-ze-pas tsu háu-ze fea-gués-sen!"
+  },
+  "408": {
+    "explanation": "O verbo reflexivo 'bewegt man sich' significa 'a gente se locomove'. A locução 'am besten' traduz 'da melhor forma', e a partícula 'fort' complementa a ação de mover-se para a frente, ficando no fim.",
+    "breakdown": [
+      {
+        "word": "Wie bewegt man sich",
+        "meaning": "Como a gente se locomove — Wie: como; bewegt: move; man: a gente; sich: se."
+      },
+      {
+        "word": "in der Stadt",
+        "meaning": "na cidade."
+      },
+      {
+        "word": "am besten fort",
+        "meaning": "da melhor maneira — am besten: da melhor forma; fort: adiante/em frente."
+      }
+    ],
+    "pronuncia": "Em 'bewegt', leia o 'w' com som de 'v' e desvogue o 'g' interno. Em 'Stadt', comece no chiado 'sht' e feche no 't' seco sem 'i' de apoio. Em 'besten', feche no 'n' seco. Em 'fort', desvogue o 't' no final sem chiar.\nLeia: víi be-vêekt man zích in dêea shtat 'am bés-ten fôat?"
+  },
+  "409": {
+    "explanation": "A expressão de tempo 'heute Morgen' junta 'hoje' com 'manhã', significando 'esta manhã'. O adjetivo 'schrecklich' (terrível) fecha a frase com a terminação típica que tem som chiado.",
+    "breakdown": [
+      {
+        "word": "Der Verkehr war",
+        "meaning": "O trânsito estava — Der Verkehr: o trânsito; war: estava."
+      },
+      {
+        "word": "heute Morgen",
+        "meaning": "esta manhã — heute: hoje; Morgen: manhã."
+      },
+      {
+        "word": "schrecklich",
+        "meaning": "terrível / horrível."
+      }
+    ],
+    "pronuncia": "Em 'Verkehr', troque a letra 'v' por 'f' puro em 'fea-' e sustente a vogal longa. Em 'heute', leia o 'eu' como 'oi'. Em 'Morgen', vocalize o 'r' suavemente. Em 'schrecklich', chie o 'sch' inicial e termine com chiado fino de gato no '-ich'.\nLeia: dêea fea-kêer váa hói-te mór-guen shrék-lich."
+  },
+  "411": {
+    "explanation": "A palavra de cortesia 'möchte' expressa o desejo educado (gostaria de). O verbo principal 'ändern' (alterar/mudar) fica reservado para a posição final da frase.",
+    "breakdown": [
+      {
+        "word": "Ich möchte",
+        "meaning": "Eu gostaria de — Ich: eu; möchte: gostaria de."
+      },
+      {
+        "word": "meine Reservierung",
+        "meaning": "minha reserva."
+      },
+      {
+        "word": "ändern",
+        "meaning": "alterar / mudar."
+      }
+    ],
+    "pronuncia": "Em 'möchte', posicione a língua para falar 'é' com lábios em bico redondo de 'ó' no 'ö', e assopre o 'ch' fino. Em 'Reservierung', zumba o 's' do meio em 'z' e termine no 'ng' nasal no fundo da boca. Em 'ändern', abra o 'ä' em 'é' com golpe de glote.\nLeia: ích mörch-te mái-ne re-za-víi-rung 'én-da-n."
+  },
+  "412": {
+    "explanation": "No alemão, a hora 'halb zehn' significa literalmente 'metade para as dez', o que equivale exatamente às 'nove e meia' em português. O pedaço 'ab' fecha o sentido de partida no fim da oração.",
+    "breakdown": [
+      {
+        "word": "Das Boot fährt",
+        "meaning": "O barco vai / parte — Das Boot: o barco; fährt: anda/parte."
+      },
+      {
+        "word": "um halb zehn",
+        "meaning": "às nove e meia — um: às; halb zehn: metade para as dez (9:30)."
+      },
+      {
+        "word": "ab",
+        "meaning": "de partida."
+      }
+    ],
+    "pronuncia": "Em 'Boot', sustente a vogal 'ô' bem fechada e longa. Em 'fährt', abra o 'ä' em 'é'. Em 'halb', desvogue o 'b' final para 'p' seco. Em 'zehn', estale a letra 'z' em 'ts' sem ler o 'h' do meio. Em 'ab', feche em 'p' seco por desvozeamento.\nLeia: das bôot fêat 'um halp tsêen 'ap."
+  },
+  "413": {
+    "explanation": "A estrutura de finalidade usa a dupla 'um ... zu' para traduzir 'para + verbo no infinitivo'. O verbo 'besuchen' (visitar) vai para o final antecedido da palavra 'zu'.",
+    "breakdown": [
+      {
+        "word": "Brauche ich",
+        "meaning": "Preciso eu — Brauche: preciso; ich: eu."
+      },
+      {
+        "word": "ein Visum",
+        "meaning": "um visto."
+      },
+      {
+        "word": "um dein Land zu besuchen",
+        "meaning": "para visitar seu país — um... zu besuchen: para visitar; dein Land: seu país."
+      }
+    ],
+    "pronuncia": "Em 'Brauche', raspe o 'ch' no fundo da garganta. Em 'Visum', leia a letra 'v' com som de 'f' puro em 'fíi-zum'. Em 'Land', desvogue o 'd' final para 't' seco sem 'i' de apoio. Em 'besuchen', zumba o 's' interno em 'z'.\nLeia: bráu-che ích 'áin fíi-zum, 'um dái-n lant tsu be-zúu-chen?"
+  },
+  "414": {
+    "explanation": "Para narrar eventos passados no mesmo dia, usa-se 'sind gelaufen' (caminhamos) na primeira ação e 'waren' (estávamos) na segunda. A expressão 'den ganzen Tag' significa 'o dia todo'.",
+    "breakdown": [
+      {
+        "word": "Wir sind",
+        "meaning": "Nós estamos / fomos — Wir: nós; sind: somos/estamos."
+      },
+      {
+        "word": "den ganzen Tag",
+        "meaning": "o dia todo — den ganzen: todo o; Tag: dia."
+      },
+      {
+        "word": "gelaufen und waren",
+        "meaning": "caminhado e estávamos — gelaufen: caminhado; und: e; waren: estávamos."
+      },
+      {
+        "word": "sehr müde",
+        "meaning": "muito cansados — sehr: muito; müde: cansados."
+      }
+    ],
+    "pronuncia": "Em 'sind', troque o 'd' por 't' seco. Em 'ganzen', estale o 'z' em 'ts'. Em 'Tag', desvogue o 'g' final em 'k' seco. Em 'sehr', zumba o 's' de abelha em 'z' e vocalize o 'r'. Em 'müde', faça bico firme de 'u' e diga 'i' para o 'ü'.\nLeia: víia zint den gán-tsen táak guê-láu-fen unt váa-ren zêea müü-de."
+  },
+  "415": {
+    "explanation": "A locução 'zu Fuß' traduz 'a pé' de forma fixa. O adjetivo 'erreichbar' significa 'alcançável' ou 'acessível', formando juntas a ideia de 'acessível a pé'.",
+    "breakdown": [
+      {
+        "word": "Ist das Museum",
+        "meaning": "O museu é / fica — Ist: é; das Museum: o museu."
+      },
+      {
+        "word": "zu Fuß",
+        "meaning": "a pé."
+      },
+      {
+        "word": "erreichbar",
+        "meaning": "alcançável / acessível."
+      }
+    ],
+    "pronuncia": "Em 'Museum', zumba o 's' interno com som de 'z' e feche no 'm' oral. Em 'zu Fuß', estale o 'z' em 'ts' e faça o 'ß' com som de 's' seco de sapo. Em 'erreichbar', dê o golpe de glote inicial, assopre o 'ch' fino e vocalize a terminação.\nLeia: 'ist das mu-zêe-um tsu fúus 'ea-rái-ch-baa?"
+  },
+  "416": {
+    "explanation": "O verbo 'mag' junto com 'lieber als' constrói a preferência de algo sobre outro (gosto mais de X do que de Y). A palavra 'Fensterplätze' indica assentos na janela e 'Gangplätze' indica assentos no corredor.",
+    "breakdown": [
+      {
+        "word": "Ich mag",
+        "meaning": "Eu gosto de."
+      },
+      {
+        "word": "Fensterplätze lieber",
+        "meaning": "assentos na janela mais — Fensterplätze: lugares na janela; lieber: mais."
+      },
+      {
+        "word": "als Gangplätze",
+        "meaning": "do que assentos no corredor — als: do que; Gangplätze: lugares no corredor."
+      }
+    ],
+    "pronuncia": "Em 'mag', desvogue o 'g' final para 'k' seco. Em 'Fensterplätze', feche o 'n' seco e estale o 'tz' em 'ts'. Em 'lieber', vocalize o 'er' final em 'a'. Em 'Gangplätze', não solte a letra 'g' no meio do 'Gang' e estale o 'tz' no fim.\nLeia: ích máak fén-sta-plét-tse líi-ba 'als gáng-plét-tse."
+  },
+  "417": {
+    "explanation": "A expressão 'Wie viele' pergunta a quantidade contável (Quantos/Quantas). A ação de despachar bagagem usa o verbo 'geben ... auf', com a pontinha 'auf' posicionada no fim da pergunta.",
+    "breakdown": [
+      {
+        "word": "Wie viele Koffer",
+        "meaning": "Quantas malas — Wie viele: quantas; Koffer: malas."
+      },
+      {
+        "word": "geben Sie",
+        "meaning": "o senhor / a senhora despacha — geben: dá/despacha; Sie: o senhor/a senhora."
+      },
+      {
+        "word": "auf",
+        "meaning": "fora / para despachar (do verbo aufgeben)."
+      }
+    ],
+    "pronuncia": "Em 'Wie viele', use 'v' para o 'w' e 'f' puro para a letra 'v' de 'viele'. Em 'Koffer', corte no 'f' e vocalize o 'er' em 'a'. Em 'geben', feche no 'n' seco nos dentes. Em 'Sie', zumba o 's' de abelha. Em 'auf', corte no 'f' seco.\nLeia: víi fíi-le kóf-fa gêe-ben zíi 'auf?"
+  },
+  "418": {
+    "explanation": "A palavra 'Taxifahrer' combina táxi com motorista (Fahrer). O adjetivo composto 'hilfsbereit' junta a palavra ajuda (Hilfe) com pronta (bereit), criando o sentido direto de 'prestativo'.",
+    "breakdown": [
+      {
+        "word": "Der Taxifahrer war",
+        "meaning": "O motorista de táxi foi / estava."
+      },
+      {
+        "word": "sehr hilfsbereit",
+        "meaning": "muito prestativo — sehr: muito; hilfsbereit: prestativo."
+      }
+    ],
+    "pronuncia": "Em 'Taxifahrer', fale 'tá-ksi', troque o 'f' com 'h' suspirado no meio em '-faa-ra'. Em 'war', fale 'v' e vocalize o 'r'. Em 'hilfsbereit', não ponha 'i' de apoio no 'ls', e termine a palavra no 't' estalado seco.\nLeia: dêea tá-ksi-fáa-ra váa zêea hilfs-be-ráit."
+  },
+  "419": {
+    "explanation": "O verbo de intenção 'kann' fica na segunda posição da pergunta, e o verbo de ação no infinitivo 'kaufen' (comprar) é arremessado para o final da frase.",
+    "breakdown": [
+      {
+        "word": "Wo kann ich",
+        "meaning": "Onde posso eu — Wo: onde; kann: posso; ich: eu."
+      },
+      {
+        "word": "einen City-Pass",
+        "meaning": "um passe da cidade / passe turístico."
+      },
+      {
+        "word": "kaufen",
+        "meaning": "comprar."
+      }
+    ],
+    "pronuncia": "Em 'Wo', troque o 'w' por 'v'. Em 'kann', mantenha o 'a' limpo e oral antes do 'n'. Em 'City-Pass', fale 'sí-ti' com 't' seco no dente e feche 'Pass' em 's' seco de sapo. Em 'kaufen', feche no 'n' seco nos dentes superiores.\nLeia: vôo kan ích 'ái-nen zí-ti-pas káu-fen?"
+  },
+  "420": {
+    "explanation": "A expressão 'gerade noch' enfatiza que o fato aconteceu por um triz (bem a tempo / por pouco). O verbo 'angekommen' (chegado) fecha a frase no passado, mantendo o auxiliar 'sind' no meio.",
+    "breakdown": [
+      {
+        "word": "Wir sind",
+        "meaning": "Nós chegamos / estamos."
+      },
+      {
+        "word": "gerade noch rechtzeitig",
+        "meaning": "bem a tempo — gerade noch: por pouco / no limite; rechtzeitig: a tempo."
+      },
+      {
+        "word": "am Bahnhof",
+        "meaning": "na estação de trem — Bahnhof: estação."
+      },
+      {
+        "word": "angekommen",
+        "meaning": "chegado (do verbo ankommen)."
+      }
+    ],
+    "pronuncia": "Em 'gerade', zumba o 'g' inicial em 'gue-ráa-de'. Em 'rechtzeitig', assopre o 'ch' fino em 'récht', estale o 'z' em 'tsái' e termine '-tig' com chiado fino de gato ('rích-tích'). Em 'Bahnhof', solte o 'h' suspirado no meio. Em 'angekommen', dê o golpe de glote inicial.\nLeia: víia zint gue-ráa-de nórr récht-tsái-tích 'am báan-hôof 'an-gue-kóm-men."
+  },
+  "4010": {
+    "explanation": "A construção 'Gibt es' abre a pergunta de existência. A palavra composta 'Direktflüge' junta voos diretos sem escalas, e a preposição 'nach' indica o destino para cidades e países.",
+    "breakdown": [
+      {
+        "word": "Gibt es",
+        "meaning": "Existem / Há."
+      },
+      {
+        "word": "Direktflüge",
+        "meaning": "voos diretos — direkt: direto; Flüge: voos."
+      },
+      {
+        "word": "nach New York",
+        "meaning": "para Nova York."
+      }
+    ],
+    "pronuncia": "Em 'Gibt', desvogue o 'b' para 'p' seco. Em 'Direktflüge', encoste a língua atrás dos dentes sem chiar no 'd', faça bico de 'u' dizendo 'i' no 'ü' e feche com 'g' suave. Em 'nach', raspe o 'ch' no fundo da garganta após a vogal 'a'.\nLeia: gípt 'es dı-rékt-flüü-gue nárr nıu yôork?"
+  }
+}
