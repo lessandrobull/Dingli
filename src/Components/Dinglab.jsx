@@ -63,23 +63,27 @@ export default function Dinglab({
   }, [setIndiceProp]);
 
   const [alturaTela, setAlturaTela] = useState(window.innerHeight);
-  const [audioLento, setAudioLento] = useState(false);
   const [resultadoFeedback, setResultadoFeedback] = useState(null);
   const [feedbackMensagem, setFeedbackMensagem] = useState("");
   const [transcricaoFixa, setTranscricaoFixa] = useState("");
 
-  // ESCALA 5: Estados da Prova de Fogo
+  // Estados da Prova de Fogo
   const [modoProva, setModoProva] = useState(false);
   const modoProvaRef = useRef(false);
   modoProvaRef.current = modoProva;
-  const [toastVisible, setToastVisible] = useState(false);
 
   // Gravação da própria voz para o Modo Espelho Real
+  const [gravandoEspelho, setGravandoEspelho] = useState(false);
   const [audioGravadoUrl, setAudioGravadoUrl] = useState(null);
   const [tocandoMinhaVoz, setTocandoMinhaVoz] = useState(false);
-  const mediaRecorderRef = useRef(null);
-  const audioChunksRef = useRef([]);
   const audioMinhaVozRef = useRef(null);
+  const gravandoEspelhoRef = useRef(false);
+  const mediaRecorderEspelhoRef = useRef(null);
+  const streamEspelhoRef = useRef(null);
+  const chunksEspelhoRef = useRef([]);
+  const recognitionEspelhoRef = useRef(null);
+  const timerSilencioEspelhoRef = useRef(null);
+  const falaEspelhoRef = useRef("");
 
   // Praticar repetição palavra por palavra
   const [tocandoRepeticao, setTocandoRepeticao] = useState(false);
@@ -250,8 +254,7 @@ export default function Dinglab({
             // Toca o áudio da frase mais uma vez em velocidade normal (idêntico ao Dìngloop)
             const alvoAudio = {
               id: idAtual,
-              texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo,
-              dinglab: true
+              texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo
             };
             if (falar) {
               falar(alvoAudio, false);
@@ -271,7 +274,6 @@ export default function Dinglab({
               falar({
                 id: fraseAtual.id,
                 texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo,
-                dinglab: true,
                 sortearDiferente: true
               }, false);
             }
@@ -298,14 +300,6 @@ export default function Dinglab({
       setTranscricaoFixa(transcricaoAoVivo);
     }
   }, [transcricaoAoVivo]);
-
-  useEffect(() => {
-    if (statusVoz !== 'RECORDING') {
-      if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
-        try { mediaRecorderRef.current.stop(); } catch (e) { }
-      }
-    }
-  }, [statusVoz]);
 
   const pararTodaRepeticao = useCallback(() => {
     repeticaoAtivaRef.current = false;
@@ -337,16 +331,54 @@ export default function Dinglab({
     });
   }, []);
 
+  const finalizarGravacaoEspelho = useCallback(() => {
+    gravandoEspelhoRef.current = false;
+    setGravandoEspelho(false);
+
+    if (timerSilencioEspelhoRef.current) {
+      clearTimeout(timerSilencioEspelhoRef.current);
+      timerSilencioEspelhoRef.current = null;
+    }
+
+    if (recognitionEspelhoRef.current) {
+      try { recognitionEspelhoRef.current.abort(); } catch (e) { }
+      recognitionEspelhoRef.current = null;
+    }
+
+    if (mediaRecorderEspelhoRef.current && mediaRecorderEspelhoRef.current.state !== 'inactive') {
+      try { mediaRecorderEspelhoRef.current.stop(); } catch (e) { }
+    } else if (streamEspelhoRef.current) {
+      streamEspelhoRef.current.getTracks().forEach(track => track.stop());
+      streamEspelhoRef.current = null;
+    }
+
+    const falaFinal = (falaEspelhoRef.current || "").trim();
+    if (falaFinal) {
+      setTranscricaoFixa(falaFinal);
+    }
+    if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
+  }, [setTranscricaoAoVivo]);
+
   useEffect(() => {
-    setAudioLento(false);
+    return () => {
+      finalizarGravacaoEspelho();
+    };
+  }, [finalizarGravacaoEspelho]);
+
+  useEffect(() => {
+    finalizarGravacaoEspelho();
     setModoProva(false);
-    setToastVisible(false);
     setResultadoFeedback(null);
     setFeedbackMensagem("");
     setTranscricaoFixa("");
     if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
 
-    setAudioGravadoUrl(null);
+    setAudioGravadoUrl(prev => {
+      if (prev) {
+        try { URL.revokeObjectURL(prev); } catch (e) { }
+      }
+      return null;
+    });
     setTocandoMinhaVoz(false);
     if (audioMinhaVozRef.current) {
       audioMinhaVozRef.current.pause();
@@ -354,29 +386,22 @@ export default function Dinglab({
     }
 
     pararTodaRepeticao();
-  }, [indice, fraseAtual?.id, setTranscricaoAoVivo, pararTodaRepeticao]);
+  }, [indice, fraseAtual?.id, setTranscricaoAoVivo, pararTodaRepeticao, finalizarGravacaoEspelho]);
 
   const ns = navStyle(idiomaEstudo);
   const corDinamica = (getCorFonteDinamica && idiomaEstudo)
     ? getCorFonteDinamica(idiomaEstudo)
     : (temas[idiomaEstudo]?.bg || "#0f172a");
 
-  // Botão Ouvir / Lento
+  // Botão Ouvir (idêntico ao Dìngloop)
   const handleOuvirClick = useCallback(() => {
     if (!fraseAtual) return;
     const alvo = {
       id: fraseAtual.id,
-      texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo,
-      dinglab: true
+      texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo
     };
-    if (!audioLento) {
-      falar(alvo, false);
-      setAudioLento(true);
-    } else {
-      falar(alvo, true);
-      setAudioLento(false);
-    }
-  }, [audioLento, fraseAtual, idiomaEstudo, textoEstudo, falar]);
+    falar(alvo, false);
+  }, [fraseAtual, idiomaEstudo, textoEstudo, falar]);
 
   // Botão Falar Agora (Prova de Fogo oficial)
   const handleFalarAgora = useCallback(() => {
@@ -402,24 +427,27 @@ export default function Dinglab({
 
   // Reproduzir gravação do aluno
   const handleReproduzirMinhaVoz = useCallback(() => {
-    if (!audioGravadoUrl || tocandoMinhaVoz) return;
+    if (!audioGravadoUrl || tocandoMinhaVoz || gravandoEspelho) return;
     if (audioMinhaVozRef.current) {
       audioMinhaVozRef.current.pause();
+      audioMinhaVozRef.current.src = "";
       audioMinhaVozRef.current = null;
     }
     const audio = new Audio(audioGravadoUrl);
     audioMinhaVozRef.current = audio;
     setTocandoMinhaVoz(true);
-    audio.onended = () => {
+
+    const encerrarReproducao = () => {
       setTocandoMinhaVoz(false);
-      audioMinhaVozRef.current = null;
+      if (audioMinhaVozRef.current === audio) {
+        audioMinhaVozRef.current = null;
+      }
     };
-    audio.onerror = () => {
-      setTocandoMinhaVoz(false);
-      audioMinhaVozRef.current = null;
-    };
-    audio.play().catch(() => setTocandoMinhaVoz(false));
-  }, [audioGravadoUrl, tocandoMinhaVoz]);
+
+    audio.onended = encerrarReproducao;
+    audio.onerror = encerrarReproducao;
+    audio.play().catch(() => encerrarReproducao());
+  }, [audioGravadoUrl, tocandoMinhaVoz, gravandoEspelho]);
 
   // Metrônomo contínuo
   const handlePraticarRepeticao = useCallback(async () => {
@@ -460,11 +488,15 @@ export default function Dinglab({
 
       setPalavraAtivaRepeticao(i);
       setFaseRepeticao('ouvir');
-      await esperarMs(1000);
+      await esperarMs(667);
+      if (!repeticaoAtivaRef.current) break;
+
+      setFaseRepeticao(null);
+      await esperarMs(333);
       if (!repeticaoAtivaRef.current) break;
 
       setFaseRepeticao('repetir');
-      await esperarMs(1000);
+      await esperarMs(667);
       if (!repeticaoAtivaRef.current) break;
 
       setPalavraAtivaRepeticao(null);
@@ -474,22 +506,180 @@ export default function Dinglab({
     pararTodaRepeticao();
   }, [tocandoRepeticao, textoEstudo, idiomaEstudo, pararTodaRepeticao, esperarMs]);
 
-  // ESCALA 5: Disparo oficial da Prova de Fogo ("Pronto")
-  const handleDispararPronto = useCallback(() => {
-    if (!fraseAtual || statusVoz !== 'IDLE') return;
-    setModoProva(true);
+  // Gravar voz (Modo Espelho — gravação simultânea com transcrição e encerramento automático)
+  const handleGravarVoz = useCallback(async () => {
+    if (!fraseAtual) return;
+
+    if (gravandoEspelhoRef.current) {
+      finalizarGravacaoEspelho();
+      return;
+    }
+
+    if (statusVoz !== 'IDLE') return;
+    pararTodaRepeticao();
+
+    if (audioMinhaVozRef.current) {
+      audioMinhaVozRef.current.pause();
+      audioMinhaVozRef.current = null;
+      setTocandoMinhaVoz(false);
+    }
+
+    setAudioGravadoUrl(prev => {
+      if (prev) {
+        try { URL.revokeObjectURL(prev); } catch (e) { }
+      }
+      return null;
+    });
     setResultadoFeedback(null);
     setFeedbackMensagem("");
     setTranscricaoFixa("");
+    falaEspelhoRef.current = "";
     if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
 
-    const alvoVoz = {
-      ...fraseAtual,
-      [idiomaEstudo]: textoEstudo,
-      texto: textoEstudo
-    };
-    iniciarReconhecimentoVoz(alvoVoz);
-  }, [statusVoz, iniciarReconhecimentoVoz, fraseAtual, idiomaEstudo, textoEstudo, setTranscricaoAoVivo]);
+    try {
+      const temMediaDevices = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && typeof MediaRecorder !== 'undefined');
+
+      if (temMediaDevices) {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        streamEspelhoRef.current = stream;
+
+        const tiposSuportados = [
+          'audio/webm;codecs=opus',
+          'audio/webm',
+          'audio/mp4',
+          'audio/ogg;codecs=opus'
+        ];
+        const mimeTypeEscolhido = MediaRecorder.isTypeSupported
+          ? tiposSuportados.find(tipo => MediaRecorder.isTypeSupported(tipo))
+          : '';
+
+        const recorder = mimeTypeEscolhido
+          ? new MediaRecorder(stream, { mimeType: mimeTypeEscolhido })
+          : new MediaRecorder(stream);
+
+        chunksEspelhoRef.current = [];
+        mediaRecorderEspelhoRef.current = recorder;
+
+        recorder.ondataavailable = (e) => {
+          if (e.data && e.data.size > 0) {
+            chunksEspelhoRef.current.push(e.data);
+          }
+        };
+
+        recorder.onstop = () => {
+          const tipoFinal = recorder.mimeType || mimeTypeEscolhido || 'audio/webm';
+          if (chunksEspelhoRef.current.length > 0) {
+            const blob = new Blob(chunksEspelhoRef.current, { type: tipoFinal });
+            const url = URL.createObjectURL(blob);
+            setAudioGravadoUrl(url);
+          }
+          chunksEspelhoRef.current = [];
+          mediaRecorderEspelhoRef.current = null;
+          if (streamEspelhoRef.current) {
+            streamEspelhoRef.current.getTracks().forEach(track => track.stop());
+            streamEspelhoRef.current = null;
+          }
+        };
+
+        recorder.start();
+      }
+
+      gravandoEspelhoRef.current = true;
+      setGravandoEspelho(true);
+
+      // Timeout máximo de segurança (8s) caso o Android segure o microfone exclusivo no MediaRecorder
+      timerSilencioEspelhoRef.current = setTimeout(() => {
+        if (gravandoEspelhoRef.current) finalizarGravacaoEspelho();
+      }, 8000);
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognitionEspelhoRef.current = recognition;
+        recognition.lang = temas[idiomaEstudo]?.langCode || 'en-US';
+        recognition.interimResults = true;
+        recognition.continuous = false;
+
+        const normalizarTextoEspelho = (txt) => (txt || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/ß/g, "ss")
+          .toLowerCase()
+          .replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+
+        const alvoBruto = (idiomaEstudo === 'pi' && fraseAtual?.zh) ? fraseAtual.zh : textoEstudo;
+        const alvoNorm = normalizarTextoEspelho(alvoBruto);
+        const palavrasAlvo = idiomaEstudo === 'pi'
+          ? alvoNorm.replace(/\s+/g, "").split("").filter(Boolean)
+          : alvoNorm.split(" ").filter(Boolean);
+
+        recognition.onresult = (event) => {
+          if (!gravandoEspelhoRef.current) return;
+
+          let acumulado = "";
+          for (let i = 0; i < event.results.length; i++) {
+            acumulado += (event.results[i][0].transcript || "") + " ";
+          }
+
+          const falaAtual = acumulado.trim();
+          falaEspelhoRef.current = falaAtual;
+          setTranscricaoFixa(falaAtual);
+          if (setTranscricaoAoVivo) setTranscricaoAoVivo(falaAtual);
+
+          const falaNorm = normalizarTextoEspelho(falaAtual);
+          const palavrasFaladas = idiomaEstudo === 'pi'
+            ? falaNorm.replace(/\s+/g, "").split("").filter(Boolean)
+            : falaNorm.split(" ").filter(Boolean);
+
+          const acertos = palavrasAlvo.filter(p => falaNorm.includes(p)).length;
+          const percentual = acertos / Math.max(1, palavrasAlvo.length);
+          const limiar = palavrasAlvo.length <= 2 ? 0.5 : 0.75;
+
+          const atingiuAcerto = percentual >= limiar || (alvoNorm && falaNorm.includes(alvoNorm));
+          const atingiuTamanho = palavrasAlvo.length > 0 && palavrasFaladas.length >= palavrasAlvo.length;
+
+          if (timerSilencioEspelhoRef.current) clearTimeout(timerSilencioEspelhoRef.current);
+
+          if (atingiuAcerto || atingiuTamanho) {
+            timerSilencioEspelhoRef.current = setTimeout(() => {
+              if (gravandoEspelhoRef.current) finalizarGravacaoEspelho();
+            }, 650);
+          } else {
+            timerSilencioEspelhoRef.current = setTimeout(() => {
+              if (gravandoEspelhoRef.current && falaEspelhoRef.current) finalizarGravacaoEspelho();
+            }, 1300);
+          }
+        };
+
+        recognition.onerror = () => {
+          // No Android, se o hardware negar concorrência com MediaRecorder, mantém gravação ativa até o usuário tocar em "Parar" ou bater o timeout
+          if (gravandoEspelhoRef.current && falaEspelhoRef.current) {
+            finalizarGravacaoEspelho();
+          }
+        };
+
+        recognition.onend = () => {
+          if (!gravandoEspelhoRef.current) return;
+          if (falaEspelhoRef.current) {
+            finalizarGravacaoEspelho();
+          } else {
+            // Reinicia escuta no Android caso tenha encerrado por silêncio inicial
+            try { recognition.start(); } catch (e) { }
+          }
+        };
+
+        try { recognition.start(); } catch (e) { }
+      }
+    } catch (err) {
+      console.warn('[Dìnglab] Erro ao acessar microfone para gravação:', err);
+      finalizarGravacaoEspelho();
+    }
+  }, [
+    fraseAtual, statusVoz, finalizarGravacaoEspelho, pararTodaRepeticao,
+    setTranscricaoAoVivo, temas, idiomaEstudo, textoEstudo
+  ]);
 
   // Modal de Reporte
   const resetarModalReporte = useCallback(() => {
@@ -817,59 +1007,83 @@ export default function Dinglab({
 
           {/* CONTEÚDO */}
           {ehCardZero ? (
-            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', padding: '6px 4px', overflowY: 'auto' }}>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', padding: '4px', overflowY: 'auto', minHeight: 0 }}>
               <div style={{ textAlign: 'center', width: '100%', flexShrink: 0 }}>
                 <span
                   style={{
                     display: 'inline-block',
-                    padding: '4px 16px',
-                    borderRadius: '20px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+                    padding: '3px 14px',
+                    borderRadius: '16px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.65)',
                     color: '#0f172a',
-                    fontSize: '0.86rem',
+                    fontSize: '0.82rem',
                     fontWeight: '900',
                     letterSpacing: '1.5px',
                     textTransform: 'uppercase',
                     marginBottom: '8px',
-                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.06)'
+                    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.05)'
                   }}
                 >
                   Dìnglab
                 </span>
-                <h2 style={{ fontSize: '1.35rem', fontWeight: '900', color: '#0f172a', margin: '4px 0 2px 0' }}>
-                  Laboratório de Pronúncia
+                <h2 style={{ fontSize: '1.25rem', fontWeight: '900', color: '#0f172a', margin: '2px 0 0 0', letterSpacing: '-0.3px' }}>
+                  {t?.dinglabGuiaTitulo || "Treino livre de pronúncia"}
                 </h2>
-                <span style={{ fontSize: '0.84rem', color: '#334155', fontWeight: '700' }}>
-                  Modo Espelho • Treino Livre
-                </span>
               </div>
 
-              <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '10px', textAlign: 'left' }}>
-                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.55)', borderRadius: '14px', padding: '12px 14px', border: '1px solid rgba(255,255,255,0.65)' }}>
-                  <div style={{ fontWeight: '800', color: '#0f172a', fontSize: '0.92rem', marginBottom: '3px' }}>
-                    🎙️ Por que você está aqui?
+              <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: window.innerWidth <= 480 ? '12px 0' : '4px 0' }}>
+                <div
+                  lang={idiomaOrigem || 'pt'}
+                  style={{
+                    width: '100%',
+                    marginTop: window.innerWidth <= 480 ? '22px' : '0px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.50)',
+                    borderRadius: '18px',
+                    padding: window.innerWidth <= 480 ? '18px 18px' : '12px 18px',
+                    border: '1px solid rgba(255, 255, 255, 0.75)',
+                    boxShadow: '0 4px 16px rgba(0, 0, 0, 0.05)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '4px',
+                    boxSizing: 'border-box'
+                  }}
+                >
+                  <div
+                    style={{
+                      fontWeight: '900',
+                      color: corDinamica,
+                      fontSize: '0.98rem',
+                      textAlign: 'center',
+                      letterSpacing: '-0.2px',
+                      marginBottom: '0px'
+                    }}
+                  >
+                    {t?.dinglabGuiaSubtitulo || "Por que você está aqui?"}
                   </div>
-                  <div style={{ fontSize: '0.84rem', color: '#334155', lineHeight: '1.45', fontWeight: '600' }}>
-                    Esta frase precisava de um pouco mais de atenção na sua fala. Aqui você pode praticá-la com calma e sem qualquer pressão.
-                  </div>
-                </div>
 
-                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.55)', borderRadius: '14px', padding: '12px 14px', border: '1px solid rgba(255,255,255,0.65)' }}>
-                  <div style={{ fontWeight: '800', color: '#0f172a', fontSize: '0.92rem', marginBottom: '3px' }}>
-                    🛡️ Zero Punição
-                  </div>
-                  <div style={{ fontSize: '0.84rem', color: '#334155', lineHeight: '1.45', fontWeight: '600' }}>
-                    No Modo Espelho você pode errar quantas vezes quiser: não há perda de rank nem limite de tentativas.
-                  </div>
-                </div>
-
-                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.55)', borderRadius: '14px', padding: '12px 14px', border: '1px solid rgba(255,255,255,0.65)' }}>
-                  <div style={{ fontWeight: '800', color: '#0f172a', fontSize: '0.92rem', marginBottom: '3px' }}>
-                    ✨ Dicas para praticar
-                  </div>
-                  <div style={{ fontSize: '0.84rem', color: '#334155', lineHeight: '1.45', fontWeight: '600' }}>
-                    Ouça a frase em velocidade normal ou lenta, toque nas palavras para escutar sons isolados e repita até se sentir seguro.
-                  </div>
+                  {[
+                    <>{t?.dinglabGuiaP1 || "Esta frase precisava de um pouco mais de atenção. Aqui você pode praticá-la com calma."}</>,
+                    <>{t?.dinglabGuiaP2 || "Além de poder consultar as explicações e ouvir o áudio com as pronúncias de cada frase, você também pode clicar em cada palavra para ouvi-las de forma isolada."}</>,
+                    <>{t?.dinglabGuiaP3Antes || "No modo "}<b style={{ color: corDinamica, fontWeight: '800' }}>{t?.dinglabEco || "Eco"}</b>{t?.dinglabGuiaP3Depois || ", você pode ouvir palavra por palavra e praticar a repetição de cada uma no ritmo."}</>,
+                    <>{t?.dinglabGuiaP4Antes || "No modo "}<b style={{ color: corDinamica, fontWeight: '800' }}>{t?.dinglabOuvirGravacao || "Gravação"}</b>{t?.dinglabGuiaP4Depois || ", você pode gravar e ouvir sua própria voz, além de poder acompanhar na tela o que foi entendido."}</>,
+                    <>{t?.dinglabGuiaP5Antes || "Quando estiver mais confiante, toque em "}<b style={{ color: corDinamica, fontWeight: '800' }}>Reloop</b>{t?.dinglabGuiaP5Depois || " para devolver a frase ao Dìngloop."}</>
+                  ].map((paragrafo, idx) => (
+                    <p
+                      key={idx}
+                      style={{
+                        margin: 0,
+                        fontSize: '0.86rem',
+                        color: '#1e293b',
+                        lineHeight: '1.52',
+                        fontWeight: '500',
+                        textAlign: 'justify',
+                        hyphens: 'auto',
+                        WebkitHyphens: 'auto'
+                      }}
+                    >
+                      {paragrafo}
+                    </p>
+                  ))}
                 </div>
               </div>
             </div>
@@ -992,14 +1206,20 @@ export default function Dinglab({
                         left: '50%',
                         top: '100%',
                         transform: 'translateX(-50%)',
-                        marginTop: '22px',
-                        backgroundColor: COR_TOM_CLARO,
+                        marginTop: '48px',
+                        backgroundColor: 'rgba(228, 234, 250, 0.72)',
                         color: corDinamica,
-                        fontSize: 'clamp(1.2rem, 7vw, 1.53rem)',
+                        fontSize: 'clamp(1.1rem, 6.2vw, 1.35rem)',
                         fontWeight: '900',
-                        padding: '6px 18px',
+                        height: '44px',
+                        minHeight: '44px',
+                        padding: '0 16px',
                         borderRadius: '12px',
                         boxShadow: '0 4px 14px rgba(0, 0, 0, 0.12)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxSizing: 'border-box',
                         whiteSpace: 'nowrap',
                         zIndex: 20,
                         pointerEvents: 'none'
@@ -1026,43 +1246,55 @@ export default function Dinglab({
                 return (
                   <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, display: 'flex', flexDirection: 'column', gap: '8px' }}>
 
-                    {/* 3 BOTÕES SUPERIORES DE APOIO */}
-                    <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
-                      {/* Botão 1: Ouvir gravação */}
-                      <button
-                        type="button"
-                        disabled={ehAcertoTravado || !audioGravadoUrl || tocandoMinhaVoz}
-                        onClick={handleReproduzirMinhaVoz}
-                        style={{
-                          flex: 1,
-                          minWidth: 0,
-                          height: '42px',
-                          minHeight: '42px',
-                          maxHeight: '42px',
-                          borderRadius: '10px',
-                          border: '1px solid rgba(0, 0, 0, 0.12)',
-                          backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.85)' : 'rgba(255, 255, 255, 0.35)',
-                          color: audioGravadoUrl ? '#0f172a' : '#64748b',
-                          fontSize: '0.8rem',
-                          fontWeight: '800',
-                          cursor: audioGravadoUrl ? 'pointer' : 'not-allowed',
-                          opacity: audioGravadoUrl ? 1 : 0.5,
-                          boxSizing: 'border-box',
-                          whiteSpace: 'nowrap',
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          padding: '0 4px',
-                          boxShadow: audioGravadoUrl ? '0 1px 4px rgba(0,0,0,0.08)' : 'none',
-                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
-                        }}
-                      >
-                        {tocandoMinhaVoz ? "Reproduzindo..." : "Ouvir gravação"}
-                      </button>
+                    {/* 3 BOTÕES SUPERIORES DE APOIO (Painel Especial Dìnglab) */}
+                    <div
+                      style={{
+                        position: 'relative',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: '8px',
+                        width: '100%',
+                        padding: '6px',
+                        borderRadius: '14px',
+                        backgroundColor: 'rgba(0, 0, 0, 0.03)',
+                        boxSizing: 'border-box'
+                      }}
+                    >
+                      {/* Texto flutuante acima do painel (sem alterar nenhum posicionamento do card) */}
+                      {(() => {
+                        const falaBruta = (transcricaoAoVivo || transcricaoFixa || "").trim();
+                        const falaAluno = falaBruta ? (falaBruta.charAt(0).toUpperCase() + falaBruta.slice(1)) : "";
+                        const textoFlutuante = tocandoRepeticao
+                          ? (t?.dinglabRepitaBranco || "Repita a palavra quando estiver em branco!")
+                          : (resultadoFeedback !== 'acerto' ? falaAluno : "");
 
-                      {/* Botão 2: Praticar repetição */}
+                        if (!textoFlutuante) return null;
+
+                        return (
+                          <div
+                            style={{
+                              position: 'absolute',
+                              bottom: '100%',
+                              left: 0,
+                              right: 0,
+                              marginBottom: '8px',
+                              padding: '0 6px',
+                              textAlign: 'center',
+                              fontSize: '0.84rem',
+                              fontWeight: '700',
+                              lineHeight: '1.3',
+                              color: corDinamica,
+                              pointerEvents: 'none',
+                              zIndex: 15,
+                              wordBreak: 'break-word'
+                            }}
+                          >
+                            {textoFlutuante}
+                          </div>
+                        );
+                      })()}
+
+                      {/* Botão 1 (Esquerda): Praticar repetição (Eco) */}
                       <button
                         type="button"
                         disabled={ehAcertoTravado}
@@ -1074,10 +1306,10 @@ export default function Dinglab({
                           minHeight: '42px',
                           maxHeight: '42px',
                           borderRadius: '10px',
-                          border: '1px solid rgba(0, 0, 0, 0.12)',
-                          backgroundColor: tocandoRepeticao ? corDinamica : 'rgba(255, 255, 255, 0.85)',
-                          color: tocandoRepeticao ? '#ffffff' : '#0f172a',
-                          fontSize: '0.8rem',
+                          border: 'none',
+                          backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a',
+                          color: COR_TOM_CLARO,
+                          fontSize: '0.82rem',
                           fontWeight: '800',
                           cursor: 'pointer',
                           boxSizing: 'border-box',
@@ -1088,17 +1320,49 @@ export default function Dinglab({
                           alignItems: 'center',
                           justifyContent: 'center',
                           padding: '0 4px',
-                          boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
                           ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
                         }}
                       >
-                        {tocandoRepeticao ? "Parar repetição" : "Repetição"}
+                        {tocandoRepeticao ? (t?.dinglabParar || "Parar") : (t?.dinglabEco || "Eco")}
                       </button>
 
-                      {/* Botão 3: Pronto (Disparo da Prova de Fogo) */}
+                      {/* Botão 2 (Centro): Ouvir gravação */}
                       <button
                         type="button"
-                        onClick={handleDispararPronto}
+                        disabled={ehAcertoTravado || gravandoEspelho || !audioGravadoUrl || tocandoMinhaVoz}
+                        onClick={handleReproduzirMinhaVoz}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.75)' : 'rgba(0, 0, 0, 0.07)',
+                          color: audioGravadoUrl ? (temas[idiomaEstudo]?.bg || '#0f172a') : '#475569',
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: (audioGravadoUrl && !gravandoEspelho) ? 'pointer' : 'not-allowed',
+                          opacity: audioGravadoUrl ? 1 : 0.65,
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {tocandoMinhaVoz ? (t?.dinglabReproduzindo || "Reproduzindo") : (t?.dinglabOuvirGravacao || "Gravação")}
+                      </button>
+
+                      {/* Botão 3 (Direita): Gravar voz */}
+                      <button
+                        type="button"
+                        onClick={handleGravarVoz}
                         disabled={ehAcertoTravado || statusVoz !== 'IDLE'}
                         style={{
                           flex: 1,
@@ -1126,7 +1390,7 @@ export default function Dinglab({
                           ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
                         }}
                       >
-                        {t?.dinglab_ready || "Pronto"}
+                        {gravandoEspelho ? (t?.dinglabParar || "Parar") : (t?.dinglabGravarVoz || "Gravar voz")}
                       </button>
                     </div>
 
@@ -1135,7 +1399,7 @@ export default function Dinglab({
                       {/* Botão 1: Explicação */}
                       <button
                         type="button"
-                        disabled={ehAcertoTravado}
+                        disabled={ehAcertoTravado || gravandoEspelho}
                         onClick={() => explicarFraseIA(fraseAtual?.id, fraseAtual)}
                         style={{
                           flex: 1,
@@ -1164,7 +1428,7 @@ export default function Dinglab({
                         {t?.askAi || "Explicação"}
                       </button>
 
-                      {/* Botão 2: Ouvir / Lento */}
+                      {/* Botão 2: Ouvir */}
                       <button
                         type="button"
                         disabled={ehAcertoTravado}
@@ -1194,14 +1458,14 @@ export default function Dinglab({
                           ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
                         }}
                       >
-                        {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                        {t?.normal || "Ouvir"}
                       </button>
 
                       {/* Botão 3: Falar agora */}
                       <button
                         type="button"
                         onClick={handleFalarAgora}
-                        disabled={ehAcertoTravado || statusVoz === 'EVALUATING'}
+                        disabled={ehAcertoTravado || gravandoEspelho || statusVoz === 'EVALUATING'}
                         style={{
                           flex: 1,
                           minWidth: 0,
@@ -1227,7 +1491,7 @@ export default function Dinglab({
                           ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
                         }}
                       >
-                        {statusVoz === 'RECORDING' ? (t?.check || 'Verificar') : statusVoz === 'EVALUATING' ? '...' : (t?.speakNow || 'Falar agora')}
+                        {statusVoz === 'RECORDING' ? (t?.check || 'Verificar') : statusVoz === 'EVALUATING' ? '...' : 'Reloop'}
                       </button>
                     </div>
 
@@ -1296,7 +1560,7 @@ export default function Dinglab({
                   justifyContent: 'center'
                 }}
               >
-                Tentar depois, voltar ao Dìngloop →
+                {t?.dinglabVoltarDepois || "Tentar depois, voltar ao Dìngloop →"}
               </button>
             ) : (
               <>
@@ -1322,7 +1586,7 @@ export default function Dinglab({
                     justifyContent: 'center'
                   }}
                 >
-                  {indice <= 1 ? "← Guia" : `← ${t?.prev || "Anterior"}`}
+                  {indice <= 1 ? `← ${t?.dinglabGuia || "Guia"}` : `← ${t?.prev || "Anterior"}`}
                 </button>
 
                 <span
@@ -1334,7 +1598,7 @@ export default function Dinglab({
                     userSelect: 'none'
                   }}
                 >
-                  {ehCardZero ? "Guia" : `${indice} / ${lista.length}`}
+                  {ehCardZero ? (t?.dinglabGuia || "Guia") : `${indice} / ${lista.length}`}
                 </span>
 
                 <button
@@ -1359,7 +1623,7 @@ export default function Dinglab({
                     justifyContent: 'center'
                   }}
                 >
-                  {ehCardZero ? "Praticar →" : `${t?.next || "Próximo"} →`}
+                  {ehCardZero ? `${t?.practice || "Praticar"} →` : `${t?.next || "Próximo"} →`}
                 </button>
               </>
             )}

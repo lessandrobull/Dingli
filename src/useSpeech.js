@@ -76,26 +76,14 @@ import { obterAudioUrl, VOZES_EN, VOZES_ES, VOZES_FR, VOZES_IT, VOZES_GE, VOZES_
 
 // TABELA CENTRAL DE VELOCIDADES DE ÁUDIO (Ajuste manual por idioma)
 export const VELOCIDADES_AUDIO = {
-    pi: { normal: 0.65, lento: 0.55 }, // Mandarim
-    zh: { normal: 0.65, lento: 0.55 },
-    en: { normal: 1.00, lento: 0.65 }, // Inglês
-    es: { normal: 1.00, lento: 0.70 }, // Espanhol
-    fr: { normal: 1.00, lento: 0.70 }, // Francês
-    it: { normal: 1.00, lento: 0.70 }, // Italiano
-    ge: { normal: 1.00, lento: 0.70 }, // Alemão
-    pt: { normal: 1.00, lento: 0.70 }  // Português
-};
-
-// TABELA CENTRAL DE VOZES DO DÌNGLAB (Normal e Lento)
-export const VOZES_DINGLAB = {
-    en: ["v4", "v6"],
-    fr: ["v3", "v6"],
-    es: ["v1", "v2", "v3", "v4", "v5", "v6"],
-    it: ["v1", "v2", "v3", "v4"],
-    ge: ["v1", "v2", "v3", "v4"],
-    pt: ["v1", "v2", "v3", "v4"],
-    zh: ["v1", "v2", "v3", "v4"],
-    pi: ["v1", "v2", "v3", "v4"]
+    pi: { normal: 0.65 }, // Mandarim
+    zh: { normal: 0.65 },
+    en: { normal: 1.00 }, // Inglês
+    es: { normal: 1.00 }, // Espanhol
+    fr: { normal: 1.00 }, // Francês
+    it: { normal: 1.00 }, // Italiano
+    ge: { normal: 1.00 }, // Alemão
+    pt: { normal: 1.00 }  // Português
 };
 
 export const useSpeech = ({
@@ -241,29 +229,12 @@ export const useSpeech = ({
             try {
                 let voz = null;
 
-                const ehDinglab = (typeof alvo === 'object' && alvo !== null && alvo.dinglab) || lento;
-                const permitidas = ehDinglab ? (VOZES_DINGLAB[idiomaEstudo] || obterListaVozesIdioma(idiomaEstudo)) : null;
-
                 if (typeof alvo === 'object' && alvo !== null && alvo.voz) {
                     voz = alvo.voz;
                     vozAtualRef.current = voz;
                     setVozAtiva(voz);
                 } else if (typeof alvo === 'object' && alvo !== null && alvo.sortearDiferente) {
                     voz = obterVozAleatoriaDiferente(idiomaEstudo);
-                } else if (permitidas) {
-                    if (lento && vozAtualRef.current && permitidas.includes(vozAtualRef.current)) {
-                        voz = vozAtualRef.current;
-                    } else {
-                        const outras = (permitidas.length > 1 && vozAtualRef.current && permitidas.includes(vozAtualRef.current))
-                            ? permitidas.filter(v => v !== vozAtualRef.current)
-                            : permitidas;
-                        const sorteada = outras[Math.floor(Math.random() * outras.length)] || permitidas[0];
-                        voz = sorteada;
-                        vozAtualRef.current = sorteada;
-                        setVozAtiva(sorteada);
-                    }
-                } else if (lento && vozAtualRef.current) {
-                    voz = vozAtualRef.current;
                 } else {
                     voz = obterProximaVoz(idiomaEstudo);
                 }
@@ -273,8 +244,8 @@ export const useSpeech = ({
                 const audio = new Audio(url);
                 audioRef.current = audio;
 
-                const cfgVel = VELOCIDADES_AUDIO[idiomaEstudo] || { normal: 1.0, lento: 0.75 };
-                audio.playbackRate = lento ? cfgVel.lento : cfgVel.normal;
+                const cfgVel = VELOCIDADES_AUDIO[idiomaEstudo] || { normal: 1.0 };
+                audio.playbackRate = cfgVel.normal;
 
                 audio.onended = () => {
                     audioRef.current = null;
