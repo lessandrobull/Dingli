@@ -2613,18 +2613,23 @@ export default function Dinglab({
   const [feedbackMensagem, setFeedbackMensagem] = useState("");
   const [transcricaoFixa, setTranscricaoFixa] = useState("");
 
-  // ESCALA 5: Estados da Prova de Fogo
+  // Estados da Prova de Fogo
   const [modoProva, setModoProva] = useState(false);
   const modoProvaRef = useRef(false);
   modoProvaRef.current = modoProva;
-  const [toastVisible, setToastVisible] = useState(false);
 
   // Gravação da própria voz para o Modo Espelho Real
+  const [gravandoEspelho, setGravandoEspelho] = useState(false);
   const [audioGravadoUrl, setAudioGravadoUrl] = useState(null);
   const [tocandoMinhaVoz, setTocandoMinhaVoz] = useState(false);
-  const mediaRecorderRef = useRef(null);
-  const audioChunksRef = useRef([]);
   const audioMinhaVozRef = useRef(null);
+  const gravandoEspelhoRef = useRef(false);
+  const mediaRecorderEspelhoRef = useRef(null);
+  const streamEspelhoRef = useRef(null);
+  const chunksEspelhoRef = useRef([]);
+  const recognitionEspelhoRef = useRef(null);
+  const timerSilencioEspelhoRef = useRef(null);
+  const falaEspelhoRef = useRef("");
 
   // Praticar repetição palavra por palavra
   const [tocandoRepeticao, setTocandoRepeticao] = useState(false);
@@ -2805,12 +2810,21 @@ export default function Dinglab({
             if (setStatusVoz) setStatusVoz('IDLE');
 
           } else {
-            // Reprovação na Prova de Fogo: ZERO punição (retorna ao neutro após 3s)
+            // Reprovação na Prova de Fogo: ZERO punição (toca correção e retorna ao neutro após 3s)
             setResultadoFeedback('erro');
             setFeedbackMensagem("");
             setModoProva(false);
             if (setStatusVoz) setStatusVoz('IDLE');
             if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
+
+            if (falar) {
+              falar({
+                id: fraseAtual.id,
+                texto: (idiomaEstudo === 'pi' && fraseAtual.zh) ? fraseAtual.zh : textoEstudo,
+                dinglab: true,
+                sortearDiferente: true
+              }, false);
+            }
 
             timerFeedbackRef.current = setTimeout(() => {
               setResultadoFeedback(null);
@@ -2834,14 +2848,6 @@ export default function Dinglab({
       setTranscricaoFixa(transcricaoAoVivo);
     }
   }, [transcricaoAoVivo]);
-
-  useEffect(() => {
-    if (statusVoz !== 'RECORDING') {
-      if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
-        try { mediaRecorderRef.current.stop(); } catch (e) { }
-      }
-    }
-  }, [statusVoz]);
 
   const pararTodaRepeticao = useCallback(() => {
     repeticaoAtivaRef.current = false;
@@ -2873,16 +2879,55 @@ export default function Dinglab({
     });
   }, []);
 
+  const finalizarGravacaoEspelho = useCallback(() => {
+    gravandoEspelhoRef.current = false;
+    setGravandoEspelho(false);
+
+    if (timerSilencioEspelhoRef.current) {
+      clearTimeout(timerSilencioEspelhoRef.current);
+      timerSilencioEspelhoRef.current = null;
+    }
+
+    if (recognitionEspelhoRef.current) {
+      try { recognitionEspelhoRef.current.abort(); } catch (e) { }
+      recognitionEspelhoRef.current = null;
+    }
+
+    if (mediaRecorderEspelhoRef.current && mediaRecorderEspelhoRef.current.state !== 'inactive') {
+      try { mediaRecorderEspelhoRef.current.stop(); } catch (e) { }
+    } else if (streamEspelhoRef.current) {
+      streamEspelhoRef.current.getTracks().forEach(track => track.stop());
+      streamEspelhoRef.current = null;
+    }
+
+    const falaFinal = (falaEspelhoRef.current || "").trim();
+    if (falaFinal) {
+      setTranscricaoFixa(falaFinal);
+    }
+    if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
+  }, [setTranscricaoAoVivo]);
+
   useEffect(() => {
+    return () => {
+      finalizarGravacaoEspelho();
+    };
+  }, [finalizarGravacaoEspelho]);
+
+  useEffect(() => {
+    finalizarGravacaoEspelho();
     setAudioLento(false);
     setModoProva(false);
-    setToastVisible(false);
     setResultadoFeedback(null);
     setFeedbackMensagem("");
     setTranscricaoFixa("");
     if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
 
-    setAudioGravadoUrl(null);
+    setAudioGravadoUrl(prev => {
+      if (prev) {
+        try { URL.revokeObjectURL(prev); } catch (e) { }
+      }
+      return null;
+    });
     setTocandoMinhaVoz(false);
     if (audioMinhaVozRef.current) {
       audioMinhaVozRef.current.pause();
@@ -2890,7 +2935,7 @@ export default function Dinglab({
     }
 
     pararTodaRepeticao();
-  }, [indice, fraseAtual?.id, setTranscricaoAoVivo, pararTodaRepeticao]);
+  }, [indice, fraseAtual?.id, setTranscricaoAoVivo, pararTodaRepeticao, finalizarGravacaoEspelho]);
 
   const ns = navStyle(idiomaEstudo);
   const corDinamica = (getCorFonteDinamica && idiomaEstudo)
@@ -2938,24 +2983,27 @@ export default function Dinglab({
 
   // Reproduzir gravação do aluno
   const handleReproduzirMinhaVoz = useCallback(() => {
-    if (!audioGravadoUrl || tocandoMinhaVoz) return;
+    if (!audioGravadoUrl || tocandoMinhaVoz || gravandoEspelho) return;
     if (audioMinhaVozRef.current) {
       audioMinhaVozRef.current.pause();
+      audioMinhaVozRef.current.src = "";
       audioMinhaVozRef.current = null;
     }
     const audio = new Audio(audioGravadoUrl);
     audioMinhaVozRef.current = audio;
     setTocandoMinhaVoz(true);
-    audio.onended = () => {
+
+    const encerrarReproducao = () => {
       setTocandoMinhaVoz(false);
-      audioMinhaVozRef.current = null;
+      if (audioMinhaVozRef.current === audio) {
+        audioMinhaVozRef.current = null;
+      }
     };
-    audio.onerror = () => {
-      setTocandoMinhaVoz(false);
-      audioMinhaVozRef.current = null;
-    };
-    audio.play().catch(() => setTocandoMinhaVoz(false));
-  }, [audioGravadoUrl, tocandoMinhaVoz]);
+
+    audio.onended = encerrarReproducao;
+    audio.onerror = encerrarReproducao;
+    audio.play().catch(() => encerrarReproducao());
+  }, [audioGravadoUrl, tocandoMinhaVoz, gravandoEspelho]);
 
   // Metrônomo contínuo
   const handlePraticarRepeticao = useCallback(async () => {
@@ -2996,11 +3044,15 @@ export default function Dinglab({
 
       setPalavraAtivaRepeticao(i);
       setFaseRepeticao('ouvir');
-      await esperarMs(1000);
+      await esperarMs(667);
+      if (!repeticaoAtivaRef.current) break;
+
+      setFaseRepeticao(null);
+      await esperarMs(333);
       if (!repeticaoAtivaRef.current) break;
 
       setFaseRepeticao('repetir');
-      await esperarMs(1000);
+      await esperarMs(667);
       if (!repeticaoAtivaRef.current) break;
 
       setPalavraAtivaRepeticao(null);
@@ -3010,22 +3062,180 @@ export default function Dinglab({
     pararTodaRepeticao();
   }, [tocandoRepeticao, textoEstudo, idiomaEstudo, pararTodaRepeticao, esperarMs]);
 
-  // ESCALA 5: Disparo oficial da Prova de Fogo ("Pronto")
-  const handleDispararPronto = useCallback(() => {
-    if (!fraseAtual || statusVoz !== 'IDLE') return;
-    setModoProva(true);
+  // Gravar voz (Modo Espelho — gravação simultânea com transcrição e encerramento automático)
+  const handleGravarVoz = useCallback(async () => {
+    if (!fraseAtual) return;
+
+    if (gravandoEspelhoRef.current) {
+      finalizarGravacaoEspelho();
+      return;
+    }
+
+    if (statusVoz !== 'IDLE') return;
+    pararTodaRepeticao();
+
+    if (audioMinhaVozRef.current) {
+      audioMinhaVozRef.current.pause();
+      audioMinhaVozRef.current = null;
+      setTocandoMinhaVoz(false);
+    }
+
+    setAudioGravadoUrl(prev => {
+      if (prev) {
+        try { URL.revokeObjectURL(prev); } catch (e) { }
+      }
+      return null;
+    });
     setResultadoFeedback(null);
     setFeedbackMensagem("");
     setTranscricaoFixa("");
+    falaEspelhoRef.current = "";
     if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
 
-    const alvoVoz = {
-      ...fraseAtual,
-      [idiomaEstudo]: textoEstudo,
-      texto: textoEstudo
-    };
-    iniciarReconhecimentoVoz(alvoVoz);
-  }, [statusVoz, iniciarReconhecimentoVoz, fraseAtual, idiomaEstudo, textoEstudo, setTranscricaoAoVivo]);
+    try {
+      const temMediaDevices = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && typeof MediaRecorder !== 'undefined');
+
+      if (temMediaDevices) {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        streamEspelhoRef.current = stream;
+
+        const tiposSuportados = [
+          'audio/webm;codecs=opus',
+          'audio/webm',
+          'audio/mp4',
+          'audio/ogg;codecs=opus'
+        ];
+        const mimeTypeEscolhido = MediaRecorder.isTypeSupported
+          ? tiposSuportados.find(tipo => MediaRecorder.isTypeSupported(tipo))
+          : '';
+
+        const recorder = mimeTypeEscolhido
+          ? new MediaRecorder(stream, { mimeType: mimeTypeEscolhido })
+          : new MediaRecorder(stream);
+
+        chunksEspelhoRef.current = [];
+        mediaRecorderEspelhoRef.current = recorder;
+
+        recorder.ondataavailable = (e) => {
+          if (e.data && e.data.size > 0) {
+            chunksEspelhoRef.current.push(e.data);
+          }
+        };
+
+        recorder.onstop = () => {
+          const tipoFinal = recorder.mimeType || mimeTypeEscolhido || 'audio/webm';
+          if (chunksEspelhoRef.current.length > 0) {
+            const blob = new Blob(chunksEspelhoRef.current, { type: tipoFinal });
+            const url = URL.createObjectURL(blob);
+            setAudioGravadoUrl(url);
+          }
+          chunksEspelhoRef.current = [];
+          mediaRecorderEspelhoRef.current = null;
+          if (streamEspelhoRef.current) {
+            streamEspelhoRef.current.getTracks().forEach(track => track.stop());
+            streamEspelhoRef.current = null;
+          }
+        };
+
+        recorder.start();
+      }
+
+      gravandoEspelhoRef.current = true;
+      setGravandoEspelho(true);
+
+      // Timeout máximo de segurança (8s) caso o Android segure o microfone exclusivo no MediaRecorder
+      timerSilencioEspelhoRef.current = setTimeout(() => {
+        if (gravandoEspelhoRef.current) finalizarGravacaoEspelho();
+      }, 8000);
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognitionEspelhoRef.current = recognition;
+        recognition.lang = temas[idiomaEstudo]?.langCode || 'en-US';
+        recognition.interimResults = true;
+        recognition.continuous = false;
+
+        const normalizarTextoEspelho = (txt) => (txt || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/ß/g, "ss")
+          .toLowerCase()
+          .replace(/[.,!?;:¿¡"'{}()[\]\-—…，。！？；：、]/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+
+        const alvoBruto = (idiomaEstudo === 'pi' && fraseAtual?.zh) ? fraseAtual.zh : textoEstudo;
+        const alvoNorm = normalizarTextoEspelho(alvoBruto);
+        const palavrasAlvo = idiomaEstudo === 'pi'
+          ? alvoNorm.replace(/\s+/g, "").split("").filter(Boolean)
+          : alvoNorm.split(" ").filter(Boolean);
+
+        recognition.onresult = (event) => {
+          if (!gravandoEspelhoRef.current) return;
+
+          let acumulado = "";
+          for (let i = 0; i < event.results.length; i++) {
+            acumulado += (event.results[i][0].transcript || "") + " ";
+          }
+
+          const falaAtual = acumulado.trim();
+          falaEspelhoRef.current = falaAtual;
+          setTranscricaoFixa(falaAtual);
+          if (setTranscricaoAoVivo) setTranscricaoAoVivo(falaAtual);
+
+          const falaNorm = normalizarTextoEspelho(falaAtual);
+          const palavrasFaladas = idiomaEstudo === 'pi'
+            ? falaNorm.replace(/\s+/g, "").split("").filter(Boolean)
+            : falaNorm.split(" ").filter(Boolean);
+
+          const acertos = palavrasAlvo.filter(p => falaNorm.includes(p)).length;
+          const percentual = acertos / Math.max(1, palavrasAlvo.length);
+          const limiar = palavrasAlvo.length <= 2 ? 0.5 : 0.75;
+
+          const atingiuAcerto = percentual >= limiar || (alvoNorm && falaNorm.includes(alvoNorm));
+          const atingiuTamanho = palavrasAlvo.length > 0 && palavrasFaladas.length >= palavrasAlvo.length;
+
+          if (timerSilencioEspelhoRef.current) clearTimeout(timerSilencioEspelhoRef.current);
+
+          if (atingiuAcerto || atingiuTamanho) {
+            timerSilencioEspelhoRef.current = setTimeout(() => {
+              if (gravandoEspelhoRef.current) finalizarGravacaoEspelho();
+            }, 650);
+          } else {
+            timerSilencioEspelhoRef.current = setTimeout(() => {
+              if (gravandoEspelhoRef.current && falaEspelhoRef.current) finalizarGravacaoEspelho();
+            }, 1300);
+          }
+        };
+
+        recognition.onerror = () => {
+          // No Android, se o hardware negar concorrência com MediaRecorder, mantém gravação ativa até o usuário tocar em "Parar" ou bater o timeout
+          if (gravandoEspelhoRef.current && falaEspelhoRef.current) {
+            finalizarGravacaoEspelho();
+          }
+        };
+
+        recognition.onend = () => {
+          if (!gravandoEspelhoRef.current) return;
+          if (falaEspelhoRef.current) {
+            finalizarGravacaoEspelho();
+          } else {
+            // Reinicia escuta no Android caso tenha encerrado por silêncio inicial
+            try { recognition.start(); } catch (e) { }
+          }
+        };
+
+        try { recognition.start(); } catch (e) { }
+      }
+    } catch (err) {
+      console.warn('[Dìnglab] Erro ao acessar microfone para gravação:', err);
+      finalizarGravacaoEspelho();
+    }
+  }, [
+    fraseAtual, statusVoz, finalizarGravacaoEspelho, pararTodaRepeticao,
+    setTranscricaoAoVivo, temas, idiomaEstudo, textoEstudo
+  ]);
 
   // Modal de Reporte
   const resetarModalReporte = useCallback(() => {
@@ -3528,7 +3738,7 @@ export default function Dinglab({
                         left: '50%',
                         top: '100%',
                         transform: 'translateX(-50%)',
-                        marginTop: '10px',
+                        marginTop: '22px',
                         backgroundColor: COR_TOM_CLARO,
                         color: corDinamica,
                         fontSize: 'clamp(1.2rem, 7vw, 1.53rem)',
@@ -3548,204 +3758,271 @@ export default function Dinglab({
               </div>
 
               {/* BARRA DE 6 BOTÕES */}
-              <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {(() => {
+                const ehAcertoTravado = resultadoFeedback === 'acerto';
+                const estiloDesativadoAcerto = {
+                  border: '1px solid rgba(0, 0, 0, 0.12)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.35)',
+                  color: '#64748b',
+                  cursor: 'not-allowed',
+                  opacity: 0.5,
+                  boxShadow: 'none'
+                };
 
-                {/* 3 BOTÕES SUPERIORES DE APOIO */}
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
-                  {/* Botão 1: Ouvir gravação */}
-                  <button
-                    type="button"
-                    disabled={!audioGravadoUrl || tocandoMinhaVoz}
-                    onClick={handleReproduzirMinhaVoz}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: '1px solid rgba(0, 0, 0, 0.12)',
-                      backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.85)' : 'rgba(255, 255, 255, 0.35)',
-                      color: audioGravadoUrl ? '#0f172a' : '#64748b',
-                      fontSize: '0.8rem',
-                      fontWeight: '800',
-                      cursor: audioGravadoUrl ? 'pointer' : 'not-allowed',
-                      opacity: audioGravadoUrl ? 1 : 0.5,
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px',
-                      boxShadow: audioGravadoUrl ? '0 1px 4px rgba(0,0,0,0.08)' : 'none'
-                    }}
-                  >
-                    {tocandoMinhaVoz ? "Reproduzindo..." : "Ouvir gravação"}
-                  </button>
+                return (
+                  <div id="area-botoes-card" style={{ ...styles.bottomCardAreaFixed, display: 'flex', flexDirection: 'column', gap: '8px' }}>
 
-                  {/* Botão 2: Praticar repetição */}
-                  <button
-                    type="button"
-                    onClick={handlePraticarRepeticao}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: '1px solid rgba(0, 0, 0, 0.12)',
-                      backgroundColor: tocandoRepeticao ? corDinamica : 'rgba(255, 255, 255, 0.85)',
-                      color: tocandoRepeticao ? '#ffffff' : '#0f172a',
-                      fontSize: '0.8rem',
-                      fontWeight: '800',
-                      cursor: 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px',
-                      boxShadow: '0 1px 4px rgba(0,0,0,0.08)'
-                    }}
-                  >
-                    {tocandoRepeticao ? "Parar repetição" : "Repetição"}
-                  </button>
+                    {/* 3 BOTÕES SUPERIORES DE APOIO (Painel Especial Dìnglab) */}
+                    <div
+                      style={{
+                        position: 'relative',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: '8px',
+                        width: '100%',
+                        padding: '6px',
+                        borderRadius: '14px',
+                        backgroundColor: 'rgba(0, 0, 0, 0.03)',
+                        boxSizing: 'border-box'
+                      }}
+                    >
+                      {/* Texto flutuante acima do painel (sem alterar nenhum posicionamento do card) */}
+                      {(() => {
+                        const falaAluno = (transcricaoAoVivo || transcricaoFixa || "").trim();
+                        const textoFlutuante = tocandoRepeticao
+                          ? (t?.dinglabRepitaBranco || "Repita a palavra quando estiver em branco!")
+                          : (resultadoFeedback !== 'acerto' ? falaAluno : "");
 
-                  {/* Botão 3: Pronto (Disparo da Prova de Fogo) */}
-                  <button
-                    type="button"
-                    onClick={handleDispararPronto}
-                    disabled={statusVoz !== 'IDLE'}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: 'none',
-                      backgroundColor: temas[idiomaEstudo]?.bg || '#4d6395',
-                      color: '#ffffff',
-                      fontSize: '0.82rem',
-                      fontWeight: '900',
-                      cursor: statusVoz !== 'IDLE' ? 'not-allowed' : 'pointer',
-                      opacity: statusVoz !== 'IDLE' ? 0.6 : 1,
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px',
-                      boxShadow: '0 2px 6px rgba(0,0,0,0.14)'
-                    }}
-                  >
-                    {t?.dinglab_ready || "Pronto"}
-                  </button>
-                </div>
+                        if (!textoFlutuante) return null;
 
-                {/* 3 BOTÕES INFERIORES PRINCIPAIS */}
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
-                  {/* Botão 1: Explicação */}
-                  <button
-                    type="button"
-                    onClick={() => explicarFraseIA(fraseAtual?.id, fraseAtual)}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: 'none',
-                      backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a',
-                      color: COR_TOM_CLARO,
-                      fontSize: '0.82rem',
-                      fontWeight: '800',
-                      cursor: 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px'
-                    }}
-                  >
-                    {t?.askAi || "Explicação"}
-                  </button>
+                        return (
+                          <div
+                            style={{
+                              position: 'absolute',
+                              bottom: '100%',
+                              left: 0,
+                              right: 0,
+                              marginBottom: '8px',
+                              padding: '0 6px',
+                              textAlign: 'center',
+                              fontSize: '0.84rem',
+                              fontWeight: '700',
+                              lineHeight: '1.3',
+                              color: corDinamica,
+                              pointerEvents: 'none',
+                              zIndex: 15,
+                              wordBreak: 'break-word'
+                            }}
+                          >
+                            {textoFlutuante}
+                          </div>
+                        );
+                      })()}
 
-                  {/* Botão 2: Ouvir / Lento */}
-                  <button
-                    type="button"
-                    onMouseDown={(e) => e.preventDefault()}
-                    onClick={handleOuvirClick}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      backgroundColor: 'rgba(255, 255, 255, 0.75)',
-                      color: ns.bg,
-                      border: `1px solid ${temas[idiomaEstudo]?.bg}`,
-                      fontSize: '0.82rem',
-                      fontWeight: '800',
-                      cursor: 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px'
-                    }}
-                  >
-                    {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
-                  </button>
+                      {/* Botão 1 (Esquerda): Praticar repetição (Eco) */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado}
+                        onClick={handlePraticarRepeticao}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a',
+                          color: COR_TOM_CLARO,
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: 'pointer',
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {tocandoRepeticao ? (t?.dinglabParar || "Parar") : (t?.dinglabEco || "Eco")}
+                      </button>
 
-                  {/* Botão 3: Falar agora */}
-                  <button
-                    type="button"
-                    onClick={handleFalarAgora}
-                    disabled={statusVoz === 'EVALUATING'}
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      height: '42px',
-                      minHeight: '42px',
-                      maxHeight: '42px',
-                      borderRadius: '10px',
-                      border: 'none',
-                      backgroundColor: statusVoz === 'RECORDING' ? '#ef4444' : ns.bg,
-                      color: ns.txt,
-                      fontSize: '0.82rem',
-                      fontWeight: '800',
-                      cursor: statusVoz === 'EVALUATING' ? 'not-allowed' : 'pointer',
-                      boxSizing: 'border-box',
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0 4px'
-                    }}
-                  >
-                    {statusVoz === 'RECORDING' ? (t?.check || 'Verificar') : statusVoz === 'EVALUATING' ? '...' : (t?.speakNow || 'Falar agora')}
-                  </button>
-                </div>
+                      {/* Botão 2 (Centro): Ouvir gravação */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado || gravandoEspelho || !audioGravadoUrl || tocandoMinhaVoz}
+                        onClick={handleReproduzirMinhaVoz}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: `1px solid '#64748b'`,
+                          backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.75)' : 'transparent',
+                          color: audioGravadoUrl ? (temas[idiomaEstudo]?.bg || '#0f172a') : '#64748b',
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: (audioGravadoUrl && !gravandoEspelho) ? 'pointer' : 'not-allowed',
+                          opacity: audioGravadoUrl ? 1 : 0.5,
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {tocandoMinhaVoz ? (t?.dinglabReproduzindo || "Reproduzindo") : (t?.dinglabOuvirGravacao || "Gravação")}
+                      </button>
 
-              </div>
+                      {/* Botão 3 (Direita): Gravar voz */}
+                      <button
+                        type="button"
+                        onClick={handleGravarVoz}
+                        disabled={ehAcertoTravado || statusVoz !== 'IDLE'}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: temas[idiomaEstudo]?.bg || '#4d6395',
+                          color: '#ffffff',
+                          fontSize: '0.82rem',
+                          fontWeight: '900',
+                          cursor: statusVoz !== 'IDLE' ? 'not-allowed' : 'pointer',
+                          opacity: statusVoz !== 'IDLE' ? 0.6 : 1,
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          boxShadow: '0 2px 6px rgba(0,0,0,0.14)',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {gravandoEspelho ? (t?.dinglabParar || "Parar") : (t?.dinglabGravarVoz || "Gravar voz")}
+                      </button>
+                    </div>
+
+                    {/* 3 BOTÕES INFERIORES PRINCIPAIS */}
+                    <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', width: '100%' }}>
+                      {/* Botão 1: Explicação */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado || gravandoEspelho}
+                        onClick={() => explicarFraseIA(fraseAtual?.id, fraseAtual)}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: temas[idiomaEstudo]?.bg || '#0f172a',
+                          color: COR_TOM_CLARO,
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: 'pointer',
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {t?.askAi || "Explicação"}
+                      </button>
+
+                      {/* Botão 2: Ouvir / Lento */}
+                      <button
+                        type="button"
+                        disabled={ehAcertoTravado}
+                        onMouseDown={(e) => e.preventDefault()}
+                        onClick={handleOuvirClick}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          backgroundColor: 'rgba(255, 255, 255, 0.75)',
+                          color: ns.bg,
+                          border: `1px solid ${temas[idiomaEstudo]?.bg}`,
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: 'pointer',
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {audioLento ? (t?.slow || "Lento") : (t?.normal || "Ouvir")}
+                      </button>
+
+                      {/* Botão 3: Falar agora */}
+                      <button
+                        type="button"
+                        onClick={handleFalarAgora}
+                        disabled={ehAcertoTravado || gravandoEspelho || statusVoz === 'EVALUATING'}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          height: '42px',
+                          minHeight: '42px',
+                          maxHeight: '42px',
+                          borderRadius: '10px',
+                          border: 'none',
+                          backgroundColor: ns.bg,
+                          color: ns.txt,
+                          fontSize: '0.82rem',
+                          fontWeight: '800',
+                          cursor: statusVoz === 'EVALUATING' ? 'not-allowed' : 'pointer',
+                          opacity: statusVoz === 'EVALUATING' ? 0.5 : 1,
+                          boxSizing: 'border-box',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '0 4px',
+                          ...(ehAcertoTravado ? estiloDesativadoAcerto : {})
+                        }}
+                      >
+                        {statusVoz === 'RECORDING' ? (t?.check || 'Verificar') : statusVoz === 'EVALUATING' ? '...' : (t?.speakNow || 'Falar agora')}
+                      </button>
+                    </div>
+
+                  </div>
+                );
+              })()}
             </>
           )}
 
@@ -6478,13 +6755,13 @@ export const temas = {
 };
 
 export const interfaceTraducoes = {
-  pt: { dinglab: "Dìnglab", fill: "Escreva", order: "Complete", pronounce: "Diga", repeat: "Repita", translate: "Traduza", wantStudy: "Eu quero estudar", back: "Voltar", home: "Início", levels: "Níveis", topics: "Tópicos", quit: "Sair", show: "Mostrar Tradução", hide: "Esconder Tradução", prev: "Anterior", next: "Próximo", normal: "Ouvir", slow: "Lento", askAi: "Explicação", practice: "Praticar", check: "Verificar", review: "Rever", speakNow: "Falar agora", listening: "Ouvindo...", listenRepeat: "Ouça e Repita", analyzing: "Analisando...", phraseCards: "Dìngloop", profile: "Perfil", resetProgress: "Resetar Progresso", confirmReset: "Deseja resetar todo o seu progresso neste idioma? Esta ação não pode ser desfeita.", game: "Jogo", immersion: "Dìnglessons (em breve)", promptBase: 'Explique resumidamente a frase: "(sentence)" no nível (level), da forma mais simples possível, com traduções dos elementos separados.', touchToListen: 'Toque na palavra para ouvir a pronúncia', touchToListenTooltip: 'Toque para ouvir a pronúncia isolada', speakAgain: "De novo", continueCycle: "Continuar", reviewLaterPrompt: "Relaxa, pronúncia exige costume. Essa frase foi guardada no seu Dìnglab para você treinar com calma quantas vezes quiser. Vamos continuar com as outras por aqui!", reportModalTitle: 'Reportar problema', reportModalHeading: 'Encontrou problemas? Mande pra gente:', reportAudio: 'Áudio', reportSentence: 'Frase do exercício', reportTranslation: 'Tradução', reportTypingDiff: 'Dificuldade para digitar', reportVoiceDiff: 'Dificuldade para gravação da fala', reportOtherPlaceholder: 'Outro: descreva aqui...', send: 'Enviar', sending: 'Enviando...', skipSentence: "Pular", dinglab_ready: "Pronto", dinglabBoaPronuncia: "Boa pronúncia!", dinglabFraseVoltouProxima: "A frase voltou ao Dìngloop! Próxima →" },
-  en: { dinglab: "Dìnglab", fill: "Write", order: "Complete", pronounce: "Speak", repeat: "Repeat", translate: "Translate", wantStudy: "I want to study", back: "Back", home: "Home", levels: "Levels", topics: "Topics", quit: "Quit", show: "Show Translation", hide: "Hide Translation", prev: "Previous", next: "Next", normal: "Listen", slow: "Slow", askAi: "Explanation", practice: "Practice", check: "Check", review: "Review", speakNow: "Speak now", cantSpeak: "Can't talk now", listening: "Listening...", listenRepeat: "Listen and Repeat", analyzing: "Analyzing...", phraseCards: "Dìngloop", profile: "Profile", resetProgress: "Reset Progress", confirmReset: "Do you want to reset all your progress in this language? This action cannot be undone.", game: "Game", immersion: "Dìnglessons (soon)", promptBase: 'Briefly explain the sentence: "(sentence)" at level (level), as simply as possible, with translations of the separated elements.', touchToListen: 'Tap the word to hear the pronunciation', touchToListenTooltip: 'Tap to hear isolated pronunciation', speakAgain: "Try again", continueCycle: "Continue", reviewLaterPrompt: "Relax, pronunciation takes practice. This sentence was saved to your Dìnglab so you can practice at your own pace. Let's continue with the rest for now!", reportModalTitle: 'Report issue', reportModalHeading: 'Found an issue? Send it to us:', reportAudio: 'Audio', reportSentence: 'Exercise sentence', reportTranslation: 'Translation', reportTypingDiff: 'Difficulty typing', reportVoiceDiff: 'Difficulty recording voice', reportOtherPlaceholder: 'Other: describe here...', send: 'Send', sending: 'Sending...', skipSentence: "Skip", dinglab_ready: "Ready", dinglabBoaPronuncia: "Great pronunciation!", dinglabFraseVoltouProxima: "Sentence returned to Dìngloop! Next →" },
-  es: { dinglab: "Dìnglab", fill: "Escribe", order: "Completa", pronounce: "Di", repeat: "Repite", translate: "Traduce", wantStudy: "Quiero estudiar", back: "Volver", home: "Inicio", levels: "Niveles", topics: "Temas", quit: "Salir", show: "Mostrar traducción", hide: "Ocultar traducción", prev: "Anterior", next: "Siguiente", normal: "Escuchar", slow: "Lento", askAi: "Explicación", practice: "Practicar", check: "Verificar", review: "Repasar", speakNow: "Habla agora", listening: "Escuchando...", listenRepeat: "Escucha y repite", analyzing: "Analizando...", phraseCards: "Dìngloop", profile: "Perfil", resetProgress: "Restablecer Progreso", confirmReset: "¿Deseas restablecer todo tu progreso en este idioma? Esta acción no se puede deshacer.", game: "Juego", immersion: "Dìnglessons (pronto)", promptBase: 'Explique brevemente la frase: "(sentence)" en el nivel (level), de la manera más sencilla posible, con traducciones de los elementos separados.', touchToListen: 'Toca la palabra para escuchar la pronunciación', touchToListenTooltip: 'Toca para escuchar la pronunciación aislada', speakAgain: "Repetir", continueCycle: "Continuar", reviewLaterPrompt: "Tranquilo, la pronunciación requiere práctica. Esta frase se guardó en tu Dìnglab para que entrenes con calma las veces que quieras. ¡Sigamos con las demás por aquí!", reportModalTitle: 'Reportar problema', reportModalHeading: '¿Encontraste problemas? Envíanoslo:', reportAudio: 'Audio', reportSentence: 'Frase del ejercicio', reportTranslation: 'Traducción', reportTypingDiff: 'Dificultad para escribir', reportVoiceDiff: 'Dificultad para grabar la voz', reportOtherPlaceholder: 'Otro: describe aquí...', send: 'Enviar', sending: 'Enviando...', skipSentence: "Saltar", dinglab_ready: "Listo", dinglabBoaPronuncia: "¡Buena pronunciación!", dinglabFraseVoltouProxima: "¡La frase volvió a Dìngloop! Siguiente →" },
-  fr: { dinglab: "Dìnglab", fill: "Écris", order: "Complète", pronounce: "Dis", repeat: "Répète", translate: "Traduis", wantStudy: "Je veux étudier", back: "Retour", home: "Accueil", levels: "Niveaux", topics: "Sujets", quit: "Quitter", show: "Afficher la traduction", hide: "Masquer la traduction", prev: "Précédent", next: "Suivant", normal: "Écouter", slow: "Lent", askAi: "Explication", practice: "Pratiquer", check: "Vérifier", review: "Réviser", speakNow: "Parler", listening: "Écoute...", listenRepeat: "Écoutez et répétez", analyzing: "Analyse...", phraseCards: "Dìngloop", profile: "Profil", resetProgress: "Réinitialiser le Progrès", confirmReset: "Voulez-vous réinitialiser tous vos progrès dans cette langue ? Cette action est irréversible.", game: "Jeu", immersion: "Dìnglessons (bientôt)", promptBase: 'Expliquez brièvement la frase : "(sentence)" au niveau (level), aussi simplement que possible, avec des traductions des éléments séparés.', touchToListen: 'Touchez le mot pour entendre la prononciation', touchToListenTooltip: 'Touchez pour entendre la prononciation isolée', speakAgain: "Répéter", continueCycle: "Continuer", reviewLaterPrompt: "Détends-toi, la prononciation demande de l'entraînement. Cette phrase a été enregistrée dans ton Dìnglab pour t'entraîner tranquillement autant de fois que tu veux. Continuons avec les autres !", reportModalTitle: 'Signaler un problème', reportModalHeading: 'Un problème ? Envoyez-le nous :', reportAudio: 'Audio', reportSentence: "Phrase de l'exercice", reportTranslation: 'Traduction', reportTypingDiff: 'Difficulté à taper', reportVoiceDiff: "Difficulté d'enregistrement vocal", reportOtherPlaceholder: 'Autre : décrivez ici...', send: 'Envoyer', sending: 'Envoi en cours...', skipSentence: "Passer", dinglab_ready: "Prêt", dinglabBoaPronuncia: "Bonne prononciation !", dinglabFraseVoltouProxima: "La phrase est dans Dìngloop ! Suivante →" },
-  it: { dinglab: "Dìnglab", fill: "Scrivi", order: "Completa", pronounce: "Di'", repeat: "Ripeti", translate: "Traduci", wantStudy: "Voglio studiare", back: "Indietro", home: "Home", levels: "Livelli", topics: "Argomenti", quit: "Esci", show: "Mostra traduzione", hide: "Nascondi traduzione", prev: "Precedente", next: "Successivo", normal: "Ascolta", slow: "Lento", askAi: "Spiegazione", practice: "Pratica", check: "Verifica", review: "Ripassa", speakNow: "Parla ora", listening: "Ascolto...", listenRepeat: "Ascolta e repeti", analyzing: "Analisi...", phraseCards: "Dìngloop", profile: "Profilo", resetProgress: "Ripristina Progressi", confirmReset: "Vuoi resettare tutti i tuoi progressi in questa lingua? Questa azione non può essere annullata.", game: "Gioco", immersion: "Dìnglessons (presto)", promptBase: 'Spiega brevemente la frase: "(sentence)" al livello (level), nel modo mais semplice possibile, con le traduzioni dei singoli elementi.', touchToListen: 'Tocca la parola per ascoltare la pronuncia', touchToListenTooltip: 'Tocca per ascoltare la pronuncia isolata', speakAgain: "Ripeti", continueCycle: "Continua", reviewLaterPrompt: "Rilassati, la pronuncia richiede abitudine. Questa frase è stata salvata nel tuo Dìnglab per fare pratica con calma quante volte vuoi. Continuiamo con le altre qui!", reportModalTitle: 'Segnala un problema', reportModalHeading: 'Hai trovato problemi? Inviaceli:', reportAudio: 'Audio', reportSentence: "Frase dell'esercizio", reportTranslation: 'Traduzione', reportTypingDiff: 'Difficoltà a digitare', reportVoiceDiff: 'Difficoltà a registrare la voce', reportOtherPlaceholder: 'Altro: descrivi qui...', send: 'Invia', sending: 'Invio in corso...', skipSentence: "Salta", dinglab_ready: "Pronto", dinglabBoaPronuncia: "Buona pronuncia!", dinglabFraseVoltouProxima: "La frase è tornata in Dìngloop! Prossima →" },
-  ge: { dinglab: "Dìnglab", fill: "Schreib", order: "Vervollständige", pronounce: "Sag", repeat: "Wiederhol", translate: "Übersetz", wantStudy: "Ich möchte lernen", back: "Zurück", home: "Start", levels: "Stufen", topics: "Themen", quit: "Beenden", show: "Übersetzung anzeigen", hide: "Übersetzung ausblenden", prev: "Zurück", next: "Weiter", normal: "Hören", slow: "Langsam", askAi: "Erklärung", practice: "Üben", check: "Prüfen", review: "Wiederholen", speakNow: "Sprechen", listening: "Hören...", listenRepeat: "Hören und wiederholen", analyzing: "Analysieren...", phraseCards: "Dìngloop", profile: "Profil", resetProgress: "Fortschritt zurücksetzen", confirmReset: "Möchten Sie Ihren gesamten Fortschritt in dieser Sprache zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.", game: "Spiel", immersion: "Dìnglessons (bald)", promptBase: 'Erklären Sie kurz den Satz: "(sentence)" auf Stufe (level), so einfach wie möglich, mit Übersetzungen der einzelnen Elemente.', touchToListen: 'Tippe auf das Wort, um die Aussprache zu hören', touchToListenTooltip: 'Tippen, um die isolierte Aussprache zu hören', speakAgain: "Nochmal", continueCycle: "Weiter", reviewLaterPrompt: "Keine Sorge, Aussprache braucht Übung. Dieser Satz wurde in deinem Dìnglab gespeichert, damit du in Ruhe so oft üben kannst, wie du möchtest. Machen wir hier mit den anderen weiter!", reportModalTitle: 'Problem melden', reportModalHeading: 'Probleme gefunden? Sende es uns:', reportAudio: 'Audio', reportSentence: 'Übungssatz', reportTranslation: 'Übersetzung', reportTypingDiff: 'Schwierigkeiten beim Tippen', reportVoiceDiff: 'Schwierigkeiten bei der Sprachaufnahme', reportOtherPlaceholder: 'Anderes: hier beschreiben...', send: 'Senden', sending: 'Wird gesendet...', skipSentence: "Überspringen", dinglab_ready: "Bereit", dinglabBoaPronuncia: "Gute Aussprache!", dinglabFraseVoltouProxima: "Satz zurück im Dìngloop! Weiter →" },
-  pi: { dinglab: "Dìnglab", fill: "写", order: "完成", pronounce: "说", repeat: "复述", translate: "翻译", wantStudy: "我想学", back: "返回", home: "首页", levels: "等级", topics: "话题", quit: "退出", show: "显示翻译", hide: "隐藏翻译", prev: "上一个", next: "下一个", normal: "听", slow: "慢", askAi: "解释", practice: "练习", check: "检查", review: "复习", speakNow: "说话", listening: "正在听...", listenRepeat: "听并复述", analyzing: "分析中...", phraseCards: "Dìngloop", profile: "个人资料 (Gèrén zīliào)", resetProgress: "重置进度 (Chóngzhì jìndù)", confirmReset: "您确定要重置此语言的所有进度吗？此操作无法撤消。", game: "游戏 (Yóuxì)", immersion: "Dìnglessons (即将推出)", promptBase: '简要解释句子："(sentence)" 在级别 (level)，尽可能简单，并附上各个元素的翻译。', touchToListen: '点击单词以收听发音', touchToListenTooltip: '点击以收听单字发音', speakAgain: "重试", continueCycle: "继续", reviewLaterPrompt: "别急，发音需要练习。这个句子已存入你的 Dìnglab，你可以随时从容练习。我们先继续练习其他的吧！", reportModalTitle: '报告问题', reportModalHeading: '发现问题了吗？请发送给我们：', reportAudio: '音频', reportSentence: '练习句子', reportTranslation: '翻译', reportTypingDiff: '输入困难', reportVoiceDiff: '语音录制困难', reportOtherPlaceholder: '其他：在此描述...', send: '发送', sending: '正在发送...', skipSentence: "跳过", dinglab_ready: "就绪", dinglabBoaPronuncia: "发音很好！", dinglabFraseVoltouProxima: "句子已返回 Dìngloop！下一个 →" }
+  pt: { dinglab: "Dìnglab", fill: "Escreva", order: "Complete", pronounce: "Diga", repeat: "Repita", translate: "Traduza", wantStudy: "Eu quero estudar", back: "Voltar", home: "Início", levels: "Níveis", topics: "Tópicos", quit: "Sair", show: "Mostrar Tradução", hide: "Esconder Tradução", prev: "Anterior", next: "Próximo", normal: "Ouvir", slow: "Lento", askAi: "Explicação", practice: "Praticar", check: "Verificar", review: "Rever", speakNow: "Falar agora", listening: "Ouvindo...", listenRepeat: "Ouça e Repita", analyzing: "Analisando...", phraseCards: "Dìngloop", profile: "Perfil", resetProgress: "Resetar Progresso", confirmReset: "Deseja resetar todo o seu progresso neste idioma? Esta ação não pode ser desfeita.", game: "Jogo", immersion: "Dìnglessons (em breve)", promptBase: 'Explique resumidamente a frase: "(sentence)" no nível (level), da forma mais simples possível, com traduções dos elementos separados.', touchToListen: 'Toque na palavra para ouvir a pronúncia', touchToListenTooltip: 'Toque para ouvir a pronúncia isolada', speakAgain: "De novo", continueCycle: "Continuar", reviewLaterPrompt: "Relaxa, pronúncia exige costume. Essa frase foi guardada no seu Dìnglab para você treinar com calma quantas vezes quiser. Vamos continuar com as outras por aqui!", reportModalTitle: 'Reportar problema', reportModalHeading: 'Encontrou problemas? Mande pra gente:', reportAudio: 'Áudio', reportSentence: 'Frase do exercício', reportTranslation: 'Tradução', reportTypingDiff: 'Dificuldade para digitar', reportVoiceDiff: 'Dificuldade para gravação da fala', reportOtherPlaceholder: 'Outro: descreva aqui...', send: 'Enviar', sending: 'Enviando...', skipSentence: "Pular", dinglab_ready: "Pronto", dinglabBoaPronuncia: "Boa pronúncia!", dinglabFraseVoltouProxima: "A frase voltou ao Dìngloop! Próxima →", dinglabGravarVoz: "Gravar voz", dinglabParar: "Parar", dinglabOuvirGravacao: "Gravação", dinglabReproduzindo: "Reproduzindo", dinglabEco: "Eco", dinglabRepitaBranco: "Repita a palavra quando estiver em branco!" },
+  en: { dinglab: "Dìnglab", fill: "Write", order: "Complete", pronounce: "Speak", repeat: "Repeat", translate: "Translate", wantStudy: "I want to study", back: "Back", home: "Home", levels: "Levels", topics: "Topics", quit: "Quit", show: "Show Translation", hide: "Hide Translation", prev: "Previous", next: "Next", normal: "Listen", slow: "Slow", askAi: "Explanation", practice: "Practice", check: "Check", review: "Review", speakNow: "Speak now", cantSpeak: "Can't talk now", listening: "Listening...", listenRepeat: "Listen and Repeat", analyzing: "Analyzing...", phraseCards: "Dìngloop", profile: "Profile", resetProgress: "Reset Progress", confirmReset: "Do you want to reset all your progress in this language? This action cannot be undone.", game: "Game", immersion: "Dìnglessons (soon)", promptBase: 'Briefly explain the sentence: "(sentence)" at level (level), as simply as possible, with translations of the separated elements.', touchToListen: 'Tap the word to hear the pronunciation', touchToListenTooltip: 'Tap to hear isolated pronunciation', speakAgain: "Try again", continueCycle: "Continue", reviewLaterPrompt: "Relax, pronunciation takes practice. This sentence was saved to your Dìnglab so you can practice at your own pace. Let's continue with the rest for now!", reportModalTitle: 'Report issue', reportModalHeading: 'Found an issue? Send it to us:', reportAudio: 'Audio', reportSentence: 'Exercise sentence', reportTranslation: 'Translation', reportTypingDiff: 'Difficulty typing', reportVoiceDiff: 'Difficulty recording voice', reportOtherPlaceholder: 'Other: describe here...', send: 'Send', sending: 'Sending...', skipSentence: "Skip", dinglab_ready: "Ready", dinglabBoaPronuncia: "Great pronunciation!", dinglabFraseVoltouProxima: "Sentence returned to Dìngloop! Next →", dinglabGravarVoz: "Record voice", dinglabParar: "Stop", dinglabOuvirGravacao: "Recording", dinglabReproduzindo: "Playing", dinglabEco: "Echo", dinglabRepitaBranco: "Repeat the word when it turns white!" },
+  es: { dinglab: "Dìnglab", fill: "Escribe", order: "Completa", pronounce: "Di", repeat: "Repite", translate: "Traduce", wantStudy: "Quiero estudiar", back: "Volver", home: "Inicio", levels: "Niveles", topics: "Temas", quit: "Salir", show: "Mostrar traducción", hide: "Ocultar traducción", prev: "Anterior", next: "Siguiente", normal: "Escuchar", slow: "Lento", askAi: "Explicación", practice: "Practicar", check: "Verificar", review: "Repasar", speakNow: "Habla agora", listening: "Escuchando...", listenRepeat: "Escucha y repite", analyzing: "Analizando...", phraseCards: "Dìngloop", profile: "Perfil", resetProgress: "Restablecer Progreso", confirmReset: "¿Deseas restablecer todo tu progreso en este idioma? Esta acción no se puede deshacer.", game: "Juego", immersion: "Dìnglessons (pronto)", promptBase: 'Explique brevemente la frase: "(sentence)" en el nivel (level), de la manera más sencilla posible, con traducciones de los elementos separados.', touchToListen: 'Toca la palabra para escuchar la pronunciación', touchToListenTooltip: 'Toca para escuchar la pronunciación aislada', speakAgain: "Repetir", continueCycle: "Continuar", reviewLaterPrompt: "Tranquilo, la pronunciación requiere práctica. Esta frase se guardó en tu Dìnglab para que entrenes con calma las veces que quieras. ¡Sigamos con las demás por aquí!", reportModalTitle: 'Reportar problema', reportModalHeading: '¿Encontraste problemas? Envíanoslo:', reportAudio: 'Audio', reportSentence: 'Frase del ejercicio', reportTranslation: 'Traducción', reportTypingDiff: 'Dificultad para escribir', reportVoiceDiff: 'Dificultad para grabar la voz', reportOtherPlaceholder: 'Otro: describe aquí...', send: 'Enviar', sending: 'Enviando...', skipSentence: "Saltar", dinglab_ready: "Listo", dinglabBoaPronuncia: "¡Buena pronunciación!", dinglabFraseVoltouProxima: "¡La frase volvió a Dìngloop! Siguiente →", dinglabGravarVoz: "Grabar voz", dinglabParar: "Parar", dinglabOuvirGravacao: "Grabación", dinglabReproduzindo: "Reproduciendo", dinglabEco: "Eco", dinglabRepitaBranco: "¡Repite la palabra cuando esté en blanco!" },
+  fr: { dinglab: "Dìnglab", fill: "Écris", order: "Complète", pronounce: "Dis", repeat: "Répète", translate: "Traduis", wantStudy: "Je veux étudier", back: "Retour", home: "Accueil", levels: "Niveaux", topics: "Sujets", quit: "Quitter", show: "Afficher la traduction", hide: "Masquer la traduction", prev: "Précédent", next: "Suivant", normal: "Écouter", slow: "Lent", askAi: "Explication", practice: "Pratiquer", check: "Vérifier", review: "Réviser", speakNow: "Parler", listening: "Écoute...", listenRepeat: "Écoutez et répétez", analyzing: "Analyse...", phraseCards: "Dìngloop", profile: "Profil", resetProgress: "Réinitialiser le Progrès", confirmReset: "Voulez-vous réinitialiser tous vos progrès dans cette langue ? Cette action est irréversible.", game: "Jeu", immersion: "Dìnglessons (bientôt)", promptBase: 'Expliquez brièvement la frase : "(sentence)" au niveau (level), aussi simplement que possible, avec des traductions des éléments séparés.', touchToListen: 'Touchez le mot pour entendre la prononciation', touchToListenTooltip: 'Touchez pour entendre la prononciation isolée', speakAgain: "Répéter", continueCycle: "Continuer", reviewLaterPrompt: "Détends-toi, la prononciation demande de l'entraînement. Cette phrase a été enregistrée dans ton Dìnglab pour t'entraîner tranquillement autant de fois que tu veux. Continuons avec les autres !", reportModalTitle: 'Signaler un problème', reportModalHeading: 'Un problème ? Envoyez-le nous :', reportAudio: 'Audio', reportSentence: "Phrase de l'exercice", reportTranslation: 'Traduction', reportTypingDiff: 'Difficulté à taper', reportVoiceDiff: "Difficulté d'enregistrement vocal", reportOtherPlaceholder: 'Autre : décrivez ici...', send: 'Envoyer', sending: 'Envoi en cours...', skipSentence: "Passer", dinglab_ready: "Prêt", dinglabBoaPronuncia: "Bonne prononciation !", dinglabFraseVoltouProxima: "La phrase est dans Dìngloop ! Suivante →", dinglabGravarVoz: "Enregistrer", dinglabParar: "Arrêter", dinglabOuvirGravacao: "Enregistrement", dinglabReproduzindo: "Lecture", dinglabEco: "Écho", dinglabRepitaBranco: "Répétez le mot lorsqu'il devient blanc !" },
+  it: { dinglab: "Dìnglab", fill: "Scrivi", order: "Completa", pronounce: "Di'", repeat: "Ripeti", translate: "Traduci", wantStudy: "Voglio studiare", back: "Indietro", home: "Home", levels: "Livelli", topics: "Argomenti", quit: "Esci", show: "Mostra traduzione", hide: "Nascondi traduzione", prev: "Precedente", next: "Successivo", normal: "Ascolta", slow: "Lento", askAi: "Spiegazione", practice: "Pratica", check: "Verifica", review: "Ripassa", speakNow: "Parla ora", listening: "Ascolto...", listenRepeat: "Ascolta e repeti", analyzing: "Analisi...", phraseCards: "Dìngloop", profile: "Profilo", resetProgress: "Ripristina Progressi", confirmReset: "Vuoi resettare tutti i tuoi progressi in questa lingua? Questa azione non può essere annullata.", game: "Gioco", immersion: "Dìnglessons (presto)", promptBase: 'Spiega brevemente la frase: "(sentence)" al livello (level), nel modo mais semplice possibile, con le traduzioni dei singoli elementi.', touchToListen: 'Tocca la parola per ascoltare la pronuncia', touchToListenTooltip: 'Tocca per ascoltare la pronuncia isolata', speakAgain: "Ripeti", continueCycle: "Continua", reviewLaterPrompt: "Rilassati, la pronuncia richiede abitudine. Questa frase è stata salvata nel tuo Dìnglab per fare pratica con calma quante volte vuoi. Continuiamo con le altre qui!", reportModalTitle: 'Segnala un problema', reportModalHeading: 'Hai trovato problemi? Inviaceli:', reportAudio: 'Audio', reportSentence: "Frase dell'esercizio", reportTranslation: 'Traduzione', reportTypingDiff: 'Difficoltà a digitare', reportVoiceDiff: 'Difficoltà a registrare la voce', reportOtherPlaceholder: 'Altro: descrivi qui...', send: 'Invia', sending: 'Invio in corso...', skipSentence: "Salta", dinglab_ready: "Pronto", dinglabBoaPronuncia: "Buona pronuncia!", dinglabFraseVoltouProxima: "La frase è tornata in Dìngloop! Prossima →", dinglabGravarVoz: "Registra voce", dinglabParar: "Ferma", dinglabOuvirGravacao: "Registrazione", dinglabReproduzindo: "Riproduzione", dinglabEco: "Eco", dinglabRepitaBranco: "Ripeti la parola quando diventa bianca!" },
+  ge: { dinglab: "Dìnglab", fill: "Schreib", order: "Vervollständige", pronounce: "Sag", repeat: "Wiederhol", translate: "Übersetz", wantStudy: "Ich möchte lernen", back: "Zurück", home: "Start", levels: "Stufen", topics: "Themen", quit: "Beenden", show: "Übersetzung anzeigen", hide: "Übersetzung ausblenden", prev: "Zurück", next: "Weiter", normal: "Hören", slow: "Langsam", askAi: "Erklärung", practice: "Üben", check: "Prüfen", review: "Wiederholen", speakNow: "Sprechen", listening: "Hören...", listenRepeat: "Hören und wiederholen", analyzing: "Analysieren...", phraseCards: "Dìngloop", profile: "Profil", resetProgress: "Fortschritt zurücksetzen", confirmReset: "Möchten Sie Ihren gesamten Fortschritt in dieser Sprache zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.", game: "Spiel", immersion: "Dìnglessons (bald)", promptBase: 'Erklären Sie kurz den Satz: "(sentence)" auf Stufe (level), so einfach wie möglich, mit Übersetzungen der einzelnen Elemente.', touchToListen: 'Tippe auf das Wort, um die Aussprache zu hören', touchToListenTooltip: 'Tippen, um die isolierte Aussprache zu hören', speakAgain: "Nochmal", continueCycle: "Weiter", reviewLaterPrompt: "Keine Sorge, Aussprache braucht Übung. Dieser Satz wurde in deinem Dìnglab gespeichert, damit du in Ruhe so oft üben kannst, wie du möchtest. Machen wir hier mit den anderen weiter!", reportModalTitle: 'Problem melden', reportModalHeading: 'Probleme gefunden? Sende es uns:', reportAudio: 'Audio', reportSentence: 'Übungssatz', reportTranslation: 'Übersetzung', reportTypingDiff: 'Schwierigkeiten beim Tippen', reportVoiceDiff: 'Schwierigkeiten bei der Sprachaufnahme', reportOtherPlaceholder: 'Anderes: hier beschreiben...', send: 'Senden', sending: 'Wird gesendet...', skipSentence: "Überspringen", dinglab_ready: "Bereit", dinglabBoaPronuncia: "Gute Aussprache!", dinglabFraseVoltouProxima: "Satz zurück im Dìngloop! Weiter →", dinglabGravarVoz: "Aufnehmen", dinglabParar: "Stopp", dinglabOuvirGravacao: "Aufnahme", dinglabReproduzindo: "Wiedergabe", dinglabEco: "Echo", dinglabRepitaBranco: "Wiederhole das Wort, wenn es weiß wird!" },
+  pi: { dinglab: "Dìnglab", fill: "写", order: "完成", pronounce: "说", repeat: "复述", translate: "翻译", wantStudy: "我想学", back: "返回", home: "首页", levels: "等级", topics: "话题", quit: "退出", show: "显示翻译", hide: "隐藏翻译", prev: "上一个", next: "下一个", normal: "听", slow: "慢", askAi: "解释", practice: "练习", check: "检查", review: "复习", speakNow: "说话", listening: "正在听...", listenRepeat: "听并复述", analyzing: "分析中...", phraseCards: "Dìngloop", profile: "个人资料 (Gèrén zīliào)", resetProgress: "重置进度 (Chóngzhì jìndù)", confirmReset: "您确定要重置此语言的所有进度吗？此操作无法撤消。", game: "游戏 (Yóuxì)", immersion: "Dìnglessons (即将推出)", promptBase: '简要解释句子："(sentence)" 在级别 (level)，尽可能简单，并附上各个元素的翻译。', touchToListen: '点击单词以收听发音', touchToListenTooltip: '点击以收听单字发音', speakAgain: "重试", continueCycle: "继续", reviewLaterPrompt: "别急，发音需要练习。这个句子已存入你的 Dìnglab，你可以随时从容练习。我们先继续练习其他的吧！", reportModalTitle: '报告问题', reportModalHeading: '发现问题了吗？请发送给我们：', reportAudio: '音频', reportSentence: '练习句子', reportTranslation: '翻译', reportTypingDiff: '输入困难', reportVoiceDiff: '语音录制困难', reportOtherPlaceholder: '其他：在此描述...', send: '发送', sending: '正在发送...', skipSentence: "跳过", dinglab_ready: "就绪", dinglabBoaPronuncia: "发音很好！", dinglabFraseVoltouProxima: "句子已返回 Dìngloop！下一个 →", dinglabGravarVoz: "录制", dinglabParar: "停止", dinglabOuvirGravacao: "录音", dinglabReproduzindo: "播放中", dinglabEco: "回声", dinglabRepitaBranco: "单词变白时请跟读！" }
 };
 
 
@@ -7444,8 +7721,8 @@ export async function listarTopicosSalvos(nivel, idiomaEstudo) {
     const db = await abrirDB();
     if (!db) return [];
     return new Promise((resolve) => {
-      const tx = db.transaction(STORES.SENTENCES, "readonly");
-      const store = tx.objectStore(STORES.SENTENCES);
+      const tx = db.transaction(STORES.TOPICS, "readonly");
+      const store = tx.objectStore(STORES.TOPICS);
       const req = store.getAllKeys();
       req.onsuccess = () => {
         const prefixo = `${nivel.toUpperCase()}_${idiomaEstudo}_`;
@@ -7467,8 +7744,8 @@ export async function buscarSentencaPorIdNoIndexedDB(id) {
     const db = await abrirDB();
     if (!db) return null;
     return new Promise((resolve) => {
-      const tx = db.transaction(STORES.SENTENCES, "readonly");
-      const store = tx.objectStore(STORES.SENTENCES);
+      const tx = db.transaction(STORES.TOPICS, "readonly");
+      const store = tx.objectStore(STORES.TOPICS);
       const req = store.openCursor();
       req.onsuccess = (e) => {
         const cursor = e.target.result;
@@ -7514,8 +7791,8 @@ export async function invalidarTopicosPorSentencas(ids, idiomaEstudo) {
     if (!db) return false;
     const idsSet = new Set(ids.map(Number));
     return new Promise((resolve) => {
-      const tx = db.transaction(STORES.SENTENCES, "readwrite");
-      const store = tx.objectStore(STORES.SENTENCES);
+      const tx = db.transaction(STORES.TOPICS, "readwrite");
+      const store = tx.objectStore(STORES.TOPICS);
       const req = store.openCursor();
       req.onsuccess = (e) => {
         const cursor = e.target.result;

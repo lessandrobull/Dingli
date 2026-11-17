@@ -314,7 +314,7 @@ function processarProximoTopico() {
     const statusAtual = String(dados[i][4]).trim();
     const statusLower = statusAtual.toLowerCase();
 
-    if (statusAtual !== "" && statusLower !== "concluído" && statusLower !== "pendente") {
+    if (statusAtual !== "" && statusLower !== "concluído" && statusLower !== "pendente" && statusLower !== "erro") {
       planilha.getRange(i + 1, 5).setValue("Pendente").setBackground("#f4cccc");
       if (statusLower.includes("processamento")) {
         planilha.getRange(i + 1, 7).setValue("Interrompido / Timeout anterior");

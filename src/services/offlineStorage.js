@@ -69,8 +69,8 @@ export async function listarTopicosSalvos(nivel, idiomaEstudo) {
     const db = await abrirDB();
     if (!db) return [];
     return new Promise((resolve) => {
-      const tx = db.transaction(STORES.SENTENCES, "readonly");
-      const store = tx.objectStore(STORES.SENTENCES);
+      const tx = db.transaction(STORES.TOPICS, "readonly");
+      const store = tx.objectStore(STORES.TOPICS);
       const req = store.getAllKeys();
       req.onsuccess = () => {
         const prefixo = `${nivel.toUpperCase()}_${idiomaEstudo}_`;
@@ -92,8 +92,8 @@ export async function buscarSentencaPorIdNoIndexedDB(id) {
     const db = await abrirDB();
     if (!db) return null;
     return new Promise((resolve) => {
-      const tx = db.transaction(STORES.SENTENCES, "readonly");
-      const store = tx.objectStore(STORES.SENTENCES);
+      const tx = db.transaction(STORES.TOPICS, "readonly");
+      const store = tx.objectStore(STORES.TOPICS);
       const req = store.openCursor();
       req.onsuccess = (e) => {
         const cursor = e.target.result;
@@ -139,8 +139,8 @@ export async function invalidarTopicosPorSentencas(ids, idiomaEstudo) {
     if (!db) return false;
     const idsSet = new Set(ids.map(Number));
     return new Promise((resolve) => {
-      const tx = db.transaction(STORES.SENTENCES, "readwrite");
-      const store = tx.objectStore(STORES.SENTENCES);
+      const tx = db.transaction(STORES.TOPICS, "readwrite");
+      const store = tx.objectStore(STORES.TOPICS);
       const req = store.openCursor();
       req.onsuccess = (e) => {
         const cursor = e.target.result;
