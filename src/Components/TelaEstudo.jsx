@@ -314,6 +314,16 @@ export default function TelaEstudo({
     }
   };
   const ehDinglabAtivo = resultadoFeedback === 'dinglab';
+  const estaNoDinglab = React.useMemo(() => {
+    if (!frase?.id || !idiomaOrigem || !idiomaEstudo) return false;
+    try {
+      const chaveDinglab = `dinglab_${idiomaOrigem}_${idiomaEstudo}`;
+      const lista = JSON.parse(localStorage.getItem(chaveDinglab) || '[]');
+      return Array.isArray(lista) && lista.some(item => Number(item.id) === Number(frase.id));
+    } catch (e) {
+      return false;
+    }
+  }, [frase?.id, idiomaOrigem, idiomaEstudo, resultadoFeedback]);
   const [valorInput, setValorInput] = useState("");
   const [configLacuna, setConfigLacuna] = useState({ prefixo: "", sufixo: "", resposta: "", pontuacao: "" }); const [palavrasOpcoes, setPalavrasOpcoes] = useState([]);
   const [slotsEx3, setSlotsEx3] = useState([]);
@@ -1313,6 +1323,28 @@ export default function TelaEstudo({
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                               <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                             </svg>
+                          </button>
+                        );
+                      }
+
+                      if (estaNoDinglab) {
+                        return (
+                          <button
+                            onClick={() => {
+                              if (idAtual) {
+                                sessionStorage.setItem('dinglab_card_id', String(idAtual));
+                              }
+                              sessionStorage.removeItem('dinglab_modo_pitstop');
+                              mudarTela('dinglab');
+                            }}
+                            style={{
+                              ...styles.btnAcaoExtra,
+                              backgroundColor: ns.bg,
+                              color: ns.txt,
+                              cursor: 'pointer'
+                            }}
+                          >
+                            {t?.dinglab || "Dìnglab"}
                           </button>
                         );
                       }

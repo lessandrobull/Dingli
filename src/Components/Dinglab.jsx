@@ -66,6 +66,7 @@ export default function Dinglab({
   const [resultadoFeedback, setResultadoFeedback] = useState(null);
   const [feedbackMensagem, setFeedbackMensagem] = useState("");
   const [transcricaoFixa, setTranscricaoFixa] = useState("");
+  const [falaReloopFeedback, setFalaReloopFeedback] = useState("");
 
   // Estados da Prova de Fogo
   const [modoProva, setModoProva] = useState(false);
@@ -264,6 +265,7 @@ export default function Dinglab({
 
           } else {
             // Reprovação na Prova de Fogo: ZERO punição (toca correção e retorna ao neutro após 3s)
+            setFalaReloopFeedback(transcricaoAoVivo || "");
             setResultadoFeedback('erro');
             setFeedbackMensagem("");
             setModoProva(false);
@@ -280,7 +282,7 @@ export default function Dinglab({
 
             timerFeedbackRef.current = setTimeout(() => {
               setResultadoFeedback(null);
-              setTranscricaoFixa("");
+              setFalaReloopFeedback("");
             }, 3000);
           }
         }
@@ -292,14 +294,8 @@ export default function Dinglab({
   }, [
     onAvaliacaoDinglabRef, fraseAtual, textoEstudo, traducaoTexto, frasesMaestria,
     setFrasesMaestria, idiomaOrigem, idiomaEstudo, chaveDinglab, indice, setIndice,
-    t, setStatusVoz, setTranscricaoAoVivo, falar
+    t, setStatusVoz, setTranscricaoAoVivo, falar, transcricaoAoVivo
   ]);
-
-  useEffect(() => {
-    if (transcricaoAoVivo) {
-      setTranscricaoFixa(transcricaoAoVivo);
-    }
-  }, [transcricaoAoVivo]);
 
   const pararTodaRepeticao = useCallback(() => {
     repeticaoAtivaRef.current = false;
@@ -365,12 +361,13 @@ export default function Dinglab({
     };
   }, [finalizarGravacaoEspelho]);
 
-  useEffect(() => {
+ useEffect(() => {
     finalizarGravacaoEspelho();
     setModoProva(false);
     setResultadoFeedback(null);
     setFeedbackMensagem("");
     setTranscricaoFixa("");
+    setFalaReloopFeedback("");
     if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
 
     setAudioGravadoUrl(prev => {
@@ -414,6 +411,7 @@ export default function Dinglab({
       setResultadoFeedback(null);
       setFeedbackMensagem("");
       setTranscricaoFixa("");
+      setFalaReloopFeedback("");
       if (setTranscricaoAoVivo) setTranscricaoAoVivo("");
 
       const alvoVoz = {
@@ -626,7 +624,6 @@ export default function Dinglab({
           const falaAtual = acumulado.trim();
           falaEspelhoRef.current = falaAtual;
           setTranscricaoFixa(falaAtual);
-          if (setTranscricaoAoVivo) setTranscricaoAoVivo(falaAtual);
 
           const falaNorm = normalizarTextoEspelho(falaAtual);
           const palavrasFaladas = idiomaEstudo === 'pi'
@@ -1128,7 +1125,7 @@ export default function Dinglab({
                       let currentZhIndex = 0;
                       const zhLimpo = fraseAtual?.zh ? fraseAtual.zh.replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").replace(/\s+/g, "") : "";
                       const estaEmFeedbackOuGravacao = statusVoz === 'RECORDING' || resultadoFeedback !== null;
-                      const falaEfetiva = estaEmFeedbackOuGravacao ? (transcricaoAoVivo || transcricaoFixa || "") : "";
+                      const falaEfetiva = estaEmFeedbackOuGravacao ? (transcricaoAoVivo || falaReloopFeedback || "") : "";
                       const tLimpa = falaEfetiva.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss").toLowerCase().replace(/[.,!?;:¿¡"'{}()\[\]\-—…，。！？；：、]/g, "").trim();
                       const ehAcertoTotal = resultadoFeedback === 'acerto';
 
@@ -1206,7 +1203,7 @@ export default function Dinglab({
                         left: '50%',
                         top: '100%',
                         transform: 'translateX(-50%)',
-                        marginTop: '48px',
+                        marginTop: '52px',
                         backgroundColor: 'rgba(228, 234, 250, 0.72)',
                         color: corDinamica,
                         fontSize: 'clamp(1.1rem, 6.2vw, 1.35rem)',
@@ -1256,13 +1253,13 @@ export default function Dinglab({
                         width: '100%',
                         padding: '6px',
                         borderRadius: '14px',
-                        backgroundColor: 'rgba(0, 0, 0, 0.03)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.06)',
                         boxSizing: 'border-box'
                       }}
                     >
                       {/* Texto flutuante acima do painel (sem alterar nenhum posicionamento do card) */}
                       {(() => {
-                        const falaBruta = (transcricaoAoVivo || transcricaoFixa || "").trim();
+                        const falaBruta = (transcricaoFixa || "").trim();
                         const falaAluno = falaBruta ? (falaBruta.charAt(0).toUpperCase() + falaBruta.slice(1)) : "";
                         const textoFlutuante = tocandoRepeticao
                           ? (t?.dinglabRepitaBranco || "Repita a palavra quando estiver em branco!")
@@ -1339,8 +1336,8 @@ export default function Dinglab({
                           maxHeight: '42px',
                           borderRadius: '10px',
                           border: 'none',
-                          backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.75)' : 'rgba(0, 0, 0, 0.07)',
-                          color: audioGravadoUrl ? (temas[idiomaEstudo]?.bg || '#0f172a') : '#475569',
+                          backgroundColor: audioGravadoUrl ? 'rgba(255, 255, 255, 0.75)' : 'rgba(0, 0, 0, 0.13)',
+                          color: audioGravadoUrl ? ns.bg : '#475569',
                           fontSize: '0.82rem',
                           fontWeight: '800',
                           cursor: (audioGravadoUrl && !gravandoEspelho) ? 'pointer' : 'not-allowed',

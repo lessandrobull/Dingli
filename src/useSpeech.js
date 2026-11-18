@@ -359,7 +359,7 @@ export const useSpeech = ({
             try { window.recognitionInstance.abort(); } catch (e) { }
         }
 
-        const recognition = new SpeechRecognition();
+       const recognition = new SpeechRecognition();
         window.recognitionInstance = recognition;
         recognition.lang = temas[idiomaEstudo]?.langCode || 'en-US';
         recognition.interimResults = true;
@@ -447,7 +447,7 @@ export const useSpeech = ({
             if (percentual >= limiar || (fraseCorreta && falaComparacao.includes(fraseCorreta))) {
                 timerSilencioRef.current = setTimeout(() => {
                     avaliarAgora();
-                }, 750);
+                }, 333);
             } else {
                 // Silêncio de 1.3s para encerrar com erro
                 timerSilencioRef.current = setTimeout(() => {
@@ -459,6 +459,7 @@ export const useSpeech = ({
         };
 
         recognition.onerror = (e) => {
+            if (e.error === 'no-speech' && estaGravandoRef.current && !falaRef.current) return;
             console.warn('[useSpeech] Erro microfone:', e.error);
             if (timerSilencioRef.current) clearTimeout(timerSilencioRef.current);
             setStatusVoz('IDLE');
@@ -467,13 +468,17 @@ export const useSpeech = ({
         };
 
         recognition.onend = () => {
-            if (statusVoz === 'RECORDING' && !processandoAcertoRef.current) {
+            if (estaGravandoRef.current && !processandoAcertoRef.current) {
                 if (falaRef.current) {
                     avaliarAgora();
                 } else {
-                    setStatusVoz('IDLE');
-                    setEstaOuvindo(false);
-                    pararMonitoramentoAudio();
+                    try {
+                        recognition.start();
+                    } catch (e) {
+                        setStatusVoz('IDLE');
+                        setEstaOuvindo(false);
+                        pararMonitoramentoAudio();
+                    }
                 }
             }
         };

@@ -446,9 +446,9 @@ function App() {
       setStatusVoz('IDLE');
       processandoAcertoRef.current = false;
       mudarTela('estudo');
-    return;
-  }
-}, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio, topicoAtivo, nivelAtivo, idiomaOrigem, idiomaEstudo, frasesMaestria, verificarNivelConcluido, userRole, topicosBaixados, baixarTopicoOffline]);
+      return;
+    }
+  }, [frasesFiltradas, avaliarProximoAlvo, setIndice, setModoJogo, setSessaoIniciada, mudarTela, iniciarExercicio, limparEstadoExercicio, topicoAtivo, nivelAtivo, idiomaOrigem, idiomaEstudo, frasesMaestria, verificarNivelConcluido, userRole, topicosBaixados, baixarTopicoOffline]);
 
   useEffect(() => {
     jogarDominiumInteligenteRef.current = jogarDominiumInteligente;
@@ -498,9 +498,10 @@ function App() {
         sessionStorage.setItem('app_explicacao_frase', JSON.stringify(fObj));
         sessionStorage.setItem('app_explicacao_id', String(idAlvo));
         sessionStorage.setItem('app_explicacao_retorno', retornoAlvo);
-      } catch (e) {}
+      } catch (e) { }
     }
 
+    const tOrigem = interfaceTraducoes[idiomaOrigem] || interfaceTraducoes.pt;
     const colTopicOrigem = `topic_${idiomaOrigem}`;
     const nivelAlvo = fObj?.nivel || fObj?.level || nivelAtivo || "A1";
     const topicoAlvo = fObj?.topico || fObj?.[colTopicOrigem] || topicoAtivo || "";
@@ -509,7 +510,7 @@ function App() {
 
     if (cacheExplicacoesTopico.current[chaveCache]) {
       const dados = cacheExplicacoesTopico.current[chaveCache][String(idAlvo)];
-      setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
+      setAiExplanation(dados || { explanation: tOrigem.explicacaoNaoEncontrada || "Explicação ainda não disponível para esta frase.", breakdown: [] });
       mudarTela('explicacaoIA');
       return;
     }
@@ -525,7 +526,7 @@ function App() {
         try {
           const cache = await caches.open("dingli-audios-v1");
           const cachedResp = (await cache.match(`/explicacoes/${parIdiomas}/${nomeArquivo}`)) ||
-                             (await cache.match(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`));
+            (await cache.match(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`));
           if (cachedResp) resposta = cachedResp;
         } catch (e) { }
       }
@@ -543,9 +544,9 @@ function App() {
         }
         cacheExplicacoesTopico.current[chaveCache] = mapa;
         const dados = mapa[String(idAlvo)];
-        setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
+        setAiExplanation(dados || { explanation: tOrigem.explicacaoNaoEncontrada || "Explicação ainda não disponível para esta frase.", breakdown: [] });
       } else {
-        setAiExplanation({ explanation: "Arquivo de explicações do tópico não localizado.", breakdown: [] });
+        setAiExplanation({ explanation: tOrigem.explicacaoTopicoNaoLocalizado || "Explicações ainda não disponíveis para este tópico.", breakdown: [] });
       }
     } catch (err) {
       if ("caches" in window) {
@@ -553,7 +554,7 @@ function App() {
           const cache = await caches.open("dingli-audios-v1");
           const nomeArquivo = encodeURIComponent(`${nivelAlvo}_${topicoAlvo}.json`);
           const cachedResp = (await cache.match(`/explicacoes/${parIdiomas}/${nomeArquivo}`)) ||
-                             (await cache.match(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`));
+            (await cache.match(`/explicacoes/${parIdiomas}/${nivelAlvo}_${topicoAlvo}.json`));
           if (cachedResp) {
             let mapa = await cachedResp.json();
             if (Array.isArray(mapa)) {
@@ -567,13 +568,13 @@ function App() {
             }
             cacheExplicacoesTopico.current[chaveCache] = mapa;
             const dados = mapa[String(idAlvo)];
-            setAiExplanation(dados || { explanation: "Explicação não encontrada para esta frase.", breakdown: [] });
+            setAiExplanation(dados || { explanation: tOrigem.explicacaoNaoEncontrada || "Explicação ainda não disponível para esta frase.", breakdown: [] });
             return;
           }
         } catch (e) { }
       }
       console.warn("[App] Falha ao carregar explicação local:", err);
-      setAiExplanation({ explanation: "Erro ao abrir explicação local.", breakdown: [] });
+      setAiExplanation({ explanation: tOrigem.explicacaoErroLocal || "Erro ao abrir explicação local.", breakdown: [] });
     } finally {
       setAiLoading(false);
       mudarTela('explicacaoIA');
@@ -587,7 +588,7 @@ function App() {
       try {
         const s = sessionStorage.getItem('app_explicacao_frase');
         if (s) fSalva = JSON.parse(s);
-      } catch (e) {}
+      } catch (e) { }
       if (idSalvo) {
         explicarFraseIA(idSalvo, fSalva);
       }
@@ -1104,120 +1105,120 @@ function App() {
     sincronizarTopicosLocais().catch(err => console.warn("[App] Erro na sincronização IndexedDB:", err));
 
     // 3. CONCLUSÃO DA VERSÃO E LIBERAÇÃO INSTANTÂNEA
-        localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
-        setRevisaoPendente(null);
-        setModalAtualizacaoAberto(false);
+    localStorage.setItem(`versao_conteudo_${idiomaEstudo}`, String(revisaoPendente.novaVersao));
+    setRevisaoPendente(null);
+    setModalAtualizacaoAberto(false);
 
-        if (acaoPendenteAposAtualizacao) {
-          const acao = acaoPendenteAposAtualizacao;
-          setAcaoPendenteAposAtualizacao(null);
-          acao();
-        }
+    if (acaoPendenteAposAtualizacao) {
+      const acao = acaoPendenteAposAtualizacao;
+      setAcaoPendenteAposAtualizacao(null);
+      acao();
+    }
 
-        // 4. SINCRONIZAÇÃO COMPLETA EM SEGUNDO PLANO (Áudios, Palavras e Explicações)
-        const sincronizarSegundoPlano = async () => {
-          try {
-            const { data: sentencasNovas } = await dataService.getSentencesByIds(idsRevisao);
-            if (!sentencasNovas || sentencasNovas.length === 0) return;
+    // 4. SINCRONIZAÇÃO COMPLETA EM SEGUNDO PLANO (Áudios, Palavras e Explicações)
+    const sincronizarSegundoPlano = async () => {
+      try {
+        const { data: sentencasNovas } = await dataService.getSentencesByIds(idsRevisao);
+        if (!sentencasNovas || sentencasNovas.length === 0) return;
 
-            const colTopicOrigem = `topic_${idiomaOrigem}`;
+        const colTopicOrigem = `topic_${idiomaOrigem}`;
 
-            // Filtra estritamente sentenças de tópicos já baixados ou já praticadas pelo aluno
-            const sentencasParaBaixar = sentencasNovas.filter(item => {
-              const tp = item[colTopicOrigem];
-              const m = frasesMaestria[item.id];
-              const rank = typeof m === 'object' ? (m?.rank || 0) : (m || 0);
-              const topicoJaBaixado = tp && topicosBaixados.includes(tp);
-              const jaEstudada = rank > 0;
-              return topicoJaBaixado || jaEstudada;
-            });
+        // Filtra estritamente sentenças de tópicos já baixados ou já praticadas pelo aluno
+        const sentencasParaBaixar = sentencasNovas.filter(item => {
+          const tp = item[colTopicOrigem];
+          const m = frasesMaestria[item.id];
+          const rank = typeof m === 'object' ? (m?.rank || 0) : (m || 0);
+          const topicoJaBaixado = tp && topicosBaixados.includes(tp);
+          const jaEstudada = rank > 0;
+          return topicoJaBaixado || jaEstudada;
+        });
 
-            // Se nenhum dos tópicos afetados estiver salvo no aparelho, encerra sem downloads prematuros
-            if (sentencasParaBaixar.length === 0) return;
+        // Se nenhum dos tópicos afetados estiver salvo no aparelho, encerra sem downloads prematuros
+        if (sentencasParaBaixar.length === 0) return;
 
-            // a. Áudios das frases completas (todas as afetadas nos tópicos baixados, sem cortes artificiais)
-            const idsParaBaixar = sentencasParaBaixar.map(s => Number(s.id));
-            const promessaAudios = baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo);
+        // a. Áudios das frases completas (todas as afetadas nos tópicos baixados, sem cortes artificiais)
+        const idsParaBaixar = sentencasParaBaixar.map(s => Number(s.id));
+        const promessaAudios = baixarNovosAudiosComProgresso(idsParaBaixar, idiomaEstudo);
 
-            // b. Palavras isoladas apenas das sentenças a atualizar
-            const todasPalavras = [];
-            sentencasParaBaixar.forEach(item => {
-              const txt = (idiomaEstudo === 'pi' && item.zh) ? item.zh : (item[idiomaEstudo] || item.texto || "");
-              txt.split(/\s+/).forEach(w => {
-                const limpa = w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim();
-                if (limpa) todasPalavras.push(limpa);
-              });
-            });
-            const promessaPalavras = todasPalavras.length > 0
-              ? precarregarPalavras(todasPalavras, idiomaEstudo)
-              : Promise.resolve();
+        // b. Palavras isoladas apenas das sentenças a atualizar
+        const todasPalavras = [];
+        sentencasParaBaixar.forEach(item => {
+          const txt = (idiomaEstudo === 'pi' && item.zh) ? item.zh : (item[idiomaEstudo] || item.texto || "");
+          txt.split(/\s+/).forEach(w => {
+            const limpa = w.replace(/[.,!?;:¿¡"“”`{}()[\]\-—…，。！？；：、«»/\\~*]/g, "").trim();
+            if (limpa) todasPalavras.push(limpa);
+          });
+        });
+        const promessaPalavras = todasPalavras.length > 0
+          ? precarregarPalavras(todasPalavras, idiomaEstudo)
+          : Promise.resolve();
 
-            // c. Explicações JSON apenas dos tópicos que estão no aparelho
-            const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
-            const paresTopicos = new Map();
+        // c. Explicações JSON apenas dos tópicos que estão no aparelho
+        const parIdiomas = `${idiomaEstudo}_${idiomaOrigem}`;
+        const paresTopicos = new Map();
 
-            sentencasParaBaixar.forEach(item => {
-              const n = item.level || "A1";
-              const tp = item[colTopicOrigem];
-              if (tp && topicosBaixados.includes(tp) && !paresTopicos.has(`${n}_${tp}`)) {
-                paresTopicos.set(`${n}_${tp}`, { nivel: n, topico: tp });
+        sentencasParaBaixar.forEach(item => {
+          const n = item.level || "A1";
+          const tp = item[colTopicOrigem];
+          if (tp && topicosBaixados.includes(tp) && !paresTopicos.has(`${n}_${tp}`)) {
+            paresTopicos.set(`${n}_${tp}`, { nivel: n, topico: tp });
+          }
+        });
+
+        const promessaExplicacoes = (async () => {
+          for (const { nivel: nTopico, topico: nomeTopico } of paresTopicos.values()) {
+            const chaveCache = `${parIdiomas}_${nTopico}_${nomeTopico}`;
+            delete cacheExplicacoesTopico.current[chaveCache];
+
+            const nomeArquivo = encodeURIComponent(`${nTopico}_${nomeTopico}.json`);
+            if ("caches" in window) {
+              try {
+                const cache = await caches.open("dingli-audios-v1");
+                await cache.delete(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
+                await cache.delete(`/explicacoes/${parIdiomas}/${nTopico}_${nomeTopico}.json`);
+              } catch (e) { }
+            }
+
+            try {
+              let resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}?v=${Date.now()}`);
+              if (!resposta.ok) {
+                resposta = await fetch(`/explicacoes/${parIdiomas}/${nTopico}_${nomeTopico}.json?v=${Date.now()}`);
               }
-            });
-
-            const promessaExplicacoes = (async () => {
-              for (const { nivel: nTopico, topico: nomeTopico } of paresTopicos.values()) {
-                const chaveCache = `${parIdiomas}_${nTopico}_${nomeTopico}`;
-                delete cacheExplicacoesTopico.current[chaveCache];
-
-                const nomeArquivo = encodeURIComponent(`${nTopico}_${nomeTopico}.json`);
+              if (resposta.ok) {
                 if ("caches" in window) {
                   try {
                     const cache = await caches.open("dingli-audios-v1");
-                    await cache.delete(`/explicacoes/${parIdiomas}/${nomeArquivo}`);
-                    await cache.delete(`/explicacoes/${parIdiomas}/${nTopico}_${nomeTopico}.json`);
+                    await cache.put(`/explicacoes/${parIdiomas}/${nomeArquivo}`, resposta.clone());
                   } catch (e) { }
                 }
-
-                try {
-                  let resposta = await fetch(`/explicacoes/${parIdiomas}/${nomeArquivo}?v=${Date.now()}`);
-                  if (!resposta.ok) {
-                    resposta = await fetch(`/explicacoes/${parIdiomas}/${nTopico}_${nomeTopico}.json?v=${Date.now()}`);
+                let mapa = await resposta.json();
+                if (Array.isArray(mapa)) {
+                  mapa = Object.assign({}, ...mapa);
+                } else if (mapa && typeof mapa === 'object' && !mapa[String(sentencasParaBaixar[0]?.id)]) {
+                  const chaves = Object.keys(mapa);
+                  if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
+                    const interno = mapa[chaves[0]];
+                    mapa = Array.isArray(interno) ? Object.assign({}, ...interno) : interno;
                   }
-                  if (resposta.ok) {
-                    if ("caches" in window) {
-                      try {
-                        const cache = await caches.open("dingli-audios-v1");
-                        await cache.put(`/explicacoes/${parIdiomas}/${nomeArquivo}`, resposta.clone());
-                      } catch (e) { }
-                    }
-                    let mapa = await resposta.json();
-                    if (Array.isArray(mapa)) {
-                      mapa = Object.assign({}, ...mapa);
-                    } else if (mapa && typeof mapa === 'object' && !mapa[String(sentencasParaBaixar[0]?.id)]) {
-                      const chaves = Object.keys(mapa);
-                      if (chaves.length === 1 && typeof mapa[chaves[0]] === 'object') {
-                        const interno = mapa[chaves[0]];
-                        mapa = Array.isArray(interno) ? Object.assign({}, ...interno) : interno;
-                      }
-                    }
-                    cacheExplicacoesTopico.current[chaveCache] = mapa;
-                  }
-                } catch (errJson) {
-                  console.warn(`[App] Falha ao atualizar explicação do tópico '${nomeTopico}':`, errJson);
                 }
+                cacheExplicacoesTopico.current[chaveCache] = mapa;
               }
-            })();
-
-            await Promise.all([promessaAudios, promessaPalavras, promessaExplicacoes]);
-          } catch (errSentencas) {
-            console.warn("[App] Falha na sincronização completa em segundo plano:", errSentencas);
+            } catch (errJson) {
+              console.warn(`[App] Falha ao atualizar explicação do tópico '${nomeTopico}':`, errJson);
+            }
           }
-        };
+        })();
 
-        sincronizarSegundoPlano().catch(err => {
-          console.warn("[App] Falha na sincronização completa em segundo plano:", err);
-        });
-      }, [revisaoPendente, frasesMaestria, idiomaOrigem, idiomaEstudo, user, nivelAtivo, topicosBaixados, setFrasesMaestria, setSessaoDominium, limparEstadoExercicio, acaoPendenteAposAtualizacao]);
+        await Promise.all([promessaAudios, promessaPalavras, promessaExplicacoes]);
+      } catch (errSentencas) {
+        console.warn("[App] Falha na sincronização completa em segundo plano:", errSentencas);
+      }
+    };
+
+    sincronizarSegundoPlano().catch(err => {
+      console.warn("[App] Falha na sincronização completa em segundo plano:", err);
+    });
+  }, [revisaoPendente, frasesMaestria, idiomaOrigem, idiomaEstudo, user, nivelAtivo, topicosBaixados, setFrasesMaestria, setSessaoDominium, limparEstadoExercicio, acaoPendenteAposAtualizacao]);
 
   const renderTela = () => {
     if (tela === 'perfil') return (
